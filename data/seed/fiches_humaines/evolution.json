@@ -4,659 +4,1264 @@
     "axe": "evolution",
     "sous_domaine": "sciences",
     "nom": "Relativité générale et restreinte",
-    "these_centrale": "",
-    "apport": "",
-    "limites_critiques": "",
-    "sources": [],
-    "statut": "a_documenter",
-    "derniere_verification": "2026-09-05"
+    "these_centrale": "La relativité restreinte (1905) établit que les lois de la physique et la vitesse de la lumière dans le vide sont invariantes pour tout observateur en mouvement uniforme, unifiant espace et temps en un continuum espace-temps ; la relativité générale (1915) étend ce cadre en décrivant la gravitation non comme une force mais comme une courbure de cet espace-temps causée par la masse et l'énergie.",
+    "apport": "Remplace et englobe la gravitation newtonienne comme cas limite aux faibles vitesses et masses ; prédictions vérifiées expérimentalement (précession du périhélie de Mercure, déviation de la lumière par le Soleil, ondes gravitationnelles détectées en 2015, correction relativiste indispensable au GPS) ; fondement de la cosmologie moderne.",
+    "limites_critiques": "Incompatible mathématiquement avec la mécanique quantique aux échelles de Planck, ce qui rend une théorie unifiée de la gravité quantique toujours manquante un siècle après sa formulation ; les observations cosmologiques à grande échelle imposent de postuler matière et énergie noires non directement observées.",
+    "sources": [
+      {
+        "titre": "Die Grundlage der allgemeinen Relativitätstheorie (Einstein, 1916)",
+        "type": "primaire"
+      },
+      {
+        "titre": "Relativité générale — Wikipédia",
+        "url": "https://fr.wikipedia.org/wiki/Relativit%C3%A9_g%C3%A9n%C3%A9rale",
+        "type": "secondaire"
+      }
+    ],
+    "statut": "documente",
+    "derniere_verification": "2026-09-05",
+    "resonance_ia": "Les modèles d'apprentissage automatique utilisés en astrophysique (détection d'ondes gravitationnelles, imagerie de trous noirs) accélèrent aujourd'hui la résolution numérique des équations de la relativité générale, auparavant inaccessible par le seul calcul analytique."
   },
   {
     "id": "modele-standard-de-la-physique-des-particules",
     "axe": "evolution",
     "sous_domaine": "sciences",
     "nom": "Modèle standard de la physique des particules",
-    "these_centrale": "",
-    "apport": "",
-    "limites_critiques": "",
-    "sources": [],
-    "statut": "a_documenter",
-    "derniere_verification": "2026-09-05"
+    "these_centrale": "Le modèle standard décrit l'ensemble des particules élémentaires connues (quarks, leptons, bosons) et trois des quatre interactions fondamentales (électromagnétique, faible, forte) au sein d'un même cadre théorique de la théorie quantique des champs, confirmé par la découverte du boson de Higgs en 2012.",
+    "apport": "Prédictions vérifiées avec une précision extrême sur des décennies (existence du quark top, du boson de Higgs) ; cadre unificateur de la physique des particules qui a guidé la construction des grands accélérateurs (LHC du CERN) ; base de toute la physique nucléaire et des applications qui en découlent (imagerie médicale, énergie).",
+    "limites_critiques": "N'intègre pas la gravitation ni n'explique la matière et l'énergie noires, l'asymétrie matière-antimatière de l'univers, ou la masse des neutrinos observée expérimentalement — autant d'indices que le modèle standard, bien que très précis, est incomplet.",
+    "sources": [
+      {
+        "titre": "A Model of Leptons (Weinberg, 1967)",
+        "type": "primaire"
+      },
+      {
+        "titre": "Modèle standard — Wikipédia",
+        "url": "https://fr.wikipedia.org/wiki/Mod%C3%A8le_standard",
+        "type": "secondaire"
+      }
+    ],
+    "statut": "documente",
+    "derniere_verification": "2026-09-05",
+    "resonance_ia": "Les collisions du LHC produisent des volumes de données trop importants pour une analyse humaine exhaustive ; l'IA (apprentissage automatique) est désormais utilisée en routine pour filtrer les événements et détecter des anomalies statistiques pouvant signaler une physique au-delà du modèle standard."
   },
   {
     "id": "double-helice-de-l-adn",
     "axe": "evolution",
     "sous_domaine": "sciences",
     "nom": "Double hélice de l'ADN",
-    "these_centrale": "",
-    "apport": "",
-    "limites_critiques": "",
-    "sources": [],
-    "statut": "a_documenter",
-    "derniere_verification": "2026-09-05"
+    "these_centrale": "L'ADN est structuré en double hélice : deux brins complémentaires de nucléotides enroulés l'un autour de l'autre, appariés selon la règle A-T et G-C, une structure qui explique directement comment l'information génétique peut être répliquée fidèlement lors de la division cellulaire.",
+    "apport": "Modèle publié en 1953 par James Watson et Francis Crick à partir des clichés de diffraction aux rayons X de Rosalind Franklin ; fondement de toute la biologie moléculaire moderne (réplication, transcription, traduction) et point de départ des biotechnologies (séquençage, édition génomique).",
+    "limites_critiques": "La contribution déterminante de Rosalind Franklin (dont le cliché 51 fut consulté sans son accord explicite) a été durablement minorée par rapport à celle de Watson et Crick, seuls lauréats du prix Nobel avec Wilkins en 1962 — un cas devenu emblématique des biais de reconnaissance scientifique envers les femmes.",
+    "sources": [
+      {
+        "titre": "Molecular Structure of Nucleic Acids (Watson & Crick, Nature, 1953)",
+        "type": "primaire"
+      },
+      {
+        "titre": "Double hélice — Wikipédia",
+        "url": "https://fr.wikipedia.org/wiki/Double_h%C3%A9lice",
+        "type": "secondaire"
+      }
+    ],
+    "statut": "documente",
+    "derniere_verification": "2026-09-05",
+    "resonance_ia": "Les modèles d'IA de prédiction de structures moléculaires (AlphaFold et ses successeurs pour les protéines) prolongent directement le programme ouvert par la découverte de la double hélice : déduire la fonction biologique à partir de la structure moléculaire."
   },
   {
     "id": "tectonique-des-plaques",
     "axe": "evolution",
     "sous_domaine": "sciences",
     "nom": "Tectonique des plaques",
-    "these_centrale": "",
-    "apport": "",
-    "limites_critiques": "",
-    "sources": [],
-    "statut": "a_documenter",
-    "derniere_verification": "2026-09-05"
+    "these_centrale": "La lithosphère terrestre est divisée en plaques rigides qui se déplacent les unes par rapport aux autres sur l'asthénosphère, un mouvement qui explique la répartition des séismes, du volcanisme, des chaînes de montagnes et la dérive des continents décrite par Alfred Wegener au début du XXe siècle.",
+    "apport": "Acceptée par la communauté géologique internationale à la fin des années 1960 après la découverte de l'expansion des fonds océaniques ; cadre unificateur pour l'ensemble de la géologie moderne, avec des applications directes à la prévention des risques sismiques et volcaniques.",
+    "limites_critiques": "Le moteur exact des mouvements de plaques (convection mantellique, traction des plaques plongeantes) reste débattu dans le détail ; la prédiction précise du moment d'un séisme demeure hors de portée malgré la compréhension solide du mécanisme d'ensemble.",
+    "sources": [
+      {
+        "titre": "La Genèse des continents et des océans (Wegener, 1915)",
+        "type": "primaire"
+      },
+      {
+        "titre": "Tectonique des plaques — Wikipédia",
+        "url": "https://fr.wikipedia.org/wiki/Tectonique_des_plaques",
+        "type": "secondaire"
+      }
+    ],
+    "statut": "documente",
+    "derniere_verification": "2026-09-05",
+    "resonance_ia": "Les réseaux de neurones sont de plus en plus utilisés pour détecter des signaux précurseurs faibles dans les données sismiques et GPS, sans que cela résolve le problème fondamental de prévisibilité à court terme des séismes."
   },
   {
     "id": "big-bang-modele-cosmologique",
     "axe": "evolution",
     "sous_domaine": "sciences",
     "nom": "Big Bang (modèle cosmologique)",
-    "these_centrale": "",
-    "apport": "",
-    "limites_critiques": "",
-    "sources": [],
-    "statut": "a_documenter",
-    "derniere_verification": "2026-09-05"
+    "these_centrale": "L'univers observable est issu d'un état initial extrêmement dense et chaud il y a environ 13,8 milliards d'années, et s'est dilaté et refroidi depuis — un modèle appuyé par trois preuves observationnelles majeures : la récession des galaxies (loi de Hubble), le fond diffus cosmologique et l'abondance des éléments légers.",
+    "apport": "Cadre standard de la cosmologie moderne (modèle ΛCDM) ; confirmé avec une précision croissante par les missions spatiales d'observation du fond diffus cosmologique (COBE, WMAP, Planck) ; a permis de dater l'univers et de reconstruire l'essentiel de son histoire thermique.",
+    "limites_critiques": "Le modèle nécessite de postuler une phase d'inflation cosmique, une énergie noire et une matière noire dont la nature physique reste inconnue ; la singularité initiale elle-même échappe à toute description physique dans le cadre des théories actuelles (relativité générale et mécanique quantique).",
+    "sources": [
+      {
+        "titre": "A Relation between Distance and Radial Velocity among Extra-Galactic Nebulae (Hubble, 1929)",
+        "type": "primaire"
+      },
+      {
+        "titre": "Big Bang — Wikipédia",
+        "url": "https://fr.wikipedia.org/wiki/Big_Bang",
+        "type": "secondaire"
+      }
+    ],
+    "statut": "documente",
+    "derniere_verification": "2026-09-05",
+    "resonance_ia": "L'analyse des immenses relevés de galaxies et des cartes du fond diffus cosmologique repose de plus en plus sur l'apprentissage automatique pour extraire des signaux statistiques ténus permettant de contraindre les paramètres du modèle cosmologique."
   },
   {
     "id": "mecanique-quantique-modele-de-bohr",
     "axe": "evolution",
     "sous_domaine": "sciences",
     "nom": "Mécanique quantique / modèle de Bohr",
-    "these_centrale": "",
-    "apport": "",
-    "limites_critiques": "",
-    "sources": [],
-    "statut": "a_documenter",
-    "derniere_verification": "2026-09-05"
+    "these_centrale": "Le modèle de Bohr (1913) postule que les électrons d'un atome n'occupent que des orbites discrètes autour du noyau, chacune associée à un niveau d'énergie précis, et n'émettent ou n'absorbent de la lumière qu'en changeant abruptement d'orbite — une hypothèse de quantification qui a ouvert la voie à la mécanique quantique complète.",
+    "apport": "Explique avec succès le spectre de raies de l'atome d'hydrogène, une énigme jusque-là inexpliquée par la physique classique ; étape historique décisive entre le modèle planétaire de Rutherford et la mécanique quantique moderne (équation de Schrödinger, 1926).",
+    "limites_critiques": "Le modèle est aujourd'hui considéré comme obsolète : il échoue à expliquer les spectres d'atomes à plusieurs électrons et repose sur des orbites classiques bien définies incompatibles avec le principe d'incertitude de Heisenberg qui l'a supplanté.",
+    "sources": [
+      {
+        "titre": "On the Constitution of Atoms and Molecules (Bohr, 1913)",
+        "type": "primaire"
+      },
+      {
+        "titre": "Modèle de Bohr — Wikipédia",
+        "url": "https://fr.wikipedia.org/wiki/Mod%C3%A8le_de_Bohr",
+        "type": "secondaire"
+      }
+    ],
+    "statut": "documente",
+    "derniere_verification": "2026-09-05",
+    "resonance_ia": "La quantification de l'énergie posée par Bohr est le socle conceptuel sur lequel reposent les qubits des ordinateurs quantiques, une technologie que plusieurs laboratoires explorent aujourd'hui pour accélérer certains calculs d'apprentissage automatique."
   },
   {
     "id": "theorie-synthetique-de-l-evolution",
     "axe": "evolution",
     "sous_domaine": "sciences",
     "nom": "Théorie synthétique de l'évolution",
-    "these_centrale": "",
-    "apport": "",
-    "limites_critiques": "",
-    "sources": [],
-    "statut": "a_documenter",
-    "derniere_verification": "2026-09-05"
+    "these_centrale": "La théorie synthétique de l'évolution (synthèse néodarwinienne) unifie la sélection naturelle décrite par Darwin avec la génétique des populations issue des lois de Mendel : l'évolution résulte de la sélection de variations génétiques aléatoires (mutations) au sein des populations au fil des générations.",
+    "apport": "Réconcilie dans les années 1930-1940 deux traditions scientifiques jusque-là perçues comme concurrentes (darwinisme et mendélisme) ; cadre explicatif unifié pour toute la biologie moderne, de la biologie moléculaire à l'écologie, confirmé et enrichi par la génomique.",
+    "limites_critiques": "Débattue et complétée depuis par la biologie évolutive du développement (evo-devo) et l'épigénétique, qui montrent que l'hérédité et la variation ne se réduisent pas toujours à la seule transmission de mutations génétiques aléatoires — sans pour autant remettre en cause le cœur du mécanisme sélectif.",
+    "sources": [
+      {
+        "titre": "Evolution: The Modern Synthesis (Huxley, 1942)",
+        "type": "primaire"
+      },
+      {
+        "titre": "Théorie synthétique de l'évolution — Wikipédia",
+        "url": "https://fr.wikipedia.org/wiki/Th%C3%A9orie_synth%C3%A9tique_de_l'%C3%A9volution",
+        "type": "secondaire"
+      }
+    ],
+    "statut": "documente",
+    "derniere_verification": "2026-09-05",
+    "resonance_ia": "Les algorithmes évolutionnistes en IA (algorithmes génétiques, neuroévolution) s'inspirent directement du mécanisme de sélection et de variation aléatoire décrit par la théorie synthétique pour optimiser des solutions dans des espaces de recherche complexes."
   },
   {
     "id": "modele-climatique-du-rechauffement-anthropique",
     "axe": "evolution",
     "sous_domaine": "sciences",
     "nom": "Modèle climatique du réchauffement anthropique",
-    "these_centrale": "",
-    "apport": "",
-    "limites_critiques": "",
-    "sources": [],
-    "statut": "a_documenter",
-    "derniere_verification": "2026-09-05"
+    "these_centrale": "Les modèles climatiques établissent que l'augmentation rapide de la température moyenne terrestre observée depuis le milieu du XXe siècle est attribuée aux émissions de gaz à effet de serre d'origine humaine, avec des conséquences sans précédent sur le système climatique dans son ensemble.",
+    "apport": "Synthétisé et évalué collectivement par le GIEC depuis 1988 sur la base de milliers d'études indépendantes ; a permis de quantifier la sensibilité climatique et de projeter des trajectoires d'émissions, fondement scientifique des accords climatiques internationaux (Paris, 2015).",
+    "limites_critiques": "Les modèles climatiques comportent des marges d'incertitude réelles sur certains points précis (sensibilité climatique exacte, rétroactions des nuages, dynamique des calottes glaciaires), ce qui est parfois instrumentalisé pour contester à tort le consensus robuste sur la cause anthropique du réchauffement global lui-même.",
+    "sources": [
+      {
+        "titre": "Rapports d'évaluation du GIEC (depuis 1990)",
+        "type": "primaire"
+      },
+      {
+        "titre": "Changement climatique — Wikipédia",
+        "url": "https://fr.wikipedia.org/wiki/Changement_climatique",
+        "type": "secondaire"
+      }
+    ],
+    "statut": "documente",
+    "derniere_verification": "2026-09-05",
+    "resonance_ia": "L'IA est de plus en plus utilisée pour améliorer la résolution spatiale des modèles climatiques et accélérer leurs simulations, tout en soulevant la question de l'empreinte énergétique propre des grands modèles d'IA eux-mêmes."
   },
   {
     "id": "theorie-du-chaos-et-systemes-complexes",
     "axe": "evolution",
     "sous_domaine": "sciences",
     "nom": "Théorie du chaos et systèmes complexes",
-    "these_centrale": "",
-    "apport": "",
-    "limites_critiques": "",
-    "sources": [],
-    "statut": "a_documenter",
-    "derniere_verification": "2026-09-05"
+    "these_centrale": "Certains systèmes dynamiques pourtant parfaitement déterministes présentent une sensibilité extrême aux conditions initiales (« effet papillon ») qui rend leur comportement à long terme imprévisible en pratique, bien que gouverné par des équations connues et sans aucun hasard.",
+    "apport": "Formalisée à partir des travaux d'Edward Lorenz sur la modélisation météorologique (1963) et de Henri Poincaré antérieurement sur le problème à trois corps ; a renouvelé la compréhension de phénomènes aussi divers que la météorologie, la dynamique des populations, les battements cardiaques ou les marchés financiers.",
+    "limites_critiques": "La théorie explique pourquoi certains systèmes sont imprévisibles à long terme sans pour autant fournir d'outil général permettant de prédire lesquels le seront a priori, ni de repousser cette limite de prévisibilité au-delà de ce que permet la précision des mesures initiales.",
+    "sources": [
+      {
+        "titre": "Deterministic Nonperiodic Flow (Lorenz, 1963)",
+        "type": "primaire"
+      },
+      {
+        "titre": "Théorie du chaos — Wikipédia",
+        "url": "https://fr.wikipedia.org/wiki/Th%C3%A9orie_du_chaos",
+        "type": "secondaire"
+      }
+    ],
+    "statut": "documente",
+    "derniere_verification": "2026-09-05",
+    "resonance_ia": "Les modèles d'apprentissage profond sont utilisés pour tenter de capturer statistiquement des régularités cachées dans des systèmes chaotiques (prévision météo à courte échéance), sans échapper à la limite fondamentale de prévisibilité que la théorie du chaos elle-même établit."
   },
   {
     "id": "reseaux-de-neurones-artificiels-deep-learning",
     "axe": "evolution",
     "sous_domaine": "sciences",
     "nom": "Réseaux de neurones artificiels / deep learning",
-    "these_centrale": "",
-    "apport": "",
-    "limites_critiques": "",
-    "sources": [],
-    "statut": "a_documenter",
-    "derniere_verification": "2026-09-05"
+    "these_centrale": "L'apprentissage profond utilise des réseaux de neurones artificiels composés de nombreuses couches pour apprendre automatiquement des représentations hiérarchisées directement à partir des données, sans qu'un expert humain n'ait à expliciter les règles de traitement.",
+    "apport": "À l'origine de la percée de l'IA contemporaine (reconnaissance d'image dès 2012 avec AlexNet, traduction automatique, génération de texte et d'image) ; rendu possible par la conjonction de grandes quantités de données, de puissance de calcul GPU et d'avancées algorithmiques (rétropropagation, architectures transformers).",
+    "limites_critiques": "Fonctionne largement comme une « boîte noire » dont les décisions internes restent difficiles à expliquer complètement ; nécessite des volumes massifs de données et d'énergie pour l'entraînement, et généralise parfois mal en dehors de la distribution des données d'entraînement.",
+    "sources": [
+      {
+        "titre": "Deep Learning (LeCun, Bengio, Hinton, Nature, 2015)",
+        "type": "primaire"
+      },
+      {
+        "titre": "Apprentissage profond — Wikipédia",
+        "url": "https://fr.wikipedia.org/wiki/Apprentissage_profond",
+        "type": "secondaire"
+      }
+    ],
+    "statut": "documente",
+    "derniere_verification": "2026-09-05",
+    "resonance_ia": "Constitue le socle technique direct de la quasi-totalité des systèmes d'IA générative contemporains évoqués dans ce référentiel — la fiche la plus directement centrale de cet axe pour comprendre les capacités et limites décrites côté IA."
   },
   {
     "id": "genomique-et-crispr-cas9",
     "axe": "evolution",
     "sous_domaine": "sciences",
     "nom": "Génomique et CRISPR-Cas9",
-    "these_centrale": "",
-    "apport": "",
-    "limites_critiques": "",
-    "sources": [],
-    "statut": "a_documenter",
-    "derniere_verification": "2026-09-05"
+    "these_centrale": "CRISPR-Cas9 est un système immunitaire bactérien naturel détourné pour couper l'ADN à un endroit précis choisi par une séquence guide, ce qui permet de modifier le génome de n'importe quel organisme avec une précision, une simplicité et un coût sans précédent par rapport aux techniques antérieures.",
+    "apport": "Développé comme outil d'édition génomique programmable par Jennifer Doudna et Emmanuelle Charpentier (2012, prix Nobel de chimie 2020) ; applications déjà en clinique (traitement de la drépanocytose approuvé), en agriculture et en recherche fondamentale.",
+    "limites_critiques": "Le risque de modifications hors cible (off-target) et les questions éthiques soulevées par l'édition de la lignée germinale humaine (illustrées par l'expérience illégale du chercheur He Jiankui en 2018 sur des embryons humains) restent des enjeux de sécurité et de gouvernance non totalement résolus.",
+    "sources": [
+      {
+        "titre": "A Programmable Dual-RNA-Guided DNA Endonuclease (Jinek, Doudna, Charpentier et al., Science, 2012)",
+        "type": "primaire"
+      },
+      {
+        "titre": "CRISPR — Wikipédia",
+        "url": "https://fr.wikipedia.org/wiki/CRISPR",
+        "type": "secondaire"
+      }
+    ],
+    "statut": "documente",
+    "derniere_verification": "2026-09-05",
+    "resonance_ia": "Les modèles d'IA de prédiction de structure protéique et de conception de guides CRISPR optimisés accélèrent aujourd'hui la conception d'éditions génomiques plus précises et plus sûres."
   },
   {
     "id": "physique-des-hautes-energies-boson-de-higgs",
     "axe": "evolution",
     "sous_domaine": "sciences",
     "nom": "Physique des hautes énergies (boson de Higgs)",
-    "these_centrale": "",
-    "apport": "",
-    "limites_critiques": "",
-    "sources": [],
-    "statut": "a_documenter",
-    "derniere_verification": "2026-09-05"
+    "these_centrale": "Le boson de Higgs est la particule associée au champ de Higgs, un champ qui remplit tout l'espace et confère leur masse aux particules élémentaires de la matière ordinaire par le mécanisme de brisure spontanée de symétrie proposé théoriquement en 1964.",
+    "apport": "Sa découverte expérimentale au LHC du CERN en 2012 a confirmé la dernière pièce manquante du modèle standard, validant près de cinquante ans de prédiction théorique et valant le prix Nobel de physique 2013 à Peter Higgs et François Englert.",
+    "limites_critiques": "La masse mesurée du boson de Higgs pose un problème théorique non résolu (le « problème de hiérarchie ») : elle est anormalement faible par rapport à ce que prédisent naïvement les corrections quantiques, ce qui suggère l'existence d'une physique au-delà du modèle standard encore non observée.",
+    "sources": [
+      {
+        "titre": "Broken Symmetries and the Masses of Gauge Bosons (Higgs, 1964)",
+        "type": "primaire"
+      },
+      {
+        "titre": "Boson de Higgs — Wikipédia",
+        "url": "https://fr.wikipedia.org/wiki/Boson_de_Higgs",
+        "type": "secondaire"
+      }
+    ],
+    "statut": "documente",
+    "derniere_verification": "2026-09-05",
+    "resonance_ia": "La détection du boson de Higgs parmi des milliards de collisions n'a été possible qu'en combinant la théorie avec des méthodes statistiques avancées d'analyse de données, aujourd'hui largement remplacées ou complétées par de l'apprentissage automatique au CERN."
   },
   {
     "id": "informatique-quantique",
     "axe": "evolution",
     "sous_domaine": "sciences",
     "nom": "Informatique quantique",
-    "these_centrale": "",
-    "apport": "",
-    "limites_critiques": "",
-    "sources": [],
-    "statut": "a_documenter",
-    "derniere_verification": "2026-09-05"
+    "these_centrale": "L'informatique quantique exploite des phénomènes de la mécanique quantique (superposition, intrication) pour effectuer certains types de calculs de façon fondamentalement différente de l'informatique classique, avec un potentiel d'accélération exponentielle pour des problèmes spécifiques.",
+    "apport": "Algorithmes théoriques démontrant un avantage quantique pour la factorisation (Shor, 1994) et la recherche non structurée (Grover, 1996) ; démonstrations expérimentales croissantes de « suprématie quantique » sur des tâches ciblées depuis 2019 (Google, puis d'autres acteurs).",
+    "limites_critiques": "Les ordinateurs quantiques actuels restent limités par le bruit et la décohérence, nécessitant une correction d'erreur quantique coûteuse en nombre de qubits ; un ordinateur quantique généraliste et tolérant aux pannes, utile au-delà de cas de niche, reste un horizon incertain.",
+    "sources": [
+      {
+        "titre": "Simulating Physics with Computers (Feynman, 1982)",
+        "type": "primaire"
+      },
+      {
+        "titre": "Informatique quantique — Wikipédia",
+        "url": "https://fr.wikipedia.org/wiki/Informatique_quantique",
+        "type": "secondaire"
+      }
+    ],
+    "statut": "documente",
+    "derniere_verification": "2026-09-05",
+    "resonance_ia": "L'apprentissage automatique quantique est un domaine de recherche actif qui explore si les phénomènes quantiques pourraient accélérer l'entraînement de modèles d'IA, sans qu'un avantage pratique généralisé n'ait encore été démontré."
   },
   {
     "id": "ia-et-traitement-du-langage-naturel",
     "axe": "evolution",
     "sous_domaine": "sciences",
     "nom": "IA et traitement du langage naturel",
-    "these_centrale": "",
-    "apport": "",
-    "limites_critiques": "",
-    "sources": [],
-    "statut": "a_documenter",
-    "derniere_verification": "2026-09-05"
+    "these_centrale": "Le traitement automatique des langues (NLP) est le domaine multidisciplinaire, à la croisée de la linguistique, de l'informatique et de l'IA, qui vise à créer des outils capables de traiter, comprendre et générer le langage humain naturel.",
+    "apport": "Évolution en quelques décennies de systèmes fondés sur des règles linguistiques explicites vers des modèles statistiques puis des réseaux de neurones profonds (architecture transformer, 2017), à l'origine des grands modèles de langage conversationnels actuels.",
+    "limites_critiques": "Les systèmes de NLP contemporains manipulent des régularités statistiques du langage sans ancrage direct et garanti dans le monde réel, ce qui produit des erreurs factuelles plausibles (« hallucinations ») et reproduit les biais présents dans leurs corpus d'entraînement.",
+    "sources": [
+      {
+        "titre": "Attention Is All You Need (Vaswani et al., 2017)",
+        "type": "primaire"
+      },
+      {
+        "titre": "Traitement automatique des langues — Wikipédia",
+        "url": "https://fr.wikipedia.org/wiki/Traitement_automatique_des_langues",
+        "type": "secondaire"
+      }
+    ],
+    "statut": "documente",
+    "derniere_verification": "2026-09-05",
+    "resonance_ia": "Cette fiche recouvre directement la technologie centrale des IA génératives conversationnelles analysées dans ce référentiel — le NLP est le pont technique entre le langage humain et les capacités et limites décrites côté IA."
   },
   {
     "id": "astrobiologie-et-exoplanetes",
     "axe": "evolution",
     "sous_domaine": "sciences",
     "nom": "Astrobiologie et exoplanètes",
-    "these_centrale": "",
-    "apport": "",
-    "limites_critiques": "",
-    "sources": [],
-    "statut": "a_documenter",
-    "derniere_verification": "2026-09-05"
+    "these_centrale": "L'astrobiologie (ou exobiologie) étudie les conditions et processus, notamment géochimiques et biochimiques, pouvant mener à l'apparition et à l'évolution de la vie ailleurs que sur Terre, en s'appuyant en particulier sur la découverte et la caractérisation des exoplanètes — plus de 8000 confirmées en 2026.",
+    "apport": "Les missions spatiales (Kepler, TESS, James Webb) ont permis la détection systématique de planètes en dehors du système solaire et l'analyse spectroscopique de leur atmosphère, ouvrant la recherche de biosignatures chimiques potentielles.",
+    "limites_critiques": "Aucune preuve directe de vie extraterrestre, passée ou présente, n'a à ce jour été trouvée : le domaine reste largement théorique et méthodologique, contraint par la distance immense des cibles observées et l'ambiguïté d'interprétation des signatures chimiques détectées.",
+    "sources": [
+      {
+        "titre": "Kepler: A Search for Terrestrial Planets (NASA, mission 2009-2018)",
+        "type": "primaire"
+      },
+      {
+        "titre": "Exoplanète — Wikipédia",
+        "url": "https://fr.wikipedia.org/wiki/Exoplan%C3%A8te",
+        "type": "secondaire"
+      }
+    ],
+    "statut": "documente",
+    "derniere_verification": "2026-09-05",
+    "resonance_ia": "L'IA est utilisée en routine pour trier automatiquement les immenses volumes de données de transit planétaire produits par les télescopes spatiaux et identifier les candidats exoplanètes les plus prometteurs pour une observation approfondie."
   },
   {
     "id": "immunotherapie-et-vaccins-arnm",
     "axe": "evolution",
     "sous_domaine": "sciences",
     "nom": "Immunothérapie et vaccins ARNm",
-    "these_centrale": "",
-    "apport": "",
-    "limites_critiques": "",
-    "sources": [],
-    "statut": "a_documenter",
-    "derniere_verification": "2026-09-05"
+    "these_centrale": "Les vaccins à ARN messager introduisent dans les cellules une séquence d'ARN codant temporairement pour un antigène (une protéine d'un agent pathogène), ce qui déclenche une réponse immunitaire protectrice sans jamais introduire l'agent pathogène lui-même ni modifier le génome de la personne vaccinée.",
+    "apport": "Technologie validée à grande échelle lors de la pandémie de Covid-19 (vaccins Pfizer-BioNTech et Moderna, 2020-2021), s'appuyant sur des décennies de recherche antérieure (dont les travaux de Katalin Karikó et Drew Weissman, prix Nobel de médecine 2023) ; ouvre désormais la voie à des immunothérapies personnalisées contre certains cancers.",
+    "limites_critiques": "La nécessité d'une chaîne du froid stricte a compliqué la distribution mondiale équitable des premiers vaccins à ARNm ; les effets à très long terme de cette classe de vaccins, encore récente à cette échelle de déploiement, continuent d'être surveillés par pharmacovigilance.",
+    "sources": [
+      {
+        "titre": "Modified mRNA reduces innate immune response (Karikó & Weissman, 2005)",
+        "type": "primaire"
+      },
+      {
+        "titre": "Vaccin à ARN — Wikipédia",
+        "url": "https://fr.wikipedia.org/wiki/Vaccin_%C3%A0_ARN",
+        "type": "secondaire"
+      }
+    ],
+    "statut": "documente",
+    "derniere_verification": "2026-09-05",
+    "resonance_ia": "La conception des séquences d'ARNm optimisées (stabilité, efficacité de traduction) et le criblage des candidats antigéniques pour les immunothérapies personnalisées contre le cancer s'appuient de plus en plus sur des modèles d'IA prédictifs."
   },
   {
     "id": "nanotechnologies-et-graphene",
     "axe": "evolution",
     "sous_domaine": "sciences",
     "nom": "Nanotechnologies et graphène",
-    "these_centrale": "",
-    "apport": "",
-    "limites_critiques": "",
-    "sources": [],
-    "statut": "a_documenter",
-    "derniere_verification": "2026-09-05"
+    "these_centrale": "Le graphène est un matériau bidimensionnel constitué d'une seule couche d'atomes de carbone arrangés en réseau hexagonal, isolé pour la première fois en 2004, qui présente des propriétés exceptionnelles de conductivité électrique, de résistance mécanique et de légèreté.",
+    "apport": "Isolement expérimental par Andre Geim et Konstantin Novoselov (prix Nobel de physique 2010) ; applications explorées en électronique flexible, stockage d'énergie, filtration et composites structurels, avec des analogues inorganiques (MXenes) désormais en développement.",
+    "limites_critiques": "Le passage du graphène des propriétés remarquables mesurées en laboratoire à une production industrielle à bas coût, homogène et à grande échelle, reste un défi technique non pleinement résolu près de vingt ans après sa découverte.",
+    "sources": [
+      {
+        "titre": "Electric Field Effect in Atomically Thin Carbon Films (Novoselov, Geim et al., Science, 2004)",
+        "type": "primaire"
+      },
+      {
+        "titre": "Graphène — Wikipédia",
+        "url": "https://fr.wikipedia.org/wiki/Graph%C3%A8ne",
+        "type": "secondaire"
+      }
+    ],
+    "statut": "documente",
+    "derniere_verification": "2026-09-05",
+    "resonance_ia": "La recherche de nouveaux matériaux 2D aux propriétés ciblées est aujourd'hui accélérée par des modèles d'IA prédisant les propriétés physiques de structures candidates avant même leur synthèse en laboratoire."
   },
   {
     "id": "neurosciences-cognitives-et-connectome-humain",
     "axe": "evolution",
     "sous_domaine": "sciences",
     "nom": "Neurosciences cognitives et connectome humain",
-    "these_centrale": "",
-    "apport": "",
-    "limites_critiques": "",
-    "sources": [],
-    "statut": "a_documenter",
-    "derniere_verification": "2026-09-05"
+    "these_centrale": "Le connectome est le plan complet des connexions neuronales d'un cerveau ; le projet d'en établir une cartographie exhaustive pour le cerveau humain vise à comprendre comment la structure physique des réseaux de neurones donne naissance à la cognition, à la perception et au comportement.",
+    "apport": "Le Human Connectome Project (lancé en 2010) a produit des cartes détaillées de la connectivité cérébrale humaine à partir de l'imagerie par résonance magnétique ; le connectome complet de la mouche drosophile a été achevé en 2023, étape majeure pour un organisme modèle.",
+    "limites_critiques": "Le connectome humain complet, à l'échelle du neurone individuel, reste hors de portée technique (le cerveau humain compte environ 86 milliards de neurones) ; connaître la carte des connexions ne suffit pas à elle seule à expliquer comment émerge la cognition ou la conscience.",
+    "sources": [
+      {
+        "titre": "The Human Connectome Project (NIH, 2010-2013)",
+        "type": "primaire"
+      },
+      {
+        "titre": "Connectome — Wikipédia",
+        "url": "https://fr.wikipedia.org/wiki/Connectome",
+        "type": "secondaire"
+      }
+    ],
+    "statut": "documente",
+    "derniere_verification": "2026-09-05",
+    "resonance_ia": "Les architectures de réseaux de neurones artificiels s'inspirent, de façon très simplifiée, de l'organisation en couches et connexions du cerveau biologique — mais restent structurellement très éloignées de la complexité et de la plasticité réelles révélées par les données de connectomique."
   },
   {
     "id": "fusion-nucleaire-controlee-tokamak",
     "axe": "evolution",
     "sous_domaine": "sciences",
     "nom": "Fusion nucléaire contrôlée (Tokamak)",
-    "these_centrale": "",
-    "apport": "",
-    "limites_critiques": "",
-    "sources": [],
-    "statut": "a_documenter",
-    "derniere_verification": "2026-09-05"
+    "these_centrale": "Un tokamak est un dispositif expérimental de confinement magnétique de plasma en forme de tore, conçu pour maintenir les conditions extrêmes de température et de pression nécessaires à déclencher et entretenir une réaction de fusion nucléaire contrôlée, source d'énergie potentiellement quasi illimitée et peu émettrice de déchets de longue durée.",
+    "apport": "Concept développé en URSS dans les années 1950-1960 ; le réacteur expérimental international ITER, en construction dans le sud de la France, vise à démontrer pour la première fois un bilan énergétique net positif à grande échelle ; plusieurs projets privés annoncent désormais des jalons intermédiaires.",
+    "limites_critiques": "Après plus de soixante-dix ans de recherche, aucun réacteur à fusion n'a encore produit d'électricité utilisable sur le réseau ; les défis d'ingénierie (matériaux résistant au flux de neutrons, stabilité du plasma) restent considérables et les calendriers de mise en service commerciale ont été régulièrement repoussés.",
+    "sources": [
+      {
+        "titre": "ITER — Rapport de conception (organisation ITER)",
+        "type": "primaire"
+      },
+      {
+        "titre": "Tokamak — Wikipédia",
+        "url": "https://fr.wikipedia.org/wiki/Tokamak",
+        "type": "secondaire"
+      }
+    ],
+    "statut": "documente",
+    "derniere_verification": "2026-09-05",
+    "resonance_ia": "Des modèles d'IA (notamment de DeepMind, en 2022) ont été utilisés pour contrôler en temps réel la forme du plasma dans un tokamak, une tâche de contrôle si complexe qu'elle dépassait les capacités des méthodes de contrôle classiques."
   },
   {
     "id": "ecologie-globale-et-science-du-systeme-terre",
     "axe": "evolution",
     "sous_domaine": "sciences",
     "nom": "Écologie globale et science du système Terre",
-    "these_centrale": "",
-    "apport": "",
-    "limites_critiques": "",
-    "sources": [],
-    "statut": "a_documenter",
-    "derniere_verification": "2026-09-05"
+    "these_centrale": "La science du système Terre étudie la planète comme un système intégré unique, où l'atmosphère, les océans, la cryosphère, la biosphère et la lithosphère interagissent en boucles de rétroaction, plutôt que comme des disciplines cloisonnées (météorologie, océanographie, écologie) étudiées séparément.",
+    "apport": "A permis de formaliser des concepts intégrateurs majeurs comme les limites planétaires (Rockström et al., 2009) et l'hypothèse de l'Anthropocène comme nouvelle époque géologique marquée par l'influence dominante des activités humaines sur le système Terre dans son ensemble.",
+    "limites_critiques": "La complexité des interactions entre sous-systèmes rend les points de bascule (tipping points) climatiques difficiles à localiser précisément à l'avance, ce qui limite la capacité de prédiction fine malgré une compréhension qualitative solide des mécanismes en jeu.",
+    "sources": [
+      {
+        "titre": "A Safe Operating Space for Humanity (Rockström et al., Nature, 2009)",
+        "type": "primaire"
+      },
+      {
+        "titre": "Science du système Terre — Wikipédia",
+        "url": "https://fr.wikipedia.org/wiki/Science_du_syst%C3%A8me_Terre",
+        "type": "secondaire"
+      }
+    ],
+    "statut": "documente",
+    "derniere_verification": "2026-09-05",
+    "resonance_ia": "Les modèles couplés du système Terre, parmi les simulations numériques les plus lourdes en calcul jamais construites, intègrent de plus en plus des composantes d'apprentissage automatique pour représenter des processus trop coûteux à simuler explicitement (nuages, végétation)."
   },
   {
     "id": "albert-einstein",
     "axe": "evolution",
     "sous_domaine": "sciences",
     "nom": "Albert Einstein",
-    "these_centrale": "",
-    "apport": "",
-    "limites_critiques": "",
-    "sources": [],
-    "statut": "a_documenter",
-    "derniere_verification": "2026-09-05"
+    "these_centrale": "Einstein a établi que les lois de la physique et la vitesse de la lumière sont invariantes pour tout observateur en mouvement uniforme (relativité restreinte, 1905), puis que la gravitation résulte de la courbure de l'espace-temps par la masse et l'énergie (relativité générale, 1915), révolutionnant la compréhension de l'espace, du temps et de la gravité.",
+    "apport": "Quatre articles fondateurs en 1905 (« année miraculeuse » : relativité restreinte, effet photoélectrique qui lui vaudra le prix Nobel de physique 1921, mouvement brownien, équivalence masse-énergie E=mc²) ; la relativité générale reste, un siècle plus tard, l'une des théories physiques les mieux vérifiées expérimentalement.",
+    "limites_critiques": "A passé les dernières décennies de sa carrière à chercher, sans succès, une théorie du champ unifié reliant gravitation et électromagnétisme ; est resté profondément sceptique envers l'interprétation probabiliste de la mécanique quantique (« Dieu ne joue pas aux dés »), un débat aujourd'hui largement tranché en faveur de l'interprétation qu'il contestait.",
+    "sources": [
+      {
+        "titre": "Zur Elektrodynamik bewegter Körper (Einstein, 1905)",
+        "type": "primaire"
+      },
+      {
+        "titre": "Albert Einstein — Wikipédia",
+        "url": "https://fr.wikipedia.org/wiki/Albert_Einstein",
+        "type": "secondaire"
+      }
+    ],
+    "statut": "documente",
+    "derniere_verification": "2026-09-05",
+    "resonance_ia": "Les équations de champ d'Einstein restent aujourd'hui résolues numériquement à l'aide de méthodes de calcul haute performance de plus en plus assistées par l'apprentissage automatique, notamment pour modéliser les fusions de trous noirs détectées par ondes gravitationnelles."
   },
   {
     "id": "marie-curie",
     "axe": "evolution",
     "sous_domaine": "sciences",
     "nom": "Marie Curie",
-    "these_centrale": "",
-    "apport": "",
-    "limites_critiques": "",
-    "sources": [],
-    "statut": "a_documenter",
-    "derniere_verification": "2026-09-05"
+    "these_centrale": "Curie a démontré que la radioactivité est une propriété atomique intrinsèque de certains éléments (et non un phénomène chimique de surface), puis a isolé deux nouveaux éléments radioactifs, le polonium et le radium, ouvrant tout un champ scientifique nouveau.",
+    "apport": "Première femme lauréate d'un prix Nobel (physique, 1903, partagé avec Pierre Curie et Henri Becquerel) et seule personne à ce jour lauréate de deux prix Nobel dans deux disciplines scientifiques différentes (chimie, 1911) ; a fondé l'Institut du radium (aujourd'hui Institut Curie) et développé les unités mobiles de radiographie (« petites Curies ») pendant la Première Guerre mondiale.",
+    "limites_critiques": "Est morte d'une anémie aplasique probablement causée par une exposition prolongée aux radiations, à une époque où les risques de la radioactivité pour la santé humaine étaient encore mal compris — une part du prix scientifique payée par sa propre santé.",
+    "sources": [
+      {
+        "titre": "Recherches sur les substances radioactives (Curie, thèse, 1903)",
+        "type": "primaire"
+      },
+      {
+        "titre": "Marie Curie — Wikipédia",
+        "url": "https://fr.wikipedia.org/wiki/Marie_Curie",
+        "type": "secondaire"
+      }
+    ],
+    "statut": "documente",
+    "derniere_verification": "2026-09-05",
+    "resonance_ia": "Les techniques d'imagerie et de radiothérapie héritées de ses travaux sur la radioactivité sont aujourd'hui optimisées par des algorithmes d'IA pour le diagnostic et le ciblage précis des traitements en oncologie."
   },
   {
     "id": "niels-bohr",
     "axe": "evolution",
     "sous_domaine": "sciences",
     "nom": "Niels Bohr",
-    "these_centrale": "",
-    "apport": "",
-    "limites_critiques": "",
-    "sources": [],
-    "statut": "a_documenter",
-    "derniere_verification": "2026-09-05"
+    "these_centrale": "Bohr a introduit la quantification de l'énergie dans le modèle atomique (1913) puis a formulé le principe de complémentarité, selon lequel des descriptions apparemment contradictoires d'un même phénomène quantique (onde/particule) peuvent être toutes deux nécessaires et complémentaires plutôt que mutuellement exclusives.",
+    "apport": "Prix Nobel de physique 1922 ; fondateur et directeur de l'institut de physique théorique de Copenhague qui a formé une génération de physiciens quantiques ; principal artisan de l'« interprétation de Copenhague » de la mécanique quantique, encore dominante aujourd'hui.",
+    "limites_critiques": "Son interprétation de Copenhague, en particulier le rôle de la mesure dans l'effondrement de la fonction d'onde, a fait l'objet de débats fondamentaux non résolus avec Einstein (paradoxe EPR) et reste contestée par des interprétations alternatives (Bohm, mondes multiples).",
+    "sources": [
+      {
+        "titre": "On the Constitution of Atoms and Molecules (Bohr, 1913)",
+        "type": "primaire"
+      },
+      {
+        "titre": "Niels Bohr — Wikipédia",
+        "url": "https://fr.wikipedia.org/wiki/Niels_Bohr",
+        "type": "secondaire"
+      }
+    ],
+    "statut": "documente",
+    "derniere_verification": "2026-09-05",
+    "resonance_ia": "Le principe de complémentarité de Bohr a été repris hors de la physique comme modèle pour penser des couples de descriptions irréductibles l'une à l'autre — une grille parfois mobilisée pour penser la coexistence de descriptions symboliques et statistiques d'un même système d'IA."
   },
   {
     "id": "alan-turing",
     "axe": "evolution",
     "sous_domaine": "sciences",
     "nom": "Alan Turing",
-    "these_centrale": "",
-    "apport": "",
-    "limites_critiques": "",
-    "sources": [],
-    "statut": "a_documenter",
-    "derniere_verification": "2026-09-05"
+    "these_centrale": "Turing a formalisé mathématiquement la notion de calcul (machine de Turing, 1936), posant les fondements théoriques de l'informatique avant même l'existence des ordinateurs, puis a proposé en 1950 un critère opérationnel — le test de Turing — pour juger si une machine peut être dite « penser ».",
+    "apport": "A dirigé le déchiffrement du code Enigma allemand à Bletchley Park pendant la Seconde Guerre mondiale, contribuant de façon décisive à l'effort allié ; considéré comme l'un des pères fondateurs de l'informatique théorique et de l'intelligence artificielle.",
+    "limites_critiques": "A été condamné en 1952 au Royaume-Uni pour homosexualité, alors illégale, contraint à une castration chimique, et est mort en 1954 dans des circonstances généralement interprétées comme un suicide — une injustice reconnue seulement en 2009 (excuses officielles) et 2013 (grâce royale posthume).",
+    "sources": [
+      {
+        "titre": "Computing Machinery and Intelligence (Turing, 1950)",
+        "type": "primaire"
+      },
+      {
+        "titre": "Alan Turing — Wikipédia",
+        "url": "https://fr.wikipedia.org/wiki/Alan_Turing",
+        "type": "secondaire"
+      }
+    ],
+    "statut": "documente",
+    "derniere_verification": "2026-09-05",
+    "resonance_ia": "Le test de Turing reste, plus de soixante-dix ans après sa formulation, la référence centrale — et de plus en plus contestée comme critère insuffisant — pour évaluer si les IA conversationnelles contemporaines manifestent une forme d'intelligence comparable à l'humain."
   },
   {
     "id": "james-watson",
     "axe": "evolution",
     "sous_domaine": "sciences",
     "nom": "James Watson",
-    "these_centrale": "",
-    "apport": "",
-    "limites_critiques": "",
-    "sources": [],
-    "statut": "a_documenter",
-    "derniere_verification": "2026-09-05"
+    "these_centrale": "Watson a co-élaboré, avec Francis Crick, le modèle de structure en double hélice de l'ADN (1953), à partir notamment des données cristallographiques de Rosalind Franklin, expliquant pour la première fois comment l'information génétique peut être physiquement stockée et répliquée.",
+    "apport": "Prix Nobel de physiologie ou médecine 1962 avec Crick et Wilkins ; a ensuite dirigé le laboratoire de Cold Spring Harbor et joué un rôle de premier plan dans le lancement du Projet génome humain dans les années 1990.",
+    "limites_critiques": "A minoré dans ses mémoires (La Double Hélice, 1968) le rôle de Rosalind Franklin dans la découverte ; a par ailleurs tenu dans les années 2000-2010 des propos publics ouvertement racistes sur l'intelligence, qui lui ont fait perdre ses titres honorifiques et sa réputation scientifique dans les dernières décennies de sa vie.",
+    "sources": [
+      {
+        "titre": "Molecular Structure of Nucleic Acids (Watson & Crick, Nature, 1953)",
+        "type": "primaire"
+      },
+      {
+        "titre": "James Dewey Watson — Wikipédia",
+        "url": "https://fr.wikipedia.org/wiki/James_Dewey_Watson",
+        "type": "secondaire"
+      }
+    ],
+    "statut": "documente",
+    "derniere_verification": "2026-09-05",
+    "resonance_ia": "Le Projet génome humain qu'il a contribué à lancer a produit les données massives sur lesquelles s'entraînent aujourd'hui les modèles d'IA de génomique prédictive (variants pathogènes, structure protéique)."
   },
   {
     "id": "francis-crick",
     "axe": "evolution",
     "sous_domaine": "sciences",
     "nom": "Francis Crick",
-    "these_centrale": "",
-    "apport": "",
-    "limites_critiques": "",
-    "sources": [],
-    "statut": "a_documenter",
-    "derniere_verification": "2026-09-05"
+    "these_centrale": "Crick a co-élaboré le modèle en double hélice de l'ADN avec Watson (1953) puis a formulé le « dogme central de la biologie moléculaire » : l'information génétique circule de l'ADN vers l'ARN puis vers les protéines, et non dans le sens inverse.",
+    "apport": "Prix Nobel de physiologie ou médecine 1962 ; a ensuite contribué au déchiffrement du code génétique (correspondance entre triplets de nucléotides et acides aminés) et s'est réorienté vers les neurosciences dans la dernière partie de sa carrière, en particulier l'étude des bases neuronales de la conscience.",
+    "limites_critiques": "Le « dogme central » qu'il a formulé, présenté à l'origine de façon très générale, a dû être nuancé par la découverte ultérieure de mécanismes comme la transcription inverse (rétrovirus) qu'il n'excluait cependant pas explicitement lui-même dans sa formulation initiale.",
+    "sources": [
+      {
+        "titre": "On Protein Synthesis (Crick, 1958, formulation du dogme central)",
+        "type": "primaire"
+      },
+      {
+        "titre": "Francis Crick — Wikipédia",
+        "url": "https://fr.wikipedia.org/wiki/Francis_Crick",
+        "type": "secondaire"
+      }
+    ],
+    "statut": "documente",
+    "derniere_verification": "2026-09-05",
+    "resonance_ia": "Sa dernière quête d'une base neuronale de la conscience rejoint directement les débats contemporains sur la possibilité — ou l'impossibilité — qu'un système d'IA manifeste un jour une forme de conscience comparable."
   },
   {
     "id": "rosalind-franklin",
     "axe": "evolution",
     "sous_domaine": "sciences",
     "nom": "Rosalind Franklin",
-    "these_centrale": "",
-    "apport": "",
-    "limites_critiques": "",
-    "sources": [],
-    "statut": "a_documenter",
-    "derniere_verification": "2026-09-05"
+    "these_centrale": "Franklin a produit, par cristallographie aux rayons X, les données expérimentales les plus précises de son temps sur la structure de l'ADN (dont le célèbre « cliché 51 »), fournissant les preuves déterminantes de la structure hélicoïdale que Watson et Crick ont ensuite modélisée.",
+    "apport": "Contributions majeures également à la compréhension structurale du charbon, du graphite et de plusieurs virus (dont le virus de la mosaïque du tabac et le poliovirus) par cristallographie ; méthodologie expérimentale reconnue comme d'une rigueur exceptionnelle pour son époque.",
+    "limites_critiques": "Son cliché 51 a été montré à Watson par Wilkins sans son autorisation explicite, et sa contribution décisive à la découverte de la double hélice n'a été pleinement reconnue par la communauté scientifique et le grand public que des décennies après sa mort prématurée d'un cancer de l'ovaire en 1958, avant l'attribution du prix Nobel de 1962 (non décerné à titre posthume).",
+    "sources": [
+      {
+        "titre": "Molecular Configuration in Sodium Thymonucleate (Franklin & Gosling, Nature, 1953)",
+        "type": "primaire"
+      },
+      {
+        "titre": "Rosalind Franklin — Wikipédia",
+        "url": "https://fr.wikipedia.org/wiki/Rosalind_Franklin",
+        "type": "secondaire"
+      }
+    ],
+    "statut": "documente",
+    "derniere_verification": "2026-09-05",
+    "resonance_ia": "Son cas est devenu la référence centrale des discussions contemporaines sur les biais de genre dans l'attribution de la reconnaissance scientifique — un enjeu directement pertinent pour la question de l'attribution équitable du crédit dans la recherche assistée par IA aujourd'hui."
   },
   {
     "id": "stephen-hawking",
     "axe": "evolution",
     "sous_domaine": "sciences",
     "nom": "Stephen Hawking",
-    "these_centrale": "",
-    "apport": "",
-    "limites_critiques": "",
-    "sources": [],
-    "statut": "a_documenter",
-    "derniere_verification": "2026-09-05"
+    "these_centrale": "Hawking a démontré théoriquement que les trous noirs ne sont pas parfaitement noirs mais émettent un rayonnement thermique (« rayonnement de Hawking ») dû à des effets quantiques près de leur horizon, ce qui implique qu'ils s'évaporent lentement et pose un paradoxe encore non résolu sur le devenir de l'information qui y tombe.",
+    "apport": "Contributions majeures, avec Roger Penrose, aux théorèmes sur les singularités gravitationnelles ; auteur du best-seller de vulgarisation Une brève histoire du temps (1988) qui a rendu la cosmologie accessible à un très large public malgré la sclérose latérale amyotrophique diagnostiquée dès 1963.",
+    "limites_critiques": "Le « paradoxe de l'information » qu'il a lui-même mis en évidence — l'apparente perte d'information physique lors de l'évaporation d'un trou noir, en contradiction avec les principes de la mécanique quantique — reste l'un des problèmes ouverts majeurs de la physique théorique.",
+    "sources": [
+      {
+        "titre": "Particle Creation by Black Holes (Hawking, 1975)",
+        "type": "primaire"
+      },
+      {
+        "titre": "Stephen Hawking — Wikipédia",
+        "url": "https://fr.wikipedia.org/wiki/Stephen_Hawking",
+        "type": "secondaire"
+      }
+    ],
+    "statut": "documente",
+    "derniere_verification": "2026-09-05",
+    "resonance_ia": "A publiquement averti, dans les dernières années de sa vie, des risques existentiels à long terme que pourrait poser une intelligence artificielle avancée mal maîtrisée — une position devenue une référence dans les débats contemporains sur la sécurité de l'IA."
   },
   {
     "id": "richard-feynman",
     "axe": "evolution",
     "sous_domaine": "sciences",
     "nom": "Richard Feynman",
-    "these_centrale": "",
-    "apport": "",
-    "limites_critiques": "",
-    "sources": [],
-    "statut": "a_documenter",
-    "derniere_verification": "2026-09-05"
+    "these_centrale": "Feynman a développé une formulation de la mécanique quantique par intégrales de chemin et les diagrammes qui portent son nom, un outil graphique qui simplifie radicalement le calcul des interactions entre particules en électrodynamique quantique.",
+    "apport": "Prix Nobel de physique 1965, partagé avec Julian Schwinger et Shin'ichirō Tomonaga, pour ces travaux fondateurs en électrodynamique quantique ; a également identifié la cause de l'explosion de la navette Challenger (1986) et est resté une figure majeure de la vulgarisation scientifique (Cours de physique de Feynman).",
+    "limites_critiques": "Sa conférence visionnaire « There's Plenty of Room at the Bottom » (1959), souvent citée comme fondatrice des nanotechnologies, restait à l'époque largement spéculative et en avance de plusieurs décennies sur les capacités techniques réelles de manipulation de la matière à l'échelle atomique.",
+    "sources": [
+      {
+        "titre": "Space-Time Approach to Quantum Electrodynamics (Feynman, 1949)",
+        "type": "primaire"
+      },
+      {
+        "titre": "Richard Feynman — Wikipédia",
+        "url": "https://fr.wikipedia.org/wiki/Richard_Feynman",
+        "type": "secondaire"
+      }
+    ],
+    "statut": "documente",
+    "derniere_verification": "2026-09-05",
+    "resonance_ia": "Sa conférence de 1981 « Simulating Physics with Computers », où il pose l'idée qu'un ordinateur quantique serait nécessaire pour simuler efficacement la physique quantique, est considérée comme l'un des textes fondateurs de l'informatique quantique."
   },
   {
     "id": "max-planck",
     "axe": "evolution",
     "sous_domaine": "sciences",
     "nom": "Max Planck",
-    "these_centrale": "",
-    "apport": "",
-    "limites_critiques": "",
-    "sources": [],
-    "statut": "a_documenter",
-    "derniere_verification": "2026-09-05"
+    "these_centrale": "Planck a résolu le problème du « rayonnement du corps noir » en postulant, en 1900, que l'énergie n'est échangée qu'en quantités discrètes (« quanta »), une hypothèse initialement conçue comme un artifice mathématique qui a en réalité fondé toute la physique quantique.",
+    "apport": "Prix Nobel de physique 1918 « pour les services rendus à l'avancement de la physique par sa découverte des quanta d'énergie » ; la constante de Planck qui porte son nom est aujourd'hui l'une des constantes fondamentales de la physique, utilisée jusque dans la définition actuelle du kilogramme.",
+    "limites_critiques": "Planck lui-même est longtemps resté réticent à accepter les implications radicales de sa propre découverte pour la structure de la réalité physique, une résistance conceptuelle qu'il partageait avec une partie de sa génération face à la révolution quantique qui allait suivre.",
+    "sources": [
+      {
+        "titre": "Zur Theorie des Gesetzes der Energieverteilung im Normalspectrum (Planck, 1900)",
+        "type": "primaire"
+      },
+      {
+        "titre": "Max Planck — Wikipédia",
+        "url": "https://fr.wikipedia.org/wiki/Max_Planck",
+        "type": "secondaire"
+      }
+    ],
+    "statut": "documente",
+    "derniere_verification": "2026-09-05",
+    "resonance_ia": "La Société Max-Planck qui porte son nom aujourd'hui est l'un des principaux organismes de recherche fondamentale en Europe, incluant des instituts de pointe en apprentissage automatique et en sciences de l'intelligence."
   },
   {
     "id": "werner-heisenberg",
     "axe": "evolution",
     "sous_domaine": "sciences",
     "nom": "Werner Heisenberg",
-    "these_centrale": "",
-    "apport": "",
-    "limites_critiques": "",
-    "sources": [],
-    "statut": "a_documenter",
-    "derniere_verification": "2026-09-05"
+    "these_centrale": "Heisenberg a formulé en 1927 le principe d'incertitude : il est physiquement impossible de connaître simultanément et avec une précision arbitraire la position et la vitesse d'une particule, une limite fondamentale de la nature et non un simple défaut de mesure.",
+    "apport": "Co-fondateur, avec Bohr et Schrödinger, de la mécanique quantique moderne (mécanique matricielle, 1925) ; prix Nobel de physique 1932 « pour la création de la mécanique quantique ».",
+    "limites_critiques": "A dirigé le programme allemand de recherche nucléaire pendant la Seconde Guerre mondiale ; le rôle exact qu'il y a joué — échec technique réel ou réticence morale délibérée à fournir l'arme nucléaire au régime nazi — reste débattu par les historiens des sciences faute de preuves définitives.",
+    "sources": [
+      {
+        "titre": "Über den anschaulichen Inhalt der quantentheoretischen Kinematik und Mechanik (Heisenberg, 1927)",
+        "type": "primaire"
+      },
+      {
+        "titre": "Werner Heisenberg — Wikipédia",
+        "url": "https://fr.wikipedia.org/wiki/Werner_Heisenberg",
+        "type": "secondaire"
+      }
+    ],
+    "statut": "documente",
+    "derniere_verification": "2026-09-05",
+    "resonance_ia": "Le principe d'incertitude qu'il a formulé est régulièrement invoqué, par analogie, pour discuter des limites fondamentales de prévisibilité et d'explicabilité de certains systèmes d'IA complexes — une analogie à manier avec prudence, la physique quantique et l'IA reposant sur des formalismes très différents."
   },
   {
     "id": "linus-pauling",
     "axe": "evolution",
     "sous_domaine": "sciences",
     "nom": "Linus Pauling",
-    "these_centrale": "",
-    "apport": "",
-    "limites_critiques": "",
-    "sources": [],
-    "statut": "a_documenter",
-    "derniere_verification": "2026-09-05"
+    "these_centrale": "Pauling a appliqué la mécanique quantique à la chimie pour expliquer la nature de la liaison chimique (théorie de l'hybridation des orbitales), posant les fondements de la chimie quantique moderne, et a ensuite consacré une part majeure de son engagement public à la lutte contre les essais d'armes nucléaires.",
+    "apport": "Seule personne à ce jour lauréate de deux prix Nobel non partagés dans deux catégories différentes : chimie (1954, pour ses travaux sur la liaison chimique) et paix (1962, pour son militantisme contre les essais nucléaires atmosphériques, précédant de peu le traité international qui les a interdits).",
+    "limites_critiques": "A promu dans la dernière partie de sa carrière l'usage de mégadoses de vitamine C comme traitement contre le cancer et le rhume, des affirmations que la recherche clinique ultérieure n'a globalement pas confirmées — un cas souvent cité de dérive d'un scientifique éminent hors de son champ d'expertise validé.",
+    "sources": [
+      {
+        "titre": "The Nature of the Chemical Bond (Pauling, 1939)",
+        "type": "primaire"
+      },
+      {
+        "titre": "Linus Pauling — Wikipédia",
+        "url": "https://fr.wikipedia.org/wiki/Linus_Pauling",
+        "type": "secondaire"
+      }
+    ],
+    "statut": "documente",
+    "derniere_verification": "2026-09-05",
+    "resonance_ia": "Ses travaux fondateurs sur la structure des protéines (hélice alpha, 1951) font partie du socle de connaissances sur lequel s'appuient aujourd'hui les modèles d'IA de prédiction de structure protéique."
   },
   {
     "id": "jane-goodall",
     "axe": "evolution",
     "sous_domaine": "sciences",
     "nom": "Jane Goodall",
-    "these_centrale": "",
-    "apport": "",
-    "limites_critiques": "",
-    "sources": [],
-    "statut": "a_documenter",
-    "derniere_verification": "2026-09-05"
+    "these_centrale": "Goodall a démontré, par plus de soixante ans d'observation continue des chimpanzés sauvages de Gombe (Tanzanie), que ces primates fabriquent et utilisent des outils, ont une vie sociale et affective complexe, et présentent des comportements bien plus proches de l'humain qu'on ne le pensait auparavant.",
+    "apport": "A radicalement changé la définition scientifique de l'être humain (« nous devons désormais redéfinir l'outil, redéfinir l'homme, ou accepter que les chimpanzés sont des hommes ») ; a fondé le Jane Goodall Institute et consacré les dernières décennies de sa vie à la conservation et à l'éducation environnementale.",
+    "limites_critiques": "Ses méthodes initiales (nourrissage artificiel des chimpanzés pour faciliter l'observation, attribution de noms plutôt que de numéros aux individus étudiés) ont été critiquées à l'époque par une partie de la communauté d'éthologie comme s'écartant des standards de rigueur méthodologique et d'objectivité alors en vigueur.",
+    "sources": [
+      {
+        "titre": "In the Shadow of Man (Goodall, 1971)",
+        "type": "primaire"
+      },
+      {
+        "titre": "Jane Goodall — Wikipédia",
+        "url": "https://fr.wikipedia.org/wiki/Jane_Goodall",
+        "type": "secondaire"
+      }
+    ],
+    "statut": "documente",
+    "derniere_verification": "2026-09-05",
+    "resonance_ia": "Ses travaux ont contribué à établir la continuité cognitive et affective entre l'humain et les grands singes, un cadre de référence directement mobilisé dans les débats contemporains sur le statut moral potentiel d'entités non-humaines, IA incluse."
   },
   {
     "id": "tu-youyou",
     "axe": "evolution",
     "sous_domaine": "sciences",
     "nom": "Tu Youyou",
-    "these_centrale": "",
-    "apport": "",
-    "limites_critiques": "",
-    "sources": [],
-    "statut": "a_documenter",
-    "derniere_verification": "2026-09-05"
+    "these_centrale": "Tu Youyou a découvert l'artémisinine, un composé extrait d'une plante utilisée dans la pharmacopée traditionnelle chinoise (Artemisia annua), qui est devenu le traitement le plus efficace contre le paludisme et a sauvé des millions de vies, en particulier en Afrique, en Asie du Sud-Est et en Amérique du Sud.",
+    "apport": "Prix Nobel de physiologie ou médecine 2015, première scientifique chinoise ainsi récompensée ; a mené ses recherches dans le cadre du « Projet 523 » lancé secrètement en 1967, en combinant méthodes de la pharmacopée traditionnelle et rigueur de la pharmacologie moderne.",
+    "limites_critiques": "N'a jamais obtenu de doctorat ni de formation à l'étranger et n'était pas membre des académies scientifiques chinoises les plus prestigieuses au moment de sa découverte, ce qui a longtemps retardé la reconnaissance internationale de ses travaux malgré leur impact sanitaire majeur.",
+    "sources": [
+      {
+        "titre": "Discovery of Artemisinin (Tu, Nature Medicine, 2011)",
+        "type": "primaire"
+      },
+      {
+        "titre": "Tu Youyou — Wikipédia",
+        "url": "https://fr.wikipedia.org/wiki/Tu_Youyou",
+        "type": "secondaire"
+      }
+    ],
+    "statut": "documente",
+    "derniere_verification": "2026-09-05",
+    "resonance_ia": "Sa méthode — cribler systématiquement des composés issus de la pharmacopée traditionnelle pour en isoler les principes actifs efficaces — est aujourd'hui largement automatisée et accélérée par des modèles d'IA de criblage virtuel de molécules."
   },
   {
     "id": "jennifer-doudna",
     "axe": "evolution",
     "sous_domaine": "sciences",
     "nom": "Jennifer Doudna",
-    "these_centrale": "",
-    "apport": "",
-    "limites_critiques": "",
-    "sources": [],
-    "statut": "a_documenter",
-    "derniere_verification": "2026-09-05"
+    "these_centrale": "Doudna a codéveloppé, avec Emmanuelle Charpentier, le système CRISPR-Cas9 comme outil programmable d'édition génomique, transformant un mécanisme immunitaire bactérien naturel en une technologie universelle de modification précise de l'ADN.",
+    "apport": "Prix Nobel de chimie 2020, premier prix Nobel scientifique attribué à un duo exclusivement féminin ; a ensuite contribué au développement de tests de diagnostic rapide basés sur CRISPR, notamment pendant la pandémie de Covid-19.",
+    "limites_critiques": "S'est publiquement exprimée, dès la publication de la technologie, sur la nécessité urgente d'un encadrement éthique international de l'édition du génome humain — une inquiétude confirmée par l'expérience illégale du chercheur chinois He Jiankui en 2018 sur des embryons humains.",
+    "sources": [
+      {
+        "titre": "A Programmable Dual-RNA-Guided DNA Endonuclease (Jinek, Doudna, Charpentier et al., Science, 2012)",
+        "type": "primaire"
+      },
+      {
+        "titre": "Jennifer Doudna — Wikipédia",
+        "url": "https://fr.wikipedia.org/wiki/Jennifer_Doudna",
+        "type": "secondaire"
+      }
+    ],
+    "statut": "documente",
+    "derniere_verification": "2026-09-05",
+    "resonance_ia": "Son laboratoire utilise aujourd'hui des modèles d'IA prédictifs pour concevoir des guides CRISPR plus précis et anticiper les effets hors cible, illustrant la convergence croissante entre édition génomique et intelligence artificielle."
   },
   {
     "id": "emmanuelle-charpentier",
     "axe": "evolution",
     "sous_domaine": "sciences",
     "nom": "Emmanuelle Charpentier",
-    "these_centrale": "",
-    "apport": "",
-    "limites_critiques": "",
-    "sources": [],
-    "statut": "a_documenter",
-    "derniere_verification": "2026-09-05"
+    "these_centrale": "Charpentier a caractérisé le mécanisme moléculaire par lequel les bactéries se défendent contre les virus grâce au système CRISPR, puis a co-développé avec Jennifer Doudna sa transformation en outil d'édition génomique programmable, l'une des découvertes biotechnologiques les plus significatives du XXIe siècle.",
+    "apport": "Prix Nobel de chimie 2020 ; a fondé plusieurs instituts de recherche indépendants en Europe (dont l'Unité Max Planck pour la science des pathogènes à Berlin) pour poursuivre l'exploration des mécanismes de défense microbienne.",
+    "limites_critiques": "La paternité exacte et la chronologie précise des contributions respectives de Charpentier, Doudna et d'autres équipes concurrentes (notamment celle de Feng Zhang au MIT) sur l'application de CRISPR aux cellules eucaryotes ont fait l'objet de disputes de priorité scientifique et de brevets toujours en partie non résolues.",
+    "sources": [
+      {
+        "titre": "CRISPR RNA maturation by trans-encoded small RNA and host factor RNase III (Deltcheva, Charpentier et al., Nature, 2011)",
+        "type": "primaire"
+      },
+      {
+        "titre": "Emmanuelle Charpentier — Wikipédia",
+        "url": "https://fr.wikipedia.org/wiki/Emmanuelle_Charpentier",
+        "type": "secondaire"
+      }
+    ],
+    "statut": "documente",
+    "derniere_verification": "2026-09-05",
+    "resonance_ia": "Sa découverte fondamentale illustre comment un mécanisme biologique naturel, une fois compris, peut être reprogrammé en outil technologique généraliste — une dynamique de recherche que l'IA accélère aujourd'hui dans de nombreux autres domaines de la biologie moléculaire."
   },
   {
     "id": "tim-berners-lee",
     "axe": "evolution",
     "sous_domaine": "sciences",
     "nom": "Tim Berners-Lee",
-    "these_centrale": "",
-    "apport": "",
-    "limites_critiques": "",
-    "sources": [],
-    "statut": "a_documenter",
-    "derniere_verification": "2026-09-05"
+    "these_centrale": "Berners-Lee a inventé le World Wide Web en 1989 au CERN, en combinant l'hypertexte, un système d'adressage universel des ressources (URL) et un protocole de communication (HTTP), transformant Internet — jusque-là un réseau de chercheurs — en un espace d'information accessible à tous.",
+    "apport": "A choisi de ne jamais breveter son invention, la rendant librement disponible dès 1993, ce qui a permis son adoption mondiale rapide ; dirige aujourd'hui le World Wide Web Consortium (W3C) et milite activement pour un web plus décentralisé (projet Solid) face à la concentration des données par quelques grandes plateformes.",
+    "limites_critiques": "Il a lui-même reconnu publiquement que le web qu'il a créé s'est éloigné de sa vision initiale décentralisée et ouverte, du fait de la concentration du pouvoir et des données entre les mains de quelques grandes plateformes commerciales.",
+    "sources": [
+      {
+        "titre": "Information Management: A Proposal (Berners-Lee, CERN, 1989)",
+        "type": "primaire"
+      },
+      {
+        "titre": "Tim Berners-Lee — Wikipédia",
+        "url": "https://fr.wikipedia.org/wiki/Tim_Berners-Lee",
+        "type": "secondaire"
+      }
+    ],
+    "statut": "documente",
+    "derniere_verification": "2026-09-05",
+    "resonance_ia": "Les IA génératives contemporaines sont entraînées sur d'immenses corpus de textes collectés sur le web qu'il a inventé, ce qui a relancé le débat qu'il porte lui-même sur la propriété, la rémunération et le consentement des créateurs de contenu original."
   },
   {
     "id": "geoffrey-hinton",
     "axe": "evolution",
     "sous_domaine": "sciences",
     "nom": "Geoffrey Hinton",
-    "these_centrale": "",
-    "apport": "",
-    "limites_critiques": "",
-    "sources": [],
-    "statut": "a_documenter",
-    "derniere_verification": "2026-09-05"
+    "these_centrale": "Hinton a développé et popularisé, sur plusieurs décennies souvent à contre-courant du scepticisme de la communauté, les méthodes d'apprentissage des réseaux de neurones profonds (rétropropagation du gradient, réseaux convolutifs) qui sont devenues le socle technique de l'IA contemporaine.",
+    "apport": "Prix Nobel de physique 2024 (pour ses travaux fondateurs sur les réseaux de neurones) et prix Turing 2018 ; a formé plusieurs chercheurs devenus eux-mêmes des figures majeures du deep learning (dont Ilya Sutskever, cofondateur d'OpenAI).",
+    "limites_critiques": "A démissionné publiquement de Google en 2023 pour pouvoir alerter librement sur les risques existentiels et sociaux que pourrait poser une IA avancée insuffisamment maîtrisée, une inquiétude exprimée par l'un des principaux artisans techniques de cette même technologie.",
+    "sources": [
+      {
+        "titre": "Learning representations by back-propagating errors (Rumelhart, Hinton, Williams, Nature, 1986)",
+        "type": "primaire"
+      },
+      {
+        "titre": "Geoffrey Hinton — Wikipédia",
+        "url": "https://fr.wikipedia.org/wiki/Geoffrey_Hinton",
+        "type": "secondaire"
+      }
+    ],
+    "statut": "documente",
+    "derniere_verification": "2026-09-05",
+    "resonance_ia": "Surnommé le « parrain de l'IA », il est aujourd'hui l'une des voix les plus écoutées, et les plus ambivalentes, sur la trajectoire future de la technologie qu'il a contribué à rendre possible."
   },
   {
     "id": "shinya-yamanaka",
     "axe": "evolution",
     "sous_domaine": "sciences",
     "nom": "Shinya Yamanaka",
-    "these_centrale": "",
-    "apport": "",
-    "limites_critiques": "",
-    "sources": [],
-    "statut": "a_documenter",
-    "derniere_verification": "2026-09-05"
+    "these_centrale": "Yamanaka a démontré qu'une cellule adulte déjà spécialisée peut être reprogrammée en une cellule souche pluripotente (capable de redevenir n'importe quel type cellulaire) par l'introduction de seulement quatre gènes (facteurs de Yamanaka), sans passer par la destruction d'un embryon.",
+    "apport": "Prix Nobel de physiologie ou médecine 2012, partagé avec John Gurdon, pour la découverte des cellules souches pluripotentes induites (iPS) ; a ouvert un champ entier de médecine régénérative et de modélisation de maladies en laboratoire sans les obstacles éthiques posés par les cellules souches embryonnaires.",
+    "limites_critiques": "Le risque de formation de tumeurs (tératomes) lié à la reprogrammation cellulaire incomplète ou à la persistance de cellules non différenciées reste un obstacle de sécurité majeur à l'usage clinique généralisé des cellules iPS, plus de quinze ans après leur découverte.",
+    "sources": [
+      {
+        "titre": "Induction of Pluripotent Stem Cells from Mouse Embryonic and Adult Fibroblast Cultures by Defined Factors (Takahashi & Yamanaka, Cell, 2006)",
+        "type": "primaire"
+      },
+      {
+        "titre": "Shinya Yamanaka — Wikipédia",
+        "url": "https://fr.wikipedia.org/wiki/Shinya_Yamanaka",
+        "type": "secondaire"
+      }
+    ],
+    "statut": "documente",
+    "derniere_verification": "2026-09-05",
+    "resonance_ia": "Les protocoles de reprogrammation cellulaire, initialement découverts empiriquement, sont aujourd'hui optimisés à l'aide de modèles d'IA prédisant les combinaisons de facteurs les plus efficaces selon le type cellulaire visé."
   },
   {
     "id": "roger-penrose",
     "axe": "evolution",
     "sous_domaine": "sciences",
     "nom": "Roger Penrose",
-    "these_centrale": "",
-    "apport": "",
-    "limites_critiques": "",
-    "sources": [],
-    "statut": "a_documenter",
-    "derniere_verification": "2026-09-05"
+    "these_centrale": "Penrose a démontré mathématiquement, avec Stephen Hawking, que la relativité générale implique nécessairement l'existence de singularités gravitationnelles (trous noirs, big bang) sous des conditions physiques très générales, et a par ailleurs défendu la thèse controversée que la conscience humaine implique des processus quantiques non computables, irréductibles à tout calcul algorithmique classique.",
+    "apport": "Prix Nobel de physique 2020 pour la démonstration que la formation de trous noirs est une prédiction robuste de la relativité générale ; contributions majeures et durables aux mathématiques (pavages de Penrose apériodiques) et à la géométrie de la relativité.",
+    "limites_critiques": "Sa théorie de la conscience quantique (élaborée avec l'anesthésiste Stuart Hameroff, fondée sur des processus quantiques dans les microtubules neuronaux) est très largement rejetée par la communauté des neurosciences et de la physique comme spéculative et empiriquement non étayée.",
+    "sources": [
+      {
+        "titre": "The Emperor's New Mind (Penrose, 1989)",
+        "type": "primaire"
+      },
+      {
+        "titre": "Roger Penrose — Wikipédia",
+        "url": "https://fr.wikipedia.org/wiki/Roger_Penrose",
+        "type": "secondaire"
+      }
+    ],
+    "statut": "documente",
+    "derniere_verification": "2026-09-05",
+    "resonance_ia": "Sa thèse selon laquelle la conscience humaine repose sur des processus non computables constitue l'un des arguments philosophiques les plus cités pour soutenir qu'aucune IA purement algorithmique, aussi puissante soit-elle, ne pourrait en principe devenir consciente."
   },
   {
     "id": "cern",
     "axe": "evolution",
     "sous_domaine": "sciences",
     "nom": "CERN",
-    "these_centrale": "",
-    "apport": "",
-    "limites_critiques": "",
-    "sources": [],
-    "statut": "a_documenter",
-    "derniere_verification": "2026-09-05"
+    "these_centrale": "Le CERN (Organisation européenne pour la recherche nucléaire, fondée en 1954 à la frontière franco-suisse) exploite le plus grand laboratoire de physique des particules au monde, dont le Grand collisionneur de hadrons (LHC), pour explorer expérimentalement les constituants fondamentaux de la matière.",
+    "apport": "A permis la découverte du boson de Higgs (2012), confirmant la dernière pièce manquante du modèle standard ; est également le lieu de naissance du World Wide Web, inventé par Tim Berners-Lee en 1989 pour faciliter le partage d'information entre chercheurs.",
+    "limites_critiques": "Le coût et l'échelle de temps des grands projets d'accélérateurs de particules (des décennies de construction, des milliards d'euros) posent la question de la priorité relative de ce type de recherche fondamentale face à d'autres besoins scientifiques ou sociétaux plus immédiats.",
+    "sources": [
+      {
+        "titre": "Convention pour l'établissement d'une Organisation européenne pour la recherche nucléaire (1953)",
+        "type": "primaire"
+      },
+      {
+        "titre": "CERN — Wikipédia",
+        "url": "https://fr.wikipedia.org/wiki/CERN",
+        "type": "secondaire"
+      }
+    ],
+    "statut": "documente",
+    "derniere_verification": "2026-09-05",
+    "resonance_ia": "Le CERN produit des volumes de données parmi les plus importants au monde et a été un pionnier de l'usage de l'apprentissage automatique pour le traitement de données scientifiques massives, bien avant la généralisation actuelle de l'IA dans les sciences."
   },
   {
     "id": "nasa",
     "axe": "evolution",
     "sous_domaine": "sciences",
     "nom": "NASA",
-    "these_centrale": "",
-    "apport": "",
-    "limites_critiques": "",
-    "sources": [],
-    "statut": "a_documenter",
-    "derniere_verification": "2026-09-05"
+    "these_centrale": "La NASA (National Aeronautics and Space Administration, fondée en 1958) est l'agence fédérale américaine responsable du programme spatial civil des États-Unis et de la recherche aéronautique, organisée en plusieurs directions de mission couvrant le vol spatial habité, la science et l'exploration.",
+    "apport": "Programme Apollo (premier alunissage humain, 1969) ; télescope spatial Hubble puis James Webb ; rovers martiens (Curiosity, Perseverance) ; contribue de façon centrale à la climatologie par l'observation satellitaire de la Terre.",
+    "limites_critiques": "Les budgets et priorités de la NASA sont directement dépendants des choix politiques successifs de l'exécutif et du Congrès américains, ce qui a entraîné l'annulation ou le report répété de plusieurs grands programmes (dont Constellation en 2010) au fil des changements d'administration.",
+    "sources": [
+      {
+        "titre": "National Aeronautics and Space Act (1958)",
+        "type": "primaire"
+      },
+      {
+        "titre": "NASA — Wikipédia",
+        "url": "https://fr.wikipedia.org/wiki/NASA",
+        "type": "secondaire"
+      }
+    ],
+    "statut": "documente",
+    "derniere_verification": "2026-09-05",
+    "resonance_ia": "La NASA utilise massivement l'IA pour l'analyse des données d'observation de la Terre et d'exoplanètes, l'autonomie des rovers martiens et l'optimisation des trajectoires de mission."
   },
   {
     "id": "esa",
     "axe": "evolution",
     "sous_domaine": "sciences",
     "nom": "ESA",
-    "these_centrale": "",
-    "apport": "",
-    "limites_critiques": "",
-    "sources": [],
-    "statut": "a_documenter",
-    "derniere_verification": "2026-09-05"
+    "these_centrale": "L'Agence spatiale européenne (ESA, fondée en 1975) est une organisation intergouvernementale de 23 États membres consacrée à l'exploration spatiale, à l'observation de la Terre et au développement de technologies spatiales européennes indépendantes.",
+    "apport": "Programme Ariane de lancement autonome de satellites ; sonde Rosetta (premier atterrissage sur une comète, 2014) ; contribution majeure à la Station spatiale internationale et au système de positionnement Galileo, alternative européenne au GPS américain.",
+    "limites_critiques": "Le budget de l'ESA, réparti et négocié entre ses 23 États membres selon des règles de retour géographique industriel, reste nettement inférieur à celui de la NASA, limitant l'ambition et le rythme de certains programmes européens face à la concurrence internationale.",
+    "sources": [
+      {
+        "titre": "Convention portant création d'une Agence spatiale européenne (1975)",
+        "type": "primaire"
+      },
+      {
+        "titre": "Agence spatiale européenne — Wikipédia",
+        "url": "https://fr.wikipedia.org/wiki/Agence_spatiale_europ%C3%A9enne",
+        "type": "secondaire"
+      }
+    ],
+    "statut": "documente",
+    "derniere_verification": "2026-09-05",
+    "resonance_ia": "L'ESA développe des systèmes d'IA embarqués pour l'autonomie des satellites et le traitement en temps réel des données d'observation de la Terre, un volume de données trop important pour un traitement exhaustif au sol."
   },
   {
     "id": "institut-max-planck",
     "axe": "evolution",
     "sous_domaine": "sciences",
     "nom": "Institut Max-Planck",
-    "these_centrale": "",
-    "apport": "",
-    "limites_critiques": "",
-    "sources": [],
-    "statut": "a_documenter",
-    "derniere_verification": "2026-09-05"
+    "these_centrale": "La Société Max-Planck (fondée en 1911 sous le nom de Société Kaiser-Wilhelm, renommée en 1948) regroupe plus de 80 instituts de recherche fondamentale indépendants en Allemagne, couvrant l'ensemble des sciences naturelles, de la vie et humaines, selon un principe d'autonomie scientifique maximale.",
+    "apport": "Plus de 30 prix Nobel attribués à des chercheurs de ses instituts ; modèle d'organisation de la recherche fondamentale (financement pérenne, autonomie des directeurs d'instituts) souvent cité en référence internationalement.",
+    "limites_critiques": "L'institution a reconnu et documenté publiquement le rôle de ses instituts prédécesseurs (Société Kaiser-Wilhelm) dans des recherches liées à l'eugénisme et aux crimes du régime nazi durant la Seconde Guerre mondiale, un passé qui continue de faire l'objet de travaux historiques internes.",
+    "sources": [
+      {
+        "titre": "Statuts de la Société Max-Planck (1948)",
+        "type": "primaire"
+      },
+      {
+        "titre": "Société Max-Planck — Wikipédia",
+        "url": "https://fr.wikipedia.org/wiki/Soci%C3%A9t%C3%A9_Max-Planck",
+        "type": "secondaire"
+      }
+    ],
+    "statut": "documente",
+    "derniere_verification": "2026-09-05",
+    "resonance_ia": "Plusieurs instituts Max-Planck (notamment ceux de cybernétique intelligente et d'informatique) sont aujourd'hui à la pointe de la recherche fondamentale en IA et en robotique en Europe."
   },
   {
     "id": "mit",
     "axe": "evolution",
     "sous_domaine": "sciences",
     "nom": "MIT",
-    "these_centrale": "",
-    "apport": "",
-    "limites_critiques": "",
-    "sources": [],
-    "statut": "a_documenter",
-    "derniere_verification": "2026-09-05"
+    "these_centrale": "Le Massachusetts Institute of Technology (MIT, fondé en 1861 à Cambridge, Massachusetts) est une université de recherche privée organisée autour de la devise « mens et manus » (l'esprit et la main), articulant recherche fondamentale et application pratique des connaissances.",
+    "apport": "Berceau historique de nombreuses avancées en informatique et en IA (laboratoire d'intelligence artificielle du MIT fondé en 1959 par Marvin Minsky et John McCarthy) ; contributions majeures en physique, biologie moléculaire, économie et ingénierie, avec plus de 100 lauréats du prix Nobel affiliés.",
+    "limites_critiques": "Les frais de scolarité très élevés des universités privées américaines de ce rang, malgré des politiques d'aide financière substantielles, continuent d'alimenter le débat sur l'accessibilité réelle de l'enseignement supérieur d'élite aux étudiants de tous milieux sociaux.",
+    "sources": [
+      {
+        "titre": "MIT Charter (1861)",
+        "type": "primaire"
+      },
+      {
+        "titre": "Massachusetts Institute of Technology — Wikipédia",
+        "url": "https://fr.wikipedia.org/wiki/Massachusetts_Institute_of_Technology",
+        "type": "secondaire"
+      }
+    ],
+    "statut": "documente",
+    "derniere_verification": "2026-09-05",
+    "resonance_ia": "Le MIT reste l'un des tout premiers centres mondiaux de recherche fondamentale en intelligence artificielle, robotique et apprentissage automatique, avec des liens étroits et anciens avec l'industrie technologique."
   },
   {
     "id": "cnrs",
     "axe": "evolution",
     "sous_domaine": "sciences",
     "nom": "CNRS",
-    "these_centrale": "",
-    "apport": "",
-    "limites_critiques": "",
-    "sources": [],
-    "statut": "a_documenter",
-    "derniere_verification": "2026-09-05"
+    "these_centrale": "Le CNRS (Centre national de la recherche scientifique, fondé en 1939) est le principal organisme public de recherche pluridisciplinaire en France, couvrant l'ensemble des domaines scientifiques des mathématiques aux sciences humaines et sociales, en partenariat étroit avec les universités.",
+    "apport": "Plus grand organisme de recherche public d'Europe par le nombre de chercheurs ; a produit ou coproduit une part majeure des travaux français distingués par un prix Nobel ou une médaille Fields depuis sa création.",
+    "limites_critiques": "Fait l'objet de débats récurrents en France sur le niveau de financement de la recherche publique, la précarité des jeunes chercheurs (post-doctorants) et la complexité administrative de son organisation en unités mixtes de recherche partagées avec les universités.",
+    "sources": [
+      {
+        "titre": "Décret-loi du 19 octobre 1939 (création du CNRS)",
+        "type": "primaire"
+      },
+      {
+        "titre": "Centre national de la recherche scientifique — Wikipédia",
+        "url": "https://fr.wikipedia.org/wiki/Centre_national_de_la_recherche_scientifique",
+        "type": "secondaire"
+      }
+    ],
+    "statut": "documente",
+    "derniere_verification": "2026-09-05",
+    "resonance_ia": "Le CNRS pilote ou co-pilote plusieurs des principaux instituts et programmes nationaux français dédiés à l'intelligence artificielle, dans le cadre de la stratégie nationale française pour l'IA."
   },
   {
     "id": "nih",
     "axe": "evolution",
     "sous_domaine": "sciences",
     "nom": "NIH",
-    "these_centrale": "",
-    "apport": "",
-    "limites_critiques": "",
-    "sources": [],
-    "statut": "a_documenter",
-    "derniere_verification": "2026-09-05"
+    "these_centrale": "Les NIH (National Institutes of Health, fondés en 1887) sont la principale agence de recherche biomédicale du gouvernement fédéral américain, regroupant 27 instituts et centres spécialisés qui financent et conduisent la majorité de la recherche médicale publique aux États-Unis.",
+    "apport": "A financé ou conduit une part déterminante des avancées biomédicales majeures des soixante-dix dernières années, dont le séquençage du génome humain (Human Genome Project) et le développement accéléré des vaccins à ARNm pendant la pandémie de Covid-19.",
+    "limites_critiques": "Son budget et ses priorités de recherche restent soumis aux orientations politiques changeantes de l'exécutif américain, avec des tensions récurrentes sur le financement de certains domaines (recherche sur les cellules souches embryonnaires, santé reproductive) selon les administrations.",
+    "sources": [
+      {
+        "titre": "Public Health Service Act (1944, cadre légal des NIH)",
+        "type": "primaire"
+      },
+      {
+        "titre": "National Institutes of Health — Wikipédia",
+        "url": "https://fr.wikipedia.org/wiki/National_Institutes_of_Health",
+        "type": "secondaire"
+      }
+    ],
+    "statut": "documente",
+    "derniere_verification": "2026-09-05",
+    "resonance_ia": "Les NIH financent des programmes de recherche en IA appliquée à la santé (diagnostic assisté, découverte de médicaments) et exploitent leurs immenses bases de données biomédicales publiques comme ressource d'entraînement pour ces modèles."
   },
   {
     "id": "laboratoire-cavendish",
     "axe": "evolution",
     "sous_domaine": "sciences",
     "nom": "Laboratoire Cavendish",
-    "these_centrale": "",
-    "apport": "",
-    "limites_critiques": "",
-    "sources": [],
-    "statut": "a_documenter",
-    "derniere_verification": "2026-09-05"
+    "these_centrale": "Le laboratoire Cavendish (ouvert en 1874 à l'université de Cambridge) est le département de physique de Cambridge, fondé pour la physique expérimentale et qui a hébergé un nombre exceptionnel de découvertes fondatrices de la physique moderne sur plus d'un siècle.",
+    "apport": "Découverte de l'électron par J. J. Thomson (1897), du neutron par James Chadwick (1932), structure de l'ADN par Watson et Crick (1953, dans un laboratoire associé) ; 30 lauréats du prix Nobel y ont travaillé au fil de son histoire.",
+    "limites_critiques": "Sa concentration exceptionnelle de découvertes majeures au début et au milieu du XXe siècle contraste avec une période ultérieure où la physique expérimentale de pointe s'est largement déplacée vers de très grandes infrastructures internationales (comme le CERN) qu'un seul laboratoire universitaire ne peut plus égaler seul.",
+    "sources": [
+      {
+        "titre": "History of the Cavendish Laboratory 1871-1910 (Cambridge University Press)",
+        "type": "primaire"
+      },
+      {
+        "titre": "Laboratoire Cavendish — Wikipédia",
+        "url": "https://fr.wikipedia.org/wiki/Laboratoire_Cavendish",
+        "type": "secondaire"
+      }
+    ],
+    "statut": "documente",
+    "derniere_verification": "2026-09-05",
+    "resonance_ia": "Le laboratoire Cavendish s'est diversifié vers la physique de la matière condensée et les matériaux (dont le graphène), des domaines où l'IA de conception de matériaux joue un rôle croissant."
   },
   {
     "id": "caltech",
     "axe": "evolution",
     "sous_domaine": "sciences",
     "nom": "Caltech",
-    "these_centrale": "",
-    "apport": "",
-    "limites_critiques": "",
-    "sources": [],
-    "statut": "a_documenter",
-    "derniere_verification": "2026-09-05"
+    "these_centrale": "Le California Institute of Technology (Caltech, à Pasadena) est une université de recherche privée de petite taille entièrement consacrée aux sciences pures et appliquées, qui gère par ailleurs le Jet Propulsion Laboratory de la NASA responsable de la plupart des missions robotiques d'exploration du système solaire.",
+    "apport": "Contributions majeures en physique (dont plusieurs travaux fondateurs de Richard Feynman et Kip Thorne, colauréat du prix Nobel 2017 pour la détection des ondes gravitationnelles) et en génomique ; ratio de lauréats du prix Nobel par rapport à sa taille parmi les plus élevés au monde.",
+    "limites_critiques": "Sa très petite taille (environ 2 500 étudiants) et sa sélectivité extrême en limitent structurellement l'accès à un nombre restreint d'étudiants, ce qui alimente le même débat que d'autres institutions d'élite américaines sur la diversité sociale de son recrutement.",
+    "sources": [
+      {
+        "titre": "A Century of Excellence (Caltech, histoire institutionnelle)",
+        "type": "primaire"
+      },
+      {
+        "titre": "California Institute of Technology — Wikipédia",
+        "url": "https://fr.wikipedia.org/wiki/California_Institute_of_Technology",
+        "type": "secondaire"
+      }
+    ],
+    "statut": "documente",
+    "derniere_verification": "2026-09-05",
+    "resonance_ia": "Caltech mène des recherches de pointe en IA appliquée aux sciences physiques (découverte de matériaux, astrophysique) via son propre institut dédié à l'apprentissage automatique scientifique."
   },
   {
     "id": "universite-de-stanford",
     "axe": "evolution",
     "sous_domaine": "sciences",
     "nom": "Université de Stanford",
-    "these_centrale": "",
-    "apport": "",
-    "limites_critiques": "",
-    "sources": [],
-    "statut": "a_documenter",
-    "derniere_verification": "2026-09-05"
+    "these_centrale": "L'université Stanford (fondée en 1885 en Californie) est une université de recherche privée dont la proximité historique avec l'industrie technologique de la Silicon Valley en a fait l'un des principaux foyers mondiaux d'innovation en informatique et en intelligence artificielle.",
+    "apport": "A vu naître ou s'y former plusieurs fondateurs majeurs de l'industrie technologique (Google, dont le moteur de recherche est issu d'une thèse Stanford) ; son laboratoire d'intelligence artificielle (SAIL, fondé en 1963) est l'un des plus anciens et influents au monde.",
+    "limites_critiques": "Les liens financiers étroits entre Stanford et l'industrie technologique qu'elle a largement contribué à créer soulèvent régulièrement des questions sur l'indépendance de sa recherche académique en IA vis-à-vis des intérêts commerciaux des entreprises qu'elle a essaimées.",
+    "sources": [
+      {
+        "titre": "Founding Grant (Stanford, 1885)",
+        "type": "primaire"
+      },
+      {
+        "titre": "Université Stanford — Wikipédia",
+        "url": "https://fr.wikipedia.org/wiki/Universit%C3%A9_Stanford",
+        "type": "secondaire"
+      }
+    ],
+    "statut": "documente",
+    "derniere_verification": "2026-09-05",
+    "resonance_ia": "Le Stanford Institute for Human-Centered AI (HAI) publie chaque année l'un des rapports de référence internationaux (AI Index) sur l'état d'avancement et les impacts de l'intelligence artificielle."
   },
   {
     "id": "institut-pasteur",
     "axe": "evolution",
     "sous_domaine": "sciences",
     "nom": "Institut Pasteur",
-    "these_centrale": "",
-    "apport": "",
-    "limites_critiques": "",
-    "sources": [],
-    "statut": "a_documenter",
-    "derniere_verification": "2026-09-05"
+    "these_centrale": "L'Institut Pasteur (fondation privée à but non lucratif fondée en 1887 à Paris par Louis Pasteur) est dédié à la recherche sur les maladies infectieuses, la microbiologie et l'immunologie, et à la production de vaccins issue directement des travaux fondateurs de Pasteur sur la vaccination.",
+    "apport": "Découverte du virus du VIH (Luc Montagnier et Françoise Barré-Sinoussi, prix Nobel de médecine 2008) ; réseau international de plus de 30 instituts Pasteur dans le monde jouant un rôle de premier plan dans la surveillance et la réponse aux épidémies.",
+    "limites_critiques": "Fondation dépendant en partie de financements privés et de dons en complément du soutien public, ce qui l'expose, comme d'autres grands instituts de recherche biomédicale, à des tensions périodiques de financement face à l'ampleur de ses missions de recherche et de santé publique.",
+    "sources": [
+      {
+        "titre": "Statuts fondateurs de l'Institut Pasteur (1887)",
+        "type": "primaire"
+      },
+      {
+        "titre": "Institut Pasteur — Wikipédia",
+        "url": "https://fr.wikipedia.org/wiki/Institut_Pasteur",
+        "type": "secondaire"
+      }
+    ],
+    "statut": "documente",
+    "derniere_verification": "2026-09-05",
+    "resonance_ia": "L'Institut Pasteur développe des outils d'IA pour la surveillance épidémiologique et la modélisation de la propagation des maladies infectieuses, un usage qui s'est généralisé depuis la pandémie de Covid-19."
   },
   {
     "id": "riken",
     "axe": "evolution",
     "sous_domaine": "sciences",
     "nom": "RIKEN",
-    "these_centrale": "",
-    "apport": "",
-    "limites_critiques": "",
-    "sources": [],
-    "statut": "a_documenter",
-    "derniere_verification": "2026-09-05"
+    "these_centrale": "Le RIKEN (fondé en 1917 au Japon) est le plus grand institut de recherche scientifique généraliste du pays, couvrant la physique, la chimie, la biologie et les sciences informatiques à travers plusieurs campus, dont le principal près de Tokyo.",
+    "apport": "A hébergé les travaux de Shinya Yamanaka sur les cellules souches induites (iPS) ; exploite plusieurs des supercalculateurs les plus puissants au monde (dont Fugaku), utilisés notamment pour la simulation climatique et la recherche en IA.",
+    "limites_critiques": "L'institut a été fortement affecté en 2014 par un scandale de fraude scientifique majeur (affaire des cellules STAP), qui a conduit au suicide d'un de ses chercheurs seniors et a durablement entaché la réputation de l'un de ses centres, révélant des failles dans ses procédures de vérification interne.",
+    "sources": [
+      {
+        "titre": "History of RIKEN (RIKEN, document institutionnel)",
+        "type": "primaire"
+      },
+      {
+        "titre": "RIKEN — Wikipédia",
+        "url": "https://fr.wikipedia.org/wiki/RIKEN",
+        "type": "secondaire"
+      }
+    ],
+    "statut": "documente",
+    "derniere_verification": "2026-09-05",
+    "resonance_ia": "Le RIKEN dispose d'un centre dédié à la science de l'intelligence artificielle avancée (AIP) et met ses supercalculateurs à disposition de la recherche japonaise en apprentissage automatique."
   },
   {
     "id": "giec-ipcc",
     "axe": "evolution",
     "sous_domaine": "sciences",
     "nom": "GIEC (IPCC)",
-    "these_centrale": "",
-    "apport": "",
-    "limites_critiques": "",
-    "sources": [],
-    "statut": "a_documenter",
-    "derniere_verification": "2026-09-05"
+    "these_centrale": "Le GIEC (Groupe d'experts intergouvernemental sur l'évolution du climat, créé en 1988 par l'OMM et le PNUE) évalue et synthétise, sans conduire lui-même de nouvelle recherche, l'état des connaissances scientifiques mondiales sur le changement climatique afin d'informer les décideurs politiques.",
+    "apport": "Ses rapports d'évaluation périodiques (le dernier cycle complet publié en 2021-2023) font autorité mondiale sur l'état du climat et ont directement fondé les négociations internationales (Protocole de Kyoto, Accord de Paris) ; prix Nobel de la paix 2007 partagé avec Al Gore.",
+    "limites_critiques": "Le processus de validation consensuelle entre plusieurs centaines de gouvernements, s'il garantit une légitimité politique large, produit des formulations parfois jugées prudentes par rapport à l'état le plus récent de la littérature scientifique, en particulier sur les scénarios les plus extrêmes de risque.",
+    "sources": [
+      {
+        "titre": "Rapports d'évaluation du GIEC (1990-2023)",
+        "type": "primaire"
+      },
+      {
+        "titre": "Groupe d'experts intergouvernemental sur l'évolution du climat — Wikipédia",
+        "url": "https://fr.wikipedia.org/wiki/Groupe_d%27experts_intergouvernemental_sur_l%27%C3%A9volution_du_climat",
+        "type": "secondaire"
+      }
+    ],
+    "statut": "documente",
+    "derniere_verification": "2026-09-05",
+    "resonance_ia": "Le GIEC intègre progressivement dans ses évaluations les apports de l'IA à la modélisation climatique, tout en documentant également l'empreinte carbone croissante de l'entraînement des grands modèles d'IA eux-mêmes."
   },
   {
     "id": "embl",
     "axe": "evolution",
     "sous_domaine": "sciences",
     "nom": "EMBL",
-    "these_centrale": "",
-    "apport": "",
-    "limites_critiques": "",
-    "sources": [],
-    "statut": "a_documenter",
-    "derniere_verification": "2026-09-05"
+    "these_centrale": "L'EMBL (Laboratoire européen de biologie moléculaire, créé en 1974) est une organisation intergouvernementale de recherche fondamentale en biologie moléculaire, répartie sur plusieurs sites européens, financée en commun par ses États membres pour mutualiser des moyens qu'aucun pays seul ne pourrait déployer.",
+    "apport": "Héberge l'un des plus importants centres mondiaux de bio-informatique (EMBL-EBI), qui gère des bases de données biologiques publiques de référence mondiale (dont UniProt et les données structurales utilisées pour entraîner AlphaFold).",
+    "limites_critiques": "La coordination entre ses multiples sites nationaux et son mode de financement intergouvernemental complexifient la gouvernance par rapport à un institut national unique, un compromis nécessaire pour atteindre l'échelle critique de moyens que la recherche en biologie moléculaire exige.",
+    "sources": [
+      {
+        "titre": "Convention établissant le Laboratoire européen de biologie moléculaire (1973)",
+        "type": "primaire"
+      },
+      {
+        "titre": "Laboratoire européen de biologie moléculaire — Wikipédia",
+        "url": "https://fr.wikipedia.org/wiki/Laboratoire_europ%C3%A9en_de_biologie_mol%C3%A9culaire",
+        "type": "secondaire"
+      }
+    ],
+    "statut": "documente",
+    "derniere_verification": "2026-09-05",
+    "resonance_ia": "L'EMBL-EBI a hébergé et diffusé publiquement les bases de données structurales de protéines sur lesquelles DeepMind a entraîné et validé AlphaFold, l'un des succès les plus marquants de l'IA appliquée aux sciences."
   },
   {
     "id": "fermilab",
     "axe": "evolution",
     "sous_domaine": "sciences",
     "nom": "Fermilab",
-    "these_centrale": "",
-    "apport": "",
-    "limites_critiques": "",
-    "sources": [],
-    "statut": "a_documenter",
-    "derniere_verification": "2026-09-05"
+    "these_centrale": "Le Fermilab (Fermi National Accelerator Laboratory, près de Chicago) est le principal laboratoire américain de physique des hautes énergies, dédié à l'étude des particules fondamentales grâce à ses accélérateurs, en particulier des neutrinos et de la matière noire.",
+    "apport": "A découvert le quark top (1995) et le neutrino tau (2000), deux des dernières particules du modèle standard restant à observer directement au moment de leur découverte ; mène aujourd'hui des expériences de référence sur les oscillations de neutrinos (DUNE).",
+    "limites_critiques": "A perdu son rôle de premier plan mondial en physique des très hautes énergies avec l'arrêt de son accélérateur Tevatron en 2011, l'exploration de cette frontière énergétique se concentrant désormais principalement sur le LHC du CERN, plus puissant.",
+    "sources": [
+      {
+        "titre": "Fermilab: Physics, the Frontier, and Megascience (Hoddeson et al., 2008)",
+        "type": "primaire"
+      },
+      {
+        "titre": "Fermilab — Wikipédia",
+        "url": "https://fr.wikipedia.org/wiki/Fermilab",
+        "type": "secondaire"
+      }
+    ],
+    "statut": "documente",
+    "derniere_verification": "2026-09-05",
+    "resonance_ia": "Le Fermilab applique l'apprentissage automatique au traitement des immenses volumes de données produits par ses détecteurs de particules et ses expériences sur les neutrinos."
   }
 ]
