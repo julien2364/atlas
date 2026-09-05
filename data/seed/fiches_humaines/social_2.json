@@ -220,444 +220,888 @@
     "axe": "social",
     "sous_domaine": "organisation_internationale",
     "nom": "SDN",
-    "these_centrale": "",
-    "apport": "",
-    "limites_critiques": "",
-    "sources": [],
-    "statut": "a_documenter",
-    "derniere_verification": "2026-09-05"
+    "these_centrale": "La Société des Nations (SDN), établie par le traité de Versailles en 1919, part du principe que la sécurité collective et le droit international peuvent prévenir la guerre en substituant l'arbitrage et la diplomatie multilatérale aux alliances secrètes et à l'équilibre des puissances.",
+    "apport": "Elle invente le format même de l'organisation internationale permanente à vocation universelle : secrétariat, assemblée, conseil, mandats coloniaux, et premiers organes techniques (santé, travail via l'OIT rattachée) qui préfigurent le système onusien.",
+    "limites_critiques": "Privée des États-Unis (non-ratification du Sénat), sans force contraignante réelle et sans troupe propre, elle échoue à endiguer les agressions japonaise en Mandchourie, italienne en Éthiopie puis l'expansionnisme nazi, et disparaît de fait avec la Seconde Guerre mondiale avant sa dissolution officielle en 1946.",
+    "sources": [
+      {
+        "titre": "Société des Nations",
+        "url": "https://fr.wikipedia.org/wiki/Société_des_Nations",
+        "type": "primaire"
+      },
+      {
+        "titre": "Société des Nations — Wikipédia",
+        "url": "https://fr.wikipedia.org/wiki/Société_des_Nations",
+        "type": "secondaire"
+      }
+    ],
+    "statut": "documente",
+    "derniere_verification": "2026-09-05",
+    "resonance_ia": "Son échec illustre une limite structurelle que l'on retrouve dans la gouvernance de l'IA : des règles multilatérales sans mécanisme d'application contraignant restent largement déclaratoires face à des acteurs puissants qui choisissent de s'en affranchir."
   },
   {
     "id": "onu",
     "axe": "social",
     "sous_domaine": "organisation_internationale",
     "nom": "ONU",
-    "these_centrale": "",
-    "apport": "",
-    "limites_critiques": "",
-    "sources": [],
-    "statut": "a_documenter",
-    "derniere_verification": "2026-09-05"
+    "these_centrale": "L'ONU, fondée en 1945 pour succéder à la SDN, repose sur l'idée que la sécurité collective, le droit international et la coopération multilatérale organisée (Charte, Conseil de sécurité, Assemblée générale) peuvent maintenir la paix et favoriser le développement.",
+    "apport": "Elle a créé un système quasi universel (193 États membres) d'agences spécialisées (OMS, UNESCO, PAM, HCR...), un cadre normatif majeur (Déclaration universelle des droits de l'homme, droit humanitaire, objectifs de développement durable) et des opérations de maintien de la paix qui, malgré leurs limites, ont contribué à contenir de nombreux conflits.",
+    "limites_critiques": "Le droit de veto des cinq membres permanents du Conseil de sécurité paralyse régulièrement l'action face aux crises majeures (Syrie, Ukraine), et l'organisation est critiquée pour sa lourdeur bureaucratique, son sous-financement chronique et son incapacité à réformer sa propre gouvernance pour refléter le monde de 2026 plutôt que celui de 1945.",
+    "sources": [
+      {
+        "titre": "Organisation des Nations unies",
+        "url": "https://fr.wikipedia.org/wiki/Organisation_des_Nations_unies",
+        "type": "primaire"
+      },
+      {
+        "titre": "Organisation des Nations unies — Wikipédia",
+        "url": "https://fr.wikipedia.org/wiki/Organisation_des_Nations_unies",
+        "type": "secondaire"
+      }
+    ],
+    "statut": "documente",
+    "derniere_verification": "2026-09-05",
+    "resonance_ia": "Les tentatives de gouvernance mondiale de l'IA (résolutions de l'Assemblée générale, organes consultatifs onusiens sur l'IA) reproduisent la même tension entre ambition universelle et blocage par les grandes puissances qui ont le plus à perdre d'une régulation contraignante."
   },
   {
     "id": "cij",
     "axe": "social",
     "sous_domaine": "organisation_internationale",
     "nom": "CIJ",
-    "these_centrale": "",
-    "apport": "",
-    "limites_critiques": "",
-    "sources": [],
-    "statut": "a_documenter",
-    "derniere_verification": "2026-09-05"
+    "these_centrale": "La Cour internationale de justice (CIJ), organe judiciaire principal de l'ONU siégeant à La Haye depuis 1945, part du principe que les différends entre États doivent pouvoir être tranchés par le droit plutôt que par la force.",
+    "apport": "Elle a rendu des arrêts structurants en matière de frontières, de droit de la mer, d'immunités étatiques et, plus récemment, sur des accusations de génocide ou de violations du droit international humanitaire, consolidant un corpus de jurisprudence internationale de référence.",
+    "limites_critiques": "Sa compétence dépend du consentement des États (juridiction volontaire sauf clauses spécifiques) et ses arrêts, bien qu'obligatoires en droit, manquent de mécanisme d'exécution forcée : plusieurs décisions majeures sont restées lettre morte faute de volonté politique des parties condamnées.",
+    "sources": [
+      {
+        "titre": "Cour internationale de justice",
+        "url": "https://fr.wikipedia.org/wiki/Cour_internationale_de_justice",
+        "type": "primaire"
+      },
+      {
+        "titre": "Cour internationale de justice — Wikipédia",
+        "url": "https://fr.wikipedia.org/wiki/Cour_internationale_de_justice",
+        "type": "secondaire"
+      }
+    ],
+    "statut": "documente",
+    "derniere_verification": "2026-09-05",
+    "resonance_ia": "Le manque de pouvoir coercitif de la CIJ éclaire par analogie le débat sur une future juridiction ou organe d'arbitrage international pour l'IA : formuler un droit international est nécessaire mais non suffisant sans capacité de contrainte."
   },
   {
     "id": "otan",
     "axe": "social",
     "sous_domaine": "organisation_internationale",
     "nom": "OTAN",
-    "these_centrale": "",
-    "apport": "",
-    "limites_critiques": "",
-    "sources": [],
-    "statut": "a_documenter",
-    "derniere_verification": "2026-09-05"
+    "these_centrale": "L'OTAN (1949) repose sur le principe de défense collective — une attaque contre un membre est une attaque contre tous (article 5) — organisé initialement pour contenir l'URSS pendant la guerre froide.",
+    "apport": "Elle a fourni le cadre militaire intégré (commandement unifié, standardisation des équipements et procédures) qui a structuré la sécurité euro-atlantique pendant plus de 75 ans, et s'est élargie après 1991 aux anciens pays du bloc de l'Est puis, depuis 2023-2024, à la Finlande et la Suède.",
+    "limites_critiques": "Son élargissement vers l'Est est une source majeure de tension avec la Russie (invoquée pour justifier l'invasion de l'Ukraine en 2022), et l'alliance reste dépendante du leadership et du financement américains, ce qui expose sa cohésion aux aléas de la politique intérieure des États-Unis.",
+    "sources": [
+      {
+        "titre": "Organisation du traité de l'Atlantique nord",
+        "url": "https://fr.wikipedia.org/wiki/Organisation_du_traité_de_l'Atlantique_nord",
+        "type": "primaire"
+      },
+      {
+        "titre": "OTAN — Wikipédia",
+        "url": "https://fr.wikipedia.org/wiki/Organisation_du_traité_de_l'Atlantique_nord",
+        "type": "secondaire"
+      }
+    ],
+    "statut": "documente",
+    "derniere_verification": "2026-09-05",
+    "resonance_ia": "Les débats sur la course aux armements autonomes et l'IA militaire se jouent en grande partie au sein de l'OTAN, qui doit arbitrer entre interopérabilité technologique alliée et risques d'escalade avec des puissances rivales développant leurs propres systèmes."
   },
   {
     "id": "pacte-de-varsovie",
     "axe": "social",
     "sous_domaine": "organisation_internationale",
     "nom": "Pacte de Varsovie",
-    "these_centrale": "",
-    "apport": "",
-    "limites_critiques": "",
-    "sources": [],
-    "statut": "a_documenter",
-    "derniere_verification": "2026-09-05"
+    "these_centrale": "Le pacte de Varsovie (1955) formalise, en miroir de l'OTAN, une alliance militaire et politique unissant l'URSS et les pays communistes d'Europe de l'Est sous commandement soviétique.",
+    "apport": "Il a structuré le bloc de l'Est pendant la guerre froide et servi d'instrument de contrôle politique direct, notamment lors des interventions militaires en Hongrie (1956) et en Tchécoslovaquie (1968) pour réprimer des tentatives de libéralisation.",
+    "limites_critiques": "Contrairement à l'OTAN, l'alliance n'a jamais fonctionné sur une base d'adhésion volontaire réelle : elle a servi avant tout les intérêts stratégiques soviétiques et s'est effondrée dès 1991 avec la dislocation de l'URSS, sans laisser d'institution pérenne.",
+    "sources": [
+      {
+        "titre": "Pacte de Varsovie",
+        "url": "https://fr.wikipedia.org/wiki/Pacte_de_Varsovie",
+        "type": "primaire"
+      },
+      {
+        "titre": "Pacte de Varsovie — Wikipédia",
+        "url": "https://fr.wikipedia.org/wiki/Pacte_de_Varsovie",
+        "type": "secondaire"
+      }
+    ],
+    "statut": "documente",
+    "derniere_verification": "2026-09-05",
+    "resonance_ia": "Son asymétrie interne rappelle que les alliances technologiques ou militaires structurées autour d'une puissance dominante (comme certains blocs actuels autour du contrôle des semi-conducteurs ou de l'IA) peuvent se révéler fragiles dès que la puissance centrale s'affaiblit."
   },
   {
     "id": "mouvement-des-non-alignes",
     "axe": "social",
     "sous_domaine": "organisation_internationale",
     "nom": "Mouvement des non-alignés",
-    "these_centrale": "",
-    "apport": "",
-    "limites_critiques": "",
-    "sources": [],
-    "statut": "a_documenter",
-    "derniere_verification": "2026-09-05"
+    "these_centrale": "Le Mouvement des non-alignés (né à Bandung en 1955, formalisé à Belgrade en 1961) défend l'idée que les États nouvellement indépendants ou du Sud global peuvent refuser de s'aligner sur les blocs occidental ou soviétique pour préserver leur souveraineté.",
+    "apport": "Il a donné une voix collective à plus d'une centaine de pays du Sud sur la décolonisation, le désarmement et un nouvel ordre économique international, influençant durablement le débat Nord-Sud aux Nations unies.",
+    "limites_critiques": "L'hétérogénéité idéologique et les intérêts nationaux divergents de ses membres (dont certains ont noué des alliances de fait avec l'un ou l'autre bloc) ont limité sa capacité d'action concertée, et son influence s'est diluée après la fin de la guerre froide.",
+    "sources": [
+      {
+        "titre": "Mouvement des non-alignés",
+        "url": "https://fr.wikipedia.org/wiki/Mouvement_des_non-alignés",
+        "type": "primaire"
+      },
+      {
+        "titre": "Mouvement des non-alignés — Wikipédia",
+        "url": "https://fr.wikipedia.org/wiki/Mouvement_des_non-alignés",
+        "type": "secondaire"
+      }
+    ],
+    "statut": "documente",
+    "derniere_verification": "2026-09-05",
+    "resonance_ia": "Le mouvement préfigure les tentatives actuelles des pays du Sud global de ne pas s'aligner exclusivement sur les écosystèmes d'IA américain ou chinois et de revendiquer une souveraineté numérique propre."
   },
   {
     "id": "union-africaine-ua-oua",
     "axe": "social",
     "sous_domaine": "organisation_internationale",
     "nom": "Union africaine (UA) / OUA",
-    "these_centrale": "",
-    "apport": "",
-    "limites_critiques": "",
-    "sources": [],
-    "statut": "a_documenter",
-    "derniere_verification": "2026-09-05"
+    "these_centrale": "L'Union africaine (UA, 2002), qui remplace l'Organisation de l'unité africaine (OUA, 1963), porte le projet d'une intégration politique et économique panafricaine capable de peser collectivement sur la scène internationale.",
+    "apport": "Elle a mis en place des mécanismes de médiation dans les conflits régionaux, une architecture de sécurité continentale et l'Agenda 2063 de développement, tout en portant le projet de zone de libre-échange continentale africaine (ZLECAf).",
+    "limites_critiques": "Elle reste financièrement dépendante de bailleurs extérieurs, peine à faire appliquer ses décisions face aux coups d'État répétés dans plusieurs États membres, et sa capacité d'intervention militaire autonome demeure limitée.",
+    "sources": [
+      {
+        "titre": "Union africaine",
+        "url": "https://fr.wikipedia.org/wiki/Union_africaine",
+        "type": "primaire"
+      },
+      {
+        "titre": "Union africaine — Wikipédia",
+        "url": "https://fr.wikipedia.org/wiki/Union_africaine",
+        "type": "secondaire"
+      }
+    ],
+    "statut": "documente",
+    "derniere_verification": "2026-09-05",
+    "resonance_ia": "L'UA développe une stratégie continentale sur l'IA pour éviter que le continent ne soit qu'un marché de consommation de technologies importées, posant la question de la souveraineté technologique des pays en développement."
   },
   {
     "id": "oea",
     "axe": "social",
     "sous_domaine": "organisation_internationale",
     "nom": "OEA",
-    "these_centrale": "",
-    "apport": "",
-    "limites_critiques": "",
-    "sources": [],
-    "statut": "a_documenter",
-    "derniere_verification": "2026-09-05"
+    "these_centrale": "L'Organisation des États américains (OEA, 1948, siège à Washington) vise à organiser la coopération politique, économique et sécuritaire entre les États du continent américain.",
+    "apport": "Elle a fourni un forum diplomatique permanent pour le continent, avec une Assemblée générale annuelle des ministres des Affaires étrangères et des mécanismes de promotion de la démocratie et des droits humains (Commission interaméricaine des droits de l'homme).",
+    "limites_critiques": "Sa proximité historique avec les intérêts diplomatiques des États-Unis a nourri une défiance persistante de plusieurs pays d'Amérique latine, et son influence réelle sur les crises politiques régionales (Venezuela, Nicaragua, Bolivie) reste contestée et souvent jugée insuffisante.",
+    "sources": [
+      {
+        "titre": "Organisation des États américains",
+        "url": "https://fr.wikipedia.org/wiki/Organisation_des_États_américains",
+        "type": "primaire"
+      },
+      {
+        "titre": "Organisation des États américains — Wikipédia",
+        "url": "https://fr.wikipedia.org/wiki/Organisation_des_États_américains",
+        "type": "secondaire"
+      }
+    ],
+    "statut": "documente",
+    "derniere_verification": "2026-09-05",
+    "resonance_ia": "L'OEA illustre la difficulté récurrente des organisations régionales à agir de façon crédible lorsqu'une puissance dominante du continent (ici les États-Unis, également leader mondial de l'IA) en oriente de facto l'agenda."
   },
   {
     "id": "ligue-arabe",
     "axe": "social",
     "sous_domaine": "organisation_internationale",
     "nom": "Ligue arabe",
-    "these_centrale": "",
-    "apport": "",
-    "limites_critiques": "",
-    "sources": [],
-    "statut": "a_documenter",
-    "derniere_verification": "2026-09-05"
+    "these_centrale": "La Ligue arabe (1945, Le Caire) part de l'idée d'une solidarité politique et culturelle entre États arabes fondée sur la langue, l'histoire commune et des intérêts géopolitiques partagés, notamment sur la question palestinienne.",
+    "apport": "Elle a offert un cadre de coordination diplomatique régulier (sommets, médiations dans des conflits intra-arabes) et un statut d'observateur à l'ONU, comptant 22 membres en 2023.",
+    "limites_critiques": "Les rivalités entre États membres (Arabie saoudite/Qatar, tensions autour de la Syrie, du Yémen ou de la Libye) ont souvent paralysé ses prises de décision, limitant son rôle à une diplomatie déclaratoire plus qu'à une action concertée effective.",
+    "sources": [
+      {
+        "titre": "Ligue arabe",
+        "url": "https://fr.wikipedia.org/wiki/Ligue_arabe",
+        "type": "primaire"
+      },
+      {
+        "titre": "Ligue arabe — Wikipédia",
+        "url": "https://fr.wikipedia.org/wiki/Ligue_arabe",
+        "type": "secondaire"
+      }
+    ],
+    "statut": "documente",
+    "derniere_verification": "2026-09-05",
+    "resonance_ia": "Comme d'autres organisations régionales, la Ligue arabe est confrontée au défi de coordonner une stratégie commune face à l'IA alors que ses membres (du Golfe richement doté en capital aux économies plus modestes) ont des capacités et des priorités très inégales."
   },
   {
     "id": "conseil-de-l-europe",
     "axe": "social",
     "sous_domaine": "organisation_internationale",
     "nom": "Conseil de l'Europe",
-    "these_centrale": "",
-    "apport": "",
-    "limites_critiques": "",
-    "sources": [],
-    "statut": "a_documenter",
-    "derniere_verification": "2026-09-05"
+    "these_centrale": "Le Conseil de l'Europe (1949, traité de Londres) part du principe que la protection des droits de l'homme, la démocratie et l'État de droit doivent être garantis par des normes juridiques communes à l'échelle du continent, au-delà de l'Union européenne.",
+    "apport": "Il a créé la Convention européenne des droits de l'homme et la Cour européenne des droits de l'homme (Strasbourg), mécanisme de recours individuel unique en son genre qui a fait évoluer le droit interne de ses 46 États membres sur des sujets sensibles (peine de mort, discriminations, vie privée).",
+    "limites_critiques": "Il ne dispose d'aucun pouvoir de contrainte économique ou militaire, dépend du bon vouloir des États pour exécuter les arrêts de la Cour, et a dû exclure la Russie en 2022 après l'invasion de l'Ukraine, illustrant les limites de son influence face à des États déterminés à s'en affranchir.",
+    "sources": [
+      {
+        "titre": "Conseil de l'Europe",
+        "url": "https://fr.wikipedia.org/wiki/Conseil_de_l'Europe",
+        "type": "primaire"
+      },
+      {
+        "titre": "Conseil de l'Europe — Wikipédia",
+        "url": "https://fr.wikipedia.org/wiki/Conseil_de_l'Europe",
+        "type": "secondaire"
+      }
+    ],
+    "statut": "documente",
+    "derniere_verification": "2026-09-05",
+    "resonance_ia": "La Convention européenne des droits de l'homme sert de référence juridique croissante pour encadrer les usages de l'IA (surveillance, décision algorithmique) dans les 46 États membres, au-delà du seul règlement européen sur l'IA."
   },
   {
     "id": "osce",
     "axe": "social",
     "sous_domaine": "organisation_internationale",
     "nom": "OSCE",
-    "these_centrale": "",
-    "apport": "",
-    "limites_critiques": "",
-    "sources": [],
-    "statut": "a_documenter",
-    "derniere_verification": "2026-09-05"
+    "these_centrale": "L'OSCE (1995, héritière de la Conférence sur la sécurité et la coopération en Europe) porte une conception large de la sécurité incluant la maîtrise des armements, la « dimension humaine » (droits humains, démocratisation) et la sécurité énergétique.",
+    "apport": "Elle a fourni pendant la guerre froide puis après 1991 un cadre de dialogue rare réunissant Est et Ouest, avec des missions d'observation électorale et de médiation dans plusieurs conflits post-soviétiques.",
+    "limites_critiques": "Son fonctionnement par consensus donne à chaque État un droit de veto de fait, ce qui l'a rendue largement impuissante face à l'annexion de la Crimée en 2014 puis à l'invasion de l'Ukraine en 2022 par un de ses propres États membres, la Russie.",
+    "sources": [
+      {
+        "titre": "Organisation pour la sécurité et la coopération en Europe",
+        "url": "https://fr.wikipedia.org/wiki/Organisation_pour_la_sécurité_et_la_coopération_en_Europe",
+        "type": "primaire"
+      },
+      {
+        "titre": "OSCE — Wikipédia",
+        "url": "https://fr.wikipedia.org/wiki/Organisation_pour_la_sécurité_et_la_coopération_en_Europe",
+        "type": "secondaire"
+      }
+    ],
+    "statut": "documente",
+    "derniere_verification": "2026-09-05",
+    "resonance_ia": "L'OSCE a initié des travaux sur l'usage responsable de l'IA dans le domaine de la sécurité, mais sa règle du consensus limite sa capacité à imposer des normes contraignantes face à des membres qui développent des capacités d'IA militaire de façon autonome."
   },
   {
     "id": "fmi",
     "axe": "social",
     "sous_domaine": "organisation_internationale",
     "nom": "FMI",
-    "these_centrale": "",
-    "apport": "",
-    "limites_critiques": "",
-    "sources": [],
-    "statut": "a_documenter",
-    "derniere_verification": "2026-09-05"
+    "these_centrale": "Le Fonds monétaire international (FMI, Bretton Woods 1944), qui regroupe 191 pays, part du principe que la stabilité financière mondiale et la prévention des crises de balance des paiements nécessitent une coopération monétaire internationale organisée.",
+    "apport": "Il a joué un rôle central dans la gestion de crises financières majeures (dette latino-américaine des années 1980, crise asiatique de 1997, crise grecque des années 2010) via des prêts conditionnels, et produit des analyses économiques mondiales de référence.",
+    "limites_critiques": "Ses programmes d'ajustement structurel, imposant austérité budgétaire et libéralisation, ont été largement critiqués pour leurs coûts sociaux dans les pays en développement, et sa gouvernance (quotes-parts, droits de vote) reste dominée par les pays occidentaux malgré des réformes progressives.",
+    "sources": [
+      {
+        "titre": "Fonds monétaire international",
+        "url": "https://fr.wikipedia.org/wiki/Fonds_monétaire_international",
+        "type": "primaire"
+      },
+      {
+        "titre": "Fonds monétaire international — Wikipédia",
+        "url": "https://fr.wikipedia.org/wiki/Fonds_monétaire_international",
+        "type": "secondaire"
+      }
+    ],
+    "statut": "documente",
+    "derniere_verification": "2026-09-05",
+    "resonance_ia": "Le FMI publie désormais des analyses sur l'impact macroéconomique de l'IA (automatisation, productivité, inégalités entre pays), signe que la gouvernance économique mondiale intègre l'IA comme facteur structurel des futures crises et opportunités."
   },
   {
     "id": "banque-mondiale-bird",
     "axe": "social",
     "sous_domaine": "organisation_internationale",
     "nom": "Banque mondiale (BIRD)",
-    "these_centrale": "",
-    "apport": "",
-    "limites_critiques": "",
-    "sources": [],
-    "statut": "a_documenter",
-    "derniere_verification": "2026-09-05"
+    "these_centrale": "La Banque mondiale (issue elle aussi de Bretton Woods 1944) part du principe que le développement économique des pays pauvres et émergents peut être accéléré par des prêts et un appui technique ciblés sur des projets d'investissement.",
+    "apport": "Elle a financé des infrastructures majeures (énergie, transport, santé, éducation) dans des dizaines de pays en développement et produit des données de développement (indicateurs de pauvreté, rapports Doing Business) largement utilisées par chercheurs et décideurs.",
+    "limites_critiques": "Ses grands projets d'infrastructure ont parfois généré des déplacements de populations et des dégâts environnementaux mal anticipés, et son influence sur les politiques publiques des pays emprunteurs a été critiquée comme une forme d'ingérence économique dictée par les priorités des pays donateurs.",
+    "sources": [
+      {
+        "titre": "Banque mondiale",
+        "url": "https://fr.wikipedia.org/wiki/Banque_mondiale",
+        "type": "primaire"
+      },
+      {
+        "titre": "Banque mondiale — Wikipédia",
+        "url": "https://fr.wikipedia.org/wiki/Banque_mondiale",
+        "type": "secondaire"
+      }
+    ],
+    "statut": "documente",
+    "derniere_verification": "2026-09-05",
+    "resonance_ia": "La Banque mondiale investit désormais dans les infrastructures numériques et l'accès à l'IA dans les pays en développement, posant la question de savoir si ces financements réduisent ou au contraire creusent la fracture numérique Nord-Sud."
   },
   {
     "id": "gatt",
     "axe": "social",
     "sous_domaine": "organisation_internationale",
     "nom": "GATT",
-    "these_centrale": "",
-    "apport": "",
-    "limites_critiques": "",
-    "sources": [],
-    "statut": "a_documenter",
-    "derniere_verification": "2026-09-05"
+    "these_centrale": "Le GATT (1947) pose le principe que la réduction négociée et réciproque des barrières douanières entre pays signataires stimule le commerce international et la croissance économique mondiale.",
+    "apport": "À travers huit cycles de négociations (dont le Kennedy Round et l'Uruguay Round), il a fait baisser drastiquement les droits de douane moyens sur les produits manufacturés et posé les bases institutionnelles qui aboutiront à la création de l'OMC en 1995.",
+    "limites_critiques": "Le GATT ne couvrait à l'origine que les marchandises (pas les services ni la propriété intellectuelle), manquait d'un véritable organe de règlement des différends contraignant, et laissait de côté l'agriculture, secteur hautement protégé par de nombreux pays développés.",
+    "sources": [
+      {
+        "titre": "Accord général sur les tarifs douaniers et le commerce",
+        "url": "https://fr.wikipedia.org/wiki/Accord_général_sur_les_tarifs_douaniers_et_le_commerce",
+        "type": "primaire"
+      },
+      {
+        "titre": "GATT — Wikipédia",
+        "url": "https://fr.wikipedia.org/wiki/Accord_général_sur_les_tarifs_douaniers_et_le_commerce",
+        "type": "secondaire"
+      }
+    ],
+    "statut": "documente",
+    "derniere_verification": "2026-09-05",
+    "resonance_ia": "Le cadre progressif du GATT — négocier d'abord sur un périmètre restreint puis l'élargir — inspire certaines propositions de gouvernance internationale de l'IA, qui envisagent de commencer par des normes sectorielles avant un cadre plus large."
   },
   {
     "id": "omc",
     "axe": "social",
     "sous_domaine": "organisation_internationale",
     "nom": "OMC",
-    "these_centrale": "",
-    "apport": "",
-    "limites_critiques": "",
-    "sources": [],
-    "statut": "a_documenter",
-    "derniere_verification": "2026-09-05"
+    "these_centrale": "L'Organisation mondiale du commerce (OMC, 1995, Marrakech) part du principe que des règles commerciales multilatérales contraignantes, assorties d'un mécanisme de règlement des différends, favorisent un commerce international plus ouvert et plus prévisible.",
+    "apport": "Elle a étendu la libéralisation commerciale aux services et à la propriété intellectuelle (ADPIC) et créé un organe de règlement des différends dont les décisions, à la différence du GATT, sont juridiquement contraignantes pour ses membres.",
+    "limites_critiques": "Le cycle de négociations de Doha, lancé en 2001, est resté dans l'impasse pendant plus de vingt ans faute d'accord entre pays développés et en développement, et son organe d'appel est paralysé depuis 2019 faute de nomination de juges par les États-Unis, affaiblissant sa capacité d'arbitrage.",
+    "sources": [
+      {
+        "titre": "Organisation mondiale du commerce",
+        "url": "https://fr.wikipedia.org/wiki/Organisation_mondiale_du_commerce",
+        "type": "primaire"
+      },
+      {
+        "titre": "Organisation mondiale du commerce — Wikipédia",
+        "url": "https://fr.wikipedia.org/wiki/Organisation_mondiale_du_commerce",
+        "type": "secondaire"
+      }
+    ],
+    "statut": "documente",
+    "derniere_verification": "2026-09-05",
+    "resonance_ia": "Les débats sur le commerce des services numériques et des flux de données transfrontaliers, essentiels à l'économie de l'IA, se heurtent au même blocage institutionnel qui paralyse l'OMC sur d'autres dossiers depuis plus d'une décennie."
   },
   {
     "id": "ocde",
     "axe": "social",
     "sous_domaine": "organisation_internationale",
     "nom": "OCDE",
-    "these_centrale": "",
-    "apport": "",
-    "limites_critiques": "",
-    "sources": [],
-    "statut": "a_documenter",
-    "derniere_verification": "2026-09-05"
+    "these_centrale": "L'OCDE, organisation intergouvernementale rassemblant principalement des pays développés à économie de marché et gouvernement démocratique, joue un rôle d'assemblée consultative produisant analyses économiques comparées et recommandations de politiques publiques.",
+    "apport": "Elle a standardisé de nombreux indicateurs économiques et sociaux comparables entre pays (PISA en éducation, comparaisons fiscales), et ses travaux sur la fiscalité internationale ont abouti à l'accord historique de 2021 sur un impôt minimum mondial sur les sociétés.",
+    "limites_critiques": "Dépourvue de pouvoir contraignant, elle ne peut qu'émettre des recommandations que les États restent libres de ne pas appliquer, et son recrutement centré sur les pays riches limite sa représentativité pour traiter des enjeux véritablement mondiaux.",
+    "sources": [
+      {
+        "titre": "Organisation de coopération et de développement économiques",
+        "url": "https://fr.wikipedia.org/wiki/Organisation_de_coopération_et_de_développement_économiques",
+        "type": "primaire"
+      },
+      {
+        "titre": "OCDE — Wikipédia",
+        "url": "https://fr.wikipedia.org/wiki/Organisation_de_coopération_et_de_développement_économiques",
+        "type": "secondaire"
+      }
+    ],
+    "statut": "documente",
+    "derniere_verification": "2026-09-05",
+    "resonance_ia": "L'OCDE a produit dès 2019 les premiers Principes sur l'IA adoptés au niveau intergouvernemental, devenus une référence pour de nombreuses régulations nationales, illustrant son rôle de laboratoire normatif malgré l'absence de pouvoir contraignant."
   },
   {
     "id": "opep",
     "axe": "social",
     "sous_domaine": "organisation_internationale",
     "nom": "OPEP",
-    "these_centrale": "",
-    "apport": "",
-    "limites_critiques": "",
-    "sources": [],
-    "statut": "a_documenter",
-    "derniere_verification": "2026-09-05"
+    "these_centrale": "L'OPEP part du principe que la coordination des politiques de production pétrolière entre pays producteurs permet de peser collectivement sur les prix mondiaux du pétrole, plutôt que de subir la concurrence dictée par les compagnies pétrolières occidentales.",
+    "apport": "Elle a permis, notamment lors des chocs pétroliers des années 1970, un rééquilibrage du pouvoir de négociation en faveur des pays producteurs, et continue via l'alliance élargie OPEP+ à influencer directement les cours mondiaux du pétrole.",
+    "limites_critiques": "Fonctionnant comme un cartel, elle est structurellement fragilisée par les incitations de chaque membre à tricher sur ses quotas de production, et son influence a été relativisée par l'essor du pétrole de schiste américain et la diversification énergétique mondiale.",
+    "sources": [
+      {
+        "titre": "Organisation des pays exportateurs de pétrole",
+        "url": "https://fr.wikipedia.org/wiki/Organisation_des_pays_exportateurs_de_pétrole",
+        "type": "primaire"
+      },
+      {
+        "titre": "OPEP — Wikipédia",
+        "url": "https://fr.wikipedia.org/wiki/Organisation_des_pays_exportateurs_de_pétrole",
+        "type": "secondaire"
+      }
+    ],
+    "statut": "documente",
+    "derniere_verification": "2026-09-05",
+    "resonance_ia": "L'immense consommation énergétique des centres de données d'IA replace la question pétrolière et énergétique, et donc le rôle de l'OPEP, au cœur des arbitrages géopolitiques liés au développement de l'intelligence artificielle."
   },
   {
     "id": "forum-economique-mondial-wef",
     "axe": "social",
     "sous_domaine": "organisation_internationale",
     "nom": "Forum économique mondial (WEF)",
-    "these_centrale": "",
-    "apport": "",
-    "limites_critiques": "",
-    "sources": [],
-    "statut": "a_documenter",
-    "derniere_verification": "2026-09-05"
+    "these_centrale": "Le Forum économique mondial (fondation créée en 1971 par Klaus Schwab, connue pour son sommet annuel de Davos) part du principe qu'un dialogue informel entre dirigeants politiques, économiques et de la société civile favorise la coopération mondiale sur les grands enjeux.",
+    "apport": "Il est devenu un lieu de convergence médiatisé où se nouent des annonces économiques et diplomatiques majeures, et publie des rapports influents (risques mondiaux, avenir de l'emploi) largement repris par décideurs et médias.",
+    "limites_critiques": "Régulièrement critiqué comme un symbole d'entre-soi élitiste sans pouvoir de décision réel, il est accusé de produire davantage de discours et de nouage de contacts d'affaires que d'actions concrètes sur les enjeux qu'il prétend traiter (inégalités, climat).",
+    "sources": [
+      {
+        "titre": "Forum économique mondial",
+        "url": "https://fr.wikipedia.org/wiki/Forum_économique_mondial",
+        "type": "primaire"
+      },
+      {
+        "titre": "Forum économique mondial — Wikipédia",
+        "url": "https://fr.wikipedia.org/wiki/Forum_économique_mondial",
+        "type": "secondaire"
+      }
+    ],
+    "statut": "documente",
+    "derniere_verification": "2026-09-05",
+    "resonance_ia": "Davos est devenu chaque année une vitrine majeure des discours sur l'IA générative, où dirigeants de la tech et responsables politiques négocient informellement le récit dominant sur ses risques et opportunités."
   },
   {
     "id": "g7-g8",
     "axe": "social",
     "sous_domaine": "organisation_internationale",
     "nom": "G7/G8",
-    "these_centrale": "",
-    "apport": "",
-    "limites_critiques": "",
-    "sources": [],
-    "statut": "a_documenter",
-    "derniere_verification": "2026-09-05"
+    "these_centrale": "Le G7 (initialement G6 en 1975, devenu G8 avec la Russie de 1998 à 2014) repose sur l'idée qu'une concertation informelle entre grandes puissances économiques démocratiques permet de coordonner les réponses aux crises économiques et géopolitiques mondiales.",
+    "apport": "Il a servi de forum de coordination lors de crises majeures (chocs pétroliers, crise financière de 2008) et de plateforme d'annonces politiques communes (sanctions, aides), l'exclusion de la Russie en 2014 marquant son retour au format G7.",
+    "limites_critiques": "Dépourvu de tout secrétariat permanent ou pouvoir contraignant, le G7 ne représente qu'une fraction des grandes puissances économiques mondiales (excluant Chine, Inde, Brésil), ce qui a alimenté sa concurrence croissante avec le G20 et les BRICS comme forums plus représentatifs.",
+    "sources": [
+      {
+        "titre": "Groupe des sept",
+        "url": "https://fr.wikipedia.org/wiki/Groupe_des_sept",
+        "type": "primaire"
+      },
+      {
+        "titre": "G7 — Wikipédia",
+        "url": "https://fr.wikipedia.org/wiki/G7",
+        "type": "secondaire"
+      }
+    ],
+    "statut": "documente",
+    "derniere_verification": "2026-09-05",
+    "resonance_ia": "Le G7 a lancé en 2023 le « Processus d'Hiroshima » sur l'IA générative, tentative de coordination normative entre grandes démocraties industrialisées qui illustre à la fois l'utilité et les limites représentatives de ce format restreint."
   },
   {
     "id": "ue-cee",
     "axe": "social",
     "sous_domaine": "organisation_internationale",
     "nom": "UE/CEE",
-    "these_centrale": "",
-    "apport": "",
-    "limites_critiques": "",
-    "sources": [],
-    "statut": "a_documenter",
-    "derniere_verification": "2026-09-05"
+    "these_centrale": "La construction européenne, de la CEE (1957) à l'Union européenne (traité de Maastricht, 1993), part du principe qu'une intégration économique puis politique progressive entre États européens peut garantir la paix et la prospérité durables sur le continent.",
+    "apport": "Elle a créé un marché unique, une monnaie commune pour une majorité de ses membres, et un corpus réglementaire influent au niveau mondial (le fameux « effet Bruxelles »), notamment en matière de protection des données et, plus récemment, de régulation de l'IA.",
+    "limites_critiques": "Le déficit démocratique perçu de ses institutions, les tensions entre souveraineté nationale et intégration supranationale (illustrées par le Brexit en 2020) et l'hétérogénéité économique entre États membres continuent de fragiliser sa cohésion politique.",
+    "sources": [
+      {
+        "titre": "Communauté économique européenne",
+        "url": "https://fr.wikipedia.org/wiki/Communauté_économique_européenne",
+        "type": "primaire"
+      },
+      {
+        "titre": "Communauté économique européenne — Wikipédia",
+        "url": "https://fr.wikipedia.org/wiki/Communauté_économique_européenne",
+        "type": "secondaire"
+      }
+    ],
+    "statut": "documente",
+    "derniere_verification": "2026-09-05",
+    "resonance_ia": "Le règlement européen sur l'IA (AI Act, 2024) est devenu la référence mondiale la plus aboutie de régulation contraignante de l'intelligence artificielle, prolongeant « l'effet Bruxelles » déjà observé avec le RGPD sur la protection des données."
   },
   {
     "id": "asean",
     "axe": "social",
     "sous_domaine": "organisation_internationale",
     "nom": "ASEAN",
-    "these_centrale": "",
-    "apport": "",
-    "limites_critiques": "",
-    "sources": [],
-    "statut": "a_documenter",
-    "derniere_verification": "2026-09-05"
+    "these_centrale": "L'ASEAN (1967, Bangkok), fondée par cinq pays d'Asie du Sud-Est en pleine guerre froide pour faire barrage aux mouvements communistes, part du principe qu'une coopération régionale fondée sur la non-ingérence et le consensus favorise stabilité et développement.",
+    "apport": "Élargie à onze pays, elle a favorisé l'intégration économique régionale (zone de libre-échange, chaînes de valeur manufacturières) et servi de plateforme diplomatique neutre pour dialoguer avec les grandes puissances (Chine, États-Unis, Japon).",
+    "limites_critiques": "Son principe strict de non-ingérence dans les affaires intérieures des membres l'a rendue largement impuissante face à des crises internes majeures, notamment la répression militaire en Birmanie depuis le coup d'État de 2021.",
+    "sources": [
+      {
+        "titre": "Association des nations de l'Asie du Sud-Est",
+        "url": "https://fr.wikipedia.org/wiki/Association_des_nations_de_l'Asie_du_Sud-Est",
+        "type": "primaire"
+      },
+      {
+        "titre": "ASEAN — Wikipédia",
+        "url": "https://fr.wikipedia.org/wiki/Association_des_nations_de_l'Asie_du_Sud-Est",
+        "type": "secondaire"
+      }
+    ],
+    "statut": "documente",
+    "derniere_verification": "2026-09-05",
+    "resonance_ia": "L'ASEAN a publié un guide régional sur la gouvernance de l'IA, tentant une voie médiane entre le cadre contraignant européen et l'approche plus permissive américaine, révélatrice de la recherche d'une troisième voie asiatique en matière de régulation numérique."
   },
   {
     "id": "mercosur",
     "axe": "social",
     "sous_domaine": "organisation_internationale",
     "nom": "Mercosur",
-    "these_centrale": "",
-    "apport": "",
-    "limites_critiques": "",
-    "sources": [],
-    "statut": "a_documenter",
-    "derniere_verification": "2026-09-05"
+    "these_centrale": "Le Mercosur, zone de libre-échange sud-américaine, part du principe qu'une intégration économique régionale entre grandes économies du sous-continent (Brésil, Argentine notamment) renforce leur poids commercial collectif.",
+    "apport": "Il a facilité les échanges commerciaux intra-régionaux et servi de base à des négociations d'accords commerciaux avec des blocs extérieurs, dont l'accord de principe conclu avec l'Union européenne après plus de vingt ans de négociations.",
+    "limites_critiques": "Les crises politiques et économiques récurrentes de ses principaux membres, les divergences idéologiques entre gouvernements successifs (de gauche ou de droite) et les tensions protectionnistes internes ont longtemps freiné son approfondissement institutionnel.",
+    "sources": [
+      {
+        "titre": "Marché commun du Sud",
+        "url": "https://fr.wikipedia.org/wiki/Marché_commun_du_Sud",
+        "type": "primaire"
+      },
+      {
+        "titre": "Mercosur — Wikipédia",
+        "url": "https://fr.wikipedia.org/wiki/Marché_commun_du_Sud",
+        "type": "secondaire"
+      }
+    ],
+    "statut": "documente",
+    "derniere_verification": "2026-09-05",
+    "resonance_ia": "L'accord Mercosur-UE, bloqué pendant des années notamment sur des questions agricoles et environnementales, illustre la difficulté de faire converger des blocs régionaux aux priorités réglementaires différentes — un défi similaire à celui que pose l'harmonisation internationale des règles sur l'IA."
   },
   {
     "id": "cei",
     "axe": "social",
     "sous_domaine": "organisation_internationale",
     "nom": "CEI",
-    "these_centrale": "",
-    "apport": "",
-    "limites_critiques": "",
-    "sources": [],
-    "statut": "a_documenter",
-    "derniere_verification": "2026-09-05"
+    "these_centrale": "La Communauté des États indépendants (CEI, 1991), créée par l'accord de Minsk entre Russie, Biélorussie et Ukraine au moment de la dissolution de l'URSS, part du principe qu'un cadre de coopération lâche entre anciennes républiques soviétiques peut organiser une transition ordonnée hors de l'Union soviétique.",
+    "apport": "Elle a offert un forum de coordination économique et sécuritaire minimal entre plusieurs anciennes républiques soviétiques pendant la période post-soviétique, facilitant certains arrangements de transition (dette, forces armées).",
+    "limites_critiques": "Son influence s'est constamment érodée : plusieurs membres fondateurs s'en sont retirés (dont l'Ukraine de facto après 2014 et la Géorgie dès 2009), et elle n'a jamais constitué une véritable structure d'intégration comparable à l'Union européenne.",
+    "sources": [
+      {
+        "titre": "Communauté des États indépendants",
+        "url": "https://fr.wikipedia.org/wiki/Communauté_des_États_indépendants",
+        "type": "primaire"
+      },
+      {
+        "titre": "CEI — Wikipédia",
+        "url": "https://fr.wikipedia.org/wiki/Communauté_des_États_indépendants",
+        "type": "secondaire"
+      }
+    ],
+    "statut": "documente",
+    "derniere_verification": "2026-09-05",
+    "resonance_ia": "L'affaiblissement continu de la CEI illustre comment les structures de coopération héritées d'un ordre géopolitique révolu peinent à survivre lorsque les intérêts stratégiques divergent, une dynamique observable dans les tentatives actuelles de blocs technologiques concurrents."
   },
   {
     "id": "g20",
     "axe": "social",
     "sous_domaine": "organisation_internationale",
     "nom": "G20",
-    "these_centrale": "",
-    "apport": "",
-    "limites_critiques": "",
-    "sources": [],
-    "statut": "a_documenter",
-    "derniere_verification": "2026-09-05"
+    "these_centrale": "Le G20, créé en 1999 au niveau des ministres des Finances puis élevé au rang de sommet de chefs d'État et de gouvernement en 2008 pendant la crise financière mondiale, part du principe qu'une gouvernance économique mondiale efficace doit inclure les grandes puissances émergentes, pas seulement les économies occidentales du G7.",
+    "apport": "Il a coordonné une réponse mondiale concertée à la crise financière de 2008-2009 (plans de relance, régulation bancaire via Bâle III) et constitue depuis le principal forum réunissant à la fois pays développés et émergents (Chine, Inde, Brésil, Afrique du Sud) représentant environ 85 % du PIB mondial.",
+    "limites_critiques": "Forum informel sans secrétariat permanent ni pouvoir contraignant, ses décisions dépendent entièrement de la volonté politique des États membres de les traduire en actes, et les tensions géopolitiques croissantes entre ses membres (États-Unis, Chine, Russie) fragilisent sa capacité à produire un consensus.",
+    "sources": [
+      {
+        "titre": "Groupe des vingt",
+        "url": "https://fr.wikipedia.org/wiki/G20",
+        "type": "primaire"
+      },
+      {
+        "titre": "G20 — Wikipédia",
+        "url": "https://fr.wikipedia.org/wiki/G20",
+        "type": "secondaire"
+      }
+    ],
+    "statut": "documente",
+    "derniere_verification": "2026-09-05",
+    "resonance_ia": "Le G20 a inscrit la gouvernance de l'IA à son agenda (principes IA repris de l'OCDE, déclarations sur l'IA responsable), mais reproduit la même limite que sur d'autres dossiers : formuler des principes communs sans mécanisme de mise en œuvre contraignant."
   },
   {
     "id": "brics",
     "axe": "social",
     "sous_domaine": "organisation_internationale",
     "nom": "BRICS(+)",
-    "these_centrale": "",
-    "apport": "",
-    "limites_critiques": "",
-    "sources": [],
-    "statut": "a_documenter",
-    "derniere_verification": "2026-09-05"
+    "these_centrale": "Les BRICS(+), groupe de dix pays (Brésil, Russie, Inde, Chine, Afrique du Sud, Iran, Égypte, Émirats arabes unis, Indonésie, Éthiopie) réunis en sommets annuels, partent du principe qu'une coordination entre grandes puissances émergentes peut faire contrepoids à l'hégémonie occidentale, notamment celle du G7.",
+    "apport": "Ils ont créé la Nouvelle Banque de développement comme alternative partielle à la Banque mondiale et au FMI, et leur élargissement récent (2024) en fait un forum représentant une part croissante de la population et du PIB mondial en parité de pouvoir d'achat.",
+    "limites_critiques": "L'hétérogénéité politique et économique de ses membres (démocraties comme l'Inde et le Brésil, régimes autoritaires comme la Russie, la Chine ou l'Iran) et leurs rivalités propres (tensions sino-indiennes) limitent leur capacité à agir comme un bloc réellement uni.",
+    "sources": [
+      {
+        "titre": "BRICS",
+        "url": "https://fr.wikipedia.org/wiki/BRICS",
+        "type": "primaire"
+      },
+      {
+        "titre": "BRICS — Wikipédia",
+        "url": "https://fr.wikipedia.org/wiki/BRICS",
+        "type": "secondaire"
+      }
+    ],
+    "statut": "documente",
+    "derniere_verification": "2026-09-05",
+    "resonance_ia": "La Chine, membre central des BRICS, y promeut une vision alternative de la gouvernance numérique et de l'IA moins centrée sur les normes occidentales, contribuant à une fragmentation croissante des régimes internationaux de régulation technologique."
   },
   {
     "id": "organisation-de-cooperation-de-shanghai-ocs",
     "axe": "social",
     "sous_domaine": "organisation_internationale",
     "nom": "Organisation de coopération de Shanghai (OCS)",
-    "these_centrale": "",
-    "apport": "",
-    "limites_critiques": "",
-    "sources": [],
-    "statut": "a_documenter",
-    "derniere_verification": "2026-09-05"
+    "these_centrale": "L'Organisation de coopération de Shanghai (OCS), organisation politico-économique et sécuritaire regroupant notamment la Chine, la Russie, l'Inde et plusieurs États d'Asie centrale, part du principe qu'une coopération régionale eurasiatique peut contrebalancer l'influence occidentale et stabiliser l'Asie centrale.",
+    "apport": "Elle a institué des mécanismes de coopération antiterroriste et de sécurité frontalière en Asie centrale, et son élargissement (Inde, Pakistan, Iran) en a fait un forum rassemblant une part très importante de la population mondiale.",
+    "limites_critiques": "Les rivalités persistantes entre certains de ses membres (Inde-Pakistan, Inde-Chine) limitent sa cohésion stratégique réelle, et son fonctionnement reste largement dominé par les intérêts convergents mais concurrents de la Chine et de la Russie.",
+    "sources": [
+      {
+        "titre": "Organisation de coopération de Shanghai",
+        "url": "https://fr.wikipedia.org/wiki/Organisation_de_coopération_de_Shanghai",
+        "type": "primaire"
+      },
+      {
+        "titre": "OCS — Wikipédia",
+        "url": "https://fr.wikipedia.org/wiki/Organisation_de_coopération_de_Shanghai",
+        "type": "secondaire"
+      }
+    ],
+    "statut": "documente",
+    "derniere_verification": "2026-09-05",
+    "resonance_ia": "L'OCS sert de plus en plus de plateforme où la Chine promeut ses standards technologiques et ses solutions d'IA auprès des pays d'Asie centrale, un vecteur d'influence technologique parallèle aux canaux occidentaux."
   },
   {
     "id": "cour-penale-internationale-cpi",
     "axe": "social",
     "sous_domaine": "organisation_internationale",
     "nom": "Cour pénale internationale (CPI)",
-    "these_centrale": "",
-    "apport": "",
-    "limites_critiques": "",
-    "sources": [],
-    "statut": "a_documenter",
-    "derniere_verification": "2026-09-05"
+    "these_centrale": "La Cour pénale internationale (CPI, 1998, permanente depuis 2002) part du principe que les individus, y compris les chefs d'État, doivent pouvoir être tenus pénalement responsables devant une juridiction internationale pour génocide, crimes contre l'humanité, crimes de guerre et crime d'agression.",
+    "apport": "Elle complète la Cour internationale de justice en jugeant des individus plutôt que des États, avec une dimension à la fois punitive et dissuasive, et a émis des mandats d'arrêt visant des chefs d'État en exercice, une première historique.",
+    "limites_critiques": "Les États-Unis, la Chine et la Russie n'ont pas ratifié son statut, elle ne peut juger que les ressortissants d'États parties (ou sur renvoi du Conseil de sécurité) et dépend de la coopération des États pour exécuter ses mandats d'arrêt, ce qui limite fortement sa portée pratique.",
+    "sources": [
+      {
+        "titre": "Cour pénale internationale",
+        "url": "https://fr.wikipedia.org/wiki/Cour_pénale_internationale",
+        "type": "primaire"
+      },
+      {
+        "titre": "Cour pénale internationale — Wikipédia",
+        "url": "https://fr.wikipedia.org/wiki/Cour_pénale_internationale",
+        "type": "secondaire"
+      }
+    ],
+    "statut": "documente",
+    "derniere_verification": "2026-09-05",
+    "resonance_ia": "Les usages de l'IA dans les conflits armés (ciblage automatisé, drones) posent une question juridique inédite pour la CPI : comment établir la responsabilité pénale individuelle lorsque la décision de frappe est partiellement déléguée à un système algorithmique."
   },
   {
     "id": "banque-africaine-de-developpement-bafd",
     "axe": "social",
     "sous_domaine": "organisation_internationale",
     "nom": "Banque africaine de développement (BAfD)",
-    "these_centrale": "",
-    "apport": "",
-    "limites_critiques": "",
-    "sources": [],
-    "statut": "a_documenter",
-    "derniere_verification": "2026-09-05"
+    "these_centrale": "La Banque africaine de développement (BAfD) part du principe qu'une institution financière multilatérale pilotée majoritairement par des pays africains eux-mêmes peut mieux orienter les investissements vers le développement et le progrès social du continent que des bailleurs uniquement extérieurs.",
+    "apport": "Elle finance des projets d'infrastructure, d'énergie et d'intégration régionale à travers le continent africain et constitue, avec la Banque mondiale et les banques régionales, l'un des principaux canaux de financement du développement en Afrique.",
+    "limites_critiques": "Sa capacité de financement reste nettement inférieure à celle de la Banque mondiale ou des grands bailleurs bilatéraux, et elle demeure dépendante des contributions des pays non-régionaux (Europe, États-Unis, Chine) pour une partie significative de son capital.",
+    "sources": [
+      {
+        "titre": "Banque africaine de développement",
+        "url": "https://fr.wikipedia.org/wiki/Banque_africaine_de_développement",
+        "type": "primaire"
+      },
+      {
+        "titre": "Banque africaine de développement — Wikipédia",
+        "url": "https://fr.wikipedia.org/wiki/Banque_africaine_de_développement",
+        "type": "secondaire"
+      }
+    ],
+    "statut": "documente",
+    "derniere_verification": "2026-09-05",
+    "resonance_ia": "La BAfD investit dans les infrastructures numériques africaines, un préalable indispensable à toute adoption large de l'IA sur un continent où l'accès à l'électricité et à internet reste très inégal."
   },
   {
     "id": "banque-asiatique-d-investissement-pour-les-infrastructures-baii",
     "axe": "social",
     "sous_domaine": "organisation_internationale",
     "nom": "Banque asiatique d'investissement pour les infrastructures (BAII)",
-    "these_centrale": "",
-    "apport": "",
-    "limites_critiques": "",
-    "sources": [],
-    "statut": "a_documenter",
-    "derniere_verification": "2026-09-05"
+    "these_centrale": "La Banque asiatique d'investissement pour les infrastructures (BAII), proposée par la Chine, part du principe qu'une institution financière alternative, non dominée par les puissances occidentales, peut mieux répondre au besoin massif d'infrastructures en Asie du Sud-Est et en Asie centrale.",
+    "apport": "Elle finance des projets d'infrastructure dans le cadre de la stratégie chinoise de la nouvelle route de la soie, se positionnant explicitement en concurrence avec le FMI, la Banque mondiale et la Banque asiatique de développement.",
+    "limites_critiques": "Sa gouvernance, largement dominée par la Chine qui en détient la plus grande part de capital et de droits de vote, alimente les critiques occidentales sur une instrumentalisation géopolitique du financement du développement (« diplomatie de la dette »).",
+    "sources": [
+      {
+        "titre": "Banque asiatique d'investissement pour les infrastructures",
+        "url": "https://fr.wikipedia.org/wiki/Banque_asiatique_d'investissement_pour_les_infrastructures",
+        "type": "primaire"
+      },
+      {
+        "titre": "BAII — Wikipédia",
+        "url": "https://fr.wikipedia.org/wiki/Banque_asiatique_d'investissement_pour_les_infrastructures",
+        "type": "secondaire"
+      }
+    ],
+    "statut": "documente",
+    "derniere_verification": "2026-09-05",
+    "resonance_ia": "La BAII participe au financement d'infrastructures numériques dans le cadre de la route de la soie numérique chinoise, un vecteur d'influence technologique et d'exportation de standards d'IA chinois vers les pays bénéficiaires."
   },
   {
     "id": "nouvelle-banque-de-developpement-nbd",
     "axe": "social",
     "sous_domaine": "organisation_internationale",
     "nom": "Nouvelle banque de développement (NBD)",
-    "these_centrale": "",
-    "apport": "",
-    "limites_critiques": "",
-    "sources": [],
-    "statut": "a_documenter",
-    "derniere_verification": "2026-09-05"
+    "these_centrale": "La Nouvelle Banque de développement (NBD), anciennement Banque de développement des BRICS, part du principe que les grandes puissances émergentes doivent disposer de leur propre institution de financement du développement, alternative à la Banque mondiale et au FMI jugés trop dominés par l'Occident.",
+    "apport": "Elle finance des projets d'infrastructure et de développement durable dans les pays membres des BRICS et, depuis son élargissement, dans d'autres pays émergents, en promouvant un financement moins conditionné politiquement que celui des institutions de Bretton Woods.",
+    "limites_critiques": "Sa capacité de financement reste très inférieure à celle de la Banque mondiale, et les sanctions internationales visant la Russie, l'un de ses membres fondateurs, compliquent son fonctionnement et ses levées de fonds sur les marchés internationaux.",
+    "sources": [
+      {
+        "titre": "Nouvelle banque de développement",
+        "url": "https://fr.wikipedia.org/wiki/Nouvelle_banque_de_développement",
+        "type": "primaire"
+      },
+      {
+        "titre": "Nouvelle banque de développement — Wikipédia",
+        "url": "https://fr.wikipedia.org/wiki/Nouvelle_banque_de_développement",
+        "type": "secondaire"
+      }
+    ],
+    "statut": "documente",
+    "derniere_verification": "2026-09-05",
+    "resonance_ia": "La NBD illustre la tendance à la création d'institutions financières parallèles portées par des puissances qui contestent la gouvernance occidentale existante — une dynamique de fragmentation que l'on retrouve dans la compétition actuelle entre écosystèmes technologiques et d'IA rivaux."
   },
   {
     "id": "cptpp",
     "axe": "social",
     "sous_domaine": "organisation_internationale",
     "nom": "CPTPP",
-    "these_centrale": "",
-    "apport": "",
-    "limites_critiques": "",
-    "sources": [],
-    "statut": "a_documenter",
-    "derniere_verification": "2026-09-05"
+    "these_centrale": "Le CPTPP (Accord de partenariat transpacifique global et progressiste), issu du TPP original signé en 2016 après le retrait américain, part du principe qu'un accord de libre-échange approfondi entre économies du pourtour Pacifique peut intégrer davantage leurs marchés que les accords bilatéraux classiques.",
+    "apport": "Il a créé l'une des zones de libre-échange les plus abouties au monde en matière de normes (propriété intellectuelle, commerce numérique, protection de l'investissement) entre onze pays d'Asie-Pacifique et des Amériques, malgré l'absence des États-Unis.",
+    "limites_critiques": "Le retrait américain dès 2017 a considérablement réduit son poids économique par rapport au projet initial, et l'accord reste contesté pour ses mécanismes de règlement des différends investisseur-État jugés trop favorables aux multinationales.",
+    "sources": [
+      {
+        "titre": "Partenariat transpacifique global et progressiste",
+        "url": "https://fr.wikipedia.org/wiki/Partenariat_transpacifique_global_et_progressiste",
+        "type": "primaire"
+      },
+      {
+        "titre": "CPTPP — Wikipédia",
+        "url": "https://fr.wikipedia.org/wiki/Partenariat_transpacifique_global_et_progressiste",
+        "type": "secondaire"
+      }
+    ],
+    "statut": "documente",
+    "derniere_verification": "2026-09-05",
+    "resonance_ia": "Les règles du CPTPP sur le commerce numérique et la libre circulation des données transfrontalières en font un laboratoire de normes qui influencent les négociations internationales sur la régulation des flux de données nécessaires à l'entraînement des systèmes d'IA."
   },
   {
     "id": "rcep",
     "axe": "social",
     "sous_domaine": "organisation_internationale",
     "nom": "RCEP",
-    "these_centrale": "",
-    "apport": "",
-    "limites_critiques": "",
-    "sources": [],
-    "statut": "a_documenter",
-    "derniere_verification": "2026-09-05"
+    "these_centrale": "Le RCEP (Partenariat économique régional global), signé en 2020, part du principe qu'un accord de libre-échange centré sur l'Asie-Pacifique et incluant la Chine peut consolider l'intégration économique régionale sans les normes contraignantes en matière de droits sociaux ou environnementaux propres aux accords occidentaux.",
+    "apport": "Il constitue l'accord commercial le plus important du monde en termes de population et de PIB couverts, rassemblant quinze pays d'Asie-Pacifique dont la Chine, le Japon et la Corée du Sud, renforçant l'intégration des chaînes de valeur régionales.",
+    "limites_critiques": "Moins ambitieux que le CPTPP en matière de normes (travail, environnement, propriété intellectuelle), il est perçu comme reflétant avant tout les intérêts chinois dans la région et laisse l'Inde en dehors, celle-ci s'étant retirée des négociations en 2019.",
+    "sources": [
+      {
+        "titre": "Partenariat économique régional global",
+        "url": "https://fr.wikipedia.org/wiki/Partenariat_économique_régional_global",
+        "type": "primaire"
+      },
+      {
+        "titre": "RCEP — Wikipédia",
+        "url": "https://fr.wikipedia.org/wiki/Partenariat_économique_régional_global",
+        "type": "secondaire"
+      }
+    ],
+    "statut": "documente",
+    "derniere_verification": "2026-09-05",
+    "resonance_ia": "Le RCEP consolide l'intégration économique de la région qui concentre l'essentiel de la production mondiale de semi-conducteurs, un enjeu central pour la chaîne de valeur matérielle de l'intelligence artificielle."
   },
   {
     "id": "alliance-solaire-internationale-asi",
     "axe": "social",
     "sous_domaine": "organisation_internationale",
     "nom": "Alliance solaire internationale (ASI)",
-    "these_centrale": "",
-    "apport": "",
-    "limites_critiques": "",
-    "sources": [],
-    "statut": "a_documenter",
-    "derniere_verification": "2026-09-05"
+    "these_centrale": "L'Alliance solaire internationale (ASI), initiative intergouvernementale portée par l'Inde, part du principe qu'une coalition dédiée de pays fortement ensoleillés peut accélérer collectivement le déploiement de l'énergie solaire pour réduire la dépendance mondiale aux combustibles fossiles.",
+    "apport": "Elle a mobilisé du financement et de l'expertise technique pour développer des projets solaires dans des pays en développement, se positionnant comme un forum spécialisé complémentaire aux grandes négociations climatiques onusiennes.",
+    "limites_critiques": "Son impact reste modeste au regard de l'ampleur des investissements nécessaires à la transition énergétique mondiale, et elle dépend fortement des financements et de l'impulsion politique de l'Inde et de quelques bailleurs partenaires.",
+    "sources": [
+      {
+        "titre": "Alliance solaire internationale",
+        "url": "https://fr.wikipedia.org/wiki/Alliance_solaire_internationale",
+        "type": "primaire"
+      },
+      {
+        "titre": "Alliance solaire internationale — Wikipédia",
+        "url": "https://fr.wikipedia.org/wiki/Alliance_solaire_internationale",
+        "type": "secondaire"
+      }
+    ],
+    "statut": "documente",
+    "derniere_verification": "2026-09-05",
+    "resonance_ia": "La consommation électrique croissante des centres de données d'IA renforce la pertinence stratégique de l'ASI, dans la mesure où une part significative de l'énergie nécessaire à l'entraînement des modèles devra provenir de sources renouvelables comme le solaire."
   },
   {
     "id": "conseil-de-stabilite-financiere-csf",
     "axe": "social",
     "sous_domaine": "organisation_internationale",
     "nom": "Conseil de stabilité financière (CSF)",
-    "these_centrale": "",
-    "apport": "",
-    "limites_critiques": "",
-    "sources": [],
-    "statut": "a_documenter",
-    "derniere_verification": "2026-09-05"
+    "these_centrale": "Le Conseil de stabilité financière (CSF), créé lors du sommet du G20 de Pittsburgh en 2009 en remplacement du Forum de stabilité financière, part du principe qu'une surveillance coordonnée du système financier mondial et des recommandations communes peuvent prévenir de nouvelles crises systémiques comme celle de 2008.",
+    "apport": "Hébergé et financé par la Banque des règlements internationaux à Bâle, il réunit les principales économies du G20 et coordonne les réformes de régulation bancaire et financière (normes de fonds propres, encadrement des institutions « too big to fail »).",
+    "limites_critiques": "Comme de nombreux organes du G20, il ne dispose d'aucun pouvoir contraignant propre : ses recommandations doivent être transposées par chaque juridiction nationale, ce qui crée des délais et des divergences d'application significatifs entre pays.",
+    "sources": [
+      {
+        "titre": "Financial Stability Board",
+        "url": "https://en.wikipedia.org/wiki/Financial_Stability_Board",
+        "type": "primaire"
+      },
+      {
+        "titre": "Financial Stability Board — Wikipedia (EN)",
+        "url": "https://en.wikipedia.org/wiki/Financial_Stability_Board",
+        "type": "secondaire"
+      }
+    ],
+    "statut": "documente",
+    "derniere_verification": "2026-09-05",
+    "resonance_ia": "Le CSF a commencé à étudier les risques systémiques que l'usage croissant de l'IA dans le secteur financier (trading algorithmique, scoring de crédit) pourrait faire peser sur la stabilité financière mondiale."
   },
   {
     "id": "gavi",
     "axe": "social",
     "sous_domaine": "organisation_internationale",
     "nom": "GAVI",
-    "these_centrale": "",
-    "apport": "",
-    "limites_critiques": "",
-    "sources": [],
-    "statut": "a_documenter",
-    "derniere_verification": "2026-09-05"
+    "these_centrale": "Gavi, l'Alliance du vaccin, partenariat public-privé mondial de santé, part du principe qu'un mécanisme de financement mutualisé et des achats groupés de vaccins peuvent accélérer l'accès à l'immunisation dans les pays les plus pauvres, là où le marché seul ne le ferait pas.",
+    "apport": "Elle est devenue le plus grand canal de financement mondial de la vaccination infantile, ayant contribué à plus d'un tiers des dons destinés à l'immunisation entre 1990 et 2016, et a joué un rôle clé dans la distribution des vaccins contre la COVID-19 via le mécanisme COVAX.",
+    "limites_critiques": "Sa dépendance à un nombre restreint de grands donateurs (fondations privées, gouvernements) expose son financement à des aléas politiques et budgétaires, et la crise de la COVID-19 a révélé les limites de son mécanisme COVAX face à l'accaparement des doses par les pays riches.",
+    "sources": [
+      {
+        "titre": "GAVI, the Vaccine Alliance",
+        "url": "https://en.wikipedia.org/wiki/GAVI",
+        "type": "primaire"
+      },
+      {
+        "titre": "GAVI — Wikipedia (EN)",
+        "url": "https://en.wikipedia.org/wiki/GAVI",
+        "type": "secondaire"
+      }
+    ],
+    "statut": "documente",
+    "derniere_verification": "2026-09-05",
+    "resonance_ia": "Gavi utilise de plus en plus des outils d'analyse de données et d'IA pour optimiser les chaînes d'approvisionnement vaccinal et cibler les zones de couverture vaccinale insuffisante, illustrant un usage concret de l'IA au service de la santé mondiale."
   },
   {
     "id": "fonds-mondial-sida-tuberculose-paludisme",
     "axe": "social",
     "sous_domaine": "organisation_internationale",
     "nom": "Fonds mondial (sida/tuberculose/paludisme)",
-    "these_centrale": "",
-    "apport": "",
-    "limites_critiques": "",
-    "sources": [],
-    "statut": "a_documenter",
-    "derniere_verification": "2026-09-05"
+    "these_centrale": "Le Fonds mondial de lutte contre le sida, la tuberculose et le paludisme, créé en 2002 à la suite d'un appel des Nations unies, part du principe qu'un mécanisme de financement mondial mutualisé peut accélérer la lutte contre les trois grandes pandémies infectieuses affectant prioritairement les pays pauvres.",
+    "apport": "Il est devenu l'un des plus grands mécanismes multilatéraux de financement de la santé mondiale, contribuant significativement à la baisse de la mortalité liée au sida, à la tuberculose et au paludisme dans les pays bénéficiaires, en soutien aux objectifs de développement durable de l'ONU.",
+    "limites_critiques": "Son fonctionnement par cycles de reconstitution des ressources le rend vulnérable aux fluctuations de la générosité des bailleurs, et sa gouvernance par projets ponctuels a parfois été critiquée pour insuffisamment renforcer les systèmes de santé publics de façon pérenne.",
+    "sources": [
+      {
+        "titre": "Fonds mondial de lutte contre le sida, la tuberculose et le paludisme",
+        "url": "https://en.wikipedia.org/wiki/Global_Fund_to_Fight_AIDS,_Tuberculosis_and_Malaria",
+        "type": "primaire"
+      },
+      {
+        "titre": "Global Fund — Wikipedia (EN)",
+        "url": "https://en.wikipedia.org/wiki/Global_Fund_to_Fight_AIDS,_Tuberculosis_and_Malaria",
+        "type": "secondaire"
+      }
+    ],
+    "statut": "documente",
+    "derniere_verification": "2026-09-05",
+    "resonance_ia": "L'IA est de plus en plus mobilisée dans les programmes soutenus par le Fonds mondial pour améliorer le diagnostic (dépistage assisté par imagerie), la prédiction des épidémies et l'allocation optimisée de ressources sanitaires limitées."
   },
   {
     "id": "ipbes",
     "axe": "social",
     "sous_domaine": "organisation_internationale",
     "nom": "IPBES",
-    "these_centrale": "",
-    "apport": "",
-    "limites_critiques": "",
-    "sources": [],
-    "statut": "a_documenter",
-    "derniere_verification": "2026-09-05"
+    "these_centrale": "L'IPBES (Plateforme intergouvernementale sur la biodiversité et les services écosystémiques), créée en 2012, part du principe qu'un consensus scientifique international sur l'état de la biodiversité, à l'image du GIEC pour le climat, peut orienter les décisions politiques mondiales en la matière.",
+    "apport": "Elle produit des évaluations scientifiques mondiales de référence sur l'état de la biodiversité et des services écosystémiques et soutient le développement de nouvelles connaissances et d'outils d'aide à la décision pour les gouvernements.",
+    "limites_critiques": "Comme le GIEC, elle ne dispose d'aucun pouvoir contraignant : ses rapports alertent sur l'effondrement de la biodiversité sans que les États soient tenus d'agir en conséquence, et la mise en œuvre de ses recommandations dépend entièrement de la volonté politique nationale.",
+    "sources": [
+      {
+        "titre": "IPBES",
+        "url": "https://en.wikipedia.org/wiki/Intergovernmental_Science-Policy_Platform_on_Biodiversity_and_Ecosystem_Services",
+        "type": "primaire"
+      },
+      {
+        "titre": "IPBES — Wikipedia (EN)",
+        "url": "https://en.wikipedia.org/wiki/Intergovernmental_Science-Policy_Platform_on_Biodiversity_and_Ecosystem_Services",
+        "type": "secondaire"
+      }
+    ],
+    "statut": "documente",
+    "derniere_verification": "2026-09-05",
+    "resonance_ia": "L'IPBES explore l'usage de l'IA (modélisation prédictive, télédétection, traitement de données de biodiversité à grande échelle) pour améliorer le suivi des écosystèmes, tout en s'interrogeant sur l'empreinte environnementale propre des infrastructures d'IA."
   },
   {
     "id": "taylorisme-ost",
