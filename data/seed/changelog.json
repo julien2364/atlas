@@ -47,5 +47,12 @@
     "type": "correction",
     "cible": "Recherche documentaire (qualite) + avancement du backlog",
     "resume": "Deuxieme run manuel du script scripts/documentation-recherche.mjs (80 fiches traitees) pour avancer le backlog des 293 fiches 'a documenter' independamment du cron quotidien (limite de 15/jour). Faux positifs reels detectes a la relecture : l'API de recherche Wikipedia associait parfois un nom a un article totalement etranger au sujet (ex. le philosophe 'Mauricio Ferraris' apparie a une telenovela mexicaine, le concept politique 'Junte' apparie a une chanteuse colombienne) - ces 3 propositions erronees ont ete retirees de la file de validation avant tout risque de validation par erreur. Garde-fou ajoute au script : une proposition n'est desormais retenue que si au moins un mot significatif du nom de la fiche apparait dans le titre ou le debut du resume de l'article trouve, sinon la fiche reste 'a documenter manuellement' plutot que de recevoir une source non fiable. Aucune fiche n'a ete mise a jour automatiquement ; la file de validation manuelle reste le seul point d'entree vers une publication."
+  },
+  {
+    "id": "documentation-manuelle-12-philosophes-2026-09-05",
+    "date": "2026-09-05T00:00:00Z",
+    "type": "ajout",
+    "cible": "Referentiel humain (axe philosophique) - 12 fiches documentees",
+    "resume": "12 fiches de philosophes majeurs du XXe siecle, jusque-la 'a documenter', redigees en profondeur a partir des extraits Wikipedia reels recuperes par le pipeline de recherche documentaire, verifies et synthetises (these_centrale, apport, limites_critiques, resonance IA) avec reference a une oeuvre primaire pour chacun : Jean-Paul Sartre, Martin Heidegger, Hannah Arendt, Michel Foucault, Simone de Beauvoir, Jurgen Habermas, Gilles Deleuze, Jacques Derrida, John Rawls, Karl Popper, Ludwig Wittgenstein, Maurice Merleau-Ponty. Leurs entrees correspondantes retirees de la file de validation (desormais documentees, non plus en attente). Le referentiel humain (axe philosophique) passe ainsi de 1 a 13 fiches reellement documentees ; ~281 fiches humaines et 38 fiches IA restent 'a documenter' sur l'ensemble des deux referentiels."
   }
 ]

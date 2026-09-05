@@ -194,12 +194,23 @@
     "axe": "philosophique",
     "sous_domaine": "philosophie",
     "nom": "Gilles Deleuze",
-    "these_centrale": "",
-    "apport": "",
-    "limites_critiques": "",
-    "sources": [],
-    "statut": "a_documenter",
-    "derniere_verification": "2026-09-05"
+    "these_centrale": "La réalité doit être pensée en termes de flux, de devenir et de multiplicités plutôt que d'identités fixes ou d'essences ; les concepts de « rhizome » et de « machine désirante » (avec Guattari) remplacent les hiérarchies arborescentes de la pensée classique.",
+    "apport": "Renouvellement de l'histoire de la philosophie (Nietzsche, Spinoza, Bergson) par une lecture non représentative ; Capitalisme et schizophrénie (avec Félix Guattari) ; influence considérable sur les études culturelles, l'art et les sciences sociales.",
+    "limites_critiques": "Style volontairement néologique et associatif jugé difficile à opérationnaliser ; portée politique concrète des concepts (rhizome, déterritorialisation) contestée comme métaphorique plus qu'analytique.",
+    "sources": [
+      {
+        "titre": "Mille Plateaux (avec Félix Guattari)",
+        "type": "primaire"
+      },
+      {
+        "titre": "Gilles Deleuze — Wikipédia",
+        "url": "https://fr.wikipedia.org/wiki/Gilles_Deleuze",
+        "type": "secondaire"
+      }
+    ],
+    "statut": "documente",
+    "derniere_verification": "2026-09-05",
+    "resonance_ia": "Le concept de « société de contrôle » (post-disciplinaire, diffuse, continue) qu'il esquisse anticipe les formes de régulation comportementale par des systèmes algorithmiques et de recommandation permanents."
   },
   {
     "id": "giorgio-agamben",
@@ -218,12 +229,23 @@
     "axe": "philosophique",
     "sous_domaine": "philosophie",
     "nom": "Hannah Arendt",
-    "these_centrale": "",
-    "apport": "",
-    "limites_critiques": "",
-    "sources": [],
-    "statut": "a_documenter",
-    "derniere_verification": "2026-09-05"
+    "these_centrale": "Le totalitarisme est une forme de domination radicalement nouvelle au XXe siècle qui détruit la pluralité humaine et l'espace public ; le mal peut être « banal », commis par des bureaucrates obéissants sans profondeur démoniaque (procès Eichmann).",
+    "apport": "Distinction travail/œuvre/action (La Condition de l'homme moderne) ; analyse fondatrice des Origines du totalitarisme ; réflexion sur l'espace public et la pluralité comme condition de la politique.",
+    "limites_critiques": "La thèse de la « banalité du mal » a été contestée par des historiens ultérieurs qui lui reprochent de minimiser la conviction idéologique réelle d'Eichmann ; sa distinction social/politique jugée trop rigide par des critiques féministes et marxistes.",
+    "sources": [
+      {
+        "titre": "Les Origines du totalitarisme",
+        "type": "primaire"
+      },
+      {
+        "titre": "Hannah Arendt — Wikipédia",
+        "url": "https://fr.wikipedia.org/wiki/Hannah_Arendt",
+        "type": "secondaire"
+      }
+    ],
+    "statut": "documente",
+    "derniere_verification": "2026-09-05",
+    "resonance_ia": "Son alerte sur l'obéissance bureaucratique sans jugement moral personnel est mobilisée dans les débats sur la délégation de décisions (guerre, justice, administration) à des systèmes IA qui « exécutent » sans délibération pratique."
   },
   {
     "id": "hans-georg-gadamer",
@@ -254,12 +276,23 @@
     "axe": "philosophique",
     "sous_domaine": "philosophie",
     "nom": "Jacques Derrida",
-    "these_centrale": "",
-    "apport": "",
-    "limites_critiques": "",
-    "sources": [],
-    "statut": "a_documenter",
-    "derniere_verification": "2026-09-05"
+    "these_centrale": "Tout texte et tout système de pensée reposent sur des oppositions hiérarchisées instables (parole/écriture, présence/absence) que la « déconstruction » révèle et déjoue, sans jamais atteindre un sens ou une origine stabilisée.",
+    "apport": "Fondateur de la déconstruction ; critique du « logocentrisme » occidental (primat de la présence et de la parole vive) ; influence déterminante sur la théorie littéraire, le droit et les études de genre.",
+    "limites_critiques": "Accusé par certains courants analytiques (dont Searle, controverse restée célèbre) d'obscurantisme et d'absence de rigueur argumentative ; difficulté à tirer de la déconstruction des positions normatives positives.",
+    "sources": [
+      {
+        "titre": "De la grammatologie",
+        "type": "primaire"
+      },
+      {
+        "titre": "Jacques Derrida — Wikipédia",
+        "url": "https://fr.wikipedia.org/wiki/Jacques_Derrida",
+        "type": "secondaire"
+      }
+    ],
+    "statut": "documente",
+    "derniere_verification": "2026-09-05",
+    "resonance_ia": "Sa thèse selon laquelle tout texte excède l'intention de son auteur et se prête à une infinité de lectures ressitue le débat sur l'« interprétation » des sorties des LLM, produites sans intention au sens de la philosophie du langage classique."
   },
   {
     "id": "jacques-ranciere",
@@ -278,12 +311,23 @@
     "axe": "philosophique",
     "sous_domaine": "philosophie",
     "nom": "Jean-Paul Sartre",
-    "these_centrale": "",
-    "apport": "",
-    "limites_critiques": "",
-    "sources": [],
-    "statut": "a_documenter",
-    "derniere_verification": "2026-09-05"
+    "these_centrale": "« L'existence précède l'essence » : l'être humain n'a pas de nature fixe donnée d'avance, il se définit par ses choix libres et est donc entièrement responsable de ce qu'il devient — « condamné à être libre ».",
+    "apport": "Fondateur de l'existentialisme athée français ; concepts de mauvaise foi, de liberté radicale et d'engagement (littérature et politique) ; influence majeure sur la philosophie et la scène intellectuelle du XXe siècle (Les Temps modernes).",
+    "limites_critiques": "Soutien tardif à des régimes autoritaires (maoïsme, URSS) jugé en tension avec sa philosophie de la liberté ; la notion de liberté « totale » a été relativisée ensuite par le structuralisme et la psychanalyse.",
+    "sources": [
+      {
+        "titre": "L'Être et le Néant",
+        "type": "primaire"
+      },
+      {
+        "titre": "Jean-Paul Sartre — Wikipédia",
+        "url": "https://fr.wikipedia.org/wiki/Jean-Paul_Sartre",
+        "type": "secondaire"
+      }
+    ],
+    "statut": "documente",
+    "derniere_verification": "2026-09-05",
+    "resonance_ia": "Un LLM n'a pas de projet ni de choix au sens sartrien : il ne « se fait » pas par des actes engagés, il produit des sorties à partir de régularités statistiques, sans angoisse existentielle ni responsabilité vécue."
   },
   {
     "id": "jean-francois-lyotard",
@@ -302,12 +346,23 @@
     "axe": "philosophique",
     "sous_domaine": "philosophie",
     "nom": "John Rawls",
-    "these_centrale": "",
-    "apport": "",
-    "limites_critiques": "",
-    "sources": [],
-    "statut": "a_documenter",
-    "derniere_verification": "2026-09-05"
+    "these_centrale": "Une société juste est celle dont les principes seraient choisis par des individus rationnels placés sous un « voile d'ignorance » (ignorant leur propre position sociale future) : liberté égale pour tous, et inégalités tolérées seulement si elles profitent aux plus défavorisés.",
+    "apport": "Théorie de la justice (1971) : renouvellement majeur de la philosophie politique libérale contractualiste, socle des débats contemporains sur l'équité, la redistribution et l'État social.",
+    "limites_critiques": "Critiqué par les libertariens (Nozick) pour une redistribution jugée attentatoire à la propriété individuelle, et par les communautariens (Sandel, MacIntyre) pour une conception du sujet jugée trop abstraite, détachée de toute appartenance culturelle.",
+    "sources": [
+      {
+        "titre": "Théorie de la justice",
+        "type": "primaire"
+      },
+      {
+        "titre": "John Rawls — Wikipédia",
+        "url": "https://fr.wikipedia.org/wiki/John_Rawls_(philosophe)",
+        "type": "secondaire"
+      }
+    ],
+    "statut": "documente",
+    "derniere_verification": "2026-09-05",
+    "resonance_ia": "Le « voile d'ignorance » est directement repris dans les débats sur l'équité algorithmique (fairness) : concevoir des règles de décision automatisée sans savoir à l'avance qui en bénéficiera ou en pâtira."
   },
   {
     "id": "john-searle",
@@ -338,24 +393,46 @@
     "axe": "philosophique",
     "sous_domaine": "philosophie",
     "nom": "Jürgen Habermas",
-    "these_centrale": "",
-    "apport": "",
-    "limites_critiques": "",
-    "sources": [],
-    "statut": "a_documenter",
-    "derniere_verification": "2026-09-05"
+    "these_centrale": "La légitimité des normes sociales et politiques repose sur l'agir communicationnel : une norme est valide si elle pourrait recueillir l'assentiment de tous les participants concernés dans une discussion libre et sans contrainte (éthique de la discussion).",
+    "apport": "Théorie de l'agir communicationnel ; concept d'espace public (Öffentlichkeit) ; défense d'une rationalité procédurale comme fondement de la démocratie délibérative.",
+    "limites_critiques": "L'idéal de « situation de parole idéale » jugé irréaliste par les critiques, qui pointent les asymétries de pouvoir et d'accès à l'information ; accusé de sous-estimer les rapports de force réels dans l'espace public.",
+    "sources": [
+      {
+        "titre": "Théorie de l'agir communicationnel",
+        "type": "primaire"
+      },
+      {
+        "titre": "Jürgen Habermas — Wikipédia",
+        "url": "https://fr.wikipedia.org/wiki/J%C3%BCrgen_Habermas",
+        "type": "secondaire"
+      }
+    ],
+    "statut": "documente",
+    "derniere_verification": "2026-09-05",
+    "resonance_ia": "Son exigence d'une délibération publique inclusive interroge directement la capacité — ou l'incapacité — des IA génératives à participer légitimement au débat démocratique, notamment via la désinformation ou la polarisation algorithmique."
   },
   {
     "id": "karl-popper",
     "axe": "philosophique",
     "sous_domaine": "philosophie",
     "nom": "Karl Popper",
-    "these_centrale": "",
-    "apport": "",
-    "limites_critiques": "",
-    "sources": [],
-    "statut": "a_documenter",
-    "derniere_verification": "2026-09-05"
+    "these_centrale": "Une théorie n'est scientifique que si elle est falsifiable, c'est-à-dire si elle peut en principe être réfutée par l'expérience ; la connaissance progresse par conjectures hardies et réfutations, jamais par vérification définitive.",
+    "apport": "Critère de démarcation science/pseudo-science (falsifiabilité) ; critique de l'induction ; défense de la « société ouverte » contre l'historicisme et les totalitarismes dans La Société ouverte et ses ennemis.",
+    "limites_critiques": "Le critère de falsifiabilité jugé trop strict par la suite (Kuhn, Lakatos, Feyerabend montrent que les théories survivent souvent à des réfutations partielles) ; sa philosophie politique parfois vue comme sous-estimant les inégalités structurelles.",
+    "sources": [
+      {
+        "titre": "La Société ouverte et ses ennemis",
+        "type": "primaire"
+      },
+      {
+        "titre": "Karl Popper — Wikipédia",
+        "url": "https://fr.wikipedia.org/wiki/Karl_Popper",
+        "type": "secondaire"
+      }
+    ],
+    "statut": "documente",
+    "derniere_verification": "2026-09-05",
+    "resonance_ia": "Son exigence de falsifiabilité interroge l'évaluation des IA : un modèle dont les échecs peuvent toujours être réexpliqués après coup (prompt mal formulé, données insuffisantes) échappe-t-il à toute réfutation empirique rigoureuse ?"
   },
   {
     "id": "luce-irigaray",
@@ -374,24 +451,46 @@
     "axe": "philosophique",
     "sous_domaine": "philosophie",
     "nom": "Ludwig Wittgenstein",
-    "these_centrale": "",
-    "apport": "",
-    "limites_critiques": "",
-    "sources": [],
-    "statut": "a_documenter",
-    "derniere_verification": "2026-09-05"
+    "these_centrale": "Le sens d'un mot n'est pas une essence fixe mais son usage dans un « jeu de langage » ancré dans une « forme de vie » partagée ; nombre de problèmes philosophiques traditionnels naissent d'une mauvaise utilisation du langage ordinaire.",
+    "apport": "Deux tournants majeurs — le Tractatus logico-philosophicus (langage comme image logique du monde) puis les Recherches philosophiques (langage comme pratique sociale) — fondateurs respectivement du positivisme logique et de la philosophie du langage ordinaire.",
+    "limites_critiques": "Rupture radicale entre les deux périodes de sa pensée rendant difficile toute lecture unifiée ; son scepticisme quant à la possibilité même de « théories » philosophiques limite la portée systématique de son œuvre.",
+    "sources": [
+      {
+        "titre": "Recherches philosophiques",
+        "type": "primaire"
+      },
+      {
+        "titre": "Ludwig Wittgenstein — Wikipédia",
+        "url": "https://fr.wikipedia.org/wiki/Ludwig_Wittgenstein",
+        "type": "secondaire"
+      }
+    ],
+    "statut": "documente",
+    "derniere_verification": "2026-09-05",
+    "resonance_ia": "Sa thèse que le sens naît de l'usage, non d'une référence interne fixe, éclaire — et complique — le débat sur la « compréhension » des LLM : produisent-ils un usage correct du langage sans « forme de vie » partagée avec les humains ?"
   },
   {
     "id": "martin-heidegger",
     "axe": "philosophique",
     "sous_domaine": "philosophie",
     "nom": "Martin Heidegger",
-    "these_centrale": "",
-    "apport": "",
-    "limites_critiques": "",
-    "sources": [],
-    "statut": "a_documenter",
-    "derniere_verification": "2026-09-05"
+    "these_centrale": "L'être humain (Dasein) est un « être-pour-la-mort » jeté dans le monde ; la question du sens de l'Être a été oubliée par la métaphysique occidentale depuis Platon, et l'authenticité suppose d'assumer sa propre finitude.",
+    "apport": "Renouvellement de l'ontologie (Être et Temps, 1927) ; influence déterminante sur l'herméneutique, l'existentialisme, la déconstruction (Derrida) et la philosophie de la technique.",
+    "limites_critiques": "Adhésion au NSDAP en 1933 (rectorat de Fribourg) sans repentir clair après-guerre, entachant durablement la réception de son œuvre ; style extrêmement hermétique et néologismes contestés.",
+    "sources": [
+      {
+        "titre": "Être et Temps",
+        "type": "primaire"
+      },
+      {
+        "titre": "Martin Heidegger — Wikipédia",
+        "url": "https://fr.wikipedia.org/wiki/Martin_Heidegger",
+        "type": "secondaire"
+      }
+    ],
+    "statut": "documente",
+    "derniere_verification": "2026-09-05",
+    "resonance_ia": "Sa critique de la technique comme « arraisonnement » (Gestell) du monde résonne avec les débats sur une IA réduisant l'humain et la nature à des ressources optimisables, sans fournir de critère opérationnel pour juger un système donné."
   },
   {
     "id": "mauricio-ferraris",
@@ -410,24 +509,46 @@
     "axe": "philosophique",
     "sous_domaine": "philosophie",
     "nom": "Maurice Merleau-Ponty",
-    "these_centrale": "",
-    "apport": "",
-    "limites_critiques": "",
-    "sources": [],
-    "statut": "a_documenter",
-    "derniere_verification": "2026-09-05"
+    "these_centrale": "La perception n'est pas un traitement d'informations sensorielles par un sujet désincarné, mais l'expérience vécue d'un corps engagé dans le monde (« être-au-monde ») ; le corps est le sujet même de la connaissance, non un simple instrument.",
+    "apport": "Phénoménologie de la perception (1945) ; critique du dualisme corps/esprit hérité de Descartes ; influence majeure sur les sciences cognitives incarnées (embodied cognition) et la robotique.",
+    "limites_critiques": "Ancrage fort dans la phénoménologie husserlienne jugé daté par certaines approches computationnelles ultérieures des sciences cognitives ; œuvre inachevée (mort prématurée en 1961).",
+    "sources": [
+      {
+        "titre": "Phénoménologie de la perception",
+        "type": "primaire"
+      },
+      {
+        "titre": "Maurice Merleau-Ponty — Wikipédia",
+        "url": "https://fr.wikipedia.org/wiki/Maurice_Merleau-Ponty",
+        "type": "secondaire"
+      }
+    ],
+    "statut": "documente",
+    "derniere_verification": "2026-09-05",
+    "resonance_ia": "Sa thèse de la cognition incarnée est au cœur des critiques adressées aux LLM, désincarnés et sans perception sensorielle directe : peuvent-ils vraiment « comprendre » le monde sans jamais l'habiter physiquement (cf. débat symbol grounding) ?"
   },
   {
     "id": "michel-foucault",
     "axe": "philosophique",
     "sous_domaine": "philosophie",
     "nom": "Michel Foucault",
-    "these_centrale": "",
-    "apport": "",
-    "limites_critiques": "",
-    "sources": [],
-    "statut": "a_documenter",
-    "derniere_verification": "2026-09-05"
+    "these_centrale": "Le pouvoir n'est pas seulement répressif mais productif : il façonne les savoirs, les normes et les sujets eux-mêmes à travers des dispositifs disciplinaires (prison, école, hôpital, sexualité) diffus dans tout le corps social.",
+    "apport": "Généalogie du pouvoir-savoir ; concepts de biopouvoir, de gouvernementalité et de dispositif ; influence majeure sur les études de genre, la sociologie, le droit et l'histoire des sciences.",
+    "limites_critiques": "Absence de théorie normative claire (comment distinguer un « bon » et un « mauvais » pouvoir ?), reprochée notamment par Habermas ; usage parfois flou et englobant de la notion de « pouvoir ».",
+    "sources": [
+      {
+        "titre": "Surveiller et punir",
+        "type": "primaire"
+      },
+      {
+        "titre": "Michel Foucault — Wikipédia",
+        "url": "https://fr.wikipedia.org/wiki/Michel_Foucault",
+        "type": "secondaire"
+      }
+    ],
+    "statut": "documente",
+    "derniere_verification": "2026-09-05",
+    "resonance_ia": "Sa notion de « panoptique » est directement reprise pour analyser la surveillance algorithmique et les systèmes de notation/scoring par IA, qui rendent les individus visibles et calculables sans qu'ils sachent quand ils sont observés."
   },
   {
     "id": "martha-nussbaum",
@@ -554,12 +675,23 @@
     "axe": "philosophique",
     "sous_domaine": "philosophie",
     "nom": "Simone de Beauvoir",
-    "these_centrale": "",
-    "apport": "",
-    "limites_critiques": "",
-    "sources": [],
-    "statut": "a_documenter",
-    "derniere_verification": "2026-09-05"
+    "these_centrale": "« On ne naît pas femme, on le devient » : la condition féminine est une construction sociale et historique, non une nature biologique, qui a assigné aux femmes le rôle d'Autre par rapport au sujet masculin universel.",
+    "apport": "Fondatrice du féminisme existentialiste (Le Deuxième Sexe, 1949) ; analyse de l'oppression comme situation à dépasser par l'émancipation économique et l'exercice concret de la liberté.",
+    "limites_critiques": "Critiquée ultérieurement par des courants féministes essentialistes, décoloniaux et intersectionnels pour un universalisme jugé trop centré sur l'expérience occidentale et bourgeoise.",
+    "sources": [
+      {
+        "titre": "Le Deuxième Sexe",
+        "type": "primaire"
+      },
+      {
+        "titre": "Simone de Beauvoir — Wikipédia",
+        "url": "https://fr.wikipedia.org/wiki/Simone_de_Beauvoir",
+        "type": "secondaire"
+      }
+    ],
+    "statut": "documente",
+    "derniere_verification": "2026-09-05",
+    "resonance_ia": "Sa critique de catégories sociales présentées à tort comme « naturelles » éclaire les débats sur les biais de genre appris — et reproduits — par des modèles d'IA entraînés sur des données historiques inégalitaires."
   },
   {
     "id": "theodor-adorno",
