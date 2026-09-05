@@ -103,5 +103,12 @@
     "type": "ajout",
     "cible": "referentiel-humain/evolution",
     "resume": "Les 55 fiches de l'axe évolution (sciences) documentées en un lot : 20 théories/concepts scientifiques majeurs (relativité, modèle standard, ADN, tectonique des plaques, Big Bang, mécanique quantique, synthèse évolutive, réchauffement climatique, théorie du chaos, deep learning, CRISPR-Cas9, boson de Higgs, informatique quantique, TAL, exoplanètes, vaccins ARNm, graphène, connectome, fusion tokamak, science du système Terre), 20 scientifiques (Einstein, Curie, Bohr, Turing, Watson, Crick, Franklin, Hawking, Feynman, Planck, Heisenberg, Pauling, Goodall, Tu Youyou, Doudna, Charpentier, Berners-Lee, Hinton, Yamanaka, Penrose) et 15 institutions de recherche (CERN, NASA, ESA, Institut Max Planck, MIT, CNRS, NIH, Cavendish, Caltech, Stanford, Institut Pasteur, RIKEN, GIEC, EMBL, Fermilab), sourcées via Wikipédia (FR pour les concepts, FR/EN pour personnalités et institutions selon disponibilité, limitation de débit de l'API FR contournée via l'API EN pour la recherche tout en citant les URLs FR). L'axe évolution est désormais complet : 55/55 fiches documentées."
+  },
+  {
+    "id": "documentation-manuelle-psychologique-serenite-complets-2026-09-05",
+    "date": "2026-09-05",
+    "type": "ajout",
+    "cible": "referentiel-humain/psychologique + referentiel-humain/serenite",
+    "resume": "Les 10 dernières fiches de l'axe psychologique (Freud, Jung, Lacan, Skinner, Watson, Maslow, Rogers, Seligman, Piaget, Vygotski) et les 4 dernières de l'axe sérénité (World Happiness Report, Global Peace Index, quête de sens/spiritualités et laïcité, résilience civilisationnelle aux risques existentiels) documentées, sourcées via Wikipédia (FR/EN, avec repli sur WebFetch le temps d'un rate-limiting persistant de l'API REST Wikipédia sur ce lot). Les axes psychologique (12/12) et sérénité (5/5) sont désormais complets à 100%."
   }
 ]

@@ -22,12 +22,22 @@
     "axe": "serenite",
     "sous_domaine": "bien_etre",
     "nom": "World Happiness Report",
-    "these_centrale": "",
-    "apport": "",
-    "limites_critiques": "",
-    "resonance_ia": null,
-    "sources": [],
-    "statut": "a_documenter",
+    "these_centrale": "Le World Happiness Report est une mesure annuelle du bien-être subjectif des populations, publiée depuis 2012 par le Réseau des solutions pour le développement durable des Nations unies (SDSN), fondée sur l'auto-évaluation du bonheur (échelle de Cantril) pondérée par six facteurs explicatifs.",
+    "apport": "Il a institutionnalisé le bien-être subjectif comme indicateur alternatif au PIB dans le débat public et les politiques publiques, popularisant l'idée que la richesse matérielle seule ne suffit pas à rendre compte de la qualité de vie.",
+    "limites_critiques": "La méthodologie repose sur des indicateurs (PIB par habitant, soutien social, espérance de vie en bonne santé, liberté de choix, générosité, corruption perçue) qui reflètent une conception occidentale du bien-être, et l'auto-évaluation subjective du bonheur reste sensible aux biais culturels et déclaratifs.",
+    "resonance_ia": "Les débats sur l'impact de l'IA sur l'emploi et le sens du travail interrogent directement les composantes du rapport (liberté de choix, soutien social) : un gain de PIB lié à l'automatisation ne se traduit pas mécaniquement par un gain de bien-être subjectif si les autres facteurs se dégradent.",
+    "sources": [
+      {
+        "titre": "World Happiness Report (SDSN, publication annuelle depuis 2012)",
+        "type": "primaire"
+      },
+      {
+        "titre": "Rapport mondial sur le bonheur — Wikipédia",
+        "url": "https://fr.wikipedia.org/wiki/Rapport_mondial_sur_le_bonheur",
+        "type": "secondaire"
+      }
+    ],
+    "statut": "documente",
     "derniere_verification": "2026-09-05"
   },
   {
@@ -35,12 +45,22 @@
     "axe": "serenite",
     "sous_domaine": "soutenabilite",
     "nom": "Global Peace Index",
-    "these_centrale": "",
-    "apport": "",
-    "limites_critiques": "",
-    "resonance_ia": null,
-    "sources": [],
-    "statut": "a_documenter",
+    "these_centrale": "Le Global Peace Index, publié depuis 2008 par l'Institute for Economics and Peace en partenariat avec des instituts de recherche sur la paix, classe les pays du monde selon leur degré de pacifisme à partir de 23 indicateurs (violence intérieure, dépenses militaires, implication dans des conflits, stabilité politique).",
+    "apport": "Il fournit un outil comparatif largement cité par les institutions internationales et les médias pour objectiver et suivre dans le temps l'évolution de la paix et de la sécurité mondiale.",
+    "limites_critiques": "La pondération et le choix des 23 indicateurs impliquent des choix méthodologiques contestables, la disponibilité inégale des données selon les pays biaise les comparaisons, et l'indice peine à capturer des formes de violence structurelle non quantifiables.",
+    "resonance_ia": "L'essor des systèmes d'armes autonomes et de la cyberconflictualité pilotée par IA constitue un facteur émergent largement absent des indicateurs historiques du GPI, posant la question de l'adaptation de ce type de mesure aux nouvelles formes de conflictualité.",
+    "sources": [
+      {
+        "titre": "Global Peace Index (Institute for Economics and Peace, publication annuelle depuis 2008)",
+        "type": "primaire"
+      },
+      {
+        "titre": "Global Peace Index — Wikipédia",
+        "url": "https://fr.wikipedia.org/wiki/Global_Peace_Index",
+        "type": "secondaire"
+      }
+    ],
+    "statut": "documente",
     "derniere_verification": "2026-09-05"
   },
   {
@@ -48,12 +68,22 @@
     "axe": "serenite",
     "sous_domaine": "sens",
     "nom": "Quête de sens (spiritualités et laïcité)",
-    "these_centrale": "",
-    "apport": "",
-    "limites_critiques": "",
-    "resonance_ia": null,
-    "sources": [],
-    "statut": "a_documenter",
+    "these_centrale": "Dans les sociétés sécularisées, la quête de sens tend à se détacher de l'appartenance religieuse instituée pour prendre la forme d'une spiritualité individuelle et éclectique, articulée à la laïcité comme cadre institutionnel de neutralité de l'État.",
+    "apport": "Cette évolution a favorisé, depuis la seconde moitié du XXe siècle, l'essor de pratiques spirituelles non confessionnelles (méditation, développement personnel, courants dits « New Age ») coexistant avec le cadre laïque des sociétés démocratiques occidentales.",
+    "limites_critiques": "La frontière entre spiritualité et religion reste floue et contestée académiquement, et l'individualisation de la quête de sens est parfois critiquée comme une marchandisation du bien-être spirituel plutôt qu'une authentique recherche existentielle.",
+    "resonance_ia": "Le recours croissant à des IA conversationnelles pour des questions existentielles ou de développement personnel interroge la capacité de systèmes sans expérience vécue à accompagner une quête de sens authentiquement humaine.",
+    "sources": [
+      {
+        "titre": "Spiritualité contemporaine et sécularisation",
+        "type": "primaire"
+      },
+      {
+        "titre": "Spiritualité — Wikipédia",
+        "url": "https://fr.wikipedia.org/wiki/Spiritualit%C3%A9",
+        "type": "secondaire"
+      }
+    ],
+    "statut": "documente",
     "derniere_verification": "2026-09-05"
   },
   {
@@ -61,12 +91,22 @@
     "axe": "serenite",
     "sous_domaine": "risques_existentiels",
     "nom": "Résilience civilisationnelle aux risques existentiels",
-    "these_centrale": "",
-    "apport": "",
-    "limites_critiques": "",
-    "resonance_ia": null,
-    "sources": [],
-    "statut": "a_documenter",
+    "these_centrale": "Un risque existentiel désigne un événement hypothétique susceptible de causer l'extinction de l'humanité ou l'effondrement irréversible de la civilisation moderne ; le philosophe Nick Bostrom a formalisé cette notion en la distinguant de catastrophes graves mais non irréversibles.",
+    "apport": "Des institutions comme le Centre for the Study of Existential Risk (Cambridge) ou le Future of Humanity Institute étudient systématiquement depuis le début du XXIe siècle ces risques, qu'ils soient naturels (impacts d'astéroïdes, supervolcans) ou anthropogènes (guerre nucléaire, biotechnologies incontrôlées, IA hostile), afin d'orienter la résilience civilisationnelle.",
+    "limites_critiques": "Ce champ est critiqué pour son caractère hautement spéculatif, l'absence de précédent empirique — aucune extinction complète ne s'est jamais produite — rendant les probabilités estimées fragiles, et le risque de biais cognitifs dans l'évaluation de menaces lointaines et incertaines.",
+    "resonance_ia": "L'intelligence artificielle avancée figure explicitement, aux côtés du risque nucléaire et biologique, parmi les menaces anthropogènes recensées par les chercheurs en risque existentiel, ce qui a directement motivé la création d'instituts dédiés à la sûreté de l'IA.",
+    "sources": [
+      {
+        "titre": "Global Catastrophic Risks (Bostrom & Ćirković, 2008)",
+        "type": "primaire"
+      },
+      {
+        "titre": "Risque de catastrophe planétaire — Wikipédia",
+        "url": "https://fr.wikipedia.org/wiki/Risque_de_catastrophe_plan%C3%A9taire",
+        "type": "secondaire"
+      }
+    ],
+    "statut": "documente",
     "derniere_verification": "2026-09-05"
   }
 ]

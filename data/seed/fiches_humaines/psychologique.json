@@ -48,12 +48,22 @@
     "axe": "psychologique",
     "sous_domaine": "psychanalyse",
     "nom": "Sigmund Freud",
-    "these_centrale": "",
-    "apport": "",
-    "limites_critiques": "",
-    "resonance_ia": null,
-    "sources": [],
-    "statut": "a_documenter",
+    "these_centrale": "Freud fonde la psychanalyse sur l'hypothèse d'un inconscient structuré, où des pulsions et désirs refoulés (souvent d'origine sexuelle infantile) déterminent une part importante du psychisme et se manifestent via les rêves, lapsus et symptômes névrotiques.",
+    "apport": "Il introduit une méthode clinique (cure par la parole, association libre, interprétation des rêves) et un appareil conceptuel (ça/moi/surmoi, refoulement, transfert) qui ont profondément influencé la psychiatrie, la littérature et les sciences humaines du XXe siècle.",
+    "limites_critiques": "Sa théorie est critiquée pour son manque de validation empirique rigoureuse (Popper la qualifie d'irréfutable), sa focalisation univoque sur la sexualité infantile, et des méthodes de collecte de données jugées peu scientifiques ; le behaviorisme et les neurosciences cognitives lui opposent des modèles davantage falsifiables.",
+    "resonance_ia": "Les IA génératives ravivent le débat freudien sur l'inconscient et le langage : un modèle de langage traite des associations statistiques sans « désir » ni conflit psychique, ce qui interroge les limites de la métaphore psychanalytique pour décrire des systèmes sans intériorité subjective.",
+    "sources": [
+      {
+        "titre": "L'Interprétation des rêves (1900)",
+        "type": "primaire"
+      },
+      {
+        "titre": "Sigmund Freud — Wikipédia",
+        "url": "https://fr.wikipedia.org/wiki/Sigmund_Freud",
+        "type": "secondaire"
+      }
+    ],
+    "statut": "documente",
     "derniere_verification": "2026-09-05"
   },
   {
@@ -61,12 +71,22 @@
     "axe": "psychologique",
     "sous_domaine": "psychanalyse",
     "nom": "Carl Jung",
-    "these_centrale": "",
-    "apport": "",
-    "limites_critiques": "",
-    "resonance_ia": null,
-    "sources": [],
-    "statut": "a_documenter",
+    "these_centrale": "Jung développe la psychologie analytique autour d'un inconscient collectif peuplé d'archétypes universels (l'Ombre, l'Anima/Animus, le Soi), distinct de l'inconscient personnel freudien, et vise l'individuation comme processus d'intégration psychique.",
+    "apport": "Ses concepts d'archétype, de synchronicité et de types psychologiques (introversion/extraversion) ont irrigué la psychologie, l'anthropologie, la littérature et inspiré des outils de personnalité largement diffusés comme le MBTI.",
+    "limites_critiques": "L'inconscient collectif et les archétypes manquent de fondement empirique testable et relèvent davantage d'une métaphysique symbolique que d'une science ; certains écrits de Jung sur les « types » ont aussi été critiqués.",
+    "resonance_ia": "Les IA génératives entraînées sur des corpus culturels immenses reproduisent des motifs narratifs récurrents proches des « archétypes » jungiens, sans que cela implique un inconscient collectif — plutôt une régularité statistique dans les données humaines.",
+    "sources": [
+      {
+        "titre": "L'Homme et ses symboles (1964)",
+        "type": "primaire"
+      },
+      {
+        "titre": "Carl Gustav Jung — Wikipédia",
+        "url": "https://fr.wikipedia.org/wiki/Carl_Gustav_Jung",
+        "type": "secondaire"
+      }
+    ],
+    "statut": "documente",
     "derniere_verification": "2026-09-05"
   },
   {
@@ -74,12 +94,22 @@
     "axe": "psychologique",
     "sous_domaine": "psychanalyse",
     "nom": "Jacques Lacan",
-    "these_centrale": "",
-    "apport": "",
-    "limites_critiques": "",
-    "resonance_ia": null,
-    "sources": [],
-    "statut": "a_documenter",
+    "these_centrale": "Lacan relit Freud à travers la linguistique structurale, affirmant que « l'inconscient est structuré comme un langage » et développant les registres du Réel, du Symbolique et de l'Imaginaire pour penser le sujet désirant.",
+    "apport": "Son enseignement (séminaires 1953-1980, publiés dans les Écrits) a profondément marqué la psychanalyse française, la philosophie continentale, le post-structuralisme et la théorie critique.",
+    "limites_critiques": "Son style volontairement obscur et ses formalisations mathématiques (les « mathèmes ») sont critiqués pour leur scientificité douteuse ; il est parfois qualifié de psychanalyste le plus controversé depuis Freud, accusé d'un usage rhétorique du formalisme scientifique.",
+    "resonance_ia": "Le lien lacanien entre langage et sujet interroge frontalement les grands modèles de langage : ceux-ci manipulent la structure symbolique du langage sans le désir ni le manque qui, chez Lacan, constituent le sujet — un cas d'école pour distinguer traitement syntaxique et subjectivité.",
+    "sources": [
+      {
+        "titre": "Écrits (1966)",
+        "type": "primaire"
+      },
+      {
+        "titre": "Jacques Lacan — Wikipédia",
+        "url": "https://fr.wikipedia.org/wiki/Jacques_Lacan",
+        "type": "secondaire"
+      }
+    ],
+    "statut": "documente",
     "derniere_verification": "2026-09-05"
   },
   {
@@ -87,12 +117,22 @@
     "axe": "psychologique",
     "sous_domaine": "behaviorisme",
     "nom": "B.F. Skinner",
-    "these_centrale": "",
-    "apport": "",
-    "limites_critiques": "",
-    "resonance_ia": null,
-    "sources": [],
-    "statut": "a_documenter",
+    "these_centrale": "Skinner théorise le conditionnement opérant : les comportements sont façonnés et maintenus par leurs conséquences (renforcements positifs/négatifs, punitions), sans qu'il soit nécessaire de postuler des états mentaux internes pour les expliquer.",
+    "apport": "Considéré comme l'un des psychologues les plus influents du XXe siècle, il a fondé l'analyse du comportement appliquée, avec des retombées en éducation, thérapie comportementale et conception d'environnements d'apprentissage.",
+    "limites_critiques": "Son behaviorisme radical, qui refuse toute référence à la conscience ou aux processus mentaux internes, a été jugé réducteur par la révolution cognitiviste (notamment Chomsky) et peine à expliquer l'acquisition du langage ou la créativité.",
+    "resonance_ia": "L'apprentissage par renforcement en IA formalise mathématiquement l'intuition skinnerienne — façonner un comportement par récompense/punition — sans les limites biologiques du behaviorisme, ce qui relance le débat sur ce qu'un système purement « façonné par renforcement » peut ou non représenter intérieurement.",
+    "sources": [
+      {
+        "titre": "Science and Human Behavior (1953)",
+        "type": "primaire"
+      },
+      {
+        "titre": "Burrhus Frederic Skinner — Wikipédia",
+        "url": "https://fr.wikipedia.org/wiki/Burrhus_Frederic_Skinner",
+        "type": "secondaire"
+      }
+    ],
+    "statut": "documente",
     "derniere_verification": "2026-09-05"
   },
   {
@@ -100,12 +140,22 @@
     "axe": "psychologique",
     "sous_domaine": "behaviorisme",
     "nom": "John B. Watson",
-    "these_centrale": "",
-    "apport": "",
-    "limites_critiques": "",
-    "resonance_ia": null,
-    "sources": [],
-    "statut": "a_documenter",
+    "these_centrale": "Watson fonde le behaviorisme en soutenant que la psychologie doit se limiter à l'étude scientifique des comportements observables en réponse à des stimuli, excluant l'introspection comme méthode valide.",
+    "apport": "Son manifeste behavioriste (1913) a redéfini la psychologie comme science objective et a ouvert la voie aux théories de l'apprentissage par association, influençant durablement la psychologie expérimentale américaine.",
+    "limites_critiques": "Son rejet total des états mentaux internes est jugé excessif, notamment après l'expérience controversée du « petit Albert » posant des problèmes éthiques majeurs ; la psychologie cognitive a depuis réintroduit les représentations mentales comme objets d'étude légitimes.",
+    "resonance_ia": "L'approche « boîte noire » de Watson — juger un système à ses seules entrées/sorties observables — préfigure le débat contemporain sur l'interprétabilité des IA : peut-on se contenter d'évaluer leur comportement sans comprendre leurs représentations internes ?",
+    "sources": [
+      {
+        "titre": "Psychology as the Behaviorist Views It (1913)",
+        "type": "primaire"
+      },
+      {
+        "titre": "John Broadus Watson — Wikipédia",
+        "url": "https://fr.wikipedia.org/wiki/John_Broadus_Watson",
+        "type": "secondaire"
+      }
+    ],
+    "statut": "documente",
     "derniere_verification": "2026-09-05"
   },
   {
@@ -113,12 +163,22 @@
     "axe": "psychologique",
     "sous_domaine": "psychologie_positive",
     "nom": "Abraham Maslow",
-    "these_centrale": "",
-    "apport": "",
-    "limites_critiques": "",
-    "resonance_ia": null,
-    "sources": [],
-    "statut": "a_documenter",
+    "these_centrale": "Maslow propose une hiérarchie des besoins humains (physiologiques, sécurité, appartenance, estime, accomplissement de soi) organisée en pyramide, où la satisfaction des besoins inférieurs conditionnerait l'accès aux besoins supérieurs.",
+    "apport": "Fondateur de la psychologie humaniste avec Rogers, il a orienté la psychologie vers l'étude de la santé psychologique et de l'épanouissement plutôt que la seule pathologie, avec une influence durable en management et en développement personnel.",
+    "limites_critiques": "La hiérarchie rigide en pyramide est contestée empiriquement — des études interculturelles montrent que les besoins ne se satisfont pas toujours dans cet ordre strict — et le concept d'« accomplissement de soi » reste difficile à opérationnaliser scientifiquement.",
+    "resonance_ia": "La pyramide de Maslow est fréquemment mobilisée, parfois de façon simpliste, pour penser ce que l'IA pourrait ou non automatiser dans le travail humain — les besoins de haut niveau (créativité, sens) étant présentés comme la frontière ultime de la substituabilité, une affirmation qui reste débattue.",
+    "sources": [
+      {
+        "titre": "A Theory of Human Motivation (1943)",
+        "type": "primaire"
+      },
+      {
+        "titre": "Abraham Maslow — Wikipédia",
+        "url": "https://fr.wikipedia.org/wiki/Abraham_Maslow",
+        "type": "secondaire"
+      }
+    ],
+    "statut": "documente",
     "derniere_verification": "2026-09-05"
   },
   {
@@ -126,12 +186,22 @@
     "axe": "psychologique",
     "sous_domaine": "psychotherapie",
     "nom": "Carl Rogers",
-    "these_centrale": "",
-    "apport": "",
-    "limites_critiques": "",
-    "resonance_ia": null,
-    "sources": [],
-    "statut": "a_documenter",
+    "these_centrale": "Rogers développe l'approche centrée sur la personne, postulant qu'un climat thérapeutique fait d'empathie, de congruence et de regard positif inconditionnel suffit à activer la tendance actualisante propre à chaque individu.",
+    "apport": "Cofondateur de la psychologie humaniste, il a durablement influencé la pratique psychothérapeutique, le conseil et l'éducation par une approche non directive centrée sur l'écoute.",
+    "limites_critiques": "L'efficacité de la non-directivité pure est débattue face aux thérapies structurées comme les TCC pour certains troubles spécifiques, et des concepts comme la « tendance actualisante » ou la « congruence » restent difficiles à mesurer empiriquement.",
+    "resonance_ia": "Les chatbots d'écoute ou de soutien psychologique s'inspirent souvent, consciemment ou non, de techniques rogeriennes (reformulation, écoute active) — posant la question de savoir si une empathie simulée sans vécu subjectif peut produire les mêmes effets thérapeutiques que l'empathie humaine.",
+    "sources": [
+      {
+        "titre": "On Becoming a Person (1961)",
+        "type": "primaire"
+      },
+      {
+        "titre": "Carl Rogers — Wikipédia",
+        "url": "https://fr.wikipedia.org/wiki/Carl_Rogers",
+        "type": "secondaire"
+      }
+    ],
+    "statut": "documente",
     "derniere_verification": "2026-09-05"
   },
   {
@@ -139,12 +209,22 @@
     "axe": "psychologique",
     "sous_domaine": "psychologie_positive",
     "nom": "Martin Seligman",
-    "these_centrale": "",
-    "apport": "",
-    "limites_critiques": "",
-    "resonance_ia": null,
-    "sources": [],
-    "statut": "a_documenter",
+    "these_centrale": "Seligman fonde la psychologie positive, orientant la discipline vers l'étude scientifique du bien-être, des forces de caractère et de l'épanouissement, après avoir d'abord théorisé l'impuissance apprise (learned helplessness).",
+    "apport": "Ses travaux ont structuré tout un champ de recherche (modèle PERMA du bien-être) avec des applications en éducation, entreprise et santé publique, et une forte diffusion via ses ouvrages de vulgarisation.",
+    "limites_critiques": "La psychologie positive est critiquée pour un optimisme parfois prescriptif proche du développement personnel, une validation empirique inégale selon les concepts, et un relatif oubli des déterminants sociaux et structurels du bien-être.",
+    "resonance_ia": "Le concept d'impuissance apprise de Seligman éclaire indirectement les effets psychologiques de l'automatisation du travail par l'IA — le sentiment de perte de contrôle face à des systèmes jugés incontrôlables pouvant reproduire des dynamiques proches de celles étudiées dans ses travaux originels.",
+    "sources": [
+      {
+        "titre": "Learned Optimism (1991)",
+        "type": "primaire"
+      },
+      {
+        "titre": "Martin Seligman — Wikipédia",
+        "url": "https://fr.wikipedia.org/wiki/Martin_Seligman",
+        "type": "secondaire"
+      }
+    ],
+    "statut": "documente",
     "derniere_verification": "2026-09-05"
   },
   {
@@ -152,12 +232,22 @@
     "axe": "psychologique",
     "sous_domaine": "cognition",
     "nom": "Jean Piaget",
-    "these_centrale": "",
-    "apport": "",
-    "limites_critiques": "",
-    "resonance_ia": null,
-    "sources": [],
-    "statut": "a_documenter",
+    "these_centrale": "Piaget élabore une théorie du développement cognitif de l'enfant en stades successifs (sensorimoteur, préopératoire, opératoire concret, opératoire formel), où l'intelligence se construit par l'action et l'adaptation au monde via l'assimilation et l'accommodation.",
+    "apport": "Fondateur de l'épistémologie génétique, ses travaux ont durablement façonné la psychologie du développement, la pédagogie de l'apprentissage actif et les sciences cognitives.",
+    "limites_critiques": "Des recherches ultérieures ont montré que Piaget sous-estimait les capacités cognitives précoces des jeunes enfants et que le passage entre stades est plus progressif et variable culturellement qu'il ne le décrivait.",
+    "resonance_ia": "Les modèles d'apprentissage développemental en IA (curriculum learning, apprentissage par stades de complexité croissante) s'inspirent parfois explicitement du modèle piagétien, tout en laissant ouverte la question de savoir si une machine peut connaître un développement cognitif comparable à celui, incarné et sensorimoteur, de l'enfant.",
+    "sources": [
+      {
+        "titre": "La Naissance de l'intelligence chez l'enfant (1936)",
+        "type": "primaire"
+      },
+      {
+        "titre": "Jean Piaget — Wikipédia",
+        "url": "https://fr.wikipedia.org/wiki/Jean_Piaget",
+        "type": "secondaire"
+      }
+    ],
+    "statut": "documente",
     "derniere_verification": "2026-09-05"
   },
   {
@@ -165,12 +255,22 @@
     "axe": "psychologique",
     "sous_domaine": "cognition",
     "nom": "Lev Vygotski",
-    "these_centrale": "",
-    "apport": "",
-    "limites_critiques": "",
-    "resonance_ia": null,
-    "sources": [],
-    "statut": "a_documenter",
+    "these_centrale": "Vygotski soutient que le développement cognitif est fondamentalement social et médiatisé par le langage et les outils culturels, l'apprentissage précédant et guidant le développement via la « zone proximale de développement ».",
+    "apport": "Sa théorie historico-culturelle a profondément influencé la pédagogie (apprentissage collaboratif, étayage) et les sciences cognitives, en complément ou en opposition au modèle plus individualiste de Piaget.",
+    "limites_critiques": "Son œuvre, interrompue par sa mort précoce et interdite en URSS jusqu'en 1956, reste partiellement fragmentaire ; des concepts comme la zone proximale de développement sont jugés difficiles à opérationnaliser précisément en recherche empirique.",
+    "resonance_ia": "L'idée vygotskienne d'un développement médiatisé par des outils culturels résonne avec le rôle actuel de l'IA comme nouvel outil cognitif ou « autrui plus compétent » pouvant élargir la zone proximale de développement des apprenants humains.",
+    "sources": [
+      {
+        "titre": "Pensée et langage (1934)",
+        "type": "primaire"
+      },
+      {
+        "titre": "Lev Vygotski — Wikipédia",
+        "url": "https://fr.wikipedia.org/wiki/Lev_Vygotski",
+        "type": "secondaire"
+      }
+    ],
+    "statut": "documente",
     "derniere_verification": "2026-09-05"
   }
 ]
