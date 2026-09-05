@@ -1,11 +1,12 @@
 # COMMENT LANCER — Atlas Humain × IA
 
-Dernière mise à jour : 05/09/2026 (après Lot 1 + amorçage Lot 2/3 + Lot 4 comparateur + Lot 5 veille RSS)
+Dernière mise à jour : 05/09/2026 (après Lot 1 + amorçage Lot 2/3 + Lot 4 comparateur + Lot 5 veille RSS + Lot 7 cartographies + audit QA)
 
 ## État actuel du projet
 
-Le projet est un vrai projet Next.js fonctionnel, déjà buildé et testé (npm run build passe sans erreur).
-Le site tourne sur des données d'amorçage locales (`data/seed/*.json` : 247 fiches humaines + 28 fiches IA),
+Le projet est un vrai projet Next.js fonctionnel, déjà buildé et testé (npm run build passe sans erreur), et
+maintenant versionné dans git en local (voir section 2, "Audit QA").
+Le site tourne sur des données d'amorçage locales (`data/seed/*.json` : 267 fiches humaines + 44 fiches IA),
 sans avoir besoin de Supabase configuré pour l'instant — pratique pour visualiser tout de suite.
 
 Le comparateur (`/comparateur`) est désormais un vrai sélecteur libre (n'importe quelle paire fiche humaine ×
@@ -31,10 +32,10 @@ Puis ouvrir http://localhost:3000 — pages disponibles : accueil, /referentiel-
 - **Lot 1 — Architecture** : ✅ terminé (Next.js/Tailwind/TypeScript, modèle de données, schéma Supabase prêt dans `supabase/schema.sql`).
 - **Lot 2/3 — Amorçage contenu** : 🔄 en cours. 267 fiches humaines + 44 fiches IA générées, dont 12 fiches humaines réellement documentées (Nietzsche, Démocratie libérale, Capitalisme d'État chinois, Économie du donut, Taylorisme/OST, OKR, Spinoza, Socrate, Aristote, TCC, Kahneman-Tversky, Limites planétaires) et 6 fiches IA (Claude/Cowork, Codex, DeepSeek, AutoGPT, AlphaFold, Hallucination/fiabilité) + 6 fiches de gap analysis. Les 5 axes humains et les 6 axes IA du mégaprompt ont désormais chacun au moins une entrée (corrigé le 05/09/2026 — 2 axes humains et 4 axes IA étaient à 0 fiche jusque-là).
 - **Audit QA (05/09/2026)** : 🔍 fait. Julien a jugé la profondeur insuffisante — deux agents indépendants (visiteur/utilisateur + vérificateur professionnel) ont audité le site en conditions réelles. Corrections appliquées : rendu de `/referentiel-humain` réparé (n'affichait jamais le contenu des fiches documentées), garde-fou anti-régression ajouté à `scripts/generate-seed.mjs` (un incident réel pendant l'audit a démontré le risque : le script a écrasé silencieusement 6 fiches documentées avant d'être corrigé et les données restaurées), axes vides comblés. Le projet est maintenant versionné dans git en local.
-- **Lot 4 — Moteur de gap analysis** : 🔄 fonctionnel. Sélecteur libre de n'importe quelle paire fiche humaine × fiche IA sur `/comparateur`, avec repli honnête "à documenter" pour les paires non encore analysées (4 paires documentées à ce jour).
-- **Lot 5 — Veille autonome** : 🔄 fonctionnel. Script réel `scripts/veille-rss.mjs` testé en conditions réelles : interroge les sources RSS actives, déduplique, dépose les nouveautés dans une file de validation manuelle affichée sur `/veille`. 5 sources actives sur 8 ; 3 désactivées après échec HTTP confirmé (Anthropic News 404, FMI et OCDE 403 — documenté dans `data/seed/veille_sources.json`). Spiderfoot (2e canal) reste à intégrer. Aucune fiche n'est mise à jour automatiquement — validation humaine requise.
-- **Lot 6 — Moteur Q&A/RAG** : ⛔ bloqué. Nécessite un projet Supabase (extension `vector`) + une clé API Anthropic configurés — aucun des deux n'est encore en place. Les 4 questions-tests restent répondues manuellement dans `/questions` en attendant.
-- **Lot 7 — Cartographies interactives** : 🔄 fonctionnel. `/cartographie` propose une répartition par axe cliquable (humain et IA, avec liste des fiches et statut) et une matrice de gap cliquable sur les 4 paires documentées, colorée par catégorie de substituabilité. La heatmap TRL par secteur et la frise chronologique (section 8 du mégaprompt) restent en attente : aucune fiche IA n'a encore de données réelles d'usages sectoriels renseignées.
+- **Lot 4 — Moteur de gap analysis** : 🔄 fonctionnel. Sélecteur libre de n'importe quelle paire fiche humaine × fiche IA sur `/comparateur`, avec repli honnête "à documenter" pour les paires non encore analysées (6 paires documentées à ce jour, dont Socrate × Claude/Cowork et TCC × Claude/Cowork, ajoutées lors de l'audit QA).
+- **Lot 5 — Veille autonome** : 🔄 fonctionnel. Script réel `scripts/veille-rss.mjs` testé en conditions réelles : interroge les sources RSS actives, déduplique, dépose les nouveautés dans une file de validation manuelle affichée sur `/veille`. 5 sources actives sur 8 ; 3 désactivées après échec HTTP confirmé (Anthropic News 404, FMI et OCDE 403 — documenté dans `data/seed/veille_sources.json`). Un scheduled task quotidien (7h UTC) a été créé pour lancer ce script automatiquement, mais **il n'est pas encore lié à ton ordinateur** (approbation à donner côté device pour qu'il puisse s'exécuter — sinon il tourne dans le vide). Spiderfoot (2e canal) reste à intégrer. Aucune fiche n'est mise à jour automatiquement — validation humaine requise.
+- **Lot 6 — Moteur Q&A/RAG** : ⛔ bloqué. Nécessite un projet Supabase (extension `vector`) + une clé API Anthropic configurés. Un compte Supabase existe déjà (org "julien2364's Org", plusieurs projets actifs) — reste à décider si Atlas Humain × IA doit avoir son propre projet Supabase dédié (coût à confirmer) ou être mutualisé dans un projet existant, décision qui te revient. Les 4 questions-tests restent répondues manuellement dans `/questions` en attendant.
+- **Lot 7 — Cartographies interactives** : 🔄 fonctionnel. `/cartographie` propose une répartition par axe cliquable (humain et IA, avec liste des fiches et statut) et une matrice de gap cliquable sur les paires documentées, colorée par catégorie de substituabilité. La heatmap TRL par secteur et la frise chronologique (section 8 du mégaprompt) restent en attente : aucune fiche IA n'a encore de données réelles d'usages sectoriels renseignées.
 - **Lot 8 — QA finale/publication** : non commencé (cohérent avec la diffusion interne).
 
 ## 3. Pour activer Supabase (quand la profondeur du contenu le justifiera)
