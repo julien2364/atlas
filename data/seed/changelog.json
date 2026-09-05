@@ -19,5 +19,12 @@
     "type": "ajout",
     "cible": "Lot 7 (cartographies interactives)",
     "resume": "Page /cartographie transformee : repartition par axe (humain et IA) en barres proportionnelles cliquables (clic = liste des fiches de l'axe avec statut), et matrice de gap cliquable (6 fiches humaines x 3 fiches IA documentees, coloree par categorie de substituabilite, clic = detail de l'analyse). La heatmap TRL par secteur et la frise chronologique (section 8 du megaprompt) restent en attente : aucune fiche IA n'a encore de donnees reelles d'usages sectoriels renseignees, pour ne pas inventer de niveaux de maturite."
+  },
+  {
+    "id": "qa-deepening-2026-09-05",
+    "date": "2026-09-05T00:00:00Z",
+    "type": "correction",
+    "cible": "QA multi-agents + approfondissement des axes vides",
+    "resume": "Suite a un retour de Julien jugeant la profondeur insuffisante : deux agents QA independants (testeur visiteur/utilisateur + verificateur professionnel) ont audite le site et le contenu. Bug corrige : /referentiel-humain n'affichait jamais le contenu des fiches documentees (these_centrale, apport, limites, resonance IA) contrairement a /referentiel-ia — corrige. Risque corrige : scripts/generate-seed.mjs pouvait ecraser silencieusement des fiches deja documentees sans garde-fou (demontre par un incident reel pendant la verification) — un merge protecteur empeche desormais toute regression de statut. Gap de contenu comble : les axes psychologique et serenite (humains) et agentique/scientifique/sectoriel/limites (IA) etaient a 0 fiche malgre la mission du megaprompt — chaque axe a maintenant au moins une entree, avec Spinoza/Socrate/Aristote/TCC documentes en profondeur (ces 3 philosophes et TCC etaient explicitement cites dans la question-test n4 de Julien et n'existaient pas du tout dans le corpus), plus Kahneman-Tversky, Limites planetaires, AutoGPT, AlphaFold, Hallucination/fiabilite (IA). 2 nouvelles fiches de gap (Socrate x Claude/Cowork, TCC x Claude/Cowork). Le projet est desormais versionne dans git (aucun commit depuis le scaffold initial) pour eviter qu'un futur incident de ce type ne soit irrecuperable."
   }
 ]
