@@ -21,384 +21,608 @@
     "axe": "social",
     "sous_domaine": "modele_politique",
     "nom": "Social-démocratie",
-    "these_centrale": "",
-    "apport": "",
-    "limites_critiques": "",
-    "sources": [],
-    "statut": "a_documenter",
-    "derniere_verification": "2026-09-05"
+    "these_centrale": "La social-démocratie est un courant politique et économique apparu au XIXe siècle qui cherche à incorporer des éléments du socialisme (redistribution, protection sociale) au sein d'une démocratie libérale et d'une économie de marché, plutôt que de rompre avec le capitalisme.",
+    "apport": "Elle a structuré l'État-providence dans une grande partie de l'Europe occidentale au XXe siècle (santé, retraites, éducation publique), en articulant croissance économique et réduction des inégalités par la voie électorale et réformiste.",
+    "limites_critiques": "Critiquée à sa gauche pour avoir renoncé à la transformation révolutionnaire du capitalisme, et à sa droite pour le coût budgétaire de l'État-providence, la social-démocratie est aussi confrontée depuis les années 1980-1990 à une tension croissante avec la mondialisation économique.",
+    "sources": [
+      {
+        "titre": "Social-démocratie — Wikipédia",
+        "url": "https://fr.wikipedia.org/wiki/Social-d%C3%A9mocratie",
+        "type": "secondaire"
+      }
+    ],
+    "statut": "documente",
+    "derniere_verification": "2026-09-05",
+    "resonance_ia": "Les gains de productivité liés à l'IA relancent le débat social-démocrate classique sur la redistribution : faut-il taxer l'automatisation pour financer une protection sociale étendue (revenu universel, formation continue) plutôt que laisser le marché seul arbitrer la répartition des gains ?"
   },
   {
     "id": "democratie-chretienne",
     "axe": "social",
     "sous_domaine": "modele_politique",
     "nom": "Démocratie chrétienne",
-    "these_centrale": "",
-    "apport": "",
-    "limites_critiques": "",
-    "sources": [],
-    "statut": "a_documenter",
-    "derniere_verification": "2026-09-05"
+    "these_centrale": "La démocratie chrétienne est un courant de pensée politique inspiré de la doctrine sociale de l'Église, apparu en Europe à la fin du XIXe siècle, qui cherche à concilier valeurs religieuses, économie de marché tempérée et justice sociale.",
+    "apport": "Elle a donné naissance à des partis majeurs de l'après-guerre en Europe de l'Ouest et en Amérique du Sud, contribuant à la reconstruction démocratique et à la construction européenne (via des figures comme Adenauer, De Gasperi, Schuman).",
+    "limites_critiques": "Son ancrage confessionnel s'est progressivement affaibli avec la sécularisation des sociétés occidentales, la contraignant à se redéfinir comme un centre-droit plus généraliste, au risque de perdre son identité doctrinale propre.",
+    "sources": [
+      {
+        "titre": "Démocratie chrétienne — Wikipédia",
+        "url": "https://fr.wikipedia.org/wiki/D%C3%A9mocratie_chr%C3%A9tienne",
+        "type": "secondaire"
+      }
+    ],
+    "statut": "documente",
+    "derniere_verification": "2026-09-05",
+    "resonance_ia": "La doctrine sociale chrétienne, centrée sur la dignité du travail et le bien commun, offre un cadre normatif mobilisé dans certains débats sur une IA « au service de la personne humaine » plutôt que de la seule efficacité économique."
   },
   {
     "id": "regime-parlementaire",
     "axe": "social",
     "sous_domaine": "modele_politique",
     "nom": "Régime parlementaire",
-    "these_centrale": "",
-    "apport": "",
-    "limites_critiques": "",
-    "sources": [],
-    "statut": "a_documenter",
-    "derniere_verification": "2026-09-05"
+    "these_centrale": "Le régime parlementaire est un régime constitutionnel caractérisé par l'équilibre entre gouvernement et parlement : le cabinet est responsable politiquement devant le parlement, qui peut le renverser, en contrepartie de quoi le gouvernement peut généralement dissoudre l'assemblée.",
+    "apport": "Ce modèle, majoritaire en Europe, favorise en théorie la représentativité et la capacité de sanction continue de l'exécutif par les représentants élus, sans attendre l'échéance électorale.",
+    "limites_critiques": "Il peut produire une instabilité gouvernementale chronique en l'absence de majorité stable (multiplication des motions de censure, gouvernements de coalition fragiles), comme l'illustrent certaines périodes de la IVe République française ou de l'Italie d'après-guerre.",
+    "sources": [
+      {
+        "titre": "Régime parlementaire — Wikipédia",
+        "url": "https://fr.wikipedia.org/wiki/R%C3%A9gime_parlementaire",
+        "type": "secondaire"
+      }
+    ],
+    "statut": "documente",
+    "derniere_verification": "2026-09-05",
+    "resonance_ia": "Le contrôle démocratique de l'exécutif par le parlement — cœur du régime parlementaire — pose la question inédite de la surveillance parlementaire de décisions publiques de plus en plus assistées ou déléguées à des systèmes d'IA."
   },
   {
     "id": "regime-presidentiel",
     "axe": "social",
     "sous_domaine": "modele_politique",
     "nom": "Régime présidentiel",
-    "these_centrale": "",
-    "apport": "",
-    "limites_critiques": "",
-    "sources": [],
-    "statut": "a_documenter",
-    "derniere_verification": "2026-09-05"
+    "these_centrale": "Le régime présidentiel repose sur une séparation stricte des pouvoirs : l'exécutif, non responsable devant le législatif, ne peut être renversé par lui, et ne peut réciproquement dissoudre l'assemblée — modèle incarné par les États-Unis.",
+    "apport": "Il offre en théorie une stabilité de l'exécutif sur la durée du mandat, à l'abri des recompositions parlementaires, et une lisibilité démocratique forte via l'élection directe du chef de l'exécutif.",
+    "limites_critiques": "Ce modèle peut dériver vers le « présidentialisme » lorsque l'équilibre des pouvoirs se rompt au profit du président, et il expose au risque de blocage institutionnel (« gridlock ») lorsque l'exécutif et le législatif sont de majorités opposées.",
+    "sources": [
+      {
+        "titre": "Régime présidentiel — Wikipédia",
+        "url": "https://fr.wikipedia.org/wiki/R%C3%A9gime_pr%C3%A9sidentiel",
+        "type": "secondaire"
+      }
+    ],
+    "statut": "documente",
+    "derniere_verification": "2026-09-05",
+    "resonance_ia": "La séparation stricte des pouvoirs du régime présidentiel interroge la répartition de la responsabilité en cas de décision publique assistée par IA, dans un système où ni l'exécutif ni le législatif ne peuvent aisément se dessaisir de leurs prérogatives respectives."
   },
   {
     "id": "regime-semi-presidentiel",
     "axe": "social",
     "sous_domaine": "modele_politique",
     "nom": "Régime semi-présidentiel",
-    "these_centrale": "",
-    "apport": "",
-    "limites_critiques": "",
-    "sources": [],
-    "statut": "a_documenter",
-    "derniere_verification": "2026-09-05"
+    "these_centrale": "Théorisé par le juriste Maurice Duverger, le régime semi-présidentiel combine des traits du régime parlementaire (gouvernement responsable devant le parlement) et du régime présidentiel (président élu au suffrage universel direct disposant de pouvoirs propres) — modèle de la Ve République française.",
+    "apport": "Il permet une certaine souplesse institutionnelle, le pouvoir exécutif pouvant se recomposer différemment selon que le président dispose ou non d'une majorité parlementaire (cas de la cohabitation en France).",
+    "limites_critiques": "La dyarchie entre président et premier ministre peut générer des conflits d'attribution ou une confusion des responsabilités, notamment lors des périodes de cohabitation où l'autorité réelle du président se trouve réduite.",
+    "sources": [
+      {
+        "titre": "Régime semi-présidentiel — Wikipédia",
+        "url": "https://fr.wikipedia.org/wiki/R%C3%A9gime_semi-pr%C3%A9sidentiel",
+        "type": "secondaire"
+      }
+    ],
+    "statut": "documente",
+    "derniere_verification": "2026-09-05",
+    "resonance_ia": "Le partage de responsabilité entre président et gouvernement dans ce régime hybride illustre par analogie la difficulté à répartir clairement la responsabilité entre humains et systèmes d'IA dans une chaîne de décision publique partagée."
   },
   {
     "id": "communisme",
     "axe": "social",
     "sous_domaine": "modele_politique",
     "nom": "Communisme",
-    "these_centrale": "",
-    "apport": "",
-    "limites_critiques": "",
-    "sources": [],
-    "statut": "a_documenter",
-    "derniere_verification": "2026-09-05"
+    "these_centrale": "Le communisme regroupe un ensemble de doctrines politiques, principalement issues du marxisme, visant l'instauration d'une société sans classes sociales, sans État et sans propriété privée des moyens de production, via la socialisation démocratique de l'économie.",
+    "apport": "Il a inspiré des mouvements ouvriers et des révolutions majeures du XXe siècle (Russie 1917, Chine 1949) qui ont profondément reconfiguré la géopolitique et les rapports de travail dans une large partie du monde.",
+    "limites_critiques": "Sa mise en œuvre historique dans les États dits communistes a été marquée par des régimes autoritaires ou totalitaires (URSS, Chine maoïste, Cambodge des Khmers rouges) responsables de répressions massives, largement documentées et éloignées de l'idéal théorique d'émancipation.",
+    "sources": [
+      {
+        "titre": "Communisme — Wikipédia",
+        "url": "https://fr.wikipedia.org/wiki/Communisme",
+        "type": "secondaire"
+      }
+    ],
+    "statut": "documente",
+    "derniere_verification": "2026-09-05",
+    "resonance_ia": "Le débat communiste historique sur la propriété collective des moyens de production trouve un écho contemporain dans la question de la propriété et du contrôle des modèles d'IA — infrastructure de production immatérielle concentrée entre quelques acteurs privés."
   },
   {
     "id": "marxisme-leninisme",
     "axe": "social",
     "sous_domaine": "modele_politique",
     "nom": "Marxisme-léninisme",
-    "these_centrale": "",
-    "apport": "",
-    "limites_critiques": "",
-    "sources": [],
-    "statut": "a_documenter",
-    "derniere_verification": "2026-09-05"
+    "these_centrale": "Le marxisme-léninisme combine la pensée de Marx avec l'apport théorique de Lénine (le parti d'avant-garde révolutionnaire, le centralisme démocratique), formalisé et rigidifié par Staline à partir des années 1920 en doctrine officielle de l'URSS.",
+    "apport": "Il a fourni le cadre idéologique de la plupart des révolutions et partis communistes au pouvoir au XXe siècle, structurant leur organisation politique autour d'un parti unique et d'une planification économique centralisée.",
+    "limites_critiques": "D'autres courants marxistes (conseillistes, trotskistes, luxemburgistes) lui reprochent d'avoir instauré une « dictature de la bureaucratie » plutôt que la dictature du prolétariat annoncée, et un dogmatisme assimilé par certains historiens à une « pseudo-religion » offrant une explication totalisante de la réalité.",
+    "sources": [
+      {
+        "titre": "Marxisme-léninisme — Wikipédia",
+        "url": "https://fr.wikipedia.org/wiki/Marxisme-l%C3%A9ninisme",
+        "type": "secondaire"
+      }
+    ],
+    "statut": "documente",
+    "derniere_verification": "2026-09-05",
+    "resonance_ia": "La centralisation extrême de la décision économique prônée par le marxisme-léninisme rappelle, en miroir inversé, les débats actuels sur la centralisation du pouvoir de calcul et de décision que permettrait une IA de planification économique à grande échelle."
   },
   {
     "id": "maoisme",
     "axe": "social",
     "sous_domaine": "modele_politique",
     "nom": "Maoïsme",
-    "these_centrale": "",
-    "apport": "",
-    "limites_critiques": "",
-    "sources": [],
-    "statut": "a_documenter",
-    "derniere_verification": "2026-09-05"
+    "these_centrale": "Le maoïsme est un courant du communisme révolutionnaire développé par Mao Zedong, qui adapte le marxisme-léninisme au contexte chinois en plaçant la paysannerie, plutôt que le seul prolétariat urbain, au centre de la stratégie révolutionnaire.",
+    "apport": "Il a structuré la victoire du Parti communiste chinois en 1949 et inspiré de nombreux mouvements de guérilla révolutionnaire dans le monde (Amérique latine, Asie, Afrique) durant la seconde moitié du XXe siècle.",
+    "limites_critiques": "Sa mise en œuvre en Chine (Grand Bond en avant, Révolution culturelle) est associée à des famines et des répressions massives largement documentées, remettant en cause l'efficacité et le coût humain de ses politiques de mobilisation de masse.",
+    "sources": [
+      {
+        "titre": "Maoïsme — Wikipédia",
+        "url": "https://fr.wikipedia.org/wiki/Mao%C3%AFsme",
+        "type": "secondaire"
+      }
+    ],
+    "statut": "documente",
+    "derniere_verification": "2026-09-05",
+    "resonance_ia": "L'insistance maoïste sur la mobilisation populaire de masse contraste avec les formes contemporaines de gouvernance assistée par des données et des algorithmes, posant la question de la place de la participation citoyenne dans une gouvernance de plus en plus technicisée."
   },
   {
     "id": "socialisme-du-xxie-siecle",
     "axe": "social",
     "sous_domaine": "modele_politique",
     "nom": "Socialisme du XXIe siècle",
-    "these_centrale": "",
-    "apport": "",
-    "limites_critiques": "",
-    "sources": [],
-    "statut": "a_documenter",
-    "derniere_verification": "2026-09-05"
+    "these_centrale": "Le « socialisme du XXIe siècle » désigne une réinterprétation des principes socialistes théorisée par le sociologue allemand Heinz Dieterich puis reprise par des chefs d'État latino-américains (Hugo Chávez, Rafael Correa, Evo Morales) à partir des années 2000.",
+    "apport": "Ce courant a porté des politiques de redistribution des richesses tirées des ressources naturelles (pétrole, gaz) et de renforcement de la souveraineté économique nationale dans plusieurs pays d'Amérique latine.",
+    "limites_critiques": "Sa dépendance aux rentes de matières premières l'a rendu vulnérable à la volatilité des cours mondiaux, et certains régimes s'en réclamant (Venezuela) ont dérivé vers l'autoritarisme et une crise économique majeure.",
+    "sources": [
+      {
+        "titre": "Socialisme du XXIe siècle — Wikipédia",
+        "url": "https://fr.wikipedia.org/wiki/Socialisme_du_XXIe_si%C3%A8cle",
+        "type": "secondaire"
+      }
+    ],
+    "statut": "documente",
+    "derniere_verification": "2026-09-05",
+    "resonance_ia": "Les débats sur la souveraineté numérique et technologique dans le Sud global prolongent, sous une forme nouvelle, la préoccupation originelle du socialisme du XXIe siècle pour l'indépendance économique face aux puissances industrielles dominantes."
   },
   {
     "id": "fascisme",
     "axe": "social",
     "sous_domaine": "modele_politique",
     "nom": "Fascisme",
-    "these_centrale": "",
-    "apport": "",
-    "limites_critiques": "",
-    "sources": [],
-    "statut": "a_documenter",
-    "derniere_verification": "2026-09-05"
+    "these_centrale": "Le fascisme est un système politique autoritaire associant nationalisme exacerbé, populisme et totalitarisme, fondamentalement opposé à la démocratie parlementaire et à l'individualisme hérité des Lumières, apparu en Italie sous Mussolini après la Première Guerre mondiale.",
+    "apport": "Il a été le premier mouvement à théoriser et institutionnaliser un État totalitaire moderne fondé sur le culte du chef et l'embrigadement des masses, servant de matrice partielle à d'autres régimes autoritaires de l'entre-deux-guerres.",
+    "limites_critiques": "Qualifié par ses détracteurs de tyrannie délibérément anti-démocratique marquée par l'opportunisme idéologique, le fascisme reste par ailleurs débattu par les historiens quant à ses origines exactes et sa distinction avec le nazisme, ce dernier ayant radicalisé la violence jusqu'au génocide.",
+    "sources": [
+      {
+        "titre": "Fascisme — Wikipédia",
+        "url": "https://fr.wikipedia.org/wiki/Fascisme",
+        "type": "secondaire"
+      }
+    ],
+    "statut": "documente",
+    "derniere_verification": "2026-09-05",
+    "resonance_ia": "L'usage de la propagande de masse par les régimes fascistes préfigure les inquiétudes contemporaines sur la capacité de l'IA générative à produire une désinformation et une manipulation de masse à une échelle et une vitesse inédites."
   },
   {
     "id": "nazisme",
     "axe": "social",
     "sous_domaine": "modele_politique",
     "nom": "Nazisme",
-    "these_centrale": "",
-    "apport": "",
-    "limites_critiques": "",
-    "sources": [],
-    "statut": "a_documenter",
-    "derniere_verification": "2026-09-05"
+    "these_centrale": "Le national-socialisme (nazisme) est l'idéologie du parti NSDAP fondé en 1920 en Allemagne et dirigé par Adolf Hitler, combinant nationalisme extrême, antisémitisme théorisé en doctrine raciale et volonté d'expansion territoriale.",
+    "apport": "Son étude reste un objet fondamental des sciences historiques et politiques pour comprendre les mécanismes de bascule d'une démocratie vers un régime totalitaire génocidaire, ayant conduit à la Seconde Guerre mondiale et à la Shoah.",
+    "limites_critiques": "Le nazisme constitue l'exemple paradigmatique de dérive totalitaire et génocidaire, condamné unanimement, dont l'étude continue néanmoins de faire débat chez les historiens quant aux mécanismes précis de son accession et de son maintien au pouvoir.",
+    "sources": [
+      {
+        "titre": "Nazisme — Wikipédia",
+        "url": "https://fr.wikipedia.org/wiki/Nazisme",
+        "type": "secondaire"
+      }
+    ],
+    "statut": "documente",
+    "derniere_verification": "2026-09-05",
+    "resonance_ia": "L'instrumentalisation bureaucratique et technique de la persécution sous le nazisme (fichiers, recensements) nourrit une vigilance particulière sur les usages potentiellement discriminatoires ou de surveillance de masse des technologies d'IA actuelles."
   },
   {
     "id": "national-populisme",
     "axe": "social",
     "sous_domaine": "modele_politique",
     "nom": "National-populisme",
-    "these_centrale": "",
-    "apport": "",
-    "limites_critiques": "",
-    "sources": [],
-    "statut": "a_documenter",
-    "derniere_verification": "2026-09-05"
+    "these_centrale": "Le national-populisme, concept politologique apparu dans les années 1970, désigne des mouvements combinant nationalisme et populisme, caractérisés par le rejet des élites et une tendance à la concentration personnalisée du pouvoir.",
+    "apport": "Popularisé initialement pour l'Amérique latine, le concept s'applique depuis les années 2010 à une vague mondiale de dirigeants (dont Donald Trump ou Narendra Modi cités comme exemples), aidant à analyser une dynamique politique transnationale.",
+    "limites_critiques": "Le concept est critiqué pour sa rhétorique parfois xénophobe et sa tendance à la personnalisation excessive du pouvoir, ainsi que pour son caractère englobant qui peut masquer des différences importantes entre mouvements nationaux-populistes.",
+    "sources": [
+      {
+        "titre": "National-populisme — Wikipédia",
+        "url": "https://fr.wikipedia.org/wiki/National-populisme",
+        "type": "secondaire"
+      }
+    ],
+    "statut": "documente",
+    "derniere_verification": "2026-09-05",
+    "resonance_ia": "La critique nationale-populiste des « élites technocratiques » s'étend aujourd'hui aux grandes entreprises d'IA, perçues par ces mouvements comme une nouvelle élite mondialisée déconnectée des préoccupations nationales."
   },
   {
     "id": "populisme-de-gauche",
     "axe": "social",
     "sous_domaine": "modele_politique",
     "nom": "Populisme de gauche",
-    "these_centrale": "",
-    "apport": "",
-    "limites_critiques": "",
-    "sources": [],
-    "statut": "a_documenter",
-    "derniere_verification": "2026-09-05"
+    "these_centrale": "Le populisme de gauche combine des valeurs de gauche (justice sociale, anticapitalisme, pacifisme) avec une rhétorique populiste anti-élitiste et antisystème, parlant au nom du peuple contre les élites économiques et politiques.",
+    "apport": "Ce courant a permis l'émergence de nouvelles forces politiques en réaction aux politiques d'austérité et aux inégalités croissantes dans plusieurs démocraties occidentales depuis la crise financière de 2008.",
+    "limites_critiques": "Sa dépendance à un leadership charismatique et à une rhétorique de rupture peut fragiliser sa capacité à gouverner durablement ou à construire des coalitions stables une fois au pouvoir.",
+    "sources": [
+      {
+        "titre": "Populisme de gauche — Wikipédia",
+        "url": "https://fr.wikipedia.org/wiki/Populisme_de_gauche",
+        "type": "secondaire"
+      }
+    ],
+    "statut": "documente",
+    "derniere_verification": "2026-09-05",
+    "resonance_ia": "La critique populiste de gauche des concentrations de pouvoir économique s'applique directement au débat sur la concentration du développement de l'IA entre un petit nombre d'entreprises technologiques mondiales."
   },
   {
     "id": "populisme-de-droite",
     "axe": "social",
     "sous_domaine": "modele_politique",
     "nom": "Populisme de droite",
-    "these_centrale": "",
-    "apport": "",
-    "limites_critiques": "",
-    "sources": [],
-    "statut": "a_documenter",
-    "derniere_verification": "2026-09-05"
+    "these_centrale": "Le populisme de droite combine des valeurs conservatrices avec une rhétorique anti-élitiste et antisystème, se caractérisant en Europe par l'opposition à l'immigration, l'euroscepticisme et le nationalisme.",
+    "apport": "Il a permis l'essor électoral de nombreux partis en Europe et ailleurs en captant un électorat se sentant délaissé par la mondialisation et les partis traditionnels.",
+    "limites_critiques": "Des chercheurs comme Arthur Borriello y voient une « contradiction dans les termes » : le populisme viserait originellement l'émancipation populaire, tandis que la droite populiste privilégierait le nationalisme et l'autoritarisme sans réellement étendre les droits des classes populaires.",
+    "sources": [
+      {
+        "titre": "Populisme de droite — Wikipédia",
+        "url": "https://fr.wikipedia.org/wiki/Populisme_de_droite",
+        "type": "secondaire"
+      }
+    ],
+    "statut": "documente",
+    "derniere_verification": "2026-09-05",
+    "resonance_ia": "Le discours souverainiste souvent associé au populisme de droite alimente les débats sur une régulation nationale ou protectionniste de l'IA, perçue comme un enjeu de souveraineté technologique face aux grandes puissances étrangères."
   },
   {
     "id": "autoritarisme-electif",
     "axe": "social",
     "sous_domaine": "modele_politique",
     "nom": "Autoritarisme électif",
-    "these_centrale": "",
-    "apport": "",
-    "limites_critiques": "",
-    "sources": [],
-    "statut": "a_documenter",
-    "derniere_verification": "2026-09-05"
+    "these_centrale": "L'autoritarisme compétitif (ou électoral) désigne un régime hybride où les dirigeants maintiennent des institutions démocratiques formelles — élections régulières, opposition tolérée — tout en manipulant systématiquement le processus électoral et judiciaire pour se maintenir au pouvoir.",
+    "apport": "Ce concept, développé notamment par les politologues Steven Levitsky et Lucan Way, a permis d'affiner l'analyse des régimes situés dans la « zone grise » entre démocratie et autocratie fermée, plus nombreux depuis la fin de la Guerre froide.",
+    "limites_critiques": "La frontière entre autoritarisme compétitif et démocratie affaiblie reste débattue, la classification d'un régime donné dépendant largement des critères retenus (liberté de la presse, indépendance judiciaire) et de leur pondération.",
+    "sources": [
+      {
+        "titre": "Competitive authoritarianism — Wikipedia (EN)",
+        "url": "https://en.wikipedia.org/wiki/Competitive_authoritarianism",
+        "type": "secondaire"
+      }
+    ],
+    "statut": "documente",
+    "derniere_verification": "2026-09-05",
+    "resonance_ia": "Les outils de surveillance et de manipulation de l'information rendus possibles par l'IA (reconnaissance faciale, ciblage algorithmique de la propagande) offrent aux régimes autoritaires compétitifs de nouveaux leviers pour maintenir une façade démocratique tout en consolidant leur contrôle réel."
   },
   {
     "id": "democratie-illiberale",
     "axe": "social",
     "sous_domaine": "modele_politique",
     "nom": "Démocratie illibérale",
-    "these_centrale": "",
-    "apport": "",
-    "limites_critiques": "",
-    "sources": [],
-    "statut": "a_documenter",
-    "derniere_verification": "2026-09-05"
+    "these_centrale": "La démocratie illibérale désigne un régime qui organise des élections régulières mais restreint dans les faits les libertés individuelles, affaiblit les contre-pouvoirs constitutionnels et limite le pluralisme médiatique, tout en conservant une façade démocratique.",
+    "apport": "Le concept, popularisé par Fareed Zakaria puis appliqué à des cas comme la Hongrie de Viktor Orbán, la Turquie, la Russie ou les Philippines, a permis de nommer un phénomène politique distinct à la fois de la démocratie libérale pleine et de l'autoritarisme classique.",
+    "limites_critiques": "Des politologues comme Steven Levitsky jugent le terme en partie contradictoire — sans médias indépendants ni opposition réelle, ces systèmes ne seraient pas véritablement démocratiques — et préfèrent des expressions alternatives comme « autoritarisme compétitif » ou « autoritarisme électoral ».",
+    "sources": [
+      {
+        "titre": "Illiberal democracy — Wikipedia (EN)",
+        "url": "https://en.wikipedia.org/wiki/Illiberal_democracy",
+        "type": "secondaire"
+      }
+    ],
+    "statut": "documente",
+    "derniere_verification": "2026-09-05",
+    "resonance_ia": "Le contrôle des médias et de l'information, caractéristique des démocraties illibérales, trouve un prolongement inquiétant dans les capacités de modération, de surveillance et de production de contenu à grande échelle qu'offre l'IA aux pouvoirs en place."
   },
   {
     "id": "democrature",
     "axe": "social",
     "sous_domaine": "modele_politique",
     "nom": "Démocrature",
-    "these_centrale": "",
-    "apport": "",
-    "limites_critiques": "",
-    "sources": [],
-    "statut": "a_documenter",
-    "derniere_verification": "2026-09-05"
+    "these_centrale": "Une démocrature est un régime qui présente formellement des aspects de démocratie (élections) tout en fonctionnant dans la pratique comme une dictature, le pouvoir réel restant concentré entre les mains d'un individu ou d'une petite élite sans respect de l'État de droit.",
+    "apport": "Le néologisme, dont l'origine reste disputée entre plusieurs inventeurs revendiqués entre 1951 et 1965, a fourni un raccourci médiatique et politique pour désigner un « simulacre de démocratie » largement repris dans le débat public.",
+    "limites_critiques": "Le classement d'un pays donné comme démocrature reste contesté — certains experts qualifient ainsi la Chine, d'autres estiment qu'elle n'a rien de démocratique et ne mérite pas cette catégorie hybride.",
+    "sources": [
+      {
+        "titre": "Démocrature — Wikipédia",
+        "url": "https://fr.wikipedia.org/wiki/D%C3%A9mocrature",
+        "type": "secondaire"
+      }
+    ],
+    "statut": "documente",
+    "derniere_verification": "2026-09-05",
+    "resonance_ia": "Les outils de surveillance de masse assistés par IA sont régulièrement cités comme un pilier technique des démocratures contemporaines, permettant un contrôle social étendu sous une façade institutionnelle en partie démocratique."
   },
   {
     "id": "hybride-competitif",
     "axe": "social",
     "sous_domaine": "modele_politique",
     "nom": "Hybride compétitif",
-    "these_centrale": "",
-    "apport": "",
-    "limites_critiques": "",
-    "sources": [],
-    "statut": "a_documenter",
-    "derniere_verification": "2026-09-05"
+    "these_centrale": "Un régime hybride combine de manière significative des éléments démocratiques et autoritaires, se situant dans une « zone grise » entre démocratie complète et autocratie, avec des élections régulières mais des pratiques autoritaires persistantes (contrôle des médias, répression de l'opposition).",
+    "apport": "Le concept a permis aux politologues de sortir d'une classification binaire démocratie/dictature pour rendre compte de la diversité réelle des régimes politiques contemporains, souvent issus de transitions démocratiques inabouties.",
+    "limites_critiques": "Ces régimes restent souvent figés « à mi-chemin » entre démocratie et autocratie sans évoluer clairement vers l'un ou l'autre pôle, ce qui complique les prévisions sur leur trajectoire politique future.",
+    "sources": [
+      {
+        "titre": "Régime hybride — Wikipédia",
+        "url": "https://fr.wikipedia.org/wiki/R%C3%A9gime_hybride",
+        "type": "secondaire"
+      }
+    ],
+    "statut": "documente",
+    "derniere_verification": "2026-09-05",
+    "resonance_ia": "Les technologies d'IA de contrôle de l'information (censure algorithmique ciblée, réseaux sociaux surveillés) sont particulièrement adaptées aux régimes hybrides, qui cherchent à maintenir une tension calculée entre pluralisme apparent et contrôle réel."
   },
   {
     "id": "totalitarisme",
     "axe": "social",
     "sous_domaine": "modele_politique",
     "nom": "Totalitarisme",
-    "these_centrale": "",
-    "apport": "",
-    "limites_critiques": "",
-    "sources": [],
-    "statut": "a_documenter",
-    "derniere_verification": "2026-09-05"
+    "these_centrale": "Le totalitarisme est un système politique où un parti unique exerce un contrôle absolu sur tous les aspects de la vie publique et privée en supprimant toute opposition organisée ; Hannah Arendt en identifie les traits essentiels dans le monopole idéologique et le recours systématique à la terreur d'État.",
+    "apport": "Le concept a structuré durablement l'analyse comparée des régimes du XXe siècle (nazisme, stalinisme) en identifiant des mécanismes communs de domination totale sur la société.",
+    "limites_critiques": "Des historiens comme Ian Kershaw contestent l'idée que ces régimes aient réellement atomisé complètement la société civile, et certains reprochent au concept d'obscurcir les différences réelles entre fascisme et communisme en les plaçant sur un même plan analytique.",
+    "sources": [
+      {
+        "titre": "Totalitarisme — Wikipédia",
+        "url": "https://fr.wikipedia.org/wiki/Totalitarisme",
+        "type": "secondaire"
+      }
+    ],
+    "statut": "documente",
+    "derniere_verification": "2026-09-05",
+    "resonance_ia": "Le potentiel de surveillance exhaustive et de contrôle comportemental que permettrait une IA généralisée ravive les inquiétudes théoriques du totalitarisme arendtien, appliquées cette fois à des infrastructures numériques plutôt qu'à un appareil policier classique."
   },
   {
     "id": "dictature-militaire",
     "axe": "social",
     "sous_domaine": "modele_politique",
     "nom": "Dictature militaire",
-    "these_centrale": "",
-    "apport": "",
-    "limites_critiques": "",
-    "sources": [],
-    "statut": "a_documenter",
-    "derniere_verification": "2026-09-05"
+    "these_centrale": "Une dictature militaire est un gouvernement dirigé directement par des membres de l'armée, généralement établi à la suite d'un coup d'État, instaurant la loi martiale et justifiant son pouvoir par le maintien de la stabilité nationale.",
+    "apport": "Ce type de régime a marqué de nombreuses trajectoires nationales au XXe siècle (Brésil 1964-1985, Chili 1973-1990, Argentine 1976-1983, Grèce 1967-1974, Indonésie sous Soeharto), avant de décliner après la fin de la Guerre froide.",
+    "limites_critiques": "Ces régimes sont documentés comme souvent peu respectueux des droits humains, et leur légitimation par la lutte anticommuniste a disparu avec l'effondrement de l'URSS ; plusieurs pays africains (Mali, Guinée, Burkina Faso) restent néanmoins sous contrôle militaire direct aujourd'hui.",
+    "sources": [
+      {
+        "titre": "Dictature militaire — Wikipédia",
+        "url": "https://fr.wikipedia.org/wiki/Dictature_militaire",
+        "type": "secondaire"
+      }
+    ],
+    "statut": "documente",
+    "derniere_verification": "2026-09-05",
+    "resonance_ia": "Les technologies de surveillance et de contrôle de l'information assistées par IA offrent aux dictatures militaires contemporaines de nouveaux outils de maintien de l'ordre et de répression de l'opposition, renouvelant les enjeux classiques de ce type de régime."
   },
   {
     "id": "junte",
     "axe": "social",
     "sous_domaine": "modele_politique",
     "nom": "Junte",
-    "these_centrale": "",
-    "apport": "",
-    "limites_critiques": "",
-    "sources": [],
-    "statut": "a_documenter",
-    "derniere_verification": "2026-09-05"
+    "these_centrale": "Une junte militaire est un groupe d'officiers qui partage collectivement le pouvoir dictatorial après avoir généralement renversé un gouvernement civil par un coup d'État, en invoquant la stabilité politique ou la lutte contre des idéologies jugées dangereuses.",
+    "apport": "Ce mode de gouvernement collégial militaire a marqué particulièrement l'Amérique latine (Colombie 1957-1958, Brésil 1964-1985, Chili 1973-1990, Argentine 1976-1983) et l'Afrique, avant de devenir moins fréquent après la fin de la Guerre froide.",
+    "limites_critiques": "Les juntes militaires sont critiquées pour leur manque de respect des droits humains et l'absence de légitimité démocratique réelle, malgré l'organisation ponctuelle d'élections destinées à prolonger leur maintien au pouvoir.",
+    "sources": [
+      {
+        "titre": "Junte militaire — Wikipédia",
+        "url": "https://fr.wikipedia.org/wiki/Junte_militaire",
+        "type": "secondaire"
+      }
+    ],
+    "statut": "documente",
+    "derniere_verification": "2026-09-05",
+    "resonance_ia": "Les capacités de surveillance et de coordination logistique offertes par l'IA pourraient renforcer la capacité de contrôle interne des juntes militaires contemporaines sur leurs populations et leurs propres appareils sécuritaires."
   },
   {
     "id": "theocratie-islamique",
     "axe": "social",
     "sous_domaine": "modele_politique",
     "nom": "Théocratie islamique",
-    "these_centrale": "",
-    "apport": "",
-    "limites_critiques": "",
-    "sources": [],
-    "statut": "a_documenter",
-    "derniere_verification": "2026-09-05"
+    "these_centrale": "Une théocratie islamique est un régime où le pouvoir politique est directement exercé par des autorités religieuses au nom d'une autorité divine, l'Iran constituant l'exemple principal contemporain via le système du velayat-e faqih (tutelle du jurisconsulte).",
+    "apport": "Ce modèle institutionnalise une conception où, selon le philosophe Rémi Brague, la séparation du politique et du religieux n'a pas vocation à exister en islam, distinguant ce régime des États à majorité musulmane qui reconnaissent l'islam sans être théocratiques.",
+    "limites_critiques": "Le terme est devenu en partie péjoratif dans le débat contemporain, désignant tantôt une confusion politique-religieuse, tantôt une forme d'autoritarisme ou de totalitarisme, ce qui en complique l'usage analytique rigoureux.",
+    "sources": [
+      {
+        "titre": "Théocratie — Wikipédia",
+        "url": "https://fr.wikipedia.org/wiki/Th%C3%A9ocratie",
+        "type": "secondaire"
+      }
+    ],
+    "statut": "documente",
+    "derniere_verification": "2026-09-05",
+    "resonance_ia": "Le développement de l'IA dans les théocraties islamiques pose la question spécifique de sa conformité à des cadres normatifs religieux (finance islamique, éthique de la charia), un enjeu de gouvernance encore peu exploré par la recherche."
   },
   {
     "id": "monarchie-absolue",
     "axe": "social",
     "sous_domaine": "modele_politique",
     "nom": "Monarchie absolue",
-    "these_centrale": "",
-    "apport": "",
-    "limites_critiques": "",
-    "sources": [],
-    "statut": "a_documenter",
-    "derniere_verification": "2026-09-05"
+    "these_centrale": "La monarchie absolue est un régime où le souverain concentre en ses mains les pouvoirs législatif, exécutif et judiciaire sans contrepoids institutionnel, souvent fondé sur le droit divin, dont Louis XIV en France et Frédéric II de Prusse restent les figures les plus représentatives.",
+    "apport": "Elle a permis la centralisation et la bureaucratisation de l'État moderne en Europe aux XVIIe-XVIIIe siècles, en intégrant notamment la noblesse à la cour royale pour neutraliser les pouvoirs féodaux concurrents.",
+    "limites_critiques": "Même en France, l'absolutisme n'a jamais été totalement sans limites (lois fondamentales du royaume, droits coutumiers, refus d'enregistrement des lois par le Parlement), et le système a décliné avec les révolutions anglaise et française sous la critique des philosophes des Lumières.",
+    "sources": [
+      {
+        "titre": "Monarchie absolue — Wikipédia",
+        "url": "https://fr.wikipedia.org/wiki/Monarchie_absolue",
+        "type": "secondaire"
+      }
+    ],
+    "statut": "documente",
+    "derniere_verification": "2026-09-05",
+    "resonance_ia": "Le fantasme historique du souverain absolu omniscient trouve un écho contemporain dans les craintes autour d'une IA de gouvernance centralisant une capacité de décision et de surveillance sans contrepoids institutionnel réel."
   },
   {
     "id": "monarchie-constitutionnelle",
     "axe": "social",
     "sous_domaine": "modele_politique",
     "nom": "Monarchie constitutionnelle",
-    "these_centrale": "",
-    "apport": "",
-    "limites_critiques": "",
-    "sources": [],
-    "statut": "a_documenter",
-    "derniere_verification": "2026-09-05"
+    "these_centrale": "La monarchie constitutionnelle est un régime où un monarque, chef d'État élu ou héréditaire, voit ses pouvoirs limités par une constitution, le pouvoir exécutif réel étant exercé par un premier ministre responsable devant le parlement.",
+    "apport": "Ce modèle, incarné par une douzaine de monarchies européennes actuelles ainsi que le Canada et d'autres royaumes du Commonwealth, permet de conjuguer continuité symbolique et historique avec un fonctionnement pleinement démocratique.",
+    "limites_critiques": "Certaines monarchies constitutionnelles (Monaco, Liechtenstein) conservent des pouvoirs politiques substantiels pour le souverain, ce qui nuance la portée purement symbolique parfois attribuée à ce régime ; plusieurs grandes nations (France, Italie, Allemagne) ont par ailleurs basculé vers des régimes républicains.",
+    "sources": [
+      {
+        "titre": "Monarchie constitutionnelle — Wikipédia",
+        "url": "https://fr.wikipedia.org/wiki/Monarchie_constitutionnelle",
+        "type": "secondaire"
+      }
+    ],
+    "statut": "documente",
+    "derniere_verification": "2026-09-05",
+    "resonance_ia": "Le rôle de « pouvoir modérateur » du monarque constitutionnel, garant de la continuité au-dessus des clivages partisans, est parfois cité en analogie dans les débats sur la nécessité d'instances de supervision neutres et durables pour encadrer le déploiement de l'IA."
   },
   {
     "id": "anarchisme",
     "axe": "social",
     "sous_domaine": "modele_politique",
     "nom": "Anarchisme",
-    "these_centrale": "",
-    "apport": "",
-    "limites_critiques": "",
-    "sources": [],
-    "statut": "a_documenter",
-    "derniere_verification": "2026-09-05"
+    "these_centrale": "L'anarchisme regroupe plusieurs courants de philosophie politique anti-autoritaires développés depuis le XIXe siècle, fondés sur la démocratie directe, la liberté individuelle, la solidarité et l'égalitarisme, et opposés à toute forme de domination institutionnalisée (État, capital).",
+    "apport": "Il a nourri des mouvements ouvriers, des expériences d'autogestion (collectivisations espagnoles de 1936) et continue d'influencer des mouvements sociaux contemporains (altermondialisme, zadisme, économie du logiciel libre).",
+    "limites_critiques": "L'absence d'organisation étatique centralisée pose la question, non résolue théoriquement de façon consensuelle, de la coordination à grande échelle et de la défense collective face à des puissances organisées hiérarchiquement.",
+    "sources": [
+      {
+        "titre": "Anarchisme — Wikipédia",
+        "url": "https://fr.wikipedia.org/wiki/Anarchisme",
+        "type": "secondaire"
+      }
+    ],
+    "statut": "documente",
+    "derniere_verification": "2026-09-05",
+    "resonance_ia": "Les architectures d'IA décentralisées et open source (modèles ouverts, gouvernance distribuée) sont parfois présentées, non sans débat, comme une traduction technique contemporaine de l'idéal anarchiste de refus de la concentration du pouvoir."
   },
   {
     "id": "libertarianisme",
     "axe": "social",
     "sous_domaine": "modele_politique",
     "nom": "Libertarianisme",
-    "these_centrale": "",
-    "apport": "",
-    "limites_critiques": "",
-    "sources": [],
-    "statut": "a_documenter",
-    "derniere_verification": "2026-09-05"
+    "these_centrale": "Le libertarianisme est une idéologie politique privilégiant la liberté individuelle, la propriété privée et le marché libre en s'opposant à l'intervention de l'État, se déclinant en plusieurs variantes allant du minarchisme (État minimal) à l'anarcho-capitalisme (absence totale d'État).",
+    "apport": "Il a nourri d'importants courants économiques et politiques, notamment aux États-Unis, en défendant l'auto-régulation du marché comme mécanisme d'allocation efficace des ressources et de croissance économique.",
+    "limites_critiques": "Ses détracteurs pointent le risque d'amplification des inégalités sociales et de conditions urbaines plus atomisées et inégales, ainsi que des tensions internes entre ses différentes factions (libertarianisme nationaliste versus universaliste).",
+    "sources": [
+      {
+        "titre": "Libertarianisme — Wikipédia",
+        "url": "https://fr.wikipedia.org/wiki/Libertarianisme",
+        "type": "secondaire"
+      }
+    ],
+    "statut": "documente",
+    "derniere_verification": "2026-09-05",
+    "resonance_ia": "Le libertarianisme technologique de la Silicon Valley, hostile à la régulation étatique, est une composante importante du débat sur l'encadrement de l'IA, s'opposant aux positions favorables à une supervision publique renforcée."
   },
   {
     "id": "eco-socialisme",
     "axe": "social",
     "sous_domaine": "modele_politique",
     "nom": "Éco-socialisme",
-    "these_centrale": "",
-    "apport": "",
-    "limites_critiques": "",
-    "sources": [],
-    "statut": "a_documenter",
-    "derniere_verification": "2026-09-05"
+    "these_centrale": "L'écosocialisme, apparu dans les années 1970, fusionne écologisme et marxisme en soutenant que la protection de l'environnement est incompatible avec un capitalisme structurellement orienté vers la croissance infinie.",
+    "apport": "Il propose de subordonner la valeur d'échange marchande aux besoins sociaux et écologiques, en défendant un dépassement révolutionnaire du capitalisme plutôt que des solutions réformistes comme la taxe carbone.",
+    "limites_critiques": "Le mouvement reste divisé sur l'héritage marxiste lui-même — certains voyant en Marx un précurseur écologiste, d'autres dénonçant une ambiguïté productiviste dans ses écrits originels — ce qui fragilise sa cohérence doctrinale.",
+    "sources": [
+      {
+        "titre": "Écosocialisme — Wikipédia",
+        "url": "https://fr.wikipedia.org/wiki/%C3%89cosocialisme",
+        "type": "secondaire"
+      }
+    ],
+    "statut": "documente",
+    "derniere_verification": "2026-09-05",
+    "resonance_ia": "La consommation énergétique croissante de l'entraînement et de l'usage massif de l'IA entre en tension directe avec les objectifs écosocialistes de sobriété matérielle et énergétique, nourrissant un débat sur la soutenabilité du secteur."
   },
   {
     "id": "technocratie",
     "axe": "social",
     "sous_domaine": "modele_politique",
     "nom": "Technocratie",
-    "these_centrale": "",
-    "apport": "",
-    "limites_critiques": "",
-    "sources": [],
-    "statut": "a_documenter",
-    "derniere_verification": "2026-09-05"
+    "these_centrale": "La technocratie est un système où le pouvoir effectif appartient à des experts techniques et scientifiques plutôt qu'à des responsables politiques élus, ces derniers étant jugés vénaux ou incompétents par les tenants de cette approche.",
+    "apport": "Elle s'est incarnée dans des mouvements historiques (groupe X-Crise en France dans les années 1930, mouvement technocratique américain de Howard Scott) et perdure dans des gouvernances contemporaines valorisant fortement l'expertise, comme la Chine post-maoïste.",
+    "limites_critiques": "Le pape François comme le philosophe Jacques Ellul dénoncent une logique technicienne réduisant les problèmes sociaux à des solutions purement techniques, au détriment des valeurs humaines, tandis que la concentration du pouvoir chez une élite d'experts contredit les principes démocratiques.",
+    "sources": [
+      {
+        "titre": "Technocratie — Wikipédia",
+        "url": "https://fr.wikipedia.org/wiki/Technocratie",
+        "type": "secondaire"
+      }
+    ],
+    "statut": "documente",
+    "derniere_verification": "2026-09-05",
+    "resonance_ia": "Le déploiement de systèmes de décision assistés ou automatisés par l'IA dans l'administration publique ravive directement le débat technocratique classique sur la légitimité de décisions publiques fondées sur l'expertise technique plutôt que sur la délibération démocratique."
   },
   {
     "id": "neoliberalisme-etatique",
     "axe": "social",
     "sous_domaine": "modele_politique",
     "nom": "Néolibéralisme étatique",
-    "these_centrale": "",
-    "apport": "",
-    "limites_critiques": "",
-    "sources": [],
-    "statut": "a_documenter",
-    "derniere_verification": "2026-09-05"
+    "these_centrale": "Le néolibéralisme désigne un ensemble de doctrines économiques prônant la réduction du rôle de l'État, la dérégulation des marchés et la priorité donnée aux mécanismes de marché, l'État étant réduit à la création d'un cadre légal favorable plutôt qu'à un rôle d'intervention directe.",
+    "apport": "Il a orienté les politiques économiques dominantes de nombreux pays occidentaux depuis les années 1980, en promouvant la libéralisation des échanges, les privatisations et la déréglementation financière.",
+    "limites_critiques": "Joseph Stiglitz le qualifie de « fondamentalisme de marché » réfuté par les faits, tandis que Pierre Bourdieu y voit un programme de destruction méthodique des solidarités collectives ; le terme lui-même reste flou, presque personne ne s'en revendiquant explicitement.",
+    "sources": [
+      {
+        "titre": "Néolibéralisme — Wikipédia",
+        "url": "https://fr.wikipedia.org/wiki/N%C3%A9olib%C3%A9ralisme",
+        "type": "secondaire"
+      }
+    ],
+    "statut": "documente",
+    "derniere_verification": "2026-09-05",
+    "resonance_ia": "Le débat néolibéral sur la dérégulation trouve un prolongement direct dans la question de la régulation de l'IA : faut-il laisser le marché des modèles d'IA s'autoréguler ou instaurer un cadre légal contraignant comparable à d'autres secteurs stratégiques ?"
   },
   {
     "id": "cyber-socialisme",
     "axe": "social",
     "sous_domaine": "modele_politique",
     "nom": "Cyber-socialisme",
-    "these_centrale": "",
-    "apport": "",
-    "limites_critiques": "",
-    "sources": [],
-    "statut": "a_documenter",
-    "derniere_verification": "2026-09-05"
+    "these_centrale": "Le cyber-socialisme désigne l'hypothèse d'une planification économique socialiste assistée par des systèmes informatiques, dont le Projet Cybersyn mené sous Salvador Allende au Chili (1971-1973) reste l'exemple historique le plus abouti.",
+    "apport": "Dirigé par le chercheur britannique Stafford Beer selon la théorie des systèmes viables, Cybersyn combinait un réseau de télex, un logiciel de suivi statistique et une salle d'opérations pour coordonner la production en quasi temps réel, avec un succès partiel démontré lors d'une grève en 1972.",
+    "limites_critiques": "Le projet fut détruit après le coup d'État militaire de 1973 avant d'avoir pu démontrer sa viabilité à long terme ; son héritage reste contesté, certains chercheurs (Evgeny Morozov) y voyant une préfiguration de la surveillance algorithmique moderne plutôt qu'un modèle d'émancipation.",
+    "sources": [
+      {
+        "titre": "Project Cybersyn — Wikipedia (EN)",
+        "url": "https://en.wikipedia.org/wiki/Project_Cybersyn",
+        "type": "secondaire"
+      }
+    ],
+    "statut": "documente",
+    "derniere_verification": "2026-09-05",
+    "resonance_ia": "La puissance de calcul actuelle relance la question posée par Cybersyn : une planification économique assistée par une IA à grande échelle pourrait-elle aujourd'hui surmonter les limites techniques qui ont contraint l'expérience chilienne des années 1970 ?"
   },
   {
     "id": "minarchisme",
     "axe": "social",
     "sous_domaine": "modele_politique",
     "nom": "Minarchisme",
-    "these_centrale": "",
-    "apport": "",
-    "limites_critiques": "",
-    "sources": [],
-    "statut": "a_documenter",
-    "derniere_verification": "2026-09-05"
+    "these_centrale": "Le minarchisme est un courant issu d'un clivage au sein du libertarianisme américain des années 1970, défendant un État strictement limité aux fonctions régaliennes (police, justice, défense) et rejetant à la fois l'anarcho-capitalisme et l'interventionnisme étatique massif.",
+    "apport": "Il a structuré une branche modérée du mouvement libertarien, défendant des contre-pouvoirs institutionnels et une intervention étatique limitée aux seuls cas de défaillance de marché.",
+    "limites_critiques": "Le débat central entre minarchisme et anarcho-capitalisme porte sur la légitimité même de l'existence de l'État, une question de principe qui sépare nettement ces deux courants pourtant proches sur le plan économique.",
+    "sources": [
+      {
+        "titre": "Minarchisme — Wikipédia",
+        "url": "https://fr.wikipedia.org/wiki/Minarchisme",
+        "type": "secondaire"
+      }
+    ],
+    "statut": "documente",
+    "derniere_verification": "2026-09-05",
+    "resonance_ia": "Le minarchisme s'oppose typiquement à toute régulation étatique forte de l'IA, plaidant pour une intervention publique minimale limitée aux cas avérés de défaillance du marché plutôt qu'à une supervision préventive."
   },
   {
     "id": "souverainisme",
     "axe": "social",
     "sous_domaine": "modele_politique",
     "nom": "Souverainisme",
-    "these_centrale": "",
-    "apport": "",
-    "limites_critiques": "",
-    "sources": [],
-    "statut": "a_documenter",
-    "derniere_verification": "2026-09-05"
+    "these_centrale": "Le souverainisme est une doctrine politique visant à préserver la souveraineté nationale de décision face aux instances supranationales, en défendant l'autonomie la plus large possible dans les domaines jugés stratégiques pour la nation.",
+    "apport": "Il structure une opposition politique significative au fédéralisme européen et au libre-échange international dans plusieurs pays, en défendant l'indépendance économique et culturelle nationale.",
+    "limites_critiques": "Ses détracteurs y voient parfois un nationalisme non assumé, et le mouvement souverainiste lui-même reste divisé entre une version fondée sur la tradition culturelle et une autre définie comme un simple contrat civique, rendant une position commune difficile.",
+    "sources": [
+      {
+        "titre": "Souverainisme — Wikipédia",
+        "url": "https://fr.wikipedia.org/wiki/Souverainisme",
+        "type": "secondaire"
+      }
+    ],
+    "statut": "documente",
+    "derniere_verification": "2026-09-05",
+    "resonance_ia": "La souveraineté technologique et numérique — maîtrise nationale ou continentale des infrastructures d'IA plutôt que dépendance à des acteurs étrangers — est devenue un axe central des discours souverainistes contemporains, notamment en Europe."
   },
   {
     "id": "capitalisme-de-marche-libre-laissez-faire",

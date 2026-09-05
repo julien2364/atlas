@@ -110,5 +110,12 @@
     "type": "ajout",
     "cible": "referentiel-humain/psychologique + referentiel-humain/serenite",
     "resume": "Les 10 dernières fiches de l'axe psychologique (Freud, Jung, Lacan, Skinner, Watson, Maslow, Rogers, Seligman, Piaget, Vygotski) et les 4 dernières de l'axe sérénité (World Happiness Report, Global Peace Index, quête de sens/spiritualités et laïcité, résilience civilisationnelle aux risques existentiels) documentées, sourcées via Wikipédia (FR/EN, avec repli sur WebFetch le temps d'un rate-limiting persistant de l'API REST Wikipédia sur ce lot). Les axes psychologique (12/12) et sérénité (5/5) sont désormais complets à 100%."
+  },
+  {
+    "id": "documentation-manuelle-social1-modeles-politiques-2026-09-05",
+    "date": "2026-09-05",
+    "type": "ajout",
+    "cible": "referentiel-humain/social_1 (sous-domaine modele_politique)",
+    "resume": "32 fiches de modèles/régimes politiques documentées dans social_1.json (social-démocratie, démocratie chrétienne, régimes parlementaire/présidentiel/semi-présidentiel, communisme, marxisme-léninisme, maoïsme, socialisme du XXIe siècle, fascisme, nazisme, national-populisme, populismes de gauche/droite, autoritarisme électoral, démocratie illibérale, démocrature, régime hybride, totalitarisme, dictature militaire, junte, théocratie islamique, monarchies absolue/constitutionnelle, anarchisme, libertarianisme, écosocialisme, technocratie, néolibéralisme, cyber-socialisme/Cybersyn, minarchisme, souverainisme), sourcées via Wikipédia FR/EN. Le sous-domaine économie de social_1.json (36 fiches) reste à documenter."
   }
 ]
