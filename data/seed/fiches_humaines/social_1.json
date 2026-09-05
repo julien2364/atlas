@@ -629,36 +629,57 @@
     "axe": "social",
     "sous_domaine": "economie",
     "nom": "Capitalisme de marché libre (laissez-faire)",
-    "these_centrale": "",
-    "apport": "",
-    "limites_critiques": "",
-    "sources": [],
-    "statut": "a_documenter",
-    "derniere_verification": "2026-09-05"
+    "these_centrale": "Le capitalisme de marché libre (laissez-faire) repose sur la propriété privée des moyens de production et la liberté d'entreprendre, où les échanges se déroulent sans contrainte étatique et la concurrence libre régule seule l'allocation des ressources.",
+    "apport": "Il a servi de socle théorique à l'industrialisation occidentale et reste la référence normative de nombreuses politiques de dérégulation économique depuis le XIXe siècle.",
+    "limites_critiques": "Il est critiqué pour la concentration croissante des richesses, les inégalités sociales, les crises économiques cycliques de surproduction et son incapacité structurelle à traiter les externalités écologiques ; même Alan Greenspan, figure du libertarianisme économique, a reconnu après la crise de 2008 avoir trouvé « une faille » dans l'hypothèse d'autorégulation des marchés.",
+    "sources": [
+      {
+        "titre": "Capitalisme — Wikipédia",
+        "url": "https://fr.wikipedia.org/wiki/Capitalisme",
+        "type": "secondaire"
+      }
+    ],
+    "statut": "documente",
+    "derniere_verification": "2026-09-05",
+    "resonance_ia": "Le débat sur la régulation de l'IA reproduit fidèlement le clivage laissez-faire/intervention publique : laisser le marché des modèles d'IA s'autoréguler comme le préconisent les tenants du laissez-faire, ou encadrer préventivement ses externalités par la loi."
   },
   {
     "id": "economie-de-marche-regulee-social-democratie",
     "axe": "social",
     "sous_domaine": "economie",
     "nom": "Économie de marché régulée (social-démocratie)",
-    "these_centrale": "",
-    "apport": "",
-    "limites_critiques": "",
-    "sources": [],
-    "statut": "a_documenter",
-    "derniere_verification": "2026-09-05"
+    "these_centrale": "L'économie de marché régulée, incarnée par l'économie sociale de marché allemande développée à partir de 1949, applique le principe « autant de marché que possible, autant d'État que nécessaire » pour concilier croissance, emploi et protection sociale.",
+    "apport": "Ce modèle, situé entre économie planifiée et marché totalement dérégulé, a soutenu la reconstruction et la prospérité de l'Allemagne de l'Ouest puis d'une large partie de l'Europe sociale-démocrate d'après-guerre.",
+    "limites_critiques": "La formule reste ambiguë et a été réinterprétée au fil du temps dans des sens parfois opposés à son intention initiale ; certains critiques comme Roger Scruton estiment qu'elle a dérivé vers une régulation excessive favorable aux lobbies.",
+    "sources": [
+      {
+        "titre": "Économie sociale de marché — Wikipédia",
+        "url": "https://fr.wikipedia.org/wiki/%C3%89conomie_sociale_de_march%C3%A9",
+        "type": "secondaire"
+      }
+    ],
+    "statut": "documente",
+    "derniere_verification": "2026-09-05",
+    "resonance_ia": "Le principe « autant de marché que possible, autant d'État que nécessaire » est directement transposable au débat sur la régulation de l'IA, où la question porte sur le niveau minimal d'intervention publique nécessaire sans étouffer l'innovation."
   },
   {
     "id": "economie-planifiee-modele-sovietique",
     "axe": "social",
     "sous_domaine": "economie",
     "nom": "Économie planifiée (modèle soviétique)",
-    "these_centrale": "",
-    "apport": "",
-    "limites_critiques": "",
-    "sources": [],
-    "statut": "a_documenter",
-    "derniere_verification": "2026-09-05"
+    "these_centrale": "L'économie planifiée remplace les mécanismes de marché par un plan étatique fixant centralement les objectifs de production et l'allocation des ressources sur une période annuelle ou pluriannuelle, modèle appliqué en URSS durant l'essentiel du XXe siècle.",
+    "apport": "Elle a permis une industrialisation rapide et une mobilisation massive de ressources vers des priorités stratégiques définies par l'État, notamment lors de l'effort de guerre et de la course spatiale soviétiques.",
+    "limites_critiques": "Ludwig von Mises avait théorisé qu'en se privant du mécanisme des prix libres, les planificateurs se privent de tout calcul économique rationnel ; à mesure que l'économie se complexifie, le centre est submergé d'informations, ce qui a largement contribué à l'inefficacité chronique et à l'effondrement final du système soviétique.",
+    "sources": [
+      {
+        "titre": "Économie planifiée — Wikipédia",
+        "url": "https://fr.wikipedia.org/wiki/%C3%89conomie_planifi%C3%A9e",
+        "type": "secondaire"
+      }
+    ],
+    "statut": "documente",
+    "derniere_verification": "2026-09-05",
+    "resonance_ia": "La capacité de calcul massive de l'IA relance périodiquement l'hypothèse d'une planification économique centralisée redevenue viable, en écho direct au débat historique du calcul socialiste opposant Mises et Hayek aux planificateurs soviétiques."
   },
   {
     "id": "capitalisme-d-etat-modele-chinois",
@@ -683,120 +704,190 @@
     "axe": "social",
     "sous_domaine": "economie",
     "nom": "Croissance de Solow-Swan",
-    "these_centrale": "",
-    "apport": "",
-    "limites_critiques": "",
-    "sources": [],
-    "statut": "a_documenter",
-    "derniere_verification": "2026-09-05"
+    "these_centrale": "Le modèle de croissance de Solow-Swan (1956) explique la croissance économique de long terme par l'accumulation du capital et le facteur travail, l'économie convergeant vers un équilibre de long terme appelé état stationnaire.",
+    "apport": "Il reste la référence fondatrice de la théorie néoclassique de la croissance et a valu à Robert Solow le prix Nobel d'économie en 1987.",
+    "limites_critiques": "Sa limite majeure est que le progrès technique, seul moteur de croissance durable au-delà de l'état stationnaire, y demeure exogène et donc inexpliqué — une faille qui a directement motivé le développement ultérieur des modèles de croissance endogène.",
+    "sources": [
+      {
+        "titre": "Modèle de Solow — Wikipédia",
+        "url": "https://fr.wikipedia.org/wiki/Mod%C3%A8le_de_Solow",
+        "type": "secondaire"
+      }
+    ],
+    "statut": "documente",
+    "derniere_verification": "2026-09-05",
+    "resonance_ia": "L'IA est aujourd'hui envisagée par de nombreux économistes comme une source potentielle majeure de progrès technique, la variable que le modèle de Solow laissait précisément inexpliquée."
   },
   {
     "id": "is-lm-keynesianisme-de-synthese",
     "axe": "social",
     "sous_domaine": "economie",
     "nom": "IS-LM (keynésianisme de synthèse)",
-    "these_centrale": "",
-    "apport": "",
-    "limites_critiques": "",
-    "sources": [],
-    "statut": "a_documenter",
-    "derniere_verification": "2026-09-05"
+    "these_centrale": "Le modèle IS-LM représente graphiquement la relation entre taux d'intérêt et niveau de production dans une économie, synthétisant les mécanismes macroéconomiques keynésiens (marché des biens et services, marché de la monnaie) dans un cadre néoclassique.",
+    "apport": "Élaboré notamment par John Hicks à partir de la Théorie générale de Keynes, ce modèle a longtemps constitué l'outil pédagogique et analytique standard de la macroéconomie keynésienne enseignée dans le monde entier.",
+    "limites_critiques": "Le modèle est critiqué pour sa simplification excessive de la théorie keynésienne originale (statique, à prix fixes) et son incapacité à intégrer de façon satisfaisante les anticipations des agents économiques, ce qui a motivé son dépassement par la nouvelle économie keynésienne.",
+    "sources": [
+      {
+        "titre": "Modèle IS/LM — Wikipédia",
+        "url": "https://fr.wikipedia.org/wiki/Mod%C3%A8le_IS-LM",
+        "type": "secondaire"
+      }
+    ],
+    "statut": "documente",
+    "derniere_verification": "2026-09-05",
+    "resonance_ia": "Les modèles macroéconomiques intégrant aujourd'hui l'IA cherchent à dépasser les limitations du cadre IS-LM en simulant des économies à agents hétérogènes bien plus complexes que ce cadre bidimensionnel simplifié."
   },
   {
     "id": "croissance-endogene-romer-lucas",
     "axe": "social",
     "sous_domaine": "economie",
     "nom": "Croissance endogène (Romer-Lucas)",
-    "these_centrale": "",
-    "apport": "",
-    "limites_critiques": "",
-    "sources": [],
-    "statut": "a_documenter",
-    "derniere_verification": "2026-09-05"
+    "these_centrale": "La théorie de la croissance endogène, développée notamment par Paul Romer et Robert Lucas, explique la croissance économique par des variables internes au système économique (innovation, capital humain, connaissances) plutôt que par un progrès technique exogène et inexpliqué.",
+    "apport": "Elle a permis de fonder théoriquement le rôle de l'investissement en recherche et développement, en éducation et en capital humain comme moteurs directs et endogènes de la croissance de long terme.",
+    "limites_critiques": "La modélisation de la production et de la diffusion des connaissances reste complexe et fait l'objet de nombreuses variantes théoriques concurrentes, sans consensus définitif sur les mécanismes exacts de génération de l'innovation.",
+    "sources": [
+      {
+        "titre": "Croissance endogène — Wikipédia",
+        "url": "https://fr.wikipedia.org/wiki/Croissance_endog%C3%A8ne",
+        "type": "secondaire"
+      }
+    ],
+    "statut": "documente",
+    "derniere_verification": "2026-09-05",
+    "resonance_ia": "L'IA constitue un cas d'école contemporain de la croissance endogène : sa capacité à accélérer la recherche scientifique et l'innovation elle-même pourrait représenter un moteur de croissance qui s'auto-alimente, au cœur des hypothèses de ce courant théorique."
   },
   {
     "id": "medaf-capm",
     "axe": "social",
     "sous_domaine": "economie",
     "nom": "MEDAF/CAPM",
-    "these_centrale": "",
-    "apport": "",
-    "limites_critiques": "",
-    "sources": [],
-    "statut": "a_documenter",
-    "derniere_verification": "2026-09-05"
+    "these_centrale": "Le MEDAF (modèle d'évaluation des actifs financiers, ou CAPM) fournit une estimation du taux de rentabilité attendu d'un actif financier en fonction de son risque systématique, mesuré par le coefficient bêta par rapport au marché.",
+    "apport": "Il reste l'un des outils les plus utilisés dans la finance de marché pour estimer le coût du capital et évaluer la performance ajustée au risque des investissements.",
+    "limites_critiques": "Le modèle repose sur des hypothèses peu réalistes en pratique (absence de coûts de transaction, emprunt illimité au taux sans risque, portefeuille optimal détenu par tous les investisseurs), ce qui limite sa précision empirique malgré son usage généralisé.",
+    "sources": [
+      {
+        "titre": "Modèle d'évaluation des actifs financiers — Wikipédia",
+        "url": "https://fr.wikipedia.org/wiki/Mod%C3%A8le_d%27%C3%A9valuation_des_actifs_financiers",
+        "type": "secondaire"
+      }
+    ],
+    "statut": "documente",
+    "derniere_verification": "2026-09-05",
+    "resonance_ia": "Les gestionnaires d'actifs utilisent de plus en plus des modèles d'IA pour affiner ou remplacer le MEDAF, en intégrant des facteurs de risque non linéaires que ce modèle linéaire classique ne peut capturer."
   },
   {
     "id": "black-scholes",
     "axe": "social",
     "sous_domaine": "economie",
     "nom": "Black-Scholes",
-    "these_centrale": "",
-    "apport": "",
-    "limites_critiques": "",
-    "sources": [],
-    "statut": "a_documenter",
-    "derniere_verification": "2026-09-05"
+    "these_centrale": "Le modèle Black-Scholes (1973) est un cadre mathématique permettant de calculer la valeur théorique d'options financières européennes à partir du prix du sous-jacent, du temps avant expiration, du prix d'exercice, du taux sans risque et de la volatilité.",
+    "apport": "Il a révolutionné la finance de marché en fournissant un outil de valorisation standard des produits dérivés, devenant la référence incontournable des professionnels des marchés financiers.",
+    "limites_critiques": "Le mathématicien Benoît Mandelbrot a jugé ses fondements « totalement déconnectés de la réalité des marchés financiers », car l'hypothèse de distribution normale des rendements sous-estime fortement les événements extrêmes (krachs), une faille qui s'est cristallisée lors de plusieurs crises financières majeures.",
+    "sources": [
+      {
+        "titre": "Modèle Black-Scholes — Wikipédia",
+        "url": "https://fr.wikipedia.org/wiki/Mod%C3%A8le_Black-Scholes",
+        "type": "secondaire"
+      }
+    ],
+    "statut": "documente",
+    "derniere_verification": "2026-09-05",
+    "resonance_ia": "Des modèles de valorisation d'options assistés par IA (apprentissage profond) sont développés pour capturer les dynamiques de marché non linéaires que Black-Scholes, avec son hypothèse de volatilité constante, ne parvient pas à modéliser."
   },
   {
     "id": "economie-circulaire",
     "axe": "social",
     "sous_domaine": "economie",
     "nom": "Économie circulaire",
-    "these_centrale": "",
-    "apport": "",
-    "limites_critiques": "",
-    "sources": [],
-    "statut": "a_documenter",
-    "derniere_verification": "2026-09-05"
+    "these_centrale": "L'économie circulaire est un modèle économique fonctionnant en boucle, visant à limiter fortement la consommation de ressources primaires et d'énergies non renouvelables via trois principes : réduire, réutiliser et recycler.",
+    "apport": "Elle propose une alternative structurée au modèle linéaire « extraire-produire-jeter » et oriente désormais de nombreuses politiques industrielles et environnementales publiques et privées.",
+    "limites_critiques": "Chaque étape du cycle nécessite un apport d'énergie supplémentaire et il est impossible d'empêcher entièrement la dissémination des matériaux ; la réutilisation des ressources augmente en outre bien plus lentement que l'extraction de matières premières, ce qui limite son efficacité réelle face à l'ampleur des enjeux environnementaux.",
+    "sources": [
+      {
+        "titre": "Économie circulaire — Wikipédia",
+        "url": "https://fr.wikipedia.org/wiki/%C3%89conomie_circulaire",
+        "type": "secondaire"
+      }
+    ],
+    "statut": "documente",
+    "derniere_verification": "2026-09-05",
+    "resonance_ia": "L'IA est mobilisée pour optimiser les chaînes logistiques de l'économie circulaire (tri automatisé des déchets, prédiction de la durée de vie des matériaux), tout en alourdissant elle-même la consommation de ressources (terres rares, énergie) que ce modèle cherche à réduire."
   },
   {
     "id": "economie-de-la-fonctionnalite",
     "axe": "social",
     "sous_domaine": "economie",
     "nom": "Économie de la fonctionnalité",
-    "these_centrale": "",
-    "apport": "",
-    "limites_critiques": "",
-    "sources": [],
-    "statut": "a_documenter",
-    "derniere_verification": "2026-09-05"
+    "these_centrale": "L'économie de la fonctionnalité (ou économie servicielle) consiste à vendre l'usage d'un bien ou d'un service plutôt que le bien lui-même, le fabricant restant propriétaire et responsable de sa durabilité.",
+    "apport": "En incitant le fabricant à faire durer le produit plutôt qu'à en maximiser les ventes, ce modèle favorise en théorie un moindre gaspillage des ressources naturelles, en cohérence avec les objectifs de l'économie circulaire.",
+    "limites_critiques": "Sa généralisation reste limitée par la difficulté à adapter les modèles d'affaires et les habitudes de consommation traditionnellement fondées sur la propriété, ainsi que par la complexité de la tarification à l'usage pour de nombreux secteurs.",
+    "sources": [
+      {
+        "titre": "Économie de la fonctionnalité — Wikipédia",
+        "url": "https://fr.wikipedia.org/wiki/%C3%89conomie_de_la_fonctionnalit%C3%A9",
+        "type": "secondaire"
+      }
+    ],
+    "statut": "documente",
+    "derniere_verification": "2026-09-05",
+    "resonance_ia": "Le modèle « IA en tant que service » (facturation à l'usage de l'inférence plutôt qu'achat d'un logiciel) constitue une déclinaison numérique directe du principe d'économie de la fonctionnalité appliqué aux modèles d'intelligence artificielle."
   },
   {
     "id": "theorie-des-jeux-equilibre-de-nash",
     "axe": "social",
     "sous_domaine": "economie",
     "nom": "Théorie des jeux (équilibre de Nash)",
-    "these_centrale": "",
-    "apport": "",
-    "limites_critiques": "",
-    "sources": [],
-    "statut": "a_documenter",
-    "derniere_verification": "2026-09-05"
+    "these_centrale": "La théorie des jeux étudie les situations où plusieurs joueurs choisissent des stratégies pour maximiser leurs gains ; l'équilibre de Nash, formalisé par John Nash, désigne une situation où chaque joueur joue une stratégie optimale compte tenu des stratégies choisies par les autres.",
+    "apport": "Cette théorie a profondément renouvelé l'analyse économique des interactions stratégiques (oligopoles, négociations, enchères) et trouve des applications en biologie, en science politique et en informatique.",
+    "limites_critiques": "L'équilibre de Nash dépend des anticipations subjectives des joueurs sur les choix d'autrui, qui ne sont pas toujours fiables, et son existence ne garantit pas qu'il soit optimal collectivement — les joueurs pourraient obtenir de meilleurs résultats en coordonnant autrement leurs stratégies.",
+    "sources": [
+      {
+        "titre": "Équilibre de Nash — Wikipédia",
+        "url": "https://fr.wikipedia.org/wiki/%C3%89quilibre_de_Nash",
+        "type": "secondaire"
+      }
+    ],
+    "statut": "documente",
+    "derniere_verification": "2026-09-05",
+    "resonance_ia": "La théorie des jeux multi-agents est au cœur de l'entraînement de certains systèmes d'IA (auto-jeu, négociation entre agents autonomes), rendant l'équilibre de Nash directement opérationnel dans la conception de comportements d'IA stratégiques."
   },
   {
     "id": "economie-comportementale-theorie-des-perspectives",
     "axe": "social",
     "sous_domaine": "economie",
     "nom": "Économie comportementale (théorie des perspectives)",
-    "these_centrale": "",
-    "apport": "",
-    "limites_critiques": "",
-    "sources": [],
-    "statut": "a_documenter",
-    "derniere_verification": "2026-09-05"
+    "these_centrale": "La théorie des perspectives, développée par Daniel Kahneman et Amos Tversky en 1979, fonde l'économie comportementale en montrant que les individus évaluent de façon asymétrique leurs perspectives de perte et de gain — la douleur d'une perte surpasse le plaisir d'un gain équivalent (aversion à la perte).",
+    "apport": "Cette théorie, se voulant descriptive du comportement réel plutôt que normative, a profondément influencé la finance comportementale et valu à Kahneman le prix Nobel d'économie en 2002.",
+    "limites_critiques": "Les comportements irrationnels qu'elle documente, bien que largement partagés, restent difficiles à intégrer de façon systématique dans les modèles macroéconomiques agrégés, qui continuent souvent de supposer une rationalité moyenne des agents.",
+    "sources": [
+      {
+        "titre": "Théorie des perspectives — Wikipédia",
+        "url": "https://fr.wikipedia.org/wiki/Th%C3%A9orie_des_perspectives",
+        "type": "secondaire"
+      }
+    ],
+    "statut": "documente",
+    "derniere_verification": "2026-09-05",
+    "resonance_ia": "Les systèmes de recommandation et d'interface utilisateur pilotés par IA exploitent directement les biais documentés par la théorie des perspectives (aversion à la perte, effet de cadrage), posant des questions éthiques sur la manipulation comportementale algorithmique."
   },
   {
     "id": "theorie-moderne-de-la-monnaie-mmt",
     "axe": "social",
     "sous_domaine": "economie",
     "nom": "Théorie moderne de la monnaie (MMT)",
-    "these_centrale": "",
-    "apport": "",
-    "limites_critiques": "",
-    "sources": [],
-    "statut": "a_documenter",
-    "derniere_verification": "2026-09-05"
+    "these_centrale": "La théorie moderne de la monnaie (MMT) affirme qu'un État disposant du monopole de sa monnaie fiduciaire ne peut faire défaut sur sa propre dette et dispose d'une capacité de dépense limitée non par le budget mais par les ressources réelles disponibles dans l'économie.",
+    "apport": "Elle a renouvelé le débat public sur les marges de manœuvre budgétaires des États souverains monétairement autonomes, notamment concernant le financement de politiques publiques ambitieuses (transition écologique, protection sociale).",
+    "limites_critiques": "Ses détracteurs, dont la Banque de France, soulignent le risque d'inflation incontrôlable et jugent l'approche fondée sur des prémisses contestées, applicables surtout aux économies disposant de devises internationalement reconnues et non transposables telles quelles à toutes les économies.",
+    "sources": [
+      {
+        "titre": "Théorie monétaire moderne — Wikipédia",
+        "url": "https://fr.wikipedia.org/wiki/Th%C3%A9orie_mon%C3%A9taire_moderne",
+        "type": "secondaire"
+      }
+    ],
+    "statut": "documente",
+    "derniere_verification": "2026-09-05",
+    "resonance_ia": "Certains partisans de la MMT évoquent le financement public massif du développement de l'IA stratégique (souveraineté technologique) comme un terrain d'application naturel de leur théorie de la marge de manœuvre budgétaire des États monétairement souverains."
   },
   {
     "id": "economie-du-donut-kate-raworth",
@@ -820,275 +911,436 @@
     "axe": "social",
     "sous_domaine": "economie",
     "nom": "Économie de plateformes (capitalisme numérique)",
-    "these_centrale": "",
-    "apport": "",
-    "limites_critiques": "",
-    "sources": [],
-    "statut": "a_documenter",
-    "derniere_verification": "2026-09-05"
+    "these_centrale": "L'économie de plateformes désigne un modèle d'affaires où une entreprise numérique organise la mise en relation entre offreurs et demandeurs (biens, services, travail) sans posséder nécessairement les actifs échangés, en tirant parti d'effets de réseau qui renforcent sa position dominante à mesure que le nombre d'utilisateurs croît.",
+    "apport": "Théorisé notamment par le chercheur Nick Srnicek sous le terme de « capitalisme de plateforme », ce modèle a permis l'émergence rapide d'acteurs numériques dominants (commerce en ligne, VTC, réseaux sociaux) en valorisant la donnée collectée comme actif économique central.",
+    "limites_critiques": "Les effets de réseau tendent vers des situations de quasi-monopole, posant des questions de concurrence, de statut des travailleurs des plateformes (indépendance contestée) et de captation de la valeur par un petit nombre d'acteurs au détriment des producteurs et prestataires initiaux.",
+    "sources": [
+      {
+        "titre": "Capitalisme de plateforme — Wikipédia",
+        "url": "https://fr.wikipedia.org/wiki/Capitalisme_de_plateforme",
+        "type": "secondaire"
+      }
+    ],
+    "statut": "documente",
+    "derniere_verification": "2026-09-05",
+    "resonance_ia": "Les grandes plateformes d'IA générative reproduisent la même logique d'effets de réseau et de captation de la donnée que le capitalisme de plateforme, avec un risque de concentration accru dès lors que l'entraînement des modèles favorise structurellement les acteurs disposant déjà des plus grandes quantités de données."
   },
   {
     "id": "john-maynard-keynes",
     "axe": "social",
     "sous_domaine": "economie",
     "nom": "John Maynard Keynes",
-    "these_centrale": "",
-    "apport": "",
-    "limites_critiques": "",
-    "sources": [],
-    "statut": "a_documenter",
-    "derniere_verification": "2026-09-05"
+    "these_centrale": "Keynes fonde la macroéconomie moderne en soutenant que les économies de marché peuvent rester durablement en sous-emploi en l'absence de demande suffisante, justifiant une intervention publique contracyclique (dépense, politique monétaire) pour stabiliser l'activité.",
+    "apport": "Sa Théorie générale de l'emploi, de l'intérêt et de la monnaie (1936) a fondé le keynésianisme et ses multiples déclinaisons, et il fut l'un des architectes des accords de Bretton Woods qui ont structuré l'ordre économique international d'après-guerre.",
+    "limites_critiques": "Le keynésianisme a été contesté à partir des années 1970 par les monétaristes (Friedman) et les nouveaux classiques, qui lui reprochent de sous-estimer les anticipations des agents et le risque inflationniste des politiques de relance.",
+    "sources": [
+      {
+        "titre": "John Maynard Keynes — Wikipédia",
+        "url": "https://fr.wikipedia.org/wiki/John_Maynard_Keynes",
+        "type": "secondaire"
+      }
+    ],
+    "statut": "documente",
+    "derniere_verification": "2026-09-05",
+    "resonance_ia": "Le débat keynésien sur le sous-emploi structurel resurgit avec l'automatisation par l'IA : si celle-ci détruit plus d'emplois qu'elle n'en crée, une relance de la demande par la dépense publique redeviendrait un outil central de stabilisation économique."
   },
   {
     "id": "friedrich-hayek",
     "axe": "social",
     "sous_domaine": "economie",
     "nom": "Friedrich Hayek",
-    "these_centrale": "",
-    "apport": "",
-    "limites_critiques": "",
-    "sources": [],
-    "statut": "a_documenter",
-    "derniere_verification": "2026-09-05"
+    "these_centrale": "Hayek soutient que l'information nécessaire à la coordination économique est dispersée entre des millions d'acteurs individuels et ne peut être centralisée par un planificateur ; seul le mécanisme des prix de marché permet d'agréger efficacement cette connaissance disséminée.",
+    "apport": "Considéré comme l'un des penseurs majeurs du libéralisme du XXe siècle, il a fondamentalement structuré la critique économique et philosophique du socialisme de planification (La Route de la servitude, 1944) et reçu le prix Nobel d'économie en 1974.",
+    "limites_critiques": "Sa défense de l'ordre spontané du marché est critiquée pour sous-estimer les défaillances de marché réelles (monopoles, externalités, asymétries d'information) que seule une intervention publique peut corriger.",
+    "sources": [
+      {
+        "titre": "Friedrich Hayek — Wikipédia",
+        "url": "https://fr.wikipedia.org/wiki/Friedrich_Hayek",
+        "type": "secondaire"
+      }
+    ],
+    "statut": "documente",
+    "derniere_verification": "2026-09-05",
+    "resonance_ia": "L'argument hayékien sur l'impossibilité de centraliser une information dispersée est directement testé par l'IA : une capacité de calcul et d'agrégation de données sans précédent pourrait-elle, contrairement à l'intuition de Hayek, rendre une forme de coordination centralisée à nouveau viable ?"
   },
   {
     "id": "milton-friedman",
     "axe": "social",
     "sous_domaine": "economie",
     "nom": "Milton Friedman",
-    "these_centrale": "",
-    "apport": "",
-    "limites_critiques": "",
-    "sources": [],
-    "statut": "a_documenter",
-    "derniere_verification": "2026-09-05"
+    "these_centrale": "Friedman fonde le monétarisme, soutenant que la masse monétaire est le déterminant principal de l'activité économique et de l'inflation à long terme, et plaide pour une intervention étatique minimale au profit des mécanismes de marché.",
+    "apport": "Considéré comme l'un des économistes les plus influents du XXe siècle, ses travaux ont directement inspiré les politiques monétaires antiinflationnistes des banques centrales à partir des années 1980 (Fed sous Volcker, politiques thatchériennes et reaganiennes).",
+    "limites_critiques": "Le monétarisme pur a perdu de son influence après que les banques centrales ont constaté l'instabilité de la relation entre masse monétaire et inflation dans la pratique, les conduisant à adopter des cadres de politique monétaire plus éclectiques (ciblage d'inflation).",
+    "sources": [
+      {
+        "titre": "Milton Friedman — Wikipédia",
+        "url": "https://fr.wikipedia.org/wiki/Milton_Friedman",
+        "type": "secondaire"
+      }
+    ],
+    "statut": "documente",
+    "derniere_verification": "2026-09-05",
+    "resonance_ia": "La défense friedmanienne de la dérégulation et du rôle minimal de l'État structure aujourd'hui la position des acteurs technologiques hostiles à une régulation contraignante du secteur de l'IA."
   },
   {
     "id": "joseph-schumpeter",
     "axe": "social",
     "sous_domaine": "economie",
     "nom": "Joseph Schumpeter",
-    "these_centrale": "",
-    "apport": "",
-    "limites_critiques": "",
-    "sources": [],
-    "statut": "a_documenter",
-    "derniere_verification": "2026-09-05"
+    "these_centrale": "Schumpeter théorise la « destruction créatrice » : l'innovation entrepreneuriale détruit continuellement les structures économiques anciennes pour en créer de nouvelles, ce processus constituant le moteur fondamental du dynamisme capitaliste.",
+    "apport": "Ses travaux sur l'innovation, l'entrepreneuriat et les cycles économiques ont durablement structuré l'économie de l'innovation et la pensée sur la croissance de long terme.",
+    "limites_critiques": "Schumpeter lui-même prédisait, de façon largement débattue depuis, que le capitalisme finirait par s'autodétruire par sa propre bureaucratisation et la routinisation de l'innovation au sein de grandes entreprises, une thèse que l'histoire économique n'a pas clairement confirmée.",
+    "sources": [
+      {
+        "titre": "Joseph Schumpeter — Wikipédia",
+        "url": "https://fr.wikipedia.org/wiki/Joseph_Schumpeter",
+        "type": "secondaire"
+      }
+    ],
+    "statut": "documente",
+    "derniere_verification": "2026-09-05",
+    "resonance_ia": "L'IA est aujourd'hui largement analysée à travers le prisme schumpetérien de la destruction créatrice : elle détruit certains emplois et modèles d'affaires tout en créant de nouvelles activités, la question portant sur le solde net et la vitesse de cette transition."
   },
   {
     "id": "paul-samuelson",
     "axe": "social",
     "sous_domaine": "economie",
     "nom": "Paul Samuelson",
-    "these_centrale": "",
-    "apport": "",
-    "limites_critiques": "",
-    "sources": [],
-    "statut": "a_documenter",
-    "derniere_verification": "2026-09-05"
+    "these_centrale": "Samuelson développe la « synthèse néoclassique », qui combine les théories macroéconomiques keynésiennes de court terme avec les enseignements microéconomiques néoclassiques, offrant un cadre unifié qui a dominé l'enseignement de l'économie pendant des décennies.",
+    "apport": "Premier Américain lauréat du prix Nobel d'économie (1970), son manuel Economics a formé des générations d'économistes dans le monde entier et il a formalisé mathématiquement de nombreux concepts économiques auparavant traités de façon littéraire.",
+    "limites_critiques": "La synthèse néoclassique a été critiquée, notamment après la stagflation des années 1970, pour son incapacité à expliquer la coexistence d'inflation et de chômage élevés, ouvrant la voie aux critiques monétaristes et nouvelles classiques.",
+    "sources": [
+      {
+        "titre": "Paul Samuelson — Wikipédia",
+        "url": "https://fr.wikipedia.org/wiki/Paul_Samuelson",
+        "type": "secondaire"
+      }
+    ],
+    "statut": "documente",
+    "derniere_verification": "2026-09-05",
+    "resonance_ia": "L'approche samuelsonienne de formalisation mathématique rigoureuse de l'économie trouve un prolongement contemporain dans l'usage de l'IA pour modéliser des systèmes économiques toujours plus complexes et à agents hétérogènes."
   },
   {
     "id": "joan-robinson",
     "axe": "social",
     "sous_domaine": "economie",
     "nom": "Joan Robinson",
-    "these_centrale": "",
-    "apport": "",
-    "limites_critiques": "",
-    "sources": [],
-    "statut": "a_documenter",
-    "derniere_verification": "2026-09-05"
+    "these_centrale": "Robinson, figure majeure de l'école post-keynésienne de Cambridge, critique la théorie néoclassique de la concurrence pure et parfaite en démontrant que les prix sont largement déterminés par les entreprises elles-mêmes plutôt que par le seul jeu de l'offre et de la demande.",
+    "apport": "Ses travaux sur la concurrence imparfaite et l'accumulation du capital ont enrichi la théorie économique d'une analyse plus réaliste du pouvoir de marché des entreprises.",
+    "limites_critiques": "Ses critiques radicales de la théorie néoclassique du capital (controverses de Cambridge) sont restées minoritaires dans le courant dominant de la discipline, malgré leur solidité théorique reconnue par une partie de la profession.",
+    "sources": [
+      {
+        "titre": "Joan Robinson — Wikipédia",
+        "url": "https://fr.wikipedia.org/wiki/Joan_Robinson",
+        "type": "secondaire"
+      }
+    ],
+    "statut": "documente",
+    "derniere_verification": "2026-09-05",
+    "resonance_ia": "L'analyse robinsonienne du pouvoir de marché des grandes entreprises résonne avec les inquiétudes actuelles sur la concentration du marché de l'IA entre un petit nombre d'acteurs technologiques capables d'influencer les prix et l'accès à la technologie."
   },
   {
     "id": "karl-polanyi",
     "axe": "social",
     "sous_domaine": "economie",
     "nom": "Karl Polanyi",
-    "these_centrale": "",
-    "apport": "",
-    "limites_critiques": "",
-    "sources": [],
-    "statut": "a_documenter",
-    "derniere_verification": "2026-09-05"
+    "these_centrale": "Polanyi soutient, dans La Grande Transformation (1944), que l'économie de marché est en réalité « encastrée » dans les relations sociales dans toutes les sociétés sauf la société marchande moderne, et que le libéralisme du XIXe siècle a imposé un « désencastrement » artificiel et socialement destructeur.",
+    "apport": "Sa critique du marché autorégulateur a durablement influencé la sociologie économique et les courants prônant un socialisme démocratique où l'économie serait réencastrée dans des régulations sociales et politiques.",
+    "limites_critiques": "Sa thèse d'un désencastrement historique unique et daté du marché occidental est débattue par des historiens économiques qui nuancent le degré réel d'autonomisation du marché par rapport aux structures sociales à travers l'histoire.",
+    "sources": [
+      {
+        "titre": "Karl Polanyi — Wikipédia",
+        "url": "https://fr.wikipedia.org/wiki/Karl_Polanyi",
+        "type": "secondaire"
+      }
+    ],
+    "statut": "documente",
+    "derniere_verification": "2026-09-05",
+    "resonance_ia": "L'analyse polanyienne du désencastrement du marché s'applique directement au débat sur l'IA : faut-il laisser le développement de l'IA suivre sa seule logique de marché, ou le réencastrer délibérément dans des régulations sociales et démocratiques ?"
   },
   {
     "id": "kenneth-arrow",
     "axe": "social",
     "sous_domaine": "economie",
     "nom": "Kenneth Arrow",
-    "these_centrale": "",
-    "apport": "",
-    "limites_critiques": "",
-    "sources": [],
-    "statut": "a_documenter",
-    "derniere_verification": "2026-09-05"
+    "these_centrale": "Arrow démontre, avec son théorème d'impossibilité (1951), qu'aucun système de vote ne peut agréger de façon parfaitement cohérente et démocratique les préférences individuelles d'une société en une préférence collective satisfaisant simultanément un ensemble minimal de critères raisonnables.",
+    "apport": "Ce théorème fondateur de la théorie du choix social, ainsi que ses travaux sur l'équilibre général avec Gérard Debreu, lui ont valu le prix Nobel d'économie en 1972 et ont structuré durablement l'économie du bien-être.",
+    "limites_critiques": "Le théorème d'Arrow repose sur des axiomatiques précises dont la pertinence pratique pour des systèmes de vote réels reste discutée, certains systèmes électoraux réels contournant partiellement ses conclusions par des compromis.",
+    "sources": [
+      {
+        "titre": "Kenneth Arrow — Wikipédia",
+        "url": "https://fr.wikipedia.org/wiki/Kenneth_Arrow",
+        "type": "secondaire"
+      }
+    ],
+    "statut": "documente",
+    "derniere_verification": "2026-09-05",
+    "resonance_ia": "Les systèmes de vote et d'agrégation de préférences assistés par IA (recommandation, agrégation de choix collectifs) restent soumis aux limites logiques démontrées par Arrow, quel que soit le raffinement algorithmique employé."
   },
   {
     "id": "gerard-debreu",
     "axe": "social",
     "sous_domaine": "economie",
     "nom": "Gérard Debreu",
-    "these_centrale": "",
-    "apport": "",
-    "limites_critiques": "",
-    "sources": [],
-    "statut": "a_documenter",
-    "derniere_verification": "2026-09-05"
+    "these_centrale": "Debreu formalise mathématiquement, avec Kenneth Arrow, les conditions rigoureuses d'existence d'un équilibre général de marché où l'offre et la demande s'égalisent simultanément sur tous les marchés d'une économie.",
+    "apport": "Premier Français lauréat du prix Nobel d'économie (1983), ses travaux ont porté à un très haut niveau de rigueur mathématique la théorie de l'équilibre général walrasien.",
+    "limites_critiques": "Le modèle d'équilibre général de Arrow-Debreu repose sur des hypothèses très restrictives (information parfaite, marchés complets) rarement vérifiées empiriquement, ce qui en limite la portée descriptive directe des économies réelles.",
+    "sources": [
+      {
+        "titre": "Gérard Debreu — Wikipédia",
+        "url": "https://fr.wikipedia.org/wiki/G%C3%A9rard_Debreu",
+        "type": "secondaire"
+      }
+    ],
+    "statut": "documente",
+    "derniere_verification": "2026-09-05",
+    "resonance_ia": "Les simulations économiques assistées par IA cherchent aujourd'hui à dépasser les limites du modèle d'équilibre général de Debreu en modélisant des économies à agents hétérogènes et à information imparfaite, plus proches de la réalité."
   },
   {
     "id": "robert-solow",
     "axe": "social",
     "sous_domaine": "economie",
     "nom": "Robert Solow",
-    "these_centrale": "",
-    "apport": "",
-    "limites_critiques": "",
-    "sources": [],
-    "statut": "a_documenter",
-    "derniere_verification": "2026-09-05"
+    "these_centrale": "Solow développe le modèle de croissance qui porte son nom, expliquant la croissance économique de long terme par l'accumulation du capital et identifiant le progrès technique comme le facteur résiduel, inexpliqué par son modèle, de la croissance soutenue.",
+    "apport": "Lauréat du prix Nobel d'économie en 1987, il a enseigné au MIT pendant près de cinquante ans, formant plusieurs générations d'économistes influents.",
+    "limites_critiques": "En laissant le progrès technique exogène à son modèle, Solow lui-même reconnaissait ne pas expliquer l'origine véritable de la croissance de long terme, une limite qui a directement motivé le développement des théories de croissance endogène.",
+    "sources": [
+      {
+        "titre": "Robert Solow — Wikipédia",
+        "url": "https://fr.wikipedia.org/wiki/Robert_Solow",
+        "type": "secondaire"
+      }
+    ],
+    "statut": "documente",
+    "derniere_verification": "2026-09-05",
+    "resonance_ia": "L'IA est aujourd'hui étudiée par de nombreux économistes comme un candidat majeur pour expliquer enfin, de façon endogène, le facteur de progrès technique que le modèle de Solow laissait sans explication."
   },
   {
     "id": "gary-becker",
     "axe": "social",
     "sous_domaine": "economie",
     "nom": "Gary Becker",
-    "these_centrale": "",
-    "apport": "",
-    "limites_critiques": "",
-    "sources": [],
-    "statut": "a_documenter",
-    "derniere_verification": "2026-09-05"
+    "these_centrale": "Becker étend l'analyse microéconomique standard à des comportements humains traditionnellement hors du champ économique (discrimination, criminalité, famille, capital humain), en les modélisant comme des choix rationnels sous contrainte.",
+    "apport": "Lauréat du prix Nobel d'économie en 1992 et de la National Medal of Science en 2000, il a fondé l'économie du capital humain et élargi durablement le périmètre disciplinaire de l'analyse économique.",
+    "limites_critiques": "Son approche par le « choix rationnel » appliquée à des domaines comme la famille ou la criminalité est critiquée pour réduire des comportements complexes, socialement et psychologiquement déterminés, à un calcul économique simplifié.",
+    "sources": [
+      {
+        "titre": "Gary Becker — Wikipédia",
+        "url": "https://fr.wikipedia.org/wiki/Gary_Becker",
+        "type": "secondaire"
+      }
+    ],
+    "statut": "documente",
+    "derniere_verification": "2026-09-05",
+    "resonance_ia": "L'utilisation de l'IA pour modéliser et prédire des comportements humains (criminalité, éducation, santé) prolonge directement le programme beckerien d'extension de l'analyse économique rationnelle à l'ensemble des comportements sociaux."
   },
   {
     "id": "john-von-neumann",
     "axe": "social",
     "sous_domaine": "economie",
     "nom": "John von Neumann",
-    "these_centrale": "",
-    "apport": "",
-    "limites_critiques": "",
-    "sources": [],
-    "statut": "a_documenter",
-    "derniere_verification": "2026-09-05"
+    "these_centrale": "Von Neumann, polymathe hongro-américain, pose les fondements mathématiques de la théorie des jeux (avec Oskar Morgenstern) et contribue de façon majeure à la mécanique quantique, à la logique mathématique et à l'architecture des ordinateurs modernes.",
+    "apport": "Son ouvrage fondateur Theory of Games and Economic Behavior (1944) a créé un nouveau champ d'analyse des interactions stratégiques, aujourd'hui central en économie, en biologie et en informatique.",
+    "limites_critiques": "La théorie des jeux qu'il fonde suppose souvent une rationalité et une information des acteurs difficiles à retrouver dans les comportements économiques réels, une limite largement débattue par l'économie comportementale ultérieure.",
+    "sources": [
+      {
+        "titre": "John von Neumann — Wikipédia",
+        "url": "https://fr.wikipedia.org/wiki/John_von_Neumann",
+        "type": "secondaire"
+      }
+    ],
+    "statut": "documente",
+    "derniere_verification": "2026-09-05",
+    "resonance_ia": "Von Neumann est aussi une figure fondatrice de l'informatique théorique (architecture von Neumann) : ses travaux relient directement les origines mathématiques de la théorie des jeux à celles du calcul, deux piliers techniques de l'IA contemporaine."
   },
   {
     "id": "john-nash",
     "axe": "social",
     "sous_domaine": "economie",
     "nom": "John Nash",
-    "these_centrale": "",
-    "apport": "",
-    "limites_critiques": "",
-    "sources": [],
-    "statut": "a_documenter",
-    "derniere_verification": "2026-09-05"
+    "these_centrale": "Nash formalise l'équilibre qui porte son nom en théorie des jeux non coopératifs, démontrant l'existence d'une situation stable où aucun joueur n'a intérêt à changer unilatéralement de stratégie compte tenu des choix des autres.",
+    "apport": "Ses travaux, popularisés par le film Un homme d'exception relatant aussi sa schizophrénie, lui ont valu le prix Nobel d'économie en 1994 et ont durablement structuré l'analyse économique des interactions stratégiques.",
+    "limites_critiques": "L'équilibre de Nash n'implique pas nécessairement une issue optimale pour l'ensemble des joueurs, et sa pertinence descriptive suppose des joueurs parfaitement rationnels et informés, rarement vérifiés dans les situations économiques réelles.",
+    "sources": [
+      {
+        "titre": "John Forbes Nash — Wikipédia",
+        "url": "https://fr.wikipedia.org/wiki/John_Forbes_Nash",
+        "type": "secondaire"
+      }
+    ],
+    "statut": "documente",
+    "derniere_verification": "2026-09-05",
+    "resonance_ia": "Les architectures d'IA multi-agents (négociation automatisée, enchères algorithmiques) s'appuient directement sur le concept d'équilibre de Nash pour concevoir des comportements stables entre systèmes autonomes en interaction stratégique."
   },
   {
     "id": "amartya-sen",
     "axe": "social",
     "sous_domaine": "economie",
     "nom": "Amartya Sen",
-    "these_centrale": "",
-    "apport": "",
-    "limites_critiques": "",
-    "sources": [],
-    "statut": "a_documenter",
-    "derniere_verification": "2026-09-05"
+    "these_centrale": "Sen développe l'approche des « capabilités », définissant le développement non par le seul revenu mais par la capacité réelle des personnes à convertir des ressources en libertés concrètes, et démontre que les famines résultent d'inégalités de distribution plutôt que d'un manque absolu de nourriture.",
+    "apport": "Ses travaux ont directement contribué à la création de l'Indice de développement humain (IDH) en 1990 et lui ont valu le prix Nobel d'économie en 1998 pour ses contributions à l'économie du bien-être.",
+    "limites_critiques": "L'opérationnalisation empirique du concept de « capabilités », plus riche mais plus complexe à mesurer qu'un simple indicateur monétaire de revenu, reste un défi méthodologique pour les politiques publiques qui s'en inspirent.",
+    "sources": [
+      {
+        "titre": "Amartya Sen — Wikipédia",
+        "url": "https://fr.wikipedia.org/wiki/Amartya_Sen",
+        "type": "secondaire"
+      }
+    ],
+    "statut": "documente",
+    "derniere_verification": "2026-09-05",
+    "resonance_ia": "L'approche par les capabilités de Sen offre un cadre pertinent pour évaluer l'impact de l'IA sur le développement humain au-delà des seuls gains de productivité économique, en s'intéressant aux libertés réelles qu'elle élargit ou restreint."
   },
   {
     "id": "james-m-buchanan",
     "axe": "social",
     "sous_domaine": "economie",
     "nom": "James M. Buchanan",
-    "these_centrale": "",
-    "apport": "",
-    "limites_critiques": "",
-    "sources": [],
-    "statut": "a_documenter",
-    "derniere_verification": "2026-09-05"
+    "these_centrale": "Buchanan fonde la théorie du choix public, appliquant l'hypothèse de comportement rationnel et intéressé, habituelle en économie de marché, aux acteurs politiques (élus, fonctionnaires, électeurs) plutôt que de leur supposer une recherche désintéressée de l'intérêt général.",
+    "apport": "Son ouvrage The Calculus of Consent (1962), coécrit avec Gordon Tullock, lui a valu le prix Nobel d'économie en 1986 et a durablement influencé la pensée conservatrice sur les questions fiscales et institutionnelles.",
+    "limites_critiques": "L'hypothèse systématique d'intérêt personnel des acteurs politiques est critiquée pour sous-estimer les motivations civiques, idéologiques ou altruistes qui jouent également un rôle réel dans la décision publique.",
+    "sources": [
+      {
+        "titre": "James M. Buchanan — Wikipédia",
+        "url": "https://fr.wikipedia.org/wiki/James_M._Buchanan",
+        "type": "secondaire"
+      }
+    ],
+    "statut": "documente",
+    "derniere_verification": "2026-09-05",
+    "resonance_ia": "La théorie du choix public éclaire les débats sur la régulation de l'IA en soulignant que les régulateurs eux-mêmes peuvent être influencés par des intérêts sectoriels (lobbying des grandes entreprises technologiques) plutôt que par le seul intérêt général."
   },
   {
     "id": "wassily-leontief",
     "axe": "social",
     "sous_domaine": "economie",
     "nom": "Wassily Leontief",
-    "these_centrale": "",
-    "apport": "",
-    "limites_critiques": "",
-    "sources": [],
-    "statut": "a_documenter",
-    "derniere_verification": "2026-09-05"
+    "these_centrale": "Leontief développe l'analyse entrée-sortie (input-output), une méthode qui modélise les échanges économiques entre secteurs industriels sous forme d'équations linéaires représentant les flux de production interindustriels.",
+    "apport": "Lauréat du prix Nobel d'économie en 1973, il a appliqué sa méthode dès 1949 à l'économie américaine découpée en 500 secteurs, fournissant un outil devenu standard pour la comptabilité nationale et la planification économique.",
+    "limites_critiques": "Le modèle input-output suppose des coefficients techniques de production fixes à court terme, ce qui limite sa capacité à rendre compte des substitutions technologiques et des innovations de rupture dans les processus productifs.",
+    "sources": [
+      {
+        "titre": "Wassily Leontief — Wikipédia",
+        "url": "https://fr.wikipedia.org/wiki/Wassily_Leontief",
+        "type": "secondaire"
+      }
+    ],
+    "statut": "documente",
+    "derniere_verification": "2026-09-05",
+    "resonance_ia": "Les modèles input-output modernes intègrent désormais des simulations assistées par IA pour anticiper l'impact sectoriel différencié de l'automatisation sur les chaînes de valeur interindustrielles."
   },
   {
     "id": "thomas-piketty",
     "axe": "social",
     "sous_domaine": "economie",
     "nom": "Thomas Piketty",
-    "these_centrale": "",
-    "apport": "",
-    "limites_critiques": "",
-    "sources": [],
-    "statut": "a_documenter",
-    "derniere_verification": "2026-09-05"
+    "these_centrale": "Piketty étudie l'évolution historique et comparative des inégalités économiques, démontrant dans Le Capital au XXIe siècle (2013) une tendance de long terme du rendement du capital à excéder le taux de croissance économique, ce qui alimenterait mécaniquement la concentration des richesses.",
+    "apport": "Son ouvrage, vendu à plus de 2,5 millions d'exemplaires dans le monde, a profondément renouvelé le débat public sur les inégalités et la fiscalité du capital à l'échelle mondiale.",
+    "limites_critiques": "Sa thèse centrale (r > g) et ses préconisations de taxation progressive du capital à l'échelle mondiale sont contestées par une partie de la profession économique, qui questionne la robustesse empirique de certaines de ses données historiques et la faisabilité politique de ses propositions.",
+    "sources": [
+      {
+        "titre": "Thomas Piketty — Wikipédia",
+        "url": "https://fr.wikipedia.org/wiki/Thomas_Piketty",
+        "type": "secondaire"
+      }
+    ],
+    "statut": "documente",
+    "derniere_verification": "2026-09-05",
+    "resonance_ia": "Les débats de Piketty sur la concentration du capital trouvent un prolongement direct dans la question de la répartition des gains économiques générés par l'IA, propriété d'un nombre restreint d'acteurs disposant des données et de l'infrastructure de calcul."
   },
   {
     "id": "esther-duflo",
     "axe": "social",
     "sous_domaine": "economie",
     "nom": "Esther Duflo",
-    "these_centrale": "",
-    "apport": "",
-    "limites_critiques": "",
-    "sources": [],
-    "statut": "a_documenter",
-    "derniere_verification": "2026-09-05"
+    "these_centrale": "Duflo développe et popularise la méthode des essais randomisés contrôlés en économie du développement, comparant un groupe témoin à un groupe expérimental pour évaluer rigoureusement l'efficacité causale de politiques publiques de lutte contre la pauvreté.",
+    "apport": "Lauréate du prix Nobel d'économie en 2019 avec Abhijit Banerjee et Michael Kremer, elle a contribué à transformer l'économie du développement en discipline expérimentale fondée sur des preuves d'impact rigoureuses plutôt que sur des théories macroéconomiques générales.",
+    "limites_critiques": "Cette approche expérimentale, bien que devenue courante, est critiquée pour sa difficulté à généraliser les résultats obtenus dans un contexte local précis à d'autres contextes géographiques et institutionnels différents.",
+    "sources": [
+      {
+        "titre": "Esther Duflo — Wikipédia",
+        "url": "https://fr.wikipedia.org/wiki/Esther_Duflo",
+        "type": "secondaire"
+      }
+    ],
+    "statut": "documente",
+    "derniere_verification": "2026-09-05",
+    "resonance_ia": "Les méthodes expérimentales popularisées par Duflo sont désormais utilisées pour évaluer rigoureusement, plutôt que supposer, l'impact réel des interventions d'IA dans les politiques de développement (éducation, santé, agriculture)."
   },
   {
     "id": "abhijit-banerjee",
     "axe": "social",
     "sous_domaine": "economie",
     "nom": "Abhijit Banerjee",
-    "these_centrale": "",
-    "apport": "",
-    "limites_critiques": "",
-    "sources": [],
-    "statut": "a_documenter",
-    "derniere_verification": "2026-09-05"
+    "these_centrale": "Banerjee applique des approches expérimentales de terrain pour démontrer les liens de causalité entre interventions publiques spécifiques et réduction effective de la pauvreté, plutôt que de s'appuyer sur des théories générales non testées empiriquement.",
+    "apport": "Colauréat du prix Nobel d'économie en 2019 avec Esther Duflo et Michael Kremer, il a contribué à fonder, via le laboratoire J-PAL, une approche systématique de l'évaluation d'impact en économie du développement.",
+    "limites_critiques": "Comme pour l'ensemble du courant expérimentaliste, la portée de ses conclusions localisées à des contextes précis reste débattue quant à sa capacité de généralisation à l'échelle de politiques publiques nationales ou internationales.",
+    "sources": [
+      {
+        "titre": "Abhijit Banerjee — Wikipédia",
+        "url": "https://fr.wikipedia.org/wiki/Abhijit_Banerjee",
+        "type": "secondaire"
+      }
+    ],
+    "statut": "documente",
+    "derniere_verification": "2026-09-05",
+    "resonance_ia": "L'approche par essais contrôlés de Banerjee constitue une méthode de référence pour tester rigoureusement, plutôt que présumer, l'efficacité réelle des outils d'IA déployés dans les programmes de développement."
   },
   {
     "id": "michael-kremer",
     "axe": "social",
     "sous_domaine": "economie",
     "nom": "Michael Kremer",
-    "these_centrale": "",
-    "apport": "",
-    "limites_critiques": "",
-    "sources": [],
-    "statut": "a_documenter",
-    "derniere_verification": "2026-09-05"
+    "these_centrale": "Kremer développe la théorie O-Ring de la complémentarité des compétences, selon laquelle la productivité d'une chaîne de production dépend fortement de son maillon le plus faible, et promeut les essais randomisés pour évaluer les interventions sociales.",
+    "apport": "Colauréat du prix Nobel d'économie en 2019 avec Banerjee et Duflo, il a contribué à établir les fondements méthodologiques du « micro-développement » fondé sur l'expérimentation rigoureuse.",
+    "limites_critiques": "Sa théorie O-Ring, bien qu'éclairante pour certains contextes productifs à forte interdépendance des tâches, reste de portée limitée pour expliquer l'ensemble des dynamiques de croissance et de développement économique.",
+    "sources": [
+      {
+        "titre": "Michael Kremer — Wikipédia",
+        "url": "https://fr.wikipedia.org/wiki/Michael_Kremer",
+        "type": "secondaire"
+      }
+    ],
+    "statut": "documente",
+    "derniere_verification": "2026-09-05",
+    "resonance_ia": "La théorie O-Ring de Kremer éclaire un enjeu direct de l'IA dans les chaînes de production : la performance globale d'un système intégrant de l'IA peut être limitée par son maillon humain ou technique le plus faible, quelle que soit la sophistication du reste de la chaîne."
   },
   {
     "id": "joseph-stiglitz",
     "axe": "social",
     "sous_domaine": "economie",
     "nom": "Joseph Stiglitz",
-    "these_centrale": "",
-    "apport": "",
-    "limites_critiques": "",
-    "sources": [],
-    "statut": "a_documenter",
-    "derniere_verification": "2026-09-05"
+    "these_centrale": "Stiglitz démontre que lorsque l'information est imparfaite et distribuée de façon asymétrique entre acteurs économiques, les marchés ne fonctionnent pas efficacement, remettant en cause la théorie classique de la « main invisible ».",
+    "apport": "Lauréat du prix Nobel d'économie en 2001 avec George Akerlof et Michael Spence pour ses travaux sur l'économie de l'information, il a posé les fondations de la nouvelle économie keynésienne et de la théorie du screening.",
+    "limites_critiques": "Ses préconisations d'intervention publique pour corriger les défaillances de marché liées à l'information asymétrique sont contestées par les courants plus libéraux, qui estiment que la régulation elle-même souffre souvent de défaillances d'information comparables.",
+    "sources": [
+      {
+        "titre": "Joseph Stiglitz — Wikipédia",
+        "url": "https://fr.wikipedia.org/wiki/Joseph_Stiglitz",
+        "type": "secondaire"
+      }
+    ],
+    "statut": "documente",
+    "derniere_verification": "2026-09-05",
+    "resonance_ia": "L'asymétrie d'information théorisée par Stiglitz s'applique directement aux marchés de l'IA, où les développeurs de modèles disposent d'une connaissance de leurs systèmes largement supérieure à celle des régulateurs et des utilisateurs finaux."
   },
   {
     "id": "paul-krugman",
     "axe": "social",
     "sous_domaine": "economie",
     "nom": "Paul Krugman",
-    "these_centrale": "",
-    "apport": "",
-    "limites_critiques": "",
-    "sources": [],
-    "statut": "a_documenter",
-    "derniere_verification": "2026-09-05"
+    "these_centrale": "Krugman développe la nouvelle théorie du commerce international et la nouvelle économie géographique, démontrant que les économies d'échelle expliquent pourquoi le commerce se concentre entre pays similaires et pourquoi la production converge vers quelques régions densément peuplées.",
+    "apport": "Lauréat du prix Nobel d'économie en 2008, ses travaux ont renouvelé la compréhension des dynamiques de localisation industrielle et de spécialisation commerciale au-delà des seuls avantages comparatifs classiques.",
+    "limites_critiques": "Ses modèles reposent sur des hypothèses de concurrence imparfaite et de rendements croissants dont la calibration empirique précise reste complexe, et ses prises de position publiques très marquées politiquement sont parfois critiquées comme débordant du champ strictement académique.",
+    "sources": [
+      {
+        "titre": "Paul Krugman — Wikipédia",
+        "url": "https://fr.wikipedia.org/wiki/Paul_Krugman",
+        "type": "secondaire"
+      }
+    ],
+    "statut": "documente",
+    "derniere_verification": "2026-09-05",
+    "resonance_ia": "La nouvelle économie géographique de Krugman éclaire la concentration géographique actuelle des pôles d'excellence en IA (Silicon Valley, quelques métropoles mondiales), un phénomène de rendements croissants et d'effets d'agglomération qu'il a largement théorisé."
   }
 ]
