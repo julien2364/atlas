@@ -1,36 +1,38 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# ATLAS Humain × IA
 
-## Getting Started
+Observatoire comparatif des capacités humaines et des capacités de l'intelligence artificielle.
+Spécification complète : [`docs/megaprompt.md`](./docs/megaprompt.md).
+Instructions de lancement à jour : [`docs/comment-lancer.md`](./docs/comment-lancer.md).
 
-First, run the development server:
+## Démarrage rapide
 
-```bash
+\`\`\`bash
+npm install
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+\`\`\`
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Ouvrir http://localhost:3000 — le site fonctionne dès maintenant sur les données d'amorçage
+(\`data/seed/*.json\`, 247 fiches humaines + 28 fiches IA), sans avoir besoin de Supabase configuré.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## État du projet (05/09/2026)
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+- **Lot 1 (architecture)** : terminé — Next.js/Tailwind, modèle de données, schéma Supabase (`supabase/schema.sql`).
+- **Lot 2/3 (amorçage contenu)** : en cours — 6 fiches humaines + 3 fiches IA réellement documentées (Nietzsche,
+  Démocratie libérale, Capitalisme d'État chinois, Économie du donut, Taylorisme/OST, OKR côté humain ; Claude/Cowork,
+  Codex, DeepSeek côté IA), 4 fiches de gap analysis (une par catégorie de substituabilité), reste du corpus (241
+  fiches humaines, 25 fiches IA) au statut "à documenter".
+- **Lot 4 (comparateur)** : fonctionnel — sélecteur libre permettant de choisir n'importe quelle paire
+  fiche humaine × fiche IA ; affiche l'analyse complète pour les 4 paires documentées, un repli honnête
+  "à documenter" sinon (jamais de contenu inventé).
+- **Lot 5 (veille autonome)** : pipeline RSS réel et testé (`scripts/veille-rss.mjs`) — interroge les sources
+  actives, déduplique, dépose les nouveautés dans une file de validation manuelle (`data/seed/veille_queue.json`,
+  visible sur `/veille`). 5 sources actives sur 8 ; 3 désactivées après échec HTTP réel confirmé (documenté dans
+  `veille_sources.json`). Spiderfoot (2e canal) reste à intégrer. Aucune fiche n'est mise à jour automatiquement.
+- **Lot 6 (Q&A/RAG)** : bloqué — nécessite un projet Supabase (pgvector) + une clé API Anthropic configurés ;
+  en attendant, les 4 questions permanentes ont des réponses rédigées manuellement dans `/questions`.
+- **Lot 7 (cartographies interactives)** : fonctionnel — `/cartographie` propose une répartition par axe cliquable
+  (humain et IA) et une matrice de gap cliquable sur les 4 paires documentées. La heatmap TRL par secteur et la
+  frise chronologique restent en attente de données réelles d'usages sectoriels (pas encore renseignées).
+- **Lot 8 (QA finale/publication)** : non commencé, cohérent avec la diffusion interne actuelle.
 
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Diffusion : usage interne uniquement (`NEXT_PUBLIC_SITE_MODE=internal`).

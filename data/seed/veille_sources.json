@@ -1,0 +1,68 @@
+[
+  {
+    "id": "arxiv-cs-ai",
+    "nom": "arXiv — cs.AI",
+    "type": "rss",
+    "url": "http://export.arxiv.org/rss/cs.AI",
+    "domaine": "IA",
+    "actif": true
+  },
+  {
+    "id": "arxiv-cs-cl",
+    "nom": "arXiv — cs.CL (NLP)",
+    "type": "rss",
+    "url": "http://export.arxiv.org/rss/cs.CL",
+    "domaine": "IA",
+    "actif": true
+  },
+  {
+    "id": "anthropic-news",
+    "nom": "Anthropic — News",
+    "type": "rss",
+    "url": "https://www.anthropic.com/news/rss.xml",
+    "domaine": "IA",
+    "actif": false,
+    "note": "404 lors du test du 05/09/2026 — Anthropic ne semble pas exposer ce flux à cette URL, à re-rechercher."
+  },
+  {
+    "id": "openai-news",
+    "nom": "OpenAI — Blog",
+    "type": "rss",
+    "url": "https://openai.com/news/rss.xml",
+    "domaine": "IA",
+    "actif": true
+  },
+  {
+    "id": "nature-news",
+    "nom": "Nature — News",
+    "type": "rss",
+    "url": "https://www.nature.com/nature.rss",
+    "domaine": "sciences",
+    "actif": true
+  },
+  {
+    "id": "imf-news",
+    "nom": "FMI — Actualités",
+    "type": "rss",
+    "url": "https://www.imf.org/en/News/rss?language=eng",
+    "domaine": "economie",
+    "actif": false,
+    "note": "403 lors du test du 05/09/2026 — le FMI bloque probablement l'agent HTTP par défaut ; à retester avec un User-Agent navigateur ou via Spiderfoot."
+  },
+  {
+    "id": "oecd-news",
+    "nom": "OCDE — Actualités",
+    "type": "rss",
+    "url": "https://www.oecd.org/rss/",
+    "domaine": "economie",
+    "actif": false,
+    "note": "403 lors du test du 05/09/2026 — même cause probable que le FMI."
+  },
+  {
+    "id": "spiderfoot-osint",
+    "nom": "Spiderfoot — collecte OSINT structurée (labs IA, organisations, publications)",
+    "type": "spiderfoot",
+    "domaine": "transverse",
+    "actif": true
+  }
+]

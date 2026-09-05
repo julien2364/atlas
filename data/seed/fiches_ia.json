@@ -1,0 +1,674 @@
+[
+  {
+    "id": "claude-anthropic-cowork",
+    "axe": "generatif_raisonnement",
+    "nom": "Claude (Anthropic) / Cowork",
+    "editeur": "Anthropic",
+    "capacites_cles": [
+      "Raisonnement et rédaction en langage naturel multi-tour",
+      "Usage agentique d'outils (fichiers, shell, navigateur, MCP)",
+      "Orchestration de tâches longues avec mémoire de session",
+      "Mode Cowork : automatisation de tâches bureautiques/fichiers pour un utilisateur non-développeur"
+    ],
+    "usages": [
+      {
+        "secteur": "education",
+        "description": "Tutorat et génération de contenu pédagogique différencié",
+        "trl": 7,
+        "exemples": [
+          "Génération de plans de cours différenciés par niveau à partir d'un programme officiel",
+          "Correction et feedback formatif sur des copies d'élèves (dissertation, code, exercices)"
+        ],
+        "sources": [
+          {
+            "titre": "Anthropic — Claude for Education",
+            "url": "https://www.anthropic.com/education",
+            "type": "primaire"
+          }
+        ]
+      },
+      {
+        "secteur": "recherche",
+        "description": "Revue de littérature assistée, synthèse de corpus documentaires",
+        "trl": 6,
+        "exemples": [
+          "Synthèse comparative de plusieurs papiers arXiv sur une question de recherche donnée",
+          "Extraction structurée de données depuis des PDF de publications scientifiques"
+        ],
+        "sources": [
+          {
+            "titre": "Anthropic — Claude for research use cases",
+            "url": "https://www.anthropic.com/customers",
+            "type": "primaire"
+          }
+        ]
+      }
+    ],
+    "limites_connues": "Hallucination possible sur faits de niche ; pas de mémoire persistante native hors mécanismes dédiés ; dépendance à la qualité du prompt/contexte fourni.",
+    "sources": [
+      {
+        "titre": "Documentation Anthropic",
+        "url": "https://docs.claude.com",
+        "type": "primaire"
+      },
+      {
+        "titre": "Model Card Claude (Anthropic)",
+        "url": "https://www.anthropic.com/claude",
+        "type": "primaire"
+      }
+    ],
+    "statut": "documente",
+    "derniere_verification": "2026-09-05"
+  },
+  {
+    "id": "codex-famille-gpt",
+    "axe": "generatif_raisonnement",
+    "nom": "Codex / famille GPT",
+    "editeur": "OpenAI",
+    "capacites_cles": [
+      "Génération et complétion de code multi-langage",
+      "Raisonnement et rédaction en langage naturel",
+      "Agents de codage autonomes (exécution, tests, itération)"
+    ],
+    "usages": [
+      {
+        "secteur": "industrie",
+        "description": "Automatisation de tâches de développement logiciel",
+        "trl": 7,
+        "exemples": [
+          "Agents de codage autonomes exécutant des tâches de refactoring multi-fichiers avec tests",
+          "Revue de code automatisée intégrée aux pipelines CI/CD"
+        ],
+        "sources": [
+          {
+            "titre": "OpenAI — Codex",
+            "url": "https://openai.com/codex",
+            "type": "primaire"
+          }
+        ]
+      }
+    ],
+    "limites_connues": "Hallucination de code plausible mais incorrect ; dépendance à la qualité des specs fournies.",
+    "sources": [
+      {
+        "titre": "Documentation OpenAI",
+        "url": "https://platform.openai.com/docs",
+        "type": "primaire"
+      },
+      {
+        "titre": "OpenAI Platform — Models overview",
+        "url": "https://platform.openai.com/docs/models",
+        "type": "primaire"
+      }
+    ],
+    "statut": "documente",
+    "derniere_verification": "2026-09-05"
+  },
+  {
+    "id": "deepseek",
+    "axe": "generatif_raisonnement",
+    "nom": "DeepSeek",
+    "editeur": "DeepSeek (Chine)",
+    "capacites_cles": [
+      "Raisonnement en chaîne de pensée explicite (famille R1), compétitif avec les meilleurs modèles propriétaires sur les benchmarks de maths/code au moment de sa sortie",
+      "Poids ouverts (open-weights) sous licence permissive — utilisable et modifiable localement",
+      "Coût d'entraînement et d'inférence revendiqué très inférieur aux modèles occidentaux comparables (architecture MoE optimisée)"
+    ],
+    "usages": [
+      {
+        "secteur": "recherche",
+        "description": "Modèle ouvert réutilisable pour fine-tuning et recherche académique à coût réduit",
+        "trl": 7,
+        "exemples": [],
+        "sources": []
+      }
+    ],
+    "limites_connues": "Modération et filtrage alignés sur la réglementation chinoise (sujets politiques sensibles) ; questions de gouvernance des données d'entraînement et de confidentialité pour un usage hébergé en Chine ; écart de performance encore débattu selon les benchmarks indépendants.",
+    "sources": [
+      {
+        "titre": "DeepSeek-V3 Technical Report",
+        "type": "primaire"
+      },
+      {
+        "titre": "DeepSeek-R1: Incentivizing Reasoning Capability in LLMs via RL",
+        "type": "primaire"
+      }
+    ],
+    "statut": "documente",
+    "derniere_verification": "2026-09-05",
+    "architecture": "Mixture-of-Experts (MoE) — DeepSeek-V3 (~671B paramètres, ~37B actifs par token) ; DeepSeek-R1 entraîné avec apprentissage par renforcement à grande échelle pour le raisonnement en chaîne de pensée."
+  },
+  {
+    "id": "alexnet",
+    "axe": "generatif_raisonnement",
+    "nom": "AlexNet",
+    "capacites_cles": [],
+    "usages": [],
+    "limites_connues": "",
+    "sources": [],
+    "statut": "a_documenter",
+    "derniere_verification": "2026-09-05"
+  },
+  {
+    "id": "yolo",
+    "axe": "generatif_raisonnement",
+    "nom": "YOLO",
+    "capacites_cles": [],
+    "usages": [],
+    "limites_connues": "",
+    "sources": [],
+    "statut": "a_documenter",
+    "derniere_verification": "2026-09-05"
+  },
+  {
+    "id": "resnet",
+    "axe": "generatif_raisonnement",
+    "nom": "ResNet",
+    "capacites_cles": [],
+    "usages": [],
+    "limites_connues": "",
+    "sources": [],
+    "statut": "a_documenter",
+    "derniere_verification": "2026-09-05"
+  },
+  {
+    "id": "bert",
+    "axe": "generatif_raisonnement",
+    "nom": "BERT",
+    "capacites_cles": [],
+    "usages": [],
+    "limites_connues": "",
+    "sources": [],
+    "statut": "a_documenter",
+    "derniere_verification": "2026-09-05"
+  },
+  {
+    "id": "llama",
+    "axe": "generatif_raisonnement",
+    "nom": "Llama",
+    "capacites_cles": [],
+    "usages": [],
+    "limites_connues": "",
+    "sources": [],
+    "statut": "a_documenter",
+    "derniere_verification": "2026-09-05"
+  },
+  {
+    "id": "alphago-alphazero-alphafold",
+    "axe": "generatif_raisonnement",
+    "nom": "AlphaGo/AlphaZero/AlphaFold",
+    "capacites_cles": [],
+    "usages": [],
+    "limites_connues": "",
+    "sources": [],
+    "statut": "a_documenter",
+    "derniere_verification": "2026-09-05"
+  },
+  {
+    "id": "stable-diffusion-midjourney-dall-e",
+    "axe": "generatif_raisonnement",
+    "nom": "Stable Diffusion/Midjourney/DALL-E",
+    "capacites_cles": [],
+    "usages": [],
+    "limites_connues": "",
+    "sources": [],
+    "statut": "a_documenter",
+    "derniere_verification": "2026-09-05"
+  },
+  {
+    "id": "regression-lineaire",
+    "axe": "predictif_data_science",
+    "nom": "Régression linéaire",
+    "capacites_cles": [],
+    "usages": [],
+    "limites_connues": "",
+    "sources": [],
+    "statut": "a_documenter",
+    "derniere_verification": "2026-09-05"
+  },
+  {
+    "id": "regression-logistique",
+    "axe": "predictif_data_science",
+    "nom": "Régression logistique",
+    "capacites_cles": [],
+    "usages": [],
+    "limites_connues": "",
+    "sources": [],
+    "statut": "a_documenter",
+    "derniere_verification": "2026-09-05"
+  },
+  {
+    "id": "arbres-de-decision",
+    "axe": "predictif_data_science",
+    "nom": "Arbres de décision",
+    "capacites_cles": [],
+    "usages": [],
+    "limites_connues": "",
+    "sources": [],
+    "statut": "a_documenter",
+    "derniere_verification": "2026-09-05"
+  },
+  {
+    "id": "forets-aleatoires",
+    "axe": "predictif_data_science",
+    "nom": "Forêts aléatoires",
+    "capacites_cles": [],
+    "usages": [],
+    "limites_connues": "",
+    "sources": [],
+    "statut": "a_documenter",
+    "derniere_verification": "2026-09-05"
+  },
+  {
+    "id": "svm",
+    "axe": "predictif_data_science",
+    "nom": "SVM",
+    "capacites_cles": [],
+    "usages": [],
+    "limites_connues": "",
+    "sources": [],
+    "statut": "a_documenter",
+    "derniere_verification": "2026-09-05"
+  },
+  {
+    "id": "k-nn",
+    "axe": "predictif_data_science",
+    "nom": "K-NN",
+    "capacites_cles": [],
+    "usages": [],
+    "limites_connues": "",
+    "sources": [],
+    "statut": "a_documenter",
+    "derniere_verification": "2026-09-05"
+  },
+  {
+    "id": "naive-bayes",
+    "axe": "predictif_data_science",
+    "nom": "Naive Bayes",
+    "capacites_cles": [],
+    "usages": [],
+    "limites_connues": "",
+    "sources": [],
+    "statut": "a_documenter",
+    "derniere_verification": "2026-09-05"
+  },
+  {
+    "id": "k-means",
+    "axe": "predictif_data_science",
+    "nom": "K-Means",
+    "capacites_cles": [],
+    "usages": [],
+    "limites_connues": "",
+    "sources": [],
+    "statut": "a_documenter",
+    "derniere_verification": "2026-09-05"
+  },
+  {
+    "id": "pca",
+    "axe": "predictif_data_science",
+    "nom": "PCA",
+    "capacites_cles": [],
+    "usages": [],
+    "limites_connues": "",
+    "sources": [],
+    "statut": "a_documenter",
+    "derniere_verification": "2026-09-05"
+  },
+  {
+    "id": "gradient-boosting-xgboost-lightgbm-catboost",
+    "axe": "predictif_data_science",
+    "nom": "Gradient Boosting (XGBoost/LightGBM/CatBoost)",
+    "capacites_cles": [],
+    "usages": [],
+    "limites_connues": "",
+    "sources": [],
+    "statut": "a_documenter",
+    "derniere_verification": "2026-09-05"
+  },
+  {
+    "id": "series-temporelles-arima-sarima",
+    "axe": "predictif_data_science",
+    "nom": "Séries temporelles ARIMA/SARIMA",
+    "capacites_cles": [],
+    "usages": [],
+    "limites_connues": "",
+    "sources": [],
+    "statut": "a_documenter",
+    "derniere_verification": "2026-09-05"
+  },
+  {
+    "id": "perceptron-multicouche-mlp",
+    "axe": "predictif_data_science",
+    "nom": "Perceptron multicouche (MLP)",
+    "capacites_cles": [],
+    "usages": [],
+    "limites_connues": "",
+    "sources": [],
+    "statut": "a_documenter",
+    "derniere_verification": "2026-09-05"
+  },
+  {
+    "id": "cnn",
+    "axe": "predictif_data_science",
+    "nom": "CNN",
+    "capacites_cles": [],
+    "usages": [],
+    "limites_connues": "",
+    "sources": [],
+    "statut": "a_documenter",
+    "derniere_verification": "2026-09-05"
+  },
+  {
+    "id": "rnn",
+    "axe": "predictif_data_science",
+    "nom": "RNN",
+    "capacites_cles": [],
+    "usages": [],
+    "limites_connues": "",
+    "sources": [],
+    "statut": "a_documenter",
+    "derniere_verification": "2026-09-05"
+  },
+  {
+    "id": "lstm",
+    "axe": "predictif_data_science",
+    "nom": "LSTM",
+    "capacites_cles": [],
+    "usages": [],
+    "limites_connues": "",
+    "sources": [],
+    "statut": "a_documenter",
+    "derniere_verification": "2026-09-05"
+  },
+  {
+    "id": "autoencodeurs",
+    "axe": "predictif_data_science",
+    "nom": "Autoencodeurs",
+    "capacites_cles": [],
+    "usages": [],
+    "limites_connues": "",
+    "sources": [],
+    "statut": "a_documenter",
+    "derniere_verification": "2026-09-05"
+  },
+  {
+    "id": "gan",
+    "axe": "predictif_data_science",
+    "nom": "GAN",
+    "capacites_cles": [],
+    "usages": [],
+    "limites_connues": "",
+    "sources": [],
+    "statut": "a_documenter",
+    "derniere_verification": "2026-09-05"
+  },
+  {
+    "id": "transformers",
+    "axe": "predictif_data_science",
+    "nom": "Transformers",
+    "capacites_cles": [],
+    "usages": [],
+    "limites_connues": "",
+    "sources": [],
+    "statut": "a_documenter",
+    "derniere_verification": "2026-09-05"
+  },
+  {
+    "id": "autogpt",
+    "axe": "agentique",
+    "nom": "AutoGPT",
+    "editeur": "Communauté open-source (Toran Bruce Richards, 2023)",
+    "architecture": "Agent autonome bouclant un LLM sur un cycle percevoir-planifier-agir-évaluer, avec mémoire externe (fichiers/vecteurs) et exécution d'outils (recherche web, code, fichiers).",
+    "capacites_cles": [
+      "Décomposition autonome d'objectifs de haut niveau en sous-tâches",
+      "Boucle d'auto-évaluation et de re-planification sans validation humaine à chaque étape",
+      "Usage d'outils (recherche web, exécution de code, fichiers)"
+    ],
+    "usages": [],
+    "limites_connues": "Boucles de planification souvent inefficaces ou répétitives sur des tâches complexes ; coût en tokens élevé pour un taux de succès fréquemment faible sur des objectifs ambitieux mal spécifiés ; fiabilité insuffisante pour un usage en production sans supervision humaine étroite — a surtout eu un rôle de preuve de concept médiatique en 2023 plutôt que d'outil de production robuste.",
+    "sources": [
+      {
+        "titre": "AutoGPT (dépôt GitHub)",
+        "url": "https://github.com/Significant-Gravitas/AutoGPT",
+        "type": "primaire"
+      }
+    ],
+    "statut": "documente",
+    "derniere_verification": "2026-09-05"
+  },
+  {
+    "id": "openai-operator-agents-de-navigation-web",
+    "axe": "agentique",
+    "nom": "OpenAI Operator / agents de navigation web",
+    "editeur": null,
+    "architecture": null,
+    "capacites_cles": [],
+    "usages": [],
+    "limites_connues": "",
+    "sources": [],
+    "statut": "a_documenter",
+    "derniere_verification": "2026-09-05"
+  },
+  {
+    "id": "devin-cognition-ai",
+    "axe": "agentique",
+    "nom": "Devin (Cognition AI)",
+    "editeur": null,
+    "architecture": null,
+    "capacites_cles": [],
+    "usages": [],
+    "limites_connues": "",
+    "sources": [],
+    "statut": "a_documenter",
+    "derniere_verification": "2026-09-05"
+  },
+  {
+    "id": "frameworks-multi-agents-langgraph-crewai-autogen",
+    "axe": "agentique",
+    "nom": "Frameworks multi-agents (LangGraph, CrewAI, AutoGen)",
+    "editeur": null,
+    "architecture": null,
+    "capacites_cles": [],
+    "usages": [],
+    "limites_connues": "",
+    "sources": [],
+    "statut": "a_documenter",
+    "derniere_verification": "2026-09-05"
+  },
+  {
+    "id": "alphafold-deepmind",
+    "axe": "scientifique",
+    "nom": "AlphaFold (DeepMind)",
+    "editeur": "Google DeepMind",
+    "architecture": "Réseau de neurones de type transformer avec attention sur les résidus et représentations de coévolution (Evoformer), prédisant la structure tridimensionnelle des protéines à partir de leur séquence d'acides aminés.",
+    "capacites_cles": [
+      "Prédiction de structure protéique à une précision proche de la résolution expérimentale pour une large part du protéome connu",
+      "Base de données ouverte de structures prédites (AlphaFold Protein Structure Database, avec l'EMBL-EBI)",
+      "AlphaFold 3 étend la prédiction aux complexes protéine-ligand et protéine-acide nucléique"
+    ],
+    "usages": [
+      {
+        "secteur": "recherche",
+        "description": "Accélération de la recherche structurale en biologie, auparavant coûteuse en cristallographie/cryo-EM",
+        "trl": 8,
+        "exemples": [
+          "Base AlphaFold DB utilisée par des centaines de milliers de chercheurs dans le monde"
+        ],
+        "sources": [
+          {
+            "titre": "Nature — AlphaFold Protein Structure Database",
+            "type": "primaire"
+          }
+        ]
+      },
+      {
+        "secteur": "pharmaceutique",
+        "description": "Accélération de l'identification de cibles thérapeutiques et de la conception de médicaments",
+        "trl": 6,
+        "exemples": [],
+        "sources": []
+      }
+    ],
+    "limites_connues": "Prédit une structure statique/probable, pas nécessairement la dynamique conformationnelle réelle d'une protéine en solution ; performance dégradée sur les protéines sans homologues connus ou fortement désordonnées ; ne remplace pas la validation expérimentale pour un usage clinique.",
+    "sources": [
+      {
+        "titre": "Jumper et al., 'Highly accurate protein structure prediction with AlphaFold', Nature 2021",
+        "type": "primaire"
+      },
+      {
+        "titre": "Prix Nobel de chimie 2024 (Hassabis, Jumper, Baker)",
+        "type": "secondaire"
+      }
+    ],
+    "statut": "documente",
+    "derniere_verification": "2026-09-05"
+  },
+  {
+    "id": "gnome-decouverte-de-materiaux",
+    "axe": "scientifique",
+    "nom": "GNoME (découverte de matériaux)",
+    "editeur": null,
+    "architecture": null,
+    "capacites_cles": [],
+    "usages": [],
+    "limites_connues": "",
+    "sources": [],
+    "statut": "a_documenter",
+    "derniere_verification": "2026-09-05"
+  },
+  {
+    "id": "ia-pour-le-controle-de-plasma-en-fusion-nucleaire",
+    "axe": "scientifique",
+    "nom": "IA pour le contrôle de plasma en fusion nucléaire",
+    "editeur": null,
+    "architecture": null,
+    "capacites_cles": [],
+    "usages": [],
+    "limites_connues": "",
+    "sources": [],
+    "statut": "a_documenter",
+    "derniere_verification": "2026-09-05"
+  },
+  {
+    "id": "ia-en-genomique-et-drug-discovery",
+    "axe": "scientifique",
+    "nom": "IA en génomique et drug discovery",
+    "editeur": null,
+    "architecture": null,
+    "capacites_cles": [],
+    "usages": [],
+    "limites_connues": "",
+    "sources": [],
+    "statut": "a_documenter",
+    "derniere_verification": "2026-09-05"
+  },
+  {
+    "id": "ia-en-modelisation-climatique-type-graphcast",
+    "axe": "scientifique",
+    "nom": "IA en modélisation climatique (type GraphCast)",
+    "editeur": null,
+    "architecture": null,
+    "capacites_cles": [],
+    "usages": [],
+    "limites_connues": "",
+    "sources": [],
+    "statut": "a_documenter",
+    "derniere_verification": "2026-09-05"
+  },
+  {
+    "id": "hallucination-et-fiabilite-factuelle-limite-transversale",
+    "axe": "limites",
+    "nom": "Hallucination et fiabilité factuelle (limite transversale)",
+    "editeur": null,
+    "architecture": null,
+    "capacites_cles": [],
+    "usages": [],
+    "limites_connues": "Un modèle génératif peut produire des affirmations plausibles mais factuellement fausses (citations inventées, faits erronés) sans signal interne fiable de son propre degré d'incertitude ; le risque augmente avec la spécificité/niche du sujet et diminue avec le RAG (récupération augmentée) sur sources vérifiées, sans jamais tomber à zéro. C'est la limite la plus citée par le mégaprompt (section B5) et directement pertinente pour la fiabilité de ce référentiel lui-même — d'où l'exigence de sourcer systématiquement chaque fiche documentée.",
+    "sources": [
+      {
+        "titre": "Synthèses académiques sur l'hallucination des LLM (ex. Ji et al., 'Survey of Hallucination in NLG', ACM Computing Surveys)",
+        "type": "secondaire"
+      }
+    ],
+    "statut": "documente",
+    "derniere_verification": "2026-09-05"
+  },
+  {
+    "id": "biais-herites-des-donnees-d-entrainement-limite-transversale",
+    "axe": "limites",
+    "nom": "Biais hérités des données d'entraînement (limite transversale)",
+    "editeur": null,
+    "architecture": null,
+    "capacites_cles": [],
+    "usages": [],
+    "limites_connues": "",
+    "sources": [],
+    "statut": "a_documenter",
+    "derniere_verification": "2026-09-05"
+  },
+  {
+    "id": "dependance-energetique-et-materielle-de-l-ia-limite-transversale",
+    "axe": "limites",
+    "nom": "Dépendance énergétique et matérielle de l'IA (limite transversale)",
+    "editeur": null,
+    "architecture": null,
+    "capacites_cles": [],
+    "usages": [],
+    "limites_connues": "",
+    "sources": [],
+    "statut": "a_documenter",
+    "derniere_verification": "2026-09-05"
+  },
+  {
+    "id": "jumeaux-numeriques-industriels-ia",
+    "axe": "sectoriel",
+    "nom": "Jumeaux numériques industriels (IA)",
+    "editeur": null,
+    "architecture": null,
+    "capacites_cles": [],
+    "usages": [],
+    "limites_connues": "",
+    "sources": [],
+    "statut": "a_documenter",
+    "derniere_verification": "2026-09-05"
+  },
+  {
+    "id": "tutorat-adaptatif-personnalise-edtech-ia",
+    "axe": "sectoriel",
+    "nom": "Tutorat adaptatif personnalisé (EdTech IA)",
+    "editeur": null,
+    "architecture": null,
+    "capacites_cles": [],
+    "usages": [],
+    "limites_connues": "",
+    "sources": [],
+    "statut": "a_documenter",
+    "derniere_verification": "2026-09-05"
+  },
+  {
+    "id": "criblage-virtuel-de-molecules-ia-pharmaceutique",
+    "axe": "sectoriel",
+    "nom": "Criblage virtuel de molécules (IA pharmaceutique)",
+    "editeur": null,
+    "architecture": null,
+    "capacites_cles": [],
+    "usages": [],
+    "limites_connues": "",
+    "sources": [],
+    "statut": "a_documenter",
+    "derniere_verification": "2026-09-05"
+  },
+  {
+    "id": "aide-a-la-decision-publique-govtech-ia",
+    "axe": "sectoriel",
+    "nom": "Aide à la décision publique (GovTech IA)",
+    "editeur": null,
+    "architecture": null,
+    "capacites_cles": [],
+    "usages": [],
+    "limites_connues": "",
+    "sources": [],
+    "statut": "a_documenter",
+    "derniere_verification": "2026-09-05"
+  }
+]

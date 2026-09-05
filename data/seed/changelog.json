@@ -1,0 +1,23 @@
+[
+  {
+    "id": "seed-2026-09-05",
+    "date": "2026-09-05T00:00:00Z",
+    "type": "ajout",
+    "cible": "Lot 1 + amorçage Lot 2/3",
+    "resume": "Architecture technique initiale (Next.js/Supabase), modèle de données, amorçage de 247 fiches humaines et 28 fiches IA (statut à documenter sauf 7 fiches prioritaires réellement documentées : Nietzsche, Démocratie libérale, Capitalisme d'État chinois, Économie du donut, Claude/Cowork, Codex, DeepSeek), 2 fiches de gap analysis d'exemple, sources de veille RSS + Spiderfoot configurées."
+  },
+  {
+    "id": "lot4-lot5-2026-09-05",
+    "date": "2026-09-05T00:00:00Z",
+    "type": "ajout",
+    "cible": "Lot 4 (comparateur) + Lot 5 (veille RSS)",
+    "resume": "Comparateur transforme en sélecteur libre (toute paire fiche humaine x fiche IA), avec repli honnête \"a documenter\" pour les paires non analysees. 2 nouvelles fiches humaines documentees (Taylorisme/OST, OKR) et 2 nouvelles fiches de gap (couvrant desormais les 4 categories de substituabilite). Pipeline de veille RSS reel (scripts/veille-rss.mjs) teste en conditions reelles : 3 sources sur 8 desactivees apres echec HTTP confirme (Anthropic News 404, FMI et OCDE 403, documente dans veille_sources.json), 10 propositions deposees dans une file de validation manuelle (veille_queue.json), aucune mise a jour automatique de fiche."
+  },
+  {
+    "id": "lot7-2026-09-05",
+    "date": "2026-09-05T00:00:00Z",
+    "type": "ajout",
+    "cible": "Lot 7 (cartographies interactives)",
+    "resume": "Page /cartographie transformee : repartition par axe (humain et IA) en barres proportionnelles cliquables (clic = liste des fiches de l'axe avec statut), et matrice de gap cliquable (6 fiches humaines x 3 fiches IA documentees, coloree par categorie de substituabilite, clic = detail de l'analyse). La heatmap TRL par secteur et la frise chronologique (section 8 du megaprompt) restent en attente : aucune fiche IA n'a encore de donnees reelles d'usages sectoriels renseignees, pour ne pas inventer de niveaux de maturite."
+  }
+]

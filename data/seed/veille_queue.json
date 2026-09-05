@@ -1,0 +1,152 @@
+[
+  {
+    "id": "4ee3fa02-12eb-428d-b31a-05d7f9a66336",
+    "source_id": "openai-news",
+    "cible_type": "nouvelle_categorie",
+    "cible_id": null,
+    "contenu_propose": {
+      "titre": "Daybreak for Frontline Defenders: $1B to protect essential services",
+      "link": "https://openai.com/index/daybreak-for-frontline-defenders",
+      "date": "2026-09-03T13:15:00.000Z",
+      "resume": "OpenAI introduces Daybreak for Frontline Defenders. A $1 billion commitment expands access to frontier cyber AI, training, and support for essential services."
+    },
+    "score_fiabilite": 0.9,
+    "statut": "en_attente",
+    "created_at": "2026-09-05T04:57:24.460Z"
+  },
+  {
+    "id": "37c95dc5-aeac-44ff-ab70-61685e9e2cfe",
+    "source_id": "openai-news",
+    "cible_type": "nouvelle_categorie",
+    "cible_id": null,
+    "contenu_propose": {
+      "titre": "Playco cut manual fixes 50% prototyping games with GPT-6 Astra",
+      "link": "https://openai.com/index/playco-game-prototyping-with-astra",
+      "date": "2026-09-03T12:00:00.000Z",
+      "resume": "Using GPT-6 Astra, Playco built three themed game prototypes from one grey box foundation and reported 50% fewer manual fixes than with the previous model."
+    },
+    "score_fiabilite": 0.9,
+    "statut": "en_attente",
+    "created_at": "2026-09-05T04:57:24.460Z"
+  },
+  {
+    "id": "2aba4e73-2375-420e-8060-4b413b484c18",
+    "source_id": "openai-news",
+    "cible_type": "nouvelle_categorie",
+    "cible_id": null,
+    "contenu_propose": {
+      "titre": "Legora reviewed 41 documents in minutes with GPT-6 Astra",
+      "link": "https://openai.com/index/legora-financial-statement-review-with-astra",
+      "date": "2026-09-03T12:00:00.000Z",
+      "resume": "Legora used GPT-6 Astra to review 41 documents in minutes, find all four planted errors, and improve performance by nearly 40% in this financial-review workflow."
+    },
+    "score_fiabilite": 0.9,
+    "statut": "en_attente",
+    "created_at": "2026-09-05T04:57:24.461Z"
+  },
+  {
+    "id": "ffdb6a03-8da8-4e4c-8771-fcb91af2939f",
+    "source_id": "openai-news",
+    "cible_type": "nouvelle_categorie",
+    "cible_id": null,
+    "contenu_propose": {
+      "titre": "GPT-6 Astra: A new generation of intelligence",
+      "link": "https://openai.com/index/gpt-6-astra",
+      "date": "2026-09-03T11:00:00.000Z",
+      "resume": "Introducing GPT-6 Astra, our most intelligent and aligned model yet, with state-of-the-art capabilities across computer use, coding, cybersecurity, and science."
+    },
+    "score_fiabilite": 0.9,
+    "statut": "en_attente",
+    "created_at": "2026-09-05T04:57:24.461Z"
+  },
+  {
+    "id": "697086fa-87db-4f4d-8298-f1cb6605cf0f",
+    "source_id": "openai-news",
+    "cible_type": "nouvelle_categorie",
+    "cible_id": null,
+    "contenu_propose": {
+      "titre": "Safety overview: GPT-6 Astra",
+      "link": "https://openai.com/index/safety-overview-gpt-6-astra",
+      "date": "2026-09-03T00:00:00.000Z",
+      "resume": "GPT-6 Astra is our most capable broadly deployed model and our first to reach the Critical level of cybersecurity capability under our Preparedness Framework."
+    },
+    "score_fiabilite": 0.9,
+    "statut": "en_attente",
+    "created_at": "2026-09-05T04:57:24.461Z"
+  },
+  {
+    "id": "1e7490bb-bf33-4964-bc82-94e507a99f06",
+    "source_id": "nature-news",
+    "cible_type": "nouvelle_categorie",
+    "cible_id": null,
+    "contenu_propose": {
+      "titre": "Briefing Chat: How 1,000 pairs of buried underpants helped measure soil health",
+      "link": "https://www.nature.com/articles/d41586-026-02800-1",
+      "date": "2026-09-04T00:00:00.000Z",
+      "resume": ""
+    },
+    "score_fiabilite": 0.9,
+    "statut": "en_attente",
+    "created_at": "2026-09-05T04:57:24.626Z"
+  },
+  {
+    "id": "0df84107-fa94-4243-a706-8f38b057064e",
+    "source_id": "nature-news",
+    "cible_type": "nouvelle_categorie",
+    "cible_id": null,
+    "contenu_propose": {
+      "titre": "Super-precise optical clocks in four nations tick in harmony",
+      "link": "https://www.nature.com/articles/d41586-026-02741-9",
+      "date": "2026-09-04T00:00:00.000Z",
+      "resume": ""
+    },
+    "score_fiabilite": 0.9,
+    "statut": "en_attente",
+    "created_at": "2026-09-05T04:57:24.626Z"
+  },
+  {
+    "id": "81239464-3276-4054-9535-39f3c1b1a961",
+    "source_id": "nature-news",
+    "cible_type": "nouvelle_categorie",
+    "cible_id": null,
+    "contenu_propose": {
+      "titre": "Body parts used for ancient Egyptian artworks traced to surprising source",
+      "link": "https://www.nature.com/articles/d41586-026-02739-3",
+      "date": "2026-09-04T00:00:00.000Z",
+      "resume": ""
+    },
+    "score_fiabilite": 0.9,
+    "statut": "en_attente",
+    "created_at": "2026-09-05T04:57:24.626Z"
+  },
+  {
+    "id": "d164bd4b-66e5-4528-a941-746d18b406eb",
+    "source_id": "nature-news",
+    "cible_type": "nouvelle_categorie",
+    "cible_id": null,
+    "contenu_propose": {
+      "titre": "Tropical cyclones could be predicted with an extra day’s warning, thanks to an AI model",
+      "link": "https://www.nature.com/articles/d41586-026-02643-w",
+      "date": "2026-09-04T00:00:00.000Z",
+      "resume": ""
+    },
+    "score_fiabilite": 0.9,
+    "statut": "en_attente",
+    "created_at": "2026-09-05T04:57:24.626Z"
+  },
+  {
+    "id": "799012a8-45d2-4cef-b056-e439ecf11c06",
+    "source_id": "nature-news",
+    "cible_type": "nouvelle_categorie",
+    "cible_id": null,
+    "contenu_propose": {
+      "titre": "Ada Yonath obituary: Crystallographer who overcame ‘impossible’ challenge of mapping the ribosome",
+      "link": "https://www.nature.com/articles/d41586-026-02801-0",
+      "date": "2026-09-04T00:00:00.000Z",
+      "resume": ""
+    },
+    "score_fiabilite": 0.9,
+    "statut": "en_attente",
+    "created_at": "2026-09-05T04:57:24.626Z"
+  }
+]
