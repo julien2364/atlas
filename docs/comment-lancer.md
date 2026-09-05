@@ -1,11 +1,12 @@
 # COMMENT LANCER — Atlas Humain × IA
 
-Dernière mise à jour : 05/09/2026 (après Lot 1 + amorçage Lot 2/3 + Lot 4 comparateur + Lot 5 veille RSS + Lot 7 cartographies + audit QA)
+Dernière mise à jour : 05/09/2026 (après Lot 1 + amorçage Lot 2/3 + Lot 4 comparateur + Lot 5 veille RSS + Lot 7 cartographies + audit QA + mise en ligne publique via GitHub/Vercel)
 
 ## État actuel du projet
 
-Le projet est un vrai projet Next.js fonctionnel, déjà buildé et testé (npm run build passe sans erreur), et
-maintenant versionné dans git en local (voir section 2, "Audit QA").
+Le projet est un vrai projet Next.js fonctionnel, déjà buildé et testé (npm run build passe sans erreur),
+versionné dans git, poussé sur GitHub (`https://github.com/julien2364/atlas`) et **déployé en ligne sur Vercel**
+(voir section 0 ci-dessous).
 Le site tourne sur des données d'amorçage locales (`data/seed/*.json` : 267 fiches humaines + 44 fiches IA),
 sans avoir besoin de Supabase configuré pour l'instant — pratique pour visualiser tout de suite.
 
@@ -13,7 +14,31 @@ Le comparateur (`/comparateur`) est désormais un vrai sélecteur libre (n'impor
 fiche IA), et la veille (`/veille`) tourne sur un pipeline RSS réel et testé, avec sa file de propositions
 en attente de validation visible directement sur la page.
 
-Diffusion : **usage interne uniquement** (`NEXT_PUBLIC_SITE_MODE=internal`), pas de mise en ligne publique.
+Diffusion : **publique** (`NEXT_PUBLIC_SITE_MODE=public`), décidée par Julien — site accessible à tous sur
+l'URL Vercel ci-dessous, en attendant le domaine dédié `atlas.dyonysos.fr`.
+
+## 0. Site en ligne et méthode de déploiement
+
+**URL publique : https://atlas-humain-ia-dyonysos.vercel.app**
+
+Le déploiement se fait désormais via GitHub → Vercel (méthode Git), et non plus par envoi manuel de fichiers :
+chaque `git push` sur la branche `main` du repo `julien2364/atlas` déclenche automatiquement un nouveau
+build et une mise en ligne sur Vercel (projet `atlas-humain-ia`, équipe Vercel "Dyonysos"). C'est beaucoup
+plus fiable que l'ancienne méthode d'upload manuel, qui échouait systématiquement sur ce projet (34 fichiers
+à renvoyer intégralement à chaque déploiement).
+
+Pour mettre à jour le site : modifier le code localement, committer, puis :
+
+```bash
+git push origin main
+```
+
+Le déploiement en production se déclenche automatiquement (suivre l'avancement sur
+https://vercel.com/dyonysos/atlas-humain-ia).
+
+Prochaine étape (à faire par Julien dans les réglages Vercel) : ajouter `atlas.dyonysos.fr` comme domaine
+personnalisé du projet, puis créer l'enregistrement DNS CNAME correspondant chez le fournisseur DNS de
+dyonysos.fr.
 
 ## 1. Lancer le site en local (dès maintenant)
 
@@ -52,5 +77,6 @@ par itération, sans validation intermédiaire à chaque étape — seuls les ja
 
 ## 5. Emplacement des fichiers
 
-- **Local** : `/Users/juliendaures/Claude/Atlas-Humain-IA/` (projet Next.js complet)
+- **Local** : `/Users/juliendaures/Claude/atlas/` (projet Next.js complet, cloné depuis GitHub)
+- **GitHub** : `https://github.com/julien2364/atlas` (source de vérité du code, branche `main` = production Vercel)
 - **Google Drive** : `megaprompt-atlas-humain-ia.md` et `comment-lancer-atlas-humain-ia.md` synchronisés (le code source du site n'est pas dupliqué sur Drive — seuls les documents de pilotage le sont, conformément aux instructions permanentes).
