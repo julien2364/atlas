@@ -17,10 +17,17 @@ Ouvrir http://localhost:3000 — le site fonctionne dès maintenant sur les donn
 ## État du projet (05/09/2026)
 
 - **Lot 1 (architecture)** : terminé — Next.js/Tailwind, modèle de données, schéma Supabase (`supabase/schema.sql`).
-- **Lot 2/3 (amorçage contenu)** : en cours — 6 fiches humaines + 3 fiches IA réellement documentées (Nietzsche,
-  Démocratie libérale, Capitalisme d'État chinois, Économie du donut, Taylorisme/OST, OKR côté humain ; Claude/Cowork,
-  Codex, DeepSeek côté IA), 4 fiches de gap analysis (une par catégorie de substituabilité), reste du corpus (241
-  fiches humaines, 25 fiches IA) au statut "à documenter".
+- **Lot 2/3 (amorçage contenu)** : en cours — 12 fiches humaines + 6 fiches IA réellement documentées, 6 fiches de
+  gap analysis. Les 5 axes humains et les 6 axes IA du mégaprompt ont désormais chacun au moins une entrée (les axes
+  psychologique/sérénité côté humain et agentique/scientifique/sectoriel/limites côté IA étaient à 0 fiche jusqu'au
+  05/09/2026 — corrigé après audit QA, voir Lot QA ci-dessous). Reste du corpus (255 fiches humaines, 38 fiches IA)
+  au statut "à documenter".
+- **Audit QA (05/09/2026)** : suite à un retour de Julien jugeant la profondeur insuffisante, deux agents
+  indépendants (testeur visiteur/utilisateur + vérificateur professionnel) ont audité le site. Corrigé : le rendu de
+  `/referentiel-humain` qui n'affichait jamais le contenu des fiches documentées ; le risque de régression silencieuse
+  dans `scripts/generate-seed.mjs` (démontré par un incident réel pendant l'audit, corrigé par un merge protecteur) ;
+  les axes vides. Le projet est désormais versionné dans git en local (aucun commit depuis le scaffold initial
+  jusqu'à cet audit) pour se prémunir d'un futur incident de perte de données.
 - **Lot 4 (comparateur)** : fonctionnel — sélecteur libre permettant de choisir n'importe quelle paire
   fiche humaine × fiche IA ; affiche l'analyse complète pour les 4 paires documentées, un repli honnête
   "à documenter" sinon (jamais de contenu inventé).
