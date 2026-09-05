@@ -16,15 +16,18 @@ export default function MethodologiePage() {
       <section>
         <h2 className="text-lg font-medium">Limites assumées</h2>
         <ul className="list-disc pl-5">
-          <li>Le référentiel est en amorçage (Lot 1-2) : la majorité des fiches sont au statut « à documenter ».</li>
-          <li>Le moteur de réponse prédictive (Q&amp;A) n&apos;est pas encore automatisé (RAG prévu Lot 6) — les réponses actuelles sont rédigées manuellement selon le même gabarit.</li>
-          <li>Diffusion interne uniquement à ce stade — pas de mise en ligne publique décidée.</li>
+          <li>Le référentiel est en amorçage (Lot 1-2) : la majorité des fiches sont encore au statut « à documenter » — l&apos;enrichissement se poursuit lot après lot, sans coquilles vides ajoutées pour faire nombre.</li>
+          <li>Le moteur de réponse prédictive (Q&amp;A) complet (RAG, Lot 6) est en attente d&apos;une décision d&apos;infrastructure (projet Supabase dédié ou mutualisé). En attendant, une recherche automatique en direct sur tout le référentiel est disponible sur la page <a href="/questions">Questions</a>.</li>
+          <li>Diffusion publique depuis le 05/09/2026 (décision explicite de Julien) — le site n&apos;est plus en accès interne restreint.</li>
         </ul>
       </section>
 
       <section>
         <h2 className="text-lg font-medium">Document de référence</h2>
-        <p>Le mégaprompt complet (mission, référentiels, méthodologie détaillée, plan de production) est versionné dans <code>docs/megaprompt.md</code>.</p>
+        <p>
+          Le mégaprompt complet (mission, référentiels, méthodologie détaillée, plan de production) est versionné dans <code>docs/megaprompt.md</code> et consultable en ligne sur la page{" "}
+          <a href="/megaprompt" className="underline">mégaprompt</a>.
+        </p>
       </section>
     </div>
   );

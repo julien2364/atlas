@@ -1,3 +1,5 @@
+import RechercheFiches from "@/components/RechercheFiches";
+
 const QUESTIONS = [
   {
     q: "Les modèles économiques mondiaux actuels sont-ils optimaux ? Quel modèle pourrait les surpasser ?",
@@ -38,11 +40,13 @@ export default function QuestionsPage() {
       <div>
         <h1 className="text-2xl font-semibold">Questions</h1>
         <p className="mt-2 max-w-2xl text-sm text-neutral-500">
-          Le moteur RAG (section 7.3 du mégaprompt) n&apos;est pas encore branché (prévu Lot 6). Les 4 questions-tests
-          permanentes sont traitées ici manuellement, dans le format imposé (synthèse pluraliste, sources, limites),
-          pour valider la méthode avant automatisation.
+          Les 4 questions-tests permanentes ci-dessous sont traitées manuellement, dans le format imposé (synthèse
+          pluraliste, sources, limites) — c&apos;est le gabarit qui alimentera le moteur RAG complet (section 7.3 du
+          mégaprompt, Lot 6, en attente de la décision Supabase). En attendant, la recherche ci-dessous permet
+          d&apos;interroger automatiquement tout le référentiel, pas seulement ces 4 questions.
         </p>
       </div>
+      <RechercheFiches />
       {QUESTIONS.map((item, i) => (
         <article key={i} className="rounded-lg border border-neutral-200 p-5 dark:border-neutral-800">
           <h2 className="font-medium">{item.q}</h2>

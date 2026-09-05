@@ -1,0 +1,40 @@
+name: Veille RSS quotidienne
+
+on:
+  schedule:
+    # 07h00 UTC chaque jour (cf. docs/comment-lancer.md — anciennement un scheduled task lié au device, remplacé par ce cron GitHub natif qui ne dépend d'aucun ordinateur).
+    - cron: "0 7 * * *"
+  workflow_dispatch: {}
+
+permissions:
+  contents: write
+
+jobs:
+  veille:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 1
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+
+      - name: Installer les dépendances
+        run: npm ci
+
+      - name: Lancer la veille RSS
+        run: node scripts/veille-rss.mjs
+
+      - name: Committer les nouvelles propositions (s'il y en a)
+        run: |
+          git config user.name "atlas-veille-bot"
+          git config user.email "veille-bot@users.noreply.github.com"
+          if git diff --quiet -- data/seed/veille_queue.json data/seed/veille_sources.json; then
+            echo "Aucun changement — rien à committer."
+          else
+            git add data/seed/veille_queue.json data/seed/veille_sources.json
+            git commit -m "chore(veille): mise à jour automatique de la file de validation [skip ci]"
+            git push
+          fi

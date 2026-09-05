@@ -17,12 +17,12 @@
   },
   {
     "id": "anthropic-news",
-    "nom": "Anthropic — News",
+    "nom": "Anthropic — actualités (via Google News, faute de flux RSS officiel)",
     "type": "rss",
-    "url": "https://www.anthropic.com/news/rss.xml",
+    "url": "https://news.google.com/rss/search?q=Anthropic+Claude+AI&hl=fr&gl=FR&ceid=FR:fr",
     "domaine": "IA",
-    "actif": false,
-    "note": "404 lors du test du 05/09/2026 — Anthropic ne semble pas exposer ce flux à cette URL, à re-rechercher."
+    "actif": true,
+    "note": "Anthropic n'expose aucun flux RSS officiel (404 confirmé le 05/09/2026 sur plusieurs URLs plausibles). Solution de repli testée et fonctionnelle le 05/09/2026 : agrégation Google News, à remplacer si Anthropic publie un jour un flux officiel."
   },
   {
     "id": "openai-news",
@@ -42,21 +42,21 @@
   },
   {
     "id": "imf-news",
-    "nom": "FMI — Actualités",
+    "nom": "FMI — actualités (via Google News)",
     "type": "rss",
-    "url": "https://www.imf.org/en/News/rss?language=eng",
+    "url": "https://news.google.com/rss/search?q=FMI+OR+IMF+economie&hl=fr&gl=FR&ceid=FR:fr",
     "domaine": "economie",
-    "actif": false,
-    "note": "403 lors du test du 05/09/2026 — le FMI bloque probablement l'agent HTTP par défaut ; à retester avec un User-Agent navigateur ou via Spiderfoot."
+    "actif": true,
+    "note": "403 confirmé le 05/09/2026 sur le flux officiel, même avec User-Agent navigateur (pare-feu applicatif du FMI, indépendant du User-Agent). Repli Google News testé et fonctionnel le 05/09/2026."
   },
   {
     "id": "oecd-news",
-    "nom": "OCDE — Actualités",
+    "nom": "OCDE — actualités (via Google News)",
     "type": "rss",
-    "url": "https://www.oecd.org/rss/",
+    "url": "https://news.google.com/rss/search?q=OCDE+OR+OECD+economie&hl=fr&gl=FR&ceid=FR:fr",
     "domaine": "economie",
-    "actif": false,
-    "note": "403 lors du test du 05/09/2026 — même cause probable que le FMI."
+    "actif": true,
+    "note": "403 confirmé le 05/09/2026 sur le flux officiel, même cause probable que le FMI. Repli Google News testé et fonctionnel le 05/09/2026."
   },
   {
     "id": "spiderfoot-osint",
