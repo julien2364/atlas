@@ -1,7 +1,21 @@
 "use client";
 
 import { useMemo, useState } from "react";
-import type { FicheHumaine, FicheIA, FicheGap, AxeHumain, AxeIA, Substituabilite } from "@/lib/types";
+import type { FicheHumaine, FicheIA, FicheGap, AxeHumain, AxeIA, Substituabilite, ChangelogEntry, SecteurUsage } from "@/lib/types";
+import Treemap, { type TreemapItem } from "@/components/Treemap";
+import RadarChart, { type RadarAxisDatum } from "@/components/RadarChart";
+import FriseChangelog from "@/components/FriseChangelog";
+
+const LABELS_SECTEUR: Record<SecteurUsage, string> = {
+  science: "Science",
+  education: "Éducation",
+  recherche: "Recherche",
+  industrie: "Industrie",
+  pharmaceutique: "Pharmaceutique",
+  gouvernement: "Gouvernement",
+};
+
+const TREEMAP_PALETTE = ["#6366f1", "#14b8a6", "#a855f7", "#f97316", "#ec4899", "#06b6d4", "#84cc16"];
 
 const LABELS_AXE_HUMAIN: Record<AxeHumain, string> = {
   social: "Social",
@@ -80,14 +94,17 @@ export default function CartographieClient({
   humaines,
   ia,
   gaps,
+  changelog,
 }: {
   humaines: FicheHumaine[];
   ia: FicheIA[];
   gaps: FicheGap[];
+  changelog: ChangelogEntry[];
 }) {
   const [axeHumainFiltre, setAxeHumainFiltre] = useState<string | null>(null);
   const [axeIAFiltre, setAxeIAFiltre] = useState<string | null>(null);
   const [gapSelectionne, setGapSelectionne] = useState<string | null>(null);
+  const [treemapAxeSelectionne, setTreemapAxeSelectionne] = useState<string | null>(null);
 
   const humainesDocumentees = useMemo(() => humaines.filter((f) => f.statut === "documente"), [humaines]);
   const iaDocumentees = useMemo(() => ia.filter((f) => f.statut === "documente"), [ia]);
@@ -124,6 +141,48 @@ export default function CartographieClient({
   }, [gaps]);
 
   const gapAffiche = gapSelectionne ? gaps.find((g) => g.id === gapSelectionne) ?? null : null;
+
+  const treemapItems: TreemapItem[] = useMemo(() => {
+    const humainItems = Object.entries(countsHumain).map(([axe, count], i) => ({
+      key: `humain:${axe}`,
+      label: LABELS_AXE_HUMAIN[axe as AxeHumain] ?? axe,
+      value: count,
+      color: TREEMAP_PALETTE[i % TREEMAP_PALETTE.length],
+    }));
+    const iaItems = Object.entries(countsIA).map(([axe, count], i) => ({
+      key: `ia:${axe}`,
+      label: LABELS_AXE_IA[axe as AxeIA] ?? axe,
+      value: count,
+      color: TREEMAP_PALETTE[(i + humainItems.length) % TREEMAP_PALETTE.length],
+    }));
+    return [...humainItems, ...iaItems];
+  }, [countsHumain, countsIA]);
+
+  const treemapAffiche = treemapAxeSelectionne
+    ? treemapAxeSelectionne.startsWith("humain:")
+      ? humaines.filter((f) => f.axe === treemapAxeSelectionne.slice("humain:".length))
+      : ia.filter((f) => f.axe === treemapAxeSelectionne.slice("ia:".length))
+    : [];
+
+  const radarData: RadarAxisDatum[] = useMemo(() => {
+    const bySecteur = new Map<SecteurUsage, { sum: number; count: number }>();
+    ia.forEach((f) => {
+      f.usages?.forEach((u) => {
+        const cur = bySecteur.get(u.secteur) ?? { sum: 0, count: 0 };
+        cur.sum += u.trl;
+        cur.count += 1;
+        bySecteur.set(u.secteur, cur);
+      });
+    });
+    return Array.from(bySecteur.entries())
+      .map(([secteur, { sum, count }]) => ({
+        key: secteur,
+        label: LABELS_SECTEUR[secteur] ?? secteur,
+        value: sum / count,
+        count,
+      }))
+      .sort((a, b) => a.label.localeCompare(b.label));
+  }, [ia]);
 
   return (
     <div className="space-y-10">
@@ -240,11 +299,50 @@ export default function CartographieClient({
         )}
       </section>
 
-      <section className="rounded border border-dashed border-neutral-300 p-4 text-xs text-neutral-500 dark:border-neutral-700">
-        À venir (nécessite des fiches IA documentées avec usages sectoriels renseignés) : heatmap de maturité TRL
-        par secteur (science/éducation/recherche/industrie/pharma/gouvernement) et frise chronologique — section 8
-        du mégaprompt. Non affichés tant qu&apos;aucune donnée réelle n&apos;existe, pour éviter d&apos;inventer des
-        niveaux de maturité.
+      <section>
+        <h3 className="text-sm font-medium">
+          Treemap par domaine — les deux référentiels ({humaines.length + ia.length} fiches)
+        </h3>
+        <p className="mt-1 text-xs text-neutral-500">
+          Surface proportionnelle au nombre de fiches par axe. Cliquer un bloc liste les fiches de cet axe.
+        </p>
+        <div className="mt-3">
+          <Treemap items={treemapItems} selected={treemapAxeSelectionne} onSelect={setTreemapAxeSelectionne} />
+        </div>
+        {treemapAxeSelectionne && (
+          <ul className="mt-3 max-h-56 overflow-y-auto rounded border border-neutral-200 p-2 text-sm dark:border-neutral-800">
+            {treemapAffiche.map((f) => (
+              <li key={f.id} className="flex items-center justify-between px-2 py-1">
+                <span>{f.nom}</span>
+                <span className={`text-xs ${f.statut === "documente" ? "text-emerald-600" : "text-neutral-400"}`}>
+                  {f.statut === "documente" ? "documentée" : "à documenter"}
+                </span>
+              </li>
+            ))}
+          </ul>
+        )}
+      </section>
+
+      <section>
+        <h3 className="text-sm font-medium">Radar de maturité — TRL moyen par secteur d&apos;usage (fiches IA)</h3>
+        <p className="mt-1 text-xs text-neutral-500">
+          Moyenne des TRL (1-9) renseignés dans les usages sectoriels des fiches IA documentées. Un secteur
+          n&apos;apparaît que s&apos;il a au moins une donnée réelle — rien n&apos;est extrapolé.
+        </p>
+        <div className="mt-3 max-w-md">
+          <RadarChart data={radarData} />
+        </div>
+      </section>
+
+      <section>
+        <h3 className="text-sm font-medium">Frise chronologique — évolution du projet</h3>
+        <p className="mt-1 text-xs text-neutral-500">
+          En attendant des dates d&apos;apparition sourcées pour chaque capacité IA (chantier de documentation en
+          cours), cette frise retrace les jalons réels et datés du projet lui-même (changelog).
+        </p>
+        <div className="mt-3">
+          <FriseChangelog entries={changelog} />
+        </div>
       </section>
     </div>
   );

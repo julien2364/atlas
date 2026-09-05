@@ -1,8 +1,9 @@
 import fichesHumaines from "@/data/seed/fiches_humaines";
 import fichesIA from "@/data/seed/fiches_ia.json";
 import fichesGap from "@/data/seed/fiches_gap.json";
+import changelog from "@/data/seed/changelog.json";
 import CartographieClient from "@/components/CartographieClient";
-import type { FicheHumaine, FicheIA, FicheGap } from "@/lib/types";
+import type { FicheHumaine, FicheIA, FicheGap, ChangelogEntry } from "@/lib/types";
 
 export default function CartographiePage() {
   return (
@@ -10,15 +11,16 @@ export default function CartographiePage() {
       <div>
         <h1 className="text-2xl font-semibold">Cartographie</h1>
         <p className="mt-2 max-w-2xl text-sm text-neutral-500">
-          Répartition par axe des deux référentiels, et matrice de gap cliquable sur les paires déjà analysées.
-          Cliquer un segment d&apos;axe liste les fiches qui le composent ; cliquer une cellule de la matrice
-          affiche l&apos;analyse complète.
+          Répartition par axe des deux référentiels (barres et treemap), matrice de gap cliquable, radar de
+          maturité TRL par secteur, et frise chronologique du projet. Cliquer un segment/bloc liste les fiches
+          qui le composent ; cliquer une cellule de la matrice affiche l&apos;analyse complète.
         </p>
       </div>
       <CartographieClient
         humaines={fichesHumaines as FicheHumaine[]}
         ia={fichesIA as FicheIA[]}
         gaps={fichesGap as FicheGap[]}
+        changelog={changelog as ChangelogEntry[]}
       />
     </div>
   );
