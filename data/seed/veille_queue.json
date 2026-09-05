@@ -373,5 +373,90 @@
     "score_fiabilite": 0.9,
     "statut": "en_attente",
     "created_at": "2026-09-05T17:36:12.007Z"
+  },
+  {
+    "id": "b18a5812-822a-473f-8645-6d0c4362f283",
+    "source_id": null,
+    "cible_type": "fiche_humaine",
+    "cible_id": "alain-badiou",
+    "contenu_propose": {
+      "nom": "Alain Badiou",
+      "titre_article_source": "Alain Badiou",
+      "langue_source": "fr",
+      "extrait": "Alain Badiou, né le 17 janvier 1937 à Rabat (Maroc), est un philosophe, romancier et dramaturge français d'inspiration marxiste.",
+      "url": "https://fr.wikipedia.org/wiki/Alain_Badiou",
+      "note": "Résumé Wikipédia brut — à reformuler en these_centrale/apport/limites_critiques (fiche humaine) ou capacites_cles/limites_connues (fiche IA) avant validation. Ne jamais publier tel quel sans relecture."
+    },
+    "score_fiabilite": 0.5,
+    "statut": "en_attente",
+    "created_at": "2026-09-05T19:00:11.865Z"
+  },
+  {
+    "id": "8475d0f4-47ee-40c7-aeb3-396b76c01fa7",
+    "source_id": null,
+    "cible_type": "fiche_humaine",
+    "cible_id": "albert-camus",
+    "contenu_propose": {
+      "nom": "Albert Camus",
+      "titre_article_source": "Albert Camus",
+      "langue_source": "fr",
+      "extrait": "Albert Camus, né le 7 novembre 1913 à Mondovi, dans le département de Constantine, en Algérie, alors territoire français, et mort dans un accident de voiture le 4 janvier 1960 à Villeblevin (Yonne), est un philosophe, écrivain, journaliste militant, romancier, dramaturge, essayiste et nouvelliste français, lauréat du prix Nobel de littérature en 1957.",
+      "url": "https://fr.wikipedia.org/wiki/Albert_Camus",
+      "note": "Résumé Wikipédia brut — à reformuler en these_centrale/apport/limites_critiques (fiche humaine) ou capacites_cles/limites_connues (fiche IA) avant validation. Ne jamais publier tel quel sans relecture."
+    },
+    "score_fiabilite": 0.5,
+    "statut": "en_attente",
+    "created_at": "2026-09-05T19:00:12.406Z"
+  },
+  {
+    "id": "8905ca43-d2ad-4625-896a-9cb07d1ab0b5",
+    "source_id": null,
+    "cible_type": "fiche_humaine",
+    "cible_id": "antonio-negri",
+    "contenu_propose": {
+      "nom": "Antonio Negri",
+      "titre_article_source": "Toni Negri",
+      "langue_source": "fr",
+      "extrait": "Antonio Negri dit Toni Negri, né le 1er août 1933 à Padoue en Italie et mort le 16 décembre 2023 à Villejuif, est un philosophe, sociologue et homme politique italien. Il est l'un des principaux animateurs de l'opéraïsme, un courant marxiste italien.",
+      "url": "https://fr.wikipedia.org/wiki/Toni_Negri",
+      "note": "Résumé Wikipédia brut — à reformuler en these_centrale/apport/limites_critiques (fiche humaine) ou capacites_cles/limites_connues (fiche IA) avant validation. Ne jamais publier tel quel sans relecture."
+    },
+    "score_fiabilite": 0.5,
+    "statut": "en_attente",
+    "created_at": "2026-09-05T19:00:12.902Z"
+  },
+  {
+    "id": "6f5905da-ba11-449e-8426-b871f38d3157",
+    "source_id": null,
+    "cible_type": "fiche_humaine",
+    "cible_id": "axel-honneth",
+    "contenu_propose": {
+      "nom": "Axel Honneth",
+      "titre_article_source": "Axel Honneth",
+      "langue_source": "fr",
+      "extrait": "Axel Honneth, né le 18 juillet 1949 à Essen, est un philosophe et sociologue allemand. Il est professeur de philosophie à l'université Goethe de Francfort et professeur de sciences humaines au département de philosophie de l'université Columbia à New York. Il a également été directeur de l'Institut für Sozialforschung à Francfort-sur-le-Main, en Allemagne, entre 2001 et 2018 — connu pour avoir hébergé l'École de Francfort.",
+      "url": "https://fr.wikipedia.org/wiki/Axel_Honneth",
+      "note": "Résumé Wikipédia brut — à reformuler en these_centrale/apport/limites_critiques (fiche humaine) ou capacites_cles/limites_connues (fiche IA) avant validation. Ne jamais publier tel quel sans relecture."
+    },
+    "score_fiabilite": 0.5,
+    "statut": "en_attente",
+    "created_at": "2026-09-05T19:00:13.401Z"
+  },
+  {
+    "id": "2e07612e-f177-437e-877a-25bd025411f0",
+    "source_id": null,
+    "cible_type": "fiche_humaine",
+    "cible_id": "bernard-stiegler",
+    "contenu_propose": {
+      "nom": "Bernard Stiegler",
+      "titre_article_source": "Bernard Stiegler",
+      "langue_source": "fr",
+      "extrait": "Bernard Stiegler, né le 1er avril 1952 à Villebon-sur-Yvette (Seine-et-Oise) et mort le 5 août 2020 à Épineuil-le-Fleuriel (Cher), est un philosophe français dont la réflexion porte sur les mutations sociales, politiques, économiques et psychologiques induites par le développement technologique, en particulier les technologies numériques.",
+      "url": "https://fr.wikipedia.org/wiki/Bernard_Stiegler",
+      "note": "Résumé Wikipédia brut — à reformuler en these_centrale/apport/limites_critiques (fiche humaine) ou capacites_cles/limites_connues (fiche IA) avant validation. Ne jamais publier tel quel sans relecture."
+    },
+    "score_fiabilite": 0.5,
+    "statut": "en_attente",
+    "created_at": "2026-09-05T19:00:13.893Z"
   }
 ]

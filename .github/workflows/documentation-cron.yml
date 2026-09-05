@@ -1,0 +1,45 @@
+name: Documentation en masse (recherche Wikipédia)
+
+on:
+  schedule:
+    # 07h30 UTC chaque jour (juste après la veille RSS de 07h00) — cf. docs/comment-lancer.md.
+    - cron: "30 7 * * *"
+  workflow_dispatch:
+    inputs:
+      limite:
+        description: "Nombre de fiches à traiter ce run"
+        required: false
+        default: "15"
+
+permissions:
+  contents: write
+
+jobs:
+  documentation:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 1
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+
+      - name: Installer les dépendances
+        run: npm ci
+
+      - name: Rechercher de la documentation réelle (Wikipédia) pour les fiches "à documenter"
+        run: node scripts/documentation-recherche.mjs --limite=${{ github.event.inputs.limite || '15' }}
+
+      - name: Committer les nouvelles propositions (s'il y en a)
+        run: |
+          git config user.name "atlas-documentation-bot"
+          git config user.email "documentation-bot@users.noreply.github.com"
+          if git diff --quiet -- data/seed/veille_queue.json; then
+            echo "Aucun changement — rien à committer."
+          else
+            git add data/seed/veille_queue.json
+            git commit -m "chore(documentation): nouvelles propositions de recherche documentaire [skip ci]"
+            git push
+          fi
