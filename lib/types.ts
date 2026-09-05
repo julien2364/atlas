@@ -100,3 +100,27 @@ export interface ChangelogEntry {
   resume: string;
   source?: Source;
 }
+
+// Questions (section 7.3 / Lot 8) — chaque question peut être lue sous plusieurs
+// modèles/écoles de pensée, jamais un seul verdict (cf. principe de neutralité
+// active, /methodologie). Même logique que scenario_present/5ans/15_20ans des
+// fiches de gap : on nomme explicitement le degré de certitude plutôt que de le
+// laisser implicite.
+export interface Perspective {
+  modele: string; // nom de l'école/du cadre théorique, ex. "Keynésianisme", "École autrichienne"
+  hypotheses: string; // postulats de départ du modèle (ce qu'il faut accepter pour que la réponse tienne)
+  etat_actuel: string; // ce que les faits/données établies montrent aujourd'hui, indépendamment du modèle
+  reponse: string; // ce que ce modèle répond à la question posée
+  justification: string; // pourquoi cette réponse découle des hypothèses + de l'état actuel
+  limites: string; // ce que ce modèle n'explique pas ou explique mal
+  sources: Source[];
+  niveau_confiance: NiveauConfiance;
+}
+
+export interface Question {
+  id: string;
+  question: string;
+  sous_questions?: string[];
+  axes_recherche?: string[];
+  perspectives: Perspective[];
+}

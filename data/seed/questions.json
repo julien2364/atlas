@@ -1,0 +1,187 @@
+[
+  {
+    "id": "modeles-economiques-optimaux",
+    "question": "Les modèles économiques mondiaux actuels sont-ils optimaux ? Quel modèle pourrait les surpasser ?",
+    "sous_questions": [
+      "Existe-t-il un critère objectif d'« optimalité » économique, ou seulement des arbitrages de valeurs ?",
+      "Quels indicateurs retenir — PIB, bien-être (IDH), inégalité (Gini), soutenabilité écologique ?",
+      "Les alternatives hétérodoxes (économie du donut, MMT, critique des plateformes) sont-elles des remplacements complets ou des correctifs partiels ?"
+    ],
+    "axes_recherche": ["Économie comparée", "Indicateurs de bien-être vs. PIB", "Économie hétérodoxe (post-keynésianisme, MMT, décroissance)"],
+    "perspectives": [
+      {
+        "modele": "Économie de marché régulée (social-démocratie nordique)",
+        "hypotheses": "Le marché alloue les ressources efficacement, mais nécessite une redistribution et des filets de sécurité publics forts pour rester stable et légitime socialement.",
+        "etat_actuel": "Les pays nordiques (Danemark, Suède, Norvège, Finlande) occupent durablement le haut des classements de bien-être, de faible inégalité et de confiance institutionnelle.",
+        "reponse": "Optimal sur les critères de bien-être et d'équité, au prix d'une pression fiscale élevée et d'un contexte (petite taille, homogénéité relative) qui facilite le consensus social.",
+        "justification": "Corrélation documentée sur plusieurs décennies entre dépense sociale élevée, faible inégalité (Gini) et indicateurs de bien-être dans ces pays.",
+        "limites": "Réplicabilité incertaine à grande échelle (Chine, Inde, États-Unis) où l'hétérogénéité démographique et culturelle rend ce consensus plus difficile à reproduire.",
+        "sources": [{ "titre": "Social-démocratie", "url": "https://fr.wikipedia.org/wiki/Social-d%C3%A9mocratie", "type": "secondaire" }],
+        "niveau_confiance": "opinion_majoritaire"
+      },
+      {
+        "modele": "Capitalisme d'État chinois",
+        "hypotheses": "Un État fort peut piloter des priorités économiques de long terme (industrialisation, réduction de la pauvreté) plus efficacement qu'un marché non régulé ou qu'une démocratie électorale à horizon court.",
+        "etat_actuel": "Plus de 800 millions de personnes sorties de la pauvreté extrême depuis 1978 (Banque mondiale) ; croissance du PIB soutenue sur quatre décennies, ralentie depuis le milieu des années 2020.",
+        "reponse": "Optimal sur le critère de croissance et de réduction de la pauvreté à grande échelle, au prix de libertés politiques restreintes et d'une soutenabilité de long terme débattue (dette des collectivités locales, démographie, gouvernance).",
+        "justification": "Les chiffres de croissance et de réduction de pauvreté sont vérifiables et documentés par la Banque mondiale et l'ONU ; le jugement sur le « prix à payer » relève d'un arbitrage de valeurs, pas d'un fait.",
+        "limites": "Transparence statistique limitée, ralentissement récent (immobilier, démographie vieillissante), difficilement généralisable sans un appareil d'État comparable.",
+        "sources": [{ "titre": "Économie de la Chine", "url": "https://fr.wikipedia.org/wiki/%C3%89conomie_de_la_Chine", "type": "secondaire" }],
+        "niveau_confiance": "opinion_majoritaire"
+      },
+      {
+        "modele": "Critiques hétérodoxes (économie du donut, MMT, critique des plateformes)",
+        "hypotheses": "La croissance du PIB comme finalité est le mauvais critère : il faut respecter un plafond écologique (limites planétaires) tout en garantissant un plancher social.",
+        "etat_actuel": "Ces cadres influencent des politiques publiques concrètes (Amsterdam a officiellement adopté le modèle du donut) mais aucun grand État n'a basculé son pilotage macroéconomique sur ces critères.",
+        "reponse": "Aucun de ces cadres ne prétend remplacer intégralement le capitalisme de marché ou le capitalisme d'État : ce sont des correctifs partiels, chacun répondant à un défaut spécifique (soutenabilité pour le donut, marge de manœuvre budgétaire pour la MMT, rente numérique pour la critique des plateformes).",
+        "justification": "Absence de test à l'échelle d'une économie nationale complète sur un cycle économique long — leur généralisation reste une hypothèse, pas un résultat observé.",
+        "limites": "Risque d'inflation non maîtrisée pour la MMT selon ses détracteurs (école autrichienne, monétaristes) ; le modèle du donut reste surtout appliqué au niveau municipal.",
+        "sources": [{ "titre": "Théorie du donut", "url": "https://fr.wikipedia.org/wiki/Th%C3%A9orie_du_donut", "type": "secondaire" }],
+        "niveau_confiance": "hypothese_prospective"
+      }
+    ]
+  },
+  {
+    "id": "futurs-modeles-gouvernance",
+    "question": "Quels futurs modèles de gouvernance nationale et mondiale sont plausibles ?",
+    "sous_questions": [
+      "La multipolarité géopolitique va-t-elle s'accompagner d'une remise en cause des institutions multilatérales historiques ?",
+      "Les institutions type ONU/OMC/FMI peuvent-elles se réformer plus vite qu'elles ne perdent en légitimité ?"
+    ],
+    "axes_recherche": ["Relations internationales (réalisme vs. institutionnalisme libéral)", "Trajectoires de PIB relatif (FMI, Banque mondiale)", "Gouvernance multi-niveaux"],
+    "perspectives": [
+      {
+        "modele": "Multipolarité concurrente (école réaliste des relations internationales)",
+        "hypotheses": "Les États agissent d'abord selon leurs intérêts de puissance ; l'unipolarité américaine post-1991 s'érode structurellement avec la montée de pôles de puissance comparables.",
+        "etat_actuel": "Part croissante du PIB mondial en parité de pouvoir d'achat détenue par les BRICS+ ; multiplication des blocs régionaux (Union africaine, ASEAN, Mercosur, Organisation de coopération de Shanghai).",
+        "reponse": "Un monde multipolaire avec plusieurs pôles de puissance (États-Unis, Chine, Union européenne, Inde...) coexistant sans hégémon unique est le scénario le plus cohérent avec les trajectoires actuelles.",
+        "justification": "Extrapolation directe des trajectoires de PIB relatif documentées par le FMI et la Banque mondiale.",
+        "limites": "Ne prédit pas si cette multipolarité sera coopérative ou conflictuelle — c'est une description structurelle, pas un pronostic de stabilité.",
+        "sources": [{ "titre": "BRICS+", "url": "https://fr.wikipedia.org/wiki/BRICS%2B", "type": "secondaire" }],
+        "niveau_confiance": "hypothese_prospective"
+      },
+      {
+        "modele": "Persistance et réforme du multilatéralisme (école libérale-institutionnaliste)",
+        "hypotheses": "Les institutions internationales créent une dépendance de chemin et des gains de coopération qui rendent leur disparition improbable, même quand elles sont imparfaites.",
+        "etat_actuel": "Aucune institution multilatérale majeure n'a été dissoute depuis 1945 malgré des crises de légitimité répétées (blocages du Conseil de sécurité de l'ONU, paralysie de l'organe d'appel de l'OMC depuis 2019).",
+        "reponse": "Les institutions existantes se maintiennent et se réforment lentement par ajout de structures parallèles (G20, BRICS+, nouvelles banques de développement) plutôt que par remplacement.",
+        "justification": "Le pattern historique observé depuis 1945 est l'accumulation d'institutions plutôt que leur substitution pure et simple.",
+        "limites": "N'explique pas bien les cas de retrait unilatéral (sorties d'accords ou d'organisations), qui pourraient s'accélérer.",
+        "sources": [{ "titre": "Organisation des Nations unies", "url": "https://fr.wikipedia.org/wiki/Organisation_des_Nations_unies", "type": "secondaire" }],
+        "niveau_confiance": "opinion_majoritaire"
+      },
+      {
+        "modele": "Neutralité active du référentiel (refus de trancher)",
+        "hypotheses": "Prédire quel modèle « gagnera » relève d'un pari politique, pas d'un fait vérifiable.",
+        "etat_actuel": "Les deux tendances ci-dessus sont observées simultanément et ne s'excluent pas nécessairement.",
+        "reponse": "Ce référentiel ne tranche pas entre les deux scénarios ci-dessus — ils sont concurrents et également documentés ; leur poids relatif futur reste une question ouverte.",
+        "justification": "Cf. principe de neutralité active (page /methodologie).",
+        "limites": "Ne fournit pas de réponse opérationnelle à qui cherche une prédiction unique.",
+        "sources": [],
+        "niveau_confiance": "hypothese_prospective"
+      }
+    ]
+  },
+  {
+    "id": "capitalisme-communisme-modele-chinois",
+    "question": "Comment comparer l'évolution du capitalisme, du communisme et du modèle chinois (capitalisme d'État) ?",
+    "sous_questions": [
+      "Le capitalisme d'État chinois est-il une variante du capitalisme ou un système à part ?",
+      "L'appareil critique marxiste survit-il à la disparition des économies communistes d'État ?"
+    ],
+    "axes_recherche": ["Histoire économique comparée depuis 1945", "Théorie critique (École de Francfort et héritiers)", "Trajectoires post-1991"],
+    "perspectives": [
+      {
+        "modele": "Capitalisme (marché libre à régulé)",
+        "hypotheses": "La propriété privée des moyens de production et la coordination par les prix sont plus efficaces que la planification centrale pour allouer les ressources.",
+        "etat_actuel": "Dominant depuis l'effondrement du bloc soviétique en 1991, en tension interne persistante entre une version libérale (États-Unis) et une version régulée (Union européenne, pays nordiques).",
+        "reponse": "Le capitalisme reste le cadre de référence mondial, mais il n'est pas monolithique : ses variantes internes divergent autant entre elles qu'avec d'autres systèmes sur les résultats sociaux.",
+        "justification": "Écart documenté des indices de Gini et de dépense sociale entre économies capitalistes (ex. États-Unis vs. Danemark) malgré un cadre de propriété privée commun.",
+        "limites": "N'explique pas seul les crises financières récurrentes (2008) ni la financiarisation croissante de l'économie.",
+        "sources": [{ "titre": "Capitalisme", "url": "https://fr.wikipedia.org/wiki/Capitalisme", "type": "secondaire" }],
+        "niveau_confiance": "consensus_scientifique"
+      },
+      {
+        "modele": "Communisme / marxisme-léninisme",
+        "hypotheses": "La propriété collective des moyens de production, planifiée par l'État-parti, doit supprimer l'exploitation capitaliste et l'aliénation qui en découle.",
+        "etat_actuel": "Quasi disparu comme système économique d'État (à l'exception de variantes très hybrides comme Cuba ou la Corée du Nord) depuis 1991.",
+        "reponse": "Le marxisme-léninisme a échoué comme système économique national à grande échelle, mais son appareil critique (analyse des rapports de production, de l'aliénation, de l'exploitation) reste actif en sciences sociales via la théorie critique contemporaine.",
+        "justification": "Effondrement économique et politique documenté du bloc soviétique et de ses satellites entre 1989 et 1991 ; persistance académique visible (théorie critique, penseurs comme Honneth ou Negri).",
+        "limites": "Le constat d'échec économique du système d'État ne réfute pas nécessairement chaque élément de l'analyse critique qui lui est associée — les deux plans (système économique vs. outil d'analyse) sont souvent confondus dans le débat public.",
+        "sources": [{ "titre": "Marxisme-léninisme", "url": "https://fr.wikipedia.org/wiki/Marxisme-l%C3%A9ninisme", "type": "secondaire" }],
+        "niveau_confiance": "consensus_scientifique"
+      },
+      {
+        "modele": "Capitalisme d'État chinois",
+        "hypotheses": "Un parti unique peut combiner propriété privée partielle, marché et planification stratégique de long terme sans adopter le pluralisme politique libéral.",
+        "etat_actuel": "Synthèse testée depuis les réformes de Deng Xiaoping (à partir de 1978), dont la soutenabilité de long terme (dette, démographie, gouvernance) est débattue plutôt que tranchée par les économistes.",
+        "reponse": "Ni un capitalisme de marché classique ni un communisme d'État au sens soviétique : un système hybride original dont le bilan (croissance forte, libertés politiques restreintes) dépend entièrement des critères retenus pour l'évaluer.",
+        "justification": "Coexistence documentée de mécanismes de marché (bourses, entreprises privées, concurrence) et de contrôle politique centralisé (planification quinquennale, entreprises d'État stratégiques).",
+        "limites": "Manque de recul historique sur sa capacité à traverser une crise économique majeure sans réforme politique — contrairement au bloc soviétique, il n'a pas encore connu son « moment 1991 ».",
+        "sources": [{ "titre": "Économie de la Chine", "url": "https://fr.wikipedia.org/wiki/%C3%89conomie_de_la_Chine", "type": "secondaire" }],
+        "niveau_confiance": "opinion_majoritaire"
+      }
+    ]
+  },
+  {
+    "id": "philosophie-comparee-bien-vivre",
+    "question": "Comment se comparent les référentiels psychologiques/philosophiques de Spinoza, Socrate, Aristote, la TCC et Nietzsche sur la question du bien-vivre ?",
+    "sous_questions": [
+      "Ces quatre théories du bien-vivre sont-elles concurrentes ou complémentaires ?",
+      "Une théorie clinique empiriquement testée (TCC) peut-elle être comparée directement à des théories métaphysiques ?"
+    ],
+    "axes_recherche": ["Éthique du bien-vivre (eudémonisme, rationalisme, vitalisme)", "Psychologie clinique fondée sur la preuve", "Référentiel humain — axe philosophique et psychologique"],
+    "perspectives": [
+      {
+        "modele": "Aristote (eudémonisme)",
+        "hypotheses": "Le bien-vivre (eudaimonia) s'atteint par l'exercice habituel de la vertu, guidé par la raison, dans une vie sociale (la cité).",
+        "etat_actuel": "Cadre fondateur de l'éthique des vertus, aujourd'hui relancé en philosophie morale contemporaine (Anscombe, MacIntyre) face aux éthiques déontologique et conséquentialiste.",
+        "reponse": "Le bien-vivre est une activité (praxis) répétée qui façonne le caractère, pas un état ou un plaisir ponctuel — la vertu s'apprend comme une compétence.",
+        "justification": "Argumentation développée sur l'ensemble de l'Éthique à Nicomaque : la vertu comme disposition stable acquise par la pratique répétée d'actes vertueux.",
+        "limites": "Suppose un contexte social (la cité grecque) et une conception figée des vertus qui a été critiquée comme culturellement située.",
+        "sources": [{ "titre": "Éthique à Nicomaque", "type": "primaire" }],
+        "niveau_confiance": "consensus_scientifique"
+      },
+      {
+        "modele": "Socrate (examen critique de soi)",
+        "hypotheses": "« Une vie sans examen ne vaut pas la peine d'être vécue » : le bien-vivre suppose d'interroger sans cesse ses propres croyances plutôt que de s'y fier sans les questionner.",
+        "etat_actuel": "Méthode maïeutique et ironie socratique restent des références directes en pédagogie, en thérapie par le dialogue et dans l'esprit critique enseigné en philosophie.",
+        "reponse": "Le bien-vivre passe par la reconnaissance de sa propre ignorance (« je sais que je ne sais rien ») comme point de départ, non comme un aveu d'échec.",
+        "justification": "Rapporté principalement par les dialogues de Platon (Apologie de Socrate, Ménon) : la méthode consiste à faire accoucher l'interlocuteur de ses propres contradictions.",
+        "limites": "Socrate n'ayant rien écrit lui-même, sa pensée nous parvient filtrée par Platon et Xénophon — la part exacte de reconstruction platonicienne reste débattue par les historiens de la philosophie.",
+        "sources": [{ "titre": "Apologie de Socrate (Platon)", "type": "primaire" }],
+        "niveau_confiance": "consensus_scientifique"
+      },
+      {
+        "modele": "Spinoza (béatitude rationnelle)",
+        "hypotheses": "Les affects (passions) nous asservissent tant qu'ils restent des idées confuses ; comprendre rationnellement leurs causes (nécessité de la nature) libère et produit la béatitude.",
+        "etat_actuel": "L'Éthique (1677) reste étudiée comme l'une des tentatives les plus rigoureuses de fonder une éthique sur une métaphysique déterministe, influente en philosophie de l'esprit contemporaine.",
+        "reponse": "Le bien-vivre est la compréhension rationnelle croissante de sa propre place dans un ordre nécessaire (la Nature/Dieu), pas la maîtrise volontariste des passions par la seule volonté.",
+        "justification": "Démonstration géométrique construite dans l'Éthique : la connaissance du troisième genre (intuition rationnelle) comme voie vers la « joie » stable.",
+        "limites": "Déterminisme intégral difficile à concilier avec l'expérience ordinaire de la liberté de choix ; style géométrique très exigeant, peu accessible.",
+        "sources": [{ "titre": "Éthique (Spinoza)", "type": "primaire" }],
+        "niveau_confiance": "consensus_scientifique"
+      },
+      {
+        "modele": "Nietzsche (affirmation par la volonté de puissance)",
+        "hypotheses": "La morale traditionnelle (en particulier chrétienne) est une construction historique de ressentiment ; l'affirmation de la vie passe par la création de valeurs nouvelles, pas leur simple obéissance.",
+        "etat_actuel": "Cf. fiche dédiée dans /referentiel-humain (axe philosophique) — influence durable sur l'existentialisme et la critique de la morale au XXe siècle.",
+        "reponse": "Le bien-vivre n'est pas la vertu stable (Aristote) ni la paix rationnelle (Spinoza) mais l'affirmation active de sa propre existence, y compris ses aspects tragiques (« devenir ce que l'on est »).",
+        "justification": "Généalogie de la morale : la morale du ressentiment inverse les valeurs des forts et des faibles ; s'en affranchir est la condition de l'affirmation.",
+        "limites": "Style aphoristique difficile à systématiser ; absence de programme éthique positif clair, historiquement instrumentalisé de façon déformée.",
+        "sources": [{ "titre": "Généalogie de la morale", "type": "primaire" }],
+        "niveau_confiance": "consensus_scientifique"
+      },
+      {
+        "modele": "TCC — thérapie cognitivo-comportementale",
+        "hypotheses": "Les pensées automatiques et schémas cognitifs biaisés causent une part importante de la souffrance psychologique ; les restructurer (par des protocoles testés) réduit mesurablement cette souffrance.",
+        "etat_actuel": "Efficacité mesurée par essais contrôlés randomisés pour l'anxiété, la dépression et plusieurs troubles spécifiques ; recommandée en première ligne par de nombreuses autorités de santé.",
+        "reponse": "Le bien-être psychologique s'améliore en identifiant et corrigeant des distorsions cognitives spécifiques (généralisation excessive, pensée dichotomique...), indépendamment de toute théorie métaphysique du bien.",
+        "justification": "Corpus d'essais cliniques randomisés et de méta-analyses en psychologie clinique, contrairement aux trois approches philosophiques ci-dessus qui reposent sur l'argumentation plutôt que la mesure.",
+        "limites": "Répond à la souffrance psychologique diagnostiquée, pas à la question philosophique plus large du sens ou de la vie bonne ; comparaison directe avec Aristote/Spinoza/Nietzsche limitée par la différence de méthode (clinique testée vs. métaphysique argumentée).",
+        "sources": [{ "titre": "Thérapie cognitivo-comportementale", "url": "https://fr.wikipedia.org/wiki/Th%C3%A9rapie_cognitivo-comportementale", "type": "secondaire" }],
+        "niveau_confiance": "consensus_scientifique"
+      }
+    ]
+  }
+]
