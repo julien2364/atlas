@@ -13,7 +13,45 @@
     "scenario_15_20ans": "Reste une dimension jugée irréductiblement humaine dans le débat philosophique dominant (cf. B5 — absence de vécu subjectif), sauf rupture théorique majeure sur la question de la conscience artificielle.",
     "confiance": "moyenne",
     "statut": "documente",
-    "derniere_verification": "2026-09-05"
+    "derniere_verification": "2026-09-05",
+    "sujet": "Accompagnement philosophique et pédagogie de la pensée critique",
+    "sous_themes": [
+      "Vulgarisation et mise en relation de doctrines philosophiques",
+      "Tutorat socratique assisté par IA",
+      "Risque de paraphrase approximative des concepts"
+    ],
+    "axes_recherche": [
+      "RAG sur éditions critiques sourcées vs. mémoire paramétrique seule",
+      "Évaluation de la fidélité conceptuelle des résumés IA face à des spécialistes",
+      "Frontière entre outil d'exposition et autorité de jugement moral"
+    ],
+    "documents_cles": [
+      {
+        "titre": "Ainsi parlait Zarathoustra",
+        "type": "primaire"
+      },
+      {
+        "titre": "Généalogie de la morale",
+        "type": "primaire"
+      }
+    ],
+    "axes_prospectifs": [
+      {
+        "nom": "Tuteur philosophique augmenté",
+        "description": "Généralisation de tuteurs IA avec RAG sur éditions critiques et citations vérifiées, cadrés comme outils d'exposition en éducation.",
+        "niveau_confiance": "opinion_majoritaire"
+      },
+      {
+        "nom": "Statu quo encadré",
+        "description": "L'usage reste cantonné à un rôle d'assistance documentaire strictement supervisé, sans évolution notable du rapport outil/apprenant.",
+        "niveau_confiance": "opinion_majoritaire"
+      },
+      {
+        "nom": "Rupture sur la conscience artificielle",
+        "description": "Un consensus scientifique émergent sur une forme de vécu subjectif chez certains systèmes IA remettrait directement en cause la frontière « non remplaçable » de ce comparatif.",
+        "niveau_confiance": "hypothese_prospective"
+      }
+    ]
   },
   {
     "id": "capitalisme-etat-chinois-vs-deepseek",
@@ -30,7 +68,36 @@
     "scenario_15_20ans": "Scénario incertain — dépend fortement de trajectoires géopolitiques non prévisibles avec un niveau de confiance élevé.",
     "confiance": "faible",
     "statut": "documente",
-    "derniere_verification": "2026-09-05"
+    "derniere_verification": "2026-09-05",
+    "sujet": "Modèles de gouvernance économique et trajectoires d'innovation IA nationale",
+    "sous_themes": [
+      "Politique industrielle et financement public de la recherche IA",
+      "Stratégie open-weights comme levier d'influence géopolitique",
+      "Comparaison des trajectoires UE / États-Unis / Chine"
+    ],
+    "axes_recherche": [
+      "Veille continue de la politique industrielle IA chinoise vs. américaine et européenne",
+      "Corrélation entre modèle de financement (public/privé) et rythme d'innovation",
+      "Impact des contrôles à l'export de semi-conducteurs sur la trajectoire chinoise"
+    ],
+    "documents_cles": [],
+    "axes_prospectifs": [
+      {
+        "nom": "Convergence technique, divergence politique",
+        "description": "Convergence partielle sur les standards techniques (formats open-weights, benchmarks) malgré une divergence persistante des modèles de gouvernance politique.",
+        "niveau_confiance": "opinion_majoritaire"
+      },
+      {
+        "nom": "Fragmentation en blocs technologiques",
+        "description": "Consolidation de deux écosystèmes IA largement séparés (occidental et chinois) avec une interopérabilité réduite, sous l'effet des contrôles à l'export et des impératifs de souveraineté.",
+        "niveau_confiance": "hypothese_prospective"
+      },
+      {
+        "nom": "Rattrapage par le financement public occidental",
+        "description": "Réponse des blocs occidentaux par un investissement public accru, réduisant l'écart de coût mis en avant par DeepSeek.",
+        "niveau_confiance": "hypothese_prospective"
+      }
+    ]
   },
   {
     "id": "taylorisme-vs-claude-cowork",
@@ -46,7 +113,41 @@
     "scenario_15_20ans": "Le geste industriel répétitif mesurable devient un cas d'école de tâche entièrement pilotée par IA, la question résiduelle étant sociale (acceptabilité, emploi) plus que technique.",
     "confiance": "elevee",
     "statut": "documente",
-    "derniere_verification": "2026-09-05"
+    "derniere_verification": "2026-09-05",
+    "sujet": "Automatisation de la mesure et de l'optimisation du geste de travail industriel",
+    "sous_themes": [
+      "Instrumentation du poste de travail (capteurs, vision par ordinateur)",
+      "Boucle d'amélioration continue vs. méthode figée",
+      "Acceptabilité sociale de la surveillance algorithmique du travail"
+    ],
+    "axes_recherche": [
+      "Coût d'instrumentation vs. gains de productivité par secteur",
+      "Cadre légal de la surveillance algorithmique du travail (droit du travail, RGPD)",
+      "Comparaison avec le panoptique foucaldien (cf. fiche Michel Foucault)"
+    ],
+    "documents_cles": [
+      {
+        "titre": "Les Principes de la direction scientifique des entreprises (F. W. Taylor)",
+        "type": "primaire"
+      }
+    ],
+    "axes_prospectifs": [
+      {
+        "nom": "Généralisation manufacturière",
+        "description": "Diffusion large dans l'industrie manufacturière à forte répétitivité de geste, portée par la baisse du coût des capteurs et de la vision par ordinateur.",
+        "niveau_confiance": "opinion_majoritaire"
+      },
+      {
+        "nom": "Résistance sociale et cadre légal renforcé",
+        "description": "Encadrement légal renforcé de la surveillance algorithmique du travail freinant la diffusion malgré la faisabilité technique.",
+        "niveau_confiance": "hypothese_prospective"
+      },
+      {
+        "nom": "Bascule vers l'amélioration continue auto-pilotée",
+        "description": "Dépassement du taylorisme classique lui-même : la méthode n'est plus figée une fois mesurée, mais réajustée en continu par le système — un changement de nature, pas seulement de degré.",
+        "niveau_confiance": "hypothese_prospective"
+      }
+    ]
   },
   {
     "id": "okr-vs-claude-cowork",
@@ -62,7 +163,36 @@
     "scenario_15_20ans": "L'arbitrage des priorités stratégiques (quel Objective choisir) reste un jugement de valeur organisationnel, donc humain, même si sa mise en musique est largement automatisée.",
     "confiance": "moyenne",
     "statut": "documente",
-    "derniere_verification": "2026-09-05"
+    "derniere_verification": "2026-09-05",
+    "sujet": "Automatisation du pilotage d'objectifs organisationnels (gestion de la performance)",
+    "sous_themes": [
+      "Rédaction assistée d'objectifs mesurables",
+      "Reporting automatisé à partir d'outils connectés",
+      "Arbitrage stratégique humain vs. suivi opérationnel automatisé"
+    ],
+    "axes_recherche": [
+      "Intégration API avec les outils de suivi (Jira, Asana, tableurs)",
+      "Fiabilité du calcul d'avancement automatique vs. déclaratif",
+      "Risque de sur-optimisation des métriques (effet Goodhart) quand le reporting est automatisé"
+    ],
+    "documents_cles": [],
+    "axes_prospectifs": [
+      {
+        "nom": "Reporting continu généralisé",
+        "description": "Suivi d'OKR en continu avec alertes automatiques d'écart, réduisant fortement le temps de reporting managérial.",
+        "niveau_confiance": "opinion_majoritaire"
+      },
+      {
+        "nom": "Persistance de l'arbitrage stratégique humain",
+        "description": "Le choix des Objectives eux-mêmes reste un jugement de valeur organisationnel humain même quand leur suivi est intégralement automatisé.",
+        "niveau_confiance": "opinion_majoritaire"
+      },
+      {
+        "nom": "Risque de sur-optimisation des métriques",
+        "description": "Un reporting automatisé pourrait pousser à choisir des Key Results plus faciles à mesurer plutôt que les plus pertinents stratégiquement.",
+        "niveau_confiance": "hypothese_prospective"
+      }
+    ]
   },
   {
     "id": "socrate-vs-claude-cowork",
@@ -78,7 +208,45 @@
     "scenario_15_20ans": "Le dialogue socratique automatisé pourrait devenir un standard pédagogique assisté par IA, mais la dimension existentielle (l'examen de sa propre vie, au risque de sa vie) reste jugée irréductible à une fonction de dialogue.",
     "confiance": "moyenne",
     "statut": "documente",
-    "derniere_verification": "2026-09-05"
+    "derniere_verification": "2026-09-05",
+    "sujet": "Méthode maïeutique et facilitation de la réflexion critique",
+    "sous_themes": [
+      "Simulation formelle du dialogue socratique",
+      "Garde-fous contre la tentation de « donner la réponse » trop vite",
+      "Dimension existentielle de l'examen de soi"
+    ],
+    "axes_recherche": [
+      "Prompting/entraînement calibré pour privilégier la question à l'assertion",
+      "Mesure de l'impact pédagogique réel du tutorat maïeutique assisté par IA",
+      "Comparaison avec les fiches Aristote et TCC sur la méthode de progression"
+    ],
+    "documents_cles": [
+      {
+        "titre": "Apologie de Socrate (Platon)",
+        "type": "primaire"
+      },
+      {
+        "titre": "Ménon (Platon)",
+        "type": "primaire"
+      }
+    ],
+    "axes_prospectifs": [
+      {
+        "nom": "Standard pédagogique maïeutique assisté",
+        "description": "Le dialogue socratique automatisé devient un standard pédagogique assisté par IA, cadré comme facilitateur de réflexion et non comme autorité de vérité.",
+        "niveau_confiance": "opinion_majoritaire"
+      },
+      {
+        "nom": "Persistance de l'irréductibilité existentielle",
+        "description": "La dimension existentielle de la méthode socratique (l'examen de sa propre vie, au risque de sa vie selon l'Apologie) reste jugée irréductible à une fonction de dialogue.",
+        "niveau_confiance": "opinion_majoritaire"
+      },
+      {
+        "nom": "Usage dégradé en substitut de pensée",
+        "description": "Risque inverse documenté en éducation : un usage mal cadré du dialogue IA pourrait raccourcir l'effort de réflexion plutôt que le stimuler, à l'opposé de l'intention socratique.",
+        "niveau_confiance": "hypothese_prospective"
+      }
+    ]
   },
   {
     "id": "tcc-vs-claude-cowork",
@@ -94,6 +262,41 @@
     "scenario_15_20ans": "L'alliance thérapeutique — facteur le plus prédictif du résultat clinique selon les méta-analyses toutes approches confondues — reste le point de débat central : reproductible par une IA sans présence incarnée, ou irréductiblement humaine ? Question ouverte, pas tranchée par la littérature actuelle.",
     "confiance": "moyenne",
     "statut": "documente",
-    "derniere_verification": "2026-09-05"
+    "derniere_verification": "2026-09-05",
+    "sujet": "Accompagnement psychologique de premier niveau et protocoles cliniques structurés",
+    "sous_themes": [
+      "Psychoéducation et restructuration cognitive guidée",
+      "Garde-fous de détection de situations à risque",
+      "Alliance thérapeutique et présence incarnée"
+    ],
+    "axes_recherche": [
+      "RAG sur manuels TCC cliniquement validés (Beck et successeurs)",
+      "Efficacité comparée des outils d'auto-support IA vs. suivi humain (essais contrôlés)",
+      "Critères d'escalade vers un professionnel de santé"
+    ],
+    "documents_cles": [
+      {
+        "titre": "Thérapie cognitivo-comportementale",
+        "url": "https://fr.wikipedia.org/wiki/Th%C3%A9rapie_cognitivo-comportementale",
+        "type": "secondaire"
+      }
+    ],
+    "axes_prospectifs": [
+      {
+        "nom": "Diffusion en première ligne face aux listes d'attente",
+        "description": "Diffusion plus large d'outils d'auto-support TCC assistés par IA en première ligne, avec supervision clinique renforcée et critères d'escalade mieux définis.",
+        "niveau_confiance": "opinion_majoritaire"
+      },
+      {
+        "nom": "Alliance thérapeutique jugée irréductible",
+        "description": "L'alliance thérapeutique, facteur le plus prédictif du résultat clinique selon les méta-analyses, reste débattue comme reproductible ou non par une IA sans présence incarnée.",
+        "niveau_confiance": "hypothese_prospective"
+      },
+      {
+        "nom": "Cadre réglementaire dédié aux dispositifs IA de santé mentale",
+        "description": "Émergence probable d'un cadre réglementaire spécifique (dispositif médical numérique, responsabilité en cas de défaut de détection d'un risque) avant toute généralisation clinique.",
+        "niveau_confiance": "hypothese_prospective"
+      }
+    ]
   }
 ]

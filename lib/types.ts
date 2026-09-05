@@ -64,6 +64,16 @@ export type Substituabilite =
   | "non_remplacable"
   | "remplacable_avec_autre_technologie";
 
+// Axe prospectif (Lot 9) — une branche future nommée parmi plusieurs possibles,
+// plutôt qu'une seule trajectoire linéaire (present/5ans/15_20ans). Même logique
+// que Perspective pour les questions : jamais un seul scénario présenté comme
+// acquis, chacun porte son propre niveau de confiance.
+export interface AxeProspectif {
+  nom: string; // ex. "Adoption encadrée", "Rupture réglementaire", "Statu quo"
+  description: string;
+  niveau_confiance: NiveauConfiance;
+}
+
 export interface FicheGap {
   id: string;
   fiche_humaine_id: string;
@@ -78,6 +88,12 @@ export interface FicheGap {
   scenario_5ans: string;
   scenario_15_20ans: string;
   confiance: "elevee" | "moyenne" | "faible";
+  // Lot 9 (comparateur approfondi) — champs optionnels, rétrocompatibles.
+  sujet?: string; // thématique large dans laquelle s'inscrit la paire
+  sous_themes?: string[];
+  axes_recherche?: string[];
+  documents_cles?: Source[];
+  axes_prospectifs?: AxeProspectif[]; // plusieurs futurs nommés, en plus des scenario_*
   statut: Statut;
   derniere_verification: string;
 }
