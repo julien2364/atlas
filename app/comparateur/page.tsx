@@ -1,5 +1,5 @@
 import gaps from "@/data/seed/fiches_gap.json";
-import fichesHumaines from "@/data/seed/fiches_humaines.json";
+import fichesHumaines from "@/data/seed/fiches_humaines";
 import fichesIA from "@/data/seed/fiches_ia.json";
 import type { FicheGap, FicheHumaine, FicheIA } from "@/lib/types";
 import ComparateurClient from "@/components/ComparateurClient";

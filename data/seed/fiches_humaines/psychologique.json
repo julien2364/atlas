@@ -1,0 +1,176 @@
+[
+  {
+    "id": "therapies-cognitivo-comportementales-tcc",
+    "axe": "psychologique",
+    "sous_domaine": "psychotherapie",
+    "nom": "Thérapies cognitivo-comportementales (TCC)",
+    "these_centrale": "Pensées, émotions et comportements sont interconnectés ; les schémas de pensée dysfonctionnels (distorsions cognitives) entretiennent la souffrance psychique, et leur restructuration cognitive combinée à l'exposition comportementale progressive produit un changement mesurable.",
+    "apport": "Base de preuves empiriques la plus large en psychothérapie (essais contrôlés randomisés sur anxiété, dépression, TOC, phobies) ; a permis la scientifisation méthodologique de la psychothérapie et sa comparabilité avec d'autres traitements.",
+    "limites_critiques": "Efficacité bien démontrée sur des troubles ciblés mais critiquée pour une insuffisance sur les causes profondes ou le sens vécu (face aux approches psychodynamiques) ; risque de standardisation excessive par des protocoles rigides peu adaptés à la complexité individuelle ; l'effet mesuré en essai clinique contrôlé décroît souvent hors de ce cadre.",
+    "resonance_ia": "La TCC repose sur des protocoles structurés et mesurables, ce qui en fait le champ psychothérapeutique le plus reproduit par des applications conversationnelles (chatbots de soutien type Woebot, Wysa) ; mais l'alliance thérapeutique — le facteur le plus prédictif du résultat clinique selon les méta-analyses toutes approches confondues — reste débattue quant à sa reproductibilité par une IA sans présence incarnée ni enjeu réciproque.",
+    "sources": [
+      {
+        "titre": "Beck, A.T. — Cognitive Therapy and the Emotional Disorders",
+        "type": "primaire"
+      },
+      {
+        "titre": "Revues Cochrane sur l'efficacité de la TCC",
+        "type": "secondaire"
+      }
+    ],
+    "statut": "documente",
+    "derniere_verification": "2026-09-05"
+  },
+  {
+    "id": "daniel-kahneman-amos-tversky-biais-cognitifs",
+    "axe": "psychologique",
+    "sous_domaine": "cognition",
+    "nom": "Daniel Kahneman & Amos Tversky (biais cognitifs)",
+    "these_centrale": "La cognition humaine sous incertitude opère par deux systèmes (Système 1 rapide/intuitif, Système 2 lent/délibératif) et s'appuie sur des heuristiques (ancrage, disponibilité, représentativité) qui produisent des biais systématiques plutôt qu'un calcul rationnel bayésien — fondant la théorie des perspectives contre la théorie de l'utilité espérée classique.",
+    "apport": "Fonde l'économie comportementale (prix Nobel d'économie 2002 pour Kahneman) ; transforme la compréhension de la décision en médecine, finance et politiques publiques (nudge) ; pont explicite entre psychologie cognitive et modèles économiques (cf. référentiel A1/économie).",
+    "limites_critiques": "La réplication de certains biais classiques a été questionnée par la crise de la réplication en psychologie sociale des années 2010 ; portée parfois sur-généralisée au-delà des contextes expérimentaux contrôlés d'origine.",
+    "resonance_ia": "Les LLM, entraînés sur des corpus produits par des humains, reproduisent statistiquement certains biais cognitifs humains dans leurs sorties (ancrage sur le contexte fourni, biais de confirmation dans des chaînes de raisonnement) — mais il ne s'agit pas d'un Système 1/Système 2 au sens cognitif, seulement d'une reproduction distributionnelle des biais présents dans les données d'entraînement.",
+    "sources": [
+      {
+        "titre": "Kahneman, D. — Thinking, Fast and Slow",
+        "type": "primaire"
+      },
+      {
+        "titre": "Kahneman & Tversky — Prospect Theory, Econometrica 1979",
+        "type": "primaire"
+      }
+    ],
+    "statut": "documente",
+    "derniere_verification": "2026-09-05"
+  },
+  {
+    "id": "sigmund-freud",
+    "axe": "psychologique",
+    "sous_domaine": "psychanalyse",
+    "nom": "Sigmund Freud",
+    "these_centrale": "",
+    "apport": "",
+    "limites_critiques": "",
+    "resonance_ia": null,
+    "sources": [],
+    "statut": "a_documenter",
+    "derniere_verification": "2026-09-05"
+  },
+  {
+    "id": "carl-jung",
+    "axe": "psychologique",
+    "sous_domaine": "psychanalyse",
+    "nom": "Carl Jung",
+    "these_centrale": "",
+    "apport": "",
+    "limites_critiques": "",
+    "resonance_ia": null,
+    "sources": [],
+    "statut": "a_documenter",
+    "derniere_verification": "2026-09-05"
+  },
+  {
+    "id": "jacques-lacan",
+    "axe": "psychologique",
+    "sous_domaine": "psychanalyse",
+    "nom": "Jacques Lacan",
+    "these_centrale": "",
+    "apport": "",
+    "limites_critiques": "",
+    "resonance_ia": null,
+    "sources": [],
+    "statut": "a_documenter",
+    "derniere_verification": "2026-09-05"
+  },
+  {
+    "id": "b-f-skinner",
+    "axe": "psychologique",
+    "sous_domaine": "behaviorisme",
+    "nom": "B.F. Skinner",
+    "these_centrale": "",
+    "apport": "",
+    "limites_critiques": "",
+    "resonance_ia": null,
+    "sources": [],
+    "statut": "a_documenter",
+    "derniere_verification": "2026-09-05"
+  },
+  {
+    "id": "john-b-watson",
+    "axe": "psychologique",
+    "sous_domaine": "behaviorisme",
+    "nom": "John B. Watson",
+    "these_centrale": "",
+    "apport": "",
+    "limites_critiques": "",
+    "resonance_ia": null,
+    "sources": [],
+    "statut": "a_documenter",
+    "derniere_verification": "2026-09-05"
+  },
+  {
+    "id": "abraham-maslow",
+    "axe": "psychologique",
+    "sous_domaine": "psychologie_positive",
+    "nom": "Abraham Maslow",
+    "these_centrale": "",
+    "apport": "",
+    "limites_critiques": "",
+    "resonance_ia": null,
+    "sources": [],
+    "statut": "a_documenter",
+    "derniere_verification": "2026-09-05"
+  },
+  {
+    "id": "carl-rogers",
+    "axe": "psychologique",
+    "sous_domaine": "psychotherapie",
+    "nom": "Carl Rogers",
+    "these_centrale": "",
+    "apport": "",
+    "limites_critiques": "",
+    "resonance_ia": null,
+    "sources": [],
+    "statut": "a_documenter",
+    "derniere_verification": "2026-09-05"
+  },
+  {
+    "id": "martin-seligman",
+    "axe": "psychologique",
+    "sous_domaine": "psychologie_positive",
+    "nom": "Martin Seligman",
+    "these_centrale": "",
+    "apport": "",
+    "limites_critiques": "",
+    "resonance_ia": null,
+    "sources": [],
+    "statut": "a_documenter",
+    "derniere_verification": "2026-09-05"
+  },
+  {
+    "id": "jean-piaget",
+    "axe": "psychologique",
+    "sous_domaine": "cognition",
+    "nom": "Jean Piaget",
+    "these_centrale": "",
+    "apport": "",
+    "limites_critiques": "",
+    "resonance_ia": null,
+    "sources": [],
+    "statut": "a_documenter",
+    "derniere_verification": "2026-09-05"
+  },
+  {
+    "id": "lev-vygotski",
+    "axe": "psychologique",
+    "sous_domaine": "cognition",
+    "nom": "Lev Vygotski",
+    "these_centrale": "",
+    "apport": "",
+    "limites_critiques": "",
+    "resonance_ia": null,
+    "sources": [],
+    "statut": "a_documenter",
+    "derniere_verification": "2026-09-05"
+  }
+]

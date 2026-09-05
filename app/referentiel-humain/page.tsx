@@ -1,4 +1,4 @@
-import fiches from "@/data/seed/fiches_humaines.json";
+import fiches from "@/data/seed/fiches_humaines";
 import type { FicheHumaine } from "@/lib/types";
 
 const data = fiches as unknown as FicheHumaine[];
