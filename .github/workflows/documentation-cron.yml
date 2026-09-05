@@ -2,14 +2,15 @@ name: Documentation en masse (recherche Wikipédia)
 
 on:
   schedule:
-    # 07h30 UTC chaque jour (juste après la veille RSS de 07h00) — cf. docs/comment-lancer.md.
-    - cron: "30 7 * * *"
+    # Toutes les 4h (05/09/2026 : accéléré à la demande de Julien pour écluser plus vite
+    # le backlog des ~280 fiches "à documenter" restantes) — cf. docs/comment-lancer.md.
+    - cron: "30 */4 * * *"
   workflow_dispatch:
     inputs:
       limite:
         description: "Nombre de fiches à traiter ce run"
         required: false
-        default: "15"
+        default: "50"
 
 permissions:
   contents: write
@@ -30,7 +31,7 @@ jobs:
         run: npm ci
 
       - name: Rechercher de la documentation réelle (Wikipédia) pour les fiches "à documenter"
-        run: node scripts/documentation-recherche.mjs --limite=${{ github.event.inputs.limite || '15' }}
+        run: node scripts/documentation-recherche.mjs --limite=${{ github.event.inputs.limite || '50' }}
 
       - name: Committer les nouvelles propositions (s'il y en a)
         run: |

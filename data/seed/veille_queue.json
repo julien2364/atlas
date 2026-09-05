@@ -1563,5 +1563,1518 @@
     "score_fiabilite": 0.5,
     "statut": "en_attente",
     "created_at": "2026-09-05T19:19:38.519Z"
+  },
+  {
+    "id": "fb0e9b60-a05f-469b-ae7d-05299695c515",
+    "source_id": null,
+    "cible_type": "fiche_humaine",
+    "cible_id": "mauricio-ferraris",
+    "contenu_propose": {
+      "nom": "Mauricio Ferraris",
+      "titre_article_source": "Maurizio Ferraris",
+      "langue_source": "en",
+      "extrait": "\nMaurizio Ferraris is an Italian continental philosopher and scholar, whose name is associated especially with the philosophical current named \"new realism\"—Ferraris wrote the Manifesto of New Realism in 2012, which was published in 2014)—which shares significant similarities with speculative realism and object oriented ontology.",
+      "url": "https://en.wikipedia.org/wiki/Maurizio_Ferraris",
+      "note": "Résumé Wikipédia brut — à reformuler en these_centrale/apport/limites_critiques (fiche humaine) ou capacites_cles/limites_connues (fiche IA) avant validation. Ne jamais publier tel quel sans relecture."
+    },
+    "score_fiabilite": 0.5,
+    "statut": "en_attente",
+    "created_at": "2026-09-05T20:14:14.896Z"
+  },
+  {
+    "id": "3c721601-a015-45fe-a2fd-eb58a339efa2",
+    "source_id": null,
+    "cible_type": "fiche_humaine",
+    "cible_id": "is-lm-keynesianisme-de-synthese",
+    "contenu_propose": {
+      "nom": "IS-LM (keynésianisme de synthèse)",
+      "titre_article_source": "Synthèse néoclassique",
+      "langue_source": "fr",
+      "extrait": "La synthèse néoclassique est une école de pensée économique majeure issue de l'intégration de certaines théories de l'école néoclassique au keynésianisme originel. Courant dominant dans le monde économique et politique pendant les Trente Glorieuses, ses fondateurs sont Paul Samuelson et John Hicks. L'école de la synthèse a été dépassée par la Nouvelle économie classique et par la Nouvelle économie keynésienne.",
+      "url": "https://fr.wikipedia.org/wiki/Synth%C3%A8se_n%C3%A9oclassique",
+      "note": "Résumé Wikipédia brut — à reformuler en these_centrale/apport/limites_critiques (fiche humaine) ou capacites_cles/limites_connues (fiche IA) avant validation. Ne jamais publier tel quel sans relecture."
+    },
+    "score_fiabilite": 0.5,
+    "statut": "en_attente",
+    "created_at": "2026-09-05T20:14:16.525Z"
+  },
+  {
+    "id": "61826b27-8b7b-47d6-8e7c-6291e74e3bd3",
+    "source_id": null,
+    "cible_type": "fiche_humaine",
+    "cible_id": "croissance-endogene-romer-lucas",
+    "contenu_propose": {
+      "nom": "Croissance endogène (Romer-Lucas)",
+      "titre_article_source": "Théorie de la croissance endogène",
+      "langue_source": "fr",
+      "extrait": "La théorie de la croissance endogène renvoie à l'ensemble des théories de la croissance économique qui cherchent à expliquer la croissance économique par des variables endogènes, c'est-à-dire internes au modèle, au système économique lui-même. Cette théorie apparaît en réponse aux modèles de croissance exogène, en particulier le modèle de Solow, qui fondait la croissance économique de long terme sur le progrès technique, mais qui échouait à expliquer l'origine de ce progrès. Le premier économiste ayant présenté un modèle de croissance endogène est Paul Romer, avec le modèle homonyme en 1986.",
+      "url": "https://fr.wikipedia.org/wiki/Th%C3%A9orie_de_la_croissance_endog%C3%A8ne",
+      "note": "Résumé Wikipédia brut — à reformuler en these_centrale/apport/limites_critiques (fiche humaine) ou capacites_cles/limites_connues (fiche IA) avant validation. Ne jamais publier tel quel sans relecture."
+    },
+    "score_fiabilite": 0.5,
+    "statut": "en_attente",
+    "created_at": "2026-09-05T20:14:16.999Z"
+  },
+  {
+    "id": "45eaf847-2002-4653-9285-57da0747b12b",
+    "source_id": null,
+    "cible_type": "fiche_humaine",
+    "cible_id": "black-scholes",
+    "contenu_propose": {
+      "nom": "Black-Scholes",
+      "titre_article_source": "Modèle Black-Scholes",
+      "langue_source": "fr",
+      "extrait": "Le modèle de Black-Scholes est utilisé pour désigner deux concepts très proches :le modèle Black-Scholes ou modèle Black-Scholes-Merton qui est un modèle mathématique du marché pour une action, dans lequel le prix de l'action est un processus stochastique en temps continu ; par opposition au « modèle Cox Ross-Rubinstein » qui suit un processus stochastique en temps discret ;\nl'équation aux dérivées partielles de Black-Scholes qui est l'équation satisfaite par le prix d'un dérivé d'un primitif.",
+      "url": "https://fr.wikipedia.org/wiki/Mod%C3%A8le_Black-Scholes",
+      "note": "Résumé Wikipédia brut — à reformuler en these_centrale/apport/limites_critiques (fiche humaine) ou capacites_cles/limites_connues (fiche IA) avant validation. Ne jamais publier tel quel sans relecture."
+    },
+    "score_fiabilite": 0.5,
+    "statut": "en_attente",
+    "created_at": "2026-09-05T20:14:18.049Z"
+  },
+  {
+    "id": "b9f229a8-a0f9-42be-af47-10aa51a98030",
+    "source_id": null,
+    "cible_type": "fiche_humaine",
+    "cible_id": "economie-circulaire",
+    "contenu_propose": {
+      "nom": "Économie circulaire",
+      "titre_article_source": "Économie circulaire",
+      "langue_source": "fr",
+      "extrait": "L'économie circulaire est un modèle économique à vision systémique. Les notions d'économie verte, d’économie de l'usage ou de l'économie de la fonctionnalité, de l'économie de la performance et de l'écologie industrielle font partie de l'économie circulaire.",
+      "url": "https://fr.wikipedia.org/wiki/%C3%89conomie_circulaire",
+      "note": "Résumé Wikipédia brut — à reformuler en these_centrale/apport/limites_critiques (fiche humaine) ou capacites_cles/limites_connues (fiche IA) avant validation. Ne jamais publier tel quel sans relecture."
+    },
+    "score_fiabilite": 0.5,
+    "statut": "en_attente",
+    "created_at": "2026-09-05T20:14:18.561Z"
+  },
+  {
+    "id": "2f32f591-bd43-4ab2-947a-7ba1fd1b276e",
+    "source_id": null,
+    "cible_type": "fiche_humaine",
+    "cible_id": "economie-de-la-fonctionnalite",
+    "contenu_propose": {
+      "nom": "Économie de la fonctionnalité",
+      "titre_article_source": "Économie de fonctionnalité",
+      "langue_source": "fr",
+      "extrait": "L’économie de fonctionnalité, économie de la fonctionnalité, économie servicielle ou encore économie de performance, est l'offre ou la vente, de l'usage d'un bien ou d'un service… et non du bien lui-même. \nLe fabricant a donc tout intérêt à faire durer le produit, ce qui devrait favoriser un moindre gaspillage des ressources naturelles, dans une perspective d'économie circulaire ainsi qu'« un accroissement du bien-être des personnes et un développement économique ».",
+      "url": "https://fr.wikipedia.org/wiki/%C3%89conomie_de_fonctionnalit%C3%A9",
+      "note": "Résumé Wikipédia brut — à reformuler en these_centrale/apport/limites_critiques (fiche humaine) ou capacites_cles/limites_connues (fiche IA) avant validation. Ne jamais publier tel quel sans relecture."
+    },
+    "score_fiabilite": 0.5,
+    "statut": "en_attente",
+    "created_at": "2026-09-05T20:14:19.057Z"
+  },
+  {
+    "id": "dd5d07ac-a88c-4367-84cd-dd643d98f37b",
+    "source_id": null,
+    "cible_type": "fiche_humaine",
+    "cible_id": "theorie-des-jeux-equilibre-de-nash",
+    "contenu_propose": {
+      "nom": "Théorie des jeux (équilibre de Nash)",
+      "titre_article_source": "Équilibre de Nash",
+      "langue_source": "fr",
+      "extrait": "En théorie des jeux, un équilibre de Nash est une situation où :Chaque joueur prévoit correctement le choix des autres ;\nChaque joueur maximise son gain, compte tenu de cette prévision.",
+      "url": "https://fr.wikipedia.org/wiki/%C3%89quilibre_de_Nash",
+      "note": "Résumé Wikipédia brut — à reformuler en these_centrale/apport/limites_critiques (fiche humaine) ou capacites_cles/limites_connues (fiche IA) avant validation. Ne jamais publier tel quel sans relecture."
+    },
+    "score_fiabilite": 0.5,
+    "statut": "en_attente",
+    "created_at": "2026-09-05T20:14:19.578Z"
+  },
+  {
+    "id": "bd77a746-0931-4b7a-92a7-ea4832725842",
+    "source_id": null,
+    "cible_type": "fiche_humaine",
+    "cible_id": "economie-comportementale-theorie-des-perspectives",
+    "contenu_propose": {
+      "nom": "Économie comportementale (théorie des perspectives)",
+      "titre_article_source": "Théorie des perspectives",
+      "langue_source": "fr",
+      "extrait": "La théorie des perspectives est une théorie économique développée par Daniel Kahneman et Amos Tversky en 1979. Elle remet en cause la théorie de l'utilité espérée développée par John von Neumann et Oskar Morgenstern en 1944 et a valu à Daniel Kahneman le prix Nobel d'économie en 2002. Cette théorie est fondatrice de l'économie comportementale et de la finance comportementale et constitue l'une des premières théories économiques construite à partir de travaux expérimentaux.",
+      "url": "https://fr.wikipedia.org/wiki/Th%C3%A9orie_des_perspectives",
+      "note": "Résumé Wikipédia brut — à reformuler en these_centrale/apport/limites_critiques (fiche humaine) ou capacites_cles/limites_connues (fiche IA) avant validation. Ne jamais publier tel quel sans relecture."
+    },
+    "score_fiabilite": 0.5,
+    "statut": "en_attente",
+    "created_at": "2026-09-05T20:14:20.168Z"
+  },
+  {
+    "id": "f5ffb214-48bf-441c-a7b0-398bb6f2445c",
+    "source_id": null,
+    "cible_type": "fiche_humaine",
+    "cible_id": "theorie-moderne-de-la-monnaie-mmt",
+    "contenu_propose": {
+      "nom": "Théorie moderne de la monnaie (MMT)",
+      "titre_article_source": "Théorie monétaire moderne",
+      "langue_source": "fr",
+      "extrait": "La théorie monétaire moderne est une théorie économique hétérodoxe de macroéconomie portant sur le rôle de la politique budgétaire et de la politique monétaire dans les États souverains qui empruntent et émettent leur dette publique dans leur propre monnaie.",
+      "url": "https://fr.wikipedia.org/wiki/Th%C3%A9orie_mon%C3%A9taire_moderne",
+      "note": "Résumé Wikipédia brut — à reformuler en these_centrale/apport/limites_critiques (fiche humaine) ou capacites_cles/limites_connues (fiche IA) avant validation. Ne jamais publier tel quel sans relecture."
+    },
+    "score_fiabilite": 0.5,
+    "statut": "en_attente",
+    "created_at": "2026-09-05T20:14:20.653Z"
+  },
+  {
+    "id": "003790d6-f37d-46d5-8bc8-5cc09a537c0b",
+    "source_id": null,
+    "cible_type": "fiche_humaine",
+    "cible_id": "john-maynard-keynes",
+    "contenu_propose": {
+      "nom": "John Maynard Keynes",
+      "titre_article_source": "John Maynard Keynes",
+      "langue_source": "fr",
+      "extrait": "John Maynard Keynes, né le 5 juin 1883 à Cambridge et mort le 21 avril 1946 dans sa ferme de Tilton à Firle, est un économiste, haut fonctionnaire et essayiste britannique. De notoriété mondiale, il est le fondateur de la macroéconomie keynésienne. Le keynésianisme, la nouvelle économie keynésienne, le néokeynésianisme ou le post-keynésianisme sont issus de son œuvre. Considéré comme l'un des théoriciens les plus importants de l'économie du XXe siècle, il fut, en tant que conseiller officiel ou officieux de nombreux hommes politiques, l'un des acteurs principaux des accords de Bretton Woods, après la Seconde Guerre mondiale.",
+      "url": "https://fr.wikipedia.org/wiki/John_Maynard_Keynes",
+      "note": "Résumé Wikipédia brut — à reformuler en these_centrale/apport/limites_critiques (fiche humaine) ou capacites_cles/limites_connues (fiche IA) avant validation. Ne jamais publier tel quel sans relecture."
+    },
+    "score_fiabilite": 0.5,
+    "statut": "en_attente",
+    "created_at": "2026-09-05T20:14:21.636Z"
+  },
+  {
+    "id": "7f6f06b0-17b5-47ba-bbbd-1b1efa19d304",
+    "source_id": null,
+    "cible_type": "fiche_humaine",
+    "cible_id": "friedrich-hayek",
+    "contenu_propose": {
+      "nom": "Friedrich Hayek",
+      "titre_article_source": "Friedrich Hayek",
+      "langue_source": "fr",
+      "extrait": "Friedrich Hayek, né Friedrich von Hayek le 8 mai 1899 à Vienne et mort le 23 mars 1992 à Fribourg-en-Brisgau, est un économiste et philosophe austro-britannique. Il est considéré comme l'un des penseurs les plus importants du libéralisme au XXe siècle.",
+      "url": "https://fr.wikipedia.org/wiki/Friedrich_Hayek",
+      "note": "Résumé Wikipédia brut — à reformuler en these_centrale/apport/limites_critiques (fiche humaine) ou capacites_cles/limites_connues (fiche IA) avant validation. Ne jamais publier tel quel sans relecture."
+    },
+    "score_fiabilite": 0.5,
+    "statut": "en_attente",
+    "created_at": "2026-09-05T20:14:22.106Z"
+  },
+  {
+    "id": "615be47b-54e7-40d3-898e-54468bc8fca1",
+    "source_id": null,
+    "cible_type": "fiche_humaine",
+    "cible_id": "milton-friedman",
+    "contenu_propose": {
+      "nom": "Milton Friedman",
+      "titre_article_source": "Milton Friedman",
+      "langue_source": "fr",
+      "extrait": "Milton Friedman, né le 31 juillet 1912 à Brooklyn et mort le 16 novembre 2006 à San Francisco, est un économiste américain, considéré comme l'un des plus influents du XXe siècle.",
+      "url": "https://fr.wikipedia.org/wiki/Milton_Friedman",
+      "note": "Résumé Wikipédia brut — à reformuler en these_centrale/apport/limites_critiques (fiche humaine) ou capacites_cles/limites_connues (fiche IA) avant validation. Ne jamais publier tel quel sans relecture."
+    },
+    "score_fiabilite": 0.5,
+    "statut": "en_attente",
+    "created_at": "2026-09-05T20:14:22.556Z"
+  },
+  {
+    "id": "405ad7d3-0d13-41f4-bf92-0a1fe90d7443",
+    "source_id": null,
+    "cible_type": "fiche_humaine",
+    "cible_id": "joseph-schumpeter",
+    "contenu_propose": {
+      "nom": "Joseph Schumpeter",
+      "titre_article_source": "Joseph Schumpeter",
+      "langue_source": "fr",
+      "extrait": "Joseph Aloïs Schumpeter, né le 8 février 1883 à Triesch, en Moravie et mort le 8 janvier 1950 à Salisbury, dans le Connecticut (États-Unis), est un économiste et professeur en science politique autrichien naturalisé américain, connu pour ses théories sur les fluctuations économiques, la destruction créatrice et l'innovation.",
+      "url": "https://fr.wikipedia.org/wiki/Joseph_Schumpeter",
+      "note": "Résumé Wikipédia brut — à reformuler en these_centrale/apport/limites_critiques (fiche humaine) ou capacites_cles/limites_connues (fiche IA) avant validation. Ne jamais publier tel quel sans relecture."
+    },
+    "score_fiabilite": 0.5,
+    "statut": "en_attente",
+    "created_at": "2026-09-05T20:14:22.995Z"
+  },
+  {
+    "id": "f8aabe24-7683-4abf-b0aa-87087fa6417f",
+    "source_id": null,
+    "cible_type": "fiche_humaine",
+    "cible_id": "paul-samuelson",
+    "contenu_propose": {
+      "nom": "Paul Samuelson",
+      "titre_article_source": "Paul Samuelson",
+      "langue_source": "fr",
+      "extrait": "Paul Anthony Samuelson, né le 15 mai 1915 à Gary et mort le 13 décembre 2009 à Belmont (Massachusetts), est un économiste américain, Prix dit Nobel d'économie en 1970 et chef de file de l'école qu'il appela la « synthèse néo-classique », qui entendait reprendre à son compte à la fois les théories de Keynes en macroéconomie et les enseignements néoclassiques en microéconomie.",
+      "url": "https://fr.wikipedia.org/wiki/Paul_Samuelson",
+      "note": "Résumé Wikipédia brut — à reformuler en these_centrale/apport/limites_critiques (fiche humaine) ou capacites_cles/limites_connues (fiche IA) avant validation. Ne jamais publier tel quel sans relecture."
+    },
+    "score_fiabilite": 0.5,
+    "statut": "en_attente",
+    "created_at": "2026-09-05T20:14:23.451Z"
+  },
+  {
+    "id": "15ea4574-c64a-4961-a189-1653e42009a5",
+    "source_id": null,
+    "cible_type": "fiche_humaine",
+    "cible_id": "joan-robinson",
+    "contenu_propose": {
+      "nom": "Joan Robinson",
+      "titre_article_source": "Joan Robinson",
+      "langue_source": "fr",
+      "extrait": "Joan Violet Robinson (1903-1983) est une économiste britannique et l'une des figures importantes de l'école de Cambridge et du post-keynésianisme.",
+      "url": "https://fr.wikipedia.org/wiki/Joan_Robinson",
+      "note": "Résumé Wikipédia brut — à reformuler en these_centrale/apport/limites_critiques (fiche humaine) ou capacites_cles/limites_connues (fiche IA) avant validation. Ne jamais publier tel quel sans relecture."
+    },
+    "score_fiabilite": 0.5,
+    "statut": "en_attente",
+    "created_at": "2026-09-05T20:14:23.904Z"
+  },
+  {
+    "id": "7b3a1b9b-a922-4e40-a53b-40703ccf6720",
+    "source_id": null,
+    "cible_type": "fiche_humaine",
+    "cible_id": "karl-polanyi",
+    "contenu_propose": {
+      "nom": "Karl Polanyi",
+      "titre_article_source": "Karl Polanyi",
+      "langue_source": "fr",
+      "extrait": "Karl Polanyi ou Károly Polányi, né Károly Pollacsek le 25 octobre 1886 en Autriche-Hongrie, à Vienne, mort le 23 avril 1964 au Canada à Pickering, au bord du Lac Ontario, est un économiste austro-hongrois, généralement considéré comme étant d'obédience politique socialiste ou marxiste occidentale chrétienne ou marxiste hétérodoxe (marxien), chercheur à l'université Columbia à New York, naturalisé américain et canadien, spécialiste d'histoire et d'anthropologie économiques.",
+      "url": "https://fr.wikipedia.org/wiki/Karl_Polanyi",
+      "note": "Résumé Wikipédia brut — à reformuler en these_centrale/apport/limites_critiques (fiche humaine) ou capacites_cles/limites_connues (fiche IA) avant validation. Ne jamais publier tel quel sans relecture."
+    },
+    "score_fiabilite": 0.5,
+    "statut": "en_attente",
+    "created_at": "2026-09-05T20:14:24.334Z"
+  },
+  {
+    "id": "9ee8bc52-e475-4ee9-bfd3-50d43efeb245",
+    "source_id": null,
+    "cible_type": "fiche_humaine",
+    "cible_id": "kenneth-arrow",
+    "contenu_propose": {
+      "nom": "Kenneth Arrow",
+      "titre_article_source": "Kenneth Arrow",
+      "langue_source": "fr",
+      "extrait": "Kenneth Joseph Arrow, né le 23 août 1921 à New York et mort le 21 février 2017 à Palo Alto, est un économiste américain.",
+      "url": "https://fr.wikipedia.org/wiki/Kenneth_Arrow",
+      "note": "Résumé Wikipédia brut — à reformuler en these_centrale/apport/limites_critiques (fiche humaine) ou capacites_cles/limites_connues (fiche IA) avant validation. Ne jamais publier tel quel sans relecture."
+    },
+    "score_fiabilite": 0.5,
+    "statut": "en_attente",
+    "created_at": "2026-09-05T20:14:24.777Z"
+  },
+  {
+    "id": "f3b7aaf8-73e9-4be7-979e-589b2d7fb2de",
+    "source_id": null,
+    "cible_type": "fiche_humaine",
+    "cible_id": "gerard-debreu",
+    "contenu_propose": {
+      "nom": "Gérard Debreu",
+      "titre_article_source": "Gérard Debreu",
+      "langue_source": "fr",
+      "extrait": "Gérard Debreu, né le 4 juillet 1921 à Calais et mort le 31 décembre 2004 à Paris 12e, est un mathématicien et économiste franco-américain. Il est le premier Français à recevoir en 1983 le prix dit Nobel d'économie pour ses travaux sur l'équilibre général.",
+      "url": "https://fr.wikipedia.org/wiki/G%C3%A9rard_Debreu",
+      "note": "Résumé Wikipédia brut — à reformuler en these_centrale/apport/limites_critiques (fiche humaine) ou capacites_cles/limites_connues (fiche IA) avant validation. Ne jamais publier tel quel sans relecture."
+    },
+    "score_fiabilite": 0.5,
+    "statut": "en_attente",
+    "created_at": "2026-09-05T20:14:25.203Z"
+  },
+  {
+    "id": "eff2a57c-0172-44aa-91e5-4b9dd8a20429",
+    "source_id": null,
+    "cible_type": "fiche_humaine",
+    "cible_id": "robert-solow",
+    "contenu_propose": {
+      "nom": "Robert Solow",
+      "titre_article_source": "Robert Solow",
+      "langue_source": "fr",
+      "extrait": "Robert Solow, né le 23 août 1924 à Brooklyn et mort le 21 décembre 2023 à Lexington (Massachusetts), est un économiste américain d'obédience néoclassique. Connu pour sa théorie sur la croissance économique, il est à l'origine du modèle de Solow, qui lui vaut de recevoir en 1987 le prix dit Nobel d'économie. Enseignant au MIT durant près de 50 ans, il forme plusieurs générations d'économistes dont la plupart recevront également un prix de la Banque de Suède, comme George Akerlof, Peter Diamond, William Nordhaus, Joseph Stiglitz et Jean Tirole.",
+      "url": "https://fr.wikipedia.org/wiki/Robert_Solow",
+      "note": "Résumé Wikipédia brut — à reformuler en these_centrale/apport/limites_critiques (fiche humaine) ou capacites_cles/limites_connues (fiche IA) avant validation. Ne jamais publier tel quel sans relecture."
+    },
+    "score_fiabilite": 0.5,
+    "statut": "en_attente",
+    "created_at": "2026-09-05T20:14:25.669Z"
+  },
+  {
+    "id": "1d6b44e7-ba34-4429-b047-8cd81394fd78",
+    "source_id": null,
+    "cible_type": "fiche_humaine",
+    "cible_id": "gary-becker",
+    "contenu_propose": {
+      "nom": "Gary Becker",
+      "titre_article_source": "Gary Becker",
+      "langue_source": "fr",
+      "extrait": "Gary Stanley Becker, né le 2 décembre 1930 à Pottsville, en Pennsylvanie, et mort le 3 mai 2014 à l'hôpital Northwestern (en) de Chicago, est un économiste américain. Il est connu pour ses travaux visant à élargir le champ de l'analyse microéconomique à de nombreux comportements humains. Il a obtenu en 1992 le prix dit Nobel d'économie et en 2000 la National Medal of Science, haute distinction américaine. Il était professeur à l'université de Chicago, dans le département de sociologie et d'économie.",
+      "url": "https://fr.wikipedia.org/wiki/Gary_Becker",
+      "note": "Résumé Wikipédia brut — à reformuler en these_centrale/apport/limites_critiques (fiche humaine) ou capacites_cles/limites_connues (fiche IA) avant validation. Ne jamais publier tel quel sans relecture."
+    },
+    "score_fiabilite": 0.5,
+    "statut": "en_attente",
+    "created_at": "2026-09-05T20:14:26.120Z"
+  },
+  {
+    "id": "e12ba2c6-87a0-4bae-9eb5-b6fc5cb12b31",
+    "source_id": null,
+    "cible_type": "fiche_humaine",
+    "cible_id": "john-von-neumann",
+    "contenu_propose": {
+      "nom": "John von Neumann",
+      "titre_article_source": "John von Neumann",
+      "langue_source": "fr",
+      "extrait": "John von Neumann, né le 28 décembre 1903 à Budapest et mort le 8 février 1957 à Washington, est un polymathe, logicien, mathématicien et physicien américano-hongrois. Il a apporté d'importantes contributions en mécanique quantique, en analyse fonctionnelle, en logique mathématique, en logique quantique, en informatique théorique, en sciences économiques et dans beaucoup d'autres domaines des mathématiques, de la physique et de l'économie comportementale.",
+      "url": "https://fr.wikipedia.org/wiki/John_von_Neumann",
+      "note": "Résumé Wikipédia brut — à reformuler en these_centrale/apport/limites_critiques (fiche humaine) ou capacites_cles/limites_connues (fiche IA) avant validation. Ne jamais publier tel quel sans relecture."
+    },
+    "score_fiabilite": 0.5,
+    "statut": "en_attente",
+    "created_at": "2026-09-05T20:14:26.593Z"
+  },
+  {
+    "id": "46271414-61c7-4fef-a296-eae7dedcdd85",
+    "source_id": null,
+    "cible_type": "fiche_humaine",
+    "cible_id": "john-nash",
+    "contenu_propose": {
+      "nom": "John Nash",
+      "titre_article_source": "John Forbes Nash",
+      "langue_source": "fr",
+      "extrait": "John Forbes Nash, Jr., né le 13 juin 1928 à Bluefield (Virginie-Occidentale) et mort le 23 mai 2015 à Monroe Township, est un mathématicien et économiste américain. Il a travaillé sur la théorie des jeux, la géométrie différentielle et les équations aux dérivées partielles.",
+      "url": "https://fr.wikipedia.org/wiki/John_Forbes_Nash",
+      "note": "Résumé Wikipédia brut — à reformuler en these_centrale/apport/limites_critiques (fiche humaine) ou capacites_cles/limites_connues (fiche IA) avant validation. Ne jamais publier tel quel sans relecture."
+    },
+    "score_fiabilite": 0.5,
+    "statut": "en_attente",
+    "created_at": "2026-09-05T20:14:27.049Z"
+  },
+  {
+    "id": "e791e025-c58a-4474-9fac-6585aaaa928d",
+    "source_id": null,
+    "cible_type": "fiche_humaine",
+    "cible_id": "amartya-sen",
+    "contenu_propose": {
+      "nom": "Amartya Sen",
+      "titre_article_source": "Amartya Sen",
+      "langue_source": "fr",
+      "extrait": "Amartya Kumar Sen, né le 3 novembre 1933 à Santiniketan, est un économiste et philosophe indien.",
+      "url": "https://fr.wikipedia.org/wiki/Amartya_Sen",
+      "note": "Résumé Wikipédia brut — à reformuler en these_centrale/apport/limites_critiques (fiche humaine) ou capacites_cles/limites_connues (fiche IA) avant validation. Ne jamais publier tel quel sans relecture."
+    },
+    "score_fiabilite": 0.5,
+    "statut": "en_attente",
+    "created_at": "2026-09-05T20:14:27.496Z"
+  },
+  {
+    "id": "62424941-65ad-485a-bfe5-c4bdbc00e2af",
+    "source_id": null,
+    "cible_type": "fiche_humaine",
+    "cible_id": "james-m-buchanan",
+    "contenu_propose": {
+      "nom": "James M. Buchanan",
+      "titre_article_source": "James M. Buchanan",
+      "langue_source": "fr",
+      "extrait": "James McGill Buchanan Jr., né le 3 octobre 1919 et mort le 9 janvier 2013, est un économiste américain qui a reçu le prix dit Nobel d'économie en 1986 « pour ses développements sur les bases contractuelles et constitutionnelles de la théorie de la prise de décision politique et économique », connue sous le nom de théorie des choix publics qui critique les dysfonctionnements de l'intervention publique et explique les comportements de l'État à partir des agents qui le constituent. Il fait ainsi suite aux premiers travaux effectués par Amilcare Puviani quelques années auparavant.",
+      "url": "https://fr.wikipedia.org/wiki/James_M._Buchanan",
+      "note": "Résumé Wikipédia brut — à reformuler en these_centrale/apport/limites_critiques (fiche humaine) ou capacites_cles/limites_connues (fiche IA) avant validation. Ne jamais publier tel quel sans relecture."
+    },
+    "score_fiabilite": 0.5,
+    "statut": "en_attente",
+    "created_at": "2026-09-05T20:14:28.007Z"
+  },
+  {
+    "id": "0f419c2f-dd76-400c-a166-a4e88f7ba10f",
+    "source_id": null,
+    "cible_type": "fiche_humaine",
+    "cible_id": "wassily-leontief",
+    "contenu_propose": {
+      "nom": "Wassily Leontief",
+      "titre_article_source": "Wassily Leontief",
+      "langue_source": "fr",
+      "extrait": "Wassily Leontief est un économiste américano-soviétique lauréat du prix dit Nobel d'économie en 1973. Son nom est associé à l'analyse entrée-sortie.",
+      "url": "https://fr.wikipedia.org/wiki/Wassily_Leontief",
+      "note": "Résumé Wikipédia brut — à reformuler en these_centrale/apport/limites_critiques (fiche humaine) ou capacites_cles/limites_connues (fiche IA) avant validation. Ne jamais publier tel quel sans relecture."
+    },
+    "score_fiabilite": 0.5,
+    "statut": "en_attente",
+    "created_at": "2026-09-05T20:14:28.469Z"
+  },
+  {
+    "id": "ef9e83ac-8194-416e-abcf-a1efc036ccbe",
+    "source_id": null,
+    "cible_type": "fiche_humaine",
+    "cible_id": "thomas-piketty",
+    "contenu_propose": {
+      "nom": "Thomas Piketty",
+      "titre_article_source": "Thomas Piketty",
+      "langue_source": "fr",
+      "extrait": "Thomas Piketty, né le 7 mai 1971 à Clichy (Hauts-de-Seine), est un économiste, écrivain et enseignant-chercheur français.",
+      "url": "https://fr.wikipedia.org/wiki/Thomas_Piketty",
+      "note": "Résumé Wikipédia brut — à reformuler en these_centrale/apport/limites_critiques (fiche humaine) ou capacites_cles/limites_connues (fiche IA) avant validation. Ne jamais publier tel quel sans relecture."
+    },
+    "score_fiabilite": 0.5,
+    "statut": "en_attente",
+    "created_at": "2026-09-05T20:14:28.938Z"
+  },
+  {
+    "id": "fbac9f89-1ed7-4c83-8fde-3c823bef28f9",
+    "source_id": null,
+    "cible_type": "fiche_humaine",
+    "cible_id": "esther-duflo",
+    "contenu_propose": {
+      "nom": "Esther Duflo",
+      "titre_article_source": "Esther Duflo",
+      "langue_source": "fr",
+      "extrait": "Esther Duflo, née le 25 octobre 1972 à Paris, est une économiste franco-américaine. Professeure au Massachusetts Institute of Technology (MIT) et au Collège de France, elle reçoit le prix dit Nobel d'économie en 2019 conjointement avec son époux Abhijit Banerjee et Michael Kremer.",
+      "url": "https://fr.wikipedia.org/wiki/Esther_Duflo",
+      "note": "Résumé Wikipédia brut — à reformuler en these_centrale/apport/limites_critiques (fiche humaine) ou capacites_cles/limites_connues (fiche IA) avant validation. Ne jamais publier tel quel sans relecture."
+    },
+    "score_fiabilite": 0.5,
+    "statut": "en_attente",
+    "created_at": "2026-09-05T20:14:29.380Z"
+  },
+  {
+    "id": "6313d77a-43e7-4ba5-a038-49f8b2a29a69",
+    "source_id": null,
+    "cible_type": "fiche_humaine",
+    "cible_id": "abhijit-banerjee",
+    "contenu_propose": {
+      "nom": "Abhijit Banerjee",
+      "titre_article_source": "Abhijit Banerjee",
+      "langue_source": "fr",
+      "extrait": "Abhijit Vinayak Banerjee, né le 21 février 1961 à Calcutta, est un économiste américain, spécialiste d'économie du développement.",
+      "url": "https://fr.wikipedia.org/wiki/Abhijit_Banerjee",
+      "note": "Résumé Wikipédia brut — à reformuler en these_centrale/apport/limites_critiques (fiche humaine) ou capacites_cles/limites_connues (fiche IA) avant validation. Ne jamais publier tel quel sans relecture."
+    },
+    "score_fiabilite": 0.5,
+    "statut": "en_attente",
+    "created_at": "2026-09-05T20:14:29.807Z"
+  },
+  {
+    "id": "deb9d8a3-3ed6-440b-a2a4-031b1b6d1a62",
+    "source_id": null,
+    "cible_type": "fiche_humaine",
+    "cible_id": "michael-kremer",
+    "contenu_propose": {
+      "nom": "Michael Kremer",
+      "titre_article_source": "Michael Kremer",
+      "langue_source": "fr",
+      "extrait": "Michael Robert Kremer, né le 12 novembre 1964, est un économiste américain du développement et professeur de la chaire Gates des sociétés en développement à l'Université Harvard. Il est membre de l'American Academy of Arts and Sciences et lauréat du prix MacArthur – le prix des génies. Il est également l'un des 50 meilleurs chercheurs du Scientific American, prix de la Présidence pour scientifiques et ingénieurs en début de carrière. Il a été nommé jeune leader mondial par le Forum économique mondial. En 2019, il partage le prix dit Nobel d'économie avec Abhijit Banerjee et Esther Duflo.",
+      "url": "https://fr.wikipedia.org/wiki/Michael_Kremer",
+      "note": "Résumé Wikipédia brut — à reformuler en these_centrale/apport/limites_critiques (fiche humaine) ou capacites_cles/limites_connues (fiche IA) avant validation. Ne jamais publier tel quel sans relecture."
+    },
+    "score_fiabilite": 0.5,
+    "statut": "en_attente",
+    "created_at": "2026-09-05T20:14:30.252Z"
+  },
+  {
+    "id": "2f53b404-80eb-401a-b38b-adec8656f552",
+    "source_id": null,
+    "cible_type": "fiche_humaine",
+    "cible_id": "joseph-stiglitz",
+    "contenu_propose": {
+      "nom": "Joseph Stiglitz",
+      "titre_article_source": "Joseph E. Stiglitz",
+      "langue_source": "fr",
+      "extrait": "Joseph E. Stiglitz, né le 9 février 1943 à Gary (Indiana), est un économiste américain, lauréat du prix dit Nobel d'économie avec George Akerlof et Michael Spence en 2001 « pour leurs travaux sur les marchés avec asymétrie d'information. ».",
+      "url": "https://fr.wikipedia.org/wiki/Joseph_E._Stiglitz",
+      "note": "Résumé Wikipédia brut — à reformuler en these_centrale/apport/limites_critiques (fiche humaine) ou capacites_cles/limites_connues (fiche IA) avant validation. Ne jamais publier tel quel sans relecture."
+    },
+    "score_fiabilite": 0.5,
+    "statut": "en_attente",
+    "created_at": "2026-09-05T20:14:30.698Z"
+  },
+  {
+    "id": "a754e9db-859c-4a5a-89a0-a470755ff15c",
+    "source_id": null,
+    "cible_type": "fiche_humaine",
+    "cible_id": "paul-krugman",
+    "contenu_propose": {
+      "nom": "Paul Krugman",
+      "titre_article_source": "Paul Krugman",
+      "langue_source": "fr",
+      "extrait": "Paul Robin Krugman, né le 28 février 1953 à Albany dans l'État de New York, est un économiste américain.",
+      "url": "https://fr.wikipedia.org/wiki/Paul_Krugman",
+      "note": "Résumé Wikipédia brut — à reformuler en these_centrale/apport/limites_critiques (fiche humaine) ou capacites_cles/limites_connues (fiche IA) avant validation. Ne jamais publier tel quel sans relecture."
+    },
+    "score_fiabilite": 0.5,
+    "statut": "en_attente",
+    "created_at": "2026-09-05T20:14:31.152Z"
+  },
+  {
+    "id": "3390c8cc-1d3b-4716-b923-d57d765c0c14",
+    "source_id": null,
+    "cible_type": "fiche_humaine",
+    "cible_id": "daron-acemoglu",
+    "contenu_propose": {
+      "nom": "Daron Acemoglu",
+      "titre_article_source": "Daron Acemoğlu",
+      "langue_source": "fr",
+      "extrait": "Daron Acemoğlu, né le 3 septembre 1967 à Istanbul, est un économiste turco-américain d'origine arménienne, professeur d'économie au Massachusetts Institute of Technology (MIT) où il détient la « chaire Charles P. Kindleberger », nommée en l’honneur de Charles Kindleberger.",
+      "url": "https://fr.wikipedia.org/wiki/Daron_Acemo%C4%9Flu",
+      "note": "Résumé Wikipédia brut — à reformuler en these_centrale/apport/limites_critiques (fiche humaine) ou capacites_cles/limites_connues (fiche IA) avant validation. Ne jamais publier tel quel sans relecture."
+    },
+    "score_fiabilite": 0.5,
+    "statut": "en_attente",
+    "created_at": "2026-09-05T20:14:31.614Z"
+  },
+  {
+    "id": "c7696557-9920-4d44-abd5-5a2c5f536e26",
+    "source_id": null,
+    "cible_type": "fiche_humaine",
+    "cible_id": "james-a-robinson",
+    "contenu_propose": {
+      "nom": "James A. Robinson",
+      "titre_article_source": "James A. Robinson",
+      "langue_source": "fr",
+      "extrait": "James A. Robinson, né le 27 février 1960, est un économiste britannique, professeur d'économie à l'université de Chicago.",
+      "url": "https://fr.wikipedia.org/wiki/James_A._Robinson",
+      "note": "Résumé Wikipédia brut — à reformuler en these_centrale/apport/limites_critiques (fiche humaine) ou capacites_cles/limites_connues (fiche IA) avant validation. Ne jamais publier tel quel sans relecture."
+    },
+    "score_fiabilite": 0.5,
+    "statut": "en_attente",
+    "created_at": "2026-09-05T20:14:32.165Z"
+  },
+  {
+    "id": "3c33b1ce-9f58-4003-b91a-6fd7f2b7a0a8",
+    "source_id": null,
+    "cible_type": "fiche_humaine",
+    "cible_id": "simon-johnson",
+    "contenu_propose": {
+      "nom": "Simon Johnson",
+      "titre_article_source": "Simon Johnson",
+      "langue_source": "fr",
+      "extrait": "Simon Johnson est un économiste britannique et américain né le 16 janvier 1963.",
+      "url": "https://fr.wikipedia.org/wiki/Simon_Johnson",
+      "note": "Résumé Wikipédia brut — à reformuler en these_centrale/apport/limites_critiques (fiche humaine) ou capacites_cles/limites_connues (fiche IA) avant validation. Ne jamais publier tel quel sans relecture."
+    },
+    "score_fiabilite": 0.5,
+    "statut": "en_attente",
+    "created_at": "2026-09-05T20:14:32.638Z"
+  },
+  {
+    "id": "79091414-f95c-4d51-8de3-55c9f36c6679",
+    "source_id": null,
+    "cible_type": "fiche_humaine",
+    "cible_id": "gabriel-zucman",
+    "contenu_propose": {
+      "nom": "Gabriel Zucman",
+      "titre_article_source": "Gabriel Zucman",
+      "langue_source": "fr",
+      "extrait": "Gabriel Zucman, né le 30 octobre 1986 à Paris, est un économiste franco-américain.",
+      "url": "https://fr.wikipedia.org/wiki/Gabriel_Zucman",
+      "note": "Résumé Wikipédia brut — à reformuler en these_centrale/apport/limites_critiques (fiche humaine) ou capacites_cles/limites_connues (fiche IA) avant validation. Ne jamais publier tel quel sans relecture."
+    },
+    "score_fiabilite": 0.5,
+    "statut": "en_attente",
+    "created_at": "2026-09-05T20:14:33.106Z"
+  },
+  {
+    "id": "174b2ceb-969b-4c04-b031-1878d06540b5",
+    "source_id": null,
+    "cible_type": "fiche_humaine",
+    "cible_id": "emmanuel-saez",
+    "contenu_propose": {
+      "nom": "Emmanuel Saez",
+      "titre_article_source": "Emmanuel Saez",
+      "langue_source": "fr",
+      "extrait": "Emmanuel Saez est un économiste français naturalisé américain, professeur à l'université de Californie à Berkeley. Il est spécialiste de la théorie de la taxation optimale et de l'étude des inégalités économiques. Il a, en particulier, mené une série d'études remarquées sur l'évolution des inégalités de revenu aux États-Unis, en collaboration avec Thomas Piketty.",
+      "url": "https://fr.wikipedia.org/wiki/Emmanuel_Saez",
+      "note": "Résumé Wikipédia brut — à reformuler en these_centrale/apport/limites_critiques (fiche humaine) ou capacites_cles/limites_connues (fiche IA) avant validation. Ne jamais publier tel quel sans relecture."
+    },
+    "score_fiabilite": 0.5,
+    "statut": "en_attente",
+    "created_at": "2026-09-05T20:14:33.530Z"
+  },
+  {
+    "id": "c8e96584-c8a9-4014-8a8d-a698c7c757c6",
+    "source_id": null,
+    "cible_type": "fiche_humaine",
+    "cible_id": "mariana-mazzucato",
+    "contenu_propose": {
+      "nom": "Mariana Mazzucato",
+      "titre_article_source": "Mariana Mazzucato",
+      "langue_source": "fr",
+      "extrait": "Mariana Mazzucato, née le 16 juin 1968 à Rome, est une économiste italo-anglo-américaine, enseignante-chercheuse en économie au Royaume-Uni, à l'université de Sussex, à University College London et à la London School of Economics.",
+      "url": "https://fr.wikipedia.org/wiki/Mariana_Mazzucato",
+      "note": "Résumé Wikipédia brut — à reformuler en these_centrale/apport/limites_critiques (fiche humaine) ou capacites_cles/limites_connues (fiche IA) avant validation. Ne jamais publier tel quel sans relecture."
+    },
+    "score_fiabilite": 0.5,
+    "statut": "en_attente",
+    "created_at": "2026-09-05T20:14:33.974Z"
+  },
+  {
+    "id": "f085f51b-90ac-4b32-969c-a1390ca80377",
+    "source_id": null,
+    "cible_type": "fiche_humaine",
+    "cible_id": "dani-rodrik",
+    "contenu_propose": {
+      "nom": "Dani Rodrik",
+      "titre_article_source": "Dani Rodrik",
+      "langue_source": "fr",
+      "extrait": "Dani Rodrik, né le 14 août 1957 à İstanbul, est un économiste et universitaire turc, professeur d'économie politique internationale à la John F. Kennedy School of Government de l'Université Harvard. C'est un auteur reconnu en économie internationale, économie du développement ainsi qu'en économie politique. Ses recherches se concentrent autour des problèmes de croissance, en particulier pourquoi certains types de gouvernements et certaines politiques gouvernementales réussissent mieux que d'autres. C'est un des principaux opposants académiques aux thèses qui font du libre-échange le facteur obligé et essentiel de la croissance.",
+      "url": "https://fr.wikipedia.org/wiki/Dani_Rodrik",
+      "note": "Résumé Wikipédia brut — à reformuler en these_centrale/apport/limites_critiques (fiche humaine) ou capacites_cles/limites_connues (fiche IA) avant validation. Ne jamais publier tel quel sans relecture."
+    },
+    "score_fiabilite": 0.5,
+    "statut": "en_attente",
+    "created_at": "2026-09-05T20:14:34.403Z"
+  },
+  {
+    "id": "18ffd46d-97d3-4657-8120-49d9771158a6",
+    "source_id": null,
+    "cible_type": "fiche_humaine",
+    "cible_id": "richard-thaler",
+    "contenu_propose": {
+      "nom": "Richard Thaler",
+      "titre_article_source": "Richard Thaler",
+      "langue_source": "fr",
+      "extrait": "Richard H. Thaler, né le 12 septembre 1945 à East Orange, est un économiste américain, connu surtout comme théoricien de la finance comportementale. Ses recherches et publications concernent divers biais cognitifs et leurs effets économiques sous forme d'anomalies de fonctionnement des marchés.",
+      "url": "https://fr.wikipedia.org/wiki/Richard_Thaler",
+      "note": "Résumé Wikipédia brut — à reformuler en these_centrale/apport/limites_critiques (fiche humaine) ou capacites_cles/limites_connues (fiche IA) avant validation. Ne jamais publier tel quel sans relecture."
+    },
+    "score_fiabilite": 0.5,
+    "statut": "en_attente",
+    "created_at": "2026-09-05T20:14:34.865Z"
+  },
+  {
+    "id": "b249c8c2-b83d-478c-b69a-0b6866aedc21",
+    "source_id": null,
+    "cible_type": "fiche_humaine",
+    "cible_id": "daniel-kahneman",
+    "contenu_propose": {
+      "nom": "Daniel Kahneman",
+      "titre_article_source": "Daniel Kahneman",
+      "langue_source": "fr",
+      "extrait": "Daniel Kahneman, né le 5 mars 1934 à Tel-Aviv en Palestine mandataire et mort le 27 mars 2024, est un psychologue et économiste américano-israélien, professeur à l'université de Princeton, lauréat du prix dit Nobel d'économie en 2002 pour ses travaux fondateurs sur la théorie des perspectives, base de la finance comportementale. Il est aussi connu pour ses travaux sur l'économie du bonheur.",
+      "url": "https://fr.wikipedia.org/wiki/Daniel_Kahneman",
+      "note": "Résumé Wikipédia brut — à reformuler en these_centrale/apport/limites_critiques (fiche humaine) ou capacites_cles/limites_connues (fiche IA) avant validation. Ne jamais publier tel quel sans relecture."
+    },
+    "score_fiabilite": 0.5,
+    "statut": "en_attente",
+    "created_at": "2026-09-05T20:14:35.315Z"
+  },
+  {
+    "id": "81a65efc-b9de-4b59-8147-13da56203c64",
+    "source_id": null,
+    "cible_type": "fiche_humaine",
+    "cible_id": "kate-raworth",
+    "contenu_propose": {
+      "nom": "Kate Raworth",
+      "titre_article_source": "Kate Raworth",
+      "langue_source": "fr",
+      "extrait": "Kate Raworth est une économiste et éditorialiste britannique, auteure du livre La théorie du donut.",
+      "url": "https://fr.wikipedia.org/wiki/Kate_Raworth",
+      "note": "Résumé Wikipédia brut — à reformuler en these_centrale/apport/limites_critiques (fiche humaine) ou capacites_cles/limites_connues (fiche IA) avant validation. Ne jamais publier tel quel sans relecture."
+    },
+    "score_fiabilite": 0.5,
+    "statut": "en_attente",
+    "created_at": "2026-09-05T20:14:35.825Z"
+  },
+  {
+    "id": "550030c3-c69c-4c81-869f-d3f3c6b57abe",
+    "source_id": null,
+    "cible_type": "fiche_humaine",
+    "cible_id": "bipolarite-guerre-froide",
+    "contenu_propose": {
+      "nom": "Bipolarité (Guerre froide)",
+      "titre_article_source": "Guerre froide",
+      "langue_source": "fr",
+      "extrait": "La guerre froide est la période de fortes tensions géopolitiques durant la seconde moitié du XXe siècle entre, d'une part, les États-Unis et leurs alliés constitutifs du bloc de l'Ouest et, d'autre part, l'Union des républiques socialistes soviétiques (URSS) et ses États satellites formant le bloc de l'Est. La guerre froide s'installe progressivement à partir de la fin de la Seconde Guerre mondiale, dans les années 1945 à 1947, et dure jusqu'à la chute des régimes communistes en Europe en 1989, rapidement suivie de la dislocation de l'URSS en décembre 1991.",
+      "url": "https://fr.wikipedia.org/wiki/Guerre_froide",
+      "note": "Résumé Wikipédia brut — à reformuler en these_centrale/apport/limites_critiques (fiche humaine) ou capacites_cles/limites_connues (fiche IA) avant validation. Ne jamais publier tel quel sans relecture."
+    },
+    "score_fiabilite": 0.5,
+    "statut": "en_attente",
+    "created_at": "2026-09-05T20:14:36.970Z"
+  },
+  {
+    "id": "d9594570-f0bf-4b10-80c1-c3d480ce5b27",
+    "source_id": null,
+    "cible_type": "fiche_humaine",
+    "cible_id": "multilateralisme-institutionnel",
+    "contenu_propose": {
+      "nom": "Multilatéralisme institutionnel",
+      "titre_article_source": "Multilatéralisme",
+      "langue_source": "fr",
+      "extrait": "Le multilatéralisme est un concept utilisé dans le champ des relations internationales. Il se définit comme un mode d'organisation des relations inter-étatiques. Il se traduit par la coopération de trois États au moins dans le but d'instaurer des règles communes. Il a essentiellement la forme institutionnalisée de ces relations.",
+      "url": "https://fr.wikipedia.org/wiki/Multilat%C3%A9ralisme",
+      "note": "Résumé Wikipédia brut — à reformuler en these_centrale/apport/limites_critiques (fiche humaine) ou capacites_cles/limites_connues (fiche IA) avant validation. Ne jamais publier tel quel sans relecture."
+    },
+    "score_fiabilite": 0.5,
+    "statut": "en_attente",
+    "created_at": "2026-09-05T20:14:37.420Z"
+  },
+  {
+    "id": "133547ed-92de-4306-88fb-9b5fc2a314b4",
+    "source_id": null,
+    "cible_type": "fiche_humaine",
+    "cible_id": "gouvernance-en-reseau-multiniveau",
+    "contenu_propose": {
+      "nom": "Gouvernance en réseau (multiniveau)",
+      "titre_article_source": "Gouvernance multi-niveaux",
+      "langue_source": "fr",
+      "extrait": "La gouvernance multi-niveaux est un concept né de l'entrecroisement des théories de la science politique et de l'analyse de l'action publique. En effet, c'est au cours de la dernière décennie du 20e siècle que l'on a pu voir émerger une importante discussion sur le rôle des gouvernements nationaux ou infranationaux dans l'intégration européenne, théories notamment développées par les politologues Liesbeth Hooghe et Gary Marks (en).",
+      "url": "https://fr.wikipedia.org/wiki/Gouvernance_multi-niveaux",
+      "note": "Résumé Wikipédia brut — à reformuler en these_centrale/apport/limites_critiques (fiche humaine) ou capacites_cles/limites_connues (fiche IA) avant validation. Ne jamais publier tel quel sans relecture."
+    },
+    "score_fiabilite": 0.5,
+    "statut": "en_attente",
+    "created_at": "2026-09-05T20:14:38.641Z"
+  },
+  {
+    "id": "8bf157d9-ced2-4e30-a4d7-0547d8632e35",
+    "source_id": null,
+    "cible_type": "fiche_humaine",
+    "cible_id": "regionalisme-et-integration-regionale",
+    "contenu_propose": {
+      "nom": "Régionalisme et intégration régionale",
+      "titre_article_source": "Régionalisme (relations internationales)",
+      "langue_source": "fr",
+      "extrait": "Le régionalisme correspond à un phénomène de regroupement de pays géographiquement proches, qui a pour but de faciliter les échanges commerciaux entre eux. Il diffère du multilatéralisme. Il s'agit d'une dimension médiane entre l'échelon étatique et le système mondial. C'est dans le contexte post-bipolaire et de l'accélération de la mondialisation que le régionalisme devient à un phénomène à l'échelle mondiale.",
+      "url": "https://fr.wikipedia.org/wiki/R%C3%A9gionalisme_(relations_internationales)",
+      "note": "Résumé Wikipédia brut — à reformuler en these_centrale/apport/limites_critiques (fiche humaine) ou capacites_cles/limites_connues (fiche IA) avant validation. Ne jamais publier tel quel sans relecture."
+    },
+    "score_fiabilite": 0.5,
+    "statut": "en_attente",
+    "created_at": "2026-09-05T20:14:40.056Z"
+  },
+  {
+    "id": "702101b2-281c-4849-a895-c3a55c5d3fc3",
+    "source_id": null,
+    "cible_type": "fiche_humaine",
+    "cible_id": "onu",
+    "contenu_propose": {
+      "nom": "ONU",
+      "titre_article_source": "Organisation des Nations unies",
+      "langue_source": "fr",
+      "extrait": "L'Organisation des Nations unies (ONU) est une organisation internationale regroupant 193 États membres depuis le 14 juillet 2011. Elle a été instituée le 24 octobre 1945 par la ratification de la Charte des Nations unies signée le 26 juin 1945 par les représentants de 51 États. Elle remplace alors la Société des Nations.",
+      "url": "https://fr.wikipedia.org/wiki/Organisation_des_Nations_unies",
+      "note": "Résumé Wikipédia brut — à reformuler en these_centrale/apport/limites_critiques (fiche humaine) ou capacites_cles/limites_connues (fiche IA) avant validation. Ne jamais publier tel quel sans relecture."
+    },
+    "score_fiabilite": 0.5,
+    "statut": "en_attente",
+    "created_at": "2026-09-05T20:14:41.702Z"
+  },
+  {
+    "id": "c96a786f-83c9-47da-8795-da1df2e1b7f9",
+    "source_id": null,
+    "cible_type": "fiche_humaine",
+    "cible_id": "pacte-de-varsovie",
+    "contenu_propose": {
+      "nom": "Pacte de Varsovie",
+      "titre_article_source": "Pacte de Varsovie",
+      "langue_source": "fr",
+      "extrait": "Le Traité d'amitié, de coopération et d'assistance mutuelle, dit « pacte de Varsovie », est une ancienne alliance militaire groupant les pays d'Europe de l'Est avec l'URSS dans un vaste ensemble économique, politique et militaire. Il est conclu le 14 mai 1955 entre la plupart des pays communistes du bloc soviétique par un traité d’amitié, de coopération et d’assistance mutuelle. Nikita Khrouchtchev, qui en fut l'artisan, l'avait conçu dans le contexte de la guerre froide comme un contrepoids à l'Organisation du traité de l'Atlantique nord (OTAN) qui avait vu le jour en avril 1949.",
+      "url": "https://fr.wikipedia.org/wiki/Pacte_de_Varsovie",
+      "note": "Résumé Wikipédia brut — à reformuler en these_centrale/apport/limites_critiques (fiche humaine) ou capacites_cles/limites_connues (fiche IA) avant validation. Ne jamais publier tel quel sans relecture."
+    },
+    "score_fiabilite": 0.5,
+    "statut": "en_attente",
+    "created_at": "2026-09-05T20:14:43.507Z"
+  },
+  {
+    "id": "fe9c353b-e997-43e7-a84e-c28c95f73f09",
+    "source_id": null,
+    "cible_type": "fiche_humaine",
+    "cible_id": "mouvement-des-non-alignes",
+    "contenu_propose": {
+      "nom": "Mouvement des non-alignés",
+      "titre_article_source": "Mouvement des non-alignés",
+      "langue_source": "fr",
+      "extrait": "Le mouvement des non-alignés est une organisation internationale regroupant 120 États en 2012, qui se définissent comme n'étant alignés ni avec ni contre aucune grande puissance mondiale. En effet ce mouvement, né durant la guerre froide, visait à regrouper les États qui ne se considéraient comme alignés ni sur le bloc de l'Est ni sur le bloc de l'Ouest.",
+      "url": "https://fr.wikipedia.org/wiki/Mouvement_des_non-align%C3%A9s",
+      "note": "Résumé Wikipédia brut — à reformuler en these_centrale/apport/limites_critiques (fiche humaine) ou capacites_cles/limites_connues (fiche IA) avant validation. Ne jamais publier tel quel sans relecture."
+    },
+    "score_fiabilite": 0.5,
+    "statut": "en_attente",
+    "created_at": "2026-09-05T20:14:44.053Z"
+  },
+  {
+    "id": "43fac462-d908-4c2e-b8d4-4d18521821e1",
+    "source_id": null,
+    "cible_type": "fiche_humaine",
+    "cible_id": "union-africaine-ua-oua",
+    "contenu_propose": {
+      "nom": "Union africaine (UA) / OUA",
+      "titre_article_source": "Organisation de l'unité africaine",
+      "langue_source": "fr",
+      "extrait": "L'Organisation de l'unité africaine (OUA) était une organisation inter-étatique, ayant précédé l'Union africaine. Elle a été créée et présidée par l'empereur Haïlé Sélassié Ier le 25 mai 1963 et dissoute le 9 juillet 2002.",
+      "url": "https://fr.wikipedia.org/wiki/Organisation_de_l'unit%C3%A9_africaine",
+      "note": "Résumé Wikipédia brut — à reformuler en these_centrale/apport/limites_critiques (fiche humaine) ou capacites_cles/limites_connues (fiche IA) avant validation. Ne jamais publier tel quel sans relecture."
+    },
+    "score_fiabilite": 0.5,
+    "statut": "en_attente",
+    "created_at": "2026-09-05T20:14:44.543Z"
+  },
+  {
+    "id": "44ca84f4-b824-47f4-be11-0c38aa0c907c",
+    "source_id": null,
+    "cible_type": "fiche_humaine",
+    "cible_id": "ligue-arabe",
+    "contenu_propose": {
+      "nom": "Ligue arabe",
+      "titre_article_source": "Ligue arabe",
+      "langue_source": "fr",
+      "extrait": "La Ligue arabe, officiellement la Ligue des États arabes, est une organisation régionale possédant le statut d’observateur auprès de l'Organisation des Nations unies (ONU). Elle est fondée le 22 mars 1945 au Caire par six États. En 2023, elle compte 22 États membres.",
+      "url": "https://fr.wikipedia.org/wiki/Ligue_arabe",
+      "note": "Résumé Wikipédia brut — à reformuler en these_centrale/apport/limites_critiques (fiche humaine) ou capacites_cles/limites_connues (fiche IA) avant validation. Ne jamais publier tel quel sans relecture."
+    },
+    "score_fiabilite": 0.5,
+    "statut": "en_attente",
+    "created_at": "2026-09-05T20:14:45.672Z"
+  },
+  {
+    "id": "b73f87f5-7c05-4a6a-9473-a9a04bba93e3",
+    "source_id": null,
+    "cible_type": "fiche_humaine",
+    "cible_id": "conseil-de-l-europe",
+    "contenu_propose": {
+      "nom": "Conseil de l'Europe",
+      "titre_article_source": "Conseil de l'Europe",
+      "langue_source": "fr",
+      "extrait": "Le Conseil de l'Europe est une organisation internationale qui rassemble environ 675 millions de ressortissants de 46 États membres, par le biais des normes juridiques dans les domaines de la protection des droits de l'homme, du renforcement de la démocratie et de la prééminence du droit en Europe. Le Conseil de l'Europe est doté de la personnalité juridique, reconnue en droit international public. Cette organisation intergouvernementale est instituée le 5 mai 1949 par le traité de Londres.",
+      "url": "https://fr.wikipedia.org/wiki/Conseil_de_l'Europe",
+      "note": "Résumé Wikipédia brut — à reformuler en these_centrale/apport/limites_critiques (fiche humaine) ou capacites_cles/limites_connues (fiche IA) avant validation. Ne jamais publier tel quel sans relecture."
+    },
+    "score_fiabilite": 0.5,
+    "statut": "en_attente",
+    "created_at": "2026-09-05T20:14:46.370Z"
+  },
+  {
+    "id": "86f2fec4-25d5-4f61-a8ec-477d4c4bda11",
+    "source_id": null,
+    "cible_type": "fiche_humaine",
+    "cible_id": "osce",
+    "contenu_propose": {
+      "nom": "OSCE",
+      "titre_article_source": "Organisation pour la sécurité et la coopération en Europe",
+      "langue_source": "fr",
+      "extrait": "L'Organisation pour la sécurité et la coopération en Europe est une organisation régionale de sécurité qui a succédé en 1995 à la Conférence sur la sécurité et la coopération en Europe. L’OSCE traite de questions relevant de la coopération entre ses États participants en matière de sécurité et de dimension humaine, telles que la maîtrise des armements, le terrorisme, la bonne gouvernance, la sécurité énergétique, la traite des êtres humains, la démocratisation, la liberté des médias et les minorités nationales. L’OSCE est un acteur essentiel de la sécurité paneuropéenne, en sa qualité de seule institution où la Russie, les États-Unis, le Canada, tous les pays d’Europe et d’Asie centrale, peuvent dialoguer directement dans un cadre multilatéral et sur un pied d’égalité.",
+      "url": "https://fr.wikipedia.org/wiki/Organisation_pour_la_s%C3%A9curit%C3%A9_et_la_coop%C3%A9ration_en_Europe",
+      "note": "Résumé Wikipédia brut — à reformuler en these_centrale/apport/limites_critiques (fiche humaine) ou capacites_cles/limites_connues (fiche IA) avant validation. Ne jamais publier tel quel sans relecture."
+    },
+    "score_fiabilite": 0.5,
+    "statut": "en_attente",
+    "created_at": "2026-09-05T20:14:46.813Z"
+  },
+  {
+    "id": "3fe5a59d-7bb7-45ce-9c8b-565207127d3e",
+    "source_id": null,
+    "cible_type": "fiche_humaine",
+    "cible_id": "banque-mondiale-bird",
+    "contenu_propose": {
+      "nom": "Banque mondiale (BIRD)",
+      "titre_article_source": "Banque mondiale",
+      "langue_source": "fr",
+      "extrait": "La Banque mondiale, parfois abrégée BM, est une institution financière internationale qui accorde des prêts et autres appuis financiers à des pays en développement pour des projets d'investissement.",
+      "url": "https://fr.wikipedia.org/wiki/Banque_mondiale",
+      "note": "Résumé Wikipédia brut — à reformuler en these_centrale/apport/limites_critiques (fiche humaine) ou capacites_cles/limites_connues (fiche IA) avant validation. Ne jamais publier tel quel sans relecture."
+    },
+    "score_fiabilite": 0.5,
+    "statut": "en_attente",
+    "created_at": "2026-09-05T20:14:47.889Z"
+  },
+  {
+    "id": "1a12e9c6-c639-409a-9be3-68f5fe9bba39",
+    "source_id": null,
+    "cible_type": "fiche_humaine",
+    "cible_id": "ocde",
+    "contenu_propose": {
+      "nom": "OCDE",
+      "titre_article_source": "Organisation de coopération et de développement économiques",
+      "langue_source": "fr",
+      "extrait": "L'Organisation de coopération et de développement économiques (OCDE) est une organisation intergouvernementale d'études économiques, dont les pays membres — des pays développés pour la plupart — ont en commun un système de gouvernement démocratique et une économie de marché. Elle joue essentiellement un rôle d'assemblée consultative.",
+      "url": "https://fr.wikipedia.org/wiki/Organisation_de_coop%C3%A9ration_et_de_d%C3%A9veloppement_%C3%A9conomiques",
+      "note": "Résumé Wikipédia brut — à reformuler en these_centrale/apport/limites_critiques (fiche humaine) ou capacites_cles/limites_connues (fiche IA) avant validation. Ne jamais publier tel quel sans relecture."
+    },
+    "score_fiabilite": 0.5,
+    "statut": "en_attente",
+    "created_at": "2026-09-05T20:14:49.589Z"
+  },
+  {
+    "id": "03c617ae-768f-4a78-8ea9-b71d43d5e823",
+    "source_id": null,
+    "cible_type": "fiche_humaine",
+    "cible_id": "opep",
+    "contenu_propose": {
+      "nom": "OPEP",
+      "titre_article_source": "Organisation des pays exportateurs de pétrole",
+      "langue_source": "fr",
+      "extrait": "L'Organisation des pays exportateurs de pétrole (OPEP), est une organisation intergouvernementale de pays visant à négocier avec les sociétés pétrolières pour tout ce qui touche à la production de pétrole, son prix et les futurs droits de concession. Son siège est à Vienne en Autriche. Les pays membres, qui constituent un cartel, se mettent d'accord sur la quantité et le prix du pétrole exporté.",
+      "url": "https://fr.wikipedia.org/wiki/Organisation_des_pays_exportateurs_de_p%C3%A9trole",
+      "note": "Résumé Wikipédia brut — à reformuler en these_centrale/apport/limites_critiques (fiche humaine) ou capacites_cles/limites_connues (fiche IA) avant validation. Ne jamais publier tel quel sans relecture."
+    },
+    "score_fiabilite": 0.5,
+    "statut": "en_attente",
+    "created_at": "2026-09-05T20:14:50.029Z"
+  },
+  {
+    "id": "97019c15-2075-4a2d-b76e-3f52c79ddc3a",
+    "source_id": null,
+    "cible_type": "fiche_humaine",
+    "cible_id": "g7-g8",
+    "contenu_propose": {
+      "nom": "G7/G8",
+      "titre_article_source": "Groupe des sept (économie)",
+      "langue_source": "fr",
+      "extrait": "Le Groupe des sept (G7) est un groupe de discussion et de partenariat économique de sept pays réputés en 1975 pour être les plus grandes puissances avancées du monde qui détiennent environ les deux tiers de la richesse nette mondiale : Allemagne, Canada, États-Unis, France, Italie, Japon et Royaume-Uni. Le groupe rassemble 7 des 10 pays avec le plus important PIB du monde, avec l'absence notable de la Chine qui occupe le 2e rang et de l'Inde qui occupe le 5e rang.",
+      "url": "https://fr.wikipedia.org/wiki/Groupe_des_sept_(%C3%A9conomie)",
+      "note": "Résumé Wikipédia brut — à reformuler en these_centrale/apport/limites_critiques (fiche humaine) ou capacites_cles/limites_connues (fiche IA) avant validation. Ne jamais publier tel quel sans relecture."
+    },
+    "score_fiabilite": 0.5,
+    "statut": "en_attente",
+    "created_at": "2026-09-05T20:14:50.975Z"
+  },
+  {
+    "id": "f0b8cba8-a442-45d7-9511-929188135896",
+    "source_id": null,
+    "cible_type": "fiche_humaine",
+    "cible_id": "asean",
+    "contenu_propose": {
+      "nom": "ASEAN",
+      "titre_article_source": "ASEAN",
+      "langue_source": "en",
+      "extrait": "The Association of Southeast Asian Nations is an intergovernmental forum of all 11 states in Southeast Asia. ASEAN primarily focuses on Southeast Asian economic development, peaceful coexistence and adherence to international norms. ASEAN operates on the principle of consensus and respecting national sovereignty, meaning that ASEAN as a whole cannot force another member state to change its domestic laws.",
+      "url": "https://en.wikipedia.org/wiki/ASEAN",
+      "note": "Résumé Wikipédia brut — à reformuler en these_centrale/apport/limites_critiques (fiche humaine) ou capacites_cles/limites_connues (fiche IA) avant validation. Ne jamais publier tel quel sans relecture."
+    },
+    "score_fiabilite": 0.5,
+    "statut": "en_attente",
+    "created_at": "2026-09-05T20:14:52.284Z"
+  },
+  {
+    "id": "6e57791b-3b12-473f-a88d-3a6c6b1104f2",
+    "source_id": null,
+    "cible_type": "fiche_humaine",
+    "cible_id": "mercosur",
+    "contenu_propose": {
+      "nom": "Mercosur",
+      "titre_article_source": "Marché commun du Sud",
+      "langue_source": "fr",
+      "extrait": "Le Marché commun du Sud, couramment abrégé Mercosur ou Mercosul, est une zone de libre-échange qui regroupe plusieurs pays de l'Amérique du Sud.",
+      "url": "https://fr.wikipedia.org/wiki/March%C3%A9_commun_du_Sud",
+      "note": "Résumé Wikipédia brut — à reformuler en these_centrale/apport/limites_critiques (fiche humaine) ou capacites_cles/limites_connues (fiche IA) avant validation. Ne jamais publier tel quel sans relecture."
+    },
+    "score_fiabilite": 0.5,
+    "statut": "en_attente",
+    "created_at": "2026-09-05T20:14:52.721Z"
+  },
+  {
+    "id": "1c98de89-4f2f-4ae1-a024-783642c7b15d",
+    "source_id": null,
+    "cible_type": "fiche_humaine",
+    "cible_id": "g20",
+    "contenu_propose": {
+      "nom": "G20",
+      "titre_article_source": "Groupe des vingt",
+      "langue_source": "fr",
+      "extrait": "Le Groupe des vingt (G20) est un forum intergouvernemental composé de dix-neuf des pays aux économies les plus développées du monde, dont les chefs d'État, chefs de gouvernement, ministres des finances et chefs des banques centrales se réunissent annuellement. Il est créé en 1999, après une succession de crises financières dans les années 1990. Il vise à favoriser la concertation internationale, en intégrant le principe d'un dialogue élargi tenant compte du poids économique croissant pris par un certain nombre de pays. En 2021, le G20 représente 75 % du commerce mondial, près des deux tiers de la population mondiale et plus de 80 % du produit mondial brut. Le 15 novembre 2008, pour la première fois de son histoire, les chefs d'État et de gouvernement se réunissent à Washington. Le G20 se décline sous trois formes : les G20 regroupant des chefs d'État et de gouvernement, les G20 finance regroupant les ministres des finances et les gouverneurs des banques centrales et depuis avril 2010 les G20 sociaux réunissent les ministres de l'emploi.",
+      "url": "https://fr.wikipedia.org/wiki/Groupe_des_vingt",
+      "note": "Résumé Wikipédia brut — à reformuler en these_centrale/apport/limites_critiques (fiche humaine) ou capacites_cles/limites_connues (fiche IA) avant validation. Ne jamais publier tel quel sans relecture."
+    },
+    "score_fiabilite": 0.5,
+    "statut": "en_attente",
+    "created_at": "2026-09-05T20:14:53.736Z"
+  },
+  {
+    "id": "f5f436fc-ff1b-41d9-b32e-7e7253179721",
+    "source_id": null,
+    "cible_type": "fiche_humaine",
+    "cible_id": "brics",
+    "contenu_propose": {
+      "nom": "BRICS(+)",
+      "titre_article_source": "BRICS+",
+      "langue_source": "fr",
+      "extrait": "Les BRICS+ sont un groupe de dix pays qui se réunissent en sommets annuels : le Brésil, la Russie, l'Inde, la Chine, l'Afrique du Sud, l'Iran, l'Égypte, les Émirats arabes unis, l'Indonésie et l'Éthiopie, ayant pour but de rivaliser avec le Groupe des sept (G7).",
+      "url": "https://fr.wikipedia.org/wiki/BRICS%2B",
+      "note": "Résumé Wikipédia brut — à reformuler en these_centrale/apport/limites_critiques (fiche humaine) ou capacites_cles/limites_connues (fiche IA) avant validation. Ne jamais publier tel quel sans relecture."
+    },
+    "score_fiabilite": 0.5,
+    "statut": "en_attente",
+    "created_at": "2026-09-05T20:14:54.179Z"
+  },
+  {
+    "id": "7946e85f-4929-4ba0-b6ec-eab28b724d69",
+    "source_id": null,
+    "cible_type": "fiche_humaine",
+    "cible_id": "organisation-de-cooperation-de-shanghai-ocs",
+    "contenu_propose": {
+      "nom": "Organisation de coopération de Shanghai (OCS)",
+      "titre_article_source": "Organisation de coopération de Shanghai",
+      "langue_source": "fr",
+      "extrait": "L'Organisation de coopération de Shanghai est l'une des nombreuses organisations intergouvernementales à caractère politique et économique actives en Asie.",
+      "url": "https://fr.wikipedia.org/wiki/Organisation_de_coop%C3%A9ration_de_Shanghai",
+      "note": "Résumé Wikipédia brut — à reformuler en these_centrale/apport/limites_critiques (fiche humaine) ou capacites_cles/limites_connues (fiche IA) avant validation. Ne jamais publier tel quel sans relecture."
+    },
+    "score_fiabilite": 0.5,
+    "statut": "en_attente",
+    "created_at": "2026-09-05T20:14:54.675Z"
+  },
+  {
+    "id": "d4aedd4b-53f6-4195-a788-f4cf7f7373ef",
+    "source_id": null,
+    "cible_type": "fiche_humaine",
+    "cible_id": "cour-penale-internationale-cpi",
+    "contenu_propose": {
+      "nom": "Cour pénale internationale (CPI)",
+      "titre_article_source": "Cour pénale internationale",
+      "langue_source": "fr",
+      "extrait": "La Cour pénale internationale est une juridiction pénale internationale créée en 1998, permanente et à vocation universelle, complémentaire de la Cour internationale de justice créée en 1945. Elle est chargée de juger « a) le crime de génocide, b) les crimes contre l'humanité, c) les crimes de guerre, d) le crime d'agression ». La Cour inscrit son action dans une dimension préventive et dissuasive : son objectif est de responsabiliser les individus, qu'il s'agisse d'autorités civiles ou militaires.",
+      "url": "https://fr.wikipedia.org/wiki/Cour_p%C3%A9nale_internationale",
+      "note": "Résumé Wikipédia brut — à reformuler en these_centrale/apport/limites_critiques (fiche humaine) ou capacites_cles/limites_connues (fiche IA) avant validation. Ne jamais publier tel quel sans relecture."
+    },
+    "score_fiabilite": 0.5,
+    "statut": "en_attente",
+    "created_at": "2026-09-05T20:14:55.188Z"
+  },
+  {
+    "id": "8bd65a4a-92b2-4dcd-af52-02f6f8467a6a",
+    "source_id": null,
+    "cible_type": "fiche_humaine",
+    "cible_id": "banque-asiatique-d-investissement-pour-les-infrastructures-baii",
+    "contenu_propose": {
+      "nom": "Banque asiatique d'investissement pour les infrastructures (BAII)",
+      "titre_article_source": "Banque asiatique d'investissement pour les infrastructures",
+      "langue_source": "fr",
+      "extrait": "La Banque asiatique d'investissement dans les infrastructures est une banque d'investissement proposée par la république populaire de Chine dans le but de concurrencer le Fonds monétaire international (FMI), la Banque mondiale et la Banque asiatique de développement pour répondre au besoin croissant d'infrastructures en Asie du Sud-Est et en Asie centrale. Cette banque s'inscrit dans la stratégie de la nouvelle route de la soie développée par la Chine.",
+      "url": "https://fr.wikipedia.org/wiki/Banque_asiatique_d'investissement_pour_les_infrastructures",
+      "note": "Résumé Wikipédia brut — à reformuler en these_centrale/apport/limites_critiques (fiche humaine) ou capacites_cles/limites_connues (fiche IA) avant validation. Ne jamais publier tel quel sans relecture."
+    },
+    "score_fiabilite": 0.5,
+    "statut": "en_attente",
+    "created_at": "2026-09-05T20:14:57.620Z"
+  },
+  {
+    "id": "f7078210-07aa-4514-aee2-fcd6e88ca05e",
+    "source_id": null,
+    "cible_type": "fiche_humaine",
+    "cible_id": "cptpp",
+    "contenu_propose": {
+      "nom": "CPTPP",
+      "titre_article_source": "Comprehensive and Progressive Agreement for Trans-Pacific Partnership",
+      "langue_source": "en",
+      "extrait": "The Comprehensive and Progressive Agreement for Trans-Pacific Partnership (CPTPP), previously proposed as the as TPP11 is a multilateral trade agreement that consists of twelve members states, spans over five continents and covers nearly 600m people.",
+      "url": "https://en.wikipedia.org/wiki/Comprehensive_and_Progressive_Agreement_for_Trans-Pacific_Partnership",
+      "note": "Résumé Wikipédia brut — à reformuler en these_centrale/apport/limites_critiques (fiche humaine) ou capacites_cles/limites_connues (fiche IA) avant validation. Ne jamais publier tel quel sans relecture."
+    },
+    "score_fiabilite": 0.5,
+    "statut": "en_attente",
+    "created_at": "2026-09-05T20:14:58.884Z"
+  },
+  {
+    "id": "12bad0af-37f7-410e-9f60-b21b589ffa26",
+    "source_id": null,
+    "cible_type": "fiche_humaine",
+    "cible_id": "conseil-de-stabilite-financiere-csf",
+    "contenu_propose": {
+      "nom": "Conseil de stabilité financière (CSF)",
+      "titre_article_source": "Conseil de stabilité financière",
+      "langue_source": "fr",
+      "extrait": "Le Conseil de stabilité financière ou CSF, est un groupement économique international créé lors de la réunion du G20 à Londres en avril 2009. Il succède au Forum de stabilité financière institué en 1999 à l'initiative du G7. Il regroupe 26 autorités financières nationales, plusieurs organisations internationales et groupements élaborant des normes dans le domaine de la stabilité financière. Ses objectifs relèvent de la coopération dans le domaine de la supervision et de la surveillance des institutions financières.",
+      "url": "https://fr.wikipedia.org/wiki/Conseil_de_stabilit%C3%A9_financi%C3%A8re",
+      "note": "Résumé Wikipédia brut — à reformuler en these_centrale/apport/limites_critiques (fiche humaine) ou capacites_cles/limites_connues (fiche IA) avant validation. Ne jamais publier tel quel sans relecture."
+    },
+    "score_fiabilite": 0.5,
+    "statut": "en_attente",
+    "created_at": "2026-09-05T20:15:00.263Z"
+  },
+  {
+    "id": "a083491f-3eea-4bae-af7b-3f4b9b7d3ec4",
+    "source_id": null,
+    "cible_type": "fiche_humaine",
+    "cible_id": "fonds-mondial-sida-tuberculose-paludisme",
+    "contenu_propose": {
+      "nom": "Fonds mondial (sida/tuberculose/paludisme)",
+      "titre_article_source": "Fonds mondial de lutte contre le sida, la tuberculose et le paludisme",
+      "langue_source": "fr",
+      "extrait": "Le Fonds mondial de lutte contre le sida, la tuberculose et le paludisme (the Global Fund to Fight AIDS, Tuberculosis and Malaria), souvent appelé « le Fonds mondial », ou en anglais « the Global Fund », est une fondation à but non lucratif destinée à « attirer, mobiliser et investir des ressources supplémentaires pour mettre fin aux épidémies de VIH, de tuberculose et de paludisme à l’appui de la réalisation des Objectifs de développement durable établis par les Nations unies. » « Fin 2018, les programmes de santé soutenus par le partenariat du Fonds mondial avaient sauvé 32 millions de vies. »",
+      "url": "https://fr.wikipedia.org/wiki/Fonds_mondial_de_lutte_contre_le_sida%2C_la_tuberculose_et_le_paludisme",
+      "note": "Résumé Wikipédia brut — à reformuler en these_centrale/apport/limites_critiques (fiche humaine) ou capacites_cles/limites_connues (fiche IA) avant validation. Ne jamais publier tel quel sans relecture."
+    },
+    "score_fiabilite": 0.5,
+    "statut": "en_attente",
+    "created_at": "2026-09-05T20:15:01.181Z"
+  },
+  {
+    "id": "10c994ff-e66c-4733-8ec0-d3c5be8e142a",
+    "source_id": null,
+    "cible_type": "fiche_humaine",
+    "cible_id": "ipbes",
+    "contenu_propose": {
+      "nom": "IPBES",
+      "titre_article_source": "Intergovernmental Science-Policy Platform on Biodiversity and Ecosystem Services",
+      "langue_source": "en",
+      "extrait": "The Intergovernmental Science-Policy Platform on Biodiversity and Ecosystem Services (IPBES) is an independent intergovernmental organization established by Governments in 2012 to strengthen the science-policy interface for biodiversity and ecosystem services for the conservation and sustainable use of biodiversity, long-term human well-being and sustainable development. \nIt serves a similar role to the Intergovernmental Panel on Climate Change (IPCC), though in addition to undertaking scientific assessments, IPBES also supports efforts to generate new knowledge, build capacity and promote the development and use of policy support tools. In keeping with widespread linguistic convention, the acronym is officially pronounced as “ip-bes” — “ip” as in “hip” and “bes” as in “best”.",
+      "url": "https://en.wikipedia.org/wiki/Intergovernmental_Science-Policy_Platform_on_Biodiversity_and_Ecosystem_Services",
+      "note": "Résumé Wikipédia brut — à reformuler en these_centrale/apport/limites_critiques (fiche humaine) ou capacites_cles/limites_connues (fiche IA) avant validation. Ne jamais publier tel quel sans relecture."
+    },
+    "score_fiabilite": 0.5,
+    "statut": "en_attente",
+    "created_at": "2026-09-05T20:15:02.028Z"
+  },
+  {
+    "id": "0ac110c1-100e-49b2-8304-c8ee1cf6f273",
+    "source_id": null,
+    "cible_type": "fiche_humaine",
+    "cible_id": "fordisme",
+    "contenu_propose": {
+      "nom": "Fordisme",
+      "titre_article_source": "Fordisme",
+      "langue_source": "fr",
+      "extrait": "Le fordisme, est — au sens premier du terme — un modèle d'organisation et de développement d'entreprise développé et mis en œuvre en 1908 par Henry Ford (1863-1947) fondateur de l'entreprise qui porte son nom, à l'occasion de la production d'un nouveau modèle, la Ford T.",
+      "url": "https://fr.wikipedia.org/wiki/Fordisme",
+      "note": "Résumé Wikipédia brut — à reformuler en these_centrale/apport/limites_critiques (fiche humaine) ou capacites_cles/limites_connues (fiche IA) avant validation. Ne jamais publier tel quel sans relecture."
+    },
+    "score_fiabilite": 0.5,
+    "statut": "en_attente",
+    "created_at": "2026-09-05T20:15:02.470Z"
+  },
+  {
+    "id": "e03f5f0b-82b8-483e-bdf6-1d0a876f9bd8",
+    "source_id": null,
+    "cible_type": "fiche_humaine",
+    "cible_id": "fayolisme",
+    "contenu_propose": {
+      "nom": "Fayolisme",
+      "titre_article_source": "Fayolisme",
+      "langue_source": "fr",
+      "extrait": "Le fayolisme est une théorie développée par Henri Fayol, ingénieur des mines, directeur d'un groupe d'entreprises minières de 10 000 personnes entre 1888 et 1918.",
+      "url": "https://fr.wikipedia.org/wiki/Fayolisme",
+      "note": "Résumé Wikipédia brut — à reformuler en these_centrale/apport/limites_critiques (fiche humaine) ou capacites_cles/limites_connues (fiche IA) avant validation. Ne jamais publier tel quel sans relecture."
+    },
+    "score_fiabilite": 0.5,
+    "statut": "en_attente",
+    "created_at": "2026-09-05T20:15:02.898Z"
+  },
+  {
+    "id": "33061cf2-d301-42bb-b739-141bbce425b8",
+    "source_id": null,
+    "cible_type": "fiche_humaine",
+    "cible_id": "bureaucratie-weberienne",
+    "contenu_propose": {
+      "nom": "Bureaucratie wébérienne",
+      "titre_article_source": "Bureaucratie",
+      "langue_source": "fr",
+      "extrait": "Une bureaucratie est une forme d'organisation du travail.",
+      "url": "https://fr.wikipedia.org/wiki/Bureaucratie",
+      "note": "Résumé Wikipédia brut — à reformuler en these_centrale/apport/limites_critiques (fiche humaine) ou capacites_cles/limites_connues (fiche IA) avant validation. Ne jamais publier tel quel sans relecture."
+    },
+    "score_fiabilite": 0.5,
+    "statut": "en_attente",
+    "created_at": "2026-09-05T20:15:03.359Z"
+  },
+  {
+    "id": "82a39033-d20a-4f16-b595-efc81975e644",
+    "source_id": null,
+    "cible_type": "fiche_humaine",
+    "cible_id": "toyotisme-lean-management",
+    "contenu_propose": {
+      "nom": "Toyotisme / Lean Management",
+      "titre_article_source": "Lean (production)",
+      "langue_source": "fr",
+      "extrait": "Le lean, prononcé en français [lin] est une méthode de gestion de la production qui se concentre sur la « gestion sans gaspillage », ou « gestion allégée » ou encore gestion « au plus juste ».",
+      "url": "https://fr.wikipedia.org/wiki/Lean_(production)",
+      "note": "Résumé Wikipédia brut — à reformuler en these_centrale/apport/limites_critiques (fiche humaine) ou capacites_cles/limites_connues (fiche IA) avant validation. Ne jamais publier tel quel sans relecture."
+    },
+    "score_fiabilite": 0.5,
+    "statut": "en_attente",
+    "created_at": "2026-09-05T20:15:03.839Z"
+  },
+  {
+    "id": "160fb5f6-cb7a-4ecf-9aa3-2e5d955691b1",
+    "source_id": null,
+    "cible_type": "fiche_humaine",
+    "cible_id": "structure-matricielle",
+    "contenu_propose": {
+      "nom": "Structure matricielle",
+      "titre_article_source": "Organisation matricielle",
+      "langue_source": "fr",
+      "extrait": "L’organisation matricielle est un type d’organisation dans lequel les personnes ou les sous-sections ayant des compétences similaires sont regroupées pour la répartition des tâches. Cette organisation fait partie d’un ensemble de pratiques mises en place pour aider à la gestion de projets tels que les programmes aéronautiques américains dans les années 1950 puis a connu un engouement dans les années 1970. Elle s’oppose à une organisation traditionnelle provenant du taylorisme ou du fayolisme et à la division verticale du travail.",
+      "url": "https://fr.wikipedia.org/wiki/Organisation_matricielle",
+      "note": "Résumé Wikipédia brut — à reformuler en these_centrale/apport/limites_critiques (fiche humaine) ou capacites_cles/limites_connues (fiche IA) avant validation. Ne jamais publier tel quel sans relecture."
+    },
+    "score_fiabilite": 0.5,
+    "statut": "en_attente",
+    "created_at": "2026-09-05T20:15:04.893Z"
+  },
+  {
+    "id": "9c13c92c-b2af-48ea-a2b3-8d2ff810f761",
+    "source_id": null,
+    "cible_type": "fiche_humaine",
+    "cible_id": "entreprise-liberee",
+    "contenu_propose": {
+      "nom": "Entreprise libérée",
+      "titre_article_source": "Entreprise libérée",
+      "langue_source": "fr",
+      "extrait": "Le terme entreprise libérée désigne « une forme organisationnelle dans laquelle les salariés sont totalement libres et responsables dans les actions qu'ils jugent bon — eux et non leur patron — d'entreprendre. »",
+      "url": "https://fr.wikipedia.org/wiki/Entreprise_lib%C3%A9r%C3%A9e",
+      "note": "Résumé Wikipédia brut — à reformuler en these_centrale/apport/limites_critiques (fiche humaine) ou capacites_cles/limites_connues (fiche IA) avant validation. Ne jamais publier tel quel sans relecture."
+    },
+    "score_fiabilite": 0.5,
+    "statut": "en_attente",
+    "created_at": "2026-09-05T20:15:05.962Z"
+  },
+  {
+    "id": "dd6482d6-a642-43a5-8ca9-8d89ca2ea311",
+    "source_id": null,
+    "cible_type": "fiche_humaine",
+    "cible_id": "holacratie-sociocratie",
+    "contenu_propose": {
+      "nom": "Holacratie / Sociocratie",
+      "titre_article_source": "Sociocratie",
+      "langue_source": "fr",
+      "extrait": "La sociocratie est un mode de gouvernance partagée qui permet à une organisation, quelle que soit sa taille, de fonctionner efficacement selon un mode auto-organisé caractérisé par des prises de décision distribuées à l'ensemble de la structure sociale. Son fondement moderne est issu des théories systémiques et date de 1970. La sociocratie s'appuie sur la liberté et la co-responsabilisation des acteurs. Dans une logique d'auto-organisation faisant confiance à l'humain, elle va mettre le pouvoir de l'intelligence collective au service du succès d'objectifs communs. Cette approche permet donc d’atteindre ensemble un objectif partagé, dans le respect des personnes, en préservant la diversité des points de vue et des apports de chacun, ceci en prenant appui sur des relations interpersonnelles de qualité.",
+      "url": "https://fr.wikipedia.org/wiki/Sociocratie",
+      "note": "Résumé Wikipédia brut — à reformuler en these_centrale/apport/limites_critiques (fiche humaine) ou capacites_cles/limites_connues (fiche IA) avant validation. Ne jamais publier tel quel sans relecture."
+    },
+    "score_fiabilite": 0.5,
+    "statut": "en_attente",
+    "created_at": "2026-09-05T20:15:06.395Z"
+  },
+  {
+    "id": "c5447d64-e071-4984-9980-527ae94e37d5",
+    "source_id": null,
+    "cible_type": "fiche_humaine",
+    "cible_id": "agile-scrum",
+    "contenu_propose": {
+      "nom": "Agile / Scrum",
+      "titre_article_source": "Scrum (développement)",
+      "langue_source": "fr",
+      "extrait": "Scrum est un cadre de travail pour le développement de produits complexes. Il est défini par ses créateurs comme un « cadre de travail holistique itératif qui se concentre sur les buts communs en livrant de manière productive et créative des produits de la plus grande valeur possible ». Scrum est considéré comme un groupe de pratiques répondant pour la plupart aux préconisations du manifeste agile.",
+      "url": "https://fr.wikipedia.org/wiki/Scrum_(d%C3%A9veloppement)",
+      "note": "Résumé Wikipédia brut — à reformuler en these_centrale/apport/limites_critiques (fiche humaine) ou capacites_cles/limites_connues (fiche IA) avant validation. Ne jamais publier tel quel sans relecture."
+    },
+    "score_fiabilite": 0.5,
+    "statut": "en_attente",
+    "created_at": "2026-09-05T20:15:06.823Z"
+  },
+  {
+    "id": "728df825-9a34-4d66-a6a1-e2440325c73d",
+    "source_id": null,
+    "cible_type": "fiche_humaine",
+    "cible_id": "management-hybride-teletravail",
+    "contenu_propose": {
+      "nom": "Management hybride / télétravail",
+      "titre_article_source": "Télétravail",
+      "langue_source": "fr",
+      "extrait": "Le télétravail est l'exercice d'une activité professionnelle effectuée en tout ou partie à distance du lieu où le résultat du travail est attendu. Il s'oppose au travail sur site, à savoir le travail effectué dans les locaux de son employeur. Le télétravail peut s'effectuer depuis le domicile, un télécentre, un espace de cotravail, un bureau satellite de l'entreprise ou de manière nomade, dans le cadre d'un travail salarié, dans le cadre du travail indépendant. Son développement a été permis par les technologies de l'information, les TIC notamment l'ADSL puis le très « haut-débit » permis par la fibre optique. Le « télétravail nomade » a été encouragé par la mondialisation économique puis par le contexte de la pandémie de Covid-19, qui semble l'avoir durablement installé dans le monde du travail.",
+      "url": "https://fr.wikipedia.org/wiki/T%C3%A9l%C3%A9travail",
+      "note": "Résumé Wikipédia brut — à reformuler en these_centrale/apport/limites_critiques (fiche humaine) ou capacites_cles/limites_connues (fiche IA) avant validation. Ne jamais publier tel quel sans relecture."
+    },
+    "score_fiabilite": 0.5,
+    "statut": "en_attente",
+    "created_at": "2026-09-05T20:15:08.809Z"
+  },
+  {
+    "id": "e8870558-26ba-40c1-8863-6cb4707a8896",
+    "source_id": null,
+    "cible_type": "fiche_humaine",
+    "cible_id": "relativite-generale-et-restreinte",
+    "contenu_propose": {
+      "nom": "Relativité générale et restreinte",
+      "titre_article_source": "Relativité restreinte",
+      "langue_source": "fr",
+      "extrait": "La relativité restreinte est la théorie élaborée par Albert Einstein en 1905 en vue de tirer toutes les conséquences physiques de la relativité galiléenne et du principe selon lequel la vitesse de la lumière dans le vide a la même valeur dans tous les référentiels galiléens, ce qui était implicitement énoncé dans les équations de Maxwell.",
+      "url": "https://fr.wikipedia.org/wiki/Relativit%C3%A9_restreinte",
+      "note": "Résumé Wikipédia brut — à reformuler en these_centrale/apport/limites_critiques (fiche humaine) ou capacites_cles/limites_connues (fiche IA) avant validation. Ne jamais publier tel quel sans relecture."
+    },
+    "score_fiabilite": 0.5,
+    "statut": "en_attente",
+    "created_at": "2026-09-05T20:15:09.986Z"
+  },
+  {
+    "id": "5bb23340-00dc-4e2f-8357-ed9a8a9efb34",
+    "source_id": null,
+    "cible_type": "fiche_humaine",
+    "cible_id": "modele-standard-de-la-physique-des-particules",
+    "contenu_propose": {
+      "nom": "Modèle standard de la physique des particules",
+      "titre_article_source": "Modèle standard de la physique des particules",
+      "langue_source": "fr",
+      "extrait": "Le modèle standard de la physique des particules est une théorie qui concerne l'électromagnétisme, les interactions nucléaires faible et forte, et la classification de toutes les particules subatomiques connues. Elle a été développée pendant la deuxième moitié du XXe siècle, dans une initiative collaborative mondiale, sur les bases de la mécanique quantique. La formulation actuelle a été finalisée au milieu des années 1970 à la suite de la confirmation expérimentale de l'existence des quarks. Depuis, les découvertes du quark top (1995), du neutrino tauique (2000) et du boson de Higgs (2012) ont donné encore plus de crédibilité au modèle standard. Toutes les particules du modèle standard ont désormais été observées expérimentalement. Par son succès à expliquer une grande variété de résultats expérimentaux, le modèle standard est parfois vu comme une « théorie de presque tout ».",
+      "url": "https://fr.wikipedia.org/wiki/Mod%C3%A8le_standard_de_la_physique_des_particules",
+      "note": "Résumé Wikipédia brut — à reformuler en these_centrale/apport/limites_critiques (fiche humaine) ou capacites_cles/limites_connues (fiche IA) avant validation. Ne jamais publier tel quel sans relecture."
+    },
+    "score_fiabilite": 0.5,
+    "statut": "en_attente",
+    "created_at": "2026-09-05T20:15:10.539Z"
+  },
+  {
+    "id": "eefc676f-a82d-4250-ba6f-bf8a64dd5cb4",
+    "source_id": null,
+    "cible_type": "fiche_humaine",
+    "cible_id": "double-helice-de-l-adn",
+    "contenu_propose": {
+      "nom": "Double hélice de l'ADN",
+      "titre_article_source": "Acide désoxyribonucléique",
+      "langue_source": "fr",
+      "extrait": "L'acide désoxyribonucléique, ou ADN, est une macromolécule biologique présente dans presque toutes les cellules ainsi que chez de nombreux virus. L'ADN contient toute l'information génétique, appelée génome, permettant le développement, le fonctionnement et la reproduction des êtres vivants. C'est un acide nucléique, au même titre que l'acide ribonucléique (ARN). Les acides nucléiques sont, avec les peptides et les glucides, l'une des trois grandes familles de biopolymères essentiels à toutes les formes de vie connues.",
+      "url": "https://fr.wikipedia.org/wiki/Acide_d%C3%A9soxyribonucl%C3%A9ique",
+      "note": "Résumé Wikipédia brut — à reformuler en these_centrale/apport/limites_critiques (fiche humaine) ou capacites_cles/limites_connues (fiche IA) avant validation. Ne jamais publier tel quel sans relecture."
+    },
+    "score_fiabilite": 0.5,
+    "statut": "en_attente",
+    "created_at": "2026-09-05T20:15:11.044Z"
+  },
+  {
+    "id": "52b2d253-f0c7-4dc7-bd9d-3de7cf3c52bb",
+    "source_id": null,
+    "cible_type": "fiche_humaine",
+    "cible_id": "tectonique-des-plaques",
+    "contenu_propose": {
+      "nom": "Tectonique des plaques",
+      "titre_article_source": "Tectonique des plaques",
+      "langue_source": "fr",
+      "extrait": "La tectonique des plaques est un modèle scientifique expliquant la dynamique globale de la lithosphère terrestre. Ce modèle théorique a été constitué à partir du concept de dérive des continents, qui fut développé par Alfred Wegener au début du XXe siècle. La théorie de la tectonique des plaques fut acceptée par la communauté géologique internationale à la fin des années 1960, à la suite de la découverte de l'expansion des fonds océaniques.",
+      "url": "https://fr.wikipedia.org/wiki/Tectonique_des_plaques",
+      "note": "Résumé Wikipédia brut — à reformuler en these_centrale/apport/limites_critiques (fiche humaine) ou capacites_cles/limites_connues (fiche IA) avant validation. Ne jamais publier tel quel sans relecture."
+    },
+    "score_fiabilite": 0.5,
+    "statut": "en_attente",
+    "created_at": "2026-09-05T20:15:11.491Z"
+  },
+  {
+    "id": "502f9528-a07b-4eb2-8bfa-d396ec406f8e",
+    "source_id": null,
+    "cible_type": "fiche_humaine",
+    "cible_id": "big-bang-modele-cosmologique",
+    "contenu_propose": {
+      "nom": "Big Bang (modèle cosmologique)",
+      "titre_article_source": "Big Bang",
+      "langue_source": "fr",
+      "extrait": "Le Big Bang est un modèle cosmologique développé pour décrire l'origine et l'évolution de l'Univers. Il en existe plusieurs variantes, dites théories de Big Bang, qui ont en commun de décrire l'Univers comme issu d'une dilatation rapide.",
+      "url": "https://fr.wikipedia.org/wiki/Big_Bang",
+      "note": "Résumé Wikipédia brut — à reformuler en these_centrale/apport/limites_critiques (fiche humaine) ou capacites_cles/limites_connues (fiche IA) avant validation. Ne jamais publier tel quel sans relecture."
+    },
+    "score_fiabilite": 0.5,
+    "statut": "en_attente",
+    "created_at": "2026-09-05T20:15:11.980Z"
+  },
+  {
+    "id": "d3918aeb-108a-4dde-b671-c0dddb8947c8",
+    "source_id": null,
+    "cible_type": "fiche_humaine",
+    "cible_id": "mecanique-quantique-modele-de-bohr",
+    "contenu_propose": {
+      "nom": "Mécanique quantique / modèle de Bohr",
+      "titre_article_source": "Modèle de Bohr",
+      "langue_source": "fr",
+      "extrait": "Le modèle de Bohr est une théorie obsolète dans le domaine de la physique/chimie, cherchant à expliquer la constitution d'un atome, et plus particulièrement celui de l'hydrogène et des ions hydrogénoïdes. Élaborée par Niels Bohr en 1913, cette théorie établie sur le modèle planétaire de Rutherford rencontra un succès immédiat car elle expliquait de manière simple les raies spectrales des éléments hydrogénés tout en effectuant un rapprochement entre les premiers modèles de l'atome et la théorie des quanta. Ce modèle sera généralisé au cas des électrons relativistes par Arnold Sommerfeld afin d'écrire de façon quantitative la structure fine des lignes spectrales de l'hydrogène. Cependant, cette théorie ne peut expliquer le spectre d'éléments à plusieurs électrons, ni la nature des liaisons chimiques, et elle est totalement abandonnée au profit de la mécanique quantique à partir de 1925.",
+      "url": "https://fr.wikipedia.org/wiki/Mod%C3%A8le_de_Bohr",
+      "note": "Résumé Wikipédia brut — à reformuler en these_centrale/apport/limites_critiques (fiche humaine) ou capacites_cles/limites_connues (fiche IA) avant validation. Ne jamais publier tel quel sans relecture."
+    },
+    "score_fiabilite": 0.5,
+    "statut": "en_attente",
+    "created_at": "2026-09-05T20:15:12.509Z"
+  },
+  {
+    "id": "10a15fcc-1d66-419a-92e7-ec43a9e4ed95",
+    "source_id": null,
+    "cible_type": "fiche_humaine",
+    "cible_id": "theorie-synthetique-de-l-evolution",
+    "contenu_propose": {
+      "nom": "Théorie synthétique de l'évolution",
+      "titre_article_source": "Théorie synthétique de l'évolution",
+      "langue_source": "fr",
+      "extrait": "La théorie synthétique de l'évolution est une théorie darwinienne de l'évolution fondée sur la sélection naturelle de variations aléatoires du génome. Elle est aussi appelée synthèse néodarwinienne, théorie néodarwinienne de l'évolution ou plus simplement néodarwinisme.",
+      "url": "https://fr.wikipedia.org/wiki/Th%C3%A9orie_synth%C3%A9tique_de_l'%C3%A9volution",
+      "note": "Résumé Wikipédia brut — à reformuler en these_centrale/apport/limites_critiques (fiche humaine) ou capacites_cles/limites_connues (fiche IA) avant validation. Ne jamais publier tel quel sans relecture."
+    },
+    "score_fiabilite": 0.5,
+    "statut": "en_attente",
+    "created_at": "2026-09-05T20:15:13.170Z"
+  },
+  {
+    "id": "246d1077-2f86-4eee-b062-f8fd68d3ac83",
+    "source_id": null,
+    "cible_type": "fiche_humaine",
+    "cible_id": "modele-climatique-du-rechauffement-anthropique",
+    "contenu_propose": {
+      "nom": "Modèle climatique du réchauffement anthropique",
+      "titre_article_source": "Changement climatique",
+      "langue_source": "fr",
+      "extrait": "Le changement climatique, également nommé réchauffement climatique voire dérèglement climatique, est l'effet de l'augmentation rapide de la température moyenne de la surface terrestre en cours aux XXe et XXIe siècles ainsi que, plus généralement, la modification des régimes météorologiques à grande échelle qui en résulte. L'une comme l'autre sont attribuées aux émissions de gaz à effet de serre d'origine humaine : bien qu'il y ait eu précédemment des périodes de variabilité du climat, le réchauffement en cours depuis le milieu du XXe siècle et provoqué par les activités humaines a des conséquences sans précédent sur le système climatique de la Terre.",
+      "url": "https://fr.wikipedia.org/wiki/Changement_climatique",
+      "note": "Résumé Wikipédia brut — à reformuler en these_centrale/apport/limites_critiques (fiche humaine) ou capacites_cles/limites_connues (fiche IA) avant validation. Ne jamais publier tel quel sans relecture."
+    },
+    "score_fiabilite": 0.5,
+    "statut": "en_attente",
+    "created_at": "2026-09-05T20:15:13.728Z"
+  },
+  {
+    "id": "dc5022a5-0e4e-444f-af4a-fdabebe8c43a",
+    "source_id": null,
+    "cible_type": "fiche_humaine",
+    "cible_id": "theorie-du-chaos-et-systemes-complexes",
+    "contenu_propose": {
+      "nom": "Théorie du chaos et systèmes complexes",
+      "titre_article_source": "Théorie du chaos",
+      "langue_source": "fr",
+      "extrait": "La théorie du chaos est une théorie scientifique rattachée aux mathématiques et à la physique qui étudie le comportement des systèmes dynamiques déterministes et sensibles aux conditions initiales, un phénomène généralement illustré par l'effet papillon.",
+      "url": "https://fr.wikipedia.org/wiki/Th%C3%A9orie_du_chaos",
+      "note": "Résumé Wikipédia brut — à reformuler en these_centrale/apport/limites_critiques (fiche humaine) ou capacites_cles/limites_connues (fiche IA) avant validation. Ne jamais publier tel quel sans relecture."
+    },
+    "score_fiabilite": 0.5,
+    "statut": "en_attente",
+    "created_at": "2026-09-05T20:15:14.295Z"
+  },
+  {
+    "id": "ec0d637d-d30d-427e-a568-7efafb1be357",
+    "source_id": null,
+    "cible_type": "fiche_humaine",
+    "cible_id": "reseaux-de-neurones-artificiels-deep-learning",
+    "contenu_propose": {
+      "nom": "Réseaux de neurones artificiels / deep learning",
+      "titre_article_source": "Réseau de neurones artificiels",
+      "langue_source": "fr",
+      "extrait": "Un réseau de neurones artificiels, ou réseau neuronal artificiel, est un système informatique dont la conception est inspirée à l'origine du fonctionnement des neurones mais qui, par la suite, s'est rapproché des méthodes statistiques.",
+      "url": "https://fr.wikipedia.org/wiki/R%C3%A9seau_de_neurones_artificiels",
+      "note": "Résumé Wikipédia brut — à reformuler en these_centrale/apport/limites_critiques (fiche humaine) ou capacites_cles/limites_connues (fiche IA) avant validation. Ne jamais publier tel quel sans relecture."
+    },
+    "score_fiabilite": 0.5,
+    "statut": "en_attente",
+    "created_at": "2026-09-05T20:15:14.813Z"
+  },
+  {
+    "id": "b3f88b87-723e-443b-bcbe-2f4f29df784a",
+    "source_id": null,
+    "cible_type": "fiche_humaine",
+    "cible_id": "physique-des-hautes-energies-boson-de-higgs",
+    "contenu_propose": {
+      "nom": "Physique des hautes énergies (boson de Higgs)",
+      "titre_article_source": "Boson de Higgs",
+      "langue_source": "fr",
+      "extrait": "Le boson de Higgs, ou boson BEH, est une particule élémentaire du modèle standard de la physique des particules produite par l'excitation du champ de Higgs, lequel donne leur masse à certaines particules, notamment celles de la matière ordinaire, par le mécanisme de Higgs.",
+      "url": "https://fr.wikipedia.org/wiki/Boson_de_Higgs",
+      "note": "Résumé Wikipédia brut — à reformuler en these_centrale/apport/limites_critiques (fiche humaine) ou capacites_cles/limites_connues (fiche IA) avant validation. Ne jamais publier tel quel sans relecture."
+    },
+    "score_fiabilite": 0.5,
+    "statut": "en_attente",
+    "created_at": "2026-09-05T20:15:15.939Z"
+  },
+  {
+    "id": "2037e123-af84-48ee-8b03-1c311ae48b11",
+    "source_id": null,
+    "cible_type": "fiche_humaine",
+    "cible_id": "informatique-quantique",
+    "contenu_propose": {
+      "nom": "Informatique quantique",
+      "titre_article_source": "Informatique quantique",
+      "langue_source": "fr",
+      "extrait": "L'informatique quantique est le sous-domaine de l'informatique qui traite des calculateurs quantiques et des modèles de calcul associés. L'informatique quantique utilise des phénomènes décrits par la mécanique quantique, comme l'intrication quantique ou la superposition quantique, tandis que l'informatique dite « classique » n'exploite que des phénomènes décrits par la physique classique, tels que l'électricité ou la mécanique classique. Les opérations n'y reposent plus sur la manipulation de bits dans un état 1 ou 0, mais de qubits en superposition d'états 1 et 0.",
+      "url": "https://fr.wikipedia.org/wiki/Informatique_quantique",
+      "note": "Résumé Wikipédia brut — à reformuler en these_centrale/apport/limites_critiques (fiche humaine) ou capacites_cles/limites_connues (fiche IA) avant validation. Ne jamais publier tel quel sans relecture."
+    },
+    "score_fiabilite": 0.5,
+    "statut": "en_attente",
+    "created_at": "2026-09-05T20:15:16.417Z"
+  },
+  {
+    "id": "92ceeeea-51a8-4dc4-92e8-38524f260f63",
+    "source_id": null,
+    "cible_type": "fiche_humaine",
+    "cible_id": "ia-et-traitement-du-langage-naturel",
+    "contenu_propose": {
+      "nom": "IA et traitement du langage naturel",
+      "titre_article_source": "Traitement automatique des langues",
+      "langue_source": "fr",
+      "extrait": "Le traitement automatique des langues, en anglais natural language processing ou NLP, est un domaine multidisciplinaire impliquant la linguistique, l'informatique et l'intelligence artificielle, qui vise à créer des outils de traitement des langues naturelles pour diverses applications. Il ne doit pas être confondu avec la linguistique informatique, qui vise à analyser les langues au moyen d'outils informatiques.",
+      "url": "https://fr.wikipedia.org/wiki/Traitement_automatique_des_langues",
+      "note": "Résumé Wikipédia brut — à reformuler en these_centrale/apport/limites_critiques (fiche humaine) ou capacites_cles/limites_connues (fiche IA) avant validation. Ne jamais publier tel quel sans relecture."
+    },
+    "score_fiabilite": 0.5,
+    "statut": "en_attente",
+    "created_at": "2026-09-05T20:15:16.930Z"
   }
 ]

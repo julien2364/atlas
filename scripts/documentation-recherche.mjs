@@ -54,16 +54,27 @@ function motsSignificatifs(s) {
 
 // Garde-fou qualité (05/09/2026, suite à des faux positifs constatés en conditions
 // réelles : ex. "Mauricio Ferraris" -> apparié à tort à une telenovela "Rosa
-// salvaje", "Junte" -> à une chanteuse colombienne "La Muchacha"). L'API de
-// recherche Wikipédia renvoie parfois un premier résultat purement lexical, sans
-// lien avec le sujet. On exige qu'au moins un mot significatif du nom de la fiche
-// se retrouve dans le titre de l'article ou le début de son résumé, sinon on
-// considère qu'aucun article fiable n'a été trouvé (mieux vaut "à documenter
-// manuellement" qu'une source fausse dans la file de validation).
-function correspondancePlausible(titreFiche, titreArticle, extrait) {
+// salvaje", "Junte" -> à une chanteuse colombienne "La Muchacha" dont le résumé
+// mentionne incidemment son groupe "El Propio Junte" — un simple mot en commun
+// dans le RÉSUMÉ ne suffit donc pas, trop de coïncidences lexicales possibles).
+// v2 (même jour, après un 2e faux positif malgré le 1er garde-fou) : on ne compare
+// plus qu'au TITRE de l'article (pas au résumé, trop bruité), et on rejette les
+// titres dont la catégorie entre parenthèses trahit un homonyme sans rapport
+// (footballeur, chanson, groupe...) — ex. "OMC" -> "OMC (band)", "GAVI" ->
+// "Gavi (football)". Un acronyme apparié au nom de famille de quelqu'un (ex.
+// "GATT" -> "Joseph Gatt") reste un angle mort connu de cette heuristique simple.
+const CATEGORIES_SUSPECTES = [
+  "band", "groupe musical", "chanteur", "chanteuse", "singer", "musician", "musicien",
+  "footballeur", "football", "footballer", "actor", "actress", "acteur", "actrice",
+  "album", "chanson", "song", "telenovela", "série télévisée", "tv series", "wrestler",
+];
+
+function correspondancePlausible(titreFiche, titreArticle) {
   const motsFiche = motsSignificatifs(titreFiche);
   if (motsFiche.length === 0) return true; // rien à vérifier (titre trop court)
-  const cible = motsSignificatifs(`${titreArticle} ${extrait.slice(0, 200)}`);
+  const titreArticleBas = titreArticle.toLowerCase();
+  if (CATEGORIES_SUSPECTES.some((c) => titreArticleBas.includes(c))) return false;
+  const cible = motsSignificatifs(titreArticle);
   return motsFiche.some((m) => cible.includes(m));
 }
 
@@ -88,7 +99,7 @@ async function chercherResumeWikipedia(titre) {
       if (!summaryRes.ok) continue;
       const summary = await summaryRes.json();
       if (summary.type === "disambiguation" || !summary.extract) continue;
-      if (!correspondancePlausible(titre, summary.title, summary.extract)) continue;
+      if (!correspondancePlausible(titre, summary.title)) continue;
 
       return {
         langue: lang,
