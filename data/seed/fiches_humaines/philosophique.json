@@ -417,24 +417,46 @@
     "axe": "philosophique",
     "sous_domaine": "philosophie",
     "nom": "Hans-Georg Gadamer",
-    "these_centrale": "",
-    "apport": "",
-    "limites_critiques": "",
-    "sources": [],
-    "statut": "a_documenter",
-    "derniere_verification": "2026-09-05"
+    "these_centrale": "Toute compréhension est une « fusion des horizons » entre l'interprète et le texte ou la tradition qu'il interprète : comprendre n'est jamais une reconstruction neutre du sens originel, mais un dialogue historiquement situé où les préjugés (pré-jugements) de l'interprète sont constitutifs de la compréhension, non des obstacles à éliminer.",
+    "apport": "Vérité et Méthode (1960), œuvre fondatrice de l'herméneutique philosophique contemporaine, héritier critique de Heidegger ; réhabilitation de l'autorité de la tradition et du « cercle herméneutique » contre l'idéal d'une méthode scientifique neutre en sciences humaines ; débat célèbre avec Habermas sur les limites de l'herméneutique face à l'idéologie.",
+    "limites_critiques": "Accusé par Habermas de sous-estimer le pouvoir de la critique rationnelle à s'émanciper de la tradition, qui peut aussi véhiculer des rapports de domination que l'herméneutique risquerait de naturaliser ; son insistance sur le dialogue et le consensus possible est jugée par certains trop optimiste face à des désaccords radicaux entre traditions.",
+    "sources": [
+      {
+        "titre": "Vérité et Méthode",
+        "type": "primaire"
+      },
+      {
+        "titre": "Hans-Georg Gadamer — Wikipédia",
+        "url": "https://fr.wikipedia.org/wiki/Hans-Georg_Gadamer",
+        "type": "secondaire"
+      }
+    ],
+    "statut": "documente",
+    "derniere_verification": "2026-09-05",
+    "resonance_ia": "Un modèle de langage « comprend » un texte en recombinant des régularités statistiques sur un corpus, sans jamais engager sa propre historicité ni ses propres préjugés vécus dans un dialogue réel — ce qui, du point de vue gadamérien, interroge si l'on peut parler de compréhension au sens fort pour une IA."
   },
   {
     "id": "hilary-putnam",
     "axe": "philosophique",
     "sous_domaine": "philosophie",
     "nom": "Hilary Putnam",
-    "these_centrale": "",
-    "apport": "",
-    "limites_critiques": "",
-    "sources": [],
-    "statut": "a_documenter",
-    "derniere_verification": "2026-09-05"
+    "these_centrale": "Le sens d'un terme ne dépend pas seulement de l'état mental de celui qui l'emploie mais aussi du monde extérieur et de la division sociale du travail linguistique (expérience de la Terre Jumelle) — « le sens n'est tout simplement pas dans la tête ». Putnam a par ailleurs abandonné au fil de sa carrière plusieurs de ses propres thèses (fonctionnalisme, réalisme métaphysique) au nom d'une exigence d'auto-critique rigoureuse.",
+    "apport": "Expérience de pensée de la Terre Jumelle (1975), fondatrice de l'externalisme sémantique ; contributions majeures au fonctionnalisme en philosophie de l'esprit, dont il s'est ensuite distancié ; évolution vers un « réalisme interne » puis un pragmatisme renouvelé en philosophie des sciences.",
+    "limites_critiques": "Ses revirements théoriques répétés sont salués par certains comme une intégrité intellectuelle rare, mais reprochés par d'autres comme un manque de position stable ; le réalisme interne est jugé par plusieurs critiques flou quant à sa différence réelle avec le relativisme qu'il prétend éviter.",
+    "sources": [
+      {
+        "titre": "The Meaning of 'Meaning'",
+        "type": "primaire"
+      },
+      {
+        "titre": "Hilary Putnam — Wikipédia",
+        "url": "https://fr.wikipedia.org/wiki/Hilary_Putnam",
+        "type": "secondaire"
+      }
+    ],
+    "statut": "documente",
+    "derniere_verification": "2026-09-05",
+    "resonance_ia": "Putnam est l'auteur même du fonctionnalisme qui sert de base théorique à l'idée qu'une IA pourrait « penser » si elle réalise la bonne organisation fonctionnelle — mais son propre abandon ultérieur de cette thèse invite à la prudence sur ce qu'implique réellement une IA fonctionnellement équivalente à un cerveau."
   },
   {
     "id": "jacques-derrida",
@@ -464,12 +486,23 @@
     "axe": "philosophique",
     "sous_domaine": "philosophie",
     "nom": "Jacques Rancière",
-    "these_centrale": "",
-    "apport": "",
-    "limites_critiques": "",
-    "sources": [],
-    "statut": "a_documenter",
-    "derniere_verification": "2026-09-05"
+    "these_centrale": "La politique authentique ne consiste pas à gérer une communauté déjà répartie en rôles et compétences (ce qu'il appelle la « police »), mais à faire irruption du principe d'égalité de n'importe qui avec n'importe qui, en contestant le « partage du sensible » établi par cet ordre.",
+    "apport": "La Mésentente (1995), concept de partage du sensible (2000) ; Le Maître ignorant (1987), défense de l'émancipation intellectuelle par l'égalité des intelligences contre le modèle explicateur de l'éducation ; élargissement de la théorie politique à l'esthétique et à la littérature.",
+    "limites_critiques": "Son concept de « police », englobant tout ordre social établi y compris démocratique, est jugé par certains trop indifférencié pour distinguer des régimes politiques réellement différents ; la politique comme pur événement d'égalité est accusée d'être difficile à traduire en programme institutionnel concret.",
+    "sources": [
+      {
+        "titre": "La Mésentente",
+        "type": "primaire"
+      },
+      {
+        "titre": "Jacques Rancière — Wikipédia",
+        "url": "https://fr.wikipedia.org/wiki/Jacques_Ranci%C3%A8re",
+        "type": "secondaire"
+      }
+    ],
+    "statut": "documente",
+    "derniere_verification": "2026-09-05",
+    "resonance_ia": "Les systèmes de recommandation et de modération algorithmique opèrent un partage du sensible automatisé — ce qui est visible, audible, recommandé — sans jamais être eux-mêmes le lieu d'une contestation égalitaire : un cas d'école, au sens ranciérien, de « police » pure sans possibilité de politique."
   },
   {
     "id": "jean-paul-sartre",
@@ -499,12 +532,23 @@
     "axe": "philosophique",
     "sous_domaine": "philosophie",
     "nom": "Jean-François Lyotard",
-    "these_centrale": "",
-    "apport": "",
-    "limites_critiques": "",
-    "sources": [],
-    "statut": "a_documenter",
-    "derniere_verification": "2026-09-05"
+    "these_centrale": "La condition postmoderne se définit par l'incrédulité envers les « grands récits » (émancipation de l'humanité, marche du progrès) qui légitimaient jusque-là le savoir et l'action collective — le savoir contemporain se fragmente en une multiplicité de « petits récits » sans instance de légitimation unifiée.",
+    "apport": "La Condition postmoderne (1979), texte fondateur de la théorisation du « postmoderne » ; concept de « différend » (1983) : un conflit qui ne peut être tranché équitablement faute d'une règle de jugement commune aux deux parties.",
+    "limites_critiques": "Le diagnostic de la « fin des grands récits » est accusé, notamment par Habermas, d'être lui-même un grand récit déguisé sur la fragmentation du savoir ; la notion de « différend » est jugée séduisante mais difficile à opérationnaliser pour arbitrer des conflits réels.",
+    "sources": [
+      {
+        "titre": "La Condition postmoderne",
+        "type": "primaire"
+      },
+      {
+        "titre": "Jean-François Lyotard — Wikipédia",
+        "url": "https://fr.wikipedia.org/wiki/Jean-Fran%C3%A7ois_Lyotard",
+        "type": "secondaire"
+      }
+    ],
+    "statut": "documente",
+    "derniere_verification": "2026-09-05",
+    "resonance_ia": "Les grands modèles de langage sont entraînés sur l'agrégation statistique de millions de « petits récits » hétérogènes sans jamais arbitrer entre des jeux de langage incommensurables — l'IA générative pourrait ainsi être lue comme l'accomplissement technique, et non la résolution, du diagnostic lyotardien de fragmentation du savoir."
   },
   {
     "id": "john-rawls",
@@ -534,24 +578,46 @@
     "axe": "philosophique",
     "sous_domaine": "philosophie",
     "nom": "John Searle",
-    "these_centrale": "",
-    "apport": "",
-    "limites_critiques": "",
-    "sources": [],
-    "statut": "a_documenter",
-    "derniere_verification": "2026-09-05"
+    "these_centrale": "La syntaxe — manipulation formelle de symboles — n'est jamais suffisante pour produire de la sémantique : une machine peut manipuler parfaitement des symboles selon des règles sans rien comprendre de ce qu'elle fait, comme le montre l'expérience de la « chambre chinoise » — l'IA « forte » est, selon lui, une confusion catégorielle.",
+    "apport": "L'expérience de pensée de la Chambre chinoise (1980), l'une des critiques les plus discutées de l'intelligence artificielle forte ; théorie des actes de langage (1969), prolongeant Austin ; travaux sur l'intentionnalité et la construction sociale de la réalité (1995).",
+    "limites_critiques": "La Chambre chinoise a fait l'objet de dizaines de réfutations, notamment la « réponse des systèmes » (ce n'est pas l'homme dans la chambre qui comprendrait, mais le système pris comme un tout), que Searle a toujours rejetées sans convaincre l'ensemble de la communauté ; accusations tardives de harcèlement sexuel (Berkeley, 2017-2019) ayant nui à sa réputation académique dans les dernières années de sa carrière.",
+    "sources": [
+      {
+        "titre": "Minds, Brains, and Programs",
+        "type": "primaire"
+      },
+      {
+        "titre": "John Searle — Wikipédia",
+        "url": "https://fr.wikipedia.org/wiki/John_Searle",
+        "type": "secondaire"
+      }
+    ],
+    "statut": "documente",
+    "derniere_verification": "2026-09-05",
+    "resonance_ia": "L'expérience de la Chambre chinoise est l'argument philosophique le plus cité pour contester que les grands modèles de langage actuels, aussi fluents soient-ils, « comprennent » réellement le langage qu'ils manipulent plutôt que d'en simuler statistiquement la forme."
   },
   {
     "id": "judith-butler",
     "axe": "philosophique",
     "sous_domaine": "philosophie",
     "nom": "Judith Butler",
-    "these_centrale": "",
-    "apport": "",
-    "limites_critiques": "",
-    "sources": [],
-    "statut": "a_documenter",
-    "derniere_verification": "2026-09-05"
+    "these_centrale": "Le genre n'est pas l'expression d'une identité intérieure préexistante mais une « performance » : il est produit par la répétition stylisée d'actes et de discours socialement codés, qui donnent rétroactivement l'illusion d'une substance de genre naturelle et stable.",
+    "apport": "Trouble dans le genre (1990), texte fondateur de la théorie queer contemporaine ; concept de performativité du genre, réélaboré à partir de la théorie des actes de langage d'Austin ; travaux ultérieurs sur la précarité et la non-violence en philosophie politique.",
+    "limites_critiques": "Accusée par certaines féministes matérialistes de dissoudre la catégorie « femme » dans un pur jeu discursif, affaiblissant la base politique d'une lutte collective fondée sur une expérience partagée ; style jugé par de nombreux lecteurs, y compris sympathisants, extrêmement difficile d'accès.",
+    "sources": [
+      {
+        "titre": "Trouble dans le genre",
+        "type": "primaire"
+      },
+      {
+        "titre": "Judith Butler — Wikipédia",
+        "url": "https://fr.wikipedia.org/wiki/Judith_Butler",
+        "type": "secondaire"
+      }
+    ],
+    "statut": "documente",
+    "derniere_verification": "2026-09-05",
+    "resonance_ia": "Les IA génératives entraînées sur des corpus massifs de textes et d'images reproduisent et amplifient statistiquement les normes de genre dominantes dans ces corpus, ce qui peut être lu, dans un cadre butlérien, comme une nouvelle instance industrielle de la répétition performative qui naturalise le genre."
   },
   {
     "id": "jurgen-habermas",
@@ -604,12 +670,23 @@
     "axe": "philosophique",
     "sous_domaine": "philosophie",
     "nom": "Luce Irigaray",
-    "these_centrale": "",
-    "apport": "",
-    "limites_critiques": "",
-    "sources": [],
-    "statut": "a_documenter",
-    "derniere_verification": "2026-09-05"
+    "these_centrale": "La philosophie occidentale, de Platon à Freud et Lacan, s'est construite sur un sujet implicitement masculin qui réduit le féminin à un simple négatif de l'identité masculine (« le sexe qui n'en est pas un ») ; il faut élaborer une pensée du féminin comme différence positive irréductible, non comme manque.",
+    "apport": "Speculum, de l'autre femme (1974, thèse qui lui coûta son poste à Vincennes) — relecture critique de la philosophie occidentale et de la psychanalyse freudo-lacanienne depuis la question du féminin ; Ce sexe qui n'en est pas un (1977) ; travaux ultérieurs sur une éthique de la différence sexuelle.",
+    "limites_critiques": "Accusée par des courants féministes matérialistes et constructivistes, dont Butler, d'essentialiser le féminin en lui attribuant une spécificité fixe, à l'inverse de la déconstruction du genre qu'elles défendent ; son style volontairement poétique est jugé par certains lecteurs analytiques peu rigoureux argumentativement.",
+    "sources": [
+      {
+        "titre": "Speculum, de l'autre femme",
+        "type": "primaire"
+      },
+      {
+        "titre": "Luce Irigaray — Wikipédia",
+        "url": "https://fr.wikipedia.org/wiki/Luce_Irigaray",
+        "type": "secondaire"
+      }
+    ],
+    "statut": "documente",
+    "derniere_verification": "2026-09-05",
+    "resonance_ia": "Les grands modèles de langage, entraînés majoritairement sur des corpus historiques produits depuis la position masculine qu'Irigaray critique, risquent de reconduire structurellement le même effacement du féminin comme positivité propre plutôt que comme reflet ou manque."
   },
   {
     "id": "ludwig-wittgenstein",
@@ -662,12 +739,23 @@
     "axe": "philosophique",
     "sous_domaine": "philosophie",
     "nom": "Mauricio Ferraris",
-    "these_centrale": "",
-    "apport": "",
-    "limites_critiques": "",
-    "sources": [],
-    "statut": "a_documenter",
-    "derniere_verification": "2026-09-05"
+    "these_centrale": "Contre le postmodernisme et le constructivisme radical selon lesquels « il n'y a pas de faits, seulement des interprétations », Ferraris défend un « nouveau réalisme » : la réalité résiste à nos interprétations, ce qui n'empêche pas les objets sociaux (l'argent, les lois, les documents) d'exister par inscription (documentalité) plutôt que par nature physique.",
+    "apport": "Manifeste du nouveau réalisme (2012), qui a relancé un débat international majeur contre l'héritage postmoderne (Vattimo, Rorty) ; théorie de la documentalité (2009) : les objets sociaux sont constitués par des actes d'inscription plutôt que par de purs actes de langage.",
+    "limites_critiques": "Le nouveau réalisme est accusé par des continuateurs du postmodernisme, dont son propre maître Gianni Vattimo, de caricaturer la position adverse pour mieux s'en démarquer médiatiquement ; la théorie de la documentalité est jugée par certains trop extensive pour distinguer clairement les types d'objets sociaux.",
+    "sources": [
+      {
+        "titre": "Manifeste du nouveau réalisme",
+        "type": "primaire"
+      },
+      {
+        "titre": "Maurizio Ferraris — Wikipédia",
+        "url": "https://fr.wikipedia.org/wiki/Maurizio_Ferraris",
+        "type": "secondaire"
+      }
+    ],
+    "statut": "documente",
+    "derniere_verification": "2026-09-05",
+    "resonance_ia": "La documentalité de Ferraris — l'idée que les objets sociaux existent par inscription et traçabilité plutôt que par nature — s'applique directement aux registres numériques et aux systèmes de vérification automatisée (blockchain, preuves cryptographiques), qui automatisent précisément ce travail d'inscription constitutive."
   },
   {
     "id": "maurice-merleau-ponty",
@@ -720,120 +808,230 @@
     "axe": "philosophique",
     "sous_domaine": "philosophie",
     "nom": "Martha Nussbaum",
-    "these_centrale": "",
-    "apport": "",
-    "limites_critiques": "",
-    "sources": [],
-    "statut": "a_documenter",
-    "derniere_verification": "2026-09-05"
+    "these_centrale": "Le développement humain et la justice sociale doivent se mesurer non par le seul revenu ou l'utilité agrégée mais par une liste de « capabilités centrales » (vie, santé, intégrité corporelle, pensée, affiliation, contrôle sur son environnement...) que toute société décente doit garantir à chaque personne comme seuil minimal de dignité.",
+    "apport": "Approche par les capabilités développée avec l'économiste Amartya Sen (2000) ; travaux majeurs sur les émotions et la vulnérabilité en philosophie morale (La Fragilité du bien, 1986, sur l'éthique grecque antique) ; défense de la compassion et de la colère politique (2016).",
+    "limites_critiques": "Sa liste de capabilités centrales est accusée par certains théoriciens libéraux d'imposer une conception substantielle du bien commun à des sociétés pluralistes, en tension avec la neutralité libérale qu'elle revendique par ailleurs ; son statut universel prétendu est contesté par des approches plus relativistes du développement.",
+    "sources": [
+      {
+        "titre": "Femmes et développement humain (avec Amartya Sen)",
+        "type": "primaire"
+      },
+      {
+        "titre": "Martha Nussbaum — Wikipédia",
+        "url": "https://fr.wikipedia.org/wiki/Martha_Nussbaum",
+        "type": "secondaire"
+      }
+    ],
+    "statut": "documente",
+    "derniere_verification": "2026-09-05",
+    "resonance_ia": "L'approche par les capabilités offre un cadre alternatif à la seule mesure de performance pour évaluer l'impact de l'IA sur le bien-être humain : la question n'est pas seulement l'utilité agrégée produite mais si chaque personne conserve un contrôle réel sur les capabilités centrales listées par Nussbaum."
   },
   {
     "id": "noam-chomsky",
     "axe": "philosophique",
     "sous_domaine": "philosophie",
     "nom": "Noam Chomsky",
-    "these_centrale": "",
-    "apport": "",
-    "limites_critiques": "",
-    "sources": [],
-    "statut": "a_documenter",
-    "derniere_verification": "2026-09-05"
+    "these_centrale": "La capacité humaine à acquérir le langage ne peut s'expliquer par le seul apprentissage empirique — l'enfant est exposé à trop peu de données pour en déduire la grammaire — : elle suppose une « grammaire universelle » innée, un dispositif cognitif spécifique à l'espèce qui structure a priori toutes les langues humaines possibles.",
+    "apport": "Fondateur de la linguistique générative et transformationnelle (Structures syntaxiques, 1957) ; révolution du cognitivisme contre le behaviorisme dominant (critique du Verbal Behavior de Skinner, 1959) ; intellectuel engagé majeur de la critique de la politique étrangère américaine et des médias de masse.",
+    "limites_critiques": "L'hypothèse d'une grammaire universelle innée est aujourd'hui contestée par des courants linguistiques fonctionnalistes qui expliquent l'acquisition du langage par des mécanismes d'apprentissage généraux plutôt que par un module dédié ; ses positions politiques radicales sont parfois jugées en tension avec la rigueur scientifique revendiquée dans ses travaux linguistiques.",
+    "sources": [
+      {
+        "titre": "Structures syntaxiques",
+        "type": "primaire"
+      },
+      {
+        "titre": "Noam Chomsky — Wikipédia",
+        "url": "https://fr.wikipedia.org/wiki/Noam_Chomsky",
+        "type": "secondaire"
+      }
+    ],
+    "statut": "documente",
+    "derniere_verification": "2026-09-05",
+    "resonance_ia": "Chomsky a publiquement et vivement critiqué les grands modèles de langage comme relevant d'un pur mimétisme statistique sans grammaire universelle ni compréhension véritable — position directement opposée à l'approche connexionniste qui sous-tend l'IA générative contemporaine."
   },
   {
     "id": "paul-ric-ur",
     "axe": "philosophique",
     "sous_domaine": "philosophie",
     "nom": "Paul Ricœur",
-    "these_centrale": "",
-    "apport": "",
-    "limites_critiques": "",
-    "sources": [],
-    "statut": "a_documenter",
-    "derniere_verification": "2026-09-05"
+    "these_centrale": "L'identité personnelle n'est ni une simple permanence substantielle ni une pure invention narrative arbitraire, mais une « identité narrative » : c'est en se racontant, en configurant sa vie comme un récit doté d'une intrigue, que le sujet se constitue et se maintient dans le temps malgré le changement.",
+    "apport": "Trilogie Temps et récit (1983-1985) sur le rapport entre narrativité et temporalité humaine ; Soi-même comme un autre (1990), théorie de l'identité narrative ; œuvre de médiation reconnue entre phénoménologie, herméneutique et philosophie analytique du langage.",
+    "limites_critiques": "Son projet de synthèse entre traditions concurrentes est salué pour son ampleur mais critiqué par certains comme un éclectisme qui adoucit les tensions réelles entre ces courants ; le rôle central donné au récit dans la constitution de l'identité est questionné pour les formes d'existence peu narrativisées (traumatisme, discontinuité radicale).",
+    "sources": [
+      {
+        "titre": "Soi-même comme un autre",
+        "type": "primaire"
+      },
+      {
+        "titre": "Paul Ricœur — Wikipédia",
+        "url": "https://fr.wikipedia.org/wiki/Paul_Ric%C5%93ur",
+        "type": "secondaire"
+      }
+    ],
+    "statut": "documente",
+    "derniere_verification": "2026-09-05",
+    "resonance_ia": "Une IA générative peut produire des récits biographiques syntaxiquement cohérents sans jamais habiter la temporalité vécue — mémoire, attente, deuil — que Ricœur place au fondement de l'identité narrative, ce qui interroge si un récit sans sujet vivant peut encore constituer une identité au sens fort."
   },
   {
     "id": "peter-singer",
     "axe": "philosophique",
     "sous_domaine": "philosophie",
     "nom": "Peter Singer",
-    "these_centrale": "",
-    "apport": "",
-    "limites_critiques": "",
-    "sources": [],
-    "statut": "a_documenter",
-    "derniere_verification": "2026-09-05"
+    "these_centrale": "Le principe utilitariste d'égale considération des intérêts ne doit pas s'arrêter à l'espèce humaine : la capacité à souffrir, et non l'appartenance à une espèce, est le critère pertinent de considération morale — exclure les animaux non-humains au seul motif de l'espèce est un « spécisme », analogue moralement au racisme ou au sexisme.",
+    "apport": "La Libération animale (1975), texte fondateur du mouvement contemporain pour les droits des animaux ; travaux influents en éthique appliquée sur la pauvreté mondiale (1972, fondant le mouvement de l'altruisme efficace) et sur la bioéthique de fin de vie.",
+    "limites_critiques": "Ses positions utilitaristes cohérentes sur l'euthanasie de nourrissons gravement handicapés ont provoqué des controverses très vives et des accusations de dérive eugéniste ; le calcul utilitariste pur qu'il défend est reproché par des déontologues de pouvoir justifier, en théorie, le sacrifice d'individus au nom du bien-être agrégé.",
+    "sources": [
+      {
+        "titre": "La Libération animale",
+        "type": "primaire"
+      },
+      {
+        "titre": "Peter Singer — Wikipédia",
+        "url": "https://fr.wikipedia.org/wiki/Peter_Singer",
+        "type": "secondaire"
+      }
+    ],
+    "statut": "documente",
+    "derniere_verification": "2026-09-05",
+    "resonance_ia": "L'antispécisme de Singer, fondé sur la sentience plutôt que sur l'espèce, ouvre une question directement transposable à l'IA : si la sentience est le critère moral pertinent, une IA suffisamment avancée qui manifesterait des signes de sentience relèverait-elle du même statut moral que les animaux qu'il défend ?"
   },
   {
     "id": "quentin-meillassoux",
     "axe": "philosophique",
     "sous_domaine": "philosophie",
     "nom": "Quentin Meillassoux",
-    "these_centrale": "",
-    "apport": "",
-    "limites_critiques": "",
-    "sources": [],
-    "statut": "a_documenter",
-    "derniere_verification": "2026-09-05"
+    "these_centrale": "Contre le « corrélationisme » qui domine la philosophie depuis Kant, Meillassoux défend que la seule nécessité absolue démontrable est la contingence radicale de toute chose : tout ce qui existe pourrait, sans raison, ne pas exister ou devenir autre — y compris les lois de la nature elles-mêmes.",
+    "apport": "Après la finitude (2006), texte fondateur du réalisme spéculatif ; critique argumentée du corrélationisme post-kantien à partir du problème des énoncés scientifiques portant sur un passé antérieur à toute conscience (« les ancestraux ») ; travaux sur la poésie de Mallarmé.",
+    "limites_critiques": "Sa thèse de la contingence radicale comme seule nécessité est accusée par plusieurs commentateurs de reposer sur un raisonnement contestable ; le réalisme spéculatif qu'il a contribué à fonder s'est rapidement fragmenté en plusieurs écoles concurrentes qui contestent ses propres conclusions.",
+    "sources": [
+      {
+        "titre": "Après la finitude",
+        "type": "primaire"
+      },
+      {
+        "titre": "Quentin Meillassoux — Wikipédia",
+        "url": "https://fr.wikipedia.org/wiki/Quentin_Meillassoux",
+        "type": "secondaire"
+      }
+    ],
+    "statut": "documente",
+    "derniere_verification": "2026-09-05",
+    "resonance_ia": "Une IA entraînée à détecter des régularités statistiques présuppose l'exact inverse de la thèse meillassouxienne — que le monde est en réalité radicalement contingent et que ses régularités passées ne garantissent rien sur son avenir — ce qui interroge la robustesse philosophique de toute prédiction fondée sur l'apprentissage automatique."
   },
   {
     "id": "raymond-aron",
     "axe": "philosophique",
     "sous_domaine": "philosophie",
     "nom": "Raymond Aron",
-    "these_centrale": "",
-    "apport": "",
-    "limites_critiques": "",
-    "sources": [],
-    "statut": "a_documenter",
-    "derniere_verification": "2026-09-05"
+    "these_centrale": "Il n'existe pas de sens unique et nécessaire de l'Histoire, contre les philosophies déterministes marxistes ou hégéliennes : l'action politique se déploie dans l'incertitude et la pluralité des interprétations possibles, ce qui exige un libéralisme lucide, sceptique envers les systèmes totalisants mais engagé dans le jugement pratique au cas par cas.",
+    "apport": "Introduction à la philosophie de l'histoire (1938) et Les Étapes de la pensée sociologique (1967) ; analyse pionnière du totalitarisme et de la Guerre froide (1962) ; contradicteur intellectuel constant de Sartre et de la gauche marxisante française (L'Opium des intellectuels, 1955).",
+    "limites_critiques": "Sa proximité assumée avec le libéralisme atlantiste et son scepticisme envers le marxisme lui ont valu d'être longtemps marginalisé dans le champ intellectuel français dominé par la gauche sartrienne, avant une réévaluation plus favorable après la chute du bloc soviétique.",
+    "sources": [
+      {
+        "titre": "Introduction à la philosophie de l'histoire",
+        "type": "primaire"
+      },
+      {
+        "titre": "Raymond Aron — Wikipédia",
+        "url": "https://fr.wikipedia.org/wiki/Raymond_Aron",
+        "type": "secondaire"
+      }
+    ],
+    "statut": "documente",
+    "derniere_verification": "2026-09-05",
+    "resonance_ia": "Son scepticisme envers les philosophies déterministes de l'Histoire s'applique directement aux discours contemporains qui présentent la trajectoire de l'IA comme une nécessité historique inéluctable plutôt que comme le résultat de choix politiques et économiques contestables."
   },
   {
     "id": "richard-rorty",
     "axe": "philosophique",
     "sous_domaine": "philosophie",
     "nom": "Richard Rorty",
-    "these_centrale": "",
-    "apport": "",
-    "limites_critiques": "",
-    "sources": [],
-    "statut": "a_documenter",
-    "derniere_verification": "2026-09-05"
+    "these_centrale": "La philosophie occidentale s'est fourvoyée en cherchant un fondement épistémologique certain, un « miroir de la nature » qui représenterait fidèlement la réalité : il faut abandonner cette quête au profit d'un pragmatisme qui juge nos vocabulaires à leur utilité pratique pour la conversation humaine et la solidarité, non à leur adéquation supposée au réel.",
+    "apport": "La Philosophie et le miroir de la nature (1979), critique majeure de l'épistémologie fondationnaliste depuis Descartes ; défense d'un pragmatisme articulant ironie philosophique et engagement démocratique libéral (Contingence, ironie et solidarité, 1989).",
+    "limites_critiques": "Son antifondationnalisme radical est accusé par des réalistes, dont Putnam, son ami et interlocuteur critique, de verser dans un relativisme qui prive de toute base la distinction entre une croyance vraie et une croyance simplement utile ou consensuelle.",
+    "sources": [
+      {
+        "titre": "La Philosophie et le miroir de la nature",
+        "type": "primaire"
+      },
+      {
+        "titre": "Richard Rorty — Wikipédia",
+        "url": "https://fr.wikipedia.org/wiki/Richard_Rorty",
+        "type": "secondaire"
+      }
+    ],
+    "statut": "documente",
+    "derniere_verification": "2026-09-05",
+    "resonance_ia": "Rorty jugerait sans doute la question « l'IA pense-t-elle vraiment ? » mal posée, dans les mêmes termes que la quête d'un miroir de la nature : la question pragmatiquement pertinente ne serait pas la correspondance au réel mais l'utilité du vocabulaire « IA pensante » pour nos pratiques et notre solidarité collective."
   },
   {
     "id": "rosi-braidotti",
     "axe": "philosophique",
     "sous_domaine": "philosophie",
     "nom": "Rosi Braidotti",
-    "these_centrale": "",
-    "apport": "",
-    "limites_critiques": "",
-    "sources": [],
-    "statut": "a_documenter",
-    "derniere_verification": "2026-09-05"
+    "these_centrale": "L'humanisme classique, centré sur un sujet rationnel, autonome et implicitement occidental, doit être dépassé par un « posthumanisme critique » : le sujet contemporain est un assemblage nomade et hybride, traversé par la technologie et les autres espèces, dont l'identité se construit par affinités et devenirs plutôt que par une essence fixe.",
+    "apport": "Nomadic Subjects (1994), théorie du sujet nomade féministe ; The Posthuman (2013), référence majeure des études posthumanistes contemporaines, articulant féminisme, philosophie de la différence (Deleuze, Irigaray) et critique de l'anthropocentrisme.",
+    "limites_critiques": "Le vocabulaire volontairement fluide du posthumanisme braidottien est jugé par des critiques plus analytiques difficile à opérationnaliser en critères normatifs précis ; certains lui reprochent un optimisme technophile qui minorerait les rapports de pouvoir structurant l'accès aux technologies qu'elle valorise.",
+    "sources": [
+      {
+        "titre": "The Posthuman",
+        "type": "primaire"
+      },
+      {
+        "titre": "Rosi Braidotti — Wikipédia",
+        "url": "https://fr.wikipedia.org/wiki/Rosi_Braidotti",
+        "type": "secondaire"
+      }
+    ],
+    "statut": "documente",
+    "derniere_verification": "2026-09-05",
+    "resonance_ia": "Le « posthumain » braidottien, hybride de technologie et de vivant, est directement mobilisé pour penser positivement la fusion croissante entre cognition humaine et IA comme un devenir à explorer plutôt qu'une menace à l'intégrité d'un sujet humain qui, pour elle, n'a jamais été aussi pur que le prétend l'humanisme classique."
   },
   {
     "id": "saul-kripke",
     "axe": "philosophique",
     "sous_domaine": "philosophie",
     "nom": "Saul Kripke",
-    "these_centrale": "",
-    "apport": "",
-    "limites_critiques": "",
-    "sources": [],
-    "statut": "a_documenter",
-    "derniere_verification": "2026-09-05"
+    "these_centrale": "Contre la théorie descriptiviste dominante, les noms propres sont des « désignateurs rigides » : ils réfèrent au même individu dans tous les mondes possibles où cet individu existe, indépendamment des descriptions qu'on lui associe — ce qui permet de fonder des vérités nécessaires a posteriori (comme « l'eau est H2O »).",
+    "apport": "La Logique des noms propres (1972/1980), l'un des textes les plus influents de la philosophie analytique du XXe siècle, fondateur de la sémantique référentielle contemporaine ; contributions majeures à la logique modale et interprétation sceptique du problème de « suivre une règle » chez Wittgenstein (1982).",
+    "limites_critiques": "La théorie des désignateurs rigides laisse ouverte la question de savoir comment, en pratique, la référence d'un nom est initialement fixée et transmise causalement à travers une communauté linguistique — un point que Kripke esquisse sans le développer systématiquement.",
+    "sources": [
+      {
+        "titre": "La Logique des noms propres",
+        "type": "primaire"
+      },
+      {
+        "titre": "Saul Kripke — Wikipédia",
+        "url": "https://fr.wikipedia.org/wiki/Saul_Kripke",
+        "type": "secondaire"
+      }
+    ],
+    "statut": "documente",
+    "derniere_verification": "2026-09-05",
+    "resonance_ia": "Les grands modèles de langage manipulent des noms propres comme des chaînes statistiquement associées à des contextes, sans chaîne causale réelle de référence au monde extra-linguistique que Kripke juge constitutive de la désignation rigide."
   },
   {
     "id": "slavoj-zizek",
     "axe": "philosophique",
     "sous_domaine": "philosophie",
     "nom": "Slavoj Žižek",
-    "these_centrale": "",
-    "apport": "",
-    "limites_critiques": "",
-    "sources": [],
-    "statut": "a_documenter",
-    "derniere_verification": "2026-09-05"
+    "these_centrale": "L'idéologie contemporaine ne fonctionne plus par la croyance naïve mais par le cynisme généralisé (« ils savent très bien ce qu'ils font, mais ils le font quand même ») : le sujet moderne agit conformément à l'idéologie dominante tout en professant une distance critique envers elle, ce qui la rend paradoxalement plus résistante à la critique rationnelle classique.",
+    "apport": "The Sublime Object of Ideology (1989), synthèse très influente entre psychanalyse lacanienne, hégélianisme et critique marxiste de l'idéologie ; œuvre prolifique appliquant cet appareil théorique à la culture populaire, au cinéma et à l'actualité politique.",
+    "limites_critiques": "Son style volontairement provocateur et truffé de références à la culture populaire est jugé par de nombreux universitaires comme privilégiant l'effet rhétorique sur la rigueur argumentative systématique ; ses prises de position politiques ont suscité des controverses répétées, y compris parmi ses propres soutiens théoriques.",
+    "sources": [
+      {
+        "titre": "The Sublime Object of Ideology",
+        "type": "primaire"
+      },
+      {
+        "titre": "Slavoj Žižek — Wikipédia",
+        "url": "https://fr.wikipedia.org/wiki/Slavoj_%C5%BDi%C5%BEek",
+        "type": "secondaire"
+      }
+    ],
+    "statut": "documente",
+    "derniere_verification": "2026-09-05",
+    "resonance_ia": "Le discours enthousiaste sur l'IA comme solution neutre et inévitable au progrès peut être lu, dans le cadre žižekien, comme une forme exemplaire de cynisme idéologique contemporain — les acteurs du secteur reconnaissant volontiers les risques tout en poursuivant le déploiement comme si de rien n'était."
   },
   {
     "id": "simone-de-beauvoir",
@@ -863,48 +1061,92 @@
     "axe": "philosophique",
     "sous_domaine": "philosophie",
     "nom": "Theodor Adorno",
-    "these_centrale": "",
-    "apport": "",
-    "limites_critiques": "",
-    "sources": [],
-    "statut": "a_documenter",
-    "derniere_verification": "2026-09-05"
+    "these_centrale": "La raison des Lumières, censée émanciper l'humanité, s'est retournée dialectiquement en un nouvel instrument de domination — la « raison instrumentale » qui réduit la nature et les êtres humains à de purs moyens calculables ; l'industrie culturelle de masse standardise à son tour la pensée et l'expérience esthétique en marchandise interchangeable.",
+    "apport": "Dialectique de la raison (avec Max Horkheimer, 1944), texte fondateur de la théorie critique de l'École de Francfort ; concept d'« industrie culturelle » ; théorie esthétique défendant l'art moderne difficile comme dernière résistance possible à l'uniformisation.",
+    "limites_critiques": "Son pessimisme radical envers toute forme de culture populaire est accusé d'élitisme et d'aveuglement face à la capacité des publics à s'approprier de façon critique les produits culturels de masse ; sa Dialectique de la raison est jugée par certains trop totalisante.",
+    "sources": [
+      {
+        "titre": "Dialectique de la raison (avec Max Horkheimer)",
+        "type": "primaire"
+      },
+      {
+        "titre": "Theodor W. Adorno — Wikipédia",
+        "url": "https://fr.wikipedia.org/wiki/Theodor_W._Adorno",
+        "type": "secondaire"
+      }
+    ],
+    "statut": "documente",
+    "derniere_verification": "2026-09-05",
+    "resonance_ia": "Les systèmes de recommandation algorithmique qui personnalisent et standardisent à la fois la consommation culturelle de masse peuvent être lus comme l'aboutissement technique le plus abouti du diagnostic adornien de l'industrie culturelle."
   },
   {
     "id": "thomas-nagel",
     "axe": "philosophique",
     "sous_domaine": "philosophie",
     "nom": "Thomas Nagel",
-    "these_centrale": "",
-    "apport": "",
-    "limites_critiques": "",
-    "sources": [],
-    "statut": "a_documenter",
-    "derniere_verification": "2026-09-05"
+    "these_centrale": "Il existe un fait irréductiblement subjectif à toute expérience consciente — « ce que cela fait » d'être un sujet donné — qui ne peut en principe être capturé par une description objective et complète, en troisième personne, des processus physiques cérébraux, aussi détaillée soit-elle.",
+    "apport": "« What Is It Like to Be a Bat? » (1974), l'un des articles les plus cités de la philosophie de l'esprit contemporaine, argument fondateur contre le réductionnisme physicaliste de la conscience ; Le Point de vue de nulle part (1986), exploration de la tension entre perspective subjective et objectivité.",
+    "limites_critiques": "Les physicalistes, dont Dennett, lui reprochent de transformer une simple limite épistémique actuelle en une impossibilité de principe non démontrée ; son ouvrage tardif Mind and Cosmos (2012) a été très largement rejeté par la communauté scientifique comme empiriquement infondé.",
+    "sources": [
+      {
+        "titre": "What Is It Like to Be a Bat?",
+        "type": "primaire"
+      },
+      {
+        "titre": "Thomas Nagel — Wikipédia",
+        "url": "https://fr.wikipedia.org/wiki/Thomas_Nagel",
+        "type": "secondaire"
+      }
+    ],
+    "statut": "documente",
+    "derniere_verification": "2026-09-05",
+    "resonance_ia": "L'argument de la chauve-souris s'applique directement, et de façon plus radicale encore, à l'IA : même en connaissant exhaustivement l'architecture et les poids d'un réseau de neurones, rien ne permettrait de savoir s'il existe « quelque chose que cela fait » d'être ce système."
   },
   {
     "id": "tristan-garcia",
     "axe": "philosophique",
     "sous_domaine": "philosophie",
     "nom": "Tristan Garcia",
-    "these_centrale": "",
-    "apport": "",
-    "limites_critiques": "",
-    "sources": [],
-    "statut": "a_documenter",
-    "derniere_verification": "2026-09-05"
+    "these_centrale": "Contre toute hiérarchie ontologique qui accorderait plus de réalité à certaines choses qu'à d'autres, tout ce qui est compté comme « quelque chose » existe strictement au même titre — une « plate ontologie » où être, c'est simplement se différencier du reste du monde et être compris par lui.",
+    "apport": "Forme et objet — Un traité des choses (2011), système métaphysique complet reconnu comme l'une des tentatives les plus ambitieuses de la philosophie française contemporaine, associé à l'ontologie orientée objet ; également romancier reconnu (prix de Flore 2008).",
+    "limites_critiques": "L'ambition totalisante et très formalisée du système est jugée par certains lecteurs plus littéraire qu'authentiquement démonstrative sur le plan philosophique ; le principe de « plate ontologie » est accusé de dissoudre des distinctions que le sens commun juge importantes.",
+    "sources": [
+      {
+        "titre": "Forme et objet",
+        "type": "primaire"
+      },
+      {
+        "titre": "Tristan Garcia — Wikipédia",
+        "url": "https://fr.wikipedia.org/wiki/Tristan_Garcia",
+        "type": "secondaire"
+      }
+    ],
+    "statut": "documente",
+    "derniere_verification": "2026-09-05",
+    "resonance_ia": "Une plate ontologie où exister c'est simplement « être compris par » le reste du monde s'applique de façon frappante à la façon dont un système d'IA traite ses données : un objet physique, un concept ou une fiction y existent au même titre, comme vecteurs dans un même espace."
   },
   {
     "id": "walter-benjamin",
     "axe": "philosophique",
     "sous_domaine": "philosophie",
     "nom": "Walter Benjamin",
-    "these_centrale": "",
-    "apport": "",
-    "limites_critiques": "",
-    "sources": [],
-    "statut": "a_documenter",
-    "derniere_verification": "2026-09-05"
+    "these_centrale": "La reproductibilité technique des œuvres d'art fait perdre à l'œuvre son « aura » — son caractère unique lié à son inscription dans une tradition — ce qui a des effets ambivalents : perte d'authenticité, mais aussi démocratisation potentielle de l'accès à l'art et possibilité d'un usage politique émancipateur.",
+    "apport": "L'Œuvre d'art à l'époque de sa reproductibilité technique (1935), texte fondateur de la théorie critique des médias ; concept de matérialisme historique hétérodoxe mêlant marxisme et théologie messianique (Thèses sur le concept d'histoire, 1940) ; travaux inachevés sur les passages parisiens comme archéologie de la modernité capitaliste.",
+    "limites_critiques": "L'articulation entre son marxisme et sa dimension théologique/messianique reste débattue quant à sa cohérence philosophique d'ensemble ; son œuvre, largement inachevée et fragmentaire, a été en partie construite a posteriori par ses éditeurs et lecteurs, dont Adorno.",
+    "sources": [
+      {
+        "titre": "L'Œuvre d'art à l'époque de sa reproductibilité technique",
+        "type": "primaire"
+      },
+      {
+        "titre": "Walter Benjamin — Wikipédia",
+        "url": "https://fr.wikipedia.org/wiki/Walter_Benjamin",
+        "type": "secondaire"
+      }
+    ],
+    "statut": "documente",
+    "derniere_verification": "2026-09-05",
+    "resonance_ia": "L'IA générative pousse à l'extrême le diagnostic benjaminien : une image ou un texte généré n'a jamais eu d'original ni d'inscription dans une tradition rituelle, ce qui radicalise la question de savoir ce qui reste de la valeur esthétique une fois la reproductibilité elle-même devenue génération ex nihilo."
   },
   {
     "id": "baruch-spinoza",
