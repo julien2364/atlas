@@ -40,5 +40,12 @@
     "type": "ajout",
     "cible": "Lot 7 (visuels avances) + recherche documentaire reelle",
     "resume": "Cartographie enrichie de 3 visuels prevus au megaprompt (section 8), en SVG pur sans nouvelle dependance : treemap par domaine (surface proportionnelle aux 267+44 fiches, cliquable), radar du TRL moyen par secteur d'usage (calcule uniquement a partir des UsageSectoriel.trl reellement renseignes, aucun secteur invente), frise chronologique du changelog du projet (en attendant des dates sourcees par fiche IA). Nouveau script scripts/documentation-recherche.mjs (+ cron GitHub Actions quotidien) : interroge l'API REST publique de Wikipedia (fr puis en) pour chaque fiche 'a documenter', et depose un resume + URL source dans la file de validation manuelle (data/seed/veille_queue.json) - jamais de redaction depuis la memoire du modele, jamais de mise a jour automatique de fiche. Page /veille adaptee pour afficher les deux formats de proposition (actualites RSS et documentation Wikipedia)."
+  },
+  {
+    "id": "documentation-lot-2-2026-09-05",
+    "date": "2026-09-05T00:00:00Z",
+    "type": "correction",
+    "cible": "Recherche documentaire (qualite) + avancement du backlog",
+    "resume": "Deuxieme run manuel du script scripts/documentation-recherche.mjs (80 fiches traitees) pour avancer le backlog des 293 fiches 'a documenter' independamment du cron quotidien (limite de 15/jour). Faux positifs reels detectes a la relecture : l'API de recherche Wikipedia associait parfois un nom a un article totalement etranger au sujet (ex. le philosophe 'Mauricio Ferraris' apparie a une telenovela mexicaine, le concept politique 'Junte' apparie a une chanteuse colombienne) - ces 3 propositions erronees ont ete retirees de la file de validation avant tout risque de validation par erreur. Garde-fou ajoute au script : une proposition n'est desormais retenue que si au moins un mot significatif du nom de la fiche apparait dans le titre ou le debut du resume de l'article trouve, sinon la fiche reste 'a documenter manuellement' plutot que de recevoir une source non fiable. Aucune fiche n'a ete mise a jour automatiquement ; la file de validation manuelle reste le seul point d'entree vers une publication."
   }
 ]

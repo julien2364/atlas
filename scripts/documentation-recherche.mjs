@@ -37,6 +37,36 @@ function chargerFichesIA() {
   return JSON.parse(readFileSync("data/seed/fiches_ia.json", "utf-8"));
 }
 
+const MOTS_VIDES = new Set([
+  "de", "du", "des", "la", "le", "les", "l", "et", "en", "au", "aux", "un", "une", "d",
+  "the", "of", "and", "in", "on", "a", "an", "à",
+]);
+
+function motsSignificatifs(s) {
+  return s
+    .toLowerCase()
+    .normalize("NFD")
+    .replace(/[̀-ͯ]/g, "") // retire les accents pour une comparaison robuste
+    .replace(/[^a-z0-9\s-]/g, " ")
+    .split(/\s+/)
+    .filter((m) => m.length > 2 && !MOTS_VIDES.has(m));
+}
+
+// Garde-fou qualité (05/09/2026, suite à des faux positifs constatés en conditions
+// réelles : ex. "Mauricio Ferraris" -> apparié à tort à une telenovela "Rosa
+// salvaje", "Junte" -> à une chanteuse colombienne "La Muchacha"). L'API de
+// recherche Wikipédia renvoie parfois un premier résultat purement lexical, sans
+// lien avec le sujet. On exige qu'au moins un mot significatif du nom de la fiche
+// se retrouve dans le titre de l'article ou le début de son résumé, sinon on
+// considère qu'aucun article fiable n'a été trouvé (mieux vaut "à documenter
+// manuellement" qu'une source fausse dans la file de validation).
+function correspondancePlausible(titreFiche, titreArticle, extrait) {
+  const motsFiche = motsSignificatifs(titreFiche);
+  if (motsFiche.length === 0) return true; // rien à vérifier (titre trop court)
+  const cible = motsSignificatifs(`${titreArticle} ${extrait.slice(0, 200)}`);
+  return motsFiche.some((m) => cible.includes(m));
+}
+
 async function chercherResumeWikipedia(titre) {
   for (const lang of ["fr", "en"]) {
     try {
@@ -58,6 +88,7 @@ async function chercherResumeWikipedia(titre) {
       if (!summaryRes.ok) continue;
       const summary = await summaryRes.json();
       if (summary.type === "disambiguation" || !summary.extract) continue;
+      if (!correspondancePlausible(titre, summary.title, summary.extract)) continue;
 
       return {
         langue: lang,
