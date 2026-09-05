@@ -75,5 +75,12 @@
     "type": "evolution_structurelle",
     "cible": "Comparateur - sujets, sous-themes, axes de recherche, axes prospectifs (Lot 9)",
     "resume": "A la demande de Julien (plus de sujet/sous-sujet, axes de recherche, documents, et un output avec plusieurs perspectives/previsions/axes possibles), le comparateur est enrichi. Nouveau type lib/types.ts : AxeProspectif (nom, description, niveau_confiance) et extension optionnelle et retrocompatible de FicheGap : sujet, sous_themes, axes_recherche, documents_cles, axes_prospectifs. Les scenario_present/5ans/15_20ans existants sont conserves (trajectoire lineaire unique) et desormais completes par plusieurs axes_prospectifs nommes (2 a 3 par paire), chacun avec son propre niveau de confiance plutot qu'une seule prediction implicite. Les 6 fiches de gap existantes enrichies avec un sujet, 3 sous-themes, 3 axes de recherche, des documents cles quand une source primaire pertinente existe, et 3 axes prospectifs chacune. ComparateurClient.tsx affiche desormais ces blocs (sous-themes/axes de recherche en tete de fiche, documents cles et axes prospectifs colores en pied de fiche)."
+  },
+  {
+    "id": "lot10-cartographie-prospective-2026-09-05",
+    "date": "2026-09-05T00:00:00Z",
+    "type": "ajout",
+    "cible": "Cartographie - perspectives prospectives par domaine (Lot 10)",
+    "resume": "A la demande de Julien (cartographie plus profonde, d'autres visuels, plus predictif par domaine/theme), nouvelle section sur /cartographie : les axes prospectifs nommes du comparateur (Lot 9) sont agreges et regroupes par sujet/domaine plutot que par paire, avec un filtre par niveau de confiance (fait verifie / consensus scientifique / opinion majoritaire / hypothese prospective). Objectif : reperer en un coup d'oeil ou le referentiel est etabli et ou il reste speculatif, sans jamais presenter une prediction unique comme acquise - ce sont des scenarios nommes agreges depuis des donnees deja reelles (fiches_gap.json), aucune extrapolation ou courbe de tendance inventee."
   }
 ]

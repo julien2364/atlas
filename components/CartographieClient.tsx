@@ -1,7 +1,7 @@
 "use client";
 
 import { useMemo, useState } from "react";
-import type { FicheHumaine, FicheIA, FicheGap, AxeHumain, AxeIA, Substituabilite, ChangelogEntry, SecteurUsage } from "@/lib/types";
+import type { FicheHumaine, FicheIA, FicheGap, AxeHumain, AxeIA, Substituabilite, ChangelogEntry, SecteurUsage, NiveauConfiance } from "@/lib/types";
 import Treemap, { type TreemapItem } from "@/components/Treemap";
 import RadarChart, { type RadarAxisDatum } from "@/components/RadarChart";
 import FriseChangelog from "@/components/FriseChangelog";
@@ -39,6 +39,20 @@ const LABELS_SUBSTITUABILITE: Record<Substituabilite, { label: string; color: st
   remplacable_avec_supervision: { label: "Remplaçable avec supervision", color: "bg-amber-500" },
   non_remplacable: { label: "Non remplaçable", color: "bg-emerald-600" },
   remplacable_avec_autre_technologie: { label: "Remplaçable avec autre technologie", color: "bg-sky-600" },
+};
+
+const LABEL_CONFIANCE: Record<NiveauConfiance, string> = {
+  fait_verifie: "Fait vérifié",
+  consensus_scientifique: "Consensus scientifique",
+  opinion_majoritaire: "Opinion majoritaire",
+  hypothese_prospective: "Hypothèse prospective",
+};
+
+const COULEUR_CONFIANCE: Record<NiveauConfiance, string> = {
+  fait_verifie: "bg-green-50 text-green-700 dark:bg-green-950 dark:text-green-400",
+  consensus_scientifique: "bg-blue-50 text-blue-700 dark:bg-blue-950 dark:text-blue-400",
+  opinion_majoritaire: "bg-amber-50 text-amber-700 dark:bg-amber-950 dark:text-amber-400",
+  hypothese_prospective: "bg-purple-50 text-purple-700 dark:bg-purple-950 dark:text-purple-400",
 };
 
 function AxeBar<T extends string>({
@@ -105,6 +119,7 @@ export default function CartographieClient({
   const [axeIAFiltre, setAxeIAFiltre] = useState<string | null>(null);
   const [gapSelectionne, setGapSelectionne] = useState<string | null>(null);
   const [treemapAxeSelectionne, setTreemapAxeSelectionne] = useState<string | null>(null);
+  const [confianceFiltre, setConfianceFiltre] = useState<NiveauConfiance | null>(null);
 
   const humainesDocumentees = useMemo(() => humaines.filter((f) => f.statut === "documente"), [humaines]);
   const iaDocumentees = useMemo(() => ia.filter((f) => f.statut === "documente"), [ia]);
@@ -163,6 +178,33 @@ export default function CartographieClient({
       ? humaines.filter((f) => f.axe === treemapAxeSelectionne.slice("humain:".length))
       : ia.filter((f) => f.axe === treemapAxeSelectionne.slice("ia:".length))
     : [];
+
+  const prospectifsParSujet = useMemo(() => {
+    type Entree = { sujet: string; paire: string; nom: string; description: string; niveau_confiance: NiveauConfiance };
+    const entrees: Entree[] = [];
+    gaps.forEach((g) => {
+      if (!g.axes_prospectifs?.length) return;
+      const h = humaines.find((f) => f.id === g.fiche_humaine_id);
+      const i = ia.find((f) => f.id === g.fiche_ia_id);
+      g.axes_prospectifs.forEach((axe) => {
+        entrees.push({
+          sujet: g.sujet ?? `${h?.nom ?? g.fiche_humaine_id} × ${i?.nom ?? g.fiche_ia_id}`,
+          paire: `${h?.nom ?? g.fiche_humaine_id} × ${i?.nom ?? g.fiche_ia_id}`,
+          nom: axe.nom,
+          description: axe.description,
+          niveau_confiance: axe.niveau_confiance,
+        });
+      });
+    });
+    const filtrees = confianceFiltre ? entrees.filter((e) => e.niveau_confiance === confianceFiltre) : entrees;
+    const parSujet = new Map<string, Entree[]>();
+    filtrees.forEach((e) => {
+      const liste = parSujet.get(e.sujet) ?? [];
+      liste.push(e);
+      parSujet.set(e.sujet, liste);
+    });
+    return Array.from(parSujet.entries()).sort((a, b) => a[0].localeCompare(b[0]));
+  }, [gaps, humaines, ia, confianceFiltre]);
 
   const radarData: RadarAxisDatum[] = useMemo(() => {
     const bySecteur = new Map<SecteurUsage, { sum: number; count: number }>();
@@ -343,6 +385,67 @@ export default function CartographieClient({
         <div className="mt-3">
           <FriseChangelog entries={changelog} />
         </div>
+      </section>
+
+      <section>
+        <h3 className="text-sm font-medium">Perspectives prospectives par domaine</h3>
+        <p className="mt-1 text-xs text-neutral-500">
+          Les axes prospectifs nommés dans le comparateur (section « Axes possibles » de chaque fiche de gap),
+          regroupés par sujet plutôt que par paire — pour repérer d&apos;un coup d&apos;œil où le référentiel est
+          établi (fait vérifié, consensus) et où il reste spéculatif (hypothèse prospective). Aucune prédiction
+          unique n&apos;est présentée comme acquise : ce sont des scénarios nommés, pas des probabilités calculées.
+        </p>
+        <div className="mt-3 flex flex-wrap gap-2">
+          <button
+            onClick={() => setConfianceFiltre(null)}
+            className={`rounded-full border px-3 py-1 text-xs transition-colors ${
+              confianceFiltre === null
+                ? "border-neutral-900 bg-neutral-900 text-white dark:border-neutral-100 dark:bg-neutral-100 dark:text-neutral-900"
+                : "border-neutral-300 text-neutral-600 hover:border-neutral-500 dark:border-neutral-700 dark:text-neutral-400"
+            }`}
+          >
+            Tous
+          </button>
+          {(Object.keys(LABEL_CONFIANCE) as NiveauConfiance[]).map((nc) => (
+            <button
+              key={nc}
+              onClick={() => setConfianceFiltre(nc)}
+              className={`rounded-full border px-3 py-1 text-xs transition-colors ${
+                confianceFiltre === nc
+                  ? "border-neutral-900 bg-neutral-900 text-white dark:border-neutral-100 dark:bg-neutral-100 dark:text-neutral-900"
+                  : "border-neutral-300 text-neutral-600 hover:border-neutral-500 dark:border-neutral-700 dark:text-neutral-400"
+              }`}
+            >
+              {LABEL_CONFIANCE[nc]}
+            </button>
+          ))}
+        </div>
+
+        {prospectifsParSujet.length === 0 ? (
+          <p className="mt-3 text-sm text-neutral-500">Aucun axe prospectif pour ce filtre.</p>
+        ) : (
+          <div className="mt-4 space-y-5">
+            {prospectifsParSujet.map(([sujet, entrees]) => (
+              <div key={sujet}>
+                <h4 className="text-xs font-medium uppercase tracking-wide text-neutral-400">{sujet}</h4>
+                <div className="mt-2 grid gap-2 sm:grid-cols-2">
+                  {entrees.map((e, i) => (
+                    <div key={i} className="rounded border border-neutral-200 p-3 text-sm dark:border-neutral-800">
+                      <div className="flex items-center justify-between gap-2">
+                        <span className="font-medium">{e.nom}</span>
+                        <span className={`shrink-0 rounded px-2 py-0.5 text-xs ${COULEUR_CONFIANCE[e.niveau_confiance]}`}>
+                          {LABEL_CONFIANCE[e.niveau_confiance]}
+                        </span>
+                      </div>
+                      <p className="mt-1 text-xs text-neutral-500">{e.paire}</p>
+                      <p className="mt-1 text-neutral-600 dark:text-neutral-400">{e.description}</p>
+                    </div>
+                  ))}
+                </div>
+              </div>
+            ))}
+          </div>
+        )}
       </section>
     </div>
   );
