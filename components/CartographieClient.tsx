@@ -4,16 +4,8 @@ import { useMemo, useState } from "react";
 import type { FicheHumaine, FicheIA, FicheGap, AxeHumain, AxeIA, Substituabilite, ChangelogEntry, SecteurUsage, NiveauConfiance } from "@/lib/types";
 import Treemap, { type TreemapItem } from "@/components/Treemap";
 import RadarChart, { type RadarAxisDatum } from "@/components/RadarChart";
-import FriseChangelog from "@/components/FriseChangelog";
-
-const LABELS_SECTEUR: Record<SecteurUsage, string> = {
-  science: "Science",
-  education: "Éducation",
-  recherche: "Recherche",
-  industrie: "Industrie",
-  pharmaceutique: "Pharmaceutique",
-  gouvernement: "Gouvernement",
-};
+import FriseChangelog, { type JalonVolume } from "@/components/FriseChangelog";
+import HeatmapTRL, { LABELS_SECTEUR, SECTEURS } from "@/components/HeatmapTRL";
 
 const TREEMAP_PALETTE = ["#6366f1", "#14b8a6", "#a855f7", "#f97316", "#ec4899", "#06b6d4", "#84cc16"];
 
@@ -226,6 +218,22 @@ export default function CartographieClient({
       .sort((a, b) => a.label.localeCompare(b.label));
   }, [ia]);
 
+  // Volume de fiches documentées atteint à chaque jalon du changelog. Recompté
+  // depuis les fiches elles-mêmes (date de `derniere_verification` <= jalon)
+  // plutôt que lu dans le résumé textuel des entrées : c'est la seule datation
+  // réellement vérifiable, et elle reste juste si le corpus évolue.
+  const volumesFrise: JalonVolume[] = useMemo(() => {
+    const jours = Array.from(new Set(changelog.map((e) => e.date.slice(0, 10)))).sort();
+    const compte = (fiches: { statut: string; derniere_verification: string }[], j: string) =>
+      fiches.filter((f) => f.statut === "documente" && f.derniere_verification.slice(0, 10) <= j).length;
+    return jours.map((j) => ({
+      date: j,
+      humaines: compte(humaines, j),
+      ia: compte(ia, j),
+      gaps: compte(gaps, j),
+    }));
+  }, [changelog, humaines, ia, gaps]);
+
   return (
     <div className="space-y-10">
       <section>
@@ -377,13 +385,31 @@ export default function CartographieClient({
       </section>
 
       <section>
-        <h3 className="text-sm font-medium">Frise chronologique — évolution du projet</h3>
+        <h3 className="text-sm font-medium">
+          Heatmap de maturité — TRL par fiche IA × secteur d&apos;usage ({ia.length} fiches × {SECTEURS.length} secteurs)
+        </h3>
         <p className="mt-1 text-xs text-neutral-500">
-          En attendant des dates d&apos;apparition sourcées pour chaque capacité IA (chantier de documentation en
-          cours), cette frise retrace les jalons réels et datés du projet lui-même (changelog).
+          Le détail de ce que le radar résume : une même capacité peut être TRL 9 en industrie et TRL 4 en
+          pharmaceutique (mégaprompt §4). Chaque cellule porte son TRL en toutes lettres — la couleur ne fait que le
+          renforcer — et une cellule hachurée « n. d. » signale une absence de donnée, ce qui n&apos;est pas la même
+          chose qu&apos;une maturité faible. Cliquer (ou activer au clavier) une cellule affiche la description, les
+          exemples et les sources de l&apos;usage. Filtrer par axe pour réduire la matrice.
         </p>
         <div className="mt-3">
-          <FriseChangelog entries={changelog} />
+          <HeatmapTRL fiches={ia} />
+        </div>
+      </section>
+
+      <section>
+        <h3 className="text-sm font-medium">Frise chronologique — évolution du corpus dans le temps</h3>
+        <p className="mt-1 text-xs text-neutral-500">
+          En attendant des dates d&apos;apparition sourcées pour chaque capacité IA (chantier de documentation en
+          cours), cette frise retrace les jalons réels et datés du projet lui-même (changelog), regroupés par jour.
+          Chaque étape indique le volume de fiches documentées atteint à cette date, recompté depuis la date de
+          dernière vérification des fiches — rien n&apos;est interpolé entre deux jalons.
+        </p>
+        <div className="mt-3">
+          <FriseChangelog entries={changelog} volumes={volumesFrise} />
         </div>
       </section>
 
