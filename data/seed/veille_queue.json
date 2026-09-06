@@ -11,8 +11,9 @@
       "resume": "OpenAI introduces Daybreak for Frontline Defenders. A $1 billion commitment expands access to frontier cyber AI, training, and support for essential services."
     },
     "score_fiabilite": 0.9,
-    "statut": "en_attente",
-    "created_at": "2026-09-05T04:57:24.460Z"
+    "statut": "rejete",
+    "created_at": "2026-09-05T04:57:24.460Z",
+    "note_tri": "Annonce commerciale d'un engagement financier ($1B, programme Daybreak) sans contenu conceptuel sur une capacité comparable humain/IA."
   },
   {
     "id": "37c95dc5-aeac-44ff-ab70-61685e9e2cfe",
@@ -26,8 +27,9 @@
       "resume": "Using GPT-6 Astra, Playco built three themed game prototypes from one grey box foundation and reported 50% fewer manual fixes than with the previous model."
     },
     "score_fiabilite": 0.9,
-    "statut": "en_attente",
-    "created_at": "2026-09-05T04:57:24.460Z"
+    "statut": "rejete",
+    "created_at": "2026-09-05T04:57:24.460Z",
+    "note_tri": "Étude de cas client promotionnelle (Playco) publiée sur le blog OpenAI, sans apport conceptuel au-delà de l'autopromotion du produit."
   },
   {
     "id": "2aba4e73-2375-420e-8060-4b413b484c18",
@@ -41,14 +43,15 @@
       "resume": "Legora used GPT-6 Astra to review 41 documents in minutes, find all four planted errors, and improve performance by nearly 40% in this financial-review workflow."
     },
     "score_fiabilite": 0.9,
-    "statut": "en_attente",
-    "created_at": "2026-09-05T04:57:24.461Z"
+    "statut": "rejete",
+    "created_at": "2026-09-05T04:57:24.461Z",
+    "note_tri": "Étude de cas client promotionnelle (Legora) publiée sur le blog OpenAI, redondante dans son format avec 37c95dc5-aeac-44ff-ab70-61685e9e2cfe."
   },
   {
     "id": "ffdb6a03-8da8-4e4c-8771-fcb91af2939f",
     "source_id": "openai-news",
-    "cible_type": "nouvelle_categorie",
-    "cible_id": null,
+    "cible_type": "fiche_ia",
+    "cible_id": "codex-famille-gpt",
     "contenu_propose": {
       "titre": "GPT-6 Astra: A new generation of intelligence",
       "link": "https://openai.com/index/gpt-6-astra",
@@ -56,14 +59,15 @@
       "resume": "Introducing GPT-6 Astra, our most intelligent and aligned model yet, with state-of-the-art capabilities across computer use, coding, cybersecurity, and science."
     },
     "score_fiabilite": 0.9,
-    "statut": "en_attente",
-    "created_at": "2026-09-05T04:57:24.461Z"
+    "statut": "a_traiter_fiche_existante",
+    "created_at": "2026-09-05T04:57:24.461Z",
+    "note_tri": "Annonce officielle du modèle GPT-6 Astra par OpenAI, avancée générationnelle de la famille GPT déjà cataloguée."
   },
   {
     "id": "697086fa-87db-4f4d-8298-f1cb6605cf0f",
     "source_id": "openai-news",
-    "cible_type": "nouvelle_categorie",
-    "cible_id": null,
+    "cible_type": "fiche_ia",
+    "cible_id": "codex-famille-gpt",
     "contenu_propose": {
       "titre": "Safety overview: GPT-6 Astra",
       "link": "https://openai.com/index/safety-overview-gpt-6-astra",
@@ -71,8 +75,9 @@
       "resume": "GPT-6 Astra is our most capable broadly deployed model and our first to reach the Critical level of cybersecurity capability under our Preparedness Framework."
     },
     "score_fiabilite": 0.9,
-    "statut": "en_attente",
-    "created_at": "2026-09-05T04:57:24.461Z"
+    "statut": "a_traiter_fiche_existante",
+    "created_at": "2026-09-05T04:57:24.461Z",
+    "note_tri": "Document de sécurité officiel indiquant que GPT-6 Astra atteint le niveau 'Critical' de capacité cybersécurité selon le Preparedness Framework d'OpenAI, information factuelle distincte de l'annonce générale du modèle."
   },
   {
     "id": "1e7490bb-bf33-4964-bc82-94e507a99f06",
@@ -86,8 +91,9 @@
       "resume": ""
     },
     "score_fiabilite": 0.9,
-    "statut": "en_attente",
-    "created_at": "2026-09-05T04:57:24.626Z"
+    "statut": "rejete",
+    "created_at": "2026-09-05T04:57:24.626Z",
+    "note_tri": "Brève anecdotique de vulgarisation (méthode des sous-vêtements enterrés pour mesurer la santé des sols), sans résumé disponible et sans lien avec une capacité humaine ou IA du corpus."
   },
   {
     "id": "0df84107-fa94-4243-a706-8f38b057064e",
@@ -101,8 +107,15 @@
       "resume": ""
     },
     "score_fiabilite": 0.9,
-    "statut": "en_attente",
-    "created_at": "2026-09-05T04:57:24.626Z"
+    "statut": "a_traiter_nouvelle_fiche",
+    "created_at": "2026-09-05T04:57:24.626Z",
+    "note_tri": "Synchronisation d'horloges optiques ultra-précises entre quatre pays: avancée métrologique durable (redéfinition de la seconde, géodésie) absente du corpus des sciences.",
+    "fiche_proposee": {
+      "id": "horloges-optiques-de-precision",
+      "axe": "evolution",
+      "nom": "Horloges optiques de précision",
+      "type": "humaine"
+    }
   },
   {
     "id": "81239464-3276-4054-9535-39f3c1b1a961",
@@ -116,14 +129,15 @@
       "resume": ""
     },
     "score_fiabilite": 0.9,
-    "statut": "en_attente",
-    "created_at": "2026-09-05T04:57:24.626Z"
+    "statut": "rejete",
+    "created_at": "2026-09-05T04:57:24.626Z",
+    "note_tri": "Anecdote archéologique isolée (origine de matériaux d'œuvres égyptiennes antiques), sans rapport avec les capacités humaines ou IA suivies par l'observatoire."
   },
   {
     "id": "d164bd4b-66e5-4528-a941-746d18b406eb",
     "source_id": "nature-news",
-    "cible_type": "nouvelle_categorie",
-    "cible_id": null,
+    "cible_type": "fiche_ia",
+    "cible_id": "ia-en-modelisation-climatique-type-graphcast",
     "contenu_propose": {
       "titre": "Tropical cyclones could be predicted with an extra day’s warning, thanks to an AI model",
       "link": "https://www.nature.com/articles/d41586-026-02643-w",
@@ -131,8 +145,9 @@
       "resume": ""
     },
     "score_fiabilite": 0.9,
-    "statut": "en_attente",
-    "created_at": "2026-09-05T04:57:24.626Z"
+    "statut": "a_traiter_fiche_existante",
+    "created_at": "2026-09-05T04:57:24.626Z",
+    "note_tri": "Modèle d'IA de prédiction des cyclones tropicaux avec un jour d'avance supplémentaire: application directe de la modélisation climatique par IA déjà cataloguée."
   },
   {
     "id": "799012a8-45d2-4cef-b056-e439ecf11c06",
@@ -146,14 +161,21 @@
       "resume": ""
     },
     "score_fiabilite": 0.9,
-    "statut": "en_attente",
-    "created_at": "2026-09-05T04:57:24.626Z"
+    "statut": "a_traiter_nouvelle_fiche",
+    "created_at": "2026-09-05T04:57:24.626Z",
+    "note_tri": "Nécrologie d'une cristallographe lauréate du prix Nobel ayant élucidé la structure du ribosome, figure scientifique durable absente du corpus des sciences.",
+    "fiche_proposee": {
+      "id": "ada-yonath",
+      "axe": "evolution",
+      "nom": "Ada Yonath",
+      "type": "humaine"
+    }
   },
   {
     "id": "9c7ad8ef-7917-4c5d-acc5-83d88405c686",
     "source_id": "anthropic-news",
-    "cible_type": "nouvelle_categorie",
-    "cible_id": null,
+    "cible_type": "fiche_ia",
+    "cible_id": "claude-anthropic-cowork",
     "contenu_propose": {
       "titre": "Anthropic lance « Check Files » pour savoir si un fichier a été généré par Claude - Frandroid",
       "link": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxPR2JHMkFWMWdzRVFyU3J4ZDJmaGEzcG1pODlhVlhGaEY0LWl5bnZlZEhNRk1paW9hYjZHU0hoN29BRzlOOWlzZW1iUlFOcFFncE55eUFMRVRSTG9CdTRkdnNQemR1al82aWlBTzQ0OUtjeGNFNGdvdUF1eEV6V3h1SXZfdUpWS0RfY2xQOXJYR3gzajZYeUxlUk1PVmhucGQ5VV9kYTV0WWZGZ2Ruc0VJTFpxa01CZWRoOUdSRGlTNmhPQQ?oc=5",
@@ -161,8 +183,9 @@
       "resume": "Anthropic lance « Check Files » pour savoir si un fichier a été généré par Claude  Frandroid"
     },
     "score_fiabilite": 0.9,
-    "statut": "en_attente",
-    "created_at": "2026-09-05T17:36:10.502Z"
+    "statut": "a_traiter_fiche_existante",
+    "created_at": "2026-09-05T17:36:10.502Z",
+    "note_tri": "Lancement par Anthropic de 'Check Files', fonctionnalité de détection de fichiers générés par Claude, nouvelle capacité produit rattachable à la fiche Claude."
   },
   {
     "id": "cdeaae61-cbde-416e-88ae-fab2d32a7f65",
@@ -176,8 +199,9 @@
       "resume": "Claude en panne, Anthropic confirme sur sept de ses modèles  Les Numériques"
     },
     "score_fiabilite": 0.9,
-    "statut": "en_attente",
-    "created_at": "2026-09-05T17:36:10.502Z"
+    "statut": "rejete",
+    "created_at": "2026-09-05T17:36:10.502Z",
+    "note_tri": "Brève d'incident opérationnel (panne confirmée sur sept modèles), sans contenu de capacité durable; redondante avec 26f535d2-b24e-4879-be12-dded045f2493 qui couvre le même épisode de panne."
   },
   {
     "id": "8b551762-c1fa-479c-a091-efec6e678ca9",
@@ -191,14 +215,15 @@
       "resume": "Claude visé par une vague de vols de session, avec un risque pour les données d’entreprise  zdnet.fr"
     },
     "score_fiabilite": 0.9,
-    "statut": "en_attente",
-    "created_at": "2026-09-05T17:36:10.502Z"
+    "statut": "rejete",
+    "created_at": "2026-09-05T17:36:10.502Z",
+    "note_tri": "Brève d'incident de sécurité (vols de session ciblant des utilisateurs de Claude), anecdotique et sans catégorie de limite correspondante dans le corpus IA (hallucination, biais, dépendance matérielle)."
   },
   {
     "id": "891c9db7-9e1a-4792-9788-9fc82864ced6",
     "source_id": "anthropic-news",
-    "cible_type": "nouvelle_categorie",
-    "cible_id": null,
+    "cible_type": "fiche_ia",
+    "cible_id": "claude-anthropic-cowork",
     "contenu_propose": {
       "titre": "Anthropic dégaine 2 nouvelles versions de Claude, et elles font des prouesses - 01net.com",
       "link": "https://news.google.com/rss/articles/CBMitAFBVV95cUxPQ0tRUzZQZVRNODhRRm1XWWNiS2lIaG9UTUtTa3l5TEFCSW1ZQzYzNTlyVmN3SnBEcmpySjQxeVFXRTgyZGxXVGlVcHpLU254M29yNVljcTVOZmRYbkdZT2E2NG10T191bWRjY0YxTmQ3c2Y5Y2owdi1KZ0V3RjVCTHZxd0xFdGwtaWk4UHViT1BtbnQyYU9YOEN0bUVtS3RtVmN2ODRzdUFHOWUwb3dFcTQzeUY?oc=5",
@@ -206,8 +231,9 @@
       "resume": "Anthropic dégaine 2 nouvelles versions de Claude, et elles font des prouesses  01net.com"
     },
     "score_fiabilite": 0.9,
-    "statut": "en_attente",
-    "created_at": "2026-09-05T17:36:10.502Z"
+    "statut": "a_traiter_fiche_existante",
+    "created_at": "2026-09-05T17:36:10.502Z",
+    "note_tri": "Sortie de deux nouvelles versions de Claude par Anthropic avec gains de performance rapportés, information de capacité rattachable à la fiche Claude."
   },
   {
     "id": "26f535d2-b24e-4879-be12-dded045f2493",
@@ -221,14 +247,15 @@
       "resume": "Claude subit une panne, Anthropic confirme l’incident : un correctif est en cours  Frandroid"
     },
     "score_fiabilite": 0.9,
-    "statut": "en_attente",
-    "created_at": "2026-09-05T17:36:10.502Z"
+    "statut": "rejete",
+    "created_at": "2026-09-05T17:36:10.502Z",
+    "note_tri": "Brève d'incident opérationnel (correctif en cours) redondante avec cdeaae61-cbde-416e-88ae-fab2d32a7f65, qui couvre le même épisode de panne de Claude."
   },
   {
     "id": "5ece8bb8-0e5c-4336-890e-84405c2a101f",
     "source_id": "imf-news",
-    "cible_type": "nouvelle_categorie",
-    "cible_id": null,
+    "cible_type": "fiche_humaine",
+    "cible_id": "fmi",
     "contenu_propose": {
       "titre": "Le FMI et le Sénégal reprennent leur coopération, un prêt de 2,2 milliards de dollars en vue pour Dakar - RFI",
       "link": "https://news.google.com/rss/articles/CBMi_gFBVV95cUxOcUlab2FGYmJoUDY3TXdSZnJuOHZKaUxOWXlIMUs3Q21EUUJpdzRGUnBXZllwZi0xdU8xSXl2bHdYRFJ6Y0VpT05BTkVBcnJabm0zaXo2N0RyM0JWVk5Cb085VzQ5bU9oVzZyMGlBMVhhd0pfWHByVEFYTUVrVVJSOUthWHhsQVJJNFZfLU1TamJjV01iakZSRWdfdG1JYzl3SGYtdFdVOFRMS3IzUWFXbjZ4V0RENGhwa1ZUNFEzVEUtd2JRNkU4U2FibGxOVnFHSUJ3d0xHbXBSLWx5ZmY2cW9ncjVmemFEUU5qN3FTVV9KcDAtd1BaY3RWVEJvdw?oc=5",
@@ -236,8 +263,9 @@
       "resume": "Le FMI et le Sénégal reprennent leur coopération, un prêt de 2,2 milliards de dollars en vue pour Dakar  RFI"
     },
     "score_fiabilite": 0.9,
-    "statut": "en_attente",
-    "created_at": "2026-09-05T17:36:11.433Z"
+    "statut": "a_traiter_fiche_existante",
+    "created_at": "2026-09-05T17:36:11.433Z",
+    "note_tri": "Reprise de la coopération FMI-Sénégal avec un prêt de 2,2 milliards de dollars: activité institutionnelle factuelle rattachable à la fiche FMI."
   },
   {
     "id": "f081904e-e6a3-4b41-83df-4dab91a27884",
@@ -251,8 +279,9 @@
       "resume": "Sénégal : un accord conclut avec le FMI pour relancer l’économie  France 24"
     },
     "score_fiabilite": 0.9,
-    "statut": "en_attente",
-    "created_at": "2026-09-05T17:36:11.433Z"
+    "statut": "rejete",
+    "created_at": "2026-09-05T17:36:11.433Z",
+    "note_tri": "Couverture redondante du même accord FMI-Sénégal déjà retenu via 5ece8bb8-0e5c-4336-890e-84405c2a101f, sans information supplémentaire."
   },
   {
     "id": "2d31bca4-d1e2-45de-826c-f42d29f0d4a3",
@@ -266,8 +295,9 @@
       "resume": "VIDÉO. Économie: accord de principe entre le Sénégal et le FMI  tv5monde"
     },
     "score_fiabilite": 0.9,
-    "statut": "en_attente",
-    "created_at": "2026-09-05T17:36:11.433Z"
+    "statut": "rejete",
+    "created_at": "2026-09-05T17:36:11.433Z",
+    "note_tri": "Couverture redondante (accord de principe FMI-Sénégal) du même événement que 5ece8bb8-0e5c-4336-890e-84405c2a101f."
   },
   {
     "id": "a6c9bd97-62c4-4fa2-90eb-15dc68f4f5fa",
@@ -281,8 +311,9 @@
       "resume": "Sénégal : Accord trouvé avec le FMI pour un programme de 2.2 milliards USD  Anadolu Ajansı"
     },
     "score_fiabilite": 0.9,
-    "statut": "en_attente",
-    "created_at": "2026-09-05T17:36:11.433Z"
+    "statut": "rejete",
+    "created_at": "2026-09-05T17:36:11.433Z",
+    "note_tri": "Couverture redondante du même accord FMI-Sénégal de 2,2 milliards USD déjà retenu via 5ece8bb8-0e5c-4336-890e-84405c2a101f."
   },
   {
     "id": "1a4b7e4a-51e7-4a97-b51c-c4052769a9e4",
@@ -296,14 +327,15 @@
       "resume": "Le FMI et le Sénégal scellent un accord de 2,2 milliards de dollars  Africanews"
     },
     "score_fiabilite": 0.9,
-    "statut": "en_attente",
-    "created_at": "2026-09-05T17:36:11.433Z"
+    "statut": "rejete",
+    "created_at": "2026-09-05T17:36:11.433Z",
+    "note_tri": "Couverture redondante du même accord FMI-Sénégal déjà retenu via 5ece8bb8-0e5c-4336-890e-84405c2a101f."
   },
   {
     "id": "9fe93a20-9248-468b-8591-afe3dd040e66",
     "source_id": "oecd-news",
-    "cible_type": "nouvelle_categorie",
-    "cible_id": null,
+    "cible_type": "fiche_humaine",
+    "cible_id": "ocde",
     "contenu_propose": {
       "titre": "Éditorial : Sous pression : Perspectives économiques de l'OCDE, Volume 2026 Numéro 1 - oecd.org",
       "link": "https://news.google.com/rss/articles/CBMi6wFBVV95cUxORE9hSDYxY2lvRGtjZk05clozTTFpSXBVOEFGVkREQlF3R2J2R0h1ZHg0R01maVhBQVA5RWZKQXg4eTM3dHVKUl92V1RsYWxsTkpMTkRZMGZmaXNrb0thY1p4YUt4eW12TE5UZW1waHd4VnlZdUtTQ2prM2VEOGRaU01oZU1wczdxV2locDZPbWZwSk5sZkRNUFNxUkR6Zl9YaEZuTmlVS2NYSi1jMWo4YXZ6RzV6SGRZUzA5dkV1QnZXOEhMR1Q3cmpUbzBvYkg0eDgxUjc1QjRLcXRTUTJvUG5iTjdMNW1Ld1k0?oc=5",
@@ -311,8 +343,9 @@
       "resume": "Éditorial : Sous pression : Perspectives économiques de l'OCDE, Volume 2026 Numéro 1  oecd.org"
     },
     "score_fiabilite": 0.9,
-    "statut": "en_attente",
-    "created_at": "2026-09-05T17:36:12.006Z"
+    "statut": "a_traiter_fiche_existante",
+    "created_at": "2026-09-05T17:36:12.006Z",
+    "note_tri": "Éditorial officiel de l'OCDE présentant ses Perspectives économiques Volume 2026 n°1, source primaire rattachable à la fiche OCDE."
   },
   {
     "id": "eb34736d-19c3-41a5-8104-ac029aea51bb",
@@ -326,8 +359,9 @@
       "resume": "L'OCDE appelle à un redressement \"important et durable\" des finances publiques de la France  franceinfo"
     },
     "score_fiabilite": 0.9,
-    "statut": "en_attente",
-    "created_at": "2026-09-05T17:36:12.007Z"
+    "statut": "rejete",
+    "created_at": "2026-09-05T17:36:12.007Z",
+    "note_tri": "Déclinaison France du même cycle de publication que l'éditorial des Perspectives économiques de l'OCDE (9fe93a20-9248-468b-8591-afe3dd040e66), sans angle distinct."
   },
   {
     "id": "079f3e29-8e88-4209-b1a6-14bb5828b8ba",
@@ -341,14 +375,15 @@
       "resume": "« L’immigration est positive pour l’économie dans son ensemble. Pourquoi est-elle aussi impopulaire ? »  lemonde.fr"
     },
     "score_fiabilite": 0.9,
-    "statut": "en_attente",
-    "created_at": "2026-09-05T17:36:12.007Z"
+    "statut": "rejete",
+    "created_at": "2026-09-05T17:36:12.007Z",
+    "note_tri": "Chronique d'opinion généraliste sur l'impopularité de l'immigration, sans rattachement factuel précis à une fiche du corpus (aucune catégorie migration/économie cataloguée)."
   },
   {
     "id": "297f532c-52ab-4454-b48e-84ece14f95a8",
     "source_id": "oecd-news",
-    "cible_type": "nouvelle_categorie",
-    "cible_id": null,
+    "cible_type": "fiche_humaine",
+    "cible_id": "ocde",
     "contenu_propose": {
       "titre": "Guerre prolongée en Iran : l'OCDE craint des récessions - Euronews.com",
       "link": "https://news.google.com/rss/articles/CBMizwFBVV95cUxPbDZHVnF0Q2hBTklJaHBOR053SVp4ZTQ5dHYxeEVQZ0NKOWY2LTNlMU1rTzRBWEhQa0xYMTJuc2lOV1hMaURLZnNWZy13d05lb3dBZ0hkNy04QTV6N3Z2LXlqLTNaUE45VVpsbFZHUEZGak1Zc2o3WFZ0WThXWGV1S3BBQk1NWEdCWnhSWjFzT181VThhQWZMWkxsU3ZDSnlLX2tvUElmcVUzNGlkN2RaaW5hSF9JUmtxOWpLNi0wMlExMTJyM0l4enFGdU9kcU0?oc=5",
@@ -356,14 +391,15 @@
       "resume": "Guerre prolongée en Iran : l'OCDE craint des récessions  Euronews.com"
     },
     "score_fiabilite": 0.9,
-    "statut": "en_attente",
-    "created_at": "2026-09-05T17:36:12.007Z"
+    "statut": "a_traiter_fiche_existante",
+    "created_at": "2026-09-05T17:36:12.007Z",
+    "note_tri": "Alerte de l'OCDE sur un risque de récessions lié à la prolongation de la guerre en Iran: facteur de risque macroéconomique distinct rattachable à la fiche OCDE."
   },
   {
     "id": "26879ec4-de52-4426-8eef-44622ae4b66d",
     "source_id": "oecd-news",
-    "cible_type": "nouvelle_categorie",
-    "cible_id": null,
+    "cible_type": "fiche_humaine",
+    "cible_id": "ocde",
     "contenu_propose": {
       "titre": "Le FMI plus pessimiste que Paris et l’OCDE sur la croissance française - Le Figaro",
       "link": "https://news.google.com/rss/articles/CBMitgFBVV95cUxPaE1wS0hFeUljaWwzZ3JhQ1U1WXc0ckZORmRTUE80YUI0NjRWWEJybV8wazEzMllCQjRQV2xrZzRRZjlWbWFZZzMtRmk2LTA3YzFFM0ROVnRkR2VvTi1MYmM1N1BGbnpIQkRYNS11UHFkbDBtUXdVMENhZ19LNWJmZ2pwQ2xxdzlqY05qQk5SZTZvSzRpQkJ2a1h0cUNYYXhfMnpaWUxpNm9tRXljc3dyRHFtbjF5UQ?oc=5",
@@ -371,8 +407,9 @@
       "resume": "Le FMI plus pessimiste que Paris et l’OCDE sur la croissance française  Le Figaro"
     },
     "score_fiabilite": 0.9,
-    "statut": "en_attente",
-    "created_at": "2026-09-05T17:36:12.007Z"
+    "statut": "a_traiter_fiche_existante",
+    "created_at": "2026-09-05T17:36:12.007Z",
+    "note_tri": "Comparaison chiffrée des prévisions de croissance française entre le FMI et l'OCDE, information factuelle distincte rattachable à la fiche OCDE."
   },
   {
     "id": "b18a5812-822a-473f-8645-6d0c4362f283",
@@ -388,8 +425,9 @@
       "note": "Résumé Wikipédia brut — à reformuler en these_centrale/apport/limites_critiques (fiche humaine) ou capacites_cles/limites_connues (fiche IA) avant validation. Ne jamais publier tel quel sans relecture."
     },
     "score_fiabilite": 0.5,
-    "statut": "en_attente",
-    "created_at": "2026-09-05T19:00:11.865Z"
+    "statut": "rejete",
+    "created_at": "2026-09-05T19:00:11.865Z",
+    "note_tri": "Redondant : la fiche alain-badiou cite déjà https://fr.wikipedia.org/wiki/Alain_Badiou dans ses sources."
   },
   {
     "id": "8475d0f4-47ee-40c7-aeb3-396b76c01fa7",
@@ -405,8 +443,9 @@
       "note": "Résumé Wikipédia brut — à reformuler en these_centrale/apport/limites_critiques (fiche humaine) ou capacites_cles/limites_connues (fiche IA) avant validation. Ne jamais publier tel quel sans relecture."
     },
     "score_fiabilite": 0.5,
-    "statut": "en_attente",
-    "created_at": "2026-09-05T19:00:12.406Z"
+    "statut": "rejete",
+    "created_at": "2026-09-05T19:00:12.406Z",
+    "note_tri": "Redondant : la fiche albert-camus cite déjà https://fr.wikipedia.org/wiki/Albert_Camus dans ses sources."
   },
   {
     "id": "8905ca43-d2ad-4625-896a-9cb07d1ab0b5",
@@ -422,8 +461,9 @@
       "note": "Résumé Wikipédia brut — à reformuler en these_centrale/apport/limites_critiques (fiche humaine) ou capacites_cles/limites_connues (fiche IA) avant validation. Ne jamais publier tel quel sans relecture."
     },
     "score_fiabilite": 0.5,
-    "statut": "en_attente",
-    "created_at": "2026-09-05T19:00:12.902Z"
+    "statut": "rejete",
+    "created_at": "2026-09-05T19:00:12.902Z",
+    "note_tri": "Redondant : la fiche antonio-negri cite déjà https://fr.wikipedia.org/wiki/Toni_Negri dans ses sources."
   },
   {
     "id": "6f5905da-ba11-449e-8426-b871f38d3157",
@@ -439,8 +479,9 @@
       "note": "Résumé Wikipédia brut — à reformuler en these_centrale/apport/limites_critiques (fiche humaine) ou capacites_cles/limites_connues (fiche IA) avant validation. Ne jamais publier tel quel sans relecture."
     },
     "score_fiabilite": 0.5,
-    "statut": "en_attente",
-    "created_at": "2026-09-05T19:00:13.401Z"
+    "statut": "rejete",
+    "created_at": "2026-09-05T19:00:13.401Z",
+    "note_tri": "Redondant : la fiche axel-honneth cite déjà https://fr.wikipedia.org/wiki/Axel_Honneth dans ses sources."
   },
   {
     "id": "2e07612e-f177-437e-877a-25bd025411f0",
@@ -456,8 +497,9 @@
       "note": "Résumé Wikipédia brut — à reformuler en these_centrale/apport/limites_critiques (fiche humaine) ou capacites_cles/limites_connues (fiche IA) avant validation. Ne jamais publier tel quel sans relecture."
     },
     "score_fiabilite": 0.5,
-    "statut": "en_attente",
-    "created_at": "2026-09-05T19:00:13.893Z"
+    "statut": "rejete",
+    "created_at": "2026-09-05T19:00:13.893Z",
+    "note_tri": "Redondant : la fiche bernard-stiegler cite déjà https://fr.wikipedia.org/wiki/Bernard_Stiegler dans ses sources."
   },
   {
     "id": "4d81ed27-cf2a-4dc7-aabc-8883887b8c56",
@@ -473,8 +515,9 @@
       "note": "Résumé Wikipédia brut — à reformuler en these_centrale/apport/limites_critiques (fiche humaine) ou capacites_cles/limites_connues (fiche IA) avant validation. Ne jamais publier tel quel sans relecture."
     },
     "score_fiabilite": 0.5,
-    "statut": "en_attente",
-    "created_at": "2026-09-05T19:18:57.970Z"
+    "statut": "rejete",
+    "created_at": "2026-09-05T19:18:57.970Z",
+    "note_tri": "Redondant : la fiche bruno-latour cite déjà https://fr.wikipedia.org/wiki/Bruno_Latour dans ses sources."
   },
   {
     "id": "f09cee34-a75d-4dad-b257-0736b2ebfc53",
@@ -490,8 +533,9 @@
       "note": "Résumé Wikipédia brut — à reformuler en these_centrale/apport/limites_critiques (fiche humaine) ou capacites_cles/limites_connues (fiche IA) avant validation. Ne jamais publier tel quel sans relecture."
     },
     "score_fiabilite": 0.5,
-    "statut": "en_attente",
-    "created_at": "2026-09-05T19:18:58.460Z"
+    "statut": "rejete",
+    "created_at": "2026-09-05T19:18:58.460Z",
+    "note_tri": "Redondant : la fiche byung-chul-han cite déjà https://fr.wikipedia.org/wiki/Byung-Chul_Han dans ses sources."
   },
   {
     "id": "a20d630e-9d18-4b9f-a5a3-c437a1430a9b",
@@ -507,8 +551,9 @@
       "note": "Résumé Wikipédia brut — à reformuler en these_centrale/apport/limites_critiques (fiche humaine) ou capacites_cles/limites_connues (fiche IA) avant validation. Ne jamais publier tel quel sans relecture."
     },
     "score_fiabilite": 0.5,
-    "statut": "en_attente",
-    "created_at": "2026-09-05T19:18:58.946Z"
+    "statut": "rejete",
+    "created_at": "2026-09-05T19:18:58.946Z",
+    "note_tri": "Redondant : la fiche chantal-mouffe cite déjà https://fr.wikipedia.org/wiki/Chantal_Mouffe dans ses sources."
   },
   {
     "id": "fb03606f-b4b3-4d2f-97c4-237260b945c9",
@@ -524,8 +569,9 @@
       "note": "Résumé Wikipédia brut — à reformuler en these_centrale/apport/limites_critiques (fiche humaine) ou capacites_cles/limites_connues (fiche IA) avant validation. Ne jamais publier tel quel sans relecture."
     },
     "score_fiabilite": 0.5,
-    "statut": "en_attente",
-    "created_at": "2026-09-05T19:18:59.414Z"
+    "statut": "rejete",
+    "created_at": "2026-09-05T19:18:59.414Z",
+    "note_tri": "Redondant : la fiche cornelius-castoriadis cite déjà https://fr.wikipedia.org/wiki/Cornelius_Castoriadis dans ses sources."
   },
   {
     "id": "7fca08f1-7222-49fc-9ab9-9e3ef533f933",
@@ -541,8 +587,9 @@
       "note": "Résumé Wikipédia brut — à reformuler en these_centrale/apport/limites_critiques (fiche humaine) ou capacites_cles/limites_connues (fiche IA) avant validation. Ne jamais publier tel quel sans relecture."
     },
     "score_fiabilite": 0.5,
-    "statut": "en_attente",
-    "created_at": "2026-09-05T19:18:59.852Z"
+    "statut": "rejete",
+    "created_at": "2026-09-05T19:18:59.852Z",
+    "note_tri": "Redondant : la fiche daniel-dennett cite déjà https://fr.wikipedia.org/wiki/Daniel_Dennett dans ses sources."
   },
   {
     "id": "dfbe7966-7022-453c-a498-dedce9dbd188",
@@ -558,8 +605,9 @@
       "note": "Résumé Wikipédia brut — à reformuler en these_centrale/apport/limites_critiques (fiche humaine) ou capacites_cles/limites_connues (fiche IA) avant validation. Ne jamais publier tel quel sans relecture."
     },
     "score_fiabilite": 0.5,
-    "statut": "en_attente",
-    "created_at": "2026-09-05T19:19:00.344Z"
+    "statut": "rejete",
+    "created_at": "2026-09-05T19:19:00.344Z",
+    "note_tri": "Redondant : la fiche david-chalmers cite déjà https://fr.wikipedia.org/wiki/David_Chalmers dans ses sources."
   },
   {
     "id": "51a3d791-824c-463c-9a34-524917adced4",
@@ -575,8 +623,9 @@
       "note": "Résumé Wikipédia brut — à reformuler en these_centrale/apport/limites_critiques (fiche humaine) ou capacites_cles/limites_connues (fiche IA) avant validation. Ne jamais publier tel quel sans relecture."
     },
     "score_fiabilite": 0.5,
-    "statut": "en_attente",
-    "created_at": "2026-09-05T19:19:00.822Z"
+    "statut": "rejete",
+    "created_at": "2026-09-05T19:19:00.822Z",
+    "note_tri": "Redondant : la fiche donna-haraway cite déjà https://fr.wikipedia.org/wiki/Donna_Haraway dans ses sources."
   },
   {
     "id": "393b26be-9a08-42e7-9ccd-e81c39e6f4db",
@@ -592,8 +641,9 @@
       "note": "Résumé Wikipédia brut — à reformuler en these_centrale/apport/limites_critiques (fiche humaine) ou capacites_cles/limites_connues (fiche IA) avant validation. Ne jamais publier tel quel sans relecture."
     },
     "score_fiabilite": 0.5,
-    "statut": "en_attente",
-    "created_at": "2026-09-05T19:19:01.279Z"
+    "statut": "rejete",
+    "created_at": "2026-09-05T19:19:01.279Z",
+    "note_tri": "Redondant : la fiche emmanuel-levinas cite déjà https://fr.wikipedia.org/wiki/Emmanuel_Levinas dans ses sources."
   },
   {
     "id": "f2b2ae51-4823-4deb-ae8d-2b554e29f65b",
@@ -609,8 +659,9 @@
       "note": "Résumé Wikipédia brut — à reformuler en these_centrale/apport/limites_critiques (fiche humaine) ou capacites_cles/limites_connues (fiche IA) avant validation. Ne jamais publier tel quel sans relecture."
     },
     "score_fiabilite": 0.5,
-    "statut": "en_attente",
-    "created_at": "2026-09-05T19:19:01.711Z"
+    "statut": "rejete",
+    "created_at": "2026-09-05T19:19:01.711Z",
+    "note_tri": "Redondant : la fiche frantz-fanon cite déjà https://fr.wikipedia.org/wiki/Frantz_Fanon dans ses sources."
   },
   {
     "id": "ba99b4bf-0297-4cac-82fd-df858531f12e",
@@ -626,8 +677,9 @@
       "note": "Résumé Wikipédia brut — à reformuler en these_centrale/apport/limites_critiques (fiche humaine) ou capacites_cles/limites_connues (fiche IA) avant validation. Ne jamais publier tel quel sans relecture."
     },
     "score_fiabilite": 0.5,
-    "statut": "en_attente",
-    "created_at": "2026-09-05T19:19:02.689Z"
+    "statut": "rejete",
+    "created_at": "2026-09-05T19:19:02.689Z",
+    "note_tri": "Redondant : la fiche giorgio-agamben cite déjà https://fr.wikipedia.org/wiki/Giorgio_Agamben dans ses sources."
   },
   {
     "id": "47628d2a-060a-4d67-9482-bc689553bdae",
@@ -643,8 +695,9 @@
       "note": "Résumé Wikipédia brut — à reformuler en these_centrale/apport/limites_critiques (fiche humaine) ou capacites_cles/limites_connues (fiche IA) avant validation. Ne jamais publier tel quel sans relecture."
     },
     "score_fiabilite": 0.5,
-    "statut": "en_attente",
-    "created_at": "2026-09-05T19:19:03.927Z"
+    "statut": "rejete",
+    "created_at": "2026-09-05T19:19:03.927Z",
+    "note_tri": "Redondant : la fiche hans-georg-gadamer cite déjà https://fr.wikipedia.org/wiki/Hans-Georg_Gadamer dans ses sources."
   },
   {
     "id": "b6ad6501-4a65-46d7-b5f5-5afec3d74e77",
@@ -660,8 +713,9 @@
       "note": "Résumé Wikipédia brut — à reformuler en these_centrale/apport/limites_critiques (fiche humaine) ou capacites_cles/limites_connues (fiche IA) avant validation. Ne jamais publier tel quel sans relecture."
     },
     "score_fiabilite": 0.5,
-    "statut": "en_attente",
-    "created_at": "2026-09-05T19:19:04.368Z"
+    "statut": "rejete",
+    "created_at": "2026-09-05T19:19:04.368Z",
+    "note_tri": "Redondant : la fiche hilary-putnam cite déjà https://fr.wikipedia.org/wiki/Hilary_Putnam dans ses sources."
   },
   {
     "id": "75e443de-31f8-4336-834c-617624dc422e",
@@ -677,8 +731,9 @@
       "note": "Résumé Wikipédia brut — à reformuler en these_centrale/apport/limites_critiques (fiche humaine) ou capacites_cles/limites_connues (fiche IA) avant validation. Ne jamais publier tel quel sans relecture."
     },
     "score_fiabilite": 0.5,
-    "statut": "en_attente",
-    "created_at": "2026-09-05T19:19:05.260Z"
+    "statut": "rejete",
+    "created_at": "2026-09-05T19:19:05.260Z",
+    "note_tri": "Redondant : la fiche jacques-ranciere cite déjà https://fr.wikipedia.org/wiki/Jacques_Ranci%C3%A8re dans ses sources."
   },
   {
     "id": "167c4250-79eb-4182-976c-d6d1279c250d",
@@ -694,8 +749,9 @@
       "note": "Résumé Wikipédia brut — à reformuler en these_centrale/apport/limites_critiques (fiche humaine) ou capacites_cles/limites_connues (fiche IA) avant validation. Ne jamais publier tel quel sans relecture."
     },
     "score_fiabilite": 0.5,
-    "statut": "en_attente",
-    "created_at": "2026-09-05T19:19:06.351Z"
+    "statut": "rejete",
+    "created_at": "2026-09-05T19:19:06.351Z",
+    "note_tri": "Redondant : la fiche jean-francois-lyotard cite déjà https://fr.wikipedia.org/wiki/Jean-Fran%C3%A7ois_Lyotard dans ses sources."
   },
   {
     "id": "d559ef73-e0ea-4300-9979-ae09ccb881a3",
@@ -711,8 +767,9 @@
       "note": "Résumé Wikipédia brut — à reformuler en these_centrale/apport/limites_critiques (fiche humaine) ou capacites_cles/limites_connues (fiche IA) avant validation. Ne jamais publier tel quel sans relecture."
     },
     "score_fiabilite": 0.5,
-    "statut": "en_attente",
-    "created_at": "2026-09-05T19:19:07.267Z"
+    "statut": "rejete",
+    "created_at": "2026-09-05T19:19:07.267Z",
+    "note_tri": "Redondant : la fiche john-searle cite déjà https://fr.wikipedia.org/wiki/John_Searle dans ses sources."
   },
   {
     "id": "d3393276-edaf-49ac-9cd6-200d5f73a4ed",
@@ -728,8 +785,9 @@
       "note": "Résumé Wikipédia brut — à reformuler en these_centrale/apport/limites_critiques (fiche humaine) ou capacites_cles/limites_connues (fiche IA) avant validation. Ne jamais publier tel quel sans relecture."
     },
     "score_fiabilite": 0.5,
-    "statut": "en_attente",
-    "created_at": "2026-09-05T19:19:08.021Z"
+    "statut": "rejete",
+    "created_at": "2026-09-05T19:19:08.021Z",
+    "note_tri": "Redondant : la fiche judith-butler cite déjà https://fr.wikipedia.org/wiki/Judith_Butler dans ses sources."
   },
   {
     "id": "607de577-13f6-4261-8bd1-b81613a8cf47",
@@ -745,8 +803,9 @@
       "note": "Résumé Wikipédia brut — à reformuler en these_centrale/apport/limites_critiques (fiche humaine) ou capacites_cles/limites_connues (fiche IA) avant validation. Ne jamais publier tel quel sans relecture."
     },
     "score_fiabilite": 0.5,
-    "statut": "en_attente",
-    "created_at": "2026-09-05T19:19:09.599Z"
+    "statut": "rejete",
+    "created_at": "2026-09-05T19:19:09.599Z",
+    "note_tri": "Redondant : la fiche luce-irigaray cite déjà https://fr.wikipedia.org/wiki/Luce_Irigaray dans ses sources."
   },
   {
     "id": "496e6309-9472-41e0-ba42-120dcc2e2166",
@@ -762,8 +821,9 @@
       "note": "Résumé Wikipédia brut — à reformuler en these_centrale/apport/limites_critiques (fiche humaine) ou capacites_cles/limites_connues (fiche IA) avant validation. Ne jamais publier tel quel sans relecture."
     },
     "score_fiabilite": 0.5,
-    "statut": "en_attente",
-    "created_at": "2026-09-05T19:19:13.173Z"
+    "statut": "rejete",
+    "created_at": "2026-09-05T19:19:13.173Z",
+    "note_tri": "Redondant : la fiche martha-nussbaum cite déjà https://fr.wikipedia.org/wiki/Martha_Nussbaum dans ses sources."
   },
   {
     "id": "863d84d0-e35e-4afb-9038-13552e2dfa79",
@@ -779,8 +839,9 @@
       "note": "Résumé Wikipédia brut — à reformuler en these_centrale/apport/limites_critiques (fiche humaine) ou capacites_cles/limites_connues (fiche IA) avant validation. Ne jamais publier tel quel sans relecture."
     },
     "score_fiabilite": 0.5,
-    "statut": "en_attente",
-    "created_at": "2026-09-05T19:19:13.834Z"
+    "statut": "rejete",
+    "created_at": "2026-09-05T19:19:13.834Z",
+    "note_tri": "Redondant : la fiche noam-chomsky cite déjà https://fr.wikipedia.org/wiki/Noam_Chomsky dans ses sources."
   },
   {
     "id": "94b50d46-ba4a-422f-bbb0-e303f5e80d60",
@@ -796,8 +857,9 @@
       "note": "Résumé Wikipédia brut — à reformuler en these_centrale/apport/limites_critiques (fiche humaine) ou capacites_cles/limites_connues (fiche IA) avant validation. Ne jamais publier tel quel sans relecture."
     },
     "score_fiabilite": 0.5,
-    "statut": "en_attente",
-    "created_at": "2026-09-05T19:19:14.317Z"
+    "statut": "rejete",
+    "created_at": "2026-09-05T19:19:14.317Z",
+    "note_tri": "Redondant : la fiche paul-ric-ur cite déjà https://fr.wikipedia.org/wiki/Paul_Ric%C5%93ur dans ses sources."
   },
   {
     "id": "d6a70e33-6bd5-45eb-adc9-03aad3911616",
@@ -813,8 +875,9 @@
       "note": "Résumé Wikipédia brut — à reformuler en these_centrale/apport/limites_critiques (fiche humaine) ou capacites_cles/limites_connues (fiche IA) avant validation. Ne jamais publier tel quel sans relecture."
     },
     "score_fiabilite": 0.5,
-    "statut": "en_attente",
-    "created_at": "2026-09-05T19:19:14.883Z"
+    "statut": "rejete",
+    "created_at": "2026-09-05T19:19:14.883Z",
+    "note_tri": "Redondant : la fiche peter-singer cite déjà https://fr.wikipedia.org/wiki/Peter_Singer dans ses sources."
   },
   {
     "id": "c976c670-43f2-42bb-b67a-df2eee7af977",
@@ -830,8 +893,9 @@
       "note": "Résumé Wikipédia brut — à reformuler en these_centrale/apport/limites_critiques (fiche humaine) ou capacites_cles/limites_connues (fiche IA) avant validation. Ne jamais publier tel quel sans relecture."
     },
     "score_fiabilite": 0.5,
-    "statut": "en_attente",
-    "created_at": "2026-09-05T19:19:15.473Z"
+    "statut": "rejete",
+    "created_at": "2026-09-05T19:19:15.473Z",
+    "note_tri": "Redondant : la fiche quentin-meillassoux cite déjà https://fr.wikipedia.org/wiki/Quentin_Meillassoux dans ses sources."
   },
   {
     "id": "85a92498-a132-46a6-b01f-598ea71e5711",
@@ -847,8 +911,9 @@
       "note": "Résumé Wikipédia brut — à reformuler en these_centrale/apport/limites_critiques (fiche humaine) ou capacites_cles/limites_connues (fiche IA) avant validation. Ne jamais publier tel quel sans relecture."
     },
     "score_fiabilite": 0.5,
-    "statut": "en_attente",
-    "created_at": "2026-09-05T19:19:16.014Z"
+    "statut": "rejete",
+    "created_at": "2026-09-05T19:19:16.014Z",
+    "note_tri": "Redondant : la fiche raymond-aron cite déjà https://fr.wikipedia.org/wiki/Raymond_Aron dans ses sources."
   },
   {
     "id": "cc77ec25-647f-405d-8bb4-fc765460e62b",
@@ -864,8 +929,9 @@
       "note": "Résumé Wikipédia brut — à reformuler en these_centrale/apport/limites_critiques (fiche humaine) ou capacites_cles/limites_connues (fiche IA) avant validation. Ne jamais publier tel quel sans relecture."
     },
     "score_fiabilite": 0.5,
-    "statut": "en_attente",
-    "created_at": "2026-09-05T19:19:16.436Z"
+    "statut": "rejete",
+    "created_at": "2026-09-05T19:19:16.436Z",
+    "note_tri": "Redondant : la fiche richard-rorty cite déjà https://fr.wikipedia.org/wiki/Richard_Rorty dans ses sources."
   },
   {
     "id": "259a83f4-6be8-4194-85de-d7f9f5dc9fad",
@@ -881,8 +947,9 @@
       "note": "Résumé Wikipédia brut — à reformuler en these_centrale/apport/limites_critiques (fiche humaine) ou capacites_cles/limites_connues (fiche IA) avant validation. Ne jamais publier tel quel sans relecture."
     },
     "score_fiabilite": 0.5,
-    "statut": "en_attente",
-    "created_at": "2026-09-05T19:19:16.891Z"
+    "statut": "rejete",
+    "created_at": "2026-09-05T19:19:16.891Z",
+    "note_tri": "Redondant : la fiche rosi-braidotti cite déjà https://fr.wikipedia.org/wiki/Rosi_Braidotti dans ses sources."
   },
   {
     "id": "6518f22a-e90a-4219-81e0-d24123c16707",
@@ -898,8 +965,9 @@
       "note": "Résumé Wikipédia brut — à reformuler en these_centrale/apport/limites_critiques (fiche humaine) ou capacites_cles/limites_connues (fiche IA) avant validation. Ne jamais publier tel quel sans relecture."
     },
     "score_fiabilite": 0.5,
-    "statut": "en_attente",
-    "created_at": "2026-09-05T19:19:17.382Z"
+    "statut": "rejete",
+    "created_at": "2026-09-05T19:19:17.382Z",
+    "note_tri": "Redondant : la fiche saul-kripke cite déjà https://fr.wikipedia.org/wiki/Saul_Kripke dans ses sources."
   },
   {
     "id": "9198e2ad-39e0-4a9d-a7b1-0a6c7e9cb942",
@@ -915,8 +983,9 @@
       "note": "Résumé Wikipédia brut — à reformuler en these_centrale/apport/limites_critiques (fiche humaine) ou capacites_cles/limites_connues (fiche IA) avant validation. Ne jamais publier tel quel sans relecture."
     },
     "score_fiabilite": 0.5,
-    "statut": "en_attente",
-    "created_at": "2026-09-05T19:19:17.859Z"
+    "statut": "rejete",
+    "created_at": "2026-09-05T19:19:17.859Z",
+    "note_tri": "Redondant : la fiche slavoj-zizek cite déjà https://fr.wikipedia.org/wiki/Slavoj_%C5%BDi%C5%BEek dans ses sources."
   },
   {
     "id": "ee885c03-4c65-44c2-a320-e5c7e8fd9f35",
@@ -932,8 +1001,9 @@
       "note": "Résumé Wikipédia brut — à reformuler en these_centrale/apport/limites_critiques (fiche humaine) ou capacites_cles/limites_connues (fiche IA) avant validation. Ne jamais publier tel quel sans relecture."
     },
     "score_fiabilite": 0.5,
-    "statut": "en_attente",
-    "created_at": "2026-09-05T19:19:18.888Z"
+    "statut": "rejete",
+    "created_at": "2026-09-05T19:19:18.888Z",
+    "note_tri": "Redondant : la fiche theodor-adorno cite déjà https://fr.wikipedia.org/wiki/Theodor_W._Adorno dans ses sources."
   },
   {
     "id": "ca85b28f-9024-45cf-aafa-46b390f00487",
@@ -949,8 +1019,9 @@
       "note": "Résumé Wikipédia brut — à reformuler en these_centrale/apport/limites_critiques (fiche humaine) ou capacites_cles/limites_connues (fiche IA) avant validation. Ne jamais publier tel quel sans relecture."
     },
     "score_fiabilite": 0.5,
-    "statut": "en_attente",
-    "created_at": "2026-09-05T19:19:19.439Z"
+    "statut": "rejete",
+    "created_at": "2026-09-05T19:19:19.439Z",
+    "note_tri": "Redondant : la fiche thomas-nagel cite déjà https://fr.wikipedia.org/wiki/Thomas_Nagel dans ses sources."
   },
   {
     "id": "1a476696-5d3a-497a-bfa8-1b183c0b9988",
@@ -966,8 +1037,9 @@
       "note": "Résumé Wikipédia brut — à reformuler en these_centrale/apport/limites_critiques (fiche humaine) ou capacites_cles/limites_connues (fiche IA) avant validation. Ne jamais publier tel quel sans relecture."
     },
     "score_fiabilite": 0.5,
-    "statut": "en_attente",
-    "created_at": "2026-09-05T19:19:19.893Z"
+    "statut": "rejete",
+    "created_at": "2026-09-05T19:19:19.893Z",
+    "note_tri": "Redondant : la fiche tristan-garcia cite déjà https://fr.wikipedia.org/wiki/Tristan_Garcia dans ses sources."
   },
   {
     "id": "59105a55-ecf6-4abc-8d71-7e104c537f7b",
@@ -983,8 +1055,9 @@
       "note": "Résumé Wikipédia brut — à reformuler en these_centrale/apport/limites_critiques (fiche humaine) ou capacites_cles/limites_connues (fiche IA) avant validation. Ne jamais publier tel quel sans relecture."
     },
     "score_fiabilite": 0.5,
-    "statut": "en_attente",
-    "created_at": "2026-09-05T19:19:20.397Z"
+    "statut": "rejete",
+    "created_at": "2026-09-05T19:19:20.397Z",
+    "note_tri": "Redondant : la fiche walter-benjamin cite déjà https://fr.wikipedia.org/wiki/Walter_Benjamin dans ses sources."
   },
   {
     "id": "e620db5a-326d-4b54-8bb1-287e1cac99d2",
@@ -1000,8 +1073,9 @@
       "note": "Résumé Wikipédia brut — à reformuler en these_centrale/apport/limites_critiques (fiche humaine) ou capacites_cles/limites_connues (fiche IA) avant validation. Ne jamais publier tel quel sans relecture."
     },
     "score_fiabilite": 0.5,
-    "statut": "en_attente",
-    "created_at": "2026-09-05T19:19:20.892Z"
+    "statut": "rejete",
+    "created_at": "2026-09-05T19:19:20.892Z",
+    "note_tri": "Redondant : la fiche social-democratie cite déjà https://fr.wikipedia.org/wiki/Social-d%C3%A9mocratie dans ses sources."
   },
   {
     "id": "f81daca3-9c96-45cf-a160-14a0635b7e42",
@@ -1017,8 +1091,9 @@
       "note": "Résumé Wikipédia brut — à reformuler en these_centrale/apport/limites_critiques (fiche humaine) ou capacites_cles/limites_connues (fiche IA) avant validation. Ne jamais publier tel quel sans relecture."
     },
     "score_fiabilite": 0.5,
-    "statut": "en_attente",
-    "created_at": "2026-09-05T19:19:21.390Z"
+    "statut": "rejete",
+    "created_at": "2026-09-05T19:19:21.390Z",
+    "note_tri": "Redondant : la fiche democratie-chretienne cite déjà https://fr.wikipedia.org/wiki/D%C3%A9mocratie_chr%C3%A9tienne dans ses sources."
   },
   {
     "id": "26fcc540-45fd-4fbe-9a20-3161d515cce3",
@@ -1034,8 +1109,9 @@
       "note": "Résumé Wikipédia brut — à reformuler en these_centrale/apport/limites_critiques (fiche humaine) ou capacites_cles/limites_connues (fiche IA) avant validation. Ne jamais publier tel quel sans relecture."
     },
     "score_fiabilite": 0.5,
-    "statut": "en_attente",
-    "created_at": "2026-09-05T19:19:21.911Z"
+    "statut": "rejete",
+    "created_at": "2026-09-05T19:19:21.911Z",
+    "note_tri": "Redondant : la fiche regime-parlementaire cite déjà https://fr.wikipedia.org/wiki/R%C3%A9gime_parlementaire dans ses sources."
   },
   {
     "id": "504d39e7-7588-4595-b5d6-1ddf568a1695",
@@ -1051,8 +1127,9 @@
       "note": "Résumé Wikipédia brut — à reformuler en these_centrale/apport/limites_critiques (fiche humaine) ou capacites_cles/limites_connues (fiche IA) avant validation. Ne jamais publier tel quel sans relecture."
     },
     "score_fiabilite": 0.5,
-    "statut": "en_attente",
-    "created_at": "2026-09-05T19:19:22.429Z"
+    "statut": "rejete",
+    "created_at": "2026-09-05T19:19:22.429Z",
+    "note_tri": "Redondant : la fiche regime-presidentiel cite déjà https://fr.wikipedia.org/wiki/R%C3%A9gime_pr%C3%A9sidentiel dans ses sources."
   },
   {
     "id": "cc12747b-367e-451a-a06c-584bf53d67d4",
@@ -1068,8 +1145,9 @@
       "note": "Résumé Wikipédia brut — à reformuler en these_centrale/apport/limites_critiques (fiche humaine) ou capacites_cles/limites_connues (fiche IA) avant validation. Ne jamais publier tel quel sans relecture."
     },
     "score_fiabilite": 0.5,
-    "statut": "en_attente",
-    "created_at": "2026-09-05T19:19:22.948Z"
+    "statut": "rejete",
+    "created_at": "2026-09-05T19:19:22.948Z",
+    "note_tri": "Redondant : la fiche regime-semi-presidentiel cite déjà https://fr.wikipedia.org/wiki/R%C3%A9gime_semi-pr%C3%A9sidentiel dans ses sources."
   },
   {
     "id": "e83678a7-2ac8-47dd-b9d4-f6a00c5a4934",
@@ -1085,8 +1163,9 @@
       "note": "Résumé Wikipédia brut — à reformuler en these_centrale/apport/limites_critiques (fiche humaine) ou capacites_cles/limites_connues (fiche IA) avant validation. Ne jamais publier tel quel sans relecture."
     },
     "score_fiabilite": 0.5,
-    "statut": "en_attente",
-    "created_at": "2026-09-05T19:19:23.529Z"
+    "statut": "rejete",
+    "created_at": "2026-09-05T19:19:23.529Z",
+    "note_tri": "Redondant : la fiche communisme cite déjà https://fr.wikipedia.org/wiki/Communisme dans ses sources."
   },
   {
     "id": "509e2c18-a453-462e-ba7b-1b25f05706d7",
@@ -1102,8 +1181,9 @@
       "note": "Résumé Wikipédia brut — à reformuler en these_centrale/apport/limites_critiques (fiche humaine) ou capacites_cles/limites_connues (fiche IA) avant validation. Ne jamais publier tel quel sans relecture."
     },
     "score_fiabilite": 0.5,
-    "statut": "en_attente",
-    "created_at": "2026-09-05T19:19:23.994Z"
+    "statut": "rejete",
+    "created_at": "2026-09-05T19:19:23.994Z",
+    "note_tri": "Redondant : la fiche marxisme-leninisme cite déjà https://fr.wikipedia.org/wiki/Marxisme-l%C3%A9ninisme dans ses sources."
   },
   {
     "id": "57651bf2-c47d-4f34-8b71-843f40fb139e",
@@ -1119,8 +1199,9 @@
       "note": "Résumé Wikipédia brut — à reformuler en these_centrale/apport/limites_critiques (fiche humaine) ou capacites_cles/limites_connues (fiche IA) avant validation. Ne jamais publier tel quel sans relecture."
     },
     "score_fiabilite": 0.5,
-    "statut": "en_attente",
-    "created_at": "2026-09-05T19:19:24.431Z"
+    "statut": "rejete",
+    "created_at": "2026-09-05T19:19:24.431Z",
+    "note_tri": "Redondant : la fiche maoisme cite déjà https://fr.wikipedia.org/wiki/Mao%C3%AFsme dans ses sources."
   },
   {
     "id": "d1c70e1d-0e51-4378-8f1a-fc6f44c09c65",
@@ -1136,8 +1217,9 @@
       "note": "Résumé Wikipédia brut — à reformuler en these_centrale/apport/limites_critiques (fiche humaine) ou capacites_cles/limites_connues (fiche IA) avant validation. Ne jamais publier tel quel sans relecture."
     },
     "score_fiabilite": 0.5,
-    "statut": "en_attente",
-    "created_at": "2026-09-05T19:19:25.016Z"
+    "statut": "rejete",
+    "created_at": "2026-09-05T19:19:25.016Z",
+    "note_tri": "Redondant : la fiche socialisme-du-xxie-siecle cite déjà https://fr.wikipedia.org/wiki/Socialisme_du_XXIe_si%C3%A8cle dans ses sources."
   },
   {
     "id": "4cd667a9-81f2-421a-9927-88697b3a34d3",
@@ -1153,8 +1235,9 @@
       "note": "Résumé Wikipédia brut — à reformuler en these_centrale/apport/limites_critiques (fiche humaine) ou capacites_cles/limites_connues (fiche IA) avant validation. Ne jamais publier tel quel sans relecture."
     },
     "score_fiabilite": 0.5,
-    "statut": "en_attente",
-    "created_at": "2026-09-05T19:19:25.480Z"
+    "statut": "rejete",
+    "created_at": "2026-09-05T19:19:25.480Z",
+    "note_tri": "Redondant : la fiche fascisme cite déjà https://fr.wikipedia.org/wiki/Fascisme dans ses sources."
   },
   {
     "id": "d2fa64cf-f213-4f64-8f86-e5eff1e52328",
@@ -1170,8 +1253,9 @@
       "note": "Résumé Wikipédia brut — à reformuler en these_centrale/apport/limites_critiques (fiche humaine) ou capacites_cles/limites_connues (fiche IA) avant validation. Ne jamais publier tel quel sans relecture."
     },
     "score_fiabilite": 0.5,
-    "statut": "en_attente",
-    "created_at": "2026-09-05T19:19:25.916Z"
+    "statut": "rejete",
+    "created_at": "2026-09-05T19:19:25.916Z",
+    "note_tri": "Redondant : la fiche nazisme cite déjà https://fr.wikipedia.org/wiki/Nazisme dans ses sources."
   },
   {
     "id": "25d934da-41db-4478-acf2-3e4d670fa990",
@@ -1187,8 +1271,9 @@
       "note": "Résumé Wikipédia brut — à reformuler en these_centrale/apport/limites_critiques (fiche humaine) ou capacites_cles/limites_connues (fiche IA) avant validation. Ne jamais publier tel quel sans relecture."
     },
     "score_fiabilite": 0.5,
-    "statut": "en_attente",
-    "created_at": "2026-09-05T19:19:26.398Z"
+    "statut": "rejete",
+    "created_at": "2026-09-05T19:19:26.398Z",
+    "note_tri": "Redondant : la fiche national-populisme cite déjà https://fr.wikipedia.org/wiki/National-populisme dans ses sources."
   },
   {
     "id": "98a89064-30cb-4c14-b38e-a0c66c5e1090",
@@ -1204,8 +1289,9 @@
       "note": "Résumé Wikipédia brut — à reformuler en these_centrale/apport/limites_critiques (fiche humaine) ou capacites_cles/limites_connues (fiche IA) avant validation. Ne jamais publier tel quel sans relecture."
     },
     "score_fiabilite": 0.5,
-    "statut": "en_attente",
-    "created_at": "2026-09-05T19:19:26.878Z"
+    "statut": "rejete",
+    "created_at": "2026-09-05T19:19:26.878Z",
+    "note_tri": "Redondant : la fiche populisme-de-gauche cite déjà https://fr.wikipedia.org/wiki/Populisme_de_gauche dans ses sources."
   },
   {
     "id": "121999bc-e0ec-4412-8390-48202b7e395a",
@@ -1221,8 +1307,9 @@
       "note": "Résumé Wikipédia brut — à reformuler en these_centrale/apport/limites_critiques (fiche humaine) ou capacites_cles/limites_connues (fiche IA) avant validation. Ne jamais publier tel quel sans relecture."
     },
     "score_fiabilite": 0.5,
-    "statut": "en_attente",
-    "created_at": "2026-09-05T19:19:27.416Z"
+    "statut": "rejete",
+    "created_at": "2026-09-05T19:19:27.416Z",
+    "note_tri": "Redondant : la fiche populisme-de-droite cite déjà https://fr.wikipedia.org/wiki/Populisme_de_droite dans ses sources."
   },
   {
     "id": "ebde0747-12da-4387-84cd-ed74dcdb5e28",
@@ -1238,8 +1325,9 @@
       "note": "Résumé Wikipédia brut — à reformuler en these_centrale/apport/limites_critiques (fiche humaine) ou capacites_cles/limites_connues (fiche IA) avant validation. Ne jamais publier tel quel sans relecture."
     },
     "score_fiabilite": 0.5,
-    "statut": "en_attente",
-    "created_at": "2026-09-05T19:19:27.891Z"
+    "statut": "a_traiter_fiche_existante",
+    "created_at": "2026-09-05T19:19:27.891Z",
+    "note_tri": "Apporte une source Wikipédia non encore citée par la fiche autoritarisme-electif — à reformuler avant intégration, jamais à publier tel quel."
   },
   {
     "id": "df7201ea-204f-4661-bedd-bc1e8d4a988e",
@@ -1255,8 +1343,9 @@
       "note": "Résumé Wikipédia brut — à reformuler en these_centrale/apport/limites_critiques (fiche humaine) ou capacites_cles/limites_connues (fiche IA) avant validation. Ne jamais publier tel quel sans relecture."
     },
     "score_fiabilite": 0.5,
-    "statut": "en_attente",
-    "created_at": "2026-09-05T19:19:28.395Z"
+    "statut": "a_traiter_fiche_existante",
+    "created_at": "2026-09-05T19:19:28.395Z",
+    "note_tri": "Apporte une source Wikipédia non encore citée par la fiche democratie-illiberale — à reformuler avant intégration, jamais à publier tel quel."
   },
   {
     "id": "2e5e604b-37ed-4d86-96f4-823cfd9107f2",
@@ -1272,8 +1361,9 @@
       "note": "Résumé Wikipédia brut — à reformuler en these_centrale/apport/limites_critiques (fiche humaine) ou capacites_cles/limites_connues (fiche IA) avant validation. Ne jamais publier tel quel sans relecture."
     },
     "score_fiabilite": 0.5,
-    "statut": "en_attente",
-    "created_at": "2026-09-05T19:19:28.852Z"
+    "statut": "rejete",
+    "created_at": "2026-09-05T19:19:28.852Z",
+    "note_tri": "Redondant : la fiche democrature cite déjà https://fr.wikipedia.org/wiki/D%C3%A9mocrature dans ses sources."
   },
   {
     "id": "7af00d5e-005d-4275-adfb-73335251940b",
@@ -1289,8 +1379,9 @@
       "note": "Résumé Wikipédia brut — à reformuler en these_centrale/apport/limites_critiques (fiche humaine) ou capacites_cles/limites_connues (fiche IA) avant validation. Ne jamais publier tel quel sans relecture."
     },
     "score_fiabilite": 0.5,
-    "statut": "en_attente",
-    "created_at": "2026-09-05T19:19:29.773Z"
+    "statut": "rejete",
+    "created_at": "2026-09-05T19:19:29.773Z",
+    "note_tri": "Redondant : la fiche totalitarisme cite déjà https://fr.wikipedia.org/wiki/Totalitarisme dans ses sources."
   },
   {
     "id": "d50be854-283e-4489-a761-cbc20ad76369",
@@ -1306,8 +1397,9 @@
       "note": "Résumé Wikipédia brut — à reformuler en these_centrale/apport/limites_critiques (fiche humaine) ou capacites_cles/limites_connues (fiche IA) avant validation. Ne jamais publier tel quel sans relecture."
     },
     "score_fiabilite": 0.5,
-    "statut": "en_attente",
-    "created_at": "2026-09-05T19:19:30.307Z"
+    "statut": "rejete",
+    "created_at": "2026-09-05T19:19:30.307Z",
+    "note_tri": "Redondant : la fiche dictature-militaire cite déjà https://fr.wikipedia.org/wiki/Dictature_militaire dans ses sources."
   },
   {
     "id": "1636c755-d304-4a51-9891-008360bc5c3e",
@@ -1323,8 +1415,9 @@
       "note": "Résumé Wikipédia brut — à reformuler en these_centrale/apport/limites_critiques (fiche humaine) ou capacites_cles/limites_connues (fiche IA) avant validation. Ne jamais publier tel quel sans relecture."
     },
     "score_fiabilite": 0.5,
-    "statut": "en_attente",
-    "created_at": "2026-09-05T19:19:31.446Z"
+    "statut": "rejete",
+    "created_at": "2026-09-05T19:19:31.446Z",
+    "note_tri": "Redondant : la fiche theocratie-islamique cite déjà https://fr.wikipedia.org/wiki/Th%C3%A9ocratie dans ses sources."
   },
   {
     "id": "f9013270-f3a9-47d0-bb63-70c0b6d772b0",
@@ -1340,8 +1433,9 @@
       "note": "Résumé Wikipédia brut — à reformuler en these_centrale/apport/limites_critiques (fiche humaine) ou capacites_cles/limites_connues (fiche IA) avant validation. Ne jamais publier tel quel sans relecture."
     },
     "score_fiabilite": 0.5,
-    "statut": "en_attente",
-    "created_at": "2026-09-05T19:19:31.946Z"
+    "statut": "a_traiter_fiche_existante",
+    "created_at": "2026-09-05T19:19:31.946Z",
+    "note_tri": "Apporte une source Wikipédia non encore citée par la fiche monarchie-absolue — à reformuler avant intégration, jamais à publier tel quel."
   },
   {
     "id": "166f404f-b087-44fe-a352-c6fc7a832118",
@@ -1357,8 +1451,9 @@
       "note": "Résumé Wikipédia brut — à reformuler en these_centrale/apport/limites_critiques (fiche humaine) ou capacites_cles/limites_connues (fiche IA) avant validation. Ne jamais publier tel quel sans relecture."
     },
     "score_fiabilite": 0.5,
-    "statut": "en_attente",
-    "created_at": "2026-09-05T19:19:32.466Z"
+    "statut": "rejete",
+    "created_at": "2026-09-05T19:19:32.466Z",
+    "note_tri": "Redondant : la fiche monarchie-constitutionnelle cite déjà https://fr.wikipedia.org/wiki/Monarchie_constitutionnelle dans ses sources."
   },
   {
     "id": "6ab22966-87d4-4523-8779-0a30c1b2f1e1",
@@ -1374,8 +1469,9 @@
       "note": "Résumé Wikipédia brut — à reformuler en these_centrale/apport/limites_critiques (fiche humaine) ou capacites_cles/limites_connues (fiche IA) avant validation. Ne jamais publier tel quel sans relecture."
     },
     "score_fiabilite": 0.5,
-    "statut": "en_attente",
-    "created_at": "2026-09-05T19:19:32.933Z"
+    "statut": "rejete",
+    "created_at": "2026-09-05T19:19:32.933Z",
+    "note_tri": "Redondant : la fiche anarchisme cite déjà https://fr.wikipedia.org/wiki/Anarchisme dans ses sources."
   },
   {
     "id": "180c4f2a-56f1-4182-a3af-0bc9cdfd68aa",
@@ -1391,8 +1487,9 @@
       "note": "Résumé Wikipédia brut — à reformuler en these_centrale/apport/limites_critiques (fiche humaine) ou capacites_cles/limites_connues (fiche IA) avant validation. Ne jamais publier tel quel sans relecture."
     },
     "score_fiabilite": 0.5,
-    "statut": "en_attente",
-    "created_at": "2026-09-05T19:19:33.416Z"
+    "statut": "rejete",
+    "created_at": "2026-09-05T19:19:33.416Z",
+    "note_tri": "Redondant : la fiche libertarianisme cite déjà https://fr.wikipedia.org/wiki/Libertarianisme dans ses sources."
   },
   {
     "id": "a3785b2f-a49a-43e3-8efb-7876414e4fa1",
@@ -1408,8 +1505,9 @@
       "note": "Résumé Wikipédia brut — à reformuler en these_centrale/apport/limites_critiques (fiche humaine) ou capacites_cles/limites_connues (fiche IA) avant validation. Ne jamais publier tel quel sans relecture."
     },
     "score_fiabilite": 0.5,
-    "statut": "en_attente",
-    "created_at": "2026-09-05T19:19:33.897Z"
+    "statut": "rejete",
+    "created_at": "2026-09-05T19:19:33.897Z",
+    "note_tri": "Redondant : la fiche eco-socialisme cite déjà https://fr.wikipedia.org/wiki/%C3%89cosocialisme dans ses sources."
   },
   {
     "id": "a50d3bd1-82c8-4514-b611-77bd7e715e47",
@@ -1425,8 +1523,9 @@
       "note": "Résumé Wikipédia brut — à reformuler en these_centrale/apport/limites_critiques (fiche humaine) ou capacites_cles/limites_connues (fiche IA) avant validation. Ne jamais publier tel quel sans relecture."
     },
     "score_fiabilite": 0.5,
-    "statut": "en_attente",
-    "created_at": "2026-09-05T19:19:34.330Z"
+    "statut": "rejete",
+    "created_at": "2026-09-05T19:19:34.330Z",
+    "note_tri": "Redondant : la fiche technocratie cite déjà https://fr.wikipedia.org/wiki/Technocratie dans ses sources."
   },
   {
     "id": "965d504c-5d97-4816-8a33-0dec31b8b97b",
@@ -1442,8 +1541,9 @@
       "note": "Résumé Wikipédia brut — à reformuler en these_centrale/apport/limites_critiques (fiche humaine) ou capacites_cles/limites_connues (fiche IA) avant validation. Ne jamais publier tel quel sans relecture."
     },
     "score_fiabilite": 0.5,
-    "statut": "en_attente",
-    "created_at": "2026-09-05T19:19:34.826Z"
+    "statut": "rejete",
+    "created_at": "2026-09-05T19:19:34.826Z",
+    "note_tri": "Redondant : la fiche neoliberalisme-etatique cite déjà https://fr.wikipedia.org/wiki/N%C3%A9olib%C3%A9ralisme dans ses sources."
   },
   {
     "id": "f6174b95-914c-41b9-8c29-ee3fe6dbc347",
@@ -1459,8 +1559,9 @@
       "note": "Résumé Wikipédia brut — à reformuler en these_centrale/apport/limites_critiques (fiche humaine) ou capacites_cles/limites_connues (fiche IA) avant validation. Ne jamais publier tel quel sans relecture."
     },
     "score_fiabilite": 0.5,
-    "statut": "en_attente",
-    "created_at": "2026-09-05T19:19:35.280Z"
+    "statut": "a_traiter_fiche_existante",
+    "created_at": "2026-09-05T19:19:35.280Z",
+    "note_tri": "Apporte une source Wikipédia non encore citée par la fiche cyber-socialisme — à reformuler avant intégration, jamais à publier tel quel."
   },
   {
     "id": "8a1ac6f2-7db9-4d14-b5ee-ff7de01f5f83",
@@ -1476,8 +1577,9 @@
       "note": "Résumé Wikipédia brut — à reformuler en these_centrale/apport/limites_critiques (fiche humaine) ou capacites_cles/limites_connues (fiche IA) avant validation. Ne jamais publier tel quel sans relecture."
     },
     "score_fiabilite": 0.5,
-    "statut": "en_attente",
-    "created_at": "2026-09-05T19:19:35.712Z"
+    "statut": "rejete",
+    "created_at": "2026-09-05T19:19:35.712Z",
+    "note_tri": "Redondant : la fiche minarchisme cite déjà https://fr.wikipedia.org/wiki/Minarchisme dans ses sources."
   },
   {
     "id": "6b396dc3-ba0f-4359-9548-9eef7b299a38",
@@ -1493,8 +1595,9 @@
       "note": "Résumé Wikipédia brut — à reformuler en these_centrale/apport/limites_critiques (fiche humaine) ou capacites_cles/limites_connues (fiche IA) avant validation. Ne jamais publier tel quel sans relecture."
     },
     "score_fiabilite": 0.5,
-    "statut": "en_attente",
-    "created_at": "2026-09-05T19:19:36.150Z"
+    "statut": "rejete",
+    "created_at": "2026-09-05T19:19:36.150Z",
+    "note_tri": "Redondant : la fiche souverainisme cite déjà https://fr.wikipedia.org/wiki/Souverainisme dans ses sources."
   },
   {
     "id": "08aa7f3c-be96-4475-8677-f170bb809e6a",
@@ -1510,8 +1613,9 @@
       "note": "Résumé Wikipédia brut — à reformuler en these_centrale/apport/limites_critiques (fiche humaine) ou capacites_cles/limites_connues (fiche IA) avant validation. Ne jamais publier tel quel sans relecture."
     },
     "score_fiabilite": 0.5,
-    "statut": "en_attente",
-    "created_at": "2026-09-05T19:19:36.688Z"
+    "statut": "a_traiter_fiche_existante",
+    "created_at": "2026-09-05T19:19:36.688Z",
+    "note_tri": "Apporte une source Wikipédia non encore citée par la fiche capitalisme-de-marche-libre-laissez-faire — à reformuler avant intégration, jamais à publier tel quel."
   },
   {
     "id": "962f1621-5f59-47e1-993c-91c888180244",
@@ -1527,8 +1631,9 @@
       "note": "Résumé Wikipédia brut — à reformuler en these_centrale/apport/limites_critiques (fiche humaine) ou capacites_cles/limites_connues (fiche IA) avant validation. Ne jamais publier tel quel sans relecture."
     },
     "score_fiabilite": 0.5,
-    "statut": "en_attente",
-    "created_at": "2026-09-05T19:19:37.234Z"
+    "statut": "rejete",
+    "created_at": "2026-09-05T19:19:37.234Z",
+    "note_tri": "Redondant : la fiche economie-de-marche-regulee-social-democratie cite déjà https://fr.wikipedia.org/wiki/%C3%89conomie_sociale_de_march%C3%A9 dans ses sources."
   },
   {
     "id": "38df0504-da93-4227-afa4-331ce35f31d7",
@@ -1544,8 +1649,9 @@
       "note": "Résumé Wikipédia brut — à reformuler en these_centrale/apport/limites_critiques (fiche humaine) ou capacites_cles/limites_connues (fiche IA) avant validation. Ne jamais publier tel quel sans relecture."
     },
     "score_fiabilite": 0.5,
-    "statut": "en_attente",
-    "created_at": "2026-09-05T19:19:38.063Z"
+    "statut": "rejete",
+    "created_at": "2026-09-05T19:19:38.063Z",
+    "note_tri": "Redondant : la fiche economie-planifiee-modele-sovietique cite déjà https://fr.wikipedia.org/wiki/%C3%89conomie_planifi%C3%A9e dans ses sources."
   },
   {
     "id": "c7998732-e865-4e19-aa38-0d6778554536",
@@ -1561,8 +1667,9 @@
       "note": "Résumé Wikipédia brut — à reformuler en these_centrale/apport/limites_critiques (fiche humaine) ou capacites_cles/limites_connues (fiche IA) avant validation. Ne jamais publier tel quel sans relecture."
     },
     "score_fiabilite": 0.5,
-    "statut": "en_attente",
-    "created_at": "2026-09-05T19:19:38.519Z"
+    "statut": "rejete",
+    "created_at": "2026-09-05T19:19:38.519Z",
+    "note_tri": "Redondant : la fiche croissance-de-solow-swan cite déjà https://fr.wikipedia.org/wiki/Mod%C3%A8le_de_Solow dans ses sources."
   },
   {
     "id": "fb0e9b60-a05f-469b-ae7d-05299695c515",
@@ -1578,8 +1685,9 @@
       "note": "Résumé Wikipédia brut — à reformuler en these_centrale/apport/limites_critiques (fiche humaine) ou capacites_cles/limites_connues (fiche IA) avant validation. Ne jamais publier tel quel sans relecture."
     },
     "score_fiabilite": 0.5,
-    "statut": "en_attente",
-    "created_at": "2026-09-05T20:14:14.896Z"
+    "statut": "a_traiter_fiche_existante",
+    "created_at": "2026-09-05T20:14:14.896Z",
+    "note_tri": "Apporte une source Wikipédia non encore citée par la fiche mauricio-ferraris — à reformuler avant intégration, jamais à publier tel quel."
   },
   {
     "id": "3c721601-a015-45fe-a2fd-eb58a339efa2",
@@ -1595,8 +1703,9 @@
       "note": "Résumé Wikipédia brut — à reformuler en these_centrale/apport/limites_critiques (fiche humaine) ou capacites_cles/limites_connues (fiche IA) avant validation. Ne jamais publier tel quel sans relecture."
     },
     "score_fiabilite": 0.5,
-    "statut": "en_attente",
-    "created_at": "2026-09-05T20:14:16.525Z"
+    "statut": "a_traiter_fiche_existante",
+    "created_at": "2026-09-05T20:14:16.525Z",
+    "note_tri": "Apporte une source Wikipédia non encore citée par la fiche is-lm-keynesianisme-de-synthese — à reformuler avant intégration, jamais à publier tel quel."
   },
   {
     "id": "61826b27-8b7b-47d6-8e7c-6291e74e3bd3",
@@ -1612,8 +1721,9 @@
       "note": "Résumé Wikipédia brut — à reformuler en these_centrale/apport/limites_critiques (fiche humaine) ou capacites_cles/limites_connues (fiche IA) avant validation. Ne jamais publier tel quel sans relecture."
     },
     "score_fiabilite": 0.5,
-    "statut": "en_attente",
-    "created_at": "2026-09-05T20:14:16.999Z"
+    "statut": "a_traiter_fiche_existante",
+    "created_at": "2026-09-05T20:14:16.999Z",
+    "note_tri": "Apporte une source Wikipédia non encore citée par la fiche croissance-endogene-romer-lucas — à reformuler avant intégration, jamais à publier tel quel."
   },
   {
     "id": "45eaf847-2002-4653-9285-57da0747b12b",
@@ -1629,8 +1739,9 @@
       "note": "Résumé Wikipédia brut — à reformuler en these_centrale/apport/limites_critiques (fiche humaine) ou capacites_cles/limites_connues (fiche IA) avant validation. Ne jamais publier tel quel sans relecture."
     },
     "score_fiabilite": 0.5,
-    "statut": "en_attente",
-    "created_at": "2026-09-05T20:14:18.049Z"
+    "statut": "rejete",
+    "created_at": "2026-09-05T20:14:18.049Z",
+    "note_tri": "Redondant : la fiche black-scholes cite déjà https://fr.wikipedia.org/wiki/Mod%C3%A8le_Black-Scholes dans ses sources."
   },
   {
     "id": "b9f229a8-a0f9-42be-af47-10aa51a98030",
@@ -1646,8 +1757,9 @@
       "note": "Résumé Wikipédia brut — à reformuler en these_centrale/apport/limites_critiques (fiche humaine) ou capacites_cles/limites_connues (fiche IA) avant validation. Ne jamais publier tel quel sans relecture."
     },
     "score_fiabilite": 0.5,
-    "statut": "en_attente",
-    "created_at": "2026-09-05T20:14:18.561Z"
+    "statut": "rejete",
+    "created_at": "2026-09-05T20:14:18.561Z",
+    "note_tri": "Redondant : la fiche economie-circulaire cite déjà https://fr.wikipedia.org/wiki/%C3%89conomie_circulaire dans ses sources."
   },
   {
     "id": "2f32f591-bd43-4ab2-947a-7ba1fd1b276e",
@@ -1663,8 +1775,9 @@
       "note": "Résumé Wikipédia brut — à reformuler en these_centrale/apport/limites_critiques (fiche humaine) ou capacites_cles/limites_connues (fiche IA) avant validation. Ne jamais publier tel quel sans relecture."
     },
     "score_fiabilite": 0.5,
-    "statut": "en_attente",
-    "created_at": "2026-09-05T20:14:19.057Z"
+    "statut": "a_traiter_fiche_existante",
+    "created_at": "2026-09-05T20:14:19.057Z",
+    "note_tri": "Apporte une source Wikipédia non encore citée par la fiche economie-de-la-fonctionnalite — à reformuler avant intégration, jamais à publier tel quel."
   },
   {
     "id": "dd5d07ac-a88c-4367-84cd-dd643d98f37b",
@@ -1680,8 +1793,9 @@
       "note": "Résumé Wikipédia brut — à reformuler en these_centrale/apport/limites_critiques (fiche humaine) ou capacites_cles/limites_connues (fiche IA) avant validation. Ne jamais publier tel quel sans relecture."
     },
     "score_fiabilite": 0.5,
-    "statut": "en_attente",
-    "created_at": "2026-09-05T20:14:19.578Z"
+    "statut": "rejete",
+    "created_at": "2026-09-05T20:14:19.578Z",
+    "note_tri": "Redondant : la fiche theorie-des-jeux-equilibre-de-nash cite déjà https://fr.wikipedia.org/wiki/%C3%89quilibre_de_Nash dans ses sources."
   },
   {
     "id": "bd77a746-0931-4b7a-92a7-ea4832725842",
@@ -1697,8 +1811,9 @@
       "note": "Résumé Wikipédia brut — à reformuler en these_centrale/apport/limites_critiques (fiche humaine) ou capacites_cles/limites_connues (fiche IA) avant validation. Ne jamais publier tel quel sans relecture."
     },
     "score_fiabilite": 0.5,
-    "statut": "en_attente",
-    "created_at": "2026-09-05T20:14:20.168Z"
+    "statut": "rejete",
+    "created_at": "2026-09-05T20:14:20.168Z",
+    "note_tri": "Redondant : la fiche economie-comportementale-theorie-des-perspectives cite déjà https://fr.wikipedia.org/wiki/Th%C3%A9orie_des_perspectives dans ses sources."
   },
   {
     "id": "f5ffb214-48bf-441c-a7b0-398bb6f2445c",
@@ -1714,8 +1829,9 @@
       "note": "Résumé Wikipédia brut — à reformuler en these_centrale/apport/limites_critiques (fiche humaine) ou capacites_cles/limites_connues (fiche IA) avant validation. Ne jamais publier tel quel sans relecture."
     },
     "score_fiabilite": 0.5,
-    "statut": "en_attente",
-    "created_at": "2026-09-05T20:14:20.653Z"
+    "statut": "rejete",
+    "created_at": "2026-09-05T20:14:20.653Z",
+    "note_tri": "Redondant : la fiche theorie-moderne-de-la-monnaie-mmt cite déjà https://fr.wikipedia.org/wiki/Th%C3%A9orie_mon%C3%A9taire_moderne dans ses sources."
   },
   {
     "id": "003790d6-f37d-46d5-8bc8-5cc09a537c0b",
@@ -1731,8 +1847,9 @@
       "note": "Résumé Wikipédia brut — à reformuler en these_centrale/apport/limites_critiques (fiche humaine) ou capacites_cles/limites_connues (fiche IA) avant validation. Ne jamais publier tel quel sans relecture."
     },
     "score_fiabilite": 0.5,
-    "statut": "en_attente",
-    "created_at": "2026-09-05T20:14:21.636Z"
+    "statut": "rejete",
+    "created_at": "2026-09-05T20:14:21.636Z",
+    "note_tri": "Redondant : la fiche john-maynard-keynes cite déjà https://fr.wikipedia.org/wiki/John_Maynard_Keynes dans ses sources."
   },
   {
     "id": "7f6f06b0-17b5-47ba-bbbd-1b1efa19d304",
@@ -1748,8 +1865,9 @@
       "note": "Résumé Wikipédia brut — à reformuler en these_centrale/apport/limites_critiques (fiche humaine) ou capacites_cles/limites_connues (fiche IA) avant validation. Ne jamais publier tel quel sans relecture."
     },
     "score_fiabilite": 0.5,
-    "statut": "en_attente",
-    "created_at": "2026-09-05T20:14:22.106Z"
+    "statut": "rejete",
+    "created_at": "2026-09-05T20:14:22.106Z",
+    "note_tri": "Redondant : la fiche friedrich-hayek cite déjà https://fr.wikipedia.org/wiki/Friedrich_Hayek dans ses sources."
   },
   {
     "id": "615be47b-54e7-40d3-898e-54468bc8fca1",
@@ -1765,8 +1883,9 @@
       "note": "Résumé Wikipédia brut — à reformuler en these_centrale/apport/limites_critiques (fiche humaine) ou capacites_cles/limites_connues (fiche IA) avant validation. Ne jamais publier tel quel sans relecture."
     },
     "score_fiabilite": 0.5,
-    "statut": "en_attente",
-    "created_at": "2026-09-05T20:14:22.556Z"
+    "statut": "rejete",
+    "created_at": "2026-09-05T20:14:22.556Z",
+    "note_tri": "Redondant : la fiche milton-friedman cite déjà https://fr.wikipedia.org/wiki/Milton_Friedman dans ses sources."
   },
   {
     "id": "405ad7d3-0d13-41f4-bf92-0a1fe90d7443",
@@ -1782,8 +1901,9 @@
       "note": "Résumé Wikipédia brut — à reformuler en these_centrale/apport/limites_critiques (fiche humaine) ou capacites_cles/limites_connues (fiche IA) avant validation. Ne jamais publier tel quel sans relecture."
     },
     "score_fiabilite": 0.5,
-    "statut": "en_attente",
-    "created_at": "2026-09-05T20:14:22.995Z"
+    "statut": "rejete",
+    "created_at": "2026-09-05T20:14:22.995Z",
+    "note_tri": "Redondant : la fiche joseph-schumpeter cite déjà https://fr.wikipedia.org/wiki/Joseph_Schumpeter dans ses sources."
   },
   {
     "id": "f8aabe24-7683-4abf-b0aa-87087fa6417f",
@@ -1799,8 +1919,9 @@
       "note": "Résumé Wikipédia brut — à reformuler en these_centrale/apport/limites_critiques (fiche humaine) ou capacites_cles/limites_connues (fiche IA) avant validation. Ne jamais publier tel quel sans relecture."
     },
     "score_fiabilite": 0.5,
-    "statut": "en_attente",
-    "created_at": "2026-09-05T20:14:23.451Z"
+    "statut": "rejete",
+    "created_at": "2026-09-05T20:14:23.451Z",
+    "note_tri": "Redondant : la fiche paul-samuelson cite déjà https://fr.wikipedia.org/wiki/Paul_Samuelson dans ses sources."
   },
   {
     "id": "15ea4574-c64a-4961-a189-1653e42009a5",
@@ -1816,8 +1937,9 @@
       "note": "Résumé Wikipédia brut — à reformuler en these_centrale/apport/limites_critiques (fiche humaine) ou capacites_cles/limites_connues (fiche IA) avant validation. Ne jamais publier tel quel sans relecture."
     },
     "score_fiabilite": 0.5,
-    "statut": "en_attente",
-    "created_at": "2026-09-05T20:14:23.904Z"
+    "statut": "rejete",
+    "created_at": "2026-09-05T20:14:23.904Z",
+    "note_tri": "Redondant : la fiche joan-robinson cite déjà https://fr.wikipedia.org/wiki/Joan_Robinson dans ses sources."
   },
   {
     "id": "7b3a1b9b-a922-4e40-a53b-40703ccf6720",
@@ -1833,8 +1955,9 @@
       "note": "Résumé Wikipédia brut — à reformuler en these_centrale/apport/limites_critiques (fiche humaine) ou capacites_cles/limites_connues (fiche IA) avant validation. Ne jamais publier tel quel sans relecture."
     },
     "score_fiabilite": 0.5,
-    "statut": "en_attente",
-    "created_at": "2026-09-05T20:14:24.334Z"
+    "statut": "rejete",
+    "created_at": "2026-09-05T20:14:24.334Z",
+    "note_tri": "Redondant : la fiche karl-polanyi cite déjà https://fr.wikipedia.org/wiki/Karl_Polanyi dans ses sources."
   },
   {
     "id": "9ee8bc52-e475-4ee9-bfd3-50d43efeb245",
@@ -1850,8 +1973,9 @@
       "note": "Résumé Wikipédia brut — à reformuler en these_centrale/apport/limites_critiques (fiche humaine) ou capacites_cles/limites_connues (fiche IA) avant validation. Ne jamais publier tel quel sans relecture."
     },
     "score_fiabilite": 0.5,
-    "statut": "en_attente",
-    "created_at": "2026-09-05T20:14:24.777Z"
+    "statut": "rejete",
+    "created_at": "2026-09-05T20:14:24.777Z",
+    "note_tri": "Redondant : la fiche kenneth-arrow cite déjà https://fr.wikipedia.org/wiki/Kenneth_Arrow dans ses sources."
   },
   {
     "id": "f3b7aaf8-73e9-4be7-979e-589b2d7fb2de",
@@ -1867,8 +1991,9 @@
       "note": "Résumé Wikipédia brut — à reformuler en these_centrale/apport/limites_critiques (fiche humaine) ou capacites_cles/limites_connues (fiche IA) avant validation. Ne jamais publier tel quel sans relecture."
     },
     "score_fiabilite": 0.5,
-    "statut": "en_attente",
-    "created_at": "2026-09-05T20:14:25.203Z"
+    "statut": "rejete",
+    "created_at": "2026-09-05T20:14:25.203Z",
+    "note_tri": "Redondant : la fiche gerard-debreu cite déjà https://fr.wikipedia.org/wiki/G%C3%A9rard_Debreu dans ses sources."
   },
   {
     "id": "eff2a57c-0172-44aa-91e5-4b9dd8a20429",
@@ -1884,8 +2009,9 @@
       "note": "Résumé Wikipédia brut — à reformuler en these_centrale/apport/limites_critiques (fiche humaine) ou capacites_cles/limites_connues (fiche IA) avant validation. Ne jamais publier tel quel sans relecture."
     },
     "score_fiabilite": 0.5,
-    "statut": "en_attente",
-    "created_at": "2026-09-05T20:14:25.669Z"
+    "statut": "rejete",
+    "created_at": "2026-09-05T20:14:25.669Z",
+    "note_tri": "Redondant : la fiche robert-solow cite déjà https://fr.wikipedia.org/wiki/Robert_Solow dans ses sources."
   },
   {
     "id": "1d6b44e7-ba34-4429-b047-8cd81394fd78",
@@ -1901,8 +2027,9 @@
       "note": "Résumé Wikipédia brut — à reformuler en these_centrale/apport/limites_critiques (fiche humaine) ou capacites_cles/limites_connues (fiche IA) avant validation. Ne jamais publier tel quel sans relecture."
     },
     "score_fiabilite": 0.5,
-    "statut": "en_attente",
-    "created_at": "2026-09-05T20:14:26.120Z"
+    "statut": "rejete",
+    "created_at": "2026-09-05T20:14:26.120Z",
+    "note_tri": "Redondant : la fiche gary-becker cite déjà https://fr.wikipedia.org/wiki/Gary_Becker dans ses sources."
   },
   {
     "id": "e12ba2c6-87a0-4bae-9eb5-b6fc5cb12b31",
@@ -1918,8 +2045,9 @@
       "note": "Résumé Wikipédia brut — à reformuler en these_centrale/apport/limites_critiques (fiche humaine) ou capacites_cles/limites_connues (fiche IA) avant validation. Ne jamais publier tel quel sans relecture."
     },
     "score_fiabilite": 0.5,
-    "statut": "en_attente",
-    "created_at": "2026-09-05T20:14:26.593Z"
+    "statut": "rejete",
+    "created_at": "2026-09-05T20:14:26.593Z",
+    "note_tri": "Redondant : la fiche john-von-neumann cite déjà https://fr.wikipedia.org/wiki/John_von_Neumann dans ses sources."
   },
   {
     "id": "46271414-61c7-4fef-a296-eae7dedcdd85",
@@ -1935,8 +2063,9 @@
       "note": "Résumé Wikipédia brut — à reformuler en these_centrale/apport/limites_critiques (fiche humaine) ou capacites_cles/limites_connues (fiche IA) avant validation. Ne jamais publier tel quel sans relecture."
     },
     "score_fiabilite": 0.5,
-    "statut": "en_attente",
-    "created_at": "2026-09-05T20:14:27.049Z"
+    "statut": "rejete",
+    "created_at": "2026-09-05T20:14:27.049Z",
+    "note_tri": "Redondant : la fiche john-nash cite déjà https://fr.wikipedia.org/wiki/John_Forbes_Nash dans ses sources."
   },
   {
     "id": "e791e025-c58a-4474-9fac-6585aaaa928d",
@@ -1952,8 +2081,9 @@
       "note": "Résumé Wikipédia brut — à reformuler en these_centrale/apport/limites_critiques (fiche humaine) ou capacites_cles/limites_connues (fiche IA) avant validation. Ne jamais publier tel quel sans relecture."
     },
     "score_fiabilite": 0.5,
-    "statut": "en_attente",
-    "created_at": "2026-09-05T20:14:27.496Z"
+    "statut": "rejete",
+    "created_at": "2026-09-05T20:14:27.496Z",
+    "note_tri": "Redondant : la fiche amartya-sen cite déjà https://fr.wikipedia.org/wiki/Amartya_Sen dans ses sources."
   },
   {
     "id": "62424941-65ad-485a-bfe5-c4bdbc00e2af",
@@ -1969,8 +2099,9 @@
       "note": "Résumé Wikipédia brut — à reformuler en these_centrale/apport/limites_critiques (fiche humaine) ou capacites_cles/limites_connues (fiche IA) avant validation. Ne jamais publier tel quel sans relecture."
     },
     "score_fiabilite": 0.5,
-    "statut": "en_attente",
-    "created_at": "2026-09-05T20:14:28.007Z"
+    "statut": "rejete",
+    "created_at": "2026-09-05T20:14:28.007Z",
+    "note_tri": "Redondant : la fiche james-m-buchanan cite déjà https://fr.wikipedia.org/wiki/James_M._Buchanan dans ses sources."
   },
   {
     "id": "0f419c2f-dd76-400c-a166-a4e88f7ba10f",
@@ -1986,8 +2117,9 @@
       "note": "Résumé Wikipédia brut — à reformuler en these_centrale/apport/limites_critiques (fiche humaine) ou capacites_cles/limites_connues (fiche IA) avant validation. Ne jamais publier tel quel sans relecture."
     },
     "score_fiabilite": 0.5,
-    "statut": "en_attente",
-    "created_at": "2026-09-05T20:14:28.469Z"
+    "statut": "rejete",
+    "created_at": "2026-09-05T20:14:28.469Z",
+    "note_tri": "Redondant : la fiche wassily-leontief cite déjà https://fr.wikipedia.org/wiki/Wassily_Leontief dans ses sources."
   },
   {
     "id": "ef9e83ac-8194-416e-abcf-a1efc036ccbe",
@@ -2003,8 +2135,9 @@
       "note": "Résumé Wikipédia brut — à reformuler en these_centrale/apport/limites_critiques (fiche humaine) ou capacites_cles/limites_connues (fiche IA) avant validation. Ne jamais publier tel quel sans relecture."
     },
     "score_fiabilite": 0.5,
-    "statut": "en_attente",
-    "created_at": "2026-09-05T20:14:28.938Z"
+    "statut": "rejete",
+    "created_at": "2026-09-05T20:14:28.938Z",
+    "note_tri": "Redondant : la fiche thomas-piketty cite déjà https://fr.wikipedia.org/wiki/Thomas_Piketty dans ses sources."
   },
   {
     "id": "fbac9f89-1ed7-4c83-8fde-3c823bef28f9",
@@ -2020,8 +2153,9 @@
       "note": "Résumé Wikipédia brut — à reformuler en these_centrale/apport/limites_critiques (fiche humaine) ou capacites_cles/limites_connues (fiche IA) avant validation. Ne jamais publier tel quel sans relecture."
     },
     "score_fiabilite": 0.5,
-    "statut": "en_attente",
-    "created_at": "2026-09-05T20:14:29.380Z"
+    "statut": "rejete",
+    "created_at": "2026-09-05T20:14:29.380Z",
+    "note_tri": "Redondant : la fiche esther-duflo cite déjà https://fr.wikipedia.org/wiki/Esther_Duflo dans ses sources."
   },
   {
     "id": "6313d77a-43e7-4ba5-a038-49f8b2a29a69",
@@ -2037,8 +2171,9 @@
       "note": "Résumé Wikipédia brut — à reformuler en these_centrale/apport/limites_critiques (fiche humaine) ou capacites_cles/limites_connues (fiche IA) avant validation. Ne jamais publier tel quel sans relecture."
     },
     "score_fiabilite": 0.5,
-    "statut": "en_attente",
-    "created_at": "2026-09-05T20:14:29.807Z"
+    "statut": "rejete",
+    "created_at": "2026-09-05T20:14:29.807Z",
+    "note_tri": "Redondant : la fiche abhijit-banerjee cite déjà https://fr.wikipedia.org/wiki/Abhijit_Banerjee dans ses sources."
   },
   {
     "id": "deb9d8a3-3ed6-440b-a2a4-031b1b6d1a62",
@@ -2054,8 +2189,9 @@
       "note": "Résumé Wikipédia brut — à reformuler en these_centrale/apport/limites_critiques (fiche humaine) ou capacites_cles/limites_connues (fiche IA) avant validation. Ne jamais publier tel quel sans relecture."
     },
     "score_fiabilite": 0.5,
-    "statut": "en_attente",
-    "created_at": "2026-09-05T20:14:30.252Z"
+    "statut": "rejete",
+    "created_at": "2026-09-05T20:14:30.252Z",
+    "note_tri": "Redondant : la fiche michael-kremer cite déjà https://fr.wikipedia.org/wiki/Michael_Kremer dans ses sources."
   },
   {
     "id": "2f53b404-80eb-401a-b38b-adec8656f552",
@@ -2071,8 +2207,9 @@
       "note": "Résumé Wikipédia brut — à reformuler en these_centrale/apport/limites_critiques (fiche humaine) ou capacites_cles/limites_connues (fiche IA) avant validation. Ne jamais publier tel quel sans relecture."
     },
     "score_fiabilite": 0.5,
-    "statut": "en_attente",
-    "created_at": "2026-09-05T20:14:30.698Z"
+    "statut": "a_traiter_fiche_existante",
+    "created_at": "2026-09-05T20:14:30.698Z",
+    "note_tri": "Apporte une source Wikipédia non encore citée par la fiche joseph-stiglitz — à reformuler avant intégration, jamais à publier tel quel."
   },
   {
     "id": "a754e9db-859c-4a5a-89a0-a470755ff15c",
@@ -2088,8 +2225,9 @@
       "note": "Résumé Wikipédia brut — à reformuler en these_centrale/apport/limites_critiques (fiche humaine) ou capacites_cles/limites_connues (fiche IA) avant validation. Ne jamais publier tel quel sans relecture."
     },
     "score_fiabilite": 0.5,
-    "statut": "en_attente",
-    "created_at": "2026-09-05T20:14:31.152Z"
+    "statut": "rejete",
+    "created_at": "2026-09-05T20:14:31.152Z",
+    "note_tri": "Redondant : la fiche paul-krugman cite déjà https://fr.wikipedia.org/wiki/Paul_Krugman dans ses sources."
   },
   {
     "id": "3390c8cc-1d3b-4716-b923-d57d765c0c14",
@@ -2105,8 +2243,9 @@
       "note": "Résumé Wikipédia brut — à reformuler en these_centrale/apport/limites_critiques (fiche humaine) ou capacites_cles/limites_connues (fiche IA) avant validation. Ne jamais publier tel quel sans relecture."
     },
     "score_fiabilite": 0.5,
-    "statut": "en_attente",
-    "created_at": "2026-09-05T20:14:31.614Z"
+    "statut": "a_traiter_fiche_existante",
+    "created_at": "2026-09-05T20:14:31.614Z",
+    "note_tri": "Apporte une source Wikipédia non encore citée par la fiche daron-acemoglu — à reformuler avant intégration, jamais à publier tel quel."
   },
   {
     "id": "c7696557-9920-4d44-abd5-5a2c5f536e26",
@@ -2122,8 +2261,9 @@
       "note": "Résumé Wikipédia brut — à reformuler en these_centrale/apport/limites_critiques (fiche humaine) ou capacites_cles/limites_connues (fiche IA) avant validation. Ne jamais publier tel quel sans relecture."
     },
     "score_fiabilite": 0.5,
-    "statut": "en_attente",
-    "created_at": "2026-09-05T20:14:32.165Z"
+    "statut": "rejete",
+    "created_at": "2026-09-05T20:14:32.165Z",
+    "note_tri": "Redondant : la fiche james-a-robinson cite déjà https://fr.wikipedia.org/wiki/James_A._Robinson dans ses sources."
   },
   {
     "id": "3c33b1ce-9f58-4003-b91a-6fd7f2b7a0a8",
@@ -2139,8 +2279,9 @@
       "note": "Résumé Wikipédia brut — à reformuler en these_centrale/apport/limites_critiques (fiche humaine) ou capacites_cles/limites_connues (fiche IA) avant validation. Ne jamais publier tel quel sans relecture."
     },
     "score_fiabilite": 0.5,
-    "statut": "en_attente",
-    "created_at": "2026-09-05T20:14:32.638Z"
+    "statut": "a_traiter_fiche_existante",
+    "created_at": "2026-09-05T20:14:32.638Z",
+    "note_tri": "Apporte une source Wikipédia non encore citée par la fiche simon-johnson — à reformuler avant intégration, jamais à publier tel quel."
   },
   {
     "id": "79091414-f95c-4d51-8de3-55c9f36c6679",
@@ -2156,8 +2297,9 @@
       "note": "Résumé Wikipédia brut — à reformuler en these_centrale/apport/limites_critiques (fiche humaine) ou capacites_cles/limites_connues (fiche IA) avant validation. Ne jamais publier tel quel sans relecture."
     },
     "score_fiabilite": 0.5,
-    "statut": "en_attente",
-    "created_at": "2026-09-05T20:14:33.106Z"
+    "statut": "rejete",
+    "created_at": "2026-09-05T20:14:33.106Z",
+    "note_tri": "Redondant : la fiche gabriel-zucman cite déjà https://fr.wikipedia.org/wiki/Gabriel_Zucman dans ses sources."
   },
   {
     "id": "174b2ceb-969b-4c04-b031-1878d06540b5",
@@ -2173,8 +2315,9 @@
       "note": "Résumé Wikipédia brut — à reformuler en these_centrale/apport/limites_critiques (fiche humaine) ou capacites_cles/limites_connues (fiche IA) avant validation. Ne jamais publier tel quel sans relecture."
     },
     "score_fiabilite": 0.5,
-    "statut": "en_attente",
-    "created_at": "2026-09-05T20:14:33.530Z"
+    "statut": "rejete",
+    "created_at": "2026-09-05T20:14:33.530Z",
+    "note_tri": "Redondant : la fiche emmanuel-saez cite déjà https://fr.wikipedia.org/wiki/Emmanuel_Saez dans ses sources."
   },
   {
     "id": "c8e96584-c8a9-4014-8a8d-a698c7c757c6",
@@ -2190,8 +2333,9 @@
       "note": "Résumé Wikipédia brut — à reformuler en these_centrale/apport/limites_critiques (fiche humaine) ou capacites_cles/limites_connues (fiche IA) avant validation. Ne jamais publier tel quel sans relecture."
     },
     "score_fiabilite": 0.5,
-    "statut": "en_attente",
-    "created_at": "2026-09-05T20:14:33.974Z"
+    "statut": "rejete",
+    "created_at": "2026-09-05T20:14:33.974Z",
+    "note_tri": "Redondant : la fiche mariana-mazzucato cite déjà https://fr.wikipedia.org/wiki/Mariana_Mazzucato dans ses sources."
   },
   {
     "id": "f085f51b-90ac-4b32-969c-a1390ca80377",
@@ -2207,8 +2351,9 @@
       "note": "Résumé Wikipédia brut — à reformuler en these_centrale/apport/limites_critiques (fiche humaine) ou capacites_cles/limites_connues (fiche IA) avant validation. Ne jamais publier tel quel sans relecture."
     },
     "score_fiabilite": 0.5,
-    "statut": "en_attente",
-    "created_at": "2026-09-05T20:14:34.403Z"
+    "statut": "rejete",
+    "created_at": "2026-09-05T20:14:34.403Z",
+    "note_tri": "Redondant : la fiche dani-rodrik cite déjà https://fr.wikipedia.org/wiki/Dani_Rodrik dans ses sources."
   },
   {
     "id": "18ffd46d-97d3-4657-8120-49d9771158a6",
@@ -2224,8 +2369,9 @@
       "note": "Résumé Wikipédia brut — à reformuler en these_centrale/apport/limites_critiques (fiche humaine) ou capacites_cles/limites_connues (fiche IA) avant validation. Ne jamais publier tel quel sans relecture."
     },
     "score_fiabilite": 0.5,
-    "statut": "en_attente",
-    "created_at": "2026-09-05T20:14:34.865Z"
+    "statut": "rejete",
+    "created_at": "2026-09-05T20:14:34.865Z",
+    "note_tri": "Redondant : la fiche richard-thaler cite déjà https://fr.wikipedia.org/wiki/Richard_Thaler dans ses sources."
   },
   {
     "id": "b249c8c2-b83d-478c-b69a-0b6866aedc21",
@@ -2241,8 +2387,9 @@
       "note": "Résumé Wikipédia brut — à reformuler en these_centrale/apport/limites_critiques (fiche humaine) ou capacites_cles/limites_connues (fiche IA) avant validation. Ne jamais publier tel quel sans relecture."
     },
     "score_fiabilite": 0.5,
-    "statut": "en_attente",
-    "created_at": "2026-09-05T20:14:35.315Z"
+    "statut": "rejete",
+    "created_at": "2026-09-05T20:14:35.315Z",
+    "note_tri": "Redondant : la fiche daniel-kahneman cite déjà https://fr.wikipedia.org/wiki/Daniel_Kahneman dans ses sources."
   },
   {
     "id": "81a65efc-b9de-4b59-8147-13da56203c64",
@@ -2258,8 +2405,9 @@
       "note": "Résumé Wikipédia brut — à reformuler en these_centrale/apport/limites_critiques (fiche humaine) ou capacites_cles/limites_connues (fiche IA) avant validation. Ne jamais publier tel quel sans relecture."
     },
     "score_fiabilite": 0.5,
-    "statut": "en_attente",
-    "created_at": "2026-09-05T20:14:35.825Z"
+    "statut": "rejete",
+    "created_at": "2026-09-05T20:14:35.825Z",
+    "note_tri": "Redondant : la fiche kate-raworth cite déjà https://fr.wikipedia.org/wiki/Kate_Raworth dans ses sources."
   },
   {
     "id": "550030c3-c69c-4c81-869f-d3f3c6b57abe",
@@ -2275,8 +2423,9 @@
       "note": "Résumé Wikipédia brut — à reformuler en these_centrale/apport/limites_critiques (fiche humaine) ou capacites_cles/limites_connues (fiche IA) avant validation. Ne jamais publier tel quel sans relecture."
     },
     "score_fiabilite": 0.5,
-    "statut": "en_attente",
-    "created_at": "2026-09-05T20:14:36.970Z"
+    "statut": "rejete",
+    "created_at": "2026-09-05T20:14:36.970Z",
+    "note_tri": "Redondant : la fiche bipolarite-guerre-froide cite déjà https://fr.wikipedia.org/wiki/Guerre_froide dans ses sources."
   },
   {
     "id": "d9594570-f0bf-4b10-80c1-c3d480ce5b27",
@@ -2292,8 +2441,9 @@
       "note": "Résumé Wikipédia brut — à reformuler en these_centrale/apport/limites_critiques (fiche humaine) ou capacites_cles/limites_connues (fiche IA) avant validation. Ne jamais publier tel quel sans relecture."
     },
     "score_fiabilite": 0.5,
-    "statut": "en_attente",
-    "created_at": "2026-09-05T20:14:37.420Z"
+    "statut": "a_traiter_fiche_existante",
+    "created_at": "2026-09-05T20:14:37.420Z",
+    "note_tri": "Apporte une source Wikipédia non encore citée par la fiche multilateralisme-institutionnel — à reformuler avant intégration, jamais à publier tel quel."
   },
   {
     "id": "133547ed-92de-4306-88fb-9b5fc2a314b4",
@@ -2309,8 +2459,9 @@
       "note": "Résumé Wikipédia brut — à reformuler en these_centrale/apport/limites_critiques (fiche humaine) ou capacites_cles/limites_connues (fiche IA) avant validation. Ne jamais publier tel quel sans relecture."
     },
     "score_fiabilite": 0.5,
-    "statut": "en_attente",
-    "created_at": "2026-09-05T20:14:38.641Z"
+    "statut": "a_traiter_fiche_existante",
+    "created_at": "2026-09-05T20:14:38.641Z",
+    "note_tri": "Apporte une source Wikipédia non encore citée par la fiche gouvernance-en-reseau-multiniveau — à reformuler avant intégration, jamais à publier tel quel."
   },
   {
     "id": "8bf157d9-ced2-4e30-a4d7-0547d8632e35",
@@ -2326,8 +2477,9 @@
       "note": "Résumé Wikipédia brut — à reformuler en these_centrale/apport/limites_critiques (fiche humaine) ou capacites_cles/limites_connues (fiche IA) avant validation. Ne jamais publier tel quel sans relecture."
     },
     "score_fiabilite": 0.5,
-    "statut": "en_attente",
-    "created_at": "2026-09-05T20:14:40.056Z"
+    "statut": "a_traiter_fiche_existante",
+    "created_at": "2026-09-05T20:14:40.056Z",
+    "note_tri": "Apporte une source Wikipédia non encore citée par la fiche regionalisme-et-integration-regionale — à reformuler avant intégration, jamais à publier tel quel."
   },
   {
     "id": "702101b2-281c-4849-a895-c3a55c5d3fc3",
@@ -2343,8 +2495,9 @@
       "note": "Résumé Wikipédia brut — à reformuler en these_centrale/apport/limites_critiques (fiche humaine) ou capacites_cles/limites_connues (fiche IA) avant validation. Ne jamais publier tel quel sans relecture."
     },
     "score_fiabilite": 0.5,
-    "statut": "en_attente",
-    "created_at": "2026-09-05T20:14:41.702Z"
+    "statut": "rejete",
+    "created_at": "2026-09-05T20:14:41.702Z",
+    "note_tri": "Redondant : la fiche onu cite déjà https://fr.wikipedia.org/wiki/Organisation_des_Nations_unies dans ses sources."
   },
   {
     "id": "c96a786f-83c9-47da-8795-da1df2e1b7f9",
@@ -2360,8 +2513,9 @@
       "note": "Résumé Wikipédia brut — à reformuler en these_centrale/apport/limites_critiques (fiche humaine) ou capacites_cles/limites_connues (fiche IA) avant validation. Ne jamais publier tel quel sans relecture."
     },
     "score_fiabilite": 0.5,
-    "statut": "en_attente",
-    "created_at": "2026-09-05T20:14:43.507Z"
+    "statut": "rejete",
+    "created_at": "2026-09-05T20:14:43.507Z",
+    "note_tri": "Redondant : la fiche pacte-de-varsovie cite déjà https://fr.wikipedia.org/wiki/Pacte_de_Varsovie dans ses sources."
   },
   {
     "id": "fe9c353b-e997-43e7-a84e-c28c95f73f09",
@@ -2377,8 +2531,9 @@
       "note": "Résumé Wikipédia brut — à reformuler en these_centrale/apport/limites_critiques (fiche humaine) ou capacites_cles/limites_connues (fiche IA) avant validation. Ne jamais publier tel quel sans relecture."
     },
     "score_fiabilite": 0.5,
-    "statut": "en_attente",
-    "created_at": "2026-09-05T20:14:44.053Z"
+    "statut": "a_traiter_fiche_existante",
+    "created_at": "2026-09-05T20:14:44.053Z",
+    "note_tri": "Apporte une source Wikipédia non encore citée par la fiche mouvement-des-non-alignes — à reformuler avant intégration, jamais à publier tel quel."
   },
   {
     "id": "43fac462-d908-4c2e-b8d4-4d18521821e1",
@@ -2394,8 +2549,9 @@
       "note": "Résumé Wikipédia brut — à reformuler en these_centrale/apport/limites_critiques (fiche humaine) ou capacites_cles/limites_connues (fiche IA) avant validation. Ne jamais publier tel quel sans relecture."
     },
     "score_fiabilite": 0.5,
-    "statut": "en_attente",
-    "created_at": "2026-09-05T20:14:44.543Z"
+    "statut": "a_traiter_fiche_existante",
+    "created_at": "2026-09-05T20:14:44.543Z",
+    "note_tri": "Apporte une source Wikipédia non encore citée par la fiche union-africaine-ua-oua — à reformuler avant intégration, jamais à publier tel quel."
   },
   {
     "id": "44ca84f4-b824-47f4-be11-0c38aa0c907c",
@@ -2411,8 +2567,9 @@
       "note": "Résumé Wikipédia brut — à reformuler en these_centrale/apport/limites_critiques (fiche humaine) ou capacites_cles/limites_connues (fiche IA) avant validation. Ne jamais publier tel quel sans relecture."
     },
     "score_fiabilite": 0.5,
-    "statut": "en_attente",
-    "created_at": "2026-09-05T20:14:45.672Z"
+    "statut": "rejete",
+    "created_at": "2026-09-05T20:14:45.672Z",
+    "note_tri": "Redondant : la fiche ligue-arabe cite déjà https://fr.wikipedia.org/wiki/Ligue_arabe dans ses sources."
   },
   {
     "id": "b73f87f5-7c05-4a6a-9473-a9a04bba93e3",
@@ -2428,8 +2585,9 @@
       "note": "Résumé Wikipédia brut — à reformuler en these_centrale/apport/limites_critiques (fiche humaine) ou capacites_cles/limites_connues (fiche IA) avant validation. Ne jamais publier tel quel sans relecture."
     },
     "score_fiabilite": 0.5,
-    "statut": "en_attente",
-    "created_at": "2026-09-05T20:14:46.370Z"
+    "statut": "rejete",
+    "created_at": "2026-09-05T20:14:46.370Z",
+    "note_tri": "Redondant : la fiche conseil-de-l-europe cite déjà https://fr.wikipedia.org/wiki/Conseil_de_l'Europe dans ses sources."
   },
   {
     "id": "86f2fec4-25d5-4f61-a8ec-477d4c4bda11",
@@ -2445,8 +2603,9 @@
       "note": "Résumé Wikipédia brut — à reformuler en these_centrale/apport/limites_critiques (fiche humaine) ou capacites_cles/limites_connues (fiche IA) avant validation. Ne jamais publier tel quel sans relecture."
     },
     "score_fiabilite": 0.5,
-    "statut": "en_attente",
-    "created_at": "2026-09-05T20:14:46.813Z"
+    "statut": "a_traiter_fiche_existante",
+    "created_at": "2026-09-05T20:14:46.813Z",
+    "note_tri": "Apporte une source Wikipédia non encore citée par la fiche osce — à reformuler avant intégration, jamais à publier tel quel."
   },
   {
     "id": "3fe5a59d-7bb7-45ce-9c8b-565207127d3e",
@@ -2462,8 +2621,9 @@
       "note": "Résumé Wikipédia brut — à reformuler en these_centrale/apport/limites_critiques (fiche humaine) ou capacites_cles/limites_connues (fiche IA) avant validation. Ne jamais publier tel quel sans relecture."
     },
     "score_fiabilite": 0.5,
-    "statut": "en_attente",
-    "created_at": "2026-09-05T20:14:47.889Z"
+    "statut": "rejete",
+    "created_at": "2026-09-05T20:14:47.889Z",
+    "note_tri": "Redondant : la fiche banque-mondiale-bird cite déjà https://fr.wikipedia.org/wiki/Banque_mondiale dans ses sources."
   },
   {
     "id": "1a12e9c6-c639-409a-9be3-68f5fe9bba39",
@@ -2479,8 +2639,9 @@
       "note": "Résumé Wikipédia brut — à reformuler en these_centrale/apport/limites_critiques (fiche humaine) ou capacites_cles/limites_connues (fiche IA) avant validation. Ne jamais publier tel quel sans relecture."
     },
     "score_fiabilite": 0.5,
-    "statut": "en_attente",
-    "created_at": "2026-09-05T20:14:49.589Z"
+    "statut": "a_traiter_fiche_existante",
+    "created_at": "2026-09-05T20:14:49.589Z",
+    "note_tri": "Apporte une source Wikipédia non encore citée par la fiche ocde — à reformuler avant intégration, jamais à publier tel quel."
   },
   {
     "id": "03c617ae-768f-4a78-8ea9-b71d43d5e823",
@@ -2496,8 +2657,9 @@
       "note": "Résumé Wikipédia brut — à reformuler en these_centrale/apport/limites_critiques (fiche humaine) ou capacites_cles/limites_connues (fiche IA) avant validation. Ne jamais publier tel quel sans relecture."
     },
     "score_fiabilite": 0.5,
-    "statut": "en_attente",
-    "created_at": "2026-09-05T20:14:50.029Z"
+    "statut": "a_traiter_fiche_existante",
+    "created_at": "2026-09-05T20:14:50.029Z",
+    "note_tri": "Apporte une source Wikipédia non encore citée par la fiche opep — à reformuler avant intégration, jamais à publier tel quel."
   },
   {
     "id": "97019c15-2075-4a2d-b76e-3f52c79ddc3a",
@@ -2513,8 +2675,9 @@
       "note": "Résumé Wikipédia brut — à reformuler en these_centrale/apport/limites_critiques (fiche humaine) ou capacites_cles/limites_connues (fiche IA) avant validation. Ne jamais publier tel quel sans relecture."
     },
     "score_fiabilite": 0.5,
-    "statut": "en_attente",
-    "created_at": "2026-09-05T20:14:50.975Z"
+    "statut": "a_traiter_fiche_existante",
+    "created_at": "2026-09-05T20:14:50.975Z",
+    "note_tri": "Apporte une source Wikipédia non encore citée par la fiche g7-g8 — à reformuler avant intégration, jamais à publier tel quel."
   },
   {
     "id": "f0b8cba8-a442-45d7-9511-929188135896",
@@ -2530,8 +2693,9 @@
       "note": "Résumé Wikipédia brut — à reformuler en these_centrale/apport/limites_critiques (fiche humaine) ou capacites_cles/limites_connues (fiche IA) avant validation. Ne jamais publier tel quel sans relecture."
     },
     "score_fiabilite": 0.5,
-    "statut": "en_attente",
-    "created_at": "2026-09-05T20:14:52.284Z"
+    "statut": "a_traiter_fiche_existante",
+    "created_at": "2026-09-05T20:14:52.284Z",
+    "note_tri": "Apporte une source Wikipédia non encore citée par la fiche asean — à reformuler avant intégration, jamais à publier tel quel."
   },
   {
     "id": "6e57791b-3b12-473f-a88d-3a6c6b1104f2",
@@ -2547,8 +2711,9 @@
       "note": "Résumé Wikipédia brut — à reformuler en these_centrale/apport/limites_critiques (fiche humaine) ou capacites_cles/limites_connues (fiche IA) avant validation. Ne jamais publier tel quel sans relecture."
     },
     "score_fiabilite": 0.5,
-    "statut": "en_attente",
-    "created_at": "2026-09-05T20:14:52.721Z"
+    "statut": "a_traiter_fiche_existante",
+    "created_at": "2026-09-05T20:14:52.721Z",
+    "note_tri": "Apporte une source Wikipédia non encore citée par la fiche mercosur — à reformuler avant intégration, jamais à publier tel quel."
   },
   {
     "id": "1c98de89-4f2f-4ae1-a024-783642c7b15d",
@@ -2564,8 +2729,9 @@
       "note": "Résumé Wikipédia brut — à reformuler en these_centrale/apport/limites_critiques (fiche humaine) ou capacites_cles/limites_connues (fiche IA) avant validation. Ne jamais publier tel quel sans relecture."
     },
     "score_fiabilite": 0.5,
-    "statut": "en_attente",
-    "created_at": "2026-09-05T20:14:53.736Z"
+    "statut": "a_traiter_fiche_existante",
+    "created_at": "2026-09-05T20:14:53.736Z",
+    "note_tri": "Apporte une source Wikipédia non encore citée par la fiche g20 — à reformuler avant intégration, jamais à publier tel quel."
   },
   {
     "id": "f5f436fc-ff1b-41d9-b32e-7e7253179721",
@@ -2581,8 +2747,9 @@
       "note": "Résumé Wikipédia brut — à reformuler en these_centrale/apport/limites_critiques (fiche humaine) ou capacites_cles/limites_connues (fiche IA) avant validation. Ne jamais publier tel quel sans relecture."
     },
     "score_fiabilite": 0.5,
-    "statut": "en_attente",
-    "created_at": "2026-09-05T20:14:54.179Z"
+    "statut": "a_traiter_fiche_existante",
+    "created_at": "2026-09-05T20:14:54.179Z",
+    "note_tri": "Apporte une source Wikipédia non encore citée par la fiche brics — à reformuler avant intégration, jamais à publier tel quel."
   },
   {
     "id": "7946e85f-4929-4ba0-b6ec-eab28b724d69",
@@ -2598,8 +2765,9 @@
       "note": "Résumé Wikipédia brut — à reformuler en these_centrale/apport/limites_critiques (fiche humaine) ou capacites_cles/limites_connues (fiche IA) avant validation. Ne jamais publier tel quel sans relecture."
     },
     "score_fiabilite": 0.5,
-    "statut": "en_attente",
-    "created_at": "2026-09-05T20:14:54.675Z"
+    "statut": "a_traiter_fiche_existante",
+    "created_at": "2026-09-05T20:14:54.675Z",
+    "note_tri": "Apporte une source Wikipédia non encore citée par la fiche organisation-de-cooperation-de-shanghai-ocs — à reformuler avant intégration, jamais à publier tel quel."
   },
   {
     "id": "d4aedd4b-53f6-4195-a788-f4cf7f7373ef",
@@ -2615,8 +2783,9 @@
       "note": "Résumé Wikipédia brut — à reformuler en these_centrale/apport/limites_critiques (fiche humaine) ou capacites_cles/limites_connues (fiche IA) avant validation. Ne jamais publier tel quel sans relecture."
     },
     "score_fiabilite": 0.5,
-    "statut": "en_attente",
-    "created_at": "2026-09-05T20:14:55.188Z"
+    "statut": "a_traiter_fiche_existante",
+    "created_at": "2026-09-05T20:14:55.188Z",
+    "note_tri": "Apporte une source Wikipédia non encore citée par la fiche cour-penale-internationale-cpi — à reformuler avant intégration, jamais à publier tel quel."
   },
   {
     "id": "8bd65a4a-92b2-4dcd-af52-02f6f8467a6a",
@@ -2632,8 +2801,9 @@
       "note": "Résumé Wikipédia brut — à reformuler en these_centrale/apport/limites_critiques (fiche humaine) ou capacites_cles/limites_connues (fiche IA) avant validation. Ne jamais publier tel quel sans relecture."
     },
     "score_fiabilite": 0.5,
-    "statut": "en_attente",
-    "created_at": "2026-09-05T20:14:57.620Z"
+    "statut": "rejete",
+    "created_at": "2026-09-05T20:14:57.620Z",
+    "note_tri": "Redondant : la fiche banque-asiatique-d-investissement-pour-les-infrastructures-baii cite déjà https://fr.wikipedia.org/wiki/Banque_asiatique_d'investissement_pour_les_infrastructures dans ses sources."
   },
   {
     "id": "f7078210-07aa-4514-aee2-fcd6e88ca05e",
@@ -2649,8 +2819,9 @@
       "note": "Résumé Wikipédia brut — à reformuler en these_centrale/apport/limites_critiques (fiche humaine) ou capacites_cles/limites_connues (fiche IA) avant validation. Ne jamais publier tel quel sans relecture."
     },
     "score_fiabilite": 0.5,
-    "statut": "en_attente",
-    "created_at": "2026-09-05T20:14:58.884Z"
+    "statut": "a_traiter_fiche_existante",
+    "created_at": "2026-09-05T20:14:58.884Z",
+    "note_tri": "Apporte une source Wikipédia non encore citée par la fiche cptpp — à reformuler avant intégration, jamais à publier tel quel."
   },
   {
     "id": "12bad0af-37f7-410e-9f60-b21b589ffa26",
@@ -2666,8 +2837,9 @@
       "note": "Résumé Wikipédia brut — à reformuler en these_centrale/apport/limites_critiques (fiche humaine) ou capacites_cles/limites_connues (fiche IA) avant validation. Ne jamais publier tel quel sans relecture."
     },
     "score_fiabilite": 0.5,
-    "statut": "en_attente",
-    "created_at": "2026-09-05T20:15:00.263Z"
+    "statut": "a_traiter_fiche_existante",
+    "created_at": "2026-09-05T20:15:00.263Z",
+    "note_tri": "Apporte une source Wikipédia non encore citée par la fiche conseil-de-stabilite-financiere-csf — à reformuler avant intégration, jamais à publier tel quel."
   },
   {
     "id": "a083491f-3eea-4bae-af7b-3f4b9b7d3ec4",
@@ -2683,8 +2855,9 @@
       "note": "Résumé Wikipédia brut — à reformuler en these_centrale/apport/limites_critiques (fiche humaine) ou capacites_cles/limites_connues (fiche IA) avant validation. Ne jamais publier tel quel sans relecture."
     },
     "score_fiabilite": 0.5,
-    "statut": "en_attente",
-    "created_at": "2026-09-05T20:15:01.181Z"
+    "statut": "a_traiter_fiche_existante",
+    "created_at": "2026-09-05T20:15:01.181Z",
+    "note_tri": "Apporte une source Wikipédia non encore citée par la fiche fonds-mondial-sida-tuberculose-paludisme — à reformuler avant intégration, jamais à publier tel quel."
   },
   {
     "id": "10c994ff-e66c-4733-8ec0-d3c5be8e142a",
@@ -2700,8 +2873,9 @@
       "note": "Résumé Wikipédia brut — à reformuler en these_centrale/apport/limites_critiques (fiche humaine) ou capacites_cles/limites_connues (fiche IA) avant validation. Ne jamais publier tel quel sans relecture."
     },
     "score_fiabilite": 0.5,
-    "statut": "en_attente",
-    "created_at": "2026-09-05T20:15:02.028Z"
+    "statut": "rejete",
+    "created_at": "2026-09-05T20:15:02.028Z",
+    "note_tri": "Redondant : la fiche ipbes cite déjà https://en.wikipedia.org/wiki/Intergovernmental_Science-Policy_Platform_on_Biodiversity_and_Ecosystem_Services dans ses sources."
   },
   {
     "id": "0ac110c1-100e-49b2-8304-c8ee1cf6f273",
@@ -2717,8 +2891,9 @@
       "note": "Résumé Wikipédia brut — à reformuler en these_centrale/apport/limites_critiques (fiche humaine) ou capacites_cles/limites_connues (fiche IA) avant validation. Ne jamais publier tel quel sans relecture."
     },
     "score_fiabilite": 0.5,
-    "statut": "en_attente",
-    "created_at": "2026-09-05T20:15:02.470Z"
+    "statut": "rejete",
+    "created_at": "2026-09-05T20:15:02.470Z",
+    "note_tri": "Redondant : la fiche fordisme cite déjà https://fr.wikipedia.org/wiki/Fordisme dans ses sources."
   },
   {
     "id": "e03f5f0b-82b8-483e-bdf6-1d0a876f9bd8",
@@ -2734,8 +2909,9 @@
       "note": "Résumé Wikipédia brut — à reformuler en these_centrale/apport/limites_critiques (fiche humaine) ou capacites_cles/limites_connues (fiche IA) avant validation. Ne jamais publier tel quel sans relecture."
     },
     "score_fiabilite": 0.5,
-    "statut": "en_attente",
-    "created_at": "2026-09-05T20:15:02.898Z"
+    "statut": "a_traiter_fiche_existante",
+    "created_at": "2026-09-05T20:15:02.898Z",
+    "note_tri": "Apporte une source Wikipédia non encore citée par la fiche fayolisme — à reformuler avant intégration, jamais à publier tel quel."
   },
   {
     "id": "33061cf2-d301-42bb-b739-141bbce425b8",
@@ -2751,8 +2927,9 @@
       "note": "Résumé Wikipédia brut — à reformuler en these_centrale/apport/limites_critiques (fiche humaine) ou capacites_cles/limites_connues (fiche IA) avant validation. Ne jamais publier tel quel sans relecture."
     },
     "score_fiabilite": 0.5,
-    "statut": "en_attente",
-    "created_at": "2026-09-05T20:15:03.359Z"
+    "statut": "rejete",
+    "created_at": "2026-09-05T20:15:03.359Z",
+    "note_tri": "Redondant : la fiche bureaucratie-weberienne cite déjà https://fr.wikipedia.org/wiki/Bureaucratie dans ses sources."
   },
   {
     "id": "82a39033-d20a-4f16-b595-efc81975e644",
@@ -2768,8 +2945,9 @@
       "note": "Résumé Wikipédia brut — à reformuler en these_centrale/apport/limites_critiques (fiche humaine) ou capacites_cles/limites_connues (fiche IA) avant validation. Ne jamais publier tel quel sans relecture."
     },
     "score_fiabilite": 0.5,
-    "statut": "en_attente",
-    "created_at": "2026-09-05T20:15:03.839Z"
+    "statut": "a_traiter_fiche_existante",
+    "created_at": "2026-09-05T20:15:03.839Z",
+    "note_tri": "Apporte une source Wikipédia non encore citée par la fiche toyotisme-lean-management — à reformuler avant intégration, jamais à publier tel quel."
   },
   {
     "id": "160fb5f6-cb7a-4ecf-9aa3-2e5d955691b1",
@@ -2785,8 +2963,9 @@
       "note": "Résumé Wikipédia brut — à reformuler en these_centrale/apport/limites_critiques (fiche humaine) ou capacites_cles/limites_connues (fiche IA) avant validation. Ne jamais publier tel quel sans relecture."
     },
     "score_fiabilite": 0.5,
-    "statut": "en_attente",
-    "created_at": "2026-09-05T20:15:04.893Z"
+    "statut": "a_traiter_fiche_existante",
+    "created_at": "2026-09-05T20:15:04.893Z",
+    "note_tri": "Apporte une source Wikipédia non encore citée par la fiche structure-matricielle — à reformuler avant intégration, jamais à publier tel quel."
   },
   {
     "id": "9c13c92c-b2af-48ea-a2b3-8d2ff810f761",
@@ -2802,8 +2981,9 @@
       "note": "Résumé Wikipédia brut — à reformuler en these_centrale/apport/limites_critiques (fiche humaine) ou capacites_cles/limites_connues (fiche IA) avant validation. Ne jamais publier tel quel sans relecture."
     },
     "score_fiabilite": 0.5,
-    "statut": "en_attente",
-    "created_at": "2026-09-05T20:15:05.962Z"
+    "statut": "a_traiter_fiche_existante",
+    "created_at": "2026-09-05T20:15:05.962Z",
+    "note_tri": "Apporte une source Wikipédia non encore citée par la fiche entreprise-liberee — à reformuler avant intégration, jamais à publier tel quel."
   },
   {
     "id": "dd6482d6-a642-43a5-8ca9-8d89ca2ea311",
@@ -2819,8 +2999,9 @@
       "note": "Résumé Wikipédia brut — à reformuler en these_centrale/apport/limites_critiques (fiche humaine) ou capacites_cles/limites_connues (fiche IA) avant validation. Ne jamais publier tel quel sans relecture."
     },
     "score_fiabilite": 0.5,
-    "statut": "en_attente",
-    "created_at": "2026-09-05T20:15:06.395Z"
+    "statut": "a_traiter_fiche_existante",
+    "created_at": "2026-09-05T20:15:06.395Z",
+    "note_tri": "Apporte une source Wikipédia non encore citée par la fiche holacratie-sociocratie — à reformuler avant intégration, jamais à publier tel quel."
   },
   {
     "id": "c5447d64-e071-4984-9980-527ae94e37d5",
@@ -2836,8 +3017,9 @@
       "note": "Résumé Wikipédia brut — à reformuler en these_centrale/apport/limites_critiques (fiche humaine) ou capacites_cles/limites_connues (fiche IA) avant validation. Ne jamais publier tel quel sans relecture."
     },
     "score_fiabilite": 0.5,
-    "statut": "en_attente",
-    "created_at": "2026-09-05T20:15:06.823Z"
+    "statut": "a_traiter_fiche_existante",
+    "created_at": "2026-09-05T20:15:06.823Z",
+    "note_tri": "Apporte une source Wikipédia non encore citée par la fiche agile-scrum — à reformuler avant intégration, jamais à publier tel quel."
   },
   {
     "id": "728df825-9a34-4d66-a6a1-e2440325c73d",
@@ -2853,8 +3035,9 @@
       "note": "Résumé Wikipédia brut — à reformuler en these_centrale/apport/limites_critiques (fiche humaine) ou capacites_cles/limites_connues (fiche IA) avant validation. Ne jamais publier tel quel sans relecture."
     },
     "score_fiabilite": 0.5,
-    "statut": "en_attente",
-    "created_at": "2026-09-05T20:15:08.809Z"
+    "statut": "a_traiter_fiche_existante",
+    "created_at": "2026-09-05T20:15:08.809Z",
+    "note_tri": "Apporte une source Wikipédia non encore citée par la fiche management-hybride-teletravail — à reformuler avant intégration, jamais à publier tel quel."
   },
   {
     "id": "e8870558-26ba-40c1-8863-6cb4707a8896",
@@ -2870,8 +3053,9 @@
       "note": "Résumé Wikipédia brut — à reformuler en these_centrale/apport/limites_critiques (fiche humaine) ou capacites_cles/limites_connues (fiche IA) avant validation. Ne jamais publier tel quel sans relecture."
     },
     "score_fiabilite": 0.5,
-    "statut": "en_attente",
-    "created_at": "2026-09-05T20:15:09.986Z"
+    "statut": "a_traiter_fiche_existante",
+    "created_at": "2026-09-05T20:15:09.986Z",
+    "note_tri": "Apporte une source Wikipédia non encore citée par la fiche relativite-generale-et-restreinte — à reformuler avant intégration, jamais à publier tel quel."
   },
   {
     "id": "5bb23340-00dc-4e2f-8357-ed9a8a9efb34",
@@ -2887,8 +3071,9 @@
       "note": "Résumé Wikipédia brut — à reformuler en these_centrale/apport/limites_critiques (fiche humaine) ou capacites_cles/limites_connues (fiche IA) avant validation. Ne jamais publier tel quel sans relecture."
     },
     "score_fiabilite": 0.5,
-    "statut": "en_attente",
-    "created_at": "2026-09-05T20:15:10.539Z"
+    "statut": "a_traiter_fiche_existante",
+    "created_at": "2026-09-05T20:15:10.539Z",
+    "note_tri": "Apporte une source Wikipédia non encore citée par la fiche modele-standard-de-la-physique-des-particules — à reformuler avant intégration, jamais à publier tel quel."
   },
   {
     "id": "eefc676f-a82d-4250-ba6f-bf8a64dd5cb4",
@@ -2904,8 +3089,9 @@
       "note": "Résumé Wikipédia brut — à reformuler en these_centrale/apport/limites_critiques (fiche humaine) ou capacites_cles/limites_connues (fiche IA) avant validation. Ne jamais publier tel quel sans relecture."
     },
     "score_fiabilite": 0.5,
-    "statut": "en_attente",
-    "created_at": "2026-09-05T20:15:11.044Z"
+    "statut": "a_traiter_fiche_existante",
+    "created_at": "2026-09-05T20:15:11.044Z",
+    "note_tri": "Apporte une source Wikipédia non encore citée par la fiche double-helice-de-l-adn — à reformuler avant intégration, jamais à publier tel quel."
   },
   {
     "id": "52b2d253-f0c7-4dc7-bd9d-3de7cf3c52bb",
@@ -2921,8 +3107,9 @@
       "note": "Résumé Wikipédia brut — à reformuler en these_centrale/apport/limites_critiques (fiche humaine) ou capacites_cles/limites_connues (fiche IA) avant validation. Ne jamais publier tel quel sans relecture."
     },
     "score_fiabilite": 0.5,
-    "statut": "en_attente",
-    "created_at": "2026-09-05T20:15:11.491Z"
+    "statut": "rejete",
+    "created_at": "2026-09-05T20:15:11.491Z",
+    "note_tri": "Redondant : la fiche tectonique-des-plaques cite déjà https://fr.wikipedia.org/wiki/Tectonique_des_plaques dans ses sources."
   },
   {
     "id": "502f9528-a07b-4eb2-8bfa-d396ec406f8e",
@@ -2938,8 +3125,9 @@
       "note": "Résumé Wikipédia brut — à reformuler en these_centrale/apport/limites_critiques (fiche humaine) ou capacites_cles/limites_connues (fiche IA) avant validation. Ne jamais publier tel quel sans relecture."
     },
     "score_fiabilite": 0.5,
-    "statut": "en_attente",
-    "created_at": "2026-09-05T20:15:11.980Z"
+    "statut": "rejete",
+    "created_at": "2026-09-05T20:15:11.980Z",
+    "note_tri": "Redondant : la fiche big-bang-modele-cosmologique cite déjà https://fr.wikipedia.org/wiki/Big_Bang dans ses sources."
   },
   {
     "id": "d3918aeb-108a-4dde-b671-c0dddb8947c8",
@@ -2955,8 +3143,9 @@
       "note": "Résumé Wikipédia brut — à reformuler en these_centrale/apport/limites_critiques (fiche humaine) ou capacites_cles/limites_connues (fiche IA) avant validation. Ne jamais publier tel quel sans relecture."
     },
     "score_fiabilite": 0.5,
-    "statut": "en_attente",
-    "created_at": "2026-09-05T20:15:12.509Z"
+    "statut": "rejete",
+    "created_at": "2026-09-05T20:15:12.509Z",
+    "note_tri": "Redondant : la fiche mecanique-quantique-modele-de-bohr cite déjà https://fr.wikipedia.org/wiki/Mod%C3%A8le_de_Bohr dans ses sources."
   },
   {
     "id": "10a15fcc-1d66-419a-92e7-ec43a9e4ed95",
@@ -2972,8 +3161,9 @@
       "note": "Résumé Wikipédia brut — à reformuler en these_centrale/apport/limites_critiques (fiche humaine) ou capacites_cles/limites_connues (fiche IA) avant validation. Ne jamais publier tel quel sans relecture."
     },
     "score_fiabilite": 0.5,
-    "statut": "en_attente",
-    "created_at": "2026-09-05T20:15:13.170Z"
+    "statut": "rejete",
+    "created_at": "2026-09-05T20:15:13.170Z",
+    "note_tri": "Redondant : la fiche theorie-synthetique-de-l-evolution cite déjà https://fr.wikipedia.org/wiki/Th%C3%A9orie_synth%C3%A9tique_de_l'%C3%A9volution dans ses sources."
   },
   {
     "id": "246d1077-2f86-4eee-b062-f8fd68d3ac83",
@@ -2989,8 +3179,9 @@
       "note": "Résumé Wikipédia brut — à reformuler en these_centrale/apport/limites_critiques (fiche humaine) ou capacites_cles/limites_connues (fiche IA) avant validation. Ne jamais publier tel quel sans relecture."
     },
     "score_fiabilite": 0.5,
-    "statut": "en_attente",
-    "created_at": "2026-09-05T20:15:13.728Z"
+    "statut": "rejete",
+    "created_at": "2026-09-05T20:15:13.728Z",
+    "note_tri": "Redondant : la fiche modele-climatique-du-rechauffement-anthropique cite déjà https://fr.wikipedia.org/wiki/Changement_climatique dans ses sources."
   },
   {
     "id": "dc5022a5-0e4e-444f-af4a-fdabebe8c43a",
@@ -3006,8 +3197,9 @@
       "note": "Résumé Wikipédia brut — à reformuler en these_centrale/apport/limites_critiques (fiche humaine) ou capacites_cles/limites_connues (fiche IA) avant validation. Ne jamais publier tel quel sans relecture."
     },
     "score_fiabilite": 0.5,
-    "statut": "en_attente",
-    "created_at": "2026-09-05T20:15:14.295Z"
+    "statut": "rejete",
+    "created_at": "2026-09-05T20:15:14.295Z",
+    "note_tri": "Redondant : la fiche theorie-du-chaos-et-systemes-complexes cite déjà https://fr.wikipedia.org/wiki/Th%C3%A9orie_du_chaos dans ses sources."
   },
   {
     "id": "ec0d637d-d30d-427e-a568-7efafb1be357",
@@ -3023,8 +3215,9 @@
       "note": "Résumé Wikipédia brut — à reformuler en these_centrale/apport/limites_critiques (fiche humaine) ou capacites_cles/limites_connues (fiche IA) avant validation. Ne jamais publier tel quel sans relecture."
     },
     "score_fiabilite": 0.5,
-    "statut": "en_attente",
-    "created_at": "2026-09-05T20:15:14.813Z"
+    "statut": "a_traiter_fiche_existante",
+    "created_at": "2026-09-05T20:15:14.813Z",
+    "note_tri": "Apporte une source Wikipédia non encore citée par la fiche reseaux-de-neurones-artificiels-deep-learning — à reformuler avant intégration, jamais à publier tel quel."
   },
   {
     "id": "b3f88b87-723e-443b-bcbe-2f4f29df784a",
@@ -3040,8 +3233,9 @@
       "note": "Résumé Wikipédia brut — à reformuler en these_centrale/apport/limites_critiques (fiche humaine) ou capacites_cles/limites_connues (fiche IA) avant validation. Ne jamais publier tel quel sans relecture."
     },
     "score_fiabilite": 0.5,
-    "statut": "en_attente",
-    "created_at": "2026-09-05T20:15:15.939Z"
+    "statut": "rejete",
+    "created_at": "2026-09-05T20:15:15.939Z",
+    "note_tri": "Redondant : la fiche physique-des-hautes-energies-boson-de-higgs cite déjà https://fr.wikipedia.org/wiki/Boson_de_Higgs dans ses sources."
   },
   {
     "id": "2037e123-af84-48ee-8b03-1c311ae48b11",
@@ -3057,8 +3251,9 @@
       "note": "Résumé Wikipédia brut — à reformuler en these_centrale/apport/limites_critiques (fiche humaine) ou capacites_cles/limites_connues (fiche IA) avant validation. Ne jamais publier tel quel sans relecture."
     },
     "score_fiabilite": 0.5,
-    "statut": "en_attente",
-    "created_at": "2026-09-05T20:15:16.417Z"
+    "statut": "rejete",
+    "created_at": "2026-09-05T20:15:16.417Z",
+    "note_tri": "Redondant : la fiche informatique-quantique cite déjà https://fr.wikipedia.org/wiki/Informatique_quantique dans ses sources."
   },
   {
     "id": "92ceeeea-51a8-4dc4-92e8-38524f260f63",
@@ -3074,14 +3269,15 @@
       "note": "Résumé Wikipédia brut — à reformuler en these_centrale/apport/limites_critiques (fiche humaine) ou capacites_cles/limites_connues (fiche IA) avant validation. Ne jamais publier tel quel sans relecture."
     },
     "score_fiabilite": 0.5,
-    "statut": "en_attente",
-    "created_at": "2026-09-05T20:15:16.930Z"
+    "statut": "rejete",
+    "created_at": "2026-09-05T20:15:16.930Z",
+    "note_tri": "Redondant : la fiche ia-et-traitement-du-langage-naturel cite déjà https://fr.wikipedia.org/wiki/Traitement_automatique_des_langues dans ses sources."
   },
   {
     "id": "5e8fb9e0-3c01-4a7c-bcfc-adb4864dc628",
     "source_id": "imf-news",
-    "cible_type": "nouvelle_categorie",
-    "cible_id": null,
+    "cible_type": "fiche_humaine",
+    "cible_id": "fmi",
     "contenu_propose": {
       "titre": "Accord du Sénégal avec le FMI: les défis de Dakar pour apurer sa dette sans plomber les budgets sociaux - rfi.fr",
       "link": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxONUhKSWpKdUxibF8tOUlodkVEczNEc0FqbE1BTGEwcVhVbzhKWUM1YnhEWEdYbHB3dk5SNmJ0MmROSXBjTF9HZDBvdXhPNE9SZWtocmE1M0NLREp6eC1LRXpIUGJOTW5EaHNVcXJ3cXR2QUVJc1RoXzJ0VFlRbEw5SnJQc0F5UkVGT0QxdXFtZWF0WW9waGNMeDY3b1JjYzdFWlliZzh2UG9COGp3czB1d3d3aFhhUjFkaDFxSDNkYW1KYzB1ZU1KSVJYRnl3NmYzMnc?oc=5",
@@ -3089,8 +3285,9 @@
       "resume": "Accord du Sénégal avec le FMI: les défis de Dakar pour apurer sa dette sans plomber les budgets sociaux  rfi.fr"
     },
     "score_fiabilite": 0.9,
-    "statut": "en_attente",
-    "created_at": "2026-09-06T11:27:48.721Z"
+    "statut": "a_traiter_fiche_existante",
+    "created_at": "2026-09-06T11:27:48.721Z",
+    "note_tri": "Analyse des défis de Dakar pour apurer sa dette sans réduire les budgets sociaux: angle substantiel sur la conditionnalité des prêts FMI, distinct de la simple annonce de l'accord."
   },
   {
     "id": "054d6d36-9441-48b2-b2b0-457b5970ca5a",
@@ -3104,8 +3301,9 @@
       "resume": "Dette du Sénégal : ce que l'on sait du nouvel accord conclu avec le FMI  BBC"
     },
     "score_fiabilite": 0.9,
-    "statut": "en_attente",
-    "created_at": "2026-09-06T11:27:48.721Z"
+    "statut": "rejete",
+    "created_at": "2026-09-06T11:27:48.721Z",
+    "note_tri": "Article récapitulatif ('ce que l'on sait') qui reprend les faits déjà couverts par 5ece8bb8-0e5c-4336-890e-84405c2a101f et 5e8fb9e0-3c01-4a7c-bcfc-adb4864dc628 sans élément nouveau."
   },
   {
     "id": "684ce92b-2b1a-4397-8194-b28167d08877",
@@ -3119,7 +3317,8 @@
       "resume": "L'OCDE livre ses recettes pour améliorer la compétitivité industrielle de la France  Banque des Territoires"
     },
     "score_fiabilite": 0.9,
-    "statut": "en_attente",
-    "created_at": "2026-09-06T11:27:49.126Z"
+    "statut": "rejete",
+    "created_at": "2026-09-06T11:27:49.126Z",
+    "note_tri": "Déclinaison France (recommandations de compétitivité industrielle) du même cycle de publications OCDE que eb34736d-19c3-41a5-8104-ac029aea51bb, redondante."
   }
 ]
