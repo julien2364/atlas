@@ -1,6 +1,6 @@
 # COMMENT LANCER — Atlas Humain × IA
 
-Dernière mise à jour : 05/09/2026 (après Lot 1 + amorçage Lot 2/3 + Lot 4 comparateur + Lot 5 veille RSS + Lot 7 cartographies + audit QA + mise en ligne publique via GitHub/Vercel)
+Dernière mise à jour : 06/09/2026 (référentiel de contenu terminé à 100% — 311/311 fiches documentées)
 
 ## État actuel du projet
 
@@ -9,6 +9,11 @@ versionné dans git, poussé sur GitHub (`https://github.com/julien2364/atlas`) 
 (voir section 0 ci-dessous).
 Le site tourne sur des données d'amorçage locales (`data/seed/*.json` : 267 fiches humaines + 44 fiches IA),
 sans avoir besoin de Supabase configuré pour l'instant — pratique pour visualiser tout de suite.
+
+**Le référentiel de contenu est terminé à 100% (311/311 fiches au statut `"documente"`, détail dans
+`docs/brief-delegation-documentation.md`).** Les chantiers ouverts restants sont : validation de la file de
+veille (184 entrées en attente), audit qualité de second passage, clé API Voyage AI (bloquée côté Julien),
+et audit de `questions.json`.
 
 Le comparateur (`/comparateur`) est désormais un vrai sélecteur libre (n'importe quelle paire fiche humaine ×
 fiche IA), et la veille (`/veille`) tourne sur un pipeline RSS réel et testé, avec sa file de propositions
@@ -55,7 +60,7 @@ Puis ouvrir http://localhost:3000 — pages disponibles : accueil, /referentiel-
 ## 2. État d'avancement par lot (cf. section 9 du mégaprompt)
 
 - **Lot 1 — Architecture** : ✅ terminé (Next.js/Tailwind/TypeScript, modèle de données, schéma Supabase prêt dans `supabase/schema.sql`).
-- **Lot 2/3 — Amorçage contenu** : 🔄 en cours. 267 fiches humaines + 44 fiches IA générées, dont 12 fiches humaines réellement documentées (Nietzsche, Démocratie libérale, Capitalisme d'État chinois, Économie du donut, Taylorisme/OST, OKR, Spinoza, Socrate, Aristote, TCC, Kahneman-Tversky, Limites planétaires) et 6 fiches IA (Claude/Cowork, Codex, DeepSeek, AutoGPT, AlphaFold, Hallucination/fiabilité) + 6 fiches de gap analysis. Les 5 axes humains et les 6 axes IA du mégaprompt ont désormais chacun au moins une entrée (corrigé le 05/09/2026 — 2 axes humains et 4 axes IA étaient à 0 fiche jusque-là).
+- **Lot 2/3 — Amorçage puis rédaction complète du contenu** : ✅ terminé (06/09/2026). 267 fiches humaines + 44 fiches IA, **toutes documentées** (311/311, statut `"documente"` partout). Détail par fichier et méthode de recherche dans `docs/brief-delegation-documentation.md`.
 - **Audit QA (05/09/2026)** : 🔍 fait. Julien a jugé la profondeur insuffisante — deux agents indépendants (visiteur/utilisateur + vérificateur professionnel) ont audité le site en conditions réelles. Corrections appliquées : rendu de `/referentiel-humain` réparé (n'affichait jamais le contenu des fiches documentées), garde-fou anti-régression ajouté à `scripts/generate-seed.mjs` (un incident réel pendant l'audit a démontré le risque : le script a écrasé silencieusement 6 fiches documentées avant d'être corrigé et les données restaurées), axes vides comblés. Le projet est maintenant versionné dans git en local.
 - **Lot 4 — Moteur de gap analysis** : 🔄 fonctionnel. Sélecteur libre de n'importe quelle paire fiche humaine × fiche IA sur `/comparateur`, avec repli honnête "à documenter" pour les paires non encore analysées (6 paires documentées à ce jour, dont Socrate × Claude/Cowork et TCC × Claude/Cowork, ajoutées lors de l'audit QA).
 - **Lot 5 — Veille autonome** : 🔄 fonctionnel. Script réel `scripts/veille-rss.mjs` testé en conditions réelles : interroge les sources RSS actives, déduplique, dépose les nouveautés dans une file de validation manuelle affichée sur `/veille`. 5 sources actives sur 8 ; 3 désactivées après échec HTTP confirmé (Anthropic News 404, FMI et OCDE 403 — documenté dans `data/seed/veille_sources.json`). Un scheduled task quotidien (7h UTC) a été créé pour lancer ce script automatiquement, mais **il n'est pas encore lié à ton ordinateur** (approbation à donner côté device pour qu'il puisse s'exécuter — sinon il tourne dans le vide). Spiderfoot (2e canal) reste à intégrer. Aucune fiche n'est mise à jour automatiquement — validation humaine requise.
