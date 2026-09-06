@@ -138,5 +138,12 @@
     "type": "ajout",
     "cible": "social_2.json (sous-domaines management, economie, gouvernance_mondiale)",
     "resume": "social_2.json complete a 100% (71/71) : 14 fiches management (fordisme, fayolisme, bureaucratie weberienne, toyotisme/lean, MPO/Drucker, structure matricielle, 7S McKinsey, entreprise liberee, holacratie, agile/scrum, modele Spotify, ExO, management hybride, entreprise a mission), 10 economistes contemporains (Acemoglu, Robinson, Johnson, Zucman, Saez, Mazzucato, Rodrik, Thaler, Kahneman, Raworth), 8 modeles de gouvernance mondiale (hegemonie unilaterale, bipolarite, multilateralisme, gouvernance multipolaire/en reseau, minilateralisme, regionalisme, souverainisme et concert des nations). Sourcees via l API REST Wikipedia FR/EN."
+  },
+  {
+    "id": "documentation-manuelle-fiches-ia-complet-2026-09-06",
+    "date": "2026-09-06",
+    "type": "ajout",
+    "cible": "fiches_ia.json (integralite)",
+    "resume": "fiches_ia.json complete a 100% (44/44) : 7 fiches generatif_raisonnement (AlexNet, YOLO, ResNet, BERT, Llama, AlphaGo/AlphaZero/AlphaFold, Stable Diffusion/Midjourney/DALL-E), 18 fiches predictif_data_science (regression lineaire/logistique, arbres de decision, forets aleatoires, SVM, k-NN, Naive Bayes, k-means, PCA, gradient boosting, ARIMA/SARIMA, MLP, CNN, RNN, LSTM, autoencodeurs, GAN, Transformers), 3 fiches agentique (OpenAI Operator, Devin/Cognition AI, frameworks multi-agents), 4 fiches scientifique (GNoME, controle de plasma en fusion, IA en genomique/drug discovery, GraphCast), 2 limites transversales (biais herites des donnees, dependance energetique/materielle), 4 fiches sectoriel (jumeaux numeriques industriels, tutorat adaptatif EdTech, criblage virtuel de molecules, aide a la decision publique GovTech). Referentiel Atlas Humain x IA desormais documente a 100% sur les deux axes (311/311 fiches humaines + IA)."
   }
 ]

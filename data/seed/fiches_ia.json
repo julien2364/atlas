@@ -142,276 +142,1401 @@
     "id": "alexnet",
     "axe": "generatif_raisonnement",
     "nom": "AlexNet",
-    "capacites_cles": [],
-    "usages": [],
-    "limites_connues": "",
-    "sources": [],
-    "statut": "a_documenter",
-    "derniere_verification": "2026-09-05"
+    "capacites_cles": [
+      "Classification d'images à grande échelle (1000 catégories, ImageNet)",
+      "Démonstration de l'efficacité de l'apprentissage profond convolutif entraîné sur GPU",
+      "Popularisation des techniques de régularisation (dropout) et d'activation ReLU à grande échelle"
+    ],
+    "usages": [
+      {
+        "secteur": "industrie",
+        "description": "Fondation historique des systèmes de vision par ordinateur industriels (contrôle qualité visuel, tri automatisé)",
+        "trl": 9,
+        "exemples": [
+          "Inspection visuelle automatisée de pièces manufacturées",
+          "Systèmes de reconnaissance d'objets en robotique industrielle"
+        ],
+        "sources": [
+          {
+            "titre": "AlexNet — Wikipedia (EN)",
+            "type": "secondaire",
+            "url": "https://en.wikipedia.org/wiki/AlexNet"
+          }
+        ]
+      },
+      {
+        "secteur": "recherche",
+        "description": "Architecture de référence ayant déclenché la vague de recherche en apprentissage profond après sa victoire au concours ImageNet 2012",
+        "trl": 9,
+        "exemples": [
+          "Point de départ pédagogique de la plupart des cours de deep learning",
+          "Base de comparaison pour l'évaluation de nouvelles architectures de vision"
+        ],
+        "sources": [
+          {
+            "titre": "AlexNet — Wikipedia (EN)",
+            "type": "secondaire",
+            "url": "https://en.wikipedia.org/wiki/AlexNet"
+          }
+        ]
+      }
+    ],
+    "limites_connues": "Architecture aujourd'hui dépassée en précision et en efficacité par des réseaux plus profonds (ResNet, Vision Transformers) ; gourmande en mémoire pour l'époque et peu adaptée aux contraintes actuelles d'inférence embarquée.",
+    "sources": [
+      {
+        "titre": "AlexNet — Wikipedia (EN)",
+        "type": "primaire",
+        "url": "https://en.wikipedia.org/wiki/AlexNet"
+      }
+    ],
+    "statut": "documente",
+    "derniere_verification": "2026-09-06",
+    "editeur": "University of Toronto (Krizhevsky, Sutskever, Hinton)",
+    "architecture": "Réseau de neurones convolutif profond (8 couches), entraîné sur GPU"
   },
   {
     "id": "yolo",
     "axe": "generatif_raisonnement",
     "nom": "YOLO",
-    "capacites_cles": [],
-    "usages": [],
-    "limites_connues": "",
-    "sources": [],
-    "statut": "a_documenter",
-    "derniere_verification": "2026-09-05"
+    "capacites_cles": [
+      "Détection d'objets multiples et localisation par boîtes englobantes en une seule passe du réseau",
+      "Traitement en temps réel adapté à la vidéo et aux flux caméra",
+      "Nombreuses versions successives (YOLOv3 à YOLOv8+) améliorant précision et vitesse"
+    ],
+    "usages": [
+      {
+        "secteur": "industrie",
+        "description": "Surveillance et sécurité par détection d'objets et de personnes en temps réel",
+        "trl": 9,
+        "exemples": [
+          "Vidéosurveillance intelligente en temps réel",
+          "Comptage et suivi d'objets sur chaîne de production"
+        ],
+        "sources": [
+          {
+            "titre": "You Only Look Once — Wikipedia (EN)",
+            "type": "secondaire",
+            "url": "https://en.wikipedia.org/wiki/You_Only_Look_Once"
+          }
+        ]
+      },
+      {
+        "secteur": "gouvernement",
+        "description": "Applications de sécurité publique et de gestion du trafic urbain via détection vidéo temps réel",
+        "trl": 7,
+        "exemples": [
+          "Détection de véhicules et comptage de trafic routier",
+          "Systèmes d'aide à la surveillance urbaine"
+        ],
+        "sources": [
+          {
+            "titre": "You Only Look Once — Wikipedia (EN)",
+            "type": "secondaire",
+            "url": "https://en.wikipedia.org/wiki/You_Only_Look_Once"
+          }
+        ]
+      }
+    ],
+    "limites_connues": "Moins précis que des architectures à deux étapes (comme Faster R-CNN) sur la détection de très petits objets ou de scènes très denses, et les usages de vidéosurveillance qu'il permet posent des questions de vie privée et de biais algorithmique.",
+    "sources": [
+      {
+        "titre": "You Only Look Once — Wikipedia (EN)",
+        "type": "primaire",
+        "url": "https://en.wikipedia.org/wiki/You_Only_Look_Once"
+      }
+    ],
+    "statut": "documente",
+    "derniere_verification": "2026-09-06",
+    "editeur": "Joseph Redmon et al. (recherche académique, puis communauté open source)",
+    "architecture": "Réseau de neurones convolutif à passage unique (single-shot detector) pour la détection d'objets en temps réel"
   },
   {
     "id": "resnet",
     "axe": "generatif_raisonnement",
     "nom": "ResNet",
-    "capacites_cles": [],
-    "usages": [],
-    "limites_connues": "",
-    "sources": [],
-    "statut": "a_documenter",
-    "derniere_verification": "2026-09-05"
+    "capacites_cles": [
+      "Entraînement de réseaux très profonds (jusqu'à plus de 150 couches) sans dégradation de performance",
+      "Apprentissage de fonctions résiduelles plutôt que de transformations complètes couche par couche",
+      "Vainqueur du concours ImageNet Large Scale Visual Recognition Challenge (ILSVRC) 2015"
+    ],
+    "usages": [
+      {
+        "secteur": "industrie",
+        "description": "Backbone de vision par ordinateur largement réutilisé dans des systèmes de reconnaissance d'image industriels",
+        "trl": 9,
+        "exemples": [
+          "Reconnaissance faciale et biométrique",
+          "Systèmes de classification d'images à grande échelle"
+        ],
+        "sources": [
+          {
+            "titre": "Residual neural network — Wikipedia (EN)",
+            "type": "secondaire",
+            "url": "https://en.wikipedia.org/wiki/Residual_neural_network"
+          }
+        ]
+      },
+      {
+        "secteur": "recherche",
+        "description": "Architecture de référence pour la recherche en vision par ordinateur, adaptée ensuite à d'autres modalités (audio, texte)",
+        "trl": 9,
+        "exemples": [
+          "Base de nombreux travaux ultérieurs en apprentissage profond (EfficientNet, Vision Transformers hybrides)",
+          "Utilisation comme extracteur de caractéristiques pré-entraîné (transfer learning)"
+        ],
+        "sources": [
+          {
+            "titre": "Residual neural network — Wikipedia (EN)",
+            "type": "secondaire",
+            "url": "https://en.wikipedia.org/wiki/Residual_neural_network"
+          }
+        ]
+      }
+    ],
+    "limites_connues": "Conçu spécifiquement pour la vision par ordinateur, largement supplanté depuis 2020 par les architectures Vision Transformer sur les tâches où de très grands volumes de données sont disponibles, tout en restant compétitif à budget de calcul limité.",
+    "sources": [
+      {
+        "titre": "Residual neural network — Wikipedia (EN)",
+        "type": "primaire",
+        "url": "https://en.wikipedia.org/wiki/Residual_neural_network"
+      }
+    ],
+    "statut": "documente",
+    "derniere_verification": "2026-09-06",
+    "editeur": "Microsoft Research (Kaiming He et al.)",
+    "architecture": "Réseau de neurones convolutif profond à connexions résiduelles (« skip connections »), développé en 2015"
   },
   {
     "id": "bert",
     "axe": "generatif_raisonnement",
     "nom": "BERT",
-    "capacites_cles": [],
-    "usages": [],
-    "limites_connues": "",
-    "sources": [],
-    "statut": "a_documenter",
-    "derniere_verification": "2026-09-05"
+    "capacites_cles": [
+      "Représentation contextuelle bidirectionnelle du texte (prise en compte du contexte gauche et droit simultanément)",
+      "Pré-entraînement auto-supervisé suivi d'un ajustement fin (fine-tuning) sur des tâches spécifiques",
+      "Amélioration significative de l'état de l'art sur de nombreuses tâches de traitement du langage naturel dès sa sortie en 2018"
+    ],
+    "usages": [
+      {
+        "secteur": "industrie",
+        "description": "Composant méthodologique standard des moteurs de recherche et systèmes de compréhension de requêtes",
+        "trl": 9,
+        "exemples": [
+          "Amélioration de la pertinence des résultats de recherche (déployé par Google Search)",
+          "Classification de texte, analyse de sentiment, extraction d'entités nommées"
+        ],
+        "sources": [
+          {
+            "titre": "BERT (language model) — Wikipedia (EN)",
+            "type": "secondaire",
+            "url": "https://en.wikipedia.org/wiki/BERT_(language_model)"
+          }
+        ]
+      },
+      {
+        "secteur": "recherche",
+        "description": "Composant méthodologique encore couramment utilisé dans la recherche en traitement du langage naturel en 2026",
+        "trl": 9,
+        "exemples": [
+          "Base de nombreuses variantes spécialisées (RoBERTa, DistilBERT, domain-specific BERT)",
+          "Extraction de représentations vectorielles de texte pour la recherche sémantique"
+        ],
+        "sources": [
+          {
+            "titre": "BERT (language model) — Wikipedia (EN)",
+            "type": "secondaire",
+            "url": "https://en.wikipedia.org/wiki/BERT_(language_model)"
+          }
+        ]
+      }
+    ],
+    "limites_connues": "Modèle encodeur seul, non génératif par nature (contrairement aux modèles décodeurs comme GPT ou Llama), et largement dépassé en capacité de raisonnement et de génération par les grands modèles de langage conversationnels apparus depuis 2022.",
+    "sources": [
+      {
+        "titre": "BERT (language model) — Wikipedia (EN)",
+        "type": "primaire",
+        "url": "https://en.wikipedia.org/wiki/BERT_(language_model)"
+      }
+    ],
+    "statut": "documente",
+    "derniere_verification": "2026-09-06",
+    "editeur": "Google",
+    "architecture": "Transformer bidirectionnel encodeur seul (encoder-only), pré-entraîné par apprentissage auto-supervisé"
   },
   {
     "id": "llama",
     "axe": "generatif_raisonnement",
     "nom": "Llama",
-    "capacites_cles": [],
-    "usages": [],
-    "limites_connues": "",
-    "sources": [],
-    "statut": "a_documenter",
-    "derniere_verification": "2026-09-05"
+    "capacites_cles": [
+      "Génération et compréhension de texte en langage naturel à grande échelle",
+      "Poids du modèle rendus disponibles publiquement (open weights), contrairement à la plupart des grands modèles concurrents propriétaires",
+      "Déclinaisons successives (Llama 2, 3, 4) avec des tailles de paramètres et des capacités multimodales croissantes"
+    ],
+    "usages": [
+      {
+        "secteur": "industrie",
+        "description": "Base open source largement adoptée pour construire des applications d'IA générative personnalisées ou auto-hébergées",
+        "trl": 9,
+        "exemples": [
+          "Chatbots d'entreprise déployés sur infrastructure propriétaire pour des raisons de confidentialité",
+          "Modèles spécialisés (fine-tunés) pour des domaines métiers spécifiques"
+        ],
+        "sources": [
+          {
+            "titre": "Llama (language model) — Wikipedia (EN)",
+            "type": "secondaire",
+            "url": "https://en.wikipedia.org/wiki/Llama_(language_model)"
+          }
+        ]
+      },
+      {
+        "secteur": "recherche",
+        "description": "Modèle de référence en recherche académique pour l'étude et l'amélioration des grands modèles de langage, grâce à l'ouverture de ses poids",
+        "trl": 8,
+        "exemples": [
+          "Expérimentation académique sur l'alignement et la sécurité des modèles de langage",
+          "Base de nombreux modèles dérivés développés par la communauté open source"
+        ],
+        "sources": [
+          {
+            "titre": "Llama (language model) — Wikipedia (EN)",
+            "type": "secondaire",
+            "url": "https://en.wikipedia.org/wiki/Llama_(language_model)"
+          }
+        ]
+      }
+    ],
+    "limites_connues": "Comme les autres grands modèles de langage, sujet aux hallucinations factuelles ; l'ouverture des poids soulève aussi des débats sur les risques de mésusage (désinformation, contenus malveillants) plus difficiles à contenir que sur des modèles propriétaires accessibles uniquement par API.",
+    "sources": [
+      {
+        "titre": "Llama (language model) — Wikipedia (EN)",
+        "type": "primaire",
+        "url": "https://en.wikipedia.org/wiki/Llama_(language_model)"
+      }
+    ],
+    "statut": "documente",
+    "derniere_verification": "2026-09-06",
+    "editeur": "Meta AI",
+    "architecture": "Famille de grands modèles de langage (transformer décodeur), publiée en open weights à partir de février 2023"
   },
   {
     "id": "alphago-alphazero-alphafold",
     "axe": "generatif_raisonnement",
     "nom": "AlphaGo/AlphaZero/AlphaFold",
-    "capacites_cles": [],
-    "usages": [],
-    "limites_connues": "",
-    "sources": [],
-    "statut": "a_documenter",
-    "derniere_verification": "2026-09-05"
+    "capacites_cles": [
+      "AlphaGo : première IA à battre un champion du monde professionnel de Go (2016), jeu jusque-là considéré hors de portée de l'IA",
+      "AlphaZero : généralisation à plusieurs jeux (échecs, shogi, Go) par apprentissage purement autodidacte, sans données humaines",
+      "AlphaFold : prédiction de la structure tridimensionnelle des protéines à partir de leur séquence d'acides aminés, avec une précision inédite"
+    ],
+    "usages": [
+      {
+        "secteur": "science",
+        "description": "Résolution du problème du repliement des protéines, considéré comme l'un des grands défis non résolus de la biologie structurale",
+        "trl": 9,
+        "exemples": [
+          "Base de données AlphaFold couvrant la quasi-totalité des protéines connues, mise à disposition gratuite de la communauté scientifique",
+          "Accélération de la recherche sur les maladies et la conception de médicaments"
+        ],
+        "sources": [
+          {
+            "titre": "AlphaGo — Wikipedia (EN)",
+            "type": "secondaire",
+            "url": "https://en.wikipedia.org/wiki/AlphaGo"
+          }
+        ]
+      },
+      {
+        "secteur": "pharmaceutique",
+        "description": "Accélération de la découverte de cibles thérapeutiques grâce à la prédiction de structures protéiques",
+        "trl": 7,
+        "exemples": [
+          "Identification de cibles protéiques pour la conception de nouveaux médicaments",
+          "Étude de protéines impliquées dans des maladies négligées, peu étudiées faute de rentabilité commerciale"
+        ],
+        "sources": [
+          {
+            "titre": "AlphaGo — Wikipedia (EN)",
+            "type": "secondaire",
+            "url": "https://en.wikipedia.org/wiki/AlphaGo"
+          }
+        ]
+      }
+    ],
+    "limites_connues": "Les succès d'AlphaGo/AlphaZero concernent des environnements à information parfaite et règles fixes (jeux de plateau), très différents des problèmes du monde réel ; AlphaFold prédit des structures statiques et peine encore à modéliser pleinement la dynamique et les interactions protéiques complexes.",
+    "sources": [
+      {
+        "titre": "AlphaGo — Wikipedia (EN)",
+        "type": "primaire",
+        "url": "https://en.wikipedia.org/wiki/AlphaGo"
+      }
+    ],
+    "statut": "documente",
+    "derniere_verification": "2026-09-06",
+    "editeur": "DeepMind (Google)",
+    "architecture": "Apprentissage par renforcement profond combiné à une recherche arborescente Monte-Carlo (AlphaGo/AlphaZero) ; réseau de neurones spécialisé pour la prédiction de structures protéiques (AlphaFold)"
   },
   {
     "id": "stable-diffusion-midjourney-dall-e",
     "axe": "generatif_raisonnement",
     "nom": "Stable Diffusion/Midjourney/DALL-E",
-    "capacites_cles": [],
-    "usages": [],
-    "limites_connues": "",
-    "sources": [],
-    "statut": "a_documenter",
-    "derniere_verification": "2026-09-05"
+    "capacites_cles": [
+      "Génération d'images de haute qualité à partir de descriptions textuelles (text-to-image)",
+      "Stable Diffusion publié en open source dès 2022, contrairement à Midjourney et DALL-E qui restent propriétaires",
+      "Édition et variation d'images existantes, remplissage de zones manquantes (inpainting), transfert de style"
+    ],
+    "usages": [
+      {
+        "secteur": "industrie",
+        "description": "Production de visuels pour le marketing, le design graphique et la création de contenu à grande échelle",
+        "trl": 9,
+        "exemples": [
+          "Génération de visuels publicitaires et de concepts créatifs pour des agences de design",
+          "Prototypage visuel rapide dans les industries créatives (jeu vidéo, mode)"
+        ],
+        "sources": [
+          {
+            "titre": "Stable Diffusion — Wikipedia (EN)",
+            "type": "secondaire",
+            "url": "https://en.wikipedia.org/wiki/Stable_Diffusion"
+          }
+        ]
+      },
+      {
+        "secteur": "education",
+        "description": "Illustration de contenus pédagogiques et création de supports visuels personnalisés",
+        "trl": 6,
+        "exemples": [
+          "Génération d'illustrations pour des supports de cours",
+          "Visualisation de concepts abstraits pour l'enseignement"
+        ],
+        "sources": [
+          {
+            "titre": "Stable Diffusion — Wikipedia (EN)",
+            "type": "secondaire",
+            "url": "https://en.wikipedia.org/wiki/Stable_Diffusion"
+          }
+        ]
+      }
+    ],
+    "limites_connues": "Controverses juridiques et éthiques majeures sur l'entraînement à partir d'œuvres protégées par le droit d'auteur sans consentement des artistes, risques de désinformation par images truquées (deepfakes), et difficultés persistantes à générer certains détails fins (mains, texte incrusté dans l'image).",
+    "sources": [
+      {
+        "titre": "Stable Diffusion — Wikipedia (EN)",
+        "type": "primaire",
+        "url": "https://en.wikipedia.org/wiki/Stable_Diffusion"
+      }
+    ],
+    "statut": "documente",
+    "derniere_verification": "2026-09-06",
+    "editeur": "Stability AI (Stable Diffusion) ; Midjourney Inc. ; OpenAI (DALL-E)",
+    "architecture": "Modèles de diffusion (et transformer pour DALL-E 3) convertissant une description textuelle en image par débruitage progressif d'un bruit aléatoire"
   },
   {
     "id": "regression-lineaire",
     "axe": "predictif_data_science",
     "nom": "Régression linéaire",
-    "capacites_cles": [],
-    "usages": [],
-    "limites_connues": "",
-    "sources": [],
-    "statut": "a_documenter",
-    "derniere_verification": "2026-09-05"
+    "capacites_cles": [
+      "Prédiction d'une variable quantitative continue à partir d'une ou plusieurs variables explicatives",
+      "Interprétabilité forte des coefficients (effet marginal de chaque variable)",
+      "Base mathématique de nombreuses méthodes statistiques et d'apprentissage automatique plus complexes"
+    ],
+    "usages": [
+      {
+        "secteur": "industrie",
+        "description": "Prévision de ventes, de prix ou de tout indicateur quantitatif à partir de facteurs explicatifs mesurables",
+        "trl": 9,
+        "exemples": [
+          "Prévision de la demande en fonction du prix et de la saisonnalité",
+          "Modélisation de la relation entre dépenses marketing et chiffre d'affaires"
+        ],
+        "sources": [
+          {
+            "titre": "Régression linéaire — Wikipédia",
+            "type": "secondaire",
+            "url": "https://fr.wikipedia.org/wiki/Régression_linéaire"
+          }
+        ]
+      },
+      {
+        "secteur": "recherche",
+        "description": "Analyse de la relation entre variables dans des études empiriques (économie, sciences sociales, épidémiologie)",
+        "trl": 9,
+        "exemples": [
+          "Estimation de l'effet d'une politique publique sur un indicateur économique",
+          "Analyse de facteurs de risque en épidémiologie"
+        ],
+        "sources": [
+          {
+            "titre": "Régression linéaire — Wikipédia",
+            "type": "secondaire",
+            "url": "https://fr.wikipedia.org/wiki/Régression_linéaire"
+          }
+        ]
+      }
+    ],
+    "limites_connues": "Suppose une relation linéaire entre variables et est sensible aux valeurs aberrantes et à la corrélation entre variables explicatives (multicolinéarité) ; inadaptée aux relations non linéaires complexes sans transformation préalable des données.",
+    "sources": [
+      {
+        "titre": "Régression linéaire — Wikipédia",
+        "type": "primaire",
+        "url": "https://fr.wikipedia.org/wiki/Régression_linéaire"
+      }
+    ],
+    "statut": "documente",
+    "derniere_verification": "2026-09-06",
+    "editeur": "Méthode statistique classique (Legendre/Gauss, XIXe siècle), aujourd'hui implémentée dans toutes les bibliothèques de data science",
+    "architecture": "Modèle statistique paramétrique modélisant une relation linéaire entre variables explicatives et une variable cible continue"
   },
   {
     "id": "regression-logistique",
     "axe": "predictif_data_science",
     "nom": "Régression logistique",
-    "capacites_cles": [],
-    "usages": [],
-    "limites_connues": "",
-    "sources": [],
-    "statut": "a_documenter",
-    "derniere_verification": "2026-09-05"
+    "capacites_cles": [
+      "Classification binaire (ou multiclasse via extensions) avec estimation d'une probabilité d'appartenance à une classe",
+      "Interprétabilité des coefficients en termes d'odds ratio (rapport de cotes)",
+      "Modèle de référence en scoring et en classification statistique classique"
+    ],
+    "usages": [
+      {
+        "secteur": "industrie",
+        "description": "Scoring de crédit et détection de fraude bancaire à partir de variables clients",
+        "trl": 9,
+        "exemples": [
+          "Évaluation du risque de défaut de paiement d'un emprunteur",
+          "Détection de transactions frauduleuses par carte bancaire"
+        ],
+        "sources": [
+          {
+            "titre": "Régression logistique — Wikipédia",
+            "type": "secondaire",
+            "url": "https://fr.wikipedia.org/wiki/Régression_logistique"
+          }
+        ]
+      },
+      {
+        "secteur": "pharmaceutique",
+        "description": "Analyse du risque de survenue d'un événement de santé binaire en fonction de facteurs cliniques",
+        "trl": 8,
+        "exemples": [
+          "Prédiction du risque de complication post-opératoire",
+          "Modèles épidémiologiques de facteurs de risque de maladie"
+        ],
+        "sources": [
+          {
+            "titre": "Régression logistique — Wikipédia",
+            "type": "secondaire",
+            "url": "https://fr.wikipedia.org/wiki/Régression_logistique"
+          }
+        ]
+      }
+    ],
+    "limites_connues": "Suppose une relation linéaire entre les variables explicatives et le logarithme des cotes, ce qui limite sa capacité à capturer des interactions complexes sans ingénierie manuelle des variables ; performances généralement inférieures aux méthodes d'ensemble sur des données à relations non linéaires complexes.",
+    "sources": [
+      {
+        "titre": "Régression logistique — Wikipédia",
+        "type": "primaire",
+        "url": "https://fr.wikipedia.org/wiki/Régression_logistique"
+      }
+    ],
+    "statut": "documente",
+    "derniere_verification": "2026-09-06",
+    "editeur": "Méthode statistique classique (développée au XXe siècle), standard dans toutes les bibliothèques de data science",
+    "architecture": "Modèle statistique linéaire généralisé utilisant une fonction logistique pour modéliser une variable cible binaire ou catégorielle"
   },
   {
     "id": "arbres-de-decision",
     "axe": "predictif_data_science",
     "nom": "Arbres de décision",
-    "capacites_cles": [],
-    "usages": [],
-    "limites_connues": "",
-    "sources": [],
-    "statut": "a_documenter",
-    "derniere_verification": "2026-09-05"
+    "capacites_cles": [
+      "Classification et régression par une séquence de règles de décision facilement interprétables",
+      "Capacité à modéliser des relations non linéaires et des interactions entre variables sans transformation préalable",
+      "Base des méthodes d'ensemble plus puissantes (forêts aléatoires, gradient boosting)"
+    ],
+    "usages": [
+      {
+        "secteur": "gouvernement",
+        "description": "Aide à la décision administrative fondée sur des règles explicables et auditables",
+        "trl": 9,
+        "exemples": [
+          "Systèmes d'éligibilité à des aides sociales fondés sur des critères vérifiables",
+          "Modèles de risque explicables pour des décisions publiques sensibles"
+        ],
+        "sources": [
+          {
+            "titre": "Arbre de décision (apprentissage) — Wikipédia",
+            "type": "secondaire",
+            "url": "https://fr.wikipedia.org/wiki/Arbre_de_décision_(apprentissage)"
+          }
+        ]
+      },
+      {
+        "secteur": "industrie",
+        "description": "Segmentation de clientèle et modèles de décision métier explicables",
+        "trl": 9,
+        "exemples": [
+          "Segmentation de clients pour des campagnes marketing ciblées",
+          "Diagnostic de pannes fondé sur des règles de décision"
+        ],
+        "sources": [
+          {
+            "titre": "Arbre de décision (apprentissage) — Wikipédia",
+            "type": "secondaire",
+            "url": "https://fr.wikipedia.org/wiki/Arbre_de_décision_(apprentissage)"
+          }
+        ]
+      }
+    ],
+    "limites_connues": "Sujets au surapprentissage (overfitting) sur les données d'entraînement si non élagués correctement, et instables : une petite variation des données peut produire un arbre très différent, ce qui a motivé le développement des méthodes d'ensemble.",
+    "sources": [
+      {
+        "titre": "Arbre de décision (apprentissage) — Wikipédia",
+        "type": "primaire",
+        "url": "https://fr.wikipedia.org/wiki/Arbre_de_décision_(apprentissage)"
+      }
+    ],
+    "statut": "documente",
+    "derniere_verification": "2026-09-06",
+    "editeur": "Méthode d'apprentissage automatique classique (algorithmes ID3, C4.5, CART, développés à partir des années 1980)",
+    "architecture": "Structure arborescente de règles de décision successives fondées sur les valeurs des variables explicatives"
   },
   {
     "id": "forets-aleatoires",
     "axe": "predictif_data_science",
     "nom": "Forêts aléatoires",
-    "capacites_cles": [],
-    "usages": [],
-    "limites_connues": "",
-    "sources": [],
-    "statut": "a_documenter",
-    "derniere_verification": "2026-09-05"
+    "capacites_cles": [
+      "Réduction du surapprentissage propre aux arbres de décision individuels par agrégation de nombreux arbres diversifiés",
+      "Robustesse et bonnes performances par défaut sur de nombreux types de données tabulaires",
+      "Estimation de l'importance relative des variables explicatives dans la prédiction"
+    ],
+    "usages": [
+      {
+        "secteur": "industrie",
+        "description": "Modèles de prédiction robustes sur données tabulaires pour de nombreux cas d'usage métier",
+        "trl": 9,
+        "exemples": [
+          "Prédiction de la maintenance préventive d'équipements industriels",
+          "Scoring de risque client en assurance"
+        ],
+        "sources": [
+          {
+            "titre": "Forêt d'arbres décisionnels — Wikipédia",
+            "type": "secondaire",
+            "url": "https://fr.wikipedia.org/wiki/Forêt_d'arbres_décisionnels"
+          }
+        ]
+      },
+      {
+        "secteur": "pharmaceutique",
+        "description": "Modèles prédictifs à partir de données cliniques ou biologiques tabulaires",
+        "trl": 7,
+        "exemples": [
+          "Prédiction du risque de réhospitalisation à partir de dossiers patients",
+          "Classification de profils de patients à partir de données biologiques"
+        ],
+        "sources": [
+          {
+            "titre": "Forêt d'arbres décisionnels — Wikipédia",
+            "type": "secondaire",
+            "url": "https://fr.wikipedia.org/wiki/Forêt_d'arbres_décisionnels"
+          }
+        ]
+      }
+    ],
+    "limites_connues": "Moins interprétable qu'un arbre de décision unique (effet de « boîte grise »), plus coûteuse en calcul et en mémoire, et généralement surpassée sur données tabulaires structurées par les méthodes de gradient boosting (XGBoost, LightGBM) en pratique compétitive.",
+    "sources": [
+      {
+        "titre": "Forêt d'arbres décisionnels — Wikipédia",
+        "type": "primaire",
+        "url": "https://fr.wikipedia.org/wiki/Forêt_d'arbres_décisionnels"
+      }
+    ],
+    "statut": "documente",
+    "derniere_verification": "2026-09-06",
+    "editeur": "Méthode d'ensemble développée notamment par Leo Breiman (2001)",
+    "architecture": "Ensemble (bagging) d'un grand nombre d'arbres de décision entraînés sur des sous-échantillons aléatoires des données et des variables"
   },
   {
     "id": "svm",
     "axe": "predictif_data_science",
     "nom": "SVM",
-    "capacites_cles": [],
-    "usages": [],
-    "limites_connues": "",
-    "sources": [],
-    "statut": "a_documenter",
-    "derniere_verification": "2026-09-05"
+    "capacites_cles": [
+      "Classification efficace y compris en haute dimension et avec un nombre limité d'exemples d'entraînement",
+      "Extension à des frontières de décision non linéaires grâce à l'astuce du noyau",
+      "Bonnes performances théoriques garanties par la théorie de l'apprentissage statistique (marge maximale)"
+    ],
+    "usages": [
+      {
+        "secteur": "science",
+        "description": "Classification de données à haute dimension issues de mesures scientifiques",
+        "trl": 8,
+        "exemples": [
+          "Classification de signaux issus d'instruments de mesure scientifique",
+          "Reconnaissance de motifs dans des données expérimentales limitées en volume"
+        ],
+        "sources": [
+          {
+            "titre": "Machine à vecteurs de support — Wikipédia",
+            "type": "secondaire",
+            "url": "https://fr.wikipedia.org/wiki/Machine_à_vecteurs_de_support"
+          }
+        ]
+      },
+      {
+        "secteur": "industrie",
+        "description": "Classification de texte et de documents dans des applications de traitement automatique de la langue plus anciennes",
+        "trl": 8,
+        "exemples": [
+          "Filtrage de spam par classification de texte",
+          "Reconnaissance d'écriture manuscrite"
+        ],
+        "sources": [
+          {
+            "titre": "Machine à vecteurs de support — Wikipédia",
+            "type": "secondaire",
+            "url": "https://fr.wikipedia.org/wiki/Machine_à_vecteurs_de_support"
+          }
+        ]
+      }
+    ],
+    "limites_connues": "Passe mal à l'échelle sur de très grands volumes de données (complexité de calcul élevée), sensible au choix du noyau et de ses hyperparamètres, et largement supplantée par l'apprentissage profond sur les tâches de vision et de traitement du langage à grande échelle.",
+    "sources": [
+      {
+        "titre": "Machine à vecteurs de support — Wikipédia",
+        "type": "primaire",
+        "url": "https://fr.wikipedia.org/wiki/Machine_à_vecteurs_de_support"
+      }
+    ],
+    "statut": "documente",
+    "derniere_verification": "2026-09-06",
+    "editeur": "Méthode statistique développée notamment par Vladimir Vapnik et Corinna Cortes (années 1990)",
+    "architecture": "Algorithme de classification (ou régression) cherchant l'hyperplan séparateur qui maximise la marge entre les classes, avec extension non linéaire via des fonctions noyau (kernel trick)"
   },
   {
     "id": "k-nn",
     "axe": "predictif_data_science",
     "nom": "K-NN",
-    "capacites_cles": [],
-    "usages": [],
-    "limites_connues": "",
-    "sources": [],
-    "statut": "a_documenter",
-    "derniere_verification": "2026-09-05"
+    "capacites_cles": [
+      "Méthode non paramétrique simple ne nécessitant pas de phase d'entraînement explicite (apprentissage paresseux)",
+      "Capacité à modéliser des frontières de décision complexes et non linéaires",
+      "Facilement compréhensible et utilisée comme méthode de référence pédagogique en apprentissage automatique"
+    ],
+    "usages": [
+      {
+        "secteur": "industrie",
+        "description": "Systèmes de recommandation fondés sur la similarité entre utilisateurs ou produits",
+        "trl": 8,
+        "exemples": [
+          "Recommandation de produits similaires à partir des achats passés",
+          "Détection d'anomalies par comparaison aux observations les plus proches"
+        ],
+        "sources": [
+          {
+            "titre": "Méthode des k plus proches voisins — Wikipédia",
+            "type": "secondaire",
+            "url": "https://fr.wikipedia.org/wiki/Méthode_des_k_plus_proches_voisins"
+          }
+        ]
+      },
+      {
+        "secteur": "recherche",
+        "description": "Méthode de référence pédagogique et de comparaison de base (baseline) dans les études de classification",
+        "trl": 9,
+        "exemples": [
+          "Baseline de comparaison dans les publications de recherche en apprentissage automatique",
+          "Classification exploratoire de jeux de données de petite taille"
+        ],
+        "sources": [
+          {
+            "titre": "Méthode des k plus proches voisins — Wikipédia",
+            "type": "secondaire",
+            "url": "https://fr.wikipedia.org/wiki/Méthode_des_k_plus_proches_voisins"
+          }
+        ]
+      }
+    ],
+    "limites_connues": "Coût de calcul élevé à l'inférence sur de grands jeux de données (recherche des voisins parmi toutes les observations), sensible au choix du nombre de voisins k et à l'échelle des variables, et performances dégradées en haute dimension (fléau de la dimension).",
+    "sources": [
+      {
+        "titre": "Méthode des k plus proches voisins — Wikipédia",
+        "type": "primaire",
+        "url": "https://fr.wikipedia.org/wiki/Méthode_des_k_plus_proches_voisins"
+      }
+    ],
+    "statut": "documente",
+    "derniere_verification": "2026-09-06",
+    "editeur": "Méthode statistique classique d'apprentissage non paramétrique (années 1950-1960)",
+    "architecture": "Algorithme de classification (ou régression) qui attribue à une observation la classe majoritaire (ou la moyenne) de ses k plus proches voisins dans l'espace des variables"
   },
   {
     "id": "naive-bayes",
     "axe": "predictif_data_science",
     "nom": "Naive Bayes",
-    "capacites_cles": [],
-    "usages": [],
-    "limites_connues": "",
-    "sources": [],
-    "statut": "a_documenter",
-    "derniere_verification": "2026-09-05"
+    "capacites_cles": [
+      "Classification probabiliste rapide et peu coûteuse en calcul, y compris sur de très grands volumes de données",
+      "Performances souvent étonnamment bonnes en pratique malgré l'hypothèse simplificatrice d'indépendance des variables",
+      "Adapté nativement à la classification de texte via des représentations de type sac de mots"
+    ],
+    "usages": [
+      {
+        "secteur": "industrie",
+        "description": "Filtrage de spam et classification de texte à grande échelle",
+        "trl": 9,
+        "exemples": [
+          "Filtres anti-spam dans les messageries électroniques",
+          "Classification automatique de tickets de support client"
+        ],
+        "sources": [
+          {
+            "titre": "Classification naïve bayésienne — Wikipédia",
+            "type": "secondaire",
+            "url": "https://fr.wikipedia.org/wiki/Classification_naïve_bayésienne"
+          }
+        ]
+      },
+      {
+        "secteur": "recherche",
+        "description": "Modèle de référence simple et rapide pour des tâches de classification de texte en traitement du langage naturel",
+        "trl": 8,
+        "exemples": [
+          "Analyse de sentiment de base sur des corpus de texte",
+          "Baseline de comparaison pour des tâches de classification documentaire"
+        ],
+        "sources": [
+          {
+            "titre": "Classification naïve bayésienne — Wikipédia",
+            "type": "secondaire",
+            "url": "https://fr.wikipedia.org/wiki/Classification_naïve_bayésienne"
+          }
+        ]
+      }
+    ],
+    "limites_connues": "L'hypothèse d'indépendance conditionnelle entre variables est rarement vérifiée dans les données réelles, ce qui limite ses performances face à des méthodes plus sophistiquées lorsque les variables sont fortement corrélées.",
+    "sources": [
+      {
+        "titre": "Classification naïve bayésienne — Wikipédia",
+        "type": "primaire",
+        "url": "https://fr.wikipedia.org/wiki/Classification_naïve_bayésienne"
+      }
+    ],
+    "statut": "documente",
+    "derniere_verification": "2026-09-06",
+    "editeur": "Méthode statistique classique fondée sur le théorème de Bayes (utilisée en apprentissage automatique depuis les années 1960-1990)",
+    "architecture": "Classifieur probabiliste appliquant le théorème de Bayes avec une hypothèse simplificatrice d'indépendance conditionnelle entre les variables explicatives"
   },
   {
     "id": "k-means",
     "axe": "predictif_data_science",
     "nom": "K-Means",
-    "capacites_cles": [],
-    "usages": [],
-    "limites_connues": "",
-    "sources": [],
-    "statut": "a_documenter",
-    "derniere_verification": "2026-09-05"
+    "capacites_cles": [
+      "Segmentation non supervisée de données en groupes homogènes sans étiquettes préalables",
+      "Simplicité algorithmique et rapidité d'exécution sur de grands volumes de données",
+      "Largement utilisé comme étape exploratoire préalable à d'autres analyses"
+    ],
+    "usages": [
+      {
+        "secteur": "industrie",
+        "description": "Segmentation de clientèle et de marché pour des stratégies commerciales différenciées",
+        "trl": 9,
+        "exemples": [
+          "Segmentation de clients selon leurs comportements d'achat pour du marketing ciblé",
+          "Regroupement de produits similaires dans un catalogue"
+        ],
+        "sources": [
+          {
+            "titre": "K-moyennes — Wikipédia",
+            "type": "secondaire",
+            "url": "https://fr.wikipedia.org/wiki/K-moyennes"
+          }
+        ]
+      },
+      {
+        "secteur": "recherche",
+        "description": "Analyse exploratoire de données pour identifier des structures ou sous-groupes non étiquetés",
+        "trl": 9,
+        "exemples": [
+          "Regroupement de profils de patients aux caractéristiques similaires en recherche médicale",
+          "Analyse exploratoire de données de sondage ou d'enquête"
+        ],
+        "sources": [
+          {
+            "titre": "K-moyennes — Wikipédia",
+            "type": "secondaire",
+            "url": "https://fr.wikipedia.org/wiki/K-moyennes"
+          }
+        ]
+      }
+    ],
+    "limites_connues": "Nécessite de fixer a priori le nombre de groupes k, converge vers un optimum local dépendant de l'initialisation, et suppose implicitement des groupes de forme sphérique et de taille comparable, ce qui limite sa pertinence sur des données à structure plus complexe.",
+    "sources": [
+      {
+        "titre": "K-moyennes — Wikipédia",
+        "type": "primaire",
+        "url": "https://fr.wikipedia.org/wiki/K-moyennes"
+      }
+    ],
+    "statut": "documente",
+    "derniere_verification": "2026-09-06",
+    "editeur": "Algorithme classique de partitionnement de données (formalisé par Stuart Lloyd et James MacQueen dans les années 1950-1960)",
+    "architecture": "Algorithme de partitionnement non supervisé qui regroupe les observations en k groupes (clusters) en minimisant la distance intra-groupe aux centroïdes"
   },
   {
     "id": "pca",
     "axe": "predictif_data_science",
     "nom": "PCA",
-    "capacites_cles": [],
-    "usages": [],
-    "limites_connues": "",
-    "sources": [],
-    "statut": "a_documenter",
-    "derniere_verification": "2026-09-05"
+    "capacites_cles": [
+      "Réduction du nombre de variables tout en préservant l'essentiel de l'information (variance) contenue dans les données",
+      "Visualisation de données à haute dimension en deux ou trois dimensions",
+      "Suppression du bruit et de la redondance (colinéarité) entre variables avant modélisation"
+    ],
+    "usages": [
+      {
+        "secteur": "science",
+        "description": "Analyse exploratoire de données scientifiques à très grand nombre de variables (génomique, imagerie)",
+        "trl": 9,
+        "exemples": [
+          "Réduction de dimension de données génomiques comportant des dizaines de milliers de variables",
+          "Analyse en composantes principales de données climatiques ou géophysiques"
+        ],
+        "sources": [
+          {
+            "titre": "Analyse en composantes principales — Wikipédia",
+            "type": "secondaire",
+            "url": "https://fr.wikipedia.org/wiki/Analyse_en_composantes_principales"
+          }
+        ]
+      },
+      {
+        "secteur": "industrie",
+        "description": "Prétraitement de données avant modélisation par apprentissage automatique",
+        "trl": 9,
+        "exemples": [
+          "Réduction de dimension avant entraînement d'un modèle de classification",
+          "Compression de données pour le stockage et la visualisation"
+        ],
+        "sources": [
+          {
+            "titre": "Analyse en composantes principales — Wikipédia",
+            "type": "secondaire",
+            "url": "https://fr.wikipedia.org/wiki/Analyse_en_composantes_principales"
+          }
+        ]
+      }
+    ],
+    "limites_connues": "Méthode linéaire, incapable de capturer des structures non linéaires complexes dans les données (contrairement à des méthodes comme t-SNE ou UMAP), et les composantes principales obtenues perdent l'interprétabilité directe des variables d'origine.",
+    "sources": [
+      {
+        "titre": "Analyse en composantes principales — Wikipédia",
+        "type": "primaire",
+        "url": "https://fr.wikipedia.org/wiki/Analyse_en_composantes_principales"
+      }
+    ],
+    "statut": "documente",
+    "derniere_verification": "2026-09-06",
+    "editeur": "Méthode statistique classique développée par Karl Pearson (1901) puis Harold Hotelling (1933)",
+    "architecture": "Méthode de réduction de dimension linéaire projetant les données sur les axes (composantes principales) qui maximisent la variance expliquée"
   },
   {
     "id": "gradient-boosting-xgboost-lightgbm-catboost",
     "axe": "predictif_data_science",
     "nom": "Gradient Boosting (XGBoost/LightGBM/CatBoost)",
-    "capacites_cles": [],
-    "usages": [],
-    "limites_connues": "",
-    "sources": [],
-    "statut": "a_documenter",
-    "derniere_verification": "2026-09-05"
+    "capacites_cles": [
+      "Performances de pointe sur données tabulaires structurées, souvent supérieures aux réseaux de neurones profonds sur ce type de données",
+      "Gestion native des valeurs manquantes et des variables catégorielles (notamment CatBoost)",
+      "Optimisations de vitesse et de mémoire (LightGBM) permettant l'entraînement sur de très grands volumes de données"
+    ],
+    "usages": [
+      {
+        "secteur": "industrie",
+        "description": "Modèle de référence dans la majorité des compétitions et applications de data science sur données tabulaires",
+        "trl": 9,
+        "exemples": [
+          "Scoring de crédit et détection de fraude dans le secteur financier",
+          "Prédiction de la demande et optimisation logistique"
+        ],
+        "sources": [
+          {
+            "titre": "Gradient boosting — Wikipedia (EN)",
+            "type": "secondaire",
+            "url": "https://en.wikipedia.org/wiki/Gradient_boosting"
+          }
+        ]
+      },
+      {
+        "secteur": "gouvernement",
+        "description": "Modèles prédictifs sur données administratives structurées pour l'aide à la décision publique",
+        "trl": 7,
+        "exemples": [
+          "Prédiction du risque de défaillance d'entreprises pour le ciblage de contrôles",
+          "Modèles de risque dans la lutte contre la fraude sociale ou fiscale"
+        ],
+        "sources": [
+          {
+            "titre": "Gradient boosting — Wikipedia (EN)",
+            "type": "secondaire",
+            "url": "https://en.wikipedia.org/wiki/Gradient_boosting"
+          }
+        ]
+      }
+    ],
+    "limites_connues": "Moins interprétable qu'un arbre de décision unique, sensible au surapprentissage si les hyperparamètres ne sont pas correctement réglés, et nécessite un savoir-faire technique important pour l'optimisation (tuning) par rapport à des modèles plus simples.",
+    "sources": [
+      {
+        "titre": "Gradient boosting — Wikipedia (EN)",
+        "type": "primaire",
+        "url": "https://en.wikipedia.org/wiki/Gradient_boosting"
+      }
+    ],
+    "statut": "documente",
+    "derniere_verification": "2026-09-06",
+    "editeur": "Méthode de gradient boosting formalisée par Jerome Friedman (1999) ; implémentations XGBoost (2014), LightGBM (Microsoft, 2016), CatBoost (Yandex, 2017)",
+    "architecture": "Méthode d'ensemble séquentielle construisant successivement des arbres de décision faibles, chacun corrigeant les erreurs résiduelles des arbres précédents par descente de gradient"
   },
   {
     "id": "series-temporelles-arima-sarima",
     "axe": "predictif_data_science",
     "nom": "Séries temporelles ARIMA/SARIMA",
-    "capacites_cles": [],
-    "usages": [],
-    "limites_connues": "",
-    "sources": [],
-    "statut": "a_documenter",
-    "derniere_verification": "2026-09-05"
+    "capacites_cles": [
+      "Modélisation et prévision de séries temporelles univariées à partir de leurs valeurs et erreurs passées",
+      "Prise en compte explicite de la saisonnalité via l'extension SARIMA",
+      "Cadre statistique rigoureux avec tests de diagnostic (stationnarité, autocorrélation des résidus)"
+    ],
+    "usages": [
+      {
+        "secteur": "industrie",
+        "description": "Prévision de séries temporelles économiques et opérationnelles",
+        "trl": 9,
+        "exemples": [
+          "Prévision de ventes ou de trafic avec forte composante saisonnière",
+          "Prévision de la demande énergétique"
+        ],
+        "sources": [
+          {
+            "titre": "Modèle ARIMA — Wikipédia",
+            "type": "secondaire",
+            "url": "https://fr.wikipedia.org/wiki/Modèle_ARIMA"
+          }
+        ]
+      },
+      {
+        "secteur": "gouvernement",
+        "description": "Prévisions macroéconomiques et démographiques utilisées par les instituts statistiques publics",
+        "trl": 9,
+        "exemples": [
+          "Prévision d'indicateurs macroéconomiques (inflation, chômage) par les instituts statistiques nationaux",
+          "Modélisation de séries démographiques"
+        ],
+        "sources": [
+          {
+            "titre": "Modèle ARIMA — Wikipédia",
+            "type": "secondaire",
+            "url": "https://fr.wikipedia.org/wiki/Modèle_ARIMA"
+          }
+        ]
+      }
+    ],
+    "limites_connues": "Suppose une relation linéaire et une stationnarité (après différenciation) qui ne rendent pas compte de dynamiques non linéaires complexes, et est de plus en plus concurrencé par des modèles d'apprentissage profond (RNN, Transformers temporels) sur des séries multivariées volumineuses.",
+    "sources": [
+      {
+        "titre": "Modèle ARIMA — Wikipédia",
+        "type": "primaire",
+        "url": "https://fr.wikipedia.org/wiki/Modèle_ARIMA"
+      }
+    ],
+    "statut": "documente",
+    "derniere_verification": "2026-09-06",
+    "editeur": "Méthodologie statistique formalisée par George Box et Gwilym Jenkins (1970)",
+    "architecture": "Modèles statistiques de séries temporelles combinant autorégression (AR), différenciation (I, intégration) et moyenne mobile (MA), avec extension saisonnière pour SARIMA"
   },
   {
     "id": "perceptron-multicouche-mlp",
     "axe": "predictif_data_science",
     "nom": "Perceptron multicouche (MLP)",
-    "capacites_cles": [],
-    "usages": [],
-    "limites_connues": "",
-    "sources": [],
-    "statut": "a_documenter",
-    "derniere_verification": "2026-09-05"
+    "capacites_cles": [
+      "Approximation de fonctions non linéaires complexes entre variables d'entrée et de sortie",
+      "Architecture fondatrice ayant permis, via la rétropropagation du gradient, l'essor de l'ensemble de l'apprentissage profond moderne",
+      "Applicable à la fois à des tâches de classification et de régression sur données structurées"
+    ],
+    "usages": [
+      {
+        "secteur": "industrie",
+        "description": "Modélisation prédictive de relations non linéaires complexes sur données structurées",
+        "trl": 8,
+        "exemples": [
+          "Modèles de prédiction de défaillance d'équipements à partir de capteurs multiples",
+          "Modèles de scoring combinant de nombreuses variables non linéairement liées"
+        ],
+        "sources": [
+          {
+            "titre": "Perceptron multicouche — Wikipédia",
+            "type": "secondaire",
+            "url": "https://fr.wikipedia.org/wiki/Perceptron_multicouche"
+          }
+        ]
+      },
+      {
+        "secteur": "recherche",
+        "description": "Brique de base pédagogique et historique de la recherche en apprentissage profond",
+        "trl": 9,
+        "exemples": [
+          "Enseignement des fondements de l'apprentissage profond",
+          "Composant de nombreuses architectures hybrides plus complexes"
+        ],
+        "sources": [
+          {
+            "titre": "Perceptron multicouche — Wikipédia",
+            "type": "secondaire",
+            "url": "https://fr.wikipedia.org/wiki/Perceptron_multicouche"
+          }
+        ]
+      }
+    ],
+    "limites_connues": "Nécessite généralement davantage de données d'entraînement que les méthodes statistiques classiques pour bien généraliser, sujet au surapprentissage sans régularisation adéquate, et surpassé par des architectures spécialisées (CNN pour les images, Transformers pour le texte) sur les tâches où la structure des données peut être exploitée.",
+    "sources": [
+      {
+        "titre": "Perceptron multicouche — Wikipédia",
+        "type": "primaire",
+        "url": "https://fr.wikipedia.org/wiki/Perceptron_multicouche"
+      }
+    ],
+    "statut": "documente",
+    "derniere_verification": "2026-09-06",
+    "editeur": "Architecture fondatrice des réseaux de neurones (popularisée par la rétropropagation du gradient, Rumelhart, Hinton, Williams, 1986)",
+    "architecture": "Réseau de neurones artificiels entièrement connecté (feedforward), composé d'une couche d'entrée, d'une ou plusieurs couches cachées et d'une couche de sortie"
   },
   {
     "id": "cnn",
     "axe": "predictif_data_science",
     "nom": "CNN",
-    "capacites_cles": [],
-    "usages": [],
-    "limites_connues": "",
-    "sources": [],
-    "statut": "a_documenter",
-    "derniere_verification": "2026-09-05"
+    "capacites_cles": [
+      "Extraction automatique de caractéristiques visuelles hiérarchiques sans ingénierie manuelle",
+      "Invariance par translation grâce au partage de poids des filtres convolutifs",
+      "Architecture dominante en vision par ordinateur pendant plus d'une décennie (classification, détection, segmentation d'images)"
+    ],
+    "usages": [
+      {
+        "secteur": "pharmaceutique",
+        "description": "Analyse d'images médicales pour l'aide au diagnostic",
+        "trl": 8,
+        "exemples": [
+          "Détection de tumeurs sur imagerie radiologique (IRM, scanner)",
+          "Analyse d'images histopathologiques pour le dépistage du cancer"
+        ],
+        "sources": [
+          {
+            "titre": "Réseau neuronal convolutif — Wikipédia",
+            "type": "secondaire",
+            "url": "https://fr.wikipedia.org/wiki/Réseau_neuronal_convolutif"
+          }
+        ]
+      },
+      {
+        "secteur": "industrie",
+        "description": "Vision par ordinateur industrielle et grand public (reconnaissance d'image, véhicules autonomes)",
+        "trl": 9,
+        "exemples": [
+          "Contrôle qualité visuel automatisé en usine",
+          "Perception visuelle des véhicules autonomes"
+        ],
+        "sources": [
+          {
+            "titre": "Réseau neuronal convolutif — Wikipédia",
+            "type": "secondaire",
+            "url": "https://fr.wikipedia.org/wiki/Réseau_neuronal_convolutif"
+          }
+        ]
+      }
+    ],
+    "limites_connues": "Nécessite de grands volumes de données annotées pour bien généraliser, moins efficace que les architectures Transformer sur certaines tâches à très grande échelle disposant de données massives, et reste vulnérable à des perturbations adversariales (images légèrement modifiées trompant la classification).",
+    "sources": [
+      {
+        "titre": "Réseau neuronal convolutif — Wikipédia",
+        "type": "primaire",
+        "url": "https://fr.wikipedia.org/wiki/Réseau_neuronal_convolutif"
+      }
+    ],
+    "statut": "documente",
+    "derniere_verification": "2026-09-06",
+    "editeur": "Architecture développée notamment par Yann LeCun (LeNet, fin des années 1980-1990), popularisée à grande échelle par AlexNet (2012)",
+    "architecture": "Réseau de neurones convolutif utilisant des couches de convolution et de pooling pour extraire des caractéristiques spatiales hiérarchiques (bords, textures, formes)"
   },
   {
     "id": "rnn",
     "axe": "predictif_data_science",
     "nom": "RNN",
-    "capacites_cles": [],
-    "usages": [],
-    "limites_connues": "",
-    "sources": [],
-    "statut": "a_documenter",
-    "derniere_verification": "2026-09-05"
+    "capacites_cles": [
+      "Modélisation de séquences de longueur variable (texte, séries temporelles, audio) via un état caché récurrent",
+      "Capacité à traiter des dépendances contextuelles entre éléments successifs d'une séquence",
+      "Architecture fondatrice ayant précédé et inspiré les LSTM puis les Transformers pour le traitement séquentiel"
+    ],
+    "usages": [
+      {
+        "secteur": "industrie",
+        "description": "Traitement de séquences avant la généralisation des Transformers (reconnaissance vocale, traduction automatique historique)",
+        "trl": 7,
+        "exemples": [
+          "Systèmes de reconnaissance vocale de première génération",
+          "Modèles de traduction automatique neuronale antérieurs aux Transformers"
+        ],
+        "sources": [
+          {
+            "titre": "Réseau de neurones récurrents — Wikipédia",
+            "type": "secondaire",
+            "url": "https://fr.wikipedia.org/wiki/Réseau_de_neurones_récurrents"
+          }
+        ]
+      },
+      {
+        "secteur": "recherche",
+        "description": "Modélisation de séries temporelles et de signaux séquentiels en recherche appliquée",
+        "trl": 7,
+        "exemples": [
+          "Modélisation de signaux physiologiques séquentiels en recherche biomédicale",
+          "Prévision de séries temporelles multivariées"
+        ],
+        "sources": [
+          {
+            "titre": "Réseau de neurones récurrents — Wikipédia",
+            "type": "secondaire",
+            "url": "https://fr.wikipedia.org/wiki/Réseau_de_neurones_récurrents"
+          }
+        ]
+      }
+    ],
+    "limites_connues": "Souffre du problème de disparition ou d'explosion du gradient sur de longues séquences, ce qui limite sa capacité à capturer des dépendances à très long terme (problème résolu partiellement par les LSTM) ; largement supplanté depuis 2017 par les architectures Transformer, plus efficacement parallélisables.",
+    "sources": [
+      {
+        "titre": "Réseau de neurones récurrents — Wikipédia",
+        "type": "primaire",
+        "url": "https://fr.wikipedia.org/wiki/Réseau_de_neurones_récurrents"
+      }
+    ],
+    "statut": "documente",
+    "derniere_verification": "2026-09-06",
+    "editeur": "Architecture développée à partir des travaux des années 1980-1990 (Rumelhart, Hopfield, Elman, Jordan)",
+    "architecture": "Réseau de neurones récurrent traitant des séquences en réutilisant un état caché mis à jour à chaque pas de temps, permettant de modéliser des dépendances temporelles"
   },
   {
     "id": "lstm",
     "axe": "predictif_data_science",
     "nom": "LSTM",
-    "capacites_cles": [],
-    "usages": [],
-    "limites_connues": "",
-    "sources": [],
-    "statut": "a_documenter",
-    "derniere_verification": "2026-09-05"
+    "capacites_cles": [
+      "Capacité à mémoriser des dépendances à long terme dans des séquences, contrairement aux RNN simples",
+      "Mécanisme de portes permettant de conserver, oublier ou mettre à jour sélectivement l'information au fil du temps",
+      "Architecture dominante en traitement séquentiel (texte, audio, séries temporelles) avant l'avènement des Transformers"
+    ],
+    "usages": [
+      {
+        "secteur": "industrie",
+        "description": "Traduction automatique et reconnaissance vocale de nouvelle génération (avant les Transformers)",
+        "trl": 8,
+        "exemples": [
+          "Systèmes de traduction automatique neuronale de seconde génération",
+          "Génération de texte prédictif (clavier intelligent)"
+        ],
+        "sources": [
+          {
+            "titre": "Long short-term memory — Wikipedia (EN)",
+            "type": "secondaire",
+            "url": "https://en.wikipedia.org/wiki/Long_short-term_memory"
+          }
+        ]
+      },
+      {
+        "secteur": "industrie",
+        "description": "Prévision de séries temporelles complexes à dépendances longues",
+        "trl": 8,
+        "exemples": [
+          "Prévision de la consommation énergétique à partir de séries historiques longues",
+          "Détection d'anomalies dans des séquences de données de capteurs"
+        ],
+        "sources": [
+          {
+            "titre": "Long short-term memory — Wikipedia (EN)",
+            "type": "secondaire",
+            "url": "https://en.wikipedia.org/wiki/Long_short-term_memory"
+          }
+        ]
+      }
+    ],
+    "limites_connues": "Traitement intrinsèquement séquentiel (pas à pas) qui limite la parallélisation de l'entraînement par rapport aux Transformers, ce qui explique son remplacement progressif par ces derniers sur la plupart des tâches de traitement du langage depuis 2017-2018.",
+    "sources": [
+      {
+        "titre": "Long short-term memory — Wikipedia (EN)",
+        "type": "primaire",
+        "url": "https://en.wikipedia.org/wiki/Long_short-term_memory"
+      }
+    ],
+    "statut": "documente",
+    "derniere_verification": "2026-09-06",
+    "editeur": "Architecture développée par Sepp Hochreiter et Jürgen Schmidhuber (1997)",
+    "architecture": "Variante de réseau de neurones récurrent dotée de portes (entrée, oubli, sortie) régulant un état de cellule mémoire à long terme, résolvant le problème de disparition du gradient des RNN classiques"
   },
   {
     "id": "autoencodeurs",
     "axe": "predictif_data_science",
     "nom": "Autoencodeurs",
-    "capacites_cles": [],
-    "usages": [],
-    "limites_connues": "",
-    "sources": [],
-    "statut": "a_documenter",
-    "derniere_verification": "2026-09-05"
+    "capacites_cles": [
+      "Apprentissage non supervisé de représentations compressées (latentes) des données",
+      "Réduction de dimension non linéaire, complémentaire de l'ACP pour des structures de données complexes",
+      "Détection d'anomalies par mesure de l'erreur de reconstruction (une observation mal reconstruite est potentiellement anormale)"
+    ],
+    "usages": [
+      {
+        "secteur": "industrie",
+        "description": "Détection d'anomalies et de fraude par analyse de l'erreur de reconstruction",
+        "trl": 8,
+        "exemples": [
+          "Détection de transactions financières anormales",
+          "Détection de défauts de fabrication à partir d'images ou de signaux capteurs"
+        ],
+        "sources": [
+          {
+            "titre": "Autoencodeur — Wikipédia",
+            "type": "secondaire",
+            "url": "https://fr.wikipedia.org/wiki/Autoencodeur"
+          }
+        ]
+      },
+      {
+        "secteur": "science",
+        "description": "Compression et débruitage de données scientifiques à haute dimension",
+        "trl": 7,
+        "exemples": [
+          "Débruitage d'images ou de signaux expérimentaux",
+          "Compression de données génomiques ou d'imagerie scientifique"
+        ],
+        "sources": [
+          {
+            "titre": "Autoencodeur — Wikipédia",
+            "type": "secondaire",
+            "url": "https://fr.wikipedia.org/wiki/Autoencodeur"
+          }
+        ]
+      }
+    ],
+    "limites_connues": "La qualité de la représentation latente apprise dépend fortement de l'architecture et des hyperparamètres choisis, et les autoencodeurs classiques peinent à générer de nouvelles données réalistes par rapport aux modèles génératifs plus récents comme les GAN ou les modèles de diffusion.",
+    "sources": [
+      {
+        "titre": "Autoencodeur — Wikipédia",
+        "type": "primaire",
+        "url": "https://fr.wikipedia.org/wiki/Autoencodeur"
+      }
+    ],
+    "statut": "documente",
+    "derniere_verification": "2026-09-06",
+    "editeur": "Architecture de réseau de neurones popularisée à partir des années 1980-1990, largement développée depuis les années 2010",
+    "architecture": "Réseau de neurones non supervisé composé d'un encodeur qui compresse les données en une représentation latente de dimension réduite, et d'un décodeur qui tente de reconstruire les données d'origine"
   },
   {
     "id": "gan",
     "axe": "predictif_data_science",
     "nom": "GAN",
-    "capacites_cles": [],
-    "usages": [],
-    "limites_connues": "",
-    "sources": [],
-    "statut": "a_documenter",
-    "derniere_verification": "2026-09-05"
+    "capacites_cles": [
+      "Génération de données synthétiques réalistes (images, sons, texte) par apprentissage adversarial",
+      "Amélioration progressive et conjointe du générateur et du discriminateur au fil de l'entraînement",
+      "Base conceptuelle de nombreuses applications de génération d'images avant l'essor des modèles de diffusion"
+    ],
+    "usages": [
+      {
+        "secteur": "industrie",
+        "description": "Génération d'images et de données synthétiques pour la création de contenu ou l'augmentation de données",
+        "trl": 8,
+        "exemples": [
+          "Génération de visages ou d'objets synthétiques pour l'entraînement d'autres modèles (données synthétiques)",
+          "Amélioration de la résolution d'images (super-résolution)"
+        ],
+        "sources": [
+          {
+            "titre": "Generative adversarial network — Wikipedia (EN)",
+            "type": "secondaire",
+            "url": "https://en.wikipedia.org/wiki/Generative_adversarial_network"
+          }
+        ]
+      },
+      {
+        "secteur": "recherche",
+        "description": "Génération de données synthétiques pour pallier le manque de données réelles dans certains domaines scientifiques",
+        "trl": 7,
+        "exemples": [
+          "Génération de données médicales synthétiques préservant la confidentialité des patients",
+          "Simulation de scénarios rares pour l'entraînement de modèles"
+        ],
+        "sources": [
+          {
+            "titre": "Generative adversarial network — Wikipedia (EN)",
+            "type": "secondaire",
+            "url": "https://en.wikipedia.org/wiki/Generative_adversarial_network"
+          }
+        ]
+      }
+    ],
+    "limites_connues": "Entraînement notoirement instable (risque d'effondrement du mode, mode collapse, où le générateur produit une diversité limitée de sorties), et largement supplanté depuis 2022 par les modèles de diffusion pour la génération d'images de haute qualité ; également utilisé pour créer des deepfakes, posant des risques de désinformation.",
+    "sources": [
+      {
+        "titre": "Generative adversarial network — Wikipedia (EN)",
+        "type": "primaire",
+        "url": "https://en.wikipedia.org/wiki/Generative_adversarial_network"
+      }
+    ],
+    "statut": "documente",
+    "derniere_verification": "2026-09-06",
+    "editeur": "Concept développé par Ian Goodfellow et ses collègues (juin 2014)",
+    "architecture": "Deux réseaux de neurones (un générateur et un discriminateur) mis en compétition dans un jeu à somme nulle : le générateur tente de produire des données réalistes, le discriminateur tente de les distinguer des données réelles"
   },
   {
     "id": "transformers",
     "axe": "predictif_data_science",
     "nom": "Transformers",
-    "capacites_cles": [],
-    "usages": [],
-    "limites_connues": "",
-    "sources": [],
-    "statut": "a_documenter",
-    "derniere_verification": "2026-09-05"
+    "capacites_cles": [
+      "Traitement parallèle de séquences entières via l'attention, permettant un entraînement beaucoup plus rapide et scalable que les RNN/LSTM",
+      "Capture de dépendances à très longue portée dans le texte, l'image ou l'audio via le mécanisme d'attention",
+      "Architecture fondatrice de la quasi-totalité des grands modèles de langage et de vision modernes (BERT, GPT, Llama, Vision Transformers)"
+    ],
+    "usages": [
+      {
+        "secteur": "industrie",
+        "description": "Fondation architecturale de la quasi-totalité des applications d'IA générative actuelles",
+        "trl": 9,
+        "exemples": [
+          "Assistants conversationnels et générateurs de texte (grands modèles de langage)",
+          "Systèmes de traduction automatique de nouvelle génération"
+        ],
+        "sources": [
+          {
+            "titre": "Transformer (deep learning architecture) — Wikipedia (EN)",
+            "type": "secondaire",
+            "url": "https://en.wikipedia.org/wiki/Transformer_(deep_learning_architecture)"
+          }
+        ]
+      },
+      {
+        "secteur": "recherche",
+        "description": "Architecture de référence quasi universelle en recherche sur l'apprentissage profond depuis 2018",
+        "trl": 9,
+        "exemples": [
+          "Base de la quasi-totalité des publications de recherche en traitement du langage depuis 2018",
+          "Extension aux domaines de la vision (Vision Transformers) et de la biologie (AlphaFold)"
+        ],
+        "sources": [
+          {
+            "titre": "Transformer (deep learning architecture) — Wikipedia (EN)",
+            "type": "secondaire",
+            "url": "https://en.wikipedia.org/wiki/Transformer_(deep_learning_architecture)"
+          }
+        ]
+      }
+    ],
+    "limites_connues": "Coût de calcul et de mémoire croissant de façon quadratique avec la longueur de la séquence traitée (attention classique), ce qui pose des défis pour le traitement de contextes très longs, et nécessite des volumes de données et de calcul d'entraînement considérables pour atteindre ses meilleures performances.",
+    "sources": [
+      {
+        "titre": "Transformer (deep learning architecture) — Wikipedia (EN)",
+        "type": "primaire",
+        "url": "https://en.wikipedia.org/wiki/Transformer_(deep_learning_architecture)"
+      }
+    ],
+    "statut": "documente",
+    "derniere_verification": "2026-09-06",
+    "editeur": "Architecture introduite par des chercheurs de Google dans l'article « Attention Is All You Need » (2017)",
+    "architecture": "Architecture de réseau de neurones fondée sur le mécanisme d'attention multi-têtes (self-attention), traitant l'ensemble d'une séquence en parallèle plutôt que pas à pas"
   },
   {
     "id": "autogpt",
@@ -440,40 +1565,164 @@
     "id": "openai-operator-agents-de-navigation-web",
     "axe": "agentique",
     "nom": "OpenAI Operator / agents de navigation web",
-    "editeur": null,
-    "architecture": null,
-    "capacites_cles": [],
-    "usages": [],
-    "limites_connues": "",
-    "sources": [],
-    "statut": "a_documenter",
-    "derniere_verification": "2026-09-05"
+    "editeur": "OpenAI (Operator) et divers éditeurs concurrents d'agents de navigation web",
+    "architecture": "Agent combinant un grand modèle de langage multimodal à un contrôle direct d'un navigateur web (perception visuelle de la page, clics, saisie de formulaires) pour accomplir des tâches en ligne de bout en bout",
+    "capacites_cles": [
+      "Navigation autonome sur des sites web réels pour accomplir des tâches multi-étapes (réservation, achat, remplissage de formulaires)",
+      "Perception visuelle de l'interface web combinée à un raisonnement sur les actions à effectuer",
+      "Intervention humaine possible pour les étapes sensibles (paiement, authentification)"
+    ],
+    "usages": [
+      {
+        "secteur": "industrie",
+        "description": "Automatisation de tâches administratives et commerciales répétitives sur des interfaces web existantes",
+        "trl": 6,
+        "exemples": [
+          "Automatisation de réservations ou de commandes en ligne pour le compte d'un utilisateur",
+          "Extraction et remplissage automatisé de formulaires web répétitifs"
+        ],
+        "sources": [
+          {
+            "titre": "OpenAI — Wikipedia (EN)",
+            "type": "secondaire",
+            "url": "https://en.wikipedia.org/wiki/OpenAI"
+          }
+        ]
+      },
+      {
+        "secteur": "gouvernement",
+        "description": "Assistance à la navigation dans des démarches administratives en ligne complexes",
+        "trl": 4,
+        "exemples": [
+          "Aide à la complétion de démarches administratives en ligne pour des usagers peu à l'aise avec le numérique"
+        ],
+        "sources": [
+          {
+            "titre": "OpenAI — Wikipedia (EN)",
+            "type": "secondaire",
+            "url": "https://en.wikipedia.org/wiki/OpenAI"
+          }
+        ]
+      }
+    ],
+    "limites_connues": "Fiabilité encore limitée sur des sites web complexes ou peu structurés, risque d'erreurs coûteuses sur des actions irréversibles (achats, envois), et vulnérabilité à des attaques par injection de contenu malveillant caché dans les pages web visitées (prompt injection).",
+    "sources": [
+      {
+        "titre": "OpenAI — Wikipedia (EN)",
+        "type": "primaire",
+        "url": "https://en.wikipedia.org/wiki/OpenAI"
+      }
+    ],
+    "statut": "documente",
+    "derniere_verification": "2026-09-06"
   },
   {
     "id": "devin-cognition-ai",
     "axe": "agentique",
     "nom": "Devin (Cognition AI)",
-    "editeur": null,
-    "architecture": null,
-    "capacites_cles": [],
-    "usages": [],
-    "limites_connues": "",
-    "sources": [],
-    "statut": "a_documenter",
-    "derniere_verification": "2026-09-05"
+    "editeur": "Cognition Labs",
+    "architecture": "Agent d'ingénierie logicielle autonome combinant un grand modèle de langage à un environnement de développement complet (terminal, éditeur de code, navigateur) pour planifier et exécuter des tâches de programmation de bout en bout",
+    "capacites_cles": [
+      "Planification et exécution autonome de tâches de développement logiciel multi-étapes (écriture de code, tests, déboguage)",
+      "Utilisation d'outils de développement complets (terminal, navigateur, éditeur) de façon intégrée",
+      "Présenté comme l'un des premiers agents visant l'autonomie complète sur des tâches d'ingénierie logicielle réelles"
+    ],
+    "usages": [
+      {
+        "secteur": "industrie",
+        "description": "Assistance et automatisation partielle du développement logiciel en entreprise",
+        "trl": 6,
+        "exemples": [
+          "Résolution automatisée de tickets de bugs simples à moyens",
+          "Génération et exécution de suites de tests pour du code existant"
+        ],
+        "sources": [
+          {
+            "titre": "Devin AI — Wikipedia (EN)",
+            "type": "secondaire",
+            "url": "https://en.wikipedia.org/wiki/Devin_AI"
+          }
+        ]
+      },
+      {
+        "secteur": "recherche",
+        "description": "Objet d'étude et de benchmarking pour évaluer les capacités réelles d'autonomie des agents d'IA en ingénierie logicielle",
+        "trl": 6,
+        "exemples": [
+          "Utilisation comme référence dans des benchmarks d'agents de programmation autonomes (ex. SWE-bench)"
+        ],
+        "sources": [
+          {
+            "titre": "Devin AI — Wikipedia (EN)",
+            "type": "secondaire",
+            "url": "https://en.wikipedia.org/wiki/Devin_AI"
+          }
+        ]
+      }
+    ],
+    "limites_connues": "A reçu à la fois des éloges et un scepticisme marqué : plusieurs démonstrations initiales de ses capacités ont été jugées exagérées ou trompeuses par des évaluations indépendantes, ce qui illustre plus largement la difficulté de mesurer objectivement l'autonomie réelle des agents de codage IA.",
+    "sources": [
+      {
+        "titre": "Devin AI — Wikipedia (EN)",
+        "type": "primaire",
+        "url": "https://en.wikipedia.org/wiki/Devin_AI"
+      }
+    ],
+    "statut": "documente",
+    "derniere_verification": "2026-09-06"
   },
   {
     "id": "frameworks-multi-agents-langgraph-crewai-autogen",
     "axe": "agentique",
     "nom": "Frameworks multi-agents (LangGraph, CrewAI, AutoGen)",
-    "editeur": null,
-    "architecture": null,
-    "capacites_cles": [],
-    "usages": [],
-    "limites_connues": "",
-    "sources": [],
-    "statut": "a_documenter",
-    "derniere_verification": "2026-09-05"
+    "editeur": "LangChain (LangGraph), CrewAI Inc. (CrewAI), Microsoft Research (AutoGen)",
+    "architecture": "Bibliothèques logicielles open source permettant d'orchestrer plusieurs agents fondés sur des modèles de langage, chacun doté d'un rôle, d'outils et d'objectifs spécifiques, coordonnés pour accomplir collectivement une tâche complexe",
+    "capacites_cles": [
+      "Orchestration de conversations et de flux de travail entre plusieurs agents IA spécialisés (planificateur, exécutant, vérificateur)",
+      "Répartition de tâches complexes en sous-tâches confiées à des agents dédiés, à l'image d'une équipe humaine",
+      "Frameworks open source largement adoptés par la communauté de développeurs pour construire des applications agentiques personnalisées"
+    ],
+    "usages": [
+      {
+        "secteur": "industrie",
+        "description": "Automatisation de flux de travail métier complexes nécessitant la coordination de plusieurs sous-tâches spécialisées",
+        "trl": 6,
+        "exemples": [
+          "Automatisation de pipelines de recherche et rédaction de contenu par plusieurs agents spécialisés",
+          "Orchestration d'agents pour des processus métier multi-étapes (support client, veille)"
+        ],
+        "sources": [
+          {
+            "titre": "LangChain, CrewAI, AutoGen — documentation des projets",
+            "type": "secondaire"
+          }
+        ]
+      },
+      {
+        "secteur": "recherche",
+        "description": "Cadre expérimental privilégié pour la recherche académique sur la collaboration entre agents IA autonomes",
+        "trl": 6,
+        "exemples": [
+          "Étude de la coordination et de la division du travail entre agents IA autonomes",
+          "Expérimentation de architectures multi-agents pour la résolution de problèmes complexes"
+        ],
+        "sources": [
+          {
+            "titre": "LangChain, CrewAI, AutoGen — documentation des projets",
+            "type": "secondaire"
+          }
+        ]
+      }
+    ],
+    "limites_connues": "La coordination entre plusieurs agents augmente la complexité de déboguage et les coûts de calcul (chaque agent consommant ses propres appels au modèle de langage), et les erreurs d'un agent peuvent se propager et s'amplifier dans le système multi-agent sans supervision humaine adéquate.",
+    "sources": [
+      {
+        "titre": "LangChain, CrewAI, AutoGen — documentation des projets",
+        "type": "primaire"
+      }
+    ],
+    "statut": "documente",
+    "derniere_verification": "2026-09-06"
   },
   {
     "id": "alphafold-deepmind",
@@ -527,53 +1776,211 @@
     "id": "gnome-decouverte-de-materiaux",
     "axe": "scientifique",
     "nom": "GNoME (découverte de matériaux)",
-    "editeur": null,
-    "architecture": null,
-    "capacites_cles": [],
-    "usages": [],
-    "limites_connues": "",
-    "sources": [],
-    "statut": "a_documenter",
-    "derniere_verification": "2026-09-05"
+    "editeur": "Google DeepMind",
+    "architecture": "Réseaux de neurones sur graphes (Graph Networks for Materials Exploration) entraînés à prédire la stabilité de structures cristallines candidates",
+    "capacites_cles": [
+      "Prédiction à grande échelle de la stabilité thermodynamique de nouvelles structures cristallines",
+      "Découverte annoncée en 2023 de plus de 2 millions de nouveaux matériaux candidats, dont plusieurs centaines de milliers jugés stables",
+      "Mise à disposition ouverte d'une partie des structures découvertes pour la communauté scientifique"
+    ],
+    "usages": [
+      {
+        "secteur": "science",
+        "description": "Accélération de la découverte de nouveaux matériaux pour la recherche en science des matériaux",
+        "trl": 7,
+        "exemples": [
+          "Identification de candidats matériaux pour des batteries plus performantes",
+          "Recherche de nouveaux matériaux supraconducteurs ou semi-conducteurs"
+        ],
+        "sources": [
+          {
+            "titre": "GNoME (Google DeepMind, 2023)",
+            "type": "primaire"
+          }
+        ]
+      },
+      {
+        "secteur": "industrie",
+        "description": "Accélération de la recherche et développement de matériaux pour l'industrie électronique et énergétique",
+        "trl": 5,
+        "exemples": [
+          "Exploration de matériaux candidats pour l'industrie des batteries et du stockage d'énergie"
+        ],
+        "sources": [
+          {
+            "titre": "GNoME (Google DeepMind, 2023)",
+            "type": "primaire"
+          }
+        ]
+      }
+    ],
+    "limites_connues": "Les prédictions de stabilité restent théoriques (calculs de simulation) et nécessitent une validation expérimentale en laboratoire, longue et coûteuse, avant toute application industrielle réelle ; une partie significative des matériaux prédits stables n'a pas encore été synthétisée ni confirmée en pratique.",
+    "sources": [
+      {
+        "titre": "GNoME (Google DeepMind, 2023)",
+        "type": "primaire"
+      }
+    ],
+    "statut": "documente",
+    "derniere_verification": "2026-09-06"
   },
   {
     "id": "ia-pour-le-controle-de-plasma-en-fusion-nucleaire",
     "axe": "scientifique",
     "nom": "IA pour le contrôle de plasma en fusion nucléaire",
-    "editeur": null,
-    "architecture": null,
-    "capacites_cles": [],
-    "usages": [],
-    "limites_connues": "",
-    "sources": [],
-    "statut": "a_documenter",
-    "derniere_verification": "2026-09-05"
+    "editeur": "Google DeepMind, en collaboration avec le Swiss Plasma Center (EPFL)",
+    "architecture": "Agent d'apprentissage par renforcement entraîné en simulation puis déployé pour contrôler en temps réel les bobines magnétiques d'un tokamak",
+    "capacites_cles": [
+      "Contrôle en temps réel de la configuration du plasma dans un réacteur à fusion de type tokamak",
+      "Capacité à stabiliser des configurations de plasma complexes et variées sans reprogrammation manuelle pour chaque configuration",
+      "Démonstration publiée en 2022 sur le tokamak expérimental TCV de l'EPFL en Suisse"
+    ],
+    "usages": [
+      {
+        "secteur": "science",
+        "description": "Recherche expérimentale en physique des plasmas et fusion nucléaire contrôlée",
+        "trl": 6,
+        "exemples": [
+          "Stabilisation de nouvelles configurations de plasma sur des tokamaks de recherche",
+          "Réduction du temps d'ingénierie nécessaire pour tester de nouvelles configurations de confinement"
+        ],
+        "sources": [
+          {
+            "titre": "DeepMind — Magnetic control of tokamak plasmas (Nature, 2022)",
+            "type": "primaire"
+          }
+        ]
+      },
+      {
+        "secteur": "industrie",
+        "description": "Accélération potentielle du développement de futurs réacteurs à fusion commerciaux",
+        "trl": 4,
+        "exemples": [
+          "Application potentielle au contrôle de futurs réacteurs à fusion de plus grande échelle (ITER et successeurs)"
+        ],
+        "sources": [
+          {
+            "titre": "DeepMind — Magnetic control of tokamak plasmas (Nature, 2022)",
+            "type": "primaire"
+          }
+        ]
+      }
+    ],
+    "limites_connues": "Démontré à ce jour uniquement sur des tokamaks expérimentaux de taille réduite ; le passage à l'échelle de réacteurs de fusion commerciaux de grande taille reste un défi ouvert, et la fusion nucléaire elle-même n'a pas encore atteint la rentabilité énergétique nette à l'échelle industrielle.",
+    "sources": [
+      {
+        "titre": "DeepMind — Magnetic control of tokamak plasmas (Nature, 2022)",
+        "type": "primaire"
+      }
+    ],
+    "statut": "documente",
+    "derniere_verification": "2026-09-06"
   },
   {
     "id": "ia-en-genomique-et-drug-discovery",
     "axe": "scientifique",
     "nom": "IA en génomique et drug discovery",
-    "editeur": null,
-    "architecture": null,
-    "capacites_cles": [],
-    "usages": [],
-    "limites_connues": "",
-    "sources": [],
-    "statut": "a_documenter",
-    "derniere_verification": "2026-09-05"
+    "editeur": "Multiples acteurs : DeepMind (AlphaFold), Insilico Medicine, Isomorphic Labs, laboratoires pharmaceutiques et académiques",
+    "architecture": "Modèles d'apprentissage profond (souvent dérivés des architectures Transformer et de prédiction de structures moléculaires) appliqués à l'analyse de séquences génomiques et à la conception de molécules candidates",
+    "capacites_cles": [
+      "Prédiction de structures protéiques et d'interactions moléculaires accélérant l'identification de cibles thérapeutiques",
+      "Criblage virtuel de vastes bibliothèques de molécules candidates avant synthèse et test en laboratoire",
+      "Analyse de séquences génomiques pour identifier des variants associés à des maladies"
+    ],
+    "usages": [
+      {
+        "secteur": "pharmaceutique",
+        "description": "Accélération des étapes précoces de découverte de médicaments (identification de cibles et de molécules candidates)",
+        "trl": 7,
+        "exemples": [
+          "Identification de molécules candidates pour des maladies rares ou négligées",
+          "Réduction du temps et du coût des étapes précoces de développement pharmaceutique"
+        ],
+        "sources": [
+          {
+            "titre": "AlphaFold — impact sur la recherche pharmaceutique",
+            "type": "secondaire"
+          }
+        ]
+      },
+      {
+        "secteur": "science",
+        "description": "Recherche fondamentale en génomique et biologie moléculaire assistée par IA",
+        "trl": 8,
+        "exemples": [
+          "Analyse de variants génétiques associés à des maladies",
+          "Étude des interactions protéine-protéine à grande échelle"
+        ],
+        "sources": [
+          {
+            "titre": "AlphaFold — impact sur la recherche pharmaceutique",
+            "type": "secondaire"
+          }
+        ]
+      }
+    ],
+    "limites_connues": "Les prédictions computationnelles ne remplacent pas les essais cliniques, seule étape permettant de confirmer l'efficacité et l'innocuité réelles d'un traitement chez l'humain ; le passage du laboratoire au marché reste long (souvent une décennie) et coûteux malgré l'accélération apportée par l'IA sur les étapes amont.",
+    "sources": [
+      {
+        "titre": "AlphaFold — impact sur la recherche pharmaceutique",
+        "type": "primaire"
+      }
+    ],
+    "statut": "documente",
+    "derniere_verification": "2026-09-06"
   },
   {
     "id": "ia-en-modelisation-climatique-type-graphcast",
     "axe": "scientifique",
     "nom": "IA en modélisation climatique (type GraphCast)",
-    "editeur": null,
-    "architecture": null,
-    "capacites_cles": [],
-    "usages": [],
-    "limites_connues": "",
-    "sources": [],
-    "statut": "a_documenter",
-    "derniere_verification": "2026-09-05"
+    "editeur": "Google DeepMind (GraphCast) et autres modèles météorologiques par IA concurrents (Pangu-Weather de Huawei, FourCastNet de NVIDIA)",
+    "architecture": "Réseau de neurones sur graphes entraîné sur des décennies de données météorologiques historiques (réanalyses ERA5) pour prédire l'évolution de l'atmosphère",
+    "capacites_cles": [
+      "Prévisions météorologiques mondiales à 10 jours produites en quelques minutes sur une seule machine, contre plusieurs heures de calcul intensif pour les modèles physiques traditionnels",
+      "Précision annoncée supérieure aux modèles physiques de référence sur la majorité des variables météorologiques testées",
+      "Coût de calcul et empreinte énergétique par prévision considérablement réduits par rapport aux modèles numériques classiques"
+    ],
+    "usages": [
+      {
+        "secteur": "gouvernement",
+        "description": "Complément aux modèles de prévision météorologique opérationnels des services publics nationaux",
+        "trl": 7,
+        "exemples": [
+          "Prévision rapide de trajectoires de phénomènes météorologiques extrêmes (cyclones, tempêtes)",
+          "Alerte précoce pour la gestion de crises climatiques"
+        ],
+        "sources": [
+          {
+            "titre": "GraphCast (Google DeepMind, publié dans Science, 2023)",
+            "type": "primaire"
+          }
+        ]
+      },
+      {
+        "secteur": "science",
+        "description": "Recherche en modélisation climatique et météorologique assistée par apprentissage automatique",
+        "trl": 7,
+        "exemples": [
+          "Étude de l'évolution de phénomènes climatiques à partir de simulations rapides multiples",
+          "Comparaison et validation croisée avec les modèles physiques traditionnels"
+        ],
+        "sources": [
+          {
+            "titre": "GraphCast (Google DeepMind, publié dans Science, 2023)",
+            "type": "primaire"
+          }
+        ]
+      }
+    ],
+    "limites_connues": "Entraîné sur des données climatiques historiques, ce type de modèle peut être moins fiable face à des conditions climatiques extrêmes ou inédites qui s'écartent significativement de la distribution des données d'entraînement, notamment dans un contexte de changement climatique modifiant les régimes météorologiques de référence.",
+    "sources": [
+      {
+        "titre": "GraphCast (Google DeepMind, publié dans Science, 2023)",
+        "type": "primaire"
+      }
+    ],
+    "statut": "documente",
+    "derniere_verification": "2026-09-06"
   },
   {
     "id": "hallucination-et-fiabilite-factuelle-limite-transversale",
@@ -597,78 +2004,316 @@
     "id": "biais-herites-des-donnees-d-entrainement-limite-transversale",
     "axe": "limites",
     "nom": "Biais hérités des données d'entraînement (limite transversale)",
-    "editeur": null,
-    "architecture": null,
-    "capacites_cles": [],
-    "usages": [],
-    "limites_connues": "",
-    "sources": [],
-    "statut": "a_documenter",
-    "derniere_verification": "2026-09-05"
+    "editeur": "Limite transversale documentée par la recherche académique en éthique de l'IA (fairness in machine learning)",
+    "architecture": "N/A — limite structurelle affectant tout système d'apprentissage automatique entraîné sur des données historiques",
+    "capacites_cles": [
+      "Reproduction et parfois amplification des biais sociaux, historiques ou de sélection présents dans les données d'entraînement",
+      "Effet documenté sur de nombreux domaines : recrutement, octroi de crédit, justice prédictive, reconnaissance faciale",
+      "Objet d'un champ de recherche académique dédié (fairness, accountability and transparency in machine learning)"
+    ],
+    "usages": [
+      {
+        "secteur": "gouvernement",
+        "description": "Enjeu central de la régulation de l'IA dans les usages publics sensibles (justice, aides sociales, recrutement public)",
+        "trl": 9,
+        "exemples": [
+          "Audits de biais imposés par certaines réglementations sur les systèmes de décision automatisée",
+          "Contentieux juridiques liés à des discriminations algorithmiques documentées"
+        ],
+        "sources": [
+          {
+            "titre": "Recherche académique sur l'équité algorithmique (fairness in ML)",
+            "type": "secondaire"
+          }
+        ]
+      },
+      {
+        "secteur": "industrie",
+        "description": "Risque de conformité et de réputation majeur pour toute entreprise déployant des systèmes de décision automatisée",
+        "trl": 9,
+        "exemples": [
+          "Audits de biais dans les systèmes de recrutement automatisés par IA",
+          "Correction de biais dans les algorithmes de scoring de crédit"
+        ],
+        "sources": [
+          {
+            "titre": "Recherche académique sur l'équité algorithmique (fairness in ML)",
+            "type": "secondaire"
+          }
+        ]
+      }
+    ],
+    "limites_connues": "Il n'existe pas de solution technique universelle et neutre pour éliminer les biais : différentes définitions mathématiques de l'équité (fairness) sont mutuellement incompatibles entre elles, ce qui signifie qu'un choix de correction reste toujours, in fine, un choix normatif et politique.",
+    "sources": [
+      {
+        "titre": "Recherche académique sur l'équité algorithmique (fairness in ML)",
+        "type": "primaire"
+      }
+    ],
+    "statut": "documente",
+    "derniere_verification": "2026-09-06"
   },
   {
     "id": "dependance-energetique-et-materielle-de-l-ia-limite-transversale",
     "axe": "limites",
     "nom": "Dépendance énergétique et matérielle de l'IA (limite transversale)",
-    "editeur": null,
-    "architecture": null,
-    "capacites_cles": [],
-    "usages": [],
-    "limites_connues": "",
-    "sources": [],
-    "statut": "a_documenter",
-    "derniere_verification": "2026-09-05"
+    "editeur": "Limite transversale documentée par la recherche sur l'empreinte environnementale de l'IA et les chaînes d'approvisionnement en semi-conducteurs",
+    "architecture": "N/A — limite structurelle liée à l'infrastructure matérielle (centres de données, GPU, semi-conducteurs) nécessaire à l'entraînement et à l'inférence des modèles d'IA",
+    "capacites_cles": [
+      "Consommation électrique et besoin en eau de refroidissement croissants des centres de données d'IA, documentés par plusieurs études et rapports d'agences de l'énergie",
+      "Dépendance de l'ensemble de la chaîne à un nombre restreint de fabricants de semi-conducteurs avancés, concentrés géographiquement (Taïwan notamment)",
+      "Empreinte matérielle liée à l'extraction de métaux rares et de terres rares nécessaires à la fabrication des puces et serveurs"
+    ],
+    "usages": [
+      {
+        "secteur": "gouvernement",
+        "description": "Enjeu de politique énergétique et de sécurité d'approvisionnement pour les États hébergeant de grandes infrastructures d'IA",
+        "trl": 9,
+        "exemples": [
+          "Politiques publiques d'investissement dans la capacité électrique dédiée aux centres de données",
+          "Stratégies nationales de sécurisation de l'approvisionnement en semi-conducteurs"
+        ],
+        "sources": [
+          {
+            "titre": "Rapports sur l'empreinte énergétique de l'IA (AIE, études académiques)",
+            "type": "secondaire"
+          }
+        ]
+      },
+      {
+        "secteur": "industrie",
+        "description": "Contrainte structurelle croissante pour les grandes entreprises technologiques développant des modèles d'IA de pointe",
+        "trl": 9,
+        "exemples": [
+          "Investissements massifs dans de nouvelles capacités de production électrique dédiées (y compris nucléaire)",
+          "Recherche d'architectures de modèles plus économes en calcul"
+        ],
+        "sources": [
+          {
+            "titre": "Rapports sur l'empreinte énergétique de l'IA (AIE, études académiques)",
+            "type": "secondaire"
+          }
+        ]
+      }
+    ],
+    "limites_connues": "Les gains d'efficacité énergétique par unité de calcul sont pour l'instant largement compensés par la croissance du volume de calcul consacré à l'entraînement de modèles toujours plus grands (effet rebond), ce qui rend incertaine la soutenabilité environnementale à long terme de la trajectoire actuelle de développement de l'IA.",
+    "sources": [
+      {
+        "titre": "Rapports sur l'empreinte énergétique de l'IA (AIE, études académiques)",
+        "type": "primaire"
+      }
+    ],
+    "statut": "documente",
+    "derniere_verification": "2026-09-06"
   },
   {
     "id": "jumeaux-numeriques-industriels-ia",
     "axe": "sectoriel",
     "nom": "Jumeaux numériques industriels (IA)",
-    "editeur": null,
-    "architecture": null,
-    "capacites_cles": [],
-    "usages": [],
-    "limites_connues": "",
-    "sources": [],
-    "statut": "a_documenter",
-    "derniere_verification": "2026-09-05"
+    "editeur": "Multiples éditeurs industriels (Siemens, Dassault Systèmes, General Electric, NVIDIA Omniverse)",
+    "architecture": "Modèles de simulation numérique enrichis de composants d'apprentissage automatique, répliquant virtuellement le comportement d'un système physique réel à partir de données de capteurs",
+    "capacites_cles": [
+      "Réplique virtuelle en temps réel d'un actif physique (machine, usine, infrastructure) permettant simulation et prédiction de son comportement",
+      "Détection précoce d'anomalies et prédiction de pannes par comparaison entre comportement réel et comportement simulé attendu",
+      "Optimisation de scénarios (maintenance, production) testés virtuellement avant application sur le système physique réel"
+    ],
+    "usages": [
+      {
+        "secteur": "industrie",
+        "description": "Maintenance prédictive et optimisation de la production dans l'industrie manufacturière et énergétique",
+        "trl": 8,
+        "exemples": [
+          "Jumeau numérique de turbines ou de moteurs pour anticiper les besoins de maintenance",
+          "Simulation de lignes de production entières avant modification physique"
+        ],
+        "sources": [
+          {
+            "titre": "Jumeaux numériques industriels — documentation sectorielle (Siemens, GE, Dassault Systèmes)",
+            "type": "secondaire"
+          }
+        ]
+      },
+      {
+        "secteur": "gouvernement",
+        "description": "Modélisation d'infrastructures publiques critiques (réseaux d'eau, d'énergie, de transport)",
+        "trl": 6,
+        "exemples": [
+          "Jumeaux numériques de réseaux électriques ou d'infrastructures urbaines pour la planification"
+        ],
+        "sources": [
+          {
+            "titre": "Jumeaux numériques industriels — documentation sectorielle (Siemens, GE, Dassault Systèmes)",
+            "type": "secondaire"
+          }
+        ]
+      }
+    ],
+    "limites_connues": "La qualité prédictive du jumeau numérique dépend entièrement de la fidélité de sa calibration aux données réelles, qui se dégrade dans le temps (dérive du modèle) si elle n'est pas régulièrement réactualisée, et sa mise en place initiale reste coûteuse et complexe pour des systèmes physiques très hétérogènes.",
+    "sources": [
+      {
+        "titre": "Jumeaux numériques industriels — documentation sectorielle (Siemens, GE, Dassault Systèmes)",
+        "type": "primaire"
+      }
+    ],
+    "statut": "documente",
+    "derniere_verification": "2026-09-06"
   },
   {
     "id": "tutorat-adaptatif-personnalise-edtech-ia",
     "axe": "sectoriel",
     "nom": "Tutorat adaptatif personnalisé (EdTech IA)",
-    "editeur": null,
-    "architecture": null,
-    "capacites_cles": [],
-    "usages": [],
-    "limites_connues": "",
-    "sources": [],
-    "statut": "a_documenter",
-    "derniere_verification": "2026-09-05"
+    "editeur": "Multiples acteurs EdTech (Khan Academy/Khanmigo, Duolingo, Squirrel AI, plateformes d'apprentissage adaptatif)",
+    "architecture": "Systèmes combinant modèles de suivi des connaissances de l'élève (knowledge tracing) et grands modèles de langage pour adapter en continu le contenu et le rythme pédagogique",
+    "capacites_cles": [
+      "Adaptation en temps réel de la difficulté et du contenu pédagogique au niveau de compréhension mesuré de chaque élève",
+      "Génération d'exercices et de feedback personnalisés à la volée plutôt qu'à partir d'un contenu figé",
+      "Suivi longitudinal de la progression individuelle permettant d'identifier précocement les difficultés d'apprentissage"
+    ],
+    "usages": [
+      {
+        "secteur": "education",
+        "description": "Personnalisation de l'apprentissage à grande échelle dans l'enseignement primaire, secondaire et la formation continue",
+        "trl": 7,
+        "exemples": [
+          "Tuteurs virtuels adaptant les exercices de mathématiques au niveau réel de chaque élève",
+          "Plateformes de langues ajustant la difficulté des leçons selon la progression individuelle"
+        ],
+        "sources": [
+          {
+            "titre": "Systèmes de tutorat adaptatif — documentation sectorielle EdTech",
+            "type": "secondaire"
+          }
+        ]
+      },
+      {
+        "secteur": "industrie",
+        "description": "Formation professionnelle continue personnalisée en entreprise",
+        "trl": 6,
+        "exemples": [
+          "Parcours de formation en entreprise adaptés au niveau et aux lacunes de chaque salarié"
+        ],
+        "sources": [
+          {
+            "titre": "Systèmes de tutorat adaptatif — documentation sectorielle EdTech",
+            "type": "secondaire"
+          }
+        ]
+      }
+    ],
+    "limites_connues": "Les études sur l'efficacité pédagogique réelle de ces systèmes à grande échelle restent mitigées et hétérogènes selon les contextes et les disciplines, et leur généralisation soulève des questions sur la collecte de données comportementales détaillées d'élèves mineurs et sur le risque de réduire l'apprentissage à une simple optimisation algorithmique.",
+    "sources": [
+      {
+        "titre": "Systèmes de tutorat adaptatif — documentation sectorielle EdTech",
+        "type": "primaire"
+      }
+    ],
+    "statut": "documente",
+    "derniere_verification": "2026-09-06"
   },
   {
     "id": "criblage-virtuel-de-molecules-ia-pharmaceutique",
     "axe": "sectoriel",
     "nom": "Criblage virtuel de molécules (IA pharmaceutique)",
-    "editeur": null,
-    "architecture": null,
-    "capacites_cles": [],
-    "usages": [],
-    "limites_connues": "",
-    "sources": [],
-    "statut": "a_documenter",
-    "derniere_verification": "2026-09-05"
+    "editeur": "Multiples acteurs (Insilico Medicine, Isomorphic Labs, Recursion Pharmaceuticals, laboratoires pharmaceutiques historiques)",
+    "architecture": "Modèles d'apprentissage profond (souvent génératifs) entraînés à prédire les propriétés physico-chimiques et l'activité biologique de molécules candidates sans passer par la synthèse physique",
+    "capacites_cles": [
+      "Évaluation virtuelle de millions à milliards de molécules candidates pour une cible thérapeutique donnée, à une vitesse et une échelle inatteignables expérimentalement",
+      "Génération de novo de nouvelles structures moléculaires optimisées pour des propriétés pharmacologiques souhaitées",
+      "Réduction significative du nombre de molécules à synthétiser et tester physiquement en laboratoire"
+    ],
+    "usages": [
+      {
+        "secteur": "pharmaceutique",
+        "description": "Accélération de la phase de découverte précoce de candidats médicaments avant les essais précliniques",
+        "trl": 7,
+        "exemples": [
+          "Criblage virtuel de bibliothèques de molécules pour des cibles thérapeutiques spécifiques",
+          "Conception de novo de molécules candidates optimisées"
+        ],
+        "sources": [
+          {
+            "titre": "Criblage virtuel de molécules par IA — documentation sectorielle pharmaceutique",
+            "type": "secondaire"
+          }
+        ]
+      },
+      {
+        "secteur": "science",
+        "description": "Recherche académique en chimie médicinale assistée par apprentissage automatique",
+        "trl": 7,
+        "exemples": [
+          "Étude de relations structure-activité à grande échelle par apprentissage automatique",
+          "Recherche de molécules candidates pour des maladies négligées à faible potentiel commercial"
+        ],
+        "sources": [
+          {
+            "titre": "Criblage virtuel de molécules par IA — documentation sectorielle pharmaceutique",
+            "type": "secondaire"
+          }
+        ]
+      }
+    ],
+    "limites_connues": "Les prédictions virtuelles de propriétés moléculaires restent des approximations qui doivent être confirmées par des essais expérimentaux réels, et le taux d'échec en essais cliniques (efficacité, toxicité chez l'humain) demeure élevé même pour des molécules identifiées par criblage virtuel, ce qui limite pour l'instant le raccourcissement global du temps de développement pharmaceutique.",
+    "sources": [
+      {
+        "titre": "Criblage virtuel de molécules par IA — documentation sectorielle pharmaceutique",
+        "type": "primaire"
+      }
+    ],
+    "statut": "documente",
+    "derniere_verification": "2026-09-06"
   },
   {
     "id": "aide-a-la-decision-publique-govtech-ia",
     "axe": "sectoriel",
     "nom": "Aide à la décision publique (GovTech IA)",
-    "editeur": null,
-    "architecture": null,
-    "capacites_cles": [],
-    "usages": [],
-    "limites_connues": "",
-    "sources": [],
-    "statut": "a_documenter",
-    "derniere_verification": "2026-09-05"
+    "editeur": "Multiples administrations publiques et fournisseurs GovTech (systèmes déployés notamment aux Pays-Bas, au Royaume-Uni, en France, aux États-Unis)",
+    "architecture": "Systèmes de scoring et de classification par apprentissage automatique (souvent des modèles d'ensemble comme le gradient boosting) appliqués à des données administratives pour prioriser ou orienter des décisions publiques",
+    "capacites_cles": [
+      "Priorisation et ciblage de contrôles ou d'interventions publiques (fraude, inspections, aides sociales) à partir de données administratives",
+      "Aide à la décision pour l'allocation de ressources publiques limitées (contrôles fiscaux, inspections du travail, aides sociales)",
+      "Automatisation partielle du traitement de dossiers administratifs volumineux"
+    ],
+    "usages": [
+      {
+        "secteur": "gouvernement",
+        "description": "Ciblage de contrôles et allocation de ressources publiques limitées à partir de modèles de risque",
+        "trl": 6,
+        "exemples": [
+          "Systèmes de détection de fraude aux prestations sociales",
+          "Modèles de ciblage de contrôles fiscaux ou d'inspections du travail"
+        ],
+        "sources": [
+          {
+            "titre": "Systèmes d'aide à la décision publique par IA — documentation GovTech",
+            "type": "secondaire"
+          }
+        ]
+      },
+      {
+        "secteur": "gouvernement",
+        "description": "Automatisation partielle du traitement de démarches administratives à grand volume",
+        "trl": 6,
+        "exemples": [
+          "Traitement automatisé de premières instructions de dossiers administratifs standards",
+          "Systèmes de réponse automatisée aux demandes d'information des usagers"
+        ],
+        "sources": [
+          {
+            "titre": "Systèmes d'aide à la décision publique par IA — documentation GovTech",
+            "type": "secondaire"
+          }
+        ]
+      }
+    ],
+    "limites_connues": "Plusieurs déploiements de ce type ont été annulés ou fortement critiqués après avoir été jugés discriminatoires envers des populations vulnérables (cas documentés aux Pays-Bas et au Royaume-Uni notamment), posant des questions majeures de transparence, de contestabilité des décisions automatisées et de responsabilité de l'administration envers les citoyens affectés.",
+    "sources": [
+      {
+        "titre": "Systèmes d'aide à la décision publique par IA — documentation GovTech",
+        "type": "primaire"
+      }
+    ],
+    "statut": "documente",
+    "derniere_verification": "2026-09-06"
   }
 ]
