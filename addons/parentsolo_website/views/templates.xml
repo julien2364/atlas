@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <!--
+        Page pilote du Chantier D : /mon-espace rendue dans website.layout.
+        Contrairement aux 17 pages actuelles (HTML brut dans ir.ui.view.arch), ce template
+        hérite du layout du site : menus, footer, snippets et vues héritées s'y appliquent.
+        Contenu identique à scripts/update_mon_espace.py (chantier A), mais versionné ici.
+    -->
+    <template id="mon_espace" name="Parents Solo — Mon espace">
+        <t t-call="website.layout">
+            <t t-set="title">Mon espace — Parents Solo</t>
+            <link rel="stylesheet" href="/parentsolo_website/static/src/css/mon_espace.css"/>
+            <div id="wrap" class="oe_structure oe_empty">
+                <div class="ps-page">
+                    <section class="ps-hero">
+                        <h1>Mon espace</h1>
+                        <p>Vos enfants, votre organisation — au même endroit, visibles par vous seul·e et par le co-parent que vous choisissez.</p>
+                    </section>
+
+                    <t t-if="is_public">
+                        <section>
+                            <div style="max-width:640px; margin:0 auto;">
+                                <div class="card" style="padding:24px; text-align:center;">
+                                    <div class="headline" style="font-size:20px; margin-bottom:10px;">Connectez-vous pour accéder à votre espace</div>
+                                    <p style="font-size:14.5px; line-height:1.7; color:#5c5460;">L'espace personnel permet de suivre la croissance, la scolarité, les vaccins, les activités et les bourses de chaque enfant, de tenir un calendrier et un carnet de dépenses partageables avec l'autre parent, et de préparer des messages coparentaux au ton neutre.</p>
+                                    <p style="margin:16px 0;">
+                                        <a href="/web/login?redirect=/mon-espace" class="btn btn-primary">Se connecter</a>
+                                        <a href="/web/signup?redirect=/mon-espace" class="btn" style="margin-left:8px;">Créer un compte</a>
+                                    </p>
+                                    <p style="font-size:12.5px; line-height:1.6; color:#7a6d7c; text-align:left; background:#F3E9F4; padding:12px 14px; border-radius:10px;">
+                                        <strong>Données personnelles (RGPD).</strong> Les informations que vous enregistrez sur vos enfants sont stockées sur ce site pour votre usage et celui du co-parent que vous invitez explicitement ; elles ne sont jamais publiques ni cédées. Vous en êtes responsable et pouvez les modifier ou les supprimer à tout moment depuis votre espace. Le site ne fournit aucune interprétation médicale ou juridique. Pour toute demande d'accès ou de suppression : voir <a href="/a-propos#contact">Contact</a>.
+                                    </p>
+                                </div>
+                            </div>
+                        </section>
+                    </t>
+
+                    <t t-else="">
+                        <section>
+                            <div id="ps-app"
+                                 t-att-data-partner="partner_id"
+                                 t-att-data-login="login"
+                                 t-att-data-name="user_name"
+                                 t-att-data-curves="curves_json">
+                                <div class="ps-empty">Chargement de votre espace…</div>
+                            </div>
+                            <div style="max-width:1080px; margin:16px auto 0; font-size:12px; color:#8a7d8c; text-align:right;">
+                                Connecté·e en tant que <t t-esc="user_name"/> · <a href="/web/session/logout?redirect=/mon-espace">Se déconnecter</a>
+                            </div>
+                            <script src="/parentsolo_website/static/src/js/neutral_language.js"/>
+                            <script src="/parentsolo_website/static/src/js/mon_espace_app.js"/>
+                        </section>
+                    </t>
+                </div>
+            </div>
+        </t>
+    </template>
+</odoo>

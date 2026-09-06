@@ -1,0 +1,46 @@
+/* Classes partagées du site (reprises de scripts/build_pages.py — même palette) afin que la
+   page pilote, rendue dans website.layout, garde le style des 17 pages HTML brut. */
+.ps-page { max-width: 1120px; margin: 0 auto; padding: 24px 16px 48px; color: #3a2f3b; }
+.ps-page .card { background: #fff; border: 1px solid #eee3ec; border-radius: 14px; box-shadow: 0 2px 10px rgba(58,47,59,.05); }
+.ps-page .headline { font-weight: 700; color: #3a2f3b; }
+.ps-page .btn { display: inline-block; border-radius: 999px; padding: 9px 18px; font-size: 14px; text-decoration: none; border: 1px solid #e3d6e2; color: #3a2f3b; background: #fff; }
+.ps-page .btn.btn-primary { background: #C96A8C; border-color: #C96A8C; color: #fff; }
+.ps-hero { background: #FBF3E4; border-radius: 16px; padding: 28px 24px; margin-bottom: 24px; }
+.ps-hero h1 { font-size: 28px; margin: 0 0 8px; color: #3a2f3b; }
+.ps-hero p { margin: 0; color: #5c5460; font-size: 15px; line-height: 1.6; }
+
+#ps-app { max-width: 1080px; margin: 0 auto; }
+.ps-layout { display: grid; grid-template-columns: 260px 1fr; gap: 24px; }
+@media (max-width: 800px) { .ps-layout { grid-template-columns: 1fr; } }
+.ps-side .card { padding: 14px; margin-bottom: 10px; cursor: pointer; }
+.ps-side .card.active { outline: 2px solid #C96A8C; }
+.ps-main .card { padding: 18px; margin-bottom: 16px; }
+.ps-tabs { display: flex; flex-wrap: wrap; gap: 6px; margin-bottom: 14px; }
+.ps-tabs button { border: 1px solid #e3d6e2; background: #fff; border-radius: 999px; padding: 6px 14px; font-size: 13.5px; cursor: pointer; color: #3a2f3b; }
+.ps-tabs button.active { background: #C96A8C; color: #fff; border-color: #C96A8C; }
+.ps-table { width: 100%; border-collapse: collapse; font-size: 13.5px; }
+.ps-table th, .ps-table td { text-align: left; padding: 7px 8px; border-bottom: 1px solid #efe6ee; vertical-align: top; }
+.ps-table th { color: #7a6d7c; font-weight: 600; font-size: 12.5px; }
+.ps-form { display: grid; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); gap: 10px; margin: 10px 0; }
+.ps-form label { display: flex; flex-direction: column; font-size: 12.5px; color: #5c5460; gap: 4px; }
+.ps-form input, .ps-form select, .ps-form textarea { border: 1px solid #ddd0dc; border-radius: 8px; padding: 7px 9px; font-size: 14px; font-family: inherit; }
+.ps-form textarea { min-height: 60px; }
+.ps-form .wide { grid-column: 1 / -1; }
+.ps-actions { display: flex; gap: 8px; flex-wrap: wrap; align-items: center; margin-top: 8px; }
+.ps-btn { border: none; border-radius: 999px; padding: 8px 16px; font-size: 13.5px; cursor: pointer; background: #C96A8C; color: #fff; }
+.ps-btn.secondary { background: #F3E9F4; color: #3a2f3b; }
+.ps-btn.danger { background: #fff; color: #b3261e; border: 1px solid #f0c9c5; }
+.ps-btn.small { padding: 4px 10px; font-size: 12.5px; }
+.ps-badge { display: inline-block; background: #FBF3E4; color: #7a5a1a; border-radius: 999px; padding: 2px 9px; font-size: 11.5px; margin-left: 6px; }
+.ps-badge.shared { background: #E4F3EA; color: #1f6b3a; }
+.ps-badge.soon { background: #FDE8E6; color: #b3261e; }
+.ps-note { font-size: 13px; color: #5c5460; background: #F3E9F4; padding: 10px 14px; border-radius: 10px; line-height: 1.6; }
+.ps-msg { font-size: 13.5px; padding: 10px 14px; border-radius: 10px; margin-bottom: 12px; }
+.ps-msg.err { background: #FDE8E6; color: #b3261e; }
+.ps-msg.ok { background: #E4F3EA; color: #1f6b3a; }
+.ps-kpi { display: flex; gap: 12px; flex-wrap: wrap; margin: 8px 0 14px; }
+.ps-kpi div { background: #FBF3E4; border-radius: 10px; padding: 10px 14px; font-size: 13px; color: #5c5460; }
+.ps-kpi strong { display: block; font-size: 18px; color: #3a2f3b; }
+.ps-issue { border-left: 3px solid #C96A8C; padding: 6px 10px; margin: 6px 0; font-size: 13px; background: #fff; }
+.ps-issue em { color: #b3261e; font-style: normal; }
+.ps-empty { color: #8a7d8c; font-size: 13.5px; padding: 8px 0; }
