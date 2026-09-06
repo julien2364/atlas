@@ -119,8 +119,18 @@
         "secteur": "recherche",
         "description": "Modèle ouvert réutilisable pour fine-tuning et recherche académique à coût réduit",
         "trl": 7,
-        "exemples": [],
-        "sources": []
+        "exemples": [
+          "Variantes distillées de DeepSeek-R1, de 1,5 à 70 milliards de paramètres, initialisées à partir d'autres modèles open-weights (LLaMA, Qwen)",
+          "Diffusion des modèles sur Hugging Face, permettant leur réutilisation et leur modification par des tiers",
+          "Publication des modèles sous licences libres depuis janvier 2025, DeepSeek-V3-0324 et suivants étant sous licence MIT"
+        ],
+        "sources": [
+          {
+            "titre": "DeepSeek — Wikipedia (article en anglais)",
+            "url": "https://en.wikipedia.org/wiki/DeepSeek",
+            "type": "secondaire"
+          }
+        ]
       }
     ],
     "limites_connues": "Modération et filtrage alignés sur la réglementation chinoise (sujets politiques sensibles) ; questions de gouvernance des données d'entraînement et de confidentialité pour un usage hébergé en Chine ; écart de performance encore débattu selon les benchmarks indépendants.",
@@ -132,10 +142,15 @@
       {
         "titre": "DeepSeek-R1: Incentivizing Reasoning Capability in LLMs via RL",
         "type": "primaire"
+      },
+      {
+        "titre": "DeepSeek — Wikipedia (article en anglais)",
+        "url": "https://en.wikipedia.org/wiki/DeepSeek",
+        "type": "secondaire"
       }
     ],
     "statut": "documente",
-    "derniere_verification": "2026-09-05",
+    "derniere_verification": "2026-09-06",
     "architecture": "Mixture-of-Experts (MoE) — DeepSeek-V3 (~671B paramètres, ~37B actifs par token) ; DeepSeek-R1 entraîné avec apprentissage par renforcement à grande échelle pour le raisonnement en chaîne de pensée."
   },
   {
@@ -1549,17 +1564,57 @@
       "Boucle d'auto-évaluation et de re-planification sans validation humaine à chaque étape",
       "Usage d'outils (recherche web, exécution de code, fichiers)"
     ],
-    "usages": [],
+    "usages": [
+      {
+        "secteur": "industrie",
+        "description": "Automatisation exploratoire de tâches professionnelles confiées à l'agent sous forme d'objectifs de haut niveau : développement logiciel, recherche d'information marché et production de contenu. L'agent décompose lui-même la tâche en sous-tâches sans intervention de l'utilisateur, mais les comptes rendus d'usage décrivent des erreurs fréquentes et un coût d'exploitation élevé lié aux appels d'API répétés. L'outil relève de l'expérimentation plutôt que du déploiement fiable en production.",
+        "trl": 4,
+        "exemples": [
+          "Développement d'applications logicielles, débogage de code et génération de cas de test",
+          "Recherche produit et rédaction d'une synthèse comparative (test rapporté sur des casques audio, puis sur les meilleurs ordinateurs portables du marché avec avantages et inconvénients)",
+          "Création de contenu : rédaction de blog, synthèse d'actualités et préparation d'un plan de podcast"
+        ],
+        "sources": [
+          {
+            "titre": "AutoGPT — Wikipedia",
+            "url": "https://en.wikipedia.org/wiki/AutoGPT",
+            "type": "secondaire"
+          }
+        ]
+      },
+      {
+        "secteur": "recherche",
+        "description": "Objet d'expérimentation publique sur l'autonomie des agents fondés sur des modèles de langage et sur les risques associés. Les démonstrations diffusées ont autant servi à mesurer les limites de la boucle autonome qu'à en montrer l'intérêt : perte d'objectif, boucles infinies liées à l'absence de mémoire des actions passées, fenêtre de contexte finie. Plusieurs observateurs cités estiment qu'un humain doit rester dans la boucle.",
+        "trl": 4,
+        "exemples": [
+          "ChefGPT, agent explorant seul le web pour générer et enregistrer des recettes inédites",
+          "ChaosGPT, démonstration publique consistant à assigner à l'agent des objectifs destructeurs, utilisée pour discuter des risques",
+          "Test d'évaluation où l'agent échoue à retrouver correctement l'adresse électronique d'une personnalité publique"
+        ],
+        "sources": [
+          {
+            "titre": "AutoGPT — Wikipedia",
+            "url": "https://en.wikipedia.org/wiki/AutoGPT",
+            "type": "secondaire"
+          }
+        ]
+      }
+    ],
     "limites_connues": "Boucles de planification souvent inefficaces ou répétitives sur des tâches complexes ; coût en tokens élevé pour un taux de succès fréquemment faible sur des objectifs ambitieux mal spécifiés ; fiabilité insuffisante pour un usage en production sans supervision humaine étroite — a surtout eu un rôle de preuve de concept médiatique en 2023 plutôt que d'outil de production robuste.",
     "sources": [
       {
         "titre": "AutoGPT (dépôt GitHub)",
         "url": "https://github.com/Significant-Gravitas/AutoGPT",
         "type": "primaire"
+      },
+      {
+        "titre": "AutoGPT — Wikipedia",
+        "url": "https://en.wikipedia.org/wiki/AutoGPT",
+        "type": "secondaire"
       }
     ],
     "statut": "documente",
-    "derniere_verification": "2026-09-05"
+    "derniere_verification": "2026-09-06"
   },
   {
     "id": "openai-operator-agents-de-navigation-web",
@@ -1719,6 +1774,11 @@
       {
         "titre": "LangChain, CrewAI, AutoGen — documentation des projets",
         "type": "primaire"
+      },
+      {
+        "titre": "LangChain — Wikipedia",
+        "url": "https://en.wikipedia.org/wiki/LangChain",
+        "type": "secondaire"
       }
     ],
     "statut": "documente",
@@ -1754,8 +1814,18 @@
         "secteur": "pharmaceutique",
         "description": "Accélération de l'identification de cibles thérapeutiques et de la conception de médicaments",
         "trl": 6,
-        "exemples": [],
-        "sources": []
+        "exemples": [
+          "Isomorphic Labs a déclaré en mai 2024 utiliser AlphaFold 3, avec d'autres modèles d'IA, pour automatiser le processus de découverte de médicaments",
+          "AlphaFold 3 prédit la structure des protéines et leurs interactions avec l'ADN, l'ARN et certains ligands ou ions, capacité présentée comme devant accélérer la découverte de nouveaux médicaments",
+          "La connaissance des formes tridimensionnelles aide les chercheurs à concevoir des molécules qui se logent dans les poches et crevasses des protéines"
+        ],
+        "sources": [
+          {
+            "titre": "AlphaFold — Wikipédia (article en français)",
+            "url": "https://fr.wikipedia.org/wiki/AlphaFold",
+            "type": "secondaire"
+          }
+        ]
       }
     ],
     "limites_connues": "Prédit une structure statique/probable, pas nécessairement la dynamique conformationnelle réelle d'une protéine en solution ; performance dégradée sur les protéines sans homologues connus ou fortement désordonnées ; ne remplace pas la validation expérimentale pour un usage clinique.",
@@ -1767,10 +1837,15 @@
       {
         "titre": "Prix Nobel de chimie 2024 (Hassabis, Jumper, Baker)",
         "type": "secondaire"
+      },
+      {
+        "titre": "AlphaFold — Wikipédia (article en français)",
+        "url": "https://fr.wikipedia.org/wiki/AlphaFold",
+        "type": "secondaire"
       }
     ],
     "statut": "documente",
-    "derniere_verification": "2026-09-05"
+    "derniere_verification": "2026-09-06"
   },
   {
     "id": "gnome-decouverte-de-materiaux",
@@ -1819,6 +1894,16 @@
       {
         "titre": "GNoME (Google DeepMind, 2023)",
         "type": "primaire"
+      },
+      {
+        "titre": "Applications of artificial intelligence — Wikipedia",
+        "url": "https://en.wikipedia.org/wiki/Applications_of_artificial_intelligence",
+        "type": "secondaire"
+      },
+      {
+        "titre": "Google DeepMind — Wikipedia",
+        "url": "https://en.wikipedia.org/wiki/Google_DeepMind",
+        "type": "secondaire"
       }
     ],
     "statut": "documente",
@@ -1870,6 +1955,12 @@
     "sources": [
       {
         "titre": "DeepMind — Magnetic control of tokamak plasmas (Nature, 2022)",
+        "type": "primaire"
+      },
+      {
+        "titre": "Accelerating fusion science through learned plasma control (Google DeepMind)",
+        "url": "https://deepmind.google/discover/blog/accelerating-fusion-science-through-learned-plasma-control/",
+        "date": "2022-02-16",
         "type": "primaire"
       }
     ],
@@ -1924,6 +2015,16 @@
       {
         "titre": "AlphaFold — impact sur la recherche pharmaceutique",
         "type": "primaire"
+      },
+      {
+        "titre": "Applications of artificial intelligence — Wikipedia",
+        "url": "https://en.wikipedia.org/wiki/Applications_of_artificial_intelligence",
+        "type": "secondaire"
+      },
+      {
+        "titre": "AlphaFold — Wikipédia (article en français)",
+        "url": "https://fr.wikipedia.org/wiki/AlphaFold",
+        "type": "secondaire"
       }
     ],
     "statut": "documente",
@@ -1977,6 +2078,11 @@
       {
         "titre": "GraphCast (Google DeepMind, publié dans Science, 2023)",
         "type": "primaire"
+      },
+      {
+        "titre": "Weather forecasting — Wikipedia",
+        "url": "https://en.wikipedia.org/wiki/Weather_forecasting",
+        "type": "secondaire"
       }
     ],
     "statut": "documente",
@@ -1988,17 +2094,75 @@
     "nom": "Hallucination et fiabilité factuelle (limite transversale)",
     "editeur": null,
     "architecture": null,
-    "capacites_cles": [],
-    "usages": [],
+    "capacites_cles": [
+      "Production de réponses fausses ou trompeuses présentées comme des faits certains, sans marque d'incertitude perceptible par le lecteur",
+      "Fabrication de citations et de références d'apparence plausible mais inexistantes : interrogé sur un terme inventé (« électromagnon inversé cycloïdal »), un modèle a répondu en produisant des références fictives crédibles",
+      "Recombinaison de données réelles mais disparates en un énoncé cohérent et faux, comme l'attribution erronée d'un record de traversée de la Manche à un nageur qui détenait en fait un autre record",
+      "Phénomène rattaché à des systèmes conçus pour être persuasifs plutôt que véridiques, que certains chercheurs décrivent comme des « perroquets stochastiques » analysant les relations entre mots sans accès au sens"
+    ],
+    "usages": [
+      {
+        "secteur": "gouvernement",
+        "description": "L'hallucination est devenue un problème concret pour les institutions judiciaires et administratives qui voient arriver des pièces rédigées avec l'aide de modèles génératifs. La réponse documentée est procédurale plutôt que technique : exiger une relecture humaine avant tout dépôt. Le phénomène est ici observé sur des systèmes en usage réel, pas en laboratoire.",
+        "trl": 9,
+        "exemples": [
+          "Mai 2023 : un cabinet d'avocats new-yorkais soumet dans une procédure aérienne des précédents générés par ChatGPT, dont six arrêts se révèlent fictifs, assortis de fausses citations",
+          "Le juge Brantley Starr interdit le dépôt de documents produits par IA qui n'ont pas été examinés par un humain"
+        ],
+        "sources": [
+          {
+            "titre": "Hallucination (intelligence artificielle) — Wikipédia",
+            "url": "https://fr.wikipedia.org/wiki/Hallucination_(intelligence_artificielle)",
+            "type": "secondaire"
+          }
+        ]
+      },
+      {
+        "secteur": "recherche",
+        "description": "Dans le travail scientifique, l'hallucination se manifeste surtout par des références bibliographiques inventées, difficiles à distinguer de références réelles sans vérification pièce par pièce. Le cas d'un modèle spécialisé dans la littérature scientifique (Galactica) montre que l'entraînement sur un corpus savant ne supprime pas le phénomène. Cela impose une vérification manuelle de chaque source citée.",
+        "trl": 8,
+        "exemples": [
+          "Une chercheuse, Teresa Kubacka, interroge ChatGPT sur un phénomène physique qu'elle a inventé et obtient une réponse assortie de citations plausibles mais fictives",
+          "Le modèle Galactica, destiné à la recherche scientifique, est cité comme cas d'hallucination en contexte de recherche"
+        ],
+        "sources": [
+          {
+            "titre": "Hallucination (intelligence artificielle) — Wikipédia",
+            "url": "https://fr.wikipedia.org/wiki/Hallucination_(intelligence_artificielle)",
+            "type": "secondaire"
+          }
+        ]
+      },
+      {
+        "secteur": "industrie",
+        "description": "Les usages professionnels de production de contenu exposent directement au risque : un texte structuré et fluide peut contenir des données chiffrées entièrement fabriquées. Le danger tient à la cohérence apparente du résultat, qui ne signale pas les passages inventés. La vérification des chiffres reste à la charge de l'utilisateur.",
+        "trl": 9,
+        "exemples": [
+          "Un journaliste de Fast Company demande un article sur les résultats financiers de Tesla : le texte produit est cohérent mais les chiffres avancés sont inventés"
+        ],
+        "sources": [
+          {
+            "titre": "Hallucination (intelligence artificielle) — Wikipédia",
+            "url": "https://fr.wikipedia.org/wiki/Hallucination_(intelligence_artificielle)",
+            "type": "secondaire"
+          }
+        ]
+      }
+    ],
     "limites_connues": "Un modèle génératif peut produire des affirmations plausibles mais factuellement fausses (citations inventées, faits erronés) sans signal interne fiable de son propre degré d'incertitude ; le risque augmente avec la spécificité/niche du sujet et diminue avec le RAG (récupération augmentée) sur sources vérifiées, sans jamais tomber à zéro. C'est la limite la plus citée par le mégaprompt (section B5) et directement pertinente pour la fiabilité de ce référentiel lui-même — d'où l'exigence de sourcer systématiquement chaque fiche documentée.",
     "sources": [
       {
         "titre": "Synthèses académiques sur l'hallucination des LLM (ex. Ji et al., 'Survey of Hallucination in NLG', ACM Computing Surveys)",
         "type": "secondaire"
+      },
+      {
+        "titre": "Hallucination (intelligence artificielle) — Wikipédia",
+        "url": "https://fr.wikipedia.org/wiki/Hallucination_(intelligence_artificielle)",
+        "type": "secondaire"
       }
     ],
     "statut": "documente",
-    "derniere_verification": "2026-09-05"
+    "derniere_verification": "2026-09-06"
   },
   {
     "id": "biais-herites-des-donnees-d-entrainement-limite-transversale",
@@ -2048,6 +2212,11 @@
       {
         "titre": "Recherche académique sur l'équité algorithmique (fairness in ML)",
         "type": "primaire"
+      },
+      {
+        "titre": "Biais algorithmique — Wikipédia",
+        "url": "https://fr.wikipedia.org/wiki/Biais_algorithmique",
+        "type": "secondaire"
       }
     ],
     "statut": "documente",
@@ -2101,6 +2270,11 @@
       {
         "titre": "Rapports sur l'empreinte énergétique de l'IA (AIE, études académiques)",
         "type": "primaire"
+      },
+      {
+        "titre": "Environmental impact of artificial intelligence — Wikipedia",
+        "url": "https://en.wikipedia.org/wiki/Environmental_impact_of_artificial_intelligence",
+        "type": "secondaire"
       }
     ],
     "statut": "documente",
@@ -2153,6 +2327,11 @@
       {
         "titre": "Jumeaux numériques industriels — documentation sectorielle (Siemens, GE, Dassault Systèmes)",
         "type": "primaire"
+      },
+      {
+        "titre": "Jumeau numérique — Wikipédia",
+        "url": "https://fr.wikipedia.org/wiki/Jumeau_num%C3%A9rique",
+        "type": "secondaire"
       }
     ],
     "statut": "documente",
@@ -2205,6 +2384,11 @@
       {
         "titre": "Systèmes de tutorat adaptatif — documentation sectorielle EdTech",
         "type": "primaire"
+      },
+      {
+        "titre": "Intelligent tutoring system — Wikipedia",
+        "url": "https://en.wikipedia.org/wiki/Intelligent_tutoring_system",
+        "type": "secondaire"
       }
     ],
     "statut": "documente",
@@ -2258,6 +2442,11 @@
       {
         "titre": "Criblage virtuel de molécules par IA — documentation sectorielle pharmaceutique",
         "type": "primaire"
+      },
+      {
+        "titre": "Virtual screening — Wikipedia",
+        "url": "https://en.wikipedia.org/wiki/Virtual_screening",
+        "type": "secondaire"
       }
     ],
     "statut": "documente",
@@ -2311,6 +2500,11 @@
       {
         "titre": "Systèmes d'aide à la décision publique par IA — documentation GovTech",
         "type": "primaire"
+      },
+      {
+        "titre": "Government by algorithm — Wikipedia",
+        "url": "https://en.wikipedia.org/wiki/Government_by_algorithm",
+        "type": "secondaire"
       }
     ],
     "statut": "documente",

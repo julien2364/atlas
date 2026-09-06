@@ -152,5 +152,12 @@
     "type": "ajout",
     "cible": "gap-analysis",
     "resume": "Lot 4 (moteur de gap analysis) : 80 nouvelles fiches de gap portant le total de 6 à 86 paires analysées, couvrant 86 capacités humaines distinctes (16 philosophie, 6 psychologie, 4 sérénité, 10 sciences/évolution, 11 modèles politiques, 11 économie, 4 économistes contemporains, 4 modèles de gouvernance mondiale, 8 organisations internationales, 6 modèles de management) croisées avec 37 fiches IA distinctes. Chaque fiche suit la méthodologie §5 du mégaprompt (apport de l'IA et ce qu'elle ne peut structurellement pas apporter, mécanisme, amélioration possible, mode d'interaction, substituabilité à 4 niveaux, scénarios présent/5 ans/15-20 ans) et le format enrichi du Lot 9 (sujet, sous-thèmes, axes de recherche, documents clés, trois axes prospectifs nommés avec niveau de confiance). Contenu dérivé exclusivement des fiches humaines et IA déjà documentées, sans apport factuel externe. Répartition de la substituabilité : 37 remplaçable avec supervision, 33 non remplaçable, 14 remplaçable avec une autre technologie (nommée), 2 remplaçable totalement."
+  },
+  {
+    "id": "mp3-sourcing-fiches-amorcage-2026-09-06",
+    "date": "2026-09-06",
+    "type": "correction",
+    "cible": "referentiel-humain, referentiel-ia, gap-analysis, questions",
+    "resume": "Lot QA sourcing : résorption des 42 avertissements du validateur hérités des fiches d'amorçage du 05/09/2026. 13 fiches humaines (Nietzsche, Spinoza, Socrate, Aristote, TCC, Kahneman-Tversky, limites planétaires, démocratie libérale, capitalisme d'État chinois, économie du donut, taylorisme, ExO, OKR) ont reçu une source secondaire à URL réellement consultée et vérifiée comme traitant du bon sujet. 15 fiches IA ont été complétées : URL de source, et pour DeepSeek, AlphaFold, AutoGPT et la fiche hallucination, les exemples, sources d'usage, capacités clés et usages sectoriels manquants, tirés exclusivement des pages lues. Les 7 fiches de gap sans documents clés reprennent désormais les sources à URL de leurs deux fiches liées. La perspective de neutralité de la question futurs-modeles-gouvernance porte ses sources. Le validateur sort à 0 erreur et 0 avertissement sur 397 fiches. Aucun contenu rédactionnel n'a été modifié, aucune URL n'a été inventée : la fiche ExO reste signalée comme sourcée indirectement, faute d'article dédié au concept."
   }
 ]

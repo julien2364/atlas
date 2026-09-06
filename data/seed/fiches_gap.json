@@ -13,7 +13,7 @@
     "scenario_15_20ans": "Reste une dimension jugée irréductiblement humaine dans le débat philosophique dominant (cf. B5 — absence de vécu subjectif), sauf rupture théorique majeure sur la question de la conscience artificielle.",
     "confiance": "moyenne",
     "statut": "documente",
-    "derniere_verification": "2026-09-05",
+    "derniere_verification": "2026-09-06",
     "sujet": "Accompagnement philosophique et pédagogie de la pensée critique",
     "sous_themes": [
       "Vulgarisation et mise en relation de doctrines philosophiques",
@@ -32,6 +32,16 @@
       },
       {
         "titre": "Généalogie de la morale",
+        "type": "primaire"
+      },
+      {
+        "titre": "Friedrich Nietzsche",
+        "url": "https://fr.wikipedia.org/wiki/Friedrich_Nietzsche",
+        "type": "secondaire"
+      },
+      {
+        "titre": "Documentation Anthropic",
+        "url": "https://docs.claude.com",
         "type": "primaire"
       }
     ],
@@ -68,7 +78,7 @@
     "scenario_15_20ans": "Scénario incertain — dépend fortement de trajectoires géopolitiques non prévisibles avec un niveau de confiance élevé.",
     "confiance": "faible",
     "statut": "documente",
-    "derniere_verification": "2026-09-05",
+    "derniere_verification": "2026-09-06",
     "sujet": "Modèles de gouvernance économique et trajectoires d'innovation IA nationale",
     "sous_themes": [
       "Politique industrielle et financement public de la recherche IA",
@@ -80,7 +90,26 @@
       "Corrélation entre modèle de financement (public/privé) et rythme d'innovation",
       "Impact des contrôles à l'export de semi-conducteurs sur la trajectoire chinoise"
     ],
-    "documents_cles": [],
+    "documents_cles": [
+      {
+        "titre": "Banque mondiale — China Country Overview",
+        "type": "primaire"
+      },
+      {
+        "titre": "Capitalisme d'État",
+        "url": "https://fr.wikipedia.org/wiki/Capitalisme_d%27%C3%89tat",
+        "type": "secondaire"
+      },
+      {
+        "titre": "DeepSeek-V3 Technical Report",
+        "type": "primaire"
+      },
+      {
+        "titre": "DeepSeek — Wikipedia (article en anglais)",
+        "url": "https://en.wikipedia.org/wiki/DeepSeek",
+        "type": "secondaire"
+      }
+    ],
     "axes_prospectifs": [
       {
         "nom": "Convergence technique, divergence politique",
@@ -113,7 +142,7 @@
     "scenario_15_20ans": "Le geste industriel répétitif mesurable devient un cas d'école de tâche entièrement pilotée par IA, la question résiduelle étant sociale (acceptabilité, emploi) plus que technique.",
     "confiance": "elevee",
     "statut": "documente",
-    "derniere_verification": "2026-09-05",
+    "derniere_verification": "2026-09-06",
     "sujet": "Automatisation de la mesure et de l'optimisation du geste de travail industriel",
     "sous_themes": [
       "Instrumentation du poste de travail (capteurs, vision par ordinateur)",
@@ -128,6 +157,16 @@
     "documents_cles": [
       {
         "titre": "Les Principes de la direction scientifique des entreprises (F. W. Taylor)",
+        "type": "primaire"
+      },
+      {
+        "titre": "Taylorisme",
+        "url": "https://fr.wikipedia.org/wiki/Taylorisme",
+        "type": "secondaire"
+      },
+      {
+        "titre": "Documentation Anthropic",
+        "url": "https://docs.claude.com",
         "type": "primaire"
       }
     ],
@@ -163,7 +202,7 @@
     "scenario_15_20ans": "L'arbitrage des priorités stratégiques (quel Objective choisir) reste un jugement de valeur organisationnel, donc humain, même si sa mise en musique est largement automatisée.",
     "confiance": "moyenne",
     "statut": "documente",
-    "derniere_verification": "2026-09-05",
+    "derniere_verification": "2026-09-06",
     "sujet": "Automatisation du pilotage d'objectifs organisationnels (gestion de la performance)",
     "sous_themes": [
       "Rédaction assistée d'objectifs mesurables",
@@ -175,7 +214,22 @@
       "Fiabilité du calcul d'avancement automatique vs. déclaratif",
       "Risque de sur-optimisation des métriques (effet Goodhart) quand le reporting est automatisé"
     ],
-    "documents_cles": [],
+    "documents_cles": [
+      {
+        "titre": "John Doerr, Measure What Matters (2018)",
+        "type": "primaire"
+      },
+      {
+        "titre": "Méthode OKR",
+        "url": "https://fr.wikipedia.org/wiki/M%C3%A9thode_OKR",
+        "type": "secondaire"
+      },
+      {
+        "titre": "Documentation Anthropic",
+        "url": "https://docs.claude.com",
+        "type": "primaire"
+      }
+    ],
     "axes_prospectifs": [
       {
         "nom": "Reporting continu généralisé",
@@ -208,7 +262,7 @@
     "scenario_15_20ans": "Le dialogue socratique automatisé pourrait devenir un standard pédagogique assisté par IA, mais la dimension existentielle (l'examen de sa propre vie, au risque de sa vie) reste jugée irréductible à une fonction de dialogue.",
     "confiance": "moyenne",
     "statut": "documente",
-    "derniere_verification": "2026-09-05",
+    "derniere_verification": "2026-09-06",
     "sujet": "Méthode maïeutique et facilitation de la réflexion critique",
     "sous_themes": [
       "Simulation formelle du dialogue socratique",
@@ -227,6 +281,16 @@
       },
       {
         "titre": "Ménon (Platon)",
+        "type": "primaire"
+      },
+      {
+        "titre": "Socrate",
+        "url": "https://fr.wikipedia.org/wiki/Socrate",
+        "type": "secondaire"
+      },
+      {
+        "titre": "Documentation Anthropic",
+        "url": "https://docs.claude.com",
         "type": "primaire"
       }
     ],
@@ -1729,6 +1793,16 @@
       {
         "titre": "Synthèses académiques sur l'hallucination des LLM (ex. Ji et al., 'Survey of Hallucination in NLG', ACM Computing Surveys)",
         "type": "primaire"
+      },
+      {
+        "titre": "Risque de catastrophe planétaire — Wikipédia",
+        "url": "https://fr.wikipedia.org/wiki/Risque_de_catastrophe_plan%C3%A9taire",
+        "type": "secondaire"
+      },
+      {
+        "titre": "Hallucination (intelligence artificielle) — Wikipédia",
+        "url": "https://fr.wikipedia.org/wiki/Hallucination_(intelligence_artificielle)",
+        "type": "secondaire"
       }
     ],
     "axes_prospectifs": [
@@ -2270,6 +2344,16 @@
       {
         "titre": "Nature — AlphaFold Protein Structure Database",
         "type": "primaire"
+      },
+      {
+        "titre": "CRISPR — Wikipédia",
+        "url": "https://fr.wikipedia.org/wiki/CRISPR",
+        "type": "secondaire"
+      },
+      {
+        "titre": "AlphaFold — Wikipédia (article en français)",
+        "url": "https://fr.wikipedia.org/wiki/AlphaFold",
+        "type": "secondaire"
       }
     ],
     "axes_prospectifs": [
