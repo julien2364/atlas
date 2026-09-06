@@ -8,6 +8,8 @@
     "start": "next start",
     "lint": "eslint",
     "valider": "node scripts/valider-donnees.mjs",
+    "veille-patchs": "node scripts/appliquer-veille.mjs",
+    "appliquer-patchs": "node scripts/appliquer-patchs.mjs",
     "audit-fraicheur": "node scripts/audit-fraicheur.mjs"
   },
   "dependencies": {

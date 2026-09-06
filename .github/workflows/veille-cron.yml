@@ -38,3 +38,42 @@ jobs:
             git commit -m "chore(veille): mise à jour automatique de la file de validation [skip ci]"
             git push
           fi
+
+      # ---------------------------------------------------------------------
+      # Boucle de veille, étape « proposition » (MP-7).
+      # Le cron va jusqu'à préparer le travail éditorial : il traduit les
+      # propositions déjà qualifiées de la file en patchs de fiche relisibles,
+      # et les publie comme artefact du job. Le fichier est écrit dans
+      # RUNNER_TEMP, HORS du dépôt : ce job ne peut structurellement pas
+      # modifier une fiche ni salir l'arbre de travail.
+      #
+      # L'application, elle, n'est JAMAIS automatisée : elle passe par
+      # `node scripts/appliquer-patchs.mjs` lancé à la main, après relecture de
+      # l'artefact. Aucune fiche n'est modifiée sans validation humaine.
+      # ---------------------------------------------------------------------
+      - name: Préparer les patchs de fiche (proposition seule, aucune écriture dans data/seed)
+        run: |
+          node scripts/appliquer-veille.mjs \
+            --statut=a_traiter_fiche_existante \
+            --sortie="${RUNNER_TEMP}/patchs-veille-${GITHUB_RUN_ID}.json"
+
+      # Garde-fou explicite : si l'étape précédente avait touché une fiche, on
+      # veut que le job échoue bruyamment plutôt que de laisser passer une
+      # modification non validée.
+      - name: Vérifier qu'aucune fiche n'a été modifiée
+        run: |
+          if git diff --quiet -- data/seed && git diff --quiet; then
+            echo "OK — aucune modification du corpus par l'étape de proposition."
+          else
+            echo "ERREUR : l'étape de proposition a modifié des fichiers suivis — elle ne doit rien écrire dans le dépôt."
+            git status --short
+            exit 1
+          fi
+
+      - name: Publier les patchs proposés comme artefact
+        uses: actions/upload-artifact@v4
+        with:
+          name: patchs-veille-${{ github.run_id }}
+          path: ${{ runner.temp }}/patchs-veille-${{ github.run_id }}.json
+          if-no-files-found: warn
+          retention-days: 30

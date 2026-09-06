@@ -166,5 +166,19 @@
     "type": "mise_a_jour",
     "cible": "veille",
     "resume": "Tri de la totalité de la file de validation : 187 propositions accumulées depuis le 05/09/2026 et jamais qualifiées. La file mélangeait deux natures d'entrées que le champ cible_type ne distinguait pas : 159 propositions de sources Wikipédia produites par scripts/documentation-recherche.mjs, porteuses d'un cible_id fiable, et 28 propositions issues des flux RSS, étiquetées nouvelle_categorie par défaut. Les premières ont été qualifiées par confrontation systématique de l'URL proposée aux sources déjà citées par la fiche cible : 118 étaient redondantes et sont rejetées, 41 apportent une source non citée et passent à traiter. Les secondes ont été jugées sur titre, résumé et source, sans ouverture des liens : 16 rejets (annonces de financement, études de cas commerciales, doublons de couverture presse, brèves hors périmètre), 10 rattachements à une fiche existante, 2 propositions de fiche nouvelle (horloges optiques de précision, Ada Yonath). Total : 134 rejetées, 51 à traiter sur fiche existante, 2 fiches à créer. Chaque entrée porte une note_tri justifiant sa qualification, et tout cible_id a été vérifié comme existant réellement dans le corpus. Aucune fiche n'a été modifiée : ce lot ne fait que qualifier la file."
+  },
+  {
+    "id": "mp7-boucle-veille-complete-2026-09-06",
+    "date": "2026-09-06",
+    "type": "evolution_structurelle",
+    "cible": "veille",
+    "resume": "Bouclage du cycle de veille, qui s'arrêtait jusqu'ici à la collecte. Deux scripts nouveaux : appliquer-veille.mjs lit les propositions au statut a_traiter_fiche_existante et produit un fichier de patchs (fiche cible, champ visé, texte proposé, source à ajouter) sans jamais toucher une fiche, en marquant a_reformuler tout ce qui vient d'un extrait Wikipédia brut ou d'une URL de redirection opaque ; appliquer-patchs.mjs applique un fichier de patchs relu, bascule derniere_verification et le statut à verifie_recemment, journalise dans le changelog, et restaure l'intégralité des fichiers de données octet pour octet si la validation échoue après écriture. Le lot est atomique : un seul patch fautif annule tout le lot. Le cron de veille gagne une étape qui produit le fichier de patchs et le publie comme artefact du job, hors du dépôt, avec un contrôle git diff qui fait échouer le job si un fichier suivi a bougé. Le cycle complet est documenté dans comment-lancer.md. Aucune fiche n'est modifiée sans validation humaine : le script propose, l'humain dispose."
+  },
+  {
+    "id": "mp2-heatmap-trl-frise-2026-09-06",
+    "date": "2026-09-06",
+    "type": "ajout",
+    "cible": "cartographie",
+    "resume": "Achèvement des cartographies prévues au mégaprompt. Heatmap TRL : matrice des 44 fiches IA en lignes par les 6 secteurs en colonnes, chaque cellule portant le niveau de maturité technologique d'un usage documenté, sur une échelle séquentielle de luminosité croissante lisible en niveaux de gris comme en vision daltonienne. La valeur TRL est écrite en chiffre dans la cellule : la couleur ne porte jamais seule l'information. Une cellule sans usage documenté se distingue par sa nature — hachures et mention n. d. — et non par une teinte plus pâle, pour ne pas se confondre avec un TRL faible. Les cellules renseignées sont des boutons focusables révélant description, exemples et sources de l'usage ; les lignes se filtrent par axe IA. Frise chronologique : extension du composant existant, jalons regroupés par jour et volume de fiches documentées recompté depuis les dates de vérification des fiches plutôt que lu dans le texte des résumés, ce qui garde le chiffre juste quand le corpus évolue. Aucune dépendance nouvelle : SVG et table HTML sémantique."
   }
 ]

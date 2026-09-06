@@ -1,6 +1,6 @@
 # COMMENT LANCER — Atlas Humain × IA
 
-Dernière mise à jour : 06/09/2026 (référentiel de contenu terminé à 100% — 311/311 fiches documentées + 86 fiches de gap ; automatisation qualité : validateur d'intégrité, audit de fraîcheur, cron hebdomadaire)
+Dernière mise à jour : 06/09/2026 (référentiel de contenu terminé à 100% — 311/311 fiches documentées + 86 fiches de gap ; automatisation qualité : validateur d'intégrité, audit de fraîcheur, cron hebdomadaire ; **boucle de veille de bout en bout collecte → patch → validation → publication, section 7**)
 
 ## État actuel du projet
 
@@ -66,7 +66,7 @@ Puis ouvrir http://localhost:3000 — pages disponibles : accueil, /referentiel-
   Détail par fichier et méthode de recherche dans `docs/brief-delegation-documentation.md`.
 - **Audit QA (05/09/2026)** : 🔍 fait. Julien a jugé la profondeur insuffisante — deux agents indépendants (visiteur/utilisateur + vérificateur professionnel) ont audité le site en conditions réelles. Corrections appliquées : rendu de `/referentiel-humain` réparé (n'affichait jamais le contenu des fiches documentées), garde-fou anti-régression ajouté à `scripts/generate-seed.mjs` (un incident réel pendant l'audit a démontré le risque : le script a écrasé silencieusement 6 fiches documentées avant d'être corrigé et les données restaurées), axes vides comblés. Le projet est maintenant versionné dans git en local.
 - **Lot 4 — Moteur de gap analysis** : ✅ terminé (06/09/2026). 86 paires analysées (6 d'amorçage + 80 produites en lot), couvrant 86 capacités humaines distinctes croisées avec 37 fiches IA. Chaque fiche suit la méthodologie §5 du mégaprompt (apport et non-apport de l'IA, mécanisme, amélioration possible, mode d'interaction, substituabilité à 4 niveaux, scénarios présent/5 ans/15-20 ans) et le format enrichi du Lot 9 (sujet, sous-thèmes, axes de recherche, documents clés, trois axes prospectifs nommés avec niveau de confiance). Répartition de la substituabilité : 37 remplaçable avec supervision, 33 non remplaçable, 14 remplaçable avec une autre technologie nommée, 2 remplaçable totalement. Le sélecteur libre de `/comparateur` conserve son repli honnête « à documenter » pour les paires non analysées.
-- **Lot 5 — Veille autonome** : 🔄 fonctionnel. Script réel `scripts/veille-rss.mjs` testé en conditions réelles : interroge les sources RSS actives, déduplique, dépose les nouveautés dans une file de validation manuelle affichée sur `/veille`. 5 sources actives sur 8 ; 3 désactivées après échec HTTP confirmé (Anthropic News 404, FMI et OCDE 403 — documenté dans `data/seed/veille_sources.json`). Un scheduled task quotidien (7h UTC) a été créé pour lancer ce script automatiquement, mais **il n'est pas encore lié à ton ordinateur** (approbation à donner côté device pour qu'il puisse s'exécuter — sinon il tourne dans le vide). Spiderfoot (2e canal) reste à intégrer. Aucune fiche n'est mise à jour automatiquement — validation humaine requise.
+- **Lot 5 — Veille autonome** : 🔄 fonctionnel. Script réel `scripts/veille-rss.mjs` testé en conditions réelles : interroge les sources RSS actives, déduplique, dépose les nouveautés dans une file de validation manuelle affichée sur `/veille`. 5 sources actives sur 8 ; 3 désactivées après échec HTTP confirmé (Anthropic News 404, FMI et OCDE 403 — documenté dans `data/seed/veille_sources.json`). Un scheduled task quotidien (7h UTC) a été créé pour lancer ce script automatiquement, mais **il n'est pas encore lié à ton ordinateur** (approbation à donner côté device pour qu'il puisse s'exécuter — sinon il tourne dans le vide). Spiderfoot (2e canal) reste à intégrer. Depuis le 06/09/2026 la boucle est complète : `scripts/appliquer-veille.mjs` traduit les propositions triées en patchs de fiche relisibles (publiés comme artefact du cron quotidien) et `scripts/appliquer-patchs.mjs` les applique après relecture, avec entrée de changelog et restauration automatique en cas d'échec de validation — voir section 7. Aucune fiche n'est mise à jour automatiquement — validation humaine requise.
 - **Lot 6 — Moteur Q&A/RAG** : ⛔ bloqué. Nécessite un projet Supabase (extension `vector`) + une clé API Anthropic configurés. Un compte Supabase existe déjà (org "julien2364's Org", plusieurs projets actifs) — reste à décider si Atlas Humain × IA doit avoir son propre projet Supabase dédié (coût à confirmer) ou être mutualisé dans un projet existant, décision qui te revient. Les 4 questions-tests restent répondues manuellement dans `/questions` en attendant.
 - **Lot 7 — Cartographies interactives** : 🔄 fonctionnel. `/cartographie` propose une répartition par axe cliquable (humain et IA, avec liste des fiches et statut) et une matrice de gap cliquable sur les paires documentées, colorée par catégorie de substituabilité. La heatmap TRL par secteur et la frise chronologique (section 8 du mégaprompt) restent en attente : aucune fiche IA n'a encore de données réelles d'usages sectoriels renseignées.
 - **Lot 8 — QA finale/publication** : 🔄 outillé (06/09/2026). Deux scripts et un cron hebdomadaire industrialisent le contrôle qualité et l'anti-obsolescence — voir la section 6 ci-dessous. La relecture éditoriale finale fiche par fiche reste à faire.
@@ -119,7 +119,7 @@ de re-documentation la fait repasser en `documente`.
 
 | Workflow | Fréquence | Rôle |
 |---|---|---|
-| `veille-cron.yml` | quotidien, 07h00 UTC | veille RSS → file de propositions à valider (`/veille`) |
+| `veille-cron.yml` | quotidien, 07h00 UTC | veille RSS → file de propositions à valider (`/veille`) → **patchs de fiche proposés, publiés comme artefact du job** (section 7) |
 | `qualite-cron.yml` | lundi, 06h00 UTC | validation → audit de fraîcheur → re-validation → commit des bascules |
 | `documentation-cron.yml` | mercredi, 05h30 UTC | propositions de sources pour les fiches à (re)documenter |
 
@@ -127,3 +127,134 @@ Le cron documentation tournait toutes les 4 heures pour écluser le backlog init
 hebdomadaire le 06/09/2026, ce backlog étant vide. Le cron qualité valide **avant et après** l'audit :
 un corpus cassé fait échouer le job sans rien committer. Les trois crons sont aussi lançables à la main
 depuis l'onglet Actions (`workflow_dispatch`), le cron qualité acceptant un `seuil` et un `dry_run`.
+
+
+## 7. La boucle de veille de bout en bout (collecte → patch → validation → publication)
+
+C'est le cycle qui rend le référentiel *vivant* : la veille collecte, deux scripts traduisent les
+propositions en modifications de fiches concrètes, un humain arbitre, le changelog garde la trace.
+
+> **Règle absolue, sans exception : aucune fiche n'est jamais modifiée automatiquement.**
+> `appliquer-veille.mjs` ne fait que **proposer** (il n'écrit qu'un fichier de patchs, jamais une fiche),
+> et `appliquer-patchs.mjs` n'applique **que** ce qu'une personne a relu dans ce fichier.
+> Aucun cron ne lance jamais l'application. Le script propose, l'humain dispose.
+
+### Le cycle en cinq temps
+
+| # | Étape | Commande | Qui | Écrit dans `data/seed/` ? |
+|---|---|---|---|---|
+| 1 | Collecte | `node scripts/veille-rss.mjs` · `node scripts/documentation-recherche.mjs` | cron | oui — `veille_queue.json` seulement |
+| 2 | Tri / qualification | relecture de la file (statut `a_traiter_fiche_existante`, `a_traiter_nouvelle_fiche`, `rejete`) | humain / session Claude | oui — `veille_queue.json` seulement |
+| 3 | **Proposition de patchs** | `npm run veille-patchs -- --limite=20` | cron (artefact) ou humain | **non** |
+| 4 | **Relecture et arbitrage** | ouvrir le fichier de patchs, passer `retenu: false` sur ce qui est écarté, réécrire les textes marqués `a_reformuler` | **humain** (obligatoire) | non |
+| 5 | **Publication** | `npm run appliquer-patchs -- --patchs=<fichier>` | **humain** | oui — fiches + `changelog.json` + `veille_queue.json` |
+
+### 3. Proposer des patchs — `npm run veille-patchs` (`scripts/appliquer-veille.mjs`)
+
+Lit les propositions de `data/seed/veille_queue.json` au statut voulu et produit, pour chacune, un **patch**
+explicite : fiche cible, fichier qui la porte, champ visé, texte proposé, source à ajouter, points à vérifier.
+Il n'applique rien et ne touche à aucune fiche.
+
+```bash
+npm run veille-patchs                       # toutes les propositions "a_traiter_fiche_existante"
+npm run veille-patchs -- --limite=5          # les 5 premières
+npm run veille-patchs -- --statut=a_traiter_nouvelle_fiche
+npm run veille-patchs -- --sortie=/tmp/patchs.json
+node scripts/appliquer-veille.mjs --aide
+```
+
+Sortie par défaut : `data/patchs/patchs-veille-AAAA-MM-JJ.json` (hors de `data/seed/`, donc jamais lu par le
+site ni par le validateur).
+
+Le script gère les **deux formes** de propositions présentes dans la file, qui ne se traitent pas pareil :
+
+- forme **Wikipédia** (`scripts/documentation-recherche.mjs`) — `{ nom, titre_article_source, langue_source,
+  extrait, url, note }`. Le résumé encyclopédique est de la **matière première**, pas un texte de fiche :
+  le patch vise le champ rédactionnel (`these_centrale`, ou `limites_connues` pour une fiche IA) et est
+  marqué **`a_reformuler`**. Il ne sera jamais appliqué sans drapeau explicite.
+- forme **RSS** (`scripts/veille-rss.mjs`) — `{ titre, link, date, resume }`. Le `resume` est de la prose
+  d'éditeur, non publiable ; en revanche l'URL datée est un fait vérifiable. Le patch propose donc un simple
+  **ajout de source** (`champ: "sources"`), marqué **`sur`** quand la source est primaire et directe.
+
+Chaque patch porte une **nature** :
+
+- **`sur`** — opération mécanique et vérifiable (ajouter une source primaire datée à une fiche existante).
+  Rien à réécrire ; il reste à valider.
+- **`a_reformuler`** — il y a du texte à produire avant publication : résumé Wikipédia brut, URL d'agrégateur
+  Google News à résoudre vers l'éditeur d'origine, titre suffixé du nom du média, source à faible score de
+  fiabilité. Le champ `a_verifier` liste précisément ce qui bloque.
+
+### 4. Relire — l'étape humaine, non contournable
+
+Ouvrir le fichier de patchs et, patch par patch :
+
+- passer `"retenu": false` sur ce qu'on écarte (garder la trace de la décision plutôt que supprimer la ligne) ;
+- pour les `a_reformuler` : réécrire `texte_propose` au format du référentiel (comparer avec `texte_actuel`,
+  qui donne l'existant), nettoyer les titres de source, remplacer les URL d'agrégateur ;
+- vérifier les points listés dans `a_verifier`.
+
+### 5. Publier — `npm run appliquer-patchs` (`scripts/appliquer-patchs.mjs`)
+
+```bash
+# 1) toujours commencer par une simulation
+npm run appliquer-patchs -- --patchs=data/patchs/patchs-veille-2026-09-06.json --dry-run
+
+# 2) application réelle, une fois la simulation relue
+npm run appliquer-patchs -- --patchs=data/patchs/patchs-veille-2026-09-06.json
+
+# 3) variantes
+npm run appliquer-patchs -- --patchs=... --limite=5                   # borne le lot
+npm run appliquer-patchs -- --patchs=... --inclure-a-reformuler       # après réécriture des textes
+npm run appliquer-patchs -- --patchs=... --conserver-file             # ne touche pas au statut des propositions
+node scripts/appliquer-patchs.mjs --aide
+```
+
+Pour chaque patch retenu, le script : ajoute la source (sans doublon), remplace le champ visé si le patch est
+un `remplacement_texte`, passe `derniere_verification` à la date du jour et `statut` à `verifie_recemment`,
+ajoute **une entrée par fiche touchée** dans `data/seed/changelog.json` (visible sur `/veille`), et bascule la
+proposition d'origine au statut `applique` dans la file pour qu'elle ne soit pas re-proposée indéfiniment.
+
+Deux refus par défaut, à connaître :
+
+- un patch `"retenu": false` n'est jamais appliqué ;
+- un patch de nature `a_reformuler` est **refusé** tant qu'on ne passe pas `--inclure-a-reformuler`. Ce n'est
+  pas une formalité : appliqué tel quel, un résumé Wikipédia remplace une thèse rédigée par un texte
+  encyclopédique hors format (constaté en test : une thèse centrale de 265 caractères remplacée par 65
+  caractères de définition générique).
+
+### Le garde-fou de restauration
+
+`appliquer-patchs.mjs` est le seul script qui écrit du contenu éditorial dans les fiches, donc le seul qui
+puisse casser le corpus. Il est encadré des deux côtés :
+
+1. **avant toute écriture**, il lance `scripts/valider-donnees.mjs` : si le corpus est *déjà* invalide, il
+   refuse de démarrer (code 1, rien écrit) — sinon il restaurerait à chaque run et masquerait la vraie panne ;
+2. il prend un **instantané octet pour octet** de tous les fichiers qu'il va toucher (fichiers de fiches
+   concernés, `changelog.json`, `veille_queue.json`) ;
+3. **après écriture**, il relance le validateur. En cas d'échec — ou de toute exception pendant l'écriture —
+   il **réécrit les instantanés** et sort en code 1. Le disque revient exactement dans son état d'avant,
+   y compris pour les patchs qui, eux, étaient bons : le lot est atomique, on ne laisse jamais un corpus
+   à moitié appliqué.
+
+Ce que le garde-fou couvre : tout ce que `npm run valider` sait détecter (JSON illisible, id dupliqué, enum
+inconnu, source sans titre ou de type invalide, date impossible ou future, champ obligatoire vide sur une
+fiche publiée, référence de gap pendante…) sur **l'ensemble** du corpus, pas seulement sur les fiches
+touchées. Ce qu'il ne couvre pas : la qualité éditoriale (un texte hors sujet mais bien formé passe la
+validation) et les avertissements non bloquants — c'est précisément le rôle de l'étape 4, la relecture
+humaine. Il ne couvre pas non plus les fichiers non suivis par le validateur (`data/patchs/`).
+
+### Ce que fait le cron quotidien
+
+`veille-cron.yml` (07h00 UTC) va désormais jusqu'à l'étape 3 : après la collecte RSS et le commit de la file,
+il lance `appliquer-veille.mjs` en écrivant le fichier de patchs dans `RUNNER_TEMP` (**hors du dépôt**) et le
+publie comme **artefact du job** (`patchs-veille-<run_id>`, conservé 30 jours), téléchargeable depuis
+l'onglet Actions. Une étape de contrôle fait échouer le job si un fichier suivi a été modifié.
+Le cron ne va jamais plus loin : l'étape 5 reste manuelle, par construction.
+
+### Vérifier après coup
+
+```bash
+npm run valider          # corpus valide ?
+npm run audit-fraicheur  # fiches périmées
+git diff -- data/seed    # relire ce qui a réellement changé avant de committer
+```
