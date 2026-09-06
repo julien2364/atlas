@@ -1,7 +1,17 @@
+import type { Metadata } from "next";
+import Link from "next/link";
 import fiches from "@/data/seed/fiches_ia.json";
 import type { FicheIA } from "@/lib/types";
+import { cheminFicheIA } from "@/lib/corpus";
 
 const data = fiches as unknown as FicheIA[];
+
+export const metadata: Metadata = {
+  title: "Référentiel B — capacités IA",
+  description:
+    "Les capacités de l'IA cartographiées par ATLAS : génératif et raisonnement, agentique, scientifique, sectoriel, limites, data science. Usages documentés par secteur avec niveau de maturité TRL.",
+  alternates: { canonical: "/referentiel-ia" },
+};
 
 const AXES: Record<string, string> = {
   generatif_raisonnement: "Génératif / raisonnement",
@@ -29,11 +39,11 @@ export default function ReferentielIAPage() {
         const entries = parAxe[axe] ?? [];
         if (entries.length === 0) return null;
         return (
-          <section key={axe}>
+          <section key={axe} id={`axe-${axe}`} className="scroll-mt-24">
             <h2 className="text-lg font-medium">{label} <span className="text-sm font-normal text-neutral-400">({entries.length})</span></h2>
             <div className="mt-3 space-y-3">
               {entries.map((f) => (
-                <details key={f.id} className="rounded border border-neutral-200 p-3 dark:border-neutral-800">
+                <details key={f.id} id={f.id} className="rounded border border-neutral-200 p-3 dark:border-neutral-800">
                   <summary className="cursor-pointer font-medium">
                     {f.nom} {f.editeur ? <span className="text-neutral-400">— {f.editeur}</span> : null}
                     <span className={`ml-2 rounded px-2 py-0.5 text-[11px] ${f.statut === "documente" ? "bg-emerald-100 text-emerald-700 dark:bg-emerald-900/40 dark:text-emerald-300" : "bg-neutral-100 text-neutral-500 dark:bg-neutral-800"}`}>
@@ -55,6 +65,14 @@ export default function ReferentielIAPage() {
                       )}
                     </div>
                   )}
+                  <p className="mt-3 text-sm">
+                    <Link
+                      href={cheminFicheIA(f.id)}
+                      className="underline decoration-neutral-300 hover:decoration-neutral-600 dark:decoration-neutral-600 dark:hover:decoration-neutral-300"
+                    >
+                      Ouvrir la fiche complète
+                    </Link>
+                  </p>
                 </details>
               ))}
             </div>

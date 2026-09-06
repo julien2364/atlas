@@ -1,5 +1,6 @@
 "use client";
 
+import Link from "next/link";
 import { useMemo, useState } from "react";
 import type { FicheGap, FicheHumaine, FicheIA, NiveauConfiance } from "@/lib/types";
 
@@ -83,6 +84,23 @@ export default function ComparateurClient({
             {humaine?.nom} <span className="text-neutral-400">×</span> {iaFiche?.nom}
           </h2>
           {gap.sujet && <p className="mt-1 text-sm text-neutral-500">{gap.sujet}</p>}
+          <p className="mt-2 flex flex-wrap gap-x-4 gap-y-1 text-xs">
+            <Link href={`/gap/${gap.id}`} className="underline decoration-neutral-300 hover:decoration-neutral-600">
+              Page dédiée de cette analyse
+            </Link>
+            <Link
+              href={`/fiche/humaine/${gap.fiche_humaine_id}`}
+              className="underline decoration-neutral-300 hover:decoration-neutral-600"
+            >
+              Fiche humaine
+            </Link>
+            <Link
+              href={`/fiche/ia/${gap.fiche_ia_id}`}
+              className="underline decoration-neutral-300 hover:decoration-neutral-600"
+            >
+              Fiche IA
+            </Link>
+          </p>
 
           {(gap.sous_themes?.length || gap.axes_recherche?.length) ? (
             <div className="mt-3 grid gap-3 rounded border border-neutral-100 bg-neutral-50 p-3 text-xs text-neutral-500 dark:border-neutral-800 dark:bg-neutral-900 sm:grid-cols-2">

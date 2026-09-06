@@ -76,7 +76,7 @@ export default function RechercheFiches() {
           {resultats.map((r) => (
             <a
               key={`${r.type}-${r.fiche.id}`}
-              href={r.type === "humaine" ? `/referentiel-humain#${r.fiche.id}` : `/referentiel-ia#${r.fiche.id}`}
+              href={r.type === "humaine" ? `/fiche/humaine/${r.fiche.id}` : `/fiche/ia/${r.fiche.id}`}
               className="flex items-center justify-between rounded-md border border-neutral-200 px-3 py-2 text-sm hover:bg-neutral-50 dark:border-neutral-800 dark:hover:bg-neutral-900"
             >
               <span>
