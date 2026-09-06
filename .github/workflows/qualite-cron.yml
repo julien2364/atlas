@@ -1,0 +1,62 @@
+name: Contrôle qualité hebdomadaire du corpus
+
+on:
+  schedule:
+    # Lundi 06h00 UTC — avant la veille quotidienne (07h00), pour que la semaine
+    # démarre sur un corpus validé et sur des fiches périmées déjà signalées.
+    - cron: "0 6 * * 1"
+  workflow_dispatch:
+    inputs:
+      seuil:
+        description: "Ancienneté en jours au-delà de laquelle une fiche repasse en « à ré-auditer »"
+        required: false
+        default: "180"
+      dry_run:
+        description: "Simulation seule (true) — n'écrit rien"
+        required: false
+        default: "false"
+
+permissions:
+  contents: write
+
+jobs:
+  qualite:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 1
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+
+      - name: Installer les dépendances
+        run: npm ci
+
+      # Garde-fou : si le corpus est déjà cassé, on s'arrête AVANT toute écriture.
+      # Le validateur sort en code 1 — pas de continue-on-error ici, c'est voulu.
+      - name: Valider l'intégrité du corpus (avant audit)
+        run: node scripts/valider-donnees.mjs
+
+      - name: Auditer la fraîcheur des fiches
+        run: |
+          node scripts/audit-fraicheur.mjs \
+            --seuil=${{ github.event.inputs.seuil || '180' }} \
+            ${{ github.event.inputs.dry_run == 'true' && '--dry-run' || '' }}
+
+      # Deuxième passage : on ne committe jamais un corpus cassé par l'audit.
+      - name: Re-valider l'intégrité du corpus (après audit)
+        run: node scripts/valider-donnees.mjs
+
+      - name: Committer les fiches basculées (s'il y en a)
+        run: |
+          git config user.name "atlas-qualite-bot"
+          git config user.email "qualite-bot@users.noreply.github.com"
+          if git diff --quiet -- data/seed; then
+            echo "Aucun changement — rien à committer."
+          else
+            git add data/seed
+            git commit -m "chore(qualite): fiches basculées en ré-audit [skip ci]"
+            git push
+          fi

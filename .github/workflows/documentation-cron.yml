@@ -2,9 +2,12 @@ name: Documentation en masse (recherche Wikipédia)
 
 on:
   schedule:
-    # Toutes les 4h (05/09/2026 : accéléré à la demande de Julien pour écluser plus vite
-    # le backlog des ~280 fiches "à documenter" restantes) — cf. docs/comment-lancer.md.
-    - cron: "30 */4 * * *"
+    # Hebdomadaire, mercredi 05h30 UTC (06/09/2026 : ralenti depuis "toutes les 4h",
+    # le backlog des fiches "à documenter" ayant été entièrement écoulé — 397/397
+    # documentées. Ce cron ne sert plus qu'à alimenter la file de propositions pour
+    # les fiches nouvellement créées ou repassées en "à ré-auditer" par le contrôle
+    # qualité hebdomadaire) — cf. docs/comment-lancer.md.
+    - cron: "30 5 * * 3"
   workflow_dispatch:
     inputs:
       limite:

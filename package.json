@@ -6,7 +6,9 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "eslint"
+    "lint": "eslint",
+    "valider": "node scripts/valider-donnees.mjs",
+    "audit-fraicheur": "node scripts/audit-fraicheur.mjs"
   },
   "dependencies": {
     "@supabase/supabase-js": "^2.115.0",
