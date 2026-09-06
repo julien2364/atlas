@@ -4,216 +4,422 @@
     "axe": "social",
     "sous_domaine": "economie",
     "nom": "Daron Acemoglu",
-    "these_centrale": "",
-    "apport": "",
-    "limites_critiques": "",
-    "sources": [],
-    "statut": "a_documenter",
-    "derniere_verification": "2026-09-05"
+    "these_centrale": "Daron Acemoglu, économiste turco-américain (MIT), soutient avec James Robinson que la prospérité durable des nations dépend avant tout de la qualité de leurs institutions politiques et économiques — inclusives ou extractives — bien plus que de la géographie, de la culture ou des dotations naturelles.",
+    "apport": "Son ouvrage co-écrit Why Nations Fail a popularisé cette thèse institutionnaliste, et ses travaux plus récents sur l'automatisation et l'IA analysent empiriquement l'effet des technologies sur les salaires et l'emploi, ce qui lui a valu le prix Nobel d'économie 2024 (partagé avec Robinson et Johnson).",
+    "limites_critiques": "Sa thèse institutionnaliste est critiquée pour son caractère parfois circulaire (les institutions inclusives expliquant la croissance, mais la croissance renforçant à son tour les institutions inclusives) et pour sous-estimer d'autres facteurs structurels comme la géographie ou les chocs exogènes.",
+    "sources": [
+      {
+        "titre": "Why Nations Fail (Acemoglu & Robinson, 2012)",
+        "type": "primaire"
+      },
+      {
+        "titre": "Daron Acemoglu — Wikipédia",
+        "type": "secondaire",
+        "url": "https://fr.wikipedia.org/wiki/Daron_Acemoğlu"
+      }
+    ],
+    "statut": "documente",
+    "derniere_verification": "2026-09-06",
+    "resonance_ia": "Acemoglu est l'un des économistes les plus cités sur le risque que l'IA, si elle est déployée sans réorientation des institutions, aggrave les inégalités en automatisant des tâches sans créer suffisamment de nouvelles catégories d'emplois qualifiés."
   },
   {
     "id": "james-a-robinson",
     "axe": "social",
     "sous_domaine": "economie",
     "nom": "James A. Robinson",
-    "these_centrale": "",
-    "apport": "",
-    "limites_critiques": "",
-    "sources": [],
-    "statut": "a_documenter",
-    "derniere_verification": "2026-09-05"
+    "these_centrale": "James A. Robinson, politiste et économiste britannique (université de Chicago), défend avec Daron Acemoglu la thèse selon laquelle ce sont les institutions politiques inclusives, garantissant la propriété privée et l'État de droit, qui permettent la prospérité économique de long terme des nations.",
+    "apport": "Co-auteur de Why Nations Fail, il a contribué à une œuvre de référence en économie politique du développement qui a profondément influencé le débat académique et public sur les causes des inégalités entre pays, récompensée par le prix Nobel d'économie 2024.",
+    "limites_critiques": "Sa thèse est critiquée pour minimiser le rôle de facteurs comme la géographie, les ressources naturelles ou les héritages coloniaux spécifiques dans les trajectoires nationales, et pour offrir des recommandations de réforme institutionnelle jugées parfois difficiles à opérationnaliser concrètement.",
+    "sources": [
+      {
+        "titre": "Why Nations Fail (Acemoglu & Robinson, 2012)",
+        "type": "primaire"
+      },
+      {
+        "titre": "James A. Robinson — Wikipédia",
+        "type": "secondaire",
+        "url": "https://fr.wikipedia.org/wiki/James_A._Robinson"
+      }
+    ],
+    "statut": "documente",
+    "derniere_verification": "2026-09-06",
+    "resonance_ia": "Les travaux de Robinson sur les institutions inclusives nourrissent le débat sur les conditions politiques nécessaires pour que les gains de productivité liés à l'IA profitent largement à la population plutôt qu'à une minorité disposant du contrôle du capital technologique."
   },
   {
     "id": "simon-johnson",
     "axe": "social",
     "sous_domaine": "economie",
     "nom": "Simon Johnson",
-    "these_centrale": "",
-    "apport": "",
-    "limites_critiques": "",
-    "sources": [],
-    "statut": "a_documenter",
-    "derniere_verification": "2026-09-05"
+    "these_centrale": "Simon Johnson, économiste britanno-américain (ancien chef économiste du FMI), soutient, en écho à Acemoglu et Robinson, que le contrôle du pouvoir économique et technologique par une élite restreinte — qu'il s'agisse de la finance ou de l'IA — menace la stabilité institutionnelle et démocratique.",
+    "apport": "Ses travaux sur la crise financière de 2008 (notamment son article influent « The Quiet Coup ») et, plus récemment, ses recherches co-écrites avec Acemoglu sur l'orientation du progrès technique, lui ont valu le prix Nobel d'économie 2024 partagé avec Acemoglu et Robinson.",
+    "limites_critiques": "Ses positions, souvent critiques envers le pouvoir financier et technologique concentré, sont accusées par certains d'un biais idéologique anti-marché, et ses recommandations de régulation plus stricte restent contestées par une partie de la profession économique plus libérale.",
+    "sources": [
+      {
+        "titre": "13 Bankers (Johnson & Kwak, 2010)",
+        "type": "primaire"
+      },
+      {
+        "titre": "Simon Johnson (économiste) — Wikipédia",
+        "type": "secondaire",
+        "url": "https://fr.wikipedia.org/wiki/Simon_Johnson_(économiste)"
+      }
+    ],
+    "statut": "documente",
+    "derniere_verification": "2026-09-06",
+    "resonance_ia": "Avec Acemoglu, Johnson plaide pour orienter délibérément le développement de l'IA vers des usages qui augmentent la productivité des travailleurs plutôt que de simplement les remplacer, un choix qu'ils jugent politique et non technologiquement déterminé."
   },
   {
     "id": "gabriel-zucman",
     "axe": "social",
     "sous_domaine": "economie",
     "nom": "Gabriel Zucman",
-    "these_centrale": "",
-    "apport": "",
-    "limites_critiques": "",
-    "sources": [],
-    "statut": "a_documenter",
-    "derniere_verification": "2026-09-05"
+    "these_centrale": "Gabriel Zucman, économiste franco-américain, soutient que l'évasion fiscale des grandes fortunes via les paradis fiscaux constitue un problème majeur et mesurable qui aggrave les inégalités et prive les États de recettes publiques considérables.",
+    "apport": "Son ouvrage La Richesse cachée des nations a quantifié l'ampleur de la richesse dissimulée dans les paradis fiscaux, et son travail avec Emmanuel Saez (Le Triomphe de l'injustice) a nourri des propositions concrètes de réforme fiscale, dont un impôt minimal mondial sur les grandes fortunes aujourd'hui débattu au niveau international (G20).",
+    "limites_critiques": "Ses estimations chiffrées de l'évasion fiscale et ses propositions de taxation mondiale des grandes fortunes sont contestées par des économistes plus libéraux qui doutent de leur faisabilité politique et de leurs effets sur l'investissement et la mobilité du capital.",
+    "sources": [
+      {
+        "titre": "La Richesse cachée des nations (Zucman, 2013)",
+        "type": "primaire"
+      },
+      {
+        "titre": "Gabriel Zucman — Wikipédia",
+        "type": "secondaire",
+        "url": "https://fr.wikipedia.org/wiki/Gabriel_Zucman"
+      }
+    ],
+    "statut": "documente",
+    "derniere_verification": "2026-09-06",
+    "resonance_ia": "Zucman s'intéresse à la manière dont la concentration extrême de richesse issue des grandes entreprises technologiques et d'IA pourrait justifier de nouveaux mécanismes fiscaux internationaux similaires à ceux qu'il propose pour les paradis fiscaux."
   },
   {
     "id": "emmanuel-saez",
     "axe": "social",
     "sous_domaine": "economie",
     "nom": "Emmanuel Saez",
-    "these_centrale": "",
-    "apport": "",
-    "limites_critiques": "",
-    "sources": [],
-    "statut": "a_documenter",
-    "derniere_verification": "2026-09-05"
+    "these_centrale": "Emmanuel Saez, avec Thomas Piketty, a démontré que les inégalités de revenu aux États-Unis, après une baisse continue de l'après-guerre aux années 1970, ont fortement augmenté depuis pour retrouver des niveaux comparables à ceux des années 1920, principalement du fait des écarts salariaux plutôt que du patrimoine.",
+    "apport": "Ses travaux avec Piketty et Camille Landais (Pour une révolution fiscale) et avec Gabriel Zucman (The Triumph of Injustice) ont nourri des propositions concrètes de réforme fiscale progressive, influençant directement le débat public sur la taxation des hauts revenus et des grandes fortunes.",
+    "limites_critiques": "Ses méthodes de mesure des inégalités à partir des données fiscales ont fait l'objet d'un débat académique vif avec d'autres économistes (notamment Gerald Auten et David Splinter), qui contestent l'ampleur de la hausse des inégalités mesurée en tenant compte des transferts sociaux et de la fiscalité.",
+    "sources": [
+      {
+        "titre": "The Triumph of Injustice (Saez & Zucman, 2019)",
+        "type": "primaire"
+      },
+      {
+        "titre": "Emmanuel Saez — Wikipédia",
+        "type": "secondaire",
+        "url": "https://fr.wikipedia.org/wiki/Emmanuel_Saez"
+      }
+    ],
+    "statut": "documente",
+    "derniere_verification": "2026-09-06",
+    "resonance_ia": "Les inégalités de revenus documentées par Saez sont au cœur des inquiétudes concernant l'impact de l'automatisation par l'IA, susceptible d'accentuer la déconnexion entre gains de productivité et rémunération du travail salarié."
   },
   {
     "id": "mariana-mazzucato",
     "axe": "social",
     "sous_domaine": "economie",
     "nom": "Mariana Mazzucato",
-    "these_centrale": "",
-    "apport": "",
-    "limites_critiques": "",
-    "sources": [],
-    "statut": "a_documenter",
-    "derniere_verification": "2026-09-05"
+    "these_centrale": "Mariana Mazzucato conteste le mythe d'une innovation purement portée par le secteur privé, démontrant que l'État joue un rôle majeur et indispensable dans les grandes avancées technologiques, y compris celles dont profitent ensuite exclusivement des entreprises privées.",
+    "apport": "Son ouvrage The Entrepreneurial State montre, à travers l'exemple de l'iPhone, que des innovations clés (Internet, écran tactile, GPS) résultent d'investissements publics massifs, ce qui a renouvelé le débat sur le rôle de l'État dans les politiques d'innovation, en France comme au niveau international.",
+    "limites_critiques": "Sa thèse d'une « double injustice » — l'État finance le risque initial mais le privé capte seul les profits — est contestée par des économistes plus libéraux qui estiment qu'elle sous-évalue le risque et l'exécution entrepreneuriale propres au secteur privé et surestime la capacité de l'État à sélectionner les bonnes technologies gagnantes.",
+    "sources": [
+      {
+        "titre": "The Entrepreneurial State (Mazzucato, 2013)",
+        "type": "primaire"
+      },
+      {
+        "titre": "Mariana Mazzucato — Wikipédia",
+        "type": "secondaire",
+        "url": "https://fr.wikipedia.org/wiki/Mariana_Mazzucato"
+      }
+    ],
+    "statut": "documente",
+    "derniere_verification": "2026-09-06",
+    "resonance_ia": "Mazzucato applique directement sa thèse à l'IA, plaidant pour que les États qui financent la recherche fondamentale en intelligence artificielle négocient un retour sur investissement public plutôt que de laisser les bénéfices intégralement captés par quelques grandes entreprises technologiques privées."
   },
   {
     "id": "dani-rodrik",
     "axe": "social",
     "sous_domaine": "economie",
     "nom": "Dani Rodrik",
-    "these_centrale": "",
-    "apport": "",
-    "limites_critiques": "",
-    "sources": [],
-    "statut": "a_documenter",
-    "derniere_verification": "2026-09-05"
+    "these_centrale": "Dani Rodrik, économiste turc spécialiste de l'économie internationale et du développement, s'oppose à l'idée que le libre-échange serait le facteur obligé et essentiel de la croissance, soutenant que des politiques industrielles et commerciales alternatives peuvent s'avérer plus efficaces selon le contexte national.",
+    "apport": "Son ouvrage The Globalization Paradox a formulé un « trilemme de la mondialisation » influent, selon lequel un pays ne peut poursuivre simultanément une intégration économique mondiale poussée, la souveraineté nationale et la démocratie — devant nécessairement sacrifier l'un des trois.",
+    "limites_critiques": "Ses critiques du consensus de Washington et sa défense de marges de manœuvre nationales en matière de politique industrielle sont contestées par des économistes plus favorables au libre-échange, qui craignent que cela justifie un protectionnisme économiquement coûteux à long terme.",
+    "sources": [
+      {
+        "titre": "The Globalization Paradox (Rodrik, 2011)",
+        "type": "primaire"
+      },
+      {
+        "titre": "Dani Rodrik — Wikipédia",
+        "type": "secondaire",
+        "url": "https://fr.wikipedia.org/wiki/Dani_Rodrik"
+      }
+    ],
+    "statut": "documente",
+    "derniere_verification": "2026-09-06",
+    "resonance_ia": "Rodrik s'est exprimé sur les risques que la course mondiale à l'IA pousse les États à des politiques industrielles nationalistes similaires à celles qu'il a longtemps étudiées dans le commerce international, avec des tensions équivalentes entre coopération mondiale et souveraineté technologique."
   },
   {
     "id": "richard-thaler",
     "axe": "social",
     "sous_domaine": "economie",
     "nom": "Richard Thaler",
-    "these_centrale": "",
-    "apport": "",
-    "limites_critiques": "",
-    "sources": [],
-    "statut": "a_documenter",
-    "derniere_verification": "2026-09-05"
+    "these_centrale": "Richard Thaler, économiste américain pionnier de l'économie comportementale, soutient que les individus s'écartent systématiquement de la rationalité économique classique en raison de biais cognitifs prévisibles, ce qui doit être pris en compte dans la conception des politiques publiques.",
+    "apport": "Avec Cass Sunstein, il a développé le concept de « nudge » (paternalisme libertarien), des interventions douces qui orientent les décisions sans les contraindre, largement repris par des gouvernements pour améliorer des politiques publiques (épargne retraite, santé) ; il a reçu le prix Nobel d'économie 2017.",
+    "limites_critiques": "Le concept de nudge est critiqué pour son caractère potentiellement paternaliste et manipulateur malgré l'absence de contrainte formelle, ainsi que pour l'hétérogénéité de l'efficacité des interventions comportementales selon les contextes culturels et sociaux.",
+    "sources": [
+      {
+        "titre": "Nudge (Thaler & Sunstein, 2008)",
+        "type": "primaire"
+      },
+      {
+        "titre": "Richard Thaler — Wikipédia",
+        "type": "secondaire",
+        "url": "https://fr.wikipedia.org/wiki/Richard_Thaler"
+      }
+    ],
+    "statut": "documente",
+    "derniere_verification": "2026-09-06",
+    "resonance_ia": "Les techniques de nudge inspirent directement la conception d'interfaces d'IA (recommandations, notifications) qui orientent les comportements des utilisateurs, posant la question de la frontière entre incitation bénéfique et manipulation algorithmique à grande échelle."
   },
   {
     "id": "daniel-kahneman",
     "axe": "social",
     "sous_domaine": "economie",
     "nom": "Daniel Kahneman",
-    "these_centrale": "",
-    "apport": "",
-    "limites_critiques": "",
-    "sources": [],
-    "statut": "a_documenter",
-    "derniere_verification": "2026-09-05"
+    "these_centrale": "Daniel Kahneman, psychologue et économiste, a démontré avec Amos Tversky (théorie des perspectives, 1979) que la prise de décision humaine s'écarte systématiquement de la rationalité économique classique, notamment par l'aversion à la perte, jetant les bases de l'économie et de la finance comportementales.",
+    "apport": "Son ouvrage Thinking, Fast and Slow a popularisé le modèle des « deux systèmes » de pensée (système 1 rapide et intuitif, système 2 lent et analytique), et ses travaux lui ont valu le prix Nobel d'économie 2002, une distinction rare pour un psychologue.",
+    "limites_critiques": "Plusieurs études de biais cognitifs largement citées dans son œuvre (notamment sur l'amorçage social) n'ont pas été répliquées lors de la crise de réplication qui a touché la psychologie sociale dans les années 2010, ce que Kahneman lui-même a publiquement reconnu et discuté.",
+    "sources": [
+      {
+        "titre": "Thinking, Fast and Slow (Kahneman, 2011)",
+        "type": "primaire"
+      },
+      {
+        "titre": "Daniel Kahneman — Wikipédia",
+        "type": "secondaire",
+        "url": "https://fr.wikipedia.org/wiki/Daniel_Kahneman"
+      }
+    ],
+    "statut": "documente",
+    "derniere_verification": "2026-09-06",
+    "resonance_ia": "Les biais cognitifs identifiés par Kahneman et Tversky sont directement mobilisés dans la conception de systèmes d'IA visant à corriger ou, à l'inverse, à exploiter les décisions humaines, un enjeu central de l'éthique du design algorithmique."
   },
   {
     "id": "kate-raworth",
     "axe": "social",
     "sous_domaine": "economie",
     "nom": "Kate Raworth",
-    "these_centrale": "",
-    "apport": "",
-    "limites_critiques": "",
-    "sources": [],
-    "statut": "a_documenter",
-    "derniere_verification": "2026-09-05"
+    "these_centrale": "Kate Raworth, économiste britannique, propose avec l'économie du donut (Doughnut Economics, 2017) de remplacer l'objectif de croissance économique indéfinie par un objectif de satisfaction des besoins fondamentaux de tous les humains à l'intérieur des limites écologiques de la planète.",
+    "apport": "Son modèle visuel du « donut » — un plancher social minimal et un plafond écologique à ne pas dépasser — a été adopté comme cadre de référence par plusieurs villes (Amsterdam notamment) pour orienter leurs politiques publiques de transition écologique et sociale, et son livre a été sélectionné parmi les meilleurs livres économiques de l'année par le Financial Times et McKinsey.",
+    "limites_critiques": "Le modèle est critiqué pour son caractère davantage visuel et incitatif qu'opérationnel, laissant ouvertes des questions concrètes de mise en œuvre (comment arbitrer entre croissance nécessaire dans les pays pauvres et sobriété requise dans les pays riches).",
+    "sources": [
+      {
+        "titre": "Doughnut Economics (Raworth, 2017)",
+        "type": "primaire"
+      },
+      {
+        "titre": "Kate Raworth — Wikipédia",
+        "type": "secondaire",
+        "url": "https://fr.wikipedia.org/wiki/Kate_Raworth"
+      }
+    ],
+    "statut": "documente",
+    "derniere_verification": "2026-09-06",
+    "resonance_ia": "L'économie du donut est régulièrement mobilisée dans les débats sur l'empreinte environnementale de l'IA (consommation énergétique des centres de données), posant la question de la compatibilité entre développement massif de l'IA et respect des limites planétaires."
   },
   {
     "id": "hegemonie-unilaterale-pax-britannica-pax-americana",
     "axe": "social",
     "sous_domaine": "gouvernance_mondiale",
     "nom": "Hégémonie unilatérale (Pax Britannica, Pax Americana)",
-    "these_centrale": "",
-    "apport": "",
-    "limites_critiques": "",
-    "sources": [],
-    "statut": "a_documenter",
-    "derniere_verification": "2026-09-05"
+    "these_centrale": "L'hégémonie unilatérale, illustrée par la Pax Britannica (1815-fin XIXe siècle) puis la Pax Americana (après 1945), part du principe qu'une puissance dominante, forte de sa suprématie navale ou militaire et économique, peut imposer un ordre international relativement stable qui sert avant tout ses propres intérêts commerciaux et stratégiques.",
+    "apport": "Ce modèle a permis, sous domination britannique puis américaine, des périodes prolongées de paix relative entre grandes puissances et l'essor du commerce international, la puissance hégémonique assurant les biens publics mondiaux (sécurité des routes maritimes, stabilité monétaire) que personne d'autre n'avait intérêt ou capacité à fournir.",
+    "limites_critiques": "Cet ordre reste structurellement fragile : il dépend entièrement du maintien de l'avantage technologique et militaire de la puissance dominante, et s'effondre lorsque des rivaux émergent (industrialisation allemande et américaine ayant érodé la Pax Britannica), ce qui pose aujourd'hui la question de la pérennité de la Pax Americana face à la montée de la Chine.",
+    "sources": [
+      {
+        "titre": "Pax Britannica",
+        "type": "primaire",
+        "url": "https://fr.wikipedia.org/wiki/Pax_Britannica"
+      },
+      {
+        "titre": "Pax Britannica — Wikipédia",
+        "type": "secondaire",
+        "url": "https://fr.wikipedia.org/wiki/Pax_Britannica"
+      }
+    ],
+    "statut": "documente",
+    "derniere_verification": "2026-09-06",
+    "resonance_ia": "La course actuelle à la suprématie en IA entre États-Unis et Chine reproduit la logique de l'hégémonie unilatérale : la maîtrise des technologies les plus avancées est perçue comme le nouveau fondement possible d'un ordre mondial dominé par une seule puissance."
   },
   {
     "id": "bipolarite-guerre-froide",
     "axe": "social",
     "sous_domaine": "gouvernance_mondiale",
     "nom": "Bipolarité (Guerre froide)",
-    "these_centrale": "",
-    "apport": "",
-    "limites_critiques": "",
-    "sources": [],
-    "statut": "a_documenter",
-    "derniere_verification": "2026-09-05"
+    "these_centrale": "La bipolarité de la Guerre froide part du principe que l'ordre mondial peut se structurer autour de deux superpuissances rivales (États-Unis et URSS) dotées chacune de leurs alliances institutionnalisées (OTAN, Pacte de Varsovie) et de leur bloc idéologique, plutôt que d'une hégémonie unique ou d'un équilibre multipolaire.",
+    "apport": "Ce modèle a structuré durablement les relations internationales par la confrontation idéologique et la course aux armements nucléaires, tout en générant des mécanismes de régulation de la tension (sommets diplomatiques réguliers, ligne rouge) visant à diminuer le risque de guerre nucléaire directe entre les deux blocs.",
+    "limites_critiques": "Le système a rapidement paralysé les institutions censées gouverner mondialement : l'ONU ne peut agir dès que les intérêts majeurs de l'un des deux blocs sont en jeu, du fait du droit de veto, et de nombreux pays du tiers-monde ont formé le mouvement des non-alignés pour échapper à cette bipolarisation imposée.",
+    "sources": [
+      {
+        "titre": "Guerre froide",
+        "type": "primaire",
+        "url": "https://fr.wikipedia.org/wiki/Guerre_froide"
+      },
+      {
+        "titre": "Guerre froide — Wikipédia",
+        "type": "secondaire",
+        "url": "https://fr.wikipedia.org/wiki/Guerre_froide"
+      }
+    ],
+    "statut": "documente",
+    "derniere_verification": "2026-09-06",
+    "resonance_ia": "Certains analystes décrivent la rivalité technologique actuelle entre États-Unis et Chine en matière d'IA comme une nouvelle forme de bipolarité, avec un risque similaire de paralysie des instances de gouvernance mondiale dès que les intérêts stratégiques de l'une des deux puissances sont directement concernés."
   },
   {
     "id": "multilateralisme-institutionnel",
     "axe": "social",
     "sous_domaine": "gouvernance_mondiale",
     "nom": "Multilatéralisme institutionnel",
-    "these_centrale": "",
-    "apport": "",
-    "limites_critiques": "",
-    "sources": [],
-    "statut": "a_documenter",
-    "derniere_verification": "2026-09-05"
+    "these_centrale": "Le multilatéralisme institutionnel part du principe que la coopération d'au moins trois États autour de règles communes, incarnée par des organisations comme l'ONU ou le système de Bretton Woods, peut substituer un ordre régi par le droit à l'anarchie internationale et favoriser la paix par la négociation collective plutôt que par le rapport de force.",
+    "apport": "Ce modèle a permis la création d'un cadre normatif international dense (droit de la mer, droit commercial via le GATT/OMC, droits humains) qui structure encore aujourd'hui l'essentiel des relations internationales pacifiques et du commerce mondial.",
+    "limites_critiques": "Les critiques réalistes soulignent que ces institutions limitent peu les relations de puissance et légitiment plutôt la domination des grandes puissances (illustrée par le droit de veto au Conseil de sécurité) ; le multilatéralisme s'avère en pratique plus efficace pour le commerce que pour la sécurité collective, et les superpuissances le rejettent dès qu'il contrarie leurs intérêts nationaux.",
+    "sources": [
+      {
+        "titre": "Multilatéralisme",
+        "type": "primaire",
+        "url": "https://fr.wikipedia.org/wiki/Multilatéralisme"
+      },
+      {
+        "titre": "Multilatéralisme — Wikipédia",
+        "type": "secondaire",
+        "url": "https://fr.wikipedia.org/wiki/Multilatéralisme"
+      }
+    ],
+    "statut": "documente",
+    "derniere_verification": "2026-09-06",
+    "resonance_ia": "Les tentatives de gouvernance multilatérale de l'IA (résolutions onusiennes, sommets internationaux sur la sécurité de l'IA) reproduisent cette même tension : les grandes puissances technologiques acceptent la coopération multilatérale tant qu'elle ne contraint pas leur avance stratégique."
   },
   {
     "id": "gouvernance-multipolaire",
     "axe": "social",
     "sous_domaine": "gouvernance_mondiale",
     "nom": "Gouvernance multipolaire",
-    "these_centrale": "",
-    "apport": "",
-    "limites_critiques": "",
-    "sources": [],
-    "statut": "a_documenter",
-    "derniere_verification": "2026-09-05"
+    "these_centrale": "La gouvernance multipolaire part du principe que l'ordre mondial peut reposer sur le partage des influences prépondérantes entre plusieurs pôles de puissance (grandes puissances régionales ou mondiales) plutôt que sur la domination d'une seule superpuissance ou de deux blocs rivaux.",
+    "apport": "Ce modèle rend mieux compte de la configuration géopolitique actuelle, marquée par la montée de puissances comme la Chine, l'Inde ou les pays du Golfe aux côtés des puissances occidentales traditionnelles, et par l'émergence de forums reflétant cette pluralité (G20, BRICS).",
+    "limites_critiques": "Les théoriciens des relations internationales débattent de longue date de la stabilité comparée des ordres multipolaires face aux ordres bipolaires ou unipolaires : un monde à plusieurs pôles de puissance comparables est généralement jugé plus imprévisible et sujet à des alliances changeantes, ce qui peut accroître le risque de conflits mal anticipés.",
+    "sources": [
+      {
+        "titre": "Multipolarité",
+        "type": "primaire",
+        "url": "https://fr.wikipedia.org/wiki/Multipolarité"
+      },
+      {
+        "titre": "Multipolarité — Wikipédia",
+        "type": "secondaire",
+        "url": "https://fr.wikipedia.org/wiki/Multipolarité"
+      }
+    ],
+    "statut": "documente",
+    "derniere_verification": "2026-09-06",
+    "resonance_ia": "La fragmentation actuelle des écosystèmes d'IA entre blocs américain, chinois et, dans une moindre mesure, européen illustre une forme de multipolarité technologique naissante, avec les mêmes risques d'imprévisibilité que ceux identifiés pour la multipolarité géopolitique classique."
   },
   {
     "id": "gouvernance-en-reseau-multiniveau",
     "axe": "social",
     "sous_domaine": "gouvernance_mondiale",
     "nom": "Gouvernance en réseau (multiniveau)",
-    "these_centrale": "",
-    "apport": "",
-    "limites_critiques": "",
-    "sources": [],
-    "statut": "a_documenter",
-    "derniere_verification": "2026-09-05"
+    "these_centrale": "La gouvernance en réseau (multiniveau) part du principe que la régulation des enjeux mondiaux ne repose pas sur un échelon unique (l'État ou l'organisation internationale) mais s'articule simultanément entre niveaux local, national, régional et mondial, ainsi qu'entre acteurs publics et privés.",
+    "apport": "Ce modèle rend mieux compte de la complexité réelle de la gouvernance contemporaine (climat, santé, numérique), où des villes, des entreprises, des ONG et des organisations internationales interagissent directement sans passer systématiquement par la médiation exclusive des États.",
+    "limites_critiques": "Cette fragmentation des niveaux de décision peut produire un manque de coordination sectorielle et une dilution des responsabilités, rendant plus difficile l'identification d'un acteur réellement comptable en cas d'échec de régulation.",
+    "sources": [
+      {
+        "titre": "Gouvernance mondiale",
+        "type": "primaire",
+        "url": "https://fr.wikipedia.org/wiki/Gouvernance_mondiale"
+      },
+      {
+        "titre": "Gouvernance mondiale — Wikipédia",
+        "type": "secondaire",
+        "url": "https://fr.wikipedia.org/wiki/Gouvernance_mondiale"
+      }
+    ],
+    "statut": "documente",
+    "derniere_verification": "2026-09-06",
+    "resonance_ia": "La gouvernance de l'IA se distribue déjà sur plusieurs niveaux (règlement européen, lois nationales, chartes d'entreprises, standards techniques internationaux), illustrant concrètement les avantages de flexibilité et les risques de fragmentation propres à ce modèle."
   },
   {
     "id": "minilateralisme-et-clubs-g7-g20",
     "axe": "social",
     "sous_domaine": "gouvernance_mondiale",
     "nom": "Minilatéralisme et clubs (G7, G20)",
-    "these_centrale": "",
-    "apport": "",
-    "limites_critiques": "",
-    "sources": [],
-    "statut": "a_documenter",
-    "derniere_verification": "2026-09-05"
+    "these_centrale": "Le minilatéralisme part du principe qu'un petit groupe de pays clés (club restreint comme le G7 ou le G20) peut coordonner plus efficacement des réponses à des enjeux mondiaux qu'un forum universel comme l'ONU, en évitant les blocages liés au grand nombre de participants et à la règle du consensus.",
+    "apport": "Ces clubs informels ont permis des réponses rapides et coordonnées à des crises majeures (crise financière de 2008 via le G20) et servent de lieux d'impulsion politique qui sont ensuite, parfois, relayés vers des instances plus universelles.",
+    "limites_critiques": "Ce modèle pose un problème de légitimité et de représentativité : les décisions prises par un club restreint de puissances engagent de facto l'ensemble de la communauté internationale sans que les pays exclus aient pu peser sur leur élaboration.",
+    "sources": [
+      {
+        "titre": "Gouvernance mondiale",
+        "type": "primaire",
+        "url": "https://fr.wikipedia.org/wiki/Gouvernance_mondiale"
+      },
+      {
+        "titre": "Gouvernance mondiale — Wikipédia",
+        "type": "secondaire",
+        "url": "https://fr.wikipedia.org/wiki/Gouvernance_mondiale"
+      }
+    ],
+    "statut": "documente",
+    "derniere_verification": "2026-09-06",
+    "resonance_ia": "Le G7 (Processus d'Hiroshima) et le G20 sont devenus des lieux privilégiés de coordination minilatérale sur la gouvernance de l'IA, reproduisant à cette échelle le même déficit de représentativité déjà observé sur d'autres dossiers économiques et sécuritaires."
   },
   {
     "id": "regionalisme-et-integration-regionale",
     "axe": "social",
     "sous_domaine": "gouvernance_mondiale",
     "nom": "Régionalisme et intégration régionale",
-    "these_centrale": "",
-    "apport": "",
-    "limites_critiques": "",
-    "sources": [],
-    "statut": "a_documenter",
-    "derniere_verification": "2026-09-05"
+    "these_centrale": "Le régionalisme et l'intégration régionale partent du principe qu'un ensemble d'États géographiquement proches peuvent coordonner leurs politiques économiques et parfois politiques par étapes croissantes (zone de libre-échange, union douanière, marché commun, union économique et monétaire), l'Union européenne en étant l'exemple le plus abouti.",
+    "apport": "Ce modèle a permis, à travers des organisations comme l'UE, l'ASEAN ou le Mercosur, d'approfondir les échanges commerciaux et parfois la coopération politique entre pays voisins, offrant une échelle intermédiaire entre la souveraineté nationale et la gouvernance mondiale universelle.",
+    "limites_critiques": "L'approfondissement de l'intégration régionale se heurte régulièrement aux résistances souverainistes des opinions publiques et des gouvernements nationaux (illustrées par le Brexit), et le degré d'intégration réussi varie énormément d'un bloc régional à l'autre selon l'homogénéité économique et politique de ses membres.",
+    "sources": [
+      {
+        "titre": "Communauté économique européenne",
+        "type": "primaire",
+        "url": "https://fr.wikipedia.org/wiki/Communauté_économique_européenne"
+      },
+      {
+        "titre": "Gouvernance mondiale — Wikipédia",
+        "type": "secondaire",
+        "url": "https://fr.wikipedia.org/wiki/Gouvernance_mondiale"
+      }
+    ],
+    "statut": "documente",
+    "derniere_verification": "2026-09-06",
+    "resonance_ia": "La régulation de l'IA suit une dynamique régionaliste marquée, avec des blocs (règlement européen, approche américaine, stratégie chinoise) qui développent des normes distinctes, posant la question de l'interopérabilité entre ces régimes régionaux à mesure que les technologies et les entreprises opèrent, elles, à l'échelle mondiale."
   },
   {
     "id": "souverainisme-et-concert-des-nations",
     "axe": "social",
     "sous_domaine": "gouvernance_mondiale",
     "nom": "Souverainisme et concert des nations",
-    "these_centrale": "",
-    "apport": "",
-    "limites_critiques": "",
-    "sources": [],
-    "statut": "a_documenter",
-    "derniere_verification": "2026-09-05"
+    "these_centrale": "Le souverainisme et le modèle du « concert des nations » (inspiré du Concert européen établi après le congrès de Vienne en 1815) partent du principe que l'ordre international est mieux assuré par la concertation directe et diplomatique entre grandes puissances souveraines, respectueuses de leurs sphères d'influence respectives, que par des institutions supranationales contraignantes.",
+    "apport": "Le Concert européen a permis, par la diplomatie régulière de ses grandes puissances (la « pentarchie » de 1815), une période de paix relative prolongée en Europe au XIXe siècle, en évitant les conflits généralisés entre grandes puissances pendant plusieurs décennies.",
+    "limites_critiques": "Ce modèle repose entièrement sur la bonne volonté diplomatique de puissances égales en force, ce qui le rend fragile dès qu'émerge une puissance qui refuse l'ordre établi ; il a d'ailleurs fini par s'effondrer avec la montée des nationalismes et des rivalités impériales qui ont conduit à la Première Guerre mondiale.",
+    "sources": [
+      {
+        "titre": "Concert européen",
+        "type": "primaire",
+        "url": "https://fr.wikipedia.org/wiki/Concert_européen"
+      },
+      {
+        "titre": "Concert européen — Wikipédia",
+        "type": "secondaire",
+        "url": "https://fr.wikipedia.org/wiki/Concert_européen"
+      }
+    ],
+    "statut": "documente",
+    "derniere_verification": "2026-09-06",
+    "resonance_ia": "Certaines propositions actuelles de gouvernance de l'IA par un « concert » restreint de grandes puissances technologiques (plutôt que par des institutions mondiales contraignantes) reprennent explicitement cette logique souverainiste, avec les mêmes risques de fragilité en cas de rupture de confiance entre les parties."
   },
   {
     "id": "sdn",
@@ -1126,156 +1332,309 @@
     "axe": "social",
     "sous_domaine": "management",
     "nom": "Fordisme",
-    "these_centrale": "",
-    "apport": "",
-    "limites_critiques": "",
-    "sources": [],
-    "statut": "a_documenter",
-    "derniere_verification": "2026-09-05"
+    "these_centrale": "Le fordisme, modèle d'organisation développé par Henry Ford en 1908 pour la production de la Ford T, part du principe que la standardisation des produits et la chaîne de montage permettent une production de masse à bas coût.",
+    "apport": "En couplant travail à la chaîne (division extrême des tâches, héritée du taylorisme) et hauts salaires (le fameux « five dollars a day »), Ford a créé un cercle vertueux production de masse/consommation de masse qui a structuré toute l'industrie du XXe siècle.",
+    "limites_critiques": "Ce modèle a été critiqué pour la déshumanisation du travail répétitif à la chaîne, sa rigidité face à la diversification de la demande, et son incapacité à s'adapter aux crises pétrolières des années 1970, ce qui a ouvert la voie au toyotisme et aux modèles post-fordistes.",
+    "sources": [
+      {
+        "titre": "Fordisme",
+        "type": "primaire",
+        "url": "https://fr.wikipedia.org/wiki/Fordisme"
+      },
+      {
+        "titre": "Fordisme — Wikipédia",
+        "type": "secondaire",
+        "url": "https://fr.wikipedia.org/wiki/Fordisme"
+      }
+    ],
+    "statut": "documente",
+    "derniere_verification": "2026-09-05",
+    "resonance_ia": "L'automatisation et la robotisation des chaînes de production, puis l'IA appliquée à l'optimisation industrielle, prolongent la logique fordiste de standardisation tout en promettant de dépasser sa rigidité par une flexibilité pilotée algorithmiquement."
   },
   {
     "id": "fayolisme",
     "axe": "social",
     "sous_domaine": "management",
     "nom": "Fayolisme",
-    "these_centrale": "",
-    "apport": "",
-    "limites_critiques": "",
-    "sources": [],
-    "statut": "a_documenter",
-    "derniere_verification": "2026-09-05"
+    "these_centrale": "Henri Fayol, ingénieur français auteur de L'Administration industrielle et générale (1916), part du principe que l'administration d'une entreprise peut être décomposée en fonctions et principes généraux applicables à toute organisation.",
+    "apport": "Il a formalisé les cinq fonctions du management (prévoir, organiser, commander, coordonner, contrôler) et quatorze principes d'administration (unité de commandement, division du travail, autorité-responsabilité), fondant l'une des premières théories générales du management moderne.",
+    "limites_critiques": "Son approche, centrée sur une organisation hiérarchique et normative descendante, a été critiquée comme trop rigide et univoque pour rendre compte de la diversité des organisations réelles, notamment face à l'émergence des approches plus humaines et comportementales du management.",
+    "sources": [
+      {
+        "titre": "Henri Fayol",
+        "type": "primaire",
+        "url": "https://fr.wikipedia.org/wiki/Henri_Fayol"
+      },
+      {
+        "titre": "Henri Fayol — Wikipédia",
+        "type": "secondaire",
+        "url": "https://fr.wikipedia.org/wiki/Henri_Fayol"
+      }
+    ],
+    "statut": "documente",
+    "derniere_verification": "2026-09-05",
+    "resonance_ia": "Les principes fayoliens de coordination et de contrôle inspirent encore les outils de gestion de projet, aujourd'hui de plus en plus automatisés par des systèmes d'IA qui assistent la planification et le suivi organisationnel."
   },
   {
     "id": "bureaucratie-weberienne",
     "axe": "social",
     "sous_domaine": "management",
     "nom": "Bureaucratie wébérienne",
-    "these_centrale": "",
-    "apport": "",
-    "limites_critiques": "",
-    "sources": [],
-    "statut": "a_documenter",
-    "derniere_verification": "2026-09-05"
+    "these_centrale": "Max Weber théorise la bureaucratie comme un système organisationnel rationnel-légal fondé sur des règles impersonnelles appliquées par des agents spécialisés, une hiérarchie clairement définie et un recrutement fondé sur la compétence plutôt que sur le statut social.",
+    "apport": "Weber a démontré que ce modèle, en substituant des règles écrites à l'arbitraire personnel, constituait historiquement la forme d'organisation la plus efficace pour administrer de grandes structures étatiques et industrielles à l'échelle de masse.",
+    "limites_critiques": "Les sociologues ont documenté des dérives majeures : l'impersonnalité et la multiplication des règles de contrôle peuvent paralyser l'initiative, produisant une rigidité administrative (la « bureaucratie » au sens péjoratif) qui contredit l'objectif initial d'efficacité rationnelle.",
+    "sources": [
+      {
+        "titre": "Max Weber",
+        "type": "primaire",
+        "url": "https://fr.wikipedia.org/wiki/Max_Weber"
+      },
+      {
+        "titre": "Bureaucratie — Wikipédia",
+        "type": "secondaire",
+        "url": "https://fr.wikipedia.org/wiki/Bureaucratie"
+      }
+    ],
+    "statut": "documente",
+    "derniere_verification": "2026-09-05",
+    "resonance_ia": "L'automatisation par l'IA de nombreuses tâches administratives et de contrôle pose la question de savoir si elle allège la rigidité bureaucratique wébérienne ou si elle en reproduit et amplifie les travers (règles opaques, absence de recours humain)."
   },
   {
     "id": "toyotisme-lean-management",
     "axe": "social",
     "sous_domaine": "management",
     "nom": "Toyotisme / Lean Management",
-    "these_centrale": "",
-    "apport": "",
-    "limites_critiques": "",
-    "sources": [],
-    "statut": "a_documenter",
-    "derniere_verification": "2026-09-05"
+    "these_centrale": "Le toyotisme, développé par l'ingénieur japonais Taiichi Ōno chez Toyota à partir de 1962, part du principe que l'élimination systématique des gaspillages (surproduction, stocks, attentes) et la production en flux tendu ('juste-à-temps') optimisent qualité et flexibilité.",
+    "apport": "Ce modèle, popularisé en Occident sous le nom de « lean management », a introduit l'amélioration continue portée par les employés eux-mêmes (kaizen), le contrôle qualité à la source et une flexibilité productive permettant de répondre à une demande diversifiée, contrairement à la standardisation rigide du fordisme.",
+    "limites_critiques": "Le juste-à-temps expose les chaînes de production à une grande fragilité face aux ruptures d'approvisionnement (illustrée par les pénuries lors de la pandémie de COVID-19), et l'intensification du rythme de travail qu'il implique a été critiquée pour son impact sur la santé des salariés.",
+    "sources": [
+      {
+        "titre": "Toyotisme",
+        "type": "primaire",
+        "url": "https://fr.wikipedia.org/wiki/Toyotisme"
+      },
+      {
+        "titre": "Toyotisme — Wikipédia",
+        "type": "secondaire",
+        "url": "https://fr.wikipedia.org/wiki/Toyotisme"
+      }
+    ],
+    "statut": "documente",
+    "derniere_verification": "2026-09-05",
+    "resonance_ia": "Les principes lean d'amélioration continue et de réduction des gaspillages sont aujourd'hui outillés par l'IA prédictive (maintenance prédictive, optimisation des flux logistiques en temps réel), prolongeant la logique toyotiste à l'ère numérique."
   },
   {
     "id": "management-par-objectifs-mpo-drucker",
     "axe": "social",
     "sous_domaine": "management",
     "nom": "Management par objectifs (MPO, Drucker)",
-    "these_centrale": "",
-    "apport": "",
-    "limites_critiques": "",
-    "sources": [],
-    "statut": "a_documenter",
-    "derniere_verification": "2026-09-05"
+    "these_centrale": "La direction par objectifs (MPO), théorisée notamment par Peter Drucker, part du principe qu'il est plus motivant et efficace de fixer aux équipes des objectifs à atteindre, négociés ou non, que de leur imposer des tâches d'exécution détaillées.",
+    "apport": "Ce modèle a structuré durablement l'évaluation de la performance en entreprise (entretiens annuels, objectifs quantifiés) et a inspiré des méthodes ultérieures comme les OKR (Objectives and Key Results) popularisés par Google.",
+    "limites_critiques": "La focalisation sur des objectifs quantitatifs peut générer des effets pervers (course au chiffre au détriment de la qualité, désalignement entre objectifs individuels et intérêt collectif de l'organisation) et une pression psychologique importante sur les salariés.",
+    "sources": [
+      {
+        "titre": "Direction par objectifs",
+        "type": "primaire",
+        "url": "https://fr.wikipedia.org/wiki/Direction_par_objectifs"
+      },
+      {
+        "titre": "Direction par objectifs — Wikipédia",
+        "type": "secondaire",
+        "url": "https://fr.wikipedia.org/wiki/Direction_par_objectifs"
+      }
+    ],
+    "statut": "documente",
+    "derniere_verification": "2026-09-05",
+    "resonance_ia": "Le suivi algorithmique des objectifs et de la performance individuelle, de plus en plus automatisé par des outils d'IA de gestion des ressources humaines, pose la question du respect de l'autonomie et de la vie privée des salariés évalués en continu."
   },
   {
     "id": "structure-matricielle",
     "axe": "social",
     "sous_domaine": "management",
     "nom": "Structure matricielle",
-    "these_centrale": "",
-    "apport": "",
-    "limites_critiques": "",
-    "sources": [],
-    "statut": "a_documenter",
-    "derniere_verification": "2026-09-05"
+    "these_centrale": "La structure matricielle part du principe qu'une organisation peut combiner deux logiques de regroupement (par exemple fonctionnelle et par projet) pour améliorer la coordination entre spécialistes de compétences similaires, se positionnant entre structure fonctionnelle classique et organisation par projets purs.",
+    "apport": "Elle permet une meilleure coordination transversale entre domaines de compétence et une flexibilité accrue dans l'allocation des ressources humaines aux différents programmes ou projets de l'entreprise.",
+    "limites_critiques": "Elle génère des risques de conflits liés à la double autorité hiérarchique (chaque salarié répondant à deux responsables), des circuits de décision allongés et des coûts élevés liés à la spécialisation, ce qui la rend difficile à mettre en œuvre dans les grandes entreprises décentralisées.",
+    "sources": [
+      {
+        "titre": "Structure matricielle",
+        "type": "primaire",
+        "url": "https://fr.wikipedia.org/wiki/Structure_matricielle"
+      },
+      {
+        "titre": "Structure matricielle — Wikipédia",
+        "type": "secondaire",
+        "url": "https://fr.wikipedia.org/wiki/Structure_matricielle"
+      }
+    ],
+    "statut": "documente",
+    "derniere_verification": "2026-09-05",
+    "resonance_ia": "Les outils collaboratifs assistés par IA cherchent aujourd'hui à réduire les frictions de coordination propres aux structures matricielles, en automatisant le partage d'information entre les différentes lignes hiérarchiques croisées."
   },
   {
     "id": "modele-des-7s-mckinsey",
     "axe": "social",
     "sous_domaine": "management",
     "nom": "Modèle des 7S (McKinsey)",
-    "these_centrale": "",
-    "apport": "",
-    "limites_critiques": "",
-    "sources": [],
-    "statut": "a_documenter",
-    "derniere_verification": "2026-09-05"
+    "these_centrale": "Le modèle des 7S, développé par Tom Peters et Robert Waterman chez McKinsey dans les années 1980, part du principe que le succès d'une organisation ne dépend pas de sa seule structure mais de l'alignement de sept éléments interdépendants.",
+    "apport": "Il distingue trois éléments « durs » (stratégie, structure, systèmes) et quatre éléments « mous » (valeurs partagées, compétences, personnel, style de management), offrant un outil de diagnostic organisationnel encore largement utilisé en conseil pour piloter le changement.",
+    "limites_critiques": "Le modèle est critiqué pour sa nature essentiellement descriptive et statique, qui aide à diagnostiquer des désalignements sans fournir de méthode opérationnelle claire pour les résoudre, et pour son origine issue du conseil en stratégie plutôt que d'une recherche académique indépendante.",
+    "sources": [
+      {
+        "titre": "McKinsey 7S Framework (EN)",
+        "type": "primaire",
+        "url": "https://en.wikipedia.org/wiki/McKinsey_7S_Framework"
+      },
+      {
+        "titre": "McKinsey 7S Framework — Wikipedia (EN)",
+        "type": "secondaire",
+        "url": "https://en.wikipedia.org/wiki/McKinsey_7S_Framework"
+      }
+    ],
+    "statut": "documente",
+    "derniere_verification": "2026-09-05",
+    "resonance_ia": "L'intégration de l'IA dans une organisation illustre bien la logique des 7S : son succès dépend rarement de la seule technologie (systèmes) mais aussi de l'alignement avec la stratégie, les compétences et la culture de l'entreprise."
   },
   {
     "id": "entreprise-liberee",
     "axe": "social",
     "sous_domaine": "management",
     "nom": "Entreprise libérée",
-    "these_centrale": "",
-    "apport": "",
-    "limites_critiques": "",
-    "sources": [],
-    "statut": "a_documenter",
-    "derniere_verification": "2026-09-05"
+    "these_centrale": "L'entreprise libérée, concept formalisé par Isaac Getz en 2009, part du principe que les salariés, laissés totalement libres et responsables dans les actions qu'ils jugent bon d'entreprendre, sont plus motivés et performants que sous un contrôle hiérarchique strict.",
+    "apport": "Inspiré de la théorie Y de McGregor, ce modèle a inspiré de nombreuses entreprises à réduire drastiquement leurs strates hiérarchiques et leurs procédures de contrôle au profit de la confiance et de l'autonomie des équipes, dans un objectif de restauration du sens au travail.",
+    "limites_critiques": "Des dérives documentées incluent une responsabilisation potentiellement épuisante, des formes cachées de contrôle social, l'absence de processus décisionnels clairs et un risque accru de burn-out ; l'ANACT et l'INRS soulignent que le terme « libérée » peut masquer des réalités organisationnelles restées rigides.",
+    "sources": [
+      {
+        "titre": "Entreprise libérée",
+        "type": "primaire",
+        "url": "https://fr.wikipedia.org/wiki/Entreprise_libérée"
+      },
+      {
+        "titre": "Entreprise libérée — Wikipédia",
+        "type": "secondaire",
+        "url": "https://fr.wikipedia.org/wiki/Entreprise_libérée"
+      }
+    ],
+    "statut": "documente",
+    "derniere_verification": "2026-09-05",
+    "resonance_ia": "L'autonomisation des équipes promue par ce modèle entre en tension avec les outils d'IA de surveillance de la performance individuelle, qui peuvent réintroduire une forme de contrôle hiérarchique masqué contraire à l'esprit de l'entreprise libérée."
   },
   {
     "id": "holacratie-sociocratie",
     "axe": "social",
     "sous_domaine": "management",
     "nom": "Holacratie / Sociocratie",
-    "these_centrale": "",
-    "apport": "",
-    "limites_critiques": "",
-    "sources": [],
-    "statut": "a_documenter",
-    "derniere_verification": "2026-09-05"
+    "these_centrale": "L'holacratie, développée entre 2001 et 2006 par Brian Robertson et inspirée de la théorie des holons d'Arthur Koestler, part du principe que la prise de décision et la répartition des responsabilités doivent être distribuées dans des cercles autonomes plutôt que concentrées dans une hiérarchie traditionnelle.",
+    "apport": "Elle propose un cadre formalisé et documenté (constitution holacratique, rôles clairs, décisions par intégration des perspectives sans objection majeure) qui a été adopté par plusieurs entreprises cherchant à sortir du management pyramidal classique.",
+    "limites_critiques": "Les critiques soulignent qu'une « hiérarchie implicite » peut persister malgré la structure formelle, que le système décisionnel peut être perçu comme chaotique par les nouveaux venus, et que sa réussite exige un haut niveau d'autonomie et de réflexivité de la part des salariés, ce qui limite sa généralisation.",
+    "sources": [
+      {
+        "titre": "Holacratie",
+        "type": "primaire",
+        "url": "https://fr.wikipedia.org/wiki/Holacratie"
+      },
+      {
+        "titre": "Holacratie — Wikipédia",
+        "type": "secondaire",
+        "url": "https://fr.wikipedia.org/wiki/Holacratie"
+      }
+    ],
+    "statut": "documente",
+    "derniere_verification": "2026-09-05",
+    "resonance_ia": "La gouvernance distribuée par cercles autonomes pose un défi inédit pour l'intégration d'assistants IA d'entreprise, qui doivent composer avec une répartition des responsabilités bien plus fluide que dans une hiérarchie classique."
   },
   {
     "id": "agile-scrum",
     "axe": "social",
     "sous_domaine": "management",
     "nom": "Agile / Scrum",
-    "these_centrale": "",
-    "apport": "",
-    "limites_critiques": "",
-    "sources": [],
-    "statut": "a_documenter",
-    "derniere_verification": "2026-09-05"
+    "these_centrale": "Scrum, cadre de travail itératif créé par Hirotaka Takeuchi et Ikujiro Nonaka en 1986 puis formalisé par Ken Schwaber à partir de 1995, part du principe que le développement de produits complexes gagne à s'organiser en cycles courts (sprints) fondés sur transparence, inspection et adaptation plutôt que sur une planification rigide.",
+    "apport": "Il a structuré des pratiques désormais universelles dans le développement logiciel et au-delà (réunions quotidiennes, rétrospectives, auto-organisation des équipes, absence de hiérarchie stricte incarnée par le scrum master), qui ont largement diffusé la philosophie agile dans l'ensemble du monde du travail.",
+    "limites_critiques": "Les critiques soulignent que Scrum peut dégénérer en pratique dévoyée (« flaccid scrum ») où la qualité logicielle est négligée, ou en hybridation contre-productive avec des méthodes classiques de planification (« water-scrum-fall ») qui étouffe sa flexibilité initiale en imposant un périmètre figé.",
+    "sources": [
+      {
+        "titre": "Scrum (développement)",
+        "type": "primaire",
+        "url": "https://fr.wikipedia.org/wiki/Scrum_(développement)"
+      },
+      {
+        "titre": "Scrum — Wikipédia",
+        "type": "secondaire",
+        "url": "https://fr.wikipedia.org/wiki/Scrum_(développement)"
+      }
+    ],
+    "statut": "documente",
+    "derniere_verification": "2026-09-05",
+    "resonance_ia": "Les outils d'IA générative sont de plus en plus intégrés dans les cérémonies Scrum (rédaction de tickets, estimation de complexité, synthèse de rétrospectives), posant la question de l'équilibre entre assistance automatisée et auto-organisation humaine de l'équipe."
   },
   {
     "id": "modele-spotify-squads-tribes-chapters-guilds",
     "axe": "social",
     "sous_domaine": "management",
     "nom": "Modèle Spotify (Squads/Tribes/Chapters/Guilds)",
-    "these_centrale": "",
-    "apport": "",
-    "limites_critiques": "",
-    "sources": [],
-    "statut": "a_documenter",
-    "derniere_verification": "2026-09-05"
+    "these_centrale": "Le modèle Spotify, présenté dans un livre blanc de 2012 par Henrik Kniberg et Anders Ivarsson, part du principe qu'une organisation centrée sur la culture et le réseau — équipes autonomes (squads) regroupées en tribus (tribes), avec des chapitres (chapters) de spécialistes et des guildes (guilds) transversales de partage de connaissances — favorise l'autonomie tout en maintenant l'alignement.",
+    "apport": "Il a fortement influencé les entreprises technologiques cherchant à faire grandir leurs équipes agiles tout en préservant l'autonomie et la vitesse d'exécution des petites structures, devenant une référence largement citée dans le scaling agile.",
+    "limites_critiques": "De nombreuses organisations ont tenté de le répliquer comme un cadre rigide plutôt que d'en adapter les principes culturels sous-jacents (confiance, autonomie), ce qui a produit des mises en œuvre superficielles ; Spotify elle-même a depuis fait évoluer son organisation au-delà du modèle original.",
+    "sources": [
+      {
+        "titre": "Kniberg & Ivarsson, \"Scaling Agile @ Spotify\" (2012)",
+        "type": "primaire"
+      },
+      {
+        "titre": "The Spotify Model — Atlassian",
+        "type": "secondaire",
+        "url": "https://www.atlassian.com/agile/agile-at-scale/spotify"
+      }
+    ],
+    "statut": "documente",
+    "derniere_verification": "2026-09-05",
+    "resonance_ia": "Le modèle Spotify illustre une tension centrale pour l'adoption de l'IA en entreprise : copier une structure organisationnelle sans transformer la culture sous-jacente produit rarement les gains de performance espérés, qu'il s'agisse d'agilité ou d'adoption technologique."
   },
   {
     "id": "organisation-exponentielle-exo",
     "axe": "social",
     "sous_domaine": "management",
     "nom": "Organisation exponentielle (ExO)",
-    "these_centrale": "",
-    "apport": "",
-    "limites_critiques": "",
-    "sources": [],
-    "statut": "a_documenter",
-    "derniere_verification": "2026-09-05"
+    "these_centrale": "Le concept d'organisation exponentielle (ExO), développé par Salim Ismail avec Michael Malone et Yuri van Geest dans leur livre de 2014 issu de la Singularity University, part du principe qu'une organisation peut croître à un rythme disproportionné par rapport à ses ressources internes en s'appuyant massivement sur des actifs externalisés et des technologies exponentielles.",
+    "apport": "Il a formalisé des attributs organisationnels associés aux entreprises technologiques à très forte croissance (staff à la demande, communauté, algorithmes, actifs partagés, engagement) pour expliquer comment de jeunes structures peuvent dépasser des organisations établies bien plus grandes.",
+    "limites_critiques": "Le concept est critiqué pour sa nature largement promotionnelle et anecdotique, reposant sur des études de cas de succès (souvent des licornes technologiques) sans validation empirique systématique, et pour sa dépendance implicite à des ressources en capital-risque difficilement généralisables.",
+    "sources": [
+      {
+        "titre": "Ismail, Malone, van Geest, \"Exponential Organizations\" (2014)",
+        "type": "primaire"
+      },
+      {
+        "titre": "Exponential organizations — concept (Singularity University)",
+        "type": "secondaire"
+      }
+    ],
+    "statut": "documente",
+    "derniere_verification": "2026-09-05",
+    "resonance_ia": "L'IA est présentée comme l'une des principales technologies exponentielles permettant à une organisation ExO de démultiplier ses capacités sans proportionnellement démultiplier ses effectifs, ce qui pose directement la question de l'impact de l'IA sur l'emploi dans ces structures à forte croissance."
   },
   {
     "id": "management-hybride-teletravail",
     "axe": "social",
     "sous_domaine": "management",
     "nom": "Management hybride / télétravail",
-    "these_centrale": "",
-    "apport": "",
-    "limites_critiques": "",
-    "sources": [],
-    "statut": "a_documenter",
-    "derniere_verification": "2026-09-05"
+    "these_centrale": "Le management hybride part du principe que l'organisation du travail peut combiner présence au bureau et télétravail à distance, rendu possible par les technologies numériques et généralisé rapidement à l'occasion de la pandémie de COVID-19.",
+    "apport": "En France, le taux de salariés télétravaillant au moins un jour par semaine est passé de 4,2 % en 2019 à 19 % en 2023 ; ce modèle s'est installé comme un mode de travail durable, concernant principalement les cadres qualifiés, malgré des tentatives de certaines entreprises d'imposer un retour au bureau.",
+    "limites_critiques": "Les défis identifiés incluent les risques psychosociaux (isolement, perte de collectif), l'intensification du travail chez les cadres, le brouillage des frontières entre vie professionnelle et personnelle, et l'aggravation des inégalités puisque les cadres accèdent bien plus au télétravail que les ouvriers ; aucun consensus scientifique ferme n'existe sur son impact réel sur la productivité.",
+    "sources": [
+      {
+        "titre": "Télétravail",
+        "type": "primaire",
+        "url": "https://fr.wikipedia.org/wiki/Télétravail"
+      },
+      {
+        "titre": "Télétravail — Wikipédia",
+        "type": "secondaire",
+        "url": "https://fr.wikipedia.org/wiki/Télétravail"
+      }
+    ],
+    "statut": "documente",
+    "derniere_verification": "2026-09-05",
+    "resonance_ia": "Les outils d'IA de suivi d'activité à distance (« bossware ») posent une question centrale du management hybride : la confiance nécessaire au travail à distance peut être fragilisée par une surveillance algorithmique accrue de la performance individuelle."
   },
   {
     "id": "okr",
@@ -1300,11 +1659,23 @@
     "axe": "social",
     "sous_domaine": "management",
     "nom": "Entreprise à mission / RSE intégrée",
-    "these_centrale": "",
-    "apport": "",
-    "limites_critiques": "",
-    "sources": [],
-    "statut": "a_documenter",
-    "derniere_verification": "2026-09-05"
+    "these_centrale": "L'entreprise à mission, formalisée en France par la loi PACTE de 2019, part du principe qu'une entreprise peut s'engager statutairement à poursuivre des objectifs sociaux et environnementaux aux côtés de sa finalité lucrative, en inscrivant une « raison d'être » dans ses statuts.",
+    "apport": "Ce statut impose la création d'un comité de suivi composé de parties prenantes et une vérification annuelle par un tiers indépendant, ce qui a permis à de nombreuses entreprises françaises d'intégrer formellement la RSE (responsabilité sociale des entreprises) au cœur de leur gouvernance plutôt qu'en périphérie.",
+    "limites_critiques": "Le cas de Danone, première entreprise cotée à adopter ce statut en 2020 avant d'annoncer un plan social de 1 200 emplois, illustre sa fragilité : les actionnaires activistes peuvent contourner les protections théoriques en délogeant les dirigeants, et certains dénoncent un risque de « purpose washing » masquant des intentions moins nobles derrière un affichage d'engagement sincère.",
+    "sources": [
+      {
+        "titre": "Entreprise à mission",
+        "type": "primaire",
+        "url": "https://fr.wikipedia.org/wiki/Entreprise_à_mission"
+      },
+      {
+        "titre": "Entreprise à mission — Wikipédia",
+        "type": "secondaire",
+        "url": "https://fr.wikipedia.org/wiki/Entreprise_à_mission"
+      }
+    ],
+    "statut": "documente",
+    "derniere_verification": "2026-09-05",
+    "resonance_ia": "Les entreprises à mission développant ou déployant de l'IA sont de plus en plus attendues sur la cohérence entre leur raison d'être affichée et l'impact social réel de leurs systèmes algorithmiques, un terrain propice à de nouvelles accusations de washing si l'écart se creuse."
   }
 ]
