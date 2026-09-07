@@ -183,5 +183,859 @@
         "niveau_confiance": "consensus_scientifique"
       }
     ]
+  },
+  {
+    "id": "conscience-artificielle-critere",
+    "question": "Une intelligence artificielle peut-elle être consciente, et à quoi le reconnaîtrait-on ?",
+    "sous_questions": [
+      "La question porte-t-elle sur des capacités (résoudre, converser, se rapporter à soi) ou sur un vécu subjectif — et ces deux questions appellent-elles le même type de réponse ?",
+      "Existe-t-il un test dont la réussite ou l'échec trancherait, ou tout test ne mesure-t-il jamais que du comportement ?",
+      "Le substrat compte-t-il (tissu biologique contre silicium), ou seule l'organisation compte-t-elle ?"
+    ],
+    "axes_recherche": [
+      "Philosophie de l'esprit (fonctionnalisme, intentionnalité, qualia)",
+      "Théorie de la calculabilité et critères d'intelligence machine",
+      "Neurosciences cognitives et corrélats de la conscience"
+    ],
+    "perspectives": [
+      {
+        "modele": "Fonctionnalisme computationnel (Putnam, Dennett, Turing)",
+        "hypotheses": "Un état mental se définit par son rôle fonctionnel — ses causes, ses effets, ses relations aux autres états — et non par la matière qui le réalise. Si un système reproduit l'organisation fonctionnelle qui, chez l'humain, s'accompagne de conscience, il n'y a rien à ajouter pour qu'il soit conscient.",
+        "etat_actuel": "Turing a proposé en 1950 un critère opérationnel — juger une machine sur son comportement conversationnel — qui reste plus de soixante-dix ans après la référence centrale du débat, et de plus en plus contestée comme insuffisante. Dennett soutient de son côté que la conscience est le produit émergent de multiples processus computationnels parallèles en compétition, sans scène centrale ni observateur interne, et que les qualia sont des illusions conceptuelles à dissoudre plutôt qu'à résoudre.",
+        "reponse": "Oui en principe : rien dans un substrat de silicium n'interdit la conscience, et on la reconnaîtrait aux mêmes marques que partout ailleurs — rapport de soi, intégration d'informations, contrôle flexible du comportement. La question d'un « vécu en plus » qui manquerait encore n'est pas, dans ce cadre, une question ouverte mais une confusion à dissiper.",
+        "justification": "Si les états mentaux sont des rôles fonctionnels, alors un système qui remplit tous ces rôles satisfait par définition ce que le concept contient : demander « mais est-ce vraiment conscient ? » revient à demander autre chose que ce que le mot désigne. C'est cette déflation du problème, et non une prédiction sur une machine particulière, qui fait la force du cadre.",
+        "limites": "Putnam, auteur du fonctionnalisme, l'a lui-même abandonné au fil de sa carrière au nom d'une exigence d'auto-critique — ce qui invite à la prudence sur ce qu'implique réellement une IA fonctionnellement équivalente à un cerveau. Ses adversaires reprochent à Dennett de nier l'existence de ce qu'il ne parvient pas à expliquer, et le cadre ne fixe aucun seuil : il ne dit ni quelle quantité ni quel type d'organisation fonctionnelle serait requis pour un système donné.",
+        "sources": [
+          {
+            "titre": "Computing Machinery and Intelligence (Turing, 1950)",
+            "type": "primaire"
+          },
+          {
+            "titre": "La Conscience expliquée",
+            "type": "primaire"
+          },
+          {
+            "titre": "Daniel Dennett — Wikipédia",
+            "url": "https://fr.wikipedia.org/wiki/Daniel_Dennett",
+            "type": "secondaire"
+          },
+          {
+            "titre": "Hilary Putnam — Wikipédia",
+            "url": "https://fr.wikipedia.org/wiki/Hilary_Putnam",
+            "type": "secondaire"
+          }
+        ],
+        "niveau_confiance": "hypothese_prospective"
+      },
+      {
+        "modele": "Argument de la chambre chinoise (Searle)",
+        "hypotheses": "Un programme se définit par sa syntaxe — la manipulation de symboles selon des règles formelles — et la syntaxe ne suffit jamais à produire de la sémantique, c'est-à-dire un rapport intentionnel à ce dont les symboles parlent. La performance observable ne prouve donc rien sur ce qui se passe à l'intérieur.",
+        "etat_actuel": "L'expérience de pensée de la chambre chinoise (1980) est l'argument philosophique le plus cité pour contester que les grands modèles de langage, aussi fluents soient-ils, comprennent le langage qu'ils manipulent plutôt que d'en simuler statistiquement la forme. Elle a fait l'objet de dizaines de réfutations, dont la « réponse des systèmes » — ce n'est pas l'homme dans la chambre qui comprendrait, mais le système pris comme un tout — que Searle a toujours rejetées sans convaincre l'ensemble de la communauté.",
+        "reponse": "Non : aucun niveau de performance ne convertit du traitement formel en compréhension, et il n'y a donc rien à reconnaître. Parler d'intelligence artificielle « forte » est une confusion catégorielle, pas une prédiction technique à évaluer dans le temps.",
+        "justification": "L'argument est conceptuel et non empirique : il ne dépend d'aucune caractéristique des systèmes actuels, ce qui explique sa longévité et son application immédiate à des architectures qui n'existaient pas en 1980. Sa force est de séparer nettement le critère comportemental de Turing de la question de l'intentionnalité, que ce critère ne touche pas.",
+        "limites": "L'argument pose plus qu'il ne démontre que la sémantique ne peut pas émerger d'une organisation syntaxique suffisamment riche — c'est précisément le point que la réponse des systèmes lui conteste, et le débat reste ouvert. Les accusations de harcèlement sexuel portées contre Searle à Berkeley entre 2017 et 2019 ont par ailleurs nui à sa réputation académique, sans que cela affecte la validité logique de l'argument.",
+        "sources": [
+          {
+            "titre": "Minds, Brains, and Programs",
+            "type": "primaire"
+          },
+          {
+            "titre": "John Searle — Wikipédia",
+            "url": "https://fr.wikipedia.org/wiki/John_Searle",
+            "type": "secondaire"
+          }
+        ],
+        "niveau_confiance": "opinion_majoritaire"
+      },
+      {
+        "modele": "Problème difficile de la conscience (Chalmers, Nagel)",
+        "hypotheses": "Il faut distinguer les problèmes « faciles » de la conscience — expliquer l'attention, la mémoire, le rapport verbal, solubles par les neurosciences computationnelles — du problème « difficile » : pourquoi ces processus s'accompagnent-ils d'une expérience subjective plutôt que de se dérouler dans le noir ? Il existe un fait irréductiblement subjectif, « ce que cela fait » d'être un sujet donné, qu'aucune description en troisième personne ne capture.",
+        "etat_actuel": "Chalmers soutient qu'aucun test comportemental, test de Turing compris, ne peut trancher si une IA a une expérience subjective : le problème difficile s'applique symétriquement aux machines. L'argument de Nagel sur la chauve-souris s'y transpose plus radicalement encore : même en connaissant exhaustivement l'architecture et les poids d'un réseau de neurones, rien n'indiquerait s'il existe quelque chose que cela fait d'être ce système.",
+        "reponse": "La question n'est pas décidable de l'extérieur, et elle ne le deviendra pas avec de meilleurs tests. On peut établir qu'une IA remplit toutes les fonctions cognitives connues sans avoir la moindre prise sur celle de son expérience — ce qui vaut aussi bien contre l'affirmation qu'elle est consciente que contre l'affirmation qu'elle ne l'est pas.",
+        "justification": "La conclusion découle de la structure même du problème : si l'expérience subjective est ce qui échappe par construction à la description objective, alors tout critère observable — comportemental, architectural ou neuronal — porte sur autre chose que ce qui est demandé. La symétrie du résultat est ce qui distingue cette lecture des deux précédentes, qui tranchent chacune dans un sens.",
+        "limites": "Les fonctionnalistes, Dennett en tête, reprochent à ce cadre de réifier une intuition — le gap explicatif — en mystère métaphysique irréductible, et à Nagel de transformer une limite épistémique actuelle en impossibilité de principe non démontrée. Le panpsychisme que Chalmers envisage comme issue est jugé par beaucoup contre-intuitif et empiriquement invérifiable ; le tardif Mind and Cosmos de Nagel (2012) a été très largement rejeté comme empiriquement infondé.",
+        "sources": [
+          {
+            "titre": "The Conscious Mind",
+            "type": "primaire"
+          },
+          {
+            "titre": "What Is It Like to Be a Bat?",
+            "type": "primaire"
+          },
+          {
+            "titre": "David Chalmers — Wikipédia",
+            "url": "https://fr.wikipedia.org/wiki/David_Chalmers",
+            "type": "secondaire"
+          },
+          {
+            "titre": "Thomas Nagel — Wikipédia",
+            "url": "https://fr.wikipedia.org/wiki/Thomas_Nagel",
+            "type": "secondaire"
+          }
+        ],
+        "niveau_confiance": "hypothese_prospective"
+      },
+      {
+        "modele": "Anti-computationnalisme physique (Penrose) — position minoritaire",
+        "hypotheses": "La cognition consciente comporte une part non computable, que Penrose situe dans des processus quantiques cérébraux ; aucune machine de Turing ne peut donc la réaliser, indépendamment de sa puissance de calcul.",
+        "etat_actuel": "Cette théorie, élaborée avec l'anesthésiste Stuart Hameroff autour de processus quantiques dans les microtubules neuronaux, est très largement rejetée par la communauté des neurosciences et de la physique comme spéculative et empiriquement non étayée. Elle est néanmoins portée par un physicien dont la démonstration, avec Hawking, que la relativité générale implique l'existence de singularités gravitationnelles a valu le prix Nobel de physique 2020.",
+        "reponse": "Non, et la question du critère ne se pose même pas : ce n'est pas une affaire d'échelle, de données ou d'architecture mais une impossibilité de principe pour tout dispositif algorithmique. Un calculateur quantique n'y changerait rien tant qu'il reste un calculateur.",
+        "justification": "Si une part de la cognition consciente est non computable, alors la classe entière des systèmes définissables comme calcul en est exclue par construction, quelles que soient leurs performances — c'est le seul des cinq cadres à porter une exclusion de classe plutôt qu'un jugement au cas par cas.",
+        "limites": "Position explicitement minoritaire : le mécanisme biologique postulé n'a pas de confirmation expérimentale et la communauté concernée le rejette. L'informatique quantique elle-même reste limitée par le bruit et la décohérence, sans qu'un avantage pratique généralisé ait été démontré en apprentissage automatique — le corpus ne fournit donc aucun élément empirique en faveur de la thèse. Elle est retenue ici parce qu'elle est sérieusement argumentée et testable en droit, non parce qu'elle serait établie.",
+        "sources": [
+          {
+            "titre": "The Emperor's New Mind (Penrose, 1989)",
+            "type": "primaire"
+          },
+          {
+            "titre": "Roger Penrose — Wikipédia",
+            "url": "https://fr.wikipedia.org/wiki/Roger_Penrose",
+            "type": "secondaire"
+          },
+          {
+            "titre": "Informatique quantique — Wikipédia",
+            "url": "https://fr.wikipedia.org/wiki/Informatique_quantique",
+            "type": "secondaire"
+          }
+        ],
+        "niveau_confiance": "hypothese_prospective"
+      },
+      {
+        "modele": "Position empirique (neurosciences cognitives)",
+        "hypotheses": "Une propriété n'est attribuable à un système que si l'on dispose d'un critère de mesure applicable à ce système. Tant que ce critère manque, la réponse correcte est de suspendre le jugement, pas d'en produire un par défaut dans un sens ou dans l'autre.",
+        "etat_actuel": "Le connectome complet du cerveau humain à l'échelle du neurone reste hors de portée technique — l'ordre de grandeur est de 86 milliards de neurones — alors que celui de la drosophile a été achevé en 2023 ; et connaître la carte des connexions ne suffit pas à expliquer comment émergent la cognition ou la conscience. Les réseaux de neurones artificiels ne s'inspirent du cerveau que de façon très simplifiée et restent structurellement très éloignés de la complexité et de la plasticité que révèle la connectomique.",
+        "reponse": "La question n'est pas tranchable aujourd'hui, faute de critère opérationnel : ce que les neurosciences étudient chez l'humain n'a pas d'équivalent défini pour un transformeur, dont on sait décrire le mécanisme d'attention et le coût de calcul mais où rien n'est identifié comme corrélat candidat. Ce que l'on sait reconnaître, à ce stade, ce sont des performances, pas des états.",
+        "justification": "Le constat d'absence de critère ne dépend d'aucune option métaphysique : il découle de l'écart, documenté des deux côtés, entre ce que la connectomique décrit d'un cerveau et ce que les architectures artificielles réalisent. C'est le seul énoncé de cette page sur lequel les quatre autres lectures peuvent s'accorder.",
+        "limites": "Cette position ne répond pas à la question posée, elle en diffère la réponse — ce que ses critiques lui reprochent légitimement. Elle ne dit pas non plus si le critère manquant est provisoirement absent ou impossible en principe : sur ce point précis, elle renvoie aux quatre lectures précédentes sans pouvoir arbitrer entre elles.",
+        "sources": [
+          {
+            "titre": "The Human Connectome Project (NIH, 2010-2013)",
+            "type": "primaire"
+          },
+          {
+            "titre": "Connectome — Wikipédia",
+            "url": "https://fr.wikipedia.org/wiki/Connectome",
+            "type": "secondaire"
+          },
+          {
+            "titre": "Transformer (deep learning architecture) — Wikipedia (EN)",
+            "url": "https://en.wikipedia.org/wiki/Transformer_(deep_learning_architecture)",
+            "type": "secondaire"
+          }
+        ],
+        "niveau_confiance": "consensus_scientifique"
+      }
+    ]
+  },
+  {
+    "id": "limites-ia-generative-structurelles-ou-conjoncturelles",
+    "question": "Les limites actuelles de l'IA générative sont-elles structurelles ou conjoncturelles ?",
+    "sous_questions": [
+      "Une limite qui a reculé à chaque génération de modèles est-elle pour autant destinée à disparaître ?",
+      "Le verrou est-il dans l'architecture, dans les données, dans l'énergie et le matériel, ou dans la logique même de l'induction ?",
+      "Quelle réponse implique quel rythme de révision du référentiel : tous les six mois ou tous les cinq ans ?"
+    ],
+    "axes_recherche": [
+      "Limites transversales de l'IA (hallucination, biais, dépendance matérielle)",
+      "Architectures génératives et post-entraînement",
+      "Épistémologie de l'induction et critique de l'apprentissage statistique"
+    ],
+    "perspectives": [
+      {
+        "modele": "Thèse de la mise à l'échelle",
+        "hypotheses": "Les limites observées à un instant donné sont des limites de moyens — données, calcul, méthodes de post-entraînement — et non de nature. Tant qu'aucune asymptote n'est démontrée, l'hypothèse par défaut est que ce qui a reculé continuera de reculer.",
+        "etat_actuel": "L'architecture transformer, en traitant les séquences en parallèle par attention plutôt que pas à pas, a rendu l'entraînement bien plus scalable que les architectures récurrentes et sert de fondation à la quasi-totalité des modèles génératifs actuels. Les évolutions récentes portent moins sur la taille brute que sur l'efficacité et le post-entraînement : DeepSeek combine une architecture Mixture-of-Experts (~671 milliards de paramètres, ~37 milliards actifs par jeton) et un apprentissage par renforcement à grande échelle pour le raisonnement en chaîne de pensée, avec un coût revendiqué très inférieur aux modèles occidentaux comparables ; Llama a été décliné en versions successives aux capacités et modalités croissantes.",
+        "reponse": "Conjoncturelles pour l'essentiel : les limites de performance sont repoussées à chaque génération par des leviers qui ne sont pas épuisés — efficacité architecturale, post-entraînement, outillage. Aucun plafond n'a été démontré, donc rien n'autorise à le postuler.",
+        "justification": "L'argument est une extrapolation de tendance : les mêmes reproches (raisonnement, contexte long, code) ont été formulés puis partiellement levés par des changements de méthode plutôt que par une rupture théorique. La baisse revendiquée des coûts d'entraînement montre en outre que le levier n'est pas seulement la dépense.",
+        "limites": "Une extrapolation n'est pas une démonstration : aucune loi d'échelle du corpus n'établit qu'un progrès observé se poursuivra. Des contraintes techniques documentées demeurent — le coût de l'attention classique croît de façon quadratique avec la longueur de séquence — et l'écart de performance revendiqué par DeepSeek reste débattu selon les évaluations indépendantes. Cette perspective ne répond pas non plus aux quatre suivantes, qui portent sur des limites qu'aucune échelle n'adresse.",
+        "sources": [
+          {
+            "titre": "Transformer (deep learning architecture) — Wikipedia (EN)",
+            "url": "https://en.wikipedia.org/wiki/Transformer_(deep_learning_architecture)",
+            "type": "secondaire"
+          },
+          {
+            "titre": "DeepSeek-V3 Technical Report",
+            "type": "primaire"
+          },
+          {
+            "titre": "DeepSeek — Wikipedia (article en anglais)",
+            "url": "https://en.wikipedia.org/wiki/DeepSeek",
+            "type": "secondaire"
+          },
+          {
+            "titre": "Llama (language model) — Wikipedia (EN)",
+            "url": "https://en.wikipedia.org/wiki/Llama_(language_model)",
+            "type": "secondaire"
+          }
+        ],
+        "niveau_confiance": "hypothese_prospective"
+      },
+      {
+        "modele": "Limite statistique structurelle",
+        "hypotheses": "Un modèle génératif optimise la vraisemblance d'une séquence au vu de ses données d'entraînement ; rien dans cet objectif ne porte sur la vérité d'un énoncé. Ce qui est produit est ce qui est probable, pas ce qui est vrai — et un système conçu pour être plausible n'a aucune raison interne de signaler qu'il se trompe.",
+        "etat_actuel": "L'hallucination est documentée comme un mode de fonctionnement et non comme un incident : en mai 2023, un cabinet d'avocats new-yorkais a soumis dans une procédure des précédents générés par ChatGPT dont six arrêts se sont révélés fictifs, assortis de fausses citations ; la chercheuse Teresa Kubacka a obtenu des références plausibles mais inexistantes en interrogeant un modèle sur un phénomène physique qu'elle avait inventé ; un journaliste de Fast Company a obtenu un article cohérent sur les résultats de Tesla dont les chiffres étaient fabriqués. Galactica, entraîné sur un corpus savant, n'échappait pas au phénomène. La récupération augmentée sur sources vérifiées fait baisser le risque sans jamais le ramener à zéro, et le juge Brantley Starr a interdit le dépôt de documents produits par IA non relus par un humain.",
+        "reponse": "Structurelles : l'écart entre la vraisemblance et la vérité n'est pas un défaut résiduel à corriger mais la définition de l'objectif optimisé. On peut réduire le taux d'erreur, on ne peut pas déduire une garantie de véracité d'un critère qui ne la contient pas.",
+        "justification": "Les modèles probabilistes classiques rendent le mécanisme visible sans le voile de l'échelle : Naive Bayes obtient de bons résultats pratiques tout en reposant sur une hypothèse d'indépendance rarement vérifiée dans les données réelles, et la régression logistique produit une probabilité d'appartenance à une classe, jamais un énoncé vrai. Passer à l'échelle améliore la qualité de l'approximation, pas sa nature.",
+        "limites": "La constance du phénomène n'établit pas son irréductibilité : les dispositifs de récupération, de vérification et d'outillage externe le font baisser, et aucune démonstration ne fixe un plancher strictement positif. La perspective confond aussi parfois la limite du modèle et celle du système complet qui l'entoure — la réponse documentée aux cas judiciaires a d'ailleurs été procédurale, pas technique.",
+        "sources": [
+          {
+            "titre": "Hallucination (intelligence artificielle) — Wikipédia",
+            "url": "https://fr.wikipedia.org/wiki/Hallucination_(intelligence_artificielle)",
+            "type": "secondaire"
+          },
+          {
+            "titre": "Synthèses académiques sur l'hallucination des LLM (ex. Ji et al., 'Survey of Hallucination in NLG', ACM Computing Surveys)",
+            "type": "secondaire"
+          },
+          {
+            "titre": "Classification naïve bayésienne — Wikipédia",
+            "url": "https://fr.wikipedia.org/wiki/Classification_naïve_bayésienne",
+            "type": "secondaire"
+          },
+          {
+            "titre": "Régression logistique — Wikipédia",
+            "url": "https://fr.wikipedia.org/wiki/Régression_logistique",
+            "type": "secondaire"
+          }
+        ],
+        "niveau_confiance": "opinion_majoritaire"
+      },
+      {
+        "modele": "Limite des données",
+        "hypotheses": "Un modèle entraîné sur des données historiques hérite de ce que ces données contiennent, y compris de ce que la société qui les a produites y a inscrit sans le vouloir. Le plafond n'est alors pas dans l'architecture mais dans le corpus, et il ne se déplace pas en changeant de modèle.",
+        "etat_actuel": "La reproduction et parfois l'amplification de biais sociaux, historiques ou de sélection est documentée sur des domaines à fort enjeu — recrutement, octroi de crédit, justice prédictive, reconnaissance faciale — au point de constituer un champ de recherche académique dédié et de motiver des audits réglementaires et des contentieux. Surtout, il n'existe pas de correction technique neutre : différentes définitions mathématiques de l'équité sont mutuellement incompatibles, ce qui fait de tout choix de correction un choix normatif.",
+        "reponse": "Structurelles, mais pas au sens technique : le verrou est que la correction des biais hérités ne relève pas d'un progrès de méthode mais d'un arbitrage politique, qu'aucune quantité de calcul ne tranche. Changer d'architecture — un encodeur comme BERT ou un décodeur génératif — ne change rien à cet héritage.",
+        "justification": "L'incompatibilité mathématique entre définitions concurrentes de l'équité est un résultat, pas une opinion : elle interdit l'existence d'une solution optimale unique et déplace donc le problème hors du champ où la mise à l'échelle opère.",
+        "limites": "La thèse ne dit rien du volume disponible : le référentiel ne documente ni épuisement mesuré des données de qualité, ni contamination des corpus par du texte synthétique — deux arguments fréquents dans le débat public qui n'ont, ici, aucune source à l'appui et ne sont donc pas repris. Par ailleurs, l'existence d'un arbitrage normatif ne signifie pas que rien ne peut être amélioré : les audits documentés supposent le contraire.",
+        "sources": [
+          {
+            "titre": "Biais algorithmique — Wikipédia",
+            "url": "https://fr.wikipedia.org/wiki/Biais_algorithmique",
+            "type": "secondaire"
+          },
+          {
+            "titre": "BERT (language model) — Wikipedia (EN)",
+            "url": "https://en.wikipedia.org/wiki/BERT_(language_model)",
+            "type": "secondaire"
+          }
+        ],
+        "niveau_confiance": "hypothese_prospective"
+      },
+      {
+        "modele": "Limite physique et matérielle",
+        "hypotheses": "Un modèle est un objet industriel avant d'être un objet mathématique : il suppose de l'électricité, de l'eau de refroidissement, des semi-conducteurs avancés et des métaux extraits. Ces contraintes ne se lèvent pas par la recherche algorithmique.",
+        "etat_actuel": "La consommation électrique et le besoin en eau de refroidissement des centres de données d'IA croissent, la chaîne dépend d'un nombre restreint de fabricants de semi-conducteurs avancés concentrés géographiquement, notamment à Taïwan, et l'empreinte matérielle passe par l'extraction de métaux et de terres rares. Les gains d'efficacité par unité de calcul sont pour l'instant largement compensés par la croissance du volume de calcul consacré à l'entraînement — un effet rebond documenté. En arrière-plan, le cadre des limites planétaires décrit neuf processus régulant la stabilité du système Terre, dont plusieurs sont aujourd'hui jugés dépassés.",
+        "reponse": "La question est mal posée : cette limite n'est ni structurelle ni conjoncturelle au sens des modèles, elle leur est extérieure. Elle se lève ou non par des politiques énergétiques, industrielles et géopolitiques, et c'est elle qui fixera le rythme réel avant l'architecture.",
+        "justification": "L'effet rebond est ce qui distingue cette lecture d'un simple problème d'optimisation : tant que l'efficacité gagnée est réinvestie en volume, l'amélioration technique n'allège pas la contrainte, elle la déplace. Les réponses observées — investissements dans de nouvelles capacités électriques, stratégies nationales de sécurisation des semi-conducteurs — sont d'ailleurs de nature politique, pas algorithmique.",
+        "limites": "Le référentiel documente la direction du phénomène mais pas d'ordres de grandeur chiffrés, ni de seuil au-delà duquel la trajectoire deviendrait impossible : la contrainte est établie, son caractère bloquant ne l'est pas, et l'affirmer serait dépasser les sources. Les seuils du cadre des limites planétaires font eux-mêmes l'objet de débats méthodologiques, en particulier sur les flux d'azote et de phosphore.",
+        "sources": [
+          {
+            "titre": "Environmental impact of artificial intelligence — Wikipedia",
+            "url": "https://en.wikipedia.org/wiki/Environmental_impact_of_artificial_intelligence",
+            "type": "secondaire"
+          },
+          {
+            "titre": "Rockström et al., 'A safe operating space for humanity', Nature 2009 (actualisé 2023)",
+            "type": "primaire"
+          },
+          {
+            "titre": "Planetary Boundaries — The safe operating space for humanity (Stockholm Resilience Centre)",
+            "url": "https://www.stockholmresilience.org/research/planetary-boundaries.html",
+            "type": "secondaire"
+          }
+        ],
+        "niveau_confiance": "opinion_majoritaire"
+      },
+      {
+        "modele": "Limite épistémologique (Popper, Chomsky)",
+        "hypotheses": "Une connaissance ne progresse pas par accumulation d'exemples mais par conjectures réfutables et réfutations ; un dispositif purement inductif ne produit donc pas d'énoncé scientifique. Symétriquement, l'acquisition du langage ne s'explique pas par la seule exposition à des données, l'enfant en recevant trop peu pour en déduire la grammaire.",
+        "etat_actuel": "Le critère popperien interroge directement l'évaluation des modèles : un système dont les échecs peuvent toujours être réexpliqués après coup — prompt mal formulé, données insuffisantes, mauvais réglage — échappe de fait à toute réfutation rigoureuse. Chomsky a publiquement et vivement critiqué les grands modèles de langage comme un mimétisme statistique sans grammaire ni compréhension véritable, position frontalement opposée à l'approche connexionniste qui les sous-tend.",
+        "reponse": "Structurelles, et pour une raison logique et non technique : ce qui manque à un système inductif n'est pas une capacité mais un type d'énoncé. Aucune échelle ne transforme une régularité observée en hypothèse réfutable, et le problème resterait identique avec des modèles arbitrairement grands.",
+        "justification": "L'argument porte sur la forme des énoncés produits, pas sur leur qualité : c'est ce qui le rend insensible aux progrès de performance que la première perspective invoque. La critique de l'évaluabilité en est le corollaire pratique : si aucun résultat ne peut réfuter la thèse qu'un modèle « comprend », la thèse n'est pas testée.",
+        "limites": "Le critère de falsifiabilité est jugé trop strict depuis Kuhn, Lakatos et Feyerabend, qui ont montré que les théories survivent souvent à des réfutations partielles. Et l'hypothèse d'une grammaire universelle innée est elle-même contestée par des courants linguistiques fonctionnalistes qui expliquent l'acquisition du langage par des mécanismes d'apprentissage généraux — c'est-à-dire, précisément, par ce que font les systèmes que Chomsky critique.",
+        "sources": [
+          {
+            "titre": "La Société ouverte et ses ennemis",
+            "type": "primaire"
+          },
+          {
+            "titre": "Karl Popper — Wikipédia",
+            "url": "https://fr.wikipedia.org/wiki/Karl_Popper",
+            "type": "secondaire"
+          },
+          {
+            "titre": "Structures syntaxiques",
+            "type": "primaire"
+          },
+          {
+            "titre": "Noam Chomsky — Wikipédia",
+            "url": "https://fr.wikipedia.org/wiki/Noam_Chomsky",
+            "type": "secondaire"
+          }
+        ],
+        "niveau_confiance": "hypothese_prospective"
+      }
+    ]
+  },
+  {
+    "id": "management-resistant-automatisation-encadrement",
+    "question": "Quels modèles de management résistent à l'automatisation d'une partie du travail d'encadrement ?",
+    "sous_questions": [
+      "Qu'est-ce qui s'automatise dans l'encadrement : la mesure, la règle, la coordination, ou l'arbitrage lui-même ?",
+      "Un modèle qui ne peut pas être remplacé par un outil peut-il malgré tout être vidé de sa substance par lui ?",
+      "Le référentiel qui pose cette question est produit avec l'aide d'agents : que vaut son propre jugement sur ce point ?"
+    ],
+    "axes_recherche": [
+      "Modèles d'organisation du travail (OST, bureaucratie, lean, agile, auto-organisation)",
+      "Analyse de substituabilité humain/IA sur les tâches d'encadrement",
+      "Sociologie critique du contrôle et de la surveillance algorithmique"
+    ],
+    "perspectives": [
+      {
+        "modele": "Rationalisation du travail (Taylor, Ford, OKR)",
+        "hypotheses": "Le travail d'encadrement consiste pour l'essentiel à mesurer, standardiser et faire respecter une méthode ; ces opérations sont formalisables, donc automatisables dès que leur instrumentation devient abordable.",
+        "etat_actuel": "Le cœur du taylorisme — chronométrer un geste, en déduire la méthode optimale, séparer la conception de l'exécution — est aujourd'hui réalisable par capteurs, vision par ordinateur et apprentissage automatique, sans bureau des méthodes humain. Des systèmes de ce type existent déjà en usine (contrôle qualité par vision, chronométrage automatisé) mais restent partiels et propres à certaines lignes. Du côté du pilotage par objectifs, la rédaction de résultats clés, le suivi d'avancement à partir d'outils connectés et les comptes rendus trimestriels sont des tâches structurées où l'assistance apporte un gain immédiat, l'arbitrage des priorités stratégiques restant humain.",
+        "reponse": "Ces modèles ne résistent pas : ils s'accomplissent. L'encadrement intermédiaire dont la fonction est de mesurer, de contrôler l'écart et de faire remonter l'information est le plus directement exposé, et ce qui subsiste est la décision de ce qui doit être mesuré.",
+        "justification": "La substituabilité est ici la plus élevée parce que l'objet du travail — un geste, un écart à une norme, un indicateur — a été rendu explicite et quantifiable par le modèle lui-même, il y a un siècle. Le fordisme a prolongé cette logique en standardisant le produit, ce qui a aussi produit sa rigidité face à la diversification de la demande.",
+        "limites": "Le passage à l'échelle dépend d'un coût d'instrumentation qui n'est pas nul, et l'obstacle résiduel identifié est social — acceptabilité, emploi — plus que technique : or c'est exactement l'angle mort historique de ce cadre, dont la déshumanisation était dénoncée dès les années 1930. Le pilotage par objectifs comporte de son côté un risque documenté de sur-quantification d'objectifs qualitatifs, que l'automatisation du suivi peut aggraver.",
+        "sources": [
+          {
+            "titre": "Frederick W. Taylor, The Principles of Scientific Management (1911)",
+            "type": "primaire"
+          },
+          {
+            "titre": "Taylorisme",
+            "url": "https://fr.wikipedia.org/wiki/Taylorisme",
+            "type": "secondaire"
+          },
+          {
+            "titre": "Fordisme — Wikipédia",
+            "url": "https://fr.wikipedia.org/wiki/Fordisme",
+            "type": "secondaire"
+          },
+          {
+            "titre": "John Doerr, Measure What Matters (2018)",
+            "type": "primaire"
+          },
+          {
+            "titre": "Méthode OKR",
+            "url": "https://fr.wikipedia.org/wiki/M%C3%A9thode_OKR",
+            "type": "secondaire"
+          }
+        ],
+        "niveau_confiance": "opinion_majoritaire"
+      },
+      {
+        "modele": "Bureaucratie rationnelle-légale (Weber, Fayol)",
+        "hypotheses": "Une organisation efficace repose sur des règles écrites et impersonnelles appliquées par des agents spécialisés dans une hiérarchie claire. Ce qui est écrit et impersonnel est par construction ce qu'une machine applique le mieux.",
+        "etat_actuel": "Les arbres de décision sont le pendant algorithmique le plus direct de cette rationalité : une séquence de règles de décision facilement interprétables, appliquée de façon constante à de grands volumes de dossiers, et employée en aide à la décision administrative précisément parce qu'elle est explicable et auditable — éligibilité à des aides sociales sur critères vérifiables, modèles de risque pour des décisions publiques sensibles. Ils n'apportent en revanche ni la légitimité de la règle ni la voie de recours humaine, dont l'absence est le risque identifié quand l'administration s'automatise. Du côté de Fayol, les fonctions de coordination et de contrôle inspirent toujours les outils de gestion de projet, désormais largement outillés ; en structure matricielle, l'assistance réduit la charge documentaire de la double remontée d'information sans rien résoudre du conflit de double autorité.",
+        "reponse": "L'encadrement ne disparaît pas dans ces modèles, il se déplace : l'instruction routinière s'automatise sur règles publiées, et le travail humain se concentre sur l'exception, le recours et la justification de la règle. C'est le modèle qui résiste le mieux, non parce qu'il serait imperméable mais parce que la partie automatisable y était déjà séparée du reste.",
+        "justification": "La séparation entre la règle et son application, qui est la définition même du modèle wébérien, fournit une ligne de découpe nette entre ce qu'un système peut prendre en charge et ce qu'il ne peut pas. L'interprétabilité de l'outil correspondant — un arbre de règles lisibles — permet en outre de conserver la contestabilité, qui est la condition de légitimité du modèle.",
+        "limites": "Ce déplacement suppose que les règles restent publiées et interprétables. Un basculement vers des modèles plus performants mais moins interprétables reproduirait et amplifierait les travers déjà documentés de la bureaucratie — règles opaques, absence de recours — que la version en boîte blanche permettait d'éviter. Le modèle fayolien est par ailleurs critiqué comme trop rigide et descendant pour rendre compte de la diversité des organisations réelles.",
+        "sources": [
+          {
+            "titre": "Max Weber",
+            "url": "https://fr.wikipedia.org/wiki/Max_Weber",
+            "type": "primaire"
+          },
+          {
+            "titre": "Bureaucratie — Wikipédia",
+            "url": "https://fr.wikipedia.org/wiki/Bureaucratie",
+            "type": "secondaire"
+          },
+          {
+            "titre": "Henri Fayol — Wikipédia",
+            "url": "https://fr.wikipedia.org/wiki/Henri_Fayol",
+            "type": "secondaire"
+          },
+          {
+            "titre": "Structure matricielle",
+            "url": "https://fr.wikipedia.org/wiki/Structure_matricielle",
+            "type": "secondaire"
+          },
+          {
+            "titre": "Arbre de décision (apprentissage) — Wikipédia",
+            "url": "https://fr.wikipedia.org/wiki/Arbre_de_décision_(apprentissage)",
+            "type": "secondaire"
+          }
+        ],
+        "niveau_confiance": "opinion_majoritaire"
+      },
+      {
+        "modele": "Auto-organisation et autonomie (entreprise libérée, holacratie)",
+        "hypotheses": "Ce qui fait la valeur d'un encadrant est relationnel — confiance, écoute, reconnaissance, arbitrage assumé devant des personnes — et non calculable. Les modèles qui l'avaient déjà admis, en réduisant les strates et les procédures de contrôle, sont donc les moins exposés.",
+        "etat_actuel": "L'entreprise libérée, formalisée par Isaac Getz en 2009, et l'holacratie, développée par Brian Robertson entre 2001 et 2006, distribuent la décision dans des équipes ou des cercles autonomes. Les frameworks multi-agents offrent une formalisation exécutable de la coordination par rôles qui fait écho à la constitution holacratique, mais ils ne portent ni la réflexivité ni l'autonomie des salariés dont ces modèles font la condition de réussite. À l'inverse, le gradient boosting, méthode la plus performante sur données tabulaires, rend techniquement facile et peu coûteux le scoring individuel à partir de traces d'activité — soit exactement la mesure fine que ces modèles prétendaient abandonner.",
+        "reponse": "Ce sont les modèles les moins substituables et les plus vulnérables à la fois. Ce qu'ils portent ne se remplace pas, mais le même outillage qui ne peut pas les remplacer peut les vider de l'intérieur en réintroduisant un contrôle chiffré que le salarié ne peut pas reconstituer.",
+        "justification": "La non-substituabilité tient à la nature de l'objet : la confiance et l'autonomie sont des relations, pas des grandeurs mesurables. La vulnérabilité tient au fait que l'outil de mesure, lui, existe, qu'il est peu interprétable, et que rien dans le modèle organisationnel ne dit qui décide de sa mise en place ni qui accède aux résultats.",
+        "limites": "Le corpus documente des dérives constatées avant toute automatisation : responsabilisation potentiellement épuisante, formes cachées de contrôle social, absence de processus décisionnels clairs et risque de burn-out — l'ANACT et l'INRS soulignant que le terme « libérée » peut masquer des réalités restées rigides —, ainsi qu'une hiérarchie implicite persistant malgré la structure formelle de l'holacratie. La résistance revendiquée par ces modèles n'est donc pas démontrée, et le débat reste ouvert entre un outil au service de la responsabilisation et un contrôle d'autant plus efficace qu'il est invisible.",
+        "sources": [
+          {
+            "titre": "Entreprise libérée",
+            "url": "https://fr.wikipedia.org/wiki/Entreprise_libérée",
+            "type": "primaire"
+          },
+          {
+            "titre": "Holacratie",
+            "url": "https://fr.wikipedia.org/wiki/Holacratie",
+            "type": "primaire"
+          },
+          {
+            "titre": "On Becoming a Person (1961)",
+            "type": "primaire"
+          },
+          {
+            "titre": "Carl Rogers — Wikipédia",
+            "url": "https://fr.wikipedia.org/wiki/Carl_Rogers",
+            "type": "secondaire"
+          },
+          {
+            "titre": "Gradient boosting — Wikipedia (EN)",
+            "url": "https://en.wikipedia.org/wiki/Gradient_boosting",
+            "type": "secondaire"
+          }
+        ],
+        "niveau_confiance": "hypothese_prospective"
+      },
+      {
+        "modele": "Amélioration continue au poste (toyotisme, agile)",
+        "hypotheses": "Le savoir qui compte est détenu par celui qui fait, il est en partie tacite et il se transmet par la pratique. Un modèle entraîné sur des traces écrites ne peut donc pas capturer ce qui fait la valeur de l'amélioration continue, quelle que soit sa performance ailleurs.",
+        "etat_actuel": "Le toyotisme, développé par Taiichi Ōno à partir de 1962, fait porter l'amélioration continue par les employés eux-mêmes (kaizen) et le contrôle qualité à la source. Les jumeaux numériques prolongent cette logique en répliquant virtuellement un actif à partir de ses capteurs : anticipation des besoins de maintenance sur des turbines ou des moteurs, simulation de lignes de production entières avant toute modification physique. Leur qualité prédictive dépend entièrement d'une calibration qui dérive si elle n'est pas réactualisée, et ils ne portent ni la dimension sociale du kaizen — l'amélioration continue portée par les salariés eux-mêmes — ni l'arbitrage entre cadence et santé au travail. Du côté de Scrum, les outils génératifs entrent dans les cérémonies (rédaction de tickets, estimation, synthèse de rétrospectives) sans se substituer à l'auto-organisation de l'équipe.",
+        "reponse": "Ce n'est pas le modèle qui résiste mais le lieu où il place le savoir : l'automatisation avance vite sur l'actif instrumenté et s'arrête au seuil de ce qui n'est pas écrit. Ces modèles restent donc en position de coopération plutôt que de substitution, à condition que le pilotage par simulation ne redevienne pas un pilotage par la cadence.",
+        "justification": "La distinction porte sur ce qui est mesurable : une turbine produit des données de capteurs, une pratique d'atelier n'en produit pas d'équivalent. L'outil s'installe donc là où la trace existe, ce qui explique la maturité observée sur la maintenance prédictive et l'absence d'équivalent sur le kaizen.",
+        "limites": "L'argument du savoir tacite n'est pas démontré : le corpus constate l'absence d'outil, il n'établit pas l'impossibilité d'en construire un. Le juste-à-temps expose par ailleurs les chaînes à une grande fragilité face aux ruptures d'approvisionnement, illustrée lors de la pandémie de Covid-19, et l'intensification du rythme de travail qu'il implique est critiquée pour ses effets sur la santé — points qu'une meilleure simulation ne tranche pas. Le modèle Spotify rappelle enfin qu'adopter une structure ou un outil sans transformer la culture sous-jacente ne produit ni l'un ni l'autre.",
+        "sources": [
+          {
+            "titre": "Toyotisme",
+            "url": "https://fr.wikipedia.org/wiki/Toyotisme",
+            "type": "primaire"
+          },
+          {
+            "titre": "Scrum (développement)",
+            "url": "https://fr.wikipedia.org/wiki/Scrum_(développement)",
+            "type": "primaire"
+          },
+          {
+            "titre": "Kniberg & Ivarsson, \"Scaling Agile @ Spotify\" (2012)",
+            "type": "primaire"
+          },
+          {
+            "titre": "The Spotify Model — Atlassian",
+            "url": "https://www.atlassian.com/agile/agile-at-scale/spotify",
+            "type": "secondaire"
+          },
+          {
+            "titre": "Jumeau numérique — Wikipédia",
+            "url": "https://fr.wikipedia.org/wiki/Jumeau_num%C3%A9rique",
+            "type": "secondaire"
+          }
+        ],
+        "niveau_confiance": "hypothese_prospective"
+      },
+      {
+        "modele": "Critique du contrôle (Foucault, Deleuze, Han)",
+        "hypotheses": "Le pouvoir n'est pas seulement répressif, il est productif : il façonne les normes et les sujets par des dispositifs diffus. La société de contrôle qui succède à la société disciplinaire n'interdit plus, elle incite en continu — et dans la société de la performance, le sujet s'auto-exploite librement jusqu'à l'épuisement.",
+        "etat_actuel": "La notion de panoptique est directement reprise pour analyser la surveillance algorithmique et les systèmes de notation, qui rendent les individus visibles et calculables sans qu'ils sachent quand ils sont observés ; celle de société de contrôle anticipe une régulation comportementale continue par des systèmes de recommandation. L'état technique réel reste toutefois modeste : les agents de navigation web sont d'une fiabilité limitée sur des sites complexes, exposés aux injections de contenu malveillant, et les frameworks multi-agents propagent et amplifient les erreurs d'un agent sans supervision humaine adéquate.",
+        "reponse": "La question est mal posée : demander quel modèle « résiste » suppose que l'automatisation de l'encadrement est un gain d'efficacité à répartir, alors qu'elle est d'abord un approfondissement du contrôle. Le modèle le mieux placé, dans cette lecture, n'est pas le plus efficace mais celui qui conserve un lieu où la mesure peut être refusée.",
+        "justification": "Le déplacement de la question est le contenu même de la perspective : si le pouvoir s'exerce par l'incitation et la mesure plutôt que par la contrainte, alors un outil qui mesure mieux et incite en continu n'est pas neutre vis-à-vis du modèle où on l'installe. Le temps libéré par la délégation tend, dans une société de la performance, à être réinvesti en performance plutôt qu'en repos.",
+        "limites": "Han est critiqué pour un style essayiste peu étayé empiriquement et des généralisations culturelles rapides ; Foucault ne fournit aucun critère normatif permettant de distinguer un bon d'un mauvais pouvoir, reproche que lui adresse notamment Habermas ; la portée analytique des concepts de Deleuze est contestée comme métaphorique. Surtout, l'état technique documenté — des agents à fiabilité limitée, encore expérimentaux sur la coopération — est loin du dispositif total que la critique décrit : c'est un diagnostic prospectif, pas un constat mesuré.",
+        "sources": [
+          {
+            "titre": "Surveiller et punir",
+            "type": "primaire"
+          },
+          {
+            "titre": "Michel Foucault — Wikipédia",
+            "url": "https://fr.wikipedia.org/wiki/Michel_Foucault",
+            "type": "secondaire"
+          },
+          {
+            "titre": "Mille Plateaux (avec Félix Guattari)",
+            "type": "primaire"
+          },
+          {
+            "titre": "Gilles Deleuze — Wikipédia",
+            "url": "https://fr.wikipedia.org/wiki/Gilles_Deleuze",
+            "type": "secondaire"
+          },
+          {
+            "titre": "La Société de la fatigue",
+            "type": "primaire"
+          },
+          {
+            "titre": "Byung-Chul Han — Wikipédia",
+            "url": "https://fr.wikipedia.org/wiki/Byung-Chul_Han",
+            "type": "secondaire"
+          },
+          {
+            "titre": "LangChain — Wikipedia",
+            "url": "https://en.wikipedia.org/wiki/LangChain",
+            "type": "secondaire"
+          }
+        ],
+        "niveau_confiance": "hypothese_prospective"
+      }
+    ]
+  },
+  {
+    "id": "connaissance-obtenue-par-ia",
+    "question": "À quelles conditions un résultat scientifique obtenu par IA constitue-t-il une connaissance ?",
+    "sous_questions": [
+      "L'origine d'une hypothèse compte-t-elle pour son statut, ou seul compte ce qu'on peut en faire ensuite ?",
+      "Une prédiction exacte sans mécanisme explicatif est-elle une connaissance, ou seulement un instrument ?",
+      "Que peut valider une institution qui n'a pas les moyens de recalculer le résultat qu'on lui soumet ?"
+    ],
+    "axes_recherche": [
+      "Épistémologie des sciences (démarcation, justification, explication)",
+      "Étude sociale des sciences et infrastructures de recherche",
+      "IA appliquée aux sciences et explicabilité des modèles"
+    ],
+    "perspectives": [
+      {
+        "modele": "Falsificationnisme (Popper)",
+        "hypotheses": "Une théorie n'est scientifique que si elle est réfutable en principe par l'expérience ; la connaissance progresse par conjectures hardies et réfutations, jamais par vérification définitive. Le contexte de découverte — qui ou quoi a produit l'hypothèse — est indifférent à son statut.",
+        "etat_actuel": "AlphaFold prédit la structure tridimensionnelle des protéines à une précision proche de la résolution expérimentale sur une large part du protéome connu, résultat publié dans Nature en 2021 et distingué par le prix Nobel de chimie 2024 (Hassabis, Jumper, Baker). Le modèle prédit une structure statique ou probable, sa performance se dégrade sur les protéines sans homologues connus ou fortement désordonnées, et il ne remplace pas la validation expérimentale pour un usage clinique.",
+        "reponse": "Un résultat obtenu par IA est une connaissance dès lors que l'énoncé produit peut être mis à l'épreuve indépendamment de la manière dont il a été engendré. La machine est un générateur de conjectures comme un autre : ce qui compte est que la conjecture soit exposée au risque d'être fausse.",
+        "justification": "La séparation entre contexte de découverte et contexte de justification rend le critère insensible au caractère opaque du générateur : si une structure prédite peut être infirmée par cristallographie, elle a exactement le statut de n'importe quelle prédiction théorique. C'est ce qui explique qu'un résultat produit par un modèle non interprétable ait pu être reconnu par la communauté sans que son opacité soit rédhibitoire.",
+        "limites": "Le critère de falsifiabilité est jugé trop strict depuis Kuhn, Lakatos et Feyerabend, qui montrent que les théories survivent souvent à des réfutations partielles. Et une prédiction de structure n'est pas une théorie : elle se vérifie cas par cas sans jamais s'exposer comme énoncé général, ce qui déplace le critère plutôt qu'il ne le satisfait. Popper lui-même n'aide pas à décider quoi faire de la masse de prédictions jamais mises à l'épreuve.",
+        "sources": [
+          {
+            "titre": "La Société ouverte et ses ennemis",
+            "type": "primaire"
+          },
+          {
+            "titre": "Karl Popper — Wikipédia",
+            "url": "https://fr.wikipedia.org/wiki/Karl_Popper",
+            "type": "secondaire"
+          },
+          {
+            "titre": "Jumper et al., 'Highly accurate protein structure prediction with AlphaFold', Nature 2021",
+            "type": "primaire"
+          },
+          {
+            "titre": "AlphaFold — Wikipédia (article en français)",
+            "url": "https://fr.wikipedia.org/wiki/AlphaFold",
+            "type": "secondaire"
+          }
+        ],
+        "niveau_confiance": "opinion_majoritaire"
+      },
+      {
+        "modele": "Étude sociale des sciences (Latour, Haraway)",
+        "hypotheses": "La connaissance n'est pas un rapport solitaire entre un esprit et un fait, mais ce qu'un réseau d'instruments, de laboratoires, de bases de données et de revues parvient à stabiliser. Les non-humains y ont une part d'agentivité, et tout savoir est situé : il n'y a pas de regard de nulle part.",
+        "etat_actuel": "Cette lecture se vérifie littéralement sur les succès invoqués : l'EMBL-EBI a hébergé et diffusé publiquement les bases de données structurales de protéines sur lesquelles AlphaFold a été entraîné et validé, bases financées en commun par des États pour atteindre une échelle qu'aucun ne pouvait déployer seul. Le CERN, de son côté, produit des volumes de données parmi les plus importants au monde et a été pionnier de l'apprentissage automatique sur données scientifiques massives bien avant la généralisation actuelle de l'IA.",
+        "reponse": "Un résultat devient une connaissance lorsqu'il est stabilisé par ce réseau, et l'IA y entre comme un actant de plus — ni juge, ni oracle, ni simple outil neutre au service d'intentions humaines. La condition n'est donc pas une propriété du modèle mais l'état des infrastructures qui l'entourent.",
+        "justification": "L'ordre de production le montre : sans des décennies de cristallographie déposées dans des bases publiques, le modèle n'aurait rien eu à apprendre. Attribuer le résultat au seul modèle revient à effacer l'infrastructure qui l'a rendu possible — exactement l'opération de purification que ce cadre conteste.",
+        "limites": "Le symétrisme entre humains et non-humains est jugé philosophiquement flou, voire accusé de diluer la responsabilité politique dans un réseau d'acteurs trop large ; le style de Haraway est critiqué comme plus poétique-politique que rigoureusement argumenté. Surtout, ce cadre décrit comment un résultat se stabilise, il ne dit pas quand il faut le croire : il est descriptif là où la question posée est normative.",
+        "sources": [
+          {
+            "titre": "Nous n'avons jamais été modernes",
+            "type": "primaire"
+          },
+          {
+            "titre": "Bruno Latour — Wikipédia",
+            "url": "https://fr.wikipedia.org/wiki/Bruno_Latour",
+            "type": "secondaire"
+          },
+          {
+            "titre": "A Cyborg Manifesto",
+            "type": "primaire"
+          },
+          {
+            "titre": "Donna Haraway — Wikipédia",
+            "url": "https://fr.wikipedia.org/wiki/Donna_Haraway",
+            "type": "secondaire"
+          },
+          {
+            "titre": "Laboratoire européen de biologie moléculaire — Wikipédia",
+            "url": "https://fr.wikipedia.org/wiki/Laboratoire_europ%C3%A9en_de_biologie_mol%C3%A9culaire",
+            "type": "secondaire"
+          },
+          {
+            "titre": "CERN — Wikipédia",
+            "url": "https://fr.wikipedia.org/wiki/CERN",
+            "type": "secondaire"
+          }
+        ],
+        "niveau_confiance": "opinion_majoritaire"
+      },
+      {
+        "modele": "Instrumentalisme opératoire",
+        "hypotheses": "Une prédiction validée expérimentalement est une connaissance, même sans mécanisme explicatif : la structure repliée est juste ou fausse, elle n'a pas à être « comprise » pour être su. Ce que produit un modèle est un opérateur fiable, et la fiabilité se teste.",
+        "etat_actuel": "Un agent d'apprentissage par renforcement a contrôlé en temps réel la configuration du plasma d'un tokamak, démonstration publiée dans Nature en 2022 sur le tokamak expérimental TCV de l'EPFL, en stabilisant des configurations variées sans reprogrammation manuelle. GNoME a annoncé en 2023 plus de deux millions de nouveaux matériaux candidats, dont plusieurs centaines de milliers jugés stables. Dans les deux cas les prédictions restent théoriques ou circonscrites : elles supposent une validation expérimentale longue et coûteuse, et une part significative des matériaux prédits stables n'a pas été synthétisée.",
+        "reponse": "La condition est unique et suffisante : la validation expérimentale. Un résultat validé est une connaissance quel que soit le degré d'opacité du modèle qui l'a produit, et un résultat non validé n'en est pas une, aussi bien expliqué soit-il.",
+        "justification": "C'est le critère qu'appliquent de fait les disciplines concernées, et il est le seul qui rende compte à la fois de la reconnaissance d'AlphaFold et de la prudence maintenue sur GNoME : la différence entre les deux n'est pas la qualité du modèle mais l'état de la validation. Il a aussi le mérite d'être opérationnel là où les autres perspectives restent des critères de principe.",
+        "limites": "Faire dépendre le statut de connaissance de la validation déplace le problème vers son goulot d'étranglement : la validation est lente et coûteuse, et elle ne suivra pas le rythme de production des candidats. Ce cadre ne dit rien de ce qu'il faut faire de la masse de prédictions jamais testées, qui est l'essentiel du volume produit ; il ne dit rien non plus de la transférabilité — le contrôle de plasma n'a été démontré que sur des tokamaks expérimentaux de taille réduite.",
+        "sources": [
+          {
+            "titre": "DeepMind — Magnetic control of tokamak plasmas (Nature, 2022)",
+            "type": "primaire"
+          },
+          {
+            "titre": "Accelerating fusion science through learned plasma control (Google DeepMind)",
+            "url": "https://deepmind.google/discover/blog/accelerating-fusion-science-through-learned-plasma-control/",
+            "date": "2022-02-16",
+            "type": "primaire"
+          },
+          {
+            "titre": "GNoME (Google DeepMind, 2023)",
+            "type": "primaire"
+          },
+          {
+            "titre": "Google DeepMind — Wikipedia",
+            "url": "https://en.wikipedia.org/wiki/Google_DeepMind",
+            "type": "secondaire"
+          }
+        ],
+        "niveau_confiance": "consensus_scientifique"
+      },
+      {
+        "modele": "Exigence d'explicabilité",
+        "hypotheses": "Connaître, c'est pouvoir dire pourquoi. Sans mécanisme causal intelligible, on obtient une corrélation utile mais rien qui puisse être enseigné, transféré à un cas voisin, ou contesté autrement que par un contre-exemple.",
+        "etat_actuel": "L'opacité est graduée et documentée : une forêt aléatoire est déjà moins interprétable qu'un arbre de décision unique — un effet de boîte grise — et le gradient boosting, plus performant encore sur données tabulaires, l'est moins encore tout en exigeant un savoir-faire de réglage important. Du côté génératif, un modèle produit des références bibliographiques d'apparence plausible mais inexistantes, et l'entraînement sur un corpus savant ne supprime pas le phénomène, comme l'a montré le cas de Galactica.",
+        "reponse": "Un résultat n'est une connaissance qu'à la condition supplémentaire qu'on puisse en reconstituer la raison. Une prédiction juste dont personne ne peut dire pourquoi elle est juste reste un fait technique : elle n'entre pas dans le corps de savoir qu'on transmet et sur lequel on construit.",
+        "justification": "L'argument est renforcé par le fait que l'opacité et la performance croissent ensemble dans les familles de modèles documentées : ce n'est pas un défaut passager de tel outil mais une tendance de la classe entière, ce qui rend le renoncement à l'explication structurellement coûteux plutôt qu'accidentel.",
+        "limites": "L'exigence est difficile à tenir uniformément : des pans entiers des sciences travaillent sur des corrélations robustes sans mécanisme complet, et l'imposer rétroactivement disqualifierait des résultats admis. L'interprétabilité n'est en outre pas la vérité — un arbre parfaitement lisible peut être faux, un modèle opaque exact — de sorte que ce critère porte sur la valeur pédagogique et la contestabilité d'un résultat plus que sur sa justesse.",
+        "sources": [
+          {
+            "titre": "Forêt d'arbres décisionnels — Wikipédia",
+            "url": "https://fr.wikipedia.org/wiki/Forêt_d'arbres_décisionnels",
+            "type": "secondaire"
+          },
+          {
+            "titre": "Gradient boosting — Wikipedia (EN)",
+            "url": "https://en.wikipedia.org/wiki/Gradient_boosting",
+            "type": "secondaire"
+          },
+          {
+            "titre": "Hallucination (intelligence artificielle) — Wikipédia",
+            "url": "https://fr.wikipedia.org/wiki/Hallucination_(intelligence_artificielle)",
+            "type": "secondaire"
+          }
+        ],
+        "niveau_confiance": "opinion_majoritaire"
+      },
+      {
+        "modele": "Institutionnalisme",
+        "hypotheses": "Un résultat n'est une connaissance qu'une fois validé par les institutions qui en portent la charge — revues, agences, organismes de recherche — et cette validation suppose qu'elles disposent des moyens de l'auditer. La question n'est donc pas philosophique mais organisationnelle.",
+        "etat_actuel": "Le corpus documente des institutions à la fois puissantes et contraintes : le GIEC évalue et synthétise sans conduire lui-même de recherche, et son processus de validation consensuelle entre plusieurs centaines de gouvernements produit des formulations parfois jugées prudentes face à la littérature la plus récente ; le budget et les priorités des NIH restent soumis aux orientations politiques changeantes de l'exécutif américain ; le CNRS fait l'objet de débats récurrents sur le financement de la recherche publique et la précarité des jeunes chercheurs ; la Société Max-Planck, autonome et pérenne dans son financement, a dû documenter publiquement le rôle de ses instituts prédécesseurs dans des recherches liées à l'eugénisme et aux crimes du régime nazi.",
+        "reponse": "La condition est que l'institution puisse vérifier autre chose que le résultat lui-même : la reproductibilité de la chaîne, la provenance des données, le protocole de validation. Sans cette capacité, la validation devient une homologation de confiance, et le résultat n'a que le statut que lui confère la réputation de son producteur.",
+        "justification": "L'exemple de la modélisation climatique par apprentissage rend le problème concret : un modèle entraîné sur des réanalyses historiques est par construction moins fiable sur des régimes inédits, ce qui est exactement la situation que ces institutions doivent évaluer — et qu'elles ne peuvent trancher qu'en auditant les données et le protocole, faute de pouvoir recalculer.",
+        "limites": "Le référentiel documente la fragilité de ces institutions, pas leur capacité effective à auditer un modèle d'IA : cette perspective repose donc sur une extrapolation raisonnable, pas sur un constat mesuré. Elle risque en outre de faire du statut de connaissance une fonction du prestige institutionnel, ce que la deuxième perspective décrit comme un fait et que celle-ci érige en norme.",
+        "sources": [
+          {
+            "titre": "Rapports d'évaluation du GIEC (1990-2023)",
+            "type": "primaire"
+          },
+          {
+            "titre": "Groupe d'experts intergouvernemental sur l'évolution du climat — Wikipédia",
+            "url": "https://fr.wikipedia.org/wiki/Groupe_d%27experts_intergouvernemental_sur_l%27%C3%A9volution_du_climat",
+            "type": "secondaire"
+          },
+          {
+            "titre": "National Institutes of Health — Wikipédia",
+            "url": "https://fr.wikipedia.org/wiki/National_Institutes_of_Health",
+            "type": "secondaire"
+          },
+          {
+            "titre": "Centre national de la recherche scientifique — Wikipédia",
+            "url": "https://fr.wikipedia.org/wiki/Centre_national_de_la_recherche_scientifique",
+            "type": "secondaire"
+          },
+          {
+            "titre": "Société Max-Planck — Wikipédia",
+            "url": "https://fr.wikipedia.org/wiki/Soci%C3%A9t%C3%A9_Max-Planck",
+            "type": "secondaire"
+          },
+          {
+            "titre": "GraphCast (Google DeepMind, publié dans Science, 2023)",
+            "type": "primaire"
+          }
+        ],
+        "niveau_confiance": "hypothese_prospective"
+      }
+    ]
+  },
+  {
+    "id": "bien-vivre-mesurable",
+    "question": "Le bien-vivre est-il mesurable, et faut-il le mesurer ?",
+    "sous_questions": [
+      "Un indicateur agrégé décrit-il une population, une institution, ou l'état d'une personne — et ces trois usages sont-ils interchangeables ?",
+      "Qui décide de ce qui est mesuré, à partir de quelles données, et pour fonder quelle décision ?",
+      "Un bien-vivre qui suppose de dépasser les capacités de régulation de la biosphère est-il encore un bien-vivre ?"
+    ],
+    "axes_recherche": [
+      "Approche par les capabilités et indicateurs alternatifs au PIB",
+      "Psychométrie du bien-être et psychothérapies fondées sur la preuve",
+      "Critique philosophique de la quantification et quantification algorithmique"
+    ],
+    "perspectives": [
+      {
+        "modele": "Approche par les capabilités (Sen, Nussbaum)",
+        "hypotheses": "Ce qui compte n'est ni le revenu ni la satisfaction déclarée mais la capacité réelle des personnes à convertir des ressources en libertés concrètes — faire ce à quoi elles ont raison d'accorder de la valeur. Une société décente doit garantir à chacun un seuil de capabilités centrales.",
+        "etat_actuel": "Sen a montré que les famines résultent d'inégalités de distribution plutôt que d'un manque absolu de nourriture, travaux qui ont directement contribué à la création de l'Indice de développement humain en 1990 et lui ont valu le prix Nobel d'économie en 1998. Nussbaum en a tiré une liste de capabilités centrales — vie, santé, intégrité corporelle, pensée, affiliation, contrôle sur son environnement — posée comme seuil minimal de dignité. Le World Happiness Report, publié annuellement depuis 2012 par le réseau SDSN des Nations unies, a de son côté institutionnalisé un indicateur alternatif au PIB dans le débat public.",
+        "reponse": "Mesurable, mais pas comme une somme de satisfaction : ce qui se mesure est l'accès effectif à des libertés, pas un état intérieur. Et il faut le mesurer, parce que sans indicateur il n'y a pas d'obligation opposable à une institution — c'est la mesure qui transforme une aspiration en exigence.",
+        "justification": "Le déplacement de l'objet est ce qui rend la mesure défendable : on n'évalue pas le bonheur d'une personne mais l'état des conditions qu'une politique publique contrôle, ce dont l'IDH a montré la faisabilité à l'échelle internationale.",
+        "limites": "L'opérationnalisation empirique des capabilités, plus riche mais bien plus complexe qu'un indicateur monétaire, reste un défi méthodologique pour les politiques qui s'en réclament. La liste de Nussbaum est accusée d'imposer une conception substantielle du bien à des sociétés pluralistes, en tension avec la neutralité libérale qu'elle revendique. Enfin, un indicateur de capabilités décrit des populations et des institutions : il ne dit rien de l'état d'une personne et ne fonde aucun jugement individuel, encore moins clinique.",
+        "sources": [
+          {
+            "titre": "Femmes et développement humain (avec Amartya Sen)",
+            "type": "primaire"
+          },
+          {
+            "titre": "Martha Nussbaum — Wikipédia",
+            "url": "https://fr.wikipedia.org/wiki/Martha_Nussbaum",
+            "type": "secondaire"
+          },
+          {
+            "titre": "Amartya Sen — Wikipédia",
+            "url": "https://fr.wikipedia.org/wiki/Amartya_Sen",
+            "type": "secondaire"
+          },
+          {
+            "titre": "World Happiness Report (SDSN, publication annuelle depuis 2012)",
+            "type": "primaire"
+          },
+          {
+            "titre": "Rapport mondial sur le bonheur — Wikipédia",
+            "url": "https://fr.wikipedia.org/wiki/Rapport_mondial_sur_le_bonheur",
+            "type": "secondaire"
+          }
+        ],
+        "niveau_confiance": "opinion_majoritaire"
+      },
+      {
+        "modele": "Psychométrie et psychologie positive (Seligman, TCC)",
+        "hypotheses": "Le bien-être déclaré est un fait observable : une auto-évaluation recueillie sur une échelle stable produit des séries comparables dans le temps et entre populations, et le changement psychologique produit par une intervention se mesure par des protocoles contrôlés.",
+        "etat_actuel": "Le World Happiness Report repose sur l'auto-évaluation du bonheur par l'échelle de Cantril, pondérée par six facteurs explicatifs — PIB par habitant, soutien social, espérance de vie en bonne santé, liberté de choix, générosité, corruption perçue. Les thérapies cognitivo-comportementales disposent de la base de preuves la plus large en psychothérapie, avec des essais contrôlés randomisés sur l'anxiété, la dépression, les TOC et les phobies. Seligman a structuré un champ de recherche autour du modèle PERMA, avec des applications en éducation, en entreprise et en santé publique.",
+        "reponse": "Oui, à condition de nommer précisément ce qui est mesuré : un état déclaré à un moment donné, ou l'effet d'un protocole dans un cadre de soin. À ces deux titres, mesurer est utile et fondé — l'évaluation de l'efficacité d'une psychothérapie repose entièrement sur cette possibilité.",
+        "justification": "La comparabilité des séries est ce qui a permis d'établir que la richesse matérielle seule ne rend pas compte de la qualité de vie, résultat qu'aucune argumentation philosophique n'aurait pu produire ; et c'est la mesure protocolisée du changement qui a rendu la psychothérapie comparable à d'autres traitements.",
+        "limites": "Une échelle de bien-être n'est pas un diagnostic : elle ne se substitue ni à un jugement clinique, ni à une évaluation par un professionnel, ni à une prise en charge, et aucun score ne doit être lu comme un état de santé. L'effet mesuré en essai contrôlé décroît souvent hors de ce cadre, et l'alliance thérapeutique — facteur le plus prédictif du résultat clinique selon les méta-analyses toutes approches confondues — se laisse mal réduire à un indicateur. La psychologie positive est par ailleurs critiquée pour un optimisme parfois prescriptif, une validation empirique inégale selon les concepts et un relatif oubli des déterminants sociaux ; l'auto-évaluation du bonheur reste sensible aux biais culturels et déclaratifs, et les facteurs retenus par le World Happiness Report reflètent une conception occidentale du bien-être.",
+        "sources": [
+          {
+            "titre": "Beck, A.T. — Cognitive Therapy and the Emotional Disorders",
+            "type": "primaire"
+          },
+          {
+            "titre": "Revues Cochrane sur l'efficacité de la TCC",
+            "type": "secondaire"
+          },
+          {
+            "titre": "Thérapie cognitivo-comportementale",
+            "url": "https://fr.wikipedia.org/wiki/Th%C3%A9rapie_cognitivo-comportementale",
+            "type": "secondaire"
+          },
+          {
+            "titre": "Learned Optimism (1991)",
+            "type": "primaire"
+          },
+          {
+            "titre": "Martin Seligman — Wikipédia",
+            "url": "https://fr.wikipedia.org/wiki/Martin_Seligman",
+            "type": "secondaire"
+          },
+          {
+            "titre": "Rapport mondial sur le bonheur — Wikipédia",
+            "url": "https://fr.wikipedia.org/wiki/Rapport_mondial_sur_le_bonheur",
+            "type": "secondaire"
+          }
+        ],
+        "niveau_confiance": "consensus_scientifique"
+      },
+      {
+        "modele": "Limites bio-physiques (limites planétaires, système Terre)",
+        "hypotheses": "Un bien-vivre qui suppose de dépasser durablement les capacités de régulation de la planète n'en est pas un : il mesure un emprunt sur des conditions d'existence futures. Tout indicateur de qualité de vie doit donc être lu conjointement à l'état de la biosphère.",
+        "etat_actuel": "Neuf processus biophysiques régulent la stabilité du système Terre — climat, biodiversité, cycles de l'azote et du phosphore, acidification des océans, entre autres — chacun avec un seuil au-delà duquel le risque de basculement abrupt et irréversible augmente fortement ; plusieurs de ces limites sont aujourd'hui jugées dépassées. La science du système Terre étudie ces sous-systèmes comme un ensemble en boucles de rétroaction, ce qui a permis de formaliser à la fois ce cadre et l'hypothèse de l'Anthropocène.",
+        "reponse": "Mesurable, à condition de mesurer aussi ce que la mesure coûte : un indicateur de bien-vivre découplé de l'état de la biosphère est incomplet au point d'être trompeur. La question « faut-il mesurer ? » se déplace alors vers « faut-il mesurer seulement cela ? », et la réponse est non.",
+        "justification": "Le cadre des limites planétaires a précisément été construit pour donner une base quantifiée, et non rhétorique, à la soutenabilité collective ; il est repris en gouvernance internationale et a nourri des cadres économiques comme le modèle du donut, ce qui montre qu'un couplage entre plancher social et plafond écologique est opérationnalisable.",
+        "limites": "Les seuils font l'objet de débats scientifiques sur leur robustesse méthodologique, avec de fortes incertitudes sur certains — notamment les flux d'azote et de phosphore — et la complexité des interactions rend les points de bascule difficiles à localiser précisément à l'avance. Le cadre est en outre descriptif : il ne prescrit aucune trajectoire politique, et ne dit rien de ce qu'est une vie bonne pour une personne. Employé seul, il produirait un indicateur de soutenabilité, pas de bien-vivre.",
+        "sources": [
+          {
+            "titre": "Rockström et al., 'A safe operating space for humanity', Nature 2009 (actualisé 2023)",
+            "type": "primaire"
+          },
+          {
+            "titre": "Planetary Boundaries — The safe operating space for humanity (Stockholm Resilience Centre)",
+            "url": "https://www.stockholmresilience.org/research/planetary-boundaries.html",
+            "type": "secondaire"
+          },
+          {
+            "titre": "Science du système Terre — Wikipédia",
+            "url": "https://fr.wikipedia.org/wiki/Science_du_syst%C3%A8me_Terre",
+            "type": "secondaire"
+          }
+        ],
+        "niveau_confiance": "opinion_majoritaire"
+      },
+      {
+        "modele": "Refus philosophique de la mesure (Nietzsche, Heidegger, Han)",
+        "hypotheses": "Mesurer une existence, c'est la convertir en performance comparable, donc la manquer comme existence. L'affirmation d'une vie ne consiste pas à obéir à une norme mais à créer ses propres valeurs ; et la technique, en arraisonnant le monde, réduit ce qu'elle touche à une ressource optimisable.",
+        "etat_actuel": "Han décrit le passage d'une société disciplinaire, où le pouvoir procédait par l'interdit, à une société de la performance et de la transparence où le sujet s'auto-exploite librement jusqu'à l'épuisement, une positivité sans limites remplaçant la négativité — l'altérité, le repos, le secret. Dans les sociétés sécularisées, la quête de sens s'individualise et se détache de l'appartenance religieuse instituée, évolution parfois critiquée comme une marchandisation du bien-être spirituel plutôt qu'une recherche existentielle.",
+        "reponse": "La réponse à « faut-il mesurer ? » est non, indépendamment de la faisabilité technique : l'indicateur ne constate pas un état, il en produit un. Ce que le tableau de bord du bien-être appelle un diagnostic est une part du mécanisme qui fabrique l'épuisement qu'il prétend mesurer.",
+        "justification": "La force de cet argument est d'être performatif et non empirique : il porte sur ce que l'existence d'un indicateur fait à ceux qui s'y comparent, effet qu'aucune amélioration de l'instrument ne corrige puisqu'il tient à l'instrument lui-même.",
+        "limites": "Le diagnostic de Han est jugé peu argumenté empiriquement, appuyé sur peu de données sociologiques, et ses contrastes culturels rapides sont critiqués comme essentialisants ; ce n'est pas un résultat établi mais un essai contesté. Heidegger ne fournit aucun critère opérationnel permettant de juger un dispositif donné, et son adhésion au NSDAP en 1933, sans repentir clair après-guerre, pèse durablement sur la réception de son œuvre ; l'œuvre de Nietzsche, aphoristique, est difficile à systématiser et a été historiquement instrumentalisée. Surtout, refuser toute mesure laisse sans instrument les politiques publiques qui doivent arbitrer : cette perspective critique l'outil sans proposer d'alternative.",
+        "sources": [
+          {
+            "titre": "La Société de la fatigue",
+            "type": "primaire"
+          },
+          {
+            "titre": "Byung-Chul Han — Wikipédia",
+            "url": "https://fr.wikipedia.org/wiki/Byung-Chul_Han",
+            "type": "secondaire"
+          },
+          {
+            "titre": "Être et Temps",
+            "type": "primaire"
+          },
+          {
+            "titre": "Martin Heidegger — Wikipédia",
+            "url": "https://fr.wikipedia.org/wiki/Martin_Heidegger",
+            "type": "secondaire"
+          },
+          {
+            "titre": "Ainsi parlait Zarathoustra",
+            "type": "primaire"
+          },
+          {
+            "titre": "Spiritualité — Wikipédia",
+            "url": "https://fr.wikipedia.org/wiki/Spiritualit%C3%A9",
+            "type": "secondaire"
+          }
+        ],
+        "niveau_confiance": "hypothese_prospective"
+      },
+      {
+        "modele": "Quantification algorithmique",
+        "hypotheses": "La question n'est pas de savoir si le bien-vivre est mesurable en principe, mais qui le mesure, à partir de quelles données et pour fonder quelle décision. Un indicateur adossé à des données administratives est d'abord un instrument de gouvernement.",
+        "etat_actuel": "Des systèmes de scoring et de classification sont déjà employés par des administrations pour prioriser des contrôles et orienter l'allocation de ressources publiques, y compris sur des prestations sociales. Plusieurs déploiements de ce type ont été annulés ou fortement critiqués après avoir été jugés discriminatoires envers des populations vulnérables, avec des cas documentés notamment aux Pays-Bas et au Royaume-Uni. Aucune correction technique neutre n'existe : différentes définitions mathématiques de l'équité sont mutuellement incompatibles, ce qui fait de tout choix de correction un choix normatif. Les indices composites publics rencontrent les mêmes difficultés à plus petite échelle — le Global Peace Index agrège 23 indicateurs dont la pondération est contestable, avec une disponibilité de données inégale selon les pays.",
+        "reponse": "Mesurable, et déjà mesuré à grande échelle — mais ce qui est produit est un instrument de politique publique avant d'être un instrument de connaissance. La condition à poser n'est donc pas méthodologique mais institutionnelle : transparence de la règle, contestabilité de la décision, responsabilité identifiée envers les personnes affectées.",
+        "justification": "Les dommages documentés se sont produits non pas malgré la mesure mais par elle : ce sont les personnes les plus dépendantes de la décision publique qui portent le coût d'un ciblage erroné. Cela déplace le critère de qualité d'un indicateur, de sa validité statistique vers les recours qu'il laisse ouverts.",
+        "limites": "Le corpus documente ces dommages du côté du ciblage administratif, pas d'une mesure algorithmique du bien-vivre proprement dite : la perspective transpose un constat solide vers un objet voisin, et cette transposition n'est pas établie. Elle ne dit pas non plus ce qu'il faudrait mesurer, seulement à quelles conditions. Enfin, aucun de ces systèmes n'est un outil clinique : aucun score administratif ne constitue une évaluation de l'état psychique d'une personne, et aucun ne remplace un professionnel de santé.",
+        "sources": [
+          {
+            "titre": "Government by algorithm — Wikipedia",
+            "url": "https://en.wikipedia.org/wiki/Government_by_algorithm",
+            "type": "secondaire"
+          },
+          {
+            "titre": "Biais algorithmique — Wikipédia",
+            "url": "https://fr.wikipedia.org/wiki/Biais_algorithmique",
+            "type": "secondaire"
+          },
+          {
+            "titre": "Global Peace Index (Institute for Economics and Peace, publication annuelle depuis 2008)",
+            "type": "primaire"
+          },
+          {
+            "titre": "Global Peace Index — Wikipédia",
+            "url": "https://fr.wikipedia.org/wiki/Global_Peace_Index",
+            "type": "secondaire"
+          }
+        ],
+        "niveau_confiance": "opinion_majoritaire"
+      }
+    ]
   }
 ]
