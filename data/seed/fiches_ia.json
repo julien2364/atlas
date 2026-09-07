@@ -14,7 +14,8 @@
       {
         "secteur": "education",
         "description": "Tutorat et génération de contenu pédagogique différencié",
-        "trl": 7,
+        "trl": 9,
+        "trl_justification": "Claude for Education est un produit commercialisé : la page produit de l'éditeur, consultée le 07/09/2026, nomme neuf universités clientes, dont la London School of Economics, Dartmouth College et l'université de Virginie.",
         "exemples": [
           "Génération de plans de cours différenciés par niveau à partir d'un programme officiel",
           "Correction et feedback formatif sur des copies d'élèves (dissertation, code, exercices)"
@@ -31,7 +32,8 @@
       {
         "secteur": "recherche",
         "description": "Revue de littérature assistée, synthèse de corpus documentaires",
-        "trl": 6,
+        "trl": null,
+        "diffusion": "emergent",
         "exemples": [
           "Synthèse comparative de plusieurs papiers arXiv sur une question de recherche donnée",
           "Extraction structurée de données depuis des PDF de publications scientifiques"
@@ -78,7 +80,8 @@
       {
         "secteur": "industrie",
         "description": "Automatisation de tâches de développement logiciel",
-        "trl": 7,
+        "trl": 9,
+        "trl_justification": "« Now available in the ChatGPT app » et six entreprises utilisatrices nommées par l'éditeur — Wonderful, Harvey, Sierra, Ramp, Duolingo, Cisco Meraki — dont plusieurs décrivent un usage en production (page consultée le 07/09/2026).",
         "exemples": [
           "Agents de codage autonomes exécutant des tâches de refactoring multi-fichiers avec tests",
           "Revue de code automatisée intégrée aux pipelines CI/CD"
@@ -125,7 +128,8 @@
       {
         "secteur": "recherche",
         "description": "Modèle ouvert réutilisable pour fine-tuning et recherche académique à coût réduit",
-        "trl": 7,
+        "trl": null,
+        "diffusion": "etabli",
         "exemples": [
           "Variantes distillées de DeepSeek-R1, de 1,5 à 70 milliards de paramètres, initialisées à partir d'autres modèles open-weights (LLaMA, Qwen)",
           "Diffusion des modèles sur Hugging Face, permettant leur réutilisation et leur modification par des tiers",
@@ -179,7 +183,8 @@
       {
         "secteur": "industrie",
         "description": "Fondation historique des systèmes de vision par ordinateur industriels (contrôle qualité visuel, tri automatisé)",
-        "trl": 9,
+        "trl": 4,
+        "trl_justification": "AlexNet a été validé sur le benchmark ImageNet au concours ILSVRC du 30 septembre 2012 (taux d'erreur top-5 de 15,3 %). La source ne documente aucun déploiement industriel : le TRL 9 précédemment déclaré était celui de ses successeurs, pas le sien.",
         "exemples": [
           "Inspection visuelle automatisée de pièces manufacturées",
           "Systèmes de reconnaissance d'objets en robotique industrielle"
@@ -196,7 +201,8 @@
       {
         "secteur": "recherche",
         "description": "Architecture de référence ayant déclenché la vague de recherche en apprentissage profond après sa victoire au concours ImageNet 2012",
-        "trl": 9,
+        "trl": null,
+        "diffusion": "historique",
         "exemples": [
           "Point de départ pédagogique de la plupart des cours de deep learning",
           "Base de comparaison pour l'évaluation de nouvelles architectures de vision"
@@ -243,7 +249,8 @@
       {
         "secteur": "industrie",
         "description": "Surveillance et sécurité par détection d'objets et de personnes en temps réel",
-        "trl": 9,
+        "trl": null,
+        "diffusion": "etabli",
         "exemples": [
           "Vidéosurveillance intelligente en temps réel",
           "Comptage et suivi d'objets sur chaîne de production"
@@ -260,7 +267,8 @@
       {
         "secteur": "gouvernement",
         "description": "Applications de sécurité publique et de gestion du trafic urbain via détection vidéo temps réel",
-        "trl": 7,
+        "trl": null,
+        "diffusion": "emergent",
         "exemples": [
           "Détection de véhicules et comptage de trafic routier",
           "Systèmes d'aide à la surveillance urbaine"
@@ -308,7 +316,8 @@
       {
         "secteur": "industrie",
         "description": "Backbone de vision par ordinateur largement réutilisé dans des systèmes de reconnaissance d'image industriels",
-        "trl": 9,
+        "trl": null,
+        "diffusion": "standard",
         "exemples": [
           "Reconnaissance faciale et biométrique",
           "Systèmes de classification d'images à grande échelle"
@@ -325,7 +334,8 @@
       {
         "secteur": "recherche",
         "description": "Architecture de référence pour la recherche en vision par ordinateur, adaptée ensuite à d'autres modalités (audio, texte)",
-        "trl": 9,
+        "trl": null,
+        "diffusion": "standard",
         "exemples": [
           "Base de nombreux travaux ultérieurs en apprentissage profond (EfficientNet, Vision Transformers hybrides)",
           "Utilisation comme extracteur de caractéristiques pré-entraîné (transfer learning)"
@@ -374,6 +384,7 @@
         "secteur": "industrie",
         "description": "Composant méthodologique standard des moteurs de recherche et systèmes de compréhension de requêtes",
         "trl": 9,
+        "trl_justification": "Déployé sur Google Search : requêtes en anglais aux États-Unis à partir du 25 octobre 2019, plus de 70 langues au 9 décembre 2019, et « almost every single English-based query » traitée par un modèle BERT en octobre 2020.",
         "exemples": [
           "Amélioration de la pertinence des résultats de recherche (déployé par Google Search)",
           "Classification de texte, analyse de sentiment, extraction d'entités nommées"
@@ -390,7 +401,8 @@
       {
         "secteur": "recherche",
         "description": "Composant méthodologique encore couramment utilisé dans la recherche en traitement du langage naturel en 2026",
-        "trl": 9,
+        "trl": null,
+        "diffusion": "standard",
         "exemples": [
           "Base de nombreuses variantes spécialisées (RoBERTa, DistilBERT, domain-specific BERT)",
           "Extraction de représentations vectorielles de texte pour la recherche sémantique"
@@ -439,6 +451,7 @@
         "secteur": "industrie",
         "description": "Base open source largement adoptée pour construire des applications d'IA générative personnalisées ou auto-hébergées",
         "trl": 9,
+        "trl_justification": "Déploiements nommés et datés : l'assistant Meta AI construit sur Llama 3, le Zoom AI Companion sur Llama 2, et Llama 3.2 embarqué par Booz Allen Hamilton à bord de la Station spatiale internationale en avril 2025.",
         "exemples": [
           "Chatbots d'entreprise déployés sur infrastructure propriétaire pour des raisons de confidentialité",
           "Modèles spécialisés (fine-tunés) pour des domaines métiers spécifiques"
@@ -455,7 +468,8 @@
       {
         "secteur": "recherche",
         "description": "Modèle de référence en recherche académique pour l'étude et l'amélioration des grands modèles de langage, grâce à l'ouverture de ses poids",
-        "trl": 8,
+        "trl": null,
+        "diffusion": "standard",
         "exemples": [
           "Expérimentation académique sur l'alignement et la sécurité des modèles de langage",
           "Base de nombreux modèles dérivés développés par la communauté open source"
@@ -504,6 +518,7 @@
         "secteur": "science",
         "description": "Résolution du problème du repliement des protéines, considéré comme l'un des grands défis non résolus de la biologie structurale",
         "trl": 9,
+        "trl_justification": "La base AlphaFold, exploitée par l'EMBL-EBI avec Google DeepMind, est ouverte au public depuis 2021 (plus de 365 000 protéines humaines et 20 organismes modèles) et couvre en 2024 la quasi-totalité des protéines connues : infrastructure en service courant.",
         "exemples": [
           "Base de données AlphaFold couvrant la quasi-totalité des protéines connues, mise à disposition gratuite de la communauté scientifique",
           "Accélération de la recherche sur les maladies et la conception de médicaments"
@@ -531,7 +546,8 @@
       {
         "secteur": "pharmaceutique",
         "description": "Accélération de la découverte de cibles thérapeutiques grâce à la prédiction de structures protéiques",
-        "trl": 7,
+        "trl": 8,
+        "trl_justification": "Isomorphic Labs a déclaré en mai 2024 utiliser AlphaFold 3, avec d'autres modèles d'IA, pour automatiser son processus de découverte de médicaments.",
         "exemples": [
           "Identification de cibles protéiques pour la conception de nouveaux médicaments",
           "Étude de protéines impliquées dans des maladies négligées, peu étudiées faute de rentabilité commerciale"
@@ -591,6 +607,7 @@
         "secteur": "industrie",
         "description": "Production de visuels pour le marketing, le design graphique et la création de contenu à grande échelle",
         "trl": 9,
+        "trl_justification": "Modèle publié publiquement en 2022 — « code and model weights have been released publicly », exécutable « on most consumer hardware » — et dont l'usage public massif est attesté par les poursuites de trois artistes et de Getty Images en janvier 2023.",
         "exemples": [
           "Génération de visuels publicitaires et de concepts créatifs pour des agences de design",
           "Prototypage visuel rapide dans les industries créatives (jeu vidéo, mode)"
@@ -607,7 +624,8 @@
       {
         "secteur": "education",
         "description": "Illustration de contenus pédagogiques et création de supports visuels personnalisés",
-        "trl": 6,
+        "trl": null,
+        "diffusion": "emergent",
         "exemples": [
           "Génération d'illustrations pour des supports de cours",
           "Visualisation de concepts abstraits pour l'enseignement"
@@ -655,7 +673,8 @@
       {
         "secteur": "industrie",
         "description": "Prévision de ventes, de prix ou de tout indicateur quantitatif à partir de facteurs explicatifs mesurables",
-        "trl": 9,
+        "trl": null,
+        "diffusion": "standard",
         "exemples": [
           "Prévision de la demande en fonction du prix et de la saisonnalité",
           "Modélisation de la relation entre dépenses marketing et chiffre d'affaires"
@@ -672,7 +691,8 @@
       {
         "secteur": "recherche",
         "description": "Analyse de la relation entre variables dans des études empiriques (économie, sciences sociales, épidémiologie)",
-        "trl": 9,
+        "trl": null,
+        "diffusion": "standard",
         "exemples": [
           "Estimation de l'effet d'une politique publique sur un indicateur économique",
           "Analyse de facteurs de risque en épidémiologie"
@@ -714,7 +734,8 @@
       {
         "secteur": "industrie",
         "description": "Scoring de crédit et détection de fraude bancaire à partir de variables clients",
-        "trl": 9,
+        "trl": null,
+        "diffusion": "standard",
         "exemples": [
           "Évaluation du risque de défaut de paiement d'un emprunteur",
           "Détection de transactions frauduleuses par carte bancaire"
@@ -731,7 +752,8 @@
       {
         "secteur": "pharmaceutique",
         "description": "Analyse du risque de survenue d'un événement de santé binaire en fonction de facteurs cliniques",
-        "trl": 8,
+        "trl": null,
+        "diffusion": "etabli",
         "exemples": [
           "Prédiction du risque de complication post-opératoire",
           "Modèles épidémiologiques de facteurs de risque de maladie"
@@ -773,7 +795,8 @@
       {
         "secteur": "gouvernement",
         "description": "Aide à la décision administrative fondée sur des règles explicables et auditables",
-        "trl": 9,
+        "trl": null,
+        "diffusion": "etabli",
         "exemples": [
           "Systèmes d'éligibilité à des aides sociales fondés sur des critères vérifiables",
           "Modèles de risque explicables pour des décisions publiques sensibles"
@@ -790,7 +813,8 @@
       {
         "secteur": "industrie",
         "description": "Segmentation de clientèle et modèles de décision métier explicables",
-        "trl": 9,
+        "trl": null,
+        "diffusion": "standard",
         "exemples": [
           "Segmentation de clients pour des campagnes marketing ciblées",
           "Diagnostic de pannes fondé sur des règles de décision"
@@ -832,7 +856,8 @@
       {
         "secteur": "industrie",
         "description": "Modèles de prédiction robustes sur données tabulaires pour de nombreux cas d'usage métier",
-        "trl": 9,
+        "trl": null,
+        "diffusion": "standard",
         "exemples": [
           "Prédiction de la maintenance préventive d'équipements industriels",
           "Scoring de risque client en assurance"
@@ -849,7 +874,8 @@
       {
         "secteur": "pharmaceutique",
         "description": "Modèles prédictifs à partir de données cliniques ou biologiques tabulaires",
-        "trl": 7,
+        "trl": null,
+        "diffusion": "etabli",
         "exemples": [
           "Prédiction du risque de réhospitalisation à partir de dossiers patients",
           "Classification de profils de patients à partir de données biologiques"
@@ -896,7 +922,8 @@
       {
         "secteur": "science",
         "description": "Classification de données à haute dimension issues de mesures scientifiques",
-        "trl": 8,
+        "trl": null,
+        "diffusion": "etabli",
         "exemples": [
           "Classification de signaux issus d'instruments de mesure scientifique",
           "Reconnaissance de motifs dans des données expérimentales limitées en volume"
@@ -913,7 +940,8 @@
       {
         "secteur": "industrie",
         "description": "Classification de texte et de documents dans des applications de traitement automatique de la langue plus anciennes",
-        "trl": 8,
+        "trl": null,
+        "diffusion": "etabli",
         "exemples": [
           "Filtrage de spam par classification de texte",
           "Reconnaissance d'écriture manuscrite"
@@ -955,7 +983,8 @@
       {
         "secteur": "industrie",
         "description": "Systèmes de recommandation fondés sur la similarité entre utilisateurs ou produits",
-        "trl": 8,
+        "trl": null,
+        "diffusion": "etabli",
         "exemples": [
           "Recommandation de produits similaires à partir des achats passés",
           "Détection d'anomalies par comparaison aux observations les plus proches"
@@ -972,7 +1001,8 @@
       {
         "secteur": "recherche",
         "description": "Méthode de référence pédagogique et de comparaison de base (baseline) dans les études de classification",
-        "trl": 9,
+        "trl": null,
+        "diffusion": "standard",
         "exemples": [
           "Baseline de comparaison dans les publications de recherche en apprentissage automatique",
           "Classification exploratoire de jeux de données de petite taille"
@@ -1014,7 +1044,8 @@
       {
         "secteur": "industrie",
         "description": "Filtrage de spam et classification de texte à grande échelle",
-        "trl": 9,
+        "trl": null,
+        "diffusion": "standard",
         "exemples": [
           "Filtres anti-spam dans les messageries électroniques",
           "Classification automatique de tickets de support client"
@@ -1031,7 +1062,8 @@
       {
         "secteur": "recherche",
         "description": "Modèle de référence simple et rapide pour des tâches de classification de texte en traitement du langage naturel",
-        "trl": 8,
+        "trl": null,
+        "diffusion": "etabli",
         "exemples": [
           "Analyse de sentiment de base sur des corpus de texte",
           "Baseline de comparaison pour des tâches de classification documentaire"
@@ -1073,7 +1105,8 @@
       {
         "secteur": "industrie",
         "description": "Segmentation de clientèle et de marché pour des stratégies commerciales différenciées",
-        "trl": 9,
+        "trl": null,
+        "diffusion": "standard",
         "exemples": [
           "Segmentation de clients selon leurs comportements d'achat pour du marketing ciblé",
           "Regroupement de produits similaires dans un catalogue"
@@ -1090,7 +1123,8 @@
       {
         "secteur": "recherche",
         "description": "Analyse exploratoire de données pour identifier des structures ou sous-groupes non étiquetés",
-        "trl": 9,
+        "trl": null,
+        "diffusion": "standard",
         "exemples": [
           "Regroupement de profils de patients aux caractéristiques similaires en recherche médicale",
           "Analyse exploratoire de données de sondage ou d'enquête"
@@ -1132,7 +1166,8 @@
       {
         "secteur": "science",
         "description": "Analyse exploratoire de données scientifiques à très grand nombre de variables (génomique, imagerie)",
-        "trl": 9,
+        "trl": null,
+        "diffusion": "standard",
         "exemples": [
           "Réduction de dimension de données génomiques comportant des dizaines de milliers de variables",
           "Analyse en composantes principales de données climatiques ou géophysiques"
@@ -1149,7 +1184,8 @@
       {
         "secteur": "industrie",
         "description": "Prétraitement de données avant modélisation par apprentissage automatique",
-        "trl": 9,
+        "trl": null,
+        "diffusion": "standard",
         "exemples": [
           "Réduction de dimension avant entraînement d'un modèle de classification",
           "Compression de données pour le stockage et la visualisation"
@@ -1191,7 +1227,8 @@
       {
         "secteur": "industrie",
         "description": "Modèle de référence dans la majorité des compétitions et applications de data science sur données tabulaires",
-        "trl": 9,
+        "trl": null,
+        "diffusion": "standard",
         "exemples": [
           "Scoring de crédit et détection de fraude dans le secteur financier",
           "Prédiction de la demande et optimisation logistique"
@@ -1208,7 +1245,8 @@
       {
         "secteur": "gouvernement",
         "description": "Modèles prédictifs sur données administratives structurées pour l'aide à la décision publique",
-        "trl": 7,
+        "trl": null,
+        "diffusion": "emergent",
         "exemples": [
           "Prédiction du risque de défaillance d'entreprises pour le ciblage de contrôles",
           "Modèles de risque dans la lutte contre la fraude sociale ou fiscale"
@@ -1250,7 +1288,7 @@
       {
         "secteur": "industrie",
         "description": "Prévision de séries temporelles économiques et opérationnelles",
-        "trl": 9,
+        "trl": null,
         "exemples": [
           "Prévision de ventes ou de trafic avec forte composante saisonnière",
           "Prévision de la demande énergétique"
@@ -1267,7 +1305,7 @@
       {
         "secteur": "gouvernement",
         "description": "Prévisions macroéconomiques et démographiques utilisées par les instituts statistiques publics",
-        "trl": 9,
+        "trl": null,
         "exemples": [
           "Prévision d'indicateurs macroéconomiques (inflation, chômage) par les instituts statistiques nationaux",
           "Modélisation de séries démographiques"
@@ -1309,7 +1347,8 @@
       {
         "secteur": "industrie",
         "description": "Modélisation prédictive de relations non linéaires complexes sur données structurées",
-        "trl": 8,
+        "trl": null,
+        "diffusion": "etabli",
         "exemples": [
           "Modèles de prédiction de défaillance d'équipements à partir de capteurs multiples",
           "Modèles de scoring combinant de nombreuses variables non linéairement liées"
@@ -1326,7 +1365,8 @@
       {
         "secteur": "recherche",
         "description": "Brique de base pédagogique et historique de la recherche en apprentissage profond",
-        "trl": 9,
+        "trl": null,
+        "diffusion": "historique",
         "exemples": [
           "Enseignement des fondements de l'apprentissage profond",
           "Composant de nombreuses architectures hybrides plus complexes"
@@ -1368,7 +1408,8 @@
       {
         "secteur": "pharmaceutique",
         "description": "Analyse d'images médicales pour l'aide au diagnostic",
-        "trl": 8,
+        "trl": null,
+        "diffusion": "emergent",
         "exemples": [
           "Détection de tumeurs sur imagerie radiologique (IRM, scanner)",
           "Analyse d'images histopathologiques pour le dépistage du cancer"
@@ -1385,7 +1426,8 @@
       {
         "secteur": "industrie",
         "description": "Vision par ordinateur industrielle et grand public (reconnaissance d'image, véhicules autonomes)",
-        "trl": 9,
+        "trl": null,
+        "diffusion": "standard",
         "exemples": [
           "Contrôle qualité visuel automatisé en usine",
           "Perception visuelle des véhicules autonomes"
@@ -1427,7 +1469,8 @@
       {
         "secteur": "industrie",
         "description": "Traitement de séquences avant la généralisation des Transformers (reconnaissance vocale, traduction automatique historique)",
-        "trl": 7,
+        "trl": null,
+        "diffusion": "historique",
         "exemples": [
           "Systèmes de reconnaissance vocale de première génération",
           "Modèles de traduction automatique neuronale antérieurs aux Transformers"
@@ -1444,7 +1487,8 @@
       {
         "secteur": "recherche",
         "description": "Modélisation de séries temporelles et de signaux séquentiels en recherche appliquée",
-        "trl": 7,
+        "trl": null,
+        "diffusion": "etabli",
         "exemples": [
           "Modélisation de signaux physiologiques séquentiels en recherche biomédicale",
           "Prévision de séries temporelles multivariées"
@@ -1485,26 +1529,12 @@
     "usages": [
       {
         "secteur": "industrie",
-        "description": "Traduction automatique et reconnaissance vocale de nouvelle génération (avant les Transformers)",
-        "trl": 8,
+        "description": "Traduction automatique, reconnaissance et synthèse vocales de nouvelle génération (avant les Transformers), et prévision de séries temporelles à dépendances longues",
+        "trl": 9,
+        "trl_justification": "La source documente cinq déploiements commerciaux mondiaux à base de LSTM : Google Voice (2015), le Google Neural Machine Translation de Google Translate (2016, « reduce translation errors by 60 % »), quicktype et Siri chez Apple, Amazon Polly derrière Alexa, et 4,5 milliards de traductions automatiques par jour chez Facebook en 2017.",
         "exemples": [
           "Systèmes de traduction automatique neuronale de seconde génération",
-          "Génération de texte prédictif (clavier intelligent)"
-        ],
-        "sources": [
-          {
-            "titre": "Long short-term memory — Wikipedia (EN)",
-            "url": "https://en.wikipedia.org/wiki/Long_short-term_memory",
-            "date": "2026-09-07",
-            "type": "secondaire"
-          }
-        ]
-      },
-      {
-        "secteur": "industrie",
-        "description": "Prévision de séries temporelles complexes à dépendances longues",
-        "trl": 8,
-        "exemples": [
+          "Génération de texte prédictif (clavier intelligent)",
           "Prévision de la consommation énergétique à partir de séries historiques longues",
           "Détection d'anomalies dans des séquences de données de capteurs"
         ],
@@ -1550,7 +1580,7 @@
       {
         "secteur": "industrie",
         "description": "Détection d'anomalies et de fraude par analyse de l'erreur de reconstruction",
-        "trl": 8,
+        "trl": null,
         "exemples": [
           "Détection de transactions financières anormales",
           "Détection de défauts de fabrication à partir d'images ou de signaux capteurs"
@@ -1567,7 +1597,7 @@
       {
         "secteur": "science",
         "description": "Compression et débruitage de données scientifiques à haute dimension",
-        "trl": 7,
+        "trl": null,
         "exemples": [
           "Débruitage d'images ou de signaux expérimentaux",
           "Compression de données génomiques ou d'imagerie scientifique"
@@ -1609,7 +1639,8 @@
       {
         "secteur": "industrie",
         "description": "Génération d'images et de données synthétiques pour la création de contenu ou l'augmentation de données",
-        "trl": 8,
+        "trl": 9,
+        "trl_justification": "Artefacts publics en service documentés par la source : Artbreeder (2020), GameGAN de Nvidia (mai 2020), le site « This Person Does Not Exist », et le tableau Edmond de Belamy vendu 432 500 dollars en 2018.",
         "exemples": [
           "Génération de visages ou d'objets synthétiques pour l'entraînement d'autres modèles (données synthétiques)",
           "Amélioration de la résolution d'images (super-résolution)"
@@ -1626,7 +1657,8 @@
       {
         "secteur": "recherche",
         "description": "Génération de données synthétiques pour pallier le manque de données réelles dans certains domaines scientifiques",
-        "trl": 7,
+        "trl": null,
+        "diffusion": "etabli",
         "exemples": [
           "Génération de données médicales synthétiques préservant la confidentialité des patients",
           "Simulation de scénarios rares pour l'entraînement de modèles"
@@ -1675,6 +1707,7 @@
         "secteur": "industrie",
         "description": "Fondation architecturale de la quasi-totalité des applications d'IA générative actuelles",
         "trl": 9,
+        "trl_justification": "Déploiements mondiaux nommés et datés : BERT sur Google Search en octobre 2019, Google Translate en 2020, ChatGPT fin 2022, puis DALL-E, Stable Diffusion 3 et Sora.",
         "exemples": [
           "Assistants conversationnels et générateurs de texte (grands modèles de langage)",
           "Systèmes de traduction automatique de nouvelle génération"
@@ -1691,7 +1724,8 @@
       {
         "secteur": "recherche",
         "description": "Architecture de référence quasi universelle en recherche sur l'apprentissage profond depuis 2018",
-        "trl": 9,
+        "trl": null,
+        "diffusion": "standard",
         "exemples": [
           "Base de la quasi-totalité des publications de recherche en traitement du langage depuis 2018",
           "Extension aux domaines de la vision (Vision Transformers) et de la biologie (AlphaFold)"
@@ -1742,6 +1776,7 @@
         "secteur": "industrie",
         "description": "Automatisation exploratoire de tâches professionnelles confiées à l'agent sous forme d'objectifs de haut niveau : développement logiciel, recherche d'information marché et production de contenu. L'agent décompose lui-même la tâche en sous-tâches sans intervention de l'utilisateur, mais les comptes rendus d'usage décrivent des erreurs fréquentes et un coût d'exploitation élevé lié aux appels d'API répétés. L'outil relève de l'expérimentation plutôt que du déploiement fiable en production.",
         "trl": 4,
+        "trl_justification": "AutoGPT, publié en mars 2023 par Significant Gravitas, est documenté par sa source comme une preuve de concept : boucles infinies, absence de mémoire à long terme, fenêtre de contexte finie et coûts d'exploitation élevés. Aucun déploiement en production.",
         "exemples": [
           "Développement d'applications logicielles, débogage de code et génération de cas de test",
           "Recherche produit et rédaction d'une synthèse comparative (test rapporté sur des casques audio, puis sur les meilleurs ordinateurs portables du marché avec avantages et inconvénients)",
@@ -1760,6 +1795,7 @@
         "secteur": "recherche",
         "description": "Objet d'expérimentation publique sur l'autonomie des agents fondés sur des modèles de langage et sur les risques associés. Les démonstrations diffusées ont autant servi à mesurer les limites de la boucle autonome qu'à en montrer l'intérêt : perte d'objectif, boucles infinies liées à l'absence de mémoire des actions passées, fenêtre de contexte finie. Plusieurs observateurs cités estiment qu'un humain doit rester dans la boucle.",
         "trl": 4,
+        "trl_justification": "Les démonstrations publiques de 2023 — ChaosGPT, ChefGPT, l'échec sur la recherche d'une adresse électronique — sont des expérimentations diffusées publiquement, pas un service en exploitation.",
         "exemples": [
           "ChefGPT, agent explorant seul le web pour générer et enregistrer des recettes inédites",
           "ChaosGPT, démonstration publique consistant à assigner à l'agent des objectifs destructeurs, utilisée pour discuter des risques",
@@ -1808,7 +1844,8 @@
       {
         "secteur": "industrie",
         "description": "Automatisation de tâches administratives et commerciales répétitives sur des interfaces web existantes",
-        "trl": 6,
+        "trl": 8,
+        "trl_justification": "OpenAI a publié Operator le 23 janvier 2025, en accès restreint aux utilisateurs Pro aux États-Unis : produit publié et commercialisé en disponibilité limitée, ce qu'un TRL 6 sous-évaluait.",
         "exemples": [
           "Automatisation de réservations ou de commandes en ligne pour le compte d'un utilisateur",
           "Extraction et remplissage automatisé de formulaires web répétitifs"
@@ -1825,7 +1862,8 @@
       {
         "secteur": "gouvernement",
         "description": "Assistance à la navigation dans des démarches administratives en ligne complexes",
-        "trl": 4,
+        "trl": null,
+        "diffusion": "emergent",
         "exemples": [
           "Aide à la complétion de démarches administratives en ligne pour des usagers peu à l'aise avec le numérique"
         ],
@@ -1866,7 +1904,8 @@
       {
         "secteur": "industrie",
         "description": "Assistance et automatisation partielle du développement logiciel en entreprise",
-        "trl": 6,
+        "trl": 5,
+        "trl_justification": "La source ne documente que des démonstrations publiques de mars 2024, dont plusieurs contestées nommément (chaînes Internet of Bugs et Computer Vision Project, à propos d'une tâche Upwork) ; aucun client ni déploiement en production n'y figure.",
         "exemples": [
           "Résolution automatisée de tickets de bugs simples à moyens",
           "Génération et exécution de suites de tests pour du code existant"
@@ -1883,7 +1922,8 @@
       {
         "secteur": "recherche",
         "description": "Objet d'étude et de benchmarking pour évaluer les capacités réelles d'autonomie des agents d'IA en ingénierie logicielle",
-        "trl": 6,
+        "trl": null,
+        "diffusion": "emergent",
         "exemples": [
           "Utilisation comme référence dans des benchmarks d'agents de programmation autonomes (ex. SWE-bench)"
         ],
@@ -1924,7 +1964,8 @@
       {
         "secteur": "industrie",
         "description": "Automatisation de flux de travail métier complexes nécessitant la coordination de plusieurs sous-tâches spécialisées",
-        "trl": 6,
+        "trl": null,
+        "diffusion": "etabli",
         "exemples": [
           "Automatisation de pipelines de recherche et rédaction de contenu par plusieurs agents spécialisés",
           "Orchestration d'agents pour des processus métier multi-étapes (support client, veille)"
@@ -1947,7 +1988,8 @@
       {
         "secteur": "recherche",
         "description": "Cadre expérimental privilégié pour la recherche académique sur la collaboration entre agents IA autonomes",
-        "trl": 6,
+        "trl": null,
+        "diffusion": "emergent",
         "exemples": [
           "Étude de la coordination et de la division du travail entre agents IA autonomes",
           "Expérimentation de architectures multi-agents pour la résolution de problèmes complexes"
@@ -2007,7 +2049,8 @@
       {
         "secteur": "recherche",
         "description": "Accélération de la recherche structurale en biologie, auparavant coûteuse en cristallographie/cryo-EM",
-        "trl": 8,
+        "trl": 9,
+        "trl_justification": "La base AlphaFold, exploitée par l'EMBL-EBI avec Google DeepMind, est ouverte au public depuis 2021 (plus de 365 000 protéines humaines) et couvre en 2024 la quasi-totalité des protéines connues : infrastructure opérationnelle, pas prototype.",
         "exemples": [
           "Base AlphaFold DB utilisée par des centaines de milliers de chercheurs dans le monde"
         ],
@@ -2029,7 +2072,8 @@
       {
         "secteur": "pharmaceutique",
         "description": "Accélération de l'identification de cibles thérapeutiques et de la conception de médicaments",
-        "trl": 6,
+        "trl": 8,
+        "trl_justification": "Isomorphic Labs a déclaré en mai 2024 utiliser AlphaFold 3, avec d'autres modèles d'IA, pour automatiser son processus de découverte de médicaments.",
         "exemples": [
           "Isomorphic Labs a déclaré en mai 2024 utiliser AlphaFold 3, avec d'autres modèles d'IA, pour automatiser le processus de découverte de médicaments",
           "AlphaFold 3 prédit la structure des protéines et leurs interactions avec l'ADN, l'ARN et certains ligands ou ions, capacité présentée comme devant accélérer la découverte de nouveaux médicaments",
@@ -2090,6 +2134,7 @@
         "secteur": "science",
         "description": "Accélération de la découverte de nouveaux matériaux pour la recherche en science des matériaux",
         "trl": 7,
+        "trl_justification": "Les prédictions de GNoME (Google DeepMind, Nature 624, 29 novembre 2023) ont été validées par des expériences robotiques autonomes avec un taux de succès de 71 %, et 736 des structures stables prédites avaient déjà été réalisées expérimentalement à la date de publication.",
         "exemples": [
           "Identification de candidats matériaux pour des batteries plus performantes",
           "Recherche de nouveaux matériaux supraconducteurs ou semi-conducteurs"
@@ -2118,7 +2163,8 @@
       {
         "secteur": "industrie",
         "description": "Accélération de la recherche et développement de matériaux pour l'industrie électronique et énergétique",
-        "trl": 5,
+        "trl": null,
+        "diffusion": "emergent",
         "exemples": [
           "Exploration de matériaux candidats pour l'industrie des batteries et du stockage d'énergie"
         ],
@@ -2171,7 +2217,8 @@
       {
         "secteur": "science",
         "description": "Recherche expérimentale en physique des plasmas et fusion nucléaire contrôlée",
-        "trl": 6,
+        "trl": 7,
+        "trl_justification": "Les contrôleurs de Degrave et al. (Nature 602, 16 février 2022) ont été exécutés sur le tokamak TCV réel de l'EPFL, où ils ont produit et stabilisé plusieurs configurations de plasma distinctes : démonstration en environnement opérationnel réel, non en simulation.",
         "exemples": [
           "Stabilisation de nouvelles configurations de plasma sur des tokamaks de recherche",
           "Réduction du temps d'ingénierie nécessaire pour tester de nouvelles configurations de confinement"
@@ -2194,7 +2241,8 @@
       {
         "secteur": "industrie",
         "description": "Accélération potentielle du développement de futurs réacteurs à fusion commerciaux",
-        "trl": 4,
+        "trl": null,
+        "diffusion": "emergent",
         "exemples": [
           "Application potentielle au contrôle de futurs réacteurs à fusion de plus grande échelle (ITER et successeurs)"
         ],
@@ -2241,7 +2289,8 @@
       {
         "secteur": "pharmaceutique",
         "description": "Accélération des étapes précoces de découverte de médicaments (identification de cibles et de molécules candidates)",
-        "trl": 7,
+        "trl": null,
+        "diffusion": "etabli",
         "exemples": [
           "Identification de molécules candidates pour des maladies rares ou négligées",
           "Réduction du temps et du coût des étapes précoces de développement pharmaceutique"
@@ -2258,7 +2307,8 @@
       {
         "secteur": "science",
         "description": "Recherche fondamentale en génomique et biologie moléculaire assistée par IA",
-        "trl": 8,
+        "trl": null,
+        "diffusion": "etabli",
         "exemples": [
           "Analyse de variants génétiques associés à des maladies",
           "Étude des interactions protéine-protéine à grande échelle"
@@ -2317,7 +2367,8 @@
       {
         "secteur": "gouvernement",
         "description": "Complément aux modèles de prévision météorologique opérationnels des services publics nationaux",
-        "trl": 7,
+        "trl": null,
+        "diffusion": "emergent",
         "exemples": [
           "Prévision rapide de trajectoires de phénomènes météorologiques extrêmes (cyclones, tempêtes)",
           "Alerte précoce pour la gestion de crises climatiques"
@@ -2334,7 +2385,8 @@
       {
         "secteur": "science",
         "description": "Recherche en modélisation climatique et météorologique assistée par apprentissage automatique",
-        "trl": 7,
+        "trl": null,
+        "diffusion": "etabli",
         "exemples": [
           "Étude de l'évolution de phénomènes climatiques à partir de simulations rapides multiples",
           "Comparaison et validation croisée avec les modèles physiques traditionnels"
@@ -2383,7 +2435,6 @@
       {
         "secteur": "gouvernement",
         "description": "L'hallucination est devenue un problème concret pour les institutions judiciaires et administratives qui voient arriver des pièces rédigées avec l'aide de modèles génératifs. La réponse documentée est procédurale plutôt que technique : exiger une relecture humaine avant tout dépôt. Le phénomène est ici observé sur des systèmes en usage réel, pas en laboratoire.",
-        "trl": 9,
         "exemples": [
           "Mai 2023 : un cabinet d'avocats new-yorkais soumet dans une procédure aérienne des précédents générés par ChatGPT, dont six arrêts se révèlent fictifs, assortis de fausses citations",
           "Le juge Brantley Starr interdit le dépôt de documents produits par IA qui n'ont pas été examinés par un humain"
@@ -2400,7 +2451,6 @@
       {
         "secteur": "recherche",
         "description": "Dans le travail scientifique, l'hallucination se manifeste surtout par des références bibliographiques inventées, difficiles à distinguer de références réelles sans vérification pièce par pièce. Le cas d'un modèle spécialisé dans la littérature scientifique (Galactica) montre que l'entraînement sur un corpus savant ne supprime pas le phénomène. Cela impose une vérification manuelle de chaque source citée.",
-        "trl": 8,
         "exemples": [
           "Une chercheuse, Teresa Kubacka, interroge ChatGPT sur un phénomène physique qu'elle a inventé et obtient une réponse assortie de citations plausibles mais fictives",
           "Le modèle Galactica, destiné à la recherche scientifique, est cité comme cas d'hallucination en contexte de recherche"
@@ -2417,7 +2467,6 @@
       {
         "secteur": "industrie",
         "description": "Les usages professionnels de production de contenu exposent directement au risque : un texte structuré et fluide peut contenir des données chiffrées entièrement fabriquées. Le danger tient à la cohérence apparente du résultat, qui ne signale pas les passages inventés. La vérification des chiffres reste à la charge de l'utilisateur.",
-        "trl": 9,
         "exemples": [
           "Un journaliste de Fast Company demande un article sur les résultats financiers de Tesla : le texte produit est cohérent mais les chiffres avancés sont inventés"
         ],
@@ -2464,7 +2513,6 @@
       {
         "secteur": "gouvernement",
         "description": "Enjeu central de la régulation de l'IA dans les usages publics sensibles (justice, aides sociales, recrutement public)",
-        "trl": 9,
         "exemples": [
           "Audits de biais imposés par certaines réglementations sur les systèmes de décision automatisée",
           "Contentieux juridiques liés à des discriminations algorithmiques documentées"
@@ -2481,7 +2529,6 @@
       {
         "secteur": "industrie",
         "description": "Risque de conformité et de réputation majeur pour toute entreprise déployant des systèmes de décision automatisée",
-        "trl": 9,
         "exemples": [
           "Audits de biais dans les systèmes de recrutement automatisés par IA",
           "Correction de biais dans les algorithmes de scoring de crédit"
@@ -2529,7 +2576,6 @@
       {
         "secteur": "gouvernement",
         "description": "Enjeu de politique énergétique et de sécurité d'approvisionnement pour les États hébergeant de grandes infrastructures d'IA",
-        "trl": 9,
         "exemples": [
           "Politiques publiques d'investissement dans la capacité électrique dédiée aux centres de données",
           "Stratégies nationales de sécurisation de l'approvisionnement en semi-conducteurs"
@@ -2552,7 +2598,6 @@
       {
         "secteur": "industrie",
         "description": "Contrainte structurelle croissante pour les grandes entreprises technologiques développant des modèles d'IA de pointe",
-        "trl": 9,
         "exemples": [
           "Investissements massifs dans de nouvelles capacités de production électrique dédiées (y compris nucléaire)",
           "Recherche d'architectures de modèles plus économes en calcul"
@@ -2600,7 +2645,8 @@
       {
         "secteur": "industrie",
         "description": "Maintenance prédictive et optimisation de la production dans l'industrie manufacturière et énergétique",
-        "trl": 8,
+        "trl": null,
+        "diffusion": "etabli",
         "exemples": [
           "Jumeau numérique de turbines ou de moteurs pour anticiper les besoins de maintenance",
           "Simulation de lignes de production entières avant modification physique"
@@ -2617,7 +2663,8 @@
       {
         "secteur": "gouvernement",
         "description": "Modélisation d'infrastructures publiques critiques (réseaux d'eau, d'énergie, de transport)",
-        "trl": 6,
+        "trl": null,
+        "diffusion": "emergent",
         "exemples": [
           "Jumeaux numériques de réseaux électriques ou d'infrastructures urbaines pour la planification"
         ],
@@ -2658,7 +2705,8 @@
       {
         "secteur": "education",
         "description": "Personnalisation de l'apprentissage à grande échelle dans l'enseignement primaire, secondaire et la formation continue",
-        "trl": 7,
+        "trl": 9,
+        "trl_justification": "La source documente un déploiement de masse : le Cognitive Tutor « has been incorporated into mathematics curricula in a substantial number of United States high schools », avec des résultats mesurés aux examens finaux et aux tests standardisés. La source ne date pas ce déploiement.",
         "exemples": [
           "Tuteurs virtuels adaptant les exercices de mathématiques au niveau réel de chaque élève",
           "Plateformes de langues ajustant la difficulté des leçons selon la progression individuelle"
@@ -2675,7 +2723,8 @@
       {
         "secteur": "industrie",
         "description": "Formation professionnelle continue personnalisée en entreprise",
-        "trl": 6,
+        "trl": null,
+        "diffusion": "etabli",
         "exemples": [
           "Parcours de formation en entreprise adaptés au niveau et aux lacunes de chaque salarié"
         ],
@@ -2721,7 +2770,8 @@
       {
         "secteur": "pharmaceutique",
         "description": "Accélération de la phase de découverte précoce de candidats médicaments avant les essais précliniques",
-        "trl": 7,
+        "trl": null,
+        "diffusion": "etabli",
         "exemples": [
           "Criblage virtuel de bibliothèques de molécules pour des cibles thérapeutiques spécifiques",
           "Conception de novo de molécules candidates optimisées"
@@ -2738,7 +2788,8 @@
       {
         "secteur": "science",
         "description": "Recherche académique en chimie médicinale assistée par apprentissage automatique",
-        "trl": 7,
+        "trl": null,
+        "diffusion": "etabli",
         "exemples": [
           "Étude de relations structure-activité à grande échelle par apprentissage automatique",
           "Recherche de molécules candidates pour des maladies négligées à faible potentiel commercial"
@@ -2779,11 +2830,14 @@
     "usages": [
       {
         "secteur": "gouvernement",
-        "description": "Ciblage de contrôles et allocation de ressources publiques limitées à partir de modèles de risque",
-        "trl": 6,
+        "description": "Ciblage de contrôles et traitement automatisé de dossiers administratifs à grand volume à partir de modèles de risque appliqués aux données publiques",
+        "trl": 9,
+        "trl_justification": "Deux systèmes nationaux réellement mis en service : SyRI aux Pays-Bas, employé à partir de 2018 pour signaler des milliers de personnes aux enquêteurs, fermé par le tribunal de district de La Haye le 5 février 2020 pour violation de l'article 8 de la CEDH ; et l'algorithme britannique de notation des A-levels de 2020, retiré après protestation. Leur retrait est juridique et politique, non technique.",
         "exemples": [
           "Systèmes de détection de fraude aux prestations sociales",
-          "Modèles de ciblage de contrôles fiscaux ou d'inspections du travail"
+          "Modèles de ciblage de contrôles fiscaux ou d'inspections du travail",
+          "Traitement automatisé de premières instructions de dossiers administratifs standards",
+          "Systèmes de réponse automatisée aux demandes d'information des usagers"
         ],
         "sources": [
           {
@@ -2795,23 +2849,6 @@
           {
             "titre": "Tribunal de district de La Haye, jugement SyRI du 5 février 2020 (ECLI:NL:RBDHA:2020:1878) — notice de jurisprudence ESCR-Net",
             "url": "https://www.escr-net.org/caselaw/2020/nederlands-juristen-comite-voor-mensenrechten-et-al-v-netherlands-eclinlrbdha20201878/",
-            "date": "2026-09-07",
-            "type": "secondaire"
-          }
-        ]
-      },
-      {
-        "secteur": "gouvernement",
-        "description": "Automatisation partielle du traitement de démarches administratives à grand volume",
-        "trl": 6,
-        "exemples": [
-          "Traitement automatisé de premières instructions de dossiers administratifs standards",
-          "Systèmes de réponse automatisée aux demandes d'information des usagers"
-        ],
-        "sources": [
-          {
-            "titre": "Government by algorithm — Wikipedia",
-            "url": "https://en.wikipedia.org/wiki/Government_by_algorithm",
             "date": "2026-09-07",
             "type": "secondaire"
           }
