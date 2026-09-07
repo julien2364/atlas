@@ -47,44 +47,69 @@ export default function RadarChart({
   const polygonPoints = data.map((d, i) => pointFor(i, d.value));
   const polygonStr = polygonPoints.map((p) => `${p.x},${p.y}`).join(" ");
 
+  const resume = data.map((d) => `${d.label} : ${d.value.toFixed(1)} sur ${max} (n=${d.count})`).join(", ");
+
   return (
-    <svg viewBox={`0 0 ${size} ${size}`} width="100%" height={size} role="img" aria-label="Radar de maturité TRL par secteur">
-      {rings.map((r) => {
-        const ringPoints = data.map((_, i) => pointFor(i, max * r));
-        return (
-          <polygon
-            key={r}
-            points={ringPoints.map((p) => `${p.x},${p.y}`).join(" ")}
-            fill="none"
-            stroke="currentColor"
-            strokeOpacity={0.15}
-          />
-        );
-      })}
-      {data.map((_, i) => {
-        const p = pointFor(i, max);
-        return <line key={i} x1={center} y1={center} x2={p.x} y2={p.y} stroke="currentColor" strokeOpacity={0.15} />;
-      })}
-      <polygon points={polygonStr} fill="rgb(99 102 241 / 0.35)" stroke="rgb(99 102 241)" strokeWidth={2} />
-      {polygonPoints.map((p, i) => (
-        <circle key={i} cx={p.x} cy={p.y} r={3} fill="rgb(99 102 241)" />
-      ))}
-      {data.map((d, i) => {
-        const labelPoint = pointFor(i, max * 1.18);
-        return (
-          <text
-            key={d.key}
-            x={labelPoint.x}
-            y={labelPoint.y}
-            fontSize={11}
-            textAnchor="middle"
-            dominantBaseline="middle"
-            fill="currentColor"
-          >
-            {d.label} ({d.value.toFixed(1)}, n={d.count})
-          </text>
-        );
-      })}
-    </svg>
+    <div>
+      <div className="defilement-h">
+        <svg
+          viewBox={`0 0 ${size} ${size}`}
+          width="100%"
+          height={size}
+          className="block min-w-[18rem]"
+          role="img"
+          aria-label={`Radar de maturité TRL moyenne par secteur d'usage, échelle de 1 à ${max}. ${resume}. Les mêmes valeurs sont listées sous le graphique.`}
+        >
+          {rings.map((r) => {
+            const ringPoints = data.map((_, i) => pointFor(i, max * r));
+            return (
+              <polygon
+                key={r}
+                points={ringPoints.map((p) => `${p.x},${p.y}`).join(" ")}
+                fill="none"
+                stroke="currentColor"
+                strokeOpacity={0.15}
+              />
+            );
+          })}
+          {data.map((_, i) => {
+            const p = pointFor(i, max);
+            return <line key={i} x1={center} y1={center} x2={p.x} y2={p.y} stroke="currentColor" strokeOpacity={0.15} />;
+          })}
+          <polygon points={polygonStr} fill="rgb(99 102 241 / 0.35)" stroke="rgb(99 102 241)" strokeWidth={2} />
+          {polygonPoints.map((p, i) => (
+            <circle key={i} cx={p.x} cy={p.y} r={3} fill="rgb(99 102 241)" />
+          ))}
+          {data.map((d, i) => {
+            const labelPoint = pointFor(i, max * 1.18);
+            return (
+              <text
+                key={d.key}
+                x={labelPoint.x}
+                y={labelPoint.y}
+                fontSize={11}
+                textAnchor="middle"
+                dominantBaseline="middle"
+                fill="currentColor"
+              >
+                {d.label} ({d.value.toFixed(1)}, n={d.count})
+              </text>
+            );
+          })}
+        </svg>
+      </div>
+
+      {/* Équivalent textuel : le dessin est un résumé, la liste est la donnée.
+          Même convention que le graphe de connaissances et les heatmaps. */}
+      <ul className="mt-2 flex flex-wrap gap-x-4 gap-y-1 text-xs text-neutral-500">
+        {data.map((d) => (
+          <li key={d.key}>
+            <span className="text-neutral-700 dark:text-neutral-300">{d.label}</span> — TRL moyen{" "}
+            <span className="tabular-nums">{d.value.toFixed(1)}</span>/{max} (sur {d.count} usage
+            {d.count > 1 ? "s" : ""} documenté{d.count > 1 ? "s" : ""})
+          </li>
+        ))}
+      </ul>
+    </div>
   );
 }

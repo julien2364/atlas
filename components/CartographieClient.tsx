@@ -3,13 +3,23 @@
 import { useMemo, useState } from "react";
 import type { FicheHumaine, FicheIA, FicheGap, AxeHumain, AxeIA, Substituabilite, ChangelogEntry, SecteurUsage, NiveauConfiance } from "@/lib/types";
 import Treemap, { type TreemapItem } from "@/components/Treemap";
+import {
+  BadgeConfiance,
+  BadgeSubstituabilite,
+  FONDS_SUBSTITUABILITE,
+  GLYPHES_SUBSTITUABILITE,
+} from "@/components/Badges";
+import { LABELS_NIVEAU_CONFIANCE, LABELS_SUBSTITUABILITE } from "@/lib/corpus";
 import RadarChart, { type RadarAxisDatum } from "@/components/RadarChart";
 import FriseChangelog, { type JalonVolume } from "@/components/FriseChangelog";
 import HeatmapTRL, { LABELS_SECTEUR, SECTEURS } from "@/components/HeatmapTRL";
 import HeatmapAxeSecteur from "@/components/HeatmapAxeSecteur";
 import GrapheConnaissances from "@/components/GrapheConnaissances";
 
-const TREEMAP_PALETTE = ["#6366f1", "#14b8a6", "#a855f7", "#f97316", "#ec4899", "#06b6d4", "#84cc16"];
+// Aplats assez sombres pour que le libellé blanc écrit dans le bloc reste
+// lisible (≥ 4.5:1 avec #ffffff) — la version 500 de ces teintes tombait à
+// 2,3:1 sur le teal. Cf. docs/design-system.md §2.
+const TREEMAP_PALETTE = ["#4f46e5", "#0f766e", "#9333ea", "#c2410c", "#db2777", "#0e7490", "#4d7c0f"];
 
 const LABELS_AXE_HUMAIN: Record<AxeHumain, string> = {
   social: "Social",
@@ -28,26 +38,9 @@ const LABELS_AXE_IA: Record<AxeIA, string> = {
   predictif_data_science: "Data science / prédictif",
 };
 
-const LABELS_SUBSTITUABILITE: Record<Substituabilite, { label: string; color: string }> = {
-  remplacable_totalement: { label: "Remplaçable totalement", color: "bg-red-500" },
-  remplacable_avec_supervision: { label: "Remplaçable avec supervision", color: "bg-amber-500" },
-  non_remplacable: { label: "Non remplaçable", color: "bg-emerald-600" },
-  remplacable_avec_autre_technologie: { label: "Remplaçable avec autre technologie", color: "bg-sky-600" },
-};
-
-const LABEL_CONFIANCE: Record<NiveauConfiance, string> = {
-  fait_verifie: "Fait vérifié",
-  consensus_scientifique: "Consensus scientifique",
-  opinion_majoritaire: "Opinion majoritaire",
-  hypothese_prospective: "Hypothèse prospective",
-};
-
-const COULEUR_CONFIANCE: Record<NiveauConfiance, string> = {
-  fait_verifie: "bg-green-50 text-green-700 dark:bg-green-950 dark:text-green-400",
-  consensus_scientifique: "bg-blue-50 text-blue-700 dark:bg-blue-950 dark:text-blue-400",
-  opinion_majoritaire: "bg-amber-50 text-amber-700 dark:bg-amber-950 dark:text-amber-400",
-  hypothese_prospective: "bg-purple-50 text-purple-700 dark:bg-purple-950 dark:text-purple-400",
-};
+/* Substituabilité et niveau de confiance : charte unique
+   (docs/design-system.md §5.2 et §5.3), couleur + glyphe. Les tables locales
+   de couleurs ont été supprimées — trois fichiers en portaient une variante. */
 
 function AxeBar<T extends string>({
   title,
@@ -70,14 +63,17 @@ function AxeBar<T extends string>({
   return (
     <div>
       <h3 className="text-sm font-medium">{title}</h3>
-      <div className="mt-2 flex h-8 w-full overflow-hidden rounded">
+      <div className="mt-2 flex h-8 w-full overflow-hidden rounded" role="group" aria-label={title}>
         {Object.entries(counts).map(([axe, count], i) => (
           <button
             key={axe}
+            type="button"
             onClick={() => onSelect(selected === axe ? null : axe)}
+            aria-pressed={selected === axe}
+            aria-label={`${labels[axe] ?? axe} : ${count} fiches, dont ${documented[axe] ?? 0} documentées. Afficher la liste.`}
             title={`${labels[axe] ?? axe} — ${count} fiches (${documented[axe] ?? 0} documentées)`}
             style={{ width: `${(count / total) * 100}%` }}
-            className={`${palette[i % palette.length]} h-full transition-opacity ${
+            className={`${palette[i % palette.length]} h-full transition-opacity focus:outline-none focus-visible:ring-2 focus-visible:ring-inset focus-visible:ring-white ${
               selected && selected !== axe ? "opacity-30" : "opacity-100"
             } hover:opacity-80`}
           />
@@ -87,8 +83,12 @@ function AxeBar<T extends string>({
         {Object.entries(counts).map(([axe, count]) => (
           <button
             key={axe}
+            type="button"
             onClick={() => onSelect(selected === axe ? null : axe)}
-            className={`hover:underline ${selected === axe ? "font-semibold text-neutral-900 dark:text-neutral-100" : ""}`}
+            aria-pressed={selected === axe}
+            className={`rounded hover:underline ${
+              selected === axe ? "font-semibold text-neutral-900 dark:text-neutral-100" : ""
+            }`}
           >
             {labels[axe] ?? axe} ({count}, {documented[axe] ?? 0} doc.)
           </button>
@@ -114,6 +114,7 @@ export default function CartographieClient({
   const [gapSelectionne, setGapSelectionne] = useState<string | null>(null);
   const [treemapAxeSelectionne, setTreemapAxeSelectionne] = useState<string | null>(null);
   const [confianceFiltre, setConfianceFiltre] = useState<NiveauConfiance | null>(null);
+  const [axeMatrice, setAxeMatrice] = useState<string>("tous");
 
   const humainesDocumentees = useMemo(() => humaines.filter((f) => f.statut === "documente"), [humaines]);
   const iaDocumentees = useMemo(() => ia.filter((f) => f.statut === "documente"), [ia]);
@@ -142,6 +143,24 @@ export default function CartographieClient({
 
   const fichesHumainAffichees = axeHumainFiltre ? humaines.filter((f) => f.axe === axeHumainFiltre) : [];
   const fichesIAAffichees = axeIAFiltre ? ia.filter((f) => f.axe === axeIAFiltre) : [];
+
+  // Lignes et colonnes de la matrice de gap : on n'affiche que les fiches qui
+  // portent au moins une analyse. Avec 267 × 44 combinaisons théoriques et 201
+  // paires documentées, la grille complète serait vide à 98 % et illisible.
+  const humainesAvecGap = useMemo(() => {
+    const ids = new Set(gaps.map((g) => g.fiche_humaine_id));
+    return humaines.filter((h) => ids.has(h.id));
+  }, [gaps, humaines]);
+
+  const colonnesMatrice = useMemo(() => {
+    const ids = new Set(gaps.map((g) => g.fiche_ia_id));
+    return ia.filter((f) => ids.has(f.id));
+  }, [gaps, ia]);
+
+  const lignesMatrice = useMemo(
+    () => (axeMatrice === "tous" ? humainesAvecGap : humainesAvecGap.filter((h) => h.axe === axeMatrice)),
+    [humainesAvecGap, axeMatrice],
+  );
 
   const gapParPaire = useMemo(() => {
     const m = new Map<string, FicheGap>();
@@ -252,7 +271,7 @@ export default function CartographieClient({
             {fichesHumainAffichees.map((f) => (
               <li key={f.id} className="flex items-center justify-between px-2 py-1">
                 <span>{f.nom}</span>
-                <span className={`text-xs ${f.statut === "documente" ? "text-emerald-600" : "text-neutral-400"}`}>
+                <span className={`text-xs ${f.statut === "documente" ? "text-emerald-600" : "text-neutral-500 dark:text-neutral-400"}`}>
                   {f.statut === "documente" ? "documentée" : "à documenter"}
                 </span>
               </li>
@@ -275,7 +294,7 @@ export default function CartographieClient({
             {fichesIAAffichees.map((f) => (
               <li key={f.id} className="flex items-center justify-between px-2 py-1">
                 <span>{f.nom}</span>
-                <span className={`text-xs ${f.statut === "documente" ? "text-emerald-600" : "text-neutral-400"}`}>
+                <span className={`text-xs ${f.statut === "documente" ? "text-emerald-600" : "text-neutral-500 dark:text-neutral-400"}`}>
                   {f.statut === "documente" ? "documentée" : "à documenter"}
                 </span>
               </li>
@@ -286,44 +305,107 @@ export default function CartographieClient({
 
       <section>
         <h3 className="text-sm font-medium">
-          Matrice de gap — {humainesDocumentees.length} fiches humaines × {iaDocumentees.length} fiches IA documentées
+          Matrice de gap — {lignesMatrice.length} fiches humaines × {colonnesMatrice.length} fiches IA
         </h3>
-        <p className="mt-1 text-xs text-neutral-500">
-          Cellule grise = paire pas encore analysée. Cliquer une cellule colorée affiche le détail de l&apos;analyse.
-          Le reste du référentiel (fiches non documentées) n&apos;apparaît pas ici — voir /comparateur pour explorer
-          toutes les paires.
+        <p className="mt-1 max-w-3xl text-xs text-neutral-500">
+          Une ligne par fiche humaine <strong>portant au moins une analyse de gap</strong>, une colonne par fiche IA
+          citée par au moins une analyse : les {humaines.length} × {ia.length} combinaisons théoriques donneraient une
+          grille illisible et presque vide. Cellule vide = paire pas encore analysée (voir /comparateur, qui affiche le
+          statut réel de n&apos;importe quelle paire). Chaque cellule analysée porte le glyphe de sa substituabilité en
+          plus de sa couleur, et s&apos;active au clavier.
         </p>
-        <div className="mt-3 overflow-x-auto">
-          <table className="min-w-full border-collapse text-xs">
+        <div className="mt-3 flex flex-wrap items-end gap-3 text-xs">
+          <label className="flex flex-col gap-1 text-neutral-500">
+            Restreindre à un axe humain
+            <select
+              value={axeMatrice}
+              onChange={(e) => setAxeMatrice(e.target.value)}
+              className="rounded border border-neutral-300 bg-white px-2 py-1 text-sm text-neutral-900 dark:border-neutral-700 dark:bg-neutral-900 dark:text-neutral-100"
+            >
+              <option value="tous">tous les axes ({humainesAvecGap.length} fiches)</option>
+              {Object.entries(LABELS_AXE_HUMAIN).map(([axe, label]) => {
+                const n = humainesAvecGap.filter((h) => h.axe === axe).length;
+                return n === 0 ? null : (
+                  <option key={axe} value={axe}>
+                    {label} ({n})
+                  </option>
+                );
+              })}
+            </select>
+          </label>
+          <p className="text-neutral-500" aria-live="polite">
+            {lignesMatrice.length} ligne{lignesMatrice.length > 1 ? "s" : ""} affichée
+            {lignesMatrice.length > 1 ? "s" : ""} · {gaps.length} paires documentées au total
+          </p>
+        </div>
+        <div className="defilement-h mt-3 max-h-[32rem] overflow-y-auto rounded border border-neutral-200 dark:border-neutral-800">
+          <table className="w-max border-collapse text-xs">
+            <caption className="sr-only">
+              Matrice des analyses de gap : une ligne par capacité humaine, une colonne par capacité IA. Une cellule
+              renseignée est un bouton qui affiche le résumé de l&apos;analyse ; son glyphe et sa couleur donnent le
+              verdict de substituabilité.
+            </caption>
             <thead>
               <tr>
-                <th className="p-1"></th>
-                {iaDocumentees.map((f) => (
-                  <th key={f.id} className="max-w-[7rem] p-1 text-left align-bottom font-normal text-neutral-500">
-                    <span className="block -rotate-45 whitespace-nowrap">{f.nom}</span>
+                <th scope="col" className="sticky left-0 top-0 z-20 bg-white p-1 dark:bg-neutral-950">
+                  <span className="sr-only">Capacité humaine</span>
+                </th>
+                {colonnesMatrice.map((f) => (
+                  <th
+                    key={f.id}
+                    scope="col"
+                    className="sticky top-0 z-10 h-28 w-9 min-w-9 bg-white p-0 align-bottom font-normal text-neutral-500 dark:bg-neutral-950"
+                  >
+                    <span className="flex h-28 w-9 items-end justify-center">
+                      <span className="origin-bottom -rotate-60 whitespace-nowrap pb-1 text-[10px]" title={f.nom}>
+                        {f.nom.length > 26 ? `${f.nom.slice(0, 25)}…` : f.nom}
+                      </span>
+                    </span>
                   </th>
                 ))}
               </tr>
             </thead>
             <tbody>
-              {humainesDocumentees.map((h) => (
-                <tr key={h.id}>
-                  <td className="whitespace-nowrap p-1 pr-3 text-neutral-500">{h.nom}</td>
-                  {iaDocumentees.map((f) => {
+              {lignesMatrice.map((h) => (
+                <tr key={h.id} className="border-t border-neutral-100 dark:border-neutral-900">
+                  <th
+                    scope="row"
+                    className="sticky left-0 z-10 max-w-[16rem] bg-white p-1 pr-3 text-left font-normal text-neutral-600 dark:bg-neutral-950 dark:text-neutral-300"
+                  >
+                    <span className="block max-w-[15rem] truncate" title={h.nom}>
+                      {h.nom}
+                    </span>
+                  </th>
+                  {colonnesMatrice.map((f) => {
                     const g = gapParPaire.get(`${h.id}::${f.id}`);
+                    if (!g) {
+                      return (
+                        <td key={f.id} className="p-0.5">
+                          <div className="h-8 w-8 rounded border border-dashed border-neutral-200 dark:border-neutral-800" />
+                          <span className="sr-only">
+                            {h.nom} × {f.nom} : paire non analysée.
+                          </span>
+                        </td>
+                      );
+                    }
+                    const libelle = LABELS_SUBSTITUABILITE[g.substituabilite] ?? g.substituabilite;
                     return (
-                      <td key={f.id} className="p-1">
-                        {g ? (
-                          <button
-                            onClick={() => setGapSelectionne(g.id === gapSelectionne ? null : g.id)}
-                            title={LABELS_SUBSTITUABILITE[g.substituabilite].label}
-                            className={`h-8 w-8 rounded ${LABELS_SUBSTITUABILITE[g.substituabilite].color} ${
-                              gapSelectionne === g.id ? "ring-2 ring-offset-2 ring-neutral-900 dark:ring-offset-neutral-950" : ""
-                            } hover:opacity-80`}
-                          />
-                        ) : (
-                          <div className="h-8 w-8 rounded bg-neutral-100 dark:bg-neutral-800" />
-                        )}
+                      <td key={f.id} className="p-0.5">
+                        <button
+                          type="button"
+                          onClick={() => setGapSelectionne(g.id === gapSelectionne ? null : g.id)}
+                          aria-pressed={gapSelectionne === g.id}
+                          aria-label={`${h.nom} × ${f.nom} : ${libelle}. Afficher le résumé de l'analyse.`}
+                          title={`${h.nom} × ${f.nom} — ${libelle}`}
+                          style={{ backgroundColor: FONDS_SUBSTITUABILITE[g.substituabilite] }}
+                          className={`flex h-8 w-8 items-center justify-center rounded text-[13px] font-semibold text-white transition hover:opacity-80 focus:outline-none focus-visible:ring-2 focus-visible:ring-neutral-900 focus-visible:ring-offset-2 dark:focus-visible:ring-neutral-100 dark:focus-visible:ring-offset-neutral-950 ${
+                            gapSelectionne === g.id
+                              ? "ring-2 ring-neutral-900 ring-offset-2 dark:ring-neutral-100 dark:ring-offset-neutral-950"
+                              : ""
+                          }`}
+                        >
+                          <span aria-hidden="true">{GLYPHES_SUBSTITUABILITE[g.substituabilite]}</span>
+                        </button>
                       </td>
                     );
                   })}
@@ -332,21 +414,37 @@ export default function CartographieClient({
             </tbody>
           </table>
         </div>
-        <div className="mt-3 flex flex-wrap gap-3 text-xs">
-          {Object.entries(LABELS_SUBSTITUABILITE).map(([key, v]) => (
-            <span key={key} className="flex items-center gap-1.5">
-              <span className={`inline-block h-3 w-3 rounded ${v.color}`} />
-              {v.label}
+        <div className="mt-3 flex flex-wrap gap-x-4 gap-y-2 text-xs text-neutral-500">
+          {(Object.keys(FONDS_SUBSTITUABILITE) as Substituabilite[]).map((cle) => (
+            <span key={cle} className="flex items-center gap-1.5">
+              <span
+                aria-hidden="true"
+                style={{ backgroundColor: FONDS_SUBSTITUABILITE[cle] }}
+                className="inline-flex h-4 w-4 items-center justify-center rounded text-[11px] font-semibold text-white"
+              >
+                {GLYPHES_SUBSTITUABILITE[cle]}
+              </span>
+              {LABELS_SUBSTITUABILITE[cle]}
             </span>
           ))}
+          <span className="flex items-center gap-1.5">
+            <span aria-hidden="true" className="inline-block h-4 w-4 rounded border border-dashed border-neutral-300 dark:border-neutral-700" />
+            paire non analysée
+          </span>
         </div>
         {gapAffiche && (
           <div className="mt-4 rounded border border-neutral-200 p-4 text-sm dark:border-neutral-800">
-            <p className="text-xs text-neutral-400">
-              {humainesDocumentees.find((h) => h.id === gapAffiche.fiche_humaine_id)?.nom} ×{" "}
-              {iaDocumentees.find((f) => f.id === gapAffiche.fiche_ia_id)?.nom} — confiance {gapAffiche.confiance}
+            <p className="text-xs text-neutral-500">
+              {humaines.find((h) => h.id === gapAffiche.fiche_humaine_id)?.nom} ×{" "}
+              {ia.find((f) => f.id === gapAffiche.fiche_ia_id)?.nom} — confiance {gapAffiche.confiance}
             </p>
-            <p className="mt-2">{gapAffiche.apport_ia}</p>
+            <p className="mt-2 flex flex-wrap items-center gap-2">
+              <BadgeSubstituabilite valeur={gapAffiche.substituabilite} />
+            </p>
+            <p className="mt-2 text-neutral-700 dark:text-neutral-300">{gapAffiche.apport_ia}</p>
+            <a href={`/gap/${gapAffiche.id}`} className="mt-2 inline-block text-xs underline hover:no-underline">
+              Ouvrir l&apos;analyse complète
+            </a>
           </div>
         )}
       </section>
@@ -366,7 +464,7 @@ export default function CartographieClient({
             {treemapAffiche.map((f) => (
               <li key={f.id} className="flex items-center justify-between px-2 py-1">
                 <span>{f.nom}</span>
-                <span className={`text-xs ${f.statut === "documente" ? "text-emerald-600" : "text-neutral-400"}`}>
+                <span className={`text-xs ${f.statut === "documente" ? "text-emerald-600" : "text-neutral-500 dark:text-neutral-400"}`}>
                   {f.statut === "documente" ? "documentée" : "à documenter"}
                 </span>
               </li>
@@ -459,7 +557,9 @@ export default function CartographieClient({
         </p>
         <div className="mt-3 flex flex-wrap gap-2">
           <button
+            type="button"
             onClick={() => setConfianceFiltre(null)}
+            aria-pressed={confianceFiltre === null}
             className={`rounded-full border px-3 py-1 text-xs transition-colors ${
               confianceFiltre === null
                 ? "border-neutral-900 bg-neutral-900 text-white dark:border-neutral-100 dark:bg-neutral-100 dark:text-neutral-900"
@@ -468,17 +568,19 @@ export default function CartographieClient({
           >
             Tous
           </button>
-          {(Object.keys(LABEL_CONFIANCE) as NiveauConfiance[]).map((nc) => (
+          {(Object.keys(LABELS_NIVEAU_CONFIANCE) as NiveauConfiance[]).map((nc) => (
             <button
               key={nc}
-              onClick={() => setConfianceFiltre(nc)}
+              type="button"
+              onClick={() => setConfianceFiltre(nc === confianceFiltre ? null : nc)}
+              aria-pressed={confianceFiltre === nc}
               className={`rounded-full border px-3 py-1 text-xs transition-colors ${
                 confianceFiltre === nc
                   ? "border-neutral-900 bg-neutral-900 text-white dark:border-neutral-100 dark:bg-neutral-100 dark:text-neutral-900"
                   : "border-neutral-300 text-neutral-600 hover:border-neutral-500 dark:border-neutral-700 dark:text-neutral-400"
               }`}
             >
-              {LABEL_CONFIANCE[nc]}
+              {LABELS_NIVEAU_CONFIANCE[nc]}
             </button>
           ))}
         </div>
@@ -489,15 +591,13 @@ export default function CartographieClient({
           <div className="mt-4 space-y-5">
             {prospectifsParSujet.map(([sujet, entrees]) => (
               <div key={sujet}>
-                <h4 className="text-xs font-medium uppercase tracking-wide text-neutral-400">{sujet}</h4>
+                <h4 className="text-xs font-medium uppercase tracking-wide text-neutral-500 dark:text-neutral-400">{sujet}</h4>
                 <div className="mt-2 grid gap-2 sm:grid-cols-2">
                   {entrees.map((e, i) => (
                     <div key={i} className="rounded border border-neutral-200 p-3 text-sm dark:border-neutral-800">
                       <div className="flex items-center justify-between gap-2">
                         <span className="font-medium">{e.nom}</span>
-                        <span className={`shrink-0 rounded px-2 py-0.5 text-xs ${COULEUR_CONFIANCE[e.niveau_confiance]}`}>
-                          {LABEL_CONFIANCE[e.niveau_confiance]}
-                        </span>
+                        <BadgeConfiance niveau={e.niveau_confiance} />
                       </div>
                       <p className="mt-1 text-xs text-neutral-500">{e.paire}</p>
                       <p className="mt-1 text-neutral-600 dark:text-neutral-400">{e.description}</p>

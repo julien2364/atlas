@@ -1,26 +1,135 @@
 @import "tailwindcss";
 
+/* ---------------------------------------------------------------------------
+   ATLAS Humain × IA — feuille de style racine.
+   La charte est documentée dans docs/design-system.md : toute couleur ajoutée
+   ici doit y être justifiée, et toute taxonomie encodée par une couleur doit
+   AUSSI porter un glyphe (cf. components/Badges.tsx).
+   --------------------------------------------------------------------------- */
+
+/* Thème sombre piloté par une classe sur <html>, pas par la préférence système
+   seule : la bascule de components/BasculeTheme.tsx doit pouvoir contredire le
+   système. Le script inline de app/layout.tsx pose la classe avant le premier
+   rendu, ce qui évite le flash de thème clair.
+   Hypothèse Tailwind 4 : `@custom-variant` est l'API de v4 pour redéfinir le
+   variant `dark` (remplace `darkMode: "class"` de la v3, qui vivait dans un
+   fichier de config JS que ce projet n'a pas). */
+@custom-variant dark (&:where(.dark, .dark *));
+
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  color-scheme: light;
+
+  /* Surfaces et texte — mode clair */
+  --fond: #ffffff;            /* fond de page */
+  --fond-doux: #fafafa;       /* bandeaux, encadrés secondaires (neutral-50) */
+  --fond-carte: #ffffff;      /* cartes et panneaux */
+  --texte: #171717;           /* texte principal (neutral-900) */
+  --texte-doux: #525252;      /* texte secondaire lisible (neutral-600, ≥ 7:1) */
+  --texte-tres-doux: #737373; /* méta, légendes (neutral-500, ≥ 4.5:1) */
+  --bordure: #e5e5e5;         /* bordure standard (neutral-200) */
+  --bordure-forte: #a3a3a3;   /* bordure au survol / séparateur appuyé */
+  --accent: #4f46e5;          /* indigo-600 — liens et éléments actifs */
+  --accent-doux: #eef2ff;     /* indigo-50 — fond d'élément actif */
+  --anneau: #171717;          /* anneau de focus clavier */
+
+  /* Échelle typographique (ratio ~1.2, base 16px). Utilisée telle quelle par
+     les classes Tailwind text-xs → text-3xl ; ces variables servent de
+     référence documentaire et pour les rares tailles écrites à la main. */
+  --pas-xs: 0.6875rem;  /* 11px — badges, méta */
+  --pas-sm: 0.8125rem;  /* 13px — légendes, notes */
+  --pas-base: 1rem;     /* 16px — corps de texte */
+  --pas-lg: 1.125rem;   /* 18px — chapeau */
+  --pas-xl: 1.375rem;   /* 22px — titre de section (h2) */
+  --pas-2xl: 1.75rem;   /* 28px — titre de page (h1) */
+  --pas-3xl: 2.125rem;  /* 34px — titre d'accueil */
+
+  /* Polices système : aucune dépendance, aucun téléchargement, rendu immédiat.
+     Le projet n'utilise pas next/font — ne pas en introduire sans arbitrage. */
+  --police-texte: ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto,
+    "Helvetica Neue", Arial, "Noto Sans", sans-serif;
+  --police-mono: ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas,
+    "Liberation Mono", monospace;
+
+  /* Alias historiques : components/GrapheConnaissances.tsx peint ses nœuds SVG
+     avec var(--foreground) / var(--background). Ne pas renommer sans lui. */
+  --background: var(--fond);
+  --foreground: var(--texte);
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
+.dark {
+  color-scheme: dark;
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+  --fond: #0a0a0a;            /* neutral-950 */
+  --fond-doux: #171717;       /* neutral-900 */
+  --fond-carte: #0f0f0f;
+  --texte: #ededed;
+  --texte-doux: #d4d4d4;      /* neutral-300 */
+  --texte-tres-doux: #a3a3a3; /* neutral-400, ≥ 7:1 sur #0a0a0a */
+  --bordure: #262626;         /* neutral-800 */
+  --bordure-forte: #525252;
+  --accent: #a5b4fc;          /* indigo-300 — lisible sur fond sombre */
+  --accent-doux: #1e1b4b;     /* indigo-950 */
+  --anneau: #ededed;
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  background: var(--fond);
+  color: var(--texte);
+  font-family: var(--police-texte);
+  /* Empêche tout défilement horizontal de PAGE : les visualisations larges
+     défilent dans leur propre conteneur (.defilement-h), jamais le document. */
+  overflow-x: hidden;
+}
+
+@theme inline {
+  --color-background: var(--fond);
+  --color-foreground: var(--texte);
+  --font-sans: var(--police-texte);
+  --font-mono: var(--police-mono);
+}
+
+/* Focus clavier visible partout, y compris sur les éléments dont personne n'a
+   pensé à styler le focus. `:where()` a une spécificité nulle : un composant
+   qui définit son propre anneau (HeatmapTRL, HeatmapAxeSecteur) garde le sien. */
+:where(a, button, select, input, textarea, summary, [tabindex]):focus-visible {
+  outline: 2px solid var(--anneau);
+  outline-offset: 2px;
+  border-radius: 2px;
+}
+
+/* Conteneur de défilement horizontal pour les visualisations pensées desktop.
+   À poser sur le parent direct d'un SVG/tableau large. */
+.defilement-h {
+  overflow-x: auto;
+  overscroll-behavior-x: contain;
+  -webkit-overflow-scrolling: touch;
+}
+
+/* Lien d'évitement (accessibilité clavier) : visible seulement au focus. */
+.lien-evitement {
+  position: absolute;
+  left: -9999px;
+  top: 0;
+  z-index: 50;
+}
+.lien-evitement:focus {
+  left: 0.5rem;
+  top: 0.5rem;
+  padding: 0.5rem 0.75rem;
+  background: var(--fond);
+  color: var(--texte);
+  border: 1px solid var(--bordure-forte);
+  border-radius: 0.375rem;
+}
+
+/* Respecte le réglage système « réduire les animations ». */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
 }

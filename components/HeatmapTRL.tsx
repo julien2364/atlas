@@ -192,7 +192,7 @@ export default function HeatmapTRL({ fiches }: { fiches: FicheIA[] }) {
                   <span className="block max-w-[14rem] truncate" title={fiche.nom}>
                     {fiche.nom}
                   </span>
-                  <span className="block text-[10px] text-neutral-400">{LABELS_AXE_IA[fiche.axe]}</span>
+                  <span className="block text-[10px] text-neutral-500 dark:text-neutral-400">{LABELS_AXE_IA[fiche.axe]}</span>
                 </th>
                 {SECTEURS.map((secteur) => {
                   const cellule = cellules.get(secteur);
@@ -203,7 +203,7 @@ export default function HeatmapTRL({ fiches }: { fiches: FicheIA[] }) {
                           style={TEXTURE_NON_DOCUMENTE}
                           className="flex h-9 w-full items-center justify-center rounded border border-dashed border-neutral-300 text-neutral-200 dark:border-neutral-700 dark:text-neutral-800"
                         >
-                          <span className="text-[10px] text-neutral-400 dark:text-neutral-500">n. d.</span>
+                          <span className="text-[10px] text-neutral-500 dark:text-neutral-400">n. d.</span>
                         </div>
                         <span className="sr-only">
                           {fiche.nom}, {LABELS_SECTEUR[secteur]} : aucun usage documenté.
@@ -272,7 +272,7 @@ export default function HeatmapTRL({ fiches }: { fiches: FicheIA[] }) {
             <h4 className="font-medium">
               {celluleAffichee.fiche.nom} — {LABELS_SECTEUR[celluleAffichee.secteur]}
             </h4>
-            <span className="text-xs text-neutral-400">
+            <span className="text-xs text-neutral-500 dark:text-neutral-400">
               {LABELS_AXE_IA[celluleAffichee.fiche.axe]}
               {celluleAffichee.fiche.editeur ? ` · ${celluleAffichee.fiche.editeur}` : ""} · vérifié le{" "}
               {celluleAffichee.fiche.derniere_verification}
@@ -280,13 +280,13 @@ export default function HeatmapTRL({ fiches }: { fiches: FicheIA[] }) {
           </div>
           {celluleAffichee.usages.map((u, i) => (
             <div key={i} className="mt-3 space-y-2">
-              <p className="text-xs font-medium uppercase tracking-wide text-neutral-400">
+              <p className="text-xs font-medium uppercase tracking-wide text-neutral-500 dark:text-neutral-400">
                 TRL {u.trl}/9 — {LABELS_SECTEUR[u.secteur]}
               </p>
               <p className="text-neutral-700 dark:text-neutral-300">{u.description}</p>
               {u.exemples.length > 0 && (
                 <div>
-                  <p className="text-xs font-medium uppercase tracking-wide text-neutral-400">Exemples documentés</p>
+                  <p className="text-xs font-medium uppercase tracking-wide text-neutral-500 dark:text-neutral-400">Exemples documentés</p>
                   <ul className="mt-1 list-disc space-y-0.5 pl-5 text-xs text-neutral-600 dark:text-neutral-400">
                     {u.exemples.map((ex, j) => (
                       <li key={j}>{ex}</li>
@@ -296,7 +296,7 @@ export default function HeatmapTRL({ fiches }: { fiches: FicheIA[] }) {
               )}
               {u.sources.length > 0 && (
                 <div>
-                  <p className="text-xs font-medium uppercase tracking-wide text-neutral-400">Sources</p>
+                  <p className="text-xs font-medium uppercase tracking-wide text-neutral-500 dark:text-neutral-400">Sources</p>
                   <ul className="mt-1 flex flex-wrap gap-x-3 gap-y-1 text-xs">
                     {u.sources.map((s, j) => (
                       <li key={j}>
@@ -312,7 +312,7 @@ export default function HeatmapTRL({ fiches }: { fiches: FicheIA[] }) {
                         ) : (
                           <span>{s.titre}</span>
                         )}
-                        <span className="ml-1 text-neutral-400">({s.type})</span>
+                        <span className="ml-1 text-neutral-500 dark:text-neutral-400">({s.type})</span>
                       </li>
                     ))}
                   </ul>
@@ -320,7 +320,7 @@ export default function HeatmapTRL({ fiches }: { fiches: FicheIA[] }) {
               )}
             </div>
           ))}
-          <p className="mt-3 text-xs text-neutral-400">Limites connues de la fiche : {celluleAffichee.fiche.limites_connues}</p>
+          <p className="mt-3 text-xs text-neutral-500 dark:text-neutral-400">Limites connues de la fiche : {celluleAffichee.fiche.limites_connues}</p>
         </div>
       ) : (
         <p className="mt-4 text-xs text-neutral-500">

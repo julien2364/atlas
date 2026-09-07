@@ -3,7 +3,7 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 import JsonLd from "@/components/JsonLd";
 import { BadgeStatut, Bloc, CarteLien, DateVerification, Etiquette, FilAriane, ListeSources } from "@/components/FicheUI";
-import type { NiveauConfiance } from "@/lib/types";
+import { BadgeConfiance, BadgeSubstituabilite } from "@/components/Badges";
 import {
   cheminApiGap,
   cheminFicheHumaine,
@@ -15,8 +15,6 @@ import {
   getFicheHumaine,
   getFicheIA,
   LABELS_CONFIANCE_GAP,
-  LABELS_NIVEAU_CONFIANCE,
-  LABELS_SUBSTITUABILITE,
   libelleAxeHumain,
   libelleAxeIA,
   titreGap,
@@ -26,13 +24,6 @@ import { SITE_NAME, urlAbsolue } from "@/lib/site-config";
 
 // 86 pages pré-générées ; tout identifiant hors corpus renvoie un 404 réel.
 export const dynamicParams = false;
-
-const COULEUR_CONFIANCE: Record<NiveauConfiance, string> = {
-  fait_verifie: "bg-green-50 text-green-700 dark:bg-green-950 dark:text-green-400",
-  consensus_scientifique: "bg-blue-50 text-blue-700 dark:bg-blue-950 dark:text-blue-400",
-  opinion_majoritaire: "bg-amber-50 text-amber-700 dark:bg-amber-950 dark:text-amber-400",
-  hypothese_prospective: "bg-purple-50 text-purple-700 dark:bg-purple-950 dark:text-purple-400",
-};
 
 export function generateStaticParams(): { id: string }[] {
   return fichesGap.map((gap) => ({ id: gap.id }));
@@ -88,7 +79,7 @@ export default async function PageGap({ params }: { params: Promise<{ id: string
         <h1 className="text-2xl font-semibold tracking-tight">{titre}</h1>
         {gap.sujet ? <p className="text-sm text-neutral-500">{gap.sujet}</p> : null}
         <div className="flex flex-wrap items-center gap-2 text-xs">
-          <Etiquette>{LABELS_SUBSTITUABILITE[gap.substituabilite] ?? gap.substituabilite}</Etiquette>
+          <BadgeSubstituabilite valeur={gap.substituabilite} />
           <Etiquette>Confiance {LABELS_CONFIANCE_GAP[gap.confiance] ?? gap.confiance}</Etiquette>
           <BadgeStatut statut={gap.statut} />
           <DateVerification date={gap.derniere_verification} />
@@ -130,9 +121,9 @@ export default async function PageGap({ params }: { params: Promise<{ id: string
       </Bloc>
 
       <Bloc titre="Substituabilité">
-        <p>
-          {LABELS_SUBSTITUABILITE[gap.substituabilite] ?? gap.substituabilite}
-          {gap.technologie_complementaire ? ` — ${gap.technologie_complementaire}` : ""}
+        <p className="flex flex-wrap items-center gap-2">
+          <BadgeSubstituabilite valeur={gap.substituabilite} />
+          {gap.technologie_complementaire ? <span>{gap.technologie_complementaire}</span> : null}
         </p>
       </Bloc>
 
@@ -160,9 +151,7 @@ export default async function PageGap({ params }: { params: Promise<{ id: string
               <div key={index} className="rounded border border-neutral-200 p-3 dark:border-neutral-800">
                 <div className="flex flex-wrap items-center justify-between gap-2">
                   <h3 className="font-medium">{axe.nom}</h3>
-                  <span className={`shrink-0 rounded px-2 py-0.5 text-xs ${COULEUR_CONFIANCE[axe.niveau_confiance]}`}>
-                    {LABELS_NIVEAU_CONFIANCE[axe.niveau_confiance] ?? axe.niveau_confiance}
-                  </span>
+                  <BadgeConfiance niveau={axe.niveau_confiance} />
                 </div>
                 <p className="mt-1 text-neutral-600 dark:text-neutral-400">{axe.description}</p>
               </div>

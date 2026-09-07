@@ -97,52 +97,110 @@ export default function Treemap({
   height = 260,
   selected,
   onSelect,
+  titreAccessible = "Treemap : surface proportionnelle au nombre de fiches par domaine",
 }: {
   items: TreemapItem[];
   width?: number;
   height?: number;
   selected?: string | null;
   onSelect?: (key: string | null) => void;
+  titreAccessible?: string;
 }) {
   const positive = items.filter((i) => i.value > 0).sort((a, b) => b.value - a.value);
   const total = positive.reduce((s, i) => s + i.value, 0);
   const rects = total > 0 ? squarify(positive, 0, 0, width, height, total) : [];
 
+  // Convention d'accessibilité alignée sur HeatmapTRL / GrapheConnaissances :
+  // chaque zone cliquable est activable au clavier (role="button" + tabIndex +
+  // Entrée/Espace), porte un libellé explicite, et le contenu du dessin est
+  // repris juste en dessous sous forme de boutons texte — un lecteur d'écran
+  // ou une navigation au clavier n'a jamais besoin d'entrer dans le SVG.
   return (
-    <svg viewBox={`0 0 ${width} ${height}`} width="100%" height={height} role="img" aria-label="Treemap par domaine">
-      {rects.map((r) => {
-        const isSelected = selected === r.item.key;
-        const dimmed = selected && !isSelected;
-        return (
-          <g
-            key={r.item.key}
-            onClick={() => onSelect?.(isSelected ? null : r.item.key)}
-            style={{ cursor: onSelect ? "pointer" : "default" }}
-          >
-            <rect
-              x={r.x}
-              y={r.y}
-              width={Math.max(r.w - 1.5, 0)}
-              height={Math.max(r.h - 1.5, 0)}
-              fill={r.item.color}
-              opacity={dimmed ? 0.3 : 1}
-              rx={3}
-            />
-            {r.w > 60 && r.h > 24 && (
-              <text
-                x={r.x + 6}
-                y={r.y + 16}
-                fontSize={11}
-                fill="white"
-                opacity={dimmed ? 0.5 : 1}
-                style={{ pointerEvents: "none" }}
+    <div>
+      <div className="defilement-h">
+        <svg
+          viewBox={`0 0 ${width} ${height}`}
+          width="100%"
+          height={height}
+          className="block min-w-[20rem]"
+          role="img"
+          aria-label={`${titreAccessible}. ${positive
+            .map((i) => `${i.label} : ${i.value}`)
+            .join(", ")}. La même répartition est reprise en boutons texte sous le dessin.`}
+        >
+          {rects.map((r) => {
+            const isSelected = selected === r.item.key;
+            const dimmed = selected && !isSelected;
+            const interactif = Boolean(onSelect);
+            return (
+              <g
+                key={r.item.key}
+                role={interactif ? "button" : undefined}
+                tabIndex={interactif ? 0 : undefined}
+                aria-pressed={interactif ? isSelected : undefined}
+                aria-label={interactif ? `${r.item.label} : ${r.item.value} fiches. Lister les fiches.` : undefined}
+                onClick={() => onSelect?.(isSelected ? null : r.item.key)}
+                onKeyDown={(e) => {
+                  if (!interactif) return;
+                  if (e.key === "Enter" || e.key === " ") {
+                    e.preventDefault();
+                    onSelect?.(isSelected ? null : r.item.key);
+                  }
+                }}
+                style={{ cursor: interactif ? "pointer" : "default" }}
               >
-                {r.item.label} ({r.item.value})
-              </text>
-            )}
-          </g>
-        );
-      })}
-    </svg>
+                <title>{`${r.item.label} — ${r.item.value} fiches`}</title>
+                <rect
+                  x={r.x}
+                  y={r.y}
+                  width={Math.max(r.w - 1.5, 0)}
+                  height={Math.max(r.h - 1.5, 0)}
+                  fill={r.item.color}
+                  opacity={dimmed ? 0.3 : 1}
+                  stroke={isSelected ? "var(--foreground)" : "none"}
+                  strokeWidth={isSelected ? 2 : 0}
+                  rx={3}
+                />
+                {r.w > 60 && r.h > 24 && (
+                  <text
+                    x={r.x + 6}
+                    y={r.y + 16}
+                    fontSize={11}
+                    fill="#ffffff"
+                    opacity={dimmed ? 0.6 : 1}
+                    style={{ pointerEvents: "none" }}
+                  >
+                    {r.item.label} ({r.item.value})
+                  </text>
+                )}
+              </g>
+            );
+          })}
+        </svg>
+      </div>
+
+      {onSelect && (
+        <div className="mt-2 flex flex-wrap gap-x-3 gap-y-1 text-xs text-neutral-500">
+          {positive.map((item) => (
+            <button
+              key={item.key}
+              type="button"
+              onClick={() => onSelect(selected === item.key ? null : item.key)}
+              aria-pressed={selected === item.key}
+              className={`inline-flex items-center gap-1.5 rounded hover:underline ${
+                selected === item.key ? "font-semibold text-neutral-900 dark:text-neutral-100" : ""
+              }`}
+            >
+              <span
+                aria-hidden="true"
+                className="inline-block h-2.5 w-2.5 rounded-sm"
+                style={{ backgroundColor: item.color }}
+              />
+              {item.label} ({item.value})
+            </button>
+          ))}
+        </div>
+      )}
+    </div>
   );
 }

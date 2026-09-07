@@ -3,6 +3,8 @@
 import { useMemo, useState } from "react";
 import Link from "next/link";
 import type { AxeHumain, AxeIA, FicheGap, FicheHumaine, FicheIA, Substituabilite } from "@/lib/types";
+import { FONDS_SUBSTITUABILITE } from "@/components/Badges";
+import { LABELS_SUBSTITUABILITE } from "@/lib/corpus";
 
 // Graphe de connaissances — mégaprompt section 8, tâche 5 du MP-1 : « visualisation
 // force-directed des relations fiche humaine ↔ fiche IA ↔ fiche de gap ».
@@ -53,11 +55,26 @@ const LABELS_AXE_HUMAIN: Record<AxeHumain, string> = {
 // Seule échelle colorée du graphe : le verdict de substituabilité porté par la
 // fiche de gap. Les fiches (humaines, IA) restent neutres — c'est la FORME qui les
 // distingue, jamais la couleur seule.
+/* Aplats et libellés de substituabilité : source unique dans
+   components/Badges.tsx (docs/design-system.md §5.3). Cette table locale se
+   contente de les recomposer au format attendu par le dessin. */
 const COULEUR_SUBSTITUABILITE: Record<Substituabilite, { fond: string; label: string }> = {
-  remplacable_totalement: { fond: "#dc2626", label: "Remplaçable totalement" },
-  remplacable_avec_supervision: { fond: "#d97706", label: "Remplaçable avec supervision" },
-  non_remplacable: { fond: "#059669", label: "Non remplaçable" },
-  remplacable_avec_autre_technologie: { fond: "#0284c7", label: "Remplaçable avec autre technologie" },
+  remplacable_totalement: {
+    fond: FONDS_SUBSTITUABILITE.remplacable_totalement,
+    label: LABELS_SUBSTITUABILITE.remplacable_totalement,
+  },
+  remplacable_avec_supervision: {
+    fond: FONDS_SUBSTITUABILITE.remplacable_avec_supervision,
+    label: LABELS_SUBSTITUABILITE.remplacable_avec_supervision,
+  },
+  non_remplacable: {
+    fond: FONDS_SUBSTITUABILITE.non_remplacable,
+    label: LABELS_SUBSTITUABILITE.non_remplacable,
+  },
+  remplacable_avec_autre_technologie: {
+    fond: FONDS_SUBSTITUABILITE.remplacable_avec_autre_technologie,
+    label: LABELS_SUBSTITUABILITE.remplacable_avec_autre_technologie,
+  },
 };
 
 /* -------------------------------------------------------------------------- */
@@ -578,7 +595,17 @@ export default function GrapheConnaissances({
                 <g
                   key={noeud.id}
                   opacity={opacite(i)}
+                  role="button"
+                  tabIndex={0}
+                  aria-pressed={estSelectionne}
+                  aria-label={`${noeud.label} — ${noeud.detail}. Afficher le détail.`}
                   onClick={() => setSelection(estSelectionne ? null : noeud.id)}
+                  onKeyDown={(e) => {
+                    if (e.key === "Enter" || e.key === " ") {
+                      e.preventDefault();
+                      setSelection(estSelectionne ? null : noeud.id);
+                    }
+                  }}
                   style={{ cursor: "pointer" }}
                 >
                   <title>{`${noeud.label} — ${noeud.detail}`}</title>
@@ -643,7 +670,7 @@ export default function GrapheConnaissances({
         </span>
         <span className="flex items-center gap-1.5">
           <svg width="16" height="16" viewBox="0 0 16 16" aria-hidden="true">
-            <polygon points="8,1 15,8 8,15 1,8" fill="#737373" />
+            <polygon points="8,1 15,8 8,15 1,8" fill="var(--texte-tres-doux)" />
           </svg>
           Fiche de gap (losange), couleur = substituabilité
         </span>
@@ -669,7 +696,7 @@ export default function GrapheConnaissances({
         <div className="mt-4 rounded border border-neutral-200 p-4 text-sm dark:border-neutral-800">
           <div className="flex flex-wrap items-baseline justify-between gap-2">
             <h4 className="font-medium">{noeudSelectionne.label}</h4>
-            <span className="text-xs text-neutral-400">{noeudSelectionne.detail}</span>
+            <span className="text-xs text-neutral-500 dark:text-neutral-400">{noeudSelectionne.detail}</span>
           </div>
           {gapSelectionne && (
             <>

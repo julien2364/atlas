@@ -228,7 +228,7 @@ export default function QuestionLibreClient() {
 
       {reponse ? (
         <div className="mt-6 border-t border-neutral-200 pt-5 dark:border-neutral-800">
-          <p className="text-xs font-medium uppercase tracking-wide text-neutral-400">Question comprise comme</p>
+          <p className="text-xs font-medium uppercase tracking-wide text-neutral-500 dark:text-neutral-400">Question comprise comme</p>
           <p className="mt-1 text-sm text-neutral-700 dark:text-neutral-300">{reponse.reformulation}</p>
 
           {/* Refus assumé : pas de perspectives inventées quand le corpus ne suit pas. */}
@@ -251,14 +251,14 @@ export default function QuestionLibreClient() {
           ) : null}
 
           <div className="mt-5">
-            <p className="text-xs font-medium uppercase tracking-wide text-neutral-400">Angles morts de la réponse</p>
+            <p className="text-xs font-medium uppercase tracking-wide text-neutral-500 dark:text-neutral-400">Angles morts de la réponse</p>
             <p className="mt-1 text-sm text-neutral-700 dark:text-neutral-300">{reponse.angles_morts}</p>
           </div>
 
           {/* Les fiches sources sont affichées quoi qu'il arrive — garde-fou n°2. */}
           {reponse.fiches_mobilisees.length > 0 ? (
             <div className="mt-5">
-              <p className="text-xs font-medium uppercase tracking-wide text-neutral-400">
+              <p className="text-xs font-medium uppercase tracking-wide text-neutral-500 dark:text-neutral-400">
                 Fiches du référentiel mobilisées ({reponse.fiches_mobilisees.length})
               </p>
               <ul className="mt-2 space-y-1 text-xs">
@@ -267,8 +267,8 @@ export default function QuestionLibreClient() {
                     <a href={f.url} className="underline decoration-neutral-300 hover:decoration-neutral-600">
                       {f.nom}
                     </a>
-                    <span className="text-neutral-400">{LIBELLE_TYPE[f.type]}</span>
-                    <span className="text-neutral-400">
+                    <span className="text-neutral-500 dark:text-neutral-400">{LIBELLE_TYPE[f.type]}</span>
+                    <span className="text-neutral-500 dark:text-neutral-400">
                       {f.champs.map(libelleChamp).join(", ")} · proximité {f.similarite_max.toFixed(2)}
                     </span>
                   </li>
@@ -285,7 +285,7 @@ export default function QuestionLibreClient() {
               <ul className="mt-2 space-y-2 text-xs text-neutral-600 dark:text-neutral-400">
                 {reponse.passages_mobilises.map((p, i) => (
                   <li key={i} className="border-l-2 border-neutral-200 pl-3 dark:border-neutral-800">
-                    <span className="text-neutral-400">
+                    <span className="text-neutral-500 dark:text-neutral-400">
                       {p.titre_fiche} · {libelleChamp(p.champ)} · {p.similarite.toFixed(3)}
                     </span>
                     <p className="mt-1">{p.extrait}</p>
@@ -295,7 +295,7 @@ export default function QuestionLibreClient() {
             </details>
           ) : null}
 
-          <p className="mt-4 text-xs text-neutral-400">
+          <p className="mt-4 text-xs text-neutral-500 dark:text-neutral-400">
             {reponse.diagnostic.depuis_cache ? "Réponse servie depuis le cache" : "Réponse générée"} ·{" "}
             {reponse.diagnostic.nb_passages_utilises}/{reponse.diagnostic.nb_passages_trouves} extraits retenus ·
             proximité maximale {reponse.diagnostic.similarite_max.toFixed(2)} (seuil{" "}
@@ -303,7 +303,7 @@ export default function QuestionLibreClient() {
             {reponse.diagnostic.modele_reponse ?? "aucun appel au modèle"} · corpus au{" "}
             {reponse.diagnostic.corpus_maj}
           </p>
-          <p className="mt-1 text-xs text-neutral-400">
+          <p className="mt-1 text-xs text-neutral-500 dark:text-neutral-400">
             Contenu généré par IA à partir du référentiel ATLAS (transparence AI Act) : à vérifier via les fiches
             sources ci-dessus avant toute réutilisation.
           </p>

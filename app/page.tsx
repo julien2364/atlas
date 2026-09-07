@@ -25,7 +25,7 @@ export default function HomePage() {
         ))}
       </div>
 
-      <p className="text-xs text-neutral-400">
+      <p className="text-xs text-neutral-500 dark:text-neutral-400">
         Statut du projet : amorçage (Lot 1 — architecture — terminé). Voir /veille pour le changelog.
       </p>
     </div>

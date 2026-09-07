@@ -35,7 +35,7 @@ function FicheHumaineDetail({ f }: { f: FicheHumaine }) {
   return (
     <details id={f.id} className="rounded border border-neutral-200 p-3 dark:border-neutral-800">
       <summary className="cursor-pointer font-medium">
-        {f.nom} {f.periode_courant ? <span className="text-neutral-400">— {f.periode_courant}</span> : null}
+        {f.nom} {f.periode_courant ? <span className="text-neutral-500 dark:text-neutral-400">— {f.periode_courant}</span> : null}
         <span className="ml-2">
           <StatutBadge statut={f.statut} />
         </span>
@@ -47,11 +47,11 @@ function FicheHumaineDetail({ f }: { f: FicheHumaine }) {
           <p><strong>Limites et critiques :</strong> {f.limites_critiques}</p>
           {f.resonance_ia && <p><strong>Résonance avec l&apos;IA :</strong> {f.resonance_ia}</p>}
           {f.sources.length > 0 && (
-            <p className="text-xs text-neutral-400">Sources : {f.sources.map((s) => s.titre).join(" · ")}</p>
+            <p className="text-xs text-neutral-500 dark:text-neutral-400">Sources : {f.sources.map((s) => s.titre).join(" · ")}</p>
           )}
         </div>
       ) : (
-        <p className="mt-2 text-sm text-neutral-400">Fiche pas encore documentée.</p>
+        <p className="mt-2 text-sm text-neutral-500 dark:text-neutral-400">Fiche pas encore documentée.</p>
       )}
       <p className="mt-3 text-sm">
         <Link
@@ -88,7 +88,7 @@ export default function ReferentielHumainPage() {
         }, {});
         return (
           <section key={axe} id={`axe-${axe}`} className="scroll-mt-24">
-            <h2 className="text-lg font-medium">{label} <span className="text-sm font-normal text-neutral-400">({entries.length})</span></h2>
+            <h2 className="text-lg font-medium">{label} <span className="text-sm font-normal text-neutral-500 dark:text-neutral-400">({entries.length})</span></h2>
             <div className="mt-3 space-y-4">
               {Object.entries(parSousDomaine).map(([sd, items]) => {
                 const documentees = items.filter((f) => f.statut === "documente");

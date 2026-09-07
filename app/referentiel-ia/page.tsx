@@ -40,12 +40,12 @@ export default function ReferentielIAPage() {
         if (entries.length === 0) return null;
         return (
           <section key={axe} id={`axe-${axe}`} className="scroll-mt-24">
-            <h2 className="text-lg font-medium">{label} <span className="text-sm font-normal text-neutral-400">({entries.length})</span></h2>
+            <h2 className="text-lg font-medium">{label} <span className="text-sm font-normal text-neutral-500 dark:text-neutral-400">({entries.length})</span></h2>
             <div className="mt-3 space-y-3">
               {entries.map((f) => (
                 <details key={f.id} id={f.id} className="rounded border border-neutral-200 p-3 dark:border-neutral-800">
                   <summary className="cursor-pointer font-medium">
-                    {f.nom} {f.editeur ? <span className="text-neutral-400">— {f.editeur}</span> : null}
+                    {f.nom} {f.editeur ? <span className="text-neutral-500 dark:text-neutral-400">— {f.editeur}</span> : null}
                     <span className={`ml-2 rounded px-2 py-0.5 text-[11px] ${f.statut === "documente" ? "bg-emerald-100 text-emerald-700 dark:bg-emerald-900/40 dark:text-emerald-300" : "bg-neutral-100 text-neutral-500 dark:bg-neutral-800"}`}>
                       {f.statut.replace(/_/g, " ")}
                     </span>
@@ -61,7 +61,7 @@ export default function ReferentielIAPage() {
                       )}
                       {f.limites_connues && <p><strong>Limites connues :</strong> {f.limites_connues}</p>}
                       {f.sources.length > 0 && (
-                        <p className="text-xs text-neutral-400">Sources : {f.sources.map((s) => s.titre).join(" · ")}</p>
+                        <p className="text-xs text-neutral-500 dark:text-neutral-400">Sources : {f.sources.map((s) => s.titre).join(" · ")}</p>
                       )}
                     </div>
                   )}

@@ -3,8 +3,8 @@
 
 import Link from "next/link";
 import type { ReactNode } from "react";
-import type { Source, Statut } from "@/lib/types";
-import { formatDateFr, libelleStatut } from "@/lib/corpus";
+import type { Source } from "@/lib/types";
+import { formatDateFr } from "@/lib/corpus";
 import type { ElementAriane } from "@/lib/seo";
 
 /* Fil d'Ariane visible — le pendant JSON-LD est produit par jsonLdFilAriane(). */
@@ -38,20 +38,10 @@ export function FilAriane({ elements }: { elements: ElementAriane[] }) {
   );
 }
 
-const STYLES_STATUT: Record<string, string> = {
-  a_documenter: "bg-neutral-100 text-neutral-500 dark:bg-neutral-800 dark:text-neutral-400",
-  documente: "bg-emerald-100 text-emerald-700 dark:bg-emerald-900/40 dark:text-emerald-300",
-  verifie_recemment: "bg-blue-100 text-blue-700 dark:bg-blue-900/40 dark:text-blue-300",
-  a_re_auditer: "bg-amber-100 text-amber-700 dark:bg-amber-900/40 dark:text-amber-300",
-};
-
-export function BadgeStatut({ statut }: { statut: Statut | string }) {
-  return (
-    <span className={`rounded px-2 py-0.5 text-[11px] ${STYLES_STATUT[statut] ?? STYLES_STATUT.a_documenter}`}>
-      {libelleStatut(statut)}
-    </span>
-  );
-}
+/* Le badge de statut vit dans components/Badges.tsx (couleur + glyphe, cf.
+   docs/design-system.md §5.1). Réexporté ici pour que les pages de fiche
+   gardent un point d'import unique. */
+export { BadgeStatut, BadgeConfiance, BadgeSubstituabilite } from "@/components/Badges";
 
 export function Etiquette({ children }: { children: ReactNode }) {
   return (
@@ -92,7 +82,7 @@ export function ListeSources({ sources }: { sources: Source[] }) {
     <ol className="space-y-2 text-sm">
       {sources.map((source, index) => (
         <li key={`${index}-${source.titre}`} className="flex flex-wrap items-baseline gap-x-2 gap-y-1">
-          <span className="text-neutral-400">{index + 1}.</span>
+          <span className="text-neutral-500 dark:text-neutral-400">{index + 1}.</span>
           {source.url ? (
             <a
               href={source.url}
@@ -115,7 +105,7 @@ export function ListeSources({ sources }: { sources: Source[] }) {
             {source.type}
           </span>
           {source.date ? (
-            <time dateTime={source.date} className="text-xs text-neutral-400">
+            <time dateTime={source.date} className="text-xs text-neutral-500 dark:text-neutral-400">
               {formatDateFr(source.date)}
             </time>
           ) : null}

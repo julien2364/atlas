@@ -35,8 +35,8 @@ export default function VeillePage() {
           {typedSources.map((s) => (
             <li key={s.id} className="rounded border border-neutral-200 px-3 py-2 dark:border-neutral-800">
               <div className="flex items-center justify-between">
-                <span className={s.actif ? "" : "text-neutral-400 line-through"}>{s.nom}</span>
-                <span className="flex items-center gap-2 text-xs text-neutral-400">
+                <span className={s.actif ? "" : "text-neutral-500 dark:text-neutral-400 line-through"}>{s.nom}</span>
+                <span className="flex items-center gap-2 text-xs text-neutral-500 dark:text-neutral-400">
                   <span className={`rounded px-2 py-0.5 ${s.actif ? "bg-neutral-100 dark:bg-neutral-800" : "bg-red-50 text-red-600 dark:bg-red-950"}`}>
                     {s.actif ? s.type : "désactivée"}
                   </span>
@@ -67,7 +67,7 @@ export default function VeillePage() {
         <ul className="mt-3 space-y-3 text-sm">
           {(changelog as { id: string; date: string; type: string; cible: string; resume: string }[]).map((c) => (
             <li key={c.id} className="rounded border border-neutral-200 p-3 dark:border-neutral-800">
-              <p className="text-xs text-neutral-400">{formatDateFr(c.date)} — {c.type} — {c.cible}</p>
+              <p className="text-xs text-neutral-500 dark:text-neutral-400">{formatDateFr(c.date)} — {c.type} — {c.cible}</p>
               <p className="mt-1">{c.resume}</p>
             </li>
           ))}

@@ -108,7 +108,7 @@ export default function FriseChangelog({
                     {delta !== null && delta > 0 ? ` — +${delta} depuis l'étape précédente` : ""}
                   </p>
                 ) : (
-                  <p className="mt-0.5 text-[10px] text-neutral-400">Volume de fiches non recalculable à cette date.</p>
+                  <p className="mt-0.5 text-[10px] text-neutral-500 dark:text-neutral-400">Volume de fiches non recalculable à cette date.</p>
                 )}
                 {volume && (
                   // Palier de l'aire cumulée : la hauteur est proportionnelle au
@@ -147,7 +147,7 @@ export default function FriseChangelog({
                 {groupe.entrees.map((e, i) => (
                   <div key={e.id} className="flex items-start">
                     <div className="flex w-56 flex-col items-start px-3">
-                      <span className="text-[10px] text-neutral-400">
+                      <span className="text-[10px] text-neutral-500 dark:text-neutral-400">
                         {new Date(e.date).toLocaleDateString("fr-FR", {
                           day: "2-digit",
                           month: "short",
@@ -156,7 +156,7 @@ export default function FriseChangelog({
                       </span>
                       <span className={`mt-1 inline-block h-2.5 w-2.5 rounded-full ${TYPE_COLOR[e.type]}`} />
                       <span className="mt-1 text-xs font-medium">{e.cible}</span>
-                      <span className="text-[10px] uppercase tracking-wide text-neutral-400">{TYPE_LABEL[e.type]}</span>
+                      <span className="text-[10px] uppercase tracking-wide text-neutral-500 dark:text-neutral-400">{TYPE_LABEL[e.type]}</span>
                       <p className="mt-1 line-clamp-4 text-xs text-neutral-500">{e.resume}</p>
                     </div>
                     {i < groupe.entrees.length - 1 && (

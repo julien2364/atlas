@@ -599,7 +599,7 @@ node scripts/appliquer-patchs.mjs --patchs=data/patchs/patchs-veille-<date>.json
                 ) : (
                   <span className="font-medium">{p.titre}</span>
                 )}
-                <span className="shrink-0 text-xs text-neutral-400">fiabilité {q.score_fiabilite}</span>
+                <span className="shrink-0 text-xs text-neutral-500 dark:text-neutral-400">fiabilité {q.score_fiabilite}</span>
               </div>
 
               {p.texte && <p className="mt-1 text-xs text-neutral-600 dark:text-neutral-400">{p.texte}</p>}

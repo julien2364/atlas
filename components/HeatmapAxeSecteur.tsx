@@ -66,11 +66,11 @@ function Distribution({ observations }: { observations: Observation[] }) {
   const maxi = Math.max(...paliers, 1);
   return (
     <div>
-      <p className="text-xs font-medium uppercase tracking-wide text-neutral-400">Distribution des TRL observés</p>
+      <p className="text-xs font-medium uppercase tracking-wide text-neutral-500 dark:text-neutral-400">Distribution des TRL observés</p>
       <div className="mt-1 flex items-end gap-1" aria-hidden="true">
         {paliers.map((n, i) => (
           <div key={i} className="flex w-6 flex-col items-center gap-0.5">
-            <span className="text-[9px] tabular-nums text-neutral-400">{n > 0 ? n : ""}</span>
+            <span className="text-[9px] tabular-nums text-neutral-500 dark:text-neutral-400">{n > 0 ? n : ""}</span>
             <span
               style={{
                 height: `${4 + (n / maxi) * 28}px`,
@@ -78,7 +78,7 @@ function Distribution({ observations }: { observations: Observation[] }) {
               }}
               className={`w-full rounded-sm ${n > 0 ? "" : "border border-dashed border-neutral-300 dark:border-neutral-700"}`}
             />
-            <span className="text-[9px] tabular-nums text-neutral-400">{i + 1}</span>
+            <span className="text-[9px] tabular-nums text-neutral-500 dark:text-neutral-400">{i + 1}</span>
           </div>
         ))}
       </div>
@@ -186,7 +186,7 @@ export default function HeatmapAxeSecteur({ fiches }: { fiches: FicheIA[] }) {
                     className="sticky left-0 z-10 w-[13rem] min-w-[13rem] max-w-[13rem] bg-white p-1 pr-3 text-left font-normal dark:bg-neutral-950"
                   >
                     <span className="block">{LABELS_AXE_IA[axe]}</span>
-                    <span className="block text-[10px] text-neutral-400">
+                    <span className="block text-[10px] text-neutral-500 dark:text-neutral-400">
                       {fichesAxe.length} fiche{fichesAxe.length > 1 ? "s" : ""}
                     </span>
                   </th>
@@ -200,7 +200,7 @@ export default function HeatmapAxeSecteur({ fiches }: { fiches: FicheIA[] }) {
                             style={TEXTURE_NON_DOCUMENTE}
                             className="flex h-14 w-full items-center justify-center rounded border border-dashed border-neutral-300 text-neutral-200 dark:border-neutral-700 dark:text-neutral-800"
                           >
-                            <span className="text-[10px] text-neutral-400 dark:text-neutral-500">n. d.</span>
+                            <span className="text-[10px] text-neutral-500 dark:text-neutral-400">n. d.</span>
                           </div>
                           <span className="sr-only">
                             {LABELS_AXE_IA[axe]}, {LABELS_SECTEUR[secteur]} : aucun usage documenté (absence de donnée,
@@ -294,7 +294,7 @@ export default function HeatmapAxeSecteur({ fiches }: { fiches: FicheIA[] }) {
             <h4 className="font-medium">
               {LABELS_AXE_IA[celluleAffichee.axe]} — {LABELS_SECTEUR[celluleAffichee.secteur]}
             </h4>
-            <span className="text-xs text-neutral-400">
+            <span className="text-xs text-neutral-500 dark:text-neutral-400">
               TRL moyen {formaterMoyenne(celluleAffichee.moyenne)}/9 · {celluleAffichee.observations.length} usage
               {celluleAffichee.observations.length > 1 ? "s" : ""} · {celluleAffichee.fiches} fiche
               {celluleAffichee.fiches > 1 ? "s" : ""} · étendue {celluleAffichee.min}–{celluleAffichee.max}
@@ -323,7 +323,7 @@ export default function HeatmapAxeSecteur({ fiches }: { fiches: FicheIA[] }) {
                     <Link href={`/fiche/ia/${o.fiche.id}`} className="font-medium hover:underline">
                       {o.fiche.nom}
                     </Link>
-                    <span className="text-xs text-neutral-400">
+                    <span className="text-xs text-neutral-500 dark:text-neutral-400">
                       TRL {o.usage.trl}/9{o.fiche.editeur ? ` · ${o.fiche.editeur}` : ""} · vérifié le{" "}
                       {o.fiche.derniere_verification}
                     </span>
@@ -345,7 +345,7 @@ export default function HeatmapAxeSecteur({ fiches }: { fiches: FicheIA[] }) {
                           ) : (
                             <span>{s.titre}</span>
                           )}
-                          <span className="ml-1 text-neutral-400">({s.type})</span>
+                          <span className="ml-1 text-neutral-500 dark:text-neutral-400">({s.type})</span>
                         </li>
                       ))}
                     </ul>
