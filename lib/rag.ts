@@ -840,13 +840,6 @@ export function ecrireCache(cle: string, reponse: ReponseQuestion): void {
   }
 }
 
-/** Vide le cache — utile après une réindexation. */
-export function viderCache(): number {
-  const taille = cache.size;
-  cache.clear();
-  return taille;
-}
-
 /* -------------------------------------------------------------------------- */
 /* Orchestration                                                              */
 /* -------------------------------------------------------------------------- */

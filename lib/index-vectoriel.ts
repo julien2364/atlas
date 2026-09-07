@@ -364,7 +364,6 @@ export function rechercherDense(
   normeQuestion = Math.sqrt(normeQuestion);
   if (normeQuestion === 0) return [];
 
-  const motsQuestion = new Set(termes(question) as string[]);
   const resultats: ResultatRecherche[] = [];
   for (let i = 0; i < index.passages.length; i += 1) {
     let produit = 0;
@@ -372,13 +371,22 @@ export function rechercherDense(
     for (let d = 0; d < dimension; d += 1) produit += vecteur[d] * index.poids[debut + d];
     const similarite = produit / (normeQuestion * index.normes[i]);
     if (similarite < seuil) continue;
-    const motsPassage = new Set(termes(index.passages[i].texte) as string[]);
-    let apparies = 0;
-    for (const mot of motsQuestion) if (motsPassage.has(mot)) apparies += 1;
-    resultats.push({ passage: index.passages[i], similarite, termes_apparies: apparies });
+    resultats.push({ passage: index.passages[i], similarite, termes_apparies: 0 });
   }
   resultats.sort((a, b) => b.similarite - a.similarite);
-  return resultats.slice(0, limite);
+  const retenus = resultats.slice(0, limite);
+
+  // Le décompte de termes appariés n'est calculé QUE sur les résultats retenus :
+  // tokeniser les 2 855 passages à chaque question coûterait cent fois la
+  // recherche elle-même, pour une information purement indicative ici.
+  const motsQuestion = new Set(termes(question) as string[]);
+  for (const resultat of retenus) {
+    const motsPassage = new Set(termes(resultat.passage.texte) as string[]);
+    let apparies = 0;
+    for (const mot of motsQuestion) if (motsPassage.has(mot)) apparies += 1;
+    resultat.termes_apparies = apparies;
+  }
+  return retenus;
 }
 
 /**
