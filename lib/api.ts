@@ -153,7 +153,10 @@ export interface UsageAPI {
   secteur: string;
   secteur_libelle: string;
   description: string;
-  trl: number;
+  /** `null` = non déterminable, cf. UsageSectoriel.trl dans lib/types.ts. */
+  trl: number | null;
+  trl_justification: string | null;
+  diffusion: string | null;
   exemples: string[];
   sources: SourceAPI[];
 }
@@ -230,7 +233,9 @@ function serialiserUsage(usage: UsageSectoriel): UsageAPI {
     secteur: usage.secteur,
     secteur_libelle: LABELS_SECTEUR[usage.secteur] ?? usage.secteur,
     description: usage.description,
-    trl: usage.trl,
+    trl: usage.trl ?? null,
+    trl_justification: usage.trl_justification ?? null,
+    diffusion: usage.diffusion ?? null,
     exemples: usage.exemples ?? [],
     sources: (usage.sources ?? []).map(serialiserSource),
   };

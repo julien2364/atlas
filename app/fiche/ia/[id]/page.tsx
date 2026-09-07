@@ -14,6 +14,7 @@ import {
   gapsDeFicheIA,
   getFicheHumaine,
   getFicheIA,
+  LABELS_DIFFUSION,
   LABELS_SECTEUR,
   libelleAxeIA,
 } from "@/lib/corpus";
@@ -112,9 +113,17 @@ export default async function PageFicheIA({ params }: { params: Promise<{ id: st
                 <h3 className="flex flex-wrap items-center gap-2 text-sm font-medium">
                   {LABELS_SECTEUR[usage.secteur] ?? usage.secteur}
                   <span className="rounded bg-neutral-100 px-2 py-0.5 text-[11px] font-normal text-neutral-600 dark:bg-neutral-800 dark:text-neutral-400">
-                    TRL {usage.trl} / 9
+                    {typeof usage.trl === "number" ? `TRL ${usage.trl} / 9` : "TRL non déterminable"}
                   </span>
+                  {usage.diffusion ? (
+                    <span className="rounded bg-neutral-100 px-2 py-0.5 text-[11px] font-normal text-neutral-600 dark:bg-neutral-800 dark:text-neutral-400">
+                      {LABELS_DIFFUSION[usage.diffusion]}
+                    </span>
+                  ) : null}
                 </h3>
+                {usage.trl_justification ? (
+                  <p className="mt-1 text-xs text-neutral-500 dark:text-neutral-400">{usage.trl_justification}</p>
+                ) : null}
                 <p className="mt-2">{usage.description}</p>
                 {usage.exemples && usage.exemples.length > 0 ? (
                   <ul className="mt-2 list-disc space-y-1 pl-5 text-neutral-600 dark:text-neutral-400">

@@ -35,10 +35,44 @@ export type AxeIA = "generatif_raisonnement" | "agentique" | "scientifique" | "s
 
 export type SecteurUsage = "science" | "education" | "recherche" | "industrie" | "pharmaceutique" | "gouvernement";
 
+// Degré de diffusion d'un usage — délibérément NON chiffré (audit du 07/09,
+// docs/audit-fiches-ia-2026-09-07.md §3). Le TRL est une norme externe
+// (NASA 1974, ISO 16290:2013, annexe G d'Horizon 2020) qui mesure une seule
+// chose : le degré auquel un SYSTÈME a été validé dans l'environnement où il
+// doit opérer. Le référentiel s'en servait aussi pour dire « très cité », « très
+// ancien » ou « très répandu », ce que l'échelle ne mesure pas. Plutôt que de
+// redéfinir localement une norme — ce qui lui garderait son autorité en la
+// vidant de son contenu —, ces sens-là passent dans un champ distinct, textuel,
+// impossible à moyenner avec un TRL.
+export type Diffusion =
+  | "emergent" // premiers usages publics, pas encore de pratique établie
+  | "etabli" // pratique installée dans un milieu professionnel ou académique
+  | "standard" // choix par défaut du domaine, présent partout
+  | "historique"; // a été standard, remplacé depuis par autre chose
+
 export interface UsageSectoriel {
   secteur: SecteurUsage;
   description: string;
-  trl: number; // 1-9, Technology Readiness Level
+  /**
+   * Technology Readiness Level, 1-9. FACULTATIF depuis le lot de correction du
+   * 07/09/2026, et `null` explicitement autorisé au sens « non déterminable ».
+   *
+   * Ne se renseigne QUE pour un usage portant sur un système dont on peut nommer
+   * l'exploitant, le lieu et la date. Si cette phrase ne peut pas être écrite, le
+   * champ vaut `null` et c'est `diffusion` qui porte l'information. Un phénomène
+   * (hallucination, biais, contrainte énergétique) et une méthode considérée en
+   * elle-même (régression linéaire, ACP) n'ont pas de TRL : le champ n'y a aucun
+   * référent.
+   */
+  trl?: number | null;
+  /**
+   * Phrase nommant le déploiement qui fonde le chiffre. Exigible dès qu'un `trl`
+   * est posé : c'est ce qui rend la valeur auditable, et ce qui aurait rendu
+   * impossible d'écrire « AlexNet, industrie, TRL 9 ».
+   */
+  trl_justification?: string;
+  /** Degré de diffusion, employé là où le TRL n'a pas de référent. */
+  diffusion?: Diffusion;
   exemples: string[];
   sources: Source[];
 }

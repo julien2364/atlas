@@ -16,6 +16,7 @@ import type {
   FicheGap,
   FicheHumaine,
   FicheIA,
+  Diffusion,
   NiveauConfiance,
   SecteurUsage,
   Statut,
@@ -70,6 +71,15 @@ export const LABELS_SECTEUR: Record<SecteurUsage, string> = {
   industrie: "Industrie",
   pharmaceutique: "Pharmaceutique",
   gouvernement: "Gouvernement",
+};
+
+// Diffusion d'un usage IA — échelle textuelle, volontairement non chiffrée pour
+// qu'elle ne puisse pas être confondue ni agrégée avec le TRL (cf. lib/types.ts).
+export const LABELS_DIFFUSION: Record<Diffusion, string> = {
+  emergent: "Diffusion émergente",
+  etabli: "Diffusion établie",
+  standard: "Diffusion standard",
+  historique: "Diffusion historique",
 };
 
 export const LABELS_NIVEAU_CONFIANCE: Record<NiveauConfiance, string> = {

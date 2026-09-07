@@ -223,6 +223,11 @@ export default function CartographieClient({
     const bySecteur = new Map<SecteurUsage, { sum: number; count: number }>();
     ia.forEach((f) => {
       f.usages?.forEach((u) => {
+        // Un usage sans TRL déterminable (lot du 07/09/2026, cf. lib/types.ts)
+        // n'entre pas dans la moyenne : il n'est pas un TRL bas, il n'est pas
+        // un TRL du tout. Le radar affiche donc la moyenne des seuls usages
+        // chiffrés, et son effectif dit sur combien elle porte.
+        if (typeof u.trl !== "number") return;
         const cur = bySecteur.get(u.secteur) ?? { sum: 0, count: 0 };
         cur.sum += u.trl;
         cur.count += 1;
@@ -230,6 +235,7 @@ export default function CartographieClient({
       });
     });
     return Array.from(bySecteur.entries())
+      .filter(([, { count }]) => count > 0)
       .map(([secteur, { sum, count }]) => ({
         key: secteur,
         label: LABELS_SECTEUR[secteur] ?? secteur,

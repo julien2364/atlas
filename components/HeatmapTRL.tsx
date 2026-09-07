@@ -74,7 +74,35 @@ interface Cellule {
   fiche: FicheIA;
   secteur: SecteurUsage;
   usages: UsageSectoriel[]; // plusieurs si une fiche documente deux usages du même secteur
-  trl: number; // TRL le plus élevé documenté pour ce couple fiche × secteur
+  /**
+   * TRL le plus élevé documenté pour ce couple fiche × secteur, ou `null` quand
+   * aucun des usages n'en porte. Depuis le lot de correction du 07/09/2026, un
+   * usage peut être documenté sans TRL (cf. lib/types.ts) : la cellule doit alors
+   * se lire « usage documenté, maturité non chiffrable », et surtout pas « TRL
+   * bas ». C'est un troisième état, distinct de la cellule vide.
+   */
+  trl: number | null;
+}
+
+/** Libellés du champ `diffusion`, employé là où le TRL n'a pas de référent. */
+export const LABELS_DIFFUSION: Record<string, string> = {
+  emergent: "diffusion émergente",
+  etabli: "diffusion établie",
+  standard: "diffusion standard",
+  historique: "diffusion historique",
+};
+
+/** TRL le plus élevé d'une liste d'usages, `null` si aucun n'en porte. */
+function trlMaximal(usages: UsageSectoriel[]): number | null {
+  const valeurs = usages.map((u) => u.trl).filter((t): t is number => typeof t === "number");
+  return valeurs.length > 0 ? Math.max(...valeurs) : null;
+}
+
+/** Étiquette de maturité d'un usage : son TRL, ou à défaut sa diffusion. */
+export function etiquetteMaturite(usage: UsageSectoriel): string {
+  if (typeof usage.trl === "number") return `TRL ${usage.trl}/9`;
+  const d = usage.diffusion ? LABELS_DIFFUSION[usage.diffusion] : null;
+  return d ? `TRL non déterminable — ${d}` : "TRL non déterminable";
 }
 
 export default function HeatmapTRL({ fiches }: { fiches: FicheIA[] }) {
@@ -96,9 +124,9 @@ export default function HeatmapTRL({ fiches }: { fiches: FicheIA[] }) {
           const existante = cellules.get(u.secteur);
           if (existante) {
             existante.usages.push(u);
-            existante.trl = Math.max(existante.trl, u.trl);
+            existante.trl = trlMaximal(existante.usages);
           } else {
-            cellules.set(u.secteur, { fiche, secteur: u.secteur, usages: [u], trl: u.trl });
+            cellules.set(u.secteur, { fiche, secteur: u.secteur, usages: [u], trl: trlMaximal([u]) });
           }
         });
         return { fiche, cellules };
@@ -212,6 +240,31 @@ export default function HeatmapTRL({ fiches }: { fiches: FicheIA[] }) {
                     );
                   }
                   const cle = `${fiche.id}::${secteur}`;
+                  const selectionneeSansTrl = celluleSelectionnee === cle;
+                  if (cellule.trl === null) {
+                    // Usage documenté mais TRL non déterminable : ni couleur de
+                    // l'échelle (qui mentirait), ni hachures (qui diraient « aucun
+                    // usage »). Cellule neutre, bordée, marquée « n. c. ».
+                    return (
+                      <td key={secteur} className="p-1">
+                        <button
+                          type="button"
+                          onClick={() => setCelluleSelectionnee(selectionneeSansTrl ? null : cle)}
+                          aria-pressed={selectionneeSansTrl}
+                          aria-label={`${fiche.nom}, ${LABELS_SECTEUR[secteur]} : usage documenté, TRL non déterminable. ${cellule.usages[0].description}. Afficher le détail de l'usage.`}
+                          title={`${fiche.nom} — ${LABELS_SECTEUR[secteur]} · TRL non déterminable`}
+                          className={`flex h-9 w-full items-center justify-center rounded border border-neutral-300 bg-neutral-100 text-xs font-semibold text-neutral-600 transition hover:opacity-80 focus:outline-none focus-visible:ring-2 focus-visible:ring-neutral-900 focus-visible:ring-offset-2 dark:border-neutral-700 dark:bg-neutral-800 dark:text-neutral-300 dark:focus-visible:ring-neutral-100 dark:focus-visible:ring-offset-neutral-950 ${
+                            selectionneeSansTrl
+                              ? "ring-2 ring-neutral-900 ring-offset-2 dark:ring-neutral-100 dark:ring-offset-neutral-950"
+                              : ""
+                          }`}
+                        >
+                          n. c.
+                          {cellule.usages.length > 1 && <span className="ml-0.5 text-[9px] font-normal">×{cellule.usages.length}</span>}
+                        </button>
+                      </td>
+                    );
+                  }
                   const palette = paletteTRL(cellule.trl);
                   const selectionnee = celluleSelectionnee === cle;
                   return (
@@ -264,6 +317,12 @@ export default function HeatmapTRL({ fiches }: { fiches: FicheIA[] }) {
           />
           n. d. — aucun usage documenté dans ce secteur (≠ TRL faible)
         </span>
+        <span className="flex items-center gap-1.5">
+          <span className="inline-flex h-5 w-5 items-center justify-center rounded-sm border border-neutral-300 bg-neutral-100 text-[9px] font-semibold text-neutral-600 dark:border-neutral-700 dark:bg-neutral-800 dark:text-neutral-300">
+            n.&nbsp;c.
+          </span>
+          n. c. — usage documenté, TRL non déterminable d&apos;après la source (≠ TRL faible)
+        </span>
       </div>
 
       {celluleAffichee ? (
@@ -281,8 +340,11 @@ export default function HeatmapTRL({ fiches }: { fiches: FicheIA[] }) {
           {celluleAffichee.usages.map((u, i) => (
             <div key={i} className="mt-3 space-y-2">
               <p className="text-xs font-medium uppercase tracking-wide text-neutral-500 dark:text-neutral-400">
-                TRL {u.trl}/9 — {LABELS_SECTEUR[u.secteur]}
+                {etiquetteMaturite(u)} — {LABELS_SECTEUR[u.secteur]}
               </p>
+              {u.trl_justification && (
+                <p className="text-xs text-neutral-500 dark:text-neutral-400">{u.trl_justification}</p>
+              )}
               <p className="text-neutral-700 dark:text-neutral-300">{u.description}</p>
               {u.exemples.length > 0 && (
                 <div>

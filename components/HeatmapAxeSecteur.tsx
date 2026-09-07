@@ -9,6 +9,7 @@ import {
   LABELS_SECTEUR,
   SECTEURS,
   TEXTURE_NON_DOCUMENTE,
+  etiquetteMaturite,
   paletteTRL,
 } from "@/components/HeatmapTRL";
 
@@ -47,9 +48,10 @@ interface Cellule {
   axe: AxeIA;
   secteur: SecteurUsage;
   observations: Observation[];
-  moyenne: number;
-  min: number;
-  max: number;
+  /** `null` quand aucune observation de la cellule ne porte de TRL chiffré. */
+  moyenne: number | null;
+  min: number | null;
+  max: number | null;
   fiches: number; // nombre de fiches distinctes ayant contribué
 }
 
@@ -60,8 +62,10 @@ function formaterMoyenne(valeur: number): string {
 
 /** Petite distribution en barres : combien d'observations à chaque TRL de 1 à 9. */
 function Distribution({ observations }: { observations: Observation[] }) {
+  const chiffrees = observations.filter((o) => typeof o.usage.trl === "number");
+  const nonChiffrees = observations.length - chiffrees.length;
   const paliers = Array.from({ length: 9 }, (_, i) =>
-    observations.filter((o) => Math.min(Math.max(Math.round(o.usage.trl), 1), 9) === i + 1).length,
+    chiffrees.filter((o) => Math.min(Math.max(Math.round(o.usage.trl as number), 1), 9) === i + 1).length,
   );
   const maxi = Math.max(...paliers, 1);
   return (
@@ -89,6 +93,11 @@ function Distribution({ observations }: { observations: Observation[] }) {
           .join(" ; ")}
         .
       </p>
+      {nonChiffrees > 0 && (
+        <p className="mt-1 text-[10px] text-neutral-500 dark:text-neutral-400">
+          {nonChiffrees} usage{nonChiffrees > 1 ? "s" : ""} sans TRL déterminable, hors distribution.
+        </p>
+      )}
     </div>
   );
 }
@@ -109,19 +118,25 @@ export default function HeatmapAxeSecteur({ fiches }: { fiches: FicheIA[] }) {
             axe: fiche.axe,
             secteur: usage.secteur,
             observations: [{ fiche, usage }],
-            moyenne: 0,
-            min: 0,
-            max: 0,
+            moyenne: null,
+            min: null,
+            max: null,
             fiches: 0,
           });
         }
       });
     });
     index.forEach((cellule) => {
-      const trls = cellule.observations.map((o) => o.usage.trl);
-      cellule.moyenne = trls.reduce((s, t) => s + t, 0) / trls.length;
-      cellule.min = Math.min(...trls);
-      cellule.max = Math.max(...trls);
+      // Depuis le lot du 07/09/2026, un usage peut être documenté sans TRL
+      // (cf. lib/types.ts) : moyenner sur les seuls usages chiffrés, et laisser
+      // la cellule à `null` quand aucun ne l'est — un usage non chiffrable ne
+      // doit ni tirer la moyenne vers le bas ni disparaître de l'effectif.
+      const trls = cellule.observations
+        .map((o) => o.usage.trl)
+        .filter((t): t is number => typeof t === "number");
+      cellule.moyenne = trls.length > 0 ? trls.reduce((s, t) => s + t, 0) / trls.length : null;
+      cellule.min = trls.length > 0 ? Math.min(...trls) : null;
+      cellule.max = trls.length > 0 ? Math.max(...trls) : null;
       cellule.fiches = new Set(cellule.observations.map((o) => o.fiche.id)).size;
     });
     return index;
@@ -209,10 +224,35 @@ export default function HeatmapAxeSecteur({ fiches }: { fiches: FicheIA[] }) {
                         </td>
                       );
                     }
-                    const palette = paletteTRL(cellule.moyenne);
                     const n = cellule.observations.length;
                     const fragile = n < SEUIL_EFFECTIF_FAIBLE;
                     const selectionnee = selection === cle;
+                    if (cellule.moyenne === null || cellule.min === null || cellule.max === null) {
+                      // Croisement documenté, mais aucun de ses usages ne porte de
+                      // TRL déterminable : afficher l'effectif sans couleur d'échelle.
+                      return (
+                        <td key={secteur} className="p-1">
+                          <button
+                            type="button"
+                            onClick={() => setSelection(selectionnee ? null : cle)}
+                            aria-pressed={selectionnee}
+                            aria-label={`${LABELS_AXE_IA[axe]}, ${LABELS_SECTEUR[secteur]} : ${n} usage${
+                              n > 1 ? "s" : ""
+                            } documenté${n > 1 ? "s" : ""}, aucun TRL déterminable. Afficher le détail des fiches agrégées.`}
+                            title={`${LABELS_AXE_IA[axe]} — ${LABELS_SECTEUR[secteur]} · aucun TRL déterminable sur ${n} usage(s)`}
+                            className={`flex h-14 w-full flex-col items-center justify-center gap-0.5 rounded border border-neutral-300 bg-neutral-100 text-neutral-600 transition hover:opacity-80 focus:outline-none focus-visible:ring-2 focus-visible:ring-neutral-900 focus-visible:ring-offset-2 dark:border-neutral-700 dark:bg-neutral-800 dark:text-neutral-300 dark:focus-visible:ring-neutral-100 dark:focus-visible:ring-offset-neutral-950 ${
+                              selectionnee
+                                ? "ring-2 ring-neutral-900 ring-offset-2 dark:ring-neutral-100 dark:ring-offset-neutral-950"
+                                : ""
+                            }`}
+                          >
+                            <span className="text-sm font-semibold">n. c.</span>
+                            <span className="text-[10px] tabular-nums opacity-90">n={n}</span>
+                          </button>
+                        </td>
+                      );
+                    }
+                    const palette = paletteTRL(cellule.moyenne);
                     return (
                       <td key={secteur} className="p-1">
                         <button
@@ -286,6 +326,12 @@ export default function HeatmapAxeSecteur({ fiches }: { fiches: FicheIA[] }) {
           />
           n. d. — aucun usage documenté pour ce croisement (≠ TRL faible)
         </span>
+        <span className="flex items-center gap-1.5">
+          <span className="inline-flex h-5 w-5 items-center justify-center rounded-sm border border-neutral-300 bg-neutral-100 text-[9px] font-semibold text-neutral-600 dark:border-neutral-700 dark:bg-neutral-800 dark:text-neutral-300">
+            n.&nbsp;c.
+          </span>
+          n. c. — usages documentés, aucun TRL déterminable (≠ TRL faible)
+        </span>
       </div>
 
       {celluleAffichee ? (
@@ -295,9 +341,13 @@ export default function HeatmapAxeSecteur({ fiches }: { fiches: FicheIA[] }) {
               {LABELS_AXE_IA[celluleAffichee.axe]} — {LABELS_SECTEUR[celluleAffichee.secteur]}
             </h4>
             <span className="text-xs text-neutral-500 dark:text-neutral-400">
-              TRL moyen {formaterMoyenne(celluleAffichee.moyenne)}/9 · {celluleAffichee.observations.length} usage
+              {celluleAffichee.moyenne === null
+                ? "Aucun TRL déterminable"
+                : `TRL moyen ${formaterMoyenne(celluleAffichee.moyenne)}/9`}{" "}
+              · {celluleAffichee.observations.length} usage
               {celluleAffichee.observations.length > 1 ? "s" : ""} · {celluleAffichee.fiches} fiche
-              {celluleAffichee.fiches > 1 ? "s" : ""} · étendue {celluleAffichee.min}–{celluleAffichee.max}
+              {celluleAffichee.fiches > 1 ? "s" : ""}
+              {celluleAffichee.moyenne !== null ? ` · étendue ${celluleAffichee.min}–${celluleAffichee.max}` : ""}
             </span>
           </div>
 
@@ -316,7 +366,12 @@ export default function HeatmapAxeSecteur({ fiches }: { fiches: FicheIA[] }) {
           <ul className="mt-3 space-y-3">
             {celluleAffichee.observations
               .slice()
-              .sort((a, b) => b.usage.trl - a.usage.trl || a.fiche.nom.localeCompare(b.fiche.nom, "fr"))
+              // Les usages sans TRL déterminable ferment la liste plutôt que de
+              // se ranger avec les TRL 0 — ils n'ont pas de rang sur l'échelle.
+              .sort(
+                (a, b) =>
+                  (b.usage.trl ?? -1) - (a.usage.trl ?? -1) || a.fiche.nom.localeCompare(b.fiche.nom, "fr"),
+              )
               .map((o, i) => (
                 <li key={`${o.fiche.id}-${i}`} className="border-t border-neutral-100 pt-3 dark:border-neutral-900">
                   <div className="flex flex-wrap items-baseline justify-between gap-2">
@@ -324,7 +379,8 @@ export default function HeatmapAxeSecteur({ fiches }: { fiches: FicheIA[] }) {
                       {o.fiche.nom}
                     </Link>
                     <span className="text-xs text-neutral-500 dark:text-neutral-400">
-                      TRL {o.usage.trl}/9{o.fiche.editeur ? ` · ${o.fiche.editeur}` : ""} · vérifié le{" "}
+                      {etiquetteMaturite(o.usage)}
+                      {o.fiche.editeur ? ` · ${o.fiche.editeur}` : ""} · vérifié le{" "}
                       {o.fiche.derniere_verification}
                     </span>
                   </div>
