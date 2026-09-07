@@ -858,24 +858,26 @@
     "axe": "social",
     "sous_domaine": "organisation_internationale",
     "nom": "G7/G8",
-    "these_centrale": "Le G7 (initialement G6 en 1975, devenu G8 avec la Russie de 1998 à 2014) repose sur l'idée qu'une concertation informelle entre grandes puissances économiques démocratiques permet de coordonner les réponses aux crises économiques et géopolitiques mondiales.",
-    "apport": "Il a servi de forum de coordination lors de crises majeures (chocs pétroliers, crise financière de 2008) et de plateforme d'annonces politiques communes (sanctions, aides), l'exclusion de la Russie en 2014 marquant son retour au format G7.",
-    "limites_critiques": "Dépourvu de tout secrétariat permanent ou pouvoir contraignant, le G7 ne représente qu'une fraction des grandes puissances économiques mondiales (excluant Chine, Inde, Brésil), ce qui a alimenté sa concurrence croissante avec le G20 et les BRICS comme forums plus représentatifs.",
+    "these_centrale": "Le G7 (issu d'un G5 informel lancé en 1974 après le premier choc pétrolier, réuni en G6 au sommet de Rambouillet en 1975, élargi au Canada en 1976 puis formellement à la Russie en 1997 pour devenir le G8) repose sur l'idée qu'une concertation informelle entre grandes puissances économiques avancées permet de coordonner les réponses aux crises économiques et géopolitiques mondiales.",
+    "apport": "Il a servi de forum de coordination à la suite du premier choc pétrolier et de plateforme d'annonces politiques communes — ainsi l'engagement pris au sommet de Gleneagles en 2005 de porter à 25 milliards de dollars l'aide supplémentaire au développement de l'Afrique ; la suspension de la Russie après l'annexion de la Crimée en 2014, suivie de son retrait définitif en 2017, a marqué le retour au format G7.",
+    "limites_critiques": "Le G7 n'est pas une administration transnationale et ne dispose d'aucune structure permanente ni d'aucun pouvoir contraignant : l'Africa Progress Panel présidé par Kofi Annan a constaté par rapport en juin 2008 que l'engagement de Gleneagles n'avait pas été tenu. Il ne réunit par ailleurs que 7 des 10 premiers PIB mondiaux, à l'exclusion notable de la Chine (2e rang) et de l'Inde (5e rang).",
     "sources": [
       {
-        "titre": "Groupe des sept",
-        "url": "https://fr.wikipedia.org/wiki/Groupe_des_sept",
+        "titre": "Déclaration des dirigeants du G7 sur le processus d'Hiroshima en matière d'IA (document officiel du G7)",
+        "url": "https://www.international.gc.ca/world-monde/international_relations-relations_internationales/g7/documents/2023-10-30-ai-hiroshima-ia.aspx?lang=fra",
+        "date": "2023-10-30",
         "type": "primaire"
       },
       {
-        "titre": "G7 — Wikipédia",
-        "url": "https://fr.wikipedia.org/wiki/G7",
+        "titre": "Groupe des sept (économie) — Wikipédia",
+        "url": "https://fr.wikipedia.org/wiki/Groupe_des_sept_(économie)",
+        "date": "2026-09-07",
         "type": "secondaire"
       }
     ],
     "statut": "documente",
-    "derniere_verification": "2026-09-05",
-    "resonance_ia": "Le G7 a lancé en 2023 le « Processus d'Hiroshima » sur l'IA générative, tentative de coordination normative entre grandes démocraties industrialisées qui illustre à la fois l'utilité et les limites représentatives de ce format restreint."
+    "derniere_verification": "2026-09-07",
+    "resonance_ia": "Le G7 a adopté le 30 octobre 2023, dans le cadre du « Processus d'Hiroshima », une déclaration de ses dirigeants accompagnée de principes directeurs internationaux et d'un code de conduite pour les organisations développant des systèmes d'IA avancés, en particulier les modèles de fondation et l'IA générative — une coordination normative volontaire, non contraignante, à l'image du format lui-même."
   },
   {
     "id": "ue-cee",
@@ -883,23 +885,37 @@
     "sous_domaine": "organisation_internationale",
     "nom": "UE/CEE",
     "these_centrale": "La construction européenne, de la CEE (1957) à l'Union européenne (traité de Maastricht, 1993), part du principe qu'une intégration économique puis politique progressive entre États européens peut garantir la paix et la prospérité durables sur le continent.",
-    "apport": "Elle a créé un marché unique, une monnaie commune pour une majorité de ses membres, et un corpus réglementaire influent au niveau mondial (le fameux « effet Bruxelles »), notamment en matière de protection des données et, plus récemment, de régulation de l'IA.",
-    "limites_critiques": "Le déficit démocratique perçu de ses institutions, les tensions entre souveraineté nationale et intégration supranationale (illustrées par le Brexit en 2020) et l'hétérogénéité économique entre États membres continuent de fragiliser sa cohésion politique.",
+    "apport": "Elle a achevé un marché intérieur permettant la libre circulation des biens, des capitaux et des services, et doté 20 de ses 27 États membres d'une monnaie commune, l'euro ; ses normes exercent au-delà de ses frontières un « effet Bruxelles » — notion forgée en 2012 par la juriste Anu Bradford — dont le RGPD est l'exemple le plus documenté, plusieurs États et grandes entreprises technologiques ayant aligné leurs pratiques mondiales sur ce règlement.",
+    "limites_critiques": "Le fonctionnement de l'Union est fréquemment dénoncé comme insuffisamment démocratique, et la tension entre souveraineté nationale et intégration supranationale a conduit au référendum britannique du 23 juin 2016 puis au retrait effectif du Royaume-Uni le 31 janvier 2020.",
     "sources": [
       {
-        "titre": "Communauté économique européenne",
-        "url": "https://fr.wikipedia.org/wiki/Communauté_économique_européenne",
+        "titre": "Règlement (UE) 2024/1689 du Parlement européen et du Conseil établissant des règles harmonisées concernant l'intelligence artificielle",
+        "url": "https://eur-lex.europa.eu/legal-content/FR/TXT/?uri=OJ:L_202401689",
+        "date": "2024-06-13",
         "type": "primaire"
       },
       {
         "titre": "Communauté économique européenne — Wikipédia",
         "url": "https://fr.wikipedia.org/wiki/Communauté_économique_européenne",
+        "date": "2026-09-07",
+        "type": "secondaire"
+      },
+      {
+        "titre": "Union européenne — Wikipédia",
+        "url": "https://fr.wikipedia.org/wiki/Union_européenne",
+        "date": "2026-09-07",
+        "type": "secondaire"
+      },
+      {
+        "titre": "Effet Bruxelles — Wikipédia",
+        "url": "https://fr.wikipedia.org/wiki/Effet_Bruxelles",
+        "date": "2026-09-07",
         "type": "secondaire"
       }
     ],
     "statut": "documente",
-    "derniere_verification": "2026-09-05",
-    "resonance_ia": "Le règlement européen sur l'IA (AI Act, 2024) est devenu la référence mondiale la plus aboutie de régulation contraignante de l'intelligence artificielle, prolongeant « l'effet Bruxelles » déjà observé avec le RGPD sur la protection des données."
+    "derniere_verification": "2026-09-07",
+    "resonance_ia": "Le règlement (UE) 2024/1689 sur l'intelligence artificielle, publié au Journal officiel le 13 juin 2024, établit des règles harmonisées contraignantes pour les systèmes d'IA dans l'ensemble de l'Union — première réglementation générale de ce type, dans la continuité du mécanisme d'extraterritorialité de fait décrit sous le nom d'« effet Bruxelles »."
   },
   {
     "id": "asean",

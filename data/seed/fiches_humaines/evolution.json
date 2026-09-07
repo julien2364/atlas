@@ -1178,22 +1178,37 @@
     "sous_domaine": "sciences",
     "nom": "RIKEN",
     "these_centrale": "Le RIKEN (fondé en 1917 au Japon) est le plus grand institut de recherche scientifique généraliste du pays, couvrant la physique, la chimie, la biologie et les sciences informatiques à travers plusieurs campus, dont le principal près de Tokyo.",
-    "apport": "A hébergé les travaux de Shinya Yamanaka sur les cellules souches induites (iPS) ; exploite plusieurs des supercalculateurs les plus puissants au monde (dont Fugaku), utilisés notamment pour la simulation climatique et la recherche en IA.",
-    "limites_critiques": "L'institut a été fortement affecté en 2014 par un scandale de fraude scientifique majeur (affaire des cellules STAP), qui a conduit au suicide d'un de ses chercheurs seniors et a durablement entaché la réputation de l'un de ses centres, révélant des failles dans ses procédures de vérification interne.",
+    "apport": "Une équipe du RIKEN dirigée par Masayo Takahashi a réalisé le 12 septembre 2014 la première étude clinique au monde utilisant des cellules souches pluripotentes induites (CSPi), par transplantation d'un film de cellules rétiniennes développé à partir de cellules adultes de peau ; l'institut exploite par ailleurs des supercalculateurs de premier rang mondial — l'ordinateur K, le plus puissant du monde en 2011, puis son successeur Fugaku.",
+    "limites_critiques": "L'institut a été fortement affecté en 2014 par l'affaire des cellules STAP : son enquête interne a conclu le 1er avril 2014 que Haruko Obokata avait falsifié des données, les articles ont été rétractés le 2 juillet 2014 et son superviseur Yoshiki Sasai s'est donné la mort le 5 août 2014 dans un bâtiment du RIKEN à Kobe — un enchaînement qui a mis en cause les procédures de vérification interne de l'institut.",
     "sources": [
       {
-        "titre": "History of RIKEN (RIKEN, document institutionnel)",
+        "titre": "History of RIKEN (RIKEN, page institutionnelle)",
+        "url": "https://www.riken.jp/en/about/history/",
+        "date": "2026-09-07",
         "type": "primaire"
       },
       {
         "titre": "RIKEN — Wikipédia",
         "url": "https://fr.wikipedia.org/wiki/RIKEN",
+        "date": "2026-09-07",
+        "type": "secondaire"
+      },
+      {
+        "titre": "STAP cell — Wikipedia (EN)",
+        "url": "https://en.wikipedia.org/wiki/STAP_cell",
+        "date": "2026-09-07",
+        "type": "secondaire"
+      },
+      {
+        "titre": "RIKEN Center for Advanced Intelligence Project (AIP)",
+        "url": "https://aip.riken.jp/",
+        "date": "2026-09-07",
         "type": "secondaire"
       }
     ],
     "statut": "documente",
-    "derniere_verification": "2026-09-05",
-    "resonance_ia": "Le RIKEN dispose d'un centre dédié à la science de l'intelligence artificielle avancée (AIP) et met ses supercalculateurs à disposition de la recherche japonaise en apprentissage automatique."
+    "derniere_verification": "2026-09-07",
+    "resonance_ia": "Le RIKEN héberge un centre dédié à l'intelligence artificielle, le Center for Advanced Intelligence Project (AIP), qui met notamment le système de calcul RAIDEN à disposition de la recherche en apprentissage profond."
   },
   {
     "id": "giec-ipcc",
@@ -1246,22 +1261,25 @@
     "axe": "evolution",
     "sous_domaine": "sciences",
     "nom": "Fermilab",
-    "these_centrale": "Le Fermilab (Fermi National Accelerator Laboratory, près de Chicago) est le principal laboratoire américain de physique des hautes énergies, dédié à l'étude des particules fondamentales grâce à ses accélérateurs, en particulier des neutrinos et de la matière noire.",
-    "apport": "A découvert le quark top (1995) et le neutrino tau (2000), deux des dernières particules du modèle standard restant à observer directement au moment de leur découverte ; mène aujourd'hui des expériences de référence sur les oscillations de neutrinos (DUNE).",
-    "limites_critiques": "A perdu son rôle de premier plan mondial en physique des très hautes énergies avec l'arrêt de son accélérateur Tevatron en 2011, l'exploration de cette frontière énergétique se concentrant désormais principalement sur le LHC du CERN, plus puissant.",
+    "these_centrale": "Le Fermilab (Fermi National Accelerator Laboratory, près de Chicago) se présente comme le principal laboratoire américain de physique des particules et des accélérateurs, avec pour ambition affichée de conduire la recherche mondiale sur les neutrinos et de sonder la nature de la matière noire et de l'énergie noire.",
+    "apport": "Ses équipes ont annoncé en 1995 la découverte du quark top grâce aux détecteurs CDF et DØ du Tevatron, puis en juillet 2000 celle du neutrino tau par la collaboration DONUT ; le laboratoire porte aujourd'hui le programme LBNF/DUNE d'étude des oscillations de neutrinos, dont le coût était estimé à plus de 3 milliards de dollars en 2021.",
+    "limites_critiques": "L'arrêt du Tevatron en 2011 a mis fin à son rôle de premier plan sur la frontière des très hautes énergies, désormais occupée par le LHC du CERN, auquel le Fermilab ne participe plus que comme site de calcul de niveau 1 de la grille mondiale.",
     "sources": [
       {
-        "titre": "Fermilab: Physics, the Frontier, and Megascience (Hoddeson et al., 2008)",
+        "titre": "About Fermilab (Fermi National Accelerator Laboratory, page institutionnelle)",
+        "url": "https://www.fnal.gov/pub/about/index.html",
+        "date": "2026-09-07",
         "type": "primaire"
       },
       {
-        "titre": "Fermilab — Wikipédia",
-        "url": "https://fr.wikipedia.org/wiki/Fermilab",
+        "titre": "Fermilab — Wikipedia (EN)",
+        "url": "https://en.wikipedia.org/wiki/Fermilab",
+        "date": "2026-09-07",
         "type": "secondaire"
       }
     ],
     "statut": "documente",
-    "derniere_verification": "2026-09-05",
+    "derniere_verification": "2026-09-07",
     "resonance_ia": "Le Fermilab applique l'apprentissage automatique au traitement des immenses volumes de données produits par ses détecteurs de particules et ses expériences sur les neutrinos."
   }
 ]
