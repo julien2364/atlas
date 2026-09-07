@@ -17,8 +17,8 @@
         "trl": 9,
         "trl_justification": "Claude for Education est un produit commercialisé : la page produit de l'éditeur, consultée le 07/09/2026, nomme neuf universités clientes, dont la London School of Economics, Dartmouth College et l'université de Virginie.",
         "exemples": [
-          "Génération de plans de cours différenciés par niveau à partir d'un programme officiel",
-          "Correction et feedback formatif sur des copies d'élèves (dissertation, code, exercices)"
+          "Neuf universités clientes nommées par l'éditeur, dont la London School of Economics, Dartmouth College et l'université de Virginie",
+          "Conception de devoirs et de supports de cours, la page produit invitant les enseignants à « design assignments that require original thinking »"
         ],
         "sources": [
           {
@@ -35,8 +35,8 @@
         "trl": null,
         "diffusion": "emergent",
         "exemples": [
-          "Synthèse comparative de plusieurs papiers arXiv sur une question de recherche donnée",
-          "Extraction structurée de données depuis des PDF de publications scientifiques"
+          "Claude for Research Labs : connexion aux bases et fichiers dont dépend la recherche, repérage des lacunes de preuve, rédaction de sections adossées au corpus disponible",
+          "Claude Science : exécution d'analyses, interrogation de bases et traçage de chaque étape, « from data wrangling to publication »"
         ],
         "sources": [
           {
@@ -51,7 +51,7 @@
     "limites_connues": "Hallucination possible sur faits de niche ; pas de mémoire persistante native hors mécanismes dédiés ; dépendance à la qualité du prompt/contexte fourni.",
     "sources": [
       {
-        "titre": "Documentation Anthropic (plateforme Claude)",
+        "titre": "Anthropic — Claude Docs, référence développeur (platform.claude.com)",
         "url": "https://docs.claude.com",
         "date": "2026-09-07",
         "type": "primaire"
@@ -83,8 +83,8 @@
         "trl": 9,
         "trl_justification": "« Now available in the ChatGPT app » et six entreprises utilisatrices nommées par l'éditeur — Wonderful, Harvey, Sierra, Ramp, Duolingo, Cisco Meraki — dont plusieurs décrivent un usage en production (page consultée le 07/09/2026).",
         "exemples": [
-          "Agents de codage autonomes exécutant des tâches de refactoring multi-fichiers avec tests",
-          "Revue de code automatisée intégrée aux pipelines CI/CD"
+          "Refactoring et génération de tests confiés à l'agent (Cisco Meraki : « Codex handled the refactor and test generation »)",
+          "Revue automatisée de pull requests (Ramp : « Codex PR reviews catch bugs our team would have missed »)"
         ],
         "sources": [
           {
@@ -96,10 +96,10 @@
         ]
       }
     ],
-    "limites_connues": "Hallucination de code plausible mais incorrect ; dépendance à la qualité des specs fournies.",
+    "limites_connues": "Hallucination de code plausible mais incorrect ; dépendance à la qualité des specs fournies. Aucun de ces deux points n'est traçable aux sources de la fiche : les trois sont des pages OpenAI, et la page produit Codex ne comporte aucune section de limites — c'est un document commercial. La fiche n'oppose à ce jour aucune source indépendante à l'éditeur.",
     "sources": [
       {
-        "titre": "Documentation OpenAI",
+        "titre": "OpenAI Platform — référence d'API (platform.openai.com/docs)",
         "url": "https://platform.openai.com/docs",
         "date": "2026-09-07",
         "type": "primaire"
@@ -131,9 +131,8 @@
         "trl": null,
         "diffusion": "etabli",
         "exemples": [
-          "Variantes distillées de DeepSeek-R1, de 1,5 à 70 milliards de paramètres, initialisées à partir d'autres modèles open-weights (LLaMA, Qwen)",
-          "Diffusion des modèles sur Hugging Face, permettant leur réutilisation et leur modification par des tiers",
-          "Publication des modèles sous licences libres depuis janvier 2025, DeepSeek-V3-0324 et suivants étant sous licence MIT"
+          "Variantes distillées de DeepSeek-R1, de 1,5 à 70 milliards de paramètres",
+          "Publication des modèles sous licences libres et ouvertes depuis janvier 2025, DeepSeek-V3-0324 et suivants sous licence MIT"
         ],
         "sources": [
           {
@@ -182,12 +181,12 @@
     "usages": [
       {
         "secteur": "industrie",
-        "description": "Fondation historique des systèmes de vision par ordinateur industriels (contrôle qualité visuel, tri automatisé)",
+        "description": "Classification d'images validée sur le benchmark ImageNet au concours ILSVRC 2012, à l'origine des systèmes de vision par ordinateur industriels ultérieurs",
         "trl": 4,
         "trl_justification": "AlexNet a été validé sur le benchmark ImageNet au concours ILSVRC du 30 septembre 2012 (taux d'erreur top-5 de 15,3 %). La source ne documente aucun déploiement industriel : le TRL 9 précédemment déclaré était celui de ses successeurs, pas le sien.",
         "exemples": [
-          "Inspection visuelle automatisée de pièces manufacturées",
-          "Systèmes de reconnaissance d'objets en robotique industrielle"
+          "Taux d'erreur top-5 de 15,3 % au concours ImageNet du 30 septembre 2012, plus de 10,8 points devant le second",
+          "Architectures ultérieures que la source rattache à son influence : GoogLeNet, VGGNet, Highway networks, ResNet"
         ],
         "sources": [
           {
@@ -204,8 +203,8 @@
         "trl": null,
         "diffusion": "historique",
         "exemples": [
-          "Point de départ pédagogique de la plupart des cours de deep learning",
-          "Base de comparaison pour l'évaluation de nouvelles architectures de vision"
+          "Architecture ayant « influencé un grand nombre de travaux ultérieurs en apprentissage profond », selon la source",
+          "Ligne de recherche ultérieure visant à reproduire ses performances à moindre coût : SqueezeNet, MobileNet, EfficientNet"
         ],
         "sources": [
           {
@@ -217,7 +216,7 @@
         ]
       }
     ],
-    "limites_connues": "Architecture aujourd'hui dépassée en précision et en efficacité par des réseaux plus profonds (ResNet, Vision Transformers) ; gourmande en mémoire pour l'époque et peu adaptée aux contraintes actuelles d'inférence embarquée.",
+    "limites_connues": "La source ne compare AlexNet à aucune architecture ultérieure, ni en précision ni en efficacité : elle mentionne les réseaux plus profonds qui l'ont suivi (GoogLeNet, VGGNet, ResNet) et ceux conçus pour l'efficacité (SqueezeNet, MobileNet, EfficientNet), ainsi qu'une ligne de recherche visant à reproduire ses performances à moindre coût. Sa consommation mémoire et son inadaptation à l'inférence embarquée, souvent avancées, ne sont attestées par aucune source de la fiche.",
     "sources": [
       {
         "titre": "Krizhevsky, Sutskever & Hinton, « ImageNet Classification with Deep Convolutional Neural Networks », NIPS 2012",
@@ -248,12 +247,12 @@
     "usages": [
       {
         "secteur": "industrie",
-        "description": "Surveillance et sécurité par détection d'objets et de personnes en temps réel",
+        "description": "Détection d'objets en temps réel sur image ou flux vidéo, en une seule passe avant du réseau",
         "trl": null,
         "diffusion": "etabli",
         "exemples": [
-          "Vidéosurveillance intelligente en temps réel",
-          "Comptage et suivi d'objets sur chaîne de production"
+          "Détection en une seule passe avant du réseau, là où les méthodes à propositions de régions comme R-CNN en exigent des milliers par image",
+          "Famille d'architectures maintenue de la version 1 (Redmon et al., 2015-2016) aux versions 8 et suivantes"
         ],
         "sources": [
           {
@@ -269,10 +268,7 @@
         "description": "Applications de sécurité publique et de gestion du trafic urbain via détection vidéo temps réel",
         "trl": null,
         "diffusion": "emergent",
-        "exemples": [
-          "Détection de véhicules et comptage de trafic routier",
-          "Systèmes d'aide à la surveillance urbaine"
-        ],
+        "exemples": [],
         "sources": [
           {
             "titre": "You Only Look Once — Wikipedia (EN)",
@@ -283,7 +279,7 @@
         ]
       }
     ],
-    "limites_connues": "Moins précis que des architectures à deux étapes (comme Faster R-CNN) sur la détection de très petits objets ou de scènes très denses, et les usages de vidéosurveillance qu'il permet posent des questions de vie privée et de biais algorithmique.",
+    "limites_connues": "La source ne documente que l'architecture et son principe de détection en une seule passe : elle n'établit aucune comparaison de précision avec les architectures à deux étapes comme Faster R-CNN, ni sur les très petits objets ni sur les scènes denses, et ne décrit aucun déploiement réel. Les usages de vidéosurveillance que ce type de détecteur rend possible posent par ailleurs des questions de vie privée et de biais algorithmique, que la source n'aborde pas.",
     "sources": [
       {
         "titre": "Redmon, Divvala, Girshick & Farhadi, « You Only Look Once: Unified, Real-Time Object Detection »",
@@ -319,8 +315,8 @@
         "trl": null,
         "diffusion": "standard",
         "exemples": [
-          "Reconnaissance faciale et biométrique",
-          "Systèmes de classification d'images à grande échelle"
+          "Architecture résiduelle permettant l'entraînement de réseaux profonds — ResNet-50, ResNet-101, ResNet-152 —, vainqueur du concours ImageNet ILSVRC 2015",
+          "Vision par ordinateur, seul domaine d'application que la source lui reconnaît : « Originally, ResNet was designed for computer vision »"
         ],
         "sources": [
           {
@@ -337,8 +333,8 @@
         "trl": null,
         "diffusion": "standard",
         "exemples": [
-          "Base de nombreux travaux ultérieurs en apprentissage profond (EfficientNet, Vision Transformers hybrides)",
-          "Utilisation comme extracteur de caractéristiques pré-entraîné (transfer learning)"
+          "Variante à pré-activation entraînée jusqu'à 200 couches, la littérature citée allant de 200 à plus de 1 000 couches",
+          "Connexions résiduelles reprises dans les architectures Transformer"
         ],
         "sources": [
           {
@@ -350,7 +346,7 @@
         ]
       }
     ],
-    "limites_connues": "Conçu spécifiquement pour la vision par ordinateur, largement supplanté depuis 2020 par les architectures Vision Transformer sur les tâches où de très grands volumes de données sont disponibles, tout en restant compétitif à budget de calcul limité.",
+    "limites_connues": "Conçue à l'origine pour la vision par ordinateur, seul domaine d'application que la source lui reconnaît. Celle-ci n'établit aucune comparaison de performance ni de calendrier avec les architectures Vision Transformer : l'affirmation d'un remplacement depuis 2020, comme l'adaptation à d'autres modalités (audio, texte), ne sont traçables à aucune source de la fiche.",
     "sources": [
       {
         "titre": "He, Zhang, Ren & Sun, « Deep Residual Learning for Image Recognition »",
@@ -386,8 +382,8 @@
         "trl": 9,
         "trl_justification": "Déployé sur Google Search : requêtes en anglais aux États-Unis à partir du 25 octobre 2019, plus de 70 langues au 9 décembre 2019, et « almost every single English-based query » traitée par un modèle BERT en octobre 2020.",
         "exemples": [
-          "Amélioration de la pertinence des résultats de recherche (déployé par Google Search)",
-          "Classification de texte, analyse de sentiment, extraction d'entités nommées"
+          "Requêtes en anglais de Google Search traitées par BERT à partir du 25 octobre 2019, puis plus de 70 langues au 9 décembre 2019",
+          "En octobre 2020, « almost every single English-based query » de Google Search traitée par un modèle BERT"
         ],
         "sources": [
           {
@@ -404,8 +400,7 @@
         "trl": null,
         "diffusion": "standard",
         "exemples": [
-          "Base de nombreuses variantes spécialisées (RoBERTa, DistilBERT, domain-specific BERT)",
-          "Extraction de représentations vectorielles de texte pour la recherche sémantique"
+          "« As of 2026, BERT is a common methodological component in natural language processing (NLP) research », selon la source"
         ],
         "sources": [
           {
@@ -453,8 +448,9 @@
         "trl": 9,
         "trl_justification": "Déploiements nommés et datés : l'assistant Meta AI construit sur Llama 3, le Zoom AI Companion sur Llama 2, et Llama 3.2 embarqué par Booz Allen Hamilton à bord de la Station spatiale internationale en avril 2025.",
         "exemples": [
-          "Chatbots d'entreprise déployés sur infrastructure propriétaire pour des raisons de confidentialité",
-          "Modèles spécialisés (fine-tunés) pour des domaines métiers spécifiques"
+          "Assistant Meta AI construit sur Llama 3",
+          "Zoom AI Companion construit sur Llama 2 : résumés de réunion, conseils de présentation, aide à la réponse",
+          "Llama 3.2 déployé par Booz Allen Hamilton à bord de la Station spatiale internationale en avril 2025 (projet Space Llama)"
         ],
         "sources": [
           {
@@ -471,8 +467,8 @@
         "trl": null,
         "diffusion": "standard",
         "exemples": [
-          "Expérimentation académique sur l'alignement et la sécurité des modèles de langage",
-          "Base de nombreux modèles dérivés développés par la communauté open source"
+          "Alpaca, recette d'entraînement du Stanford HAI Center fondée sur Llama 7B, retirée le 21 mars 2023 pour des raisons de coût d'hébergement et de sûreté",
+          "Meditron, famille de modèles fondés sur Llama et affinés sur des recommandations cliniques et des articles PubMed (EPFL et Yale School of Medicine)"
         ],
         "sources": [
           {
@@ -520,8 +516,8 @@
         "trl": 9,
         "trl_justification": "La base AlphaFold, exploitée par l'EMBL-EBI avec Google DeepMind, est ouverte au public depuis 2021 (plus de 365 000 protéines humaines et 20 organismes modèles) et couvre en 2024 la quasi-totalité des protéines connues : infrastructure en service courant.",
         "exemples": [
-          "Base de données AlphaFold couvrant la quasi-totalité des protéines connues, mise à disposition gratuite de la communauté scientifique",
-          "Accélération de la recherche sur les maladies et la conception de médicaments"
+          "Base AlphaFold ouverte au public en 2021 avec plus de 365 000 protéines humaines et 20 organismes modèles, couvrant en 2024 la quasi-totalité des protéines connues",
+          "Base exploitée par l'EMBL-EBI avec Google DeepMind et consultable librement"
         ],
         "sources": [
           {
@@ -549,8 +545,8 @@
         "trl": 8,
         "trl_justification": "Isomorphic Labs a déclaré en mai 2024 utiliser AlphaFold 3, avec d'autres modèles d'IA, pour automatiser son processus de découverte de médicaments.",
         "exemples": [
-          "Identification de cibles protéiques pour la conception de nouveaux médicaments",
-          "Étude de protéines impliquées dans des maladies négligées, peu étudiées faute de rentabilité commerciale"
+          "Isomorphic Labs a déclaré en mai 2024 utiliser AlphaFold 3, avec d'autres modèles d'IA, pour automatiser la découverte de médicaments",
+          "AlphaFold 3 prédit les interactions des protéines avec l'ADN, l'ARN et certains ligands ou ions"
         ],
         "sources": [
           {
@@ -609,8 +605,8 @@
         "trl": 9,
         "trl_justification": "Modèle publié publiquement en 2022 — « code and model weights have been released publicly », exécutable « on most consumer hardware » — et dont l'usage public massif est attesté par les poursuites de trois artistes et de Getty Images en janvier 2023.",
         "exemples": [
-          "Génération de visuels publicitaires et de concepts créatifs pour des agences de design",
-          "Prototypage visuel rapide dans les industries créatives (jeu vidéo, mode)"
+          "Code et poids du modèle publiés publiquement, une version optimisée s'exécutant « on most consumer hardware »",
+          "Usage public massif attesté par les poursuites de trois artistes (Sarah Andersen, Kelly McKernan, Karla Ortiz) et de Getty Images en janvier 2023"
         ],
         "sources": [
           {
@@ -626,10 +622,7 @@
         "description": "Illustration de contenus pédagogiques et création de supports visuels personnalisés",
         "trl": null,
         "diffusion": "emergent",
-        "exemples": [
-          "Génération d'illustrations pour des supports de cours",
-          "Visualisation de concepts abstraits pour l'enseignement"
-        ],
+        "exemples": [],
         "sources": [
           {
             "titre": "Stable Diffusion — Wikipedia (EN)",
@@ -672,12 +665,12 @@
     "usages": [
       {
         "secteur": "industrie",
-        "description": "Prévision de ventes, de prix ou de tout indicateur quantitatif à partir de facteurs explicatifs mesurables",
+        "description": "Ajustement d'une relation linéaire entre grandeurs mesurées, en métrologie industrielle et en caractérisation de matériaux",
         "trl": null,
         "diffusion": "standard",
         "exemples": [
-          "Prévision de la demande en fonction du prix et de la saisonnalité",
-          "Modélisation de la relation entre dépenses marketing et chiffre d'affaires"
+          "Métrologie par coordonnées : vérification de la rectitude et de la planéité de pièces",
+          "Sciences des matériaux : caractérisation de la cinétique d'oxydation à haute température"
         ],
         "sources": [
           {
@@ -694,8 +687,9 @@
         "trl": null,
         "diffusion": "standard",
         "exemples": [
-          "Estimation de l'effet d'une politique publique sur un indicateur économique",
-          "Analyse de facteurs de risque en épidémiologie"
+          "Économétrie : évaluation des rendements de l'éducation, effet du salaire selon les années d'études",
+          "Sciences de l'éducation : effet de la taille des classes sur les performances scolaires",
+          "Climatologie : pluviométrie en fonction de l'altitude dans les Alpes du Nord"
         ],
         "sources": [
           {
@@ -733,12 +727,12 @@
     "usages": [
       {
         "secteur": "industrie",
-        "description": "Scoring de crédit et détection de fraude bancaire à partir de variables clients",
+        "description": "Scoring de risque bancaire et ciblage assurantiel à partir de variables clients",
         "trl": null,
         "diffusion": "standard",
         "exemples": [
-          "Évaluation du risque de défaut de paiement d'un emprunteur",
-          "Détection de transactions frauduleuses par carte bancaire"
+          "Domaine bancaire : « détecter les groupes à risque lors de la souscription d'un crédit »",
+          "Assurance : ciblage de la clientèle sensible à certaines polices"
         ],
         "sources": [
           {
@@ -755,8 +749,8 @@
         "trl": null,
         "diffusion": "etabli",
         "exemples": [
-          "Prédiction du risque de complication post-opératoire",
-          "Modèles épidémiologiques de facteurs de risque de maladie"
+          "Médecine : « trouver les facteurs qui caractérisent un groupe de sujets malades par rapport à des sujets sains »",
+          "Épidémiologie obstétricale : prédiction du faible poids à la naissance, exemple développé par la source"
         ],
         "sources": [
           {
@@ -797,10 +791,7 @@
         "description": "Aide à la décision administrative fondée sur des règles explicables et auditables",
         "trl": null,
         "diffusion": "etabli",
-        "exemples": [
-          "Systèmes d'éligibilité à des aides sociales fondés sur des critères vérifiables",
-          "Modèles de risque explicables pour des décisions publiques sensibles"
-        ],
+        "exemples": [],
         "sources": [
           {
             "titre": "Arbre de décision (apprentissage) — Wikipédia",
@@ -815,10 +806,7 @@
         "description": "Segmentation de clientèle et modèles de décision métier explicables",
         "trl": null,
         "diffusion": "standard",
-        "exemples": [
-          "Segmentation de clients pour des campagnes marketing ciblées",
-          "Diagnostic de pannes fondé sur des règles de décision"
-        ],
+        "exemples": [],
         "sources": [
           {
             "titre": "Arbre de décision (apprentissage) — Wikipédia",
@@ -859,8 +847,7 @@
         "trl": null,
         "diffusion": "standard",
         "exemples": [
-          "Prédiction de la maintenance préventive d'équipements industriels",
-          "Scoring de risque client en assurance"
+          "Modèle uplift : détection des populations sensibles à une opération de marketing, seul cas d'application donné par la source"
         ],
         "sources": [
           {
@@ -876,10 +863,7 @@
         "description": "Modèles prédictifs à partir de données cliniques ou biologiques tabulaires",
         "trl": null,
         "diffusion": "etabli",
-        "exemples": [
-          "Prédiction du risque de réhospitalisation à partir de dossiers patients",
-          "Classification de profils de patients à partir de données biologiques"
-        ],
+        "exemples": [],
         "sources": [
           {
             "titre": "Forêt d'arbres décisionnels — Wikipédia",
@@ -890,7 +874,7 @@
         ]
       }
     ],
-    "limites_connues": "Moins interprétable qu'un arbre de décision unique (effet de « boîte grise »), plus coûteuse en calcul et en mémoire, et généralement surpassée sur données tabulaires structurées par les méthodes de gradient boosting (XGBoost, LightGBM) en pratique compétitive.",
+    "limites_connues": "Moins interprétable qu'un arbre de décision unique : la source relève qu'« avec la méthode des arbres aléatoires, on perd l'aspect visuel de n'avoir qu'un seul arbre ». Le surcoût en calcul et en mémoire et la comparaison de performance avec les méthodes de gradient boosting, souvent avancés, ne sont attestés par aucune source de la fiche — celle-ci note au contraire que le tirage aléatoire d'un sous-ensemble d'attributs réduit le temps de calcul.",
     "sources": [
       {
         "titre": "Leo Breiman, « Random Forests », Machine Learning 45(1), 2001",
@@ -925,8 +909,7 @@
         "trl": null,
         "diffusion": "etabli",
         "exemples": [
-          "Classification de signaux issus d'instruments de mesure scientifique",
-          "Reconnaissance de motifs dans des données expérimentales limitées en volume"
+          "Domaines d'application nommés par la source : bio-informatique, recherche d'information, vision par ordinateur, finance"
         ],
         "sources": [
           {
@@ -942,10 +925,7 @@
         "description": "Classification de texte et de documents dans des applications de traitement automatique de la langue plus anciennes",
         "trl": null,
         "diffusion": "etabli",
-        "exemples": [
-          "Filtrage de spam par classification de texte",
-          "Reconnaissance d'écriture manuscrite"
-        ],
+        "exemples": [],
         "sources": [
           {
             "titre": "Machine à vecteurs de support — Wikipédia",
@@ -956,7 +936,7 @@
         ]
       }
     ],
-    "limites_connues": "Passe mal à l'échelle sur de très grands volumes de données (complexité de calcul élevée), sensible au choix du noyau et de ses hyperparamètres, et largement supplantée par l'apprentissage profond sur les tâches de vision et de traitement du langage à grande échelle.",
+    "limites_connues": "La source relève l'impossibilité de traiter des données non linéairement séparables sans passer par les fonctions noyau, la sensibilité au mauvais étiquetage, et les problèmes de normalisation et de déséquilibre des méthodes multiclasses « un contre tous ». Le coût de calcul sur de très grands volumes, la sensibilité au choix des hyperparamètres et le remplacement par l'apprentissage profond, souvent avancés, ne sont attestés par aucune source de la fiche.",
     "sources": [
       {
         "titre": "Machine à vecteurs de support — Wikipédia",
@@ -967,7 +947,7 @@
     ],
     "statut": "documente",
     "derniere_verification": "2026-09-07",
-    "editeur": "Méthode statistique développée notamment par Vladimir Vapnik et Corinna Cortes (années 1990)",
+    "editeur": "Idées rassemblées en 1992 par Bernhard Boser, Isabelle Guyon et Vladimir Vapnik (article fondateur) ; technique de marge souple proposée en 1995 par Corinna Cortes et Vladimir Vapnik",
     "architecture": "Algorithme de classification (ou régression) cherchant l'hyperplan séparateur qui maximise la marge entre les classes, avec extension non linéaire via des fonctions noyau (kernel trick)"
   },
   {
@@ -986,8 +966,7 @@
         "trl": null,
         "diffusion": "etabli",
         "exemples": [
-          "Recommandation de produits similaires à partir des achats passés",
-          "Détection d'anomalies par comparaison aux observations les plus proches"
+          "Micro-tableaux de données génétiques, seul cas d'application concret cité par la source"
         ],
         "sources": [
           {
@@ -1003,10 +982,7 @@
         "description": "Méthode de référence pédagogique et de comparaison de base (baseline) dans les études de classification",
         "trl": null,
         "diffusion": "standard",
-        "exemples": [
-          "Baseline de comparaison dans les publications de recherche en apprentissage automatique",
-          "Classification exploratoire de jeux de données de petite taille"
-        ],
+        "exemples": [],
         "sources": [
           {
             "titre": "Méthode des k plus proches voisins — Wikipédia",
@@ -1017,7 +993,7 @@
         ]
       }
     ],
-    "limites_connues": "Coût de calcul élevé à l'inférence sur de grands jeux de données (recherche des voisins parmi toutes les observations), sensible au choix du nombre de voisins k et à l'échelle des variables, et performances dégradées en haute dimension (fléau de la dimension).",
+    "limites_connues": "Sensible au choix du nombre de voisins k, à la distance retenue et à l'échelle des variables. Le fléau de la dimension et le coût de calcul à l'inférence, souvent avancés comme ses deux limites principales, sont absents de la source citée, qui reste descriptive de l'algorithme.",
     "sources": [
       {
         "titre": "Méthode des k plus proches voisins — Wikipédia",
@@ -1028,7 +1004,7 @@
     ],
     "statut": "documente",
     "derniere_verification": "2026-09-07",
-    "editeur": "Méthode statistique classique d'apprentissage non paramétrique (années 1950-1960)",
+    "editeur": "Méthode statistique classique d'apprentissage non paramétrique ; la source citée n'en donne pas la datation",
     "architecture": "Algorithme de classification (ou régression) qui attribue à une observation la classe majoritaire (ou la moyenne) de ses k plus proches voisins dans l'espace des variables"
   },
   {
@@ -1047,8 +1023,7 @@
         "trl": null,
         "diffusion": "standard",
         "exemples": [
-          "Filtres anti-spam dans les messageries électroniques",
-          "Classification automatique de tickets de support client"
+          "Classification de documents par leur contenu, « par exemple des E-mails en spam et non-spam »"
         ],
         "sources": [
           {
@@ -1064,10 +1039,7 @@
         "description": "Modèle de référence simple et rapide pour des tâches de classification de texte en traitement du langage naturel",
         "trl": null,
         "diffusion": "etabli",
-        "exemples": [
-          "Analyse de sentiment de base sur des corpus de texte",
-          "Baseline de comparaison pour des tâches de classification documentaire"
-        ],
+        "exemples": [],
         "sources": [
           {
             "titre": "Classification naïve bayésienne — Wikipédia",
@@ -1104,12 +1076,11 @@
     "usages": [
       {
         "secteur": "industrie",
-        "description": "Segmentation de clientèle et de marché pour des stratégies commerciales différenciées",
+        "description": "Quantification et réduction du nombre de valeurs distinctes dans des données, notamment en traitement du signal et de l'image",
         "trl": null,
         "diffusion": "standard",
         "exemples": [
-          "Segmentation de clients selon leurs comportements d'achat pour du marketing ciblé",
-          "Regroupement de produits similaires dans un catalogue"
+          "Réduction du nombre de couleurs d'une image « sans que cela ne nuise trop à sa qualité », seule application concrète donnée par la source"
         ],
         "sources": [
           {
@@ -1125,10 +1096,7 @@
         "description": "Analyse exploratoire de données pour identifier des structures ou sous-groupes non étiquetés",
         "trl": null,
         "diffusion": "standard",
-        "exemples": [
-          "Regroupement de profils de patients aux caractéristiques similaires en recherche médicale",
-          "Analyse exploratoire de données de sondage ou d'enquête"
-        ],
+        "exemples": [],
         "sources": [
           {
             "titre": "K-moyennes — Wikipédia",
@@ -1139,7 +1107,7 @@
         ]
       }
     ],
-    "limites_connues": "Nécessite de fixer a priori le nombre de groupes k, converge vers un optimum local dépendant de l'initialisation, et suppose implicitement des groupes de forme sphérique et de taille comparable, ce qui limite sa pertinence sur des données à structure plus complexe.",
+    "limites_connues": "Nécessite de fixer a priori le nombre de groupes k et converge vers un optimum local dépendant de l'initialisation. L'hypothèse implicite de groupes sphériques et de taille comparable, souvent avancée, n'est pas attestée par la source citée.",
     "sources": [
       {
         "titre": "K-moyennes — Wikipédia",
@@ -1169,8 +1137,9 @@
         "trl": null,
         "diffusion": "standard",
         "exemples": [
-          "Réduction de dimension de données génomiques comportant des dizaines de milliers de variables",
-          "Analyse en composantes principales de données climatiques ou géophysiques"
+          "Résumé du climat français à partir des températures moyennes mensuelles de plusieurs villes",
+          "Analyse de séries dynamiques d'images, notamment les scintigraphies dynamiques en médecine nucléaire",
+          "Données physico-chimiques relevées par 30 stations le long du Doubs (pH, dureté, phosphate, nitrate, ammoniaque, oxygène)"
         ],
         "sources": [
           {
@@ -1187,8 +1156,7 @@
         "trl": null,
         "diffusion": "standard",
         "exemples": [
-          "Réduction de dimension avant entraînement d'un modèle de classification",
-          "Compression de données pour le stockage et la visualisation"
+          "Compression par conservation des seuls premiers vecteurs propres, avec un « taux de compression usuel de 20 % »"
         ],
         "sources": [
           {
@@ -1200,7 +1168,7 @@
         ]
       }
     ],
-    "limites_connues": "Méthode linéaire, incapable de capturer des structures non linéaires complexes dans les données (contrairement à des méthodes comme t-SNE ou UMAP), et les composantes principales obtenues perdent l'interprétabilité directe des variables d'origine.",
+    "limites_connues": "Méthode linéaire, incapable de capturer des structures non linéaires complexes dans les données. La comparaison avec t-SNE ou UMAP et la perte d'interprétabilité directe des composantes, souvent avancées, ne sont attestées par aucune source de la fiche.",
     "sources": [
       {
         "titre": "Analyse en composantes principales — Wikipédia",
@@ -1219,9 +1187,9 @@
     "axe": "predictif_data_science",
     "nom": "Gradient Boosting (XGBoost/LightGBM/CatBoost)",
     "capacites_cles": [
-      "Performances de pointe sur données tabulaires structurées, souvent supérieures aux réseaux de neurones profonds sur ce type de données",
-      "Gestion native des valeurs manquantes et des variables catégorielles (notamment CatBoost)",
-      "Optimisations de vitesse et de mémoire (LightGBM) permettant l'entraînement sur de très grands volumes de données"
+      "Combinaison additive d'apprenants faibles, généralement des arbres de décision, optimisée par descente de gradient sur la fonction de perte (Friedman, 1999)",
+      "Régularisation par rétrécissement du pas d'apprentissage, sous-échantillonnage et limitation de la profondeur des arbres, contre le surapprentissage",
+      "Employée en production dans les moteurs de classement (« learning to rank ») de Yahoo et Yandex"
     ],
     "usages": [
       {
@@ -1230,8 +1198,9 @@
         "trl": null,
         "diffusion": "standard",
         "exemples": [
-          "Scoring de crédit et détection de fraude dans le secteur financier",
-          "Prédiction de la demande et optimisation logistique"
+          "« Learning to rank » dans les moteurs de recherche commerciaux Yahoo et Yandex",
+          "Physique des hautes énergies au LHC, où des variantes de gradient boosting reproduisent les résultats de méthodes non fondées sur l'apprentissage",
+          "Évaluation de la qualité de réservoirs gréseux en géologie"
         ],
         "sources": [
           {
@@ -1247,10 +1216,7 @@
         "description": "Modèles prédictifs sur données administratives structurées pour l'aide à la décision publique",
         "trl": null,
         "diffusion": "emergent",
-        "exemples": [
-          "Prédiction du risque de défaillance d'entreprises pour le ciblage de contrôles",
-          "Modèles de risque dans la lutte contre la fraude sociale ou fiscale"
-        ],
+        "exemples": [],
         "sources": [
           {
             "titre": "Gradient boosting — Wikipedia (EN)",
@@ -1261,7 +1227,7 @@
         ]
       }
     ],
-    "limites_connues": "Moins interprétable qu'un arbre de décision unique, sensible au surapprentissage si les hyperparamètres ne sont pas correctement réglés, et nécessite un savoir-faire technique important pour l'optimisation (tuning) par rapport à des modèles plus simples.",
+    "limites_connues": "La source relève que le boosting « sacrifices intelligibility and interpretability » : suivre plusieurs centaines d'arbres est bien plus difficile que de lire un arbre unique. Elle documente également le besoin de régularisation contre le surapprentissage — rétrécissement du pas, sous-échantillonnage, limitation de la profondeur, pénalisation de la complexité.",
     "sources": [
       {
         "titre": "Gradient boosting — Wikipedia (EN)",
@@ -1272,7 +1238,7 @@
     ],
     "statut": "documente",
     "derniere_verification": "2026-09-07",
-    "editeur": "Méthode de gradient boosting formalisée par Jerome Friedman (1999) ; implémentations XGBoost (2014), LightGBM (Microsoft, 2016), CatBoost (Yandex, 2017)",
+    "editeur": "Méthode formalisée par Jerome Friedman (1999). Les implémentations XGBoost, LightGBM et CatBoost qui donnent son nom à la fiche ne sont nommées par aucune source de celle-ci : leurs dates et leurs éditeurs restent à tracer.",
     "architecture": "Méthode d'ensemble séquentielle construisant successivement des arbres de décision faibles, chacun corrigeant les erreurs résiduelles des arbres précédents par descente de gradient"
   },
   {
@@ -1349,10 +1315,7 @@
         "description": "Modélisation prédictive de relations non linéaires complexes sur données structurées",
         "trl": null,
         "diffusion": "etabli",
-        "exemples": [
-          "Modèles de prédiction de défaillance d'équipements à partir de capteurs multiples",
-          "Modèles de scoring combinant de nombreuses variables non linéairement liées"
-        ],
+        "exemples": [],
         "sources": [
           {
             "titre": "Perceptron multicouche — Wikipédia",
@@ -1368,8 +1331,7 @@
         "trl": null,
         "diffusion": "historique",
         "exemples": [
-          "Enseignement des fondements de l'apprentissage profond",
-          "Composant de nombreuses architectures hybrides plus complexes"
+          "Calcul du OU exclusif (XOR), seul exemple donné par la source"
         ],
         "sources": [
           {
@@ -1392,7 +1354,7 @@
     ],
     "statut": "documente",
     "derniere_verification": "2026-09-07",
-    "editeur": "Architecture fondatrice des réseaux de neurones (popularisée par la rétropropagation du gradient, Rumelhart, Hinton, Williams, 1986)",
+    "editeur": "Architecture fondatrice des réseaux de neurones ; rétropropagation du gradient proposée par Paul Werbos en 1974 et mise au point douze ans plus tard, en 1986, par David Rumelhart",
     "architecture": "Réseau de neurones artificiels entièrement connecté (feedforward), composé d'une couche d'entrée, d'une ou plusieurs couches cachées et d'une couche de sortie"
   },
   {
@@ -1410,10 +1372,7 @@
         "description": "Analyse d'images médicales pour l'aide au diagnostic",
         "trl": null,
         "diffusion": "emergent",
-        "exemples": [
-          "Détection de tumeurs sur imagerie radiologique (IRM, scanner)",
-          "Analyse d'images histopathologiques pour le dépistage du cancer"
-        ],
+        "exemples": [],
         "sources": [
           {
             "titre": "Réseau neuronal convolutif — Wikipédia",
@@ -1429,8 +1388,7 @@
         "trl": null,
         "diffusion": "standard",
         "exemples": [
-          "Contrôle qualité visuel automatisé en usine",
-          "Perception visuelle des véhicules autonomes"
+          "Reconnaissance d'image et vidéo, systèmes de recommandation et traitement du langage naturel : les trois seuls domaines nommés par la source"
         ],
         "sources": [
           {
@@ -1442,7 +1400,7 @@
         ]
       }
     ],
-    "limites_connues": "Nécessite de grands volumes de données annotées pour bien généraliser, moins efficace que les architectures Transformer sur certaines tâches à très grande échelle disposant de données massives, et reste vulnérable à des perturbations adversariales (images légèrement modifiées trompant la classification).",
+    "limites_connues": "Nécessite de grands volumes de données annotées pour bien généraliser. La comparaison avec les architectures Transformer et la vulnérabilité aux perturbations adversariales, souvent avancées, sont absentes de la source citée, qui ne nomme que trois domaines d'application.",
     "sources": [
       {
         "titre": "Réseau neuronal convolutif — Wikipédia",
@@ -1472,8 +1430,8 @@
         "trl": null,
         "diffusion": "historique",
         "exemples": [
-          "Systèmes de reconnaissance vocale de première génération",
-          "Modèles de traduction automatique neuronale antérieurs aux Transformers"
+          "Reconnaissance automatique de la parole ou de l'écriture manuscrite et traduction automatique, domaines nommés par la source",
+          "Prévision de processus industriels (électricité) et intégration de contrôle-commande"
         ],
         "sources": [
           {
@@ -1490,8 +1448,8 @@
         "trl": null,
         "diffusion": "etabli",
         "exemples": [
-          "Modélisation de signaux physiologiques séquentiels en recherche biomédicale",
-          "Prévision de séries temporelles multivariées"
+          "Prédiction de séries temporelles, dont des séries temporelles d'images satellite",
+          "Évaluation comparative des GRU sur des partitions musicales et des données de parole"
         ],
         "sources": [
           {
@@ -1503,7 +1461,7 @@
         ]
       }
     ],
-    "limites_connues": "Souffre du problème de disparition ou d'explosion du gradient sur de longues séquences, ce qui limite sa capacité à capturer des dépendances à très long terme (problème résolu partiellement par les LSTM) ; largement supplanté depuis 2017 par les architectures Transformer, plus efficacement parallélisables.",
+    "limites_connues": "Souffre du problème de disparition ou d'explosion du gradient sur de longues séquences, ce qui limite sa capacité à capturer des dépendances à très long terme — problème partiellement résolu par les LSTM. La source rattache la suite de cette lignée aux architectures Transformer, « à la base des Large Language Models mis en production à partir de 2022 et 2023 » : elle ne documente pas de remplacement dès 2017.",
     "sources": [
       {
         "titre": "Réseau de neurones récurrents — Wikipédia",
@@ -1533,10 +1491,10 @@
         "trl": 9,
         "trl_justification": "La source documente cinq déploiements commerciaux mondiaux à base de LSTM : Google Voice (2015), le Google Neural Machine Translation de Google Translate (2016, « reduce translation errors by 60 % »), quicktype et Siri chez Apple, Amazon Polly derrière Alexa, et 4,5 milliards de traductions automatiques par jour chez Facebook en 2017.",
         "exemples": [
-          "Systèmes de traduction automatique neuronale de seconde génération",
-          "Génération de texte prédictif (clavier intelligent)",
-          "Prévision de la consommation énergétique à partir de séries historiques longues",
-          "Détection d'anomalies dans des séquences de données de capteurs"
+          "Google Neural Machine Translation de Google Translate (2016), qui réduit les erreurs de traduction de 60 %",
+          "Reconnaissance vocale de Google Voice (2015), erreurs de transcription réduites de 49 %",
+          "quicktype et Siri chez Apple, Amazon Polly derrière les voix d'Alexa, suggestions de messages dans Google Allo (2016)",
+          "Prévision énergétique et détection d'anomalies dans des séries temporelles, domaines d'application listés par la source"
         ],
         "sources": [
           {
@@ -1548,7 +1506,7 @@
         ]
       }
     ],
-    "limites_connues": "Traitement intrinsèquement séquentiel (pas à pas) qui limite la parallélisation de l'entraînement par rapport aux Transformers, ce qui explique son remplacement progressif par ces derniers sur la plupart des tâches de traitement du langage depuis 2017-2018.",
+    "limites_connues": "Traitement intrinsèquement séquentiel (pas à pas) qui limite la parallélisation de l'entraînement par rapport aux Transformers. La source ne mentionne ces derniers qu'une fois, en 2020, pour une comparaison de lois d'échelle : la datation d'un remplacement dès 2017-2018, souvent avancée, n'est traçable à aucune source de la fiche.",
     "sources": [
       {
         "titre": "Hochreiter & Schmidhuber, « Long Short-Term Memory », Neural Computation 9(8), 1997",
@@ -1642,8 +1600,9 @@
         "trl": 9,
         "trl_justification": "Artefacts publics en service documentés par la source : Artbreeder (2020), GameGAN de Nvidia (mai 2020), le site « This Person Does Not Exist », et le tableau Edmond de Belamy vendu 432 500 dollars en 2018.",
         "exemples": [
-          "Génération de visages ou d'objets synthétiques pour l'entraînement d'autres modèles (données synthétiques)",
-          "Amélioration de la résolution d'images (super-résolution)"
+          "Artbreeder (2020), utilisé pour créer l'antagoniste principal de la suite de la série web Ben Drowned",
+          "GameGAN de Nvidia (mai 2020), reconstituant Pac-Man par simple observation de parties",
+          "Le tableau Edmond de Belamy, entraîné sur 15 000 portraits de WikiArt, vendu 432 500 dollars en 2018"
         ],
         "sources": [
           {
@@ -1659,10 +1618,7 @@
         "description": "Génération de données synthétiques pour pallier le manque de données réelles dans certains domaines scientifiques",
         "trl": null,
         "diffusion": "etabli",
-        "exemples": [
-          "Génération de données médicales synthétiques préservant la confidentialité des patients",
-          "Simulation de scénarios rares pour l'entraînement de modèles"
-        ],
+        "exemples": [],
         "sources": [
           {
             "titre": "Generative adversarial network — Wikipedia (EN)",
@@ -1673,7 +1629,7 @@
         ]
       }
     ],
-    "limites_connues": "Entraînement notoirement instable (risque d'effondrement du mode, mode collapse, où le générateur produit une diversité limitée de sorties), et largement supplanté depuis 2022 par les modèles de diffusion pour la génération d'images de haute qualité ; également utilisé pour créer des deepfakes, posant des risques de désinformation.",
+    "limites_connues": "Entraînement notoirement instable (effondrement du mode, où le générateur produit une diversité limitée de sorties) ; également employé pour produire des deepfakes, posant des risques de désinformation. Le remplacement par les modèles de diffusion depuis 2022, souvent avancé, n'est mentionné par aucune source de la fiche.",
     "sources": [
       {
         "titre": "Goodfellow et al., « Generative Adversarial Networks »",
@@ -1709,8 +1665,9 @@
         "trl": 9,
         "trl_justification": "Déploiements mondiaux nommés et datés : BERT sur Google Search en octobre 2019, Google Translate en 2020, ChatGPT fin 2022, puis DALL-E, Stable Diffusion 3 et Sora.",
         "exemples": [
-          "Assistants conversationnels et générateurs de texte (grands modèles de langage)",
-          "Systèmes de traduction automatique de nouvelle génération"
+          "BERT sur Google Search à partir d'octobre 2019, puis Google Translate en 2020",
+          "ChatGPT, fondé sur une variante affinée de GPT-3.5, fin 2022",
+          "Génération d'image et de vidéo : DALL-E (2021), Stable Diffusion 3 et Sora (2024)"
         ],
         "sources": [
           {
@@ -1727,8 +1684,7 @@
         "trl": null,
         "diffusion": "standard",
         "exemples": [
-          "Base de la quasi-totalité des publications de recherche en traitement du langage depuis 2018",
-          "Extension aux domaines de la vision (Vision Transformers) et de la biologie (AlphaFold)"
+          "Extension à la vision (Vision Transformers) et à la reconnaissance de la parole (Whisper)"
         ],
         "sources": [
           {
@@ -1847,25 +1803,8 @@
         "trl": 8,
         "trl_justification": "OpenAI a publié Operator le 23 janvier 2025, en accès restreint aux utilisateurs Pro aux États-Unis : produit publié et commercialisé en disponibilité limitée, ce qu'un TRL 6 sous-évaluait.",
         "exemples": [
-          "Automatisation de réservations ou de commandes en ligne pour le compte d'un utilisateur",
-          "Extraction et remplissage automatisé de formulaires web répétitifs"
-        ],
-        "sources": [
-          {
-            "titre": "OpenAI — Wikipedia (EN)",
-            "url": "https://en.wikipedia.org/wiki/OpenAI",
-            "date": "2026-09-07",
-            "type": "secondaire"
-          }
-        ]
-      },
-      {
-        "secteur": "gouvernement",
-        "description": "Assistance à la navigation dans des démarches administratives en ligne complexes",
-        "trl": null,
-        "diffusion": "emergent",
-        "exemples": [
-          "Aide à la complétion de démarches administratives en ligne pour des usagers peu à l'aise avec le numérique"
+          "Operator publié le 23 janvier 2025 : « an AI agent and tool for accessing websites to execute goals defined by users »",
+          "Disponibilité restreinte aux utilisateurs Pro aux États-Unis"
         ],
         "sources": [
           {
@@ -1877,7 +1816,7 @@
         ]
       }
     ],
-    "limites_connues": "Fiabilité encore limitée sur des sites web complexes ou peu structurés, risque d'erreurs coûteuses sur des actions irréversibles (achats, envois), et vulnérabilité à des attaques par injection de contenu malveillant caché dans les pages web visitées (prompt injection).",
+    "limites_connues": "Fiabilité encore limitée sur des sites web complexes ou peu structurés, risque d'erreurs coûteuses sur des actions irréversibles (achats, envois), et vulnérabilité aux injections de contenu malveillant caché dans les pages visitées. Aucun de ces trois points n'est attesté par la source de la fiche, qui consacre une seule phrase à Operator et ne mentionne que sa date de publication et sa restriction d'accès.",
     "sources": [
       {
         "titre": "OpenAI — Wikipedia (EN)",
@@ -1907,8 +1846,8 @@
         "trl": 5,
         "trl_justification": "La source ne documente que des démonstrations publiques de mars 2024, dont plusieurs contestées nommément (chaînes Internet of Bugs et Computer Vision Project, à propos d'une tâche Upwork) ; aucun client ni déploiement en production n'y figure.",
         "exemples": [
-          "Résolution automatisée de tickets de bugs simples à moyens",
-          "Génération et exécution de suites de tests pour du code existant"
+          "Démonstrations publiques de mars 2024 : création de sites, jeu Pong, tâches Upwork",
+          "Recherche de ressources en ligne pendant l'exécution : « It searches online resources during the process »"
         ],
         "sources": [
           {
@@ -1924,9 +1863,7 @@
         "description": "Objet d'étude et de benchmarking pour évaluer les capacités réelles d'autonomie des agents d'IA en ingénierie logicielle",
         "trl": null,
         "diffusion": "emergent",
-        "exemples": [
-          "Utilisation comme référence dans des benchmarks d'agents de programmation autonomes (ex. SWE-bench)"
-        ],
+        "exemples": [],
         "sources": [
           {
             "titre": "Devin AI — Wikipedia (EN)",
@@ -1967,18 +1904,18 @@
         "trl": null,
         "diffusion": "etabli",
         "exemples": [
-          "Automatisation de pipelines de recherche et rédaction de contenu par plusieurs agents spécialisés",
-          "Orchestration d'agents pour des processus métier multi-étapes (support client, veille)"
+          "LangGraph, présenté par son éditeur comme « trusted by companies shaping the future of agents », dont Klarna, Uber et J.P. Morgan",
+          "CrewAI, annoncé « production ready from day one », avec une console d'entreprise pour piloter les automatisations déployées"
         ],
         "sources": [
           {
-            "titre": "LangGraph — documentation officielle (LangChain Inc.)",
+            "titre": "LangGraph — page « Overview » de la référence LangChain Inc.",
             "url": "https://docs.langchain.com/oss/python/langgraph/overview",
             "date": "2026-09-07",
             "type": "primaire"
           },
           {
-            "titre": "CrewAI — documentation officielle (CrewAI Inc.)",
+            "titre": "CrewAI — page d'accueil de docs.crewai.com (CrewAI Inc.)",
             "url": "https://docs.crewai.com/",
             "date": "2026-09-07",
             "type": "primaire"
@@ -1991,12 +1928,11 @@
         "trl": null,
         "diffusion": "emergent",
         "exemples": [
-          "Étude de la coordination et de la division du travail entre agents IA autonomes",
-          "Expérimentation de architectures multi-agents pour la résolution de problèmes complexes"
+          "AutoGen, « a programming framework for building conversational single and multi-agent applications » (Microsoft), dont le composant Core vise explicitement la recherche sur la collaboration multi-agents"
         ],
         "sources": [
           {
-            "titre": "AutoGen — documentation officielle (Microsoft)",
+            "titre": "AutoGen — page d'accueil de microsoft.github.io/autogen (Microsoft)",
             "url": "https://microsoft.github.io/autogen/stable/",
             "date": "2026-09-07",
             "type": "primaire"
@@ -2007,19 +1943,19 @@
     "limites_connues": "La coordination entre plusieurs agents augmente la complexité de déboguage et les coûts de calcul (chaque agent consommant ses propres appels au modèle de langage), et les erreurs d'un agent peuvent se propager et s'amplifier dans le système multi-agent sans supervision humaine adéquate.",
     "sources": [
       {
-        "titre": "LangGraph — documentation officielle (LangChain Inc.)",
+        "titre": "LangGraph — page « Overview » de la référence LangChain Inc.",
         "url": "https://docs.langchain.com/oss/python/langgraph/overview",
         "date": "2026-09-07",
         "type": "primaire"
       },
       {
-        "titre": "CrewAI — documentation officielle (CrewAI Inc.)",
+        "titre": "CrewAI — page d'accueil de docs.crewai.com (CrewAI Inc.)",
         "url": "https://docs.crewai.com/",
         "date": "2026-09-07",
         "type": "primaire"
       },
       {
-        "titre": "AutoGen — documentation officielle (Microsoft)",
+        "titre": "AutoGen — page d'accueil de microsoft.github.io/autogen (Microsoft)",
         "url": "https://microsoft.github.io/autogen/stable/",
         "date": "2026-09-07",
         "type": "primaire"
@@ -2052,7 +1988,8 @@
         "trl": 9,
         "trl_justification": "La base AlphaFold, exploitée par l'EMBL-EBI avec Google DeepMind, est ouverte au public depuis 2021 (plus de 365 000 protéines humaines) et couvre en 2024 la quasi-totalité des protéines connues : infrastructure opérationnelle, pas prototype.",
         "exemples": [
-          "Base AlphaFold DB utilisée par des centaines de milliers de chercheurs dans le monde"
+          "Base AlphaFold ouverte au public en 2021 avec plus de 365 000 protéines humaines et 20 organismes modèles",
+          "Couverture de la quasi-totalité des protéines connues en 2024"
         ],
         "sources": [
           {
@@ -2136,8 +2073,9 @@
         "trl": 7,
         "trl_justification": "Les prédictions de GNoME (Google DeepMind, Nature 624, 29 novembre 2023) ont été validées par des expériences robotiques autonomes avec un taux de succès de 71 %, et 736 des structures stables prédites avaient déjà été réalisées expérimentalement à la date de publication.",
         "exemples": [
-          "Identification de candidats matériaux pour des batteries plus performantes",
-          "Recherche de nouveaux matériaux supraconducteurs ou semi-conducteurs"
+          "Plus de 2 millions de nouveaux matériaux documentés, annoncés en novembre 2023, dont plusieurs centaines de milliers de structures cristallines stables",
+          "736 structures stables déjà réalisées expérimentalement à la date de publication",
+          "Validation par expériences robotiques autonomes, avec un taux de succès de 71 %"
         ],
         "sources": [
           {
@@ -2165,9 +2103,7 @@
         "description": "Accélération de la recherche et développement de matériaux pour l'industrie électronique et énergétique",
         "trl": null,
         "diffusion": "emergent",
-        "exemples": [
-          "Exploration de matériaux candidats pour l'industrie des batteries et du stockage d'énergie"
-        ],
+        "exemples": [],
         "sources": [
           {
             "titre": "Google DeepMind — Wikipedia",
@@ -2178,7 +2114,7 @@
         ]
       }
     ],
-    "limites_connues": "Les prédictions de stabilité restent théoriques (calculs de simulation) et nécessitent une validation expérimentale en laboratoire, longue et coûteuse, avant toute application industrielle réelle ; une partie significative des matériaux prédits stables n'a pas encore été synthétisée ni confirmée en pratique.",
+    "limites_connues": "Les prédictions de stabilité restent des calculs de simulation qui demandent une validation expérimentale, longue et coûteuse. Une critique publiée va plus loin que ce délai : selon Anthony Cheetham et Ram Seshadri, GNoME n'apporte pas « a useful, practical contribution to the experimental materials scientists », et ils n'ont identifié aucun matériau « strikingly novel », la plupart étant des variantes mineures de matériaux déjà connus. À l'inverse, la même littérature rapporte une validation par expériences robotiques autonomes avec 71 % de succès et 736 matériaux déjà réalisés expérimentalement : la fiche omettait jusqu'ici les deux extrémités du débat.",
     "sources": [
       {
         "titre": "Merchant et al., « Scaling deep learning for materials discovery », Nature 624 (2023)",
@@ -2220,8 +2156,8 @@
         "trl": 7,
         "trl_justification": "Les contrôleurs de Degrave et al. (Nature 602, 16 février 2022) ont été exécutés sur le tokamak TCV réel de l'EPFL, où ils ont produit et stabilisé plusieurs configurations de plasma distinctes : démonstration en environnement opérationnel réel, non en simulation.",
         "exemples": [
-          "Stabilisation de nouvelles configurations de plasma sur des tokamaks de recherche",
-          "Réduction du temps d'ingénierie nécessaire pour tester de nouvelles configurations de confinement"
+          "Production et stabilisation de configurations de plasma distinctes sur le tokamak TCV réel de l'EPFL : formes conventionnelles allongées, triangularité négative, configuration en flocon de neige, et deux plasmas simultanés maintenus dans la même enceinte",
+          "Transfert réussi de la simulation à l'expérience sur un dispositif physique"
         ],
         "sources": [
           {
@@ -2243,9 +2179,7 @@
         "description": "Accélération potentielle du développement de futurs réacteurs à fusion commerciaux",
         "trl": null,
         "diffusion": "emergent",
-        "exemples": [
-          "Application potentielle au contrôle de futurs réacteurs à fusion de plus grande échelle (ITER et successeurs)"
-        ],
+        "exemples": [],
         "sources": [
           {
             "titre": "Degrave et al., « Magnetic control of tokamak plasmas through deep reinforcement learning », Nature 602 (2022)",
@@ -2292,8 +2226,7 @@
         "trl": null,
         "diffusion": "etabli",
         "exemples": [
-          "Identification de molécules candidates pour des maladies rares ou négligées",
-          "Réduction du temps et du coût des étapes précoces de développement pharmaceutique"
+          "Isomorphic Labs a déclaré en mai 2024 utiliser AlphaFold 3, avec d'autres modèles d'IA, pour automatiser la découverte de médicaments"
         ],
         "sources": [
           {
@@ -2310,8 +2243,7 @@
         "trl": null,
         "diffusion": "etabli",
         "exemples": [
-          "Analyse de variants génétiques associés à des maladies",
-          "Étude des interactions protéine-protéine à grande échelle"
+          "Prédiction de la structure tridimensionnelle des protéines à partir de leur séquence, pour la quasi-totalité des protéines connues en 2024"
         ],
         "sources": [
           {
@@ -2370,8 +2302,7 @@
         "trl": null,
         "diffusion": "emergent",
         "exemples": [
-          "Prévision rapide de trajectoires de phénomènes météorologiques extrêmes (cyclones, tempêtes)",
-          "Alerte précoce pour la gestion de crises climatiques"
+          "L'AIFS du Centre européen pour les prévisions météorologiques à moyen terme publie des prévisions en temps réel depuis 2024, avec de bons résultats sur les trajectoires de cyclones et de moins bons sur leur intensité"
         ],
         "sources": [
           {
@@ -2388,8 +2319,8 @@
         "trl": null,
         "diffusion": "etabli",
         "exemples": [
-          "Étude de l'évolution de phénomènes climatiques à partir de simulations rapides multiples",
-          "Comparaison et validation croisée avec les modèles physiques traditionnels"
+          "GraphCast prédit « hundreds of weather variables, over 10 days at 0.25 degree resolution globally, in under one minute »",
+          "Il surpasse les systèmes déterministes opérationnels les plus précis sur 90 % de 1 380 cibles de vérification"
         ],
         "sources": [
           {
@@ -2514,8 +2445,8 @@
         "secteur": "gouvernement",
         "description": "Enjeu central de la régulation de l'IA dans les usages publics sensibles (justice, aides sociales, recrutement public)",
         "exemples": [
-          "Audits de biais imposés par certaines réglementations sur les systèmes de décision automatisée",
-          "Contentieux juridiques liés à des discriminations algorithmiques documentées"
+          "Retrait par Amazon d'un algorithme d'évaluation de curriculum vitæ « quand on s'est aperçu qu'il discriminait fortement les CV féminins »",
+          "Biais raciste constaté dans l'algorithme de la société Northpointe employé par la justice américaine (analyse Angwin et al., 2016)"
         ],
         "sources": [
           {
@@ -2530,8 +2461,7 @@
         "secteur": "industrie",
         "description": "Risque de conformité et de réputation majeur pour toute entreprise déployant des systèmes de décision automatisée",
         "exemples": [
-          "Audits de biais dans les systèmes de recrutement automatisés par IA",
-          "Correction de biais dans les algorithmes de scoring de crédit"
+          "Reconnaissance faciale de Face++, juste « pour 99,3 % des hommes, mais seulement 78,7 % des femmes »"
         ],
         "sources": [
           {
@@ -2543,7 +2473,7 @@
         ]
       }
     ],
-    "limites_connues": "Il n'existe pas de solution technique universelle et neutre pour éliminer les biais : différentes définitions mathématiques de l'équité (fairness) sont mutuellement incompatibles entre elles, ce qui signifie qu'un choix de correction reste toujours, in fine, un choix normatif et politique.",
+    "limites_connues": "Il n'existe pas de solution technique universelle et neutre pour éliminer les biais : Kleinberg, Mullainathan et Raghavan (2016) démontrent que, « except in highly constrained special cases, there is no method that can satisfy these three conditions simultaneously » — les définitions mathématiques de l'équité sont mutuellement incompatibles. Un choix de correction reste donc toujours, in fine, un choix normatif et politique. L'article encyclopédique cité par ailleurs liste bien ces définitions (anti-classification, parité de classification, calibration) mais sans relever leur incompatibilité.",
     "sources": [
       {
         "titre": "Kleinberg, Mullainathan & Raghavan, « Inherent Trade-Offs in the Fair Determination of Risk Scores »",
@@ -2568,17 +2498,17 @@
     "editeur": "Limite transversale documentée par la recherche sur l'empreinte environnementale de l'IA et les chaînes d'approvisionnement en semi-conducteurs",
     "architecture": "N/A — limite structurelle liée à l'infrastructure matérielle (centres de données, GPU, semi-conducteurs) nécessaire à l'entraînement et à l'inférence des modèles d'IA",
     "capacites_cles": [
-      "Consommation électrique et besoin en eau de refroidissement croissants des centres de données d'IA, documentés par plusieurs études et rapports d'agences de l'énergie",
-      "Dépendance de l'ensemble de la chaîne à un nombre restreint de fabricants de semi-conducteurs avancés, concentrés géographiquement (Taïwan notamment)",
-      "Empreinte matérielle liée à l'extraction de métaux rares et de terres rares nécessaires à la fabrication des puces et serveurs"
+      "Consommation électrique croissante des centres de données, portée à 460 térawattheures dans le monde en 2022",
+      "Besoin en eau douce de refroidissement, « evaporated in cooling towers » des serveurs d'IA",
+      "Empreinte matérielle liée aux terres rares nécessaires aux puces, « often mined in environmentally destructive ways »"
     ],
     "usages": [
       {
         "secteur": "gouvernement",
         "description": "Enjeu de politique énergétique et de sécurité d'approvisionnement pour les États hébergeant de grandes infrastructures d'IA",
         "exemples": [
-          "Politiques publiques d'investissement dans la capacité électrique dédiée aux centres de données",
-          "Stratégies nationales de sécurisation de l'approvisionnement en semi-conducteurs"
+          "Accord de Microsoft avec Constellation Energy pour rouvrir la centrale nucléaire de Three Mile Island et lui fournir la totalité de sa production pendant 20 ans",
+          "Consommation électrique mondiale des centres de données portée à 460 térawattheures en 2022"
         ],
         "sources": [
           {
@@ -2599,8 +2529,8 @@
         "secteur": "industrie",
         "description": "Contrainte structurelle croissante pour les grandes entreprises technologiques développant des modèles d'IA de pointe",
         "exemples": [
-          "Investissements massifs dans de nouvelles capacités de production électrique dédiées (y compris nucléaire)",
-          "Recherche d'architectures de modèles plus économes en calcul"
+          "Évaporation de grandes quantités d'eau douce dans les tours de refroidissement des serveurs",
+          "Terres rares nécessaires aux puces, « often mined in environmentally destructive ways »"
         ],
         "sources": [
           {
@@ -2612,7 +2542,7 @@
         ]
       }
     ],
-    "limites_connues": "Les gains d'efficacité énergétique par unité de calcul sont pour l'instant largement compensés par la croissance du volume de calcul consacré à l'entraînement de modèles toujours plus grands (effet rebond), ce qui rend incertaine la soutenabilité environnementale à long terme de la trajectoire actuelle de développement de l'IA.",
+    "limites_connues": "L'effet rebond — des gains d'efficacité énergétique par unité de calcul compensés par la croissance du volume de calcul — n'est attesté par aucune source de la fiche : celle-ci relève seulement que l'efficacité de calcul double tous les 1,6 an depuis les années 1940, sans établir cette compensation. La concentration géographique des fabricants de semi-conducteurs, souvent avancée, en est également absente. Ce qui est établi : la consommation électrique et l'eau de refroidissement des centres de données, l'extraction des terres rares, et le recours à de nouvelles capacités de production électrique dédiées.",
     "sources": [
       {
         "titre": "Agence internationale de l'énergie, rapport « Energy and AI »",
@@ -2634,7 +2564,7 @@
     "id": "jumeaux-numeriques-industriels-ia",
     "axe": "sectoriel",
     "nom": "Jumeaux numériques industriels (IA)",
-    "editeur": "Multiples éditeurs industriels (Siemens, Dassault Systèmes, General Electric, NVIDIA Omniverse)",
+    "editeur": "Multiples éditeurs industriels ; la seule source de la fiche ne nomme que Siemens — Dassault Systèmes, General Electric et NVIDIA Omniverse n'y figurent pas.",
     "architecture": "Modèles de simulation numérique enrichis de composants d'apprentissage automatique, répliquant virtuellement le comportement d'un système physique réel à partir de données de capteurs",
     "capacites_cles": [
       "Réplique virtuelle en temps réel d'un actif physique (machine, usine, infrastructure) permettant simulation et prédiction de son comportement",
@@ -2648,25 +2578,8 @@
         "trl": null,
         "diffusion": "etabli",
         "exemples": [
-          "Jumeau numérique de turbines ou de moteurs pour anticiper les besoins de maintenance",
-          "Simulation de lignes de production entières avant modification physique"
-        ],
-        "sources": [
-          {
-            "titre": "Jumeau numérique — Wikipédia",
-            "url": "https://fr.wikipedia.org/wiki/Jumeau_num%C3%A9rique",
-            "date": "2026-09-07",
-            "type": "secondaire"
-          }
-        ]
-      },
-      {
-        "secteur": "gouvernement",
-        "description": "Modélisation d'infrastructures publiques critiques (réseaux d'eau, d'énergie, de transport)",
-        "trl": null,
-        "diffusion": "emergent",
-        "exemples": [
-          "Jumeaux numériques de réseaux électriques ou d'infrastructures urbaines pour la planification"
+          "Optimisation des machines et de la maintenance d'équipements de production d'énergie : « les turbines de production d'énergie, les moteurs à réaction et les locomotives »",
+          "Surveillance, diagnostic et pronostic « afin d'optimiser la performance et l'utilisation des actifs »"
         ],
         "sources": [
           {
@@ -2678,7 +2591,7 @@
         ]
       }
     ],
-    "limites_connues": "La qualité prédictive du jumeau numérique dépend entièrement de la fidélité de sa calibration aux données réelles, qui se dégrade dans le temps (dérive du modèle) si elle n'est pas régulièrement réactualisée, et sa mise en place initiale reste coûteuse et complexe pour des systèmes physiques très hétérogènes.",
+    "limites_connues": "La source ne traite ni de la dérive du modèle dans le temps, ni du coût de mise en place, ni de la qualité des données de calibration : ces trois limites, souvent avancées et jusqu'ici affirmées par la fiche, ne sont traçables à aucune de ses sources. Elle ne traite pas davantage des infrastructures publiques, ce qui a conduit à retirer l'usage sectoriel correspondant.",
     "sources": [
       {
         "titre": "Jumeau numérique — Wikipédia",
@@ -2694,7 +2607,7 @@
     "id": "tutorat-adaptatif-personnalise-edtech-ia",
     "axe": "sectoriel",
     "nom": "Tutorat adaptatif personnalisé (EdTech IA)",
-    "editeur": "Multiples acteurs EdTech (Khan Academy/Khanmigo, Duolingo, Squirrel AI, plateformes d'apprentissage adaptatif)",
+    "editeur": "Multiples acteurs EdTech ; le seul système nommé par les sources de la fiche est le Cognitive Tutor — Khan Academy/Khanmigo, Duolingo et Squirrel AI n'y figurent pas.",
     "architecture": "Systèmes combinant modèles de suivi des connaissances de l'élève (knowledge tracing) et grands modèles de langage pour adapter en continu le contenu et le rythme pédagogique",
     "capacites_cles": [
       "Adaptation en temps réel de la difficulté et du contenu pédagogique au niveau de compréhension mesuré de chaque élève",
@@ -2708,8 +2621,8 @@
         "trl": 9,
         "trl_justification": "La source documente un déploiement de masse : le Cognitive Tutor « has been incorporated into mathematics curricula in a substantial number of United States high schools », avec des résultats mesurés aux examens finaux et aux tests standardisés. La source ne date pas ce déploiement.",
         "exemples": [
-          "Tuteurs virtuels adaptant les exercices de mathématiques au niveau réel de chaque élève",
-          "Plateformes de langues ajustant la difficulté des leçons selon la progression individuelle"
+          "Le Cognitive Tutor, « incorporated into mathematics curricula in a substantial number of United States high schools », avec de meilleurs résultats aux examens finaux et aux tests standardisés",
+          "Dans 46 des 50 évaluations contrôlées recensées (92 %), les élèves suivis par tutorat intelligent dépassent ceux des classes conventionnelles"
         ],
         "sources": [
           {
@@ -2726,7 +2639,7 @@
         "trl": null,
         "diffusion": "etabli",
         "exemples": [
-          "Parcours de formation en entreprise adaptés au niveau et aux lacunes de chaque salarié"
+          "« ITS systems… have found homes in the sphere of corporate training and organizational learning »"
         ],
         "sources": [
           {
@@ -2738,7 +2651,7 @@
         ]
       }
     ],
-    "limites_connues": "Les études sur l'efficacité pédagogique réelle de ces systèmes à grande échelle restent mitigées et hétérogènes selon les contextes et les disciplines, et leur généralisation soulève des questions sur la collecte de données comportementales détaillées d'élèves mineurs et sur le risque de réduire l'apprentissage à une simple optimisation algorithmique.",
+    "limites_connues": "Contrairement à ce que la fiche affirmait, les résultats publiés ne sont pas mitigés mais convergents : effet médian de 0,66 sur les tests locaux dans la méta-analyse de Kulik et Fletcher (2015), et absence de différence statistique d'effet entre un tuteur humain expert et un système pas à pas selon VanLehn (2011). La réserve réelle est ailleurs, et elle est plus informative : le même effet tombe à 0,13 sur les tests standardisés. S'y ajoutent la collecte de données comportementales détaillées sur des élèves mineurs et le risque de réduire l'apprentissage à une optimisation algorithmique, que les sources de la fiche n'abordent pas.",
     "sources": [
       {
         "titre": "VanLehn, « The Relative Effectiveness of Human Tutoring, Intelligent Tutoring Systems, and Other Tutoring Systems », Educational Psychologist 46(4), 2011",
@@ -2759,7 +2672,7 @@
     "id": "criblage-virtuel-de-molecules-ia-pharmaceutique",
     "axe": "sectoriel",
     "nom": "Criblage virtuel de molécules (IA pharmaceutique)",
-    "editeur": "Multiples acteurs (Insilico Medicine, Isomorphic Labs, Recursion Pharmaceuticals, laboratoires pharmaceutiques historiques)",
+    "editeur": "Multiples acteurs ; aucun des laboratoires souvent cités — Insilico Medicine, Isomorphic Labs, Recursion Pharmaceuticals — n'est nommé par la source de la fiche.",
     "architecture": "Modèles d'apprentissage profond (souvent génératifs) entraînés à prédire les propriétés physico-chimiques et l'activité biologique de molécules candidates sans passer par la synthèse physique",
     "capacites_cles": [
       "Évaluation virtuelle de millions à milliards de molécules candidates pour une cible thérapeutique donnée, à une vitesse et une échelle inatteignables expérimentalement",
@@ -2773,8 +2686,8 @@
         "trl": null,
         "diffusion": "etabli",
         "exemples": [
-          "Criblage virtuel de bibliothèques de molécules pour des cibles thérapeutiques spécifiques",
-          "Conception de novo de molécules candidates optimisées"
+          "Criblage virtuel prospectif dont « the resulting hits are subjected to experimental confirmation (e.g., IC50 measurements) »",
+          "La source souligne que seules les études prospectives constituent une preuve concluante de la pertinence d'une technique, les bancs d'essai rétrospectifs prédisant mal la performance réelle"
         ],
         "sources": [
           {
@@ -2790,10 +2703,7 @@
         "description": "Recherche académique en chimie médicinale assistée par apprentissage automatique",
         "trl": null,
         "diffusion": "etabli",
-        "exemples": [
-          "Étude de relations structure-activité à grande échelle par apprentissage automatique",
-          "Recherche de molécules candidates pour des maladies négligées à faible potentiel commercial"
-        ],
+        "exemples": [],
         "sources": [
           {
             "titre": "Virtual screening — Wikipedia",
@@ -2804,7 +2714,7 @@
         ]
       }
     ],
-    "limites_connues": "Les prédictions virtuelles de propriétés moléculaires restent des approximations qui doivent être confirmées par des essais expérimentaux réels, et le taux d'échec en essais cliniques (efficacité, toxicité chez l'humain) demeure élevé même pour des molécules identifiées par criblage virtuel, ce qui limite pour l'instant le raccourcissement global du temps de développement pharmaceutique.",
+    "limites_connues": "Les prédictions virtuelles restent des approximations que des essais expérimentaux doivent confirmer, et le taux d'échec en essais cliniques demeure élevé. La source relève par ailleurs le coût de calcul quadratique du calcul des interactions atome à atome et l'absence de solution unique en modélisation pharmacophorique. La conception de novo de molécules et la recherche sur les maladies négligées, annoncées par la fiche, ne sont attestées par aucune de ses sources.",
     "sources": [
       {
         "titre": "Virtual screening — Wikipedia",
@@ -2834,10 +2744,9 @@
         "trl": 9,
         "trl_justification": "Deux systèmes nationaux réellement mis en service : SyRI aux Pays-Bas, employé à partir de 2018 pour signaler des milliers de personnes aux enquêteurs, fermé par le tribunal de district de La Haye le 5 février 2020 pour violation de l'article 8 de la CEDH ; et l'algorithme britannique de notation des A-levels de 2020, retiré après protestation. Leur retrait est juridique et politique, non technique.",
         "exemples": [
-          "Systèmes de détection de fraude aux prestations sociales",
-          "Modèles de ciblage de contrôles fiscaux ou d'inspections du travail",
-          "Traitement automatisé de premières instructions de dossiers administratifs standards",
-          "Systèmes de réponse automatisée aux demandes d'information des usagers"
+          "SyRI aux Pays-Bas (2018) : système de détection du risque de fraude aux prestations sociales qui « quietly flagged thousands of people to investigators », fermé le 5 février 2020 par le tribunal de district de La Haye au visa de l'article 8 de la Convention européenne des droits de l'homme",
+          "Notation automatisée des A-levels au Royaume-Uni en 2020, retirée après une protestation publique",
+          "Police prédictive : collaboration engagée en 2012 entre la police de La Nouvelle-Orléans et Palantir Technologies"
         ],
         "sources": [
           {
