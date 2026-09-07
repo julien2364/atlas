@@ -4,16 +4,28 @@
 //
 // Contrat d'affichage, aligné sur les garde-fous du moteur :
 //   - la réponse est TOUJOURS rendue par <PerspectivesPanel>, le même composant
-//     que les 4 questions répondues à la main : même gabarit, mêmes six champs,
+//     que les 9 questions répondues à la main : même gabarit, mêmes six champs,
 //     même sélecteur d'école. Aucun format « verdict » n'est même possible ici ;
 //   - les fiches sources mobilisées sont affichées systématiquement, y compris
 //     quand le moteur refuse de répondre ;
 //   - un refus (corpus insuffisant) est affiché comme une réponse légitime, pas
-//     comme une erreur : c'est le comportement voulu, pas une panne.
+//     comme une erreur : c'est le comportement voulu, pas une panne ;
+//   - LE MODE QUI A PRODUIT LA RÉPONSE EST TOUJOURS ÉCRIT, sans exception. Une
+//     réponse extractive et une réponse rédigée par un modèle n'ont ni le même
+//     statut ni les mêmes risques : les confondre serait le pire défaut possible
+//     de cette page.
+//
+// Trois modes, décrits à l'écran plutôt que dans la documentation seule :
+//   1. fournisseur d'API — n'apparaît que si une clé est configurée ;
+//   2. prompt à copier / réponse à recoller — aucune clé, aller-retour manuel ;
+//   3. extractif — aucune clé, composé depuis les fiches, ne peut rien inventer.
 
-import { useCallback, useEffect, useState } from "react";
+import { useCallback, useEffect, useMemo, useRef, useState } from "react";
 import type { Perspective } from "@/lib/types";
 import { PerspectivesPanel } from "@/components/QuestionsClient";
+
+type ModeReponse = "fournisseur" | "prompt" | "extractif";
+type ModeDemande = "auto" | ModeReponse;
 
 interface PassageMobilise {
   type_fiche: "humaine" | "ia" | "gap";
@@ -35,10 +47,14 @@ interface FicheMobilisee {
 }
 
 interface Diagnostic {
-  statut: "repondue" | "hors_corpus" | "corpus_vide";
+  statut: "repondue" | "hors_corpus" | "corpus_vide" | "prompt_a_coller";
+  mode: ModeReponse | null;
+  mode_libelle: string;
+  fournisseur: string | null;
   similarite_max: number;
   nb_passages_trouves: number;
   nb_passages_utilises: number;
+  termes_apparies_max: number;
   seuil_pertinence: number;
   modele_embedding: string;
   modele_reponse: string | null;
@@ -58,12 +74,24 @@ interface ReponseQuestion {
   fiches_mobilisees: FicheMobilisee[];
   avertissements: string[];
   message?: string;
+  prompt_a_copier?: string;
   diagnostic: Diagnostic;
+}
+
+interface EtatIndex {
+  present: boolean;
+  modele_embedding: string;
+  nb_passages_indexes: number;
+  nb_passages_absents: number;
+  nb_entrees_orphelines: number;
 }
 
 interface EtatMoteur {
   actif: boolean;
-  cles_manquantes: string[];
+  index: EtatIndex;
+  mode_par_defaut: ModeReponse;
+  modes_disponibles: ModeReponse[];
+  fournisseurs_configures: { id: string; nom: string; modele: string }[];
 }
 
 const LIBELLE_TYPE: Record<"humaine" | "ia" | "gap", string> = {
@@ -91,13 +119,39 @@ const LIBELLE_CHAMP: Record<string, string> = {
 };
 
 function libelleChamp(champ: string): string {
-  return LIBELLE_CHAMP[champ] ?? champ.replace(/_/g, " ");
+  if (LIBELLE_CHAMP[champ]) return LIBELLE_CHAMP[champ];
+  if (champ.startsWith("usage_")) return `usage ${champ.slice(6).replace(/_/g, " ")}`;
+  return champ.replace(/_/g, " ");
 }
 
+/** Description de chaque mode, telle qu'elle est présentée au lecteur. */
+const MODES: { valeur: ModeDemande; libelle: string; aide: string }[] = [
+  {
+    valeur: "auto",
+    libelle: "Automatique",
+    aide: "Essaie les fournisseurs d'API configurés, puis retombe sur la réponse extractive. Marche toujours.",
+  },
+  {
+    valeur: "fournisseur",
+    libelle: "Fournisseur d'API",
+    aide: "Un modèle de langage rédige les perspectives à partir des extraits. Demande une clé configurée sur le serveur.",
+  },
+  {
+    valeur: "prompt",
+    libelle: "Prompt à copier",
+    aide: "Aucune clé : le moteur cherche et prépare un prompt. Vous le collez dans le chat de votre choix, et recollez ici la réponse obtenue.",
+  },
+  {
+    valeur: "extractif",
+    libelle: "Extractif (sans modèle)",
+    aide: "Aucune clé, aucun modèle génératif : chaque perspective est assemblée depuis les champs des fiches retrouvées. Rien n'y est reformulé, donc rien n'y est inventé.",
+  },
+];
+
 const EXEMPLES = [
-  "L'IA peut-elle remplacer le jugement moral humain ?",
-  "Quelles capacités humaines résistent le mieux à l'automatisation ?",
-  "Comment l'IA transforme-t-elle la recherche scientifique ?",
+  "Le bien-vivre est-il mesurable, et faut-il le mesurer ?",
+  "Comment comparer l'évolution du capitalisme, du communisme et du modèle chinois ?",
+  "Les limites actuelles de l'IA générative sont-elles structurelles ou conjoncturelles ?",
 ];
 
 /** Effectifs du corpus, calculés côté serveur et passés en props : ce composant
@@ -111,20 +165,25 @@ export interface EffectifsCorpus {
 
 export default function QuestionLibreClient({ effectifs }: { effectifs: EffectifsCorpus }) {
   const [question, setQuestion] = useState("");
+  const [mode, setMode] = useState<ModeDemande>("auto");
   const [chargement, setChargement] = useState(false);
   const [reponse, setReponse] = useState<ReponseQuestion | null>(null);
   const [erreur, setErreur] = useState<string | null>(null);
   const [etat, setEtat] = useState<EtatMoteur | null>(null);
+  const [retour, setRetour] = useState("");
+  const [copie, setCopie] = useState<"inactif" | "fait" | "echec">("inactif");
+  const promptRef = useRef<HTMLTextAreaElement | null>(null);
 
-  // Diagnostic de configuration, sans aucun appel payant : permet d'afficher un
-  // message honnête si les clés ne sont pas encore posées, plutôt qu'un champ
-  // de saisie qui échouera systématiquement.
+  // Diagnostic de configuration, sans aucun appel payant : permet d'annoncer
+  // honnêtement ce qui est disponible plutôt que de proposer un mode qui
+  // échouera à la première question.
   useEffect(() => {
     let annule = false;
     fetch("/api/question")
       .then((r) => (r.ok ? r.json() : null))
       .then((d) => {
-        if (!annule && d) setEtat({ actif: Boolean(d.actif), cles_manquantes: d.cles_manquantes ?? [] });
+        if (annule || !d) return;
+        setEtat(d as EtatMoteur);
       })
       .catch(() => {
         /* diagnostic non bloquant */
@@ -134,24 +193,31 @@ export default function QuestionLibreClient({ effectifs }: { effectifs: Effectif
     };
   }, []);
 
-  const envoyer = useCallback(
-    async (texte: string) => {
+  const modesDisponibles = useMemo(() => {
+    const utilisables = new Set<string>(etat?.modes_disponibles ?? ["prompt", "extractif"]);
+    return MODES.filter((m) => m.valeur === "auto" || utilisables.has(m.valeur));
+  }, [etat]);
+
+  const interroger = useCallback(
+    async (texte: string, modeDemande: ModeDemande, texteRetour?: string) => {
       const propre = texte.trim();
       if (propre.length < 10 || chargement) return;
       setChargement(true);
       setErreur(null);
-      setReponse(null);
+      setCopie("inactif");
+      if (!texteRetour) setReponse(null);
       try {
         const r = await fetch("/api/question", {
           method: "POST",
           headers: { "Content-Type": "application/json" },
-          body: JSON.stringify({ question: propre }),
+          body: JSON.stringify({ question: propre, mode: modeDemande, retour: texteRetour }),
         });
         const donnees = await r.json();
         if (!r.ok) {
           setErreur(donnees?.erreur?.message ?? `Le moteur a répondu ${r.status}.`);
         } else {
           setReponse(donnees as ReponseQuestion);
+          if ((donnees as ReponseQuestion).diagnostic.statut === "repondue") setRetour("");
         }
       } catch {
         setErreur("Le moteur est injoignable. Vérifier la connexion réseau et réessayer.");
@@ -162,31 +228,87 @@ export default function QuestionLibreClient({ effectifs }: { effectifs: Effectif
     [chargement]
   );
 
-  const repondue = reponse?.diagnostic.statut === "repondue";
+  const copierPrompt = useCallback(async () => {
+    const texte = reponse?.prompt_a_copier;
+    if (!texte) return;
+    try {
+      await navigator.clipboard.writeText(texte);
+      setCopie("fait");
+    } catch {
+      // Presse-papiers refusé (contexte non sécurisé, permission) : on sélectionne
+      // le texte pour que Ctrl+C fonctionne, plutôt que d'échouer en silence.
+      setCopie("echec");
+      promptRef.current?.focus();
+      promptRef.current?.select();
+    }
+  }, [reponse]);
+
+  const statut = reponse?.diagnostic.statut;
+  const repondue = statut === "repondue";
+  const attenteCollage = statut === "prompt_a_coller";
+  const extractif = reponse?.diagnostic.mode === "extractif";
 
   return (
     <section className="rounded-lg border border-neutral-200 p-5 dark:border-neutral-800">
-      <h2 className="font-medium">Poser une question au référentiel</h2>
-      <p className="mt-2 max-w-2xl text-sm text-neutral-500">
-        Recherche sémantique dans les {effectifs.humaines} fiches humaines, {effectifs.ia} fiches IA et{" "}
-        {effectifs.gaps} fiches de gap, puis réponse
-        construite <strong>en perspectives concurrentes</strong>, jamais en verdict unique. Si le référentiel ne
-        couvre pas la question, le moteur le dit et ne répond pas.
+      <h2 className="text-lg font-medium">Poser une question au référentiel</h2>
+      <p className="mt-2 max-w-2xl text-sm leading-relaxed text-neutral-600 dark:text-neutral-400">
+        Recherche dans les {effectifs.humaines} fiches humaines, {effectifs.ia} fiches IA et {effectifs.gaps} fiches
+        de gap, puis réponse construite <strong>en perspectives concurrentes</strong>, jamais en verdict unique. Si
+        le référentiel ne couvre pas la question, le moteur le dit et ne répond pas.
       </p>
 
-      {etat && !etat.actif ? (
-        <p className="mt-3 rounded border border-amber-300 bg-amber-50 px-3 py-2 text-xs text-amber-800 dark:border-amber-800 dark:bg-amber-950 dark:text-amber-300">
-          Moteur non configuré sur ce déploiement : {etat.cles_manquantes.join(", ")} manquante(s). Les questions
-          ci-dessous restent consultables. Marche à suivre :{" "}
-          <code className="font-mono">docs/rag-mise-en-route-et-cout.md</code>.
+      {/* État réel du moteur : ni promesse, ni alarme. */}
+      {etat ? (
+        <p className="mt-3 text-xs text-neutral-500 dark:text-neutral-400">
+          {etat.index.present
+            ? `Index local : ${etat.index.nb_passages_indexes.toLocaleString("fr-FR")} passages · modèle « ${etat.index.modele_embedding} » · aucune base de données, aucun appel réseau pour chercher.`
+            : "Index vectoriel absent : lancer « npm run indexer » (aucune clé requise)."}{" "}
+          {etat.fournisseurs_configures.length > 0
+            ? `Fournisseur${etat.fournisseurs_configures.length > 1 ? "s" : ""} de rédaction : ${etat.fournisseurs_configures.map((f) => `${f.nom} (${f.modele})`).join(", ")}.`
+            : "Aucun fournisseur de rédaction configuré : le mode extractif, qui n'en demande aucun, est le mode par défaut."}
         </p>
       ) : null}
+      {etat && etat.index.nb_passages_absents > 0 ? (
+        <p className="mt-2 rounded border border-amber-300 bg-amber-50 px-3 py-2 text-xs text-amber-800 dark:border-amber-800 dark:bg-amber-950 dark:text-amber-300">
+          {etat.index.nb_passages_absents.toLocaleString("fr-FR")} passage(s) du corpus ne sont pas dans l&apos;index :
+          la recherche porte sur moins de matière qu&apos;annoncé. Relancer{" "}
+          <code className="font-mono">npm run indexer</code>.
+        </p>
+      ) : null}
+
+      {/* Choix du mode. aria-pressed plutôt que des radios : ce sont des bascules
+          de configuration, pas un champ de formulaire soumis avec la question. */}
+      <fieldset className="mt-4">
+        <legend className="text-xs font-semibold uppercase tracking-wide text-neutral-500 dark:text-neutral-400">
+          Comment construire la réponse
+        </legend>
+        <div className="mt-2 flex flex-wrap gap-2">
+          {modesDisponibles.map((m) => (
+            <button
+              key={m.valeur}
+              type="button"
+              onClick={() => setMode(m.valeur)}
+              aria-pressed={mode === m.valeur}
+              className={`rounded-full border px-3 py-1 text-xs transition-colors ${
+                mode === m.valeur
+                  ? "border-neutral-900 bg-neutral-900 text-white dark:border-neutral-100 dark:bg-neutral-100 dark:text-neutral-900"
+                  : "border-neutral-300 text-neutral-600 hover:border-neutral-500 dark:border-neutral-700 dark:text-neutral-400"
+              }`}
+            >
+              {m.libelle}
+            </button>
+          ))}
+        </div>
+        <p className="mt-2 max-w-2xl text-xs text-neutral-500 dark:text-neutral-400" aria-live="polite">
+          {MODES.find((m) => m.valeur === mode)?.aide}
+        </p>
+      </fieldset>
 
       <form
         className="mt-4 flex flex-col gap-2 sm:flex-row"
         onSubmit={(e) => {
           e.preventDefault();
-          void envoyer(question);
+          void interroger(question, mode);
         }}
       >
         <input
@@ -194,7 +316,7 @@ export default function QuestionLibreClient({ effectifs }: { effectifs: Effectif
           value={question}
           onChange={(e) => setQuestion(e.target.value)}
           maxLength={400}
-          placeholder="Ex. : l'IA peut-elle remplacer le jugement moral humain ?"
+          placeholder="Ex. : le bien-vivre est-il mesurable, et faut-il le mesurer ?"
           aria-label="Question libre posée au référentiel"
           className="flex-1 rounded-md border border-neutral-300 bg-transparent px-3 py-2 text-sm outline-none focus:border-neutral-500 dark:border-neutral-700"
         />
@@ -214,7 +336,7 @@ export default function QuestionLibreClient({ effectifs }: { effectifs: Effectif
             type="button"
             onClick={() => {
               setQuestion(exemple);
-              void envoyer(exemple);
+              void interroger(exemple, mode);
             }}
             disabled={chargement}
             className="rounded-full border border-neutral-300 px-3 py-1 text-xs text-neutral-600 hover:border-neutral-500 disabled:opacity-40 dark:border-neutral-700 dark:text-neutral-400"
@@ -225,26 +347,46 @@ export default function QuestionLibreClient({ effectifs }: { effectifs: Effectif
       </div>
 
       {chargement ? (
-        <p className="mt-4 text-sm text-neutral-500">
-          Recherche sémantique dans le corpus, puis construction des perspectives…
+        <p className="mt-4 text-sm text-neutral-500" aria-live="polite">
+          Recherche dans le corpus, puis construction des perspectives…
         </p>
       ) : null}
 
       {erreur ? (
-        <p className="mt-4 rounded border border-red-300 bg-red-50 px-3 py-2 text-sm text-red-800 dark:border-red-800 dark:bg-red-950 dark:text-red-300">
+        <p
+          role="alert"
+          className="mt-4 rounded border border-red-300 bg-red-50 px-3 py-2 text-sm text-red-800 dark:border-red-800 dark:bg-red-950 dark:text-red-300"
+        >
           {erreur}
         </p>
       ) : null}
 
       {reponse ? (
         <div className="mt-6 border-t border-neutral-200 pt-5 dark:border-neutral-800" aria-live="polite">
-          <p className="text-xs font-medium uppercase tracking-wide text-neutral-500 dark:text-neutral-400">Question comprise comme</p>
+          {/* Le mode employé, toujours, en tête de réponse. */}
+          <p
+            className={`inline-block rounded border px-2 py-1 text-xs font-medium ${
+              extractif
+                ? "border-emerald-300 bg-emerald-50 text-emerald-900 dark:border-emerald-800 dark:bg-emerald-950 dark:text-emerald-200"
+                : "border-neutral-300 bg-neutral-50 text-neutral-700 dark:border-neutral-700 dark:bg-neutral-900 dark:text-neutral-300"
+            }`}
+          >
+            {reponse.diagnostic.mode
+              ? reponse.diagnostic.mode_libelle
+              : "Aucune réponse construite — le moteur a refusé"}
+            {reponse.diagnostic.fournisseur ? ` · ${reponse.diagnostic.fournisseur}` : null}
+            {reponse.diagnostic.modele_reponse ? ` · ${reponse.diagnostic.modele_reponse}` : null}
+          </p>
+
+          <p className="mt-3 text-xs font-semibold uppercase tracking-wide text-neutral-500 dark:text-neutral-400">
+            Question comprise comme
+          </p>
           <p className="mt-1 text-sm text-neutral-700 dark:text-neutral-300">{reponse.reformulation}</p>
 
-          {/* Refus assumé : pas de perspectives inventées quand le corpus ne suit pas. */}
-          {!repondue ? (
+          {/* Refus assumé, ou consigne du mode 2 : pas de perspectives inventées. */}
+          {!repondue && reponse.message ? (
             <p className="mt-4 rounded border border-neutral-300 bg-neutral-50 px-3 py-2 text-sm text-neutral-700 dark:border-neutral-700 dark:bg-neutral-900 dark:text-neutral-300">
-              {reponse.message ?? "Le référentiel ne permet pas de répondre à cette question."}
+              {reponse.message}
             </p>
           ) : null}
 
@@ -256,19 +398,84 @@ export default function QuestionLibreClient({ effectifs }: { effectifs: Effectif
             </ul>
           ) : null}
 
+          {/* Mode 2 — prompt à copier, puis zone de collage du retour. */}
+          {reponse.prompt_a_copier && (attenteCollage || mode === "prompt") ? (
+            <div className="mt-5 rounded-md border border-neutral-200 p-4 dark:border-neutral-800">
+              <div className="flex flex-wrap items-center justify-between gap-2">
+                <h3 className="text-xs font-semibold uppercase tracking-wide text-neutral-500 dark:text-neutral-400">
+                  1. Prompt à copier ({reponse.prompt_a_copier.length.toLocaleString("fr-FR")} caractères)
+                </h3>
+                <button
+                  type="button"
+                  onClick={() => void copierPrompt()}
+                  className="rounded-md border border-neutral-900 px-3 py-1 text-xs text-neutral-900 hover:bg-neutral-900 hover:text-white dark:border-neutral-100 dark:text-neutral-100 dark:hover:bg-neutral-100 dark:hover:text-neutral-900"
+                >
+                  {copie === "fait" ? "Copié ✓" : "Copier le prompt"}
+                </button>
+              </div>
+              {copie === "echec" ? (
+                <p className="mt-2 text-xs text-amber-700 dark:text-amber-400">
+                  Le presse-papiers a été refusé par le navigateur. Le texte est sélectionné ci-dessous : le copier
+                  au clavier.
+                </p>
+              ) : null}
+              <label className="sr-only" htmlFor="prompt-a-copier">
+                Prompt complet à copier dans un chat externe
+              </label>
+              <textarea
+                id="prompt-a-copier"
+                ref={promptRef}
+                readOnly
+                value={reponse.prompt_a_copier}
+                rows={8}
+                className="mt-2 w-full rounded border border-neutral-300 bg-neutral-50 p-2 font-mono text-[11px] leading-relaxed text-neutral-700 dark:border-neutral-700 dark:bg-neutral-900 dark:text-neutral-300"
+              />
+
+              <h3 className="mt-4 text-xs font-semibold uppercase tracking-wide text-neutral-500 dark:text-neutral-400">
+                2. Coller ici la réponse obtenue
+              </h3>
+              <p className="mt-1 text-xs text-neutral-500 dark:text-neutral-400">
+                Le texte peut contenir du bavardage, un bloc de code ou des guillemets typographiques : il sera
+                nettoyé. Les identifiants de fiches cités seront vérifiés contre le corpus, et les sources
+                rattachées depuis les fiches réelles — un identifiant inventé est rejeté.
+              </p>
+              <label className="sr-only" htmlFor="retour-modele">
+                Réponse du modèle à analyser
+              </label>
+              <textarea
+                id="retour-modele"
+                value={retour}
+                onChange={(e) => setRetour(e.target.value)}
+                rows={6}
+                placeholder="Coller ici la réponse du modèle…"
+                className="mt-2 w-full rounded border border-neutral-300 bg-transparent p-2 font-mono text-[11px] leading-relaxed dark:border-neutral-700"
+              />
+              <button
+                type="button"
+                disabled={chargement || retour.trim().length === 0}
+                onClick={() => void interroger(reponse.question, "prompt", retour)}
+                className="mt-2 rounded-md border border-neutral-900 bg-neutral-900 px-4 py-2 text-sm text-white transition-opacity disabled:opacity-40 dark:border-neutral-100 dark:bg-neutral-100 dark:text-neutral-900"
+              >
+                {chargement ? "Lecture…" : "Analyser la réponse collée"}
+              </button>
+            </div>
+          ) : null}
+
           {repondue ? (
             <PerspectivesPanel key={reponse.diagnostic.genere_le} perspectives={reponse.perspectives} />
           ) : null}
 
           <div className="mt-5">
-            <p className="text-xs font-medium uppercase tracking-wide text-neutral-500 dark:text-neutral-400">Angles morts de la réponse</p>
+            <p className="text-xs font-semibold uppercase tracking-wide text-neutral-500 dark:text-neutral-400">
+              Angles morts de la réponse
+            </p>
             <p className="mt-1 text-sm text-neutral-700 dark:text-neutral-300">{reponse.angles_morts}</p>
           </div>
 
           {/* Les fiches sources sont affichées quoi qu'il arrive — garde-fou n°2. */}
           {reponse.fiches_mobilisees.length > 0 ? (
             <div className="mt-5">
-              <p className="text-xs font-medium uppercase tracking-wide text-neutral-500 dark:text-neutral-400">
+              <p className="text-xs font-semibold uppercase tracking-wide text-neutral-500 dark:text-neutral-400">
                 Fiches du référentiel mobilisées ({reponse.fiches_mobilisees.length})
               </p>
               <ul className="mt-2 space-y-1 text-xs">
@@ -289,8 +496,8 @@ export default function QuestionLibreClient({ effectifs }: { effectifs: Effectif
 
           {reponse.passages_mobilises.length > 0 ? (
             <details className="mt-4">
-              <summary className="cursor-pointer text-xs text-neutral-500">
-                Voir les {reponse.passages_mobilises.length} extraits réellement envoyés au modèle
+              <summary className="cursor-pointer text-xs text-neutral-500 dark:text-neutral-400">
+                Voir les {reponse.passages_mobilises.length} extraits du corpus retenus
               </summary>
               <ul className="mt-2 space-y-2 text-xs text-neutral-600 dark:text-neutral-400">
                 {reponse.passages_mobilises.map((p, i) => (
@@ -306,16 +513,26 @@ export default function QuestionLibreClient({ effectifs }: { effectifs: Effectif
           ) : null}
 
           <p className="mt-4 text-xs text-neutral-500 dark:text-neutral-400">
-            {reponse.diagnostic.depuis_cache ? "Réponse servie depuis le cache" : "Réponse générée"} ·{" "}
+            {reponse.diagnostic.depuis_cache ? "Réponse servie depuis le cache" : "Réponse construite"} ·{" "}
             {reponse.diagnostic.nb_passages_utilises}/{reponse.diagnostic.nb_passages_trouves} extraits retenus ·
-            proximité maximale {reponse.diagnostic.similarite_max.toFixed(2)} (seuil{" "}
-            {reponse.diagnostic.seuil_pertinence}) ·{" "}
-            {reponse.diagnostic.modele_reponse ?? "aucun appel au modèle"} · corpus au{" "}
+            proximité maximale {reponse.diagnostic.similarite_max.toFixed(3)} (seuil{" "}
+            {reponse.diagnostic.seuil_pertinence}) · {reponse.diagnostic.termes_apparies_max} terme(s) de la question
+            retrouvé(s) · recherche « {reponse.diagnostic.modele_embedding} » · corpus au{" "}
             {reponse.diagnostic.corpus_maj}
+            {reponse.diagnostic.tokens_sortie > 0
+              ? ` · ${reponse.diagnostic.tokens_entree} tokens en entrée, ${reponse.diagnostic.tokens_sortie} en sortie`
+              : null}
           </p>
+
+          {/* Transparence : la mention dépend du mode, parce que la réalité en
+              dépend. Annoncer « contenu généré par IA » sur une réponse extractive
+              serait faux, et l'inverse serait grave. */}
           <p className="mt-1 text-xs text-neutral-500 dark:text-neutral-400">
-            Contenu généré par IA à partir du référentiel ATLAS (transparence AI Act) : à vérifier via les fiches
-            sources ci-dessus avant toute réutilisation.
+            {extractif
+              ? "Aucun modèle génératif n'est intervenu : chaque phrase de fond est recopiée d'une fiche du référentiel. Les fiches sources sont listées ci-dessus."
+              : repondue
+                ? "Contenu généré par IA à partir du référentiel ATLAS (transparence AI Act) : à vérifier via les fiches sources ci-dessus avant toute réutilisation."
+                : "Aucun contenu n'a été généré pour cette question."}
           </p>
         </div>
       ) : null}

@@ -1,51 +1,73 @@
 // Moteur de réponse prédictive (MP-4 / Lot 6 du mégaprompt, section 7.3).
 //
-// Ce module est le SEUL endroit qui parle aux fournisseurs payants (Voyage pour
-// les embeddings, Anthropic pour la génération) et à la base vectorielle. La
-// route app/api/question/route.ts se contente de l'orchestrer et de traduire le
-// résultat en réponse HTTP.
+// Ce module orchestre la chaîne complète : recherche dans l'index local,
+// garde-fous, génération, validation. La route app/api/question/route.ts se
+// contente de le transporter en HTTP.
 //
-// ⚠️ Module strictement serveur : il lit SUPABASE_SERVICE_ROLE_KEY, VOYAGE_API_KEY
-// et ANTHROPIC_API_KEY. Ne jamais l'importer depuis un composant "use client" —
-// Next embarquerait ces clés dans le bundle du navigateur.
+// Refonte du 07/09/2026 — ce qui a changé, et ce qui n'a pas bougé
+// ----------------------------------------------------------------
+// A CHANGÉ le STOCKAGE : l'index vectoriel ne vit plus dans Supabase mais dans
+// `data/index-vectoriel.json`, versionné au dépôt et chargé par
+// `lib/index-vectoriel.ts`. Aucune base, aucune clé, aucun appel réseau pour
+// chercher. Le chemin Supabase reste documenté comme option de montée en charge
+// (supabase/schema.sql, lib/supabase.ts) — cf. docs/moteur-reponse-local.md §7.
+//
+// A CHANGÉ la GÉNÉRATION : trois modes au lieu d'un seul fournisseur imposé.
+//   1. fournisseur d'API — plusieurs, derrière une interface unique, essayés
+//      dans l'ordre (lib/fournisseurs-generation.ts) ;
+//   2. prompt à copier / résultat à recoller — aucune clé, l'utilisateur fait
+//      l'aller-retour lui-même (lib/analyse-sortie.ts pour le retour) ;
+//   3. réponse extractive, composée depuis les fiches, sans aucun modèle
+//      (lib/reponse-extractive.ts). Marche toujours, ne peut rien halluciner.
+//
+// N'A PAS BOUGÉ, et c'est délibéré : le découpage en passages, l'empreinte de
+// contenu, les seuils, les plafonds, le cache, et surtout les REFUS. Le moteur
+// qui refuse de répondre quand le corpus ne suit pas est ce qui a été éprouvé le
+// 06/09 (sept défauts trouvés et corrigés, cf. docs/rag-mise-en-route-et-cout.md) :
+// cette logique est reprise telle quelle.
+//
+// ⚠️ Module strictement serveur : il lit des clés d'API et importe tout le
+// corpus. Ne jamais l'importer depuis un composant "use client".
 //
 // Principe directeur, non négociable (mégaprompt §2.1 et §10) : la sortie est
-// une LISTE DE PERSPECTIVES, jamais un verdict unique. Le modèle ne choisit pas
-// entre les écoles, il les expose. Trois mécanismes le garantissent réellement :
-//   1. le schéma d'outil impose un tableau `perspectives` (min. 2 en pratique,
-//      vérifié après coup et signalé dans `avertissements` si le modèle triche) ;
-//   2. le prompt système interdit explicitement la synthèse surplombante ;
-//   3. les sources ne sont PAS produites par le modèle : elles sont reconstruites
-//      depuis `lib/corpus.ts` à partir des identifiants de fiches réellement
-//      remontés par la recherche vectorielle. Un modèle ne peut donc pas
-//      halluciner une référence — au pire il cite une fiche du corpus qui existe.
-//
-// Bornes de coût (les trois, effectives) :
-//   - cache de réponses en base (atlas_rag_cache_reponses) ;
-//   - plafond de passages injectés dans le contexte (MAX_PASSAGES + MAX_CARACTERES) ;
-//   - plafond de tokens de sortie (MAX_TOKENS_REPONSE).
-// Plus un garde-fou en amont : si la recherche vectorielle ne remonte rien
-// au-dessus du seuil de similarité, AUCUN appel au modèle n'est fait — la
-// question coûte alors le seul embedding, et la réponse dit franchement qu'elle
-// ne sait pas.
+// une LISTE DE PERSPECTIVES, jamais un verdict unique. Quatre mécanismes le
+// garantissent, quel que soit le mode :
+//   1. le schéma de sortie impose un tableau `perspectives` (minItems), et une
+//      réponse à perspective unique est signalée dans `avertissements` ;
+//   2. la consigne système interdit explicitement la synthèse surplombante ;
+//   3. les sources ne sont PAS produites par le modèle : elles sont
+//      reconstruites depuis `lib/sources-corpus.ts` à partir des identifiants de
+//      fiches réellement remontés par la recherche ;
+//   4. le mode extractif ne produit aucun texte de fond — il recopie des champs.
 
 import { createHash } from "node:crypto";
 import type { NiveauConfiance, Perspective, Source } from "@/lib/types";
+import { derniereMiseAJourCorpus, fichesGap, fichesHumaines, fichesIA } from "@/lib/corpus";
 import {
-  derniereMiseAJourCorpus,
-  cheminFicheHumaine,
-  cheminFicheIA,
-  cheminGap,
-  getFicheGap,
-  getFicheHumaine,
-  getFicheIA,
-} from "@/lib/corpus";
-import { getSupabaseServiceClient } from "@/lib/supabase";
+  dedupliquerSources,
+  resoudreFiche,
+  sourcesDeFiche,
+  type TypeFicheRag,
+} from "@/lib/sources-corpus";
 import {
-  MODELE_FACTICE,
-  embeddingFactice,
-  embeddingFacticeAutorise,
-} from "@/lib/embedding-factice.mjs";
+  etatIndex,
+  rechercherDense,
+  rechercherLexical,
+  type ResultatRecherche,
+} from "@/lib/index-vectoriel";
+import { MODELE_LEXICAL } from "@/lib/embedding-lexical.mjs";
+import { configEmbeddings, embedderLotDistant } from "@/lib/embeddings-fournisseur.mjs";
+import {
+  appelerFournisseur,
+  fournisseursActifs,
+  FOURNISSEURS,
+  type ContratGeneration,
+  type FournisseurActif,
+} from "@/lib/fournisseurs-generation";
+import { analyserSortie, type SortieBrute } from "@/lib/analyse-sortie";
+import { construireReponseExtractive, type PassagePourExtraction } from "@/lib/reponse-extractive";
+
+export type { TypeFicheRag };
 
 /* -------------------------------------------------------------------------- */
 /* Réglages                                                                   */
@@ -68,51 +90,54 @@ function nombreEnv(nom: string, defaut: number, min: number, max: number): numbe
   return Math.min(max, Math.max(min, valeur));
 }
 
-/** Dimension des vecteurs — figée par supabase/schema.sql, ne pas changer sans migration. */
-export const DIMENSION_EMBEDDING = 1024;
+/** Modèle d'embedding réellement employé — lu dans l'index, pas deviné. */
+export const MODELE_EMBEDDING = etatIndex().present ? etatIndex().modele_embedding : MODELE_LEXICAL;
 
 /**
- * Mode d'embedding FACTICE (test uniquement) : hachage local déterministe au
- * lieu d'un appel à Voyage. Jamais actif par défaut, refusé en production —
- * les trois verrous sont décrits dans lib/embedding-factice.mjs. Il sert à
- * éprouver toute la chaîne sans clé ; il ne mesure AUCUNE proximité de sens.
+ * Seuil de similarité en dessous duquel un passage est jugé hors sujet.
+ *
+ * RECALIBRÉ le 07/09/2026 (0,35 → 0,08). Ce n'est pas un assouplissement : les
+ * anciennes valeurs étaient calées sur l'échelle d'un embedding sémantique, qui
+ * n'est pas celle d'un cosinus BM25. Mesuré sur les 9 questions-tests, la
+ * similarité du meilleur passage va de 0,169 à 0,438 ; sur six questions
+ * volontairement hors périmètre, elle plafonne à 0,145. Les deux valeurs
+ * ci-dessous se lisent dans ce tableau, reproductible par
+ * `node scripts/indexer-corpus.mjs --mesurer`.
  */
-export const EMBEDDING_FACTICE = embeddingFacticeAutorise();
+export const SEUIL_SIMILARITE = nombreEnv("ATLAS_RAG_SEUIL_SIMILARITE", 0.08, 0, 1);
 
-/** Modèle d'embedding. Doit être IDENTIQUE à celui utilisé par l'indexeur. */
-export const MODELE_EMBEDDING = EMBEDDING_FACTICE
-  ? MODELE_FACTICE
-  : process.env.VOYAGE_MODELE_EMBEDDING || "voyage-4-lite";
+/** Similarité minimale du MEILLEUR passage pour qu'on accepte de répondre. */
+export const SEUIL_PERTINENCE = nombreEnv("ATLAS_RAG_SEUIL_PERTINENCE", 0.15, 0, 1);
 
-/** Modèle de génération. Vérifier le nom exact dans la console Anthropic avant mise en ligne. */
-export const MODELE_REPONSE = process.env.ATLAS_MODELE_REPONSE || "claude-sonnet-4-5";
-
-/**
- * Seuil de similarité cosinus en dessous duquel un passage est jugé hors sujet.
- * 0,35 est volontairement bas pour un corpus francophone : les embeddings
- * multilingues rendent rarement plus de 0,6 sur une question ouverte. Le vrai
- * garde-fou est SEUIL_PERTINENCE ci-dessous, qui exige que le MEILLEUR passage
- * dépasse une barre plus haute pour qu'on accepte de répondre.
- */
-export const SEUIL_SIMILARITE = nombreEnv("ATLAS_RAG_SEUIL_SIMILARITE", 0.35, 0, 1);
-
-/** Similarité minimale du meilleur passage pour qu'on accepte de répondre. */
-export const SEUIL_PERTINENCE = nombreEnv("ATLAS_RAG_SEUIL_PERTINENCE", 0.45, 0, 1);
-
-/** Nombre minimal de passages pertinents exigé avant tout appel au modèle. */
+/** Nombre minimal de passages pertinents exigé avant toute génération. */
 export const MIN_PASSAGES = entierEnv("ATLAS_RAG_MIN_PASSAGES", 3, 1, 20);
 
-/** Plafond de passages injectés dans le contexte (borne de coût n°2). */
+/**
+ * Termes distincts de la question qu'un passage doit au moins retrouver.
+ *
+ * Second garde-fou, propre à la recherche lexicale, et le plus discriminant des
+ * deux : sur les six questions hors périmètre testées, AUCUN passage ne retrouve
+ * plus d'un terme de la question, alors que les neuf questions-tests en
+ * retrouvent toutes au moins deux. Une similarité seule ne sépare pas aussi
+ * nettement (0,145 contre 0,169). Sans objet en mode dense, où deux textes
+ * peuvent légitimement ne partager aucun mot.
+ */
+export const MIN_TERMES_APPARIES = entierEnv("ATLAS_RAG_MIN_TERMES", 2, 1, 10);
+
+/** Plafond de passages injectés dans le contexte (borne de coût n°1). */
 export const MAX_PASSAGES = entierEnv("ATLAS_RAG_MAX_PASSAGES", 18, 3, 60);
 
 /** Plafond de caractères du contexte, indépendant du nombre de passages. */
 export const MAX_CARACTERES_CONTEXTE = entierEnv("ATLAS_RAG_MAX_CARACTERES", 18_000, 2_000, 60_000);
 
-/** Plafond de tokens de sortie du modèle (borne de coût n°3). */
+/** Plafond de tokens de sortie d'un fournisseur (borne de coût n°2). */
 export const MAX_TOKENS_REPONSE = entierEnv("ATLAS_RAG_MAX_TOKENS", 2_600, 500, 8_000);
 
 /** Durée de vie d'une entrée de cache, en heures (30 jours par défaut). */
 export const CACHE_TTL_HEURES = entierEnv("ATLAS_RAG_CACHE_TTL_HEURES", 720, 1, 8_760);
+
+/** Nombre d'entrées gardées en cache mémoire (borne de coût n°3). */
+const CACHE_MAX_ENTREES = entierEnv("ATLAS_RAG_CACHE_ENTREES", 200, 10, 5_000);
 
 /** Longueurs acceptées pour une question posée par un visiteur. */
 export const QUESTION_MIN = 10;
@@ -135,9 +160,21 @@ const NIVEAUX_CONFIANCE: NiveauConfiance[] = [
 /* Types de sortie                                                            */
 /* -------------------------------------------------------------------------- */
 
-export type TypeFicheRag = "humaine" | "ia" | "gap";
+/** Mode de génération réellement employé pour la réponse affichée. */
+export type ModeReponse = "fournisseur" | "prompt" | "extractif";
 
-/** Un extrait du corpus réellement envoyé au modèle, affiché tel quel au lecteur. */
+/** Mode demandé par l'appelant. « auto » = fournisseurs puis repli extractif. */
+export type ModeDemande = "auto" | ModeReponse;
+
+const MODES_DEMANDES: ModeDemande[] = ["auto", "fournisseur", "prompt", "extractif"];
+
+export const LIBELLES_MODE: Record<ModeReponse, string> = {
+  fournisseur: "Réponse rédigée par un fournisseur d'API",
+  prompt: "Réponse rédigée hors du site, recollée puis relue ici",
+  extractif: "Réponse extractive, composée depuis les fiches, sans modèle génératif",
+};
+
+/** Un extrait du corpus réellement mobilisé, affiché tel quel au lecteur. */
 export interface PassageMobilise {
   type_fiche: TypeFicheRag;
   fiche_id: string;
@@ -159,10 +196,14 @@ export interface FicheMobilisee {
 }
 
 export interface DiagnosticReponse {
-  statut: "repondue" | "hors_corpus" | "corpus_vide";
+  statut: "repondue" | "hors_corpus" | "corpus_vide" | "prompt_a_coller";
+  mode: ModeReponse | null;
+  mode_libelle: string;
+  fournisseur: string | null;
   similarite_max: number;
   nb_passages_trouves: number;
   nb_passages_utilises: number;
+  termes_apparies_max: number;
   seuil_similarite: number;
   seuil_pertinence: number;
   modele_embedding: string;
@@ -184,19 +225,21 @@ export interface ReponseQuestion {
   angles_morts: string;
   passages_mobilises: PassageMobilise[];
   fiches_mobilisees: FicheMobilisee[];
-  /** Messages honnêtes destinés au lecteur (pluralisme insuffisant, sources absentes…). */
+  /** Messages honnêtes destinés au lecteur (pluralisme insuffisant, index en retard…). */
   avertissements: string[];
-  /** Rempli seulement quand le moteur refuse de répondre. */
+  /** Rempli quand le moteur refuse de répondre, ou quand le collage a échoué. */
   message?: string;
+  /** Prompt prêt à copier (mode 2), joint aussi aux réponses extractives. */
+  prompt_a_copier?: string;
   diagnostic: DiagnosticReponse;
 }
 
 /** Erreur de configuration ou de fournisseur : traduite en 5xx par la route. */
 export class ErreurRag extends Error {
-  readonly code: "configuration" | "fournisseur" | "base";
+  readonly code: "configuration" | "fournisseur" | "index";
   readonly statut: 500 | 502 | 503;
 
-  constructor(code: "configuration" | "fournisseur" | "base", message: string, statut: 500 | 502 | 503) {
+  constructor(code: "configuration" | "fournisseur" | "index", message: string, statut: 500 | 502 | 503) {
     super(message);
     this.name = "ErreurRag";
     this.code = code;
@@ -228,28 +271,28 @@ export function empreinte(texte: string): string {
 }
 
 /**
- * Clé de cache. Elle inclut les modèles ET TOUS les réglages qui changent la
- * réponse : changer l'un d'eux doit produire une NOUVELLE réponse, pas
+ * Clé de cache. Elle inclut le mode, le modèle ET TOUS les réglages qui changent
+ * la réponse : changer l'un d'eux doit produire une NOUVELLE réponse, pas
  * resservir l'ancienne en prétendant qu'elle vient du nouveau réglage.
  *
  * Les seuils en font partie, et ce n'est pas un détail : la méthode de réglage
- * décrite dans docs/rag-mise-en-route-et-cout.md consiste précisément à poser
- * les mêmes questions en faisant varier `ATLAS_RAG_SEUIL_PERTINENCE`. Sans les
- * seuils dans la clé, la deuxième mesure resservait la réponse de la première
- * et l'auteur réglait à l'aveugle.
+ * documentée consiste précisément à poser les mêmes questions en faisant varier
+ * `ATLAS_RAG_SEUIL_PERTINENCE`. Sans les seuils dans la clé, la deuxième mesure
+ * resservait la réponse de la première et l'auteur réglait à l'aveugle.
  */
-export function empreinteCache(question: string): string {
+export function empreinteCache(question: string, mode: ModeDemande): string {
   return empreinte(
     [
       normaliserQuestion(question),
+      mode,
       MODELE_EMBEDDING,
-      MODELE_REPONSE,
       String(MAX_PASSAGES),
       String(MAX_CARACTERES_CONTEXTE),
       String(SEUIL_SIMILARITE),
       String(SEUIL_PERTINENCE),
       String(MIN_PASSAGES),
-      "v2",
+      String(MIN_TERMES_APPARIES),
+      "v3",
     ].join("|")
   );
 }
@@ -269,194 +312,87 @@ export function validerQuestion(brut: unknown): { question: string } | { erreur:
   return { question };
 }
 
-/* -------------------------------------------------------------------------- */
-/* Résolution des fiches du corpus                                            */
-/* -------------------------------------------------------------------------- */
-
-/** Nom lisible + URL publique d'une fiche, ou null si l'id n'existe plus. */
-export function resoudreFiche(type: TypeFicheRag, id: string): { nom: string; url: string } | null {
-  if (type === "humaine") {
-    const fiche = getFicheHumaine(id);
-    return fiche ? { nom: fiche.nom, url: cheminFicheHumaine(fiche.id) } : null;
-  }
-  if (type === "ia") {
-    const fiche = getFicheIA(id);
-    return fiche ? { nom: fiche.nom, url: cheminFicheIA(fiche.id) } : null;
-  }
-  const gap = getFicheGap(id);
-  if (!gap) return null;
-  const humaine = getFicheHumaine(gap.fiche_humaine_id);
-  const ia = getFicheIA(gap.fiche_ia_id);
-  return {
-    nom: `${humaine?.nom ?? gap.fiche_humaine_id} × ${ia?.nom ?? gap.fiche_ia_id}`,
-    url: cheminGap(gap.id),
-  };
-}
-
-/**
- * Sources RÉELLES d'une fiche, lues dans le corpus — jamais générées.
- * Pour une fiche de gap, on remonte ses documents clés puis, à défaut, les
- * sources des deux fiches qu'elle croise : une fiche de gap n'a pas toujours de
- * bibliographie propre, mais elle en hérite toujours une.
- */
-function sourcesDeFiche(type: TypeFicheRag, id: string): Source[] {
-  if (type === "humaine") return getFicheHumaine(id)?.sources ?? [];
-  if (type === "ia") return getFicheIA(id)?.sources ?? [];
-  const gap = getFicheGap(id);
-  if (!gap) return [];
-  const documents = gap.documents_cles ?? [];
-  if (documents.length > 0) return documents;
-  return [...(getFicheHumaine(gap.fiche_humaine_id)?.sources ?? []), ...(getFicheIA(gap.fiche_ia_id)?.sources ?? [])];
-}
-
-/** Déduplique des sources sur (titre, url) en gardant l'ordre d'apparition. */
-function dedupliquerSources(sources: Source[]): Source[] {
-  const vues = new Set<string>();
-  const resultat: Source[] = [];
-  for (const source of sources) {
-    if (!source || typeof source.titre !== "string") continue;
-    const cle = `${source.titre}|${source.url ?? ""}`;
-    if (vues.has(cle)) continue;
-    vues.add(cle);
-    resultat.push(source);
-  }
-  return resultat;
+/** Contrôle du mode demandé. Un mode inconnu retombe sur « auto ». */
+export function validerMode(brut: unknown): ModeDemande {
+  return typeof brut === "string" && (MODES_DEMANDES as string[]).includes(brut) ? (brut as ModeDemande) : "auto";
 }
 
 /* -------------------------------------------------------------------------- */
-/* Étape 1 — embedding de la question (Voyage)                                */
+/* Étape 1 — recherche                                                        */
 /* -------------------------------------------------------------------------- */
 
-interface ReponseVoyage {
-  data?: { embedding?: number[]; index?: number }[];
-  usage?: { total_tokens?: number };
-  detail?: string;
-  error?: { message?: string };
-}
-
-/** Appel HTTP borné dans le temps, sans dépendance externe (fetch natif). */
-async function fetchBorne(url: string, init: RequestInit): Promise<Response> {
-  const controleur = new AbortController();
-  const minuterie = setTimeout(() => controleur.abort(), DELAI_MAX_MS);
-  try {
-    return await fetch(url, { ...init, signal: controleur.signal });
-  } finally {
-    clearTimeout(minuterie);
-  }
-}
-
-/**
- * Vectorise la question. `input_type: "query"` est important : Voyage encode
- * différemment une question et un document, et l'indexeur utilise "document".
- * Utiliser le même type des deux côtés dégrade nettement le rappel.
- */
-export async function embedderQuestion(question: string): Promise<number[]> {
-  // Bouchon de test : aucun appel réseau, aucun coût, aucune valeur sémantique.
-  // L'index interrogé doit avoir été construit avec le même bouchon
-  // (`node scripts/indexer-corpus.mjs --embedding-factice`), sinon la recherche
-  // compare deux espaces vectoriels sans rapport et ne rend que du bruit.
-  if (EMBEDDING_FACTICE) return embeddingFactice(question, DIMENSION_EMBEDDING);
-
-  const cle = process.env.VOYAGE_API_KEY;
-  if (!cle) {
-    throw new ErreurRag("configuration", "VOYAGE_API_KEY absente : le moteur de questions est désactivé.", 503);
-  }
-
-  const corps: Record<string, unknown> = {
-    input: [question],
-    model: MODELE_EMBEDDING,
-    input_type: "query",
-  };
-  // Certains modèles Voyage acceptent une dimension de sortie explicite, d'autres
-  // la refusent. On ne l'envoie donc QUE si l'auteur l'a demandée dans .env.local.
-  const dimensionDemandee = process.env.VOYAGE_DIMENSION_SORTIE;
-  if (dimensionDemandee) corps.output_dimension = Number.parseInt(dimensionDemandee, 10);
-
-  let reponse: Response;
-  try {
-    reponse = await fetchBorne("https://api.voyageai.com/v1/embeddings", {
-      method: "POST",
-      headers: { "Content-Type": "application/json", Authorization: `Bearer ${cle}` },
-      body: JSON.stringify(corps),
-    });
-  } catch (erreur) {
-    throw new ErreurRag("fournisseur", `Appel Voyage impossible : ${(erreur as Error).message}`, 502);
-  }
-
-  const donnees = (await reponse.json().catch(() => ({}))) as ReponseVoyage;
-  if (!reponse.ok) {
-    const detail = donnees.error?.message ?? donnees.detail ?? `HTTP ${reponse.status}`;
-    throw new ErreurRag("fournisseur", `Voyage a refusé la requête d'embedding : ${detail}`, 502);
-  }
-
-  const vecteur = donnees.data?.[0]?.embedding;
-  if (!Array.isArray(vecteur) || vecteur.length === 0) {
-    throw new ErreurRag("fournisseur", "Voyage n'a rendu aucun vecteur exploitable.", 502);
-  }
-  if (vecteur.length !== DIMENSION_EMBEDDING) {
-    // Erreur silencieuse la plus coûteuse du pipeline : une dimension différente
-    // fait échouer la recherche en base avec un message SQL cryptique. On préfère
-    // échouer ici, avec la cause exacte.
-    throw new ErreurRag(
-      "configuration",
-      `Dimension d'embedding incohérente : ${vecteur.length} rendu par « ${MODELE_EMBEDDING} », ` +
-        `${DIMENSION_EMBEDDING} attendus par atlas_rag_passages. Changer de modèle impose une nouvelle table.`,
-      500
-    );
-  }
-  return vecteur;
-}
-
-/* -------------------------------------------------------------------------- */
-/* Étape 2 — recherche vectorielle                                            */
-/* -------------------------------------------------------------------------- */
-
+/** Passage remonté par la recherche, forme interne du pipeline. */
 interface LignePassage {
-  id: number;
   type_fiche: TypeFicheRag;
   fiche_id: string;
   champ: string;
   titre_fiche: string;
   texte: string;
-  metadonnees: Record<string, unknown> | null;
+  metadonnees: Record<string, unknown>;
   similarite: number;
+  termes_apparies: number;
 }
 
-export async function rechercherPassages(vecteur: number[]): Promise<LignePassage[]> {
-  // La création du client échoue si les variables Supabase manquent : on traduit
-  // cette panne de configuration en 503 explicite plutôt qu'en 500 opaque.
-  let supabase;
-  try {
-    supabase = getSupabaseServiceClient();
-  } catch (erreur) {
-    throw new ErreurRag("configuration", (erreur as Error).message, 503);
-  }
+function versLigne(resultat: ResultatRecherche): LignePassage {
+  return {
+    type_fiche: resultat.passage.type_fiche,
+    fiche_id: resultat.passage.fiche_id,
+    champ: resultat.passage.champ,
+    titre_fiche: resultat.passage.titre_fiche,
+    texte: resultat.passage.texte,
+    metadonnees: resultat.passage.metadonnees,
+    similarite: resultat.similarite,
+    termes_apparies: resultat.termes_apparies,
+  };
+}
 
-  const { data, error } = await supabase.rpc("atlas_rag_rechercher_passages", {
-    requete: vecteur,
-    seuil: SEUIL_SIMILARITE,
-    // On demande un peu plus que le plafond de contexte : le filtrage par fiche
-    // (au plus 2 passages de la même fiche) élague ensuite la liste.
-    limite: Math.min(100, MAX_PASSAGES * 3),
-    types: null,
-  });
-
-  if (error) {
+/**
+ * Cherche dans l'index local. Aucun appel réseau quand l'index est lexical —
+ * c'est le cas par défaut. Avec un index construit par un fournisseur
+ * d'embeddings, la question doit être vectorisée par le MÊME fournisseur, sans
+ * quoi on comparerait deux espaces vectoriels sans rapport.
+ */
+export async function rechercherPassages(question: string): Promise<LignePassage[]> {
+  const etat = etatIndex();
+  if (!etat.present) {
     throw new ErreurRag(
-      "base",
-      `Recherche vectorielle impossible (${error.message}). ` +
-        "Vérifier que supabase/schema.sql a bien été exécuté sur le projet mutualisé.",
-      502
+      "index",
+      "Index vectoriel absent ou illisible (data/index-vectoriel.json). Lancer `npm run indexer` — " +
+        "l'opération ne demande aucune clé et prend moins d'une seconde.",
+      503
     );
   }
-  return (data ?? []) as LignePassage[];
+
+  // On demande plus que le plafond de contexte : le filtrage par fiche
+  // (au plus 2 passages de la même fiche) élague ensuite la liste.
+  const limite = Math.min(200, MAX_PASSAGES * 6);
+
+  if (etat.lexical) {
+    return rechercherLexical(question, SEUIL_SIMILARITE, limite).map(versLigne);
+  }
+
+  const config = configEmbeddings();
+  if (!config) {
+    throw new ErreurRag(
+      "configuration",
+      `L'index a été construit avec « ${etat.modele_embedding} », mais aucune clé d'embeddings n'est ` +
+        "configurée pour vectoriser la question. Poser la clé, ou relancer `npm run indexer` sans clé " +
+        "pour reconstruire un index lexical local.",
+      503
+    );
+  }
+  const resultat = await embedderLotDistant([question], config, "requete", { delaiMs: DELAI_MAX_MS });
+  if ("erreur" in resultat) {
+    throw new ErreurRag("fournisseur", `Vectorisation de la question impossible : ${resultat.erreur}`, 502);
+  }
+  return rechercherDense(resultat.vecteurs[0], question, SEUIL_SIMILARITE, limite).map(versLigne);
 }
 
 /**
  * Sélectionne les passages injectés dans le contexte.
  * Deux règles, toutes deux importantes :
  *   - au plus 2 passages par fiche : sans cela une seule fiche bavarde monopolise
- *     le contexte et le modèle ne voit plus qu'une école de pensée, ce qui
+ *     le contexte et le moteur ne voit plus qu'une école de pensée, ce qui
  *     détruit mécaniquement le pluralisme de la réponse ;
  *   - double plafond nombre + caractères, pour que le coût d'entrée soit borné
  *     même si le corpus contient un jour des champs beaucoup plus longs.
@@ -485,7 +421,7 @@ export function selectionnerPassages(lignes: LignePassage[]): LignePassage[] {
 }
 
 /* -------------------------------------------------------------------------- */
-/* Étape 3 — construction du contexte                                         */
+/* Étape 2 — construction du contexte                                         */
 /* -------------------------------------------------------------------------- */
 
 const LIBELLES_TYPE: Record<TypeFicheRag, string> = {
@@ -536,10 +472,10 @@ export function construireContexte(passages: LignePassage[]): string {
 }
 
 /* -------------------------------------------------------------------------- */
-/* Étape 4 — appel du modèle                                                  */
+/* Le CONTRAT de réponse — commun aux trois modes                             */
 /* -------------------------------------------------------------------------- */
 
-const CONSIGNE_SYSTEME = `Tu es ATLAS, moteur de réponse de l'observatoire « Atlas Humain × IA ».
+export const CONSIGNE_SYSTEME = `Tu es ATLAS, moteur de réponse de l'observatoire « Atlas Humain × IA ».
 
 RÈGLE ABSOLUE — NEUTRALITÉ ACTIVE. Sur toute question politique, économique,
 philosophique ou psychologique, plusieurs écoles s'opposent légitimement. Tu ne
@@ -569,7 +505,15 @@ Tu ne produis pas de bibliographie — les sources sont rattachées automatiquem
 
 LANGUE. Français, style sobre et dense, pas de formules de politesse.`;
 
-const OUTIL_REPONSE = {
+/**
+ * Schéma de la sortie attendue. Il sert :
+ *   - de schéma d'outil aux fournisseurs à sortie structurée (dialecte
+ *     Anthropic), où il est imposé par `TOOL_CHOICE_REPONSE` ci-dessous ;
+ *   - de schéma déclaré dans le message aux fournisseurs compatibles OpenAI ;
+ *   - de gabarit inscrit dans le prompt à copier du mode 2.
+ * Un seul schéma pour les trois : c'est ce qui rend les trois modes comparables.
+ */
+export const OUTIL_REPONSE = {
   name: "repondre_par_perspectives",
   description:
     "Rend la réponse structurée en perspectives concurrentes. Au moins deux perspectives dès que la question " +
@@ -628,89 +572,75 @@ const OUTIL_REPONSE = {
   },
 };
 
-interface SortieModele {
-  reformulation?: unknown;
-  angles_morts?: unknown;
-  perspectives?: unknown;
-}
+/**
+ * Forçage de la sortie structurée chez les fournisseurs qui savent le faire.
+ * Passé tel quel dans le champ `tool_choice` de l'API : le modèle ne PEUT pas
+ * répondre en prose libre, donc pas en verdict. Les fournisseurs compatibles
+ * OpenAI n'offrent pas cette garantie — d'où l'analyse tolérante en aval.
+ */
+export const TOOL_CHOICE_REPONSE = { type: "tool", name: OUTIL_REPONSE.name } as const;
 
-interface ResultatModele {
-  sortie: SortieModele;
-  tokens_entree: number;
-  tokens_sortie: number;
-}
-
-interface ReponseAnthropic {
-  content?: { type?: string; name?: string; input?: unknown }[];
-  usage?: { input_tokens?: number; output_tokens?: number };
-  error?: { message?: string; type?: string };
-  stop_reason?: string;
-}
-
-export async function appelerModele(question: string, contexte: string): Promise<ResultatModele> {
-  const cle = process.env.ANTHROPIC_API_KEY;
-  if (!cle) {
-    throw new ErreurRag("configuration", "ANTHROPIC_API_KEY absente : le moteur de questions est désactivé.", 503);
-  }
-
-  const message = [
+/** Message utilisateur envoyé au modèle (mode 1) ou copié par l'utilisateur (mode 2). */
+function messageQuestion(question: string, contexte: string): string {
+  return [
     `QUESTION POSÉE :\n${question}`,
     "",
     `EXTRAITS DU CORPUS ATLAS (${contexte.length} caractères, seuls éléments autorisés) :`,
     contexte,
     "",
-    "Réponds en appelant l'outil repondre_par_perspectives, et uniquement lui.",
+    "Réponds en respectant strictement le gabarit demandé, et uniquement lui.",
   ].join("\n");
+}
 
-  let reponse: Response;
-  try {
-    reponse = await fetchBorne("https://api.anthropic.com/v1/messages", {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-        "x-api-key": cle,
-        "anthropic-version": "2023-06-01",
+/**
+ * Prompt COMPLET à copier (mode 2) : consigne système, question, extraits, et
+ * le gabarit JSON exigé. Autonome par construction — il doit fonctionner collé
+ * dans n'importe quelle interface de chat, sans rien d'autre.
+ */
+export function construirePromptACopier(question: string, contexte: string): string {
+  return [
+    CONSIGNE_SYSTEME,
+    "",
+    "─".repeat(72),
+    "",
+    messageQuestion(question, contexte),
+    "",
+    "─".repeat(72),
+    "",
+    "FORMAT DE SORTIE — impératif, il sera relu par un programme.",
+    "Réponds UNIQUEMENT par un objet JSON valide, sans phrase d'introduction, sans",
+    "commentaire, et sans bloc de code Markdown autour. Guillemets DROITS (\") uniquement.",
+    "",
+    "Gabarit exact :",
+    JSON.stringify(
+      {
+        reformulation: "une phrase",
+        perspectives: [
+          {
+            modele: "nom de l'école ou du cadre théorique",
+            hypotheses: "postulats de départ",
+            etat_actuel: "faits présents dans les extraits",
+            reponse: "ce que ce modèle répond",
+            justification: "pourquoi cette réponse découle des hypothèses",
+            limites: "ce que ce modèle explique mal",
+            niveau_confiance: NIVEAUX_CONFIANCE.join(" | "),
+            fiches_mobilisees: ["fiche_id recopié depuis les extraits"],
+          },
+        ],
+        angles_morts: "ce que les extraits ne permettent pas de conclure",
       },
-      body: JSON.stringify({
-        model: MODELE_REPONSE,
-        max_tokens: MAX_TOKENS_REPONSE,
-        temperature: 0.2,
-        system: CONSIGNE_SYSTEME,
-        tools: [OUTIL_REPONSE],
-        // Sortie structurée forcée : on n'analyse jamais du texte libre, donc
-        // aucune réponse ne peut arriver sous forme de verdict en prose.
-        tool_choice: { type: "tool", name: OUTIL_REPONSE.name },
-        messages: [{ role: "user", content: message }],
-      }),
-    });
-  } catch (erreur) {
-    throw new ErreurRag("fournisseur", `Appel Anthropic impossible : ${(erreur as Error).message}`, 502);
-  }
-
-  const donnees = (await reponse.json().catch(() => ({}))) as ReponseAnthropic;
-  if (!reponse.ok) {
-    const detail = donnees.error?.message ?? `HTTP ${reponse.status}`;
-    throw new ErreurRag("fournisseur", `Anthropic a refusé la requête : ${detail}`, 502);
-  }
-
-  const bloc = (donnees.content ?? []).find((c) => c.type === "tool_use" && c.name === OUTIL_REPONSE.name);
-  if (!bloc || typeof bloc.input !== "object" || bloc.input === null) {
-    throw new ErreurRag(
-      "fournisseur",
-      `Le modèle n'a pas rendu de réponse structurée (stop_reason: ${donnees.stop_reason ?? "inconnu"}).`,
-      502
-    );
-  }
-
-  return {
-    sortie: bloc.input as SortieModele,
-    tokens_entree: donnees.usage?.input_tokens ?? 0,
-    tokens_sortie: donnees.usage?.output_tokens ?? 0,
-  };
+      null,
+      2
+    ),
+    "",
+    "Deux perspectives au minimum, cinq au maximum. Les identifiants de",
+    "« fiches_mobilisees » doivent être recopiés à l'identique depuis les extraits :",
+    "tout identifiant inconnu sera ignoré et signalé au lecteur.",
+  ].join("\n");
 }
 
 /* -------------------------------------------------------------------------- */
-/* Étape 5 — validation de la sortie et rattachement des sources réelles      */
+/* Étape 3 — validation de la sortie et rattachement des sources réelles      */
 /* -------------------------------------------------------------------------- */
 
 function texteSur(valeur: unknown, defaut = ""): string {
@@ -718,17 +648,21 @@ function texteSur(valeur: unknown, defaut = ""): string {
 }
 
 /**
- * Transforme la sortie brute du modèle en `Perspective[]` conforme à
- * lib/types.ts, en remplaçant les sources déclarées par les sources RÉELLES des
- * fiches du corpus. C'est ici que se joue l'anti-hallucination :
+ * Transforme une sortie brute (fournisseur d'API ou texte recollé) en
+ * `Perspective[]` conforme à lib/types.ts, en remplaçant les sources déclarées
+ * par les sources RÉELLES des fiches du corpus. C'est ici que se joue
+ * l'anti-hallucination :
  *   - un identifiant absent des passages remontés est ignoré (le modèle ne peut
  *     pas faire entrer une fiche qu'il n'a pas vue) ;
  *   - une perspective qui se retrouve sans aucune source réelle est conservée
  *     mais son niveau de confiance est rabaissé et un avertissement est émis,
  *     plutôt que d'être affichée comme si elle était sourcée.
+ *
+ * Vaut aussi pour un texte COLLÉ par l'utilisateur : le collage ne franchit pas
+ * cette étape s'il cite des fiches inventées.
  */
 export function construirePerspectives(
-  sortie: SortieModele,
+  sortie: SortieBrute,
   passages: LignePassage[]
 ): { perspectives: Perspective[]; avertissements: string[] } {
   const avertissements: string[] = [];
@@ -765,7 +699,7 @@ export function construirePerspectives(
       );
     }
 
-    let sources = dedupliquerSources(
+    let sources: Source[] = dedupliquerSources(
       idsRetenus.flatMap((id) => sourcesDeFiche(autorisees.get(id) as TypeFicheRag, id))
     ).slice(0, MAX_SOURCES_PAR_PERSPECTIVE);
 
@@ -846,58 +780,71 @@ function versPassagesMobilises(passages: LignePassage[]): PassageMobilise[] {
   });
 }
 
+function versExtraction(passages: LignePassage[]): PassagePourExtraction[] {
+  return passages.map((p) => ({
+    type_fiche: p.type_fiche,
+    fiche_id: p.fiche_id,
+    champ: p.champ,
+    titre_fiche: p.titre_fiche,
+    texte: p.texte,
+    similarite: p.similarite,
+    metadonnees: p.metadonnees,
+  }));
+}
+
 /* -------------------------------------------------------------------------- */
 /* Cache                                                                      */
 /* -------------------------------------------------------------------------- */
 
-interface LigneCache {
-  question: string;
+// Le cache vivait dans Supabase (table atlas_rag_cache_reponses). Il n'a plus
+// lieu d'être : la recherche est locale et gratuite, le mode extractif l'est
+// aussi. Ce qui reste à ne pas repayer, c'est l'appel à un fournisseur d'API —
+// d'où un cache MÉMOIRE, borné, par instance.
+//
+// Limite assumée et à connaître : sur un hébergement serverless, chaque instance
+// a le sien, et il disparaît au recyclage. Ce n'est donc pas une garantie de
+// « une question posée deux fois = un seul appel », c'est un amortisseur. Un
+// vrai cache partagé suppose un stockage partagé ; le jour où le site prendra
+// du trafic ET où une clé payante sera posée, ce sera le moment d'y revenir.
+
+interface EntreeCache {
   reponse: ReponseQuestion;
-  created_at: string;
-  nb_utilisations: number;
+  expire: number;
 }
 
-/** Lit le cache. Toute erreur est avalée : un cache en panne ne doit pas casser la réponse. */
-export async function lireCache(cle: string): Promise<ReponseQuestion | null> {
-  try {
-    const supabase = getSupabaseServiceClient();
-    const { data, error } = await supabase.rpc("atlas_rag_cache_lire", {
-      p_empreinte: cle,
-      p_ttl_heures: CACHE_TTL_HEURES,
-    });
-    if (error || !Array.isArray(data) || data.length === 0) return null;
-    const ligne = data[0] as LigneCache;
-    const reponse = ligne.reponse;
-    if (!reponse || !Array.isArray(reponse.perspectives)) return null;
-    return {
-      ...reponse,
-      diagnostic: { ...reponse.diagnostic, depuis_cache: true },
-    };
-  } catch {
+const cache = new Map<string, EntreeCache>();
+
+/** Lit le cache. Toute anomalie est avalée : un cache en panne ne casse pas la réponse. */
+export function lireCache(cle: string): ReponseQuestion | null {
+  const entree = cache.get(cle);
+  if (!entree) return null;
+  if (Date.now() > entree.expire) {
+    cache.delete(cle);
     return null;
   }
+  // Remise en tête : la Map JavaScript conserve l'ordre d'insertion, ce qui
+  // suffit à faire une éviction « le moins récemment utilisé » sans structure
+  // supplémentaire.
+  cache.delete(cle);
+  cache.set(cle, entree);
+  return { ...entree.reponse, diagnostic: { ...entree.reponse.diagnostic, depuis_cache: true } };
 }
 
-/** Écrit le cache. Idem : un échec d'écriture ne doit jamais faire échouer la requête. */
-export async function ecrireCache(cle: string, reponse: ReponseQuestion): Promise<void> {
-  try {
-    const supabase = getSupabaseServiceClient();
-    await supabase.from("atlas_rag_cache_reponses").upsert(
-      {
-        empreinte: cle,
-        question: reponse.question,
-        reponse,
-        modele_reponse: reponse.diagnostic.modele_reponse ?? "",
-        modele_embedding: reponse.diagnostic.modele_embedding,
-        nb_passages: reponse.diagnostic.nb_passages_utilises,
-        tokens_entree: reponse.diagnostic.tokens_entree,
-        tokens_sortie: reponse.diagnostic.tokens_sortie,
-      },
-      { onConflict: "empreinte" }
-    );
-  } catch {
-    // silencieux par conception
+/** Écrit le cache, avec éviction du plus ancien au-delà du plafond d'entrées. */
+export function ecrireCache(cle: string, reponse: ReponseQuestion): void {
+  cache.set(cle, { reponse, expire: Date.now() + CACHE_TTL_HEURES * 3_600_000 });
+  while (cache.size > CACHE_MAX_ENTREES) {
+    const premiere = cache.keys().next();
+    if (premiere.done) break;
+    cache.delete(premiere.value);
   }
+}
+
+/** Vide le cache — utile après une réindexation. */
+export function viderCache(): number {
+  const taille = cache.size;
+  cache.clear();
+  return taille;
 }
 
 /* -------------------------------------------------------------------------- */
@@ -905,26 +852,41 @@ export async function ecrireCache(cle: string, reponse: ReponseQuestion): Promis
 /* -------------------------------------------------------------------------- */
 
 /**
- * Avertissements attachés à TOUTE réponse, indépendamment de son contenu.
- * Aujourd'hui un seul : signaler au lecteur qu'il regarde une réponse produite
- * avec des vecteurs de test. Sans cela, une démonstration en mode factice est
- * indiscernable d'une vraie réponse.
+ * Avertissements attachés à TOUTE réponse : ils décrivent l'état de l'index par
+ * rapport au corpus. Un index en retard ne fait plus afficher de source morte
+ * (les passages sont reconstruits depuis le corpus, donc un passage orphelin
+ * n'existe pas), mais il fait chercher dans moins de matière — et ça, le lecteur
+ * doit le savoir.
  */
-function avertissementsDeBase(): string[] {
-  if (!EMBEDDING_FACTICE) return [];
-  return [
-    "Mode de test : les embeddings sont produits par un hachage local déterministe " +
-      `(« ${MODELE_FACTICE} »), pas par un modèle sémantique. La pertinence des extraits ` +
-      "retenus n'a aucune valeur — seule la mécanique du moteur est éprouvée.",
-  ];
+function avertissementsIndex(): string[] {
+  const etat = etatIndex();
+  const messages: string[] = [];
+  if (etat.nb_passages_absents > 0) {
+    messages.push(
+      `${etat.nb_passages_absents} passage(s) du corpus ne sont pas dans l'index (fiches ajoutées ou modifiées ` +
+        "depuis la dernière indexation) : la recherche porte sur moins de matière qu'annoncé. " +
+        "Relancer `npm run indexer` — c'est gratuit et immédiat."
+    );
+  }
+  if (etat.nb_entrees_orphelines > 0) {
+    messages.push(
+      `${etat.nb_entrees_orphelines} entrée(s) de l'index ne correspondent plus à aucune fiche du corpus et ont ` +
+        "été ignorées. Aucune source morte n'a donc été affichée, mais l'index mérite d'être reconstruit."
+    );
+  }
+  return messages;
 }
 
 function diagnosticDeBase(): DiagnosticReponse {
   return {
     statut: "repondue",
+    mode: null,
+    mode_libelle: "",
+    fournisseur: null,
     similarite_max: 0,
     nb_passages_trouves: 0,
     nb_passages_utilises: 0,
+    termes_apparies_max: 0,
     seuil_similarite: SEUIL_SIMILARITE,
     seuil_pertinence: SEUIL_PERTINENCE,
     modele_embedding: MODELE_EMBEDDING,
@@ -939,7 +901,7 @@ function diagnosticDeBase(): DiagnosticReponse {
 
 /**
  * Réponse de refus. C'est le garde-fou anti-hallucination de complaisance :
- * aucun appel au modèle n'a été fait, aucune perspective n'est inventée, et le
+ * aucune génération n'a été faite, aucune perspective n'est inventée, et le
  * lecteur voit quand même les passages les plus proches trouvés (même sous le
  * seuil) pour comprendre POURQUOI le corpus ne répond pas.
  */
@@ -957,10 +919,11 @@ function reponseHorsCorpus(
     perspectives: [],
     angles_morts:
       "Le référentiel ATLAS ne contient pas (ou pas assez) de matière sur cette question. " +
-      "Elle sort du périmètre couvert par les 267 fiches humaines, 44 fiches IA et 201 fiches de gap indexées.",
+      `Elle sort du périmètre couvert par les ${fichesHumaines.length} fiches humaines, ${fichesIA.length} fiches IA ` +
+      `et ${fichesGap.length} fiches de gap indexées.`,
     passages_mobilises: versPassagesMobilises(apercu),
     fiches_mobilisees: regrouperFiches(apercu),
-    avertissements: [...avertissementsDeBase(), ...avertissements],
+    avertissements: [...avertissementsIndex(), ...avertissements],
     message: raison,
     diagnostic: {
       ...diagnosticDeBase(),
@@ -968,58 +931,116 @@ function reponseHorsCorpus(
       similarite_max: Math.round(similariteMax * 1000) / 1000,
       nb_passages_trouves: trouves.length,
       nb_passages_utilises: 0,
+      termes_apparies_max: trouves.reduce((m, p) => Math.max(m, p.termes_apparies), 0),
     },
   };
 }
 
+/** Contrat passé aux fournisseurs — dérivé du contrat unique ci-dessus. */
+function contratPour(question: string, contexte: string): ContratGeneration {
+  return {
+    systeme: CONSIGNE_SYSTEME,
+    schema: OUTIL_REPONSE.input_schema,
+    nomOutil: OUTIL_REPONSE.name,
+    descriptionOutil: OUTIL_REPONSE.description,
+    message: messageQuestion(question, contexte),
+    maxTokens: MAX_TOKENS_REPONSE,
+    temperature: 0.2,
+    delaiMs: DELAI_MAX_MS,
+  };
+}
+
+interface ResultatGeneration {
+  mode: ModeReponse;
+  fournisseur: string | null;
+  modele: string | null;
+  sortie: SortieBrute;
+  tokens_entree: number;
+  tokens_sortie: number;
+  avertissements: string[];
+}
+
 /**
- * Pipeline complet. Ordre volontaire : cache → embedding → recherche → garde-fou
- * de pertinence → modèle. Chaque étape peut arrêter le traitement AVANT la
- * suivante, plus chère : une question hors sujet ne coûte qu'un embedding
- * (quelques millièmes de centime), une question déjà posée ne coûte rien.
+ * Mode 1 — les fournisseurs configurés, dans l'ordre. Le premier qui répond
+ * gagne ; les échecs sont accumulés et rendus au lecteur, jamais avalés.
  */
-export async function repondreAQuestion(question: string): Promise<ReponseQuestion> {
-  const cle = empreinteCache(question);
+async function genererParFournisseur(
+  question: string,
+  contexte: string,
+  fournisseurs: FournisseurActif[]
+): Promise<{ resultat: ResultatGeneration } | { echecs: string[] }> {
+  const contrat = contratPour(question, contexte);
+  const echecs: string[] = [];
+  for (const fournisseur of fournisseurs) {
+    const resultat = await appelerFournisseur(fournisseur, contrat);
+    if (!resultat.ok) {
+      echecs.push(resultat.erreur);
+      continue;
+    }
+    return {
+      resultat: {
+        mode: "fournisseur",
+        fournisseur: fournisseur.descripteur.nom,
+        modele: fournisseur.modele,
+        sortie: resultat.sortie,
+        tokens_entree: resultat.tokens_entree,
+        tokens_sortie: resultat.tokens_sortie,
+        avertissements: [
+          ...echecs.map((e) => `Fournisseur écarté : ${e}`),
+          ...resultat.reparations.map(
+            (r) => `Sortie du fournisseur réparée avant lecture (${r}) : le modèle n'a pas rendu de JSON strict.`
+          ),
+        ],
+      },
+    };
+  }
+  return { echecs };
+}
 
-  const enCache = await lireCache(cle);
-  if (enCache) return enCache;
+export interface OptionsReponse {
+  /** Mode demandé. « auto » enchaîne fournisseurs puis repli extractif. */
+  mode?: ModeDemande;
+  /** Texte recollé par l'utilisateur (mode 2). */
+  retour?: string;
+}
 
-  const vecteur = await embedderQuestion(question);
-  const remontes = await rechercherPassages(vecteur);
+/**
+ * Pipeline complet.
+ *
+ * Ordre volontaire : cache → recherche → garde-fous → génération. Chaque étape
+ * peut arrêter le traitement AVANT la suivante : une question hors sujet ne
+ * déclenche aucune génération, et ne coûte donc rien, même avec une clé posée.
+ */
+export async function repondreAQuestion(question: string, options: OptionsReponse = {}): Promise<ReponseQuestion> {
+  const modeDemande: ModeDemande = options.mode ?? "auto";
+  const retourColle = typeof options.retour === "string" ? options.retour : null;
 
-  // L'index vit dans Supabase, le corpus dans data/seed : les deux peuvent
-  // diverger (fiche renommée ou supprimée sans `indexer-corpus.mjs --purger`).
-  // Un passage dont la fiche n'existe plus n'a ni source réelle ni URL : affiché
-  // tel quel, il devient un lien mort présenté au lecteur comme une source, et
-  // le modèle peut le citer. On l'écarte, et on le dit.
-  const trouves = remontes.filter((p) => resoudreFiche(p.type_fiche, p.fiche_id) !== null);
-  const orphelins = remontes.length - trouves.length;
-  const avertissementsIndex =
-    orphelins > 0
-      ? [
-          `${orphelins} extrait(s) remonté(s) par la recherche pointent vers des fiches absentes du corpus ` +
-            "et ont été écartés : l'index vectoriel est en retard sur data/seed. " +
-            "Relancer `node scripts/indexer-corpus.mjs --purger` pour le remettre à jour.",
-        ]
-      : [];
+  // Un collage n'est jamais servi depuis le cache : c'est le texte de
+  // l'utilisateur qu'on relit, pas une réponse déjà calculée.
+  const cle = empreinteCache(question, modeDemande);
+  if (!retourColle) {
+    const enCache = lireCache(cle);
+    if (enCache) return enCache;
+  }
 
+  const trouves = await rechercherPassages(question);
   const similariteMax = trouves.length > 0 ? Math.max(...trouves.map((p) => p.similarite)) : 0;
+  const termesApparies = trouves.reduce((m, p) => Math.max(m, p.termes_apparies), 0);
+  const alertesIndex = avertissementsIndex();
 
+  // --- Garde-fous. Trois refus distincts, trois messages distincts : les
+  // confondre conduit à régler le mauvais bouton.
   if (trouves.length === 0) {
     return reponseHorsCorpus(
       question,
       trouves,
       0,
       `Aucun passage du référentiel n'atteint le seuil de similarité (${SEUIL_SIMILARITE}) : le moteur ne répond ` +
-        "pas plutôt que d'inventer. Si l'index vient d'être créé, vérifier que `node scripts/indexer-corpus.mjs` " +
-        "a bien été lancé.",
-      avertissementsIndex
+        "pas plutôt que d'inventer.",
+      alertesIndex
     );
   }
 
-  // Deux garde-fous distincts, et deux messages distincts : confondre les deux
-  // conduit à régler le mauvais bouton. Le premier dit « rien d'assez proche »,
-  // le second « trop peu de matière pour croiser des points de vue ».
   if (similariteMax < SEUIL_PERTINENCE) {
     return reponseHorsCorpus(
       question,
@@ -1028,7 +1049,7 @@ export async function repondreAQuestion(question: string): Promise<ReponseQuesti
       `Le référentiel ne couvre pas assez cette question pour y répondre honnêtement ` +
         `(meilleure similarité ${similariteMax.toFixed(2)}, seuil de pertinence ${SEUIL_PERTINENCE}). ` +
         "Les extraits les plus proches sont affichés ci-dessous à titre indicatif, sans réponse construite.",
-      avertissementsIndex
+      alertesIndex
     );
   }
 
@@ -1040,50 +1061,285 @@ export async function repondreAQuestion(question: string): Promise<ReponseQuesti
       `Seulement ${trouves.length} extrait(s) du référentiel dépassent le seuil de similarité ` +
         `(${SEUIL_SIMILARITE}), alors que ${MIN_PASSAGES} au minimum sont exigés pour construire une réponse ` +
         "à plusieurs perspectives. Les extraits trouvés sont affichés ci-dessous, sans réponse construite.",
-      avertissementsIndex
+      alertesIndex
+    );
+  }
+
+  if (etatIndex().lexical && termesApparies < MIN_TERMES_APPARIES) {
+    return reponseHorsCorpus(
+      question,
+      trouves,
+      similariteMax,
+      `Aucun passage du référentiel ne retrouve plus de ${termesApparies} terme(s) de la question, alors que ` +
+        `${MIN_TERMES_APPARIES} au minimum sont exigés. Une similarité obtenue sur un seul mot n'est pas un sujet ` +
+        "traité : le moteur refuse plutôt que de composer une réponse autour d'une coïncidence de vocabulaire.",
+      alertesIndex
     );
   }
 
   const passages = selectionnerPassages(trouves);
   const contexte = construireContexte(passages);
-  const { sortie, tokens_entree, tokens_sortie } = await appelerModele(question, contexte);
-  const { perspectives, avertissements } = construirePerspectives(sortie, passages);
-  avertissements.unshift(...avertissementsDeBase(), ...avertissementsIndex);
+  const promptACopier = construirePromptACopier(question, contexte);
 
-  if (perspectives.length === 0) {
-    // Le modèle a répondu mais rien d'exploitable n'a survécu à la validation.
-    return reponseHorsCorpus(
+  /** Fabrique la réponse finale à partir d'une génération réussie. */
+  const finaliser = (generation: ResultatGeneration, avecPrompt: boolean): ReponseQuestion => {
+    const { perspectives, avertissements } = construirePerspectives(generation.sortie, passages);
+    if (perspectives.length === 0) {
+      return reponseHorsCorpus(
+        question,
+        trouves,
+        similariteMax,
+        "Aucune perspective exploitable n'a survécu à la validation : les entrées produites n'avaient ni nom " +
+          "d'école ni réponse. Rien n'est affiché plutôt qu'une réponse vide de sens.",
+        [...alertesIndex, ...generation.avertissements]
+      );
+    }
+    return {
       question,
-      trouves,
-      similariteMax,
-      "Le moteur n'a produit aucune perspective exploitable à partir des extraits mobilisés.",
-      avertissementsIndex
+      reformulation: texteSur(generation.sortie.reformulation, question),
+      perspectives,
+      angles_morts: texteSur(
+        generation.sortie.angles_morts,
+        "Angles morts non explicités par le moteur — à considérer comme une limite de cette réponse."
+      ),
+      passages_mobilises: versPassagesMobilises(passages),
+      fiches_mobilisees: regrouperFiches(passages),
+      avertissements: [...alertesIndex, ...generation.avertissements, ...avertissements],
+      prompt_a_copier: avecPrompt ? promptACopier : undefined,
+      diagnostic: {
+        ...diagnosticDeBase(),
+        statut: "repondue",
+        mode: generation.mode,
+        mode_libelle: LIBELLES_MODE[generation.mode],
+        fournisseur: generation.fournisseur,
+        similarite_max: Math.round(similariteMax * 1000) / 1000,
+        nb_passages_trouves: trouves.length,
+        nb_passages_utilises: passages.length,
+        termes_apparies_max: termesApparies,
+        modele_reponse: generation.modele,
+        tokens_entree: generation.tokens_entree,
+        tokens_sortie: generation.tokens_sortie,
+      },
+    };
+  };
+
+  /** Mode 3 — toujours disponible, c'est le filet. */
+  const repondreExtractif = (avertissementsAmont: string[]): ReponseQuestion => {
+    const extractive = construireReponseExtractive(question, versExtraction(passages));
+    if (extractive.perspectives.length === 0) {
+      return reponseHorsCorpus(
+        question,
+        trouves,
+        similariteMax,
+        "Les passages retrouvés n'appartiennent à aucune fiche composable : rien n'a pu être assemblé.",
+        [...alertesIndex, ...avertissementsAmont]
+      );
+    }
+    const avertissements = [...alertesIndex, ...avertissementsAmont, ...extractive.avertissements];
+    if (extractive.perspectives.length === 1) {
+      avertissements.push(
+        "Une seule perspective a pu être composée : sur un sujet contesté, c'est en deçà de la règle de " +
+          "neutralité active du projet (cf. /methodologie). À lire comme une lecture parmi d'autres."
+      );
+    }
+    return {
+      question,
+      reformulation: extractive.reformulation,
+      perspectives: extractive.perspectives,
+      angles_morts: extractive.angles_morts,
+      passages_mobilises: versPassagesMobilises(passages),
+      fiches_mobilisees: regrouperFiches(passages),
+      avertissements,
+      prompt_a_copier: promptACopier,
+      diagnostic: {
+        ...diagnosticDeBase(),
+        statut: "repondue",
+        mode: "extractif",
+        mode_libelle: LIBELLES_MODE.extractif,
+        fournisseur: null,
+        similarite_max: Math.round(similariteMax * 1000) / 1000,
+        nb_passages_trouves: trouves.length,
+        nb_passages_utilises: passages.length,
+        termes_apparies_max: termesApparies,
+        modele_reponse: null,
+      },
+    };
+  };
+
+  /* --- Mode 2 : prompt à copier, puis retour à recoller ------------------- */
+  if (modeDemande === "prompt") {
+    if (!retourColle) {
+      return {
+        question,
+        reformulation: question,
+        perspectives: [],
+        angles_morts:
+          "Rien n'a encore été rédigé : la recherche a trouvé la matière, la rédaction reste à faire hors du site.",
+        passages_mobilises: versPassagesMobilises(passages),
+        fiches_mobilisees: regrouperFiches(passages),
+        avertissements: alertesIndex,
+        message:
+          `Prompt prêt (${promptACopier.length.toLocaleString("fr-FR")} caractères, ${passages.length} extraits). ` +
+          "Le copier, le coller dans le chat de votre choix, puis recoller ici la réponse obtenue : elle sera " +
+          "relue, ses sources vérifiées contre le corpus, et affichée en perspectives.",
+        prompt_a_copier: promptACopier,
+        diagnostic: {
+          ...diagnosticDeBase(),
+          statut: "prompt_a_coller",
+          mode: "prompt",
+          mode_libelle: LIBELLES_MODE.prompt,
+          similarite_max: Math.round(similariteMax * 1000) / 1000,
+          nb_passages_trouves: trouves.length,
+          nb_passages_utilises: passages.length,
+          termes_apparies_max: termesApparies,
+        },
+      };
+    }
+
+    const analyse = analyserSortie(retourColle);
+    if (!analyse.ok) {
+      // Jamais une exception : un collage inexploitable est une situation
+      // normale, elle se répond par un message qui dit quoi faire.
+      return {
+        question,
+        reformulation: question,
+        perspectives: [],
+        angles_morts: "Le retour collé n'a pas pu être relu ; rien n'est affiché plutôt qu'une réponse approximative.",
+        passages_mobilises: versPassagesMobilises(passages),
+        fiches_mobilisees: regrouperFiches(passages),
+        avertissements: alertesIndex,
+        message: analyse.message,
+        prompt_a_copier: promptACopier,
+        diagnostic: {
+          ...diagnosticDeBase(),
+          statut: "prompt_a_coller",
+          mode: "prompt",
+          mode_libelle: LIBELLES_MODE.prompt,
+          similarite_max: Math.round(similariteMax * 1000) / 1000,
+          nb_passages_trouves: trouves.length,
+          nb_passages_utilises: passages.length,
+          termes_apparies_max: termesApparies,
+        },
+      };
+    }
+
+    return finaliser(
+      {
+        mode: "prompt",
+        fournisseur: null,
+        modele: null,
+        sortie: analyse.sortie,
+        tokens_entree: 0,
+        tokens_sortie: 0,
+        avertissements: [
+          "Réponse rédigée hors du site puis recollée : le moteur n'a pas choisi le modèle qui l'a écrite, " +
+            "et ne peut pas garantir qu'il s'est tenu aux extraits. Les sources affichées, elles, sont bien " +
+            "celles des fiches du corpus — un identifiant inventé aurait été rejeté ci-dessous.",
+          ...analyse.reparations.map((r) => `Texte collé réparé avant lecture : ${r}.`),
+        ],
+      },
+      true
     );
   }
 
-  const reponse: ReponseQuestion = {
-    question,
-    reformulation: texteSur(sortie.reformulation, question),
-    perspectives,
-    angles_morts: texteSur(
-      sortie.angles_morts,
-      "Angles morts non explicités par le moteur — à considérer comme une limite de cette réponse."
-    ),
-    passages_mobilises: versPassagesMobilises(passages),
-    fiches_mobilisees: regrouperFiches(passages),
-    avertissements,
-    diagnostic: {
-      ...diagnosticDeBase(),
-      statut: "repondue",
-      similarite_max: Math.round(similariteMax * 1000) / 1000,
-      nb_passages_trouves: trouves.length,
-      nb_passages_utilises: passages.length,
-      modele_reponse: MODELE_REPONSE,
-      tokens_entree,
-      tokens_sortie,
+  /* --- Mode 3 forcé ------------------------------------------------------- */
+  if (modeDemande === "extractif") {
+    const reponse = repondreExtractif([]);
+    ecrireCache(cle, reponse);
+    return reponse;
+  }
+
+  /* --- Mode 1, seul ou en tête du repli automatique ------------------------ */
+  const fournisseurs = fournisseursActifs();
+  if (fournisseurs.length === 0) {
+    if (modeDemande === "fournisseur") {
+      throw new ErreurRag(
+        "configuration",
+        "Aucun fournisseur de génération n'est configuré. Poser une clé (voir .env.example §3), " +
+          "ou utiliser le mode « prompt à copier » ou le mode extractif, qui n'en demandent aucune.",
+        503
+      );
+    }
+    const reponse = repondreExtractif([
+      "Aucun fournisseur de génération n'est configuré : le moteur a répondu en mode extractif. " +
+        "C'est le comportement prévu, pas une panne.",
+    ]);
+    ecrireCache(cle, reponse);
+    return reponse;
+  }
+
+  const tentative = await genererParFournisseur(question, contexte, fournisseurs);
+  if ("resultat" in tentative) {
+    const reponse = finaliser(tentative.resultat, false);
+    ecrireCache(cle, reponse);
+    return reponse;
+  }
+
+  if (modeDemande === "fournisseur") {
+    throw new ErreurRag(
+      "fournisseur",
+      `Les ${fournisseurs.length} fournisseur(s) configuré(s) ont tous échoué : ${tentative.echecs.join(" · ")}`,
+      502
+    );
+  }
+
+  // Repli : le mode extractif marche toujours. On dit pourquoi on y est arrivé.
+  const reponse = repondreExtractif([
+    `Repli automatique : ${tentative.echecs.length} fournisseur(s) ont échoué (${tentative.echecs.join(" · ")}).`,
+  ]);
+  ecrireCache(cle, reponse);
+  return reponse;
+}
+
+/* -------------------------------------------------------------------------- */
+/* Diagnostic de configuration (GET /api/question)                            */
+/* -------------------------------------------------------------------------- */
+
+export interface EtatMoteur {
+  actif: boolean;
+  index: ReturnType<typeof etatIndex>;
+  mode_par_defaut: ModeReponse;
+  modes_disponibles: ModeReponse[];
+  fournisseurs_configures: { id: string; nom: string; modele: string }[];
+  fournisseurs_connus: { id: string; nom: string; variable_cle: string; url_creation_cle: string; palier_gratuit: string }[];
+  reglages: Record<string, unknown>;
+}
+
+/**
+ * État du moteur, sans aucun appel payant et sans jamais exposer une valeur de
+ * clé. Sert à l'interface pour afficher honnêtement ce qui est disponible.
+ */
+export function etatMoteur(): EtatMoteur {
+  const index = etatIndex();
+  const actifs = fournisseursActifs();
+  // Les trois modes sont toujours proposés : le mode 2 ne demande aucune clé et
+  // le mode 3 non plus. Seul le mode 1 dépend d'une configuration.
+  const modes: ModeReponse[] = actifs.length > 0 ? ["fournisseur", "prompt", "extractif"] : ["prompt", "extractif"];
+  return {
+    actif: index.present,
+    index,
+    mode_par_defaut: actifs.length > 0 ? "fournisseur" : "extractif",
+    modes_disponibles: modes,
+    fournisseurs_configures: actifs.map((f) => ({ id: f.descripteur.id, nom: f.descripteur.nom, modele: f.modele })),
+    fournisseurs_connus: FOURNISSEURS.map((f) => ({
+      id: f.id,
+      nom: f.nom,
+      variable_cle: f.variable_cle,
+      url_creation_cle: f.url_creation_cle,
+      palier_gratuit: f.palier_gratuit,
+    })),
+    reglages: {
+      modele_embedding: MODELE_EMBEDDING,
+      seuil_similarite: SEUIL_SIMILARITE,
+      seuil_pertinence: SEUIL_PERTINENCE,
+      min_passages: MIN_PASSAGES,
+      min_termes_apparies: MIN_TERMES_APPARIES,
+      max_passages: MAX_PASSAGES,
+      max_caracteres_contexte: MAX_CARACTERES_CONTEXTE,
+      max_tokens_reponse: MAX_TOKENS_REPONSE,
+      cache_ttl_heures: CACHE_TTL_HEURES,
+      question_min: QUESTION_MIN,
+      question_max: QUESTION_MAX,
     },
   };
-
-  await ecrireCache(cle, reponse);
-  return reponse;
 }

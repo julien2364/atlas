@@ -1,46 +1,41 @@
 // POST /api/question — moteur de réponse prédictive (mégaprompt §7.3, MP-4).
 //
-// GET  /api/question  → état de configuration du moteur (aucun appel payant).
-// POST /api/question  → { question: "..." } → réponse structurée en perspectives.
+// GET  /api/question  → état du moteur : index, modes disponibles, fournisseurs.
+// POST /api/question  → { question, mode?, retour? } → réponse en perspectives.
 //
 // La réponse n'est JAMAIS un verdict unique : c'est un tableau `perspectives`
 // conforme au type `Perspective` de lib/types.ts, exactement le même format que
-// les 4 questions répondues à la main dans data/seed/questions.json. Toute la
-// logique (recherche vectorielle, garde-fous, appel modèle, rattachement des
-// sources réelles) vit dans lib/rag.ts ; cette route ne fait que la transporter.
+// les 9 questions répondues à la main dans data/seed/questions.json. Toute la
+// logique (recherche locale, garde-fous, génération, rattachement des sources
+// réelles) vit dans lib/rag.ts ; cette route ne fait que la transporter.
 //
-// Pourquoi POST et pas GET : la question est une donnée d'entrée libre saisie par
-// un visiteur ; on ne veut ni la voir apparaître dans les logs d'URL du CDN, ni
-// qu'une page soit mise en cache par le CDN sur la base d'une query string. Le
-// cache existe, mais il est en base (atlas_rag_cache_reponses), sous notre contrôle.
+// Pourquoi POST et pas GET : la question est une donnée d'entrée libre saisie
+// par un visiteur ; on ne veut ni la voir apparaître dans les logs d'URL du CDN,
+// ni qu'une page soit mise en cache par le CDN sur la base d'une query string.
+// Le champ `retour` du mode 2 peut en outre peser plusieurs kilo-octets, ce
+// qu'une URL ne porterait pas.
 
 import { NextResponse } from "next/server";
 import {
-  CACHE_TTL_HEURES,
-  EMBEDDING_FACTICE,
   ErreurRag,
-  MAX_PASSAGES,
-  MAX_TOKENS_REPONSE,
-  MODELE_EMBEDDING,
-  MODELE_REPONSE,
   QUESTION_MAX,
   QUESTION_MIN,
-  SEUIL_PERTINENCE,
-  SEUIL_SIMILARITE,
+  etatMoteur,
   repondreAQuestion,
+  validerMode,
   validerQuestion,
 } from "@/lib/rag";
 
-// Le moteur lit des clés d'API serveur et utilise node:crypto : runtime Node,
-// jamais Edge. `force-dynamic` empêche toute tentative de pré-rendu au build,
-// qui échouerait faute de variables d'environnement.
+// Le moteur importe tout le corpus, l'index vectoriel et node:crypto : runtime
+// Node, jamais Edge. `force-dynamic` empêche toute tentative de pré-rendu au
+// build (la réponse dépend de l'environnement et du corps de la requête).
 export const runtime = "nodejs";
 export const dynamic = "force-dynamic";
 
 const ENTETES: Record<string, string> = {
   "Content-Type": "application/json; charset=utf-8",
   // Une réponse RAG ne doit jamais être mise en cache par un intermédiaire :
-  // le cache du moteur est en base, avec son TTL et ses compteurs.
+  // le cache du moteur est en mémoire, avec son TTL et son plafond d'entrées.
   "Cache-Control": "no-store",
 };
 
@@ -52,13 +47,11 @@ function erreur(code: string, message: string, statut: number, details?: Record<
 /* Limitation de débit (best effort)                                          */
 /* -------------------------------------------------------------------------- */
 
-// Quatrième borne de coût, la plus grossière : empêcher qu'un visiteur (ou un
-// robot) enchaîne les questions distinctes et fasse exploser la facture.
-// Limite honnête : la mémoire est celle de l'instance serverless courante. Sur
-// Vercel, plusieurs instances coexistent, donc le plafond réel est un multiple
-// de celui-ci. Ce n'est pas un anti-abus sérieux — c'est un amortisseur. Un vrai
-// plafond suppose un compteur partagé (table Supabase ou Upstash), à faire si le
-// site prend du trafic.
+// Amortisseur, pas anti-abus : la mémoire est celle de l'instance serverless
+// courante, et plusieurs instances coexistent, donc le plafond réel est un
+// multiple de celui-ci. Il compte davantage depuis la refonte : le mode
+// extractif et la recherche sont gratuits, mais un fournisseur d'API configuré
+// se facture, et rien d'autre n'empêche un robot d'enchaîner les questions.
 const FENETRE_MS = 60_000;
 const MAX_PAR_FENETRE = 5;
 const compteurs = new Map<string, { debut: number; nombre: number }>();
@@ -92,38 +85,22 @@ function adresse(request: Request): string {
 /* -------------------------------------------------------------------------- */
 
 /**
- * Diagnostic sans appel payant : dit si les trois clés attendues sont présentes.
- * Ne renvoie évidemment aucune valeur de clé, seulement des booléens. Sert à
- * l'interface (/questions) pour afficher un message honnête plutôt qu'un champ
- * de saisie qui échouera à la première question.
+ * Diagnostic sans aucun appel payant. Ne renvoie évidemment aucune valeur de
+ * clé — seulement des noms de variables, l'état de l'index et la liste des
+ * modes réellement utilisables. Sert à l'interface pour afficher un message
+ * honnête au lieu d'un champ de saisie qui échouera.
  */
 export async function GET(): Promise<NextResponse> {
-  // En mode d'embedding factice (test, cf. lib/embedding-factice.mjs), la clé
-  // Voyage n'est ni utilisée ni requise : l'annoncer manquante ferait croire à
-  // une configuration cassée alors que le moteur fonctionne.
-  const clesManquantes = [
-    process.env.NEXT_PUBLIC_SUPABASE_URL ? null : "NEXT_PUBLIC_SUPABASE_URL",
-    process.env.SUPABASE_SERVICE_ROLE_KEY ? null : "SUPABASE_SERVICE_ROLE_KEY",
-    EMBEDDING_FACTICE || process.env.VOYAGE_API_KEY ? null : "VOYAGE_API_KEY",
-    process.env.ANTHROPIC_API_KEY ? null : "ANTHROPIC_API_KEY",
-  ].filter(Boolean);
-
+  const etat = etatMoteur();
   return NextResponse.json(
     {
-      actif: clesManquantes.length === 0,
-      cles_manquantes: clesManquantes,
-      reglages: {
-        modele_embedding: MODELE_EMBEDDING,
-        embedding_factice: EMBEDDING_FACTICE,
-        modele_reponse: MODELE_REPONSE,
-        seuil_similarite: SEUIL_SIMILARITE,
-        seuil_pertinence: SEUIL_PERTINENCE,
-        max_passages: MAX_PASSAGES,
-        max_tokens_reponse: MAX_TOKENS_REPONSE,
-        cache_ttl_heures: CACHE_TTL_HEURES,
-        question_min: QUESTION_MIN,
-        question_max: QUESTION_MAX,
-      },
+      actif: etat.actif,
+      index: etat.index,
+      mode_par_defaut: etat.mode_par_defaut,
+      modes_disponibles: etat.modes_disponibles,
+      fournisseurs_configures: etat.fournisseurs_configures,
+      fournisseurs_connus: etat.fournisseurs_connus,
+      reglages: { ...etat.reglages, question_min: QUESTION_MIN, question_max: QUESTION_MAX },
     },
     { status: 200, headers: ENTETES }
   );
@@ -132,6 +109,9 @@ export async function GET(): Promise<NextResponse> {
 /* -------------------------------------------------------------------------- */
 /* POST — poser une question                                                  */
 /* -------------------------------------------------------------------------- */
+
+/** Taille maximale du texte recollé en mode 2 — au-delà, c'est une conversation entière. */
+const RETOUR_MAX = 200_000;
 
 export async function POST(request: Request): Promise<NextResponse> {
   if (tropDeRequetes(adresse(request))) {
@@ -146,27 +126,40 @@ export async function POST(request: Request): Promise<NextResponse> {
   try {
     corps = await request.json();
   } catch {
-    return erreur("corps_invalide", "Corps de requête illisible : un objet JSON { \"question\": \"…\" } est attendu.", 400);
+    return erreur("corps_invalide", 'Corps de requête illisible : un objet JSON { "question": "…" } est attendu.', 400);
   }
 
-  const brut = (corps as { question?: unknown } | null)?.question;
-  const controle = validerQuestion(brut);
+  const donnees = (corps ?? {}) as { question?: unknown; mode?: unknown; retour?: unknown };
+  const controle = validerQuestion(donnees.question);
   if ("erreur" in controle) {
     return erreur("question_invalide", controle.erreur, 400);
   }
 
+  if (donnees.retour !== undefined && typeof donnees.retour !== "string") {
+    return erreur("retour_invalide", "Le champ « retour » doit être une chaîne de caractères.", 400);
+  }
+  if (typeof donnees.retour === "string" && donnees.retour.length > RETOUR_MAX) {
+    return erreur(
+      "retour_invalide",
+      `Le texte collé dépasse ${RETOUR_MAX.toLocaleString("fr-FR")} caractères : ne coller que la réponse du modèle.`,
+      400
+    );
+  }
+
   try {
-    const reponse = await repondreAQuestion(controle.question);
-    // 200 même quand le moteur refuse de répondre : ce n'est pas une erreur
-    // technique mais une réponse honnête, et l'interface l'affiche comme telle
-    // (diagnostic.statut vaut alors "hors_corpus" ou "corpus_vide").
+    const reponse = await repondreAQuestion(controle.question, {
+      mode: validerMode(donnees.mode),
+      retour: typeof donnees.retour === "string" ? donnees.retour : undefined,
+    });
+    // 200 même quand le moteur refuse de répondre ou attend un collage : ce
+    // n'est pas une erreur technique mais une réponse honnête, et l'interface
+    // l'affiche comme telle (diagnostic.statut le dit).
     return NextResponse.json(reponse, { status: 200, headers: ENTETES });
   } catch (e) {
     if (e instanceof ErreurRag) {
       return erreur(e.code, e.message, e.statut);
     }
-    // Message générique côté client, trace complète côté serveur : on ne veut
-    // pas qu'une erreur de driver expose l'URL du projet Supabase mutualisé.
+    // Message générique côté client, trace complète côté serveur.
     console.error("[/api/question] échec inattendu", e);
     return erreur("erreur_interne", "Le moteur de questions a échoué de façon inattendue.", 500);
   }

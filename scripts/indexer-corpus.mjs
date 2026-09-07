@@ -68,11 +68,9 @@ import path from "node:path";
 import { construirePassages, clePassage, empreintePassage } from "../lib/passages-corpus.mjs";
 import {
   MODELE_LEXICAL,
-  DIMENSION_LEXICALE,
   construireLexique,
   poidsCreux,
   cosinusCreux,
-  termes,
   vecteurDocument,
   vecteurRequete,
   quantifier,
