@@ -191,6 +191,16 @@ const CONTENUS_GAP = [
 
 const erreurs = [];
 const avertissements = [];
+/**
+ * Axe de chaque fiche humaine, id -> axe. Rempli pendant la validation des fiches
+ * humaines et relu pendant celle des gaps : un gap n'a pas d'axe propre, mais il
+ * cite une fiche humaine qui en a un, et c'est cet axe qui permet à T1 de
+ * reconnaître qu'un `documents_cles` sans url est une œuvre imprimée plutôt qu'un
+ * lien oublié. Sans ce report, le tri se trompait sur les deux tiers des
+ * 177 entrées de gap concernées. L'ordre d'appel dans main() garantit que la carte
+ * est complète avant la passe sur les gaps.
+ */
+const axeParFicheHumaine = new Map();
 /** Couverture par fichier : total / documentées / à documenter. */
 const couverture = {};
 
@@ -387,6 +397,10 @@ function estIntentionDeSource(titre) {
  */
 const MARQUEURS_NUMERIQUES = [
   /\barxiv\b/,
+  /\brapports?\b/,
+  /\bpublication annuelle\b/,
+  /\bmeta-?analyse\b/,
+  /\bindex\b/,
   /\bdoi\b/,
   /https?:/,
   /\btechnical report\b/,
@@ -426,6 +440,18 @@ function motifOeuvreImprimee(titre, axe) {
   if (!t) return null;
   if (MARQUEURS_NUMERIQUES.some((r) => r.test(t))) return null;
   if (MARQUEURS_EDITION.some((r) => r.test(t))) return "marqueur d'édition dans le titre";
+  // Un titre empilant plusieurs documents (« Carbonell — SCHOLAR (1970) ; VanLehn —
+  // … ; Kulik, Fletcher — … ») n'est pas une œuvre : c'est une source agrégée, à
+  // éclater. Elle relève du lien manquant, pas de l'exception imprimée.
+  if (t.includes(" ; ")) return null;
+  // Un ancrage éditorial — « Nom, Nom — Titre », un nom de revue, « et al. » — est la
+  // signature d'un document publié et citable, donc pourvu d'un identifiant en
+  // ligne : article de revue, acte de conférence, préprint. C'est exactement ce que
+  // n'est pas une œuvre imprimée au sens de cette exception. Contrepartie assumée :
+  // un ouvrage cité sous la forme « Box, Jenkins — Time Series Analysis (1970) »
+  // bascule du mauvais côté. On préfère cette erreur-là : elle demande une url à un
+  // livre, alors que l'erreur inverse dispense d'url un article qui en a une.
+  if (ANCRAGE_EDITORIAL.some((r) => r.test(t))) return null;
   if (axe && AXES_A_SOURCES_IMPRIMEES.has(axe)) return `axe ${axe}, dont les sources primaires sont des ouvrages`;
   return null;
 }
@@ -582,7 +608,7 @@ function verifierSources(fichier, id, champ, sources, { contexte = "", axe = nul
           fichier,
           id,
           emplacement,
-          `source primaire sans url — œuvre imprimée présumée (${motif}) : l'absence de lien est légitime, c'est le champ "date" (année d'édition) qui manque`,
+          `source primaire sans url — œuvre imprimée présumée ("${s.titre}" ; ${motif}) : l'absence de lien est légitime, c'est le champ "date" (année d'édition) qui manque`,
           "T1-oeuvre-imprimee"
         );
       } else {
@@ -740,6 +766,10 @@ function validerFichesHumaines() {
 
       if (!AXES_HUMAINS.includes(fiche?.axe)) {
         erreur(etiquette, id, "axe", `axe humain invalide : ${JSON.stringify(fiche?.axe)} (attendu : ${AXES_HUMAINS.join(", ")})`);
+      }
+
+      if (AXES_HUMAINS.includes(fiche?.axe) && chaineRemplie(fiche?.id)) {
+        axeParFicheHumaine.set(fiche.id, fiche.axe);
       }
 
       verifierContenus(etiquette, id, fiche, CONTENUS_HUMAINE);
@@ -1009,7 +1039,9 @@ function validerFichesGap(idsHumaines, idsIA) {
     // --- Champs optionnels du Lot 9 : validés seulement s'ils sont présents
     // (rétrocompatibilité assumée — un gap antérieur au Lot 9 reste valide).
     if (gap?.documents_cles !== undefined) {
-      const avecUrl = verifierSources(etiquette, id, "documents_cles", gap.documents_cles);
+      // Axe emprunté à la fiche humaine du couple : voir axeParFicheHumaine.
+      const axeHerite = axeParFicheHumaine.get(gap?.fiche_humaine_id) ?? null;
+      const avecUrl = verifierSources(etiquette, id, "documents_cles", gap.documents_cles, { axe: axeHerite });
       if (STATUTS_PUBLIES.includes(gap?.statut) && Array.isArray(gap.documents_cles) && gap.documents_cles.length > 0 && !avecUrl) {
         avertissement(etiquette, id, "documents_cles", "aucun document clé ne porte d'url");
       }
