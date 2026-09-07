@@ -1,55 +1,21 @@
 import sources from "@/data/seed/veille_sources.json";
 import changelog from "@/data/seed/changelog.json";
 import queue from "@/data/seed/veille_queue.json";
+import VeilleClient, { type QueueItem } from "@/components/VeilleClient";
 
 type Source = { id: string; nom: string; type: string; domaine: string; actif: boolean; note?: string };
-type QueueItem = {
-  id: string;
-  source_id: string | null;
-  cible_type?: string;
-  cible_id?: string | null;
-  statut: string;
-  score_fiabilite: number;
-  // Deux formes possibles selon le script d'origine :
-  // - veille-rss.mjs (actualités) : { titre, link, date, resume }
-  // - documentation-recherche.mjs (fiches "à documenter") : { nom, titre_article_source, url, extrait, langue_source, note }
-  contenu_propose: {
-    titre?: string;
-    link?: string;
-    date?: string;
-    resume?: string;
-    nom?: string;
-    titre_article_source?: string;
-    url?: string;
-    extrait?: string;
-    langue_source?: string;
-    note?: string;
-  };
-};
 
-function normaliserProposition(q: QueueItem): { titre: string; href: string | null; dateStr: string | null; texte: string; badge: string } {
-  const estDocumentation = q.cible_type === "fiche_humaine" || q.cible_type === "fiche_ia";
-  if (estDocumentation) {
-    return {
-      titre: q.contenu_propose.nom ?? q.contenu_propose.titre_article_source ?? "(sans titre)",
-      href: q.contenu_propose.url ?? null,
-      dateStr: null,
-      texte: q.contenu_propose.extrait ?? "",
-      badge: q.cible_type === "fiche_humaine" ? "documentation — fiche humaine" : "documentation — fiche IA",
-    };
-  }
-  return {
-    titre: q.contenu_propose.titre ?? "(sans titre)",
-    href: q.contenu_propose.link ?? null,
-    dateStr: q.contenu_propose.date ? new Date(q.contenu_propose.date).toLocaleDateString("fr-FR") : null,
-    texte: q.contenu_propose.resume ?? "",
-    badge: "actualité",
-  };
+/** Formatage JJ/MM/AAAA déterministe, pour ne pas dépendre de l'ICU du runtime de
+ *  rendu (le serveur et le navigateur ne partagent pas forcément la même locale). */
+function formatDateFr(iso: string): string {
+  const m = /^(\d{4})-(\d{2})-(\d{2})/.exec(iso);
+  return m ? `${m[3]}/${m[2]}/${m[1]}` : iso;
 }
 
 export default function VeillePage() {
   const typedSources = sources as Source[];
   const activeCount = typedSources.filter((s) => s.actif).length;
+  const propositions = queue as unknown as QueueItem[];
 
   return (
     <div className="space-y-10">
@@ -84,35 +50,16 @@ export default function VeillePage() {
       </section>
 
       <section>
-        <h2 className="text-lg font-medium">File de validation ({(queue as QueueItem[]).length} en attente)</h2>
-        <p className="mt-1 text-xs text-neutral-500">
-          Propositions collectées par le dernier passage du script, en attente de revue humaine avant tout
-          rattachement à une fiche existante ou création d&apos;une nouvelle fiche.
+        <h2 className="text-lg font-medium">Revue de la file de validation ({propositions.length} propositions)</h2>
+        <p className="mt-1 max-w-2xl text-xs text-neutral-500">
+          Propositions collectées par les scripts de veille et de documentation, en attente de revue humaine avant
+          tout rattachement à une fiche existante ou création d&apos;une nouvelle fiche. La revue se fait par lots
+          (filtres par statut, type de cible, source, score de fiabilité) et produit un fichier de décision à
+          committer — le détail du raisonnement est expliqué dans l&apos;encadré ci-dessous.
         </p>
-        <ul className="mt-3 space-y-2 text-sm">
-          {(queue as QueueItem[]).map((q) => {
-            const p = normaliserProposition(q);
-            return (
-              <li key={q.id} className="rounded border border-neutral-200 p-3 dark:border-neutral-800">
-                <div className="flex items-center justify-between gap-2">
-                  {p.href ? (
-                    <a href={p.href} target="_blank" rel="noreferrer" className="font-medium hover:underline">
-                      {p.titre}
-                    </a>
-                  ) : (
-                    <span className="font-medium">{p.titre}</span>
-                  )}
-                  <span className="shrink-0 text-xs text-neutral-400">fiabilité {q.score_fiabilite}</span>
-                </div>
-                {p.texte && <p className="mt-1 text-xs text-neutral-600 dark:text-neutral-400">{p.texte}</p>}
-                <p className="mt-1 text-xs text-neutral-500">
-                  {p.badge}
-                  {p.dateStr ? ` — ${p.dateStr}` : ""} — statut : {q.statut}
-                </p>
-              </li>
-            );
-          })}
-        </ul>
+        <div className="mt-3">
+          <VeilleClient queue={propositions} />
+        </div>
       </section>
 
       <section>
@@ -120,7 +67,7 @@ export default function VeillePage() {
         <ul className="mt-3 space-y-3 text-sm">
           {(changelog as { id: string; date: string; type: string; cible: string; resume: string }[]).map((c) => (
             <li key={c.id} className="rounded border border-neutral-200 p-3 dark:border-neutral-800">
-              <p className="text-xs text-neutral-400">{new Date(c.date).toLocaleDateString("fr-FR")} — {c.type} — {c.cible}</p>
+              <p className="text-xs text-neutral-400">{formatDateFr(c.date)} — {c.type} — {c.cible}</p>
               <p className="mt-1">{c.resume}</p>
             </li>
           ))}
