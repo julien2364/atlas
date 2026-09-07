@@ -67,6 +67,7 @@
 import { readFileSync, writeFileSync, readdirSync, existsSync, mkdirSync } from "node:fs";
 import { fileURLToPath } from "node:url";
 import path from "node:path";
+import { scoreFiabilite } from "./veille-rss.mjs";
 
 // ---------------------------------------------------------------------------
 // Arguments & configuration
@@ -287,8 +288,21 @@ function construirePatch(proposition, entreeCorpus) {
   const urlsExistantes = new Set((fiche.sources ?? []).map((s) => normaliserUrl(s?.url)));
   const dejaSourcee = urlsExistantes.has(normaliserUrl(url));
 
-  const score = typeof proposition.score_fiabilite === "number" ? proposition.score_fiabilite : 0;
-  const agregateur = estAgregateur(url);
+  // Le score est RECALCULÉ ici, sur le domaine de l'url, plutôt que lu dans la file.
+  //
+  // Raison : les scores stockés dans data/seed/veille_queue.json ont été écrits par
+  // l'ancien barème de scripts/veille-rss.mjs, qui lisait le nom du flux RSS. Deux
+  // communiqués d'OpenAI sur leur propre produit y portent 0,9 — le score d'un
+  // article de Nature à comité de lecture — et devenaient donc des sources
+  // `primaire` du référentiel dans le patch produit. Faire confiance à la valeur
+  // stockée reviendrait à propager une mesure dont on sait qu'elle est fausse.
+  //
+  // Le score stocké n'est pas perdu pour autant : quand les deux divergent, l'écart
+  // est porté dans `a_verifier`, à la vue du relecteur.
+  const scoreStocke = typeof proposition.score_fiabilite === "number" ? proposition.score_fiabilite : null;
+  const fiabilite = scoreFiabilite(url);
+  const score = fiabilite.score;
+  const agregateur = estAgregateur(url) || fiabilite.opaque;
 
   const patch = {
     // id lisible et stable : re-générer deux fois la même proposition donne le même
@@ -302,7 +316,9 @@ function construirePatch(proposition, entreeCorpus) {
     fichier,
     statut_fiche_actuel: fiche.statut ?? null,
     derniere_verification_actuelle: fiche.derniere_verification ?? null,
-    score_fiabilite: proposition.score_fiabilite ?? null,
+    score_fiabilite: score,
+    score_fiabilite_motif: fiabilite.motif,
+    score_fiabilite_stocke: scoreStocke,
     // Case à cocher du relecteur : passer à false écarte le patch sans le supprimer,
     // ce qui laisse une trace de la décision dans le fichier relu.
     retenu: true,
@@ -338,11 +354,17 @@ function construirePatch(proposition, entreeCorpus) {
     } else if (score < SEUIL_SOURCE_PRIMAIRE) {
       patch.nature = "a_reformuler";
       patch.a_verifier.push(
-        `Score de fiabilité faible (${score}) : recouper la source avant de l'ajouter au référentiel`
+        `Score de fiabilité sous le seuil de source primaire (${score} < ${SEUIL_SOURCE_PRIMAIRE}) — ${fiabilite.motif}. Recouper avant de l'ajouter au référentiel.`
       );
     } else {
       patch.nature = "sur";
       patch.a_verifier.push("Vérifier que l'URL est bien vivante et que le titre correspond au document cité");
+    }
+
+    if (scoreStocke !== null && scoreStocke !== score) {
+      patch.a_verifier.push(
+        `Le score stocké dans la file (${scoreStocke}) diffère du score recalculé sur le domaine (${score}) : la file porte encore des scores écrits par l'ancien barème, déduit du nom du flux RSS.`
+      );
     }
 
     if (dejaSourcee) {

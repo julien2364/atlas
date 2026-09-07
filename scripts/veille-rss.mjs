@@ -62,7 +62,14 @@ import path from "node:path";
 // Arguments
 // ---------------------------------------------------------------------------
 
-const args = process.argv.slice(2);
+// Ce fichier est à la fois un exécutable et un module : scripts/appliquer-veille.mjs
+// importe scoreFiabilite() pour ne pas dupliquer la table de domaines. Tout ce qui
+// relève de la ligne de commande — lecture des options, aide, rejet des options
+// inconnues, collecte — est donc conditionné à l'exécution directe. Sans cela, un
+// import ferait échouer le processus hôte sur SES propres options.
+const LANCE_DIRECTEMENT = process.argv[1] && path.resolve(process.argv[1]) === fileURLToPath(import.meta.url);
+
+const args = LANCE_DIRECTEMENT ? process.argv.slice(2) : [];
 
 if (args.includes("--aide") || args.includes("-h") || args.includes("--help")) {
   console.log(`
@@ -477,4 +484,4 @@ async function main() {
   }
 }
 
-main();
+if (LANCE_DIRECTEMENT) main();

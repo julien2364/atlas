@@ -24,6 +24,17 @@ jobs:
       - name: Installer les dépendances
         run: npm ci
 
+      # Depuis le 07/09/2026, ce script sort en code 1 si AUCUN flux n'est joignable
+      # alors que des flux actifs sont déclarés : une file inchangée parce que rien de
+      # neuf n'a été publié est normale, une file inchangée parce que le réseau est
+      # tombé ne l'est pas, et les deux se ressemblaient jusqu'ici. Pas de
+      # continue-on-error : on veut que le cron rougisse.
+      #
+      # Le score de fiabilité de chaque proposition est calculé sur le domaine de son
+      # url et non plus sur le nom du flux (cf. l'en-tête du script). Conséquence pour
+      # ce job : les items arrivant par les flux Google News tombent au score plancher
+      # et sont marqués `domaine_opaque` — ils ne peuvent plus franchir le seuil de
+      # source primaire de l'étape de proposition ci-dessous.
       - name: Lancer la veille RSS
         run: node scripts/veille-rss.mjs
 
@@ -60,13 +71,21 @@ jobs:
       # Garde-fou explicite : si l'étape précédente avait touché une fiche, on
       # veut que le job échoue bruyamment plutôt que de laisser passer une
       # modification non validée.
+      # `git status --porcelain` et non `git diff` : `git diff` ne voit que les
+      # fichiers SUIVIS. Un script qui déposerait un fichier neuf dans data/seed/ —
+      # une file de patchs, un fichier temporaire — passerait donc inaperçu alors
+      # qu'il salit le corpus. Le contrôle porte sur l'arbre de travail entier :
+      # après l'étape de proposition, il ne doit strictement rien y avoir de nouveau
+      # ni de modifié, puisque le fichier produit est écrit dans RUNNER_TEMP.
       - name: Vérifier qu'aucune fiche n'a été modifiée
         run: |
-          if git diff --quiet -- data/seed && git diff --quiet; then
-            echo "OK — aucune modification du corpus par l'étape de proposition."
+          etat="$(git status --porcelain)"
+          if [ -z "$etat" ]; then
+            echo "OK — arbre de travail intact : l'étape de proposition n'a rien écrit dans le dépôt."
           else
-            echo "ERREUR : l'étape de proposition a modifié des fichiers suivis — elle ne doit rien écrire dans le dépôt."
-            git status --short
+            echo "ERREUR : l'étape de proposition a modifié ou créé des fichiers dans le dépôt."
+            echo "Elle ne doit écrire QUE dans RUNNER_TEMP — aucune fiche ne se modifie sans relecture humaine."
+            echo "$etat"
             exit 1
           fi
 
