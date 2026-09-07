@@ -1,3 +1,4 @@
+import type { Metadata } from "next";
 import sources from "@/data/seed/veille_sources.json";
 import changelog from "@/data/seed/changelog.json";
 import queue from "@/data/seed/veille_queue.json";
@@ -12,6 +13,13 @@ function formatDateFr(iso: string): string {
   return m ? `${m[3]}/${m[2]}/${m[1]}` : iso;
 }
 
+export const metadata: Metadata = {
+  title: "Veille et changelog",
+  description:
+    "Sources de veille configurées, file de propositions en attente de revue humaine, et journal daté des évolutions du corpus ATLAS. Aucune fiche n'est modifiée sans validation tracée.",
+  alternates: { canonical: "/veille" },
+};
+
 export default function VeillePage() {
   const typedSources = sources as Source[];
   const activeCount = typedSources.filter((s) => s.actif).length;
@@ -19,15 +27,15 @@ export default function VeillePage() {
 
   return (
     <div className="space-y-10">
-      <div>
-        <h1 className="text-2xl font-semibold">Veille</h1>
-        <p className="mt-2 max-w-2xl text-sm text-neutral-500">
+      <header className="max-w-3xl">
+        <h1 className="text-2xl font-semibold tracking-tight">Veille et changelog</h1>
+        <p className="mt-3 text-sm leading-relaxed text-neutral-600 dark:text-neutral-400">
           Canaux de collecte (v1.1 du mégaprompt) : RSS/Atom en priorité + Spiderfoot en second canal structuré,
           scraping générique exclu. Le script <code>scripts/veille-rss.mjs</code> (Lot 5) interroge les sources
           actives, déduplique par lien et dépose les nouveautés dans une file de validation manuelle — aucune
           fiche n&apos;est mise à jour automatiquement.
         </p>
-      </div>
+      </header>
 
       <section>
         <h2 className="text-lg font-medium">Sources configurées ({activeCount}/{typedSources.length} actives)</h2>
@@ -37,13 +45,19 @@ export default function VeillePage() {
               <div className="flex items-center justify-between">
                 <span className={s.actif ? "" : "text-neutral-500 dark:text-neutral-400 line-through"}>{s.nom}</span>
                 <span className="flex items-center gap-2 text-xs text-neutral-500 dark:text-neutral-400">
-                  <span className={`rounded px-2 py-0.5 ${s.actif ? "bg-neutral-100 dark:bg-neutral-800" : "bg-red-50 text-red-600 dark:bg-red-950"}`}>
+                  <span
+                    className={`rounded px-2 py-0.5 ${
+                      s.actif
+                        ? "bg-neutral-100 text-neutral-700 dark:bg-neutral-800 dark:text-neutral-200"
+                        : "bg-rose-50 text-rose-800 dark:bg-rose-950 dark:text-rose-200"
+                    }`}
+                  >
                     {s.actif ? s.type : "désactivée"}
                   </span>
                   <span>{s.domaine}</span>
                 </span>
               </div>
-              {!s.actif && s.note ? <p className="mt-1 text-xs text-red-600 dark:text-red-400">{s.note}</p> : null}
+              {!s.actif && s.note ? <p className="mt-1 text-xs text-rose-700 dark:text-rose-300">{s.note}</p> : null}
             </li>
           ))}
         </ul>

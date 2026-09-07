@@ -3,6 +3,7 @@ import Link from "next/link";
 import fiches from "@/data/seed/fiches_humaines";
 import type { FicheHumaine } from "@/lib/types";
 import { cheminFicheHumaine } from "@/lib/corpus";
+import { BadgeStatut } from "@/components/Badges";
 
 const data = fiches as unknown as FicheHumaine[];
 
@@ -21,23 +22,13 @@ const AXES: Record<string, string> = {
   serenite: "Sérénité de l'espèce",
 };
 
-function StatutBadge({ statut }: { statut: string }) {
-  const styles: Record<string, string> = {
-    a_documenter: "bg-neutral-100 text-neutral-500 dark:bg-neutral-800",
-    documente: "bg-emerald-100 text-emerald-700 dark:bg-emerald-900/40 dark:text-emerald-300",
-    verifie_recemment: "bg-blue-100 text-blue-700 dark:bg-blue-900/40 dark:text-blue-300",
-    a_re_auditer: "bg-amber-100 text-amber-700 dark:bg-amber-900/40 dark:text-amber-300",
-  };
-  return <span className={`rounded px-2 py-0.5 text-[11px] ${styles[statut] ?? ""}`}>{statut.replace(/_/g, " ")}</span>;
-}
-
 function FicheHumaineDetail({ f }: { f: FicheHumaine }) {
   return (
     <details id={f.id} className="rounded border border-neutral-200 p-3 dark:border-neutral-800">
       <summary className="cursor-pointer font-medium">
         {f.nom} {f.periode_courant ? <span className="text-neutral-500 dark:text-neutral-400">— {f.periode_courant}</span> : null}
         <span className="ml-2">
-          <StatutBadge statut={f.statut} />
+          <BadgeStatut statut={f.statut} />
         </span>
       </summary>
       {f.statut === "documente" ? (
@@ -71,12 +62,35 @@ export default function ReferentielHumainPage() {
     return acc;
   }, {});
 
+  const nombreDocumentees = data.filter((f) => f.statut === "documente").length;
+
   return (
     <div className="space-y-10">
-      <div>
-        <h1 className="text-2xl font-semibold">Référentiel A — Capacités humaines</h1>
-        <p className="mt-2 text-sm text-neutral-500">{data.length} entrées amorcées · {data.filter(f=>f.statut==="documente").length} documentées.</p>
-      </div>
+      <header className="max-w-3xl">
+        <h1 className="text-2xl font-semibold tracking-tight">Référentiel A — capacités humaines</h1>
+        <p className="mt-3 text-sm leading-relaxed text-neutral-600 dark:text-neutral-400">
+          {data.length} capacités réparties sur cinq axes, dont {nombreDocumentees} documentées et sourcées. Chaque entrée
+          se déplie sur sa thèse centrale, son apport et ses limites critiques ; sa fiche complète ajoute les sources
+          datées, les analyses de gap qui la citent et les fiches connexes.
+        </p>
+        <nav aria-label="Axes du référentiel humain" className="mt-4">
+          <ul className="flex flex-wrap gap-x-3 gap-y-1 text-xs">
+            {Object.entries(AXES).map(([axe, label]) => {
+              const n = (parAxe[axe] ?? []).length;
+              return n === 0 ? null : (
+                <li key={axe}>
+                  <a
+                    href={`#axe-${axe}`}
+                    className="rounded-full border border-neutral-300 px-3 py-1 text-neutral-600 transition-colors hover:border-neutral-500 dark:border-neutral-700 dark:text-neutral-300"
+                  >
+                    {label} ({n})
+                  </a>
+                </li>
+              );
+            })}
+          </ul>
+        </nav>
+      </header>
 
       {Object.entries(AXES).map(([axe, label]) => {
         const entries = parAxe[axe] ?? [];
@@ -88,7 +102,9 @@ export default function ReferentielHumainPage() {
         }, {});
         return (
           <section key={axe} id={`axe-${axe}`} className="scroll-mt-24">
-            <h2 className="text-lg font-medium">{label} <span className="text-sm font-normal text-neutral-500 dark:text-neutral-400">({entries.length})</span></h2>
+            <h2 className="text-lg font-medium">
+              {label} <span className="text-sm font-normal text-neutral-500">({entries.length})</span>
+            </h2>
             <div className="mt-3 space-y-4">
               {Object.entries(parSousDomaine).map(([sd, items]) => {
                 const documentees = items.filter((f) => f.statut === "documente");
@@ -113,7 +129,7 @@ export default function ReferentielHumainPage() {
                             >
                               {f.nom}
                             </Link>
-                            <StatutBadge statut={f.statut} />
+                            <BadgeStatut statut={f.statut} />
                           </li>
                         ))}
                       </ul>

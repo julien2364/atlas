@@ -1,26 +1,28 @@
-import gaps from "@/data/seed/fiches_gap.json";
-import fichesHumaines from "@/data/seed/fiches_humaines";
-import fichesIA from "@/data/seed/fiches_ia.json";
-import type { FicheGap, FicheHumaine, FicheIA } from "@/lib/types";
+import type { Metadata } from "next";
 import ComparateurClient from "@/components/ComparateurClient";
+import { fichesGap, fichesHumaines, fichesIA } from "@/lib/corpus";
 
-const gapData = gaps as unknown as FicheGap[];
-const humaines = fichesHumaines as unknown as FicheHumaine[];
-const ia = fichesIA as unknown as FicheIA[];
+export const metadata: Metadata = {
+  title: "Comparateur de gap humain × IA",
+  description:
+    "Croiser une capacité humaine et une capacité IA : apport réel, mécanisme, mode d'interaction, substituabilité et scénarios à 5 et 15-20 ans, sur les analyses documentées du référentiel ATLAS.",
+  alternates: { canonical: "/comparateur" },
+};
 
 export default function ComparateurPage() {
   return (
     <div className="space-y-6">
-      <div>
-        <h1 className="text-2xl font-semibold">Comparateur — fiches de gap</h1>
-        <p className="mt-2 max-w-2xl text-sm text-neutral-500">
-          Sélecteur libre (Lot 4) : choisissez n&apos;importe quelle capacité humaine et IA. {gapData.length} paires
-          sont déjà analysées selon la méthodologie section 5 du mégaprompt (apport, mécanisme, comment mieux, mode
-          d&apos;interaction, substituabilité, scénarios temporels) ; les autres combinaisons affichent leur statut
+      <header className="max-w-3xl">
+        <h1 className="text-2xl font-semibold tracking-tight">Comparateur — analyses de gap</h1>
+        <p className="mt-3 text-sm leading-relaxed text-neutral-600 dark:text-neutral-400">
+          Sélecteur libre : n&apos;importe laquelle des {fichesHumaines.length} capacités humaines face à
+          n&apos;importe laquelle des {fichesIA.length} capacités IA. {fichesGap.length} paires sont analysées selon
+          la même grille — apport de l&apos;IA, mécanisme, comment faire mieux, mode d&apos;interaction,
+          substituabilité, scénarios présent / +5 ans / +15-20 ans. Les autres combinaisons affichent leur statut
           réel plutôt qu&apos;un contenu inventé.
         </p>
-      </div>
-      <ComparateurClient humaines={humaines} ia={ia} gaps={gapData} />
+      </header>
+      <ComparateurClient humaines={fichesHumaines} ia={fichesIA} gaps={fichesGap} />
     </div>
   );
 }

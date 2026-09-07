@@ -356,9 +356,16 @@ export default function CartographieClient({
                     scope="col"
                     className="sticky top-0 z-10 h-28 w-9 min-w-9 bg-white p-0 align-bottom font-normal text-neutral-500 dark:bg-neutral-950"
                   >
-                    <span className="flex h-28 w-9 items-end justify-center">
-                      <span className="origin-bottom -rotate-60 whitespace-nowrap pb-1 text-[10px]" title={f.nom}>
-                        {f.nom.length > 26 ? `${f.nom.slice(0, 25)}…` : f.nom}
+                    {/* Écriture verticale plutôt qu'une rotation : le texte
+                        reste dans sa cellule quelle que soit sa longueur, donc
+                        aucun débordement sur la colonne figée de gauche. */}
+                    <span
+                      className="flex h-28 w-9 items-end justify-center overflow-hidden pb-1 text-[10px]"
+                      style={{ writingMode: "vertical-rl" }}
+                      title={f.nom}
+                    >
+                      <span className="rotate-180 whitespace-nowrap">
+                        {f.nom.length > 22 ? `${f.nom.slice(0, 21)}…` : f.nom}
                       </span>
                     </span>
                   </th>

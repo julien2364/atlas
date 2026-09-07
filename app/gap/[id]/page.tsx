@@ -22,7 +22,7 @@ import {
 import { jsonLdFilAriane, jsonLdGap, type ElementAriane } from "@/lib/seo";
 import { SITE_NAME, urlAbsolue } from "@/lib/site-config";
 
-// 86 pages pré-générées ; tout identifiant hors corpus renvoie un 404 réel.
+// Une page pré-générée par analyse de gap ; tout identifiant hors corpus renvoie un 404 réel.
 export const dynamicParams = false;
 
 export function generateStaticParams(): { id: string }[] {

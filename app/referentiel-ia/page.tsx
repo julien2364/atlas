@@ -3,6 +3,7 @@ import Link from "next/link";
 import fiches from "@/data/seed/fiches_ia.json";
 import type { FicheIA } from "@/lib/types";
 import { cheminFicheIA } from "@/lib/corpus";
+import { BadgeStatut } from "@/components/Badges";
 
 const data = fiches as unknown as FicheIA[];
 
@@ -28,12 +29,37 @@ export default function ReferentielIAPage() {
     return acc;
   }, {});
 
+  const nombreDocumentees = data.filter((f) => f.statut === "documente").length;
+  const nombreUsages = data.reduce((n, f) => n + (f.usages?.length ?? 0), 0);
+
   return (
     <div className="space-y-10">
-      <div>
-        <h1 className="text-2xl font-semibold">Référentiel B — Capacités IA</h1>
-        <p className="mt-2 text-sm text-neutral-500">{data.length} entrées amorcées · {data.filter(f=>f.statut==="documente").length} documentées.</p>
-      </div>
+      <header className="max-w-3xl">
+        <h1 className="text-2xl font-semibold tracking-tight">Référentiel B — capacités IA</h1>
+        <p className="mt-3 text-sm leading-relaxed text-neutral-600 dark:text-neutral-400">
+          {data.length} capacités réparties sur six axes, dont {nombreDocumentees} documentées, et {nombreUsages}
+          {" "}usages sectoriels notés sur l&apos;échelle de maturité TRL (1 à 9). Une même capacité peut être mûre en
+          industrie et expérimentale en pharmacie : la <a href="/cartographie" className="underline">cartographie</a>{" "}
+          en donne la grille complète.
+        </p>
+        <nav aria-label="Axes du référentiel IA" className="mt-4">
+          <ul className="flex flex-wrap gap-x-3 gap-y-1 text-xs">
+            {Object.entries(AXES).map(([axe, label]) => {
+              const n = (parAxe[axe] ?? []).length;
+              return n === 0 ? null : (
+                <li key={axe}>
+                  <a
+                    href={`#axe-${axe}`}
+                    className="rounded-full border border-neutral-300 px-3 py-1 text-neutral-600 transition-colors hover:border-neutral-500 dark:border-neutral-700 dark:text-neutral-300"
+                  >
+                    {label} ({n})
+                  </a>
+                </li>
+              );
+            })}
+          </ul>
+        </nav>
+      </header>
 
       {Object.entries(AXES).map(([axe, label]) => {
         const entries = parAxe[axe] ?? [];
@@ -46,8 +72,8 @@ export default function ReferentielIAPage() {
                 <details key={f.id} id={f.id} className="rounded border border-neutral-200 p-3 dark:border-neutral-800">
                   <summary className="cursor-pointer font-medium">
                     {f.nom} {f.editeur ? <span className="text-neutral-500 dark:text-neutral-400">— {f.editeur}</span> : null}
-                    <span className={`ml-2 rounded px-2 py-0.5 text-[11px] ${f.statut === "documente" ? "bg-emerald-100 text-emerald-700 dark:bg-emerald-900/40 dark:text-emerald-300" : "bg-neutral-100 text-neutral-500 dark:bg-neutral-800"}`}>
-                      {f.statut.replace(/_/g, " ")}
+                    <span className="ml-2">
+                      <BadgeStatut statut={f.statut} />
                     </span>
                   </summary>
                   {f.statut === "documente" && (

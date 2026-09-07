@@ -4,6 +4,7 @@ import { useMemo, useState } from "react";
 import fichesHumaines from "@/data/seed/fiches_humaines";
 import fichesIA from "@/data/seed/fiches_ia.json";
 import type { FicheHumaine, FicheIA } from "@/lib/types";
+import { BadgeStatut } from "@/components/Badges";
 
 const humaines = fichesHumaines as unknown as FicheHumaine[];
 const ia = fichesIA as unknown as FicheIA[];
@@ -29,13 +30,6 @@ function scoreFicheIA(f: FicheIA, q: string): number {
   return champs.reduce((s, c) => (normalise(c).includes(q) ? s + 1 : s), 0);
 }
 
-const StatutLabel: Record<string, string> = {
-  a_documenter: "à documenter",
-  documente: "documenté",
-  verifie_recemment: "vérifié récemment",
-  a_re_auditer: "à ré-auditer",
-};
-
 export default function RechercheFiches() {
   const [terme, setTerme] = useState("");
 
@@ -54,11 +48,11 @@ export default function RechercheFiches() {
   return (
     <div className="rounded-lg border border-neutral-200 p-5 dark:border-neutral-800">
       <label htmlFor="recherche-fiches" className="text-sm font-medium">
-        Recherche automatique dans le référentiel (267 fiches humaines + 44 fiches IA)
+        Recherche automatique dans le référentiel ({humaines.length} fiches humaines + {ia.length} fiches IA)
       </label>
       <p className="mt-1 text-xs text-neutral-500">
-        Moteur de correspondance en direct, sans intervention manuelle — pas encore un RAG complet (Lot 6, en
-        attente de la décision Supabase), mais une automatisation réelle de la recherche dès maintenant.
+        Correspondance plein texte en direct sur le nom, la thèse, l&apos;apport, les limites et la résonance IA de
+        chaque fiche. Pour une vraie question, utiliser le champ de question libre en haut de page.
       </p>
       <input
         id="recherche-fiches"
@@ -66,10 +60,10 @@ export default function RechercheFiches() {
         value={terme}
         onChange={(e) => setTerme(e.target.value)}
         placeholder="Ex. Nietzsche, capitalisme, DeepSeek, biais cognitifs…"
-        className="mt-3 w-full rounded-md border border-neutral-300 px-3 py-2 text-sm dark:border-neutral-700 dark:bg-neutral-900"
+        className="mt-3 w-full rounded-md border border-neutral-300 bg-white px-3 py-2 text-sm text-neutral-900 dark:border-neutral-700 dark:bg-neutral-900 dark:text-neutral-100"
       />
       {terme.trim().length >= 2 && (
-        <div className="mt-4 space-y-2">
+        <div className="mt-4 space-y-2" aria-live="polite">
           {resultats.length === 0 && (
             <p className="text-sm text-neutral-500">Aucune fiche correspondante pour l&apos;instant.</p>
           )}
@@ -85,7 +79,7 @@ export default function RechercheFiches() {
                   {r.type === "humaine" ? "référentiel humain" : "référentiel IA"}
                 </span>
               </span>
-              <span className="text-xs text-neutral-500">{StatutLabel[r.fiche.statut]}</span>
+              <BadgeStatut statut={r.fiche.statut} />
             </a>
           ))}
         </div>

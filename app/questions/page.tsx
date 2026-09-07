@@ -1,15 +1,24 @@
+import type { Metadata } from "next";
 import RechercheFiches from "@/components/RechercheFiches";
 import QuestionsClient from "@/components/QuestionsClient";
 import QuestionLibreClient from "@/components/QuestionLibreClient";
 import questions from "@/data/seed/questions.json";
+import { fichesGap, fichesHumaines, fichesIA } from "@/lib/corpus";
 import type { Question } from "@/lib/types";
+
+export const metadata: Metadata = {
+  title: "Questions",
+  description:
+    "Poser une question au référentiel ATLAS, ou lire les quatre questions-tests permanentes. Chaque réponse est donnée sous plusieurs écoles de pensée, avec hypothèses, limites, sources et niveau de confiance.",
+  alternates: { canonical: "/questions" },
+};
 
 export default function QuestionsPage() {
   return (
     <div className="space-y-8">
-      <div>
-        <h1 className="text-2xl font-semibold">Questions</h1>
-        <p className="mt-2 max-w-2xl text-sm text-neutral-500">
+      <header className="max-w-3xl">
+        <h1 className="text-2xl font-semibold tracking-tight">Questions</h1>
+        <p className="mt-3 max-w-2xl text-sm leading-relaxed text-neutral-600 dark:text-neutral-400">
           Deux voies sur cette page. Le <strong>champ de question libre</strong> ci-dessous interroge le
           référentiel par recherche sémantique (moteur RAG, section 7.3 du mégaprompt) et construit une réponse
           en perspectives concurrentes, sourcée sur les fiches réellement mobilisées. Les{" "}
@@ -21,9 +30,11 @@ export default function QuestionsPage() {
           neutralité active, page /methodologie) — hypothèses de départ, état actuel, réponse, justification,
           limites, sources et niveau de confiance pour chaque modèle.
         </p>
-      </div>
+      </header>
 
-      <QuestionLibreClient />
+      <QuestionLibreClient
+        effectifs={{ humaines: fichesHumaines.length, ia: fichesIA.length, gaps: fichesGap.length }}
+      />
 
       <div>
         <h2 className="text-lg font-semibold">Rechercher une fiche</h2>

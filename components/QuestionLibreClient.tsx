@@ -100,7 +100,16 @@ const EXEMPLES = [
   "Comment l'IA transforme-t-elle la recherche scientifique ?",
 ];
 
-export default function QuestionLibreClient() {
+/** Effectifs du corpus, calculés côté serveur et passés en props : ce composant
+ *  ne doit surtout pas importer lib/corpus, qui embarquerait les ~1 Mo de JSON
+ *  du référentiel dans le bundle du navigateur pour afficher trois nombres. */
+export interface EffectifsCorpus {
+  humaines: number;
+  ia: number;
+  gaps: number;
+}
+
+export default function QuestionLibreClient({ effectifs }: { effectifs: EffectifsCorpus }) {
   const [question, setQuestion] = useState("");
   const [chargement, setChargement] = useState(false);
   const [reponse, setReponse] = useState<ReponseQuestion | null>(null);
@@ -159,7 +168,8 @@ export default function QuestionLibreClient() {
     <section className="rounded-lg border border-neutral-200 p-5 dark:border-neutral-800">
       <h2 className="font-medium">Poser une question au référentiel</h2>
       <p className="mt-2 max-w-2xl text-sm text-neutral-500">
-        Recherche sémantique dans les 267 fiches humaines, 44 fiches IA et 201 fiches de gap, puis réponse
+        Recherche sémantique dans les {effectifs.humaines} fiches humaines, {effectifs.ia} fiches IA et{" "}
+        {effectifs.gaps} fiches de gap, puis réponse
         construite <strong>en perspectives concurrentes</strong>, jamais en verdict unique. Si le référentiel ne
         couvre pas la question, le moteur le dit et ne répond pas.
       </p>
@@ -227,7 +237,7 @@ export default function QuestionLibreClient() {
       ) : null}
 
       {reponse ? (
-        <div className="mt-6 border-t border-neutral-200 pt-5 dark:border-neutral-800">
+        <div className="mt-6 border-t border-neutral-200 pt-5 dark:border-neutral-800" aria-live="polite">
           <p className="text-xs font-medium uppercase tracking-wide text-neutral-500 dark:text-neutral-400">Question comprise comme</p>
           <p className="mt-1 text-sm text-neutral-700 dark:text-neutral-300">{reponse.reformulation}</p>
 

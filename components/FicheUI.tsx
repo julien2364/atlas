@@ -45,7 +45,7 @@ export { BadgeStatut, BadgeConfiance, BadgeSubstituabilite } from "@/components/
 
 export function Etiquette({ children }: { children: ReactNode }) {
   return (
-    <span className="rounded border border-neutral-200 px-2 py-0.5 text-[11px] text-neutral-600 dark:border-neutral-800 dark:text-neutral-400">
+    <span className="inline-flex items-center rounded border border-neutral-300 px-2 py-0.5 text-[11px] leading-5 text-neutral-600 dark:border-neutral-700 dark:text-neutral-300">
       {children}
     </span>
   );
@@ -54,9 +54,11 @@ export function Etiquette({ children }: { children: ReactNode }) {
 /** Section de texte titrée, utilisée pour thèse / apport / limites / scénarios. */
 export function Bloc({ titre, children, id }: { titre: string; children: ReactNode; id?: string }) {
   return (
-    <section id={id} className="space-y-2">
+    // La colonne de texte est bornée à ~75 signes (docs/design-system.md §3) :
+    // au-delà, l'œil perd la ligne suivante sur un écran large.
+    <section id={id} className="space-y-2 scroll-mt-24">
       <h2 className="text-xs font-semibold uppercase tracking-wide text-neutral-500">{titre}</h2>
-      <div className="text-sm leading-relaxed text-neutral-700 dark:text-neutral-300">{children}</div>
+      <div className="max-w-3xl text-sm leading-relaxed text-neutral-700 dark:text-neutral-300">{children}</div>
     </section>
   );
 }
@@ -64,7 +66,7 @@ export function Bloc({ titre, children, id }: { titre: string; children: ReactNo
 /** Date de vérification, affichée et lisible par machine. */
 export function DateVerification({ date }: { date: string }) {
   return (
-    <span className="text-neutral-500">
+    <span className="text-[11px] leading-5 text-neutral-500">
       Vérifié le <time dateTime={date}>{formatDateFr(date)}</time>
     </span>
   );
@@ -82,7 +84,7 @@ export function ListeSources({ sources }: { sources: Source[] }) {
     <ol className="space-y-2 text-sm">
       {sources.map((source, index) => (
         <li key={`${index}-${source.titre}`} className="flex flex-wrap items-baseline gap-x-2 gap-y-1">
-          <span className="text-neutral-500 dark:text-neutral-400">{index + 1}.</span>
+          <span className="tabular-nums text-neutral-500 dark:text-neutral-400">{index + 1}.</span>
           {source.url ? (
             <a
               href={source.url}
@@ -120,7 +122,7 @@ export function CarteLien({ href, titre, sousTitre }: { href: string; titre: str
   return (
     <Link
       href={href}
-      className="block rounded-lg border border-neutral-200 p-3 transition hover:border-neutral-400 dark:border-neutral-800 dark:hover:border-neutral-600"
+      className="block h-full rounded-lg border border-neutral-200 p-3 transition hover:border-neutral-400 dark:border-neutral-800 dark:hover:border-neutral-600"
     >
       <span className="block text-sm font-medium">{titre}</span>
       {sousTitre ? <span className="mt-1 block text-xs text-neutral-500">{sousTitre}</span> : null}

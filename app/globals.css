@@ -122,6 +122,100 @@ body {
   border-radius: 0.375rem;
 }
 
+/* ---------------------------------------------------------------------------
+   Rendu du Markdown (page /megaprompt).
+   Le projet n'a PAS le plugin @tailwindcss/typography : les classes `prose`
+   utilisées jusqu'ici étaient inertes, et le reset de Tailwind aplatit les
+   titres — le document s'affichait donc en un seul bloc gris. Ces règles
+   rendent la hiérarchie sans ajouter de dépendance.
+   --------------------------------------------------------------------------- */
+.contenu-md {
+  line-height: 1.65;
+}
+.contenu-md :where(h1) {
+  font-size: var(--pas-2xl);
+  font-weight: 600;
+  letter-spacing: -0.01em;
+  margin: 2rem 0 0.75rem;
+}
+.contenu-md :where(h2) {
+  font-size: var(--pas-xl);
+  font-weight: 600;
+  margin: 1.75rem 0 0.5rem;
+}
+.contenu-md :where(h3) {
+  font-size: var(--pas-lg);
+  font-weight: 600;
+  margin: 1.5rem 0 0.5rem;
+}
+.contenu-md :where(h4, h5, h6) {
+  font-size: var(--pas-base);
+  font-weight: 600;
+  margin: 1.25rem 0 0.5rem;
+}
+.contenu-md :where(p) {
+  margin: 0.75rem 0;
+}
+.contenu-md :where(ul) {
+  list-style: disc;
+  padding-left: 1.25rem;
+  margin: 0.75rem 0;
+}
+.contenu-md :where(ol) {
+  list-style: decimal;
+  padding-left: 1.25rem;
+  margin: 0.75rem 0;
+}
+.contenu-md :where(li) {
+  margin: 0.25rem 0;
+}
+.contenu-md :where(a) {
+  text-decoration: underline;
+}
+.contenu-md :where(strong) {
+  font-weight: 600;
+}
+.contenu-md :where(code) {
+  font-family: var(--police-mono);
+  font-size: 0.875em;
+  background: var(--fond-doux);
+  padding: 0.1em 0.35em;
+  border-radius: 0.25rem;
+}
+.contenu-md :where(pre) {
+  background: var(--fond-doux);
+  padding: 0.75rem;
+  border-radius: 0.5rem;
+  overflow-x: auto;
+  margin: 1rem 0;
+}
+.contenu-md :where(pre code) {
+  background: none;
+  padding: 0;
+}
+.contenu-md :where(blockquote) {
+  border-left: 3px solid var(--bordure);
+  padding-left: 0.75rem;
+  color: var(--texte-doux);
+  margin: 1rem 0;
+}
+.contenu-md :where(table) {
+  display: block;
+  overflow-x: auto;
+  border-collapse: collapse;
+  margin: 1rem 0;
+}
+.contenu-md :where(th, td) {
+  border: 1px solid var(--bordure);
+  padding: 0.35rem 0.6rem;
+  text-align: left;
+}
+.contenu-md :where(hr) {
+  border: 0;
+  border-top: 1px solid var(--bordure);
+  margin: 2rem 0;
+}
+
 /* Respecte le réglage système « réduire les animations ». */
 @media (prefers-reduced-motion: reduce) {
   *,
