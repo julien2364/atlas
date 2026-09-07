@@ -24,10 +24,13 @@
  *   node scripts/valider-donnees.mjs --json       # sortie machine, rien d'autre sur stdout
  *   node scripts/valider-donnees.mjs --strict     # les avertissements deviennent bloquants
  *   node scripts/valider-donnees.mjs --racine=/chemin/vers/copie   # valider une copie
+ *   node scripts/valider-donnees.mjs --aide       # aide en ligne
  *
- * Code de sortie : 1 s'il existe au moins une ERREUR, 0 sinon. Les AVERTISSEMENTS ne
- * font jamais échouer le run sauf avec `--strict` (utile pour un audit de qualité
- * ponctuel, alors que la CI de tous les jours ne doit bloquer que sur du vrai cassé).
+ * Codes de sortie : 0 corpus valide (et sans avertissement en mode `--strict`),
+ * 1 au moins une ERREUR (ou un avertissement en `--strict`), 2 erreur d'usage
+ * (option inconnue). Les AVERTISSEMENTS ne font jamais échouer le run sauf avec
+ * `--strict` (utile pour un audit de qualité ponctuel, alors que la CI de tous les
+ * jours ne doit bloquer que sur du vrai cassé).
  *
  * Distinction ERREUR / AVERTISSEMENT — c'est le choix structurant du script
  * ------------------------------------------------------------------------
@@ -41,6 +44,32 @@
  *                C'est du travail éditorial restant, pas une régression : le signaler
  *                sans bloquer évite que l'équipe prenne l'habitude de contourner la CI.
  *                `--strict` permet de traiter cette dette comme bloquante quand on veut.
+ *
+ * Contrôles de traçabilité ajoutés le 07/09/2026 (chantier qualité)
+ * -----------------------------------------------------------------
+ * Les quatre audits du 07/09 ont montré que le validateur laissait passer les défauts
+ * les plus coûteux du corpus, parce qu'il raisonnait à la maille de la FICHE là où le
+ * défaut est à la maille de l'ENTRÉE DE SOURCE. Quatre contrôles sont ajoutés, tous
+ * documentés dans docs/outillage-qualite-2026-09-07.md :
+ *
+ *   T1  url par entrée de source primaire (et non plus « au moins une url sur la
+ *       fiche ») — AVERTISSEMENT, avec un cas légitime distingué : l'œuvre imprimée.
+ *   T2  titre de source ne désignant aucun document — AVERTISSEMENT, heuristique
+ *       reprise telle quelle de scripts/auditer-corpus.mjs (§A4).
+ *   T3  unicité du secteur dans les `usages` d'une fiche IA — ERREUR, c'est le seul
+ *       nouveau contrôle bloquant : deux usages du même secteur produisent deux TRL
+ *       concurrents sur la même case de la grille de maturité, sans qu'aucun ne fasse
+ *       foi. Exactement le même défaut de structure qu'un id dupliqué.
+ *   T4  même url déclarée `primaire` ET `secondaire` dans une même fiche —
+ *       AVERTISSEMENT : c'est ce qui vide le champ `type` de son sens.
+ *
+ * Pourquoi un seul de ces quatre contrôles est bloquant : T1, T2 et T4 portent chacun
+ * sur des centaines d'entrées existantes. Les passer en ERREUR mettrait la CI au rouge
+ * en permanence, et l'équipe prendrait l'habitude de la contourner — ce qui coûterait
+ * plus cher que le défaut lui-même. Ils sont donc rendus en avertissement, et
+ * `--strict` reste le moyen de les traiter comme bloquants dans une revue de qualité.
+ * T3 n'a que 2 occurrences, toutes deux avec un correctif connu : le bloquer a un coût
+ * borné et une valeur immédiate.
  */
 
 import { readFileSync, readdirSync, existsSync } from "node:fs";
@@ -52,6 +81,35 @@ import path from "node:path";
 // ---------------------------------------------------------------------------
 
 const args = process.argv.slice(2);
+
+if (args.includes("--aide") || args.includes("-h") || args.includes("--help")) {
+  console.log(`
+valider-donnees.mjs — garde-fou anti-régression du corpus data/seed/.
+
+  --json         sortie machine : un seul objet JSON sur stdout, rien d'autre
+  --strict       les avertissements deviennent bloquants (code de sortie 1)
+  --racine=...   racine du dépôt à valider (défaut : dossier parent de scripts/)
+  --aide, -h     ce message
+
+Codes de sortie : 0 corpus valide · 1 au moins une erreur (ou un avertissement en
+mode --strict) · 2 erreur d'usage.
+
+Le script est hors ligne : aucune url n'est appelée, seule sa forme est vérifiée.
+La disponibilité des liens relève de scripts/verifier-liens.mjs, les régularités
+de rédaction de scripts/auditer-corpus.mjs.
+`);
+  process.exit(0);
+}
+
+// Une option mal orthographiée doit être bruyante : `--stricte` au lieu de `--strict`
+// ferait silencieusement passer une revue de qualité pour une validation ordinaire.
+const OPTIONS_CONNUES = ["--json", "--strict", "--aide", "-h", "--help"];
+const inconnues = args.filter((a) => !OPTIONS_CONNUES.includes(a) && !a.startsWith("--racine="));
+if (inconnues.length > 0) {
+  console.error(`Option inconnue : ${inconnues.join(", ")}. Voir --aide.`);
+  process.exit(2);
+}
+
 const SORTIE_JSON = args.includes("--json");
 const MODE_STRICT = args.includes("--strict");
 
@@ -99,6 +157,11 @@ const SUBSTITUABILITES = [
   "remplacable_avec_autre_technologie",
 ];
 const CONFIANCES_GAP = ["elevee", "moyenne", "faible"];
+// `diffusion` (lot de refonte des usages IA, 07/09/2026) : décrit à quel point un
+// usage est répandu, là où `trl` décrit sa maturité technique. Les deux échelles
+// répondaient jusqu'ici à la même question et se contredisaient sur les secteurs
+// académiques (cf. docs/audit-mecanique-2026-09-07.md §D5).
+const DIFFUSIONS = ["emergent", "etabli", "standard", "historique"];
 const TYPES_SOURCE = ["primaire", "secondaire"];
 const TYPES_CHANGELOG = ["ajout", "mise_a_jour", "correction", "evolution_structurelle"];
 const TYPES_SOURCE_VEILLE = ["rss", "spiderfoot"];
@@ -131,12 +194,21 @@ const avertissements = [];
 /** Couverture par fichier : total / documentées / à documenter. */
 const couverture = {};
 
-function erreur(fichier, id, champ, message) {
-  erreurs.push({ fichier, id, champ, message });
+/**
+ * `code` est un identifiant court et stable du contrôle qui a produit le constat
+ * (« T1-primaire-sans-url »…). Il est facultatif — les contrôles historiques n'en
+ * portent pas — et sert à deux choses : donner une synthèse chiffrée par contrôle en
+ * fin de rapport (indispensable depuis que le corpus produit plusieurs centaines
+ * d'avertissements, dont le rapport ne peut afficher que les 30 premiers), et
+ * permettre à un consommateur de la sortie `--json` de filtrer sur un contrôle sans
+ * faire de correspondance de chaîne sur le message.
+ */
+function erreur(fichier, id, champ, message, code = null) {
+  erreurs.push({ fichier, id, champ, message, code });
 }
 
-function avertissement(fichier, id, champ, message) {
-  avertissements.push({ fichier, id, champ, message });
+function avertissement(fichier, id, champ, message, code = null) {
+  avertissements.push({ fichier, id, champ, message, code });
 }
 
 // ---------------------------------------------------------------------------
@@ -194,6 +266,168 @@ function urlValide(v) {
   } catch {
     return false;
   }
+}
+
+// ---------------------------------------------------------------------------
+// Heuristiques de traçabilité des sources (contrôles T1 et T2)
+//
+// Ces deux heuristiques sont les seules parties « floues » du validateur : tout le
+// reste est du schéma. Elles sont donc l'une et l'autre CONSERVATRICES, rendues en
+// avertissement, et leur formulation exacte est ci-dessous plutôt que dans un
+// document annexe — on doit pouvoir contester la règle en lisant le code.
+// ---------------------------------------------------------------------------
+
+const DIACRITIQUES = /[\u0300-\u036f]/g;
+
+/** Normalisation de comparaison : minuscules, sans accents, apostrophes et espaces unifiés. */
+function normaliserTitre(s) {
+  return String(s ?? "")
+    .toLowerCase()
+    .normalize("NFD")
+    .replace(DIACRITIQUES, "")
+    .replace(/[’‘`´]/g, "'")
+    .replace(/[\u00ab\u00bb\u201c\u201d"]/g, " ")
+    .replace(/\s+/g, " ")
+    .trim();
+}
+
+/*
+ * T2 — « intention de source » : un titre qui décrit une CATÉGORIE de documents et
+ * non un document (« AlphaFold — impact sur la recherche pharmaceutique »,
+ * « Systèmes de tutorat adaptatif — documentation sectorielle EdTech »).
+ *
+ * L'heuristique n'est pas réinventée ici : elle est reprise à l'identique de
+ * scripts/auditer-corpus.mjs (§A4), qui l'a formulée, éprouvée sur les 1 254 entrées
+ * du corpus et publiée avec son taux de faux positifs. Les trois conditions doivent
+ * être vraies SIMULTANÉMENT :
+ *
+ *   (1) un marqueur de généricité (« documentation », « rapports sur », « impact
+ *       sur », « recherche académique »…) ;
+ *   (2) aucune année entre 1500 et 2029 — l'année est le marqueur d'individuation le
+ *       plus universel d'une publication ;
+ *   (3) aucun ancrage éditorial — ni « et al. », ni revue ou éditeur reconnu, ni
+ *       référence de norme ou de loi, ni motif « Nom, Nom — Titre ».
+ *
+ * Le cumul est ce qui rend le test défendable : il n'attrape que les titres qui ne
+ * portent AUCUN des trois moyens usuels d'identifier un document. Mesure sur le
+ * corpus au 07/09/2026 : 70 détections, dont 42 sans url (la source est réellement
+ * introuvable) et 28 avec url (seul l'intitulé est imprécis).
+ *
+ * Le second niveau de l'auditeur (§A4bis, « titre non individuant ») est
+ * DÉLIBÉRÉMENT ÉCARTÉ ici : 114 détections pour 69 % de faux positifs mesurés. Un
+ * garde-fou lancé à chaque commit ne peut pas se permettre ce bruit ; l'auditeur le
+ * publie comme signal, c'est sa place.
+ */
+const MARQUEURS_GENERICITE = [
+  /\bdocumentations?\b/,
+  /\brapports? (sur|d')\b/,
+  /\brapports? de (recherche|synthese|veille|marche)\b/,
+  /\betudes? (sur|de)\b/,
+  /\bsyntheses? (academiques?|sur|de)\b/,
+  /\brecherche academique\b/,
+  /\btravaux (sur|de recherche)\b/,
+  /\bpublications? (sur|academiques?)\b/,
+  /\blitterature (scientifique|academique|sur)\b/,
+  /\bimpact sur\b/,
+  /\bexemples? de\b/,
+  /\b(divers|diverses|multiples|varies|variees)\b/,
+  /\bsources? (multiples|diverses|ouvertes)\b/,
+  /\barticles? de presse\b/,
+  /\bsite (officiel|web)\b/,
+  /\betat de l'art\b/,
+];
+
+const ANNEE = /\b(1[5-9]\d{2}|20[0-2]\d)\b/;
+
+const ANCRAGE_EDITORIAL = [
+  /\bet al\.?/,
+  /\b(nature|science|cell|pnas|lancet|jama|neurips|icml|iclr|acl|cvpr|arxiv|ieee|acm|springer|elsevier|oecd|ocde|oms|who|onu|unesco|insee|eurostat|nber|giec|ipcc)\b/,
+  /\bvol\.?\s*\d|\bno\.?\s*\d|\bpp?\.\s*\d/,
+  /\biso\s*\d|\brgpd\b|\bai act\b|\bdirective \d|\breglement \(/,
+  /[a-zà-ÿ]+,\s*[a-zà-ÿ]+\s*(—|-|:)/, // motif « Nom, Nom — Titre »
+];
+
+function estIntentionDeSource(titre) {
+  const t = normaliserTitre(titre);
+  if (!t) return false;
+  if (!MARQUEURS_GENERICITE.some((r) => r.test(t))) return false;
+  if (ANNEE.test(String(titre ?? ""))) return false;
+  if (ANCRAGE_EDITORIAL.some((r) => r.test(t))) return false;
+  return true;
+}
+
+/*
+ * T1 — l'exception légitime : l'ŒUVRE IMPRIMÉE.
+ *
+ * *L'Être et l'Événement*, *Le Mythe de Sisyphe*, *Totalité et Infini* n'ont pas
+ * d'url, et ne doivent pas en avoir : leur coller un lien Wikipédia transformerait
+ * une source primaire en source secondaire déguisée (constat de
+ * docs/audit-qualite-2026-09.md, « cas 1 », ≈150 entrées). Ce qui manque à ces
+ * entrées n'est pas une url, c'est une année d'édition — le champ `date`.
+ *
+ * Critère, cumulatif et volontairement étroit :
+ *   (a) le titre ne porte AUCUN marqueur numérique (arXiv, DOI, « technical report »,
+ *       « documentation », un nom de revue ou de conférence, GitHub, Wikipédia…) —
+ *       condition nécessaire : un papier de recherche n'est pas une œuvre imprimée
+ *       au sens visé ici, il a un DOI ;
+ *   ET (b) l'un des deux :
+ *       b1. un marqueur d'édition explicite (« Éditions », « trad. », « coll. »,
+ *           « PUF », « Gallimard », « University Press », « Routledge »…) ;
+ *       b2. la fiche est sur un axe dont les sources primaires SONT des livres par
+ *           construction — `philosophique`, `psychologique`, `serenite`. C'est le
+ *           signal le plus fort disponible, et l'audit le confirme : le gros du
+ *           « cas 1 » est exactement là.
+ *
+ * Limite assumée, à lire avant de faire confiance au tri : les `documents_cles` d'un
+ * gap n'ont PAS d'axe. Une œuvre imprimée citée par un gap est donc classée « lien
+ * manquant » et non « œuvre imprimée ». Sur les 274 entrées classées « lien
+ * manquant », 177 sont des documents de gap : le tri y est beaucoup moins fiable
+ * qu'il ne l'est sur les fiches humaines. Chiffres et méthode de mesure du taux de
+ * faux positifs : docs/outillage-qualite-2026-09-07.md.
+ */
+const MARQUEURS_NUMERIQUES = [
+  /\barxiv\b/,
+  /\bdoi\b/,
+  /https?:/,
+  /\btechnical report\b/,
+  /\bpreprint\b/,
+  /\bblog\b/,
+  /\bdocumentations?\b/,
+  /\bgithub\b/,
+  /\bwikipedia\b/,
+  /\bwikisource\b/,
+  /\b(nature|science|neurips|icml|iclr|acl|cvpr|ieee|acm|plos|pnas)\b/,
+  /\bsite (officiel|web)\b/,
+  /\bdataset\b/,
+  /\bapi\b/,
+];
+
+const MARQUEURS_EDITION = [
+  /\bediteur\b/,
+  /\beditions?\b/,
+  /\bpresses universitaires\b/,
+  /\buniversity press\b/,
+  /\b(gallimard|seuil|puf|minuit|flammarion|fayard|grasset|vrin|hachette|la decouverte|odile jacob|payot|dunod|armand colin|routledge|verso|norton|penguin|mit press)\b/,
+  /\btrad\.?\b/,
+  /\bcoll\.\b/,
+  /\breed\.\b/,
+  /\b\d{4}\s*\[\d{4}\]/, // « 1972 [1949] » — édition et édition originale
+];
+
+const AXES_A_SOURCES_IMPRIMEES = new Set(["philosophique", "psychologique", "serenite"]);
+
+/**
+ * @returns {null|string} null si l'entrée n'est pas une œuvre imprimée présumée,
+ *          sinon le motif retenu — qui est rendu dans le message pour qu'on puisse
+ *          contester le classement sans relire le code.
+ */
+function motifOeuvreImprimee(titre, axe) {
+  const t = normaliserTitre(titre);
+  if (!t) return null;
+  if (MARQUEURS_NUMERIQUES.some((r) => r.test(t))) return null;
+  if (MARQUEURS_EDITION.some((r) => r.test(t))) return "marqueur d'édition dans le titre";
+  if (axe && AXES_A_SOURCES_IMPRIMEES.has(axe)) return `axe ${axe}, dont les sources primaires sont des ouvrages`;
+  return null;
 }
 
 // ---------------------------------------------------------------------------
@@ -309,7 +543,7 @@ function compterCouverture(fichier, fiche) {
  * quand les sources sont imbriquées (usage sectoriel, perspective d'une question).
  * Retourne true si au moins une source porte une URL exploitable.
  */
-function verifierSources(fichier, id, champ, sources, { contexte = "" } = {}) {
+function verifierSources(fichier, id, champ, sources, { contexte = "", axe = null, tracabilite = true } = {}) {
   const prefixe = contexte ? `${champ} (${contexte})` : champ;
   if (!Array.isArray(sources)) {
     erreur(fichier, id, prefixe, "les sources doivent être un tableau");
@@ -324,16 +558,121 @@ function verifierSources(fichier, id, champ, sources, { contexte = "" } = {}) {
       erreur(fichier, id, emplacement, `type de source invalide : ${JSON.stringify(s?.type)} (attendu primaire|secondaire)`);
     }
     // url est optionnelle dans le type — mais si elle est là, elle doit être exploitable.
-    if (s?.url !== undefined && s?.url !== null && s?.url !== "") {
+    const aUneUrl = s?.url !== undefined && s?.url !== null && s?.url !== "";
+    if (aUneUrl) {
       if (!urlValide(s.url)) erreur(fichier, id, emplacement, `url mal formée : ${JSON.stringify(s.url)}`);
       else auMoinsUneUrl = true;
     }
     if (s?.date !== undefined && s?.date !== null && s?.date !== "" && !dateISOSouple(s.date)) {
       erreur(fichier, id, emplacement, `date de source non ISO 8601 : ${JSON.stringify(s.date)}`);
     }
+
+    if (!tracabilite || !chaineRemplie(s?.titre)) return;
+
+    // --- T1 : url exigée PAR ENTRÉE de source primaire.
+    // La règle historique (« au moins une url quelque part sur la fiche ») laissait
+    // passer 348 sources primaires sans lien : une fiche portant un article Wikipédia
+    // cliquable et quatre ouvrages sans lien la satisfaisait pleinement, alors que
+    // c'est précisément la fondation revendiquée du référentiel qui n'était pas
+    // vérifiable. La granularité correcte est l'entrée, pas la fiche.
+    if (s?.type === "primaire" && !aUneUrl) {
+      const motif = motifOeuvreImprimee(s.titre, axe);
+      if (motif) {
+        avertissement(
+          fichier,
+          id,
+          emplacement,
+          `source primaire sans url — œuvre imprimée présumée (${motif}) : l'absence de lien est légitime, c'est le champ "date" (année d'édition) qui manque`,
+          "T1-oeuvre-imprimee"
+        );
+      } else {
+        avertissement(
+          fichier,
+          id,
+          emplacement,
+          `source primaire sans url — le lecteur ne peut pas remonter au document ("${s.titre}")`,
+          "T1-primaire-sans-url"
+        );
+      }
+    }
+
+    // --- T2 : titre ne désignant aucun document.
+    // Deux messages distincts, parce que le travail de correction n'est pas le même :
+    // sans url la source est introuvable et doit être remplacée ; avec url elle est
+    // atteignable et seul l'intitulé est à préciser.
+    if (estIntentionDeSource(s.titre)) {
+      if (aUneUrl) {
+        avertissement(
+          fichier,
+          id,
+          emplacement,
+          `titre ne désignant aucun document précis ("${s.titre}") — la source est atteignable, l'intitulé est à préciser`,
+          "T2-titre-imprecis"
+        );
+      } else {
+        avertissement(
+          fichier,
+          id,
+          emplacement,
+          `titre ne désignant aucun document et aucune url ("${s.titre}") — cette source est introuvable : nommer le document réel ou retirer l'entrée`,
+          "T2-source-introuvable"
+        );
+      }
+    }
   });
 
   return auMoinsUneUrl;
+}
+
+/*
+ * T4 — la même url déclarée à la fois `primaire` et `secondaire` dans une même fiche.
+ *
+ * Défendable ? Oui, et c'est le contrôle qui rend son sens au champ `type`. Une url
+ * désigne un document ; un document est primaire ou secondaire selon ce qu'il est,
+ * pas selon l'endroit où on le cite. Quand la MÊME page Wikipédia est déclarée
+ * primaire au niveau de la fiche et secondaire au niveau d'un usage — ce qui est le
+ * cas mesuré sur 97 fiches — le champ ne code plus une nature de document mais une
+ * position dans le fichier : il ne veut plus rien dire, et l'affichage « source
+ * primaire » ment au lecteur.
+ *
+ * Avertissement et non erreur : le corpus en compte 97 aujourd'hui, et lever la
+ * contradiction demande un arbitraire éditorial (laquelle des deux déclarations est
+ * la bonne ?) que le validateur ne peut pas trancher à la place d'un humain.
+ *
+ * La comparaison se fait sur l'url brute, espaces retirés et casse normalisée : deux
+ * encodages différents de la même page Wikipédia (`Régression_linéaire` et
+ * `R%C3%A9gression_lin%C3%A9aire`, 5 cas connus) ne sont volontairement PAS
+ * rapprochés ici — c'est un autre défaut, traité par docs/correctifs-urls-2026-09-07.json.
+ */
+function collecterSources(noeud, accumulateur) {
+  if (Array.isArray(noeud)) {
+    for (const v of noeud) collecterSources(v, accumulateur);
+  } else if (noeud && typeof noeud === "object") {
+    if (typeof noeud.titre === "string" && TYPES_SOURCE.includes(noeud.type)) accumulateur.push(noeud);
+    for (const v of Object.values(noeud)) collecterSources(v, accumulateur);
+  }
+  return accumulateur;
+}
+
+function verifierTypageDesUrls(fichier, id, fiche) {
+  const parUrl = new Map(); // url normalisée -> Set des types déclarés
+  for (const s of collecterSources(fiche, [])) {
+    if (!chaineRemplie(s.url)) continue;
+    const cle = s.url.trim().toLowerCase();
+    if (!parUrl.has(cle)) parUrl.set(cle, new Set());
+    parUrl.get(cle).add(s.type);
+  }
+  for (const [url, types] of parUrl) {
+    if (types.has("primaire") && types.has("secondaire")) {
+      avertissement(
+        fichier,
+        id,
+        "sources",
+        `url déclarée à la fois "primaire" et "secondaire" dans cette fiche (${url}) — le champ "type" ne décrit plus la nature du document mais l'endroit où il est cité`,
+        "T4-url-primaire-et-secondaire"
+      );
+    }
+  }
 }
 
 /**
@@ -411,11 +750,15 @@ function validerFichesHumaines() {
         // référentiel dont l'argument est justement la traçabilité.
         if (publiee) erreur(etiquette, id, "sources", "fiche publiée sans aucune source");
       } else {
-        const avecUrl = verifierSources(etiquette, id, "sources", fiche.sources);
+        // `axe` est transmis pour T1 : c'est lui qui permet de reconnaître une œuvre
+        // imprimée légitimement dépourvue d'url sur les axes philosophique,
+        // psychologique et sérénité.
+        const avecUrl = verifierSources(etiquette, id, "sources", fiche.sources, { axe: fiche?.axe });
         if (publiee && !avecUrl) {
           avertissement(etiquette, id, "sources", "aucune source ne porte d'url — la vérification par le lecteur est impossible en un clic");
         }
       }
+      verifierTypageDesUrls(etiquette, id, fiche);
     });
   }
 
@@ -469,6 +812,30 @@ function validerFichesIA() {
       if (publiee && fiche.usages.length === 0) {
         avertissement(etiquette, id, "usages", "aucun usage sectoriel documenté sur une fiche publiée");
       }
+
+      // --- T3 : UNICITÉ DU SECTEUR DANS UNE FICHE — le seul nouveau contrôle bloquant.
+      // Deux usages du même secteur, c'est deux TRL concurrents sur la même case de la
+      // grille de maturité (page /cartographie) et deux descriptions concurrentes sur
+      // la fiche, sans qu'aucune ne soit désignée comme faisant foi. C'est exactement
+      // le défaut de structure d'un id dupliqué ou d'une paire de gap analysée deux
+      // fois — deux cas que ce validateur traite déjà en ERREUR. Le corriger est une
+      // fusion des deux entrées, sans arbitrage éditorial lourd.
+      const secteursVus = new Map(); // secteur -> index du premier usage
+      fiche.usages.forEach((u, j) => {
+        if (!SECTEURS_USAGE.includes(u?.secteur)) return; // secteur invalide : signalé plus bas
+        if (secteursVus.has(u.secteur)) {
+          erreur(
+            etiquette,
+            id,
+            `usages[${j}].secteur`,
+            `secteur "${u.secteur}" déjà décrit par usages[${secteursVus.get(u.secteur)}] — deux usages du même secteur portent deux TRL concurrents sur la même case de la grille de maturité : fusionner les deux entrées`,
+            "T3-secteur-duplique"
+          );
+        } else {
+          secteursVus.set(u.secteur, j);
+        }
+      });
+
       fiche.usages.forEach((u, j) => {
         const emplacement = `usages[${j}]`;
 
@@ -478,10 +845,56 @@ function validerFichesIA() {
         if (!chaineRemplie(u?.description)) {
           erreur(etiquette, id, `${emplacement}.description`, "description d'usage vide");
         }
-        // TRL : échelle normalisée 1-9. Un TRL hors bornes ou décimal fausse
-        // directement les filtres de maturité de l'application.
-        if (!Number.isInteger(u?.trl) || u.trl < 1 || u.trl > 9) {
-          erreur(etiquette, id, `${emplacement}.trl`, `TRL invalide : ${JSON.stringify(u?.trl)} (entier attendu entre 1 et 9)`);
+
+        // --- TRL, diffusion, justification.
+        // `trl` est devenu OPTIONNEL (refonte des usages IA du 07/09/2026) : l'audit
+        // mécanique a montré qu'un TRL sur trois était posé sur un secteur académique
+        // (`recherche`, `science`), où une échelle de maturité de déploiement ne veut
+        // rien dire — `alexnet/recherche = 9` décrit une adoption bibliographique, pas
+        // un déploiement industriel. Ne pas poser de TRL est désormais une réponse
+        // licite, et c'est `diffusion` qui prend le relais sur ces secteurs.
+        //
+        // Écriture volontairement TOLÉRANTE : au moment où ces lignes sont écrites,
+        // `lib/types.ts` déclare encore `trl: number` obligatoire et ne connaît ni
+        // `diffusion` ni `trl_justification` (le lot correspondant est en cours dans
+        // une autre session). Le validateur accepte donc les deux états du type — avec
+        // ou sans ces champs — plutôt que de rejeter le corpus dans un sens ou dans
+        // l'autre. À reprendre quand lib/types.ts aura tranché : cf.
+        // docs/outillage-qualite-2026-09-07.md.
+        const trlPose = u?.trl !== undefined && u?.trl !== null;
+        if (trlPose && (!Number.isInteger(u.trl) || u.trl < 1 || u.trl > 9)) {
+          erreur(etiquette, id, `${emplacement}.trl`, `TRL invalide : ${JSON.stringify(u.trl)} (entier attendu entre 1 et 9, ou champ absent)`);
+        }
+        // Un TRL posé sans justification est un chiffre sans adossement : c'est
+        // exactement ce que l'audit des 44 fiches IA reproche aux 87 TRL du corpus.
+        // Avertissement, parce que les 87 sont dans ce cas aujourd'hui : passer en
+        // erreur bloquerait la publication sur une dette éditoriale connue.
+        if (trlPose && Number.isInteger(u.trl) && !chaineRemplie(u?.trl_justification)) {
+          avertissement(
+            etiquette,
+            id,
+            `${emplacement}.trl_justification`,
+            `TRL ${u.trl} posé sans justification — sur quoi repose ce niveau de maturité pour le secteur "${u?.secteur}" ?`,
+            "T5-trl-sans-justification"
+          );
+        }
+        if (u?.diffusion !== undefined && u?.diffusion !== null && !DIFFUSIONS.includes(u.diffusion)) {
+          erreur(
+            etiquette,
+            id,
+            `${emplacement}.diffusion`,
+            `diffusion invalide : ${JSON.stringify(u.diffusion)} (attendu : ${DIFFUSIONS.join(", ")})`,
+            "T5-diffusion-invalide"
+          );
+        }
+        if (!trlPose && !chaineRemplie(u?.diffusion)) {
+          avertissement(
+            etiquette,
+            id,
+            emplacement,
+            `usage "${u?.secteur}" sans trl ni diffusion — rien ne situe sa maturité ni son degré de répandu`,
+            "T5-usage-sans-maturite"
+          );
         }
 
         // exemples / sources d'un usage : même logique que ci-dessus — le tableau doit
@@ -497,7 +910,7 @@ function validerFichesIA() {
         } else if (u.sources.length === 0) {
           avertissement(etiquette, id, `${emplacement}.sources`, `usage "${u?.secteur}" sans aucune source`);
         } else {
-          verifierSources(etiquette, id, "sources", u.sources, { contexte: emplacement });
+          verifierSources(etiquette, id, "sources", u.sources, { contexte: emplacement, axe: fiche?.axe });
         }
       });
     }
@@ -505,11 +918,12 @@ function validerFichesIA() {
     if (!tableauRempli(fiche?.sources)) {
       if (publiee) erreur(etiquette, id, "sources", "fiche publiée sans aucune source");
     } else {
-      const avecUrl = verifierSources(etiquette, id, "sources", fiche.sources);
+      const avecUrl = verifierSources(etiquette, id, "sources", fiche.sources, { axe: fiche?.axe });
       if (publiee && !avecUrl) {
         avertissement(etiquette, id, "sources", "aucune source ne porte d'url — la vérification par le lecteur est impossible en un clic");
       }
     }
+    verifierTypageDesUrls(etiquette, id, fiche);
   });
 
   const vus = new Map();
@@ -628,6 +1042,8 @@ function validerFichesGap(idsHumaines, idsIA) {
         erreur(etiquette, id, champTableau, `${champTableau} doit être un tableau`);
       }
     }
+
+    verifierTypageDesUrls(etiquette, id, gap);
   });
 }
 
@@ -769,7 +1185,10 @@ function validerChangelog(derniereModifCorpus) {
       joursCouverts.add(e.date.slice(0, 10));
     }
     if (e?.source !== undefined && e?.source !== null) {
-      verifierSources(etiquette, id, "source", [e.source]);
+      // `tracabilite: false` — une entrée de changelog n'est pas du contenu publié :
+      // sa source documente un acte d'édition, pas une affirmation du référentiel.
+      // Lui appliquer T1 et T2 produirait du bruit sans travail correctif derrière.
+      verifierSources(etiquette, id, "source", [e.source], { tracabilite: false });
     }
   });
 
@@ -826,6 +1245,26 @@ function afficherCategorie(titre, constats) {
   }
   const reste = constats.length - affichees;
   if (reste > 0) console.log(`\n  … et ${reste} autre(s) — relancer avec --json pour la liste complète.`);
+  afficherSyntheseParControle(constats);
+}
+
+/**
+ * Synthèse chiffrée par contrôle. Le rapport détaillé plafonne à MAX_LIGNES pour
+ * rester lisible ; sans ce tableau, un lecteur voyant « 602 avertissements » et
+ * 30 lignes de détail n'a aucun moyen de savoir de quoi sont faits les 572 autres.
+ * Les constats des contrôles historiques n'ont pas de code et sont regroupés.
+ */
+function afficherSyntheseParControle(constats) {
+  if (constats.length === 0) return;
+  const parCode = new Map();
+  for (const c of constats) {
+    const cle = c.code ?? "(contrôles historiques)";
+    parCode.set(cle, (parCode.get(cle) ?? 0) + 1);
+  }
+  const lignes = [...parCode.entries()].sort((a, b) => b[1] - a[1] || a[0].localeCompare(b[0]));
+  const largeur = Math.max(...lignes.map(([c]) => c.length));
+  console.log("\n  Répartition par contrôle");
+  for (const [code, n] of lignes) console.log(`    ${code.padEnd(largeur)}  ${String(n).padStart(5)}`);
 }
 
 function afficherCouverture() {
@@ -892,8 +1331,17 @@ function main() {
   if (SORTIE_JSON) {
     // Contrat de sortie machine : un seul objet JSON sur stdout, rien d'autre — le
     // consommateur (CI, tableau de bord qualité) doit pouvoir faire un JSON.parse brut.
+    //
+    // `process.exitCode` et NON `process.exit()` : quand stdout est un tuyau (`| jq`,
+    // capture par la CI), l'écriture est asynchrone et `process.exit()` tue le
+    // processus avant que le tampon soit vidé — le consommateur reçoit alors un JSON
+    // tronqué en plein milieu d'une chaîne. Le défaut ne se voyait pas tant que le
+    // rapport tenait sous la taille du tampon ; les contrôles de traçabilité ajoutés
+    // le 07/09/2026 l'ont fait apparaître. Renseigner `exitCode` laisse Node sortir
+    // naturellement une fois stdout vidé, avec le même code.
     process.stdout.write(`${JSON.stringify({ ok, erreurs, avertissements, couverture }, null, 2)}\n`);
-    process.exit(erreurs.length > 0 || (MODE_STRICT && avertissements.length > 0) ? 1 : 0);
+    process.exitCode = erreurs.length > 0 || (MODE_STRICT && avertissements.length > 0) ? 1 : 0;
+    return;
   }
 
   console.log("VALIDATION DU CORPUS ATLAS — data/seed/");
@@ -914,7 +1362,7 @@ function main() {
   }
   console.log("═".repeat(72));
 
-  process.exit(ok ? 0 : 1);
+  process.exitCode = ok ? 0 : 1;
 }
 
 /**
