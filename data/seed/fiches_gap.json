@@ -953,7 +953,7 @@
       {
         "nom": "Fiabilité insuffisante persistante",
         "description": "Les taux de réussite mesurés restent en deçà de la précision humaine sur les interfaces complexes et les flux longs.",
-        "niveau_confiance": "fait_verifie"
+        "niveau_confiance": "opinion_majoritaire"
       },
       {
         "nom": "Réseaux majoritairement non humains",
@@ -1076,7 +1076,7 @@
       {
         "nom": "Frein par la fiabilité",
         "description": "Les taux d'échec observés maintiennent une vérification humaine systématique, limitant l'allègement promis.",
-        "niveau_confiance": "fait_verifie"
+        "niveau_confiance": "opinion_majoritaire"
       },
       {
         "nom": "Délégation domestique généralisée",
@@ -1132,7 +1132,7 @@
       {
         "nom": "Limite de fiabilité comme garde-fou de fait",
         "description": "Le faible taux de succès et le coût élevé maintiennent ces boucles hors des usages critiques indépendamment de toute règle.",
-        "niveau_confiance": "fait_verifie"
+        "niveau_confiance": "opinion_majoritaire"
       },
       {
         "nom": "Délégation d'actes engageants",
@@ -1317,8 +1317,8 @@
       },
       {
         "nom": "Effet rebond des usages",
-        "description": "La croissance de la demande de calcul absorbe les gains d'efficacité — hypothèse que la fiche IA signale explicitement comme non attestée par ses sources.",
-        "niveau_confiance": "hypothese_prospective"
+        "description": "La croissance de la demande de calcul absorbe les gains d’efficacité : thèse largement admise, mais que la fiche IA signale explicitement comme non attestée par ses propres sources.",
+        "niveau_confiance": "opinion_majoritaire"
       },
       {
         "nom": "Contentieux environnemental structurant",
@@ -1623,7 +1623,7 @@
       {
         "nom": "Persistance du litige sur les corpus",
         "description": "Les procès pour usage d'œuvres protégées sans consentement continuent de conditionner la disponibilité et la composition des jeux d'entraînement.",
-        "niveau_confiance": "fait_verifie"
+        "niveau_confiance": "opinion_majoritaire"
       },
       {
         "nom": "Boucle de rétroaction visuelle",
@@ -1684,7 +1684,7 @@
       {
         "nom": "Écart promesse-réalité persistant",
         "description": "Les critiques documentées sur la conformité du code produit aux spécifications maintiennent l'agent dans un rôle d'assistant supervisé.",
-        "niveau_confiance": "fait_verifie"
+        "niveau_confiance": "opinion_majoritaire"
       },
       {
         "nom": "Effet psychosocial de l'automatisation",
@@ -2122,7 +2122,7 @@
       {
         "nom": "Verrou d'ingénierie inchangé",
         "description": "Le contrôle du plasma n'adresse ni les matériaux de première paroi ni le bilan énergétique net, qui restent les obstacles documentés.",
-        "niveau_confiance": "fait_verifie"
+        "niveau_confiance": "consensus_scientifique"
       },
       {
         "nom": "Configurations inédites exploitables",
@@ -2179,7 +2179,7 @@
       {
         "nom": "Bases ouvertes de candidats",
         "description": "Consolidation de bases publiques de structures prédites servant de point de départ standard à la recherche en science des matériaux.",
-        "niveau_confiance": "fait_verifie"
+        "niveau_confiance": "opinion_majoritaire"
       },
       {
         "nom": "Verrou d'industrialisation persistant",
@@ -2245,7 +2245,7 @@
       {
         "nom": "Fragilité de maintenance",
         "description": "Les changements fréquents d'API et le manque de standardisation de la sécurité freinent l'intégration durable dans des infrastructures à cycle long.",
-        "niveau_confiance": "fait_verifie"
+        "niveau_confiance": "opinion_majoritaire"
       },
       {
         "nom": "Campagnes d'analyse autonomes",
@@ -2306,7 +2306,7 @@
       {
         "nom": "Domination durable du paradigme",
         "description": "L'architecture reste le socle des grands modèles de langage et s'étend à la vision et au multimodal, sans successeur établi.",
-        "niveau_confiance": "fait_verifie"
+        "niveau_confiance": "opinion_majoritaire"
       },
       {
         "nom": "Rupture architecturale",
@@ -2362,7 +2362,7 @@
       {
         "nom": "Criblage prédictif standardisé",
         "description": "Le criblage virtuel s'installe comme étape systématique en amont de toute campagne expérimentale de découverte.",
-        "niveau_confiance": "fait_verifie"
+        "niveau_confiance": "opinion_majoritaire"
       },
       {
         "nom": "Rendement global inchangé",
@@ -2434,7 +2434,7 @@
       {
         "nom": "Validation expérimentale maintenue",
         "description": "La prédiction ne remplace pas la validation expérimentale pour un usage clinique, limite explicitement documentée.",
-        "niveau_confiance": "fait_verifie"
+        "niveau_confiance": "consensus_scientifique"
       },
       {
         "nom": "Accessibilité et gouvernance",
@@ -2493,7 +2493,7 @@
       {
         "nom": "Effet rebond",
         "description": "Les gains d'efficacité sont rattrapés par la croissance des usages, un calcul doublant tous les 3,4 mois selon les mesures documentées.",
-        "niveau_confiance": "fait_verifie"
+        "niveau_confiance": "consensus_scientifique"
       },
       {
         "nom": "Migration quantique partielle",
@@ -2554,7 +2554,7 @@
       {
         "nom": "Borne théorique inchangée",
         "description": "La sensibilité aux conditions initiales impose une limite de prévisibilité qu'aucun modèle appris ne franchit.",
-        "niveau_confiance": "fait_verifie"
+        "niveau_confiance": "consensus_scientifique"
       },
       {
         "nom": "Hybridation physique-apprentissage",
@@ -2866,7 +2866,7 @@
       {
         "nom": "Diffusion incontrôlable des modèles ouverts",
         "description": "Frein structurel : l'exécution locale sur matériel grand public rend inopérante toute régulation portant sur l'accès aux modèles.",
-        "niveau_confiance": "fait_verifie"
+        "niveau_confiance": "opinion_majoritaire"
       },
       {
         "nom": "Surveillance infrastructurelle totale",
@@ -2929,7 +2929,7 @@
       {
         "nom": "Plafond de fiabilité durable",
         "description": "Frein observé : difficultés persistantes sur les interfaces complexes et les flux longs, avec des produits retirés rapidement du marché.",
-        "niveau_confiance": "fait_verifie"
+        "niveau_confiance": "opinion_majoritaire"
       },
       {
         "nom": "Indécidabilité de l'authenticité en ligne",
@@ -2992,7 +2992,7 @@
       {
         "nom": "Fragilité de maintenance",
         "description": "Frein documenté : évolution très rapide des API et complexité de débogage et de sécurité peu standardisée, qui limitent le déploiement durable.",
-        "niveau_confiance": "fait_verifie"
+        "niveau_confiance": "opinion_majoritaire"
       },
       {
         "nom": "Déplacement du conflit vers les valeurs",
@@ -3178,7 +3178,7 @@
       {
         "nom": "Instabilité des partitions",
         "description": "Frein méthodologique établi : dépendance à l'initialisation, au choix de k et de la distance, qui limite la portée interprétative des groupes obtenus.",
-        "niveau_confiance": "fait_verifie"
+        "niveau_confiance": "consensus_scientifique"
       },
       {
         "nom": "Segmentation opératoire de ciblage",
@@ -3300,7 +3300,7 @@
       {
         "nom": "Perte d'interprétabilité",
         "description": "Frein établi : l'empilement d'arbres rend les chemins de décision très difficiles à suivre, ce qui limite l'apport théorique du modèle.",
-        "niveau_confiance": "fait_verifie"
+        "niveau_confiance": "consensus_scientifique"
       },
       {
         "nom": "Régulation de la manipulation algorithmique",
@@ -3479,7 +3479,7 @@
       {
         "nom": "Verrou de synthétisabilité",
         "description": "Frein documenté : la stabilité thermodynamique calculée ne garantit ni la synthèse ni l'intérêt fonctionnel, et seule une petite fraction a été synthétisée.",
-        "niveau_confiance": "fait_verifie"
+        "niveau_confiance": "consensus_scientifique"
       },
       {
         "nom": "Progrès technique partiellement planifiable",
@@ -3658,7 +3658,7 @@
       {
         "nom": "Controverse empirique non close",
         "description": "Statu quo : une partie de la profession continue de contester la robustesse des données et la faisabilité politique des préconisations.",
-        "niveau_confiance": "fait_verifie"
+        "niveau_confiance": "opinion_majoritaire"
       },
       {
         "nom": "Le calcul comme nouveau capital",
@@ -3837,7 +3837,7 @@
       {
         "nom": "Validation expérimentale incontournable",
         "description": "Frein documenté : précision insuffisante sur environ un tiers des prédictions et absence de modélisation du mécanisme, les structures expérimentales restant nécessaires.",
-        "niveau_confiance": "fait_verifie"
+        "niveau_confiance": "consensus_scientifique"
       },
       {
         "nom": "Routinisation de l'innovation",
@@ -3898,7 +3898,7 @@
       {
         "nom": "Écart normatif / opérationnel persistant",
         "description": "Frein documenté : le cadre reste normatif et sa mise en œuvre concrète à grande échelle est encore peu documentée.",
-        "niveau_confiance": "fait_verifie"
+        "niveau_confiance": "consensus_scientifique"
       },
       {
         "nom": "Prévision hors distribution historique",
@@ -4140,7 +4140,7 @@
       {
         "nom": "Dépendance aux systèmes physiques",
         "description": "GraphCast dépend des réanalyses ERA5 et des conditions initiales produites par les systèmes numériques traditionnels : il s'y superpose sans les remplacer, ce qui borne son autonomie opérationnelle.",
-        "niveau_confiance": "fait_verifie"
+        "niveau_confiance": "consensus_scientifique"
       },
       {
         "nom": "Modèles climatiques entièrement appris",
@@ -4331,7 +4331,7 @@
       {
         "nom": "Instabilité des cadres techniques",
         "description": "Les changements d'API fréquents et les migrations de documentation fragilisent la maintenance des systèmes construits sur ces frameworks.",
-        "niveau_confiance": "fait_verifie"
+        "niveau_confiance": "opinion_majoritaire"
       },
       {
         "nom": "Responsabilité introuvable",
@@ -4394,7 +4394,7 @@
       {
         "nom": "Plafond de fiabilité",
         "description": "Les taux mesurés — 58,1 % sur les interactions web et 38,1 % au niveau système — restent très en deçà de la précision humaine sur les interfaces complexes et les flux longs.",
-        "niveau_confiance": "fait_verifie"
+        "niveau_confiance": "opinion_majoritaire"
       },
       {
         "nom": "Creusement du déficit de légitimité",
@@ -4704,7 +4704,7 @@
       {
         "nom": "Perte d'interprétabilité assumée",
         "description": "L'empilement de centaines ou de milliers d'arbres rend le suivi des chemins de décision considérablement plus difficile qu'avec un arbre unique.",
-        "niveau_confiance": "fait_verifie"
+        "niveau_confiance": "consensus_scientifique"
       },
       {
         "nom": "Recommandations toujours facultatives",
@@ -4820,7 +4820,7 @@
       {
         "nom": "Optimisme des performances déclarées",
         "description": "Le taux d'erreur mesuré sur les données d'entraînement est souvent trop optimiste, ce qui peut surestimer la qualité des dispositifs de ciblage déployés.",
-        "niveau_confiance": "fait_verifie"
+        "niveau_confiance": "consensus_scientifique"
       },
       {
         "nom": "Conditionnalité algorithmique",
@@ -4885,7 +4885,7 @@
       {
         "nom": "Hétérogénéité des lignées de modèles",
         "description": "La prolifération de versions portées par des équipes différentes rend la famille hétérogène et complique la comparaison des résultats, frein documenté à toute normalisation.",
-        "niveau_confiance": "fait_verifie"
+        "niveau_confiance": "opinion_majoritaire"
       },
       {
         "nom": "Course aux armements autonomes",
@@ -5123,7 +5123,7 @@
       {
         "nom": "Écart persistant aux exigences réelles",
         "description": "Des évaluations indépendantes ont documenté du code écrit, testé et débogué sans rapport avec les spécifications, ce qui limite la délégation sans revue.",
-        "niveau_confiance": "fait_verifie"
+        "niveau_confiance": "consensus_scientifique"
       },
       {
         "nom": "Scrum sans exécutants",
@@ -11598,7 +11598,7 @@
       {
         "nom": "Généralisation du contrôle par vision",
         "description": "Diffusion large de la détection temps réel sur les lignes standardisées, portée par un niveau de maturité industriel déjà atteint.",
-        "niveau_confiance": "fait_verifie"
+        "niveau_confiance": "opinion_majoritaire"
       },
       {
         "nom": "Statu quo sur le pilier social",
@@ -12091,7 +12091,7 @@
       {
         "nom": "Généralisation des bancs d'essai comportementaux",
         "description": "L'évaluation automatisée par entrées et sorties devient le standard de fait pour qualifier un système avant déploiement.",
-        "niveau_confiance": "fait_verifie"
+        "niveau_confiance": "opinion_majoritaire"
       },
       {
         "nom": "Statu quo de l'opacité",
@@ -12153,7 +12153,7 @@
       {
         "nom": "Intégration aux métiers créatifs",
         "description": "Usage courant des modèles texte-image comme outil d'exécution dans les chaînes de production visuelle, à un niveau de maturité industriel déjà atteint.",
-        "niveau_confiance": "fait_verifie"
+        "niveau_confiance": "opinion_majoritaire"
       },
       {
         "nom": "Statu quo du débat sur la frontière",
