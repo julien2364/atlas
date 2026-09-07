@@ -1752,7 +1752,7 @@
     "scenario_present": "En 2026, la fiche IA documente l'usage d'ARIMA/SARIMA par les instituts statistiques nationaux pour la prévision d'indicateurs macroéconomiques et de séries démographiques, sans lui attribuer de niveau de maturité : une méthode statistique considérée en elle-même n'a pas de TRL. L'extrapolation d'un indice annuel relève de ce cadre d'usage établi.",
     "scenario_5ans": "Si des indicateurs de cyberconflictualité et d'armes autonomes sont définis et collectés, ils pourraient être intégrés à des modèles multivariés dépassant les limites de l'approche univariée.",
     "scenario_15_20ans": "Spéculatif : sous l'hypothèse d'une standardisation internationale de la mesure de la conflictualité numérique, un indice de paix pourrait devenir infra-annuel et prédictif — hypothèse qui suppose résolus les désaccords sur la pondération.",
-    "confiance": "elevee",
+    "confiance": "moyenne",
     "sujet": "Indices de paix et projection statistique de séries temporelles",
     "sous_themes": [
       "Prévision univariée et intervalles de confiance",
@@ -2003,7 +2003,7 @@
     "scenario_present": "En 2026, la fiche IA situe la prévision apprise comme pratique installée en recherche et comme usage encore émergent chez les services publics : l'AIFS du Centre européen pour les prévisions météorologiques à moyen terme publie des prévisions en temps réel depuis 2024, avec de bons résultats sur les trajectoires de cyclones et de moins bons sur leur intensité. Aucun niveau de maturité chiffré n'y est attaché.",
     "scenario_5ans": "Si la quantification d'incertitude et l'évaluation hors distribution progressent, ces modèles pourraient s'étendre de la prévision météo vers l'aide à la projection climatique, ce qu'ils ne font pas aujourd'hui.",
     "scenario_15_20ans": "Spéculatif : sous l'hypothèse d'un couplage étroit entre modèles appris et modèles physiques, les projections du type de celles évaluées par le GIEC pourraient gagner en résolution spatiale — au prix d'une empreinte énergétique propre qu'il faudra documenter.",
-    "confiance": "elevee",
+    "confiance": "moyenne",
     "sujet": "Modélisation du climat et prévision apprise sur données",
     "sous_themes": [
       "Prévision apprise contre résolution des équations",
@@ -2185,7 +2185,7 @@
     "scenario_present": "En 2026, la fiche IA qualifie ces frameworks de pratique installée pour l'automatisation de flux de travail métier, avec des entreprises utilisatrices nommées par les éditeurs, et d'usage encore émergent en recherche sur la collaboration entre agents autonomes — AutoGen, dont le composant Core vise explicitement cette recherche.",
     "scenario_5ans": "Si l'observabilité et la stabilité des API progressent, l'orchestration multi-agents pourrait couvrir des chaînes complètes de traitement documentaire et logiciel dans les grandes infrastructures de recherche.",
     "scenario_15_20ans": "Spéculatif : sous l'hypothèse d'une fiabilité et d'une traçabilité suffisantes, des collectifs d'agents pourraient conduire des campagnes d'analyse de données de bout en bout — la conception des expériences et l'arbitrage des priorités de recherche restant des décisions humaines.",
-    "confiance": "elevee",
+    "confiance": "moyenne",
     "sujet": "Grandes infrastructures scientifiques et orchestration multi-agents",
     "sous_themes": [
       "Traitement de données massives et automatisation documentaire",
@@ -3290,7 +3290,7 @@
     "scenario_present": "En 2026, ARIMA/SARIMA sont documentés par la fiche IA comme outils de prévision économique et opérationnelle, sans niveau de maturité attaché, tandis que Black-Scholes reste la référence de valorisation des dérivés malgré des hypothèses contestées depuis longtemps.",
     "scenario_5ans": "Si les modèles de valorisation assistés par apprentissage profond se stabilisent, ils pourraient compléter le cadre analytique classique sur les dynamiques non linéaires, sans nécessairement fournir la transparence qui a fait l'adoption de Black-Scholes.",
     "scenario_15_20ans": "Spéculatif : sous l'hypothèse que les modèles appris deviennent la référence de valorisation, la finance perdrait une formule fermée partagée par tous les intervenants, ce qui déplacerait le risque de modèle vers l'opacité plutôt que vers l'hypothèse de normalité.",
-    "confiance": "elevee",
+    "confiance": "moyenne",
     "sujet": "Valorisation des dérivés et prévision statistique des séries financières",
     "sous_themes": [
       "Hypothèse de normalité et sous-estimation des événements extrêmes",
@@ -4260,7 +4260,7 @@
     "scenario_present": "En 2026, la fiche IA qualifie ces frameworks de pratique installée pour l'automatisation de flux de travail métier en entreprise, avec des clients nommés par les éditeurs, et d'usage encore émergent sur la coopération multi-agents proprement dite — aucun niveau de maturité chiffré ne leur est attribué.",
     "scenario_5ans": "Si les pratiques d'observabilité se stabilisent, des secrétariats techniques multiniveaux pourraient déléguer la préparation et la synthèse des dossiers à des équipes d'agents, l'arbitrage restant aux instances.",
     "scenario_15_20ans": "Spéculatif, sous l'hypothèse d'une fiabilité nettement accrue des modèles sous-jacents : une part importante de la coordination technique entre niveaux serait automatisée, ce qui rendrait d'autant plus critique la question, non résolue, de l'imputation des responsabilités.",
-    "confiance": "elevee",
+    "confiance": "moyenne",
     "sujet": "Gouvernance multiniveau et orchestration technique de la coordination",
     "sous_themes": [
       "Agents à rôles et coordination entre niveaux",
@@ -4452,7 +4452,7 @@
     "scenario_present": "En 2026, la fiche IA documente la prévision d'indicateurs macroéconomiques — inflation, chômage — et de séries démographiques par ARIMA/SARIMA dans les instituts statistiques nationaux, sans niveau de maturité attaché : le TRL n'a pas de référent pour une méthode statistique prise en elle-même.",
     "scenario_5ans": "Si les analyses du FMI sur l'impact macroéconomique de l'IA se systématisent, ces modèles serviront de base de comparaison pour des approches plus riches intégrant productivité et automatisation comme variables exogènes.",
     "scenario_15_20ans": "Spéculatif, sous l'hypothèse d'une disponibilité de données à haute fréquence pour un grand nombre de pays : la surveillance macroéconomique pourrait devenir quasi continue, sans que la capacité à anticiper les ruptures de régime soit pour autant acquise.",
-    "confiance": "elevee",
+    "confiance": "moyenne",
     "sujet": "Surveillance macroéconomique internationale et prévision de séries temporelles",
     "sous_themes": [
       "Prévision d'indicateurs désaisonnalisés",
@@ -4634,7 +4634,7 @@
     "scenario_present": "En 2026, la fiche IA présente le gradient boosting comme le modèle de référence sur données tabulaires, sans niveau de maturité chiffré, et qualifie d'encore émergent son usage sur données administratives publiques — ce qui rend mobilisables, mais non déjà mobilisés, les jeux de données comparatifs standardisés par l'OCDE.",
     "scenario_5ans": "Si les pratiques d'explicabilité se généralisent, les analyses comparatives pourraient combiner performance prédictive et lisibilité suffisante pour fonder des recommandations publiques.",
     "scenario_15_20ans": "Spéculatif, sous l'hypothèse d'une extension du rôle de laboratoire normatif joué par l'organisation depuis ses Principes sur l'IA de 2019 : les référentiels méthodologiques pourraient inclure des exigences d'explicabilité opposables aux administrations nationales.",
-    "confiance": "elevee",
+    "confiance": "moyenne",
     "sujet": "Indicateurs comparés internationaux et modèles prédictifs sur données tabulaires",
     "sous_themes": [
       "Analyse comparative sur données structurées",
@@ -4811,7 +4811,7 @@
     "scenario_present": "En 2026, la fiche IA qualifie la détection d'objets en temps réel de pratique installée en industrie et d'usage encore émergent côté sécurité publique et gestion du trafic, sans niveau de maturité chiffré et sans documenter de déploiement réel. Elle relève que les usages de vidéosurveillance qu'un tel détecteur rend possibles posent des questions de vie privée et de biais algorithmique, que sa source n'aborde pas.",
     "scenario_5ans": "Si la standardisation des versions progresse au sein de l'alliance, l'interopérabilité des systèmes de traitement d'images entre membres pourrait s'améliorer, sans que la question de l'autonomie décisionnelle soit tranchée.",
     "scenario_15_20ans": "Spéculatif, sous l'hypothèse d'une diffusion des systèmes d'armes partiellement autonomes chez les puissances rivales comme chez les alliés : le débat sur la course aux armements autonomes deviendrait le principal facteur de cohésion ou de division de l'alliance.",
-    "confiance": "elevee",
+    "confiance": "moyenne",
     "sujet": "Défense collective, traitement d'images en temps réel et autonomie décisionnelle",
     "sous_themes": [
       "Interopérabilité et standardisation technique alliée",
@@ -5114,7 +5114,7 @@
     "scenario_present": "En 2026, la fiche IA qualifie ces frameworks de pratique installée pour l'automatisation de flux de travail métier, mais la coopération multi-agents proprement dite y reste un usage émergent, cantonné à la recherche — ce qui limite leur emploi à des tâches déléguées et non à la gouvernance elle-même.",
     "scenario_5ans": "Si l'observabilité des exécutions se standardise, des organisations en cercles pourraient documenter finement la répartition réelle des décisions, ce qui adresserait la critique de hiérarchie implicite.",
     "scenario_15_20ans": "Spéculatif, sous l'hypothèse d'agents fiables et d'organisations largement outillées : des cercles mixtes humains-agents deviendraient concevables, avec une question ouverte sur l'attribution des rôles et des responsabilités constitutionnelles à des systèmes non humains.",
-    "confiance": "elevee",
+    "confiance": "moyenne",
     "sujet": "Gouvernance distribuée par cercles et orchestration d'agents à rôles",
     "sous_themes": [
       "Rôles explicites et répartition des décisions",
@@ -5470,17 +5470,17 @@
     "id": "deep-learning-vs-alexnet",
     "fiche_humaine_id": "reseaux-de-neurones-artificiels-deep-learning",
     "fiche_ia_id": "alexnet",
-    "apport_ia": "AlexNet est le point de bascule que la fiche humaine désigne elle-même : en 2012, la classification d'images à grande échelle cesse de reposer sur des descripteurs conçus à la main par des experts et passe à des représentations apprises directement des données. La compétence humaine d'ingénierie des caractéristiques visuelles a été non pas assistée mais supprimée comme étape.",
+    "apport_ia": "AlexNet est le point de bascule que la fiche humaine désigne elle-même : en 2012, la classification d'images à grande échelle cesse de reposer sur des descripteurs conçus à la main par des experts et passe à des représentations apprises directement des données. La fiche IA le documente comme une validation de concours — taux d'erreur top-5 de 15,3 % à l'ILSVRC du 30 septembre 2012, plus de 10,8 points devant le second — et non comme un système déployé : la substitution porte sur la méthode, établie par la fiche humaine, non sur ce modèle particulier.",
     "mecanisme": "Réseau convolutif profond entraîné sur GPU sur ImageNet, avec régularisation par abandon (dropout) et activations ReLU popularisées à cette échelle — la conjonction de données massives, de calcul parallèle et d'ajustements algorithmiques que la fiche humaine identifie comme la cause de la percée.",
-    "amelioration_possible": "L'architecture est aujourd'hui dépassée en précision comme en efficacité par des réseaux plus profonds et par les Transformers de vision ; ce qui reste ouvert n'est pas la performance mais l'explicabilité, la boîte noire dénoncée dans la fiche humaine n'ayant pas été résolue par la montée en échelle.",
+    "amelioration_possible": "La fiche IA ne compare AlexNet à aucune architecture ultérieure, ni en précision ni en efficacité : elle nomme seulement les réseaux plus profonds qui l'ont suivi — GoogLeNet, VGGNet, Highway networks, ResNet — et la ligne de recherche visant à reproduire ses performances à moindre coût — SqueezeNet, MobileNet, EfficientNet. Ce qui reste ouvert n'est donc pas la comparaison de performance, que les sources ne portent pas, mais l'explicabilité : la boîte noire dénoncée dans la fiche humaine n'a pas été résolue par la montée en échelle.",
     "mode_interaction": "Autonomie complète sur la tâche d'extraction de caractéristiques ; l'humain conserve la définition du problème, la constitution et l'annotation des jeux de données, et l'évaluation des erreurs hors distribution.",
     "substituabilite": "remplacable_totalement",
-    "scenario_present": "Pour la classification d'images à grande échelle, l'ingénierie manuelle de descripteurs a disparu de la pratique courante ; le débat porte sur les besoins en données, en énergie et sur l'opacité des décisions.",
-    "scenario_5ans": "Poursuite du remplacement par des architectures plus efficaces à budget de calcul donné, et pression croissante sur la question de l'explicabilité dans les usages réglementés.",
+    "scenario_present": "Pour la classification d'images à grande échelle, l'ingénierie manuelle de descripteurs a disparu de la pratique courante selon la fiche humaine ; la fiche IA situe AlexNet lui-même à TRL 4 — validé sur un concours, sans déploiement industriel documenté — et qualifie d'historique son rôle en recherche. Le débat porte aujourd'hui sur les besoins en données, en énergie et sur l'opacité des décisions.",
+    "scenario_5ans": "Poursuite du remplacement par des architectures que la fiche IA rattache à l'influence d'AlexNet — de GoogLeNet et ResNet aux modèles conçus pour l'efficacité — et pression croissante sur la question de l'explicabilité dans les usages réglementés.",
     "scenario_15_20ans": "La suppression de l'ingénierie manuelle de caractéristiques paraît acquise et irréversible ; ce qui reste incertain est la capacité de ces modèles à généraliser hors de la distribution d'entraînement, une limite que la fiche humaine énonce explicitement.",
-    "confiance": "elevee",
+    "confiance": "moyenne",
     "statut": "documente",
-    "derniere_verification": "2026-09-06",
+    "derniere_verification": "2026-09-07",
     "sujet": "Substitution de l'ingénierie manuelle de caractéristiques par l'apprentissage de représentations",
     "sous_themes": [
       "Bascule de 2012 en reconnaissance d'image",
@@ -5511,7 +5511,7 @@
     "axes_prospectifs": [
       {
         "nom": "Efficacité à budget contraint",
-        "description": "Diffusion d'architectures plus économes en calcul et en mémoire pour l'inférence embarquée, sans retour à des descripteurs conçus manuellement.",
+        "description": "Diffusion d'architectures plus économes en calcul, dans la ligne de recherche que la fiche IA identifie (SqueezeNet, MobileNet, EfficientNet), sans retour à des descripteurs conçus manuellement.",
         "niveau_confiance": "consensus_scientifique"
       },
       {
@@ -5538,9 +5538,9 @@
     "scenario_present": "Les systèmes conversationnels sont largement déployés et leur fiabilité factuelle reste la limite la plus citée ; la vérification humaine demeure nécessaire sur tout contenu à enjeu.",
     "scenario_5ans": "Généralisation du couplage avec des bases de sources vérifiées et progrès attendus sur l'affichage de l'incertitude, sans disparition du phénomène.",
     "scenario_15_20ans": "Deux lectures s'opposent dans la littérature : l'hallucination comme défaut d'ingénierie corrigible, ou comme propriété d'architectures optimisées pour la plausibilité plutôt que pour la vérité ; les sources mobilisées ici ne tranchent pas.",
-    "confiance": "elevee",
+    "confiance": "moyenne",
     "statut": "documente",
-    "derniere_verification": "2026-09-06",
+    "derniere_verification": "2026-09-07",
     "sujet": "Fiabilité factuelle des modèles de langage et ancrage référentiel",
     "sous_themes": [
       "Absence de signal interne calibré d'incertitude",
@@ -5846,9 +5846,9 @@
     "scenario_present": "L'aide à la lecture d'images et au ciblage est déployée en pratique clinique dans plusieurs indications, sous validation médicale systématique.",
     "scenario_5ans": "Extension à davantage d'indications et pression réglementaire accrue sur la traçabilité et la robustesse des modèles utilisés en soin.",
     "scenario_15_20ans": "La lecture d'image pourrait être très largement automatisée sans que la décision thérapeutique le soit : Curie a payé de sa santé une exposition dont les risques étaient alors mal compris, et l'arbitrage bénéfice-risque d'une irradiation reste une décision engageant une responsabilité humaine.",
-    "confiance": "elevee",
+    "confiance": "moyenne",
     "statut": "documente",
-    "derniere_verification": "2026-09-06",
+    "derniere_verification": "2026-09-07",
     "sujet": "Imagerie et radiothérapie assistées en oncologie",
     "sous_themes": [
       "Détection et délimitation automatiques de lésions",
@@ -7228,9 +7228,9 @@
     "scenario_present": "La reproduction des biais est un fait documenté et un champ de recherche constitué ; l'aliénation psychique que Fanon analyse n'est pas mesurable par ces instruments.",
     "scenario_5ans": "Généralisation des obligations d'audit et de documentation, avec des désaccords persistants sur la définition d'équité retenue, faute de critère unique démontrable.",
     "scenario_15_20ans": "Le choix du critère restera politique ; l'automatisation à grande échelle pourrait, selon les cas, renforcer ou réduire l'inscription technique de discriminations existantes.",
-    "confiance": "elevee",
+    "confiance": "moyenne",
     "statut": "documente",
-    "derniere_verification": "2026-09-06",
+    "derniere_verification": "2026-09-07",
     "sujet": "Inscription technique de discriminations héritées et limites de leur correction",
     "sous_themes": [
       "Reproduction et amplification des biais dans des systèmes présentés comme neutres",
@@ -8037,9 +8037,9 @@
     "scenario_present": "La fabrication de références plausibles est un phénomène documenté et largement observé ; l'ancrage documentaire la réduit fortement sans l'éliminer.",
     "scenario_5ans": "Généralisation attendue de l'ancrage sur sources vérifiées dans les usages professionnels, avec citation systématique des documents mobilisés.",
     "scenario_15_20ans": "La question laissée ouverte par Kripke — comment la référence est initialement fixée et transmise dans une communauté — reste posée : un système ancré cite une source, il ne participe pas à la chaîne sociale qui a fixé le nom.",
-    "confiance": "elevee",
+    "confiance": "moyenne",
     "statut": "documente",
-    "derniere_verification": "2026-09-06",
+    "derniere_verification": "2026-09-07",
     "sujet": "Référence des noms propres et fabrication de citations plausibles",
     "sous_themes": [
       "Références fictives crédibles produites sur des termes inventés",
@@ -8101,9 +8101,9 @@
     "scenario_present": "L'empreinte énergétique et matérielle est documentée par plusieurs agences et travaux académiques, et cette documentation coexiste avec l'accélération des investissements.",
     "scenario_5ans": "Poursuite probable des engagements d'efficacité et de sobriété annoncés, sans inflexion démontrée de la trajectoire de consommation globale.",
     "scenario_15_20ans": "Deux lectures restent en présence et ne se départagent pas sur les seules données disponibles : rupture technologique de l'efficacité énergétique d'un côté, contrainte physique et politique sur le volume de calcul de l'autre.",
-    "confiance": "elevee",
+    "confiance": "moyenne",
     "statut": "documente",
-    "derniere_verification": "2026-09-06",
+    "derniere_verification": "2026-09-07",
     "sujet": "Reconnaissance publique d'un coût environnemental et poursuite de la trajectoire qui le produit",
     "sous_themes": [
       "Effet rebond : gains d'efficacité absorbés par la croissance du volume de calcul",
@@ -8734,9 +8734,9 @@
     "scenario_present": "Des systèmes de prédiction comportementale sont déployés en production dans plusieurs de ces domaines, avec des effets discriminatoires documentés et un champ de recherche dédié à leur mesure.",
     "scenario_5ans": "Renforcement attendu des obligations d'évaluation et de contestabilité sur les usages à conséquence individuelle, sans standard unique d'équité.",
     "scenario_15_20ans": "L'extension de la modélisation aux comportements sociaux se poursuivra ; la question de savoir ce que ces modèles capturent réellement — comportement ou trace d'une inégalité antérieure — restera au cœur du débat, comme elle l'était déjà pour l'approche beckerienne.",
-    "confiance": "elevee",
+    "confiance": "moyenne",
     "statut": "documente",
-    "derniere_verification": "2026-09-06",
+    "derniere_verification": "2026-09-07",
     "sujet": "Modélisation prédictive des comportements sociaux et reproduction des discriminations",
     "sous_themes": [
       "Extension de l'analyse économique aux comportements non marchands",
@@ -9384,9 +9384,9 @@
     "scenario_present": "L'assistance rédactionnelle est déjà utilisable en préparation, mais le fait de trancher dépend du consentement des États à la juridiction et d'une autorité que ne confère aucun système statistique.",
     "scenario_5ans": "Généralisation d'outils de recherche jurisprudentielle à citations tracées, avec des règles déontologiques explicites sur l'usage de l'IA dans les écritures, sans modification du rôle du juge.",
     "scenario_15_20ans": "Même avec un taux d'hallucination fortement réduit, l'obstacle demeure institutionnel : ce qui manque à la CIJ est l'exécution forcée de ses arrêts, restés lettre morte dans plusieurs affaires majeures, un problème de volonté politique qu'aucun progrès technique ne traite.",
-    "confiance": "elevee",
+    "confiance": "moyenne",
     "statut": "documente",
-    "derniere_verification": "2026-09-06",
+    "derniere_verification": "2026-09-07",
     "sujet": "Recherche jurisprudentielle assistée et exigence de vérifiabilité judiciaire",
     "sous_themes": [
       "Fabrication de références juridiques plausibles mais inexistantes",
@@ -9810,9 +9810,9 @@
     "scenario_present": "La prévision et le suivi de conformité sont techniquement résolus et déjà outillés ; la fragilité de l'OPEP tient à l'incitation individuelle de chaque membre à dépasser son quota, que la mesure rend visible sans la neutraliser.",
     "scenario_5ans": "Suivi quasi temps réel des écarts de production et transparence accrue entre membres, avec un débat déplacé vers la fiabilité des données déclarées par chaque État.",
     "scenario_15_20ans": "L'incidence dominante ne viendra probablement pas de la prévision mais de la demande elle-même : la consommation électrique des centres de données d'IA et la diversification énergétique redessinent le contexte dans lequel l'OPEP+ arbitre.",
-    "confiance": "elevee",
+    "confiance": "moyenne",
     "statut": "documente",
-    "derniere_verification": "2026-09-06",
+    "derniere_verification": "2026-09-07",
     "sujet": "Prévision des marchés pétroliers et suivi de conformité aux quotas",
     "sous_themes": [
       "Prévision saisonnière de séries de production et de prix",
@@ -10357,9 +10357,9 @@
     "scenario_present": "La vision par ordinateur est mature et son usage en dépistage progresse dans les programmes soutenus, tandis que le financement du Fonds reste soumis aux cycles de reconstitution des ressources et à la générosité fluctuante des bailleurs.",
     "scenario_5ans": "Extension probable du dépistage assisté et de la prédiction d'épidémies dans les programmes financés, sous réserve de constitution de jeux de données locaux annotés.",
     "scenario_15_20ans": "Un dépistage largement automatisé déplacerait la contrainte vers l'aval — disponibilité des traitements et solidité des systèmes de santé publics — c'est-à-dire vers la critique déjà adressée à une gouvernance par projets ponctuels.",
-    "confiance": "elevee",
+    "confiance": "moyenne",
     "statut": "documente",
-    "derniere_verification": "2026-09-06",
+    "derniere_verification": "2026-09-07",
     "sujet": "Dépistage assisté par imagerie dans les programmes de santé mondiale",
     "sous_themes": [
       "Extraction automatique de caractéristiques visuelles sans ingénierie manuelle",
@@ -10655,7 +10655,7 @@
     "scenario_present": "La prévision statistique de séries budgétaires est une pratique établie dans les administrations financières, y compris dans les économies rentières.",
     "scenario_5ans": "Adoption plus large de modèles multivariés capables de croiser cours des matières premières, production et dépenses publiques, sans supprimer l'incertitude sur les retournements.",
     "scenario_15_20ans": "Le débat de fond reste entier : ses partisans créditent ce courant d'avoir redistribué une rente et renforcé la souveraineté économique, ses critiques soulignent la dépendance aux matières premières et, dans le cas vénézuélien, une dérive autoritaire et une crise économique majeure — une controverse qu'aucun modèle de prévision ne tranche.",
-    "confiance": "elevee",
+    "confiance": "moyenne",
     "sujet": "Pilotage budgétaire d'une redistribution financée par la rente de matières premières",
     "sous_themes": [
       "Prévision de recettes sous forte volatilité des cours",
@@ -10767,7 +10767,7 @@
     "scenario_present": "Les biais des systèmes de catégorisation sont largement documentés et font l'objet d'un champ de recherche dédié, sans méthode de correction consensuelle.",
     "scenario_5ans": "Renforcement probable des obligations d'audit et de documentation des systèmes appliqués à des personnes, sans convergence sur une définition unique de l'équité.",
     "scenario_15_20ans": "L'étude du basculement d'une démocratie vers un régime totalitaire génocidaire reste un objet central des sciences historiques et politiques ; la vigilance qu'elle nourrit sur les usages de catégorisation automatisée est une exigence de gouvernance, pas un résultat technique.",
-    "confiance": "elevee",
+    "confiance": "moyenne",
     "sujet": "Catégorisation administrative des personnes et vigilance sur les usages discriminatoires",
     "sous_themes": [
       "Incompatibilité des définitions mathématiques de l'équité",
@@ -10813,7 +10813,7 @@
       }
     ],
     "statut": "documente",
-    "derniere_verification": "2026-09-06"
+    "derniere_verification": "2026-09-07"
   },
   {
     "id": "populisme-de-gauche-vs-transformers",
@@ -10939,7 +10939,7 @@
     "scenario_present": "La détection vidéo temps réel est disponible et déployée dans des contextes très variés ; les fiches documentent la capacité technique et les questions de vie privée qu'elle soulève, sans établir de recensement des usages par régime.",
     "scenario_5ans": "Diffusion probablement plus large à mesure que le coût baisse, avec des cadres juridiques nationaux très divergents sur la vidéosurveillance automatisée.",
     "scenario_15_20ans": "La frontière entre autoritarisme compétitif et démocratie affaiblie restera débattue, sa classification dépendant des critères retenus — liberté de la presse, indépendance judiciaire — et de leur pondération, une question de science politique que l'outillage technique ne résout pas.",
-    "confiance": "elevee",
+    "confiance": "moyenne",
     "sujet": "Observation automatisée de l'espace public et effets sur les libertés",
     "sous_themes": [
       "Coût marginal de l'observation continue",
@@ -11168,7 +11168,7 @@
     "scenario_present": "Les impacts énergétiques et matériels de l'IA sont documentés par des rapports d'agences et des études académiques ; leur mise en balance avec les bénéfices attendus reste un débat ouvert.",
     "scenario_5ans": "Poursuite probable de la croissance du calcul et de la contestation environnementale associée, avec des obligations de reporting énergétique en progression dans plusieurs juridictions.",
     "scenario_15_20ans": "Le mouvement reste divisé sur son propre héritage — certains lisant chez Marx un précurseur écologiste, d'autres une ambiguïté productiviste — et cette division interne pèse autant sur sa capacité à peser sur la trajectoire du secteur que les données environnementales elles-mêmes.",
-    "confiance": "elevee",
+    "confiance": "moyenne",
     "sujet": "Soutenabilité matérielle de l'IA face à l'exigence de sobriété",
     "sous_themes": [
       "Effet rebond sur les gains d'efficacité de calcul",
@@ -11214,7 +11214,7 @@
       }
     ],
     "statut": "documente",
-    "derniere_verification": "2026-09-06"
+    "derniere_verification": "2026-09-07"
   },
   {
     "id": "monarchie-absolue-vs-autogpt",
@@ -11981,9 +11981,9 @@
     "scenario_present": "L'évaluation comportementale automatisée des systèmes est déployée à grande échelle dans l'industrie et le secteur public, tandis que la conception des protocoles et leur cadrage éthique — que l'expérience du petit Albert rend indissociable de la démarche — restent humains.",
     "scenario_5ans": "Extension probable des bancs d'essai comportementaux, avec une reconnaissance croissante qu'ils ne suffisent pas à établir la fiabilité factuelle d'un système.",
     "scenario_15_20ans": "Le débat contemporain sur l'interprétabilité rejoue la controverse ouverte par Watson : se contenter des entrées et sorties, ou exiger l'accès aux représentations internes — aucune des deux fiches ne le tranche.",
-    "confiance": "elevee",
+    "confiance": "moyenne",
     "statut": "documente",
-    "derniere_verification": "2026-09-06",
+    "derniere_verification": "2026-09-07",
     "sujet": "Évaluation par le comportement observable et opacité des représentations internes",
     "sous_themes": [
       "Approche boîte noire appliquée à l'évaluation des modèles",
