@@ -13,7 +13,7 @@
     "scenario_15_20ans": "Reste une dimension jugée irréductiblement humaine dans le débat philosophique dominant (cf. B5 — absence de vécu subjectif), sauf rupture théorique majeure sur la question de la conscience artificielle.",
     "confiance": "moyenne",
     "statut": "documente",
-    "derniere_verification": "2026-09-06",
+    "derniere_verification": "2026-09-07",
     "sujet": "Accompagnement philosophique et pédagogie de la pensée critique",
     "sous_themes": [
       "Vulgarisation et mise en relation de doctrines philosophiques",
@@ -37,11 +37,13 @@
       {
         "titre": "Friedrich Nietzsche",
         "url": "https://fr.wikipedia.org/wiki/Friedrich_Nietzsche",
-        "type": "secondaire"
+        "type": "secondaire",
+        "date": "2026-09-06"
       },
       {
-        "titre": "Documentation Anthropic",
+        "titre": "Anthropic — Claude Docs, référence développeur (platform.claude.com)",
         "url": "https://docs.claude.com",
+        "date": "2026-09-07",
         "type": "primaire"
       }
     ],
@@ -78,7 +80,7 @@
     "scenario_15_20ans": "Scénario incertain — dépend fortement de trajectoires géopolitiques non prévisibles avec un niveau de confiance élevé.",
     "confiance": "faible",
     "statut": "documente",
-    "derniere_verification": "2026-09-06",
+    "derniere_verification": "2026-09-07",
     "sujet": "Modèles de gouvernance économique et trajectoires d'innovation IA nationale",
     "sous_themes": [
       "Politique industrielle et financement public de la recherche IA",
@@ -98,15 +100,19 @@
       {
         "titre": "Capitalisme d'État",
         "url": "https://fr.wikipedia.org/wiki/Capitalisme_d%27%C3%89tat",
-        "type": "secondaire"
+        "type": "secondaire",
+        "date": "2026-09-06"
       },
       {
-        "titre": "DeepSeek-V3 Technical Report",
+        "titre": "DeepSeek-AI, « DeepSeek-V3 Technical Report »",
+        "url": "https://arxiv.org/abs/2412.19437",
+        "date": "2024-12-27",
         "type": "primaire"
       },
       {
         "titre": "DeepSeek — Wikipedia (article en anglais)",
         "url": "https://en.wikipedia.org/wiki/DeepSeek",
+        "date": "2026-09-07",
         "type": "secondaire"
       }
     ],
@@ -166,10 +172,10 @@
         "type": "primaire"
       },
       {
-        "titre": "Taylorisme — Wikipédia",
+        "titre": "Taylorisme",
         "url": "https://fr.wikipedia.org/wiki/Taylorisme",
-        "date": "2026-09-06",
-        "type": "secondaire"
+        "type": "secondaire",
+        "date": "2026-09-06"
       }
     ],
     "axes_prospectifs": [
@@ -205,7 +211,7 @@
     "scenario_15_20ans": "L'arbitrage des priorités stratégiques (quel Objective choisir) reste un jugement de valeur organisationnel, donc humain, même si sa mise en musique est largement automatisée.",
     "confiance": "moyenne",
     "statut": "documente",
-    "derniere_verification": "2026-09-06",
+    "derniere_verification": "2026-09-07",
     "sujet": "Automatisation du pilotage d'objectifs organisationnels (gestion de la performance)",
     "sous_themes": [
       "Rédaction assistée d'objectifs mesurables",
@@ -225,11 +231,13 @@
       {
         "titre": "Méthode OKR",
         "url": "https://fr.wikipedia.org/wiki/M%C3%A9thode_OKR",
-        "type": "secondaire"
+        "type": "secondaire",
+        "date": "2026-09-06"
       },
       {
-        "titre": "Documentation Anthropic",
+        "titre": "Anthropic — Claude Docs, référence développeur (platform.claude.com)",
         "url": "https://docs.claude.com",
+        "date": "2026-09-07",
         "type": "primaire"
       }
     ],
@@ -265,7 +273,7 @@
     "scenario_15_20ans": "Le dialogue socratique automatisé pourrait devenir un standard pédagogique assisté par IA, mais la dimension existentielle (l'examen de sa propre vie, au risque de sa vie) reste jugée irréductible à une fonction de dialogue.",
     "confiance": "moyenne",
     "statut": "documente",
-    "derniere_verification": "2026-09-06",
+    "derniere_verification": "2026-09-07",
     "sujet": "Méthode maïeutique et facilitation de la réflexion critique",
     "sous_themes": [
       "Simulation formelle du dialogue socratique",
@@ -283,17 +291,15 @@
         "type": "primaire"
       },
       {
-        "titre": "Ménon (Platon)",
-        "type": "primaire"
-      },
-      {
         "titre": "Socrate",
         "url": "https://fr.wikipedia.org/wiki/Socrate",
-        "type": "secondaire"
+        "type": "secondaire",
+        "date": "2026-09-06"
       },
       {
-        "titre": "Documentation Anthropic",
+        "titre": "Anthropic — Claude Docs, référence développeur (platform.claude.com)",
         "url": "https://docs.claude.com",
+        "date": "2026-09-07",
         "type": "primaire"
       }
     ],
@@ -329,7 +335,7 @@
     "scenario_15_20ans": "L'alliance thérapeutique — facteur le plus prédictif du résultat clinique selon les méta-analyses toutes approches confondues — reste le point de débat central : reproductible par une IA sans présence incarnée, ou irréductiblement humaine ? Question ouverte, pas tranchée par la littérature actuelle.",
     "confiance": "moyenne",
     "statut": "documente",
-    "derniere_verification": "2026-09-05",
+    "derniere_verification": "2026-09-07",
     "sujet": "Accompagnement psychologique de premier niveau et protocoles cliniques structurés",
     "sous_themes": [
       "Psychoéducation et restructuration cognitive guidée",
@@ -345,7 +351,12 @@
       {
         "titre": "Thérapie cognitivo-comportementale",
         "url": "https://fr.wikipedia.org/wiki/Th%C3%A9rapie_cognitivo-comportementale",
-        "type": "secondaire"
+        "type": "secondaire",
+        "date": "2026-09-07"
+      },
+      {
+        "titre": "Beck, A.T. — Cognitive Therapy and the Emotional Disorders",
+        "type": "primaire"
       }
     ],
     "axes_prospectifs": [
@@ -396,8 +407,9 @@
         "type": "primaire"
       },
       {
-        "titre": "Vaswani et al. — Attention Is All You Need (NeurIPS 2017)",
+        "titre": "Vaswani et al., « Attention Is All You Need », NIPS 2017",
         "url": "https://arxiv.org/abs/1706.03762",
+        "date": "2017-06-12",
         "type": "primaire"
       }
     ],
@@ -419,7 +431,7 @@
       }
     ],
     "statut": "documente",
-    "derniere_verification": "2026-09-06"
+    "derniere_verification": "2026-09-07"
   },
   {
     "id": "david-chalmers-vs-claude-cowork",
@@ -451,13 +463,15 @@
         "type": "primaire"
       },
       {
-        "titre": "Documentation Anthropic",
+        "titre": "Anthropic — Claude Docs, référence développeur (platform.claude.com)",
         "url": "https://docs.claude.com",
+        "date": "2026-09-07",
         "type": "primaire"
       },
       {
-        "titre": "Model Card Claude (Anthropic)",
+        "titre": "Claude — page produit (Anthropic)",
         "url": "https://www.anthropic.com/claude",
+        "date": "2026-09-07",
         "type": "primaire"
       }
     ],
@@ -511,8 +525,9 @@
         "type": "primaire"
       },
       {
-        "titre": "LangGraph — Documentation officielle",
+        "titre": "LangGraph — page « Overview » de la référence LangChain Inc.",
         "url": "https://docs.langchain.com/oss/python/langgraph/overview",
+        "date": "2026-09-07",
         "type": "primaire"
       },
       {
@@ -571,8 +586,9 @@
         "type": "primaire"
       },
       {
-        "titre": "Rombach et al. — High-Resolution Image Synthesis with Latent Diffusion Models (2022)",
+        "titre": "Rombach et al., « High-Resolution Image Synthesis with Latent Diffusion Models »",
         "url": "https://arxiv.org/abs/2112.10752",
+        "date": "2021-12-20",
         "type": "primaire"
       }
     ],
@@ -626,8 +642,9 @@
         "type": "primaire"
       },
       {
-        "titre": "Devlin, Chang, Lee, Toutanova — BERT: Pre-training of Deep Bidirectional Transformers (2018)",
+        "titre": "Devlin, Chang, Lee & Toutanova, « BERT: Pre-training of Deep Bidirectional Transformers for Language Understanding »",
         "url": "https://arxiv.org/abs/1810.04805",
+        "date": "2018-10-11",
         "type": "primaire"
       }
     ],
@@ -649,7 +666,7 @@
       }
     ],
     "statut": "documente",
-    "derniere_verification": "2026-09-06"
+    "derniere_verification": "2026-09-07"
   },
   {
     "id": "ludwig-wittgenstein-vs-claude-cowork",
@@ -677,17 +694,19 @@
     ],
     "documents_cles": [
       {
-        "titre": "Recherches philosophiques",
+        "titre": "Ludwig Wittgenstein, Recherches philosophiques (1953)",
         "type": "primaire"
       },
       {
-        "titre": "Anthropic — Claude for Education",
-        "url": "https://www.anthropic.com/education",
+        "titre": "Claude for Education — page produit Anthropic",
+        "url": "https://claude.com/solutions/education",
+        "date": "2026-09-07",
         "type": "primaire"
       },
       {
-        "titre": "Documentation Anthropic",
+        "titre": "Anthropic — Claude Docs, référence développeur (platform.claude.com)",
         "url": "https://docs.claude.com",
+        "date": "2026-09-07",
         "type": "primaire"
       }
     ],
@@ -741,8 +760,9 @@
         "type": "primaire"
       },
       {
-        "titre": "Goodfellow et al. — Generative Adversarial Networks (2014)",
+        "titre": "Goodfellow et al., « Generative Adversarial Networks »",
         "url": "https://arxiv.org/abs/1406.2661",
+        "date": "2014-06-10",
         "type": "primaire"
       }
     ],
@@ -796,8 +816,9 @@
         "type": "primaire"
       },
       {
-        "titre": "Rombach et al. — High-Resolution Image Synthesis with Latent Diffusion Models (2022)",
+        "titre": "Rombach et al., « High-Resolution Image Synthesis with Latent Diffusion Models »",
         "url": "https://arxiv.org/abs/2112.10752",
+        "date": "2021-12-20",
         "type": "primaire"
       }
     ],
@@ -847,7 +868,7 @@
     ],
     "documents_cles": [
       {
-        "titre": "Bernard Stiegler, La Technique et le Temps, t.1 : La faute d'Épiméthée",
+        "titre": "La Technique et le Temps, t.1 : La faute d'Épiméthée",
         "type": "primaire"
       },
       {
@@ -858,8 +879,8 @@
       {
         "titre": "Bernard Stiegler — Wikipédia",
         "url": "https://fr.wikipedia.org/wiki/Bernard_Stiegler",
-        "date": "2026-09-05",
-        "type": "secondaire"
+        "type": "secondaire",
+        "date": "2026-09-05"
       },
       {
         "titre": "Intelligent tutoring system — Wikipedia",
@@ -969,7 +990,7 @@
     ],
     "documents_cles": [
       {
-        "titre": "Jürgen Habermas, Théorie de l'agir communicationnel",
+        "titre": "Théorie de l'agir communicationnel",
         "type": "primaire"
       },
       {
@@ -987,8 +1008,8 @@
       {
         "titre": "Jürgen Habermas — Wikipédia",
         "url": "https://fr.wikipedia.org/wiki/J%C3%BCrgen_Habermas",
-        "date": "2026-09-05",
-        "type": "secondaire"
+        "type": "secondaire",
+        "date": "2026-09-05"
       }
     ],
     "axes_prospectifs": [
@@ -1096,8 +1117,9 @@
         "type": "primaire"
       },
       {
-        "titre": "AutoGPT (dépôt GitHub)",
+        "titre": "AutoGPT (dépôt GitHub officiel)",
         "url": "https://github.com/Significant-Gravitas/AutoGPT",
+        "date": "2026-09-07",
         "type": "primaire"
       }
     ],
@@ -1119,7 +1141,7 @@
       }
     ],
     "statut": "documente",
-    "derniere_verification": "2026-09-06"
+    "derniere_verification": "2026-09-07"
   },
   {
     "id": "john-rawls-vs-biais-donnees",
@@ -1147,17 +1169,14 @@
     ],
     "documents_cles": [
       {
-        "titre": "Théorie de la justice",
-        "type": "primaire"
-      },
-      {
-        "titre": "Corbett-Davies, Goel — The Measure and Mismeasure of Fairness (2018) ; Buolamwini, Gebru — Gender Shades (2018)",
+        "titre": "John Rawls, Théorie de la justice (1971)",
         "type": "primaire"
       },
       {
         "titre": "Biais algorithmique — Wikipédia",
         "url": "https://fr.wikipedia.org/wiki/Biais_algorithmique",
-        "type": "primaire"
+        "date": "2026-09-07",
+        "type": "secondaire"
       }
     ],
     "axes_prospectifs": [
@@ -1210,8 +1229,9 @@
         "type": "primaire"
       },
       {
-        "titre": "Model Card Claude (Anthropic)",
+        "titre": "Claude — page produit (Anthropic)",
         "url": "https://www.anthropic.com/claude",
+        "date": "2026-09-07",
         "type": "primaire"
       },
       {
@@ -1267,7 +1287,7 @@
     ],
     "documents_cles": [
       {
-        "titre": "Peter Singer, La Libération animale (1975)",
+        "titre": "La Libération animale",
         "type": "primaire"
       },
       {
@@ -1279,8 +1299,8 @@
       {
         "titre": "Peter Singer — Wikipédia",
         "url": "https://fr.wikipedia.org/wiki/Peter_Singer",
-        "date": "2026-09-05",
-        "type": "secondaire"
+        "type": "secondaire",
+        "date": "2026-09-05"
       },
       {
         "titre": "Environmental impact of artificial intelligence — Wikipedia",
@@ -1339,13 +1359,15 @@
         "type": "primaire"
       },
       {
-        "titre": "Anthropic — Claude for Education",
-        "url": "https://www.anthropic.com/education",
+        "titre": "Claude for Education — page produit Anthropic",
+        "url": "https://claude.com/solutions/education",
+        "date": "2026-09-07",
         "type": "primaire"
       },
       {
-        "titre": "Documentation Anthropic",
+        "titre": "Anthropic — Claude Docs, référence développeur (platform.claude.com)",
         "url": "https://docs.claude.com",
+        "date": "2026-09-07",
         "type": "primaire"
       }
     ],
@@ -1399,14 +1421,14 @@
         "type": "primaire"
       },
       {
-        "titre": "Jumper et al. — Highly accurate protein structure prediction with AlphaFold (Nature, 2021)",
-        "url": "https://doi.org/10.1038/s41586-021-03819-2",
+        "titre": "Jumper et al., « Highly accurate protein structure prediction with AlphaFold », Nature 596 (2021)",
+        "url": "https://www.nature.com/articles/s41586-021-03819-2",
         "type": "primaire"
       },
       {
         "titre": "AlphaZero — Wikipédia",
         "url": "https://fr.wikipedia.org/wiki/AlphaZero",
-        "type": "primaire"
+        "type": "secondaire"
       }
     ],
     "axes_prospectifs": [
@@ -1427,7 +1449,7 @@
       }
     ],
     "statut": "documente",
-    "derniere_verification": "2026-09-06"
+    "derniere_verification": "2026-09-07"
   },
   {
     "id": "lev-vygotski-vs-tutorat-adaptatif",
@@ -1461,12 +1483,13 @@
       {
         "titre": "Apprentissage adaptatif — Wikipédia",
         "url": "https://fr.wikipedia.org/wiki/Apprentissage_adaptatif",
-        "type": "primaire"
+        "type": "secondaire"
       },
       {
-        "titre": "Intelligent tutoring system — Wikipedia (EN)",
+        "titre": "Intelligent tutoring system — Wikipedia",
         "url": "https://en.wikipedia.org/wiki/Intelligent_tutoring_system",
-        "type": "primaire"
+        "date": "2026-09-07",
+        "type": "secondaire"
       }
     ],
     "axes_prospectifs": [
@@ -1523,13 +1546,10 @@
         "type": "primaire"
       },
       {
-        "titre": "Corbett-Davies, Goel — The Measure and Mismeasure of Fairness (2018) ; Buolamwini, Gebru — Gender Shades (2018)",
-        "type": "primaire"
-      },
-      {
         "titre": "Biais algorithmique — Wikipédia",
         "url": "https://fr.wikipedia.org/wiki/Biais_algorithmique",
-        "type": "primaire"
+        "date": "2026-09-07",
+        "type": "secondaire"
       }
     ],
     "axes_prospectifs": [
@@ -1582,14 +1602,16 @@
         "type": "primaire"
       },
       {
-        "titre": "Rombach et al. — High-Resolution Image Synthesis with Latent Diffusion Models (arXiv 2112.10752)",
+        "titre": "Rombach et al., « High-Resolution Image Synthesis with Latent Diffusion Models »",
         "url": "https://arxiv.org/abs/2112.10752",
+        "date": "2021-12-20",
         "type": "primaire"
       },
       {
-        "titre": "Stable Diffusion — Wikipédia",
-        "url": "https://fr.wikipedia.org/wiki/Stable_Diffusion",
-        "type": "primaire"
+        "titre": "Stable Diffusion — Wikipedia (EN)",
+        "url": "https://en.wikipedia.org/wiki/Stable_Diffusion",
+        "date": "2026-09-07",
+        "type": "secondaire"
       }
     ],
     "axes_prospectifs": [
@@ -1610,7 +1632,7 @@
       }
     ],
     "statut": "documente",
-    "derniere_verification": "2026-09-06"
+    "derniere_verification": "2026-09-07"
   },
   {
     "id": "martin-seligman-vs-devin",
@@ -1649,7 +1671,8 @@
       {
         "titre": "Devin AI — Wikipedia (EN)",
         "url": "https://en.wikipedia.org/wiki/Devin_AI",
-        "type": "primaire"
+        "date": "2026-09-07",
+        "type": "secondaire"
       }
     ],
     "axes_prospectifs": [
@@ -1716,8 +1739,8 @@
       {
         "titre": "Rapport mondial sur le bonheur — Wikipédia",
         "url": "https://fr.wikipedia.org/wiki/Rapport_mondial_sur_le_bonheur",
-        "date": "2026-09-05",
-        "type": "secondaire"
+        "type": "secondaire",
+        "date": "2026-09-05"
       }
     ],
     "axes_prospectifs": [
@@ -1770,13 +1793,9 @@
         "type": "primaire"
       },
       {
-        "titre": "Box, Jenkins — Time Series Analysis: Forecasting and Control (1970)",
-        "type": "primaire"
-      },
-      {
         "titre": "Autoregressive integrated moving average — Wikipedia (EN)",
         "url": "https://en.wikipedia.org/wiki/Autoregressive_integrated_moving_average",
-        "type": "primaire"
+        "type": "secondaire"
       }
     ],
     "axes_prospectifs": [
@@ -1829,17 +1848,15 @@
         "type": "primaire"
       },
       {
-        "titre": "Synthèses académiques sur l'hallucination des LLM (ex. Ji et al., 'Survey of Hallucination in NLG', ACM Computing Surveys)",
-        "type": "primaire"
-      },
-      {
         "titre": "Risque de catastrophe planétaire — Wikipédia",
         "url": "https://fr.wikipedia.org/wiki/Risque_de_catastrophe_plan%C3%A9taire",
-        "type": "secondaire"
+        "type": "secondaire",
+        "date": "2026-09-05"
       },
       {
         "titre": "Hallucination (intelligence artificielle) — Wikipédia",
         "url": "https://fr.wikipedia.org/wiki/Hallucination_(intelligence_artificielle)",
+        "date": "2026-09-07",
         "type": "secondaire"
       }
     ],
@@ -1861,7 +1878,7 @@
       }
     ],
     "statut": "documente",
-    "derniere_verification": "2026-09-06"
+    "derniere_verification": "2026-09-07"
   },
   {
     "id": "quete-de-sens-vs-claude-cowork",
@@ -1893,13 +1910,15 @@
         "type": "primaire"
       },
       {
-        "titre": "Model Card Claude (Anthropic)",
+        "titre": "Claude — page produit (Anthropic)",
         "url": "https://www.anthropic.com/claude",
+        "date": "2026-09-07",
         "type": "primaire"
       },
       {
-        "titre": "Documentation Anthropic",
+        "titre": "Anthropic — Claude Docs, référence développeur (platform.claude.com)",
         "url": "https://docs.claude.com",
+        "date": "2026-09-07",
         "type": "primaire"
       }
     ],
@@ -1949,7 +1968,7 @@
     ],
     "documents_cles": [
       {
-        "titre": "Watson & Crick, « Molecular Structure of Nucleic Acids », Nature, 1953",
+        "titre": "Molecular Structure of Nucleic Acids (Watson & Crick, Nature, 1953)",
         "type": "primaire"
       },
       {
@@ -1960,8 +1979,8 @@
       {
         "titre": "Double hélice — Wikipédia",
         "url": "https://fr.wikipedia.org/wiki/Double_h%C3%A9lice",
-        "date": "2026-09-05",
-        "type": "secondaire"
+        "type": "secondaire",
+        "date": "2026-09-05"
       },
       {
         "titre": "AlphaFold — Wikipédia (article en français)",
@@ -2021,8 +2040,9 @@
         "type": "primaire"
       },
       {
-        "titre": "Lam et al. — Learning skillful medium-range global weather forecasting (Science, 2023)",
+        "titre": "Lam et al., « GraphCast: Learning skillful medium-range global weather forecasting » (arXiv:2212.12794 ; publié dans Science 382, 2023)",
         "url": "https://arxiv.org/abs/2212.12794",
+        "date": "2022-12-24",
         "type": "primaire"
       },
       {
@@ -2082,8 +2102,9 @@
         "type": "primaire"
       },
       {
-        "titre": "Degrave et al. — Magnetic control of tokamak plasmas through deep reinforcement learning (Nature, 2022)",
+        "titre": "Degrave et al., « Magnetic control of tokamak plasmas through deep reinforcement learning », Nature 602 (2022)",
         "url": "https://www.nature.com/articles/s41586-021-04301-9",
+        "date": "2022-02-16",
         "type": "primaire"
       },
       {
@@ -2143,8 +2164,9 @@
         "type": "primaire"
       },
       {
-        "titre": "Merchant et al. — Scaling deep learning for materials discovery (Nature, 2023)",
+        "titre": "Merchant et al., « Scaling deep learning for materials discovery », Nature 624 (2023)",
         "url": "https://www.nature.com/articles/s41586-023-06735-9",
+        "date": "2023-11-29",
         "type": "primaire"
       },
       {
@@ -2203,8 +2225,9 @@
         "type": "primaire"
       },
       {
-        "titre": "LangGraph — Documentation officielle",
+        "titre": "LangGraph — page « Overview » de la référence LangChain Inc.",
         "url": "https://docs.langchain.com/oss/python/langgraph/overview",
+        "date": "2026-09-07",
         "type": "primaire"
       },
       {
@@ -2263,14 +2286,15 @@
         "type": "primaire"
       },
       {
-        "titre": "Vaswani et al. — Attention Is All You Need (arXiv 1706.03762)",
+        "titre": "Vaswani et al., « Attention Is All You Need », NIPS 2017",
         "url": "https://arxiv.org/abs/1706.03762",
+        "date": "2017-06-12",
         "type": "primaire"
       },
       {
         "titre": "Transformeur — Wikipédia",
         "url": "https://fr.wikipedia.org/wiki/Transformeur",
-        "type": "primaire"
+        "type": "secondaire"
       }
     ],
     "axes_prospectifs": [
@@ -2323,14 +2347,15 @@
         "type": "primaire"
       },
       {
-        "titre": "Virtual screening — Wikipedia (EN)",
+        "titre": "Virtual screening — Wikipedia",
         "url": "https://en.wikipedia.org/wiki/Virtual_screening",
-        "type": "primaire"
+        "date": "2026-09-07",
+        "type": "secondaire"
       },
       {
         "titre": "Drug discovery — Wikipedia (EN)",
         "url": "https://en.wikipedia.org/wiki/Drug_discovery",
-        "type": "primaire"
+        "type": "secondaire"
       }
     ],
     "axes_prospectifs": [
@@ -2383,21 +2408,20 @@
         "type": "primaire"
       },
       {
-        "titre": "Jumper et al., 'Highly accurate protein structure prediction with AlphaFold', Nature 2021",
-        "type": "primaire"
-      },
-      {
-        "titre": "Nature — AlphaFold Protein Structure Database",
+        "titre": "Jumper et al., « Highly accurate protein structure prediction with AlphaFold », Nature 596 (2021)",
+        "url": "https://www.nature.com/articles/s41586-021-03819-2",
         "type": "primaire"
       },
       {
         "titre": "CRISPR — Wikipédia",
         "url": "https://fr.wikipedia.org/wiki/CRISPR",
-        "type": "secondaire"
+        "type": "secondaire",
+        "date": "2026-09-05"
       },
       {
         "titre": "AlphaFold — Wikipédia (article en français)",
         "url": "https://fr.wikipedia.org/wiki/AlphaFold",
+        "date": "2026-09-07",
         "type": "secondaire"
       }
     ],
@@ -2448,16 +2472,15 @@
     ],
     "documents_cles": [
       {
-        "titre": "Simulating Physics with Computers (Feynman, 1982)",
-        "type": "primaire"
-      },
-      {
-        "titre": "Luccioni, Jernite, Strubell — Power Hungry Processing (2024) ; Li et al. — Making AI Less Thirsty (2023) ; AIE — rapports sur la demande électrique des centres de données",
-        "type": "primaire"
-      },
-      {
-        "titre": "Environmental impact of artificial intelligence — Wikipedia (EN)",
+        "titre": "Environmental impact of artificial intelligence — Wikipedia",
         "url": "https://en.wikipedia.org/wiki/Environmental_impact_of_artificial_intelligence",
+        "date": "2026-09-07",
+        "type": "secondaire"
+      },
+      {
+        "titre": "Lov K. Grover, « A fast quantum mechanical algorithm for database search » (arXiv:quant-ph/9605043)",
+        "url": "https://arxiv.org/abs/quant-ph/9605043",
+        "date": "1996-05-29",
         "type": "primaire"
       }
     ],
@@ -2511,14 +2534,15 @@
         "type": "primaire"
       },
       {
-        "titre": "Hochreiter, Schmidhuber — Long Short-Term Memory (Neural Computation, 1997)",
-        "url": "https://www.bioinf.jku.at/publications/older/2604.pdf",
+        "titre": "Hochreiter & Schmidhuber, « Long Short-Term Memory », Neural Computation 9(8), 1997",
+        "url": "https://doi.org/10.1162/neco.1997.9.8.1735",
         "type": "primaire"
       },
       {
         "titre": "Long short-term memory — Wikipedia (EN)",
         "url": "https://en.wikipedia.org/wiki/Long_short-term_memory",
-        "type": "primaire"
+        "date": "2026-09-07",
+        "type": "secondaire"
       }
     ],
     "axes_prospectifs": [
@@ -2583,10 +2607,10 @@
         "type": "secondaire"
       },
       {
-        "titre": "Démocratie libérale — Wikipédia",
+        "titre": "Démocratie libérale",
         "url": "https://fr.wikipedia.org/wiki/D%C3%A9mocratie_lib%C3%A9rale",
-        "date": "2026-09-07",
-        "type": "secondaire"
+        "type": "secondaire",
+        "date": "2026-09-07"
       }
     ],
     "axes_prospectifs": [
@@ -2637,15 +2661,13 @@
       {
         "titre": "Social-démocratie — Wikipédia",
         "url": "https://fr.wikipedia.org/wiki/Social-d%C3%A9mocratie",
-        "type": "secondaire"
-      },
-      {
-        "titre": "Berkson (1944, 1951) — première formulation du modèle logit",
-        "type": "primaire"
+        "type": "secondaire",
+        "date": "2026-09-05"
       },
       {
         "titre": "Régression logistique — Wikipédia",
-        "url": "https://fr.wikipedia.org/wiki/R%C3%A9gression_logistique",
+        "url": "https://fr.wikipedia.org/wiki/Régression_logistique",
+        "date": "2026-09-07",
         "type": "secondaire"
       }
     ],
@@ -2697,16 +2719,19 @@
       {
         "titre": "Régime parlementaire — Wikipédia",
         "url": "https://fr.wikipedia.org/wiki/R%C3%A9gime_parlementaire",
-        "type": "secondaire"
+        "type": "secondaire",
+        "date": "2026-09-05"
       },
       {
-        "titre": "Documentation Anthropic",
+        "titre": "Anthropic — Claude Docs, référence développeur (platform.claude.com)",
         "url": "https://docs.claude.com",
+        "date": "2026-09-07",
         "type": "primaire"
       },
       {
-        "titre": "Model Card Claude (Anthropic)",
+        "titre": "Claude — page produit (Anthropic)",
         "url": "https://www.anthropic.com/claude",
+        "date": "2026-09-07",
         "type": "primaire"
       }
     ],
@@ -2758,15 +2783,13 @@
       {
         "titre": "Marxisme-léninisme — Wikipédia",
         "url": "https://fr.wikipedia.org/wiki/Marxisme-l%C3%A9ninisme",
-        "type": "secondaire"
-      },
-      {
-        "titre": "Corbett-Davies, Goel — The Measure and Mismeasure of Fairness (2018) ; Buolamwini, Gebru — Gender Shades (2018)",
-        "type": "primaire"
+        "type": "secondaire",
+        "date": "2026-09-07"
       },
       {
         "titre": "Biais algorithmique — Wikipédia",
         "url": "https://fr.wikipedia.org/wiki/Biais_algorithmique",
+        "date": "2026-09-07",
         "type": "secondaire"
       }
     ],
@@ -2818,16 +2841,19 @@
       {
         "titre": "Totalitarisme — Wikipédia",
         "url": "https://fr.wikipedia.org/wiki/Totalitarisme",
-        "type": "secondaire"
+        "type": "secondaire",
+        "date": "2026-09-07"
       },
       {
-        "titre": "Rombach et al. — High-Resolution Image Synthesis with Latent Diffusion Models (2022)",
+        "titre": "Rombach et al., « High-Resolution Image Synthesis with Latent Diffusion Models »",
         "url": "https://arxiv.org/abs/2112.10752",
+        "date": "2021-12-20",
         "type": "primaire"
       },
       {
-        "titre": "Stable Diffusion — Wikipédia",
-        "url": "https://fr.wikipedia.org/wiki/Stable_Diffusion",
+        "titre": "Stable Diffusion — Wikipedia (EN)",
+        "url": "https://en.wikipedia.org/wiki/Stable_Diffusion",
+        "date": "2026-09-07",
         "type": "secondaire"
       }
     ],
@@ -2879,7 +2905,8 @@
       {
         "titre": "Illiberal democracy — Wikipedia (EN)",
         "url": "https://en.wikipedia.org/wiki/Illiberal_democracy",
-        "type": "secondaire"
+        "type": "secondaire",
+        "date": "2026-09-05"
       },
       {
         "titre": "OpenAI — Introducing Operator (janvier 2025)",
@@ -2887,8 +2914,9 @@
         "type": "primaire"
       },
       {
-        "titre": "OpenAI Operator — Wikipedia (EN)",
-        "url": "https://en.wikipedia.org/wiki/OpenAI_Operator",
+        "titre": "OpenAI — Wikipedia (EN)",
+        "url": "https://en.wikipedia.org/wiki/OpenAI",
+        "date": "2026-09-07",
         "type": "secondaire"
       }
     ],
@@ -2940,11 +2968,13 @@
       {
         "titre": "Technocratie — Wikipédia",
         "url": "https://fr.wikipedia.org/wiki/Technocratie",
-        "type": "secondaire"
+        "type": "secondaire",
+        "date": "2026-09-05"
       },
       {
-        "titre": "LangGraph — Documentation officielle",
+        "titre": "LangGraph — page « Overview » de la référence LangChain Inc.",
         "url": "https://docs.langchain.com/oss/python/langgraph/overview",
+        "date": "2026-09-07",
         "type": "primaire"
       },
       {
@@ -3002,11 +3032,13 @@
       {
         "titre": "Project Cybersyn — Wikipedia (EN)",
         "url": "https://en.wikipedia.org/wiki/Project_Cybersyn",
-        "type": "secondaire"
+        "type": "secondaire",
+        "date": "2026-09-05"
       },
       {
-        "titre": "Vaswani et al. — Attention Is All You Need (NeurIPS 2017)",
+        "titre": "Vaswani et al., « Attention Is All You Need », NIPS 2017",
         "url": "https://arxiv.org/abs/1706.03762",
+        "date": "2017-06-12",
         "type": "primaire"
       },
       {
@@ -3033,7 +3065,7 @@
       }
     ],
     "statut": "documente",
-    "derniere_verification": "2026-09-06"
+    "derniere_verification": "2026-09-07"
   },
   {
     "id": "libertarianisme-vs-llama",
@@ -3063,16 +3095,19 @@
       {
         "titre": "Libertarianisme — Wikipédia",
         "url": "https://fr.wikipedia.org/wiki/Libertarianisme",
-        "type": "secondaire"
+        "type": "secondaire",
+        "date": "2026-09-05"
       },
       {
-        "titre": "Touvron et al. — LLaMA: Open and Efficient Foundation Language Models (2023)",
+        "titre": "Touvron et al., « LLaMA: Open and Efficient Foundation Language Models »",
         "url": "https://arxiv.org/abs/2302.13971",
+        "date": "2023-02-27",
         "type": "primaire"
       },
       {
-        "titre": "LLaMA — Wikipédia",
-        "url": "https://fr.wikipedia.org/wiki/LLaMA",
+        "titre": "Llama (language model) — Wikipedia (EN)",
+        "url": "https://en.wikipedia.org/wiki/Llama_(language_model)",
+        "date": "2026-09-07",
         "type": "secondaire"
       }
     ],
@@ -3124,15 +3159,13 @@
       {
         "titre": "National-populisme — Wikipédia",
         "url": "https://fr.wikipedia.org/wiki/National-populisme",
-        "type": "secondaire"
+        "type": "secondaire",
+        "date": "2026-09-07"
       },
       {
-        "titre": "Lloyd — Least squares quantization in PCM (1957, publié 1982) ; MacQueen (1967)",
-        "type": "primaire"
-      },
-      {
-        "titre": "Algorithme des k-moyennes — Wikipédia",
+        "titre": "K-moyennes — Wikipédia",
         "url": "https://fr.wikipedia.org/wiki/K-moyennes",
+        "date": "2026-09-07",
         "type": "secondaire"
       }
     ],
@@ -3185,15 +3218,13 @@
       {
         "titre": "Souverainisme — Wikipédia",
         "url": "https://fr.wikipedia.org/wiki/Souverainisme",
-        "type": "secondaire"
+        "type": "secondaire",
+        "date": "2026-09-05"
       },
       {
-        "titre": "Luccioni, Jernite, Strubell — Power Hungry Processing (2024) ; Li et al. — Making AI Less Thirsty (2023) ; AIE — rapports sur la demande électrique des centres de données",
-        "type": "primaire"
-      },
-      {
-        "titre": "Environmental impact of artificial intelligence — Wikipedia (EN)",
+        "titre": "Environmental impact of artificial intelligence — Wikipedia",
         "url": "https://en.wikipedia.org/wiki/Environmental_impact_of_artificial_intelligence",
+        "date": "2026-09-07",
         "type": "secondaire"
       }
     ],
@@ -3245,16 +3276,18 @@
       {
         "titre": "Théorie des perspectives — Wikipédia",
         "url": "https://fr.wikipedia.org/wiki/Th%C3%A9orie_des_perspectives",
-        "type": "secondaire"
+        "type": "secondaire",
+        "date": "2026-09-05"
       },
       {
-        "titre": "Chen, Guestrin — XGBoost: A Scalable Tree Boosting System (2016) ; Friedman — Greedy Function Approximation (2001)",
+        "titre": "Chen & Guestrin, « XGBoost: A Scalable Tree Boosting System », KDD 2016",
         "url": "https://arxiv.org/abs/1603.02754",
         "type": "primaire"
       },
       {
-        "titre": "Gradient boosting — Wikipédia",
-        "url": "https://fr.wikipedia.org/wiki/Gradient_boosting",
+        "titre": "Gradient boosting — Wikipedia (EN)",
+        "url": "https://en.wikipedia.org/wiki/Gradient_boosting",
+        "date": "2026-09-07",
         "type": "secondaire"
       }
     ],
@@ -3306,11 +3339,8 @@
       {
         "titre": "Modèle Black-Scholes — Wikipédia",
         "url": "https://fr.wikipedia.org/wiki/Mod%C3%A8le_Black-Scholes",
-        "type": "secondaire"
-      },
-      {
-        "titre": "Box, Jenkins — Time Series Analysis: Forecasting and Control (1970)",
-        "type": "primaire"
+        "type": "secondaire",
+        "date": "2026-09-05"
       },
       {
         "titre": "Autoregressive integrated moving average — Wikipedia (EN)",
@@ -3366,15 +3396,13 @@
       {
         "titre": "Modèle d'évaluation des actifs financiers — Wikipédia",
         "url": "https://fr.wikipedia.org/wiki/Mod%C3%A8le_d%27%C3%A9valuation_des_actifs_financiers",
-        "type": "secondaire"
-      },
-      {
-        "titre": "Pearson — On lines and planes of closest fit to systems of points in space (1901) ; Hotelling (1933)",
-        "type": "primaire"
+        "type": "secondaire",
+        "date": "2026-09-05"
       },
       {
         "titre": "Analyse en composantes principales — Wikipédia",
         "url": "https://fr.wikipedia.org/wiki/Analyse_en_composantes_principales",
+        "date": "2026-09-07",
         "type": "secondaire"
       }
     ],
@@ -3427,11 +3455,13 @@
       {
         "titre": "Modèle de Solow — Wikipédia",
         "url": "https://fr.wikipedia.org/wiki/Mod%C3%A8le_de_Solow",
-        "type": "secondaire"
+        "type": "secondaire",
+        "date": "2026-09-07"
       },
       {
-        "titre": "Merchant et al. — Scaling deep learning for materials discovery (Nature 624, 2023)",
+        "titre": "Merchant et al., « Scaling deep learning for materials discovery », Nature 624 (2023)",
         "url": "https://www.nature.com/articles/s41586-023-06735-9",
+        "date": "2023-11-29",
         "type": "primaire"
       },
       {
@@ -3488,15 +3518,13 @@
       {
         "titre": "Capitalisme de plateforme — Wikipédia",
         "url": "https://fr.wikipedia.org/wiki/Capitalisme_de_plateforme",
-        "type": "secondaire"
-      },
-      {
-        "titre": "Cover, Hart — Nearest neighbor pattern classification (1967)",
-        "type": "primaire"
+        "type": "secondaire",
+        "date": "2026-09-05"
       },
       {
         "titre": "Méthode des k plus proches voisins — Wikipédia",
-        "url": "https://fr.wikipedia.org/wiki/M%C3%A9thode_des_k_plus_proches_voisins",
+        "url": "https://fr.wikipedia.org/wiki/Méthode_des_k_plus_proches_voisins",
+        "date": "2026-09-07",
         "type": "secondaire"
       }
     ],
@@ -3548,16 +3576,18 @@
       {
         "titre": "Esther Duflo — Wikipédia",
         "url": "https://fr.wikipedia.org/wiki/Esther_Duflo",
-        "type": "secondaire"
+        "type": "secondaire",
+        "date": "2026-09-05"
       },
       {
-        "titre": "Breiman — Random Forests (Machine Learning 45, 2001)",
-        "url": "https://link.springer.com/article/10.1023/A:1010933404324",
+        "titre": "Leo Breiman, « Random Forests », Machine Learning 45(1), 2001",
+        "url": "https://doi.org/10.1023/A:1010933404324",
         "type": "primaire"
       },
       {
         "titre": "Forêt d'arbres décisionnels — Wikipédia",
-        "url": "https://fr.wikipedia.org/wiki/For%C3%AAt_d%27arbres_d%C3%A9cisionnels",
+        "url": "https://fr.wikipedia.org/wiki/Forêt_d'arbres_décisionnels",
+        "date": "2026-09-07",
         "type": "secondaire"
       }
     ],
@@ -3609,15 +3639,13 @@
       {
         "titre": "Thomas Piketty — Wikipédia",
         "url": "https://fr.wikipedia.org/wiki/Thomas_Piketty",
-        "type": "secondaire"
-      },
-      {
-        "titre": "Legendre (1805) et Gauss (1795-1821) — méthode des moindres carrés ; Galton (1886) pour le terme « régression »",
-        "type": "primaire"
+        "type": "secondaire",
+        "date": "2026-09-05"
       },
       {
         "titre": "Régression linéaire — Wikipédia",
-        "url": "https://fr.wikipedia.org/wiki/R%C3%A9gression_lin%C3%A9aire",
+        "url": "https://fr.wikipedia.org/wiki/Régression_linéaire",
+        "date": "2026-09-07",
         "type": "secondaire"
       }
     ],
@@ -3669,10 +3697,13 @@
       {
         "titre": "Friedrich Hayek — Wikipédia",
         "url": "https://fr.wikipedia.org/wiki/Friedrich_Hayek",
-        "type": "secondaire"
+        "type": "secondaire",
+        "date": "2026-09-05"
       },
       {
-        "titre": "Synthèses académiques sur l'hallucination des LLM (ex. Ji et al., 'Survey of Hallucination in NLG', ACM Computing Surveys)",
+        "titre": "Ji et al., « Survey of Hallucination in Natural Language Generation », ACM Computing Surveys",
+        "url": "https://arxiv.org/abs/2202.03629",
+        "date": "2022-02-08",
         "type": "secondaire"
       }
     ],
@@ -3694,7 +3725,7 @@
       }
     ],
     "statut": "documente",
-    "derniere_verification": "2026-09-06"
+    "derniere_verification": "2026-09-07"
   },
   {
     "id": "economie-circulaire-vs-jumeaux-numeriques",
@@ -3725,15 +3756,13 @@
       {
         "titre": "Économie circulaire — Wikipédia",
         "url": "https://fr.wikipedia.org/wiki/%C3%89conomie_circulaire",
-        "type": "secondaire"
-      },
-      {
-        "titre": "Grieves — Digital Twin: Manufacturing Excellence through Virtual Factory Replication (Florida Institute of Technology, 2014)",
-        "type": "primaire"
+        "type": "secondaire",
+        "date": "2026-09-05"
       },
       {
         "titre": "Jumeau numérique — Wikipédia",
         "url": "https://fr.wikipedia.org/wiki/Jumeau_num%C3%A9rique",
+        "date": "2026-09-07",
         "type": "secondaire"
       }
     ],
@@ -3785,11 +3814,12 @@
       {
         "titre": "Joseph Schumpeter — Wikipédia",
         "url": "https://fr.wikipedia.org/wiki/Joseph_Schumpeter",
-        "type": "secondaire"
+        "type": "secondaire",
+        "date": "2026-09-07"
       },
       {
-        "titre": "Jumper et al. — Highly accurate protein structure prediction with AlphaFold (Nature, 2021)",
-        "url": "https://doi.org/10.1038/s41586-021-03819-2",
+        "titre": "Jumper et al., « Highly accurate protein structure prediction with AlphaFold », Nature 596 (2021)",
+        "url": "https://www.nature.com/articles/s41586-021-03819-2",
         "type": "primaire"
       },
       {
@@ -3848,8 +3878,9 @@
         "type": "primaire"
       },
       {
-        "titre": "Lam et al. — Learning skillful medium-range global weather forecasting (Science 382, 2023)",
+        "titre": "Lam et al., « GraphCast: Learning skillful medium-range global weather forecasting » (arXiv:2212.12794 ; publié dans Science 382, 2023)",
         "url": "https://arxiv.org/abs/2212.12794",
+        "date": "2022-12-24",
         "type": "primaire"
       },
       {
@@ -3908,13 +3939,15 @@
         "type": "primaire"
       },
       {
-        "titre": "OpenAI — Codex",
+        "titre": "OpenAI — Codex, page produit",
         "url": "https://openai.com/codex",
+        "date": "2026-09-07",
         "type": "primaire"
       },
       {
         "titre": "OpenAI Platform — Models overview",
         "url": "https://platform.openai.com/docs/models",
+        "date": "2026-09-07",
         "type": "primaire"
       }
     ],
@@ -3969,13 +4002,15 @@
         "type": "primaire"
       },
       {
-        "titre": "Degrave et al. — Magnetic control of tokamak plasmas through deep reinforcement learning (Nature 602, 2022)",
+        "titre": "Degrave et al., « Magnetic control of tokamak plasmas through deep reinforcement learning », Nature 602 (2022)",
         "url": "https://www.nature.com/articles/s41586-021-04301-9",
+        "date": "2022-02-16",
         "type": "primaire"
       },
       {
-        "titre": "Google DeepMind — Accelerating fusion science through learned plasma control (blog)",
-        "url": "https://deepmind.google/blog/accelerating-fusion-science-through-learned-plasma-control/",
+        "titre": "Accelerating fusion science through learned plasma control (Google DeepMind)",
+        "url": "https://deepmind.google/discover/blog/accelerating-fusion-science-through-learned-plasma-control/",
+        "date": "2026-09-07",
         "type": "primaire"
       }
     ],
@@ -4029,13 +4064,10 @@
         "type": "primaire"
       },
       {
-        "titre": "Luccioni, Jernite, Strubell — Power Hungry Processing (2024) ; Li et al. — Making AI Less Thirsty (2023) ; AIE — rapports sur la demande électrique des centres de données",
-        "type": "primaire"
-      },
-      {
-        "titre": "Environmental impact of artificial intelligence — Wikipedia (EN)",
+        "titre": "Environmental impact of artificial intelligence — Wikipedia",
         "url": "https://en.wikipedia.org/wiki/Environmental_impact_of_artificial_intelligence",
-        "type": "primaire"
+        "date": "2026-09-07",
+        "type": "secondaire"
       }
     ],
     "axes_prospectifs": [
@@ -4088,8 +4120,9 @@
         "type": "primaire"
       },
       {
-        "titre": "Lam et al. — Learning skillful medium-range global weather forecasting (Science 382, 2023)",
+        "titre": "Lam et al., « GraphCast: Learning skillful medium-range global weather forecasting » (arXiv:2212.12794 ; publié dans Science 382, 2023)",
         "url": "https://arxiv.org/abs/2212.12794",
+        "date": "2022-12-24",
         "type": "primaire"
       },
       {
@@ -4163,9 +4196,9 @@
       },
       {
         "titre": "Multilatéralisme — Wikipédia",
+        "type": "secondaire",
         "url": "https://fr.wikipedia.org/wiki/Multilatéralisme",
-        "date": "2026-09-06",
-        "type": "secondaire"
+        "date": "2026-09-06"
       }
     ],
     "axes_prospectifs": [
@@ -4214,18 +4247,16 @@
     ],
     "documents_cles": [
       {
-        "titre": "Multipolarité",
+        "titre": "Multipolarité — Wikipédia",
+        "type": "secondaire",
         "url": "https://fr.wikipedia.org/wiki/Multipolarité",
-        "type": "primaire"
-      },
-      {
-        "titre": "Corbett-Davies, Goel — The Measure and Mismeasure of Fairness (2018) ; Buolamwini, Gebru — Gender Shades (2018)",
-        "type": "primaire"
+        "date": "2026-09-06"
       },
       {
         "titre": "Biais algorithmique — Wikipédia",
         "url": "https://fr.wikipedia.org/wiki/Biais_algorithmique",
-        "type": "primaire"
+        "date": "2026-09-07",
+        "type": "secondaire"
       }
     ],
     "axes_prospectifs": [
@@ -4274,13 +4305,15 @@
     ],
     "documents_cles": [
       {
-        "titre": "Gouvernance mondiale",
+        "titre": "Gouvernance mondiale — Wikipédia",
+        "type": "secondaire",
         "url": "https://fr.wikipedia.org/wiki/Gouvernance_mondiale",
-        "type": "primaire"
+        "date": "2026-09-06"
       },
       {
-        "titre": "LangGraph — Documentation officielle",
+        "titre": "LangGraph — page « Overview » de la référence LangChain Inc.",
         "url": "https://docs.langchain.com/oss/python/langgraph/overview",
+        "date": "2026-09-07",
         "type": "primaire"
       },
       {
@@ -4335,9 +4368,10 @@
     ],
     "documents_cles": [
       {
-        "titre": "Gouvernance mondiale",
+        "titre": "Gouvernance mondiale — Wikipédia",
         "url": "https://fr.wikipedia.org/wiki/Gouvernance_mondiale",
-        "type": "primaire"
+        "date": "2026-09-07",
+        "type": "secondaire"
       },
       {
         "titre": "OpenAI — Introducing Operator (janvier 2025)",
@@ -4345,9 +4379,10 @@
         "type": "primaire"
       },
       {
-        "titre": "OpenAI Operator — Wikipedia (EN)",
-        "url": "https://en.wikipedia.org/wiki/OpenAI_Operator",
-        "type": "primaire"
+        "titre": "OpenAI — Wikipedia (EN)",
+        "url": "https://en.wikipedia.org/wiki/OpenAI",
+        "date": "2026-09-07",
+        "type": "secondaire"
       }
     ],
     "axes_prospectifs": [
@@ -4416,8 +4451,8 @@
       {
         "titre": "Organisation des Nations unies — Wikipédia",
         "url": "https://fr.wikipedia.org/wiki/Organisation_des_Nations_unies",
-        "date": "2026-09-05",
-        "type": "secondaire"
+        "type": "secondaire",
+        "date": "2026-09-05"
       }
     ],
     "axes_prospectifs": [
@@ -4466,18 +4501,15 @@
     ],
     "documents_cles": [
       {
-        "titre": "Fonds monétaire international",
+        "titre": "Fonds monétaire international — Wikipédia",
         "url": "https://fr.wikipedia.org/wiki/Fonds_monétaire_international",
-        "type": "primaire"
-      },
-      {
-        "titre": "Box, Jenkins — Time Series Analysis: Forecasting and Control (1970)",
-        "type": "primaire"
+        "type": "secondaire",
+        "date": "2026-09-05"
       },
       {
         "titre": "Autoregressive integrated moving average — Wikipedia (EN)",
         "url": "https://en.wikipedia.org/wiki/Autoregressive_integrated_moving_average",
-        "type": "primaire"
+        "type": "secondaire"
       }
     ],
     "axes_prospectifs": [
@@ -4526,17 +4558,14 @@
     ],
     "documents_cles": [
       {
-        "titre": "IPBES",
+        "titre": "IPBES — Wikipedia (EN)",
         "url": "https://en.wikipedia.org/wiki/Intergovernmental_Science-Policy_Platform_on_Biodiversity_and_Ecosystem_Services",
-        "type": "primaire"
+        "type": "secondaire",
+        "date": "2026-09-05"
       },
       {
         "titre": "Krizhevsky, Sutskever, Hinton — ImageNet Classification with Deep CNNs (2012)",
         "url": "https://papers.nips.cc/paper/4824-imagenet-classification-with-deep-convolutional-neural-networks",
-        "type": "primaire"
-      },
-      {
-        "titre": "Fukushima — Neocognitron (1980) ; LeCun et al. — Gradient-based learning applied to document recognition (1998)",
         "type": "primaire"
       }
     ],
@@ -4587,19 +4616,20 @@
     ],
     "documents_cles": [
       {
-        "titre": "GAVI, the Vaccine Alliance",
+        "titre": "GAVI — Wikipedia (EN)",
         "url": "https://en.wikipedia.org/wiki/GAVI",
-        "type": "primaire"
+        "type": "secondaire",
+        "date": "2026-09-05"
       },
       {
-        "titre": "Jumper et al. — Highly accurate protein structure prediction with AlphaFold (2021)",
-        "url": "https://doi.org/10.1038/s41586-021-03819-2",
+        "titre": "Jumper et al., « Highly accurate protein structure prediction with AlphaFold », Nature 596 (2021)",
+        "url": "https://www.nature.com/articles/s41586-021-03819-2",
         "type": "primaire"
       },
       {
         "titre": "Virtual screening — Wikipedia (EN)",
         "url": "https://en.wikipedia.org/wiki/Virtual_screening",
-        "type": "primaire"
+        "type": "secondaire"
       }
     ],
     "axes_prospectifs": [
@@ -4648,19 +4678,21 @@
     ],
     "documents_cles": [
       {
-        "titre": "Organisation de coopération et de développement économiques",
+        "titre": "OCDE — Wikipédia",
         "url": "https://fr.wikipedia.org/wiki/Organisation_de_coopération_et_de_développement_économiques",
-        "type": "primaire"
+        "type": "secondaire",
+        "date": "2026-09-05"
       },
       {
-        "titre": "Chen, Guestrin — XGBoost: A Scalable Tree Boosting System (2016) ; Friedman — Greedy Function Approximation (2001)",
+        "titre": "Chen & Guestrin, « XGBoost: A Scalable Tree Boosting System », KDD 2016",
         "url": "https://arxiv.org/abs/1603.02754",
         "type": "primaire"
       },
       {
-        "titre": "Gradient boosting — Wikipédia",
-        "url": "https://fr.wikipedia.org/wiki/Gradient_boosting",
-        "type": "primaire"
+        "titre": "Gradient boosting — Wikipedia (EN)",
+        "url": "https://en.wikipedia.org/wiki/Gradient_boosting",
+        "date": "2026-09-07",
+        "type": "secondaire"
       }
     ],
     "axes_prospectifs": [
@@ -4709,12 +4741,15 @@
     ],
     "documents_cles": [
       {
-        "titre": "Cour pénale internationale",
+        "titre": "Cour pénale internationale — Wikipédia",
         "url": "https://fr.wikipedia.org/wiki/Cour_pénale_internationale",
-        "type": "primaire"
+        "type": "secondaire",
+        "date": "2026-09-05"
       },
       {
-        "titre": "Synthèses académiques sur l'hallucination des LLM (ex. Ji et al., 'Survey of Hallucination in NLG', ACM Computing Surveys)",
+        "titre": "Statut de Rome de la Cour pénale internationale (Nations unies, texte français)",
+        "url": "https://legal.un.org/icc/statute/french/rome_statute(f).pdf",
+        "date": "1998-07-17",
         "type": "primaire"
       }
     ],
@@ -4736,7 +4771,7 @@
       }
     ],
     "statut": "documente",
-    "derniere_verification": "2026-09-06"
+    "derniere_verification": "2026-09-07"
   },
   {
     "id": "banque-mondiale-vs-regression-logistique",
@@ -4764,18 +4799,16 @@
     ],
     "documents_cles": [
       {
-        "titre": "Banque mondiale",
+        "titre": "Banque mondiale — Wikipédia",
         "url": "https://fr.wikipedia.org/wiki/Banque_mondiale",
-        "type": "primaire"
-      },
-      {
-        "titre": "Berkson (1944, 1951) — première formulation du modèle logit",
-        "type": "primaire"
+        "type": "secondaire",
+        "date": "2026-09-05"
       },
       {
         "titre": "Régression logistique — Wikipédia",
-        "url": "https://fr.wikipedia.org/wiki/R%C3%A9gression_logistique",
-        "type": "primaire"
+        "url": "https://fr.wikipedia.org/wiki/Régression_logistique",
+        "date": "2026-09-07",
+        "type": "secondaire"
       }
     ],
     "axes_prospectifs": [
@@ -4825,19 +4858,22 @@
     ],
     "documents_cles": [
       {
-        "titre": "Organisation du traité de l'Atlantique nord",
+        "titre": "OTAN — Wikipédia",
         "url": "https://fr.wikipedia.org/wiki/Organisation_du_traité_de_l'Atlantique_nord",
-        "type": "primaire"
+        "type": "secondaire",
+        "date": "2026-09-05"
       },
       {
-        "titre": "Redmon et al. — You Only Look Once: Unified, Real-Time Object Detection (2015)",
+        "titre": "Redmon, Divvala, Girshick & Farhadi, « You Only Look Once: Unified, Real-Time Object Detection »",
         "url": "https://arxiv.org/abs/1506.02640",
+        "date": "2016-05-09",
         "type": "primaire"
       },
       {
         "titre": "You Only Look Once — Wikipedia (EN)",
         "url": "https://en.wikipedia.org/wiki/You_Only_Look_Once",
-        "type": "primaire"
+        "date": "2026-09-07",
+        "type": "secondaire"
       }
     ],
     "axes_prospectifs": [
@@ -4887,18 +4923,16 @@
     ],
     "documents_cles": [
       {
-        "titre": "Toyotisme",
+        "titre": "Toyotisme — Wikipédia",
+        "type": "secondaire",
         "url": "https://fr.wikipedia.org/wiki/Toyotisme",
-        "type": "primaire"
-      },
-      {
-        "titre": "Grieves — Digital Twin: Manufacturing Excellence through Virtual Factory Replication (Florida Institute of Technology, 2014)",
-        "type": "primaire"
+        "date": "2026-09-05"
       },
       {
         "titre": "Jumeau numérique — Wikipédia",
         "url": "https://fr.wikipedia.org/wiki/Jumeau_num%C3%A9rique",
-        "type": "primaire"
+        "date": "2026-09-07",
+        "type": "secondaire"
       }
     ],
     "axes_prospectifs": [
@@ -4948,17 +4982,15 @@
     "documents_cles": [
       {
         "titre": "Max Weber",
+        "type": "primaire",
         "url": "https://fr.wikipedia.org/wiki/Max_Weber",
-        "type": "primaire"
-      },
-      {
-        "titre": "Breiman, Friedman, Olshen, Stone — CART (1984) ; Quinlan — ID3 / C4.5",
-        "type": "primaire"
+        "date": "2026-09-05"
       },
       {
         "titre": "Arbre de décision (apprentissage) — Wikipédia",
-        "url": "https://fr.wikipedia.org/wiki/Arbre_de_d%C3%A9cision_(apprentissage)",
-        "type": "primaire"
+        "url": "https://fr.wikipedia.org/wiki/Arbre_de_décision_(apprentissage)",
+        "date": "2026-09-07",
+        "type": "secondaire"
       }
     ],
     "axes_prospectifs": [
@@ -5007,18 +5039,16 @@
     ],
     "documents_cles": [
       {
-        "titre": "Direction par objectifs",
+        "titre": "Direction par objectifs — Wikipédia",
+        "type": "secondaire",
         "url": "https://fr.wikipedia.org/wiki/Direction_par_objectifs",
-        "type": "primaire"
-      },
-      {
-        "titre": "Legendre (1805) et Gauss (1795-1821) — méthode des moindres carrés ; Galton (1886) pour le terme « régression »",
-        "type": "primaire"
+        "date": "2026-09-05"
       },
       {
         "titre": "Régression linéaire — Wikipédia",
-        "url": "https://fr.wikipedia.org/wiki/R%C3%A9gression_lin%C3%A9aire",
-        "type": "primaire"
+        "url": "https://fr.wikipedia.org/wiki/Régression_linéaire",
+        "date": "2026-09-07",
+        "type": "secondaire"
       }
     ],
     "axes_prospectifs": [
@@ -5067,9 +5097,10 @@
     ],
     "documents_cles": [
       {
-        "titre": "Scrum (développement)",
+        "titre": "Scrum — Wikipédia",
+        "type": "secondaire",
         "url": "https://fr.wikipedia.org/wiki/Scrum_(développement)",
-        "type": "primaire"
+        "date": "2026-09-05"
       },
       {
         "titre": "Cognition — Introducing Devin (mars 2024)",
@@ -5079,7 +5110,8 @@
       {
         "titre": "Devin AI — Wikipedia (EN)",
         "url": "https://en.wikipedia.org/wiki/Devin_AI",
-        "type": "primaire"
+        "date": "2026-09-07",
+        "type": "secondaire"
       }
     ],
     "axes_prospectifs": [
@@ -5128,18 +5160,21 @@
     ],
     "documents_cles": [
       {
-        "titre": "Holacratie",
+        "titre": "Holacratie — Wikipédia",
+        "type": "secondaire",
         "url": "https://fr.wikipedia.org/wiki/Holacratie",
-        "type": "primaire"
+        "date": "2026-09-05"
       },
       {
-        "titre": "CrewAI — Documentation officielle",
+        "titre": "CrewAI — page d'accueil de docs.crewai.com (CrewAI Inc.)",
         "url": "https://docs.crewai.com/",
+        "date": "2026-09-07",
         "type": "primaire"
       },
       {
-        "titre": "LangGraph — Documentation officielle",
+        "titre": "LangGraph — page « Overview » de la référence LangChain Inc.",
         "url": "https://docs.langchain.com/oss/python/langgraph/overview",
+        "date": "2026-09-07",
         "type": "primaire"
       }
     ],
@@ -5189,18 +5224,21 @@
     ],
     "documents_cles": [
       {
-        "titre": "Télétravail",
+        "titre": "Télétravail — Wikipédia",
+        "type": "secondaire",
         "url": "https://fr.wikipedia.org/wiki/Télétravail",
-        "type": "primaire"
+        "date": "2026-09-05"
       },
       {
-        "titre": "Documentation Anthropic",
+        "titre": "Anthropic — Claude Docs, référence développeur (platform.claude.com)",
         "url": "https://docs.claude.com",
+        "date": "2026-09-07",
         "type": "primaire"
       },
       {
-        "titre": "Anthropic — Claude for Education",
-        "url": "https://www.anthropic.com/education",
+        "titre": "Claude for Education — page produit Anthropic",
+        "url": "https://claude.com/solutions/education",
+        "date": "2026-09-07",
         "type": "primaire"
       }
     ],
@@ -5238,7 +5276,7 @@
     "scenario_15_20ans": "Le goulot d'étranglement se déplace vers la construction d'instruments et la formulation théorique : les incomplétudes connues du modèle standard (gravitation, matière noire, masse des neutrinos) relèvent d'un travail conceptuel qu'aucun classifieur ne produit.",
     "confiance": "moyenne",
     "statut": "documente",
-    "derniere_verification": "2026-09-06",
+    "derniere_verification": "2026-09-07",
     "sujet": "Tri automatisé d'événements en physique des particules",
     "sous_themes": [
       "Classification signal/bruit de fond sur données tabulaires de collision",
@@ -5258,12 +5296,14 @@
       {
         "titre": "Modèle standard — Wikipédia",
         "url": "https://fr.wikipedia.org/wiki/Mod%C3%A8le_standard",
-        "type": "secondaire"
+        "type": "secondaire",
+        "date": "2026-09-05"
       },
       {
         "titre": "Gradient boosting — Wikipedia (EN)",
         "url": "https://en.wikipedia.org/wiki/Gradient_boosting",
-        "type": "primaire"
+        "date": "2026-09-07",
+        "type": "secondaire"
       }
     ],
     "axes_prospectifs": [
@@ -5299,7 +5339,7 @@
     "scenario_15_20ans": "Le facteur limitant reste l'énergie et la luminosité disponibles : aucun algorithme ne compense l'absence de collisions au régime où la nouvelle physique se manifesterait, ce qui rend la question d'abord instrumentale et budgétaire.",
     "confiance": "moyenne",
     "statut": "documente",
-    "derniere_verification": "2026-09-06",
+    "derniere_verification": "2026-09-07",
     "sujet": "Recherche non supervisée de physique nouvelle par détection d'anomalies",
     "sous_themes": [
       "Erreur de reconstruction comme score d'anomalie",
@@ -5319,12 +5359,14 @@
       {
         "titre": "Boson de Higgs — Wikipédia",
         "url": "https://fr.wikipedia.org/wiki/Boson_de_Higgs",
-        "type": "secondaire"
+        "type": "secondaire",
+        "date": "2026-09-05"
       },
       {
         "titre": "Autoencodeur — Wikipédia",
         "url": "https://fr.wikipedia.org/wiki/Autoencodeur",
-        "type": "primaire"
+        "date": "2026-09-07",
+        "type": "secondaire"
       }
     ],
     "axes_prospectifs": [
@@ -5360,7 +5402,7 @@
     "scenario_15_20ans": "Deux lectures coexistent : l'une tient l'imprévisibilité à court terme pour une propriété du système lui-même, l'autre l'attribue à un manque d'observations ; aucune des deux fiches ne permet de trancher.",
     "confiance": "moyenne",
     "statut": "documente",
-    "derniere_verification": "2026-09-06",
+    "derniere_verification": "2026-09-07",
     "sujet": "Détection de signaux précurseurs et limite de prévisibilité sismique",
     "sous_themes": [
       "Extraction de signaux faibles dans des séries sismiques et GPS",
@@ -5380,12 +5422,14 @@
       {
         "titre": "Tectonique des plaques — Wikipédia",
         "url": "https://fr.wikipedia.org/wiki/Tectonique_des_plaques",
-        "type": "secondaire"
+        "type": "secondaire",
+        "date": "2026-09-05"
       },
       {
         "titre": "Long short-term memory — Wikipedia (EN)",
         "url": "https://en.wikipedia.org/wiki/Long_short-term_memory",
-        "type": "primaire"
+        "date": "2026-09-07",
+        "type": "secondaire"
       }
     ],
     "axes_prospectifs": [
@@ -5420,7 +5464,7 @@
     "scenario_15_20ans": "Les limites du modèle — inflation, énergie noire, singularité initiale hors de portée des théories actuelles — sont théoriques et non computationnelles ; aucune méthode de compression de données ne les adresse.",
     "confiance": "moyenne",
     "statut": "documente",
-    "derniere_verification": "2026-09-06",
+    "derniere_verification": "2026-09-07",
     "sujet": "Compression statistique des grands relevés cosmologiques",
     "sous_themes": [
       "Extraction de signaux ténus dans les cartes du fond diffus cosmologique",
@@ -5440,12 +5484,14 @@
       {
         "titre": "Big Bang — Wikipédia",
         "url": "https://fr.wikipedia.org/wiki/Big_Bang",
-        "type": "secondaire"
+        "type": "secondaire",
+        "date": "2026-09-05"
       },
       {
         "titre": "Analyse en composantes principales — Wikipédia",
         "url": "https://fr.wikipedia.org/wiki/Analyse_en_composantes_principales",
-        "type": "primaire"
+        "date": "2026-09-07",
+        "type": "secondaire"
       }
     ],
     "axes_prospectifs": [
@@ -5494,18 +5540,22 @@
     ],
     "documents_cles": [
       {
-        "titre": "Deep Learning (LeCun, Bengio, Hinton, Nature, 2015)",
+        "titre": "Yann LeCun, Yoshua Bengio, Geoffrey Hinton, « Deep learning », Nature 521, 436-444",
+        "url": "https://www.nature.com/articles/nature14539",
+        "date": "2015-05-28",
         "type": "primaire"
       },
       {
         "titre": "Apprentissage profond — Wikipédia",
         "url": "https://fr.wikipedia.org/wiki/Apprentissage_profond",
+        "date": "2026-09-07",
         "type": "secondaire"
       },
       {
         "titre": "AlexNet — Wikipedia (EN)",
         "url": "https://en.wikipedia.org/wiki/AlexNet",
-        "type": "primaire"
+        "date": "2026-09-07",
+        "type": "secondaire"
       }
     ],
     "axes_prospectifs": [
@@ -5560,15 +5610,13 @@
       {
         "titre": "Traitement automatique des langues — Wikipédia",
         "url": "https://fr.wikipedia.org/wiki/Traitement_automatique_des_langues",
-        "type": "secondaire"
-      },
-      {
-        "titre": "Synthèses académiques sur l'hallucination des LLM (ex. Ji et al., 'Survey of Hallucination in NLG', ACM Computing Surveys)",
-        "type": "secondaire"
+        "type": "secondaire",
+        "date": "2026-09-05"
       },
       {
         "titre": "Hallucination (intelligence artificielle) — Wikipédia",
         "url": "https://fr.wikipedia.org/wiki/Hallucination_(intelligence_artificielle)",
+        "date": "2026-09-07",
         "type": "secondaire"
       }
     ],
@@ -5604,7 +5652,7 @@
     "scenario_15_20ans": "Le facteur limitant demeure la distance des cibles et l'ambiguïté d'interprétation des biosignatures ; l'apport de l'IA porte sur le débit d'analyse, pas sur la levée de cette ambiguïté.",
     "confiance": "moyenne",
     "statut": "documente",
-    "derniere_verification": "2026-09-06",
+    "derniere_verification": "2026-09-07",
     "sujet": "Présélection automatisée de candidats exoplanètes",
     "sous_themes": [
       "Classification de courbes de transit et rejet des faux positifs instrumentaux",
@@ -5624,12 +5672,14 @@
       {
         "titre": "Exoplanète — Wikipédia",
         "url": "https://fr.wikipedia.org/wiki/Exoplan%C3%A8te",
-        "type": "secondaire"
+        "type": "secondaire",
+        "date": "2026-09-05"
       },
       {
         "titre": "Forêt d'arbres décisionnels — Wikipédia",
         "url": "https://fr.wikipedia.org/wiki/Forêt_d'arbres_décisionnels",
-        "type": "primaire"
+        "date": "2026-09-07",
+        "type": "secondaire"
       }
     ],
     "axes_prospectifs": [
@@ -5664,7 +5714,7 @@
     "scenario_15_20ans": "L'écart de complexité et de plasticité entre réseaux biologiques et artificiels reste, selon la fiche humaine, structurel ; la cartographie exhaustive du cerveau humain et l'explication de la cognition demeurent deux problèmes distincts.",
     "confiance": "moyenne",
     "statut": "documente",
-    "derniere_verification": "2026-09-06",
+    "derniere_verification": "2026-09-07",
     "sujet": "Reconstruction assistée du connectome et écart entre carte et cognition",
     "sous_themes": [
       "Segmentation automatique de volumes d'imagerie cérébrale",
@@ -5684,12 +5734,14 @@
       {
         "titre": "Connectome — Wikipédia",
         "url": "https://fr.wikipedia.org/wiki/Connectome",
-        "type": "secondaire"
+        "type": "secondaire",
+        "date": "2026-09-05"
       },
       {
         "titre": "Residual neural network — Wikipedia (EN)",
         "url": "https://en.wikipedia.org/wiki/Residual_neural_network",
-        "type": "primaire"
+        "date": "2026-09-07",
+        "type": "secondaire"
       }
     ],
     "axes_prospectifs": [
@@ -5724,7 +5776,7 @@
     "scenario_15_20ans": "La soutenabilité de la trajectoire actuelle est explicitement qualifiée d'incertaine par la fiche IA ; selon que l'effet rebond persiste ou non, l'IA figure comme pression marginale ou comme facteur significatif dans les bilans globaux.",
     "confiance": "moyenne",
     "statut": "documente",
-    "derniere_verification": "2026-09-06",
+    "derniere_verification": "2026-09-07",
     "sujet": "Empreinte environnementale de l'IA comme objet de la science du système Terre",
     "sous_themes": [
       "Consommation électrique et hydrique des centres de données",
@@ -5744,15 +5796,13 @@
       {
         "titre": "Science du système Terre — Wikipédia",
         "url": "https://fr.wikipedia.org/wiki/Science_du_syst%C3%A8me_Terre",
-        "type": "secondaire"
-      },
-      {
-        "titre": "Rapports sur l'empreinte énergétique de l'IA (AIE, études académiques)",
-        "type": "primaire"
+        "type": "secondaire",
+        "date": "2026-09-05"
       },
       {
         "titre": "Environmental impact of artificial intelligence — Wikipedia",
         "url": "https://en.wikipedia.org/wiki/Environmental_impact_of_artificial_intelligence",
+        "date": "2026-09-07",
         "type": "secondaire"
       }
     ],
@@ -5788,7 +5838,7 @@
     "scenario_15_20ans": "Le problème que la fiche humaine désigne comme non résolu — unifier gravitation et mécanique quantique, ce qu'Einstein lui-même a cherché sans succès — est un problème de construction théorique, dont rien dans ces deux fiches ne suggère qu'il soit soluble par approximation numérique.",
     "confiance": "moyenne",
     "statut": "documente",
-    "derniere_verification": "2026-09-06",
+    "derniere_verification": "2026-09-07",
     "sujet": "Substituts numériques appris en relativité et invention théorique",
     "sous_themes": [
       "Accélération de la résolution numérique des équations de champ",
@@ -5808,12 +5858,14 @@
       {
         "titre": "Albert Einstein — Wikipédia",
         "url": "https://fr.wikipedia.org/wiki/Albert_Einstein",
-        "type": "secondaire"
+        "type": "secondaire",
+        "date": "2026-09-05"
       },
       {
         "titre": "Perceptron multicouche — Wikipédia",
         "url": "https://fr.wikipedia.org/wiki/Perceptron_multicouche",
-        "type": "primaire"
+        "date": "2026-09-07",
+        "type": "secondaire"
       }
     ],
     "axes_prospectifs": [
@@ -5868,12 +5920,14 @@
       {
         "titre": "Marie Curie — Wikipédia",
         "url": "https://fr.wikipedia.org/wiki/Marie_Curie",
-        "type": "secondaire"
+        "type": "secondaire",
+        "date": "2026-09-05"
       },
       {
         "titre": "Réseau neuronal convolutif — Wikipédia",
         "url": "https://fr.wikipedia.org/wiki/Réseau_neuronal_convolutif",
-        "type": "primaire"
+        "date": "2026-09-07",
+        "type": "secondaire"
       }
     ],
     "axes_prospectifs": [
@@ -5908,7 +5962,7 @@
     "scenario_15_20ans": "La question posée en 1950 reste ouverte, non par manque de performance mais par ambiguïté du critère lui-même ; la fiche humaine et la fiche IA convergent pour situer la difficulté sur le terrain de la définition plus que sur celui de la capacité.",
     "confiance": "moyenne",
     "statut": "documente",
-    "derniere_verification": "2026-09-06",
+    "derniere_verification": "2026-09-07",
     "sujet": "Test de Turing et évaluation de l'intelligence des systèmes conversationnels",
     "sous_themes": [
       "Indiscernabilité conversationnelle comme critère contesté",
@@ -5928,16 +5982,19 @@
       {
         "titre": "Alan Turing — Wikipédia",
         "url": "https://fr.wikipedia.org/wiki/Alan_Turing",
+        "date": "2026-09-07",
         "type": "secondaire"
       },
       {
-        "titre": "Documentation Anthropic",
+        "titre": "Anthropic — Claude Docs, référence développeur (platform.claude.com)",
         "url": "https://docs.claude.com",
+        "date": "2026-09-07",
         "type": "primaire"
       },
       {
-        "titre": "Model Card Claude (Anthropic)",
+        "titre": "Claude — page produit (Anthropic)",
         "url": "https://www.anthropic.com/claude",
+        "date": "2026-09-07",
         "type": "primaire"
       }
     ],
@@ -5973,7 +6030,7 @@
     "scenario_15_20ans": "Le passage du laboratoire au marché reste long, souvent une décennie, l'accélération portant sur les étapes amont ; l'histoire de Watson rappelle par ailleurs qu'une autorité scientifique ne garantit pas la validité des énoncés qu'elle produit sur les groupes humains.",
     "confiance": "elevee",
     "statut": "documente",
-    "derniere_verification": "2026-09-06",
+    "derniere_verification": "2026-09-07",
     "sujet": "Génomique prédictive et héritage des grandes bases de séquences",
     "sous_themes": [
       "Réutilisation des données du séquençage du génome humain",
@@ -5993,15 +6050,13 @@
       {
         "titre": "James Dewey Watson — Wikipédia",
         "url": "https://fr.wikipedia.org/wiki/James_Dewey_Watson",
+        "date": "2026-09-07",
         "type": "secondaire"
-      },
-      {
-        "titre": "AlphaFold — impact sur la recherche pharmaceutique",
-        "type": "primaire"
       },
       {
         "titre": "Applications of artificial intelligence — Wikipedia",
         "url": "https://en.wikipedia.org/wiki/Applications_of_artificial_intelligence",
+        "date": "2026-09-07",
         "type": "secondaire"
       }
     ],
@@ -6037,7 +6092,7 @@
     "scenario_15_20ans": "La question posée par le cliché 51 — qui a produit la donnée décisive et qui reçoit le crédit — se reposera à l'identique pour les découvertes assistées par IA, sans que les fiches mobilisées ici indiquent de règle d'attribution faisant consensus.",
     "confiance": "moyenne",
     "statut": "documente",
-    "derniere_verification": "2026-09-06",
+    "derniere_verification": "2026-09-07",
     "sujet": "Attribution du crédit scientifique et reproduction algorithmique des biais",
     "sous_themes": [
       "Reproduction des biais historiques de reconnaissance par les modèles appris",
@@ -6057,15 +6112,13 @@
       {
         "titre": "Rosalind Franklin — Wikipédia",
         "url": "https://fr.wikipedia.org/wiki/Rosalind_Franklin",
-        "type": "secondaire"
-      },
-      {
-        "titre": "Recherche académique sur l'équité algorithmique (fairness in ML)",
-        "type": "primaire"
+        "type": "secondaire",
+        "date": "2026-09-05"
       },
       {
         "titre": "Biais algorithmique — Wikipédia",
         "url": "https://fr.wikipedia.org/wiki/Biais_algorithmique",
+        "date": "2026-09-07",
         "type": "secondaire"
       }
     ],
@@ -6101,7 +6154,7 @@
     "scenario_15_20ans": "Deux positions coexistent sans arbitrage disponible : celle qui tient le risque existentiel pour une extrapolation prématurée au vu des performances actuelles, et celle, exprimée par Hawking, qui juge l'anticipation nécessaire précisément parce que le rattrapage serait impossible après coup.",
     "confiance": "faible",
     "statut": "documente",
-    "derniere_verification": "2026-09-06",
+    "derniere_verification": "2026-09-07",
     "sujet": "Autonomie des agents IA et débat sur le risque existentiel",
     "sous_themes": [
       "Décomposition autonome d'objectifs sans validation humaine intermédiaire",
@@ -6121,16 +6174,19 @@
       {
         "titre": "Stephen Hawking — Wikipédia",
         "url": "https://fr.wikipedia.org/wiki/Stephen_Hawking",
-        "type": "secondaire"
+        "type": "secondaire",
+        "date": "2026-09-05"
       },
       {
-        "titre": "AutoGPT (dépôt GitHub)",
+        "titre": "AutoGPT (dépôt GitHub officiel)",
         "url": "https://github.com/Significant-Gravitas/AutoGPT",
+        "date": "2026-09-07",
         "type": "primaire"
       },
       {
         "titre": "AutoGPT — Wikipedia",
         "url": "https://en.wikipedia.org/wiki/AutoGPT",
+        "date": "2026-09-07",
         "type": "secondaire"
       }
     ],
@@ -6167,7 +6223,7 @@
     "scenario_15_20ans": "Deux hypothèses restent ouvertes : un plafonnement matériel imposant des choix d'allocation du calcul, ou un déplacement partiel vers d'autres substrats de calcul ; les sources mobilisées ici ne permettent pas de privilégier l'une des deux.",
     "confiance": "faible",
     "statut": "documente",
-    "derniere_verification": "2026-09-06",
+    "derniere_verification": "2026-09-07",
     "sujet": "Mur énergétique du calcul et paradigmes alternatifs",
     "sous_themes": [
       "Effet rebond entre efficacité par calcul et volume total",
@@ -6187,15 +6243,13 @@
       {
         "titre": "Richard Feynman — Wikipédia",
         "url": "https://fr.wikipedia.org/wiki/Richard_Feynman",
+        "date": "2026-09-07",
         "type": "secondaire"
-      },
-      {
-        "titre": "Rapports sur l'empreinte énergétique de l'IA (AIE, études académiques)",
-        "type": "primaire"
       },
       {
         "titre": "Environmental impact of artificial intelligence — Wikipedia",
         "url": "https://en.wikipedia.org/wiki/Environmental_impact_of_artificial_intelligence",
+        "date": "2026-09-07",
         "type": "secondaire"
       }
     ],
@@ -6231,7 +6285,7 @@
     "scenario_15_20ans": "Si l'incertitude des modèles devient mesurable et affichable, l'analogie perdra sa force ; si elle résiste à toute calibration, la question de savoir si la limite est structurelle ou technique deviendra alors sérieuse, ce qu'elle n'est pas aujourd'hui.",
     "confiance": "moyenne",
     "statut": "documente",
-    "derniere_verification": "2026-09-06",
+    "derniere_verification": "2026-09-07",
     "sujet": "Limites de prévisibilité en physique et incertitude non calibrée des modèles",
     "sous_themes": [
       "Différence entre limite physique quantifiée et défaut d'ingénierie",
@@ -6251,15 +6305,13 @@
       {
         "titre": "Werner Heisenberg — Wikipédia",
         "url": "https://fr.wikipedia.org/wiki/Werner_Heisenberg",
-        "type": "secondaire"
-      },
-      {
-        "titre": "Synthèses académiques sur l'hallucination des LLM (ex. Ji et al., 'Survey of Hallucination in NLG', ACM Computing Surveys)",
-        "type": "secondaire"
+        "type": "secondaire",
+        "date": "2026-09-05"
       },
       {
         "titre": "Hallucination (intelligence artificielle) — Wikipédia",
         "url": "https://fr.wikipedia.org/wiki/Hallucination_(intelligence_artificielle)",
+        "date": "2026-09-07",
         "type": "secondaire"
       }
     ],
@@ -6295,7 +6347,7 @@
     "scenario_15_20ans": "La dérive tardive de Pauling sur les mégadoses de vitamine C rappelle utilement le point commun des deux fiches : une prédiction confiante hors du domaine validé n'est pas une connaissance, et seule l'épreuve expérimentale fait la différence.",
     "confiance": "elevee",
     "statut": "documente",
-    "derniere_verification": "2026-09-06",
+    "derniere_verification": "2026-09-07",
     "sujet": "Prédiction de structure protéique et héritage de la chimie structurale",
     "sous_themes": [
       "De la déduction structurale manuelle à la prédiction à l'échelle du protéome",
@@ -6315,15 +6367,18 @@
       {
         "titre": "Linus Pauling — Wikipédia",
         "url": "https://fr.wikipedia.org/wiki/Linus_Pauling",
-        "type": "secondaire"
+        "type": "secondaire",
+        "date": "2026-09-05"
       },
       {
-        "titre": "Jumper et al., 'Highly accurate protein structure prediction with AlphaFold', Nature 2021",
+        "titre": "Jumper et al., « Highly accurate protein structure prediction with AlphaFold », Nature 596 (2021)",
+        "url": "https://www.nature.com/articles/s41586-021-03819-2",
         "type": "primaire"
       },
       {
         "titre": "AlphaFold — Wikipédia (article en français)",
         "url": "https://fr.wikipedia.org/wiki/AlphaFold",
+        "date": "2026-09-07",
         "type": "secondaire"
       }
     ],
@@ -6359,7 +6414,7 @@
     "scenario_15_20ans": "La critique méthodologique adressée à Goodall — nourrissage, individus nommés plutôt que numérotés — trouve un écho inversé : l'observation automatisée est plus standardisée mais perd l'attention prolongée à des individus singuliers dont sa découverte est issue.",
     "confiance": "moyenne",
     "statut": "documente",
-    "derniere_verification": "2026-09-06",
+    "derniere_verification": "2026-09-07",
     "sujet": "Observation animale automatisée et connaissance éthologique de long terme",
     "sous_themes": [
       "Détection continue d'individus sur flux vidéo en milieu naturel",
@@ -6379,12 +6434,14 @@
       {
         "titre": "Jane Goodall — Wikipédia",
         "url": "https://fr.wikipedia.org/wiki/Jane_Goodall",
+        "date": "2026-09-07",
         "type": "secondaire"
       },
       {
         "titre": "You Only Look Once — Wikipedia (EN)",
         "url": "https://en.wikipedia.org/wiki/You_Only_Look_Once",
-        "type": "primaire"
+        "date": "2026-09-07",
+        "type": "secondaire"
       }
     ],
     "axes_prospectifs": [
@@ -6419,7 +6476,7 @@
     "scenario_15_20ans": "Le raccourcissement global du temps de développement reste limité par les essais cliniques ; le parcours de Tu Youyou rappelle en outre qu'une reconnaissance institutionnelle tardive n'est pas un indicateur de la valeur scientifique d'un travail.",
     "confiance": "moyenne",
     "statut": "documente",
-    "derniere_verification": "2026-09-06",
+    "derniere_verification": "2026-09-07",
     "sujet": "Criblage systématique de composés et découverte de principes actifs",
     "sous_themes": [
       "Automatisation du criblage de bibliothèques de molécules",
@@ -6439,15 +6496,13 @@
       {
         "titre": "Tu Youyou — Wikipédia",
         "url": "https://fr.wikipedia.org/wiki/Tu_Youyou",
-        "type": "secondaire"
-      },
-      {
-        "titre": "Criblage virtuel de molécules par IA — documentation sectorielle pharmaceutique",
-        "type": "primaire"
+        "type": "secondaire",
+        "date": "2026-09-05"
       },
       {
         "titre": "Virtual screening — Wikipedia",
         "url": "https://en.wikipedia.org/wiki/Virtual_screening",
+        "date": "2026-09-07",
         "type": "secondaire"
       }
     ],
@@ -6483,7 +6538,7 @@
     "scenario_15_20ans": "Doudna elle-même a appelé dès la publication de la technologie à un encadrement éthique international de l'édition du génome humain ; l'amélioration de la précision technique déplace le débat sans le clore, comme l'a montré l'expérience illégale de 2018 sur des embryons.",
     "confiance": "moyenne",
     "statut": "documente",
-    "derniere_verification": "2026-09-06",
+    "derniere_verification": "2026-09-07",
     "sujet": "Conception assistée de guides CRISPR et prédiction des effets hors cible",
     "sous_themes": [
       "Classification en haute dimension avec peu d'exemples validés",
@@ -6503,12 +6558,14 @@
       {
         "titre": "Jennifer Doudna — Wikipédia",
         "url": "https://fr.wikipedia.org/wiki/Jennifer_Doudna",
-        "type": "secondaire"
+        "type": "secondaire",
+        "date": "2026-09-05"
       },
       {
         "titre": "Machine à vecteurs de support — Wikipédia",
         "url": "https://fr.wikipedia.org/wiki/Machine_à_vecteurs_de_support",
-        "type": "primaire"
+        "date": "2026-09-07",
+        "type": "secondaire"
       }
     ],
     "axes_prospectifs": [
@@ -6544,7 +6601,7 @@
     "scenario_15_20ans": "Berners-Lee constate lui-même que le web s'est éloigné de sa vision décentralisée sous l'effet de la concentration des données ; l'entraînement de modèles génératifs renforce cette concentration ou, selon l'issue des débats en cours, fournit l'argument décisif en faveur d'architectures rendant le contrôle aux producteurs de contenu.",
     "confiance": "moyenne",
     "statut": "documente",
-    "derniere_verification": "2026-09-06",
+    "derniere_verification": "2026-09-07",
     "sujet": "Ouverture du web et consentement à l'usage des contenus pour l'entraînement",
     "sous_themes": [
       "Corpus web comme matière première des modèles génératifs",
@@ -6564,12 +6621,14 @@
       {
         "titre": "Tim Berners-Lee — Wikipédia",
         "url": "https://fr.wikipedia.org/wiki/Tim_Berners-Lee",
-        "type": "secondaire"
+        "type": "secondaire",
+        "date": "2026-09-05"
       },
       {
         "titre": "Stable Diffusion — Wikipedia (EN)",
         "url": "https://en.wikipedia.org/wiki/Stable_Diffusion",
-        "type": "primaire"
+        "date": "2026-09-07",
+        "type": "secondaire"
       }
     ],
     "axes_prospectifs": [
@@ -6604,7 +6663,7 @@
     "scenario_15_20ans": "La gouvernance intergouvernementale, que la fiche humaine décrit comme complexe mais nécessaire pour atteindre l'échelle critique, redevient l'enjeu central : la valeur d'un modèle prédictif dépend de la pérennité d'un bien commun de données que sa réussite pourrait paradoxalement fragiliser.",
     "confiance": "elevee",
     "statut": "documente",
-    "derniere_verification": "2026-09-06",
+    "derniere_verification": "2026-09-07",
     "sujet": "Infrastructure publique de données biologiques et modèles prédictifs de structure",
     "sous_themes": [
       "Bases de données publiques comme condition d'existence des modèles prédictifs",
@@ -6624,15 +6683,18 @@
       {
         "titre": "Laboratoire européen de biologie moléculaire — Wikipédia",
         "url": "https://fr.wikipedia.org/wiki/Laboratoire_europ%C3%A9en_de_biologie_mol%C3%A9culaire",
+        "date": "2026-09-07",
         "type": "secondaire"
       },
       {
-        "titre": "Jumper et al., 'Highly accurate protein structure prediction with AlphaFold', Nature 2021",
+        "titre": "Jumper et al., « Highly accurate protein structure prediction with AlphaFold », Nature 596 (2021)",
+        "url": "https://www.nature.com/articles/s41586-021-03819-2",
         "type": "primaire"
       },
       {
         "titre": "AlphaFold — Wikipédia (article en français)",
         "url": "https://fr.wikipedia.org/wiki/AlphaFold",
+        "date": "2026-09-07",
         "type": "secondaire"
       }
     ],
@@ -6668,7 +6730,7 @@
     "scenario_15_20ans": "La critique adressée au GIEC — des formulations jugées prudentes par rapport à la littérature la plus récente sur les scénarios extrêmes — porte sur le compromis entre légitimité politique et rapidité scientifique, un arbitrage que la vitesse de calcul ne modifie pas.",
     "confiance": "moyenne",
     "statut": "documente",
-    "derniere_verification": "2026-09-06",
+    "derniere_verification": "2026-09-07",
     "sujet": "Modélisation climatique apprise et évaluation intergouvernementale des connaissances",
     "sous_themes": [
       "Gain de vitesse et de coût énergétique par prévision",
@@ -6688,15 +6750,13 @@
       {
         "titre": "Groupe d'experts intergouvernemental sur l'évolution du climat — Wikipédia",
         "url": "https://fr.wikipedia.org/wiki/Groupe_d%27experts_intergouvernemental_sur_l%27%C3%A9volution_du_climat",
-        "type": "secondaire"
-      },
-      {
-        "titre": "GraphCast (Google DeepMind, publié dans Science, 2023)",
-        "type": "primaire"
+        "type": "secondaire",
+        "date": "2026-09-05"
       },
       {
         "titre": "Weather forecasting — Wikipedia",
         "url": "https://en.wikipedia.org/wiki/Weather_forecasting",
+        "date": "2026-09-07",
         "type": "secondaire"
       }
     ],
@@ -6732,7 +6792,7 @@
     "scenario_15_20ans": "La fiche humaine note que la physique expérimentale de pointe s'est déplacée vers de très grandes infrastructures internationales ; la prédiction de matériaux pourrait au contraire redonner un rôle moteur à des laboratoires de taille universitaire, s'ils conservent une capacité de synthèse.",
     "confiance": "moyenne",
     "statut": "documente",
-    "derniere_verification": "2026-09-06",
+    "derniere_verification": "2026-09-07",
     "sujet": "Prédiction de matériaux et capacité expérimentale d'un laboratoire universitaire",
     "sous_themes": [
       "Exploration calculée d'espaces de composition inaccessibles expérimentalement",
@@ -6752,15 +6812,13 @@
       {
         "titre": "Laboratoire Cavendish — Wikipédia",
         "url": "https://fr.wikipedia.org/wiki/Laboratoire_Cavendish",
+        "date": "2026-09-07",
         "type": "secondaire"
-      },
-      {
-        "titre": "GNoME (Google DeepMind, 2023)",
-        "type": "primaire"
       },
       {
         "titre": "Google DeepMind — Wikipedia",
         "url": "https://en.wikipedia.org/wiki/Google_DeepMind",
+        "date": "2026-09-07",
         "type": "secondaire"
       }
     ],
@@ -6796,7 +6854,7 @@
     "scenario_15_20ans": "Savoir si une nouveauté trouvée par recherche dans un espace prédéfini constitue un événement au sens badiousien restera une question philosophique, que nul résultat technique ne tranchera à lui seul.",
     "confiance": "moyenne",
     "statut": "documente",
-    "derniere_verification": "2026-09-06",
+    "derniere_verification": "2026-09-07",
     "sujet": "Nouveauté indéductible et limites de la recherche automatisée dans un espace de règles fixé",
     "sous_themes": [
       "Apprentissage autodidacte sans données humaines (auto-jeu)",
@@ -6816,12 +6874,14 @@
       {
         "titre": "Alain Badiou — Wikipédia",
         "url": "https://fr.wikipedia.org/wiki/Alain_Badiou",
-        "type": "secondaire"
+        "type": "secondaire",
+        "date": "2026-09-05"
       },
       {
         "titre": "AlphaGo — Wikipedia (EN)",
         "url": "https://en.wikipedia.org/wiki/AlphaGo",
-        "type": "primaire"
+        "date": "2026-09-07",
+        "type": "secondaire"
       }
     ],
     "axes_prospectifs": [
@@ -6856,7 +6916,7 @@
     "scenario_15_20ans": "La distinction entre refuser un ordre et optimiser sous contrainte restera l'un des points où le vocabulaire de la révolte s'applique mal aux systèmes automatisés, sauf renversement du débat sur la conscience réflexive.",
     "confiance": "faible",
     "statut": "documente",
-    "derniere_verification": "2026-09-06",
+    "derniere_verification": "2026-09-07",
     "sujet": "Refus d'un ordre donné et optimisation sous contrainte dans les agents autonomes",
     "sous_themes": [
       "Boucle de re-planification sans critère d'arrêt interne",
@@ -6876,16 +6936,19 @@
       {
         "titre": "Albert Camus — Wikipédia",
         "url": "https://fr.wikipedia.org/wiki/Albert_Camus",
-        "type": "secondaire"
+        "type": "secondaire",
+        "date": "2026-09-07"
       },
       {
-        "titre": "AutoGPT (dépôt GitHub)",
+        "titre": "AutoGPT (dépôt GitHub officiel)",
         "url": "https://github.com/Significant-Gravitas/AutoGPT",
+        "date": "2026-09-07",
         "type": "primaire"
       },
       {
         "titre": "AutoGPT — Wikipedia",
         "url": "https://en.wikipedia.org/wiki/AutoGPT",
+        "date": "2026-09-07",
         "type": "secondaire"
       }
     ],
@@ -6921,7 +6984,7 @@
     "scenario_15_20ans": "La question de la captation de la valeur produite par une multitude dispersée restera politique et juridique ; aucune évolution technique ne la tranche à elle seule.",
     "confiance": "moyenne",
     "statut": "documente",
-    "derniere_verification": "2026-09-06",
+    "derniere_verification": "2026-09-07",
     "sujet": "Automatisation du travail immatériel et répartition de la valeur qu'il produit",
     "sous_themes": [
       "Travail immatériel agrégé dans les corpus d'entraînement",
@@ -6941,12 +7004,14 @@
       {
         "titre": "Toni Negri — Wikipédia",
         "url": "https://fr.wikipedia.org/wiki/Toni_Negri",
-        "type": "secondaire"
+        "type": "secondaire",
+        "date": "2026-09-07"
       },
       {
         "titre": "Stable Diffusion — Wikipedia (EN)",
         "url": "https://en.wikipedia.org/wiki/Stable_Diffusion",
-        "type": "primaire"
+        "date": "2026-09-07",
+        "type": "secondaire"
       }
     ],
     "axes_prospectifs": [
@@ -6982,7 +7047,7 @@
     "scenario_15_20ans": "La question de savoir si une association statistique de motifs constitue un raisonnement restera ouverte ; la voie symbolique conserve un rôle là où la traçabilité de l'inférence est exigée juridiquement.",
     "confiance": "moyenne",
     "statut": "documente",
-    "derniere_verification": "2026-09-06",
+    "derniere_verification": "2026-09-07",
     "sujet": "Raisonnement par règles explicites face à l'association statistique de motifs",
     "sous_themes": [
       "Filiation entre logique syllogistique et systèmes à base de règles",
@@ -7006,12 +7071,14 @@
       {
         "titre": "Aristote",
         "url": "https://fr.wikipedia.org/wiki/Aristote",
-        "type": "secondaire"
+        "type": "secondaire",
+        "date": "2026-09-06"
       },
       {
         "titre": "Arbre de décision (apprentissage) — Wikipédia",
         "url": "https://fr.wikipedia.org/wiki/Arbre_de_décision_(apprentissage)",
-        "type": "primaire"
+        "date": "2026-09-07",
+        "type": "secondaire"
       }
     ],
     "axes_prospectifs": [
@@ -7046,7 +7113,7 @@
     "scenario_15_20ans": "L'attribution d'un statut moral et la validation d'une identité restent portées par des institutions et des personnes ; l'automatisation en déplace le lieu plutôt qu'elle ne la produit.",
     "confiance": "moyenne",
     "statut": "documente",
-    "derniere_verification": "2026-09-06",
+    "derniere_verification": "2026-09-07",
     "sujet": "Reconnaissance juridique et automatisation partielle de la décision administrative",
     "sous_themes": [
       "Déploiements jugés discriminatoires envers des populations vulnérables",
@@ -7066,15 +7133,13 @@
       {
         "titre": "Axel Honneth — Wikipédia",
         "url": "https://fr.wikipedia.org/wiki/Axel_Honneth",
-        "type": "secondaire"
-      },
-      {
-        "titre": "Systèmes d'aide à la décision publique par IA — documentation GovTech",
-        "type": "primaire"
+        "type": "secondaire",
+        "date": "2026-09-05"
       },
       {
         "titre": "Government by algorithm — Wikipedia",
         "url": "https://en.wikipedia.org/wiki/Government_by_algorithm",
+        "date": "2026-09-07",
         "type": "secondaire"
       }
     ],
@@ -7110,7 +7175,7 @@
     "scenario_15_20ans": "Que la recherche d'un critère unique et technique d'acceptabilité échoue à traiter un désaccord politique légitime reste une thèse défendue mais discutée ; les positions en présence ne sont pas départageables sur un critère technique.",
     "confiance": "moyenne",
     "statut": "documente",
-    "derniere_verification": "2026-09-06",
+    "derniere_verification": "2026-09-07",
     "sujet": "Modération automatisée du discours et traitement du désaccord politique",
     "sous_themes": [
       "Réduction d'un énoncé politique à une classe binaire",
@@ -7130,12 +7195,14 @@
       {
         "titre": "Chantal Mouffe — Wikipédia",
         "url": "https://fr.wikipedia.org/wiki/Chantal_Mouffe",
-        "type": "secondaire"
+        "type": "secondaire",
+        "date": "2026-09-07"
       },
       {
         "titre": "Classification naïve bayésienne — Wikipédia",
         "url": "https://fr.wikipedia.org/wiki/Classification_naïve_bayésienne",
-        "type": "primaire"
+        "date": "2026-09-07",
+        "type": "secondaire"
       }
     ],
     "axes_prospectifs": [
@@ -7170,7 +7237,7 @@
     "scenario_15_20ans": "L'asymétrie sur laquelle repose l'analyse levinassienne — un corps mortel exposé à un autre corps mortel — reste sans équivalent pour un système, sauf renversement du débat sur la vulnérabilité artificielle.",
     "confiance": "moyenne",
     "statut": "documente",
-    "derniere_verification": "2026-09-06",
+    "derniere_verification": "2026-09-07",
     "sujet": "Détection du visage comme donnée et visage comme source d'obligation éthique",
     "sous_themes": [
       "Localisation en temps réel par boîtes englobantes",
@@ -7190,12 +7257,14 @@
       {
         "titre": "Emmanuel Levinas — Wikipédia",
         "url": "https://fr.wikipedia.org/wiki/Emmanuel_Levinas",
-        "type": "secondaire"
+        "type": "secondaire",
+        "date": "2026-09-05"
       },
       {
         "titre": "You Only Look Once — Wikipedia (EN)",
         "url": "https://en.wikipedia.org/wiki/You_Only_Look_Once",
-        "type": "primaire"
+        "date": "2026-09-07",
+        "type": "secondaire"
       }
     ],
     "axes_prospectifs": [
@@ -7244,21 +7313,19 @@
     ],
     "documents_cles": [
       {
-        "titre": "Les Damnés de la terre",
+        "titre": "Frantz Fanon, Les Damnés de la terre (1961)",
         "type": "primaire"
       },
       {
         "titre": "Frantz Fanon — Wikipédia",
         "url": "https://fr.wikipedia.org/wiki/Frantz_Fanon",
+        "date": "2026-09-07",
         "type": "secondaire"
-      },
-      {
-        "titre": "Recherche académique sur l'équité algorithmique (fairness in ML)",
-        "type": "primaire"
       },
       {
         "titre": "Biais algorithmique — Wikipédia",
         "url": "https://fr.wikipedia.org/wiki/Biais_algorithmique",
+        "date": "2026-09-07",
         "type": "secondaire"
       }
     ],
@@ -7294,7 +7361,7 @@
     "scenario_15_20ans": "L'objection de Habermas à Gadamer — la tradition peut véhiculer des rapports de domination — se rejoue sur les corpus d'entraînement : la question de savoir qui critique l'héritage reste posée à des humains.",
     "confiance": "moyenne",
     "statut": "documente",
-    "derniere_verification": "2026-09-06",
+    "derniere_verification": "2026-09-07",
     "sujet": "Interprétation assistée des textes et historicité de l'interprète",
     "sous_themes": [
       "Travail philologique matériel délégué (variantes, controverses, reformulation)",
@@ -7314,16 +7381,19 @@
       {
         "titre": "Hans-Georg Gadamer — Wikipédia",
         "url": "https://fr.wikipedia.org/wiki/Hans-Georg_Gadamer",
-        "type": "secondaire"
+        "type": "secondaire",
+        "date": "2026-09-07"
       },
       {
-        "titre": "Documentation Anthropic",
+        "titre": "Anthropic — Claude Docs, référence développeur (platform.claude.com)",
         "url": "https://docs.claude.com",
+        "date": "2026-09-07",
         "type": "primaire"
       },
       {
-        "titre": "Model Card Claude (Anthropic)",
+        "titre": "Claude — page produit (Anthropic)",
         "url": "https://www.anthropic.com/claude",
+        "date": "2026-09-07",
         "type": "primaire"
       }
     ],
@@ -7359,7 +7429,7 @@
     "scenario_15_20ans": "La difficulté déjà reprochée à la déconstruction — en tirer des positions normatives positives — s'aggrave lorsque la production de lectures devient gratuite et illimitée.",
     "confiance": "moyenne",
     "statut": "documente",
-    "derniere_verification": "2026-09-06",
+    "derniere_verification": "2026-09-07",
     "sujet": "Prolifération des lectures d'un texte et absence d'intention auctoriale",
     "sous_themes": [
       "Sortie générée sans intention au sens de la philosophie du langage",
@@ -7379,12 +7449,14 @@
       {
         "titre": "Jacques Derrida — Wikipédia",
         "url": "https://fr.wikipedia.org/wiki/Jacques_Derrida",
-        "type": "secondaire"
+        "type": "secondaire",
+        "date": "2026-09-07"
       },
       {
         "titre": "Llama (language model) — Wikipedia (EN)",
         "url": "https://en.wikipedia.org/wiki/Llama_(language_model)",
-        "type": "primaire"
+        "date": "2026-09-07",
+        "type": "secondaire"
       }
     ],
     "axes_prospectifs": [
@@ -7419,7 +7491,7 @@
     "scenario_15_20ans": "La possibilité d'une contestation égalitaire du partage reste politique et institutionnelle ; elle ne relève d'aucune amélioration de l'algorithme de partition.",
     "confiance": "moyenne",
     "statut": "documente",
-    "derniere_verification": "2026-09-06",
+    "derniere_verification": "2026-09-07",
     "sujet": "Partition automatisée des populations et absence de lieu de contestation",
     "sous_themes": [
       "Nombre de groupes fixé a priori : le partage précède les données",
@@ -7439,12 +7511,14 @@
       {
         "titre": "Jacques Rancière — Wikipédia",
         "url": "https://fr.wikipedia.org/wiki/Jacques_Ranci%C3%A8re",
-        "type": "secondaire"
+        "type": "secondaire",
+        "date": "2026-09-07"
       },
       {
         "titre": "K-moyennes — Wikipédia",
         "url": "https://fr.wikipedia.org/wiki/K-moyennes",
-        "type": "primaire"
+        "date": "2026-09-07",
+        "type": "secondaire"
       }
     ],
     "axes_prospectifs": [
@@ -7480,7 +7554,7 @@
     "scenario_15_20ans": "Scénario très incertain : il dépend de trajectoires réglementaires et géopolitiques que rien dans les fiches ne permet d'anticiper avec confiance.",
     "confiance": "faible",
     "statut": "documente",
-    "derniere_verification": "2026-09-06",
+    "derniere_verification": "2026-09-07",
     "sujet": "Pluralité des régimes de légitimation du dicible dans les grands modèles",
     "sous_themes": [
       "Filtrage aligné sur des cadres réglementaires nationaux distincts",
@@ -7500,15 +7574,19 @@
       {
         "titre": "Jean-François Lyotard — Wikipédia",
         "url": "https://fr.wikipedia.org/wiki/Jean-Fran%C3%A7ois_Lyotard",
-        "type": "secondaire"
+        "type": "secondaire",
+        "date": "2026-09-05"
       },
       {
-        "titre": "DeepSeek-V3 Technical Report",
+        "titre": "DeepSeek-AI, « DeepSeek-V3 Technical Report »",
+        "url": "https://arxiv.org/abs/2412.19437",
+        "date": "2024-12-27",
         "type": "primaire"
       },
       {
         "titre": "DeepSeek — Wikipedia (article en anglais)",
         "url": "https://en.wikipedia.org/wiki/DeepSeek",
+        "date": "2026-09-07",
         "type": "secondaire"
       }
     ],
@@ -7544,7 +7622,7 @@
     "scenario_15_20ans": "L'objection adressée à Butler — dissoudre la catégorie femme dans un jeu discursif — se rejoue sur les corpus : une norme mesurée statistiquement n'est toujours pas une base politique, ce qui reste débattu.",
     "confiance": "moyenne",
     "statut": "documente",
-    "derniere_verification": "2026-09-06",
+    "derniere_verification": "2026-09-07",
     "sujet": "Boucle de normalisation apprise et répétition performative des normes de genre",
     "sous_themes": [
       "Norme implicite incarnée par un discriminateur plutôt qu'énoncée",
@@ -7564,12 +7642,14 @@
       {
         "titre": "Judith Butler — Wikipédia",
         "url": "https://fr.wikipedia.org/wiki/Judith_Butler",
-        "type": "secondaire"
+        "type": "secondaire",
+        "date": "2026-09-07"
       },
       {
         "titre": "Generative adversarial network — Wikipedia (EN)",
         "url": "https://en.wikipedia.org/wiki/Generative_adversarial_network",
-        "type": "primaire"
+        "date": "2026-09-07",
+        "type": "secondaire"
       }
     ],
     "axes_prospectifs": [
@@ -7604,7 +7684,7 @@
     "scenario_15_20ans": "Le critère de démarcation restera discuté : comme le rappelle la fiche humaine, les objections de Kuhn, Lakatos et Feyerabend au critère de falsifiabilité valent aussi pour l'évaluation des systèmes techniques.",
     "confiance": "moyenne",
     "statut": "documente",
-    "derniere_verification": "2026-09-06",
+    "derniere_verification": "2026-09-07",
     "sujet": "Falsifiabilité des annonces de performance et évaluation indépendante des agents",
     "sous_themes": [
       "Démonstrations contestées par des évaluations indépendantes",
@@ -7624,12 +7704,14 @@
       {
         "titre": "Karl Popper — Wikipédia",
         "url": "https://fr.wikipedia.org/wiki/Karl_Popper",
-        "type": "secondaire"
+        "type": "secondaire",
+        "date": "2026-09-07"
       },
       {
         "titre": "Devin AI — Wikipedia (EN)",
         "url": "https://en.wikipedia.org/wiki/Devin_AI",
-        "type": "primaire"
+        "date": "2026-09-07",
+        "type": "secondaire"
       }
     ],
     "axes_prospectifs": [
@@ -7664,7 +7746,7 @@
     "scenario_15_20ans": "La critique de l'arraisonnement restera une grille d'interprétation contestée, sans critère opérationnel permettant de trancher entre accélération scientifique légitime et réduction du monde à une réserve exploitable.",
     "confiance": "moyenne",
     "statut": "documente",
-    "derniere_verification": "2026-09-06",
+    "derniere_verification": "2026-09-07",
     "sujet": "Prédiction massive de matériaux et transformation du monde naturel en fonds disponible",
     "sous_themes": [
       "Énumération et classement de structures candidates à grande échelle",
@@ -7684,15 +7766,13 @@
       {
         "titre": "Martin Heidegger — Wikipédia",
         "url": "https://fr.wikipedia.org/wiki/Martin_Heidegger",
-        "type": "secondaire"
-      },
-      {
-        "titre": "GNoME (Google DeepMind, 2023)",
-        "type": "primaire"
+        "type": "secondaire",
+        "date": "2026-09-05"
       },
       {
         "titre": "Applications of artificial intelligence — Wikipedia",
         "url": "https://en.wikipedia.org/wiki/Applications_of_artificial_intelligence",
+        "date": "2026-09-07",
         "type": "secondaire"
       }
     ],
@@ -7728,7 +7808,7 @@
     "scenario_15_20ans": "La question de savoir si comprendre le monde suppose de l'habiter physiquement restera ouverte ; elle se déplacerait si des systèmes apprenaient dans des environnements physiques plutôt que dans des interfaces conçues pour des humains.",
     "confiance": "moyenne",
     "statut": "documente",
-    "derniere_verification": "2026-09-06",
+    "derniere_verification": "2026-09-07",
     "sujet": "Boucle perception-action médiée par une interface et ancrage corporel de la connaissance",
     "sous_themes": [
       "Perception d'interface vs perception d'un monde habité",
@@ -7748,12 +7828,14 @@
       {
         "titre": "Maurice Merleau-Ponty — Wikipédia",
         "url": "https://fr.wikipedia.org/wiki/Maurice_Merleau-Ponty",
-        "type": "secondaire"
+        "type": "secondaire",
+        "date": "2026-09-05"
       },
       {
         "titre": "OpenAI — Wikipedia (EN)",
         "url": "https://en.wikipedia.org/wiki/OpenAI",
-        "type": "primaire"
+        "date": "2026-09-07",
+        "type": "secondaire"
       }
     ],
     "axes_prospectifs": [
@@ -7788,7 +7870,7 @@
     "scenario_15_20ans": "La difficulté que Habermas reprochait à Foucault — l'absence de critère normatif pour distinguer un bon d'un mauvais pouvoir — reste entière : l'auditabilité technique ne fournit pas ce critère.",
     "confiance": "moyenne",
     "statut": "documente",
-    "derniere_verification": "2026-09-06",
+    "derniere_verification": "2026-09-07",
     "sujet": "Scoring individuel, production de la norme et auditabilité des dispositifs",
     "sous_themes": [
       "Probabilité d'appartenance et rendu calculable des individus",
@@ -7808,12 +7890,14 @@
       {
         "titre": "Michel Foucault — Wikipédia",
         "url": "https://fr.wikipedia.org/wiki/Michel_Foucault",
-        "type": "secondaire"
+        "type": "secondaire",
+        "date": "2026-09-05"
       },
       {
         "titre": "Régression logistique — Wikipédia",
         "url": "https://fr.wikipedia.org/wiki/Régression_logistique",
-        "type": "primaire"
+        "date": "2026-09-07",
+        "type": "secondaire"
       }
     ],
     "axes_prospectifs": [
@@ -7848,7 +7932,7 @@
     "scenario_15_20ans": "L'objection déjà adressée à Ricœur vaut ici aussi : les existences peu narrativisables (traumatisme, discontinuité radicale) résistent autant à la configuration automatisée qu'à la configuration humaine.",
     "confiance": "moyenne",
     "statut": "documente",
-    "derniere_verification": "2026-09-06",
+    "derniere_verification": "2026-09-07",
     "sujet": "Configuration narrative automatisée et constitution de l'identité dans le temps",
     "sous_themes": [
       "Portes de rétention et d'oubli comme analogue calculatoire de la mémoire",
@@ -7868,12 +7952,14 @@
       {
         "titre": "Paul Ricœur — Wikipédia",
         "url": "https://fr.wikipedia.org/wiki/Paul_Ric%C5%93ur",
-        "type": "secondaire"
+        "type": "secondaire",
+        "date": "2026-09-07"
       },
       {
         "titre": "Long short-term memory — Wikipedia (EN)",
         "url": "https://en.wikipedia.org/wiki/Long_short-term_memory",
-        "type": "primaire"
+        "date": "2026-09-07",
+        "type": "secondaire"
       }
     ],
     "axes_prospectifs": [
@@ -7909,7 +7995,7 @@
     "scenario_15_20ans": "L'argument philosophique sur la contingence des lois reste distinct du problème statistique du décalage de distribution ; il n'est pas tranché par les performances d'un modèle, et la thèse de Meillassoux elle-même est contestée jusque dans le courant qu'il a fondé.",
     "confiance": "moyenne",
     "statut": "documente",
-    "derniere_verification": "2026-09-06",
+    "derniere_verification": "2026-09-07",
     "sujet": "Induction statistique et non-stationnarité du monde modélisé",
     "sous_themes": [
       "Dégradation des prévisions apprises hors distribution d'entraînement",
@@ -7929,15 +8015,13 @@
       {
         "titre": "Quentin Meillassoux — Wikipédia",
         "url": "https://fr.wikipedia.org/wiki/Quentin_Meillassoux",
-        "type": "secondaire"
-      },
-      {
-        "titre": "GraphCast (Google DeepMind, publié dans Science, 2023)",
-        "type": "primaire"
+        "type": "secondaire",
+        "date": "2026-09-07"
       },
       {
         "titre": "Weather forecasting — Wikipedia",
         "url": "https://en.wikipedia.org/wiki/Weather_forecasting",
+        "date": "2026-09-07",
         "type": "secondaire"
       }
     ],
@@ -7973,7 +8057,7 @@
     "scenario_15_20ans": "Le pari pragmatiste de Rorty reste discuté : ses critiques, dont Putnam, lui reprochent de ne plus pouvoir distinguer une croyance vraie d'une croyance simplement utile — objection qui porte pleinement sur les domaines sans test exécutable.",
     "confiance": "moyenne",
     "statut": "documente",
-    "derniere_verification": "2026-09-06",
+    "derniere_verification": "2026-09-07",
     "sujet": "Critère pragmatique de validité et domaines où l'exécution tranche",
     "sous_themes": [
       "Exécution et tests comme verdict externe substitué à la question du sens",
@@ -7993,16 +8077,19 @@
       {
         "titre": "Richard Rorty — Wikipédia",
         "url": "https://fr.wikipedia.org/wiki/Richard_Rorty",
-        "type": "secondaire"
+        "type": "secondaire",
+        "date": "2026-09-05"
       },
       {
-        "titre": "Documentation OpenAI",
+        "titre": "OpenAI Platform — référence d'API (platform.openai.com/docs)",
         "url": "https://platform.openai.com/docs",
+        "date": "2026-09-07",
         "type": "primaire"
       },
       {
         "titre": "OpenAI Platform — Models overview",
         "url": "https://platform.openai.com/docs/models",
+        "date": "2026-09-07",
         "type": "primaire"
       }
     ],
@@ -8059,15 +8146,13 @@
       {
         "titre": "Saul Kripke — Wikipédia",
         "url": "https://fr.wikipedia.org/wiki/Saul_Kripke",
-        "type": "secondaire"
-      },
-      {
-        "titre": "Synthèses académiques sur l'hallucination des LLM (ex. Ji et al., 'Survey of Hallucination in NLG', ACM Computing Surveys)",
-        "type": "secondaire"
+        "type": "secondaire",
+        "date": "2026-09-05"
       },
       {
         "titre": "Hallucination (intelligence artificielle) — Wikipédia",
         "url": "https://fr.wikipedia.org/wiki/Hallucination_(intelligence_artificielle)",
+        "date": "2026-09-07",
         "type": "secondaire"
       }
     ],
@@ -8123,15 +8208,13 @@
       {
         "titre": "Slavoj Žižek — Wikipédia",
         "url": "https://fr.wikipedia.org/wiki/Slavoj_%C5%BDi%C5%BEek",
-        "type": "secondaire"
-      },
-      {
-        "titre": "Rapports sur l'empreinte énergétique de l'IA (AIE, études académiques)",
-        "type": "primaire"
+        "type": "secondaire",
+        "date": "2026-09-07"
       },
       {
         "titre": "Environmental impact of artificial intelligence — Wikipedia",
         "url": "https://en.wikipedia.org/wiki/Environmental_impact_of_artificial_intelligence",
+        "date": "2026-09-07",
         "type": "secondaire"
       }
     ],
@@ -8167,7 +8250,7 @@
     "scenario_15_20ans": "Le clivage reste ouvert par construction : les différentes définitions mathématiques de l'équité étant mutuellement incompatibles, aucun résultat technique ne peut établir le degré légitime d'encadrement à la place d'un choix politique.",
     "confiance": "moyenne",
     "statut": "documente",
-    "derniere_verification": "2026-09-06",
+    "derniere_verification": "2026-09-07",
     "sujet": "Autorégulation du marché et traitement des externalités algorithmiques",
     "sous_themes": [
       "Externalités mesurables des systèmes d'IA (crédit, recrutement, justice prédictive)",
@@ -8183,16 +8266,14 @@
       {
         "titre": "Capitalisme — Wikipédia",
         "url": "https://fr.wikipedia.org/wiki/Capitalisme",
-        "type": "secondaire"
+        "type": "secondaire",
+        "date": "2026-09-05"
       },
       {
         "titre": "Biais algorithmique — Wikipédia",
         "url": "https://fr.wikipedia.org/wiki/Biais_algorithmique",
+        "date": "2026-09-07",
         "type": "secondaire"
-      },
-      {
-        "titre": "Recherche académique sur l'équité algorithmique (fairness in ML)",
-        "type": "primaire"
       }
     ],
     "axes_prospectifs": [
@@ -8227,7 +8308,7 @@
     "scenario_15_20ans": "Trajectoire très incertaine : l'issue dépend autant de choix politiques et institutionnels que de la capacité de calcul disponible, et les fiches mobilisées ne permettent pas de départager les thèses en présence.",
     "confiance": "faible",
     "statut": "documente",
-    "derniere_verification": "2026-09-06",
+    "derniere_verification": "2026-09-07",
     "sujet": "Débat du calcul économique centralisé à l'ère du calcul massif",
     "sous_themes": [
       "Volume d'information vs. rôle informationnel des prix",
@@ -8243,12 +8324,14 @@
       {
         "titre": "Économie planifiée — Wikipédia",
         "url": "https://fr.wikipedia.org/wiki/%C3%89conomie_planifi%C3%A9e",
-        "type": "secondaire"
+        "type": "secondaire",
+        "date": "2026-09-07"
       },
       {
         "titre": "Transformer (deep learning architecture) — Wikipedia (EN)",
         "url": "https://en.wikipedia.org/wiki/Transformer_(deep_learning_architecture)",
-        "type": "primaire"
+        "date": "2026-09-07",
+        "type": "secondaire"
       }
     ],
     "axes_prospectifs": [
@@ -8284,7 +8367,7 @@
     "scenario_15_20ans": "La faisabilité technique de la mesure d'usage cesserait d'être l'obstacle principal ; les freins résiduels seraient contractuels, fiscaux et culturels plutôt que technologiques.",
     "confiance": "moyenne",
     "statut": "documente",
-    "derniere_verification": "2026-09-06",
+    "derniere_verification": "2026-09-07",
     "sujet": "Mesure d'usage et maintenance prédictive comme condition du modèle serviciel",
     "sous_themes": [
       "Détection d'anomalies par erreur de reconstruction",
@@ -8300,12 +8383,14 @@
       {
         "titre": "Économie de la fonctionnalité — Wikipédia",
         "url": "https://fr.wikipedia.org/wiki/%C3%89conomie_de_la_fonctionnalit%C3%A9",
-        "type": "secondaire"
+        "type": "secondaire",
+        "date": "2026-09-05"
       },
       {
         "titre": "Autoencodeur — Wikipédia",
         "url": "https://fr.wikipedia.org/wiki/Autoencodeur",
-        "type": "primaire"
+        "date": "2026-09-07",
+        "type": "secondaire"
       }
     ],
     "axes_prospectifs": [
@@ -8340,7 +8425,7 @@
     "scenario_15_20ans": "Le calcul d'équilibre devient un service banalisé ; la limite persistante n'est pas le calcul mais l'écart entre le jeu modélisé et la situation réelle, ainsi que le fait qu'un équilibre atteint ne soit pas nécessairement optimal pour l'ensemble des joueurs.",
     "confiance": "elevee",
     "statut": "documente",
-    "derniere_verification": "2026-09-06",
+    "derniere_verification": "2026-09-07",
     "sujet": "Résolution automatisée des équilibres stratégiques",
     "sous_themes": [
       "Auto-jeu et apprentissage sans données humaines",
@@ -8356,12 +8441,14 @@
       {
         "titre": "Équilibre de Nash — Wikipédia",
         "url": "https://fr.wikipedia.org/wiki/%C3%89quilibre_de_Nash",
-        "type": "secondaire"
+        "type": "secondaire",
+        "date": "2026-09-05"
       },
       {
         "titre": "AlphaGo — Wikipedia (EN)",
         "url": "https://en.wikipedia.org/wiki/AlphaGo",
-        "type": "primaire"
+        "date": "2026-09-07",
+        "type": "secondaire"
       }
     ],
     "axes_prospectifs": [
@@ -8396,7 +8483,7 @@
     "scenario_15_20ans": "L'outillage statistique devient plus riche et plus rapide, mais l'écart entre mesure et interprétation théorique — qui est le cœur du désaccord — subsiste.",
     "confiance": "elevee",
     "statut": "documente",
-    "derniere_verification": "2026-09-06",
+    "derniere_verification": "2026-09-07",
     "sujet": "Estimation empirique des effets d'une politique contracyclique",
     "sous_themes": [
       "Interprétabilité des coefficients et effet marginal",
@@ -8412,12 +8499,14 @@
       {
         "titre": "John Maynard Keynes — Wikipédia",
         "url": "https://fr.wikipedia.org/wiki/John_Maynard_Keynes",
-        "type": "secondaire"
+        "type": "secondaire",
+        "date": "2026-09-05"
       },
       {
         "titre": "Régression linéaire — Wikipédia",
         "url": "https://fr.wikipedia.org/wiki/Régression_linéaire",
-        "type": "primaire"
+        "date": "2026-09-07",
+        "type": "secondaire"
       }
     ],
     "axes_prospectifs": [
@@ -8452,7 +8541,7 @@
     "scenario_15_20ans": "Le désaccord de fond — règle contraignante contre discrétion éclairée — n'est pas un problème de prévision et ne sera pas tranché par la qualité des modèles.",
     "confiance": "moyenne",
     "statut": "documente",
-    "derniere_verification": "2026-09-06",
+    "derniere_verification": "2026-09-07",
     "sujet": "Prévision monétaire et arbitrage entre règle simple et modèle opaque",
     "sous_themes": [
       "Instabilité empirique de la relation masse monétaire / inflation",
@@ -8468,12 +8557,14 @@
       {
         "titre": "Milton Friedman — Wikipédia",
         "url": "https://fr.wikipedia.org/wiki/Milton_Friedman",
-        "type": "secondaire"
+        "type": "secondaire",
+        "date": "2026-09-05"
       },
       {
         "titre": "Long short-term memory — Wikipedia (EN)",
         "url": "https://en.wikipedia.org/wiki/Long_short-term_memory",
-        "type": "primaire"
+        "date": "2026-09-07",
+        "type": "secondaire"
       }
     ],
     "axes_prospectifs": [
@@ -8508,7 +8599,7 @@
     "scenario_15_20ans": "La question de savoir si l'ouverture des poids constitue un contre-pouvoir durable ou une étape transitoire de la structuration du marché reste ouverte dans les fiches mobilisées.",
     "confiance": "moyenne",
     "statut": "documente",
-    "derniere_verification": "2026-09-06",
+    "derniere_verification": "2026-09-07",
     "sujet": "Concurrence imparfaite et pouvoir de fixation des prix sur le marché des modèles",
     "sous_themes": [
       "Poids ouverts comme contre-pouvoir partiel à la concentration",
@@ -8524,12 +8615,14 @@
       {
         "titre": "Joan Robinson — Wikipédia",
         "url": "https://fr.wikipedia.org/wiki/Joan_Robinson",
-        "type": "secondaire"
+        "type": "secondaire",
+        "date": "2026-09-05"
       },
       {
         "titre": "Llama (language model) — Wikipedia (EN)",
         "url": "https://en.wikipedia.org/wiki/Llama_(language_model)",
-        "type": "primaire"
+        "date": "2026-09-07",
+        "type": "secondaire"
       }
     ],
     "axes_prospectifs": [
@@ -8564,7 +8657,7 @@
     "scenario_15_20ans": "L'issue dépendra d'arbitrages politiques et judiciaires plus que de progrès techniques ; la thèse polanyienne d'un désencastrement historique unique reste par ailleurs elle-même discutée par des historiens économiques.",
     "confiance": "moyenne",
     "statut": "documente",
-    "derniere_verification": "2026-09-06",
+    "derniere_verification": "2026-09-07",
     "sujet": "Marchandisation des productions culturelles et réencastrement institutionnel",
     "sous_themes": [
       "Entraînement sur œuvres protégées sans consentement",
@@ -8580,12 +8673,14 @@
       {
         "titre": "Karl Polanyi — Wikipédia",
         "url": "https://fr.wikipedia.org/wiki/Karl_Polanyi",
-        "type": "secondaire"
+        "type": "secondaire",
+        "date": "2026-09-05"
       },
       {
         "titre": "Stable Diffusion — Wikipedia (EN)",
         "url": "https://en.wikipedia.org/wiki/Stable_Diffusion",
-        "type": "primaire"
+        "date": "2026-09-07",
+        "type": "secondaire"
       }
     ],
     "axes_prospectifs": [
@@ -8620,7 +8715,7 @@
     "scenario_15_20ans": "Le théorème reste un résultat logique : sa portée pratique pour des systèmes de vote réels demeure discutée, certains systèmes électoraux contournant partiellement ses conclusions par des compromis explicites.",
     "confiance": "elevee",
     "statut": "documente",
-    "derniere_verification": "2026-09-06",
+    "derniere_verification": "2026-09-07",
     "sujet": "Agrégation des préférences individuelles et limites logiques du choix social",
     "sous_themes": [
       "Compression de préférences multidimensionnelles et perte d'interprétabilité",
@@ -8636,12 +8731,14 @@
       {
         "titre": "Kenneth Arrow — Wikipédia",
         "url": "https://fr.wikipedia.org/wiki/Kenneth_Arrow",
-        "type": "secondaire"
+        "type": "secondaire",
+        "date": "2026-09-05"
       },
       {
         "titre": "Analyse en composantes principales — Wikipédia",
         "url": "https://fr.wikipedia.org/wiki/Analyse_en_composantes_principales",
-        "type": "primaire"
+        "date": "2026-09-07",
+        "type": "secondaire"
       }
     ],
     "axes_prospectifs": [
@@ -8676,7 +8773,7 @@
     "scenario_15_20ans": "Si des cas comparables se multiplient dans d'autres disciplines, le progrès technique devient partiellement traçable discipline par discipline ; son agrégation en un facteur macroéconomique mesurable reste un problème ouvert.",
     "confiance": "elevee",
     "statut": "documente",
-    "derniere_verification": "2026-09-06",
+    "derniere_verification": "2026-09-07",
     "sujet": "Progrès technique observable et résidu de croissance inexpliqué",
     "sous_themes": [
       "Déplacement de la frontière de productivité d'un champ scientifique",
@@ -8692,15 +8789,18 @@
       {
         "titre": "Robert Solow — Wikipédia",
         "url": "https://fr.wikipedia.org/wiki/Robert_Solow",
-        "type": "secondaire"
+        "type": "secondaire",
+        "date": "2026-09-05"
       },
       {
         "titre": "AlphaFold — Wikipédia (article en français)",
         "url": "https://fr.wikipedia.org/wiki/AlphaFold",
+        "date": "2026-09-07",
         "type": "secondaire"
       },
       {
-        "titre": "Jumper et al., 'Highly accurate protein structure prediction with AlphaFold', Nature 2021",
+        "titre": "Jumper et al., « Highly accurate protein structure prediction with AlphaFold », Nature 596 (2021)",
+        "url": "https://www.nature.com/articles/s41586-021-03819-2",
         "type": "primaire"
       }
     ],
@@ -8752,16 +8852,14 @@
       {
         "titre": "Gary Becker — Wikipédia",
         "url": "https://fr.wikipedia.org/wiki/Gary_Becker",
-        "type": "secondaire"
+        "type": "secondaire",
+        "date": "2026-09-05"
       },
       {
         "titre": "Biais algorithmique — Wikipédia",
         "url": "https://fr.wikipedia.org/wiki/Biais_algorithmique",
+        "date": "2026-09-07",
         "type": "secondaire"
-      },
-      {
-        "titre": "Recherche académique sur l'équité algorithmique (fairness in ML)",
-        "type": "primaire"
       }
     ],
     "axes_prospectifs": [
@@ -8796,7 +8894,7 @@
     "scenario_15_20ans": "Le cadre à somme nulle formalisé en 1944 reste un outil d'analyse de ces dynamiques, indépendamment de l'architecture qui sera dominante ; sa portée descriptive sur des acteurs économiques réels demeure toutefois débattue depuis l'économie comportementale.",
     "confiance": "moyenne",
     "statut": "documente",
-    "derniere_verification": "2026-09-06",
+    "derniere_verification": "2026-09-07",
     "sujet": "Jeux à somme nulle et dynamiques adversariales d'apprentissage",
     "sous_themes": [
       "Formalisation minimax et apprentissage adversarial",
@@ -8812,12 +8910,14 @@
       {
         "titre": "John von Neumann — Wikipédia",
         "url": "https://fr.wikipedia.org/wiki/John_von_Neumann",
-        "type": "secondaire"
+        "type": "secondaire",
+        "date": "2026-09-05"
       },
       {
         "titre": "Generative adversarial network — Wikipedia (EN)",
         "url": "https://en.wikipedia.org/wiki/Generative_adversarial_network",
-        "type": "primaire"
+        "date": "2026-09-07",
+        "type": "secondaire"
       }
     ],
     "axes_prospectifs": [
@@ -8852,7 +8952,7 @@
     "scenario_15_20ans": "L'outillage peut améliorer la couverture des dispositifs, mais l'opérationnalisation empirique du concept de capabilités demeure un défi méthodologique que la disponibilité de données ne résout pas à elle seule.",
     "confiance": "moyenne",
     "statut": "documente",
-    "derniere_verification": "2026-09-06",
+    "derniere_verification": "2026-09-07",
     "sujet": "Ciblage algorithmique des aides et capacité réelle d'accès aux droits",
     "sous_themes": [
       "Conversion des ressources en libertés effectives",
@@ -8868,16 +8968,14 @@
       {
         "titre": "Amartya Sen — Wikipédia",
         "url": "https://fr.wikipedia.org/wiki/Amartya_Sen",
-        "type": "secondaire"
+        "type": "secondaire",
+        "date": "2026-09-05"
       },
       {
         "titre": "Government by algorithm — Wikipedia",
         "url": "https://en.wikipedia.org/wiki/Government_by_algorithm",
+        "date": "2026-09-07",
         "type": "secondaire"
-      },
-      {
-        "titre": "Systèmes d'aide à la décision publique par IA — documentation GovTech",
-        "type": "primaire"
       }
     ],
     "axes_prospectifs": [
@@ -8912,7 +9010,7 @@
     "scenario_15_20ans": "La lisibilité algorithmique ne clôt pas le débat : l'hypothèse systématique d'intérêt personnel des acteurs publics reste contestée, une part des critiques soulignant le rôle réel de motivations civiques et idéologiques.",
     "confiance": "elevee",
     "statut": "documente",
-    "derniere_verification": "2026-09-06",
+    "derniere_verification": "2026-09-07",
     "sujet": "Règles explicites de décision publique et contrôle des décideurs",
     "sous_themes": [
       "Interprétabilité comme condition d'auditabilité de la décision publique",
@@ -8928,12 +9026,14 @@
       {
         "titre": "James M. Buchanan — Wikipédia",
         "url": "https://fr.wikipedia.org/wiki/James_M._Buchanan",
-        "type": "secondaire"
+        "type": "secondaire",
+        "date": "2026-09-05"
       },
       {
         "titre": "Arbre de décision (apprentissage) — Wikipédia",
         "url": "https://fr.wikipedia.org/wiki/Arbre_de_décision_(apprentissage)",
-        "type": "primaire"
+        "date": "2026-09-07",
+        "type": "secondaire"
       }
     ],
     "axes_prospectifs": [
@@ -8968,7 +9068,7 @@
     "scenario_15_20ans": "La comptabilité nationale conserve son rôle de cadre cohérent, l'apprentissage statistique en devenant le complément prospectif plutôt que le remplaçant.",
     "confiance": "elevee",
     "statut": "documente",
-    "derniere_verification": "2026-09-06",
+    "derniere_verification": "2026-09-07",
     "sujet": "Modélisation interindustrielle et dépassement des coefficients techniques fixes",
     "sous_themes": [
       "Substitutions technologiques non captées par des coefficients fixes",
@@ -8984,12 +9084,14 @@
       {
         "titre": "Wassily Leontief — Wikipédia",
         "url": "https://fr.wikipedia.org/wiki/Wassily_Leontief",
-        "type": "secondaire"
+        "type": "secondaire",
+        "date": "2026-09-05"
       },
       {
         "titre": "Gradient boosting — Wikipedia (EN)",
         "url": "https://en.wikipedia.org/wiki/Gradient_boosting",
-        "type": "primaire"
+        "date": "2026-09-07",
+        "type": "secondaire"
       }
     ],
     "axes_prospectifs": [
@@ -9024,7 +9126,7 @@
     "scenario_15_20ans": "La portée de la théorie O-Ring reste par ailleurs limitée : elle éclaire les contextes à forte interdépendance des tâches sans prétendre expliquer l'ensemble des dynamiques de productivité.",
     "confiance": "moyenne",
     "statut": "documente",
-    "derniere_verification": "2026-09-06",
+    "derniere_verification": "2026-09-07",
     "sujet": "Complémentarité des maillons et propagation d'erreurs dans les chaînes automatisées",
     "sous_themes": [
       "Décomposition en agents spécialisés et interdépendance des tâches",
@@ -9040,16 +9142,14 @@
       {
         "titre": "Michael Kremer — Wikipédia",
         "url": "https://fr.wikipedia.org/wiki/Michael_Kremer",
-        "type": "secondaire"
+        "type": "secondaire",
+        "date": "2026-09-05"
       },
       {
         "titre": "LangChain — Wikipedia",
         "url": "https://en.wikipedia.org/wiki/LangChain",
+        "date": "2026-09-07",
         "type": "secondaire"
-      },
-      {
-        "titre": "LangChain, CrewAI, AutoGen — documentation des projets",
-        "type": "primaire"
       }
     ],
     "axes_prospectifs": [
@@ -9085,7 +9185,7 @@
     "scenario_15_20ans": "L'asymétrie entre concepteurs et régulateurs se réduira dans la mesure où la divulgation sera rendue obligatoire et vérifiable ; les positions divergent sur l'ampleur et le coût de cette contrainte.",
     "confiance": "moyenne",
     "statut": "documente",
-    "derniere_verification": "2026-09-06",
+    "derniere_verification": "2026-09-07",
     "sujet": "Asymétrie d'information et opacité des modèles de scoring",
     "sous_themes": [
       "Screening statistique et sélection des contreparties",
@@ -9101,12 +9201,14 @@
       {
         "titre": "Joseph Stiglitz — Wikipédia",
         "url": "https://fr.wikipedia.org/wiki/Joseph_Stiglitz",
-        "type": "secondaire"
+        "type": "secondaire",
+        "date": "2026-09-05"
       },
       {
         "titre": "Forêt d'arbres décisionnels — Wikipédia",
         "url": "https://fr.wikipedia.org/wiki/Forêt_d'arbres_décisionnels",
-        "type": "primaire"
+        "date": "2026-09-07",
+        "type": "secondaire"
       }
     ],
     "axes_prospectifs": [
@@ -9142,7 +9244,7 @@
     "scenario_15_20ans": "Trajectoire très incertaine : elle dépend de décisions géopolitiques et industrielles, et les gains d'efficacité par unité de calcul sont pour l'instant compensés par la croissance du volume de calcul.",
     "confiance": "faible",
     "statut": "documente",
-    "derniere_verification": "2026-09-06",
+    "derniere_verification": "2026-09-07",
     "sujet": "Économies d'échelle et concentration géographique de la chaîne de valeur de l'IA",
     "sous_themes": [
       "Rendements croissants et effets d'agglomération dans le calcul",
@@ -9158,16 +9260,14 @@
       {
         "titre": "Paul Krugman — Wikipédia",
         "url": "https://fr.wikipedia.org/wiki/Paul_Krugman",
-        "type": "secondaire"
+        "type": "secondaire",
+        "date": "2026-09-05"
       },
       {
         "titre": "Environmental impact of artificial intelligence — Wikipedia",
         "url": "https://en.wikipedia.org/wiki/Environmental_impact_of_artificial_intelligence",
+        "date": "2026-09-07",
         "type": "secondaire"
-      },
-      {
-        "titre": "Rapports sur l'empreinte énergétique de l'IA (AIE, études académiques)",
-        "type": "primaire"
       }
     ],
     "axes_prospectifs": [
@@ -9202,7 +9302,7 @@
     "scenario_15_20ans": "L'efficacité du contrôle dépendra surtout de l'issue des négociations internationales sur l'échange d'informations, un terrain politique où l'outillage technique n'est pas déterminant.",
     "confiance": "moyenne",
     "statut": "documente",
-    "derniere_verification": "2026-09-06",
+    "derniere_verification": "2026-09-07",
     "sujet": "Ciblage assisté des contrôles fiscaux et lutte contre la dissimulation d'actifs",
     "sous_themes": [
       "Priorisation des contrôles sur données administratives",
@@ -9217,8 +9317,9 @@
     "documents_cles": [
       {
         "titre": "Gabriel Zucman — Wikipédia",
+        "type": "secondaire",
         "url": "https://fr.wikipedia.org/wiki/Gabriel_Zucman",
-        "type": "secondaire"
+        "date": "2026-09-06"
       },
       {
         "titre": "La Richesse cachée des nations (Zucman, 2013)",
@@ -9227,6 +9328,7 @@
       {
         "titre": "Government by algorithm — Wikipedia",
         "url": "https://en.wikipedia.org/wiki/Government_by_algorithm",
+        "date": "2026-09-07",
         "type": "secondaire"
       }
     ],
@@ -9262,7 +9364,7 @@
     "scenario_15_20ans": "La question de savoir si les deux familles d'écarts à la rationalité relèvent d'un même phénomène reste ouverte et ne se tranchera pas par la seule amélioration des modèles.",
     "confiance": "moyenne",
     "statut": "documente",
-    "derniere_verification": "2026-09-06",
+    "derniere_verification": "2026-09-07",
     "sujet": "Deux régimes de décision : analogie entre systèmes cognitifs et calcul explicite",
     "sous_themes": [
       "Chaîne de pensée explicite et dépense de calcul avant réponse",
@@ -9281,16 +9383,20 @@
       },
       {
         "titre": "Daniel Kahneman — Wikipédia",
+        "type": "secondaire",
         "url": "https://fr.wikipedia.org/wiki/Daniel_Kahneman",
-        "type": "secondaire"
+        "date": "2026-09-06"
       },
       {
         "titre": "DeepSeek — Wikipedia (article en anglais)",
         "url": "https://en.wikipedia.org/wiki/DeepSeek",
+        "date": "2026-09-07",
         "type": "secondaire"
       },
       {
-        "titre": "DeepSeek-R1: Incentivizing Reasoning Capability in LLMs via RL",
+        "titre": "DeepSeek-AI, « DeepSeek-R1: Incentivizing Reasoning Capability in LLMs via Reinforcement Learning »",
+        "url": "https://arxiv.org/abs/2501.12948",
+        "date": "2025-01-22",
         "type": "primaire"
       }
     ],
@@ -9340,17 +9446,15 @@
     ],
     "documents_cles": [
       {
-        "titre": "Société des Nations",
+        "titre": "Société des Nations — Wikipédia",
         "url": "https://fr.wikipedia.org/wiki/Société_des_Nations",
-        "type": "primaire"
-      },
-      {
-        "titre": "LangChain, CrewAI, AutoGen — documentation des projets",
-        "type": "primaire"
+        "type": "secondaire",
+        "date": "2026-09-05"
       },
       {
         "titre": "LangChain — Wikipedia",
         "url": "https://en.wikipedia.org/wiki/LangChain",
+        "date": "2026-09-07",
         "type": "secondaire"
       }
     ],
@@ -9400,17 +9504,15 @@
     ],
     "documents_cles": [
       {
-        "titre": "Cour internationale de justice",
+        "titre": "Cour internationale de justice — Wikipédia",
         "url": "https://fr.wikipedia.org/wiki/Cour_internationale_de_justice",
-        "type": "primaire"
+        "type": "secondaire",
+        "date": "2026-09-05"
       },
       {
         "titre": "Hallucination (intelligence artificielle) — Wikipédia",
         "url": "https://fr.wikipedia.org/wiki/Hallucination_(intelligence_artificielle)",
-        "type": "secondaire"
-      },
-      {
-        "titre": "Synthèses académiques sur l'hallucination des LLM (ex. Ji et al., 'Survey of Hallucination in NLG', ACM Computing Surveys)",
+        "date": "2026-09-07",
         "type": "secondaire"
       }
     ],
@@ -9447,7 +9549,7 @@
     "scenario_15_20ans": "Deux lectures coexistent : pour les unes, l'ouverture des poids installe durablement une troisième voie technologique ; pour les autres, la concentration du calcul et des semi-conducteurs finit par rendre cette autonomie formelle, comme les alliances de fait ont vidé le non-alignement d'une partie de sa substance.",
     "confiance": "moyenne",
     "statut": "documente",
-    "derniere_verification": "2026-09-06",
+    "derniere_verification": "2026-09-07",
     "sujet": "Souveraineté technologique et non-alignement entre écosystèmes d'IA",
     "sous_themes": [
       "Poids ouverts comme condition matérielle d'un non-alignement",
@@ -9461,18 +9563,15 @@
     ],
     "documents_cles": [
       {
-        "titre": "Mouvement des non-alignés",
+        "titre": "Mouvement des non-alignés — Wikipédia",
         "url": "https://fr.wikipedia.org/wiki/Mouvement_des_non-alignés",
-        "type": "primaire"
+        "type": "secondaire",
+        "date": "2026-09-05"
       },
       {
         "titre": "Llama (language model) — Wikipedia (EN)",
         "url": "https://en.wikipedia.org/wiki/Llama_(language_model)",
-        "type": "primaire"
-      },
-      {
-        "titre": "Mouvement des non-alignés — Wikipédia",
-        "url": "https://fr.wikipedia.org/wiki/Mouvement_des_non-alignés",
+        "date": "2026-09-07",
         "type": "secondaire"
       }
     ],
@@ -9508,7 +9607,7 @@
     "scenario_15_20ans": "L'issue dépend moins du progrès technique que de la capacité de l'UA à financer et faire respecter ses propres normes — la même question que celle posée par l'Agenda 2063 et la ZLECAf.",
     "confiance": "moyenne",
     "statut": "documente",
-    "derniere_verification": "2026-09-06",
+    "derniere_verification": "2026-09-07",
     "sujet": "Régulation continentale des biais des systèmes d'IA importés",
     "sous_themes": [
       "Sous-représentation des populations dans les corpus d'entraînement",
@@ -9522,18 +9621,16 @@
     ],
     "documents_cles": [
       {
-        "titre": "Union africaine",
+        "titre": "Union africaine — Wikipédia",
         "url": "https://fr.wikipedia.org/wiki/Union_africaine",
-        "type": "primaire"
+        "type": "secondaire",
+        "date": "2026-09-05"
       },
       {
         "titre": "Biais algorithmique — Wikipédia",
         "url": "https://fr.wikipedia.org/wiki/Biais_algorithmique",
+        "date": "2026-09-07",
         "type": "secondaire"
-      },
-      {
-        "titre": "Recherche académique sur l'équité algorithmique (fairness in ML)",
-        "type": "primaire"
       }
     ],
     "axes_prospectifs": [
@@ -9568,7 +9665,7 @@
     "scenario_15_20ans": "L'exigence d'explicabilité pourrait pousser les administrations vers des modèles moins performants mais restituables ; l'arbitrage entre performance et contestabilité restera un choix politique, non un résultat technique, et l'exclusion de la Russie en 2022 rappelle la limite d'un système sans contrainte matérielle.",
     "confiance": "elevee",
     "statut": "documente",
-    "derniere_verification": "2026-09-06",
+    "derniere_verification": "2026-09-07",
     "sujet": "Explicabilité des décisions automatisées et contentieux européen des droits",
     "sous_themes": [
       "Règles de décision lisibles comme forme d'explicabilité",
@@ -9582,18 +9679,15 @@
     ],
     "documents_cles": [
       {
-        "titre": "Conseil de l'Europe",
+        "titre": "Conseil de l'Europe — Wikipédia",
         "url": "https://fr.wikipedia.org/wiki/Conseil_de_l'Europe",
-        "type": "primaire"
+        "type": "secondaire",
+        "date": "2026-09-05"
       },
       {
         "titre": "Arbre de décision (apprentissage) — Wikipédia",
         "url": "https://fr.wikipedia.org/wiki/Arbre_de_décision_(apprentissage)",
-        "type": "primaire"
-      },
-      {
-        "titre": "Conseil de l'Europe — Wikipédia",
-        "url": "https://fr.wikipedia.org/wiki/Conseil_de_l'Europe",
+        "date": "2026-09-07",
         "type": "secondaire"
       }
     ],
@@ -9629,7 +9723,7 @@
     "scenario_15_20ans": "Une observation quasi continue et automatisée rendrait les violations plus difficilement contestables sur le plan factuel, sans modifier le fait qu'un État membre dispose d'un droit de veto de fait sur la réponse de l'organisation.",
     "confiance": "moyenne",
     "statut": "documente",
-    "derniere_verification": "2026-09-06",
+    "derniere_verification": "2026-09-07",
     "sujet": "Observation automatisée de terrain et règle du consensus",
     "sous_themes": [
       "Détection temps réel sur flux vidéo en mission d'observation",
@@ -9643,18 +9737,15 @@
     ],
     "documents_cles": [
       {
-        "titre": "Organisation pour la sécurité et la coopération en Europe",
+        "titre": "OSCE — Wikipédia",
         "url": "https://fr.wikipedia.org/wiki/Organisation_pour_la_sécurité_et_la_coopération_en_Europe",
-        "type": "primaire"
+        "type": "secondaire",
+        "date": "2026-09-05"
       },
       {
         "titre": "You Only Look Once — Wikipedia (EN)",
         "url": "https://en.wikipedia.org/wiki/You_Only_Look_Once",
-        "type": "primaire"
-      },
-      {
-        "titre": "OSCE — Wikipédia",
-        "url": "https://fr.wikipedia.org/wiki/Organisation_pour_la_sécurité_et_la_coopération_en_Europe",
+        "date": "2026-09-07",
         "type": "secondaire"
       }
     ],
@@ -9690,7 +9781,7 @@
     "scenario_15_20ans": "Un chiffrage commun accepté par toutes les parties réduirait la part du désaccord qui tient à l'information, mais laisserait intact le cœur du blocage : ce que chaque État accepte de concéder est un arbitrage interne.",
     "confiance": "elevee",
     "statut": "documente",
-    "derniere_verification": "2026-09-06",
+    "derniere_verification": "2026-09-07",
     "sujet": "Chiffrage d'impact tarifaire dans une négociation commerciale par cycles",
     "sous_themes": [
       "Interprétabilité des coefficients comme condition d'auditabilité par les parties",
@@ -9704,18 +9795,15 @@
     ],
     "documents_cles": [
       {
-        "titre": "Accord général sur les tarifs douaniers et le commerce",
+        "titre": "GATT — Wikipédia",
         "url": "https://fr.wikipedia.org/wiki/Accord_général_sur_les_tarifs_douaniers_et_le_commerce",
-        "type": "primaire"
+        "type": "secondaire",
+        "date": "2026-09-05"
       },
       {
         "titre": "Régression linéaire — Wikipédia",
         "url": "https://fr.wikipedia.org/wiki/Régression_linéaire",
-        "type": "primaire"
-      },
-      {
-        "titre": "GATT — Wikipédia",
-        "url": "https://fr.wikipedia.org/wiki/Accord_général_sur_les_tarifs_douaniers_et_le_commerce",
+        "date": "2026-09-07",
         "type": "secondaire"
       }
     ],
@@ -9751,7 +9839,7 @@
     "scenario_15_20ans": "Une instruction des dossiers largement automatisée laisserait apparaître d'autant plus nettement que le désaccord entre pays développés et en développement porte sur des intérêts, non sur des informations.",
     "confiance": "moyenne",
     "statut": "documente",
-    "derniere_verification": "2026-09-06",
+    "derniere_verification": "2026-09-07",
     "sujet": "Instruction documentaire des différends et négociations commerciales",
     "sous_themes": [
       "Comparaison multilingue de listes tarifaires et de clauses",
@@ -9765,18 +9853,21 @@
     ],
     "documents_cles": [
       {
-        "titre": "Organisation mondiale du commerce",
+        "titre": "Organisation mondiale du commerce — Wikipédia",
         "url": "https://fr.wikipedia.org/wiki/Organisation_mondiale_du_commerce",
-        "type": "primaire"
+        "type": "secondaire",
+        "date": "2026-09-05"
       },
       {
-        "titre": "Documentation Anthropic",
+        "titre": "Anthropic — Claude Docs, référence développeur (platform.claude.com)",
         "url": "https://docs.claude.com",
+        "date": "2026-09-07",
         "type": "primaire"
       },
       {
-        "titre": "Model Card Claude (Anthropic)",
+        "titre": "Claude — page produit (Anthropic)",
         "url": "https://www.anthropic.com/claude",
+        "date": "2026-09-07",
         "type": "primaire"
       }
     ],
@@ -9826,18 +9917,15 @@
     ],
     "documents_cles": [
       {
-        "titre": "Organisation des pays exportateurs de pétrole",
+        "titre": "OPEP — Wikipédia",
         "url": "https://fr.wikipedia.org/wiki/Organisation_des_pays_exportateurs_de_pétrole",
-        "type": "primaire"
+        "type": "secondaire",
+        "date": "2026-09-05"
       },
       {
         "titre": "Modèle ARIMA — Wikipédia",
         "url": "https://fr.wikipedia.org/wiki/Modèle_ARIMA",
-        "type": "primaire"
-      },
-      {
-        "titre": "OPEP — Wikipédia",
-        "url": "https://fr.wikipedia.org/wiki/Organisation_des_pays_exportateurs_de_pétrole",
+        "date": "2026-09-07",
         "type": "secondaire"
       }
     ],
@@ -9873,7 +9961,7 @@
     "scenario_15_20ans": "Trajectoire incertaine, dépendante d'évolutions géopolitiques non prévisibles : élargissement du forum, régulation par les usages, ou fragmentation durable en régimes normatifs séparés.",
     "confiance": "faible",
     "statut": "documente",
-    "derniere_verification": "2026-09-06",
+    "derniere_verification": "2026-09-07",
     "sujet": "Portée d'une coordination normative en format restreint face aux modèles à poids ouverts",
     "sous_themes": [
       "Représentativité d'un forum excluant plusieurs grandes puissances technologiques",
@@ -9887,17 +9975,21 @@
     ],
     "documents_cles": [
       {
-        "titre": "Groupe des sept",
-        "url": "https://fr.wikipedia.org/wiki/Groupe_des_sept",
-        "type": "primaire"
+        "titre": "Groupe des sept (économie) — Wikipédia",
+        "url": "https://fr.wikipedia.org/wiki/Groupe_des_sept_(économie)",
+        "date": "2026-09-07",
+        "type": "secondaire"
       },
       {
         "titre": "DeepSeek — Wikipedia (article en anglais)",
         "url": "https://en.wikipedia.org/wiki/DeepSeek",
+        "date": "2026-09-07",
         "type": "secondaire"
       },
       {
-        "titre": "DeepSeek-V3 Technical Report",
+        "titre": "DeepSeek-AI, « DeepSeek-V3 Technical Report »",
+        "url": "https://arxiv.org/abs/2412.19437",
+        "date": "2024-12-27",
         "type": "primaire"
       }
     ],
@@ -9933,7 +10025,7 @@
     "scenario_15_20ans": "Le débat restera partagé entre ceux qui voient dans l'effet Bruxelles un standard protecteur exporté et ceux qui y voient un frein à l'innovation, la tension entre souveraineté nationale et intégration supranationale continuant de traverser le sujet comme elle traverse la construction européenne.",
     "confiance": "moyenne",
     "statut": "documente",
-    "derniere_verification": "2026-09-06",
+    "derniere_verification": "2026-09-07",
     "sujet": "Régulation contraignante des systèmes d'aide à la décision administrative",
     "sous_themes": [
       "Déploiements administratifs annulés pour effets discriminatoires",
@@ -9947,18 +10039,16 @@
     ],
     "documents_cles": [
       {
-        "titre": "Communauté économique européenne",
+        "titre": "Communauté économique européenne — Wikipédia",
         "url": "https://fr.wikipedia.org/wiki/Communauté_économique_européenne",
-        "type": "primaire"
+        "date": "2026-09-07",
+        "type": "secondaire"
       },
       {
         "titre": "Government by algorithm — Wikipedia",
         "url": "https://en.wikipedia.org/wiki/Government_by_algorithm",
+        "date": "2026-09-07",
         "type": "secondaire"
-      },
-      {
-        "titre": "Systèmes d'aide à la décision publique par IA — documentation GovTech",
-        "type": "primaire"
       }
     ],
     "axes_prospectifs": [
@@ -9993,7 +10083,7 @@
     "scenario_15_20ans": "Un système de vérification accepté par les deux blocs réduirait le coût du contrôle sans résoudre la divergence de fond entre priorités réglementaires, qui est le véritable objet du désaccord.",
     "confiance": "moyenne",
     "statut": "documente",
-    "derniere_verification": "2026-09-06",
+    "derniere_verification": "2026-09-07",
     "sujet": "Vérification automatisée des engagements environnementaux dans un accord commercial",
     "sous_themes": [
       "Classification d'images à grande échelle pour le suivi d'indicateurs",
@@ -10007,18 +10097,15 @@
     ],
     "documents_cles": [
       {
-        "titre": "Marché commun du Sud",
+        "titre": "Mercosur — Wikipédia",
         "url": "https://fr.wikipedia.org/wiki/Marché_commun_du_Sud",
-        "type": "primaire"
+        "type": "secondaire",
+        "date": "2026-09-05"
       },
       {
         "titre": "Residual neural network — Wikipedia (EN)",
         "url": "https://en.wikipedia.org/wiki/Residual_neural_network",
-        "type": "primaire"
-      },
-      {
-        "titre": "Mercosur — Wikipédia",
-        "url": "https://fr.wikipedia.org/wiki/Marché_commun_du_Sud",
+        "date": "2026-09-07",
         "type": "secondaire"
       }
     ],
@@ -10055,7 +10142,7 @@
     "scenario_15_20ans": "Deux trajectoires restent ouvertes : une convergence des règles de flux de données facilitant l'entraînement transnational, ou une fragmentation par blocs où les techniques de calcul sur données localisées deviennent la norme.",
     "confiance": "moyenne",
     "statut": "documente",
-    "derniere_verification": "2026-09-06",
+    "derniere_verification": "2026-09-07",
     "sujet": "Règles de flux de données transfrontaliers et conditions d'entraînement des modèles",
     "sous_themes": [
       "Dépendance des architectures d'attention aux volumes de données",
@@ -10069,18 +10156,15 @@
     ],
     "documents_cles": [
       {
-        "titre": "Partenariat transpacifique global et progressiste",
+        "titre": "CPTPP — Wikipédia",
         "url": "https://fr.wikipedia.org/wiki/Partenariat_transpacifique_global_et_progressiste",
-        "type": "primaire"
+        "type": "secondaire",
+        "date": "2026-09-05"
       },
       {
         "titre": "Transformer (deep learning architecture) — Wikipedia (EN)",
         "url": "https://en.wikipedia.org/wiki/Transformer_(deep_learning_architecture)",
-        "type": "primaire"
-      },
-      {
-        "titre": "CPTPP — Wikipédia",
-        "url": "https://fr.wikipedia.org/wiki/Partenariat_transpacifique_global_et_progressiste",
+        "date": "2026-09-07",
         "type": "secondaire"
       }
     ],
@@ -10116,7 +10200,7 @@
     "scenario_15_20ans": "Une traçabilité technique généralisée rendrait comparables les portefeuilles des différentes banques de développement, déplaçant le débat sur les conditions politiques du financement plutôt que sur sa qualité d'exécution.",
     "confiance": "moyenne",
     "statut": "documente",
-    "derniere_verification": "2026-09-06",
+    "derniere_verification": "2026-09-07",
     "sujet": "Suivi instrumenté des actifs d'infrastructure financés par une banque multilatérale",
     "sous_themes": [
       "Détection d'anomalies par écart entre actif réel et actif simulé",
@@ -10130,18 +10214,16 @@
     ],
     "documents_cles": [
       {
-        "titre": "Banque asiatique d'investissement pour les infrastructures",
+        "titre": "BAII — Wikipédia",
         "url": "https://fr.wikipedia.org/wiki/Banque_asiatique_d'investissement_pour_les_infrastructures",
-        "type": "primaire"
+        "type": "secondaire",
+        "date": "2026-09-05"
       },
       {
         "titre": "Jumeau numérique — Wikipédia",
         "url": "https://fr.wikipedia.org/wiki/Jumeau_num%C3%A9rique",
+        "date": "2026-09-07",
         "type": "secondaire"
-      },
-      {
-        "titre": "Jumeaux numériques industriels — documentation sectorielle (Siemens, GE, Dassault Systèmes)",
-        "type": "primaire"
       }
     ],
     "axes_prospectifs": [
@@ -10176,7 +10258,7 @@
     "scenario_15_20ans": "Une allocation mieux ciblée peut améliorer le rendement d'un portefeuille contraint, mais ne modifie pas la contrainte elle-même : ce que la BAfD peut financer dépend de son capital, pas de la finesse de son scoring.",
     "confiance": "elevee",
     "statut": "documente",
-    "derniere_verification": "2026-09-06",
+    "derniere_verification": "2026-09-07",
     "sujet": "Hiérarchisation de projets de développement sur données tabulaires incomplètes",
     "sous_themes": [
       "Gestion native des valeurs manquantes et des variables catégorielles",
@@ -10190,18 +10272,15 @@
     ],
     "documents_cles": [
       {
-        "titre": "Banque africaine de développement",
+        "titre": "Banque africaine de développement — Wikipédia",
         "url": "https://fr.wikipedia.org/wiki/Banque_africaine_de_développement",
-        "type": "primaire"
+        "type": "secondaire",
+        "date": "2026-09-05"
       },
       {
         "titre": "Gradient boosting — Wikipedia (EN)",
         "url": "https://en.wikipedia.org/wiki/Gradient_boosting",
-        "type": "primaire"
-      },
-      {
-        "titre": "Banque africaine de développement — Wikipédia",
-        "url": "https://fr.wikipedia.org/wiki/Banque_africaine_de_développement",
+        "date": "2026-09-07",
         "type": "secondaire"
       }
     ],
@@ -10238,7 +10317,7 @@
     "scenario_15_20ans": "La soutenabilité de la trajectoire actuelle reste incertaine : l'effet rebond documenté peut annuler les gains d'efficacité, et la question de la ressource en eau de refroidissement s'ajoute à celle de l'électricité dans les régions les plus ensoleillées.",
     "confiance": "moyenne",
     "statut": "documente",
-    "derniere_verification": "2026-09-06",
+    "derniere_verification": "2026-09-07",
     "sujet": "Demande électrique des centres de données et déploiement solaire coordonné",
     "sous_themes": [
       "Effet rebond entre efficacité par calcul et volume de calcul",
@@ -10252,18 +10331,16 @@
     ],
     "documents_cles": [
       {
-        "titre": "Alliance solaire internationale",
+        "titre": "Alliance solaire internationale — Wikipédia",
         "url": "https://fr.wikipedia.org/wiki/Alliance_solaire_internationale",
-        "type": "primaire"
+        "type": "secondaire",
+        "date": "2026-09-05"
       },
       {
         "titre": "Environmental impact of artificial intelligence — Wikipedia",
         "url": "https://en.wikipedia.org/wiki/Environmental_impact_of_artificial_intelligence",
+        "date": "2026-09-07",
         "type": "secondaire"
-      },
-      {
-        "titre": "Rapports sur l'empreinte énergétique de l'IA (AIE, études académiques)",
-        "type": "primaire"
       }
     ],
     "axes_prospectifs": [
@@ -10298,7 +10375,7 @@
     "scenario_15_20ans": "Une détection plus précoce ne change pas la nature du problème institutionnel : les recommandations du CSF doivent être transposées par chaque juridiction, ce qui crée des délais et des divergences d'application significatifs.",
     "confiance": "moyenne",
     "statut": "documente",
-    "derniere_verification": "2026-09-06",
+    "derniere_verification": "2026-09-07",
     "sujet": "Détection d'anomalies systémiques et transposition nationale des recommandations",
     "sous_themes": [
       "Détection non supervisée par erreur de reconstruction",
@@ -10312,18 +10389,15 @@
     ],
     "documents_cles": [
       {
-        "titre": "Financial Stability Board",
+        "titre": "Financial Stability Board — Wikipedia (EN)",
         "url": "https://en.wikipedia.org/wiki/Financial_Stability_Board",
-        "type": "primaire"
+        "type": "secondaire",
+        "date": "2026-09-05"
       },
       {
         "titre": "Autoencodeur — Wikipédia",
         "url": "https://fr.wikipedia.org/wiki/Autoencodeur",
-        "type": "primaire"
-      },
-      {
-        "titre": "Financial Stability Board — Wikipedia (EN)",
-        "url": "https://en.wikipedia.org/wiki/Financial_Stability_Board",
+        "date": "2026-09-07",
         "type": "secondaire"
       }
     ],
@@ -10373,18 +10447,15 @@
     ],
     "documents_cles": [
       {
-        "titre": "Fonds mondial de lutte contre le sida, la tuberculose et le paludisme",
+        "titre": "Global Fund — Wikipedia (EN)",
         "url": "https://en.wikipedia.org/wiki/Global_Fund_to_Fight_AIDS,_Tuberculosis_and_Malaria",
-        "type": "primaire"
+        "type": "secondaire",
+        "date": "2026-09-05"
       },
       {
         "titre": "Réseau neuronal convolutif — Wikipédia",
         "url": "https://fr.wikipedia.org/wiki/Réseau_neuronal_convolutif",
-        "type": "primaire"
-      },
-      {
-        "titre": "Global Fund — Wikipedia (EN)",
-        "url": "https://en.wikipedia.org/wiki/Global_Fund_to_Fight_AIDS,_Tuberculosis_and_Malaria",
+        "date": "2026-09-07",
         "type": "secondaire"
       }
     ],
@@ -10434,12 +10505,14 @@
       {
         "titre": "Régime présidentiel — Wikipédia",
         "url": "https://fr.wikipedia.org/wiki/R%C3%A9gime_pr%C3%A9sidentiel",
-        "type": "secondaire"
+        "type": "secondaire",
+        "date": "2026-09-05"
       },
       {
         "titre": "Arbre de décision (apprentissage) — Wikipédia",
         "url": "https://fr.wikipedia.org/wiki/Arbre_de_décision_(apprentissage)",
-        "type": "primaire"
+        "date": "2026-09-07",
+        "type": "secondaire"
       }
     ],
     "axes_prospectifs": [
@@ -10490,16 +10563,14 @@
       {
         "titre": "Régime semi-présidentiel — Wikipédia",
         "url": "https://fr.wikipedia.org/wiki/R%C3%A9gime_semi-pr%C3%A9sidentiel",
-        "type": "secondaire"
+        "type": "secondaire",
+        "date": "2026-09-05"
       },
       {
         "titre": "LangChain — Wikipedia",
         "url": "https://en.wikipedia.org/wiki/LangChain",
+        "date": "2026-09-07",
         "type": "secondaire"
-      },
-      {
-        "titre": "LangChain, CrewAI, AutoGen — documentation des projets",
-        "type": "primaire"
       }
     ],
     "axes_prospectifs": [
@@ -10551,12 +10622,14 @@
       {
         "titre": "Communisme — Wikipédia",
         "url": "https://fr.wikipedia.org/wiki/Communisme",
-        "type": "secondaire"
+        "type": "secondaire",
+        "date": "2026-09-05"
       },
       {
         "titre": "Llama (language model) — Wikipedia (EN)",
         "url": "https://en.wikipedia.org/wiki/Llama_(language_model)",
-        "type": "primaire"
+        "date": "2026-09-07",
+        "type": "secondaire"
       }
     ],
     "axes_prospectifs": [
@@ -10577,7 +10650,7 @@
       }
     ],
     "statut": "documente",
-    "derniere_verification": "2026-09-06"
+    "derniere_verification": "2026-09-07"
   },
   {
     "id": "maoisme-vs-govtech-ia",
@@ -10619,8 +10692,8 @@
       {
         "titre": "Maoïsme — Wikipédia",
         "url": "https://fr.wikipedia.org/wiki/Mao%C3%AFsme",
-        "date": "2026-09-05",
-        "type": "secondaire"
+        "type": "secondaire",
+        "date": "2026-09-05"
       }
     ],
     "axes_prospectifs": [
@@ -10671,12 +10744,14 @@
       {
         "titre": "Socialisme du XXIe siècle — Wikipédia",
         "url": "https://fr.wikipedia.org/wiki/Socialisme_du_XXIe_si%C3%A8cle",
-        "type": "secondaire"
+        "type": "secondaire",
+        "date": "2026-09-07"
       },
       {
         "titre": "Modèle ARIMA — Wikipédia",
         "url": "https://fr.wikipedia.org/wiki/Modèle_ARIMA",
-        "type": "primaire"
+        "date": "2026-09-07",
+        "type": "secondaire"
       }
     ],
     "axes_prospectifs": [
@@ -10727,12 +10802,14 @@
       {
         "titre": "Fascisme — Wikipédia",
         "url": "https://fr.wikipedia.org/wiki/Fascisme",
-        "type": "secondaire"
+        "type": "secondaire",
+        "date": "2026-09-07"
       },
       {
         "titre": "Stable Diffusion — Wikipedia (EN)",
         "url": "https://en.wikipedia.org/wiki/Stable_Diffusion",
-        "type": "primaire"
+        "date": "2026-09-07",
+        "type": "secondaire"
       }
     ],
     "axes_prospectifs": [
@@ -10753,7 +10830,7 @@
       }
     ],
     "statut": "documente",
-    "derniere_verification": "2026-09-06"
+    "derniere_verification": "2026-09-07"
   },
   {
     "id": "nazisme-vs-biais-donnees",
@@ -10783,16 +10860,14 @@
       {
         "titre": "Nazisme — Wikipédia",
         "url": "https://fr.wikipedia.org/wiki/Nazisme",
-        "type": "secondaire"
+        "type": "secondaire",
+        "date": "2026-09-05"
       },
       {
         "titre": "Biais algorithmique — Wikipédia",
         "url": "https://fr.wikipedia.org/wiki/Biais_algorithmique",
+        "date": "2026-09-07",
         "type": "secondaire"
-      },
-      {
-        "titre": "Recherche académique sur l'équité algorithmique (fairness in ML)",
-        "type": "primaire"
       }
     ],
     "axes_prospectifs": [
@@ -10843,12 +10918,14 @@
       {
         "titre": "Populisme de gauche — Wikipédia",
         "url": "https://fr.wikipedia.org/wiki/Populisme_de_gauche",
-        "type": "secondaire"
+        "type": "secondaire",
+        "date": "2026-09-07"
       },
       {
         "titre": "Transformer (deep learning architecture) — Wikipedia (EN)",
         "url": "https://en.wikipedia.org/wiki/Transformer_(deep_learning_architecture)",
-        "type": "primaire"
+        "date": "2026-09-07",
+        "type": "secondaire"
       }
     ],
     "axes_prospectifs": [
@@ -10869,7 +10946,7 @@
       }
     ],
     "statut": "documente",
-    "derniere_verification": "2026-09-06"
+    "derniere_verification": "2026-09-07"
   },
   {
     "id": "populisme-de-droite-vs-forets-aleatoires",
@@ -10899,12 +10976,14 @@
       {
         "titre": "Populisme de droite — Wikipédia",
         "url": "https://fr.wikipedia.org/wiki/Populisme_de_droite",
-        "type": "secondaire"
+        "type": "secondaire",
+        "date": "2026-09-05"
       },
       {
         "titre": "Forêt d'arbres décisionnels — Wikipédia",
         "url": "https://fr.wikipedia.org/wiki/Forêt_d'arbres_décisionnels",
-        "type": "primaire"
+        "date": "2026-09-07",
+        "type": "secondaire"
       }
     ],
     "axes_prospectifs": [
@@ -10925,7 +11004,7 @@
       }
     ],
     "statut": "documente",
-    "derniere_verification": "2026-09-06"
+    "derniere_verification": "2026-09-07"
   },
   {
     "id": "autoritarisme-electif-vs-yolo",
@@ -10953,14 +11032,16 @@
     ],
     "documents_cles": [
       {
-        "titre": "Competitive authoritarianism — Wikipedia (EN)",
-        "url": "https://en.wikipedia.org/wiki/Competitive_authoritarianism",
+        "titre": "Hybrid regime — Wikipedia (EN) (l'article « Competitive authoritarianism » y redirige)",
+        "url": "https://en.wikipedia.org/wiki/Hybrid_regime",
+        "date": "2026-09-07",
         "type": "secondaire"
       },
       {
         "titre": "You Only Look Once — Wikipedia (EN)",
         "url": "https://en.wikipedia.org/wiki/You_Only_Look_Once",
-        "type": "primaire"
+        "date": "2026-09-07",
+        "type": "secondaire"
       }
     ],
     "axes_prospectifs": [
@@ -11011,12 +11092,14 @@
       {
         "titre": "Régime hybride — Wikipédia",
         "url": "https://fr.wikipedia.org/wiki/R%C3%A9gime_hybride",
-        "type": "secondaire"
+        "type": "secondaire",
+        "date": "2026-09-05"
       },
       {
         "titre": "Classification naïve bayésienne — Wikipédia",
         "url": "https://fr.wikipedia.org/wiki/Classification_naïve_bayésienne",
-        "type": "primaire"
+        "date": "2026-09-07",
+        "type": "secondaire"
       }
     ],
     "axes_prospectifs": [
@@ -11067,12 +11150,14 @@
       {
         "titre": "Dictature militaire — Wikipédia",
         "url": "https://fr.wikipedia.org/wiki/Dictature_militaire",
-        "type": "secondaire"
+        "type": "secondaire",
+        "date": "2026-09-05"
       },
       {
         "titre": "Generative adversarial network — Wikipedia (EN)",
         "url": "https://en.wikipedia.org/wiki/Generative_adversarial_network",
-        "type": "primaire"
+        "date": "2026-09-07",
+        "type": "secondaire"
       }
     ],
     "axes_prospectifs": [
@@ -11093,7 +11178,7 @@
       }
     ],
     "statut": "documente",
-    "derniere_verification": "2026-09-06"
+    "derniere_verification": "2026-09-07"
   },
   {
     "id": "anarchisme-vs-deepseek",
@@ -11124,15 +11209,19 @@
       {
         "titre": "Anarchisme — Wikipédia",
         "url": "https://fr.wikipedia.org/wiki/Anarchisme",
-        "type": "secondaire"
+        "type": "secondaire",
+        "date": "2026-09-05"
       },
       {
         "titre": "DeepSeek — Wikipedia (article en anglais)",
         "url": "https://en.wikipedia.org/wiki/DeepSeek",
+        "date": "2026-09-07",
         "type": "secondaire"
       },
       {
-        "titre": "DeepSeek-V3 Technical Report",
+        "titre": "DeepSeek-AI, « DeepSeek-V3 Technical Report »",
+        "url": "https://arxiv.org/abs/2412.19437",
+        "date": "2024-12-27",
         "type": "primaire"
       }
     ],
@@ -11154,7 +11243,7 @@
       }
     ],
     "statut": "documente",
-    "derniere_verification": "2026-09-06"
+    "derniere_verification": "2026-09-07"
   },
   {
     "id": "eco-socialisme-vs-dependance-energetique",
@@ -11184,16 +11273,14 @@
       {
         "titre": "Écosocialisme — Wikipédia",
         "url": "https://fr.wikipedia.org/wiki/%C3%89cosocialisme",
-        "type": "secondaire"
+        "type": "secondaire",
+        "date": "2026-09-05"
       },
       {
         "titre": "Environmental impact of artificial intelligence — Wikipedia",
         "url": "https://en.wikipedia.org/wiki/Environmental_impact_of_artificial_intelligence",
+        "date": "2026-09-07",
         "type": "secondaire"
-      },
-      {
-        "titre": "Rapports sur l'empreinte énergétique de l'IA (AIE, études académiques)",
-        "type": "primaire"
       }
     ],
     "axes_prospectifs": [
@@ -11244,16 +11331,19 @@
       {
         "titre": "Monarchie absolue — Wikipédia",
         "url": "https://fr.wikipedia.org/wiki/Monarchie_absolue",
-        "type": "secondaire"
+        "type": "secondaire",
+        "date": "2026-09-07"
       },
       {
-        "titre": "AutoGPT (dépôt GitHub)",
+        "titre": "AutoGPT (dépôt GitHub officiel)",
         "url": "https://github.com/Significant-Gravitas/AutoGPT",
+        "date": "2026-09-07",
         "type": "primaire"
       },
       {
         "titre": "AutoGPT — Wikipedia",
         "url": "https://en.wikipedia.org/wiki/AutoGPT",
+        "date": "2026-09-07",
         "type": "secondaire"
       }
     ],
@@ -11275,7 +11365,7 @@
       }
     ],
     "statut": "documente",
-    "derniere_verification": "2026-09-06"
+    "derniere_verification": "2026-09-07"
   },
   {
     "id": "hegemonie-unilaterale-vs-alphago",
@@ -11291,7 +11381,7 @@
     "scenario_15_20ans": "Scénario indéterminé : la question de l'érosion d'une hégémonie par l'émergence de rivaux, telle que la documente la fiche humaine pour la Pax Britannica, relève de trajectoires politiques et industrielles qu'aucune des deux fiches ne permet de prévoir.",
     "confiance": "faible",
     "statut": "documente",
-    "derniere_verification": "2026-09-06",
+    "derniere_verification": "2026-09-07",
     "sujet": "Suprématie technologique et théorie de la stabilité hégémonique",
     "sous_themes": [
       "Avance technique décisive comme attribut de puissance",
@@ -11305,19 +11395,16 @@
     ],
     "documents_cles": [
       {
-        "titre": "Pax Britannica",
-        "url": "https://fr.wikipedia.org/wiki/Pax_Britannica",
-        "type": "primaire"
-      },
-      {
         "titre": "Pax Britannica — Wikipédia",
+        "type": "secondaire",
         "url": "https://fr.wikipedia.org/wiki/Pax_Britannica",
-        "type": "secondaire"
+        "date": "2026-09-06"
       },
       {
         "titre": "AlphaGo — Wikipedia (EN)",
         "url": "https://en.wikipedia.org/wiki/AlphaGo",
-        "type": "primaire"
+        "date": "2026-09-07",
+        "type": "secondaire"
       }
     ],
     "axes_prospectifs": [
@@ -11353,7 +11440,7 @@
     "scenario_15_20ans": "Scénario incertain : l'apparition ou non d'instruments de régulation bilatérale de l'IA dépend de trajectoires diplomatiques que les deux fiches ne permettent pas d'anticiper.",
     "confiance": "faible",
     "statut": "documente",
-    "derniere_verification": "2026-09-06",
+    "derniere_verification": "2026-09-07",
     "sujet": "Rivalité bipolaire et substrat technique partagé de la course à l'IA",
     "sous_themes": [
       "Architecture commune aux modèles des deux blocs",
@@ -11367,19 +11454,16 @@
     ],
     "documents_cles": [
       {
-        "titre": "Guerre froide",
-        "url": "https://fr.wikipedia.org/wiki/Guerre_froide",
-        "type": "primaire"
-      },
-      {
         "titre": "Guerre froide — Wikipédia",
+        "type": "secondaire",
         "url": "https://fr.wikipedia.org/wiki/Guerre_froide",
-        "type": "secondaire"
+        "date": "2026-09-06"
       },
       {
         "titre": "Transformer (deep learning architecture) — Wikipedia (EN)",
         "url": "https://en.wikipedia.org/wiki/Transformer_(deep_learning_architecture)",
-        "type": "primaire"
+        "date": "2026-09-07",
+        "type": "secondaire"
       }
     ],
     "axes_prospectifs": [
@@ -11414,7 +11498,7 @@
     "scenario_15_20ans": "L'approfondissement d'une harmonisation interrégionale reste soumis aux mêmes résistances souverainistes que celles documentées pour l'intégration économique, dont le Brexit est l'illustration citée par la fiche humaine.",
     "confiance": "moyenne",
     "statut": "documente",
-    "derniere_verification": "2026-09-06",
+    "derniere_verification": "2026-09-07",
     "sujet": "Divergence des régimes régionaux de régulation de l'IA et interopérabilité",
     "sous_themes": [
       "Modération alignée sur une réglementation régionale",
@@ -11429,21 +11513,26 @@
     "documents_cles": [
       {
         "titre": "Communauté économique européenne",
+        "type": "primaire",
         "url": "https://fr.wikipedia.org/wiki/Communauté_économique_européenne",
-        "type": "primaire"
+        "date": "2026-09-06"
       },
       {
         "titre": "Gouvernance mondiale — Wikipédia",
+        "type": "secondaire",
         "url": "https://fr.wikipedia.org/wiki/Gouvernance_mondiale",
-        "type": "secondaire"
+        "date": "2026-09-06"
       },
       {
-        "titre": "DeepSeek-V3 Technical Report",
+        "titre": "DeepSeek-AI, « DeepSeek-V3 Technical Report »",
+        "url": "https://arxiv.org/abs/2412.19437",
+        "date": "2024-12-27",
         "type": "primaire"
       },
       {
         "titre": "DeepSeek — Wikipedia (article en anglais)",
         "url": "https://en.wikipedia.org/wiki/DeepSeek",
+        "date": "2026-09-07",
         "type": "secondaire"
       }
     ],
@@ -11493,19 +11582,16 @@
     ],
     "documents_cles": [
       {
-        "titre": "Fordisme",
-        "url": "https://fr.wikipedia.org/wiki/Fordisme",
-        "type": "primaire"
-      },
-      {
         "titre": "Fordisme — Wikipédia",
+        "type": "secondaire",
         "url": "https://fr.wikipedia.org/wiki/Fordisme",
-        "type": "secondaire"
+        "date": "2026-09-05"
       },
       {
         "titre": "You Only Look Once — Wikipedia (EN)",
         "url": "https://en.wikipedia.org/wiki/You_Only_Look_Once",
-        "type": "primaire"
+        "date": "2026-09-07",
+        "type": "secondaire"
       }
     ],
     "axes_prospectifs": [
@@ -11554,22 +11640,15 @@
     ],
     "documents_cles": [
       {
-        "titre": "Henri Fayol",
-        "url": "https://fr.wikipedia.org/wiki/Henri_Fayol",
-        "type": "primaire"
-      },
-      {
         "titre": "Henri Fayol — Wikipédia",
+        "type": "secondaire",
         "url": "https://fr.wikipedia.org/wiki/Henri_Fayol",
-        "type": "secondaire"
-      },
-      {
-        "titre": "LangChain, CrewAI, AutoGen — documentation des projets",
-        "type": "primaire"
+        "date": "2026-09-05"
       },
       {
         "titre": "LangChain — Wikipedia",
         "url": "https://en.wikipedia.org/wiki/LangChain",
+        "date": "2026-09-07",
         "type": "secondaire"
       }
     ],
@@ -11605,7 +11684,7 @@
     "scenario_15_20ans": "La difficulté de mise en œuvre de la matrice dans les grandes entreprises décentralisées reste d'abord une question d'autorité et d'allocation de ressources, qu'aucun gain de fluidité informationnelle ne tranche.",
     "confiance": "moyenne",
     "statut": "documente",
-    "derniere_verification": "2026-09-06",
+    "derniere_verification": "2026-09-07",
     "sujet": "Friction informationnelle et conflit d'autorité dans les organisations matricielles",
     "sous_themes": [
       "Consolidation de comptes rendus vers deux lignes hiérarchiques",
@@ -11619,23 +11698,21 @@
     ],
     "documents_cles": [
       {
-        "titre": "Structure matricielle",
-        "url": "https://fr.wikipedia.org/wiki/Structure_matricielle",
-        "type": "primaire"
-      },
-      {
         "titre": "Structure matricielle — Wikipédia",
+        "type": "secondaire",
         "url": "https://fr.wikipedia.org/wiki/Structure_matricielle",
-        "type": "secondaire"
+        "date": "2026-09-05"
       },
       {
-        "titre": "Documentation Anthropic",
+        "titre": "Anthropic — Claude Docs, référence développeur (platform.claude.com)",
         "url": "https://docs.claude.com",
+        "date": "2026-09-07",
         "type": "primaire"
       },
       {
-        "titre": "Model Card Claude (Anthropic)",
+        "titre": "Claude — page produit (Anthropic)",
         "url": "https://www.anthropic.com/claude",
+        "date": "2026-09-07",
         "type": "primaire"
       }
     ],
@@ -11671,7 +11748,7 @@
     "scenario_15_20ans": "Le débat reste ouvert entre deux lectures : un outil de mesure au service de la responsabilisation des équipes, ou un contrôle d'autant plus efficace qu'il est invisible — les deux fiches documentent les arguments sans permettre de trancher.",
     "confiance": "moyenne",
     "statut": "documente",
-    "derniere_verification": "2026-09-06",
+    "derniere_verification": "2026-09-07",
     "sujet": "Mesure algorithmique de la performance individuelle et autonomie au travail",
     "sous_themes": [
       "Scoring de performance sur traces d'activité",
@@ -11685,19 +11762,16 @@
     ],
     "documents_cles": [
       {
-        "titre": "Entreprise libérée",
-        "url": "https://fr.wikipedia.org/wiki/Entreprise_libérée",
-        "type": "primaire"
-      },
-      {
         "titre": "Entreprise libérée — Wikipédia",
+        "type": "secondaire",
         "url": "https://fr.wikipedia.org/wiki/Entreprise_libérée",
-        "type": "secondaire"
+        "date": "2026-09-05"
       },
       {
         "titre": "Gradient boosting — Wikipedia (EN)",
         "url": "https://en.wikipedia.org/wiki/Gradient_boosting",
-        "type": "primaire"
+        "date": "2026-09-07",
+        "type": "secondaire"
       }
     ],
     "axes_prospectifs": [
@@ -11751,13 +11825,15 @@
       },
       {
         "titre": "The Spotify Model — Atlassian",
+        "type": "secondaire",
         "url": "https://www.atlassian.com/agile/agile-at-scale/spotify",
-        "type": "secondaire"
+        "date": "2026-09-05"
       },
       {
         "titre": "Devin AI — Wikipedia (EN)",
         "url": "https://en.wikipedia.org/wiki/Devin_AI",
-        "type": "primaire"
+        "date": "2026-09-07",
+        "type": "secondaire"
       }
     ],
     "axes_prospectifs": [
@@ -11813,16 +11889,19 @@
       {
         "titre": "Salim Ismail — Wikipedia (EN)",
         "url": "https://en.wikipedia.org/wiki/Salim_Ismail",
-        "type": "secondaire"
+        "type": "secondaire",
+        "date": "2026-09-06"
       },
       {
-        "titre": "Documentation OpenAI",
+        "titre": "OpenAI Platform — référence d'API (platform.openai.com/docs)",
         "url": "https://platform.openai.com/docs",
+        "date": "2026-09-07",
         "type": "primaire"
       },
       {
         "titre": "OpenAI Platform — Models overview",
         "url": "https://platform.openai.com/docs/models",
+        "date": "2026-09-07",
         "type": "primaire"
       }
     ],
@@ -11858,7 +11937,7 @@
     "scenario_15_20ans": "La fragilité du dispositif reste celle qu'illustre le cas de Danone, première société cotée à adopter ce statut en 2020 avant un plan social de 1 200 emplois : des actionnaires activistes peuvent contourner les protections en délogeant les dirigeants, quelle que soit la qualité de l'audit algorithmique.",
     "confiance": "moyenne",
     "statut": "documente",
-    "derniere_verification": "2026-09-06",
+    "derniere_verification": "2026-09-07",
     "sujet": "Redevabilité algorithmique et engagement statutaire des entreprises à mission",
     "sous_themes": [
       "Incompatibilité des définitions mathématiques de l'équité",
@@ -11872,22 +11951,15 @@
     ],
     "documents_cles": [
       {
-        "titre": "Entreprise à mission",
-        "url": "https://fr.wikipedia.org/wiki/Entreprise_à_mission",
-        "type": "primaire"
-      },
-      {
         "titre": "Entreprise à mission — Wikipédia",
+        "type": "secondaire",
         "url": "https://fr.wikipedia.org/wiki/Entreprise_à_mission",
-        "type": "secondaire"
-      },
-      {
-        "titre": "Recherche académique sur l'équité algorithmique (fairness in ML)",
-        "type": "primaire"
+        "date": "2026-09-05"
       },
       {
         "titre": "Biais algorithmique — Wikipédia",
         "url": "https://fr.wikipedia.org/wiki/Biais_algorithmique",
+        "date": "2026-09-07",
         "type": "secondaire"
       }
     ],
@@ -11923,7 +11995,7 @@
     "scenario_15_20ans": "La question reste celle que pose la fiche humaine sur la résonance IA : décrire un système sans intériorité subjective avec le vocabulaire de l'appareil psychique demeure une extension métaphorique, dont la portée est contestée.",
     "confiance": "moyenne",
     "statut": "documente",
-    "derniere_verification": "2026-09-06",
+    "derniere_verification": "2026-09-07",
     "sujet": "Représentation latente apprise et métaphore psychanalytique de l'inconscient",
     "sous_themes": [
       "Espace latent comme artefact de conception, non comme structure psychique",
@@ -11943,12 +12015,14 @@
       {
         "titre": "Sigmund Freud — Wikipédia",
         "url": "https://fr.wikipedia.org/wiki/Sigmund_Freud",
-        "type": "secondaire"
+        "type": "secondaire",
+        "date": "2026-09-05"
       },
       {
         "titre": "Autoencodeur — Wikipédia",
         "url": "https://fr.wikipedia.org/wiki/Autoencodeur",
-        "type": "primaire"
+        "date": "2026-09-07",
+        "type": "secondaire"
       }
     ],
     "axes_prospectifs": [
@@ -12003,15 +12077,13 @@
       {
         "titre": "John Broadus Watson — Wikipédia",
         "url": "https://fr.wikipedia.org/wiki/John_Broadus_Watson",
-        "type": "secondaire"
-      },
-      {
-        "titre": "Synthèses académiques sur l'hallucination des LLM (ex. Ji et al., 'Survey of Hallucination in NLG', ACM Computing Surveys)",
-        "type": "secondaire"
+        "type": "secondaire",
+        "date": "2026-09-05"
       },
       {
         "titre": "Hallucination (intelligence artificielle) — Wikipédia",
         "url": "https://fr.wikipedia.org/wiki/Hallucination_(intelligence_artificielle)",
+        "date": "2026-09-07",
         "type": "secondaire"
       }
     ],
@@ -12047,7 +12119,7 @@
     "scenario_15_20ans": "L'argument de la créativité comme frontière ultime restera d'autant plus fragile qu'il s'appuie sur un modèle dont la rigidité pyramidale est déjà critiquée ; la question de la reconnaissance et du sens, elle, reste posée aux personnes concernées.",
     "confiance": "moyenne",
     "statut": "documente",
-    "derniere_verification": "2026-09-06",
+    "derniere_verification": "2026-09-07",
     "sujet": "Automatisation de la production créative et frontière supposée des besoins supérieurs",
     "sous_themes": [
       "Exécution créative automatisée vs. besoin d'accomplissement",
@@ -12067,12 +12139,14 @@
       {
         "titre": "Abraham Maslow — Wikipédia",
         "url": "https://fr.wikipedia.org/wiki/Abraham_Maslow",
-        "type": "secondaire"
+        "type": "secondaire",
+        "date": "2026-09-07"
       },
       {
         "titre": "Stable Diffusion — Wikipedia (EN)",
         "url": "https://en.wikipedia.org/wiki/Stable_Diffusion",
-        "type": "primaire"
+        "date": "2026-09-07",
+        "type": "secondaire"
       }
     ],
     "axes_prospectifs": [
@@ -12127,15 +12201,13 @@
       {
         "titre": "Jean Piaget — Wikipédia",
         "url": "https://fr.wikipedia.org/wiki/Jean_Piaget",
-        "type": "secondaire"
-      },
-      {
-        "titre": "Systèmes de tutorat adaptatif — documentation sectorielle EdTech",
-        "type": "primaire"
+        "type": "secondaire",
+        "date": "2026-09-05"
       },
       {
         "titre": "Intelligent tutoring system — Wikipedia",
         "url": "https://en.wikipedia.org/wiki/Intelligent_tutoring_system",
+        "date": "2026-09-07",
         "type": "secondaire"
       }
     ],
@@ -12191,15 +12263,13 @@
       {
         "titre": "Planetary Boundaries — The safe operating space for humanity (Stockholm Resilience Centre)",
         "url": "https://www.stockholmresilience.org/research/planetary-boundaries.html",
-        "type": "secondaire"
-      },
-      {
-        "titre": "GraphCast (Google DeepMind, publié dans Science, 2023)",
-        "type": "primaire"
+        "type": "secondaire",
+        "date": "2026-09-06"
       },
       {
         "titre": "Weather forecasting — Wikipedia",
         "url": "https://en.wikipedia.org/wiki/Weather_forecasting",
+        "date": "2026-09-07",
         "type": "secondaire"
       }
     ],
