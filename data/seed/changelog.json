@@ -236,5 +236,40 @@
     "type": "correction",
     "cible": "qa, veille, questions",
     "resume": "Lot qualité et gouvernance documentaire. Retrait de quinze fichiers du projet Parents Solo poussés par erreur dans ce dépôt le 06/09, sauvegardés hors dépôt avant suppression et attestés présents ailleurs — le module correspondant est installé en production sur l'instance Odoo. Vérificateur de disponibilité des URL du corpus en lot, écrit puis exécuté : 405 URL distinctes testées, 383 valides, 14 valides après redirection, 3 mortes désormais corrigées, 5 répondant 403 à un client automatique et explicitement distinguées des liens morts. Trouvaille collatérale plus lourde que les liens morts : sur 1250 entrées de source, 350 sources primaires n'ont pas d'URL, et une seule porte une date, alors que le sourçage systématique daté est la promesse affichée du projet. Audit du schéma des quatre questions-tests et cinq propositions d'extension documentées sans être ajoutées, ces questions engageant la ligne éditoriale. Procédure de revue humaine de la veille documentée, avec une décision laissée ouverte sur l'auto-validation : le score de fiabilité est déduit du nom du flux et non du contenu, il ne peut donc pas servir seul de déclencheur."
+  },
+  {
+    "id": "audit-complet-corpus-2026-09-07",
+    "date": "2026-09-07",
+    "type": "correction",
+    "cible": "qa",
+    "resume": "Achèvement de l'audit de fond, qui ne portait que sur 69 fiches sur 512. Quatre campagnes menées en parallèle : un auditeur mécanique passant les 512 fiches sur les propriétés vérifiables par machine, l'audit des 201 fiches de gap qui n'avaient jamais été relues, l'extension de l'audit humain à 55 fiches choisies dans les lots produits le plus vite, et la revue exhaustive des 44 fiches IA et de leurs 87 usages. L'enseignement du premier audit est confirmé et amplifié : la neutralité tient partout, y compris sur les régimes politiques et les écoles économiques, mais la fidélité à la source décroche d'autant plus que le lot a été produit vite — le lot des institutions de recherche note 2,67 sur 5 en fidélité contre 3,78 pour un lot témoin. Trois découvertes que l'audit humain ne pouvait pas faire : une seule source datée sur 1 235 alors que le sourçage daté est la promesse affichée du projet ; 54 fiches humaines déclarant la même URL en source primaire et en source secondaire, donc sans aucune primaire réelle ; et 42,5 pour cent des gaps portant au moins un fait absent de leurs deux fiches sources, alors que la règle du projet veut qu'ils s'en déduisent exclusivement."
+  },
+  {
+    "id": "corrections-corpus-2026-09-07",
+    "date": "2026-09-07",
+    "type": "correction",
+    "cible": "referentiel-humain, referentiel-ia, gap-analysis",
+    "resume": "Application des corrections issues des quatre audits. Référentiel IA : 24 findings traités et 3 réfutés après réouverture des sources, les 6 titres de source non identifiables supprimés ou remplacés par le document réel, plus aucune source sans URL ni aucune URL déclarée à la fois primaire et secondaire, 21 sources primaires réelles ajoutées, 164 sources datées sur 172. Référentiel humain : 62 findings traités et 5 réfutés, les 54 fausses sources primaires supprimées dont 28 remplacées par le document fondateur réel — Charte de l'ONU, Statut de Rome, GATT 1947, Manifeste Agile —, 22 formules creuses attribuées à un critique nommé ou retirées, 339 sources datées sur 485. Fiches de gap : 119 corps réécrits, les documents clés des 199 gaps repris de leurs deux fiches parentes, et la proportion de gaps portant un fait hors corpus ramenée de 29,4 pour cent à zéro, mesurée par script et non estimée. Le validateur passe de 453 à 320 avertissements sans qu'aucun seuil ait été modifié."
+  },
+  {
+    "id": "gabarit-maturite-ia-2026-09-07",
+    "date": "2026-09-07",
+    "type": "evolution_structurelle",
+    "cible": "referentiel-ia",
+    "resume": "Refonte du traitement de la maturité technologique dans les fiches IA. L'échelle TRL mesure la maturité d'un déploiement ; elle était appliquée à des méthodes, à des phénomènes et à l'adoption académique, ce qui produisait des chiffres sans référent — AlexNet à 9 sur la foi d'un concours, l'hallucination à 9 alors que ce n'est pas un système. Plutôt que de redéfinir localement une norme, ce qui l'aurait vidée en gardant son autorité, le TRL devient facultatif et se réserve aux usages dont on peut nommer l'exploitant, le lieu et la date ; un champ diffusion à quatre valeurs textuelles, délibérément non chiffré, prend le relais ailleurs ; et toute valeur de TRL exige désormais une justification nommant le déploiement qui la fonde. Sur les 83 usages, 21 conservent un TRL justifié, 12 sont relevés, 2 abaissés, 55 passent à une diffusion textuelle et les 7 usages de l'axe limites perdent le champ. Le validateur contrôle ces trois règles."
+  },
+  {
+    "id": "questions-tests-cinq-nouvelles-2026-09-07",
+    "date": "2026-09-07",
+    "type": "ajout",
+    "cible": "questions",
+    "resume": "Cinq questions-tests permanentes ajoutées aux quatre existantes : la conscience artificielle et son critère, le caractère structurel ou conjoncturel des limites de l'IA générative, les modèles de management résistant à l'automatisation de l'encadrement, les conditions auxquelles un résultat obtenu par IA constitue une connaissance, et la mesurabilité du bien-vivre. 25 perspectives, 107 sources, 65 fiches distinctes mobilisées dont 28 fiches IA — les 14 perspectives existantes n'en mobilisaient aucune, ce qui laissait la moitié du corpus hors d'épreuve. Le niveau de confiance code ce que la perspective affirme et non son prestige : le fonctionnalisme passe en hypothèse prospective parce que sa conclusion n'est pas démontrée, tandis qu'une position minoritaire comme celle de Penrose est retenue et nommée minoritaire plutôt que disqualifiée. Quatre perspectives annoncées par le document de propositions ont été rétractées ou rétrogradées faute de matière dans le corpus, l'écart étant écrit dans leurs limites plutôt que comblé par des faits extérieurs."
+  },
+  {
+    "id": "rag-preuve-bout-en-bout-2026-09-07",
+    "date": "2026-09-07",
+    "type": "correction",
+    "cible": "questions",
+    "resume": "Le moteur de réponse prédictive, écrit mais jamais exécuté, a été éprouvé de bout en bout : PostgreSQL 16 et pgvector 0.8.6 réels montés dans le bac à sable, schéma appliqué deux fois pour vérifier son idempotence, indexation complète des 512 fiches en 2847 passages, et route de question appelée pour de vrai. Sept bugs trouvés et corrigés, dont trois auraient frappé au premier lancement en production : le paramètre de recherche de l'index vectoriel plafonnait le nombre de passages rendus sous ce que la route réclame, sans erreur — le moteur aurait silencieusement refusé des questions qu'il traitait la veille ; le schéma échouait dès sa première table sur un projet Supabase, où l'extension vectorielle ne vit pas dans le schéma public ; et la clé du cache de réponses ignorait les seuils, ce qui aurait rendu impossible le réglage recommandé par la documentation. S'y ajoutent un plafond de contexte dépassé de neuf pour cent, un passage orphelin présenté au lecteur comme une source avec un lien mort, et deux refus distincts affichant le même message contradictoire. Les garde-fous sont vérifiés : sous le seuil de pertinence le moteur refuse de répondre sans appeler le modèle, les plafonds tiennent, le cache économise les appels, les sources sont toujours rendues. Restent invérifiables sans les clés : la pertinence sémantique elle-même, donc le seuil, et la couche HTTP de Supabase."
   }
 ]
