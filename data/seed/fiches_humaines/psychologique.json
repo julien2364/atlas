@@ -7,7 +7,7 @@
     "these_centrale": "Pensées, émotions et comportements sont interconnectés ; les schémas de pensée dysfonctionnels (distorsions cognitives) entretiennent la souffrance psychique, et leur restructuration cognitive combinée à l'exposition comportementale progressive produit un changement mesurable.",
     "apport": "Base de preuves empiriques la plus large en psychothérapie (essais contrôlés randomisés sur anxiété, dépression, TOC, phobies) ; a permis la scientifisation méthodologique de la psychothérapie et sa comparabilité avec d'autres traitements.",
     "limites_critiques": "Efficacité bien démontrée sur des troubles ciblés mais critiquée pour une insuffisance sur les causes profondes ou le sens vécu (face aux approches psychodynamiques) ; risque de standardisation excessive par des protocoles rigides peu adaptés à la complexité individuelle ; l'effet mesuré en essai clinique contrôlé décroît souvent hors de ce cadre.",
-    "resonance_ia": "La TCC repose sur des protocoles structurés et mesurables, ce qui en fait le champ psychothérapeutique le plus reproduit par des applications conversationnelles (chatbots de soutien type Woebot, Wysa) ; mais l'alliance thérapeutique — le facteur le plus prédictif du résultat clinique selon les méta-analyses toutes approches confondues — reste débattue quant à sa reproductibilité par une IA sans présence incarnée ni enjeu réciproque.",
+    "resonance_ia": "La TCC repose sur des protocoles structurés et mesurables, ce qui en fait le champ psychothérapeutique le plus reproduit par des agents conversationnels : l'essai randomisé contrôlé de Kathleen Kara Fitzpatrick et ses coauteurs, publié dans JMIR Mental Health le 6 juin 2017, portait ainsi sur la délivrance d'une TCC à de jeunes adultes par l'agent entièrement automatisé Woebot. La littérature dite des « facteurs communs » situe toutefois la relation thérapeutique au cœur de l'efficacité de toute psychothérapie — l'alliance thérapeutique compterait pour 7,5 % de la variance des résultats selon une revue de 2014, et Bruce Wampold conteste dans The Great Psychotherapy Debate (2001) la primauté accordée aux techniques spécifiques ; sa reproductibilité par une IA sans présence incarnée ni enjeu réciproque reste une question ouverte.",
     "sources": [
       {
         "titre": "Beck, A.T. — Cognitive Therapy and the Emotional Disorders",
@@ -20,11 +20,24 @@
       {
         "titre": "Thérapie cognitivo-comportementale",
         "url": "https://fr.wikipedia.org/wiki/Th%C3%A9rapie_cognitivo-comportementale",
+        "type": "secondaire",
+        "date": "2026-09-07"
+      },
+      {
+        "titre": "Fitzpatrick et al., « Delivering Cognitive Behavior Therapy to Young Adults […] Using a Fully Automated Conversational Agent (Woebot): A Randomized Controlled Trial », JMIR Mental Health 4(2):e19",
+        "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC5478797/",
+        "date": "2017-06-06",
+        "type": "secondaire"
+      },
+      {
+        "titre": "Common factors theory — Wikipedia (EN)",
+        "url": "https://en.wikipedia.org/wiki/Common_factors_theory",
+        "date": "2026-09-07",
         "type": "secondaire"
       }
     ],
     "statut": "documente",
-    "derniere_verification": "2026-09-06"
+    "derniere_verification": "2026-09-07"
   },
   {
     "id": "daniel-kahneman-amos-tversky-biais-cognitifs",
@@ -173,7 +186,7 @@
     "axe": "psychologique",
     "sous_domaine": "psychologie_positive",
     "nom": "Abraham Maslow",
-    "these_centrale": "Maslow propose une hiérarchie des besoins humains (physiologiques, sécurité, appartenance, estime, accomplissement de soi) organisée en pyramide, où la satisfaction des besoins inférieurs conditionnerait l'accès aux besoins supérieurs.",
+    "these_centrale": "Maslow propose une hiérarchie des besoins humains (physiologiques, sécurité, appartenance, estime, accomplissement de soi), où la satisfaction des besoins inférieurs conditionnerait l'accès aux besoins supérieurs. La représentation en pyramide qui lui est universellement attribuée n'est pas de lui : elle est due à un consultant en gestion des années 1960 et, selon la source, « représente mal la richesse de son analyse » en trahissant la vision dynamique qu'il avait des besoins.",
     "apport": "Fondateur de la psychologie humaniste avec Rogers, il a orienté la psychologie vers l'étude de la santé psychologique et de l'épanouissement plutôt que la seule pathologie, avec une influence durable en management et en développement personnel.",
     "limites_critiques": "La hiérarchie rigide en pyramide est contestée empiriquement — des études interculturelles montrent que les besoins ne se satisfont pas toujours dans cet ordre strict — et le concept d'« accomplissement de soi » reste difficile à opérationnaliser scientifiquement.",
     "resonance_ia": "La pyramide de Maslow est fréquemment mobilisée, parfois de façon simpliste, pour penser ce que l'IA pourrait ou non automatiser dans le travail humain — les besoins de haut niveau (créativité, sens) étant présentés comme la frontière ultime de la substituabilité, une affirmation qui reste débattue.",
@@ -185,11 +198,12 @@
       {
         "titre": "Abraham Maslow — Wikipédia",
         "url": "https://fr.wikipedia.org/wiki/Abraham_Maslow",
-        "type": "secondaire"
+        "type": "secondaire",
+        "date": "2026-09-07"
       }
     ],
     "statut": "documente",
-    "derniere_verification": "2026-09-05"
+    "derniere_verification": "2026-09-07"
   },
   {
     "id": "carl-rogers",
@@ -221,7 +235,7 @@
     "nom": "Martin Seligman",
     "these_centrale": "Seligman fonde la psychologie positive, orientant la discipline vers l'étude scientifique du bien-être, des forces de caractère et de l'épanouissement, après avoir d'abord théorisé l'impuissance apprise (learned helplessness).",
     "apport": "Ses travaux ont structuré tout un champ de recherche (modèle PERMA du bien-être) avec des applications en éducation, entreprise et santé publique, et une forte diffusion via ses ouvrages de vulgarisation.",
-    "limites_critiques": "La psychologie positive est critiquée pour un optimisme parfois prescriptif proche du développement personnel, une validation empirique inégale selon les concepts, et un relatif oubli des déterminants sociaux et structurels du bien-être.",
+    "limites_critiques": "La psychologie positive lui vaut le reproche d'un optimisme prescriptif proche du développement personnel et d'une attention faible aux déterminants sociaux du bien-être. Une controverse plus lourde est documentée : en octobre 2014, le journaliste James Risen a affirmé que l'American Psychological Association, qu'il avait présidée, avait travaillé avec la CIA sur des programmes de torture ; une enquête interne de l'APA a documenté son implication éventuelle, et Seligman a publiquement défendu en 2015 sa non-implication, rappelant la réunion qu'il avait convoquée à son domicile en décembre 2001 sur la participation d'universitaires aux efforts de sécurité nationale après le 11 septembre.",
     "resonance_ia": "Le concept d'impuissance apprise de Seligman éclaire indirectement les effets psychologiques de l'automatisation du travail par l'IA — le sentiment de perte de contrôle face à des systèmes jugés incontrôlables pouvant reproduire des dynamiques proches de celles étudiées dans ses travaux originels.",
     "sources": [
       {
@@ -231,11 +245,12 @@
       {
         "titre": "Martin Seligman — Wikipédia",
         "url": "https://fr.wikipedia.org/wiki/Martin_Seligman",
-        "type": "secondaire"
+        "type": "secondaire",
+        "date": "2026-09-07"
       }
     ],
     "statut": "documente",
-    "derniere_verification": "2026-09-05"
+    "derniere_verification": "2026-09-07"
   },
   {
     "id": "jean-piaget",
