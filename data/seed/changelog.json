@@ -323,5 +323,26 @@
       "date": "2026-06-03",
       "type": "primaire"
     }
+  },
+  {
+    "id": "referentiel-humain-300-fiches-2026-09-07",
+    "date": "2026-09-07",
+    "type": "ajout",
+    "cible": "referentiel-humain",
+    "resume": "Extension du référentiel humain de 269 à 569 fiches. Trois cents personnalités ajoutées en sociologie, psychologie et géopolitique, réparties en douze lots rédigés en parallèle sur une liste établie et dédoublonnée au préalable contre le corpus existant — sans quoi douze rédacteurs auraient produit trois fois le même auteur. La psychologie était l'axe le plus maigre du référentiel avec douze fiches : elle en compte désormais cent douze. Sociologie et géopolitique deviennent des sous-domaines de l'axe social plutôt que de nouveaux axes, ce qui évite de toucher au schéma et à toute l'interface pour un gain nul. Composition de la liste : 56 fondateurs, 108 auteurs du vingtième siècle, 136 contemporains ; 26 pour cent de femmes ; et une part non occidentale de 6 pour cent en psychologie, 19 en sociologie, 22 en géopolitique, obtenue par recherche et non par complément de canon. Les règles de sourcing durcies le matin même s'appliquent intégralement : source primaire réelle distincte de la secondaire, chaque page ouverte et son sujet confirmé avant citation, chaque source datée, aucun fait écrit de mémoire. Les rédacteurs signalent explicitement les auteurs pour lesquels aucune source primaire accessible n'a été trouvée, les pages d'homonymie écartées — dont une notice de philosophie néoplatonicienne servie à la place de Norbert Elias — et les limites critiques qu'ils n'ont pas pu attribuer à un contradicteur nommé, remplacées par une limite interne signalée comme telle plutôt que par une formule creuse."
+  },
+  {
+    "id": "moteur-reponse-local-trois-modes-2026-09-07",
+    "date": "2026-09-07",
+    "type": "evolution_structurelle",
+    "cible": "questions",
+    "resume": "Refonte du moteur de réponse, qui ne dépend plus ni d'une base de données ni d'une clé payante. L'index vectoriel quitte Supabase pour un fichier versionné au dépôt de 693 kilooctets, chargé comme les autres données : la recherche sur 2847 passages se fait en mémoire, et la mesure montre que la quantification sur huit bits ne coûte rien — rappel identique à la référence en flottants, écart de similarité moyen de trois dix-millièmes. La projection dense a été écartée sur mesure et non par préférence : à 512 dimensions elle détruit le classement avant même de faire gagner de la place, le vocabulaire du corpus ne comptant que 7436 termes. Les embeddings se calculent désormais sans clé ni réseau, et le rapport dit franchement ce que cette recherche lexicale rate — une question qui ne nomme pas Popper ne retrouve pas la fiche Popper, là où un modèle sémantique rapprocherait connaissance scientifique et falsifiabilité. Trois modes de génération coexistent avec repli automatique : sept fournisseurs à palier gratuit câblés derrière une interface unique, un mode sans clé où le site produit un prompt à copier et relit la réponse rapportée, et un mode extractif qui compose les perspectives depuis les champs des fiches retrouvées — il ne peut rien inventer, tout ce qu'il affiche est cité du corpus, et l'interface annonce systématiquement quel mode a produit la réponse affichée. Supabase est conservé en option documentée, avec le critère de bascule chiffré au-delà d'une trentaine de milliers de passages."
+  },
+  {
+    "id": "sources-veille-actualite-economie-2026-09-07",
+    "date": "2026-09-07",
+    "type": "ajout",
+    "cible": "veille",
+    "resume": "Les sources de veille passent de huit à vingt-six, avec l'ouverture de l'actualité, de l'économie et des marchés : banques centrales, institutions publiques européennes, instituts de recherche économique et rédactions francophones et européennes. Chaque flux a été récupéré avec le client du collecteur lui-même et retenu seulement s'il rend un XML analysable, contient des articles datés récents, et expose des liens sur le domaine de l'éditeur — ce dernier point décidant du score de fiabilité. Vingt-quatre flux ont été testés et écartés, avec leur raison, ce qui évitera de les reprendre dans six mois : pare-feu applicatif, portail rendu côté client sans flux réel, XML mal formé, ou flux abandonné depuis plus d'un an. Correction annexe : les deux flux arXiv passaient par un transport non chiffré et ne rapportaient plus rien derrière le proxy, ils sont rétablis. La collecte a rapporté 113 propositions nouvelles au premier passage."
   }
 ]

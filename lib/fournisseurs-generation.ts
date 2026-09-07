@@ -19,6 +19,7 @@
 //     structurée, d'où l'analyse tolérante de `lib/analyse-sortie.ts`.
 
 import { analyserSortie, type SortieBrute } from "@/lib/analyse-sortie";
+import { SITE_URL } from "@/lib/site-config";
 
 export type Dialecte = "anthropic" | "openai";
 
@@ -298,6 +299,13 @@ async function appelerOpenAI(f: FournisseurActif, contrat: ContratGeneration): P
     const corps = avecFormat ? { ...corpsDeBase, response_format: { type: "json_object" } } : corpsDeBase;
     const entetes: Record<string, string> = { "Content-Type": "application/json" };
     if (f.cle) entetes.Authorization = `Bearer ${f.cle}`;
+    // OpenRouter attribue les requêtes au site appelant et s'en sert pour ses
+    // classements. Ces deux en-têtes ne conditionnent pas l'accès, mais sans eux
+    // l'application apparaît en « anonyme » dans le tableau de bord du compte.
+    if (f.descripteur.id === "openrouter") {
+      entetes["HTTP-Referer"] = SITE_URL;
+      entetes["X-Title"] = "Atlas Humain × IA";
+    }
 
     let reponse: Response;
     try {
