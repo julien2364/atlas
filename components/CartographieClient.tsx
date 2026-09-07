@@ -6,6 +6,7 @@ import Treemap, { type TreemapItem } from "@/components/Treemap";
 import RadarChart, { type RadarAxisDatum } from "@/components/RadarChart";
 import FriseChangelog, { type JalonVolume } from "@/components/FriseChangelog";
 import HeatmapTRL, { LABELS_SECTEUR, SECTEURS } from "@/components/HeatmapTRL";
+import HeatmapAxeSecteur from "@/components/HeatmapAxeSecteur";
 
 const TREEMAP_PALETTE = ["#6366f1", "#14b8a6", "#a855f7", "#f97316", "#ec4899", "#06b6d4", "#84cc16"];
 
@@ -397,6 +398,24 @@ export default function CartographieClient({
         </p>
         <div className="mt-3">
           <HeatmapTRL fiches={ia} />
+        </div>
+      </section>
+
+      <section>
+        <h3 className="text-sm font-medium">
+          Grille de maturité agrégée — TRL par axe IA × secteur d&apos;usage ({SECTEURS.length} secteurs × 6 axes)
+        </h3>
+        <p className="mt-1 text-xs text-neutral-500">
+          Le niveau intermédiaire entre le radar (une valeur par secteur, toutes capacités confondues) et la heatmap
+          fiche par fiche : « quelle FAMILLE de capacités IA est mûre dans quel secteur ». Une moyenne calculée sur
+          deux observations n&apos;étant pas une mesure, chaque cellule affiche son effectif et l&apos;étendue des TRL
+          agrégés, et les cellules sous trois
+          observations portent une marque « ! ». Une cellule hachurée « n. d. » ne contient aucun usage
+          documenté — ce n&apos;est pas une maturité faible. Activer une cellule affiche la distribution des TRL et la
+          liste des fiches qui composent la moyenne.
+        </p>
+        <div className="mt-3">
+          <HeatmapAxeSecteur fiches={ia} />
         </div>
       </section>
 

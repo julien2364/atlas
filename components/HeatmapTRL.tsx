@@ -36,7 +36,7 @@ export const LABELS_SECTEUR: Record<SecteurUsage, string> = {
 // son propre fond ; comme la cellule porte son fond, le rendu est identique en
 // thème clair et en thème sombre. La couleur ne fait que renforcer le chiffre,
 // qui reste écrit en clair dans la cellule.
-const ECHELLE_TRL: { fond: string; texte: string }[] = [
+export const ECHELLE_TRL: { fond: string; texte: string }[] = [
   { fond: "#1b0c41", texte: "#ffffff" }, // TRL 1
   { fond: "#4a0c6b", texte: "#ffffff" }, // TRL 2
   { fond: "#781c6d", texte: "#ffffff" }, // TRL 3
@@ -48,7 +48,7 @@ const ECHELLE_TRL: { fond: string; texte: string }[] = [
   { fond: "#fcffa4", texte: "#1c1917" }, // TRL 9
 ];
 
-const LABELS_AXE_IA: Record<AxeIA, string> = {
+export const LABELS_AXE_IA: Record<AxeIA, string> = {
   generatif_raisonnement: "Génératif / raisonnement",
   agentique: "Agentique",
   scientifique: "Scientifique",
@@ -61,11 +61,11 @@ const LABELS_AXE_IA: Record<AxeIA, string> = {
 // comme « un TRL très bas ». Elle change donc de nature, pas seulement de
 // teinte — pas de remplissage, bordure pointillée, texture, et la mention
 // « n. d. » écrite dans la cellule.
-const TEXTURE_NON_DOCUMENTE = {
+export const TEXTURE_NON_DOCUMENTE = {
   backgroundImage: "repeating-linear-gradient(45deg, currentColor 0 1px, transparent 1px 6px)",
 };
 
-function paletteTRL(trl: number): { fond: string; texte: string } {
+export function paletteTRL(trl: number): { fond: string; texte: string } {
   const index = Math.min(Math.max(Math.round(trl), 1), 9) - 1;
   return ECHELLE_TRL[index];
 }
