@@ -1,5 +1,30 @@
 # Moteur de réponse prédictive (RAG) — mise en route et coût
 
+> ## ⚠️ DOCUMENT HISTORIQUE — l'architecture décrite ici n'est plus celle du moteur
+>
+> **La marche à suivre à jour est `docs/moteur-reponse-local.md`.**
+>
+> Ce document décrit l'architecture d'avant le 07/09/2026 : index vectoriel dans un projet
+> Supabase mutualisé, embeddings chez Voyage AI, génération chez Anthropic — trois clés
+> obligatoires pour que le moteur réponde. Décision de Julien, prise le 07/09/2026 : plus de base
+> de données, plus de clé obligatoire. L'index tient dans un fichier versionné au dépôt
+> (`data/index-vectoriel.json`, 693 Ko), les embeddings sont calculés localement, et la rédaction
+> se fait au choix par un fournisseur d'API, par un aller-retour manuel, ou sans aucun modèle.
+>
+> **Ce qui reste valable ici, et qui vaut d'être lu :**
+> - l'**annexe** (défauts trouvés et corrigés le 07/09) : c'est l'histoire des sept pannes que la
+>   chaîne a réellement produites, et la raison pour laquelle la logique de refus n'a PAS été
+>   réécrite lors de la refonte ;
+> - le **§6** (ce que le moteur refuse de faire) : les garde-fous décrits y sont ceux d'aujourd'hui,
+>   repris tels quels, avec un garde-fou de plus ;
+> - le **§5** (méthode d'estimation de coût), si une clé payante est un jour posée ;
+> - la description du **chemin Supabase**, qui reste une option documentée pour le jour où le
+>   corpus décuplerait (cf. `docs/moteur-reponse-local.md` §7 pour le critère de bascule).
+>
+> **Ce qui n'est plus vrai :** les seuils (0,35 / 0,45 ont été recalibrés à 0,08 / 0,15 pour
+> l'échelle d'un cosinus BM25), les prérequis (aucune clé n'est obligatoire), le cache (en mémoire
+> et non en base), et toute la section « mise en route » §2.
+
 Lot MP-4 · rédigé le 07/09/2026 · **révisé le 07/09/2026 après exécution réelle de la chaîne**
 Cible : projet Supabase **mutualisé** `cvmsozjxpjzvyhinvooa`
 
