@@ -1,54 +1,42 @@
 "use client";
 
 import { useState } from "react";
-import type { Question, NiveauConfiance } from "@/lib/types";
+import type { Perspective, Question, NiveauConfiance } from "@/lib/types";
 
-const LABEL_CONFIANCE: Record<NiveauConfiance, string> = {
+export const LABEL_CONFIANCE: Record<NiveauConfiance, string> = {
   fait_verifie: "Fait vérifié",
   consensus_scientifique: "Consensus scientifique",
   opinion_majoritaire: "Opinion majoritaire",
   hypothese_prospective: "Hypothèse prospective",
 };
 
-const COULEUR_CONFIANCE: Record<NiveauConfiance, string> = {
+export const COULEUR_CONFIANCE: Record<NiveauConfiance, string> = {
   fait_verifie: "bg-green-50 text-green-700 dark:bg-green-950 dark:text-green-400",
   consensus_scientifique: "bg-blue-50 text-blue-700 dark:bg-blue-950 dark:text-blue-400",
   opinion_majoritaire: "bg-amber-50 text-amber-700 dark:bg-amber-950 dark:text-amber-400",
   hypothese_prospective: "bg-purple-50 text-purple-700 dark:bg-purple-950 dark:text-purple-400",
 };
 
-function QuestionCard({ item }: { item: Question }) {
+/**
+ * Rendu d'un jeu de perspectives : sélecteur d'école puis les six champs du
+ * type `Perspective`, plus les sources.
+ *
+ * Exporté (MP-4) pour être réutilisé tel quel par le moteur RAG
+ * (components/QuestionLibreClient.tsx) : une réponse générée s'affiche donc
+ * dans EXACTEMENT le même gabarit qu'une réponse rédigée à la main, ce qui rend
+ * la comparaison de qualité immédiatement visible pour le lecteur — et rend
+ * impossible de « tricher » en affichant moins de champs côté RAG.
+ */
+export function PerspectivesPanel({ perspectives }: { perspectives: Perspective[] }) {
   const [actif, setActif] = useState(0);
-  const p = item.perspectives[actif];
+  if (perspectives.length === 0) return null;
+  const p = perspectives[Math.min(actif, perspectives.length - 1)];
 
   return (
-    <article className="rounded-lg border border-neutral-200 p-5 dark:border-neutral-800">
-      <h2 className="font-medium">{item.question}</h2>
-
-      {(item.sous_questions?.length || item.axes_recherche?.length) ? (
-        <div className="mt-3 grid gap-3 text-xs text-neutral-500 sm:grid-cols-2">
-          {item.sous_questions?.length ? (
-            <div>
-              <p className="font-medium text-neutral-400">Sous-questions</p>
-              <ul className="mt-1 list-disc space-y-1 pl-4">
-                {item.sous_questions.map((sq, i) => <li key={i}>{sq}</li>)}
-              </ul>
-            </div>
-          ) : null}
-          {item.axes_recherche?.length ? (
-            <div>
-              <p className="font-medium text-neutral-400">Axes de recherche</p>
-              <ul className="mt-1 list-disc space-y-1 pl-4">
-                {item.axes_recherche.map((a, i) => <li key={i}>{a}</li>)}
-              </ul>
-            </div>
-          ) : null}
-        </div>
-      ) : null}
-
+    <>
       {/* Sélecteur de modèle/école — jamais un seul verdict (cf. /methodologie) */}
       <div className="mt-4 flex flex-wrap gap-2">
-        {item.perspectives.map((persp, i) => (
+        {perspectives.map((persp, i) => (
           <button
             key={i}
             onClick={() => setActif(i)}
@@ -109,6 +97,37 @@ function QuestionCard({ item }: { item: Question }) {
           </div>
         )}
       </div>
+    </>
+  );
+}
+
+function QuestionCard({ item }: { item: Question }) {
+  return (
+    <article className="rounded-lg border border-neutral-200 p-5 dark:border-neutral-800">
+      <h2 className="font-medium">{item.question}</h2>
+
+      {(item.sous_questions?.length || item.axes_recherche?.length) ? (
+        <div className="mt-3 grid gap-3 text-xs text-neutral-500 sm:grid-cols-2">
+          {item.sous_questions?.length ? (
+            <div>
+              <p className="font-medium text-neutral-400">Sous-questions</p>
+              <ul className="mt-1 list-disc space-y-1 pl-4">
+                {item.sous_questions.map((sq, i) => <li key={i}>{sq}</li>)}
+              </ul>
+            </div>
+          ) : null}
+          {item.axes_recherche?.length ? (
+            <div>
+              <p className="font-medium text-neutral-400">Axes de recherche</p>
+              <ul className="mt-1 list-disc space-y-1 pl-4">
+                {item.axes_recherche.map((a, i) => <li key={i}>{a}</li>)}
+              </ul>
+            </div>
+          ) : null}
+        </div>
+      ) : null}
+
+      <PerspectivesPanel perspectives={item.perspectives} />
     </article>
   );
 }

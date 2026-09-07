@@ -32,6 +32,9 @@ yarn-error.log*
 
 # env files (can opt-in for committing if needed)
 .env*
+# Exception : le gabarit de configuration doit être versionné (MP-4).
+# Il ne contient que des NOMS de variables et des commentaires, jamais de valeur.
+!.env.example
 
 # vercel
 .vercel
