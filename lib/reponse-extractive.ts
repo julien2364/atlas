@@ -30,8 +30,8 @@
 // Perspectives distinctes, et convergence assumée
 // -----------------------------------------------
 // Les passages sont d'abord regroupés PAR FICHE (sinon quatre extraits du même
-// auteur deviendraient quatre « écoles »), puis diversifiés PAR AXE (sinon les
-// cinq perspectives viennent toutes de l'axe philosophique). Et si les fiches
+// auteur deviendraient quatre « écoles »), puis diversifiés PAR FAMILLE — axe et
+// sous-domaine (sinon les cinq perspectives viennent toutes de l'économie). Et si les fiches
 // retrouvées convergent malgré tout — un seul axe, un seul sous-domaine — c'est
 // DIT, au lieu de fabriquer une controverse qui n'existe pas dans le corpus.
 
@@ -43,8 +43,19 @@ import { libelleChamp } from "@/lib/passages-corpus.mjs";
 /** Nombre maximal de perspectives composées. Au-delà, la page devient illisible. */
 const MAX_PERSPECTIVES = 5;
 
-/** Perspectives issues d'un même axe. Deux au plus : sinon un axe monopolise la réponse. */
-const MAX_PAR_AXE = 2;
+/**
+ * Perspectives issues d'une même FAMILLE (axe + sous-domaine). Deux au plus :
+ * sinon une famille monopolise la réponse.
+ *
+ * La famille, et non l'axe seul : l'axe est très grossier — « social » couvre
+ * l'économie, les modèles politiques, la gouvernance mondiale et le management.
+ * Plafonner à l'axe écartait « Maoïsme » d'une question sur la comparaison des
+ * systèmes économiques au profit d'une paire « Nietzsche × Claude » moins bien
+ * classée, au seul motif que deux fiches d'économie étaient déjà passées.
+ * Mesuré sur les questions-tests : la famille diversifie sans sacrifier la
+ * pertinence, l'axe seul sacrifiait les deux.
+ */
+const MAX_PAR_FAMILLE = 2;
 
 /** Sources affichées par perspective. */
 const MAX_SOURCES = 6;
@@ -108,10 +119,12 @@ function axeDeFiche(type: TypeFicheRag, id: string): { axe: string; sous_domaine
     return { axe: fiche?.axe ?? "inconnu", sous_domaine: fiche?.editeur ?? "" };
   }
   const gap = getFicheGap(id);
-  // Une fiche de gap hérite de l'axe de sa fiche humaine : c'est cet axe-là qui
-  // détermine le point de vue, la fiche IA n'étant que l'outil comparé.
+  // Une fiche de gap hérite de l'axe ET du sous-domaine de sa fiche humaine :
+  // c'est ce point de vue-là qu'elle porte, la fiche IA n'étant que l'outil
+  // comparé. Son propre `sujet` ne servirait pas ici — il est quasi unique par
+  // paire, donc aucun gap ne serait jamais plafonné.
   const humaine = gap ? getFicheHumaine(gap.fiche_humaine_id) : undefined;
-  return { axe: humaine?.axe ?? "gap", sous_domaine: gap?.sujet ?? "" };
+  return { axe: humaine?.axe ?? "gap", sous_domaine: humaine?.sous_domaine ?? "" };
 }
 
 function libelleAxe(type: TypeFicheRag, axe: string): string {
@@ -145,39 +158,85 @@ function grouperParFiche(passages: PassagePourExtraction[]): GroupeFiche[] {
 }
 
 /**
+ * Fraction de la meilleure similarité en dessous de laquelle une fiche ne
+ * devient PAS une perspective.
+ *
+ * Sans ce plancher, la diversification par axe promeut la meilleure fiche de
+ * chaque axe même quand elle est à 0,10 pendant que la première est à 0,42 :
+ * sur « comparer capitalisme, communisme et modèle chinois », elle faisait
+ * entrer une fiche « Caltech » et une paire « Nietzsche × Claude » comme
+ * écoles de pensée, en écartant « Maoïsme ». Une perspective hors sujet
+ * décrédibilise les quatre autres. Les fiches sous le plancher restent
+ * visibles dans les extraits — elles ne sont simplement pas présentées comme
+ * un point de vue sur la question.
+ *
+ * Un quart, et pas plus : au-dessus, une question dont UNE fiche ressort très
+ * fort (« les limites de l'IA générative sont-elles structurelles » : 0,324
+ * contre 0,098 pour la suivante) n'obtient plus qu'une seule perspective, ce
+ * qui est en deçà de la règle de neutralité active. Les passages retenus sont
+ * de toute façon déjà tous au-dessus du seuil de similarité du moteur, et la
+ * proximité réelle de chaque perspective est écrite dans sa justification :
+ * une perspective faible se voit, elle ne se déguise pas.
+ */
+const FRACTION_PLANCHER = 0.25;
+
+/**
  * Choisit les fiches qui deviendront des perspectives.
  *
- * Deux passes : la première prend la meilleure fiche de chaque axe, ce qui
- * garantit la diversité même quand un axe domine le classement ; la seconde
- * complète dans l'ordre de proximité, sans dépasser MAX_PAR_AXE.
+ * Ordre de priorité assumé : la PERTINENCE d'abord, la diversité ensuite.
+ *   1. plancher relatif : on écarte ce qui est très loin derrière la première ;
+ *   2. passe de diversité : au plus MAX_PAR_FAMILLE fiches d'une même famille
+ *      (axe + sous-domaine), pour que cinq fiches d'économie ne deviennent pas
+ *      cinq « écoles » différentes ;
+ *   3. passe de complément : s'il reste des places, on les donne aux meilleures
+ *      candidates restantes, plafond de famille compris. Mieux vaut deux fiches
+ *      de plus de la même famille qu'une perspective hors sujet ramassée pour
+ *      faire nombre.
  */
 function choisirFiches(groupes: GroupeFiche[]): GroupeFiche[] {
-  const retenus: GroupeFiche[] = [];
-  const parAxe = new Map<string, number>();
+  if (groupes.length === 0) return [];
+  const plancher = groupes[0].similarite_max * FRACTION_PLANCHER;
+  const candidats = groupes.filter((g) => g.similarite_max >= plancher);
 
-  for (const groupe of groupes) {
+  const retenus: GroupeFiche[] = [];
+  const parFamille = new Map<string, number>();
+  const famille = (g: GroupeFiche) => `${g.axe}/${g.sous_domaine}`;
+
+  for (const groupe of candidats) {
     if (retenus.length >= MAX_PERSPECTIVES) break;
-    if ((parAxe.get(groupe.axe) ?? 0) > 0) continue;
-    parAxe.set(groupe.axe, 1);
+    const deja = parFamille.get(famille(groupe)) ?? 0;
+    if (deja >= MAX_PAR_FAMILLE) continue;
+    parFamille.set(famille(groupe), deja + 1);
     retenus.push(groupe);
   }
-  for (const groupe of groupes) {
+  for (const groupe of candidats) {
     if (retenus.length >= MAX_PERSPECTIVES) break;
     if (retenus.includes(groupe)) continue;
-    const deja = parAxe.get(groupe.axe) ?? 0;
-    if (deja >= MAX_PAR_AXE) continue;
-    parAxe.set(groupe.axe, deja + 1);
     retenus.push(groupe);
   }
   return retenus.sort((a, b) => b.similarite_max - a.similarite_max);
 }
 
-/** Extraits retrouvés, recopiés tels quels et étiquetés par leur champ d'origine. */
-function extraitsCites(groupe: GroupeFiche, maximum = 3): string {
-  return groupe.passages
-    .slice(0, maximum)
-    .map((p) => `[${libelleChamp(p.champ)}] ${sansEntete(p.texte)}`)
-    .join("\n\n");
+/**
+ * Extraits retrouvés, recopiés tels quels et étiquetés par leur champ d'origine.
+ *
+ * `dejaRepris` liste les champs déjà affichés ailleurs dans la perspective : la
+ * thèse centrale est en « hypothèses », l'apport en « réponse », les limites
+ * critiques en « limites ». Sans ce filtre, « état actuel » répétait mot pour
+ * mot les trois autres champs et la perspective donnait l'impression de tourner
+ * en rond. Ce qui reste ici est donc ce que la recherche a trouvé EN PLUS.
+ */
+function extraitsCites(groupe: GroupeFiche, dejaRepris: string[], maximum = 3): string {
+  const exclus = new Set(dejaRepris);
+  const restants = groupe.passages.filter((p) => !exclus.has(p.champ)).slice(0, maximum);
+  if (restants.length === 0) {
+    const champs = groupe.passages.map((p) => `« ${libelleChamp(p.champ)} »`).join(", ");
+    return (
+      `La recherche n'a retrouvé de cette fiche que ${champs}, déjà repris dans les autres champs ` +
+      "de cette perspective. Aucun élément factuel supplémentaire n'a été trouvé."
+    );
+  }
+  return restants.map((p) => `[${libelleChamp(p.champ)}] ${sansEntete(p.texte)}`).join("\n\n");
 }
 
 function justification(groupe: GroupeFiche): string {
@@ -216,7 +275,7 @@ function perspectiveHumaine(groupe: GroupeFiche): Perspective | null {
   return {
     modele: contexte ? `${fiche.nom} (${contexte})` : fiche.nom,
     hypotheses: texteOuVide(fiche.these_centrale) || "Thèse centrale non renseignée dans la fiche.",
-    etat_actuel: extraitsCites(groupe),
+    etat_actuel: extraitsCites(groupe, ["these_centrale", "apport", "limites_critiques"]),
     reponse: texteOuVide(fiche.apport) || sansEntete(groupe.passages[0].texte),
     justification: justification(groupe),
     limites: texteOuVide(fiche.limites_critiques) || "Limites critiques non renseignées dans la fiche.",
@@ -236,7 +295,7 @@ function perspectiveIA(groupe: GroupeFiche): Perspective | null {
       fiche.capacites_cles.length > 0
         ? `Capacités que la fiche attribue à ce système : ${fiche.capacites_cles.join(" ; ")}.`
         : "Capacités clés non renseignées dans la fiche.",
-    etat_actuel: extraitsCites(groupe),
+    etat_actuel: extraitsCites(groupe, ["capacites_cles", "limites_connues"]),
     reponse: sansEntete(groupe.passages[0].texte),
     justification: justification(groupe),
     limites: texteOuVide(fiche.limites_connues) || "Limites connues non renseignées dans la fiche.",
@@ -254,7 +313,7 @@ function perspectiveGap(groupe: GroupeFiche): Perspective | null {
   return {
     modele: gap.sujet ? `${groupe.nom} — ${gap.sujet}` : groupe.nom,
     hypotheses: texteOuVide(gap.mecanisme) || "Mécanisme non renseigné dans la fiche de gap.",
-    etat_actuel: extraitsCites(groupe),
+    etat_actuel: extraitsCites(groupe, ["mecanisme", "apport_ia", "amelioration_possible", "mode_interaction"]),
     reponse: texteOuVide(gap.apport_ia) || sansEntete(groupe.passages[0].texte),
     justification: `${justification(groupe)} Substituabilité déclarée : ${substituabilite.toLowerCase()} ; confiance de la fiche : ${gap.confiance}.`,
     limites:
@@ -289,7 +348,11 @@ export function construireReponseExtractive(
     if (perspective) perspectives.push(perspective);
   }
 
-  const axes = new Set(choisis.map((g) => `${g.type}:${g.axe}`));
+  // Convergence : on regarde l'AXE seul, sans le type de fiche. Une fiche de gap
+  // hérite de l'axe de sa fiche humaine ; distinguer « humaine:philosophique »
+  // de « gap:philosophique » faisait passer pour un débat quatre lectures
+  // philosophiques qui disaient toutes la même chose.
+  const axes = new Set(choisis.map((g) => g.axe));
   const convergence = perspectives.length > 1 && axes.size === 1;
 
   const avertissements: string[] = [
