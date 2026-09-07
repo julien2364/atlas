@@ -41,6 +41,11 @@ import {
   getFicheIA,
 } from "@/lib/corpus";
 import { getSupabaseServiceClient } from "@/lib/supabase";
+import {
+  MODELE_FACTICE,
+  embeddingFactice,
+  embeddingFacticeAutorise,
+} from "@/lib/embedding-factice.mjs";
 
 /* -------------------------------------------------------------------------- */
 /* Réglages                                                                   */
@@ -66,8 +71,18 @@ function nombreEnv(nom: string, defaut: number, min: number, max: number): numbe
 /** Dimension des vecteurs — figée par supabase/schema.sql, ne pas changer sans migration. */
 export const DIMENSION_EMBEDDING = 1024;
 
+/**
+ * Mode d'embedding FACTICE (test uniquement) : hachage local déterministe au
+ * lieu d'un appel à Voyage. Jamais actif par défaut, refusé en production —
+ * les trois verrous sont décrits dans lib/embedding-factice.mjs. Il sert à
+ * éprouver toute la chaîne sans clé ; il ne mesure AUCUNE proximité de sens.
+ */
+export const EMBEDDING_FACTICE = embeddingFacticeAutorise();
+
 /** Modèle d'embedding. Doit être IDENTIQUE à celui utilisé par l'indexeur. */
-export const MODELE_EMBEDDING = process.env.VOYAGE_MODELE_EMBEDDING || "voyage-4-lite";
+export const MODELE_EMBEDDING = EMBEDDING_FACTICE
+  ? MODELE_FACTICE
+  : process.env.VOYAGE_MODELE_EMBEDDING || "voyage-4-lite";
 
 /** Modèle de génération. Vérifier le nom exact dans la console Anthropic avant mise en ligne. */
 export const MODELE_REPONSE = process.env.ATLAS_MODELE_REPONSE || "claude-sonnet-4-5";
@@ -213,13 +228,29 @@ export function empreinte(texte: string): string {
 }
 
 /**
- * Clé de cache. Elle inclut les modèles et les plafonds : changer de modèle ou
- * de nombre de passages doit produire une NOUVELLE réponse, pas resservir
- * l'ancienne en prétendant qu'elle vient du nouveau réglage.
+ * Clé de cache. Elle inclut les modèles ET TOUS les réglages qui changent la
+ * réponse : changer l'un d'eux doit produire une NOUVELLE réponse, pas
+ * resservir l'ancienne en prétendant qu'elle vient du nouveau réglage.
+ *
+ * Les seuils en font partie, et ce n'est pas un détail : la méthode de réglage
+ * décrite dans docs/rag-mise-en-route-et-cout.md consiste précisément à poser
+ * les mêmes questions en faisant varier `ATLAS_RAG_SEUIL_PERTINENCE`. Sans les
+ * seuils dans la clé, la deuxième mesure resservait la réponse de la première
+ * et l'auteur réglait à l'aveugle.
  */
 export function empreinteCache(question: string): string {
   return empreinte(
-    [normaliserQuestion(question), MODELE_EMBEDDING, MODELE_REPONSE, String(MAX_PASSAGES), "v1"].join("|")
+    [
+      normaliserQuestion(question),
+      MODELE_EMBEDDING,
+      MODELE_REPONSE,
+      String(MAX_PASSAGES),
+      String(MAX_CARACTERES_CONTEXTE),
+      String(SEUIL_SIMILARITE),
+      String(SEUIL_PERTINENCE),
+      String(MIN_PASSAGES),
+      "v2",
+    ].join("|")
   );
 }
 
@@ -320,6 +351,12 @@ async function fetchBorne(url: string, init: RequestInit): Promise<Response> {
  * Utiliser le même type des deux côtés dégrade nettement le rappel.
  */
 export async function embedderQuestion(question: string): Promise<number[]> {
+  // Bouchon de test : aucun appel réseau, aucun coût, aucune valeur sémantique.
+  // L'index interrogé doit avoir été construit avec le même bouchon
+  // (`node scripts/indexer-corpus.mjs --embedding-factice`), sinon la recherche
+  // compare deux espaces vectoriels sans rapport et ne rend que du bruit.
+  if (EMBEDDING_FACTICE) return embeddingFactice(question, DIMENSION_EMBEDDING);
+
   const cle = process.env.VOYAGE_API_KEY;
   if (!cle) {
     throw new ErreurRag("configuration", "VOYAGE_API_KEY absente : le moteur de questions est désactivé.", 503);
@@ -434,7 +471,11 @@ export function selectionnerPassages(lignes: LignePassage[]): LignePassage[] {
     const cle = `${ligne.type_fiche}:${ligne.fiche_id}`;
     const dejaPris = parFiche.get(cle) ?? 0;
     if (dejaPris >= 2) continue;
-    const taille = (ligne.texte ?? "").length;
+    // On mesure l'extrait TEL QU'IL SERA ENVOYÉ (en-tête d'ancrage compris), et
+    // non le seul champ `texte` : l'en-tête pèse ~15 % du bloc, et le compter
+    // pour zéro faisait dépasser le plafond de contexte d'autant. Un plafond de
+    // coût qui ne borne pas ce qui part réellement au modèle ne borne rien.
+    const taille = rendreExtrait(ligne, retenus.length).length + SEPARATEUR_EXTRAITS.length;
     if (caracteres + taille > MAX_CARACTERES_CONTEXTE && retenus.length > 0) break;
     parFiche.set(cle, dejaPris + 1);
     caracteres += taille;
@@ -453,38 +494,45 @@ const LIBELLES_TYPE: Record<TypeFicheRag, string> = {
   gap: "Fiche de gap analysis (humain × IA)",
 };
 
+const SEPARATEUR_EXTRAITS = "\n\n";
+
+/**
+ * Rend UN extrait tel qu'il partira au modèle. Isolé de `construireContexte`
+ * pour que `selectionnerPassages` puisse mesurer exactement ce qu'il retient,
+ * sans réimplémenter (et donc sans risquer de désynchroniser) le format.
+ */
+function rendreExtrait(p: LignePassage, index: number): string {
+  const meta = p.metadonnees ?? {};
+  const complements = [
+    typeof meta.axe === "string" ? `axe: ${meta.axe}` : null,
+    typeof meta.sous_domaine === "string" ? `sous-domaine: ${meta.sous_domaine}` : null,
+    typeof meta.substituabilite === "string" ? `substituabilité: ${meta.substituabilite}` : null,
+    typeof meta.derniere_verification === "string" ? `vérifié le ${meta.derniere_verification}` : null,
+  ]
+    .filter(Boolean)
+    .join(" · ");
+
+  return [
+    `[EXTRAIT ${index + 1}]`,
+    `type: ${LIBELLES_TYPE[p.type_fiche]}`,
+    `fiche_id: ${p.fiche_id}`,
+    `fiche: ${p.titre_fiche}`,
+    `champ: ${p.champ}`,
+    complements ? `contexte: ${complements}` : null,
+    `similarité: ${p.similarite.toFixed(3)}`,
+    `texte: ${p.texte}`,
+  ]
+    .filter(Boolean)
+    .join("\n");
+}
+
 /**
  * Le contexte est un bloc balisé, un passage par entrée, chaque entrée portant
  * son identifiant de fiche. C'est cet identifiant que le modèle devra citer :
  * il ne peut donc désigner qu'une fiche réellement présente dans le contexte.
  */
 export function construireContexte(passages: LignePassage[]): string {
-  return passages
-    .map((p, i) => {
-      const meta = p.metadonnees ?? {};
-      const complements = [
-        typeof meta.axe === "string" ? `axe: ${meta.axe}` : null,
-        typeof meta.sous_domaine === "string" ? `sous-domaine: ${meta.sous_domaine}` : null,
-        typeof meta.substituabilite === "string" ? `substituabilité: ${meta.substituabilite}` : null,
-        typeof meta.derniere_verification === "string" ? `vérifié le ${meta.derniere_verification}` : null,
-      ]
-        .filter(Boolean)
-        .join(" · ");
-
-      return [
-        `[EXTRAIT ${i + 1}]`,
-        `type: ${LIBELLES_TYPE[p.type_fiche]}`,
-        `fiche_id: ${p.fiche_id}`,
-        `fiche: ${p.titre_fiche}`,
-        `champ: ${p.champ}`,
-        complements ? `contexte: ${complements}` : null,
-        `similarité: ${p.similarite.toFixed(3)}`,
-        `texte: ${p.texte}`,
-      ]
-        .filter(Boolean)
-        .join("\n");
-    })
-    .join("\n\n");
+  return passages.map((p, i) => rendreExtrait(p, i)).join(SEPARATEUR_EXTRAITS);
 }
 
 /* -------------------------------------------------------------------------- */
@@ -856,6 +904,21 @@ export async function ecrireCache(cle: string, reponse: ReponseQuestion): Promis
 /* Orchestration                                                              */
 /* -------------------------------------------------------------------------- */
 
+/**
+ * Avertissements attachés à TOUTE réponse, indépendamment de son contenu.
+ * Aujourd'hui un seul : signaler au lecteur qu'il regarde une réponse produite
+ * avec des vecteurs de test. Sans cela, une démonstration en mode factice est
+ * indiscernable d'une vraie réponse.
+ */
+function avertissementsDeBase(): string[] {
+  if (!EMBEDDING_FACTICE) return [];
+  return [
+    "Mode de test : les embeddings sont produits par un hachage local déterministe " +
+      `(« ${MODELE_FACTICE} »), pas par un modèle sémantique. La pertinence des extraits ` +
+      "retenus n'a aucune valeur — seule la mécanique du moteur est éprouvée.",
+  ];
+}
+
 function diagnosticDeBase(): DiagnosticReponse {
   return {
     statut: "repondue",
@@ -884,7 +947,8 @@ function reponseHorsCorpus(
   question: string,
   trouves: LignePassage[],
   similariteMax: number,
-  raison: string
+  raison: string,
+  avertissements: string[] = []
 ): ReponseQuestion {
   const apercu = trouves.slice(0, 5);
   return {
@@ -896,7 +960,7 @@ function reponseHorsCorpus(
       "Elle sort du périmètre couvert par les 267 fiches humaines, 44 fiches IA et 201 fiches de gap indexées.",
     passages_mobilises: versPassagesMobilises(apercu),
     fiches_mobilisees: regrouperFiches(apercu),
-    avertissements: [],
+    avertissements: [...avertissementsDeBase(), ...avertissements],
     message: raison,
     diagnostic: {
       ...diagnosticDeBase(),
@@ -921,7 +985,24 @@ export async function repondreAQuestion(question: string): Promise<ReponseQuesti
   if (enCache) return enCache;
 
   const vecteur = await embedderQuestion(question);
-  const trouves = await rechercherPassages(vecteur);
+  const remontes = await rechercherPassages(vecteur);
+
+  // L'index vit dans Supabase, le corpus dans data/seed : les deux peuvent
+  // diverger (fiche renommée ou supprimée sans `indexer-corpus.mjs --purger`).
+  // Un passage dont la fiche n'existe plus n'a ni source réelle ni URL : affiché
+  // tel quel, il devient un lien mort présenté au lecteur comme une source, et
+  // le modèle peut le citer. On l'écarte, et on le dit.
+  const trouves = remontes.filter((p) => resoudreFiche(p.type_fiche, p.fiche_id) !== null);
+  const orphelins = remontes.length - trouves.length;
+  const avertissementsIndex =
+    orphelins > 0
+      ? [
+          `${orphelins} extrait(s) remonté(s) par la recherche pointent vers des fiches absentes du corpus ` +
+            "et ont été écartés : l'index vectoriel est en retard sur data/seed. " +
+            "Relancer `node scripts/indexer-corpus.mjs --purger` pour le remettre à jour.",
+        ]
+      : [];
+
   const similariteMax = trouves.length > 0 ? Math.max(...trouves.map((p) => p.similarite)) : 0;
 
   if (trouves.length === 0) {
@@ -929,19 +1010,37 @@ export async function repondreAQuestion(question: string): Promise<ReponseQuesti
       question,
       trouves,
       0,
-      "Aucun passage du référentiel ne dépasse le seuil de similarité : le moteur ne répond pas plutôt que d'inventer. " +
-        "Si l'index vient d'être créé, vérifier que `node scripts/indexer-corpus.mjs` a bien été lancé."
+      `Aucun passage du référentiel n'atteint le seuil de similarité (${SEUIL_SIMILARITE}) : le moteur ne répond ` +
+        "pas plutôt que d'inventer. Si l'index vient d'être créé, vérifier que `node scripts/indexer-corpus.mjs` " +
+        "a bien été lancé.",
+      avertissementsIndex
     );
   }
 
-  if (similariteMax < SEUIL_PERTINENCE || trouves.length < MIN_PASSAGES) {
+  // Deux garde-fous distincts, et deux messages distincts : confondre les deux
+  // conduit à régler le mauvais bouton. Le premier dit « rien d'assez proche »,
+  // le second « trop peu de matière pour croiser des points de vue ».
+  if (similariteMax < SEUIL_PERTINENCE) {
     return reponseHorsCorpus(
       question,
       trouves,
       similariteMax,
       `Le référentiel ne couvre pas assez cette question pour y répondre honnêtement ` +
-        `(meilleure similarité ${similariteMax.toFixed(2)}, seuil ${SEUIL_PERTINENCE}). ` +
-        "Les extraits les plus proches sont affichés ci-dessous à titre indicatif, sans réponse construite."
+        `(meilleure similarité ${similariteMax.toFixed(2)}, seuil de pertinence ${SEUIL_PERTINENCE}). ` +
+        "Les extraits les plus proches sont affichés ci-dessous à titre indicatif, sans réponse construite.",
+      avertissementsIndex
+    );
+  }
+
+  if (trouves.length < MIN_PASSAGES) {
+    return reponseHorsCorpus(
+      question,
+      trouves,
+      similariteMax,
+      `Seulement ${trouves.length} extrait(s) du référentiel dépassent le seuil de similarité ` +
+        `(${SEUIL_SIMILARITE}), alors que ${MIN_PASSAGES} au minimum sont exigés pour construire une réponse ` +
+        "à plusieurs perspectives. Les extraits trouvés sont affichés ci-dessous, sans réponse construite.",
+      avertissementsIndex
     );
   }
 
@@ -949,6 +1048,7 @@ export async function repondreAQuestion(question: string): Promise<ReponseQuesti
   const contexte = construireContexte(passages);
   const { sortie, tokens_entree, tokens_sortie } = await appelerModele(question, contexte);
   const { perspectives, avertissements } = construirePerspectives(sortie, passages);
+  avertissements.unshift(...avertissementsDeBase(), ...avertissementsIndex);
 
   if (perspectives.length === 0) {
     // Le modèle a répondu mais rien d'exploitable n'a survécu à la validation.
@@ -956,7 +1056,8 @@ export async function repondreAQuestion(question: string): Promise<ReponseQuesti
       question,
       trouves,
       similariteMax,
-      "Le moteur n'a produit aucune perspective exploitable à partir des extraits mobilisés."
+      "Le moteur n'a produit aucune perspective exploitable à partir des extraits mobilisés.",
+      avertissementsIndex
     );
   }
 

@@ -59,6 +59,15 @@ import { readFileSync, readdirSync, existsSync } from "node:fs";
 import { createHash } from "node:crypto";
 import { fileURLToPath } from "node:url";
 import path from "node:path";
+// Bouchon d'embedding local, sans clé ni réseau. N'a AUCUNE valeur sémantique ;
+// il ne sert qu'à éprouver la chaîne (cf. lib/embedding-factice.mjs). Import
+// statique sans risque : ce module ne dépend que de node:crypto.
+import {
+  MODELE_FACTICE,
+  embeddingFactice,
+  embeddingFacticeAutorise,
+  raisonRefusFactice,
+} from "../lib/embedding-factice.mjs";
 
 // `@supabase/supabase-js` est chargé DYNAMIQUEMENT, à la première écriture réelle.
 // Raison : `--aide` et surtout `--dry-run` doivent fonctionner sur une copie du dépôt
@@ -111,6 +120,13 @@ Options
   --purger           Supprimer de la base les passages qui ne sont plus dans le corpus.
   --etat             Afficher la volumétrie de l'index en base, puis sortir.
   --lot=N            Taille des lots d'embedding (défaut ${TAILLE_LOT_DEFAUT}, max 128).
+  --embedding-factice
+                     TEST UNIQUEMENT. Remplace l'appel à Voyage par un hachage
+                     local déterministe : aucune clé, aucun coût, AUCUNE valeur
+                     sémantique. Exige en plus ATLAS_EMBEDDING_FACTICE=1 dans
+                     l'environnement, et refuse de démarrer en production.
+                     Les lignes écrites portent modele_embedding =
+                     « ${MODELE_FACTICE} » : un index factice se voit.
   --racine=CHEMIN    Racine du dépôt (défaut : dossier parent de ce script).
   --json             Sortie machine : un objet JSON sur stdout, rien d'autre.
   --aide, -h         Cette aide.
@@ -129,6 +145,7 @@ const OPTIONS_CONNUES = [
   "--purger",
   "--etat",
   "--json",
+  "--embedding-factice",
   "--aide",
   "-h",
 ];
@@ -152,6 +169,7 @@ const FORCE = args.includes("--force");
 const PURGER = args.includes("--purger");
 const ETAT_SEUL = args.includes("--etat");
 const SORTIE_JSON = args.includes("--json");
+const FACTICE_DEMANDE = args.includes("--embedding-factice");
 
 const TYPE_FILTRE = valeurArg("--type=");
 if (TYPE_FILTRE !== null && !TYPES_VALIDES.includes(TYPE_FILTRE)) {
@@ -227,7 +245,16 @@ function chargerEnv(fichier) {
 chargerEnv(path.join(RACINE, ".env.local"));
 chargerEnv(path.join(RACINE, ".env"));
 
-const MODELE_EMBEDDING = process.env.VOYAGE_MODELE_EMBEDDING || "voyage-4-lite";
+// Mode factice : deux verrous cumulatifs, le drapeau CLI ET la variable
+// d'environnement. Une variable oubliée dans un shell ne suffit donc pas, et le
+// drapeau seul non plus. Cf. lib/embedding-factice.mjs pour le troisième verrou
+// (refus en production).
+const FACTICE = FACTICE_DEMANDE && embeddingFacticeAutorise();
+if (FACTICE_DEMANDE && !FACTICE) {
+  echec(2, `--embedding-factice refusé : ${raisonRefusFactice()}.`);
+}
+
+const MODELE_EMBEDDING = FACTICE ? MODELE_FACTICE : process.env.VOYAGE_MODELE_EMBEDDING || "voyage-4-lite";
 const DIMENSION_SORTIE = process.env.VOYAGE_DIMENSION_SORTIE
   ? Number.parseInt(process.env.VOYAGE_DIMENSION_SORTIE, 10)
   : null;
@@ -618,6 +645,14 @@ const pause = (ms) => new Promise((resoudre) => setTimeout(resoudre, ms));
  * 400/401/403, qui ne se résoudront pas avec de la patience (clé, modèle, format).
  */
 async function embedderLot(textes) {
+  // Bouchon local : aucun appel réseau, aucun coût, aucune valeur sémantique.
+  if (FACTICE) {
+    return {
+      vecteurs: textes.map((texte) => embeddingFactice(texte, DIMENSION_ATTENDUE)),
+      tokens: 0,
+    };
+  }
+
   const cle = process.env.VOYAGE_API_KEY;
   const corps = { input: textes, model: MODELE_EMBEDDING, input_type: "document" };
   if (DIMENSION_SORTIE) corps.output_dimension = DIMENSION_SORTIE;
@@ -723,6 +758,14 @@ async function main() {
   const parType = repartition(passages);
   const volume = estimerTokens(passages);
   log("INDEXATION DU CORPUS ATLAS → atlas_rag_passages");
+  if (FACTICE) {
+    log(
+      "⚠ MODE EMBEDDING FACTICE — hachage local déterministe, aucun appel payant.\n" +
+        "  L'index produit n'a AUCUNE valeur sémantique : il sert à éprouver la chaîne, pas à répondre.\n" +
+        `  Les lignes écrites portent modele_embedding = « ${MODELE_FACTICE} ».\n` +
+        "  Pour repasser au vrai modèle : relancer sans --embedding-factice (tout sera réindexé)."
+    );
+  }
   log(`Racine : ${RACINE}`);
   log(`Modèle d'embedding : ${MODELE_EMBEDDING} (dimension attendue ${DIMENSION_ATTENDUE})`);
   log(
@@ -764,7 +807,7 @@ async function main() {
   }
 
   // --- Comparaison avec l'existant -----------------------------------------
-  if (!process.env.VOYAGE_API_KEY) {
+  if (!process.env.VOYAGE_API_KEY && !FACTICE) {
     echec(
       2,
       "VOYAGE_API_KEY manquante. La renseigner dans .env.local (console Voyage AI → API Keys),\n" +

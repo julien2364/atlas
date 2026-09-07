@@ -19,7 +19,38 @@
 -- d'abord, puis CREATE POLICY (CREATE POLICY IF NOT EXISTS n'existe pas en
 -- PostgreSQL et fait échouer toute la transaction si combiné au DDL).
 
-create extension if not exists vector;
+-- ---------------------------------------------------------------------------
+-- Extension pgvector : présence ET visibilité
+-- ---------------------------------------------------------------------------
+-- Deux problèmes distincts, tous deux vérifiés contre un PostgreSQL 16 réel
+-- (pgvector 0.8.6) le 07/09/2026 :
+--
+-- 1. OÙ l'installer. Dans un projet Supabase MUTUALISÉ, poser une extension
+--    dans `public` y déverse une centaine de fonctions et de types sans préfixe
+--    `atlas_`, à côté des tables des autres applications. Supabase fournit un
+--    schéma `extensions` fait pour ça : on l'utilise s'il existe. Sur un
+--    PostgreSQL nu (test local), il n'existe pas et l'extension va dans public.
+--    `create extension if not exists` NE choisit pas de schéma : d'où le bloc.
+--
+-- 2. LA VOIR une fois installée. Si pgvector est dans `extensions` et que le
+--    search_path de la session ne contient que `public`, la toute première
+--    table ci-dessous échoue sur « type "vector" does not exist » — reproduit,
+--    ce n'est pas une hypothèse. Le `set search_path` ci-dessous rend donc le
+--    fichier autonome : il s'applique quel que soit le réglage de l'éditeur SQL.
+--    Il ne vaut que pour la session courante et ne modifie aucun objet.
+do $$
+begin
+  if not exists (select 1 from pg_extension where extname = 'vector') then
+    if exists (select 1 from pg_namespace where nspname = 'extensions') then
+      execute 'create extension vector with schema extensions';
+    else
+      execute 'create extension vector';
+    end if;
+  end if;
+end
+$$;
+
+set search_path = public, extensions;
 
 create table if not exists atlas_fiches_humaines (
   id text primary key,
@@ -382,6 +413,26 @@ stable
 -- search_path figé : `vector` peut être installé dans `public` ou dans
 -- `extensions` selon l'âge du projet Supabase. Les deux sont déclarés.
 set search_path = public, extensions
+-- ⚠️ `hnsw.ef_search` = TAILLE DE LA FILE DE RECHERCHE de l'index HNSW, et
+-- PLAFOND DUR du nombre de lignes qu'un parcours d'index peut rendre. Sa valeur
+-- par défaut est 40. Sans cette ligne, la fonction ci-dessous renvoie AU PLUS
+-- 40 passages quel que soit le `limite` demandé — la route API en réclame 54
+-- (MAX_PASSAGES × 3) et n'en recevrait que 40, silencieusement.
+--
+-- Le piège est vicieux : tant que la table est petite, le planificateur préfère
+-- un parcours séquentiel et tout paraît normal ; le jour où il bascule sur
+-- l'index, le moteur trouve moins de matière, peut passer sous
+-- ATLAS_RAG_MIN_PASSAGES et refuser des questions qu'il traitait la veille.
+-- Reproduit le 07/09/2026 sur PostgreSQL 16 + pgvector 0.8.6 : `limit 54` rendait
+-- 40 lignes via l'index et 54 via un parcours séquentiel.
+--
+-- 200 couvre largement le plafond dur de 100 lignes de cette fonction et laisse
+-- de la marge de rappel (le filtre par seuil s'applique APRÈS l'index : plus la
+-- file est courte, plus le seuil élague des candidats déjà tronqués).
+set hnsw.ef_search = 200
+-- Même raisonnement pour le repli IVFFlat : `probes = 1` par défaut ne balaie
+-- qu'une liste sur cent. Sans effet si l'index est un HNSW.
+set ivfflat.probes = 10
 as $$
   select
     p.id,

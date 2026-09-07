@@ -17,6 +17,7 @@
 import { NextResponse } from "next/server";
 import {
   CACHE_TTL_HEURES,
+  EMBEDDING_FACTICE,
   ErreurRag,
   MAX_PASSAGES,
   MAX_TOKENS_REPONSE,
@@ -97,23 +98,23 @@ function adresse(request: Request): string {
  * de saisie qui échouera à la première question.
  */
 export async function GET(): Promise<NextResponse> {
-  const configure =
-    Boolean(process.env.NEXT_PUBLIC_SUPABASE_URL) &&
-    Boolean(process.env.SUPABASE_SERVICE_ROLE_KEY) &&
-    Boolean(process.env.VOYAGE_API_KEY) &&
-    Boolean(process.env.ANTHROPIC_API_KEY);
+  // En mode d'embedding factice (test, cf. lib/embedding-factice.mjs), la clé
+  // Voyage n'est ni utilisée ni requise : l'annoncer manquante ferait croire à
+  // une configuration cassée alors que le moteur fonctionne.
+  const clesManquantes = [
+    process.env.NEXT_PUBLIC_SUPABASE_URL ? null : "NEXT_PUBLIC_SUPABASE_URL",
+    process.env.SUPABASE_SERVICE_ROLE_KEY ? null : "SUPABASE_SERVICE_ROLE_KEY",
+    EMBEDDING_FACTICE || process.env.VOYAGE_API_KEY ? null : "VOYAGE_API_KEY",
+    process.env.ANTHROPIC_API_KEY ? null : "ANTHROPIC_API_KEY",
+  ].filter(Boolean);
 
   return NextResponse.json(
     {
-      actif: configure,
-      cles_manquantes: [
-        process.env.NEXT_PUBLIC_SUPABASE_URL ? null : "NEXT_PUBLIC_SUPABASE_URL",
-        process.env.SUPABASE_SERVICE_ROLE_KEY ? null : "SUPABASE_SERVICE_ROLE_KEY",
-        process.env.VOYAGE_API_KEY ? null : "VOYAGE_API_KEY",
-        process.env.ANTHROPIC_API_KEY ? null : "ANTHROPIC_API_KEY",
-      ].filter(Boolean),
+      actif: clesManquantes.length === 0,
+      cles_manquantes: clesManquantes,
       reglages: {
         modele_embedding: MODELE_EMBEDDING,
+        embedding_factice: EMBEDDING_FACTICE,
         modele_reponse: MODELE_REPONSE,
         seuil_similarite: SEUIL_SIMILARITE,
         seuil_pertinence: SEUIL_PERTINENCE,
