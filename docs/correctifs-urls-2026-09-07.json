@@ -1,0 +1,1313 @@
+{
+  "meta": {
+    "titre": "Correctifs d'url du corpus ATLAS — lot du 07/09/2026",
+    "genere_le": "2026-09-07",
+    "note_sur_les_redirections": "9 redirections et non 8 : docs/audit-qualite-2026-09.md §3 regroupe www.anthropic.com/education et www.anthropic.com/customers sur une même ligne, alors que ce sont deux urls distinctes à corriger séparément.",
+    "origine": [
+      "docs/audit-qualite-2026-09.md §3 et §4 (vérification des 405 url distinctes)",
+      "docs/audit-mecanique-2026-09-07.md (§A8, double encodage)"
+    ],
+    "emprise": "data/seed/ uniquement — fiches humaines, fiches IA, fiches de gap, questions",
+    "correctifs": 27,
+    "emplacements_vises": 118,
+    "par_categorie": {
+      "url_morte": {
+        "correctifs": 3,
+        "emplacements": 14
+      },
+      "url_absente_document_identifie": {
+        "correctifs": 10,
+        "emplacements": 36
+      },
+      "redirection_structurelle": {
+        "correctifs": 9,
+        "emplacements": 40
+      },
+      "double_encodage": {
+        "correctifs": 5,
+        "emplacements": 28
+      }
+    },
+    "mode_d_emploi": {
+      "quoi": "une liste de correctifs d'url, chacun désignant sa cible par un chemin JSON exact dans data/seed/ (fichier + id de fiche + chemin dans l'objet), sa valeur actuelle, sa valeur cible et la preuve qui l'établit",
+      "pour_qui": "les agents qui ont le droit d'écrire dans data/seed/ — ce fichier a été produit par un agent qui ne l'a pas",
+      "lecture_d_un_correctif": {
+        "operation": "remplacer_url = la cible porte déjà une url, à remplacer · ajouter_url = la cible n'en porte aucune, l'url est à poser sur l'entrée dont le titre est donné par cible_titre",
+        "emplacements": "chemin d'accès depuis l'objet fiche : par exemple sources[0] ou usages[1].sources[0] ou documents_cles[2]",
+        "preuve": "ce qui a été constaté, par quel moyen, et dans quel rapport d'audit — à contester plutôt qu'à croire",
+        "precaution": "présent uniquement quand le correctif ne peut PAS être appliqué mécaniquement en l'état ; le lire avant d'écrire"
+      },
+      "procedure_conseillee": [
+        "1. relire les correctifs portant une clé `precaution` : ils demandent un arbitrage éditorial préalable (source agrégée à éclater, bascule fr → en)",
+        "2. appliquer d'abord la catégorie url_morte (le corpus ment aujourd'hui au lecteur), puis double_encodage (elle fausse le comptage de sources de l'indexeur RAG et du vérificateur de liens), puis url_absente_document_identifie, puis redirection_structurelle qui n'a aucune urgence",
+        "3. relancer node scripts/valider-donnees.mjs après chaque catégorie",
+        "4. relancer node scripts/verifier-liens.mjs --seulement-morts pour confirmer, et journaliser le lot dans data/seed/changelog.json"
+      ],
+      "non_applicable_par": "scripts/appliquer-patchs.mjs, qui écrit des champs de texte et des sources au niveau de la fiche et ne sait pas viser une url imbriquée dans un usage sectoriel. L'application se fait à la main ou par un script dédié écrit par l'agent qui l'applique.",
+      "regeneration": "les emplacements sont un relevé de l'état du corpus au 07/09/2026, pas une vérité permanente : après toute écriture dans data/seed/, les index de tableau peuvent avoir changé."
+    },
+    "avertissement": "Ce fichier est une PROPOSITION relue, pas un patch appliqué. Les emplacements ont été relevés sur l'état du corpus au 07/09/2026 : revérifier le chemin avant d'écrire, un index de tableau peut avoir bougé."
+  },
+  "correctifs": [
+    {
+      "id": "c01-autoencodeur",
+      "ancienne_valeur": "https://fr.wikipedia.org/wiki/Autoencodeur",
+      "nouvelle_valeur": "https://fr.wikipedia.org/wiki/Auto-encodeur",
+      "preuve": {
+        "constat": "404 le 07/09/2026 sur l'ancienne url ; la nouvelle répond 200 le 07/09/2026",
+        "methode": "node scripts/verifier-liens.mjs (tunnel CONNECT explicite, 404/410/DNS seuls comptés comme morts)",
+        "rapport": "docs/audit-qualite-2026-09.md §3",
+        "cause": "titre d'article Wikipédia deviné plutôt que copié depuis la page consultée (le trait d'union manque)"
+      },
+      "categorie": "url_morte",
+      "operation": "remplacer_url",
+      "emplacements": [
+        {
+          "fichier": "fiches_ia.json",
+          "fiche": "autoencodeurs",
+          "chemin": "usages[0].sources[0]",
+          "titre": "Autoencodeur — Wikipédia",
+          "type": "secondaire"
+        },
+        {
+          "fichier": "fiches_ia.json",
+          "fiche": "autoencodeurs",
+          "chemin": "usages[1].sources[0]",
+          "titre": "Autoencodeur — Wikipédia",
+          "type": "secondaire"
+        },
+        {
+          "fichier": "fiches_ia.json",
+          "fiche": "autoencodeurs",
+          "chemin": "sources[0]",
+          "titre": "Autoencodeur — Wikipédia",
+          "type": "secondaire"
+        },
+        {
+          "fichier": "fiches_gap.json",
+          "fiche": "boson-de-higgs-vs-autoencodeurs",
+          "chemin": "documents_cles[2]",
+          "titre": "Autoencodeur — Wikipédia",
+          "type": "primaire"
+        },
+        {
+          "fichier": "fiches_gap.json",
+          "fiche": "economie-fonctionnalite-vs-autoencodeurs",
+          "chemin": "documents_cles[1]",
+          "titre": "Autoencodeur — Wikipédia",
+          "type": "primaire"
+        },
+        {
+          "fichier": "fiches_gap.json",
+          "fiche": "csf-vs-autoencodeurs",
+          "chemin": "documents_cles[1]",
+          "titre": "Autoencodeur — Wikipédia",
+          "type": "primaire"
+        },
+        {
+          "fichier": "fiches_gap.json",
+          "fiche": "freud-vs-autoencodeurs",
+          "chemin": "documents_cles[2]",
+          "titre": "Autoencodeur — Wikipédia",
+          "type": "primaire"
+        }
+      ]
+    },
+    {
+      "id": "c02-modele-arima",
+      "ancienne_valeur": "https://fr.wikipedia.org/wiki/Modèle_ARIMA",
+      "nouvelle_valeur": "https://fr.wikipedia.org/wiki/ARIMA",
+      "preuve": {
+        "constat": "404 le 07/09/2026 sur l'ancienne url ; la nouvelle répond 200 le 07/09/2026",
+        "methode": "node scripts/verifier-liens.mjs",
+        "rapport": "docs/audit-qualite-2026-09.md §3",
+        "cause": "l'article francophone s'intitule « ARIMA », pas « Modèle ARIMA »"
+      },
+      "categorie": "url_morte",
+      "operation": "remplacer_url",
+      "emplacements": [
+        {
+          "fichier": "fiches_ia.json",
+          "fiche": "series-temporelles-arima-sarima",
+          "chemin": "usages[0].sources[0]",
+          "titre": "Modèle ARIMA — Wikipédia",
+          "type": "secondaire"
+        },
+        {
+          "fichier": "fiches_ia.json",
+          "fiche": "series-temporelles-arima-sarima",
+          "chemin": "usages[1].sources[0]",
+          "titre": "Modèle ARIMA — Wikipédia",
+          "type": "secondaire"
+        },
+        {
+          "fichier": "fiches_ia.json",
+          "fiche": "series-temporelles-arima-sarima",
+          "chemin": "sources[0]",
+          "titre": "Modèle ARIMA — Wikipédia",
+          "type": "secondaire"
+        },
+        {
+          "fichier": "fiches_gap.json",
+          "fiche": "opep-vs-arima",
+          "chemin": "documents_cles[1]",
+          "titre": "Modèle ARIMA — Wikipédia",
+          "type": "primaire"
+        },
+        {
+          "fichier": "fiches_gap.json",
+          "fiche": "socialisme-xxie-vs-arima",
+          "chemin": "documents_cles[1]",
+          "titre": "Modèle ARIMA — Wikipédia",
+          "type": "primaire"
+        }
+      ]
+    },
+    {
+      "id": "c03-capitalisme-de-plateforme",
+      "ancienne_valeur": "https://fr.wikipedia.org/wiki/Capitalisme_de_plateforme",
+      "nouvelle_valeur": "https://en.wikipedia.org/wiki/Platform_capitalism",
+      "preuve": {
+        "constat": "404 le 07/09/2026 sur l'ancienne url ; la nouvelle répond 200 le 07/09/2026",
+        "methode": "node scripts/verifier-liens.mjs",
+        "rapport": "docs/audit-qualite-2026-09.md §3",
+        "cause": "aucun article francophone n'existe sur ce sujet — « Économie de plateforme » est également en 404",
+        "precaution": "bascule fr → en : le référentiel est francophone, ce remplacement est un pis-aller assumé et doit être signalé au lecteur"
+      },
+      "categorie": "url_morte",
+      "operation": "remplacer_url",
+      "emplacements": [
+        {
+          "fichier": "fiches_humaines/social_1.json",
+          "fiche": "economie-de-plateformes-capitalisme-numerique",
+          "chemin": "sources[0]",
+          "titre": "Capitalisme de plateforme — Wikipédia",
+          "type": "secondaire"
+        },
+        {
+          "fichier": "fiches_gap.json",
+          "fiche": "economie-de-plateformes-vs-k-nn",
+          "chemin": "documents_cles[0]",
+          "titre": "Capitalisme de plateforme — Wikipédia",
+          "type": "secondaire"
+        }
+      ]
+    },
+    {
+      "id": "c04-attention-is-all-you-need",
+      "categorie": "url_absente_document_identifie",
+      "operation": "ajouter_url",
+      "cible_titre": "Attention Is All You Need (Vaswani et al., 2017)",
+      "ancienne_valeur": null,
+      "nouvelle_valeur": "https://arxiv.org/abs/1706.03762",
+      "preuve": {
+        "constat": "url vérifiée le 07/09/2026",
+        "methode": "requête GET sortante ; une url doi.org répond 302 vers la page de l'éditeur (c'est le fonctionnement normal d'un identifiant pérenne, pas un déménagement) et une url nature.com peut répondre 303 vers idp.nature.com (poignée de main de session, artefact sans conséquence : cf. docs/audit-qualite-2026-09.md §3)",
+        "rapport": "docs/audit-qualite-2026-09.md §4, « cas 2 »",
+        "coherence": "quand le même document est déjà cité ailleurs dans le corpus avec une url, c'est CETTE forme qui est reprise ici plutôt qu'une forme équivalente — deux écritures du même lien comptent pour deux sources distinctes (cf. catégorie double_encodage)"
+      },
+      "emplacements": [
+        {
+          "fichier": "fiches_humaines/evolution.json",
+          "fiche": "ia-et-traitement-du-langage-naturel",
+          "chemin": "sources[0]",
+          "titre": "Attention Is All You Need (Vaswani et al., 2017)",
+          "type": "primaire"
+        },
+        {
+          "fichier": "fiches_gap.json",
+          "fiche": "nlp-vs-hallucination",
+          "chemin": "documents_cles[0]",
+          "titre": "Attention Is All You Need (Vaswani et al., 2017)",
+          "type": "primaire"
+        }
+      ]
+    },
+    {
+      "id": "c05-watson-crick-1953",
+      "categorie": "url_absente_document_identifie",
+      "operation": "ajouter_url",
+      "cible_titre": "Molecular Structure of Nucleic Acids (Watson & Crick, Nature, 1953)",
+      "ancienne_valeur": null,
+      "nouvelle_valeur": "https://www.nature.com/articles/171737a0",
+      "preuve": {
+        "constat": "url vérifiée le 07/09/2026",
+        "methode": "requête GET sortante ; une url doi.org répond 302 vers la page de l'éditeur (c'est le fonctionnement normal d'un identifiant pérenne, pas un déménagement) et une url nature.com peut répondre 303 vers idp.nature.com (poignée de main de session, artefact sans conséquence : cf. docs/audit-qualite-2026-09.md §3)",
+        "rapport": "docs/audit-qualite-2026-09.md §4, « cas 2 »",
+        "coherence": "quand le même document est déjà cité ailleurs dans le corpus avec une url, c'est CETTE forme qui est reprise ici plutôt qu'une forme équivalente — deux écritures du même lien comptent pour deux sources distinctes (cf. catégorie double_encodage)"
+      },
+      "emplacements": [
+        {
+          "fichier": "fiches_humaines/evolution.json",
+          "fiche": "double-helice-de-l-adn",
+          "chemin": "sources[0]",
+          "titre": "Molecular Structure of Nucleic Acids (Watson & Crick, Nature, 1953)",
+          "type": "primaire"
+        },
+        {
+          "fichier": "fiches_humaines/evolution.json",
+          "fiche": "james-watson",
+          "chemin": "sources[0]",
+          "titre": "Molecular Structure of Nucleic Acids (Watson & Crick, Nature, 1953)",
+          "type": "primaire"
+        },
+        {
+          "fichier": "fiches_gap.json",
+          "fiche": "double-helice-adn-vs-ia-genomique",
+          "chemin": "documents_cles[0]",
+          "titre": "Molecular Structure of Nucleic Acids (Watson & Crick, Nature, 1953)",
+          "type": "primaire"
+        },
+        {
+          "fichier": "fiches_gap.json",
+          "fiche": "watson-vs-ia-genomique",
+          "chemin": "documents_cles[0]",
+          "titre": "Molecular Structure of Nucleic Acids (Watson & Crick, Nature, 1953)",
+          "type": "primaire"
+        }
+      ]
+    },
+    {
+      "id": "c06-lecun-bengio-hinton-2015",
+      "categorie": "url_absente_document_identifie",
+      "operation": "ajouter_url",
+      "cible_titre": "Deep Learning (LeCun, Bengio, Hinton, Nature, 2015)",
+      "ancienne_valeur": null,
+      "nouvelle_valeur": "https://doi.org/10.1038/nature14539",
+      "preuve": {
+        "constat": "url vérifiée le 07/09/2026",
+        "methode": "requête GET sortante ; une url doi.org répond 302 vers la page de l'éditeur (c'est le fonctionnement normal d'un identifiant pérenne, pas un déménagement) et une url nature.com peut répondre 303 vers idp.nature.com (poignée de main de session, artefact sans conséquence : cf. docs/audit-qualite-2026-09.md §3)",
+        "rapport": "docs/audit-qualite-2026-09.md §4, « cas 2 »",
+        "coherence": "quand le même document est déjà cité ailleurs dans le corpus avec une url, c'est CETTE forme qui est reprise ici plutôt qu'une forme équivalente — deux écritures du même lien comptent pour deux sources distinctes (cf. catégorie double_encodage)"
+      },
+      "emplacements": [
+        {
+          "fichier": "fiches_humaines/evolution.json",
+          "fiche": "reseaux-de-neurones-artificiels-deep-learning",
+          "chemin": "sources[0]",
+          "titre": "Deep Learning (LeCun, Bengio, Hinton, Nature, 2015)",
+          "type": "primaire"
+        },
+        {
+          "fichier": "fiches_gap.json",
+          "fiche": "deep-learning-vs-alexnet",
+          "chemin": "documents_cles[0]",
+          "titre": "Deep Learning (LeCun, Bengio, Hinton, Nature, 2015)",
+          "type": "primaire"
+        }
+      ]
+    },
+    {
+      "id": "c07-rockstrom-2009",
+      "categorie": "url_absente_document_identifie",
+      "operation": "ajouter_url",
+      "cible_titre": "A Safe Operating Space for Humanity (Rockström et al., Nature, 2009)",
+      "ancienne_valeur": null,
+      "nouvelle_valeur": "https://doi.org/10.1038/461472a",
+      "preuve": {
+        "constat": "url vérifiée le 07/09/2026",
+        "methode": "requête GET sortante ; une url doi.org répond 302 vers la page de l'éditeur (c'est le fonctionnement normal d'un identifiant pérenne, pas un déménagement) et une url nature.com peut répondre 303 vers idp.nature.com (poignée de main de session, artefact sans conséquence : cf. docs/audit-qualite-2026-09.md §3)",
+        "rapport": "docs/audit-qualite-2026-09.md §4, « cas 2 »",
+        "coherence": "quand le même document est déjà cité ailleurs dans le corpus avec une url, c'est CETTE forme qui est reprise ici plutôt qu'une forme équivalente — deux écritures du même lien comptent pour deux sources distinctes (cf. catégorie double_encodage)"
+      },
+      "emplacements": [
+        {
+          "fichier": "fiches_humaines/evolution.json",
+          "fiche": "ecologie-globale-et-science-du-systeme-terre",
+          "chemin": "sources[0]",
+          "titre": "A Safe Operating Space for Humanity (Rockström et al., Nature, 2009)",
+          "type": "primaire"
+        },
+        {
+          "fichier": "fiches_humaines/serenite.json",
+          "fiche": "limites-planetaires-stockholm-resilience-centre",
+          "chemin": "sources[0]",
+          "titre": "Rockström et al., 'A safe operating space for humanity', Nature 2009 (actualisé 2023)",
+          "type": "primaire"
+        },
+        {
+          "fichier": "fiches_gap.json",
+          "fiche": "systeme-terre-vs-dependance-energetique",
+          "chemin": "documents_cles[0]",
+          "titre": "A Safe Operating Space for Humanity (Rockström et al., Nature, 2009)",
+          "type": "primaire"
+        },
+        {
+          "fichier": "fiches_gap.json",
+          "fiche": "limites-planetaires-vs-graphcast",
+          "chemin": "documents_cles[0]",
+          "titre": "Rockström et al., 'A safe operating space for humanity', Nature 2009 (actualisé 2023)",
+          "type": "primaire"
+        },
+        {
+          "fichier": "questions.json",
+          "fiche": "limites-ia-generative-structurelles-ou-conjoncturelles",
+          "chemin": "perspectives[3].sources[1]",
+          "titre": "Rockström et al., 'A safe operating space for humanity', Nature 2009 (actualisé 2023)",
+          "type": "primaire"
+        },
+        {
+          "fichier": "questions.json",
+          "fiche": "bien-vivre-mesurable",
+          "chemin": "perspectives[2].sources[0]",
+          "titre": "Rockström et al., 'A safe operating space for humanity', Nature 2009 (actualisé 2023)",
+          "type": "primaire"
+        }
+      ]
+    },
+    {
+      "id": "c08-deepseek-v3",
+      "categorie": "url_absente_document_identifie",
+      "operation": "ajouter_url",
+      "cible_titre": "DeepSeek-V3 Technical Report",
+      "ancienne_valeur": null,
+      "nouvelle_valeur": "https://arxiv.org/abs/2412.19437",
+      "preuve": {
+        "constat": "url vérifiée le 07/09/2026",
+        "methode": "requête GET sortante ; une url doi.org répond 302 vers la page de l'éditeur (c'est le fonctionnement normal d'un identifiant pérenne, pas un déménagement) et une url nature.com peut répondre 303 vers idp.nature.com (poignée de main de session, artefact sans conséquence : cf. docs/audit-qualite-2026-09.md §3)",
+        "rapport": "docs/audit-qualite-2026-09.md §4, « cas 2 »",
+        "coherence": "quand le même document est déjà cité ailleurs dans le corpus avec une url, c'est CETTE forme qui est reprise ici plutôt qu'une forme équivalente — deux écritures du même lien comptent pour deux sources distinctes (cf. catégorie double_encodage)"
+      },
+      "emplacements": [
+        {
+          "fichier": "fiches_gap.json",
+          "fiche": "capitalisme-etat-chinois-vs-deepseek",
+          "chemin": "documents_cles[2]",
+          "titre": "DeepSeek-V3 Technical Report",
+          "type": "primaire"
+        },
+        {
+          "fichier": "fiches_gap.json",
+          "fiche": "lyotard-vs-deepseek",
+          "chemin": "documents_cles[2]",
+          "titre": "DeepSeek-V3 Technical Report",
+          "type": "primaire"
+        },
+        {
+          "fichier": "fiches_gap.json",
+          "fiche": "g7-vs-deepseek",
+          "chemin": "documents_cles[2]",
+          "titre": "DeepSeek-V3 Technical Report",
+          "type": "primaire"
+        },
+        {
+          "fichier": "fiches_gap.json",
+          "fiche": "anarchisme-vs-deepseek",
+          "chemin": "documents_cles[2]",
+          "titre": "DeepSeek-V3 Technical Report",
+          "type": "primaire"
+        },
+        {
+          "fichier": "fiches_gap.json",
+          "fiche": "regionalisme-vs-deepseek",
+          "chemin": "documents_cles[2]",
+          "titre": "DeepSeek-V3 Technical Report",
+          "type": "primaire"
+        },
+        {
+          "fichier": "questions.json",
+          "fiche": "limites-ia-generative-structurelles-ou-conjoncturelles",
+          "chemin": "perspectives[0].sources[1]",
+          "titre": "DeepSeek-V3 Technical Report",
+          "type": "primaire"
+        }
+      ]
+    },
+    {
+      "id": "c09-gender-shades",
+      "categorie": "url_absente_document_identifie",
+      "operation": "ajouter_url",
+      "cible_titre": "Buolamwini, Gebru — Gender Shades (2018)",
+      "ancienne_valeur": null,
+      "nouvelle_valeur": "https://proceedings.mlr.press/v81/buolamwini18a.html",
+      "preuve": {
+        "constat": "url vérifiée le 07/09/2026",
+        "methode": "requête GET sortante ; une url doi.org répond 302 vers la page de l'éditeur (c'est le fonctionnement normal d'un identifiant pérenne, pas un déménagement) et une url nature.com peut répondre 303 vers idp.nature.com (poignée de main de session, artefact sans conséquence : cf. docs/audit-qualite-2026-09.md §3)",
+        "rapport": "docs/audit-qualite-2026-09.md §4, « cas 2 »",
+        "coherence": "quand le même document est déjà cité ailleurs dans le corpus avec une url, c'est CETTE forme qui est reprise ici plutôt qu'une forme équivalente — deux écritures du même lien comptent pour deux sources distinctes (cf. catégorie double_encodage)"
+      },
+      "precaution": "certaines entrées visées empilent plusieurs documents dans un seul champ `titre` (séparés par « ; ») : les éclater en autant d'entrées Source AVANT d'y poser cette url, sinon l'url ne documentera qu'un des documents cités",
+      "emplacements_agreges": 4,
+      "emplacements": [
+        {
+          "fichier": "fiches_gap.json",
+          "fiche": "john-rawls-vs-biais-donnees",
+          "chemin": "documents_cles[1]",
+          "titre": "Corbett-Davies, Goel — The Measure and Mismeasure of Fairness (2018) ; Buolamwini, Gebru — Gender Shades (2018)",
+          "type": "primaire"
+        },
+        {
+          "fichier": "fiches_gap.json",
+          "fiche": "kahneman-tversky-vs-biais-donnees",
+          "chemin": "documents_cles[2]",
+          "titre": "Corbett-Davies, Goel — The Measure and Mismeasure of Fairness (2018) ; Buolamwini, Gebru — Gender Shades (2018)",
+          "type": "primaire"
+        },
+        {
+          "fichier": "fiches_gap.json",
+          "fiche": "marxisme-leninisme-vs-biais-donnees",
+          "chemin": "documents_cles[1]",
+          "titre": "Corbett-Davies, Goel — The Measure and Mismeasure of Fairness (2018) ; Buolamwini, Gebru — Gender Shades (2018)",
+          "type": "primaire"
+        },
+        {
+          "fichier": "fiches_gap.json",
+          "fiche": "gouvernance-multipolaire-vs-biais-donnees",
+          "chemin": "documents_cles[1]",
+          "titre": "Corbett-Davies, Goel — The Measure and Mismeasure of Fairness (2018) ; Buolamwini, Gebru — Gender Shades (2018)",
+          "type": "primaire"
+        }
+      ]
+    },
+    {
+      "id": "c10-luccioni-2024",
+      "categorie": "url_absente_document_identifie",
+      "operation": "ajouter_url",
+      "cible_titre": "Luccioni et al. — Power Hungry Processing (2024)",
+      "ancienne_valeur": null,
+      "nouvelle_valeur": "https://arxiv.org/abs/2311.16863",
+      "preuve": {
+        "constat": "url vérifiée le 07/09/2026",
+        "methode": "requête GET sortante ; une url doi.org répond 302 vers la page de l'éditeur (c'est le fonctionnement normal d'un identifiant pérenne, pas un déménagement) et une url nature.com peut répondre 303 vers idp.nature.com (poignée de main de session, artefact sans conséquence : cf. docs/audit-qualite-2026-09.md §3)",
+        "rapport": "docs/audit-qualite-2026-09.md §4, « cas 2 »",
+        "coherence": "quand le même document est déjà cité ailleurs dans le corpus avec une url, c'est CETTE forme qui est reprise ici plutôt qu'une forme équivalente — deux écritures du même lien comptent pour deux sources distinctes (cf. catégorie double_encodage)"
+      },
+      "precaution": "certaines entrées visées empilent plusieurs documents dans un seul champ `titre` (séparés par « ; ») : les éclater en autant d'entrées Source AVANT d'y poser cette url, sinon l'url ne documentera qu'un des documents cités",
+      "emplacements_agreges": 4,
+      "emplacements": [
+        {
+          "fichier": "fiches_gap.json",
+          "fiche": "peter-singer-vs-dependance-energetique",
+          "chemin": "documents_cles[1]",
+          "titre": "Luccioni, Jernite, Strubell — Power Hungry Processing (2024) ; Li et al. — Making AI Less Thirsty (2023) ; AIE — rapports sur la demande électrique des centres de données",
+          "type": "primaire"
+        },
+        {
+          "fichier": "fiches_gap.json",
+          "fiche": "informatique-quantique-vs-dependance-energetique",
+          "chemin": "documents_cles[1]",
+          "titre": "Luccioni, Jernite, Strubell — Power Hungry Processing (2024) ; Li et al. — Making AI Less Thirsty (2023) ; AIE — rapports sur la demande électrique des centres de données",
+          "type": "primaire"
+        },
+        {
+          "fichier": "fiches_gap.json",
+          "fiche": "souverainisme-vs-dependance-energetique-ia",
+          "chemin": "documents_cles[1]",
+          "titre": "Luccioni, Jernite, Strubell — Power Hungry Processing (2024) ; Li et al. — Making AI Less Thirsty (2023) ; AIE — rapports sur la demande électrique des centres de données",
+          "type": "primaire"
+        },
+        {
+          "fichier": "fiches_gap.json",
+          "fiche": "dani-rodrik-vs-dependance-energetique-ia",
+          "chemin": "documents_cles[1]",
+          "titre": "Luccioni, Jernite, Strubell — Power Hungry Processing (2024) ; Li et al. — Making AI Less Thirsty (2023) ; AIE — rapports sur la demande électrique des centres de données",
+          "type": "primaire"
+        }
+      ]
+    },
+    {
+      "id": "c11-jumper-alphafold-2021",
+      "categorie": "url_absente_document_identifie",
+      "operation": "ajouter_url",
+      "cible_titre": "Jumper et al., 'Highly accurate protein structure prediction with AlphaFold', Nature 2021",
+      "ancienne_valeur": null,
+      "nouvelle_valeur": "https://doi.org/10.1038/s41586-021-03819-2",
+      "preuve": {
+        "constat": "url vérifiée le 07/09/2026",
+        "methode": "requête GET sortante ; une url doi.org répond 302 vers la page de l'éditeur (c'est le fonctionnement normal d'un identifiant pérenne, pas un déménagement) et une url nature.com peut répondre 303 vers idp.nature.com (poignée de main de session, artefact sans conséquence : cf. docs/audit-qualite-2026-09.md §3)",
+        "rapport": "docs/audit-qualite-2026-09.md §4, « cas 2 »",
+        "coherence": "quand le même document est déjà cité ailleurs dans le corpus avec une url, c'est CETTE forme qui est reprise ici plutôt qu'une forme équivalente — deux écritures du même lien comptent pour deux sources distinctes (cf. catégorie double_encodage)"
+      },
+      "emplacements": [
+        {
+          "fichier": "fiches_gap.json",
+          "fiche": "crispr-cas9-vs-alphafold",
+          "chemin": "documents_cles[1]",
+          "titre": "Jumper et al., 'Highly accurate protein structure prediction with AlphaFold', Nature 2021",
+          "type": "primaire"
+        },
+        {
+          "fichier": "fiches_gap.json",
+          "fiche": "pauling-vs-alphafold",
+          "chemin": "documents_cles[2]",
+          "titre": "Jumper et al., 'Highly accurate protein structure prediction with AlphaFold', Nature 2021",
+          "type": "primaire"
+        },
+        {
+          "fichier": "fiches_gap.json",
+          "fiche": "embl-vs-alphafold",
+          "chemin": "documents_cles[2]",
+          "titre": "Jumper et al., 'Highly accurate protein structure prediction with AlphaFold', Nature 2021",
+          "type": "primaire"
+        },
+        {
+          "fichier": "fiches_gap.json",
+          "fiche": "solow-vs-alphafold",
+          "chemin": "documents_cles[2]",
+          "titre": "Jumper et al., 'Highly accurate protein structure prediction with AlphaFold', Nature 2021",
+          "type": "primaire"
+        },
+        {
+          "fichier": "questions.json",
+          "fiche": "connaissance-obtenue-par-ia",
+          "chemin": "perspectives[0].sources[2]",
+          "titre": "Jumper et al., 'Highly accurate protein structure prediction with AlphaFold', Nature 2021",
+          "type": "primaire"
+        }
+      ]
+    },
+    {
+      "id": "c12-degrave-tokamak-2022",
+      "categorie": "url_absente_document_identifie",
+      "operation": "ajouter_url",
+      "cible_titre": "DeepMind — Magnetic control of tokamak plasmas (Nature, 2022)",
+      "ancienne_valeur": null,
+      "nouvelle_valeur": "https://www.nature.com/articles/s41586-021-04301-9",
+      "preuve": {
+        "constat": "url vérifiée le 07/09/2026",
+        "methode": "requête GET sortante ; une url doi.org répond 302 vers la page de l'éditeur (c'est le fonctionnement normal d'un identifiant pérenne, pas un déménagement) et une url nature.com peut répondre 303 vers idp.nature.com (poignée de main de session, artefact sans conséquence : cf. docs/audit-qualite-2026-09.md §3)",
+        "rapport": "docs/audit-qualite-2026-09.md §4, « cas 2 »",
+        "coherence": "quand le même document est déjà cité ailleurs dans le corpus avec une url, c'est CETTE forme qui est reprise ici plutôt qu'une forme équivalente — deux écritures du même lien comptent pour deux sources distinctes (cf. catégorie double_encodage)"
+      },
+      "emplacements": [
+        {
+          "fichier": "questions.json",
+          "fiche": "connaissance-obtenue-par-ia",
+          "chemin": "perspectives[2].sources[0]",
+          "titre": "DeepMind — Magnetic control of tokamak plasmas (Nature, 2022)",
+          "type": "primaire"
+        }
+      ]
+    },
+    {
+      "id": "c13-novoselov-graphene-2004",
+      "categorie": "url_absente_document_identifie",
+      "operation": "ajouter_url",
+      "cible_titre": "Electric Field Effect in Atomically Thin Carbon Films (Novoselov, Geim et al., Science, 2004)",
+      "ancienne_valeur": null,
+      "nouvelle_valeur": "https://arxiv.org/abs/cond-mat/0410550",
+      "preuve": {
+        "constat": "url vérifiée le 07/09/2026",
+        "methode": "requête GET sortante ; une url doi.org répond 302 vers la page de l'éditeur (c'est le fonctionnement normal d'un identifiant pérenne, pas un déménagement) et une url nature.com peut répondre 303 vers idp.nature.com (poignée de main de session, artefact sans conséquence : cf. docs/audit-qualite-2026-09.md §3)",
+        "rapport": "docs/audit-qualite-2026-09.md §4, « cas 2 »",
+        "coherence": "quand le même document est déjà cité ailleurs dans le corpus avec une url, c'est CETTE forme qui est reprise ici plutôt qu'une forme équivalente — deux écritures du même lien comptent pour deux sources distinctes (cf. catégorie double_encodage)"
+      },
+      "emplacements": [
+        {
+          "fichier": "fiches_humaines/evolution.json",
+          "fiche": "nanotechnologies-et-graphene",
+          "chemin": "sources[0]",
+          "titre": "Electric Field Effect in Atomically Thin Carbon Films (Novoselov, Geim et al., Science, 2004)",
+          "type": "primaire"
+        },
+        {
+          "fichier": "fiches_gap.json",
+          "fiche": "graphene-vs-gnome",
+          "chemin": "documents_cles[0]",
+          "titre": "Electric Field Effect in Atomically Thin Carbon Films (Novoselov, Geim et al., Science, 2004)",
+          "type": "primaire"
+        }
+      ]
+    },
+    {
+      "id": "c14-anthropic-claude",
+      "categorie": "redirection_structurelle",
+      "operation": "remplacer_url",
+      "ancienne_valeur": "https://www.anthropic.com/claude",
+      "nouvelle_valeur": "https://claude.com/product/overview",
+      "preuve": {
+        "constat": "redirection constatée le 07/09/2026 ; la cible retenue répond 200, vérifiée en suivant la chaîne de redirection jusqu'à son terme",
+        "methode": "node scripts/verifier-liens.mjs, catégorie « OK après redirection »",
+        "rapport": "docs/audit-qualite-2026-09.md §3",
+        "cause": "Anthropic a déplacé les pages produit vers le domaine claude.com",
+        "note": "aucune de ces urls n'est cassée aujourd'hui ; figer la cible évite qu'elles meurent le jour où l'éditeur retire la redirection"
+      },
+      "emplacements": [
+        {
+          "fichier": "fiches_ia.json",
+          "fiche": "claude-anthropic-cowork",
+          "chemin": "sources[1]",
+          "titre": "Claude — page produit (Anthropic)",
+          "type": "primaire"
+        },
+        {
+          "fichier": "fiches_gap.json",
+          "fiche": "david-chalmers-vs-claude-cowork",
+          "chemin": "documents_cles[2]",
+          "titre": "Model Card Claude (Anthropic)",
+          "type": "primaire"
+        },
+        {
+          "fichier": "fiches_gap.json",
+          "fiche": "donna-haraway-vs-claude-cowork",
+          "chemin": "documents_cles[1]",
+          "titre": "Model Card Claude (Anthropic)",
+          "type": "primaire"
+        },
+        {
+          "fichier": "fiches_gap.json",
+          "fiche": "quete-de-sens-vs-claude-cowork",
+          "chemin": "documents_cles[1]",
+          "titre": "Model Card Claude (Anthropic)",
+          "type": "primaire"
+        },
+        {
+          "fichier": "fiches_gap.json",
+          "fiche": "regime-parlementaire-vs-claude-cowork",
+          "chemin": "documents_cles[2]",
+          "titre": "Model Card Claude (Anthropic)",
+          "type": "primaire"
+        },
+        {
+          "fichier": "fiches_gap.json",
+          "fiche": "turing-vs-claude-cowork",
+          "chemin": "documents_cles[3]",
+          "titre": "Model Card Claude (Anthropic)",
+          "type": "primaire"
+        },
+        {
+          "fichier": "fiches_gap.json",
+          "fiche": "gadamer-vs-claude-cowork",
+          "chemin": "documents_cles[3]",
+          "titre": "Model Card Claude (Anthropic)",
+          "type": "primaire"
+        },
+        {
+          "fichier": "fiches_gap.json",
+          "fiche": "omc-vs-claude-cowork",
+          "chemin": "documents_cles[2]",
+          "titre": "Model Card Claude (Anthropic)",
+          "type": "primaire"
+        },
+        {
+          "fichier": "fiches_gap.json",
+          "fiche": "structure-matricielle-vs-claude-cowork",
+          "chemin": "documents_cles[3]",
+          "titre": "Model Card Claude (Anthropic)",
+          "type": "primaire"
+        }
+      ]
+    },
+    {
+      "id": "c15-anthropic-docs",
+      "categorie": "redirection_structurelle",
+      "operation": "remplacer_url",
+      "ancienne_valeur": "https://docs.claude.com",
+      "nouvelle_valeur": "https://platform.claude.com/docs/fr/home",
+      "preuve": {
+        "constat": "redirection constatée le 07/09/2026 ; la cible retenue répond 200, vérifiée en suivant la chaîne de redirection jusqu'à son terme",
+        "methode": "node scripts/verifier-liens.mjs, catégorie « OK après redirection »",
+        "rapport": "docs/audit-qualite-2026-09.md §3",
+        "cause": "la documentation a migré vers platform.claude.com",
+        "note": "aucune de ces urls n'est cassée aujourd'hui ; figer la cible évite qu'elles meurent le jour où l'éditeur retire la redirection"
+      },
+      "emplacements": [
+        {
+          "fichier": "fiches_ia.json",
+          "fiche": "claude-anthropic-cowork",
+          "chemin": "sources[0]",
+          "titre": "Documentation Anthropic (plateforme Claude)",
+          "type": "primaire"
+        },
+        {
+          "fichier": "fiches_gap.json",
+          "fiche": "nietzsche-vs-claude-cowork",
+          "chemin": "documents_cles[3]",
+          "titre": "Documentation Anthropic",
+          "type": "primaire"
+        },
+        {
+          "fichier": "fiches_gap.json",
+          "fiche": "taylorisme-vs-claude-cowork",
+          "chemin": "documents_cles[2]",
+          "titre": "Documentation Anthropic",
+          "type": "primaire"
+        },
+        {
+          "fichier": "fiches_gap.json",
+          "fiche": "okr-vs-claude-cowork",
+          "chemin": "documents_cles[2]",
+          "titre": "Documentation Anthropic",
+          "type": "primaire"
+        },
+        {
+          "fichier": "fiches_gap.json",
+          "fiche": "socrate-vs-claude-cowork",
+          "chemin": "documents_cles[3]",
+          "titre": "Documentation Anthropic",
+          "type": "primaire"
+        },
+        {
+          "fichier": "fiches_gap.json",
+          "fiche": "david-chalmers-vs-claude-cowork",
+          "chemin": "documents_cles[1]",
+          "titre": "Documentation Anthropic",
+          "type": "primaire"
+        },
+        {
+          "fichier": "fiches_gap.json",
+          "fiche": "ludwig-wittgenstein-vs-claude-cowork",
+          "chemin": "documents_cles[2]",
+          "titre": "Documentation Anthropic",
+          "type": "primaire"
+        },
+        {
+          "fichier": "fiches_gap.json",
+          "fiche": "carl-rogers-vs-claude-cowork",
+          "chemin": "documents_cles[2]",
+          "titre": "Documentation Anthropic",
+          "type": "primaire"
+        },
+        {
+          "fichier": "fiches_gap.json",
+          "fiche": "quete-de-sens-vs-claude-cowork",
+          "chemin": "documents_cles[2]",
+          "titre": "Documentation Anthropic",
+          "type": "primaire"
+        },
+        {
+          "fichier": "fiches_gap.json",
+          "fiche": "regime-parlementaire-vs-claude-cowork",
+          "chemin": "documents_cles[1]",
+          "titre": "Documentation Anthropic",
+          "type": "primaire"
+        },
+        {
+          "fichier": "fiches_gap.json",
+          "fiche": "management-hybride-vs-claude-cowork",
+          "chemin": "documents_cles[1]",
+          "titre": "Documentation Anthropic",
+          "type": "primaire"
+        },
+        {
+          "fichier": "fiches_gap.json",
+          "fiche": "turing-vs-claude-cowork",
+          "chemin": "documents_cles[2]",
+          "titre": "Documentation Anthropic",
+          "type": "primaire"
+        },
+        {
+          "fichier": "fiches_gap.json",
+          "fiche": "gadamer-vs-claude-cowork",
+          "chemin": "documents_cles[2]",
+          "titre": "Documentation Anthropic",
+          "type": "primaire"
+        },
+        {
+          "fichier": "fiches_gap.json",
+          "fiche": "omc-vs-claude-cowork",
+          "chemin": "documents_cles[1]",
+          "titre": "Documentation Anthropic",
+          "type": "primaire"
+        },
+        {
+          "fichier": "fiches_gap.json",
+          "fiche": "structure-matricielle-vs-claude-cowork",
+          "chemin": "documents_cles[2]",
+          "titre": "Documentation Anthropic",
+          "type": "primaire"
+        }
+      ]
+    },
+    {
+      "id": "c16-anthropic-education",
+      "categorie": "redirection_structurelle",
+      "operation": "remplacer_url",
+      "ancienne_valeur": "https://www.anthropic.com/education",
+      "nouvelle_valeur": "https://claude.com/solutions/education",
+      "preuve": {
+        "constat": "redirection constatée le 07/09/2026 ; la cible retenue répond 200, vérifiée en suivant la chaîne de redirection jusqu'à son terme",
+        "methode": "node scripts/verifier-liens.mjs, catégorie « OK après redirection »",
+        "rapport": "docs/audit-qualite-2026-09.md §3",
+        "cause": "migration de domaine ET de chemin : claude.com/education redirige encore une fois vers /solutions/education — vérifié le 07/09/2026, c'est la forme finale qui est retenue ici",
+        "note": "aucune de ces urls n'est cassée aujourd'hui ; figer la cible évite qu'elles meurent le jour où l'éditeur retire la redirection"
+      },
+      "emplacements": [
+        {
+          "fichier": "fiches_gap.json",
+          "fiche": "ludwig-wittgenstein-vs-claude-cowork",
+          "chemin": "documents_cles[1]",
+          "titre": "Anthropic — Claude for Education",
+          "type": "primaire"
+        },
+        {
+          "fichier": "fiches_gap.json",
+          "fiche": "carl-rogers-vs-claude-cowork",
+          "chemin": "documents_cles[1]",
+          "titre": "Anthropic — Claude for Education",
+          "type": "primaire"
+        },
+        {
+          "fichier": "fiches_gap.json",
+          "fiche": "management-hybride-vs-claude-cowork",
+          "chemin": "documents_cles[2]",
+          "titre": "Anthropic — Claude for Education",
+          "type": "primaire"
+        }
+      ]
+    },
+    {
+      "id": "c17-anthropic-customers",
+      "categorie": "redirection_structurelle",
+      "operation": "remplacer_url",
+      "ancienne_valeur": "https://www.anthropic.com/customers",
+      "nouvelle_valeur": "https://claude.com/customers",
+      "preuve": {
+        "constat": "redirection constatée le 07/09/2026 ; la cible retenue répond 200, vérifiée en suivant la chaîne de redirection jusqu'à son terme",
+        "methode": "node scripts/verifier-liens.mjs, catégorie « OK après redirection »",
+        "rapport": "docs/audit-qualite-2026-09.md §3",
+        "cause": "même migration de domaine",
+        "note": "aucune de ces urls n'est cassée aujourd'hui ; figer la cible évite qu'elles meurent le jour où l'éditeur retire la redirection"
+      },
+      "emplacements": [
+        {
+          "fichier": "fiches_gap.json",
+          "fiche": "donna-haraway-vs-claude-cowork",
+          "chemin": "documents_cles[2]",
+          "titre": "Anthropic — Claude for research use cases",
+          "type": "primaire"
+        }
+      ]
+    },
+    {
+      "id": "c18-openai-docs",
+      "categorie": "redirection_structurelle",
+      "operation": "remplacer_url",
+      "ancienne_valeur": "https://platform.openai.com/docs",
+      "nouvelle_valeur": "https://developers.openai.com/api/docs",
+      "preuve": {
+        "constat": "redirection constatée le 07/09/2026 ; la cible retenue répond 200, vérifiée en suivant la chaîne de redirection jusqu'à son terme",
+        "methode": "node scripts/verifier-liens.mjs, catégorie « OK après redirection »",
+        "rapport": "docs/audit-qualite-2026-09.md §3",
+        "cause": "OpenAI a déplacé sa documentation vers developers.openai.com ; developers.openai.com/docs et /api/docs/overview redirigent tous deux vers /api/docs — vérifié le 07/09/2026, c'est la forme finale qui est retenue ici",
+        "note": "aucune de ces urls n'est cassée aujourd'hui ; figer la cible évite qu'elles meurent le jour où l'éditeur retire la redirection"
+      },
+      "emplacements": [
+        {
+          "fichier": "fiches_ia.json",
+          "fiche": "codex-famille-gpt",
+          "chemin": "sources[0]",
+          "titre": "Documentation OpenAI",
+          "type": "primaire"
+        },
+        {
+          "fichier": "fiches_gap.json",
+          "fiche": "rorty-vs-codex",
+          "chemin": "documents_cles[2]",
+          "titre": "Documentation OpenAI",
+          "type": "primaire"
+        },
+        {
+          "fichier": "fiches_gap.json",
+          "fiche": "organisation-exponentielle-vs-codex",
+          "chemin": "documents_cles[2]",
+          "titre": "Documentation OpenAI",
+          "type": "primaire"
+        }
+      ]
+    },
+    {
+      "id": "c19-openai-docs-models",
+      "categorie": "redirection_structurelle",
+      "operation": "remplacer_url",
+      "ancienne_valeur": "https://platform.openai.com/docs/models",
+      "nouvelle_valeur": "https://developers.openai.com/api/docs/models",
+      "preuve": {
+        "constat": "redirection constatée le 07/09/2026 ; la cible retenue répond 200, vérifiée en suivant la chaîne de redirection jusqu'à son terme",
+        "methode": "node scripts/verifier-liens.mjs, catégorie « OK après redirection »",
+        "rapport": "docs/audit-qualite-2026-09.md §3",
+        "cause": "même migration ; forme finale vérifiée 200 le 07/09/2026",
+        "note": "aucune de ces urls n'est cassée aujourd'hui ; figer la cible évite qu'elles meurent le jour où l'éditeur retire la redirection"
+      },
+      "emplacements": [
+        {
+          "fichier": "fiches_ia.json",
+          "fiche": "codex-famille-gpt",
+          "chemin": "sources[1]",
+          "titre": "OpenAI Platform — Models overview",
+          "type": "primaire"
+        },
+        {
+          "fichier": "fiches_gap.json",
+          "fiche": "daron-acemoglu-vs-codex-gpt",
+          "chemin": "documents_cles[2]",
+          "titre": "OpenAI Platform — Models overview",
+          "type": "primaire"
+        },
+        {
+          "fichier": "fiches_gap.json",
+          "fiche": "rorty-vs-codex",
+          "chemin": "documents_cles[3]",
+          "titre": "OpenAI Platform — Models overview",
+          "type": "primaire"
+        },
+        {
+          "fichier": "fiches_gap.json",
+          "fiche": "organisation-exponentielle-vs-codex",
+          "chemin": "documents_cles[3]",
+          "titre": "OpenAI Platform — Models overview",
+          "type": "primaire"
+        }
+      ]
+    },
+    {
+      "id": "c20-deepmind-plasma",
+      "categorie": "redirection_structurelle",
+      "operation": "remplacer_url",
+      "ancienne_valeur": "https://deepmind.google/discover/blog/accelerating-fusion-science-through-learned-plasma-control/",
+      "nouvelle_valeur": "https://deepmind.google/blog/accelerating-fusion-science-through-learned-plasma-control/",
+      "preuve": {
+        "constat": "redirection constatée le 07/09/2026 ; la cible retenue répond 200, vérifiée en suivant la chaîne de redirection jusqu'à son terme",
+        "methode": "node scripts/verifier-liens.mjs, catégorie « OK après redirection »",
+        "rapport": "docs/audit-qualite-2026-09.md §3",
+        "cause": "le segment /discover a été retiré des urls de blog ; la forme cible est déjà utilisée ailleurs dans le corpus",
+        "note": "aucune de ces urls n'est cassée aujourd'hui ; figer la cible évite qu'elles meurent le jour où l'éditeur retire la redirection"
+      },
+      "emplacements": [
+        {
+          "fichier": "fiches_ia.json",
+          "fiche": "ia-pour-le-controle-de-plasma-en-fusion-nucleaire",
+          "chemin": "usages[0].sources[1]",
+          "titre": "Accelerating fusion science through learned plasma control (Google DeepMind)",
+          "type": "primaire"
+        },
+        {
+          "fichier": "fiches_ia.json",
+          "fiche": "ia-pour-le-controle-de-plasma-en-fusion-nucleaire",
+          "chemin": "sources[1]",
+          "titre": "Accelerating fusion science through learned plasma control (Google DeepMind)",
+          "type": "primaire"
+        },
+        {
+          "fichier": "questions.json",
+          "fiche": "connaissance-obtenue-par-ia",
+          "chemin": "perspectives[2].sources[1]",
+          "titre": "Accelerating fusion science through learned plasma control (Google DeepMind)",
+          "type": "primaire"
+        }
+      ]
+    },
+    {
+      "id": "c21-nips-alexnet",
+      "categorie": "redirection_structurelle",
+      "operation": "remplacer_url",
+      "ancienne_valeur": "https://papers.nips.cc/paper/4824-imagenet-classification-with-deep-convolutional-neural-networks",
+      "nouvelle_valeur": "https://papers.nips.cc/paper_files/paper/2012/hash/c399862d3b9d6b76c8436e924a68c45b-Abstract.html",
+      "preuve": {
+        "constat": "redirection constatée le 07/09/2026 ; la cible retenue répond 200, vérifiée en suivant la chaîne de redirection jusqu'à son terme",
+        "methode": "node scripts/verifier-liens.mjs, catégorie « OK après redirection »",
+        "rapport": "docs/audit-qualite-2026-09.md §3",
+        "cause": "NeurIPS a réorganisé ses actes sous /paper_files/ ; l'ancienne forme n'est plus qu'une redirection",
+        "note": "aucune de ces urls n'est cassée aujourd'hui ; figer la cible évite qu'elles meurent le jour où l'éditeur retire la redirection"
+      },
+      "emplacements": [
+        {
+          "fichier": "fiches_gap.json",
+          "fiche": "ipbes-vs-cnn",
+          "chemin": "documents_cles[1]",
+          "titre": "Krizhevsky, Sutskever, Hinton — ImageNet Classification with Deep CNNs (2012)",
+          "type": "primaire"
+        }
+      ]
+    },
+    {
+      "id": "c22-epfl-plasma",
+      "categorie": "redirection_structurelle",
+      "operation": "remplacer_url",
+      "ancienne_valeur": "https://actu.epfl.ch/news/epfl-and-deepmind-use-ai-to-control-plasmas-for-nu",
+      "nouvelle_valeur": "https://actu.epfl.ch/news/epfl-and-deepmind-use-ai-to-control-plasmas-for-nu/",
+      "preuve": {
+        "constat": "redirection constatée le 07/09/2026 ; la cible retenue répond 200, vérifiée en suivant la chaîne de redirection jusqu'à son terme",
+        "methode": "node scripts/verifier-liens.mjs, catégorie « OK après redirection »",
+        "rapport": "docs/audit-qualite-2026-09.md §3",
+        "cause": "url tronquée sans barre oblique finale : le serveur redirige vers la forme complète",
+        "note": "aucune de ces urls n'est cassée aujourd'hui ; figer la cible évite qu'elles meurent le jour où l'éditeur retire la redirection"
+      },
+      "emplacements": [
+        {
+          "fichier": "fiches_gap.json",
+          "fiche": "fusion-tokamak-vs-controle-plasma-ia",
+          "chemin": "documents_cles[2]",
+          "titre": "EPFL — EPFL and DeepMind use AI to control plasmas for nuclear fusion",
+          "type": "primaire"
+        }
+      ]
+    },
+    {
+      "id": "c23-regression-lineaire",
+      "categorie": "double_encodage",
+      "operation": "remplacer_url",
+      "ancienne_valeur": "https://fr.wikipedia.org/wiki/Régression_linéaire",
+      "nouvelle_valeur": "https://fr.wikipedia.org/wiki/R%C3%A9gression_lin%C3%A9aire",
+      "preuve": {
+        "constat": "la même page est stockée sous deux formes : 5 occurrence(s) en UTF-8 brut, 2 en pourcent-encodé",
+        "methode": "node scripts/auditer-corpus.mjs (§A8, « même titre, deux url »)",
+        "rapport": "docs/audit-mecanique-2026-09-07.md, découverte annexe",
+        "cause": "les deux formes répondent 200 mais comptent pour deux sources distinctes : le vérificateur de liens les teste deux fois, l'indexeur RAG les indexe deux fois, et une correction appliquée à l'une ne touche pas l'autre",
+        "choix_de_la_forme_cible": "le pourcent-encodage (RFC 3986) est retenu parce que c'est la convention déjà suivie par la quasi-totalité des autres urls Wikipédia accentuées du corpus"
+      },
+      "emplacements": [
+        {
+          "fichier": "fiches_ia.json",
+          "fiche": "regression-lineaire",
+          "chemin": "usages[0].sources[0]",
+          "titre": "Régression linéaire — Wikipédia",
+          "type": "secondaire"
+        },
+        {
+          "fichier": "fiches_ia.json",
+          "fiche": "regression-lineaire",
+          "chemin": "usages[1].sources[0]",
+          "titre": "Régression linéaire — Wikipédia",
+          "type": "secondaire"
+        },
+        {
+          "fichier": "fiches_ia.json",
+          "fiche": "regression-lineaire",
+          "chemin": "sources[0]",
+          "titre": "Régression linéaire — Wikipédia",
+          "type": "secondaire"
+        },
+        {
+          "fichier": "fiches_gap.json",
+          "fiche": "keynes-vs-regression-lineaire",
+          "chemin": "documents_cles[1]",
+          "titre": "Régression linéaire — Wikipédia",
+          "type": "primaire"
+        },
+        {
+          "fichier": "fiches_gap.json",
+          "fiche": "gatt-vs-regression-lineaire",
+          "chemin": "documents_cles[1]",
+          "titre": "Régression linéaire — Wikipédia",
+          "type": "primaire"
+        }
+      ]
+    },
+    {
+      "id": "c24-regression-logistique",
+      "categorie": "double_encodage",
+      "operation": "remplacer_url",
+      "ancienne_valeur": "https://fr.wikipedia.org/wiki/Régression_logistique",
+      "nouvelle_valeur": "https://fr.wikipedia.org/wiki/R%C3%A9gression_logistique",
+      "preuve": {
+        "constat": "la même page est stockée sous deux formes : 5 occurrence(s) en UTF-8 brut, 2 en pourcent-encodé",
+        "methode": "node scripts/auditer-corpus.mjs (§A8, « même titre, deux url »)",
+        "rapport": "docs/audit-mecanique-2026-09-07.md, découverte annexe",
+        "cause": "les deux formes répondent 200 mais comptent pour deux sources distinctes : le vérificateur de liens les teste deux fois, l'indexeur RAG les indexe deux fois, et une correction appliquée à l'une ne touche pas l'autre",
+        "choix_de_la_forme_cible": "le pourcent-encodage (RFC 3986) est retenu parce que c'est la convention déjà suivie par la quasi-totalité des autres urls Wikipédia accentuées du corpus"
+      },
+      "emplacements": [
+        {
+          "fichier": "fiches_ia.json",
+          "fiche": "regression-logistique",
+          "chemin": "usages[0].sources[0]",
+          "titre": "Régression logistique — Wikipédia",
+          "type": "secondaire"
+        },
+        {
+          "fichier": "fiches_ia.json",
+          "fiche": "regression-logistique",
+          "chemin": "usages[1].sources[0]",
+          "titre": "Régression logistique — Wikipédia",
+          "type": "secondaire"
+        },
+        {
+          "fichier": "fiches_ia.json",
+          "fiche": "regression-logistique",
+          "chemin": "sources[0]",
+          "titre": "Régression logistique — Wikipédia",
+          "type": "secondaire"
+        },
+        {
+          "fichier": "fiches_gap.json",
+          "fiche": "foucault-vs-regression-logistique",
+          "chemin": "documents_cles[2]",
+          "titre": "Régression logistique — Wikipédia",
+          "type": "primaire"
+        },
+        {
+          "fichier": "questions.json",
+          "fiche": "limites-ia-generative-structurelles-ou-conjoncturelles",
+          "chemin": "perspectives[1].sources[3]",
+          "titre": "Régression logistique — Wikipédia",
+          "type": "secondaire"
+        }
+      ]
+    },
+    {
+      "id": "c25-arbres-de-decision",
+      "categorie": "double_encodage",
+      "operation": "remplacer_url",
+      "ancienne_valeur": "https://fr.wikipedia.org/wiki/Arbre_de_décision_(apprentissage)",
+      "nouvelle_valeur": "https://fr.wikipedia.org/wiki/Arbre_de_d%C3%A9cision_(apprentissage)",
+      "preuve": {
+        "constat": "la même page est stockée sous deux formes : 8 occurrence(s) en UTF-8 brut, 1 en pourcent-encodé",
+        "methode": "node scripts/auditer-corpus.mjs (§A8, « même titre, deux url »)",
+        "rapport": "docs/audit-mecanique-2026-09-07.md, découverte annexe",
+        "cause": "les deux formes répondent 200 mais comptent pour deux sources distinctes : le vérificateur de liens les teste deux fois, l'indexeur RAG les indexe deux fois, et une correction appliquée à l'une ne touche pas l'autre",
+        "choix_de_la_forme_cible": "le pourcent-encodage (RFC 3986) est retenu parce que c'est la convention déjà suivie par la quasi-totalité des autres urls Wikipédia accentuées du corpus"
+      },
+      "emplacements": [
+        {
+          "fichier": "fiches_ia.json",
+          "fiche": "arbres-de-decision",
+          "chemin": "usages[0].sources[0]",
+          "titre": "Arbre de décision (apprentissage) — Wikipédia",
+          "type": "secondaire"
+        },
+        {
+          "fichier": "fiches_ia.json",
+          "fiche": "arbres-de-decision",
+          "chemin": "usages[1].sources[0]",
+          "titre": "Arbre de décision (apprentissage) — Wikipédia",
+          "type": "secondaire"
+        },
+        {
+          "fichier": "fiches_ia.json",
+          "fiche": "arbres-de-decision",
+          "chemin": "sources[0]",
+          "titre": "Arbre de décision (apprentissage) — Wikipédia",
+          "type": "secondaire"
+        },
+        {
+          "fichier": "fiches_gap.json",
+          "fiche": "aristote-vs-arbres-de-decision",
+          "chemin": "documents_cles[3]",
+          "titre": "Arbre de décision (apprentissage) — Wikipédia",
+          "type": "primaire"
+        },
+        {
+          "fichier": "fiches_gap.json",
+          "fiche": "buchanan-vs-arbres-de-decision",
+          "chemin": "documents_cles[1]",
+          "titre": "Arbre de décision (apprentissage) — Wikipédia",
+          "type": "primaire"
+        },
+        {
+          "fichier": "fiches_gap.json",
+          "fiche": "conseil-europe-vs-arbres-de-decision",
+          "chemin": "documents_cles[1]",
+          "titre": "Arbre de décision (apprentissage) — Wikipédia",
+          "type": "primaire"
+        },
+        {
+          "fichier": "fiches_gap.json",
+          "fiche": "regime-presidentiel-vs-arbres-de-decision",
+          "chemin": "documents_cles[1]",
+          "titre": "Arbre de décision (apprentissage) — Wikipédia",
+          "type": "primaire"
+        },
+        {
+          "fichier": "questions.json",
+          "fiche": "management-resistant-automatisation-encadrement",
+          "chemin": "perspectives[1].sources[4]",
+          "titre": "Arbre de décision (apprentissage) — Wikipédia",
+          "type": "secondaire"
+        }
+      ]
+    },
+    {
+      "id": "c26-forets-aleatoires",
+      "categorie": "double_encodage",
+      "operation": "remplacer_url",
+      "ancienne_valeur": "https://fr.wikipedia.org/wiki/Forêt_d'arbres_décisionnels",
+      "nouvelle_valeur": "https://fr.wikipedia.org/wiki/For%C3%AAt_d%27arbres_d%C3%A9cisionnels",
+      "preuve": {
+        "constat": "la même page est stockée sous deux formes : 7 occurrence(s) en UTF-8 brut, 1 en pourcent-encodé",
+        "methode": "node scripts/auditer-corpus.mjs (§A8, « même titre, deux url »)",
+        "rapport": "docs/audit-mecanique-2026-09-07.md, découverte annexe",
+        "cause": "les deux formes répondent 200 mais comptent pour deux sources distinctes : le vérificateur de liens les teste deux fois, l'indexeur RAG les indexe deux fois, et une correction appliquée à l'une ne touche pas l'autre",
+        "choix_de_la_forme_cible": "le pourcent-encodage (RFC 3986) est retenu parce que c'est la convention déjà suivie par la quasi-totalité des autres urls Wikipédia accentuées du corpus"
+      },
+      "emplacements": [
+        {
+          "fichier": "fiches_ia.json",
+          "fiche": "forets-aleatoires",
+          "chemin": "usages[0].sources[0]",
+          "titre": "Forêt d'arbres décisionnels — Wikipédia",
+          "type": "secondaire"
+        },
+        {
+          "fichier": "fiches_ia.json",
+          "fiche": "forets-aleatoires",
+          "chemin": "usages[1].sources[0]",
+          "titre": "Forêt d'arbres décisionnels — Wikipédia",
+          "type": "secondaire"
+        },
+        {
+          "fichier": "fiches_ia.json",
+          "fiche": "forets-aleatoires",
+          "chemin": "sources[1]",
+          "titre": "Forêt d'arbres décisionnels — Wikipédia",
+          "type": "secondaire"
+        },
+        {
+          "fichier": "fiches_gap.json",
+          "fiche": "astrobiologie-vs-forets-aleatoires",
+          "chemin": "documents_cles[2]",
+          "titre": "Forêt d'arbres décisionnels — Wikipédia",
+          "type": "primaire"
+        },
+        {
+          "fichier": "fiches_gap.json",
+          "fiche": "stiglitz-vs-forets-aleatoires",
+          "chemin": "documents_cles[1]",
+          "titre": "Forêt d'arbres décisionnels — Wikipédia",
+          "type": "primaire"
+        },
+        {
+          "fichier": "fiches_gap.json",
+          "fiche": "populisme-de-droite-vs-forets-aleatoires",
+          "chemin": "documents_cles[1]",
+          "titre": "Forêt d'arbres décisionnels — Wikipédia",
+          "type": "primaire"
+        },
+        {
+          "fichier": "questions.json",
+          "fiche": "connaissance-obtenue-par-ia",
+          "chemin": "perspectives[3].sources[0]",
+          "titre": "Forêt d'arbres décisionnels — Wikipédia",
+          "type": "secondaire"
+        }
+      ]
+    },
+    {
+      "id": "c27-k-plus-proches-voisins",
+      "categorie": "double_encodage",
+      "operation": "remplacer_url",
+      "ancienne_valeur": "https://fr.wikipedia.org/wiki/Méthode_des_k_plus_proches_voisins",
+      "nouvelle_valeur": "https://fr.wikipedia.org/wiki/M%C3%A9thode_des_k_plus_proches_voisins",
+      "preuve": {
+        "constat": "la même page est stockée sous deux formes : 3 occurrence(s) en UTF-8 brut, 1 en pourcent-encodé",
+        "methode": "node scripts/auditer-corpus.mjs (§A8, « même titre, deux url »)",
+        "rapport": "docs/audit-mecanique-2026-09-07.md, découverte annexe",
+        "cause": "les deux formes répondent 200 mais comptent pour deux sources distinctes : le vérificateur de liens les teste deux fois, l'indexeur RAG les indexe deux fois, et une correction appliquée à l'une ne touche pas l'autre",
+        "choix_de_la_forme_cible": "le pourcent-encodage (RFC 3986) est retenu parce que c'est la convention déjà suivie par la quasi-totalité des autres urls Wikipédia accentuées du corpus"
+      },
+      "emplacements": [
+        {
+          "fichier": "fiches_ia.json",
+          "fiche": "k-nn",
+          "chemin": "usages[0].sources[0]",
+          "titre": "Méthode des k plus proches voisins — Wikipédia",
+          "type": "secondaire"
+        },
+        {
+          "fichier": "fiches_ia.json",
+          "fiche": "k-nn",
+          "chemin": "usages[1].sources[0]",
+          "titre": "Méthode des k plus proches voisins — Wikipédia",
+          "type": "secondaire"
+        },
+        {
+          "fichier": "fiches_ia.json",
+          "fiche": "k-nn",
+          "chemin": "sources[0]",
+          "titre": "Méthode des k plus proches voisins — Wikipédia",
+          "type": "secondaire"
+        }
+      ]
+    }
+  ]
+}
