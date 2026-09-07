@@ -29,20 +29,29 @@
     "nom": "James A. Robinson",
     "these_centrale": "James A. Robinson, politiste et économiste britannique (université de Chicago), défend avec Daron Acemoglu la thèse selon laquelle ce sont les institutions politiques inclusives, garantissant la propriété privée et l'État de droit, qui permettent la prospérité économique de long terme des nations.",
     "apport": "Co-auteur de Why Nations Fail, il a contribué à une œuvre de référence en économie politique du développement qui a profondément influencé le débat académique et public sur les causes des inégalités entre pays, récompensée par le prix Nobel d'économie 2024.",
-    "limites_critiques": "Sa thèse est critiquée pour minimiser le rôle de facteurs comme la géographie, les ressources naturelles ou les héritages coloniaux spécifiques dans les trajectoires nationales, et pour offrir des recommandations de réforme institutionnelle jugées parfois difficiles à opérationnaliser concrètement.",
+    "limites_critiques": "Sa thèse est contestée nommément : Jared Diamond lui reproche d'ignorer la géographie, le climat et les maladies ; Jeffrey Sachs, de se limiter aux institutions domestiques en négligeant la géographie, la technologie et les facteurs géopolitiques, et de sous-estimer la capacité de régimes autoritaires à susciter la croissance ; Francis Fukuyama, de simplifier à l'excès par la bifurcation inclusif/extractif ; Arvind Subramanian, d'ignorer la causalité inverse — la modernisation économique pouvant elle-même améliorer les institutions.",
     "sources": [
       {
-        "titre": "Why Nations Fail (Acemoglu & Robinson, 2012)",
+        "titre": "Daron Acemoglu et James A. Robinson, Why Nations Fail (2012)",
+        "url": "https://en.wikipedia.org/wiki/Why_Nations_Fail",
+        "date": "2026-09-07",
         "type": "primaire"
       },
       {
         "titre": "James A. Robinson — Wikipédia",
-        "type": "secondaire",
-        "url": "https://fr.wikipedia.org/wiki/James_A._Robinson"
+        "url": "https://fr.wikipedia.org/wiki/James_A._Robinson",
+        "date": "2026-09-07",
+        "type": "secondaire"
+      },
+      {
+        "titre": "Prix de la Banque de Suède en sciences économiques 2024 (Fondation Nobel)",
+        "url": "https://www.nobelprize.org/prizes/economic-sciences/2024/summary/",
+        "date": "2024-10-14",
+        "type": "secondaire"
       }
     ],
     "statut": "documente",
-    "derniere_verification": "2026-09-06",
+    "derniere_verification": "2026-09-07",
     "resonance_ia": "Les travaux de Robinson sur les institutions inclusives nourrissent le débat sur les conditions politiques nécessaires pour que les gains de productivité liés à l'IA profitent largement à la population plutôt qu'à une minorité disposant du contrôle du capital technologique."
   },
   {
@@ -341,8 +350,8 @@
     "sous_domaine": "gouvernance_mondiale",
     "nom": "Minilatéralisme et clubs (G7, G20)",
     "these_centrale": "Le minilatéralisme part du principe qu'un petit groupe de pays clés (club restreint comme le G7 ou le G20) peut coordonner plus efficacement des réponses à des enjeux mondiaux qu'un forum universel comme l'ONU, en évitant les blocages liés au grand nombre de participants et à la règle du consensus.",
-    "apport": "Ces clubs informels ont permis des réponses rapides et coordonnées à des crises majeures (crise financière de 2008 via le G20) et servent de lieux d'impulsion politique qui sont ensuite, parfois, relayés vers des instances plus universelles.",
-    "limites_critiques": "Ce modèle pose un problème de légitimité et de représentativité : les décisions prises par un club restreint de puissances engagent de facto l'ensemble de la communauté internationale sans que les pays exclus aient pu peser sur leur élaboration.",
+    "apport": "Ces clubs informels ont permis des réponses coordonnées à des crises majeures : réuni après la crise financière de 2008, le G20 s'est engagé sur la régulation des paradis fiscaux et la rémunération des opérateurs de marché, et a décidé un abondement de 1 000 milliards de dollars du FMI et de la Banque mondiale.",
+    "limites_critiques": "Ce modèle pose un problème de représentativité que ses propres membres ne masquent pas : le G20 rassemble 21 membres représentant 75 % du commerce mondial et plus de 80 % du produit mondial brut, mais laisse dehors des places financières majeures comme la Suisse et Singapour et sur-représente l'Europe, ce que des organisations altermondialistes dénoncent comme une décision prise par « 20 pays parmi les plus riches au mépris de tous les autres ». Le G7, de son côté, ne comprend aucune structure permanente ni pouvoir contraignant.",
     "sources": [
       {
         "titre": "Déclaration des dirigeants du G7 sur le processus d'Hiroshima en matière d'IA (document officiel du G7)",
@@ -351,10 +360,22 @@
         "type": "primaire"
       },
       {
+        "titre": "Groupe des vingt (G20) — Wikipédia",
+        "url": "https://fr.wikipedia.org/wiki/G20",
+        "date": "2026-09-07",
+        "type": "secondaire"
+      },
+      {
+        "titre": "Groupe des sept (économie) — Wikipédia",
+        "url": "https://fr.wikipedia.org/wiki/Groupe_des_sept_(économie)",
+        "date": "2026-09-07",
+        "type": "secondaire"
+      },
+      {
         "titre": "Gouvernance mondiale — Wikipédia",
-        "type": "secondaire",
         "url": "https://fr.wikipedia.org/wiki/Gouvernance_mondiale",
-        "date": "2026-09-06"
+        "date": "2026-09-07",
+        "type": "secondaire"
       }
     ],
     "statut": "documente",
@@ -438,7 +459,7 @@
     "nom": "ONU",
     "these_centrale": "L'ONU, fondée en 1945 pour succéder à la SDN, repose sur l'idée que la sécurité collective, le droit international et la coopération multilatérale organisée (Charte, Conseil de sécurité, Assemblée générale) peuvent maintenir la paix et favoriser le développement.",
     "apport": "Elle a créé un système quasi universel (193 États membres) d'agences spécialisées (OMS, UNESCO, PAM, HCR...), un cadre normatif majeur (Déclaration universelle des droits de l'homme, droit humanitaire, objectifs de développement durable) et des opérations de maintien de la paix qui, malgré leurs limites, ont contribué à contenir de nombreux conflits.",
-    "limites_critiques": "Le droit de veto des cinq membres permanents du Conseil de sécurité paralyse régulièrement l'action face aux crises majeures (Syrie, Ukraine), et l'organisation est critiquée pour sa lourdeur bureaucratique, son sous-financement chronique et son incapacité à réformer sa propre gouvernance pour refléter le monde de 2026 plutôt que celui de 1945.",
+    "limites_critiques": "Le droit de veto des cinq membres permanents du Conseil de sécurité paralyse régulièrement l'action face aux crises majeures, et l'organisation peine à réformer sa propre gouvernance pour refléter le monde d'aujourd'hui plutôt que celui de 1945 : sa composition est passée de 51 à 193 États membres sans que la composition du Conseil de sécurité ne change de nature.",
     "sources": [
       {
         "titre": "Charte des Nations unies (texte intégral, Nations unies)",
@@ -463,8 +484,8 @@
     "sous_domaine": "organisation_internationale",
     "nom": "CIJ",
     "these_centrale": "La Cour internationale de justice (CIJ), organe judiciaire principal de l'ONU siégeant à La Haye depuis 1945, part du principe que les différends entre États doivent pouvoir être tranchés par le droit plutôt que par la force.",
-    "apport": "Elle a rendu des arrêts structurants en matière de frontières, de droit de la mer, d'immunités étatiques et, plus récemment, sur des accusations de génocide ou de violations du droit international humanitaire, consolidant un corpus de jurisprudence internationale de référence.",
-    "limites_critiques": "Sa compétence dépend du consentement des États (juridiction volontaire sauf clauses spécifiques) et ses arrêts, bien qu'obligatoires en droit, manquent de mécanisme d'exécution forcée : plusieurs décisions majeures sont restées lettre morte faute de volonté politique des parties condamnées.",
+    "apport": "Elle a rendu des arrêts structurants — Plateau continental de la mer du Nord (1969), Sud-Ouest africain (1966), Activités militaires et paramilitaires au Nicaragua (1986), Essais nucléaires (1986), Certaines terres à phosphates à Nauru (1993) — ainsi que des avis consultatifs de portée politique majeure, tel celui de 2004 sur les conséquences juridiques de l'édification d'un mur en territoire palestinien.",
+    "limites_critiques": "Sa compétence dépend du consentement des États : la juridiction obligatoire de l'article 36 de son Statut n'est acquise que par déclaration facultative, révocable et souvent assortie de réserves. Ses décisions sont obligatoires pour les parties, mais leur exécution ne peut passer que par une saisine du Conseil de sécurité — donc par le veto. Son périmètre se rétrécit par ailleurs : le Tribunal international du droit de la mer, né de la convention de Montego Bay de 1982, empiète directement sur ses compétences en matière de délimitation maritime.",
     "sources": [
       {
         "titre": "Statut de la Cour internationale de justice (Cour internationale de justice)",
@@ -489,8 +510,8 @@
     "sous_domaine": "organisation_internationale",
     "nom": "OTAN",
     "these_centrale": "L'OTAN (1949) repose sur le principe de défense collective — une attaque contre un membre est une attaque contre tous (article 5) — organisé initialement pour contenir l'URSS pendant la guerre froide.",
-    "apport": "Elle a fourni le cadre militaire intégré (commandement unifié, standardisation des équipements et procédures) qui a structuré la sécurité euro-atlantique pendant plus de 75 ans, et s'est élargie après 1991 aux anciens pays du bloc de l'Est puis, depuis 2023-2024, à la Finlande et la Suède.",
-    "limites_critiques": "Son élargissement vers l'Est est une source majeure de tension avec la Russie (invoquée pour justifier l'invasion de l'Ukraine en 2022), et l'alliance reste dépendante du leadership et du financement américains, ce qui expose sa cohésion aux aléas de la politique intérieure des États-Unis.",
+    "apport": "Elle a fourni le cadre militaire intégré qui structure la sécurité euro-atlantique depuis la signature du traité de Washington le 4 avril 1949, et s'est élargie après 1991 aux anciens pays du bloc de l'Est, puis à la Finlande et à la Suède.",
+    "limites_critiques": "Son élargissement vers l'Est est une source majeure de tension avec la Russie, invoquée par celle-ci pour justifier l'invasion de l'Ukraine, et la portée réelle de l'article 5 dépend d'une décision politique de chaque allié, l'engagement portant sur « l'action qu'il jugera nécessaire » et non sur un automatisme militaire.",
     "sources": [
       {
         "titre": "Le Traité de l'Atlantique Nord (texte officiel, OTAN)",
@@ -516,7 +537,7 @@
     "nom": "Pacte de Varsovie",
     "these_centrale": "Le pacte de Varsovie (1955) formalise, en miroir de l'OTAN, une alliance militaire et politique unissant l'URSS et les pays communistes d'Europe de l'Est sous commandement soviétique.",
     "apport": "Il a structuré le bloc de l'Est pendant la guerre froide et servi d'instrument de contrôle politique direct, notamment lors des interventions militaires en Hongrie (1956) et en Tchécoslovaquie (1968) pour réprimer des tentatives de libéralisation.",
-    "limites_critiques": "Contrairement à l'OTAN, l'alliance n'a jamais fonctionné sur une base d'adhésion volontaire réelle : elle a servi avant tout les intérêts stratégiques soviétiques et s'est effondrée dès 1991 avec la dislocation de l'URSS, sans laisser d'institution pérenne.",
+    "limites_critiques": "L'alliance a servi avant tout les intérêts stratégiques soviétiques — les interventions en Hongrie en 1956 et en Tchécoslovaquie en 1968 l'ont montré en réprimant des tentatives de libéralisation menées par des États membres — et s'est dissoute en 1991 avec la dislocation de l'URSS, sans laisser d'institution pérenne.",
     "sources": [
       {
         "titre": "Pacte de Varsovie — Wikipédia",
@@ -534,8 +555,8 @@
     "axe": "social",
     "sous_domaine": "organisation_internationale",
     "nom": "Mouvement des non-alignés",
-    "these_centrale": "Le Mouvement des non-alignés (né à Bandung en 1955, formalisé à Belgrade en 1961) défend l'idée que les États nouvellement indépendants ou du Sud global peuvent refuser de s'aligner sur les blocs occidental ou soviétique pour préserver leur souveraineté.",
-    "apport": "Il a donné une voix collective à plus d'une centaine de pays du Sud sur la décolonisation, le désarmement et un nouvel ordre économique international, influençant durablement le débat Nord-Sud aux Nations unies.",
+    "these_centrale": "Le Mouvement des non-alignés, dont la source encyclopédique fait remonter l'origine à la déclaration de Brioni de 1956 proposée par Gamal Abdel Nasser, Josip Broz Tito, Soekarno et Jawaharlal Nehru — la conférence de Bandung de 1955 n'en étant qu'une étape préparatoire —, défend l'idée que les États nouvellement indépendants ou du Sud global peuvent refuser de s'aligner sur les blocs occidental ou soviétique pour préserver leur souveraineté.",
+    "apport": "Il a donné une voix collective à plus d'une centaine de pays du Sud sur la décolonisation et, à partir de la conférence d'Alger, sur le Nouvel ordre économique international : matières premières, financement du développement, industrialisation et transferts de technologie.",
     "limites_critiques": "L'hétérogénéité idéologique et les intérêts nationaux divergents de ses membres (dont certains ont noué des alliances de fait avec l'un ou l'autre bloc) ont limité sa capacité d'action concertée, et son influence s'est diluée après la fin de la guerre froide.",
     "sources": [
       {
@@ -555,7 +576,7 @@
     "sous_domaine": "organisation_internationale",
     "nom": "Union africaine (UA) / OUA",
     "these_centrale": "L'Union africaine (UA, 2002), qui remplace l'Organisation de l'unité africaine (OUA, 1963), porte le projet d'une intégration politique et économique panafricaine capable de peser collectivement sur la scène internationale.",
-    "apport": "Elle a mis en place des mécanismes de médiation dans les conflits régionaux, une architecture de sécurité continentale et l'Agenda 2063 de développement, tout en portant le projet de zone de libre-échange continentale africaine (ZLECAf).",
+    "apport": "Elle a mis en place des mécanismes de médiation dans les conflits régionaux et une architecture de sécurité continentale, et porte depuis la déclaration solennelle du cinquantenaire de mai 2013 l'Agenda 2063, plan de transformation de l'Afrique sur cinquante ans qui couvre la gouvernance démocratique, la paix et la sécurité et englobe la zone de libre-échange continentale africaine (ZLECAf).",
     "limites_critiques": "Elle reste financièrement dépendante de bailleurs extérieurs, peine à faire appliquer ses décisions face aux coups d'État répétés dans plusieurs États membres, et sa capacité d'intervention militaire autonome demeure limitée.",
     "sources": [
       {
@@ -569,6 +590,12 @@
         "url": "https://fr.wikipedia.org/wiki/Union_africaine",
         "type": "secondaire",
         "date": "2026-09-05"
+      },
+      {
+        "titre": "Agenda 2063: The Africa We Want (Union africaine, page officielle)",
+        "url": "https://au.int/en/agenda2063/overview",
+        "date": "2026-09-07",
+        "type": "secondaire"
       }
     ],
     "statut": "documente",
@@ -621,7 +648,7 @@
     "sous_domaine": "organisation_internationale",
     "nom": "Conseil de l'Europe",
     "these_centrale": "Le Conseil de l'Europe (1949, traité de Londres) part du principe que la protection des droits de l'homme, la démocratie et l'État de droit doivent être garantis par des normes juridiques communes à l'échelle du continent, au-delà de l'Union européenne.",
-    "apport": "Il a créé la Convention européenne des droits de l'homme et la Cour européenne des droits de l'homme (Strasbourg), mécanisme de recours individuel unique en son genre qui a fait évoluer le droit interne de ses 46 États membres sur des sujets sensibles (peine de mort, discriminations, vie privée).",
+    "apport": "Il a créé la Convention européenne des droits de l'homme et la Cour européenne des droits de l'homme, siégeant à Strasbourg, dont la jurisprudence s'impose aux 46 États membres et a fait évoluer leur droit interne.",
     "limites_critiques": "Il ne dispose d'aucun pouvoir de contrainte économique ou militaire, dépend du bon vouloir des États pour exécuter les arrêts de la Cour, et a dû exclure la Russie en 2022 après l'invasion de l'Ukraine, illustrant les limites de son influence face à des États déterminés à s'en affranchir.",
     "sources": [
       {
@@ -642,7 +669,7 @@
     "nom": "OSCE",
     "these_centrale": "L'OSCE (1995, héritière de la Conférence sur la sécurité et la coopération en Europe) porte une conception large de la sécurité incluant la maîtrise des armements, la « dimension humaine » (droits humains, démocratisation) et la sécurité énergétique.",
     "apport": "Elle a fourni pendant la guerre froide puis après 1991 un cadre de dialogue rare réunissant Est et Ouest, avec des missions d'observation électorale et de médiation dans plusieurs conflits post-soviétiques.",
-    "limites_critiques": "Son fonctionnement par consensus donne à chaque État un droit de veto de fait, ce qui l'a rendue largement impuissante face à l'annexion de la Crimée en 2014 puis à l'invasion de l'Ukraine en 2022 par un de ses propres États membres, la Russie.",
+    "limites_critiques": "Son fonctionnement par consensus donne à chaque État un droit de veto de fait, ce qui a limité sa capacité d'action dans le conflit ukrainien où elle n'a pu déployer qu'une mission spéciale d'observation et animer le Groupe de contact trilatéral, sans peser sur le comportement de l'un de ses propres États membres.",
     "sources": [
       {
         "titre": "Acte final d'Helsinki (Conférence sur la sécurité et la coopération en Europe, texte officiel OSCE)",
@@ -713,7 +740,7 @@
     "sous_domaine": "organisation_internationale",
     "nom": "GATT",
     "these_centrale": "Le GATT (1947) pose le principe que la réduction négociée et réciproque des barrières douanières entre pays signataires stimule le commerce international et la croissance économique mondiale.",
-    "apport": "À travers huit cycles de négociations (dont le Kennedy Round et l'Uruguay Round), il a fait baisser drastiquement les droits de douane moyens sur les produits manufacturés et posé les bases institutionnelles qui aboutiront à la création de l'OMC en 1995.",
+    "apport": "À travers une série de cycles de négociations — Genève 1947, Annecy 1949, Torquay 1951, puis les cycles Kennedy, Tokyo et Uruguay —, il a fait baisser drastiquement les droits de douane moyens sur les produits manufacturés et posé les bases institutionnelles qui aboutiront à la création de l'OMC en 1995.",
     "limites_critiques": "Le GATT ne couvrait à l'origine que les marchandises (pas les services ni la propriété intellectuelle), manquait d'un véritable organe de règlement des différends contraignant, et laissait de côté l'agriculture, secteur hautement protégé par de nombreux pays développés.",
     "sources": [
       {
@@ -765,7 +792,7 @@
     "sous_domaine": "organisation_internationale",
     "nom": "OCDE",
     "these_centrale": "L'OCDE, organisation intergouvernementale rassemblant principalement des pays développés à économie de marché et gouvernement démocratique, joue un rôle d'assemblée consultative produisant analyses économiques comparées et recommandations de politiques publiques.",
-    "apport": "Elle a standardisé de nombreux indicateurs économiques et sociaux comparables entre pays (PISA en éducation, comparaisons fiscales), et ses travaux sur la fiscalité internationale ont abouti à l'accord historique de 2021 sur un impôt minimum mondial sur les sociétés.",
+    "apport": "Elle joue un rôle d'assemblée consultative, produisant analyses économiques comparées et recommandations de politiques publiques, et a standardisé de nombreux indicateurs comparables entre pays : elle pilote depuis 2000 le programme PISA, plus grande étude internationale sur les acquis des élèves, qui portait en 2022 sur 85 pays ; ses travaux sur la fiscalité internationale ont abouti en 2021 à un accord entre 136 pays sur un impôt minimum de 15 % applicable aux multinationales.",
     "limites_critiques": "Dépourvue de pouvoir contraignant, elle ne peut qu'émettre des recommandations que les États restent libres de ne pas appliquer, et son recrutement centré sur les pays riches limite sa représentativité pour traiter des enjeux véritablement mondiaux.",
     "sources": [
       {
@@ -773,11 +800,29 @@
         "url": "https://fr.wikipedia.org/wiki/Organisation_de_coopération_et_de_développement_économiques",
         "type": "secondaire",
         "date": "2026-09-05"
+      },
+      {
+        "titre": "Programme international pour le suivi des acquis des élèves (PISA) — Wikipédia",
+        "url": "https://fr.wikipedia.org/wiki/Programme_international_pour_le_suivi_des_acquis_des_%C3%A9l%C3%A8ves",
+        "date": "2026-09-07",
+        "type": "secondaire"
+      },
+      {
+        "titre": "Taux d'imposition mondial minimum — Wikipédia",
+        "url": "https://fr.wikipedia.org/wiki/Taux_d'imposition_mondial_minimum",
+        "date": "2026-09-07",
+        "type": "secondaire"
+      },
+      {
+        "titre": "AI Principles Overview (OECD.AI, page officielle de l'OCDE)",
+        "url": "https://oecd.ai/en/ai-principles",
+        "date": "2019-05-22",
+        "type": "secondaire"
       }
     ],
     "statut": "documente",
     "derniere_verification": "2026-09-07",
-    "resonance_ia": "L'OCDE a produit dès 2019 les premiers Principes sur l'IA adoptés au niveau intergouvernemental, devenus une référence pour de nombreuses régulations nationales, illustrant son rôle de laboratoire normatif malgré l'absence de pouvoir contraignant."
+    "resonance_ia": "L'OCDE a adopté en 2019, et actualisé en mai 2024, ses Principes sur l'IA — première norme intergouvernementale en la matière, à laquelle adhèrent 47 pays et organisations — articulée autour de la croissance inclusive, des droits humains, de la transparence et de l'explicabilité, de la robustesse et de la responsabilité."
   },
   {
     "id": "opep",
@@ -805,8 +850,8 @@
     "sous_domaine": "organisation_internationale",
     "nom": "Forum économique mondial (WEF)",
     "these_centrale": "Le Forum économique mondial (fondation créée en 1971 par Klaus Schwab, connue pour son sommet annuel de Davos) part du principe qu'un dialogue informel entre dirigeants politiques, économiques et de la société civile favorise la coopération mondiale sur les grands enjeux.",
-    "apport": "Il est devenu un lieu de convergence médiatisé où se nouent des annonces économiques et diplomatiques majeures, et publie des rapports influents (risques mondiaux, avenir de l'emploi) largement repris par décideurs et médias.",
-    "limites_critiques": "Régulièrement critiqué comme un symbole d'entre-soi élitiste sans pouvoir de décision réel, il est accusé de produire davantage de discours et de nouage de contacts d'affaires que d'actions concrètes sur les enjeux qu'il prétend traiter (inégalités, climat).",
+    "apport": "Il est devenu un lieu de convergence médiatisé où se nouent des annonces économiques et diplomatiques, et publie une série de rapports repris par les décideurs et les médias : Global Competitiveness Report (1979), Global Information Technology Report (2001), Global Gender Gap Report (2005), Global Risk Report (2006), Travel and Tourism Competitiveness Report (2007), Global Enabling Trade Report (2008).",
+    "limites_critiques": "L'ancien journaliste du Frankfurter Allgemeine Zeitung Jürgen Dunsch critiquait en 2017 le fait que les rapports financiers du Forum ne soient pas transparents, ni les revenus ni les dépenses n'y étant ventilés et le capital de la fondation n'y étant pas quantifié. Le 21 avril 2025, Klaus Schwab a démissionné avec effet immédiat de la présidence sans en expliquer les raisons, dans un contexte où il était mis en cause par des membres du Forum.",
     "sources": [
       {
         "titre": "About the World Economic Forum (Forum économique mondial, page institutionnelle)",
@@ -896,7 +941,7 @@
     "nom": "ASEAN",
     "these_centrale": "L'ASEAN (1967, Bangkok), fondée par cinq pays d'Asie du Sud-Est en pleine guerre froide pour faire barrage aux mouvements communistes, part du principe qu'une coopération régionale fondée sur la non-ingérence et le consensus favorise stabilité et développement.",
     "apport": "Élargie à onze pays, elle a favorisé l'intégration économique régionale (zone de libre-échange, chaînes de valeur manufacturières) et servi de plateforme diplomatique neutre pour dialoguer avec les grandes puissances (Chine, États-Unis, Japon).",
-    "limites_critiques": "Son principe strict de non-ingérence dans les affaires intérieures des membres l'a rendue largement impuissante face à des crises internes majeures, notamment la répression militaire en Birmanie depuis le coup d'État de 2021.",
+    "limites_critiques": "Son principe de non-ingérence dans les affaires intérieures des membres limite sa capacité d'action face aux crises internes : après le coup d'État militaire birman du 1er février 2021, elle a certes tenu en avril 2021 son premier sommet jamais consacré principalement à une crise intérieure d'un État membre et arraché un « consensus en cinq points » au général Min Aung Hlaing, mais l'organisation s'est d'abord tenue à l'écart de la controverse et est restée divisée entre membres démocratiques et membres autoritaires.",
     "sources": [
       {
         "titre": "The ASEAN Charter (Secrétariat de l'ASEAN)",
@@ -909,6 +954,12 @@
         "url": "https://fr.wikipedia.org/wiki/Association_des_nations_de_l'Asie_du_Sud-Est",
         "type": "secondaire",
         "date": "2026-09-05"
+      },
+      {
+        "titre": "ASEAN — Wikipedia (EN), sections « Myanmar crisis » et « 2021 Myanmar coup »",
+        "url": "https://en.wikipedia.org/wiki/ASEAN",
+        "date": "2026-09-07",
+        "type": "secondaire"
       }
     ],
     "statut": "documente",
@@ -1013,7 +1064,7 @@
     ],
     "statut": "documente",
     "derniere_verification": "2026-09-07",
-    "resonance_ia": "L'OCS sert de plus en plus de plateforme où la Chine promeut ses standards technologiques et ses solutions d'IA auprès des pays d'Asie centrale, un vecteur d'influence technologique parallèle aux canaux occidentaux."
+    "resonance_ia": "Réunissant des États qui représentent une part très importante de la population mondiale autour d'une coopération centrée sur la sécurité et l'antiterrorisme, l'OCS est l'un des rares cadres où les questions de normes et de souveraineté technologiques se posent hors des enceintes occidentales."
   },
   {
     "id": "cour-penale-internationale-cpi",
@@ -1047,8 +1098,8 @@
     "sous_domaine": "organisation_internationale",
     "nom": "Banque africaine de développement (BAfD)",
     "these_centrale": "La Banque africaine de développement (BAfD) part du principe qu'une institution financière multilatérale pilotée majoritairement par des pays africains eux-mêmes peut mieux orienter les investissements vers le développement et le progrès social du continent que des bailleurs uniquement extérieurs.",
-    "apport": "Elle finance des projets d'infrastructure, d'énergie et d'intégration régionale à travers le continent africain et constitue, avec la Banque mondiale et les banques régionales, l'un des principaux canaux de financement du développement en Afrique.",
-    "limites_critiques": "Sa capacité de financement reste nettement inférieure à celle de la Banque mondiale ou des grands bailleurs bilatéraux, et elle demeure dépendante des contributions des pays non-régionaux (Europe, États-Unis, Chine) pour une partie significative de son capital.",
+    "apport": "Sa mission statutaire est de combattre la pauvreté et d'améliorer les conditions de vie sur le continent par la promotion des investissements publics et privés ; la part du groupe dans le total des décaissements vers l'Afrique est passée de 2,7 % en 1985 à 8,1 % en 1992, et son capital autorisé atteignait environ 23,3 milliards de dollars en 1997.",
+    "limites_critiques": "Le rapport de consultation remis par David Knox en mai 1994 dressait une critique sévère de sa gestion — manque de responsabilité, querelles au conseil d'administration, accusations de fraude et de corruption, bureaucratie trop lourde — relevait que la moitié des 28 milliards de dollars de prêts accordés l'avait été à sept pays seulement sur 53 emprunteurs, et estimait que 40 % des projets s'étaient soldés par un échec ; en août 1995, Standard & Poor's dégradait la note de sa dette à long terme, menaçant la survie de l'institution, avant un programme de réformes engagé sous la présidence d'Omar Kabbaj. Elle compte 81 membres, dont 54 africains, et dépend de 27 pays européens, américains et asiatiques.",
     "sources": [
       {
         "titre": "Banque africaine de développement — Wikipédia",
@@ -1059,7 +1110,7 @@
     ],
     "statut": "documente",
     "derniere_verification": "2026-09-07",
-    "resonance_ia": "La BAfD investit dans les infrastructures numériques africaines, un préalable indispensable à toute adoption large de l'IA sur un continent où l'accès à l'électricité et à internet reste très inégal."
+    "resonance_ia": "La promotion des investissements publics et privés qui constitue sa mission statutaire porte en premier lieu sur les infrastructures de base — électricité, réseaux — dont la disponibilité conditionne matériellement toute adoption large de l'IA sur le continent africain."
   },
   {
     "id": "banque-asiatique-d-investissement-pour-les-infrastructures-baii",
@@ -1068,7 +1119,7 @@
     "nom": "Banque asiatique d'investissement pour les infrastructures (BAII)",
     "these_centrale": "La Banque asiatique d'investissement pour les infrastructures (BAII), proposée par la Chine, part du principe qu'une institution financière alternative, non dominée par les puissances occidentales, peut mieux répondre au besoin massif d'infrastructures en Asie du Sud-Est et en Asie centrale.",
     "apport": "Elle finance des projets d'infrastructure dans le cadre de la stratégie chinoise de la nouvelle route de la soie, se positionnant explicitement en concurrence avec le FMI, la Banque mondiale et la Banque asiatique de développement.",
-    "limites_critiques": "Sa gouvernance, largement dominée par la Chine qui en détient la plus grande part de capital et de droits de vote, alimente les critiques occidentales sur une instrumentalisation géopolitique du financement du développement (« diplomatie de la dette »).",
+    "limites_critiques": "L'idée même de la banque, formulée par Xi Jinping en 2013, répond à la sous-représentation de la Chine dans les institutions existantes — 3,81 % des droits de vote au FMI et 4,85 % à la Banque mondiale en 2014, contre 16,75 % et 16,21 % pour les États-Unis, qui y disposent de fait d'un droit de veto ; la répartition envisagée de 75 % pour les membres asiatiques et 25 % pour les autres, avec des droits de vote proportionnels au PIB, alimente en retour les critiques occidentales sur une instrumentalisation géopolitique du financement du développement.",
     "sources": [
       {
         "titre": "AIIB Articles of Agreement (Banque asiatique d'investissement pour les infrastructures)",
@@ -1093,8 +1144,8 @@
     "sous_domaine": "organisation_internationale",
     "nom": "Nouvelle banque de développement (NBD)",
     "these_centrale": "La Nouvelle Banque de développement (NBD), anciennement Banque de développement des BRICS, part du principe que les grandes puissances émergentes doivent disposer de leur propre institution de financement du développement, alternative à la Banque mondiale et au FMI jugés trop dominés par l'Occident.",
-    "apport": "Elle finance des projets d'infrastructure et de développement durable dans les pays membres des BRICS et, depuis son élargissement, dans d'autres pays émergents, en promouvant un financement moins conditionné politiquement que celui des institutions de Bretton Woods.",
-    "limites_critiques": "Sa capacité de financement reste très inférieure à celle de la Banque mondiale, et les sanctions internationales visant la Russie, l'un de ses membres fondateurs, compliquent son fonctionnement et ses levées de fonds sur les marchés internationaux.",
+    "apport": "Inaugurée à Fortaleza en 2014 par le Brésil, la Russie, l'Inde, la Chine et l'Afrique du Sud, elle se donne pour objet, selon sa propre présentation, la mobilisation de ressources pour des projets d'infrastructure et de développement durable dans les BRICS et dans d'autres économies émergentes ; la Chine y a souscrit 41 milliards de dollars, le Brésil, la Russie et l'Inde 18 milliards chacun et l'Afrique du Sud 5 milliards.",
+    "limites_critiques": "Sa capacité de financement reste sans commune mesure avec celle de la Banque mondiale, et sa structure de capital, très inégale entre les cinq fondateurs, fait peser sur sa gouvernance la même question de domination par le premier contributeur que celle qu'elle reproche aux institutions issues de Bretton Woods.",
     "sources": [
       {
         "titre": "About NDB (New Development Bank, page institutionnelle)",
@@ -1119,8 +1170,8 @@
     "sous_domaine": "organisation_internationale",
     "nom": "CPTPP",
     "these_centrale": "Le CPTPP (Accord de partenariat transpacifique global et progressiste), issu du TPP original signé en 2016 après le retrait américain, part du principe qu'un accord de libre-échange approfondi entre économies du pourtour Pacifique peut intégrer davantage leurs marchés que les accords bilatéraux classiques.",
-    "apport": "Il a créé l'une des zones de libre-échange les plus abouties au monde en matière de normes (propriété intellectuelle, commerce numérique, protection de l'investissement) entre onze pays d'Asie-Pacifique et des Amériques, malgré l'absence des États-Unis.",
-    "limites_critiques": "Le retrait américain dès 2017 a considérablement réduit son poids économique par rapport au projet initial, et l'accord reste contesté pour ses mécanismes de règlement des différends investisseur-État jugés trop favorables aux multinationales.",
+    "apport": "Il a créé entre onze pays d'Asie-Pacifique et des Amériques, sans les États-Unis, l'une des zones de libre-échange les plus abouties au monde en matière de normes : propriété intellectuelle, commerce numérique, protection de l'investissement.",
+    "limites_critiques": "L'absence des États-Unis a considérablement réduit son poids économique par rapport au projet initial, et l'accord reste contesté pour ses mécanismes de règlement des différends investisseur-État jugés trop favorables aux multinationales.",
     "sources": [
       {
         "titre": "Comprehensive and Progressive Agreement for Trans-Pacific Partnership — texte de l'accord (dépositaire : Nouvelle-Zélande)",
@@ -1185,8 +1236,8 @@
     "sous_domaine": "organisation_internationale",
     "nom": "Conseil de stabilité financière (CSF)",
     "these_centrale": "Le Conseil de stabilité financière (CSF), créé lors du sommet du G20 de Pittsburgh en 2009 en remplacement du Forum de stabilité financière, part du principe qu'une surveillance coordonnée du système financier mondial et des recommandations communes peuvent prévenir de nouvelles crises systémiques comme celle de 2008.",
-    "apport": "Hébergé et financé par la Banque des règlements internationaux à Bâle, il réunit les principales économies du G20 et coordonne les réformes de régulation bancaire et financière (normes de fonds propres, encadrement des institutions « too big to fail »).",
-    "limites_critiques": "Comme de nombreux organes du G20, il ne dispose d'aucun pouvoir contraignant propre : ses recommandations doivent être transposées par chaque juridiction nationale, ce qui crée des délais et des divergences d'application significatifs entre pays.",
+    "apport": "Hébergé et financé par la Banque des règlements internationaux à Bâle en vertu d'un accord de services renouvelable tous les cinq ans, constitué en association à but non lucratif de droit suisse, il réunit les principales économies du G20 ; ses décisions sont prises par consensus au sein d'un Plénum qui est son unique organe décisionnel, et il rend compte aux chefs d'État, ministres des finances et gouverneurs de banques centrales du G20.",
+    "limites_critiques": "Il ne repose sur aucune base conventionnelle et ne dispose d'aucun pouvoir formel propre : ses recommandations doivent être transposées par chaque juridiction nationale, ce qui crée des délais et des divergences d'application significatifs entre pays.",
     "sources": [
       {
         "titre": "Organisational Structure and Governance (Financial Stability Board, page institutionnelle)",
@@ -1199,11 +1250,17 @@
         "url": "https://en.wikipedia.org/wiki/Financial_Stability_Board",
         "type": "secondaire",
         "date": "2026-09-05"
+      },
+      {
+        "titre": "The Financial Stability Implications of Artificial Intelligence (Financial Stability Board)",
+        "url": "https://www.fsb.org/2024/11/the-financial-stability-implications-of-artificial-intelligence/",
+        "date": "2024-11-14",
+        "type": "secondaire"
       }
     ],
     "statut": "documente",
     "derniere_verification": "2026-09-07",
-    "resonance_ia": "Le CSF a commencé à étudier les risques systémiques que l'usage croissant de l'IA dans le secteur financier (trading algorithmique, scoring de crédit) pourrait faire peser sur la stabilité financière mondiale."
+    "resonance_ia": "Le CSF a publié le 14 novembre 2024 un rapport sur les implications de l'IA pour la stabilité financière, qui identifie quatre vulnérabilités : la dépendance à des prestataires tiers et leur concentration, la corrélation accrue des mouvements de marché, l'élargissement de la surface d'attaque cyber, et le risque de modèle et de gouvernance des données — auxquels il ajoute la fraude et la désinformation induites par l'IA générative."
   },
   {
     "id": "gavi",
@@ -1459,15 +1516,21 @@
     "axe": "social",
     "sous_domaine": "management",
     "nom": "Modèle des 7S (McKinsey)",
-    "these_centrale": "Le modèle des 7S, développé par Tom Peters et Robert Waterman chez McKinsey dans les années 1980, part du principe que le succès d'une organisation ne dépend pas de sa seule structure mais de l'alignement de sept éléments interdépendants.",
+    "these_centrale": "Le modèle des 7S, développé chez McKinsey par Tom Peters et Robert Waterman avec Tony Athos et Richard Pascale — ces deux derniers universitaires et non consultants —, part du principe que le succès d'une organisation ne dépend pas de sa seule structure mais de l'alignement de sept éléments interdépendants.",
     "apport": "Il distingue trois éléments « durs » (stratégie, structure, systèmes) et quatre éléments « mous » (valeurs partagées, compétences, personnel, style de management), offrant un outil de diagnostic organisationnel encore largement utilisé en conseil pour piloter le changement.",
-    "limites_critiques": "Le modèle est critiqué pour sa nature essentiellement descriptive et statique, qui aide à diagnostiquer des désalignements sans fournir de méthode opérationnelle claire pour les résoudre, et pour son origine issue du conseil en stratégie plutôt que d'une recherche académique indépendante.",
+    "limites_critiques": "La méthodologie du travail qui l'a popularisé, In Search of Excellence, a été contestée : Phil Rosenzweig y voit dans The Halo Effect une « illusion consistant à relier les points gagnants », c'est-à-dire l'impossibilité d'isoler des facteurs de succès en n'étudiant que des entreprises performantes sans groupe de contrôle ; plusieurs des entreprises données en exemple (NCR, Wang Labs, Xerox) ont ensuite connu de mauvais résultats dans les années 1980.",
     "sources": [
       {
         "titre": "McKinsey 7S Framework — Wikipedia (EN)",
         "type": "secondaire",
         "url": "https://en.wikipedia.org/wiki/McKinsey_7S_Framework",
         "date": "2026-09-05"
+      },
+      {
+        "titre": "In Search of Excellence — Wikipedia (EN), section « Criticism »",
+        "url": "https://en.wikipedia.org/wiki/In_Search_of_Excellence",
+        "date": "2026-09-07",
+        "type": "secondaire"
       }
     ],
     "statut": "documente",
