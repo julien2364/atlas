@@ -216,17 +216,38 @@
     "limites_critiques": "Fonctionne largement comme une « boîte noire » dont les décisions internes restent difficiles à expliquer complètement ; nécessite des volumes massifs de données et d'énergie pour l'entraînement, et généralise parfois mal en dehors de la distribution des données d'entraînement.",
     "sources": [
       {
-        "titre": "Deep Learning (LeCun, Bengio, Hinton, Nature, 2015)",
+        "titre": "Yann LeCun, Yoshua Bengio, Geoffrey Hinton, « Deep learning », Nature 521, 436-444",
+        "url": "https://www.nature.com/articles/nature14539",
+        "date": "2015-05-28",
         "type": "primaire"
       },
       {
         "titre": "Apprentissage profond — Wikipédia",
         "url": "https://fr.wikipedia.org/wiki/Apprentissage_profond",
+        "date": "2026-09-07",
+        "type": "secondaire"
+      },
+      {
+        "titre": "AlexNet — Wikipedia (EN)",
+        "url": "https://en.wikipedia.org/wiki/AlexNet",
+        "date": "2026-09-07",
+        "type": "secondaire"
+      },
+      {
+        "titre": "Vaswani et al., « Attention Is All You Need » (arXiv:1706.03762)",
+        "url": "https://arxiv.org/abs/1706.03762",
+        "date": "2017-06-12",
+        "type": "secondaire"
+      },
+      {
+        "titre": "Strubell, Ganesh & McCallum, « Energy and Policy Considerations for Deep Learning in NLP » (arXiv:1906.02243)",
+        "url": "https://arxiv.org/abs/1906.02243",
+        "date": "2019-06-05",
         "type": "secondaire"
       }
     ],
     "statut": "documente",
-    "derniere_verification": "2026-09-05",
+    "derniere_verification": "2026-09-07",
     "resonance_ia": "Constitue le socle technique direct de la quasi-totalité des systèmes d'IA générative contemporains évoqués dans ce référentiel — la fiche la plus directement centrale de cet axe pour comprendre les capacités et limites décrites côté IA."
   },
   {
@@ -281,22 +302,31 @@
     "sous_domaine": "sciences",
     "nom": "Informatique quantique",
     "these_centrale": "L'informatique quantique exploite des phénomènes de la mécanique quantique (superposition, intrication) pour effectuer certains types de calculs de façon fondamentalement différente de l'informatique classique, avec un potentiel d'accélération exponentielle pour des problèmes spécifiques.",
-    "apport": "Algorithmes théoriques démontrant un avantage quantique pour la factorisation (Shor, 1994) et la recherche non structurée (Grover, 1996) ; démonstrations expérimentales croissantes de « suprématie quantique » sur des tâches ciblées depuis 2019 (Google, puis d'autres acteurs).",
+    "apport": "Algorithmes théoriques démontrant un avantage quantique pour la factorisation (Shor, 1994) et la recherche non structurée — Lov Grover a soumis son algorithme le 29 mai 1996, ce qui tranche l'écart d'un an avec la source encyclopédique française qui le date de 1995 ; en octobre 2019, Google Quantum AI et la NASA ont revendiqué une « suprématie quantique » avec le processeur Sycamore, revendication contestée par IBM.",
     "limites_critiques": "Les ordinateurs quantiques actuels restent limités par le bruit et la décohérence, nécessitant une correction d'erreur quantique coûteuse en nombre de qubits ; un ordinateur quantique généraliste et tolérant aux pannes, utile au-delà de cas de niche, reste un horizon incertain.",
     "sources": [
       {
-        "titre": "Simulating Physics with Computers (Feynman, 1982)",
+        "titre": "Lov K. Grover, « A fast quantum mechanical algorithm for database search » (arXiv:quant-ph/9605043)",
+        "url": "https://arxiv.org/abs/quant-ph/9605043",
+        "date": "1996-05-29",
         "type": "primaire"
       },
       {
         "titre": "Informatique quantique — Wikipédia",
         "url": "https://fr.wikipedia.org/wiki/Informatique_quantique",
+        "date": "2026-09-07",
+        "type": "secondaire"
+      },
+      {
+        "titre": "Quantum computing — Wikipedia (EN)",
+        "url": "https://en.wikipedia.org/wiki/Quantum_computing",
+        "date": "2026-09-07",
         "type": "secondaire"
       }
     ],
     "statut": "documente",
-    "derniere_verification": "2026-09-05",
-    "resonance_ia": "L'apprentissage automatique quantique est un domaine de recherche actif qui explore si les phénomènes quantiques pourraient accélérer l'entraînement de modèles d'IA, sans qu'un avantage pratique généralisé n'ait encore été démontré."
+    "derniere_verification": "2026-09-07",
+    "resonance_ia": "L'apprentissage automatique quantique est un domaine de recherche actif, mais les avantages annoncés reposent largement sur des hypothèses d'encodage efficace des données ou d'accès continu au matériel quantique et ne s'étaient, en 2024, pas traduits en avantage pratique démontré."
   },
   {
     "id": "ia-et-traitement-du-langage-naturel",
@@ -534,7 +564,7 @@
     "sous_domaine": "sciences",
     "nom": "Alan Turing",
     "these_centrale": "Turing a formalisé mathématiquement la notion de calcul (machine de Turing, 1936), posant les fondements théoriques de l'informatique avant même l'existence des ordinateurs, puis a proposé en 1950 un critère opérationnel — le test de Turing — pour juger si une machine peut être dite « penser ».",
-    "apport": "A dirigé le déchiffrement du code Enigma allemand à Bletchley Park pendant la Seconde Guerre mondiale, contribuant de façon décisive à l'effort allié ; considéré comme l'un des pères fondateurs de l'informatique théorique et de l'intelligence artificielle.",
+    "apport": "A joué le rôle scientifique déterminant dans le déchiffrement du code Enigma naval à Bletchley Park — son adjoint Hugh Alexander, qui prit officiellement la direction de la Hut 8 en 1943 faute d'intérêt de Turing pour l'encadrement, écrivit qu'« il n'est pas permis de douter que les travaux de Turing fussent le facteur le plus important du succès de la Hut 8 » ; il est considéré comme l'un des pères fondateurs de l'informatique théorique et de l'intelligence artificielle.",
     "limites_critiques": "A été condamné en 1952 au Royaume-Uni pour homosexualité, alors illégale, contraint à une castration chimique, et est mort en 1954 dans des circonstances généralement interprétées comme un suicide — une injustice reconnue seulement en 2009 (excuses officielles) et 2013 (grâce royale posthume).",
     "sources": [
       {
@@ -544,11 +574,12 @@
       {
         "titre": "Alan Turing — Wikipédia",
         "url": "https://fr.wikipedia.org/wiki/Alan_Turing",
+        "date": "2026-09-07",
         "type": "secondaire"
       }
     ],
     "statut": "documente",
-    "derniere_verification": "2026-09-05",
+    "derniere_verification": "2026-09-07",
     "resonance_ia": "Le test de Turing reste, plus de soixante-dix ans après sa formulation, la référence centrale — et de plus en plus contestée comme critère insuffisant — pour évaluer si les IA conversationnelles contemporaines manifestent une forme d'intelligence comparable à l'humain."
   },
   {
@@ -558,7 +589,7 @@
     "nom": "James Watson",
     "these_centrale": "Watson a co-élaboré, avec Francis Crick, le modèle de structure en double hélice de l'ADN (1953), à partir notamment des données cristallographiques de Rosalind Franklin, expliquant pour la première fois comment l'information génétique peut être physiquement stockée et répliquée.",
     "apport": "Prix Nobel de physiologie ou médecine 1962 avec Crick et Wilkins ; a ensuite dirigé le laboratoire de Cold Spring Harbor et joué un rôle de premier plan dans le lancement du Projet génome humain dans les années 1990.",
-    "limites_critiques": "A minoré dans ses mémoires (La Double Hélice, 1968) le rôle de Rosalind Franklin dans la découverte ; a par ailleurs tenu dans les années 2000-2010 des propos publics ouvertement racistes sur l'intelligence, qui lui ont fait perdre ses titres honorifiques et sa réputation scientifique dans les dernières décennies de sa vie.",
+    "limites_critiques": "A minoré dans ses mémoires (La Double Hélice, 1968) le rôle de Rosalind Franklin dans la découverte ; a tenu le 17 octobre 2007 au Sunday Times des propos affirmant des différences d'intelligence entre populations, qui lui ont valu d'être suspendu puis mis à la retraite de Cold Spring Harbor, puis les a répétés dans un documentaire en 2019, ce qui a conduit le laboratoire à lui révoquer ses titres honorifiques (chancelier émérite, professeur émérite, administrateur honoraire).",
     "sources": [
       {
         "titre": "Molecular Structure of Nucleic Acids (Watson & Crick, Nature, 1953)",
@@ -567,11 +598,12 @@
       {
         "titre": "James Dewey Watson — Wikipédia",
         "url": "https://fr.wikipedia.org/wiki/James_Dewey_Watson",
+        "date": "2026-09-07",
         "type": "secondaire"
       }
     ],
     "statut": "documente",
-    "derniere_verification": "2026-09-05",
+    "derniere_verification": "2026-09-07",
     "resonance_ia": "Le Projet génome humain qu'il a contribué à lancer a produit les données massives sur lesquelles s'entraînent aujourd'hui les modèles d'IA de génomique prédictive (variants pathogènes, structure protéique)."
   },
   {
@@ -649,7 +681,7 @@
     "sous_domaine": "sciences",
     "nom": "Richard Feynman",
     "these_centrale": "Feynman a développé une formulation de la mécanique quantique par intégrales de chemin et les diagrammes qui portent son nom, un outil graphique qui simplifie radicalement le calcul des interactions entre particules en électrodynamique quantique.",
-    "apport": "Prix Nobel de physique 1965, partagé avec Julian Schwinger et Shin'ichirō Tomonaga, pour ces travaux fondateurs en électrodynamique quantique ; a également identifié la cause de l'explosion de la navette Challenger (1986) et est resté une figure majeure de la vulgarisation scientifique (Cours de physique de Feynman).",
+    "apport": "Prix Nobel de physique 1965, partagé avec Julian Schwinger et Shin'ichirō Tomonaga, pour ces travaux fondateurs en électrodynamique quantique ; siégeant à la commission d'enquête sur l'explosion de la navette Challenger (1986), il y démontra publiquement, à la télévision, le rôle des joints des boosters à l'aide d'un morceau du matériau et d'un verre de glace, et joignit au rapport officiel une annexe personnelle plus critique envers l'organisation de la NASA.",
     "limites_critiques": "Sa conférence visionnaire « There's Plenty of Room at the Bottom » (1959), souvent citée comme fondatrice des nanotechnologies, restait à l'époque largement spéculative et en avance de plusieurs décennies sur les capacités techniques réelles de manipulation de la matière à l'échelle atomique.",
     "sources": [
       {
@@ -659,12 +691,19 @@
       {
         "titre": "Richard Feynman — Wikipédia",
         "url": "https://fr.wikipedia.org/wiki/Richard_Feynman",
+        "date": "2026-09-07",
+        "type": "secondaire"
+      },
+      {
+        "titre": "Quantum computing — Wikipedia (EN)",
+        "url": "https://en.wikipedia.org/wiki/Quantum_computing",
+        "date": "2026-09-07",
         "type": "secondaire"
       }
     ],
     "statut": "documente",
-    "derniere_verification": "2026-09-05",
-    "resonance_ia": "Sa conférence de 1981 « Simulating Physics with Computers », où il pose l'idée qu'un ordinateur quantique serait nécessaire pour simuler efficacement la physique quantique, est considérée comme l'un des textes fondateurs de l'informatique quantique."
+    "derniere_verification": "2026-09-07",
+    "resonance_ia": "Sa communication « Simulating Physics with Computers », donnée en 1981 et publiée en 1982, où il pose l'idée qu'un ordinateur fondé sur des phénomènes quantiques serait plus efficace pour simuler la physique quantique, est considérée comme l'un des textes fondateurs de l'informatique quantique."
   },
   {
     "id": "max-planck",
@@ -740,9 +779,9 @@
     "axe": "evolution",
     "sous_domaine": "sciences",
     "nom": "Jane Goodall",
-    "these_centrale": "Goodall a démontré, par plus de soixante ans d'observation continue des chimpanzés sauvages de Gombe (Tanzanie), que ces primates fabriquent et utilisent des outils, ont une vie sociale et affective complexe, et présentent des comportements bien plus proches de l'humain qu'on ne le pensait auparavant.",
-    "apport": "A radicalement changé la définition scientifique de l'être humain (« nous devons désormais redéfinir l'outil, redéfinir l'homme, ou accepter que les chimpanzés sont des hommes ») ; a fondé le Jane Goodall Institute et consacré les dernières décennies de sa vie à la conservation et à l'éducation environnementale.",
-    "limites_critiques": "Ses méthodes initiales (nourrissage artificiel des chimpanzés pour faciliter l'observation, attribution de noms plutôt que de numéros aux individus étudiés) ont été critiquées à l'époque par une partie de la communauté d'éthologie comme s'écartant des standards de rigueur méthodologique et d'objectivité alors en vigueur.",
+    "these_centrale": "Installée à Gombe (Tanzanie) depuis juillet 1960, Goodall y a mené plus de six décennies d'observation de terrain des chimpanzés sauvages — la plus longue étude de ce type sur des animaux vivant dans leur milieu naturel — et a montré dès octobre 1960 que ces primates fabriquent et utilisent des outils, ont une vie sociale et affective complexe et présentent des comportements bien plus proches de l'humain qu'on ne le pensait.",
+    "apport": "Sa découverte de la fabrication d'outils a ébranlé la définition de « l'être humain » alors en vigueur, au point que son mentor Louis Leakey en tira la formule restée célèbre : « Maintenant, nous devons redéfinir la notion d'homme, la notion d'outil, ou alors accepter le chimpanzé comme humain. » Elle a fondé en 1977 l'Institut Jane Goodall, qui protège les chimpanzés sauvages et gère des sanctuaires en Afrique.",
+    "limites_critiques": "Ses méthodes initiales ont été contestées : le nourrissage artificiel des chimpanzés, mis en cause par Margaret Power (1991) et par des chercheurs qui y ont vu la cause d'une agressivité accrue entre groupes — Goodall a elle-même reconnu qu'il avait contribué à l'agression sans en changer la nature ; et l'attribution de noms plutôt que de numéros, à laquelle elle-même associe le reproche d'anthropomorphisme (« I was ascribing human characteristics to nonhuman animals »).",
     "sources": [
       {
         "titre": "In the Shadow of Man (Goodall, 1971)",
@@ -751,11 +790,18 @@
       {
         "titre": "Jane Goodall — Wikipédia",
         "url": "https://fr.wikipedia.org/wiki/Jane_Goodall",
+        "date": "2026-09-07",
+        "type": "secondaire"
+      },
+      {
+        "titre": "Jane Goodall — Wikipedia (EN)",
+        "url": "https://en.wikipedia.org/wiki/Jane_Goodall",
+        "date": "2026-09-07",
         "type": "secondaire"
       }
     ],
     "statut": "documente",
-    "derniere_verification": "2026-09-05",
+    "derniere_verification": "2026-09-07",
     "resonance_ia": "Ses travaux ont contribué à établir la continuité cognitive et affective entre l'humain et les grands singes, un cadre de référence directement mobilisé dans les débats contemporains sur le statut moral potentiel d'entités non-humaines, IA incluse."
   },
   {
@@ -810,8 +856,8 @@
     "sous_domaine": "sciences",
     "nom": "Emmanuelle Charpentier",
     "these_centrale": "Charpentier a caractérisé le mécanisme moléculaire par lequel les bactéries se défendent contre les virus grâce au système CRISPR, puis a co-développé avec Jennifer Doudna sa transformation en outil d'édition génomique programmable, l'une des découvertes biotechnologiques les plus significatives du XXIe siècle.",
-    "apport": "Prix Nobel de chimie 2020 ; a fondé plusieurs instituts de recherche indépendants en Europe (dont l'Unité Max Planck pour la science des pathogènes à Berlin) pour poursuivre l'exploration des mécanismes de défense microbienne.",
-    "limites_critiques": "La paternité exacte et la chronologie précise des contributions respectives de Charpentier, Doudna et d'autres équipes concurrentes (notamment celle de Feng Zhang au MIT) sur l'application de CRISPR aux cellules eucaryotes ont fait l'objet de disputes de priorité scientifique et de brevets toujours en partie non résolues.",
+    "apport": "Prix Nobel de chimie 2020 ; elle dirige à Berlin l'institut Max-Planck de biologie des infections (depuis 2015) puis le Centre de recherche Max Planck pour la science des pathogènes (depuis 2018), deux structures du réseau Max-Planck préexistant, et a cofondé l'entreprise CRISPR Therapeutics avec Rodger Novak et Shaun Foy.",
+    "limites_critiques": "La paternité exacte et la chronologie des contributions respectives de Charpentier, Doudna et de l'équipe de Feng Zhang au Broad Institute sur l'application de CRISPR aux cellules eucaryotes ont donné lieu à un contentieux de brevets : l'USPTO a jugé en février 2017 que les revendications du Broad étaient distinctes de celles de l'université de Californie, puis a tranché en mars 2022 en faveur du Broad au motif qu'il avait déposé le premier.",
     "sources": [
       {
         "titre": "CRISPR RNA maturation by trans-encoded small RNA and host factor RNase III (Deltcheva, Charpentier et al., Nature, 2011)",
@@ -820,11 +866,18 @@
       {
         "titre": "Emmanuelle Charpentier — Wikipédia",
         "url": "https://fr.wikipedia.org/wiki/Emmanuelle_Charpentier",
+        "date": "2026-09-07",
+        "type": "secondaire"
+      },
+      {
+        "titre": "CRISPR gene editing — Wikipedia (EN), section sur le litige de brevets",
+        "url": "https://en.wikipedia.org/wiki/CRISPR_gene_editing",
+        "date": "2026-09-07",
         "type": "secondaire"
       }
     ],
     "statut": "documente",
-    "derniere_verification": "2026-09-05",
+    "derniere_verification": "2026-09-07",
     "resonance_ia": "Sa découverte fondamentale illustre comment un mécanisme biologique naturel, une fois compris, peut être reprogrammé en outil technologique généraliste — une dynamique de recherche que l'IA accélère aujourd'hui dans de nombreux autres domaines de la biologie moléculaire."
   },
   {
@@ -924,9 +977,9 @@
     "axe": "evolution",
     "sous_domaine": "sciences",
     "nom": "CERN",
-    "these_centrale": "Le CERN (Organisation européenne pour la recherche nucléaire, fondée en 1954 à la frontière franco-suisse) exploite le plus grand laboratoire de physique des particules au monde, dont le Grand collisionneur de hadrons (LHC), pour explorer expérimentalement les constituants fondamentaux de la matière.",
-    "apport": "A permis la découverte du boson de Higgs (2012), confirmant la dernière pièce manquante du modèle standard ; est également le lieu de naissance du World Wide Web, inventé par Tim Berners-Lee en 1989 pour faciliter le partage d'information entre chercheurs.",
-    "limites_critiques": "Le coût et l'échelle de temps des grands projets d'accélérateurs de particules (des décennies de construction, des milliards d'euros) posent la question de la priorité relative de ce type de recherche fondamentale face à d'autres besoins scientifiques ou sociétaux plus immédiats.",
+    "these_centrale": "Le CERN (Organisation européenne pour la recherche nucléaire), officiellement créé le 30 juin 1954 par la ratification de sa convention par douze États européens, exploite à la frontière franco-suisse le plus grand laboratoire de physique des particules au monde, dont le Grand collisionneur de hadrons (LHC).",
+    "apport": "A permis l'identification le 4 juillet 2012 d'une particule compatible avec le boson de Higgs, confirmée en 2013 comme un boson de Higgs aux propriétés conformes au modèle standard ; est également le lieu où Tim Berners-Lee, rejoint par Robert Cailliau, a conçu entre 1989 et 1990 le système hypertexte devenu le World Wide Web.",
+    "limites_critiques": "L'échelle de temps et le coût des grands accélérateurs — des décennies de construction pour un budget annuel de l'ordre de 1,2 milliard de francs suisses — posent la question de la priorité relative de ce type de recherche fondamentale face à d'autres besoins scientifiques ou sociétaux plus immédiats.",
     "sources": [
       {
         "titre": "Convention pour l'établissement d'une Organisation européenne pour la recherche nucléaire (1953)",
@@ -935,11 +988,12 @@
       {
         "titre": "CERN — Wikipédia",
         "url": "https://fr.wikipedia.org/wiki/CERN",
+        "date": "2026-09-07",
         "type": "secondaire"
       }
     ],
     "statut": "documente",
-    "derniere_verification": "2026-09-05",
+    "derniere_verification": "2026-09-07",
     "resonance_ia": "Le CERN produit des volumes de données parmi les plus importants au monde et a été un pionnier de l'usage de l'apprentissage automatique pour le traitement de données scientifiques massives, bien avant la généralisation actuelle de l'IA dans les sciences."
   },
   {
@@ -993,22 +1047,25 @@
     "axe": "evolution",
     "sous_domaine": "sciences",
     "nom": "Institut Max-Planck",
-    "these_centrale": "La Société Max-Planck (fondée en 1911 sous le nom de Société Kaiser-Wilhelm, renommée en 1948) regroupe plus de 80 instituts de recherche fondamentale indépendants en Allemagne, couvrant l'ensemble des sciences naturelles, de la vie et humaines, selon un principe d'autonomie scientifique maximale.",
-    "apport": "Plus de 30 prix Nobel attribués à des chercheurs de ses instituts ; modèle d'organisation de la recherche fondamentale (financement pérenne, autonomie des directeurs d'instituts) souvent cité en référence internationalement.",
-    "limites_critiques": "L'institution a reconnu et documenté publiquement le rôle de ses instituts prédécesseurs (Société Kaiser-Wilhelm) dans des recherches liées à l'eugénisme et aux crimes du régime nazi durant la Seconde Guerre mondiale, un passé qui continue de faire l'objet de travaux historiques internes.",
+    "these_centrale": "La Société Max-Planck, créée en 1948 à l'instigation de Werner Heisenberg et Carl Friedrich von Weizsäcker, succède à la Société Kaiser-Wilhelm fondée en 1911 dont la structure a pu subsister après la guerre ; elle regroupe aujourd'hui 85 instituts et installations de recherche fondamentale en Allemagne, selon un principe d'autonomie scientifique maximale.",
+    "apport": "Trente et un prix Nobel ont été attribués à des chercheurs de ses instituts selon la Société elle-même, qui revendique par là un rang comparable aux institutions de recherche les plus prestigieuses du monde ; son modèle d'organisation (financement pérenne, autonomie des directeurs d'instituts) est souvent cité en référence internationalement.",
+    "limites_critiques": "L'institution consacre un programme de recherche historique au rôle de la Société Kaiser-Wilhelm sous le national-socialisme, dont elle publie les résultats sur son propre site — un passé qu'elle documente elle-même plutôt qu'elle ne le tait, mais qui reste une part non refermée de son héritage.",
     "sources": [
       {
-        "titre": "Statuts de la Société Max-Planck (1948)",
+        "titre": "Short portrait of the Max Planck Society (Max-Planck-Gesellschaft, page institutionnelle)",
+        "url": "https://www.mpg.de/short-portrait",
+        "date": "2026-09-07",
         "type": "primaire"
       },
       {
         "titre": "Société Max-Planck — Wikipédia",
         "url": "https://fr.wikipedia.org/wiki/Soci%C3%A9t%C3%A9_Max-Planck",
+        "date": "2026-09-07",
         "type": "secondaire"
       }
     ],
     "statut": "documente",
-    "derniere_verification": "2026-09-05",
+    "derniere_verification": "2026-09-07",
     "resonance_ia": "Plusieurs instituts Max-Planck (notamment ceux de cybernétique intelligente et d'informatique) sont aujourd'hui à la pointe de la recherche fondamentale en IA et en robotique en Europe."
   },
   {
@@ -1017,8 +1074,8 @@
     "sous_domaine": "sciences",
     "nom": "MIT",
     "these_centrale": "Le Massachusetts Institute of Technology (MIT, fondé en 1861 à Cambridge, Massachusetts) est une université de recherche privée organisée autour de la devise « mens et manus » (l'esprit et la main), articulant recherche fondamentale et application pratique des connaissances.",
-    "apport": "Berceau historique de nombreuses avancées en informatique et en IA (laboratoire d'intelligence artificielle du MIT fondé en 1959 par Marvin Minsky et John McCarthy) ; contributions majeures en physique, biologie moléculaire, économie et ingénierie, avec plus de 100 lauréats du prix Nobel affiliés.",
-    "limites_critiques": "Les frais de scolarité très élevés des universités privées américaines de ce rang, malgré des politiques d'aide financière substantielles, continuent d'alimenter le débat sur l'accessibilité réelle de l'enseignement supérieur d'élite aux étudiants de tous milieux sociaux.",
+    "apport": "Berceau historique de nombreuses avancées en informatique et en IA — le groupe d'intelligence artificielle animé par Marvin Minsky et John McCarthy à la fin des années 1950 au sein du Project MAC est devenu en 1970 le MIT AI Lab, dont Minsky fut le premier directeur ; contributions majeures en physique, biologie moléculaire, économie et ingénierie, 78 lauréats du prix Nobel ayant été étudiants du MIT, étant entendu que 35 % seulement y avaient été formés et un quart y étaient affiliés au moment de leur distinction.",
+    "limites_critiques": "Le débat sur l'accessibilité de l'enseignement supérieur d'élite reste ouvert malgré une politique d'aide financière très large : le MIT indique que 57 % de ses étudiants de premier cycle à temps plein ont reçu une bourse en 2024-2025, pour un montant médian restant à charge de 10 268 dollars par an, et que le coût réel d'une scolarité y est environ le double du tarif affiché — l'institution reconnaissant donc fonctionner à perte sur sa mission éducative.",
     "sources": [
       {
         "titre": "MIT Charter (1861)",
@@ -1027,11 +1084,24 @@
       {
         "titre": "Massachusetts Institute of Technology — Wikipédia",
         "url": "https://fr.wikipedia.org/wiki/Massachusetts_Institute_of_Technology",
+        "date": "2026-09-07",
+        "type": "secondaire"
+      },
+      {
+        "titre": "MIT Computer Science and Artificial Intelligence Laboratory — Wikipedia (EN)",
+        "url": "https://en.wikipedia.org/wiki/MIT_Computer_Science_and_Artificial_Intelligence_Laboratory",
+        "date": "2026-09-07",
+        "type": "secondaire"
+      },
+      {
+        "titre": "The Cost of Attendance (MIT Student Financial Services, page institutionnelle)",
+        "url": "https://sfs.mit.edu/undergraduate-students/the-cost-of-attendance/",
+        "date": "2026-09-07",
         "type": "secondaire"
       }
     ],
     "statut": "documente",
-    "derniere_verification": "2026-09-05",
+    "derniere_verification": "2026-09-07",
     "resonance_ia": "Le MIT reste l'un des tout premiers centres mondiaux de recherche fondamentale en intelligence artificielle, robotique et apprentissage automatique, avec des liens étroits et anciens avec l'industrie technologique."
   },
   {
@@ -1040,7 +1110,7 @@
     "sous_domaine": "sciences",
     "nom": "CNRS",
     "these_centrale": "Le CNRS (Centre national de la recherche scientifique, fondé en 1939) est le principal organisme public de recherche pluridisciplinaire en France, couvrant l'ensemble des domaines scientifiques des mathématiques aux sciences humaines et sociales, en partenariat étroit avec les universités.",
-    "apport": "Plus grand organisme de recherche public d'Europe par le nombre de chercheurs ; a produit ou coproduit une part majeure des travaux français distingués par un prix Nobel ou une médaille Fields depuis sa création.",
+    "apport": "Premier organisme public français de recherche scientifique, il occupe la première place européenne et les tout premiers rangs mondiaux parmi les centres de recherche selon les classements Scimago et Webometrics — qui mesurent la production scientifique et la visibilité en ligne, et non les effectifs de chercheurs ; il a produit ou coproduit une part majeure des travaux français distingués par un prix Nobel ou une médaille Fields.",
     "limites_critiques": "Fait l'objet de débats récurrents en France sur le niveau de financement de la recherche publique, la précarité des jeunes chercheurs (post-doctorants) et la complexité administrative de son organisation en unités mixtes de recherche partagées avec les universités.",
     "sources": [
       {
@@ -1050,11 +1120,12 @@
       {
         "titre": "Centre national de la recherche scientifique — Wikipédia",
         "url": "https://fr.wikipedia.org/wiki/Centre_national_de_la_recherche_scientifique",
+        "date": "2026-09-07",
         "type": "secondaire"
       }
     ],
     "statut": "documente",
-    "derniere_verification": "2026-09-05",
+    "derniere_verification": "2026-09-07",
     "resonance_ia": "Le CNRS pilote ou co-pilote plusieurs des principaux instituts et programmes nationaux français dédiés à l'intelligence artificielle, dans le cadre de la stratégie nationale française pour l'IA."
   },
   {
@@ -1062,9 +1133,9 @@
     "axe": "evolution",
     "sous_domaine": "sciences",
     "nom": "NIH",
-    "these_centrale": "Les NIH (National Institutes of Health, fondés en 1887) sont la principale agence de recherche biomédicale du gouvernement fédéral américain, regroupant 27 instituts et centres spécialisés qui financent et conduisent la majorité de la recherche médicale publique aux États-Unis.",
-    "apport": "A financé ou conduit une part déterminante des avancées biomédicales majeures des soixante-dix dernières années, dont le séquençage du génome humain (Human Genome Project) et le développement accéléré des vaccins à ARNm pendant la pandémie de Covid-19.",
-    "limites_critiques": "Son budget et ses priorités de recherche restent soumis aux orientations politiques changeantes de l'exécutif américain, avec des tensions récurrentes sur le financement de certains domaines (recherche sur les cellules souches embryonnaires, santé reproductive) selon les administrations.",
+    "these_centrale": "Les National Institutes of Health, dont le premier laboratoire d'hygiène remonte à 1887, sont la principale agence de recherche biomédicale du gouvernement fédéral américain : vingt instituts et sept centres spécialisés qui financent et conduisent l'essentiel de la recherche médicale publique aux États-Unis.",
+    "apport": "Leur budget, de 28,6 milliards de dollars en 2006, est consacré à plus de 83 % au financement d'environ 50 000 projets de recherche conduits hors de leurs murs, ce qui en fait le premier bailleur mondial de la recherche biomédicale ; ils abritent depuis 1989 le National Human Genome Research Institute.",
+    "limites_critiques": "Rattachés au département de la Santé et des Services sociaux, ils dépendent pour leur budget et leurs priorités des orientations de l'exécutif fédéral américain, ce qui expose la continuité de leurs programmes aux alternances politiques.",
     "sources": [
       {
         "titre": "Public Health Service Act (1944, cadre légal des NIH)",
@@ -1073,11 +1144,12 @@
       {
         "titre": "National Institutes of Health — Wikipédia",
         "url": "https://fr.wikipedia.org/wiki/National_Institutes_of_Health",
+        "date": "2026-09-07",
         "type": "secondaire"
       }
     ],
     "statut": "documente",
-    "derniere_verification": "2026-09-05",
+    "derniere_verification": "2026-09-07",
     "resonance_ia": "Les NIH financent des programmes de recherche en IA appliquée à la santé (diagnostic assisté, découverte de médicaments) et exploitent leurs immenses bases de données biomédicales publiques comme ressource d'entraînement pour ces modèles."
   },
   {
@@ -1086,7 +1158,7 @@
     "sous_domaine": "sciences",
     "nom": "Laboratoire Cavendish",
     "these_centrale": "Le laboratoire Cavendish (ouvert en 1874 à l'université de Cambridge) est le département de physique de Cambridge, fondé pour la physique expérimentale et qui a hébergé un nombre exceptionnel de découvertes fondatrices de la physique moderne sur plus d'un siècle.",
-    "apport": "Découverte de l'électron par J. J. Thomson (1897), du neutron par James Chadwick (1932), structure de l'ADN par Watson et Crick (1953, dans un laboratoire associé) ; 30 lauréats du prix Nobel y ont travaillé au fil de son histoire.",
+    "apport": "Découverte de l'électron par J. J. Thomson (1897), du neutron par James Chadwick (1932), et détermination en 1953 de la structure en double hélice de l'ADN par Watson et Crick, en s'appuyant largement sur les clichés de diffraction de rayons X de Rosalind Franklin ; en 2005, 29 chercheurs du laboratoire avaient reçu un prix Nobel.",
     "limites_critiques": "Sa concentration exceptionnelle de découvertes majeures au début et au milieu du XXe siècle contraste avec une période ultérieure où la physique expérimentale de pointe s'est largement déplacée vers de très grandes infrastructures internationales (comme le CERN) qu'un seul laboratoire universitaire ne peut plus égaler seul.",
     "sources": [
       {
@@ -1096,11 +1168,12 @@
       {
         "titre": "Laboratoire Cavendish — Wikipédia",
         "url": "https://fr.wikipedia.org/wiki/Laboratoire_Cavendish",
+        "date": "2026-09-07",
         "type": "secondaire"
       }
     ],
     "statut": "documente",
-    "derniere_verification": "2026-09-05",
+    "derniere_verification": "2026-09-07",
     "resonance_ia": "Le laboratoire Cavendish s'est diversifié vers la physique de la matière condensée et les matériaux (dont le graphène), des domaines où l'IA de conception de matériaux joue un rôle croissant."
   },
   {
@@ -1108,9 +1181,9 @@
     "axe": "evolution",
     "sous_domaine": "sciences",
     "nom": "Caltech",
-    "these_centrale": "Le California Institute of Technology (Caltech, à Pasadena) est une université de recherche privée de petite taille entièrement consacrée aux sciences pures et appliquées, qui gère par ailleurs le Jet Propulsion Laboratory de la NASA responsable de la plupart des missions robotiques d'exploration du système solaire.",
-    "apport": "Contributions majeures en physique (dont plusieurs travaux fondateurs de Richard Feynman et Kip Thorne, colauréat du prix Nobel 2017 pour la détection des ondes gravitationnelles) et en génomique ; ratio de lauréats du prix Nobel par rapport à sa taille parmi les plus élevés au monde.",
-    "limites_critiques": "Sa très petite taille (environ 2 500 étudiants) et sa sélectivité extrême en limitent structurellement l'accès à un nombre restreint d'étudiants, ce qui alimente le même débat que d'autres institutions d'élite américaines sur la diversité sociale de son recrutement.",
+    "these_centrale": "Le California Institute of Technology (Caltech, à Pasadena) est une université de recherche privée de petite taille entièrement consacrée aux sciences pures et appliquées, qui assure la gestion du Jet Propulsion Laboratory (JPL) de la NASA, seul centre de recherche et développement financé par l'État fédéral américain qu'elle administre et qui a conduit les cinq rovers martiens ayant réussi à se poser sur Mars.",
+    "apport": "Contributions majeures en physique — Robert Millikan (Nobel 1923), Murray Gell-Mann, Richard Feynman, ou encore Kip Thorne, titulaire de la chaire Feynman de physique théorique à Caltech et colauréat du prix Nobel de physique 2017 avec Rainer Weiss et Barry Barish pour la détection des ondes gravitationnelles — et en biologie avec David Baltimore (Nobel de médecine 1975) ; l'établissement a contribué à former plus de trente lauréats du prix Nobel.",
+    "limites_critiques": "Sa très petite taille — près de 500 professeurs et chercheurs pour environ 2 700 étudiants, à comparer aux 5 200 personnes qui travaillent au JPL — et sa sélectivité extrême en limitent structurellement l'accès à un nombre restreint d'étudiants.",
     "sources": [
       {
         "titre": "A Century of Excellence (Caltech, histoire institutionnelle)",
@@ -1119,11 +1192,24 @@
       {
         "titre": "California Institute of Technology — Wikipédia",
         "url": "https://fr.wikipedia.org/wiki/California_Institute_of_Technology",
+        "date": "2026-09-07",
+        "type": "secondaire"
+      },
+      {
+        "titre": "Who We Are (Jet Propulsion Laboratory, page institutionnelle)",
+        "url": "https://www.jpl.nasa.gov/who-we-are/",
+        "date": "2026-09-07",
+        "type": "secondaire"
+      },
+      {
+        "titre": "Kip Thorne — Wikipédia",
+        "url": "https://fr.wikipedia.org/wiki/Kip_Thorne",
+        "date": "2026-09-07",
         "type": "secondaire"
       }
     ],
     "statut": "documente",
-    "derniere_verification": "2026-09-05",
+    "derniere_verification": "2026-09-07",
     "resonance_ia": "Caltech mène des recherches de pointe en IA appliquée aux sciences physiques (découverte de matériaux, astrophysique) via son propre institut dédié à l'apprentissage automatique scientifique."
   },
   {
@@ -1132,7 +1218,7 @@
     "sous_domaine": "sciences",
     "nom": "Université de Stanford",
     "these_centrale": "L'université Stanford (fondée en 1885 en Californie) est une université de recherche privée dont la proximité historique avec l'industrie technologique de la Silicon Valley en a fait l'un des principaux foyers mondiaux d'innovation en informatique et en intelligence artificielle.",
-    "apport": "A vu naître ou s'y former plusieurs fondateurs majeurs de l'industrie technologique (Google, dont le moteur de recherche est issu d'une thèse Stanford) ; son laboratoire d'intelligence artificielle (SAIL, fondé en 1963) est l'un des plus anciens et influents au monde.",
+    "apport": "A vu naître ou s'y former plusieurs fondateurs majeurs de l'industrie technologique — Google a été conçu par Larry Page et Sergey Brin alors doctorants, dans le cadre du Stanford Digital Library Project — et son laboratoire d'intelligence artificielle (SAIL), fondé en 1963 par John McCarthy, est l'un des plus anciens et influents au monde.",
     "limites_critiques": "Les liens financiers étroits entre Stanford et l'industrie technologique qu'elle a largement contribué à créer soulèvent régulièrement des questions sur l'indépendance de sa recherche académique en IA vis-à-vis des intérêts commerciaux des entreprises qu'elle a essaimées.",
     "sources": [
       {
@@ -1142,34 +1228,50 @@
       {
         "titre": "Université Stanford — Wikipédia",
         "url": "https://fr.wikipedia.org/wiki/Universit%C3%A9_Stanford",
+        "date": "2026-09-07",
+        "type": "secondaire"
+      },
+      {
+        "titre": "About (Stanford Artificial Intelligence Laboratory)",
+        "url": "https://ai.stanford.edu/about/",
+        "date": "2026-09-07",
+        "type": "secondaire"
+      },
+      {
+        "titre": "AI Index (Stanford Institute for Human-Centered AI)",
+        "url": "https://hai.stanford.edu/ai-index",
+        "date": "2026-09-07",
         "type": "secondaire"
       }
     ],
     "statut": "documente",
-    "derniere_verification": "2026-09-05",
-    "resonance_ia": "Le Stanford Institute for Human-Centered AI (HAI) publie chaque année l'un des rapports de référence internationaux (AI Index) sur l'état d'avancement et les impacts de l'intelligence artificielle."
+    "derniere_verification": "2026-09-07",
+    "resonance_ia": "Le Stanford Institute for Human-Centered AI (HAI) publie chaque année l'AI Index Report, l'un des états des lieux internationaux de référence sur les performances techniques, l'économie, l'éducation et la régulation de l'intelligence artificielle."
   },
   {
     "id": "institut-pasteur",
     "axe": "evolution",
     "sous_domaine": "sciences",
     "nom": "Institut Pasteur",
-    "these_centrale": "L'Institut Pasteur (fondation privée à but non lucratif fondée en 1887 à Paris par Louis Pasteur) est dédié à la recherche sur les maladies infectieuses, la microbiologie et l'immunologie, et à la production de vaccins issue directement des travaux fondateurs de Pasteur sur la vaccination.",
-    "apport": "Découverte du virus du VIH (Luc Montagnier et Françoise Barré-Sinoussi, prix Nobel de médecine 2008) ; réseau international de plus de 30 instituts Pasteur dans le monde jouant un rôle de premier plan dans la surveillance et la réponse aux épidémies.",
+    "these_centrale": "L'Institut Pasteur, fondation reconnue d'utilité publique par décret en 1887 et ouverte le 14 novembre 1888 grâce à une souscription publique internationale, est dédié à la recherche sur les maladies infectieuses, la microbiologie et l'immunologie, ainsi qu'à la production de vaccins issue des travaux fondateurs de Louis Pasteur.",
+    "apport": "Découverte du virus du VIH en 1983 par Luc Montagnier et Françoise Barré-Sinoussi, prix Nobel de médecine 2008 ; expansion internationale engagée dès 1891 avec le premier institut Pasteur d'outre-mer fondé à Saïgon par Albert Calmette, à l'origine du réseau international des instituts Pasteur.",
     "limites_critiques": "Fondation dépendant en partie de financements privés et de dons en complément du soutien public, ce qui l'expose, comme d'autres grands instituts de recherche biomédicale, à des tensions périodiques de financement face à l'ampleur de ses missions de recherche et de santé publique.",
     "sources": [
       {
-        "titre": "Statuts fondateurs de l'Institut Pasteur (1887)",
+        "titre": "Notre histoire (Institut Pasteur, page institutionnelle)",
+        "url": "https://www.pasteur.fr/fr/nous-connaitre/notre-adn/histoire",
+        "date": "2026-09-07",
         "type": "primaire"
       },
       {
         "titre": "Institut Pasteur — Wikipédia",
         "url": "https://fr.wikipedia.org/wiki/Institut_Pasteur",
+        "date": "2026-09-07",
         "type": "secondaire"
       }
     ],
     "statut": "documente",
-    "derniere_verification": "2026-09-05",
+    "derniere_verification": "2026-09-07",
     "resonance_ia": "L'Institut Pasteur développe des outils d'IA pour la surveillance épidémiologique et la modélisation de la propagation des maladies infectieuses, un usage qui s'est généralisé depuis la pandémie de Covid-19."
   },
   {
@@ -1239,8 +1341,8 @@
     "sous_domaine": "sciences",
     "nom": "EMBL",
     "these_centrale": "L'EMBL (Laboratoire européen de biologie moléculaire, créé en 1974) est une organisation intergouvernementale de recherche fondamentale en biologie moléculaire, répartie sur plusieurs sites européens, financée en commun par ses États membres pour mutualiser des moyens qu'aucun pays seul ne pourrait déployer.",
-    "apport": "Héberge l'un des plus importants centres mondiaux de bio-informatique (EMBL-EBI), qui gère des bases de données biologiques publiques de référence mondiale (dont UniProt et les données structurales utilisées pour entraîner AlphaFold).",
-    "limites_critiques": "La coordination entre ses multiples sites nationaux et son mode de financement intergouvernemental complexifient la gouvernance par rapport à un institut national unique, un compromis nécessaire pour atteindre l'échelle critique de moyens que la recherche en biologie moléculaire exige.",
+    "apport": "L'EMBL-EBI, l'un de ses six sites, gère selon sa propre présentation la suite la plus complète au monde de ressources de données biologiques librement accessibles, dont les données ouvertes qui ont joué un rôle déterminant dans le développement d'AlphaFold ; l'EMBL occupait par ailleurs la quatrième place mondiale et la première européenne au classement Thomson Reuters des citations en biologie moléculaire et génétique pour 1999-2009.",
+    "limites_critiques": "La coordination entre ses six sites nationaux et son mode de financement intergouvernemental, réparti entre plus de vingt États membres, alourdissent la gouvernance par rapport à un institut national unique : les arbitrages scientifiques y passent par un accord entre États, ce qui ralentit les réorientations de programme.",
     "sources": [
       {
         "titre": "Convention établissant le Laboratoire européen de biologie moléculaire (1973)",
@@ -1249,12 +1351,19 @@
       {
         "titre": "Laboratoire européen de biologie moléculaire — Wikipédia",
         "url": "https://fr.wikipedia.org/wiki/Laboratoire_europ%C3%A9en_de_biologie_mol%C3%A9culaire",
+        "date": "2026-09-07",
+        "type": "secondaire"
+      },
+      {
+        "titre": "About us (EMBL-EBI, page institutionnelle)",
+        "url": "https://www.ebi.ac.uk/about/",
+        "date": "2026-09-07",
         "type": "secondaire"
       }
     ],
     "statut": "documente",
-    "derniere_verification": "2026-09-05",
-    "resonance_ia": "L'EMBL-EBI a hébergé et diffusé publiquement les bases de données structurales de protéines sur lesquelles DeepMind a entraîné et validé AlphaFold, l'un des succès les plus marquants de l'IA appliquée aux sciences."
+    "derniere_verification": "2026-09-07",
+    "resonance_ia": "L'EMBL-EBI a hébergé et diffusé publiquement les données ouvertes de structures de protéines qui, selon sa propre présentation, ont été déterminantes dans le développement d'AlphaFold, l'un des succès les plus marquants de l'IA appliquée aux sciences."
   },
   {
     "id": "fermilab",
