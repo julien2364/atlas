@@ -271,5 +271,57 @@
     "type": "correction",
     "cible": "questions",
     "resume": "Le moteur de réponse prédictive, écrit mais jamais exécuté, a été éprouvé de bout en bout : PostgreSQL 16 et pgvector 0.8.6 réels montés dans le bac à sable, schéma appliqué deux fois pour vérifier son idempotence, indexation complète des 512 fiches en 2847 passages, et route de question appelée pour de vrai. Sept bugs trouvés et corrigés, dont trois auraient frappé au premier lancement en production : le paramètre de recherche de l'index vectoriel plafonnait le nombre de passages rendus sous ce que la route réclame, sans erreur — le moteur aurait silencieusement refusé des questions qu'il traitait la veille ; le schéma échouait dès sa première table sur un projet Supabase, où l'extension vectorielle ne vit pas dans le schéma public ; et la clé du cache de réponses ignorait les seuils, ce qui aurait rendu impossible le réglage recommandé par la documentation. S'y ajoutent un plafond de contexte dépassé de neuf pour cent, un passage orphelin présenté au lecteur comme une source avec un lien mort, et deux refus distincts affichant le même message contradictoire. Les garde-fous sont vérifiés : sous le seuil de pertinence le moteur refuse de répondre sans appeler le modèle, les plafonds tiennent, le cache économise les appels, les sources sont toujours rendues. Restent invérifiables sans les clés : la pertinence sémantique elle-même, donc le seuil, et la couche HTTP de Supabase."
+  },
+  {
+    "id": "veille-codex-famille-gpt-2026-09-07",
+    "date": "2026-09-07T11:16:12.496Z",
+    "type": "mise_a_jour",
+    "cible": "codex-famille-gpt",
+    "resume": "Mise à jour de la fiche « Codex / famille GPT » via la boucle de veille : nouvelle source ajoutée depuis la veille. Source : « GPT-6 Astra: A new generation of intelligence » (OpenAI, annonce officielle) (https://openai.com/index/gpt-6-astra). Proposition ffdb6a03-8da8-4e4c-8771-fcb91af2939f relue et validée manuellement avant application (patch de nature « a_reformuler »). Détail : sources : + « « GPT-6 Astra: A new generation of intelligence » (OpenAI, annonce officielle) » ; statut : documente → verifie_recemment.",
+    "source": {
+      "titre": "« GPT-6 Astra: A new generation of intelligence » (OpenAI, annonce officielle)",
+      "url": "https://openai.com/index/gpt-6-astra",
+      "date": "2026-09-03",
+      "type": "primaire"
+    }
+  },
+  {
+    "id": "veille-codex-famille-gpt-2026-09-07-2",
+    "date": "2026-09-07T11:16:12.496Z",
+    "type": "mise_a_jour",
+    "cible": "codex-famille-gpt",
+    "resume": "Mise à jour de la fiche « Codex / famille GPT » via la boucle de veille : nouvelle source ajoutée depuis la veille. Source : « Safety overview: GPT-6 Astra » (OpenAI, Preparedness Framework) (https://openai.com/index/safety-overview-gpt-6-astra). Proposition 697086fa-87db-4f4d-8298-f1cb6605cf0f relue et validée manuellement avant application (patch de nature « a_reformuler »). Détail : sources : + « « Safety overview: GPT-6 Astra » (OpenAI, Preparedness Framework) ».",
+    "source": {
+      "titre": "« Safety overview: GPT-6 Astra » (OpenAI, Preparedness Framework)",
+      "url": "https://openai.com/index/safety-overview-gpt-6-astra",
+      "date": "2026-09-03",
+      "type": "primaire"
+    }
+  },
+  {
+    "id": "veille-ia-en-modelisation-climatique-type-graphcast-2026-09-07",
+    "date": "2026-09-07T11:16:12.496Z",
+    "type": "mise_a_jour",
+    "cible": "ia-en-modelisation-climatique-type-graphcast",
+    "resume": "Mise à jour de la fiche « IA en modélisation climatique (type GraphCast) » via la boucle de veille : nouvelle source ajoutée depuis la veille. Source : « Tropical cyclones could be predicted with an extra day's warning, thanks to an AI model » (Nature, actualité de la rédaction) (https://www.nature.com/articles/d41586-026-02643-w). Proposition d164bd4b-66e5-4528-a941-746d18b406eb relue et validée manuellement avant application (patch de nature « sur »). Détail : sources : + « « Tropical cyclones could be predicted with an extra day's warning, thanks to an AI model » (Nature, actualité de la rédaction) » ; statut : documente → verifie_recemment.",
+    "source": {
+      "titre": "« Tropical cyclones could be predicted with an extra day's warning, thanks to an AI model » (Nature, actualité de la rédaction)",
+      "url": "https://www.nature.com/articles/d41586-026-02643-w",
+      "date": "2026-09-04",
+      "type": "secondaire"
+    }
+  },
+  {
+    "id": "veille-ocde-2026-09-07",
+    "date": "2026-09-07T11:16:12.496Z",
+    "type": "mise_a_jour",
+    "cible": "ocde",
+    "resume": "Mise à jour de la fiche « OCDE » via la boucle de veille : nouvelle source ajoutée depuis la veille. Source : Éditorial « Under pressure » — Perspectives économiques de l'OCDE, volume 2026 n° 1 (OCDE) (https://www.oecd.org/en/publications/oecd-economic-outlook-volume-2026-issue-1_2d1956f0-en/full-report/editorial-under-pressure_2fc7cf99.html). Proposition 9fe93a20-9248-468b-8591-afe3dd040e66 relue et validée manuellement avant application (patch de nature « a_reformuler »). Détail : sources : + « Éditorial « Under pressure » — Perspectives économiques de l'OCDE, volume 2026 n° 1 (OCDE) » ; statut : documente → verifie_recemment.",
+    "source": {
+      "titre": "Éditorial « Under pressure » — Perspectives économiques de l'OCDE, volume 2026 n° 1 (OCDE)",
+      "url": "https://www.oecd.org/en/publications/oecd-economic-outlook-volume-2026-issue-1_2d1956f0-en/full-report/editorial-under-pressure_2fc7cf99.html",
+      "date": "2026-06-03",
+      "type": "primaire"
+    }
   }
 ]

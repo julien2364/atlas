@@ -59,9 +59,11 @@
       "resume": "Introducing GPT-6 Astra, our most intelligent and aligned model yet, with state-of-the-art capabilities across computer use, coding, cybersecurity, and science."
     },
     "score_fiabilite": 0.9,
-    "statut": "a_traiter_fiche_existante",
+    "statut": "applique",
     "created_at": "2026-09-05T04:57:24.461Z",
-    "note_tri": "Annonce officielle du modèle GPT-6 Astra par OpenAI, avancée générationnelle de la famille GPT déjà cataloguée."
+    "note_tri": "Annonce officielle du modèle GPT-6 Astra par OpenAI, avancée générationnelle de la famille GPT déjà cataloguée.",
+    "applique_le": "2026-09-07",
+    "patch_id": "patch-ffdb6a03-8da8-4e4c-8771-fcb91af2939f"
   },
   {
     "id": "697086fa-87db-4f4d-8298-f1cb6605cf0f",
@@ -75,9 +77,11 @@
       "resume": "GPT-6 Astra is our most capable broadly deployed model and our first to reach the Critical level of cybersecurity capability under our Preparedness Framework."
     },
     "score_fiabilite": 0.9,
-    "statut": "a_traiter_fiche_existante",
+    "statut": "applique",
     "created_at": "2026-09-05T04:57:24.461Z",
-    "note_tri": "Document de sécurité officiel indiquant que GPT-6 Astra atteint le niveau 'Critical' de capacité cybersécurité selon le Preparedness Framework d'OpenAI, information factuelle distincte de l'annonce générale du modèle."
+    "note_tri": "Document de sécurité officiel indiquant que GPT-6 Astra atteint le niveau 'Critical' de capacité cybersécurité selon le Preparedness Framework d'OpenAI, information factuelle distincte de l'annonce générale du modèle.",
+    "applique_le": "2026-09-07",
+    "patch_id": "patch-697086fa-87db-4f4d-8298-f1cb6605cf0f"
   },
   {
     "id": "1e7490bb-bf33-4964-bc82-94e507a99f06",
@@ -145,9 +149,11 @@
       "resume": ""
     },
     "score_fiabilite": 0.9,
-    "statut": "a_traiter_fiche_existante",
+    "statut": "applique",
     "created_at": "2026-09-05T04:57:24.626Z",
-    "note_tri": "Modèle d'IA de prédiction des cyclones tropicaux avec un jour d'avance supplémentaire: application directe de la modélisation climatique par IA déjà cataloguée."
+    "note_tri": "Modèle d'IA de prédiction des cyclones tropicaux avec un jour d'avance supplémentaire: application directe de la modélisation climatique par IA déjà cataloguée.",
+    "applique_le": "2026-09-07",
+    "patch_id": "patch-d164bd4b-66e5-4528-a941-746d18b406eb"
   },
   {
     "id": "799012a8-45d2-4cef-b056-e439ecf11c06",
@@ -183,9 +189,12 @@
       "resume": "Anthropic lance « Check Files » pour savoir si un fichier a été généré par Claude  Frandroid"
     },
     "score_fiabilite": 0.9,
-    "statut": "a_traiter_fiche_existante",
+    "statut": "ecarte_en_relecture",
     "created_at": "2026-09-05T17:36:10.502Z",
-    "note_tri": "Lancement par Anthropic de 'Check Files', fonctionnalité de détection de fichiers générés par Claude, nouvelle capacité produit rattachable à la fiche Claude."
+    "note_tri": "Lancement par Anthropic de 'Check Files', fonctionnalité de détection de fichiers générés par Claude, nouvelle capacité produit rattachable à la fiche Claude.",
+    "relu_le": "2026-09-07",
+    "patch_id": "patch-9c7ad8ef-7917-4c5d-acc5-83d88405c686",
+    "note_relecture": "Écarté. Url de redirection Google News, non citable en l'état, et introuvable chez l'éditeur d'origine. Sur le fond, brève de presse d'actualité produit : la fiche porte déjà les pages officielles de l'éditeur, qui documentent la même chose de première main."
   },
   {
     "id": "cdeaae61-cbde-416e-88ae-fab2d32a7f65",
@@ -231,9 +240,12 @@
       "resume": "Anthropic dégaine 2 nouvelles versions de Claude, et elles font des prouesses  01net.com"
     },
     "score_fiabilite": 0.9,
-    "statut": "a_traiter_fiche_existante",
+    "statut": "ecarte_en_relecture",
     "created_at": "2026-09-05T17:36:10.502Z",
-    "note_tri": "Sortie de deux nouvelles versions de Claude par Anthropic avec gains de performance rapportés, information de capacité rattachable à la fiche Claude."
+    "note_tri": "Sortie de deux nouvelles versions de Claude par Anthropic avec gains de performance rapportés, information de capacité rattachable à la fiche Claude.",
+    "relu_le": "2026-09-07",
+    "patch_id": "patch-891c9db7-9e1a-4792-9788-9fc82864ced6",
+    "note_relecture": "Écarté. Url de redirection Google News, non citable en l'état, et introuvable chez l'éditeur d'origine. Sur le fond, brève de presse d'actualité produit : la fiche porte déjà les pages officielles de l'éditeur, qui documentent la même chose de première main."
   },
   {
     "id": "26f535d2-b24e-4879-be12-dded045f2493",
@@ -263,9 +275,12 @@
       "resume": "Le FMI et le Sénégal reprennent leur coopération, un prêt de 2,2 milliards de dollars en vue pour Dakar  RFI"
     },
     "score_fiabilite": 0.9,
-    "statut": "a_traiter_fiche_existante",
+    "statut": "ecarte_en_relecture",
     "created_at": "2026-09-05T17:36:11.433Z",
-    "note_tri": "Reprise de la coopération FMI-Sénégal avec un prêt de 2,2 milliards de dollars: activité institutionnelle factuelle rattachable à la fiche FMI."
+    "note_tri": "Reprise de la coopération FMI-Sénégal avec un prêt de 2,2 milliards de dollars: activité institutionnelle factuelle rattachable à la fiche FMI.",
+    "relu_le": "2026-09-07",
+    "patch_id": "patch-5ece8bb8-0e5c-4336-890e-84405c2a101f",
+    "note_relecture": "Écarté. Url de redirection Google News non résolue vers l'éditeur d'origine, et sur le fond une actualité nationale ponctuelle : elle illustre un dossier en cours, elle ne documente pas la thèse, l'apport ou les limites d'une fiche de référence sur l'institution."
   },
   {
     "id": "f081904e-e6a3-4b41-83df-4dab91a27884",
@@ -343,9 +358,11 @@
       "resume": "Éditorial : Sous pression : Perspectives économiques de l'OCDE, Volume 2026 Numéro 1  oecd.org"
     },
     "score_fiabilite": 0.9,
-    "statut": "a_traiter_fiche_existante",
+    "statut": "applique",
     "created_at": "2026-09-05T17:36:12.006Z",
-    "note_tri": "Éditorial officiel de l'OCDE présentant ses Perspectives économiques Volume 2026 n°1, source primaire rattachable à la fiche OCDE."
+    "note_tri": "Éditorial officiel de l'OCDE présentant ses Perspectives économiques Volume 2026 n°1, source primaire rattachable à la fiche OCDE.",
+    "applique_le": "2026-09-07",
+    "patch_id": "patch-9fe93a20-9248-468b-8591-afe3dd040e66"
   },
   {
     "id": "eb34736d-19c3-41a5-8104-ac029aea51bb",
@@ -391,9 +408,12 @@
       "resume": "Guerre prolongée en Iran : l'OCDE craint des récessions  Euronews.com"
     },
     "score_fiabilite": 0.9,
-    "statut": "a_traiter_fiche_existante",
+    "statut": "ecarte_en_relecture",
     "created_at": "2026-09-05T17:36:12.007Z",
-    "note_tri": "Alerte de l'OCDE sur un risque de récessions lié à la prolongation de la guerre en Iran: facteur de risque macroéconomique distinct rattachable à la fiche OCDE."
+    "note_tri": "Alerte de l'OCDE sur un risque de récessions lié à la prolongation de la guerre en Iran: facteur de risque macroéconomique distinct rattachable à la fiche OCDE.",
+    "relu_le": "2026-09-07",
+    "patch_id": "patch-297f532c-52ab-4454-b48e-84ece14f95a8",
+    "note_relecture": "Écarté. Url de redirection Google News non citable, article de presse commentant une publication de l'OCDE : l'éditorial des Perspectives économiques lui-même, retenu par ailleurs dans ce lot, documente la même chose de première main."
   },
   {
     "id": "26879ec4-de52-4426-8eef-44622ae4b66d",
@@ -407,9 +427,12 @@
       "resume": "Le FMI plus pessimiste que Paris et l’OCDE sur la croissance française  Le Figaro"
     },
     "score_fiabilite": 0.9,
-    "statut": "a_traiter_fiche_existante",
+    "statut": "ecarte_en_relecture",
     "created_at": "2026-09-05T17:36:12.007Z",
-    "note_tri": "Comparaison chiffrée des prévisions de croissance française entre le FMI et l'OCDE, information factuelle distincte rattachable à la fiche OCDE."
+    "note_tri": "Comparaison chiffrée des prévisions de croissance française entre le FMI et l'OCDE, information factuelle distincte rattachable à la fiche OCDE.",
+    "relu_le": "2026-09-07",
+    "patch_id": "patch-26879ec4-de52-4426-8eef-44622ae4b66d",
+    "note_relecture": "Écarté. Url de redirection Google News non citable, article de presse commentant une publication de l'OCDE : l'éditorial des Perspectives économiques lui-même, retenu par ailleurs dans ce lot, documente la même chose de première main."
   },
   {
     "id": "b18a5812-822a-473f-8645-6d0c4362f283",
@@ -1325,9 +1348,12 @@
       "note": "Résumé Wikipédia brut — à reformuler en these_centrale/apport/limites_critiques (fiche humaine) ou capacites_cles/limites_connues (fiche IA) avant validation. Ne jamais publier tel quel sans relecture."
     },
     "score_fiabilite": 0.5,
-    "statut": "a_traiter_fiche_existante",
+    "statut": "ecarte_en_relecture",
     "created_at": "2026-09-05T19:19:27.891Z",
-    "note_tri": "Apporte une source Wikipédia non encore citée par la fiche autoritarisme-electif — à reformuler avant intégration, jamais à publier tel quel."
+    "note_tri": "Apporte une source Wikipédia non encore citée par la fiche autoritarisme-electif — à reformuler avant intégration, jamais à publier tel quel.",
+    "relu_le": "2026-09-07",
+    "patch_id": "patch-ebde0747-12da-4387-84cd-ed74dcdb5e28",
+    "note_relecture": "Écarté. Le patch propose d'écraser une thèse centrale rédigée par un extrait d'encyclopédie brut : c'est exactement le défaut que les audits du 07/09 viennent de retirer du corpus. Aucun apport de source non plus — la fiche cible porte déjà une source Wikipédia, sur le même article ou sur un article mieux ciblé que celui proposé."
   },
   {
     "id": "df7201ea-204f-4661-bedd-bc1e8d4a988e",
@@ -1343,9 +1369,12 @@
       "note": "Résumé Wikipédia brut — à reformuler en these_centrale/apport/limites_critiques (fiche humaine) ou capacites_cles/limites_connues (fiche IA) avant validation. Ne jamais publier tel quel sans relecture."
     },
     "score_fiabilite": 0.5,
-    "statut": "a_traiter_fiche_existante",
+    "statut": "ecarte_en_relecture",
     "created_at": "2026-09-05T19:19:28.395Z",
-    "note_tri": "Apporte une source Wikipédia non encore citée par la fiche democratie-illiberale — à reformuler avant intégration, jamais à publier tel quel."
+    "note_tri": "Apporte une source Wikipédia non encore citée par la fiche democratie-illiberale — à reformuler avant intégration, jamais à publier tel quel.",
+    "relu_le": "2026-09-07",
+    "patch_id": "patch-df7201ea-204f-4661-bedd-bc1e8d4a988e",
+    "note_relecture": "Écarté. Le patch propose d'écraser une thèse centrale rédigée par un extrait d'encyclopédie brut : c'est exactement le défaut que les audits du 07/09 viennent de retirer du corpus. Aucun apport de source non plus — la fiche cible porte déjà une source Wikipédia, sur le même article ou sur un article mieux ciblé que celui proposé."
   },
   {
     "id": "2e5e604b-37ed-4d86-96f4-823cfd9107f2",
@@ -1433,9 +1462,12 @@
       "note": "Résumé Wikipédia brut — à reformuler en these_centrale/apport/limites_critiques (fiche humaine) ou capacites_cles/limites_connues (fiche IA) avant validation. Ne jamais publier tel quel sans relecture."
     },
     "score_fiabilite": 0.5,
-    "statut": "a_traiter_fiche_existante",
+    "statut": "ecarte_en_relecture",
     "created_at": "2026-09-05T19:19:31.946Z",
-    "note_tri": "Apporte une source Wikipédia non encore citée par la fiche monarchie-absolue — à reformuler avant intégration, jamais à publier tel quel."
+    "note_tri": "Apporte une source Wikipédia non encore citée par la fiche monarchie-absolue — à reformuler avant intégration, jamais à publier tel quel.",
+    "relu_le": "2026-09-07",
+    "patch_id": "patch-f9013270-f3a9-47d0-bb63-70c0b6d772b0",
+    "note_relecture": "Écarté. Le patch propose d'écraser une thèse centrale rédigée par un extrait d'encyclopédie brut : c'est exactement le défaut que les audits du 07/09 viennent de retirer du corpus. Aucun apport de source non plus — la fiche cible porte déjà une source Wikipédia, sur le même article ou sur un article mieux ciblé que celui proposé."
   },
   {
     "id": "166f404f-b087-44fe-a352-c6fc7a832118",
@@ -1559,9 +1591,12 @@
       "note": "Résumé Wikipédia brut — à reformuler en these_centrale/apport/limites_critiques (fiche humaine) ou capacites_cles/limites_connues (fiche IA) avant validation. Ne jamais publier tel quel sans relecture."
     },
     "score_fiabilite": 0.5,
-    "statut": "a_traiter_fiche_existante",
+    "statut": "ecarte_en_relecture",
     "created_at": "2026-09-05T19:19:35.280Z",
-    "note_tri": "Apporte une source Wikipédia non encore citée par la fiche cyber-socialisme — à reformuler avant intégration, jamais à publier tel quel."
+    "note_tri": "Apporte une source Wikipédia non encore citée par la fiche cyber-socialisme — à reformuler avant intégration, jamais à publier tel quel.",
+    "relu_le": "2026-09-07",
+    "patch_id": "patch-f6174b95-914c-41b9-8c29-ee3fe6dbc347",
+    "note_relecture": "Écarté. Le patch propose d'écraser une thèse centrale rédigée par un extrait d'encyclopédie brut : c'est exactement le défaut que les audits du 07/09 viennent de retirer du corpus. Aucun apport de source non plus — la fiche cible porte déjà une source Wikipédia, sur le même article ou sur un article mieux ciblé que celui proposé."
   },
   {
     "id": "8a1ac6f2-7db9-4d14-b5ee-ff7de01f5f83",
@@ -1613,9 +1648,12 @@
       "note": "Résumé Wikipédia brut — à reformuler en these_centrale/apport/limites_critiques (fiche humaine) ou capacites_cles/limites_connues (fiche IA) avant validation. Ne jamais publier tel quel sans relecture."
     },
     "score_fiabilite": 0.5,
-    "statut": "a_traiter_fiche_existante",
+    "statut": "ecarte_en_relecture",
     "created_at": "2026-09-05T19:19:36.688Z",
-    "note_tri": "Apporte une source Wikipédia non encore citée par la fiche capitalisme-de-marche-libre-laissez-faire — à reformuler avant intégration, jamais à publier tel quel."
+    "note_tri": "Apporte une source Wikipédia non encore citée par la fiche capitalisme-de-marche-libre-laissez-faire — à reformuler avant intégration, jamais à publier tel quel.",
+    "relu_le": "2026-09-07",
+    "patch_id": "patch-08aa7f3c-be96-4475-8677-f170bb809e6a",
+    "note_relecture": "Écarté. Le patch propose d'écraser une thèse centrale rédigée par un extrait d'encyclopédie brut : c'est exactement le défaut que les audits du 07/09 viennent de retirer du corpus. Aucun apport de source non plus — la fiche cible porte déjà une source Wikipédia, sur le même article ou sur un article mieux ciblé que celui proposé."
   },
   {
     "id": "962f1621-5f59-47e1-993c-91c888180244",
@@ -1685,9 +1723,12 @@
       "note": "Résumé Wikipédia brut — à reformuler en these_centrale/apport/limites_critiques (fiche humaine) ou capacites_cles/limites_connues (fiche IA) avant validation. Ne jamais publier tel quel sans relecture."
     },
     "score_fiabilite": 0.5,
-    "statut": "a_traiter_fiche_existante",
+    "statut": "ecarte_en_relecture",
     "created_at": "2026-09-05T20:14:14.896Z",
-    "note_tri": "Apporte une source Wikipédia non encore citée par la fiche mauricio-ferraris — à reformuler avant intégration, jamais à publier tel quel."
+    "note_tri": "Apporte une source Wikipédia non encore citée par la fiche mauricio-ferraris — à reformuler avant intégration, jamais à publier tel quel.",
+    "relu_le": "2026-09-07",
+    "patch_id": "patch-fb0e9b60-a05f-469b-ae7d-05299695c515",
+    "note_relecture": "Écarté. Le patch propose d'écraser une thèse centrale rédigée par un extrait d'encyclopédie brut : c'est exactement le défaut que les audits du 07/09 viennent de retirer du corpus. Aucun apport de source non plus — la fiche cible porte déjà une source Wikipédia, sur le même article ou sur un article mieux ciblé que celui proposé."
   },
   {
     "id": "3c721601-a015-45fe-a2fd-eb58a339efa2",
@@ -1703,9 +1744,12 @@
       "note": "Résumé Wikipédia brut — à reformuler en these_centrale/apport/limites_critiques (fiche humaine) ou capacites_cles/limites_connues (fiche IA) avant validation. Ne jamais publier tel quel sans relecture."
     },
     "score_fiabilite": 0.5,
-    "statut": "a_traiter_fiche_existante",
+    "statut": "ecarte_en_relecture",
     "created_at": "2026-09-05T20:14:16.525Z",
-    "note_tri": "Apporte une source Wikipédia non encore citée par la fiche is-lm-keynesianisme-de-synthese — à reformuler avant intégration, jamais à publier tel quel."
+    "note_tri": "Apporte une source Wikipédia non encore citée par la fiche is-lm-keynesianisme-de-synthese — à reformuler avant intégration, jamais à publier tel quel.",
+    "relu_le": "2026-09-07",
+    "patch_id": "patch-3c721601-a015-45fe-a2fd-eb58a339efa2",
+    "note_relecture": "Écarté. Le patch propose d'écraser une thèse centrale rédigée par un extrait d'encyclopédie brut : c'est exactement le défaut que les audits du 07/09 viennent de retirer du corpus. Aucun apport de source non plus — la fiche cible porte déjà une source Wikipédia, sur le même article ou sur un article mieux ciblé que celui proposé."
   },
   {
     "id": "61826b27-8b7b-47d6-8e7c-6291e74e3bd3",
@@ -1721,9 +1765,12 @@
       "note": "Résumé Wikipédia brut — à reformuler en these_centrale/apport/limites_critiques (fiche humaine) ou capacites_cles/limites_connues (fiche IA) avant validation. Ne jamais publier tel quel sans relecture."
     },
     "score_fiabilite": 0.5,
-    "statut": "a_traiter_fiche_existante",
+    "statut": "ecarte_en_relecture",
     "created_at": "2026-09-05T20:14:16.999Z",
-    "note_tri": "Apporte une source Wikipédia non encore citée par la fiche croissance-endogene-romer-lucas — à reformuler avant intégration, jamais à publier tel quel."
+    "note_tri": "Apporte une source Wikipédia non encore citée par la fiche croissance-endogene-romer-lucas — à reformuler avant intégration, jamais à publier tel quel.",
+    "relu_le": "2026-09-07",
+    "patch_id": "patch-61826b27-8b7b-47d6-8e7c-6291e74e3bd3",
+    "note_relecture": "Écarté. Le patch propose d'écraser une thèse centrale rédigée par un extrait d'encyclopédie brut : c'est exactement le défaut que les audits du 07/09 viennent de retirer du corpus. Aucun apport de source non plus — la fiche cible porte déjà une source Wikipédia, sur le même article ou sur un article mieux ciblé que celui proposé."
   },
   {
     "id": "45eaf847-2002-4653-9285-57da0747b12b",
@@ -1775,9 +1822,12 @@
       "note": "Résumé Wikipédia brut — à reformuler en these_centrale/apport/limites_critiques (fiche humaine) ou capacites_cles/limites_connues (fiche IA) avant validation. Ne jamais publier tel quel sans relecture."
     },
     "score_fiabilite": 0.5,
-    "statut": "a_traiter_fiche_existante",
+    "statut": "ecarte_en_relecture",
     "created_at": "2026-09-05T20:14:19.057Z",
-    "note_tri": "Apporte une source Wikipédia non encore citée par la fiche economie-de-la-fonctionnalite — à reformuler avant intégration, jamais à publier tel quel."
+    "note_tri": "Apporte une source Wikipédia non encore citée par la fiche economie-de-la-fonctionnalite — à reformuler avant intégration, jamais à publier tel quel.",
+    "relu_le": "2026-09-07",
+    "patch_id": "patch-2f32f591-bd43-4ab2-947a-7ba1fd1b276e",
+    "note_relecture": "Écarté. Le patch propose d'écraser une thèse centrale rédigée par un extrait d'encyclopédie brut : c'est exactement le défaut que les audits du 07/09 viennent de retirer du corpus. Aucun apport de source non plus — la fiche cible porte déjà une source Wikipédia, sur le même article ou sur un article mieux ciblé que celui proposé."
   },
   {
     "id": "dd5d07ac-a88c-4367-84cd-dd643d98f37b",
@@ -2207,9 +2257,12 @@
       "note": "Résumé Wikipédia brut — à reformuler en these_centrale/apport/limites_critiques (fiche humaine) ou capacites_cles/limites_connues (fiche IA) avant validation. Ne jamais publier tel quel sans relecture."
     },
     "score_fiabilite": 0.5,
-    "statut": "a_traiter_fiche_existante",
+    "statut": "ecarte_en_relecture",
     "created_at": "2026-09-05T20:14:30.698Z",
-    "note_tri": "Apporte une source Wikipédia non encore citée par la fiche joseph-stiglitz — à reformuler avant intégration, jamais à publier tel quel."
+    "note_tri": "Apporte une source Wikipédia non encore citée par la fiche joseph-stiglitz — à reformuler avant intégration, jamais à publier tel quel.",
+    "relu_le": "2026-09-07",
+    "patch_id": "patch-2f53b404-80eb-401a-b38b-adec8656f552",
+    "note_relecture": "Écarté. Le patch propose d'écraser une thèse centrale rédigée par un extrait d'encyclopédie brut : c'est exactement le défaut que les audits du 07/09 viennent de retirer du corpus. Aucun apport de source non plus — la fiche cible porte déjà une source Wikipédia, sur le même article ou sur un article mieux ciblé que celui proposé."
   },
   {
     "id": "a754e9db-859c-4a5a-89a0-a470755ff15c",
@@ -2243,9 +2296,12 @@
       "note": "Résumé Wikipédia brut — à reformuler en these_centrale/apport/limites_critiques (fiche humaine) ou capacites_cles/limites_connues (fiche IA) avant validation. Ne jamais publier tel quel sans relecture."
     },
     "score_fiabilite": 0.5,
-    "statut": "a_traiter_fiche_existante",
+    "statut": "ecarte_en_relecture",
     "created_at": "2026-09-05T20:14:31.614Z",
-    "note_tri": "Apporte une source Wikipédia non encore citée par la fiche daron-acemoglu — à reformuler avant intégration, jamais à publier tel quel."
+    "note_tri": "Apporte une source Wikipédia non encore citée par la fiche daron-acemoglu — à reformuler avant intégration, jamais à publier tel quel.",
+    "relu_le": "2026-09-07",
+    "patch_id": "patch-3390c8cc-1d3b-4716-b923-d57d765c0c14",
+    "note_relecture": "Écarté. Le patch propose d'écraser une thèse centrale rédigée par un extrait d'encyclopédie brut : c'est exactement le défaut que les audits du 07/09 viennent de retirer du corpus. Aucun apport de source non plus — la fiche cible porte déjà une source Wikipédia, sur le même article ou sur un article mieux ciblé que celui proposé."
   },
   {
     "id": "c7696557-9920-4d44-abd5-5a2c5f536e26",
@@ -2279,9 +2335,12 @@
       "note": "Résumé Wikipédia brut — à reformuler en these_centrale/apport/limites_critiques (fiche humaine) ou capacites_cles/limites_connues (fiche IA) avant validation. Ne jamais publier tel quel sans relecture."
     },
     "score_fiabilite": 0.5,
-    "statut": "a_traiter_fiche_existante",
+    "statut": "ecarte_en_relecture",
     "created_at": "2026-09-05T20:14:32.638Z",
-    "note_tri": "Apporte une source Wikipédia non encore citée par la fiche simon-johnson — à reformuler avant intégration, jamais à publier tel quel."
+    "note_tri": "Apporte une source Wikipédia non encore citée par la fiche simon-johnson — à reformuler avant intégration, jamais à publier tel quel.",
+    "relu_le": "2026-09-07",
+    "patch_id": "patch-3c33b1ce-9f58-4003-b91a-6fd7f2b7a0a8",
+    "note_relecture": "Écarté. Le patch propose d'écraser une thèse centrale rédigée par un extrait d'encyclopédie brut : c'est exactement le défaut que les audits du 07/09 viennent de retirer du corpus. Aucun apport de source non plus — la fiche cible porte déjà une source Wikipédia, sur le même article ou sur un article mieux ciblé que celui proposé."
   },
   {
     "id": "79091414-f95c-4d51-8de3-55c9f36c6679",
@@ -2441,9 +2500,12 @@
       "note": "Résumé Wikipédia brut — à reformuler en these_centrale/apport/limites_critiques (fiche humaine) ou capacites_cles/limites_connues (fiche IA) avant validation. Ne jamais publier tel quel sans relecture."
     },
     "score_fiabilite": 0.5,
-    "statut": "a_traiter_fiche_existante",
+    "statut": "ecarte_en_relecture",
     "created_at": "2026-09-05T20:14:37.420Z",
-    "note_tri": "Apporte une source Wikipédia non encore citée par la fiche multilateralisme-institutionnel — à reformuler avant intégration, jamais à publier tel quel."
+    "note_tri": "Apporte une source Wikipédia non encore citée par la fiche multilateralisme-institutionnel — à reformuler avant intégration, jamais à publier tel quel.",
+    "relu_le": "2026-09-07",
+    "patch_id": "patch-d9594570-f0bf-4b10-80c1-c3d480ce5b27",
+    "note_relecture": "Écarté. Le patch propose d'écraser une thèse centrale rédigée par un extrait d'encyclopédie brut : c'est exactement le défaut que les audits du 07/09 viennent de retirer du corpus. Aucun apport de source non plus — la fiche cible porte déjà une source Wikipédia, sur le même article ou sur un article mieux ciblé que celui proposé."
   },
   {
     "id": "133547ed-92de-4306-88fb-9b5fc2a314b4",
@@ -2459,9 +2521,12 @@
       "note": "Résumé Wikipédia brut — à reformuler en these_centrale/apport/limites_critiques (fiche humaine) ou capacites_cles/limites_connues (fiche IA) avant validation. Ne jamais publier tel quel sans relecture."
     },
     "score_fiabilite": 0.5,
-    "statut": "a_traiter_fiche_existante",
+    "statut": "ecarte_en_relecture",
     "created_at": "2026-09-05T20:14:38.641Z",
-    "note_tri": "Apporte une source Wikipédia non encore citée par la fiche gouvernance-en-reseau-multiniveau — à reformuler avant intégration, jamais à publier tel quel."
+    "note_tri": "Apporte une source Wikipédia non encore citée par la fiche gouvernance-en-reseau-multiniveau — à reformuler avant intégration, jamais à publier tel quel.",
+    "relu_le": "2026-09-07",
+    "patch_id": "patch-133547ed-92de-4306-88fb-9b5fc2a314b4",
+    "note_relecture": "Écarté. Le patch propose d'écraser une thèse centrale rédigée par un extrait d'encyclopédie brut : c'est exactement le défaut que les audits du 07/09 viennent de retirer du corpus. Aucun apport de source non plus — la fiche cible porte déjà une source Wikipédia, sur le même article ou sur un article mieux ciblé que celui proposé."
   },
   {
     "id": "8bf157d9-ced2-4e30-a4d7-0547d8632e35",
@@ -2477,9 +2542,12 @@
       "note": "Résumé Wikipédia brut — à reformuler en these_centrale/apport/limites_critiques (fiche humaine) ou capacites_cles/limites_connues (fiche IA) avant validation. Ne jamais publier tel quel sans relecture."
     },
     "score_fiabilite": 0.5,
-    "statut": "a_traiter_fiche_existante",
+    "statut": "ecarte_en_relecture",
     "created_at": "2026-09-05T20:14:40.056Z",
-    "note_tri": "Apporte une source Wikipédia non encore citée par la fiche regionalisme-et-integration-regionale — à reformuler avant intégration, jamais à publier tel quel."
+    "note_tri": "Apporte une source Wikipédia non encore citée par la fiche regionalisme-et-integration-regionale — à reformuler avant intégration, jamais à publier tel quel.",
+    "relu_le": "2026-09-07",
+    "patch_id": "patch-8bf157d9-ced2-4e30-a4d7-0547d8632e35",
+    "note_relecture": "Écarté. Le patch propose d'écraser une thèse centrale rédigée par un extrait d'encyclopédie brut : c'est exactement le défaut que les audits du 07/09 viennent de retirer du corpus. Aucun apport de source non plus — la fiche cible porte déjà une source Wikipédia, sur le même article ou sur un article mieux ciblé que celui proposé."
   },
   {
     "id": "702101b2-281c-4849-a895-c3a55c5d3fc3",
@@ -2531,9 +2599,12 @@
       "note": "Résumé Wikipédia brut — à reformuler en these_centrale/apport/limites_critiques (fiche humaine) ou capacites_cles/limites_connues (fiche IA) avant validation. Ne jamais publier tel quel sans relecture."
     },
     "score_fiabilite": 0.5,
-    "statut": "a_traiter_fiche_existante",
+    "statut": "ecarte_en_relecture",
     "created_at": "2026-09-05T20:14:44.053Z",
-    "note_tri": "Apporte une source Wikipédia non encore citée par la fiche mouvement-des-non-alignes — à reformuler avant intégration, jamais à publier tel quel."
+    "note_tri": "Apporte une source Wikipédia non encore citée par la fiche mouvement-des-non-alignes — à reformuler avant intégration, jamais à publier tel quel.",
+    "relu_le": "2026-09-07",
+    "patch_id": "patch-fe9c353b-e997-43e7-a84e-c28c95f73f09",
+    "note_relecture": "Écarté. Le patch propose d'écraser une thèse centrale rédigée par un extrait d'encyclopédie brut : c'est exactement le défaut que les audits du 07/09 viennent de retirer du corpus. Aucun apport de source non plus — la fiche cible porte déjà une source Wikipédia, sur le même article ou sur un article mieux ciblé que celui proposé."
   },
   {
     "id": "43fac462-d908-4c2e-b8d4-4d18521821e1",
@@ -2549,9 +2620,12 @@
       "note": "Résumé Wikipédia brut — à reformuler en these_centrale/apport/limites_critiques (fiche humaine) ou capacites_cles/limites_connues (fiche IA) avant validation. Ne jamais publier tel quel sans relecture."
     },
     "score_fiabilite": 0.5,
-    "statut": "a_traiter_fiche_existante",
+    "statut": "ecarte_en_relecture",
     "created_at": "2026-09-05T20:14:44.543Z",
-    "note_tri": "Apporte une source Wikipédia non encore citée par la fiche union-africaine-ua-oua — à reformuler avant intégration, jamais à publier tel quel."
+    "note_tri": "Apporte une source Wikipédia non encore citée par la fiche union-africaine-ua-oua — à reformuler avant intégration, jamais à publier tel quel.",
+    "relu_le": "2026-09-07",
+    "patch_id": "patch-43fac462-d908-4c2e-b8d4-4d18521821e1",
+    "note_relecture": "Écarté. Le patch propose d'écraser une thèse centrale rédigée par un extrait d'encyclopédie brut : c'est exactement le défaut que les audits du 07/09 viennent de retirer du corpus. Aucun apport de source non plus — la fiche cible porte déjà une source Wikipédia, sur le même article ou sur un article mieux ciblé que celui proposé."
   },
   {
     "id": "44ca84f4-b824-47f4-be11-0c38aa0c907c",
@@ -2603,9 +2677,12 @@
       "note": "Résumé Wikipédia brut — à reformuler en these_centrale/apport/limites_critiques (fiche humaine) ou capacites_cles/limites_connues (fiche IA) avant validation. Ne jamais publier tel quel sans relecture."
     },
     "score_fiabilite": 0.5,
-    "statut": "a_traiter_fiche_existante",
+    "statut": "ecarte_en_relecture",
     "created_at": "2026-09-05T20:14:46.813Z",
-    "note_tri": "Apporte une source Wikipédia non encore citée par la fiche osce — à reformuler avant intégration, jamais à publier tel quel."
+    "note_tri": "Apporte une source Wikipédia non encore citée par la fiche osce — à reformuler avant intégration, jamais à publier tel quel.",
+    "relu_le": "2026-09-07",
+    "patch_id": "patch-86f2fec4-25d5-4f61-a8ec-477d4c4bda11",
+    "note_relecture": "Écarté. Le patch propose d'écraser une thèse centrale rédigée par un extrait d'encyclopédie brut : c'est exactement le défaut que les audits du 07/09 viennent de retirer du corpus. Aucun apport de source non plus — la fiche cible porte déjà une source Wikipédia, sur le même article ou sur un article mieux ciblé que celui proposé."
   },
   {
     "id": "3fe5a59d-7bb7-45ce-9c8b-565207127d3e",
@@ -2639,9 +2716,12 @@
       "note": "Résumé Wikipédia brut — à reformuler en these_centrale/apport/limites_critiques (fiche humaine) ou capacites_cles/limites_connues (fiche IA) avant validation. Ne jamais publier tel quel sans relecture."
     },
     "score_fiabilite": 0.5,
-    "statut": "a_traiter_fiche_existante",
+    "statut": "ecarte_en_relecture",
     "created_at": "2026-09-05T20:14:49.589Z",
-    "note_tri": "Apporte une source Wikipédia non encore citée par la fiche ocde — à reformuler avant intégration, jamais à publier tel quel."
+    "note_tri": "Apporte une source Wikipédia non encore citée par la fiche ocde — à reformuler avant intégration, jamais à publier tel quel.",
+    "relu_le": "2026-09-07",
+    "patch_id": "patch-1a12e9c6-c639-409a-9be3-68f5fe9bba39",
+    "note_relecture": "Écarté. Le patch propose d'écraser une thèse centrale rédigée par un extrait d'encyclopédie brut : c'est exactement le défaut que les audits du 07/09 viennent de retirer du corpus. Aucun apport de source non plus — la fiche cible porte déjà une source Wikipédia, sur le même article ou sur un article mieux ciblé que celui proposé."
   },
   {
     "id": "03c617ae-768f-4a78-8ea9-b71d43d5e823",
@@ -2657,9 +2737,12 @@
       "note": "Résumé Wikipédia brut — à reformuler en these_centrale/apport/limites_critiques (fiche humaine) ou capacites_cles/limites_connues (fiche IA) avant validation. Ne jamais publier tel quel sans relecture."
     },
     "score_fiabilite": 0.5,
-    "statut": "a_traiter_fiche_existante",
+    "statut": "ecarte_en_relecture",
     "created_at": "2026-09-05T20:14:50.029Z",
-    "note_tri": "Apporte une source Wikipédia non encore citée par la fiche opep — à reformuler avant intégration, jamais à publier tel quel."
+    "note_tri": "Apporte une source Wikipédia non encore citée par la fiche opep — à reformuler avant intégration, jamais à publier tel quel.",
+    "relu_le": "2026-09-07",
+    "patch_id": "patch-03c617ae-768f-4a78-8ea9-b71d43d5e823",
+    "note_relecture": "Écarté. Le patch propose d'écraser une thèse centrale rédigée par un extrait d'encyclopédie brut : c'est exactement le défaut que les audits du 07/09 viennent de retirer du corpus. Aucun apport de source non plus — la fiche cible porte déjà une source Wikipédia, sur le même article ou sur un article mieux ciblé que celui proposé."
   },
   {
     "id": "97019c15-2075-4a2d-b76e-3f52c79ddc3a",
@@ -2675,9 +2758,12 @@
       "note": "Résumé Wikipédia brut — à reformuler en these_centrale/apport/limites_critiques (fiche humaine) ou capacites_cles/limites_connues (fiche IA) avant validation. Ne jamais publier tel quel sans relecture."
     },
     "score_fiabilite": 0.5,
-    "statut": "a_traiter_fiche_existante",
+    "statut": "ecarte_en_relecture",
     "created_at": "2026-09-05T20:14:50.975Z",
-    "note_tri": "Apporte une source Wikipédia non encore citée par la fiche g7-g8 — à reformuler avant intégration, jamais à publier tel quel."
+    "note_tri": "Apporte une source Wikipédia non encore citée par la fiche g7-g8 — à reformuler avant intégration, jamais à publier tel quel.",
+    "relu_le": "2026-09-07",
+    "patch_id": "patch-97019c15-2075-4a2d-b76e-3f52c79ddc3a",
+    "note_relecture": "Écarté. Le patch propose d'écraser une thèse centrale rédigée par un extrait d'encyclopédie brut : c'est exactement le défaut que les audits du 07/09 viennent de retirer du corpus. Aucun apport de source non plus — la fiche cible porte déjà une source Wikipédia, sur le même article ou sur un article mieux ciblé que celui proposé."
   },
   {
     "id": "f0b8cba8-a442-45d7-9511-929188135896",
@@ -2693,9 +2779,12 @@
       "note": "Résumé Wikipédia brut — à reformuler en these_centrale/apport/limites_critiques (fiche humaine) ou capacites_cles/limites_connues (fiche IA) avant validation. Ne jamais publier tel quel sans relecture."
     },
     "score_fiabilite": 0.5,
-    "statut": "a_traiter_fiche_existante",
+    "statut": "ecarte_en_relecture",
     "created_at": "2026-09-05T20:14:52.284Z",
-    "note_tri": "Apporte une source Wikipédia non encore citée par la fiche asean — à reformuler avant intégration, jamais à publier tel quel."
+    "note_tri": "Apporte une source Wikipédia non encore citée par la fiche asean — à reformuler avant intégration, jamais à publier tel quel.",
+    "relu_le": "2026-09-07",
+    "patch_id": "patch-f0b8cba8-a442-45d7-9511-929188135896",
+    "note_relecture": "Écarté. Le patch propose d'écraser une thèse centrale rédigée par un extrait d'encyclopédie brut : c'est exactement le défaut que les audits du 07/09 viennent de retirer du corpus. Aucun apport de source non plus — la fiche cible porte déjà une source Wikipédia, sur le même article ou sur un article mieux ciblé que celui proposé."
   },
   {
     "id": "6e57791b-3b12-473f-a88d-3a6c6b1104f2",
@@ -2711,9 +2800,12 @@
       "note": "Résumé Wikipédia brut — à reformuler en these_centrale/apport/limites_critiques (fiche humaine) ou capacites_cles/limites_connues (fiche IA) avant validation. Ne jamais publier tel quel sans relecture."
     },
     "score_fiabilite": 0.5,
-    "statut": "a_traiter_fiche_existante",
+    "statut": "ecarte_en_relecture",
     "created_at": "2026-09-05T20:14:52.721Z",
-    "note_tri": "Apporte une source Wikipédia non encore citée par la fiche mercosur — à reformuler avant intégration, jamais à publier tel quel."
+    "note_tri": "Apporte une source Wikipédia non encore citée par la fiche mercosur — à reformuler avant intégration, jamais à publier tel quel.",
+    "relu_le": "2026-09-07",
+    "patch_id": "patch-6e57791b-3b12-473f-a88d-3a6c6b1104f2",
+    "note_relecture": "Écarté. Le patch propose d'écraser une thèse centrale rédigée par un extrait d'encyclopédie brut : c'est exactement le défaut que les audits du 07/09 viennent de retirer du corpus. Aucun apport de source non plus — la fiche cible porte déjà une source Wikipédia, sur le même article ou sur un article mieux ciblé que celui proposé."
   },
   {
     "id": "1c98de89-4f2f-4ae1-a024-783642c7b15d",
@@ -2729,9 +2821,12 @@
       "note": "Résumé Wikipédia brut — à reformuler en these_centrale/apport/limites_critiques (fiche humaine) ou capacites_cles/limites_connues (fiche IA) avant validation. Ne jamais publier tel quel sans relecture."
     },
     "score_fiabilite": 0.5,
-    "statut": "a_traiter_fiche_existante",
+    "statut": "ecarte_en_relecture",
     "created_at": "2026-09-05T20:14:53.736Z",
-    "note_tri": "Apporte une source Wikipédia non encore citée par la fiche g20 — à reformuler avant intégration, jamais à publier tel quel."
+    "note_tri": "Apporte une source Wikipédia non encore citée par la fiche g20 — à reformuler avant intégration, jamais à publier tel quel.",
+    "relu_le": "2026-09-07",
+    "patch_id": "patch-1c98de89-4f2f-4ae1-a024-783642c7b15d",
+    "note_relecture": "Écarté. Le patch propose d'écraser une thèse centrale rédigée par un extrait d'encyclopédie brut : c'est exactement le défaut que les audits du 07/09 viennent de retirer du corpus. Aucun apport de source non plus — la fiche cible porte déjà une source Wikipédia, sur le même article ou sur un article mieux ciblé que celui proposé."
   },
   {
     "id": "f5f436fc-ff1b-41d9-b32e-7e7253179721",
@@ -2747,9 +2842,12 @@
       "note": "Résumé Wikipédia brut — à reformuler en these_centrale/apport/limites_critiques (fiche humaine) ou capacites_cles/limites_connues (fiche IA) avant validation. Ne jamais publier tel quel sans relecture."
     },
     "score_fiabilite": 0.5,
-    "statut": "a_traiter_fiche_existante",
+    "statut": "ecarte_en_relecture",
     "created_at": "2026-09-05T20:14:54.179Z",
-    "note_tri": "Apporte une source Wikipédia non encore citée par la fiche brics — à reformuler avant intégration, jamais à publier tel quel."
+    "note_tri": "Apporte une source Wikipédia non encore citée par la fiche brics — à reformuler avant intégration, jamais à publier tel quel.",
+    "relu_le": "2026-09-07",
+    "patch_id": "patch-f5f436fc-ff1b-41d9-b32e-7e7253179721",
+    "note_relecture": "Écarté. Le patch propose d'écraser une thèse centrale rédigée par un extrait d'encyclopédie brut : c'est exactement le défaut que les audits du 07/09 viennent de retirer du corpus. Aucun apport de source non plus — la fiche cible porte déjà une source Wikipédia, sur le même article ou sur un article mieux ciblé que celui proposé."
   },
   {
     "id": "7946e85f-4929-4ba0-b6ec-eab28b724d69",
@@ -2765,9 +2863,12 @@
       "note": "Résumé Wikipédia brut — à reformuler en these_centrale/apport/limites_critiques (fiche humaine) ou capacites_cles/limites_connues (fiche IA) avant validation. Ne jamais publier tel quel sans relecture."
     },
     "score_fiabilite": 0.5,
-    "statut": "a_traiter_fiche_existante",
+    "statut": "ecarte_en_relecture",
     "created_at": "2026-09-05T20:14:54.675Z",
-    "note_tri": "Apporte une source Wikipédia non encore citée par la fiche organisation-de-cooperation-de-shanghai-ocs — à reformuler avant intégration, jamais à publier tel quel."
+    "note_tri": "Apporte une source Wikipédia non encore citée par la fiche organisation-de-cooperation-de-shanghai-ocs — à reformuler avant intégration, jamais à publier tel quel.",
+    "relu_le": "2026-09-07",
+    "patch_id": "patch-7946e85f-4929-4ba0-b6ec-eab28b724d69",
+    "note_relecture": "Écarté. Le patch propose d'écraser une thèse centrale rédigée par un extrait d'encyclopédie brut : c'est exactement le défaut que les audits du 07/09 viennent de retirer du corpus. Aucun apport de source non plus — la fiche cible porte déjà une source Wikipédia, sur le même article ou sur un article mieux ciblé que celui proposé."
   },
   {
     "id": "d4aedd4b-53f6-4195-a788-f4cf7f7373ef",
@@ -2783,9 +2884,12 @@
       "note": "Résumé Wikipédia brut — à reformuler en these_centrale/apport/limites_critiques (fiche humaine) ou capacites_cles/limites_connues (fiche IA) avant validation. Ne jamais publier tel quel sans relecture."
     },
     "score_fiabilite": 0.5,
-    "statut": "a_traiter_fiche_existante",
+    "statut": "ecarte_en_relecture",
     "created_at": "2026-09-05T20:14:55.188Z",
-    "note_tri": "Apporte une source Wikipédia non encore citée par la fiche cour-penale-internationale-cpi — à reformuler avant intégration, jamais à publier tel quel."
+    "note_tri": "Apporte une source Wikipédia non encore citée par la fiche cour-penale-internationale-cpi — à reformuler avant intégration, jamais à publier tel quel.",
+    "relu_le": "2026-09-07",
+    "patch_id": "patch-d4aedd4b-53f6-4195-a788-f4cf7f7373ef",
+    "note_relecture": "Écarté. Le patch propose d'écraser une thèse centrale rédigée par un extrait d'encyclopédie brut : c'est exactement le défaut que les audits du 07/09 viennent de retirer du corpus. Aucun apport de source non plus — la fiche cible porte déjà une source Wikipédia, sur le même article ou sur un article mieux ciblé que celui proposé."
   },
   {
     "id": "8bd65a4a-92b2-4dcd-af52-02f6f8467a6a",
@@ -2819,9 +2923,12 @@
       "note": "Résumé Wikipédia brut — à reformuler en these_centrale/apport/limites_critiques (fiche humaine) ou capacites_cles/limites_connues (fiche IA) avant validation. Ne jamais publier tel quel sans relecture."
     },
     "score_fiabilite": 0.5,
-    "statut": "a_traiter_fiche_existante",
+    "statut": "ecarte_en_relecture",
     "created_at": "2026-09-05T20:14:58.884Z",
-    "note_tri": "Apporte une source Wikipédia non encore citée par la fiche cptpp — à reformuler avant intégration, jamais à publier tel quel."
+    "note_tri": "Apporte une source Wikipédia non encore citée par la fiche cptpp — à reformuler avant intégration, jamais à publier tel quel.",
+    "relu_le": "2026-09-07",
+    "patch_id": "patch-f7078210-07aa-4514-aee2-fcd6e88ca05e",
+    "note_relecture": "Écarté. Le patch propose d'écraser une thèse centrale rédigée par un extrait d'encyclopédie brut : c'est exactement le défaut que les audits du 07/09 viennent de retirer du corpus. Aucun apport de source non plus — la fiche cible porte déjà une source Wikipédia, sur le même article ou sur un article mieux ciblé que celui proposé."
   },
   {
     "id": "12bad0af-37f7-410e-9f60-b21b589ffa26",
@@ -2837,9 +2944,12 @@
       "note": "Résumé Wikipédia brut — à reformuler en these_centrale/apport/limites_critiques (fiche humaine) ou capacites_cles/limites_connues (fiche IA) avant validation. Ne jamais publier tel quel sans relecture."
     },
     "score_fiabilite": 0.5,
-    "statut": "a_traiter_fiche_existante",
+    "statut": "ecarte_en_relecture",
     "created_at": "2026-09-05T20:15:00.263Z",
-    "note_tri": "Apporte une source Wikipédia non encore citée par la fiche conseil-de-stabilite-financiere-csf — à reformuler avant intégration, jamais à publier tel quel."
+    "note_tri": "Apporte une source Wikipédia non encore citée par la fiche conseil-de-stabilite-financiere-csf — à reformuler avant intégration, jamais à publier tel quel.",
+    "relu_le": "2026-09-07",
+    "patch_id": "patch-12bad0af-37f7-410e-9f60-b21b589ffa26",
+    "note_relecture": "Écarté. Le patch propose d'écraser une thèse centrale rédigée par un extrait d'encyclopédie brut : c'est exactement le défaut que les audits du 07/09 viennent de retirer du corpus. Aucun apport de source non plus — la fiche cible porte déjà une source Wikipédia, sur le même article ou sur un article mieux ciblé que celui proposé."
   },
   {
     "id": "a083491f-3eea-4bae-af7b-3f4b9b7d3ec4",
@@ -2855,9 +2965,12 @@
       "note": "Résumé Wikipédia brut — à reformuler en these_centrale/apport/limites_critiques (fiche humaine) ou capacites_cles/limites_connues (fiche IA) avant validation. Ne jamais publier tel quel sans relecture."
     },
     "score_fiabilite": 0.5,
-    "statut": "a_traiter_fiche_existante",
+    "statut": "ecarte_en_relecture",
     "created_at": "2026-09-05T20:15:01.181Z",
-    "note_tri": "Apporte une source Wikipédia non encore citée par la fiche fonds-mondial-sida-tuberculose-paludisme — à reformuler avant intégration, jamais à publier tel quel."
+    "note_tri": "Apporte une source Wikipédia non encore citée par la fiche fonds-mondial-sida-tuberculose-paludisme — à reformuler avant intégration, jamais à publier tel quel.",
+    "relu_le": "2026-09-07",
+    "patch_id": "patch-a083491f-3eea-4bae-af7b-3f4b9b7d3ec4",
+    "note_relecture": "Écarté. Le patch propose d'écraser une thèse centrale rédigée par un extrait d'encyclopédie brut : c'est exactement le défaut que les audits du 07/09 viennent de retirer du corpus. Aucun apport de source non plus — la fiche cible porte déjà une source Wikipédia, sur le même article ou sur un article mieux ciblé que celui proposé."
   },
   {
     "id": "10c994ff-e66c-4733-8ec0-d3c5be8e142a",
@@ -2909,9 +3022,12 @@
       "note": "Résumé Wikipédia brut — à reformuler en these_centrale/apport/limites_critiques (fiche humaine) ou capacites_cles/limites_connues (fiche IA) avant validation. Ne jamais publier tel quel sans relecture."
     },
     "score_fiabilite": 0.5,
-    "statut": "a_traiter_fiche_existante",
+    "statut": "ecarte_en_relecture",
     "created_at": "2026-09-05T20:15:02.898Z",
-    "note_tri": "Apporte une source Wikipédia non encore citée par la fiche fayolisme — à reformuler avant intégration, jamais à publier tel quel."
+    "note_tri": "Apporte une source Wikipédia non encore citée par la fiche fayolisme — à reformuler avant intégration, jamais à publier tel quel.",
+    "relu_le": "2026-09-07",
+    "patch_id": "patch-e03f5f0b-82b8-483e-bdf6-1d0a876f9bd8",
+    "note_relecture": "Écarté. Le patch propose d'écraser une thèse centrale rédigée par un extrait d'encyclopédie brut : c'est exactement le défaut que les audits du 07/09 viennent de retirer du corpus. Aucun apport de source non plus — la fiche cible porte déjà une source Wikipédia, sur le même article ou sur un article mieux ciblé que celui proposé."
   },
   {
     "id": "33061cf2-d301-42bb-b739-141bbce425b8",
@@ -2945,9 +3061,12 @@
       "note": "Résumé Wikipédia brut — à reformuler en these_centrale/apport/limites_critiques (fiche humaine) ou capacites_cles/limites_connues (fiche IA) avant validation. Ne jamais publier tel quel sans relecture."
     },
     "score_fiabilite": 0.5,
-    "statut": "a_traiter_fiche_existante",
+    "statut": "ecarte_en_relecture",
     "created_at": "2026-09-05T20:15:03.839Z",
-    "note_tri": "Apporte une source Wikipédia non encore citée par la fiche toyotisme-lean-management — à reformuler avant intégration, jamais à publier tel quel."
+    "note_tri": "Apporte une source Wikipédia non encore citée par la fiche toyotisme-lean-management — à reformuler avant intégration, jamais à publier tel quel.",
+    "relu_le": "2026-09-07",
+    "patch_id": "patch-82a39033-d20a-4f16-b595-efc81975e644",
+    "note_relecture": "Écarté. Le patch propose d'écraser une thèse centrale rédigée par un extrait d'encyclopédie brut : c'est exactement le défaut que les audits du 07/09 viennent de retirer du corpus. Aucun apport de source non plus — la fiche cible porte déjà une source Wikipédia, sur le même article ou sur un article mieux ciblé que celui proposé."
   },
   {
     "id": "160fb5f6-cb7a-4ecf-9aa3-2e5d955691b1",
@@ -2963,9 +3082,12 @@
       "note": "Résumé Wikipédia brut — à reformuler en these_centrale/apport/limites_critiques (fiche humaine) ou capacites_cles/limites_connues (fiche IA) avant validation. Ne jamais publier tel quel sans relecture."
     },
     "score_fiabilite": 0.5,
-    "statut": "a_traiter_fiche_existante",
+    "statut": "ecarte_en_relecture",
     "created_at": "2026-09-05T20:15:04.893Z",
-    "note_tri": "Apporte une source Wikipédia non encore citée par la fiche structure-matricielle — à reformuler avant intégration, jamais à publier tel quel."
+    "note_tri": "Apporte une source Wikipédia non encore citée par la fiche structure-matricielle — à reformuler avant intégration, jamais à publier tel quel.",
+    "relu_le": "2026-09-07",
+    "patch_id": "patch-160fb5f6-cb7a-4ecf-9aa3-2e5d955691b1",
+    "note_relecture": "Écarté. Le patch propose d'écraser une thèse centrale rédigée par un extrait d'encyclopédie brut : c'est exactement le défaut que les audits du 07/09 viennent de retirer du corpus. Aucun apport de source non plus — la fiche cible porte déjà une source Wikipédia, sur le même article ou sur un article mieux ciblé que celui proposé."
   },
   {
     "id": "9c13c92c-b2af-48ea-a2b3-8d2ff810f761",
@@ -2981,9 +3103,12 @@
       "note": "Résumé Wikipédia brut — à reformuler en these_centrale/apport/limites_critiques (fiche humaine) ou capacites_cles/limites_connues (fiche IA) avant validation. Ne jamais publier tel quel sans relecture."
     },
     "score_fiabilite": 0.5,
-    "statut": "a_traiter_fiche_existante",
+    "statut": "ecarte_en_relecture",
     "created_at": "2026-09-05T20:15:05.962Z",
-    "note_tri": "Apporte une source Wikipédia non encore citée par la fiche entreprise-liberee — à reformuler avant intégration, jamais à publier tel quel."
+    "note_tri": "Apporte une source Wikipédia non encore citée par la fiche entreprise-liberee — à reformuler avant intégration, jamais à publier tel quel.",
+    "relu_le": "2026-09-07",
+    "patch_id": "patch-9c13c92c-b2af-48ea-a2b3-8d2ff810f761",
+    "note_relecture": "Écarté. Le patch propose d'écraser une thèse centrale rédigée par un extrait d'encyclopédie brut : c'est exactement le défaut que les audits du 07/09 viennent de retirer du corpus. Aucun apport de source non plus — la fiche cible porte déjà une source Wikipédia, sur le même article ou sur un article mieux ciblé que celui proposé."
   },
   {
     "id": "dd6482d6-a642-43a5-8ca9-8d89ca2ea311",
@@ -2999,9 +3124,12 @@
       "note": "Résumé Wikipédia brut — à reformuler en these_centrale/apport/limites_critiques (fiche humaine) ou capacites_cles/limites_connues (fiche IA) avant validation. Ne jamais publier tel quel sans relecture."
     },
     "score_fiabilite": 0.5,
-    "statut": "a_traiter_fiche_existante",
+    "statut": "ecarte_en_relecture",
     "created_at": "2026-09-05T20:15:06.395Z",
-    "note_tri": "Apporte une source Wikipédia non encore citée par la fiche holacratie-sociocratie — à reformuler avant intégration, jamais à publier tel quel."
+    "note_tri": "Apporte une source Wikipédia non encore citée par la fiche holacratie-sociocratie — à reformuler avant intégration, jamais à publier tel quel.",
+    "relu_le": "2026-09-07",
+    "patch_id": "patch-dd6482d6-a642-43a5-8ca9-8d89ca2ea311",
+    "note_relecture": "Écarté. Le patch propose d'écraser une thèse centrale rédigée par un extrait d'encyclopédie brut : c'est exactement le défaut que les audits du 07/09 viennent de retirer du corpus. Aucun apport de source non plus — la fiche cible porte déjà une source Wikipédia, sur le même article ou sur un article mieux ciblé que celui proposé."
   },
   {
     "id": "c5447d64-e071-4984-9980-527ae94e37d5",
@@ -3017,9 +3145,12 @@
       "note": "Résumé Wikipédia brut — à reformuler en these_centrale/apport/limites_critiques (fiche humaine) ou capacites_cles/limites_connues (fiche IA) avant validation. Ne jamais publier tel quel sans relecture."
     },
     "score_fiabilite": 0.5,
-    "statut": "a_traiter_fiche_existante",
+    "statut": "ecarte_en_relecture",
     "created_at": "2026-09-05T20:15:06.823Z",
-    "note_tri": "Apporte une source Wikipédia non encore citée par la fiche agile-scrum — à reformuler avant intégration, jamais à publier tel quel."
+    "note_tri": "Apporte une source Wikipédia non encore citée par la fiche agile-scrum — à reformuler avant intégration, jamais à publier tel quel.",
+    "relu_le": "2026-09-07",
+    "patch_id": "patch-c5447d64-e071-4984-9980-527ae94e37d5",
+    "note_relecture": "Écarté. Le patch propose d'écraser une thèse centrale rédigée par un extrait d'encyclopédie brut : c'est exactement le défaut que les audits du 07/09 viennent de retirer du corpus. Aucun apport de source non plus — la fiche cible porte déjà une source Wikipédia, sur le même article ou sur un article mieux ciblé que celui proposé."
   },
   {
     "id": "728df825-9a34-4d66-a6a1-e2440325c73d",
@@ -3035,9 +3166,12 @@
       "note": "Résumé Wikipédia brut — à reformuler en these_centrale/apport/limites_critiques (fiche humaine) ou capacites_cles/limites_connues (fiche IA) avant validation. Ne jamais publier tel quel sans relecture."
     },
     "score_fiabilite": 0.5,
-    "statut": "a_traiter_fiche_existante",
+    "statut": "ecarte_en_relecture",
     "created_at": "2026-09-05T20:15:08.809Z",
-    "note_tri": "Apporte une source Wikipédia non encore citée par la fiche management-hybride-teletravail — à reformuler avant intégration, jamais à publier tel quel."
+    "note_tri": "Apporte une source Wikipédia non encore citée par la fiche management-hybride-teletravail — à reformuler avant intégration, jamais à publier tel quel.",
+    "relu_le": "2026-09-07",
+    "patch_id": "patch-728df825-9a34-4d66-a6a1-e2440325c73d",
+    "note_relecture": "Écarté. Le patch propose d'écraser une thèse centrale rédigée par un extrait d'encyclopédie brut : c'est exactement le défaut que les audits du 07/09 viennent de retirer du corpus. Aucun apport de source non plus — la fiche cible porte déjà une source Wikipédia, sur le même article ou sur un article mieux ciblé que celui proposé."
   },
   {
     "id": "e8870558-26ba-40c1-8863-6cb4707a8896",
@@ -3053,9 +3187,12 @@
       "note": "Résumé Wikipédia brut — à reformuler en these_centrale/apport/limites_critiques (fiche humaine) ou capacites_cles/limites_connues (fiche IA) avant validation. Ne jamais publier tel quel sans relecture."
     },
     "score_fiabilite": 0.5,
-    "statut": "a_traiter_fiche_existante",
+    "statut": "ecarte_en_relecture",
     "created_at": "2026-09-05T20:15:09.986Z",
-    "note_tri": "Apporte une source Wikipédia non encore citée par la fiche relativite-generale-et-restreinte — à reformuler avant intégration, jamais à publier tel quel."
+    "note_tri": "Apporte une source Wikipédia non encore citée par la fiche relativite-generale-et-restreinte — à reformuler avant intégration, jamais à publier tel quel.",
+    "relu_le": "2026-09-07",
+    "patch_id": "patch-e8870558-26ba-40c1-8863-6cb4707a8896",
+    "note_relecture": "Écarté. Le patch propose d'écraser une thèse centrale rédigée par un extrait d'encyclopédie brut : c'est exactement le défaut que les audits du 07/09 viennent de retirer du corpus. Aucun apport de source non plus — la fiche cible porte déjà une source Wikipédia, sur le même article ou sur un article mieux ciblé que celui proposé."
   },
   {
     "id": "5bb23340-00dc-4e2f-8357-ed9a8a9efb34",
@@ -3071,9 +3208,12 @@
       "note": "Résumé Wikipédia brut — à reformuler en these_centrale/apport/limites_critiques (fiche humaine) ou capacites_cles/limites_connues (fiche IA) avant validation. Ne jamais publier tel quel sans relecture."
     },
     "score_fiabilite": 0.5,
-    "statut": "a_traiter_fiche_existante",
+    "statut": "ecarte_en_relecture",
     "created_at": "2026-09-05T20:15:10.539Z",
-    "note_tri": "Apporte une source Wikipédia non encore citée par la fiche modele-standard-de-la-physique-des-particules — à reformuler avant intégration, jamais à publier tel quel."
+    "note_tri": "Apporte une source Wikipédia non encore citée par la fiche modele-standard-de-la-physique-des-particules — à reformuler avant intégration, jamais à publier tel quel.",
+    "relu_le": "2026-09-07",
+    "patch_id": "patch-5bb23340-00dc-4e2f-8357-ed9a8a9efb34",
+    "note_relecture": "Écarté. Le patch propose d'écraser une thèse centrale rédigée par un extrait d'encyclopédie brut : c'est exactement le défaut que les audits du 07/09 viennent de retirer du corpus. Aucun apport de source non plus — la fiche cible porte déjà une source Wikipédia, sur le même article ou sur un article mieux ciblé que celui proposé."
   },
   {
     "id": "eefc676f-a82d-4250-ba6f-bf8a64dd5cb4",
@@ -3089,9 +3229,12 @@
       "note": "Résumé Wikipédia brut — à reformuler en these_centrale/apport/limites_critiques (fiche humaine) ou capacites_cles/limites_connues (fiche IA) avant validation. Ne jamais publier tel quel sans relecture."
     },
     "score_fiabilite": 0.5,
-    "statut": "a_traiter_fiche_existante",
+    "statut": "ecarte_en_relecture",
     "created_at": "2026-09-05T20:15:11.044Z",
-    "note_tri": "Apporte une source Wikipédia non encore citée par la fiche double-helice-de-l-adn — à reformuler avant intégration, jamais à publier tel quel."
+    "note_tri": "Apporte une source Wikipédia non encore citée par la fiche double-helice-de-l-adn — à reformuler avant intégration, jamais à publier tel quel.",
+    "relu_le": "2026-09-07",
+    "patch_id": "patch-eefc676f-a82d-4250-ba6f-bf8a64dd5cb4",
+    "note_relecture": "Écarté. Le patch propose d'écraser une thèse centrale rédigée par un extrait d'encyclopédie brut : c'est exactement le défaut que les audits du 07/09 viennent de retirer du corpus. Aucun apport de source non plus — la fiche cible porte déjà une source Wikipédia, sur le même article ou sur un article mieux ciblé que celui proposé."
   },
   {
     "id": "52b2d253-f0c7-4dc7-bd9d-3de7cf3c52bb",
@@ -3215,9 +3358,12 @@
       "note": "Résumé Wikipédia brut — à reformuler en these_centrale/apport/limites_critiques (fiche humaine) ou capacites_cles/limites_connues (fiche IA) avant validation. Ne jamais publier tel quel sans relecture."
     },
     "score_fiabilite": 0.5,
-    "statut": "a_traiter_fiche_existante",
+    "statut": "ecarte_en_relecture",
     "created_at": "2026-09-05T20:15:14.813Z",
-    "note_tri": "Apporte une source Wikipédia non encore citée par la fiche reseaux-de-neurones-artificiels-deep-learning — à reformuler avant intégration, jamais à publier tel quel."
+    "note_tri": "Apporte une source Wikipédia non encore citée par la fiche reseaux-de-neurones-artificiels-deep-learning — à reformuler avant intégration, jamais à publier tel quel.",
+    "relu_le": "2026-09-07",
+    "patch_id": "patch-ec0d637d-d30d-427e-a568-7efafb1be357",
+    "note_relecture": "Écarté. Le patch propose d'écraser une thèse centrale rédigée par un extrait d'encyclopédie brut : c'est exactement le défaut que les audits du 07/09 viennent de retirer du corpus. Aucun apport de source non plus — la fiche cible porte déjà une source Wikipédia, sur le même article ou sur un article mieux ciblé que celui proposé."
   },
   {
     "id": "b3f88b87-723e-443b-bcbe-2f4f29df784a",
@@ -3285,9 +3431,12 @@
       "resume": "Accord du Sénégal avec le FMI: les défis de Dakar pour apurer sa dette sans plomber les budgets sociaux  rfi.fr"
     },
     "score_fiabilite": 0.9,
-    "statut": "a_traiter_fiche_existante",
+    "statut": "ecarte_en_relecture",
     "created_at": "2026-09-06T11:27:48.721Z",
-    "note_tri": "Analyse des défis de Dakar pour apurer sa dette sans réduire les budgets sociaux: angle substantiel sur la conditionnalité des prêts FMI, distinct de la simple annonce de l'accord."
+    "note_tri": "Analyse des défis de Dakar pour apurer sa dette sans réduire les budgets sociaux: angle substantiel sur la conditionnalité des prêts FMI, distinct de la simple annonce de l'accord.",
+    "relu_le": "2026-09-07",
+    "patch_id": "patch-5e8fb9e0-3c01-4a7c-bcfc-adb4864dc628",
+    "note_relecture": "Écarté. Url de redirection Google News non résolue vers l'éditeur d'origine, et sur le fond une actualité nationale ponctuelle : elle illustre un dossier en cours, elle ne documente pas la thèse, l'apport ou les limites d'une fiche de référence sur l'institution."
   },
   {
     "id": "054d6d36-9441-48b2-b2b0-457b5970ca5a",
