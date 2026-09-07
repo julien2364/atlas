@@ -1059,19 +1059,28 @@ function auditD() {
 // ===========================================================================
 
 function auditE() {
-  // Deux lectures du TRL d'une fiche IA :
-  //   - trlMax : le plus haut TRL déclaré, tous secteurs confondus ;
-  //   - trlMaxDeploiement : le plus haut TRL hors « recherche » et « science ».
-  // La seconde est la bonne mesure de maturité de déploiement (cf. D5) ; on rend
-  // les deux pour que la règle « confiance elevee ⇒ TRL ≥ 7 » soit vérifiable
-  // dans sa lecture littérale (bloquante) et dans sa lecture stricte (sérieuse).
-  const trlMax = new Map();
-  const trlMaxDeploiement = new Map();
+  // Un usage IA justifie une confiance « elevee » s'il porte soit un TRL ≥ 7,
+  // soit — depuis que le TRL est devenu facultatif (lib/types.ts, `Diffusion`) —
+  // une diffusion « etabli » ou « standard ». Le TRL n'a de référent que pour un
+  // système dont on peut nommer l'exploitant, le lieu et la date ; une méthode
+  // mûre (régression linéaire, forêts aléatoires, ACP…) n'en porte plus et
+  // s'exprime désormais par `diffusion` : l'absence de TRL n'est donc plus, en
+  // elle-même, un signe d'immaturité.
+  //
+  // Deux lectures de cette maturité, comme avant le changement de schéma :
+  //   - qualifiantMax : au moins un usage qualifiant, tous secteurs confondus ;
+  //   - qualifiantDeploiement : au moins un usage qualifiant hors « recherche »
+  //     et « science » (cf. D5 — le TRL n'y mesure pas l'adoption académique ;
+  //     la diffusion, elle, n'a pas cette réserve et compte dans les deux cas).
+  const estQualifiant = (u) =>
+    (typeof u.trl === "number" && u.trl >= 7) || u.diffusion === "etabli" || u.diffusion === "standard";
+  const qualifiantMax = new Map();
+  const qualifiantDeploiement = new Map();
   for (const f of IA) {
     const us = f.usages ?? [];
-    trlMax.set(f.id, us.length ? Math.max(...us.map((u) => u.trl ?? 0)) : null);
+    qualifiantMax.set(f.id, us.some(estQualifiant));
     const dep = us.filter((u) => !["recherche", "science"].includes(u.secteur));
-    trlMaxDeploiement.set(f.id, dep.length ? Math.max(...dep.map((u) => u.trl ?? 0)) : null);
+    qualifiantDeploiement.set(f.id, dep.some(estQualifiant));
   }
 
   const confianceExcessive = [];
@@ -1083,13 +1092,15 @@ function auditE() {
   const docsEtrangersAvecUrl = [];
 
   for (const g of GAPS) {
-    const tm = trlMax.get(g.fiche_ia_id) ?? null;
-    const td = trlMaxDeploiement.get(g.fiche_ia_id) ?? null;
-    if (g.confiance === "elevee" && tm !== null && tm < 7) {
-      confianceExcessive.push(`${g.id} · confiance « elevee » · TRL max de ${g.fiche_ia_id} = ${tm}`);
-    } else if (g.confiance === "elevee" && td !== null && td < 7) {
+    const qm = qualifiantMax.get(g.fiche_ia_id) ?? false;
+    const qd = qualifiantDeploiement.get(g.fiche_ia_id) ?? false;
+    if (g.confiance === "elevee" && !qm) {
+      confianceExcessive.push(
+        `${g.id} · confiance « elevee » · aucun usage de ${g.fiche_ia_id} n'atteint TRL 7 ni diffusion etabli/standard`
+      );
+    } else if (g.confiance === "elevee" && qm && !qd) {
       confianceExcessiveDeploiement.push(
-        `${g.id} · confiance « elevee » · ${g.fiche_ia_id} n'atteint ${tm} que sur recherche/science, TRL de déploiement = ${td}`
+        `${g.id} · confiance « elevee » · ${g.fiche_ia_id} n'est qualifiant que sur recherche/science, aucun usage de déploiement ne l'est`
       );
     }
     if (g.technologie_complementaire && g.substituabilite !== "remplacable_avec_autre_technologie") {
@@ -1135,7 +1146,7 @@ function auditE() {
     "E",
     "E1-confiance-elevee-sur-trl-faible",
     "bloquant",
-    "Gap en confiance « elevee » alors que la fiche IA mobilisée plafonne sous TRL 7 — règle explicite du projet",
+    "Gap en confiance « elevee » alors qu'aucun usage de la fiche IA mobilisée n'atteint TRL 7 ni diffusion « etabli »/« standard » — règle explicite du projet",
     confianceExcessive.map((l) => l.split(" · ")[0]),
     confianceExcessive,
     { total: confianceExcessive.length }
@@ -1144,7 +1155,7 @@ function auditE() {
     "E",
     "E1bis-confiance-elevee-sur-trl-de-deploiement-faible",
     "serieux",
-    "Gap en confiance « elevee » dont la fiche IA n'atteint 7 ou plus que sur un secteur « recherche » ou « science » — la maturité de déploiement reste sous 7",
+    "Gap en confiance « elevee » dont la fiche IA n'est qualifiante (TRL ≥ 7 ou diffusion etabli/standard) que sur un secteur « recherche » ou « science » — aucun usage de déploiement ne l'est",
     confianceExcessiveDeploiement.map((l) => l.split(" · ")[0]),
     confianceExcessiveDeploiement,
     { total: confianceExcessiveDeploiement.length }
