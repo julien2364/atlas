@@ -3320,5 +3320,419 @@
     "statut": "rejete",
     "created_at": "2026-09-06T11:27:49.126Z",
     "note_tri": "Déclinaison France (recommandations de compétitivité industrielle) du même cycle de publications OCDE que eb34736d-19c3-41a5-8104-ac029aea51bb, redondante."
+  },
+  {
+    "id": "032f6bfa-cfc2-492d-a3b0-13dc1455cdc0",
+    "source_id": "arxiv-cs-ai",
+    "cible_type": "nouvelle_categorie",
+    "cible_id": null,
+    "contenu_propose": {
+      "titre": "EXAONE Forecast for Finance",
+      "link": "https://arxiv.org/abs/2609.04239",
+      "date": "2026-09-07T04:00:00.000Z",
+      "resume": "arXiv:2609.04239v1 Announce Type: new \nAbstract: This technical report presents EXAONE Forecast for Finance (EXAONE Finance), a financial time series (TS) foundation model (TSFM) tailored to financial forecasting. Recent TSFMs achieve strong zero-shot performance through large-scale pretraining. However, they are primarily developed for general-domain TS and largely rely on self-attention backbone"
+    },
+    "score_fiabilite": 0.8,
+    "score_fiabilite_motif": "arxiv.org — préprint, actes de conférence ou institution publique",
+    "domaine_source": "arxiv.org",
+    "domaine_opaque": false,
+    "statut": "en_attente",
+    "created_at": "2026-09-07T13:11:12.898Z"
+  },
+  {
+    "id": "7572677e-d851-4b7c-888b-107f0492ac84",
+    "source_id": "arxiv-cs-ai",
+    "cible_type": "nouvelle_categorie",
+    "cible_id": null,
+    "contenu_propose": {
+      "titre": "From Matching Models to Recruiting Agents: A Systematized Narrative Review of AI Recruitment Systems, Evaluation, and Governance",
+      "link": "https://arxiv.org/abs/2609.04286",
+      "date": "2026-09-07T04:00:00.000Z",
+      "resume": "arXiv:2609.04286v1 Announce Type: new \nAbstract: Artificial intelligence in recruitment has shifted the object being automated from profile pairs and ranked lists to multi-stage workflows that retrieve evidence, compare candidates, and support or execute actions. This systematized narrative review traces that development from bilateral retrieval and behavioral ranking through neural person--job ma"
+    },
+    "score_fiabilite": 0.8,
+    "score_fiabilite_motif": "arxiv.org — préprint, actes de conférence ou institution publique",
+    "domaine_source": "arxiv.org",
+    "domaine_opaque": false,
+    "statut": "en_attente",
+    "created_at": "2026-09-07T13:11:12.898Z"
+  },
+  {
+    "id": "85d533e1-51ca-469b-b294-c78f8383e3fe",
+    "source_id": "arxiv-cs-ai",
+    "cible_type": "nouvelle_categorie",
+    "cible_id": null,
+    "contenu_propose": {
+      "titre": "Harbor Adapters and Harbor-Index: Infrastructure and a Curated Meta-Dataset for Large-Scale Agentic Evaluation",
+      "link": "https://arxiv.org/abs/2609.04298",
+      "date": "2026-09-07T04:00:00.000Z",
+      "resume": "arXiv:2609.04298v1 Announce Type: new \nAbstract: Evaluating agents on the growing number of agentic benchmarks is challenging because they often require complex environments and agent integrations. We introduce Harbor Adapters, a unified evaluation infrastructure for agentic benchmarks. Our work makes three contributions. First, we develop benchmark adapters that port more than 80 benchmarks to ev"
+    },
+    "score_fiabilite": 0.8,
+    "score_fiabilite_motif": "arxiv.org — préprint, actes de conférence ou institution publique",
+    "domaine_source": "arxiv.org",
+    "domaine_opaque": false,
+    "statut": "en_attente",
+    "created_at": "2026-09-07T13:11:12.898Z"
+  },
+  {
+    "id": "fa0a7526-157c-4f94-8a61-569f482a504a",
+    "source_id": "arxiv-cs-ai",
+    "cible_type": "nouvelle_categorie",
+    "cible_id": null,
+    "contenu_propose": {
+      "titre": "Data-Optimized Contingency Screening: A Machine Learning Approach to Power System Security",
+      "link": "https://arxiv.org/abs/2609.04300",
+      "date": "2026-09-07T04:00:00.000Z",
+      "resume": "arXiv:2609.04300v1 Announce Type: new \nAbstract: Ensuring the security of the power system is essential for stability and reliability, especially in the event of disruption. Effective classification of contingency in power systems enables proactive decision-making and mitigates large-scale breakdowns and failures. This study explores the use of machine learning algorithms to classify security leve"
+    },
+    "score_fiabilite": 0.8,
+    "score_fiabilite_motif": "arxiv.org — préprint, actes de conférence ou institution publique",
+    "domaine_source": "arxiv.org",
+    "domaine_opaque": false,
+    "statut": "en_attente",
+    "created_at": "2026-09-07T13:11:12.898Z"
+  },
+  {
+    "id": "520c970c-fd6b-4267-96b3-9ec9caa49d09",
+    "source_id": "arxiv-cs-ai",
+    "cible_type": "nouvelle_categorie",
+    "cible_id": null,
+    "contenu_propose": {
+      "titre": "Iris: Climbing to the Search Frontier",
+      "link": "https://arxiv.org/abs/2609.04304",
+      "date": "2026-09-07T04:00:00.000Z",
+      "resume": "arXiv:2609.04304v1 Announce Type: new \nAbstract: We present Iris-mini and Iris-pro, two search agents trained at the 35B-A3B and 397B-A17B scales, together with the data pipeline and training recipe behind them. Tasks are reverse-constructed from the hyperlink structure of a web corpus: we author multi-hop chains over an entity graph distilled from a seed page and its out-links, rewrite every non-"
+    },
+    "score_fiabilite": 0.8,
+    "score_fiabilite_motif": "arxiv.org — préprint, actes de conférence ou institution publique",
+    "domaine_source": "arxiv.org",
+    "domaine_opaque": false,
+    "statut": "en_attente",
+    "created_at": "2026-09-07T13:11:12.898Z"
+  },
+  {
+    "id": "9b8b705b-011b-4c96-aff8-aec454889998",
+    "source_id": "arxiv-cs-cl",
+    "cible_type": "nouvelle_categorie",
+    "cible_id": null,
+    "contenu_propose": {
+      "titre": "How Much Does Corpus Choice Change Dependency-Distance Estimates?",
+      "link": "https://arxiv.org/abs/2609.04223",
+      "date": "2026-09-07T04:00:00.000Z",
+      "resume": "arXiv:2609.04223v1 Announce Type: new \nAbstract: Dependency-distance estimates derived from a single corpus are routinely treated as properties of a language, yet this assumption has not been tested across independently compiled corpora. We compared mean dependency-distance estimates across 38 same-language treebank pairs from Universal Dependencies v2.18, using concordance correlation, Bland-Altm"
+    },
+    "score_fiabilite": 0.8,
+    "score_fiabilite_motif": "arxiv.org — préprint, actes de conférence ou institution publique",
+    "domaine_source": "arxiv.org",
+    "domaine_opaque": false,
+    "statut": "en_attente",
+    "created_at": "2026-09-07T13:11:13.010Z"
+  },
+  {
+    "id": "588b6f3b-49f7-42a5-8ebd-0d2e62112ccd",
+    "source_id": "arxiv-cs-cl",
+    "cible_type": "nouvelle_categorie",
+    "cible_id": null,
+    "contenu_propose": {
+      "titre": "Memory as transformation: LETHE, a self-referential gan-inspired architecture",
+      "link": "https://arxiv.org/abs/2609.04289",
+      "date": "2026-09-07T04:00:00.000Z",
+      "resume": "arXiv:2609.04289v1 Announce Type: new \nAbstract: LETHE (Latent-parameter Evolution with Temporal Hierarchical quasi-Equilibrium) is a self-referential sonic-oblivion system implemented in SuperCollider. It adopts the formal vocabulary of Generative Adversarial Networks in a closed configuration without external datasets or supervision after initialization. Audio is processed by a 3 x 3 mixing matr"
+    },
+    "score_fiabilite": 0.8,
+    "score_fiabilite_motif": "arxiv.org — préprint, actes de conférence ou institution publique",
+    "domaine_source": "arxiv.org",
+    "domaine_opaque": false,
+    "statut": "en_attente",
+    "created_at": "2026-09-07T13:11:13.010Z"
+  },
+  {
+    "id": "48efa067-fcef-46a1-af78-1f26073b333b",
+    "source_id": "arxiv-cs-cl",
+    "cible_type": "nouvelle_categorie",
+    "cible_id": null,
+    "contenu_propose": {
+      "titre": "Evidence Integration in Large Language Models",
+      "link": "https://arxiv.org/abs/2609.04290",
+      "date": "2026-09-07T04:00:00.000Z",
+      "resume": "arXiv:2609.04290v1 Announce Type: new \nAbstract: Despite increasing reliance on LLMs that reason with external evidence supplied by tools, retrieval-augmented generation, other agents, and users, how LLMs integrate such evidence into decisions they have already begun to form remains largely unclear. We present a distributional theory in which evidence shifts the receiver's distribution of initial "
+    },
+    "score_fiabilite": 0.8,
+    "score_fiabilite_motif": "arxiv.org — préprint, actes de conférence ou institution publique",
+    "domaine_source": "arxiv.org",
+    "domaine_opaque": false,
+    "statut": "en_attente",
+    "created_at": "2026-09-07T13:11:13.010Z"
+  },
+  {
+    "id": "a36097ad-625a-401a-a2f7-428b469d89d7",
+    "source_id": "arxiv-cs-cl",
+    "cible_type": "nouvelle_categorie",
+    "cible_id": null,
+    "contenu_propose": {
+      "titre": "MedProb: Probing Internal Representations of Vision-Language Models for Medical Question Answering",
+      "link": "https://arxiv.org/abs/2609.04336",
+      "date": "2026-09-07T04:00:00.000Z",
+      "resume": "arXiv:2609.04336v1 Announce Type: new \nAbstract: Medical visual question answering (Med-VQA) is often assumed to require medical fine-tuning, large models, or complex multi-agent pipelines. We revisit this assumption with \\textbf{MedProb}, a lightweight probing framework that predicts multiple-choice Med-VQA answers from frozen VLM representations without free-text generation. Across PATH-VQA, SLA"
+    },
+    "score_fiabilite": 0.8,
+    "score_fiabilite_motif": "arxiv.org — préprint, actes de conférence ou institution publique",
+    "domaine_source": "arxiv.org",
+    "domaine_opaque": false,
+    "statut": "en_attente",
+    "created_at": "2026-09-07T13:11:13.010Z"
+  },
+  {
+    "id": "b5190761-6ea8-492f-b3a6-8f7cda94fbb0",
+    "source_id": "arxiv-cs-cl",
+    "cible_type": "nouvelle_categorie",
+    "cible_id": null,
+    "contenu_propose": {
+      "titre": "Adapting from Downturns: Prediction of Long-Term Conversational-Skill Development in Mental-Health Crisis Counselors",
+      "link": "https://arxiv.org/abs/2609.04350",
+      "date": "2026-09-07T04:00:00.000Z",
+      "resume": "arXiv:2609.04350v1 Announce Type: new \nAbstract: How do people learn to become better conversationalists? This question is especially important in the context of mental-health counseling, where conversational skills are essential, yet volunteer counselors often have limited access to supervision and structured feedback. Understanding how counselors develop their ability to steer conversations towa"
+    },
+    "score_fiabilite": 0.8,
+    "score_fiabilite_motif": "arxiv.org — préprint, actes de conférence ou institution publique",
+    "domaine_source": "arxiv.org",
+    "domaine_opaque": false,
+    "statut": "en_attente",
+    "created_at": "2026-09-07T13:11:13.010Z"
+  },
+  {
+    "id": "2db39ffe-80d9-43ce-a627-572f938e90e9",
+    "source_id": "anthropic-news",
+    "cible_type": "nouvelle_categorie",
+    "cible_id": null,
+    "contenu_propose": {
+      "titre": "Anthropic déconnecte ses utilisateurs et efface leurs information ... - ZDNET",
+      "link": "https://news.google.com/rss/articles/CBMi_AFBVV95cUxPWjRIbG56TEdGQXZfeTl5Ym5rc3VVUEpvNmRkMUExZktzQXNyMjNOcDA0U09pODlfOXJwSk5CRU8wMnIycjZqd2xKU3JkUnZFUno5UHN1eGVPV0FNRm1QOENyU1ZiNGU4eEpocmUzMTA4eTJVZ0JQRWVETjRoT2NoVUhfWEtwYWFJa1hkSE14ZEhONzlXWFRLV3ZhZ1VSbldfUmF4ZVRnb3YzNFZhTjdzSm82Q1Z2TklDWDFHM0ZWN1NXbG9xN21tQ2hfWkVkQTdIVHM3WTJfaUN2ZmpGUVFTckx0TVVIbnJOdGd2STdxazdnbTAxWDJ3aUdDTHE?oc=5",
+      "date": "2026-09-07T07:47:22.000Z",
+      "resume": "Anthropic déconnecte ses utilisateurs et efface leurs information ...  ZDNET"
+    },
+    "score_fiabilite": 0.15,
+    "score_fiabilite_motif": "news.google.com est un redirecteur : l'url ne porte pas le domaine de l'éditeur réel, la fiabilité ne peut pas être établie sans ouvrir le lien",
+    "domaine_source": "news.google.com",
+    "domaine_opaque": true,
+    "statut": "en_attente",
+    "created_at": "2026-09-07T13:11:13.696Z"
+  },
+  {
+    "id": "338fca25-4119-4a72-b40e-877391b5dd84",
+    "source_id": "anthropic-news",
+    "cible_type": "nouvelle_categorie",
+    "cible_id": null,
+    "contenu_propose": {
+      "titre": "GPT-6 Astra arrive sur Pro, Enterprise et l'API, Anthropic réinitialise les limites de Claude - Pasquale Pillitteri",
+      "link": "https://news.google.com/rss/articles/CBMingFBVV95cUxQSkRZa2lzNGFpbWRaeGFxT0JBQ2h4cmx5LWU1OHpUTGstWHBzN2dVQXJmX1M5NnRVa3plLXBZVElqRmdTNXo1dVZQUkhxUWRyRFQwY1RDTVR4ZFF2WW80dDRSOE1rVDhSelNPTmFNTl9NTkVYWVJYeDNpSTRhWS1vb0ktWTJXSnZWN2R2UzEwNlFFa2Roa0xKYmN1RGtUZw?oc=5",
+      "date": "2026-09-05T04:42:22.000Z",
+      "resume": "GPT-6 Astra arrive sur Pro, Enterprise et l'API, Anthropic réinitialise les limites de Claude  Pasquale Pillitteri"
+    },
+    "score_fiabilite": 0.15,
+    "score_fiabilite_motif": "news.google.com est un redirecteur : l'url ne porte pas le domaine de l'éditeur réel, la fiabilité ne peut pas être établie sans ouvrir le lien",
+    "domaine_source": "news.google.com",
+    "domaine_opaque": true,
+    "statut": "en_attente",
+    "created_at": "2026-09-07T13:11:13.696Z"
+  },
+  {
+    "id": "084c1e20-69e3-4496-b2d8-fe708bff4a27",
+    "source_id": "anthropic-news",
+    "cible_type": "nouvelle_categorie",
+    "cible_id": null,
+    "contenu_propose": {
+      "titre": "IPO Anthropic : date, valorisation et perspectives - Cafédelabourse",
+      "link": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxONC1xVnFLZkwzUFBBQTRCajJIbjVhUlU4TzdtVnpqaWlVcjdGanRzYTZEMzF6V0k1bEFoenBEWGNoY29PdWtfbWpxMkF0Nk1ZdEprdS1Ba2h2cFVKanNCR3JrbWx2bzFNZEpRcWUtbUMydjV4bFhTc3FIYTFTd2pkcnFoVG04am50?oc=5",
+      "date": "2026-09-07T09:29:43.000Z",
+      "resume": "IPO Anthropic : date, valorisation et perspectives  Cafédelabourse"
+    },
+    "score_fiabilite": 0.15,
+    "score_fiabilite_motif": "news.google.com est un redirecteur : l'url ne porte pas le domaine de l'éditeur réel, la fiabilité ne peut pas être établie sans ouvrir le lien",
+    "domaine_source": "news.google.com",
+    "domaine_opaque": true,
+    "statut": "en_attente",
+    "created_at": "2026-09-07T13:11:13.696Z"
+  },
+  {
+    "id": "ae3f5465-6421-4324-9c52-9a1214ffd7f3",
+    "source_id": "openai-news",
+    "cible_type": "nouvelle_categorie",
+    "cible_id": null,
+    "contenu_propose": {
+      "titre": "Supporting independent journalism in Ukraine",
+      "link": "https://openai.com/index/supporting-independent-journalism-in-ukraine",
+      "date": "2026-09-07T00:00:00.000Z",
+      "resume": "OpenAI, AIRPPU and WAN-IFRA launch an AI program to help Ukrainian news organizations strengthen innovation, resilience, and independent journalism."
+    },
+    "score_fiabilite": 0.6,
+    "score_fiabilite_motif": "openai.com — éditeur ou laboratoire s'exprimant sur son propre produit",
+    "domaine_source": "openai.com",
+    "domaine_opaque": false,
+    "statut": "en_attente",
+    "created_at": "2026-09-07T13:11:14.005Z"
+  },
+  {
+    "id": "2c9ed14f-fc34-4c74-a464-0479648f8a8e",
+    "source_id": "openai-news",
+    "cible_type": "nouvelle_categorie",
+    "cible_id": null,
+    "contenu_propose": {
+      "titre": "An Alien Mind",
+      "link": "https://openai.com/index/an-alien-mind",
+      "date": "2026-09-06T09:00:00.000Z",
+      "resume": "Jakub Pachocki reflects on increasingly capable AI and the challenge of keeping it aligned. He calls for stronger safeguards and international coordination."
+    },
+    "score_fiabilite": 0.6,
+    "score_fiabilite_motif": "openai.com — éditeur ou laboratoire s'exprimant sur son propre produit",
+    "domaine_source": "openai.com",
+    "domaine_opaque": false,
+    "statut": "en_attente",
+    "created_at": "2026-09-07T13:11:14.005Z"
+  },
+  {
+    "id": "9df36f34-a8ae-4d9c-a4a4-5d7b923202ba",
+    "source_id": "openai-news",
+    "cible_type": "nouvelle_categorie",
+    "cible_id": null,
+    "contenu_propose": {
+      "titre": "Research acceleration: The view inside OpenAI",
+      "link": "https://openai.com/index/research-acceleration-view-inside-openai",
+      "date": "2026-09-06T08:00:00.000Z",
+      "resume": "Inside OpenAI, coding agents are reshaping AI research. Explore early data on agent usage, experiment velocity, task complexity, and research acceleration."
+    },
+    "score_fiabilite": 0.6,
+    "score_fiabilite_motif": "openai.com — éditeur ou laboratoire s'exprimant sur son propre produit",
+    "domaine_source": "openai.com",
+    "domaine_opaque": false,
+    "statut": "en_attente",
+    "created_at": "2026-09-07T13:11:14.005Z"
+  },
+  {
+    "id": "ab18d756-be17-49ff-a94a-ed4785277320",
+    "source_id": "nature-news",
+    "cible_type": "nouvelle_categorie",
+    "cible_id": null,
+    "contenu_propose": {
+      "titre": "Author Correction: AhR inhibition promotes axon regeneration via a stress–growth switch",
+      "link": "https://www.nature.com/articles/s41586-026-11103-4",
+      "date": "2026-09-07T00:00:00.000Z",
+      "resume": ""
+    },
+    "score_fiabilite": 0.9,
+    "score_fiabilite_motif": "nature.com — édition scientifique à comité de lecture",
+    "domaine_source": "nature.com",
+    "domaine_opaque": false,
+    "statut": "en_attente",
+    "created_at": "2026-09-07T13:11:14.208Z"
+  },
+  {
+    "id": "dce38d69-63ee-4b9f-a942-1a1321266d90",
+    "source_id": "nature-news",
+    "cible_type": "nouvelle_categorie",
+    "cible_id": null,
+    "contenu_propose": {
+      "titre": "Author Correction: A mouse brain stereotaxic topographic atlas with isotropic 1-μm resolution",
+      "link": "https://www.nature.com/articles/s41586-026-11094-2",
+      "date": "2026-09-07T00:00:00.000Z",
+      "resume": ""
+    },
+    "score_fiabilite": 0.9,
+    "score_fiabilite_motif": "nature.com — édition scientifique à comité de lecture",
+    "domaine_source": "nature.com",
+    "domaine_opaque": false,
+    "statut": "en_attente",
+    "created_at": "2026-09-07T13:11:14.208Z"
+  },
+  {
+    "id": "0c0294c3-54e4-40dc-b0a3-4001e5b0eb9b",
+    "source_id": "nature-news",
+    "cible_type": "nouvelle_categorie",
+    "cible_id": null,
+    "contenu_propose": {
+      "titre": "Probing the proteome at cellular scale",
+      "link": "https://www.nature.com/articles/d41586-026-02805-w",
+      "date": "2026-09-07T00:00:00.000Z",
+      "resume": ""
+    },
+    "score_fiabilite": 0.9,
+    "score_fiabilite_motif": "nature.com — édition scientifique à comité de lecture",
+    "domaine_source": "nature.com",
+    "domaine_opaque": false,
+    "statut": "en_attente",
+    "created_at": "2026-09-07T13:11:14.208Z"
+  },
+  {
+    "id": "def2dd16-2f21-4859-90cf-068281332de8",
+    "source_id": "nature-news",
+    "cible_type": "nouvelle_categorie",
+    "cible_id": null,
+    "contenu_propose": {
+      "titre": "The secret life of a cell-cycle gatekeeper of breast cancer",
+      "link": "https://www.nature.com/articles/d41586-026-02470-z",
+      "date": "2026-09-07T00:00:00.000Z",
+      "resume": ""
+    },
+    "score_fiabilite": 0.9,
+    "score_fiabilite_motif": "nature.com — édition scientifique à comité de lecture",
+    "domaine_source": "nature.com",
+    "domaine_opaque": false,
+    "statut": "en_attente",
+    "created_at": "2026-09-07T13:11:14.208Z"
+  },
+  {
+    "id": "9c40204a-6709-4d93-a4d8-d19c76966174",
+    "source_id": "nature-news",
+    "cible_type": "nouvelle_categorie",
+    "cible_id": null,
+    "contenu_propose": {
+      "titre": "Isaac Newton’s remarkable year — and the plagiarism accusations that followed",
+      "link": "https://www.nature.com/articles/d41586-026-02808-7",
+      "date": "2026-09-07T00:00:00.000Z",
+      "resume": ""
+    },
+    "score_fiabilite": 0.9,
+    "score_fiabilite_motif": "nature.com — édition scientifique à comité de lecture",
+    "domaine_source": "nature.com",
+    "domaine_opaque": false,
+    "statut": "en_attente",
+    "created_at": "2026-09-07T13:11:14.208Z"
+  },
+  {
+    "id": "b4709c45-db55-4566-9719-ef04b31a4005",
+    "source_id": "imf-news",
+    "cible_type": "nouvelle_categorie",
+    "cible_id": null,
+    "contenu_propose": {
+      "titre": "Nigeria : Le FMI salue le redressement économique mais alerte sur une pauvreté record de 63% - Sika Finance",
+      "link": "https://news.google.com/rss/articles/CBMiywFBVV95cUxQU2RrZUlaSURoRTdhRS1MTmRCb1FZdnFhbXBFVXZpbzRLZE9PbHoyRFBVMW43R2JZbW80Yy01M0ppamtFdVZYMzJjWnppUXM0dzBhTWtnZ2tNblRBMTRDYkN4djBMaUV3TGFNUkxIa1UtVm9KTUNHRnFFTE5FTHQzZjhaenlWSWtGWlRlVEFTdm11TjJrVHUxT1BZemRnbm9lZXBWcHQ2SkhoTklVb002SDFMYlFLei0xYXp5b2IxTUhtbDNLQ0ZhdU9FQQ?oc=5",
+      "date": "2026-09-06T19:13:47.000Z",
+      "resume": "Nigeria : Le FMI salue le redressement économique mais alerte sur une pauvreté record de 63%  Sika Finance"
+    },
+    "score_fiabilite": 0.15,
+    "score_fiabilite_motif": "news.google.com est un redirecteur : l'url ne porte pas le domaine de l'éditeur réel, la fiabilité ne peut pas être établie sans ouvrir le lien",
+    "domaine_source": "news.google.com",
+    "domaine_opaque": true,
+    "statut": "en_attente",
+    "created_at": "2026-09-07T13:11:14.772Z"
+  },
+  {
+    "id": "a7cd92a7-3cc2-4f65-8e73-82ad71646189",
+    "source_id": "oecd-news",
+    "cible_type": "nouvelle_categorie",
+    "cible_id": null,
+    "contenu_propose": {
+      "titre": "Le plan de l’OCDE pour redresser les comptes de la France : hausses d’impôts et réforme des retraites - Le Monde.fr",
+      "link": "https://news.google.com/rss/articles/CBMigAJBVV95cUxPSjF0cXIzVS1MbkROOU0xbjVHaDZQdWxUb2UzX2E2ZnV0aHZQMTFnWmFsOUsyUkgxeWk2dFkxMnI0bDNBYlF0UGJSTHdmWXlfRUczWUlVcFh6QXpKdE16RkZNd2dVd2VTYTVKTlhEcHpZU3FmQlNLT3hWQ2kwRmhPTXRjX1JubnhTcmZSd1cxdXdyM2pScFc1SUlaUTY5NHhoeTRzR1dKbDdhck40MnBYUFZqcENHUHpROG5pcFpRd1ZfUnV1SWpUdzhBLW9qN1lDU2p6SWhYaTVWTS1PSEVaWVh5b0E0SGdqd2g2QTZ4bkJQQm9xaUgtN2FYbWxMUnJx?oc=5",
+      "date": "2026-06-30T07:00:00.000Z",
+      "resume": "Le plan de l’OCDE pour redresser les comptes de la France : hausses d’impôts et réforme des retraites  Le Monde.fr"
+    },
+    "score_fiabilite": 0.15,
+    "score_fiabilite_motif": "news.google.com est un redirecteur : l'url ne porte pas le domaine de l'éditeur réel, la fiabilité ne peut pas être établie sans ouvrir le lien",
+    "domaine_source": "news.google.com",
+    "domaine_opaque": true,
+    "statut": "en_attente",
+    "created_at": "2026-09-07T13:11:15.226Z"
   }
 ]
