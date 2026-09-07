@@ -111,7 +111,7 @@
       "resume": ""
     },
     "score_fiabilite": 0.9,
-    "statut": "a_traiter_nouvelle_fiche",
+    "statut": "fiche_creee",
     "created_at": "2026-09-05T04:57:24.626Z",
     "note_tri": "Synchronisation d'horloges optiques ultra-précises entre quatre pays: avancée métrologique durable (redéfinition de la seconde, géodésie) absente du corpus des sciences.",
     "fiche_proposee": {
@@ -119,7 +119,10 @@
       "axe": "evolution",
       "nom": "Horloges optiques de précision",
       "type": "humaine"
-    }
+    },
+    "traite_le": "2026-09-07",
+    "fiche_creee_id": "horloges-optiques-de-precision",
+    "note_relecture": "Fiche créée le 07/09/2026 dans data/seed/fiches_humaines/evolution.json (axe evolution, sous_domaine sciences). La proposition ne fournissait qu'un Research Highlight de Nature : la publication qu'il commente a été retrouvée, ouverte et vérifiée (Pizzocaro et al., Physical Review Research 8, 033250, 01/09/2026) et sert de source primaire, complétée par la FAQ du BIPM sur la redéfinition de la seconde. Le Highlight reste en source secondaire."
   },
   {
     "id": "81239464-3276-4054-9535-39f3c1b1a961",
@@ -167,7 +170,7 @@
       "resume": ""
     },
     "score_fiabilite": 0.9,
-    "statut": "a_traiter_nouvelle_fiche",
+    "statut": "fiche_creee",
     "created_at": "2026-09-05T04:57:24.626Z",
     "note_tri": "Nécrologie d'une cristallographe lauréate du prix Nobel ayant élucidé la structure du ribosome, figure scientifique durable absente du corpus des sciences.",
     "fiche_proposee": {
@@ -175,7 +178,10 @@
       "axe": "evolution",
       "nom": "Ada Yonath",
       "type": "humaine"
-    }
+    },
+    "traite_le": "2026-09-07",
+    "fiche_creee_id": "ada-yonath",
+    "note_relecture": "Fiche créée le 07/09/2026 dans data/seed/fiches_humaines/evolution.json (axe evolution, sous_domaine sciences). La nécrologie de Nature proposée sert de source secondaire ; le communiqué du prix Nobel de chimie 2009 et l'annonce de l'Institut Weizmann, tous deux ouverts et vérifiés, fournissent les sources primaires et les dates."
   },
   {
     "id": "9c7ad8ef-7917-4c5d-acc5-83d88405c686",

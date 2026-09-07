@@ -1431,5 +1431,69 @@
     "statut": "documente",
     "derniere_verification": "2026-09-07",
     "resonance_ia": "Le Fermilab applique l'apprentissage automatique au traitement des immenses volumes de données produits par ses détecteurs de particules et ses expériences sur les neutrinos."
+  },
+  {
+    "id": "horloges-optiques-de-precision",
+    "axe": "evolution",
+    "sous_domaine": "sciences",
+    "nom": "Horloges optiques de précision",
+    "these_centrale": "Une horloge optique compte les oscillations d'une transition électronique du domaine optique, là où la définition actuelle de la seconde repose sur une transition micro-onde du césium. Le Bureau international des poids et mesures constate que plusieurs étalons de fréquence optique atteignent des incertitudes systématiques inférieures de deux ordres de grandeur à celles des horloges à fontaine de césium, au point que l'exactitude des mesures de fréquence est aujourd'hui limitée par la définition elle-même plutôt que par le niveau technologique. La question posée n'est donc plus de construire une horloge plus exacte, mais de démontrer que des horloges bâties séparément, dans des laboratoires nationaux distincts, s'accordent assez pour fonder une définition commune.",
+    "apport": "Une campagne de deux mois publiée le 1er septembre 2026 a comparé sept horloges optiques réparties dans quatre instituts nationaux de métrologie — l'INRIM italien, le LNE-OP français, le NPL britannique et la PTB allemande — à travers le réseau européen de fibres optiques, sans recourir à une liaison satellitaire. Les rapports de fréquence mesurés portent des incertitudes comprises entre 7,7 × 10⁻¹⁸ et 6,1 × 10⁻¹⁷ ; les deux horloges à ion ytterbium 171 du NPL et de la PTB, développées indépendamment l'une de l'autre, s'accordent à 7,7 × 10⁻¹⁸ près, ce que les auteurs présentent comme la première vérification internationale de deux horloges optiques indépendantes sous une partie pour 10¹⁷. Le BIPM fait de comparaisons de ce type, répétées et variées, une condition préalable à la redéfinition de la seconde, dont la proposition est portée devant la Conférence générale des poids et mesures en 2026 pour une ratification en 2030 au plus tôt.",
+    "limites_critiques": "Ce n'est plus la performance des horloges qui limite l'exercice, c'est leur comparaison à distance. Le BIPM relève que le transfert de temps par GNSS, sur lequel repose la diffusion actuelle du temps, n'est pas adapté à des horloges dix à cent fois plus exactes que les horloges micro-ondes, et que la solution retenue — les liaisons par fibre optique — n'a été démontrée qu'à l'échelle continentale, de l'ordre du millier de kilomètres. La campagne décrite ici est européenne, et rien dans ces sources n'établit qu'elle se transpose telle quelle à des comparaisons intercontinentales. Le BIPM pose par ailleurs huit critères obligatoires à la redéfinition, dont un gain immédiat d'exactitude d'un facteur 10 à 100, la continuité avec la définition fondée sur le césium et la disponibilité continue des étalons pour alimenter le TAI et l'UTC.",
+    "resonance_ia": "Aucune des sources de cette fiche ne fait intervenir l'apprentissage automatique : l'exactitude gagnée ici vient de la physique des étalons et de la qualité des liaisons entre laboratoires, pas du traitement statistique des données. Le lien avec l'IA est indirect et se situe au niveau de l'infrastructure — les systèmes distribués, y compris ceux qui entraînent et servent les grands modèles, dépendent d'une référence de temps commune, que ces travaux cherchent à rendre plus exacte et mieux disséminable.",
+    "sources": [
+      {
+        "titre": "Marco Pizzocaro et al., « International optical clock comparison using the European optical fiber network » (Physical Review Research, vol. 8, article 033250)",
+        "url": "https://journals.aps.org/prresearch/abstract/10.1103/l4bh-ryxs",
+        "date": "2026-09-01",
+        "type": "primaire"
+      },
+      {
+        "titre": "« Redefinition of the second — FAQ » (Bureau international des poids et mesures)",
+        "url": "https://www.bipm.org/en/faq-redefinition-second",
+        "date": "2026-09-07",
+        "type": "primaire"
+      },
+      {
+        "titre": "« Super-precise optical clocks in four nations tick in harmony » (Nature, Research Highlight)",
+        "url": "https://www.nature.com/articles/d41586-026-02741-9",
+        "date": "2026-09-04",
+        "type": "secondaire"
+      }
+    ],
+    "statut": "documente",
+    "derniere_verification": "2026-09-07"
+  },
+  {
+    "id": "ada-yonath",
+    "axe": "evolution",
+    "sous_domaine": "sciences",
+    "nom": "Ada Yonath",
+    "these_centrale": "Ada Yonath (Jérusalem, 1939 — 31 août 2026) a établi qu'on pouvait cristalliser le ribosome, assemblage de plusieurs centaines de milliers d'atomes, et en lire la structure aux rayons X — un objectif tenu pour hors d'atteinte quand elle s'y est attelée à la fin des années 1970. Pour y parvenir elle a introduit la cryo-biocristallographie, la congélation éclair des cristaux, qui limite les dommages causés au matériel biologique par l'exposition au faisceau. Ses premiers cristaux de ribosome sont obtenus en 1980, au terme de vingt-cinq mille tentatives.",
+    "apport": "En 2000 elle détermine les structures tridimensionnelles complètes des deux sous-unités du ribosome bactérien, puis établit dès 2001 comment des antibiotiques s'y fixent. L'Académie royale des sciences de Suède lui décerne le 7 octobre 2009 le prix Nobel de chimie « for studies of the structure and function of the ribosome », partagé à parts égales avec Venkatraman Ramakrishnan et Thomas A. Steitz ; le communiqué rappelle que beaucoup d'antibiotiques soignent en bloquant le ribosome bactérien, et que les modèles tridimensionnels produits par les lauréats servent directement à la mise au point de nouveaux traitements. Elle a mené ce travail au département de biologie chimique et structurale de l'Institut Weizmann des sciences, où elle avait fondé en 1970 le premier laboratoire de cristallographie biologique d'Israël, et a dirigé de 1986 à 2004 une unité de recherche de la société Max-Planck à Hambourg.",
+    "limites_critiques": "L'entreprise a été conduite deux décennies durant contre le scepticisme du milieu : la nécrologie de Nature rappelle qu'elle a essuyé des railleries généralisées avant d'aboutir, le ribosome étant dix fois plus volumineux que toute molécule dont la structure avait été résolue jusque-là. L'échelle de temps est le point dur de cette trajectoire — vingt-cinq mille essais avant les premiers cristaux de 1980, puis vingt années encore avant les structures complètes de 2000. La reconnaissance a suivi le même rythme : elle est la quatrième femme à recevoir le prix Nobel de chimie, et la première depuis Dorothy Crowfoot Hodgkin quarante-cinq ans plus tôt.",
+    "resonance_ia": "La structure du ribosome a été obtenue expérimentalement, cristal par cristal, sur une échelle de temps que la prédiction computationnelle de structures de protéines a depuis raccourcie pour d'autres molécules. Aucune des trois sources de cette fiche n'établit ce rapprochement : il est posé ici comme mise en relation, et il ne dit rien de la valeur d'une structure prédite face à une structure mesurée — les structures expérimentales de ce type restent la matière sur laquelle les modèles prédictifs sont entraînés puis évalués.",
+    "sources": [
+      {
+        "titre": "« The Nobel Prize in Chemistry 2009 » — communiqué de presse de l'Académie royale des sciences de Suède",
+        "url": "https://www.nobelprize.org/prizes/chemistry/2009/press-release/",
+        "date": "2009-10-07",
+        "type": "primaire"
+      },
+      {
+        "titre": "« Prof. Ada Yonath, Nobel Laureate and a Model of Scientific Perseverance, Has Passed Away » (Institut Weizmann des sciences)",
+        "url": "https://wis-wander.weizmann.ac.il/people/prof-ada-yonath-nobel-laureate-and-model-scientific-perseverance-has-passed-away",
+        "date": "2026-09-07",
+        "type": "primaire"
+      },
+      {
+        "titre": "Georgina Ferry, « Ada Yonath obituary: crystallographer who overcame “impossible” challenge of mapping the ribosome » (Nature)",
+        "url": "https://www.nature.com/articles/d41586-026-02801-0",
+        "date": "2026-09-04",
+        "type": "secondaire"
+      }
+    ],
+    "statut": "documente",
+    "derniere_verification": "2026-09-07"
   }
 ]
