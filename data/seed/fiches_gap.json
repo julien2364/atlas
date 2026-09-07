@@ -42,7 +42,7 @@
       },
       {
         "titre": "Anthropic — Claude Docs, référence développeur (platform.claude.com)",
-        "url": "https://docs.claude.com",
+        "url": "https://platform.claude.com/docs/fr/home",
         "date": "2026-09-07",
         "type": "primaire"
       }
@@ -167,7 +167,7 @@
       },
       {
         "titre": "Anthropic — Claude Docs, référence développeur (platform.claude.com)",
-        "url": "https://docs.claude.com",
+        "url": "https://platform.claude.com/docs/fr/home",
         "date": "2026-09-07",
         "type": "primaire"
       },
@@ -236,7 +236,7 @@
       },
       {
         "titre": "Anthropic — Claude Docs, référence développeur (platform.claude.com)",
-        "url": "https://docs.claude.com",
+        "url": "https://platform.claude.com/docs/fr/home",
         "date": "2026-09-07",
         "type": "primaire"
       }
@@ -298,7 +298,7 @@
       },
       {
         "titre": "Anthropic — Claude Docs, référence développeur (platform.claude.com)",
-        "url": "https://docs.claude.com",
+        "url": "https://platform.claude.com/docs/fr/home",
         "date": "2026-09-07",
         "type": "primaire"
       }
@@ -464,13 +464,13 @@
       },
       {
         "titre": "Anthropic — Claude Docs, référence développeur (platform.claude.com)",
-        "url": "https://docs.claude.com",
+        "url": "https://platform.claude.com/docs/fr/home",
         "date": "2026-09-07",
         "type": "primaire"
       },
       {
         "titre": "Claude — page produit (Anthropic)",
-        "url": "https://www.anthropic.com/claude",
+        "url": "https://claude.com/product/overview",
         "date": "2026-09-07",
         "type": "primaire"
       }
@@ -705,7 +705,7 @@
       },
       {
         "titre": "Anthropic — Claude Docs, référence développeur (platform.claude.com)",
-        "url": "https://docs.claude.com",
+        "url": "https://platform.claude.com/docs/fr/home",
         "date": "2026-09-07",
         "type": "primaire"
       }
@@ -1230,13 +1230,13 @@
       },
       {
         "titre": "Claude — page produit (Anthropic)",
-        "url": "https://www.anthropic.com/claude",
+        "url": "https://claude.com/product/overview",
         "date": "2026-09-07",
         "type": "primaire"
       },
       {
         "titre": "Anthropic — Claude for research use cases",
-        "url": "https://www.anthropic.com/customers",
+        "url": "https://claude.com/customers",
         "type": "primaire"
       }
     ],
@@ -1366,7 +1366,7 @@
       },
       {
         "titre": "Anthropic — Claude Docs, référence développeur (platform.claude.com)",
-        "url": "https://docs.claude.com",
+        "url": "https://platform.claude.com/docs/fr/home",
         "date": "2026-09-07",
         "type": "primaire"
       }
@@ -1911,13 +1911,13 @@
       },
       {
         "titre": "Claude — page produit (Anthropic)",
-        "url": "https://www.anthropic.com/claude",
+        "url": "https://claude.com/product/overview",
         "date": "2026-09-07",
         "type": "primaire"
       },
       {
         "titre": "Anthropic — Claude Docs, référence développeur (platform.claude.com)",
-        "url": "https://docs.claude.com",
+        "url": "https://platform.claude.com/docs/fr/home",
         "date": "2026-09-07",
         "type": "primaire"
       }
@@ -1969,7 +1969,8 @@
     "documents_cles": [
       {
         "titre": "Molecular Structure of Nucleic Acids (Watson & Crick, Nature, 1953)",
-        "type": "primaire"
+        "type": "primaire",
+        "url": "https://www.nature.com/articles/171737a0"
       },
       {
         "titre": "Jumper et al., « Highly accurate protein structure prediction with AlphaFold », Nature 596 (2021)",
@@ -2109,7 +2110,7 @@
       },
       {
         "titre": "EPFL — EPFL and DeepMind use AI to control plasmas for nuclear fusion",
-        "url": "https://actu.epfl.ch/news/epfl-and-deepmind-use-ai-to-control-plasmas-for-nu",
+        "url": "https://actu.epfl.ch/news/epfl-and-deepmind-use-ai-to-control-plasmas-for-nu/",
         "type": "primaire"
       }
     ],
@@ -2161,7 +2162,8 @@
     "documents_cles": [
       {
         "titre": "Electric Field Effect in Atomically Thin Carbon Films (Novoselov, Geim et al., Science, 2004)",
-        "type": "primaire"
+        "type": "primaire",
+        "url": "https://arxiv.org/abs/cond-mat/0410550"
       },
       {
         "titre": "Merchant et al., « Scaling deep learning for materials discovery », Nature 624 (2023)",
@@ -2666,7 +2668,7 @@
       },
       {
         "titre": "Régression logistique — Wikipédia",
-        "url": "https://fr.wikipedia.org/wiki/Régression_logistique",
+        "url": "https://fr.wikipedia.org/wiki/R%C3%A9gression_logistique",
         "date": "2026-09-07",
         "type": "secondaire"
       }
@@ -2724,13 +2726,13 @@
       },
       {
         "titre": "Anthropic — Claude Docs, référence développeur (platform.claude.com)",
-        "url": "https://docs.claude.com",
+        "url": "https://platform.claude.com/docs/fr/home",
         "date": "2026-09-07",
         "type": "primaire"
       },
       {
         "titre": "Claude — page produit (Anthropic)",
-        "url": "https://www.anthropic.com/claude",
+        "url": "https://claude.com/product/overview",
         "date": "2026-09-07",
         "type": "primaire"
       }
@@ -3517,13 +3519,13 @@
     "documents_cles": [
       {
         "titre": "Capitalisme de plateforme — Wikipédia",
-        "url": "https://fr.wikipedia.org/wiki/Capitalisme_de_plateforme",
+        "url": "https://en.wikipedia.org/wiki/Platform_capitalism",
         "type": "secondaire",
         "date": "2026-09-05"
       },
       {
         "titre": "Méthode des k plus proches voisins — Wikipédia",
-        "url": "https://fr.wikipedia.org/wiki/Méthode_des_k_plus_proches_voisins",
+        "url": "https://fr.wikipedia.org/wiki/M%C3%A9thode_des_k_plus_proches_voisins",
         "date": "2026-09-07",
         "type": "secondaire"
       }
@@ -3586,7 +3588,7 @@
       },
       {
         "titre": "Forêt d'arbres décisionnels — Wikipédia",
-        "url": "https://fr.wikipedia.org/wiki/Forêt_d'arbres_décisionnels",
+        "url": "https://fr.wikipedia.org/wiki/For%C3%AAt_d%27arbres_d%C3%A9cisionnels",
         "date": "2026-09-07",
         "type": "secondaire"
       }
@@ -3644,7 +3646,7 @@
       },
       {
         "titre": "Régression linéaire — Wikipédia",
-        "url": "https://fr.wikipedia.org/wiki/Régression_linéaire",
+        "url": "https://fr.wikipedia.org/wiki/R%C3%A9gression_lin%C3%A9aire",
         "date": "2026-09-07",
         "type": "secondaire"
       }
@@ -3946,7 +3948,7 @@
       },
       {
         "titre": "OpenAI Platform — Models overview",
-        "url": "https://platform.openai.com/docs/models",
+        "url": "https://developers.openai.com/api/docs/models",
         "date": "2026-09-07",
         "type": "primaire"
       }
@@ -4009,7 +4011,7 @@
       },
       {
         "titre": "Accelerating fusion science through learned plasma control (Google DeepMind)",
-        "url": "https://deepmind.google/discover/blog/accelerating-fusion-science-through-learned-plasma-control/",
+        "url": "https://deepmind.google/blog/accelerating-fusion-science-through-learned-plasma-control/",
         "date": "2026-09-07",
         "type": "primaire"
       }
@@ -4565,7 +4567,7 @@
       },
       {
         "titre": "Krizhevsky, Sutskever, Hinton — ImageNet Classification with Deep CNNs (2012)",
-        "url": "https://papers.nips.cc/paper/4824-imagenet-classification-with-deep-convolutional-neural-networks",
+        "url": "https://papers.nips.cc/paper_files/paper/2012/hash/c399862d3b9d6b76c8436e924a68c45b-Abstract.html",
         "type": "primaire"
       }
     ],
@@ -4806,7 +4808,7 @@
       },
       {
         "titre": "Régression logistique — Wikipédia",
-        "url": "https://fr.wikipedia.org/wiki/Régression_logistique",
+        "url": "https://fr.wikipedia.org/wiki/R%C3%A9gression_logistique",
         "date": "2026-09-07",
         "type": "secondaire"
       }
@@ -4988,7 +4990,7 @@
       },
       {
         "titre": "Arbre de décision (apprentissage) — Wikipédia",
-        "url": "https://fr.wikipedia.org/wiki/Arbre_de_décision_(apprentissage)",
+        "url": "https://fr.wikipedia.org/wiki/Arbre_de_d%C3%A9cision_(apprentissage)",
         "date": "2026-09-07",
         "type": "secondaire"
       }
@@ -5046,7 +5048,7 @@
       },
       {
         "titre": "Régression linéaire — Wikipédia",
-        "url": "https://fr.wikipedia.org/wiki/Régression_linéaire",
+        "url": "https://fr.wikipedia.org/wiki/R%C3%A9gression_lin%C3%A9aire",
         "date": "2026-09-07",
         "type": "secondaire"
       }
@@ -5231,7 +5233,7 @@
       },
       {
         "titre": "Anthropic — Claude Docs, référence développeur (platform.claude.com)",
-        "url": "https://docs.claude.com",
+        "url": "https://platform.claude.com/docs/fr/home",
         "date": "2026-09-07",
         "type": "primaire"
       },
@@ -5364,7 +5366,7 @@
       },
       {
         "titre": "Autoencodeur — Wikipédia",
-        "url": "https://fr.wikipedia.org/wiki/Autoencodeur",
+        "url": "https://fr.wikipedia.org/wiki/Auto-encodeur",
         "date": "2026-09-07",
         "type": "secondaire"
       }
@@ -5605,7 +5607,8 @@
     "documents_cles": [
       {
         "titre": "Attention Is All You Need (Vaswani et al., 2017)",
-        "type": "primaire"
+        "type": "primaire",
+        "url": "https://arxiv.org/abs/1706.03762"
       },
       {
         "titre": "Traitement automatique des langues — Wikipédia",
@@ -5677,7 +5680,7 @@
       },
       {
         "titre": "Forêt d'arbres décisionnels — Wikipédia",
-        "url": "https://fr.wikipedia.org/wiki/Forêt_d'arbres_décisionnels",
+        "url": "https://fr.wikipedia.org/wiki/For%C3%AAt_d%27arbres_d%C3%A9cisionnels",
         "date": "2026-09-07",
         "type": "secondaire"
       }
@@ -5791,7 +5794,8 @@
     "documents_cles": [
       {
         "titre": "A Safe Operating Space for Humanity (Rockström et al., Nature, 2009)",
-        "type": "primaire"
+        "type": "primaire",
+        "url": "https://doi.org/10.1038/461472a"
       },
       {
         "titre": "Science du système Terre — Wikipédia",
@@ -5987,13 +5991,13 @@
       },
       {
         "titre": "Anthropic — Claude Docs, référence développeur (platform.claude.com)",
-        "url": "https://docs.claude.com",
+        "url": "https://platform.claude.com/docs/fr/home",
         "date": "2026-09-07",
         "type": "primaire"
       },
       {
         "titre": "Claude — page produit (Anthropic)",
-        "url": "https://www.anthropic.com/claude",
+        "url": "https://claude.com/product/overview",
         "date": "2026-09-07",
         "type": "primaire"
       }
@@ -6045,7 +6049,8 @@
     "documents_cles": [
       {
         "titre": "Molecular Structure of Nucleic Acids (Watson & Crick, Nature, 1953)",
-        "type": "primaire"
+        "type": "primaire",
+        "url": "https://www.nature.com/articles/171737a0"
       },
       {
         "titre": "James Dewey Watson — Wikipédia",
@@ -7076,7 +7081,7 @@
       },
       {
         "titre": "Arbre de décision (apprentissage) — Wikipédia",
-        "url": "https://fr.wikipedia.org/wiki/Arbre_de_décision_(apprentissage)",
+        "url": "https://fr.wikipedia.org/wiki/Arbre_de_d%C3%A9cision_(apprentissage)",
         "date": "2026-09-07",
         "type": "secondaire"
       }
@@ -7386,13 +7391,13 @@
       },
       {
         "titre": "Anthropic — Claude Docs, référence développeur (platform.claude.com)",
-        "url": "https://docs.claude.com",
+        "url": "https://platform.claude.com/docs/fr/home",
         "date": "2026-09-07",
         "type": "primaire"
       },
       {
         "titre": "Claude — page produit (Anthropic)",
-        "url": "https://www.anthropic.com/claude",
+        "url": "https://claude.com/product/overview",
         "date": "2026-09-07",
         "type": "primaire"
       }
@@ -7895,7 +7900,7 @@
       },
       {
         "titre": "Régression logistique — Wikipédia",
-        "url": "https://fr.wikipedia.org/wiki/Régression_logistique",
+        "url": "https://fr.wikipedia.org/wiki/R%C3%A9gression_logistique",
         "date": "2026-09-07",
         "type": "secondaire"
       }
@@ -8082,13 +8087,13 @@
       },
       {
         "titre": "OpenAI Platform — référence d'API (platform.openai.com/docs)",
-        "url": "https://platform.openai.com/docs",
+        "url": "https://developers.openai.com/api/docs",
         "date": "2026-09-07",
         "type": "primaire"
       },
       {
         "titre": "OpenAI Platform — Models overview",
-        "url": "https://platform.openai.com/docs/models",
+        "url": "https://developers.openai.com/api/docs/models",
         "date": "2026-09-07",
         "type": "primaire"
       }
@@ -8388,7 +8393,7 @@
       },
       {
         "titre": "Autoencodeur — Wikipédia",
-        "url": "https://fr.wikipedia.org/wiki/Autoencodeur",
+        "url": "https://fr.wikipedia.org/wiki/Auto-encodeur",
         "date": "2026-09-07",
         "type": "secondaire"
       }
@@ -8504,7 +8509,7 @@
       },
       {
         "titre": "Régression linéaire — Wikipédia",
-        "url": "https://fr.wikipedia.org/wiki/Régression_linéaire",
+        "url": "https://fr.wikipedia.org/wiki/R%C3%A9gression_lin%C3%A9aire",
         "date": "2026-09-07",
         "type": "secondaire"
       }
@@ -9031,7 +9036,7 @@
       },
       {
         "titre": "Arbre de décision (apprentissage) — Wikipédia",
-        "url": "https://fr.wikipedia.org/wiki/Arbre_de_décision_(apprentissage)",
+        "url": "https://fr.wikipedia.org/wiki/Arbre_de_d%C3%A9cision_(apprentissage)",
         "date": "2026-09-07",
         "type": "secondaire"
       }
@@ -9206,7 +9211,7 @@
       },
       {
         "titre": "Forêt d'arbres décisionnels — Wikipédia",
-        "url": "https://fr.wikipedia.org/wiki/Forêt_d'arbres_décisionnels",
+        "url": "https://fr.wikipedia.org/wiki/For%C3%AAt_d%27arbres_d%C3%A9cisionnels",
         "date": "2026-09-07",
         "type": "secondaire"
       }
@@ -9686,7 +9691,7 @@
       },
       {
         "titre": "Arbre de décision (apprentissage) — Wikipédia",
-        "url": "https://fr.wikipedia.org/wiki/Arbre_de_décision_(apprentissage)",
+        "url": "https://fr.wikipedia.org/wiki/Arbre_de_d%C3%A9cision_(apprentissage)",
         "date": "2026-09-07",
         "type": "secondaire"
       }
@@ -9802,7 +9807,7 @@
       },
       {
         "titre": "Régression linéaire — Wikipédia",
-        "url": "https://fr.wikipedia.org/wiki/Régression_linéaire",
+        "url": "https://fr.wikipedia.org/wiki/R%C3%A9gression_lin%C3%A9aire",
         "date": "2026-09-07",
         "type": "secondaire"
       }
@@ -9860,13 +9865,13 @@
       },
       {
         "titre": "Anthropic — Claude Docs, référence développeur (platform.claude.com)",
-        "url": "https://docs.claude.com",
+        "url": "https://platform.claude.com/docs/fr/home",
         "date": "2026-09-07",
         "type": "primaire"
       },
       {
         "titre": "Claude — page produit (Anthropic)",
-        "url": "https://www.anthropic.com/claude",
+        "url": "https://claude.com/product/overview",
         "date": "2026-09-07",
         "type": "primaire"
       }
@@ -9924,7 +9929,7 @@
       },
       {
         "titre": "Modèle ARIMA — Wikipédia",
-        "url": "https://fr.wikipedia.org/wiki/Modèle_ARIMA",
+        "url": "https://fr.wikipedia.org/wiki/ARIMA",
         "date": "2026-09-07",
         "type": "secondaire"
       }
@@ -10396,7 +10401,7 @@
       },
       {
         "titre": "Autoencodeur — Wikipédia",
-        "url": "https://fr.wikipedia.org/wiki/Autoencodeur",
+        "url": "https://fr.wikipedia.org/wiki/Auto-encodeur",
         "date": "2026-09-07",
         "type": "secondaire"
       }
@@ -10510,7 +10515,7 @@
       },
       {
         "titre": "Arbre de décision (apprentissage) — Wikipédia",
-        "url": "https://fr.wikipedia.org/wiki/Arbre_de_décision_(apprentissage)",
+        "url": "https://fr.wikipedia.org/wiki/Arbre_de_d%C3%A9cision_(apprentissage)",
         "date": "2026-09-07",
         "type": "secondaire"
       }
@@ -10749,7 +10754,7 @@
       },
       {
         "titre": "Modèle ARIMA — Wikipédia",
-        "url": "https://fr.wikipedia.org/wiki/Modèle_ARIMA",
+        "url": "https://fr.wikipedia.org/wiki/ARIMA",
         "date": "2026-09-07",
         "type": "secondaire"
       }
@@ -10981,7 +10986,7 @@
       },
       {
         "titre": "Forêt d'arbres décisionnels — Wikipédia",
-        "url": "https://fr.wikipedia.org/wiki/Forêt_d'arbres_décisionnels",
+        "url": "https://fr.wikipedia.org/wiki/For%C3%AAt_d%27arbres_d%C3%A9cisionnels",
         "date": "2026-09-07",
         "type": "secondaire"
       }
@@ -11705,13 +11710,13 @@
       },
       {
         "titre": "Anthropic — Claude Docs, référence développeur (platform.claude.com)",
-        "url": "https://docs.claude.com",
+        "url": "https://platform.claude.com/docs/fr/home",
         "date": "2026-09-07",
         "type": "primaire"
       },
       {
         "titre": "Claude — page produit (Anthropic)",
-        "url": "https://www.anthropic.com/claude",
+        "url": "https://claude.com/product/overview",
         "date": "2026-09-07",
         "type": "primaire"
       }
@@ -11894,13 +11899,13 @@
       },
       {
         "titre": "OpenAI Platform — référence d'API (platform.openai.com/docs)",
-        "url": "https://platform.openai.com/docs",
+        "url": "https://developers.openai.com/api/docs",
         "date": "2026-09-07",
         "type": "primaire"
       },
       {
         "titre": "OpenAI Platform — Models overview",
-        "url": "https://platform.openai.com/docs/models",
+        "url": "https://developers.openai.com/api/docs/models",
         "date": "2026-09-07",
         "type": "primaire"
       }
@@ -12020,7 +12025,7 @@
       },
       {
         "titre": "Autoencodeur — Wikipédia",
-        "url": "https://fr.wikipedia.org/wiki/Autoencodeur",
+        "url": "https://fr.wikipedia.org/wiki/Auto-encodeur",
         "date": "2026-09-07",
         "type": "secondaire"
       }
@@ -12258,7 +12263,8 @@
     "documents_cles": [
       {
         "titre": "Rockström et al., 'A safe operating space for humanity', Nature 2009 (actualisé 2023)",
-        "type": "primaire"
+        "type": "primaire",
+        "url": "https://doi.org/10.1038/461472a"
       },
       {
         "titre": "Planetary Boundaries — The safe operating space for humanity (Stockholm Resilience Centre)",

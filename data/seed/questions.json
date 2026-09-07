@@ -7,7 +7,11 @@
       "Quels indicateurs retenir — PIB, bien-être (IDH), inégalité (Gini), soutenabilité écologique ?",
       "Les alternatives hétérodoxes (économie du donut, MMT, critique des plateformes) sont-elles des remplacements complets ou des correctifs partiels ?"
     ],
-    "axes_recherche": ["Économie comparée", "Indicateurs de bien-être vs. PIB", "Économie hétérodoxe (post-keynésianisme, MMT, décroissance)"],
+    "axes_recherche": [
+      "Économie comparée",
+      "Indicateurs de bien-être vs. PIB",
+      "Économie hétérodoxe (post-keynésianisme, MMT, décroissance)"
+    ],
     "perspectives": [
       {
         "modele": "Économie de marché régulée (social-démocratie nordique)",
@@ -16,7 +20,13 @@
         "reponse": "Optimal sur les critères de bien-être et d'équité, au prix d'une pression fiscale élevée et d'un contexte (petite taille, homogénéité relative) qui facilite le consensus social.",
         "justification": "Corrélation documentée sur plusieurs décennies entre dépense sociale élevée, faible inégalité (Gini) et indicateurs de bien-être dans ces pays.",
         "limites": "Réplicabilité incertaine à grande échelle (Chine, Inde, États-Unis) où l'hétérogénéité démographique et culturelle rend ce consensus plus difficile à reproduire.",
-        "sources": [{ "titre": "Social-démocratie", "url": "https://fr.wikipedia.org/wiki/Social-d%C3%A9mocratie", "type": "secondaire" }],
+        "sources": [
+          {
+            "titre": "Social-démocratie",
+            "url": "https://fr.wikipedia.org/wiki/Social-d%C3%A9mocratie",
+            "type": "secondaire"
+          }
+        ],
         "niveau_confiance": "opinion_majoritaire"
       },
       {
@@ -26,7 +36,13 @@
         "reponse": "Optimal sur le critère de croissance et de réduction de la pauvreté à grande échelle, au prix de libertés politiques restreintes et d'une soutenabilité de long terme débattue (dette des collectivités locales, démographie, gouvernance).",
         "justification": "Les chiffres de croissance et de réduction de pauvreté sont vérifiables et documentés par la Banque mondiale et l'ONU ; le jugement sur le « prix à payer » relève d'un arbitrage de valeurs, pas d'un fait.",
         "limites": "Transparence statistique limitée, ralentissement récent (immobilier, démographie vieillissante), difficilement généralisable sans un appareil d'État comparable.",
-        "sources": [{ "titre": "Économie de la Chine", "url": "https://fr.wikipedia.org/wiki/%C3%89conomie_de_la_Chine", "type": "secondaire" }],
+        "sources": [
+          {
+            "titre": "Économie de la Chine",
+            "url": "https://fr.wikipedia.org/wiki/%C3%89conomie_de_la_Chine",
+            "type": "secondaire"
+          }
+        ],
         "niveau_confiance": "opinion_majoritaire"
       },
       {
@@ -36,7 +52,13 @@
         "reponse": "Aucun de ces cadres ne prétend remplacer intégralement le capitalisme de marché ou le capitalisme d'État : ce sont des correctifs partiels, chacun répondant à un défaut spécifique (soutenabilité pour le donut, marge de manœuvre budgétaire pour la MMT, rente numérique pour la critique des plateformes).",
         "justification": "Absence de test à l'échelle d'une économie nationale complète sur un cycle économique long — leur généralisation reste une hypothèse, pas un résultat observé.",
         "limites": "Risque d'inflation non maîtrisée pour la MMT selon ses détracteurs (école autrichienne, monétaristes) ; le modèle du donut reste surtout appliqué au niveau municipal.",
-        "sources": [{ "titre": "Théorie du donut", "url": "https://fr.wikipedia.org/wiki/Th%C3%A9orie_du_donut", "type": "secondaire" }],
+        "sources": [
+          {
+            "titre": "Théorie du donut",
+            "url": "https://fr.wikipedia.org/wiki/Th%C3%A9orie_du_donut",
+            "type": "secondaire"
+          }
+        ],
         "niveau_confiance": "hypothese_prospective"
       }
     ]
@@ -48,7 +70,11 @@
       "La multipolarité géopolitique va-t-elle s'accompagner d'une remise en cause des institutions multilatérales historiques ?",
       "Les institutions type ONU/OMC/FMI peuvent-elles se réformer plus vite qu'elles ne perdent en légitimité ?"
     ],
-    "axes_recherche": ["Relations internationales (réalisme vs. institutionnalisme libéral)", "Trajectoires de PIB relatif (FMI, Banque mondiale)", "Gouvernance multi-niveaux"],
+    "axes_recherche": [
+      "Relations internationales (réalisme vs. institutionnalisme libéral)",
+      "Trajectoires de PIB relatif (FMI, Banque mondiale)",
+      "Gouvernance multi-niveaux"
+    ],
     "perspectives": [
       {
         "modele": "Multipolarité concurrente (école réaliste des relations internationales)",
@@ -57,7 +83,13 @@
         "reponse": "Un monde multipolaire avec plusieurs pôles de puissance (États-Unis, Chine, Union européenne, Inde...) coexistant sans hégémon unique est le scénario le plus cohérent avec les trajectoires actuelles.",
         "justification": "Extrapolation directe des trajectoires de PIB relatif documentées par le FMI et la Banque mondiale.",
         "limites": "Ne prédit pas si cette multipolarité sera coopérative ou conflictuelle — c'est une description structurelle, pas un pronostic de stabilité.",
-        "sources": [{ "titre": "BRICS+", "url": "https://fr.wikipedia.org/wiki/BRICS%2B", "type": "secondaire" }],
+        "sources": [
+          {
+            "titre": "BRICS+",
+            "url": "https://fr.wikipedia.org/wiki/BRICS%2B",
+            "type": "secondaire"
+          }
+        ],
         "niveau_confiance": "hypothese_prospective"
       },
       {
@@ -67,7 +99,13 @@
         "reponse": "Les institutions existantes se maintiennent et se réforment lentement par ajout de structures parallèles (G20, BRICS+, nouvelles banques de développement) plutôt que par remplacement.",
         "justification": "Le pattern historique observé depuis 1945 est l'accumulation d'institutions plutôt que leur substitution pure et simple.",
         "limites": "N'explique pas bien les cas de retrait unilatéral (sorties d'accords ou d'organisations), qui pourraient s'accélérer.",
-        "sources": [{ "titre": "Organisation des Nations unies", "url": "https://fr.wikipedia.org/wiki/Organisation_des_Nations_unies", "type": "secondaire" }],
+        "sources": [
+          {
+            "titre": "Organisation des Nations unies",
+            "url": "https://fr.wikipedia.org/wiki/Organisation_des_Nations_unies",
+            "type": "secondaire"
+          }
+        ],
         "niveau_confiance": "opinion_majoritaire"
       },
       {
@@ -77,7 +115,18 @@
         "reponse": "Ce référentiel ne tranche pas entre les deux scénarios ci-dessus — ils sont concurrents et également documentés ; leur poids relatif futur reste une question ouverte.",
         "justification": "Cf. principe de neutralité active (page /methodologie).",
         "limites": "Ne fournit pas de réponse opérationnelle à qui cherche une prédiction unique.",
-        "sources": [{ "titre": "BRICS+", "url": "https://fr.wikipedia.org/wiki/BRICS%2B", "type": "secondaire" }, { "titre": "Organisation des Nations unies", "url": "https://fr.wikipedia.org/wiki/Organisation_des_Nations_unies", "type": "secondaire" }],
+        "sources": [
+          {
+            "titre": "BRICS+",
+            "url": "https://fr.wikipedia.org/wiki/BRICS%2B",
+            "type": "secondaire"
+          },
+          {
+            "titre": "Organisation des Nations unies",
+            "url": "https://fr.wikipedia.org/wiki/Organisation_des_Nations_unies",
+            "type": "secondaire"
+          }
+        ],
         "niveau_confiance": "hypothese_prospective"
       }
     ]
@@ -89,7 +138,11 @@
       "Le capitalisme d'État chinois est-il une variante du capitalisme ou un système à part ?",
       "L'appareil critique marxiste survit-il à la disparition des économies communistes d'État ?"
     ],
-    "axes_recherche": ["Histoire économique comparée depuis 1945", "Théorie critique (École de Francfort et héritiers)", "Trajectoires post-1991"],
+    "axes_recherche": [
+      "Histoire économique comparée depuis 1945",
+      "Théorie critique (École de Francfort et héritiers)",
+      "Trajectoires post-1991"
+    ],
     "perspectives": [
       {
         "modele": "Capitalisme (marché libre à régulé)",
@@ -98,7 +151,13 @@
         "reponse": "Le capitalisme reste le cadre de référence mondial, mais il n'est pas monolithique : ses variantes internes divergent autant entre elles qu'avec d'autres systèmes sur les résultats sociaux.",
         "justification": "Écart documenté des indices de Gini et de dépense sociale entre économies capitalistes (ex. États-Unis vs. Danemark) malgré un cadre de propriété privée commun.",
         "limites": "N'explique pas seul les crises financières récurrentes (2008) ni la financiarisation croissante de l'économie.",
-        "sources": [{ "titre": "Capitalisme", "url": "https://fr.wikipedia.org/wiki/Capitalisme", "type": "secondaire" }],
+        "sources": [
+          {
+            "titre": "Capitalisme",
+            "url": "https://fr.wikipedia.org/wiki/Capitalisme",
+            "type": "secondaire"
+          }
+        ],
         "niveau_confiance": "consensus_scientifique"
       },
       {
@@ -108,7 +167,13 @@
         "reponse": "Le marxisme-léninisme a échoué comme système économique national à grande échelle, mais son appareil critique (analyse des rapports de production, de l'aliénation, de l'exploitation) reste actif en sciences sociales via la théorie critique contemporaine.",
         "justification": "Effondrement économique et politique documenté du bloc soviétique et de ses satellites entre 1989 et 1991 ; persistance académique visible (théorie critique, penseurs comme Honneth ou Negri).",
         "limites": "Le constat d'échec économique du système d'État ne réfute pas nécessairement chaque élément de l'analyse critique qui lui est associée — les deux plans (système économique vs. outil d'analyse) sont souvent confondus dans le débat public.",
-        "sources": [{ "titre": "Marxisme-léninisme", "url": "https://fr.wikipedia.org/wiki/Marxisme-l%C3%A9ninisme", "type": "secondaire" }],
+        "sources": [
+          {
+            "titre": "Marxisme-léninisme",
+            "url": "https://fr.wikipedia.org/wiki/Marxisme-l%C3%A9ninisme",
+            "type": "secondaire"
+          }
+        ],
         "niveau_confiance": "consensus_scientifique"
       },
       {
@@ -118,7 +183,13 @@
         "reponse": "Ni un capitalisme de marché classique ni un communisme d'État au sens soviétique : un système hybride original dont le bilan (croissance forte, libertés politiques restreintes) dépend entièrement des critères retenus pour l'évaluer.",
         "justification": "Coexistence documentée de mécanismes de marché (bourses, entreprises privées, concurrence) et de contrôle politique centralisé (planification quinquennale, entreprises d'État stratégiques).",
         "limites": "Manque de recul historique sur sa capacité à traverser une crise économique majeure sans réforme politique — contrairement au bloc soviétique, il n'a pas encore connu son « moment 1991 ».",
-        "sources": [{ "titre": "Économie de la Chine", "url": "https://fr.wikipedia.org/wiki/%C3%89conomie_de_la_Chine", "type": "secondaire" }],
+        "sources": [
+          {
+            "titre": "Économie de la Chine",
+            "url": "https://fr.wikipedia.org/wiki/%C3%89conomie_de_la_Chine",
+            "type": "secondaire"
+          }
+        ],
         "niveau_confiance": "opinion_majoritaire"
       }
     ]
@@ -130,7 +201,11 @@
       "Ces quatre théories du bien-vivre sont-elles concurrentes ou complémentaires ?",
       "Une théorie clinique empiriquement testée (TCC) peut-elle être comparée directement à des théories métaphysiques ?"
     ],
-    "axes_recherche": ["Éthique du bien-vivre (eudémonisme, rationalisme, vitalisme)", "Psychologie clinique fondée sur la preuve", "Référentiel humain — axe philosophique et psychologique"],
+    "axes_recherche": [
+      "Éthique du bien-vivre (eudémonisme, rationalisme, vitalisme)",
+      "Psychologie clinique fondée sur la preuve",
+      "Référentiel humain — axe philosophique et psychologique"
+    ],
     "perspectives": [
       {
         "modele": "Aristote (eudémonisme)",
@@ -139,7 +214,12 @@
         "reponse": "Le bien-vivre est une activité (praxis) répétée qui façonne le caractère, pas un état ou un plaisir ponctuel — la vertu s'apprend comme une compétence.",
         "justification": "Argumentation développée sur l'ensemble de l'Éthique à Nicomaque : la vertu comme disposition stable acquise par la pratique répétée d'actes vertueux.",
         "limites": "Suppose un contexte social (la cité grecque) et une conception figée des vertus qui a été critiquée comme culturellement située.",
-        "sources": [{ "titre": "Éthique à Nicomaque", "type": "primaire" }],
+        "sources": [
+          {
+            "titre": "Éthique à Nicomaque",
+            "type": "primaire"
+          }
+        ],
         "niveau_confiance": "consensus_scientifique"
       },
       {
@@ -149,7 +229,12 @@
         "reponse": "Le bien-vivre passe par la reconnaissance de sa propre ignorance (« je sais que je ne sais rien ») comme point de départ, non comme un aveu d'échec.",
         "justification": "Rapporté principalement par les dialogues de Platon (Apologie de Socrate, Ménon) : la méthode consiste à faire accoucher l'interlocuteur de ses propres contradictions.",
         "limites": "Socrate n'ayant rien écrit lui-même, sa pensée nous parvient filtrée par Platon et Xénophon — la part exacte de reconstruction platonicienne reste débattue par les historiens de la philosophie.",
-        "sources": [{ "titre": "Apologie de Socrate (Platon)", "type": "primaire" }],
+        "sources": [
+          {
+            "titre": "Apologie de Socrate (Platon)",
+            "type": "primaire"
+          }
+        ],
         "niveau_confiance": "consensus_scientifique"
       },
       {
@@ -159,7 +244,12 @@
         "reponse": "Le bien-vivre est la compréhension rationnelle croissante de sa propre place dans un ordre nécessaire (la Nature/Dieu), pas la maîtrise volontariste des passions par la seule volonté.",
         "justification": "Démonstration géométrique construite dans l'Éthique : la connaissance du troisième genre (intuition rationnelle) comme voie vers la « joie » stable.",
         "limites": "Déterminisme intégral difficile à concilier avec l'expérience ordinaire de la liberté de choix ; style géométrique très exigeant, peu accessible.",
-        "sources": [{ "titre": "Éthique (Spinoza)", "type": "primaire" }],
+        "sources": [
+          {
+            "titre": "Éthique (Spinoza)",
+            "type": "primaire"
+          }
+        ],
         "niveau_confiance": "consensus_scientifique"
       },
       {
@@ -169,7 +259,12 @@
         "reponse": "Le bien-vivre n'est pas la vertu stable (Aristote) ni la paix rationnelle (Spinoza) mais l'affirmation active de sa propre existence, y compris ses aspects tragiques (« devenir ce que l'on est »).",
         "justification": "Généalogie de la morale : la morale du ressentiment inverse les valeurs des forts et des faibles ; s'en affranchir est la condition de l'affirmation.",
         "limites": "Style aphoristique difficile à systématiser ; absence de programme éthique positif clair, historiquement instrumentalisé de façon déformée.",
-        "sources": [{ "titre": "Généalogie de la morale", "type": "primaire" }],
+        "sources": [
+          {
+            "titre": "Généalogie de la morale",
+            "type": "primaire"
+          }
+        ],
         "niveau_confiance": "consensus_scientifique"
       },
       {
@@ -179,7 +274,13 @@
         "reponse": "Le bien-être psychologique s'améliore en identifiant et corrigeant des distorsions cognitives spécifiques (généralisation excessive, pensée dichotomique...), indépendamment de toute théorie métaphysique du bien.",
         "justification": "Corpus d'essais cliniques randomisés et de méta-analyses en psychologie clinique, contrairement aux trois approches philosophiques ci-dessus qui reposent sur l'argumentation plutôt que la mesure.",
         "limites": "Répond à la souffrance psychologique diagnostiquée, pas à la question philosophique plus large du sens ou de la vie bonne ; comparaison directe avec Aristote/Spinoza/Nietzsche limitée par la différence de méthode (clinique testée vs. métaphysique argumentée).",
-        "sources": [{ "titre": "Thérapie cognitivo-comportementale", "url": "https://fr.wikipedia.org/wiki/Th%C3%A9rapie_cognitivo-comportementale", "type": "secondaire" }],
+        "sources": [
+          {
+            "titre": "Thérapie cognitivo-comportementale",
+            "url": "https://fr.wikipedia.org/wiki/Th%C3%A9rapie_cognitivo-comportementale",
+            "type": "secondaire"
+          }
+        ],
         "niveau_confiance": "consensus_scientifique"
       }
     ]
@@ -357,7 +458,8 @@
           },
           {
             "titre": "DeepSeek-V3 Technical Report",
-            "type": "primaire"
+            "type": "primaire",
+            "url": "https://arxiv.org/abs/2412.19437"
           },
           {
             "titre": "DeepSeek — Wikipedia (article en anglais)",
@@ -396,7 +498,7 @@
           },
           {
             "titre": "Régression logistique — Wikipédia",
-            "url": "https://fr.wikipedia.org/wiki/Régression_logistique",
+            "url": "https://fr.wikipedia.org/wiki/R%C3%A9gression_logistique",
             "type": "secondaire"
           }
         ],
@@ -438,7 +540,8 @@
           },
           {
             "titre": "Rockström et al., 'A safe operating space for humanity', Nature 2009 (actualisé 2023)",
-            "type": "primaire"
+            "type": "primaire",
+            "url": "https://doi.org/10.1038/461472a"
           },
           {
             "titre": "Planetary Boundaries — The safe operating space for humanity (Stockholm Resilience Centre)",
@@ -557,7 +660,7 @@
           },
           {
             "titre": "Arbre de décision (apprentissage) — Wikipédia",
-            "url": "https://fr.wikipedia.org/wiki/Arbre_de_décision_(apprentissage)",
+            "url": "https://fr.wikipedia.org/wiki/Arbre_de_d%C3%A9cision_(apprentissage)",
             "type": "secondaire"
           }
         ],
@@ -711,7 +814,8 @@
           },
           {
             "titre": "Jumper et al., 'Highly accurate protein structure prediction with AlphaFold', Nature 2021",
-            "type": "primaire"
+            "type": "primaire",
+            "url": "https://doi.org/10.1038/s41586-021-03819-2"
           },
           {
             "titre": "AlphaFold — Wikipédia (article en français)",
@@ -770,11 +874,12 @@
         "sources": [
           {
             "titre": "DeepMind — Magnetic control of tokamak plasmas (Nature, 2022)",
-            "type": "primaire"
+            "type": "primaire",
+            "url": "https://www.nature.com/articles/s41586-021-04301-9"
           },
           {
             "titre": "Accelerating fusion science through learned plasma control (Google DeepMind)",
-            "url": "https://deepmind.google/discover/blog/accelerating-fusion-science-through-learned-plasma-control/",
+            "url": "https://deepmind.google/blog/accelerating-fusion-science-through-learned-plasma-control/",
             "date": "2022-02-16",
             "type": "primaire"
           },
@@ -800,7 +905,7 @@
         "sources": [
           {
             "titre": "Forêt d'arbres décisionnels — Wikipédia",
-            "url": "https://fr.wikipedia.org/wiki/Forêt_d'arbres_décisionnels",
+            "url": "https://fr.wikipedia.org/wiki/For%C3%AAt_d%27arbres_d%C3%A9cisionnels",
             "type": "secondaire"
           },
           {
@@ -953,7 +1058,8 @@
         "sources": [
           {
             "titre": "Rockström et al., 'A safe operating space for humanity', Nature 2009 (actualisé 2023)",
-            "type": "primaire"
+            "type": "primaire",
+            "url": "https://doi.org/10.1038/461472a"
           },
           {
             "titre": "Planetary Boundaries — The safe operating space for humanity (Stockholm Resilience Centre)",
