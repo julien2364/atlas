@@ -354,7 +354,7 @@ export default function CartographieClient({
                   <th
                     key={f.id}
                     scope="col"
-                    className="sticky top-0 z-10 h-28 w-9 min-w-9 bg-white p-0 align-bottom font-normal text-neutral-500 dark:bg-neutral-950"
+                    className="sticky top-0 z-10 h-28 w-9 min-w-[2.25rem] bg-white p-0 align-bottom font-normal text-neutral-500 dark:bg-neutral-950"
                   >
                     {/* Écriture verticale plutôt qu'une rotation : le texte
                         reste dans sa cellule quelle que soit sa longueur, donc
