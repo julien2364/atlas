@@ -124,8 +124,18 @@ const SORTIE = path.resolve(
   argTexte("sortie", path.join("data", "patchs", `patchs-veille-${AUJOURDHUI}.json`))
 );
 
-// Au-delà de ce score, la source est considérée comme primaire (labs officiels,
-// arXiv, Nature…) — c'est le barème posé par scripts/veille-rss.mjs (0.9 vs 0.6).
+// Au-delà de ce score, la source proposée est classée `primaire` dans le patch.
+//
+// Le seuil est calé sur le barème de scripts/veille-rss.mjs, refait le 07/09/2026 :
+// le score n'y est plus déduit du nom du flux mais du DOMAINE de l'url de la
+// proposition. 0,8 est exactement la frontière de ce barème — atteignent ce niveau
+// l'édition scientifique à comité de lecture (0,9), les archives de préprint et les
+// institutions publiques (0,8) ; restent en dessous les communications d'éditeur sur
+// leur propre produit (0,6), les encyclopédies (0,5), la presse (0,4, qui est aussi
+// le défaut prudent d'un domaine inconnu) et les redirecteurs opaques (0,15).
+//
+// Conséquence voulue : plus aucune reprise de presse ni communiqué commercial ne
+// devient une source primaire du référentiel sans décision humaine explicite.
 const SEUIL_SOURCE_PRIMAIRE = 0.8;
 
 // Longueur d'extrait de l'existant recopiée dans le patch : assez pour que le
