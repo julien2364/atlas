@@ -3,17 +3,19 @@
     "id": "arxiv-cs-ai",
     "nom": "arXiv — cs.AI",
     "type": "rss",
-    "url": "http://export.arxiv.org/rss/cs.AI",
+    "url": "https://export.arxiv.org/rss/cs.AI",
     "domaine": "IA",
-    "actif": true
+    "actif": true,
+    "note": "URL passée de http:// à https:// le 07/09/2026. L'ancienne URL en clair fonctionne encore chez arXiv, mais elle échoue derrière tout proxy qui n'accepte que le CONNECT HTTPS (403 constaté en session) : la version chiffrée est jointe partout où l'ancienne l'était, l'inverse n'est pas vrai. Flux vérifié le 07/09/2026 : 298 items, le plus récent du jour même, liens sur arxiv.org (palier préprint, 0,80)."
   },
   {
     "id": "arxiv-cs-cl",
     "nom": "arXiv — cs.CL (NLP)",
     "type": "rss",
-    "url": "http://export.arxiv.org/rss/cs.CL",
+    "url": "https://export.arxiv.org/rss/cs.CL",
     "domaine": "IA",
-    "actif": true
+    "actif": true,
+    "note": "URL passée de http:// à https:// le 07/09/2026. L'ancienne URL en clair fonctionne encore chez arXiv, mais elle échoue derrière tout proxy qui n'accepte que le CONNECT HTTPS (403 constaté en session) : la version chiffrée est jointe partout où l'ancienne l'était, l'inverse n'est pas vrai. Flux vérifié le 07/09/2026 : 298 items, le plus récent du jour même, liens sur arxiv.org (palier préprint, 0,80)."
   },
   {
     "id": "anthropic-news",
@@ -47,7 +49,7 @@
     "url": "https://news.google.com/rss/search?q=FMI+OR+IMF+economie&hl=fr&gl=FR&ceid=FR:fr",
     "domaine": "economie",
     "actif": true,
-    "note": "403 confirmé le 05/09/2026 sur le flux officiel, même avec User-Agent navigateur (pare-feu applicatif du FMI, indépendant du User-Agent). Repli Google News testé et fonctionnel le 05/09/2026."
+    "note": "403 confirmé le 05/09/2026 sur le flux officiel, même avec User-Agent navigateur (pare-feu applicatif du FMI, indépendant du User-Agent). Repli Google News testé et fonctionnel le 05/09/2026. Nouveau test le 07/09/2026 sur imf.org/en/Blogs/rss, imf.org/en/News/rss et imf.org/external/rss/feeds.aspx : toujours 403. Le repli reste en place, mais il produit des propositions à 0,15 (redirecteur opaque) : la couverture institutionnelle réelle est désormais assurée par la BCE, la BRI, la Fed, la Banque d'Angleterre et la Commission européenne."
   },
   {
     "id": "oecd-news",
@@ -56,13 +58,176 @@
     "url": "https://news.google.com/rss/search?q=OCDE+OR+OECD+economie&hl=fr&gl=FR&ceid=FR:fr",
     "domaine": "economie",
     "actif": true,
-    "note": "403 confirmé le 05/09/2026 sur le flux officiel, même cause probable que le FMI. Repli Google News testé et fonctionnel le 05/09/2026."
+    "note": "403 confirmé le 05/09/2026 sur le flux officiel, même cause probable que le FMI. Repli Google News testé et fonctionnel le 05/09/2026. Nouveau test le 07/09/2026 sur oecd.org/en/rss.xml : toujours 403. Même remarque que pour le FMI sur le score de 0,15."
   },
   {
     "id": "spiderfoot-osint",
     "nom": "Spiderfoot — collecte OSINT structurée (labs IA, organisations, publications)",
     "type": "spiderfoot",
     "domaine": "transverse",
-    "actif": true
+    "actif": false,
+    "note": "Désactivée le 07/09/2026. Le second canal de collecte prévu par le mégaprompt v1.1 (§7.1) n'est implémenté par aucun script du dépôt : aucun fichier de scripts/ ne lit le type \"spiderfoot\", et scripts/veille-rss.mjs filtre sur type === \"rss\", donc l'entrée était déclarée active tout en ne collectant rien. Le validateur ne l'interdit pas (l'erreur \"source active sans url\" ne vise que le type rss), mais laisser actif: true faisait compter cette source dans le \"N/M actives\" de l'accueil et de /veille — un chiffre qui affirmait une collecte inexistante. L'entrée est conservée, désactivée, pour garder la trace de la décision de canal ; à réactiver le jour où un collecteur Spiderfoot est écrit, en lui ajoutant l'URL de l'instance."
+  },
+  {
+    "id": "bce-communiques",
+    "nom": "BCE — communiqués et discours",
+    "type": "rss",
+    "url": "https://www.ecb.europa.eu/rss/press.html",
+    "domaine": "economie",
+    "actif": true,
+    "note": "Vérifié le 07/09/2026 : 15 items, le plus récent du 04/09/2026, liens sur ecb.europa.eu. Domaine couvert par europa.eu dans la table de scripts/veille-rss.mjs, donc palier institution publique (0,80) : c'est l'une des rares sources ajoutées qui atteint le seuil de source primaire sans décision humaine. Le flux publications (ecb.europa.eu/rss/pub.html) a été testé le même jour et écarté : XML mal formé (entité non close), rss-parser échoue."
+  },
+  {
+    "id": "commission-europeenne-presse",
+    "nom": "Commission européenne — communiqués de presse (FR)",
+    "type": "rss",
+    "url": "https://ec.europa.eu/commission/presscorner/api/rss?language=fr&pagesize=20",
+    "domaine": "economie",
+    "actif": true,
+    "note": "Vérifié le 07/09/2026 : 20 items, le plus récent du jour même, liens sur ec.europa.eu — palier institution publique (0,80). Version francophone de l'API du Press corner ; le paramètre language=en donne le même flux en anglais si besoin."
+  },
+  {
+    "id": "bri-communiques",
+    "nom": "BRI — communiqués et publications",
+    "type": "rss",
+    "url": "https://www.bis.org/doclist/all_pressrels.rss",
+    "domaine": "economie",
+    "actif": true,
+    "note": "Vérifié le 07/09/2026 : 10 items, le plus récent du 28/06/2026. Cadence faible et assumée (rapport trimestriel, statistiques bancaires internationales) : ce flux apporte peu de volume mais de la donnée chiffrée consolidée. bis.org n'est pas dans la table de domaines de scripts/veille-rss.mjs et tombe donc au défaut prudent de 0,40 — à faire remonter au palier institution le jour où la table sera étendue."
+  },
+  {
+    "id": "bri-discours-banques-centrales",
+    "nom": "BRI — discours des banquiers centraux",
+    "type": "rss",
+    "url": "https://www.bis.org/doclist/cbspeeches.rss",
+    "domaine": "economie",
+    "actif": true,
+    "note": "Vérifié le 07/09/2026 : 50 items, le plus récent du 01/09/2026. Agrégation par la BRI des discours de toutes les banques centrales membres — la source la plus dense pour suivre la doctrine monétaire au-delà de la seule zone euro. Même remarque que pour bri-communiques : bis.org score 0,40 par défaut."
+  },
+  {
+    "id": "fed-communiques",
+    "nom": "Réserve fédérale américaine — communiqués",
+    "type": "rss",
+    "url": "https://www.federalreserve.gov/feeds/press_all.xml",
+    "domaine": "economie",
+    "actif": true,
+    "note": "Vérifié le 07/09/2026 : 20 items, le plus récent du 04/09/2026, liens sur federalreserve.gov. Domaine absent de la table de scripts/veille-rss.mjs : score par défaut 0,40 alors qu'il s'agit d'une institution publique — candidat évident à l'extension de la table (palier 0,80), au même titre que bis.org, bankofengland.co.uk et bankofcanada.ca."
+  },
+  {
+    "id": "banque-angleterre-actualites",
+    "nom": "Banque d'Angleterre — actualités",
+    "type": "rss",
+    "url": "https://www.bankofengland.co.uk/rss/news",
+    "domaine": "economie",
+    "actif": true,
+    "note": "Vérifié le 07/09/2026 : 50 items, le plus récent du 27/08/2026, liens sur bankofengland.co.uk. Score par défaut 0,40 (domaine absent de la table)."
+  },
+  {
+    "id": "banque-canada-communiques",
+    "nom": "Banque du Canada — communiqués",
+    "type": "rss",
+    "url": "https://www.bankofcanada.ca/content_type/press-releases/feed/",
+    "domaine": "economie",
+    "actif": true,
+    "note": "Vérifié le 07/09/2026 : 10 items, le plus récent du 03/09/2026, liens sur bankofcanada.ca. Retenue pour sortir du couple BCE/Fed : une petite économie ouverte, et une banque centrale qui publie beaucoup en français. Score par défaut 0,40."
+  },
+  {
+    "id": "nber-documents-travail",
+    "nom": "NBER — nouveaux documents de travail",
+    "type": "rss",
+    "url": "https://back.nber.org/rss/new.xml",
+    "domaine": "economie",
+    "actif": true,
+    "note": "Vérifié le 07/09/2026 : 34 items, liens sur nber.org. Attention, les items ne portent AUCUNE date : le champ `date` des propositions sera null, il faudra dater à la revue en ouvrant le lien. Conservé malgré ce défaut parce que c'est la principale source de recherche économique quantitative en libre accès — notamment sur l'effet de l'IA sur l'emploi et la productivité. Score par défaut 0,40 (nber.org absent de la table, alors que le contenu est de nature préprint)."
+  },
+  {
+    "id": "bruegel-publications",
+    "nom": "Bruegel — publications et analyses",
+    "type": "rss",
+    "url": "https://www.bruegel.org/rss.xml",
+    "domaine": "economie",
+    "actif": true,
+    "note": "Vérifié le 07/09/2026 : 10 items, le plus récent du 19/08/2026. Institut de recherche économique bruxellois, financé par des États membres et des entreprises — financement public, gouvernance et méthodes publiées. Réserve à garder à l'esprit à la revue : c'est un think tank, pas une institution neutre. Score par défaut 0,40, ce qui est cohérent avec cette réserve. Les liens sont de la forme bruegel.org/node/NNNNN, peu parlants mais bien sur le domaine de l'éditeur."
+  },
+  {
+    "id": "france-strategie",
+    "nom": "France Stratégie / Haut-commissariat à la stratégie et au plan",
+    "type": "rss",
+    "url": "https://www.strategie.gouv.fr/rss.xml",
+    "domaine": "economie",
+    "actif": true,
+    "note": "Vérifié le 07/09/2026 : 10 items, le plus récent du 03/09/2026. Le flux est servi depuis strategie.gouv.fr mais ses liens pointent vers strategie-plan.gouv.fr (renommage de l'organisme) : score par défaut 0,40, comme tout domaine absent de la table. Seule source francophone d'analyse économique publique retenue — la Banque de France et l'INSEE ont été testées et écartées le même jour (voir docs/sources-veille-2026-09-07.md)."
+  },
+  {
+    "id": "ft-marches",
+    "nom": "Financial Times — Marchés",
+    "type": "rss",
+    "url": "https://www.ft.com/markets?format=rss",
+    "domaine": "marches",
+    "actif": true,
+    "note": "Vérifié le 07/09/2026 : 25 items, le plus récent du jour même, liens sur ft.com — palier presse (0,40). Accès aux articles souvent payant : la proposition sert de signal daté, la vérification du chiffre devra se faire sur la source primaire citée."
+  },
+  {
+    "id": "wsj-marches",
+    "nom": "Wall Street Journal — Marchés",
+    "type": "rss",
+    "url": "https://feeds.content.dowjones.io/public/rss/RSSMarketsMain",
+    "domaine": "marches",
+    "actif": true,
+    "note": "Vérifié le 07/09/2026 : 60 items, le plus récent du jour même. Le flux est servi par feeds.content.dowjones.io mais les LIENS pointent sur wsj.com : ce n'est donc pas un redirecteur opaque au sens de scripts/veille-rss.mjs, et les propositions sont bien scorées au palier presse (0,40). Même réserve d'accès payant que le FT."
+  },
+  {
+    "id": "le-monde-economie",
+    "nom": "Le Monde — Économie",
+    "type": "rss",
+    "url": "https://www.lemonde.fr/economie/rss_full.xml",
+    "domaine": "actualite",
+    "actif": true,
+    "note": "Vérifié le 07/09/2026 : 20 items, le plus récent du jour même, liens sur lemonde.fr — palier presse (0,40). Flux `rss_full` : le résumé est complet, ce qui rend le tri en file bien plus rapide que sur un flux tronqué."
+  },
+  {
+    "id": "la-tribune-actualites",
+    "nom": "La Tribune — actualités économiques",
+    "type": "rss",
+    "url": "https://www.latribune.fr/feed.xml",
+    "domaine": "actualite",
+    "actif": true,
+    "note": "Vérifié le 07/09/2026 : 20 items, le plus récent du jour même. Les liens sont sur latribune.fr et sur ses sous-domaines éditoriaux (air-cosmos.latribune.fr) ; le suffixe de domaine est correctement reconnu, mais latribune.fr est absent de la table et score donc 0,40 par défaut, comme la presse. Retenue pour la couverture des entreprises et de l'industrie françaises, peu présente dans les autres flux."
+  },
+  {
+    "id": "rfi-economie",
+    "nom": "RFI — Économie",
+    "type": "rss",
+    "url": "https://www.rfi.fr/fr/economie/rss",
+    "domaine": "actualite",
+    "actif": true,
+    "note": "Vérifié le 07/09/2026 : 30 items, le plus récent du jour même, liens sur rfi.fr. Retenue pour sa couverture des économies africaines et des pays du Sud, absente de tous les autres flux de la liste. Score par défaut 0,40."
+  },
+  {
+    "id": "euronews-business",
+    "nom": "Euronews — Business (FR)",
+    "type": "rss",
+    "url": "https://fr.euronews.com/rss?level=theme&name=business",
+    "domaine": "actualite",
+    "actif": true,
+    "note": "Vérifié le 07/09/2026 : 50 items, le plus récent du jour même, liens sur fr.euronews.com. Angle européen non franco-français, en français. Score par défaut 0,40."
+  },
+  {
+    "id": "dw-business",
+    "nom": "Deutsche Welle — Business",
+    "type": "rss",
+    "url": "https://rss.dw.com/rdf/rss-en-bus",
+    "domaine": "actualite",
+    "actif": true,
+    "note": "Vérifié le 07/09/2026 : 20 items, le plus récent du 04/09/2026. Le flux est servi par rss.dw.com mais les liens pointent sur dw.com — pas un redirecteur opaque. Radiodiffuseur public allemand : apporte le point de vue de la première économie de la zone euro sur l'industrie et l'énergie. Score par défaut 0,40."
+  },
+  {
+    "id": "guardian-economie",
+    "nom": "The Guardian — Economics",
+    "type": "rss",
+    "url": "https://www.theguardian.com/business/economics/rss",
+    "domaine": "actualite",
+    "actif": true,
+    "note": "Vérifié le 07/09/2026 : 20 items, le plus récent du jour même, liens sur theguardian.com — palier presse (0,40). Retenue comme contrepoint anglophone en accès libre face au FT et au WSJ, tous deux payants."
   }
 ]
