@@ -589,8 +589,8 @@ export default function GrapheConnaissances({
                       width={22}
                       height={16}
                       rx={3}
-                      fill="#1e293b"
-                      stroke={estSelectionne ? "#f59e0b" : "#0f172a"}
+                      fill="var(--foreground)"
+                      stroke={estSelectionne ? "#f59e0b" : "var(--foreground)"}
                       strokeWidth={estSelectionne ? 3 : 1}
                     />
                   )}
@@ -599,8 +599,8 @@ export default function GrapheConnaissances({
                       cx={noeud.x}
                       cy={noeud.y}
                       r={7}
-                      fill="#ffffff"
-                      stroke={estSelectionne ? "#f59e0b" : "#334155"}
+                      fill="var(--background)"
+                      stroke={estSelectionne ? "#f59e0b" : "var(--foreground)"}
                       strokeWidth={estSelectionne ? 3 : 1.6}
                     />
                   )}
@@ -610,7 +610,7 @@ export default function GrapheConnaissances({
                         noeud.x - 8
                       },${noeud.y}`}
                       fill={couleurGap}
-                      stroke={estSelectionne ? "#f59e0b" : "#ffffff"}
+                      stroke={estSelectionne ? "#f59e0b" : "var(--background)"}
                       strokeWidth={estSelectionne ? 3 : 1}
                     />
                   )}
@@ -637,7 +637,7 @@ export default function GrapheConnaissances({
       <div className="mt-3 flex flex-wrap items-center gap-x-4 gap-y-2 text-xs text-neutral-500">
         <span className="flex items-center gap-1.5">
           <svg width="16" height="16" viewBox="0 0 16 16" aria-hidden="true">
-            <circle cx="8" cy="8" r="6" fill="#ffffff" stroke="#334155" strokeWidth="1.6" />
+            <circle cx="8" cy="8" r="6" fill="var(--background)" stroke="var(--foreground)" strokeWidth="1.6" />
           </svg>
           Fiche humaine (cercle)
         </span>
@@ -649,7 +649,7 @@ export default function GrapheConnaissances({
         </span>
         <span className="flex items-center gap-1.5">
           <svg width="18" height="16" viewBox="0 0 18 16" aria-hidden="true">
-            <rect x="2" y="4" width="14" height="9" rx="2" fill="#1e293b" />
+            <rect x="2" y="4" width="14" height="9" rx="2" fill="var(--foreground)" />
           </svg>
           Fiche IA (rectangle)
         </span>
