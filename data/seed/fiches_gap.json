@@ -132,61 +132,64 @@
     "id": "taylorisme-vs-claude-cowork",
     "fiche_humaine_id": "taylorisme-ost",
     "fiche_ia_id": "claude-anthropic-cowork",
-    "apport_ia": "Le cœur du Taylorisme — mesurer précisément un geste de travail et en déduire la méthode optimale — est aujourd'hui automatisable de bout en bout : capteurs + vision par ordinateur + modèles de renforcement peuvent chronométrer, comparer et recommander en continu, sans bureau des méthodes humain.",
-    "mecanisme": "Instrumentation du poste de travail (capteurs, caméras) + modèles d'apprentissage automatique pour détecter les écarts à la méthode optimale et proposer des ajustements en temps réel.",
-    "amelioration_possible": "Boucler la mesure directement sur l'amélioration continue (au lieu d'une méthode figée une fois pour toutes) — dépassant ainsi une limite historique du Taylorisme lui-même.",
-    "mode_interaction": "Autonomie complète encadrée : le système mesure et recommande, un responsable valide les changements de méthode avant déploiement (pour des raisons de sécurité et d'acceptabilité sociale, pas de nécessité technique).",
-    "substituabilite": "remplacable_totalement",
-    "scenario_present": "Des systèmes de ce type existent déjà en usine (contrôle qualité par vision, chronométrage automatisé) mais restent partiels, spécifiques à certaines lignes de production.",
-    "scenario_5ans": "Généralisation attendue dans l'industrie manufacturière à forte répétitivité de geste, sous réserve du coût d'instrumentation.",
-    "scenario_15_20ans": "Le geste industriel répétitif mesurable devient un cas d'école de tâche entièrement pilotée par IA, la question résiduelle étant sociale (acceptabilité, emploi) plus que technique.",
-    "confiance": "elevee",
+    "apport_ia": "L'OST sépare strictement la conception, confiée au bureau des méthodes, et l'exécution, laissée aux ouvriers. La fiche IA ne documente rien du côté exécution : Claude est un modèle de langage dont les capacités relèvent du raisonnement et de la rédaction multi-tour, de l'usage agentique d'outils (fichiers, shell, navigateur, MCP) et de l'automatisation de tâches bureautiques pour un utilisateur non développeur. C'est donc le travail du bureau des méthodes — rédiger, comparer et tenir à jour des procédures écrites — qui est ici concerné, et non le chronométrage du geste, qui suppose une instrumentation que cette fiche IA ne porte pas.",
+    "mecanisme": "Automatisation de la part documentaire de l'OST : mise en forme et actualisation de modes opératoires, comparaison de versions de procédures, synthèse de comptes rendus d'atelier, le tout dans un mode agentique orchestrant des tâches longues avec mémoire de session. La mesure du geste lui-même reste hors du périmètre de la fiche IA ; la fiche humaine la rattache, dans sa résonance, à des capteurs et à la vision par ordinateur, technologies absentes de la fiche IA liée.",
+    "amelioration_possible": "Raccorder la production documentaire à une source de mesure réelle : sans donnée d'atelier, un modèle de langage reformule des procédures sans pouvoir établir laquelle est optimale. La limite est celle que nomme la fiche IA — hallucination possible sur les faits de niche et dépendance à la qualité du contexte fourni —, ce qui interdit de lui confier la détermination de la méthode et non seulement sa rédaction.",
+    "mode_interaction": "Assistance au bureau des méthodes : le modèle rédige, compare et met à jour la documentation de méthode ; la mesure du travail réel et la décision de changer de méthode restent hors de sa portée, faute d'accès aux données d'atelier.",
+    "substituabilite": "remplacable_avec_autre_technologie",
+    "scenario_present": "En 2026, la fiche IA documente un seul déploiement à maturité : l'éducation (TRL 9), avec neuf universités clientes nommées par l'éditeur. Rien n'y atteste d'usage industriel, et l'assistance à la recherche y est qualifiée d'émergente. Appliquée au taylorisme, la capacité mobilisable se limite donc à la production documentaire.",
+    "scenario_5ans": "Si la mesure du travail réel est produite par ailleurs, un modèle de langage peut en devenir l'interface de restitution et de mise à jour des procédures — ce qui automatiserait la partie rédactionnelle du bureau des méthodes sans toucher à la partie métrologique.",
+    "scenario_15_20ans": "Spéculatif : une chaîne complète mesure-analyse-procédure supposerait la réunion de deux familles technologiques que le corpus documente séparément. Elle rouvrirait la question centrale de la fiche humaine — la déshumanisation du travail et l'aliénation par la séparation conception/exécution — plutôt qu'elle ne la refermerait.",
+    "confiance": "moyenne",
     "statut": "documente",
-    "derniere_verification": "2026-09-06",
-    "sujet": "Automatisation de la mesure et de l'optimisation du geste de travail industriel",
+    "derniere_verification": "2026-09-07",
+    "sujet": "Automatisation de la part documentaire de l'organisation scientifique du travail",
     "sous_themes": [
-      "Instrumentation du poste de travail (capteurs, vision par ordinateur)",
-      "Boucle d'amélioration continue vs. méthode figée",
-      "Acceptabilité sociale de la surveillance algorithmique du travail"
+      "Séparation conception/exécution et travail du bureau des méthodes",
+      "Ce qu'un modèle de langage peut et ne peut pas mesurer",
+      "Déshumanisation du travail et surveillance de l'exécution"
     ],
     "axes_recherche": [
-      "Coût d'instrumentation vs. gains de productivité par secteur",
-      "Cadre légal de la surveillance algorithmique du travail (droit du travail, RGPD)",
-      "Comparaison avec le panoptique foucaldien (cf. fiche Michel Foucault)"
+      "Quelle part du travail du bureau des méthodes tient dans la rédaction, et quelle part dans la mesure ?",
+      "Une procédure rédigée sans accès à la donnée d'atelier peut-elle être dite optimale ?",
+      "L'automatisation de la conception modifie-t-elle la critique de l'aliénation formulée contre l'OST ?"
     ],
     "documents_cles": [
       {
-        "titre": "Les Principes de la direction scientifique des entreprises (F. W. Taylor)",
+        "titre": "Frederick W. Taylor, The Principles of Scientific Management (1911)",
         "type": "primaire"
       },
       {
-        "titre": "Taylorisme",
-        "url": "https://fr.wikipedia.org/wiki/Taylorisme",
-        "type": "secondaire"
-      },
-      {
-        "titre": "Documentation Anthropic",
+        "titre": "Anthropic — Claude Docs, référence développeur (platform.claude.com)",
         "url": "https://docs.claude.com",
+        "date": "2026-09-07",
         "type": "primaire"
+      },
+      {
+        "titre": "Taylorisme — Wikipédia",
+        "url": "https://fr.wikipedia.org/wiki/Taylorisme",
+        "date": "2026-09-06",
+        "type": "secondaire"
       }
     ],
     "axes_prospectifs": [
       {
-        "nom": "Généralisation manufacturière",
-        "description": "Diffusion large dans l'industrie manufacturière à forte répétitivité de geste, portée par la baisse du coût des capteurs et de la vision par ordinateur.",
+        "nom": "Assistance documentaire généralisée",
+        "description": "La rédaction et la mise à jour des procédures de méthode passent à un modèle de langage, la mesure du travail restant produite ailleurs.",
         "niveau_confiance": "opinion_majoritaire"
       },
       {
-        "nom": "Résistance sociale et cadre légal renforcé",
-        "description": "Encadrement légal renforcé de la surveillance algorithmique du travail freinant la diffusion malgré la faisabilité technique.",
+        "nom": "Chaîne mesure-procédure intégrée",
+        "description": "Réunion, dans un même dispositif, d'une instrumentation du poste et d'un modèle de langage qui en tire les procédures — combinaison que le corpus documente aujourd'hui en deux familles séparées.",
         "niveau_confiance": "hypothese_prospective"
       },
       {
-        "nom": "Bascule vers l'amélioration continue auto-pilotée",
-        "description": "Dépassement du taylorisme classique lui-même : la méthode n'est plus figée une fois mesurée, mais réajustée en continu par le système — un changement de nature, pas seulement de degré.",
+        "nom": "Encadrement de la surveillance du travail",
+        "description": "Un encadrement renforcé de la mesure automatisée de l'exécution freine la diffusion, indépendamment de la faisabilité technique.",
         "niveau_confiance": "hypothese_prospective"
       }
-    ]
+    ],
+    "technologie_complementaire": "Capteurs de poste et vision par ordinateur, seules technologies capables de produire la mesure du geste sur laquelle porte l'OST — la fiche humaine les nomme dans sa résonance, la fiche IA liée ne les documente pas"
   },
   {
     "id": "okr-vs-claude-cowork",
@@ -822,13 +825,13 @@
     "id": "bernard-stiegler-vs-tutorat-adaptatif",
     "fiche_humaine_id": "bernard-stiegler",
     "fiche_ia_id": "tutorat-adaptatif-personnalise-edtech-ia",
-    "apport_ia": "Le tutorat adaptatif illustre exactement le pharmakon stieglérien : il apporte une rétroaction immédiate et personnalisée sans enseignant humain, avec des effets mesurés (aucune différence statistique avec des tuteurs humains experts selon une revue de 2011, élèves surpassant les classes conventionnelles dans 46 des 50 évaluations d'une méta-analyse de 2015, gains notables pour les élèves en éducation spécialisée ou de milieux défavorisés). Ce qu'il ne peut structurellement pas apporter, c'est la transmission comme relation : la fiche IA note que ces systèmes restent moins capables que les tuteurs humains en dialogue et en lecture de l'état affectif de l'élève.",
-    "mecanisme": "Architecture à quatre composants — modèle du domaine, modèle de l'apprenant construit à partir des traces, modèle d'instruction et interface — avec échafaudage cognitif et, plus récemment, intégration d'IA générative. La mémoire de l'apprentissage est externalisée dans le modèle de l'apprenant : mémoire tertiaire au sens de Stiegler, qui façonne l'attention en même temps qu'elle la soutient.",
-    "amelioration_possible": "Concevoir les systèmes pour soutenir la lutte productive plutôt que la court-circuiter : la fiche IA relève que les élèves peuvent épuiser les indices ou deviner plutôt que réfléchir, et que la plupart des systèmes ne distinguent pas l'apprentissage superficiel. Doter le modèle d'instruction de critères distinguant difficulté féconde et blocage stérile, et articuler l'outil à une pratique enseignante plutôt que de le substituer, répondrait directement au risque de prolétarisation des savoirs.",
+    "apport_ia": "Le tutorat adaptatif illustre le pharmakon stieglérien : il apporte une rétroaction immédiate et personnalisée sans enseignant humain, et la fiche IA documente des effets convergents — effet médian de 0,66 sur les tests locaux dans la méta-analyse de Kulik et Fletcher (2015), absence de différence statistique entre un tuteur humain expert et un système pas à pas selon VanLehn (2011), élèves dépassant les classes conventionnelles dans 46 des 50 évaluations contrôlées recensées. Ce qu'il ne peut structurellement pas apporter, c'est la transmission comme relation — mais il faut noter que rien dans les deux fiches ne l'établit : la fiche IA place au contraire la réserve ailleurs, sur la chute du même effet à 0,13 aux tests standardisés.",
+    "mecanisme": "Suivi des connaissances de l'élève (knowledge tracing) couplé à des grands modèles de langage, adaptant en continu la difficulté, le contenu et le rythme, avec génération d'exercices et de rétroaction à la volée plutôt qu'à partir d'un contenu figé. La mémoire de l'apprentissage est externalisée dans ce modèle de l'apprenant : mémoire tertiaire au sens de Stiegler, qui façonne l'attention en même temps qu'elle la soutient.",
+    "amelioration_possible": "Concevoir les systèmes pour soutenir la lutte productive plutôt que la court-circuiter. La réserve que porte réellement la fiche IA donne le point d'application : l'effet médian tombe de 0,66 sur les tests locaux à 0,13 sur les tests standardisés, ce qui suggère un gain localisé sur l'exercice plutôt qu'un transfert de compétence. Doter le suivi de critères distinguant difficulté féconde et blocage stérile, et articuler l'outil à une pratique enseignante plutôt que de le substituer, répondrait directement au risque de prolétarisation des savoirs. S'y ajoute la collecte de données comportementales détaillées sur des élèves mineurs, que la fiche IA signale comme non traitée par ses sources.",
     "mode_interaction": "Co-pilotage pédagogique : l'outil prend en charge l'exercice et la rétroaction immédiate, l'enseignant conserve le diagnostic, la relation et la conduite du parcours.",
     "substituabilite": "remplacable_avec_supervision",
-    "scenario_present": "En 2026, ces systèmes sont à TRL 8 en tutorat individualisé (mathématiques, sciences, langues) et TRL 7 en formation professionnelle, avec un coût de développement de 200 à 300 heures pour une heure d'instruction qui limite leur diffusion.",
-    "scenario_5ans": "Si l'intégration d'IA générative réduit ce coût de production, la couverture disciplinaire pourrait s'élargir nettement, ce qui rendrait la question de l'atrophie des savoirs plus aiguë et non moins.",
+    "scenario_present": "En 2026, la fiche IA documente un déploiement de masse en éducation (TRL 9 : le Cognitive Tutor « incorporated into mathematics curricula in a substantial number of United States high schools », avec de meilleurs résultats aux examens finaux et aux tests standardisés) et une pratique installée en formation professionnelle continue, sans niveau de maturité chiffré. La source ne date pas ce déploiement.",
+    "scenario_5ans": "Si l'intégration de grands modèles de langage réduit le coût de production des contenus adaptatifs, la couverture disciplinaire pourrait s'élargir nettement, ce qui rendrait la question de l'atrophie des savoirs plus aiguë et non moins.",
     "scenario_15_20ans": "Spéculatif : sous l'hypothèse d'une généralisation de l'apprentissage médié par ces systèmes, les compétences d'étude autonome pourraient se recomposer autour de l'outil — évolution qui peut être lue comme prolétarisation ou comme nouvelle littératie, sans arbitrage disponible aujourd'hui.",
     "confiance": "elevee",
     "sujet": "Externalisation technique des savoirs et personnalisation de l'apprentissage",
@@ -844,17 +847,25 @@
     ],
     "documents_cles": [
       {
-        "titre": "La Technique et le Temps, t.1 : La faute d'Épiméthée",
+        "titre": "Bernard Stiegler, La Technique et le Temps, t.1 : La faute d'Épiméthée",
         "type": "primaire"
       },
       {
-        "titre": "Carbonell — SCHOLAR (1970) ; VanLehn — The Relative Effectiveness of Human Tutoring, Intelligent Tutoring Systems (2011) ; Kulik, Fletcher — méta-analyse (2015)",
+        "titre": "VanLehn, « The Relative Effectiveness of Human Tutoring, Intelligent Tutoring Systems, and Other Tutoring Systems », Educational Psychologist 46(4), 2011",
+        "url": "https://doi.org/10.1080/00461520.2011.611369",
         "type": "primaire"
       },
       {
-        "titre": "Intelligent tutoring system — Wikipedia (EN)",
+        "titre": "Bernard Stiegler — Wikipédia",
+        "url": "https://fr.wikipedia.org/wiki/Bernard_Stiegler",
+        "date": "2026-09-05",
+        "type": "secondaire"
+      },
+      {
+        "titre": "Intelligent tutoring system — Wikipedia",
         "url": "https://en.wikipedia.org/wiki/Intelligent_tutoring_system",
-        "type": "primaire"
+        "date": "2026-09-07",
+        "type": "secondaire"
       }
     ],
     "axes_prospectifs": [
@@ -864,8 +875,8 @@
         "niveau_confiance": "hypothese_prospective"
       },
       {
-        "nom": "Plafond relationnel et affectif",
-        "description": "Les systèmes restent en retrait des tuteurs humains sur le dialogue et la lecture de l'état affectif de l'élève.",
+        "nom": "Écart entre effet local et effet transféré",
+        "description": "Le gain reste concentré sur les tests locaux (effet 0,66) et se réduit fortement sur les tests standardisés (0,13), ce qui limite la portée du dispositif hors de l'exercice qu'il pilote.",
         "niveau_confiance": "consensus_scientifique"
       },
       {
@@ -875,7 +886,7 @@
       }
     ],
     "statut": "documente",
-    "derniere_verification": "2026-09-06"
+    "derniere_verification": "2026-09-07"
   },
   {
     "id": "bruno-latour-vs-openai-operator",
@@ -1224,15 +1235,15 @@
     "id": "peter-singer-vs-dependance-energetique",
     "fiche_humaine_id": "peter-singer",
     "fiche_ia_id": "dependance-energetique-et-materielle-de-l-ia-limite-transversale",
-    "apport_ia": "L'empreinte matérielle de l'IA fournit un objet presque idéal au calcul conséquentialiste : elle est en partie mesurable (0,34 Wh par requête ChatGPT selon OpenAI en 2025 ; 552 tonnes de CO2 pour l'entraînement de GPT-3 ; projections de 85 à 134 TWh par an d'ici 2027) et ses effets se distribuent sur des humains, des non-humains et des territoires. Ce que la mesure ne peut pas apporter, c'est l'arbitrage : agréger des intérêts hétérogènes suppose une pondération que les chiffres ne fournissent pas, et la fiche humaine rappelle que le calcul utilitariste pur est justement critiqué par les déontologues pour ce qu'il autorise en théorie.",
-    "mecanisme": "Le coût porte sur tout le cycle de vie — fabrication des puces (800 kg de matières premières pour un ordinateur de 2 kg ; 8 à 10 gallons d'eau par puce), entraînement, inférence, déchets électroniques — avec une concentration documentée des nuisances sur des territoires vulnérables (turbines au méthane sans permis du centre xAI à Memphis, procès SELC/NAACP en 2025) : la question de savoir dont les intérêts comptent y est posée en termes très concrets.",
-    "amelioration_possible": "Améliorer d'abord la mesure, puisque l'empreinte des modèles est agrégée dans celle des centres de données et que les pratiques de reporting diffèrent entre entreprises : analyses de cycle de vie standardisées, obligations de reporting eau/énergie, modèles plus petits. Étendre explicitement le périmètre des intérêts pris en compte (écosystèmes, populations riveraines, générations futures) rend le calcul plus complet sans en résoudre l'arbitrage.",
+    "apport_ia": "L'empreinte matérielle de l'IA fournit au calcul conséquentialiste un objet partiellement mesurable : la fiche IA documente une consommation électrique mondiale des centres de données portée à 460 térawattheures en 2022, l'évaporation d'eau douce dans leurs tours de refroidissement et l'extraction des terres rares nécessaires aux puces, « often mined in environmentally destructive ways ». Ce que la mesure ne fournit pas, c'est l'arbitrage : agréger des intérêts hétérogènes suppose une pondération que les grandeurs physiques ne donnent pas, et la fiche humaine rappelle que le calcul utilitariste pur est précisément reproché par des déontologues de pouvoir justifier, en théorie, le sacrifice d'individus au nom du bien-être agrégé.",
+    "mecanisme": "Le coût se répartit entre l'électricité consommée par les centres de données, l'eau douce évaporée dans leurs tours de refroidissement et les matières premières des puces. Aucune de ces trois grandeurs n'est ventilée par modèle ni par requête dans les sources de la fiche IA : la question singerienne de savoir de qui les intérêts comptent se pose donc sur des agrégats d'infrastructure et non sur des unités d'usage, ce qui déplace la charge de l'arbitrage vers la politique énergétique plutôt que vers le choix individuel.",
+    "amelioration_possible": "Améliorer d'abord la mesure : les sources de la fiche IA ne donnent que des agrégats — consommation électrique, eau de refroidissement, terres rares — sans ventilation par modèle ni par usage, ce qui interdit toute comparaison. Des analyses de cycle de vie standardisées et des obligations de reporting eau/énergie sont la condition d'un calcul conséquentialiste applicable. Étendre explicitement le périmètre des intérêts pris en compte — écosystèmes, populations riveraines, générations futures — rend le calcul plus complet sans en résoudre l'arbitrage.",
     "mode_interaction": "Boucle de feedback réglementaire et métrologique : mesure standardisée, publication, arbitrage politique — l'IA est ici objet d'évaluation morale, non partenaire d'interaction.",
     "substituabilite": "remplacable_avec_autre_technologie",
     "technologie_complementaire": "Infrastructures énergétiques bas-carbone et technologies de refroidissement et de recyclage des composants (contrats nucléaires, refroidissement en boucle fermée, filières de traitement des déchets électroniques)",
-    "scenario_present": "En 2026, l'atténuation industrielle est à TRL 6 (refroidissement en boucle fermée, implantations en régions froides, accord Microsoft–Constellation de 2024 sur Three Mile Island), la métrologie à TRL 4 et la régulation à TRL 3.",
+    "scenario_present": "En 2026, la fiche IA traite cette dépendance comme un fait d'infrastructure et non comme un système déployé : ses deux usages ne portent aucun niveau de maturité technologique, le TRL n'ayant pas de référent pour une contrainte structurelle. Ce qui est attesté, c'est le recours à de nouvelles capacités de production électrique dédiées — accord de Microsoft avec Constellation Energy pour rouvrir la centrale de Three Mile Island et lui en réserver la totalité pendant vingt ans — sans que la fiche documente ni métrologie standardisée ni encadrement réglementaire de cette demande.",
     "scenario_5ans": "Si les obligations de reporting se généralisent, les comparaisons entre modèles et entre usages deviendront possibles, ce qui rendrait un raisonnement conséquentialiste appliqué à l'IA nettement mieux informé.",
-    "scenario_15_20ans": "Spéculatif : sous l'hypothèse que la croissance des usages continue d'absorber les gains d'efficacité (calcul doublant tous les 3,4 mois), l'arbitrage entre bénéfices agrégés et coûts environnementaux deviendrait un enjeu politique de premier plan.",
+    "scenario_15_20ans": "Spéculatif : la fiche IA relève que l'efficacité de calcul double tous les 1,6 an depuis les années 1940, mais précise qu'aucune de ses sources n'établit que la croissance du volume de calcul compense ces gains. Sous cette hypothèse non attestée, l'arbitrage entre bénéfices agrégés et coûts environnementaux deviendrait un enjeu politique de premier plan ; si elle est fausse, la question se déplace vers la seule répartition territoriale des nuisances.",
     "confiance": "moyenne",
     "sujet": "Éthique conséquentialiste et empreinte environnementale de l'IA",
     "sous_themes": [
@@ -1247,17 +1258,26 @@
     ],
     "documents_cles": [
       {
-        "titre": "La Libération animale",
+        "titre": "Peter Singer, La Libération animale (1975)",
         "type": "primaire"
       },
       {
-        "titre": "Luccioni, Jernite, Strubell — Power Hungry Processing (2024) ; Li et al. — Making AI Less Thirsty (2023) ; AIE — rapports sur la demande électrique des centres de données",
+        "titre": "Agence internationale de l'énergie, rapport « Energy and AI »",
+        "url": "https://www.iea.org/reports/energy-and-ai",
+        "date": "2025-04-10",
         "type": "primaire"
       },
       {
-        "titre": "Environmental impact of artificial intelligence — Wikipedia (EN)",
+        "titre": "Peter Singer — Wikipédia",
+        "url": "https://fr.wikipedia.org/wiki/Peter_Singer",
+        "date": "2026-09-05",
+        "type": "secondaire"
+      },
+      {
+        "titre": "Environmental impact of artificial intelligence — Wikipedia",
         "url": "https://en.wikipedia.org/wiki/Environmental_impact_of_artificial_intelligence",
-        "type": "primaire"
+        "date": "2026-09-07",
+        "type": "secondaire"
       }
     ],
     "axes_prospectifs": [
@@ -1268,17 +1288,17 @@
       },
       {
         "nom": "Effet rebond des usages",
-        "description": "La croissance de la demande de calcul absorbe les gains d'efficacité, maintenant la trajectoire d'empreinte à la hausse.",
-        "niveau_confiance": "opinion_majoritaire"
+        "description": "La croissance de la demande de calcul absorbe les gains d'efficacité — hypothèse que la fiche IA signale explicitement comme non attestée par ses sources.",
+        "niveau_confiance": "hypothese_prospective"
       },
       {
         "nom": "Contentieux environnemental structurant",
-        "description": "Les litiges portés par des riverains et des associations deviennent un levier majeur d'encadrement des centres de données.",
+        "description": "L'encadrement des implantations de centres de données devient un levier de politique publique, sur le modèle des capacités de production dédiées déjà contractualisées.",
         "niveau_confiance": "hypothese_prospective"
       }
     ],
     "statut": "documente",
-    "derniere_verification": "2026-09-06"
+    "derniere_verification": "2026-09-07"
   },
   {
     "id": "carl-rogers-vs-claude-cowork",
@@ -1889,15 +1909,15 @@
     "id": "double-helice-adn-vs-ia-genomique",
     "fiche_humaine_id": "double-helice-de-l-adn",
     "fiche_ia_id": "ia-en-genomique-et-drug-discovery",
-    "apport_ia": "L'IA prolonge à l'échelle industrielle le programme ouvert en 1953 — déduire la fonction biologique de la structure moléculaire — avec une base publique de structures prédites étendue vers 100 millions de protéines et l'annotation informatique de génomes séquencés à haut débit. Elle n'apporte pas la preuve expérimentale : les prédictions restent insuffisamment précises pour environ un tiers des cas et ignorent les modifications post-traductionnelles.",
-    "mecanisme": "Ensemble de méthodes combinant apprentissage profond avec attention pour la prédiction de structures, modèles QSAR appris, docking et criblage virtuel, et bio-informatique pour l'annotation des séquences génomiques et l'exploration des fonctions associées aux gènes.",
-    "amelioration_possible": "Boucler systématiquement prédiction et validation expérimentale, la fiche IA rappelant que les performances rétrospectives prédisent mal les performances prospectives. Étendre la couverture aux modifications post-traductionnelles et aux protéines sans homologues connus reste le principal chantier.",
+    "apport_ia": "L'IA prolonge à grande échelle le programme ouvert en 1953 — déduire la fonction biologique de la structure moléculaire : la fiche IA documente la prédiction de structure tridimensionnelle pour la quasi-totalité des protéines connues en 2024, et l'analyse de séquences génomiques pour identifier des variants associés à des maladies. Elle n'apporte pas la preuve expérimentale : la fiche IA pose que les prédictions computationnelles ne remplacent pas les essais cliniques, seule étape permettant de confirmer efficacité et innocuité chez l'humain.",
+    "mecanisme": "Modèles d'apprentissage profond souvent dérivés des architectures Transformer, appliqués d'une part à la prédiction de structures protéiques et d'interactions moléculaires, d'autre part à l'analyse de séquences génomiques. La structure prédite sert de point d'entrée à l'identification de cibles thérapeutiques, dans le prolongement direct de l'inférence structure-fonction qu'avait rendue possible le modèle en double hélice.",
+    "amelioration_possible": "Boucler systématiquement prédiction et validation expérimentale : la fiche IA établit que le passage du laboratoire au marché reste long — souvent une décennie — et coûteux, malgré l'accélération apportée sur les étapes amont. Le chantier n'est donc pas la précision de la prédiction seule, mais le raccourcissement de la chaîne de confirmation qui la suit.",
     "mode_interaction": "Délégation supervisée en amont de la paillasse : le modèle hiérarchise des hypothèses structurales, l'expérimentation tranche.",
     "substituabilite": "remplacable_avec_supervision",
-    "scenario_present": "En 2026, la génomique structurale et fonctionnelle assistée par bio-informatique est documentée à TRL 8, tandis que l'identification de cibles et de composés candidats reste à TRL 6.",
+    "scenario_present": "En 2026, la fiche IA ne pose aucun niveau de maturité chiffré sur ses deux usages : elle qualifie de pratique installée aussi bien la recherche fondamentale assistée que l'accélération des étapes précoces de découverte de médicaments, Isomorphic Labs ayant déclaré en mai 2024 utiliser AlphaFold 3 avec d'autres modèles pour automatiser cette découverte.",
     "scenario_5ans": "Si la précision des prédictions progresse sur les cas aujourd'hui mal couverts, la part d'expérimentation confirmatoire pourrait diminuer, sans disparaître.",
-    "scenario_15_20ans": "Spéculatif : sous l'hypothèse d'une intégration complète entre prédiction structurale, criblage et automatisation de laboratoire, la chaîne séquence-structure-fonction pourrait être parcourue majoritairement in silico — hypothèse que le faible rendement historique de la découverte de médicaments invite à considérer avec prudence.",
-    "confiance": "elevee",
+    "scenario_15_20ans": "Spéculatif : sous l'hypothèse d'une intégration complète entre prédiction structurale, criblage et automatisation de laboratoire, la chaîne séquence-structure-fonction pourrait être parcourue majoritairement in silico — hypothèse que la durée et le coût de la traduction clinique, documentés par la fiche IA, invitent à considérer avec prudence.",
+    "confiance": "moyenne",
     "sujet": "De la structure moléculaire à la fonction biologique assistée par IA",
     "sous_themes": [
       "Prédiction de structure et annotation génomique",
@@ -1905,24 +1925,31 @@
       "Reconnaissance scientifique et attribution des découvertes"
     ],
     "axes_recherche": [
-      "Comment couvrir les cas où la prédiction structurale reste insuffisamment précise ?",
+      "Comment raccourcir la chaîne de confirmation expérimentale qui suit la prédiction ?",
       "Quelle place pour les modifications post-traductionnelles dans les modèles prédictifs ?",
       "Les gains computationnels se traduisent-ils par une hausse du nombre de candidats aboutis ?"
     ],
     "documents_cles": [
       {
-        "titre": "Molecular Structure of Nucleic Acids (Watson & Crick, Nature, 1953)",
+        "titre": "Watson & Crick, « Molecular Structure of Nucleic Acids », Nature, 1953",
         "type": "primaire"
       },
       {
-        "titre": "Jumper et al. — Highly accurate protein structure prediction with AlphaFold (Nature, 2021)",
-        "url": "https://doi.org/10.1038/s41586-021-03819-2",
+        "titre": "Jumper et al., « Highly accurate protein structure prediction with AlphaFold », Nature 596 (2021)",
+        "url": "https://www.nature.com/articles/s41586-021-03819-2",
         "type": "primaire"
       },
       {
-        "titre": "Génomique — Wikipédia",
-        "url": "https://fr.wikipedia.org/wiki/G%C3%A9nomique",
-        "type": "primaire"
+        "titre": "Double hélice — Wikipédia",
+        "url": "https://fr.wikipedia.org/wiki/Double_h%C3%A9lice",
+        "date": "2026-09-05",
+        "type": "secondaire"
+      },
+      {
+        "titre": "AlphaFold — Wikipédia (article en français)",
+        "url": "https://fr.wikipedia.org/wiki/AlphaFold",
+        "date": "2026-09-07",
+        "type": "secondaire"
       }
     ],
     "axes_prospectifs": [
@@ -1933,8 +1960,8 @@
       },
       {
         "nom": "Goulot de la validation expérimentale",
-        "description": "Le coût et la durée des confirmations expérimentales limitent la traduction des prédictions en résultats cliniques.",
-        "niveau_confiance": "fait_verifie"
+        "description": "Le coût et la durée des confirmations expérimentales, que la fiche IA chiffre à une décennie du laboratoire au marché, limitent la traduction des prédictions en résultats cliniques.",
+        "niveau_confiance": "consensus_scientifique"
       },
       {
         "nom": "Chaîne in silico bouclée",
@@ -1943,7 +1970,7 @@
       }
     ],
     "statut": "documente",
-    "derniere_verification": "2026-09-06"
+    "derniere_verification": "2026-09-07"
   },
   {
     "id": "modele-climatique-vs-graphcast",
