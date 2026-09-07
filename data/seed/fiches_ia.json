@@ -21,8 +21,9 @@
         ],
         "sources": [
           {
-            "titre": "Anthropic — Claude for Education",
-            "url": "https://www.anthropic.com/education",
+            "titre": "Claude for Education — page produit Anthropic",
+            "url": "https://claude.com/solutions/education",
+            "date": "2026-09-07",
             "type": "primaire"
           }
         ]
@@ -37,8 +38,9 @@
         ],
         "sources": [
           {
-            "titre": "Anthropic — Claude for research use cases",
-            "url": "https://www.anthropic.com/customers",
+            "titre": "Claude for Education — page produit Anthropic",
+            "url": "https://claude.com/solutions/education",
+            "date": "2026-09-07",
             "type": "primaire"
           }
         ]
@@ -47,18 +49,20 @@
     "limites_connues": "Hallucination possible sur faits de niche ; pas de mémoire persistante native hors mécanismes dédiés ; dépendance à la qualité du prompt/contexte fourni.",
     "sources": [
       {
-        "titre": "Documentation Anthropic",
+        "titre": "Documentation Anthropic (plateforme Claude)",
         "url": "https://docs.claude.com",
+        "date": "2026-09-07",
         "type": "primaire"
       },
       {
-        "titre": "Model Card Claude (Anthropic)",
+        "titre": "Claude — page produit (Anthropic)",
         "url": "https://www.anthropic.com/claude",
+        "date": "2026-09-07",
         "type": "primaire"
       }
     ],
     "statut": "documente",
-    "derniere_verification": "2026-09-05"
+    "derniere_verification": "2026-09-07"
   },
   {
     "id": "codex-famille-gpt",
@@ -81,8 +85,9 @@
         ],
         "sources": [
           {
-            "titre": "OpenAI — Codex",
+            "titre": "OpenAI — Codex, page produit",
             "url": "https://openai.com/codex",
+            "date": "2026-09-07",
             "type": "primaire"
           }
         ]
@@ -93,16 +98,18 @@
       {
         "titre": "Documentation OpenAI",
         "url": "https://platform.openai.com/docs",
+        "date": "2026-09-07",
         "type": "primaire"
       },
       {
         "titre": "OpenAI Platform — Models overview",
         "url": "https://platform.openai.com/docs/models",
+        "date": "2026-09-07",
         "type": "primaire"
       }
     ],
     "statut": "documente",
-    "derniere_verification": "2026-09-05"
+    "derniere_verification": "2026-09-07"
   },
   {
     "id": "deepseek",
@@ -128,6 +135,7 @@
           {
             "titre": "DeepSeek — Wikipedia (article en anglais)",
             "url": "https://en.wikipedia.org/wiki/DeepSeek",
+            "date": "2026-09-07",
             "type": "secondaire"
           }
         ]
@@ -136,21 +144,26 @@
     "limites_connues": "Modération et filtrage alignés sur la réglementation chinoise (sujets politiques sensibles) ; questions de gouvernance des données d'entraînement et de confidentialité pour un usage hébergé en Chine ; écart de performance encore débattu selon les benchmarks indépendants.",
     "sources": [
       {
-        "titre": "DeepSeek-V3 Technical Report",
+        "titre": "DeepSeek-AI, « DeepSeek-V3 Technical Report »",
+        "url": "https://arxiv.org/abs/2412.19437",
+        "date": "2024-12-27",
         "type": "primaire"
       },
       {
-        "titre": "DeepSeek-R1: Incentivizing Reasoning Capability in LLMs via RL",
+        "titre": "DeepSeek-AI, « DeepSeek-R1: Incentivizing Reasoning Capability in LLMs via Reinforcement Learning »",
+        "url": "https://arxiv.org/abs/2501.12948",
+        "date": "2025-01-22",
         "type": "primaire"
       },
       {
         "titre": "DeepSeek — Wikipedia (article en anglais)",
         "url": "https://en.wikipedia.org/wiki/DeepSeek",
+        "date": "2026-09-07",
         "type": "secondaire"
       }
     ],
     "statut": "documente",
-    "derniere_verification": "2026-09-06",
+    "derniere_verification": "2026-09-07",
     "architecture": "Mixture-of-Experts (MoE) — DeepSeek-V3 (~671B paramètres, ~37B actifs par token) ; DeepSeek-R1 entraîné avec apprentissage par renforcement à grande échelle pour le raisonnement en chaîne de pensée."
   },
   {
@@ -174,8 +187,9 @@
         "sources": [
           {
             "titre": "AlexNet — Wikipedia (EN)",
-            "type": "secondaire",
-            "url": "https://en.wikipedia.org/wiki/AlexNet"
+            "url": "https://en.wikipedia.org/wiki/AlexNet",
+            "date": "2026-09-07",
+            "type": "secondaire"
           }
         ]
       },
@@ -190,8 +204,9 @@
         "sources": [
           {
             "titre": "AlexNet — Wikipedia (EN)",
-            "type": "secondaire",
-            "url": "https://en.wikipedia.org/wiki/AlexNet"
+            "url": "https://en.wikipedia.org/wiki/AlexNet",
+            "date": "2026-09-07",
+            "type": "secondaire"
           }
         ]
       }
@@ -199,13 +214,19 @@
     "limites_connues": "Architecture aujourd'hui dépassée en précision et en efficacité par des réseaux plus profonds (ResNet, Vision Transformers) ; gourmande en mémoire pour l'époque et peu adaptée aux contraintes actuelles d'inférence embarquée.",
     "sources": [
       {
+        "titre": "Krizhevsky, Sutskever & Hinton, « ImageNet Classification with Deep Convolutional Neural Networks », NIPS 2012",
+        "url": "https://proceedings.neurips.cc/paper_files/paper/2012/hash/c399862d3b9d6b76c8436e924a68c45b-Abstract.html",
+        "type": "primaire"
+      },
+      {
         "titre": "AlexNet — Wikipedia (EN)",
-        "type": "primaire",
-        "url": "https://en.wikipedia.org/wiki/AlexNet"
+        "url": "https://en.wikipedia.org/wiki/AlexNet",
+        "date": "2026-09-07",
+        "type": "secondaire"
       }
     ],
     "statut": "documente",
-    "derniere_verification": "2026-09-06",
+    "derniere_verification": "2026-09-07",
     "editeur": "University of Toronto (Krizhevsky, Sutskever, Hinton)",
     "architecture": "Réseau de neurones convolutif profond (8 couches), entraîné sur GPU"
   },
@@ -230,8 +251,9 @@
         "sources": [
           {
             "titre": "You Only Look Once — Wikipedia (EN)",
-            "type": "secondaire",
-            "url": "https://en.wikipedia.org/wiki/You_Only_Look_Once"
+            "url": "https://en.wikipedia.org/wiki/You_Only_Look_Once",
+            "date": "2026-09-07",
+            "type": "secondaire"
           }
         ]
       },
@@ -246,8 +268,9 @@
         "sources": [
           {
             "titre": "You Only Look Once — Wikipedia (EN)",
-            "type": "secondaire",
-            "url": "https://en.wikipedia.org/wiki/You_Only_Look_Once"
+            "url": "https://en.wikipedia.org/wiki/You_Only_Look_Once",
+            "date": "2026-09-07",
+            "type": "secondaire"
           }
         ]
       }
@@ -255,13 +278,20 @@
     "limites_connues": "Moins précis que des architectures à deux étapes (comme Faster R-CNN) sur la détection de très petits objets ou de scènes très denses, et les usages de vidéosurveillance qu'il permet posent des questions de vie privée et de biais algorithmique.",
     "sources": [
       {
+        "titre": "Redmon, Divvala, Girshick & Farhadi, « You Only Look Once: Unified, Real-Time Object Detection »",
+        "url": "https://arxiv.org/abs/1506.02640",
+        "date": "2016-05-09",
+        "type": "primaire"
+      },
+      {
         "titre": "You Only Look Once — Wikipedia (EN)",
-        "type": "primaire",
-        "url": "https://en.wikipedia.org/wiki/You_Only_Look_Once"
+        "url": "https://en.wikipedia.org/wiki/You_Only_Look_Once",
+        "date": "2026-09-07",
+        "type": "secondaire"
       }
     ],
     "statut": "documente",
-    "derniere_verification": "2026-09-06",
+    "derniere_verification": "2026-09-07",
     "editeur": "Joseph Redmon et al. (recherche académique, puis communauté open source)",
     "architecture": "Réseau de neurones convolutif à passage unique (single-shot detector) pour la détection d'objets en temps réel"
   },
@@ -286,8 +316,9 @@
         "sources": [
           {
             "titre": "Residual neural network — Wikipedia (EN)",
-            "type": "secondaire",
-            "url": "https://en.wikipedia.org/wiki/Residual_neural_network"
+            "url": "https://en.wikipedia.org/wiki/Residual_neural_network",
+            "date": "2026-09-07",
+            "type": "secondaire"
           }
         ]
       },
@@ -302,8 +333,9 @@
         "sources": [
           {
             "titre": "Residual neural network — Wikipedia (EN)",
-            "type": "secondaire",
-            "url": "https://en.wikipedia.org/wiki/Residual_neural_network"
+            "url": "https://en.wikipedia.org/wiki/Residual_neural_network",
+            "date": "2026-09-07",
+            "type": "secondaire"
           }
         ]
       }
@@ -311,13 +343,20 @@
     "limites_connues": "Conçu spécifiquement pour la vision par ordinateur, largement supplanté depuis 2020 par les architectures Vision Transformer sur les tâches où de très grands volumes de données sont disponibles, tout en restant compétitif à budget de calcul limité.",
     "sources": [
       {
+        "titre": "He, Zhang, Ren & Sun, « Deep Residual Learning for Image Recognition »",
+        "url": "https://arxiv.org/abs/1512.03385",
+        "date": "2015-12-10",
+        "type": "primaire"
+      },
+      {
         "titre": "Residual neural network — Wikipedia (EN)",
-        "type": "primaire",
-        "url": "https://en.wikipedia.org/wiki/Residual_neural_network"
+        "url": "https://en.wikipedia.org/wiki/Residual_neural_network",
+        "date": "2026-09-07",
+        "type": "secondaire"
       }
     ],
     "statut": "documente",
-    "derniere_verification": "2026-09-06",
+    "derniere_verification": "2026-09-07",
     "editeur": "Microsoft Research (Kaiming He et al.)",
     "architecture": "Réseau de neurones convolutif profond à connexions résiduelles (« skip connections »), développé en 2015"
   },
@@ -342,8 +381,9 @@
         "sources": [
           {
             "titre": "BERT (language model) — Wikipedia (EN)",
-            "type": "secondaire",
-            "url": "https://en.wikipedia.org/wiki/BERT_(language_model)"
+            "url": "https://en.wikipedia.org/wiki/BERT_(language_model)",
+            "date": "2026-09-07",
+            "type": "secondaire"
           }
         ]
       },
@@ -358,8 +398,9 @@
         "sources": [
           {
             "titre": "BERT (language model) — Wikipedia (EN)",
-            "type": "secondaire",
-            "url": "https://en.wikipedia.org/wiki/BERT_(language_model)"
+            "url": "https://en.wikipedia.org/wiki/BERT_(language_model)",
+            "date": "2026-09-07",
+            "type": "secondaire"
           }
         ]
       }
@@ -367,13 +408,20 @@
     "limites_connues": "Modèle encodeur seul, non génératif par nature (contrairement aux modèles décodeurs comme GPT ou Llama), et largement dépassé en capacité de raisonnement et de génération par les grands modèles de langage conversationnels apparus depuis 2022.",
     "sources": [
       {
+        "titre": "Devlin, Chang, Lee & Toutanova, « BERT: Pre-training of Deep Bidirectional Transformers for Language Understanding »",
+        "url": "https://arxiv.org/abs/1810.04805",
+        "date": "2018-10-11",
+        "type": "primaire"
+      },
+      {
         "titre": "BERT (language model) — Wikipedia (EN)",
-        "type": "primaire",
-        "url": "https://en.wikipedia.org/wiki/BERT_(language_model)"
+        "url": "https://en.wikipedia.org/wiki/BERT_(language_model)",
+        "date": "2026-09-07",
+        "type": "secondaire"
       }
     ],
     "statut": "documente",
-    "derniere_verification": "2026-09-06",
+    "derniere_verification": "2026-09-07",
     "editeur": "Google",
     "architecture": "Transformer bidirectionnel encodeur seul (encoder-only), pré-entraîné par apprentissage auto-supervisé"
   },
@@ -398,8 +446,9 @@
         "sources": [
           {
             "titre": "Llama (language model) — Wikipedia (EN)",
-            "type": "secondaire",
-            "url": "https://en.wikipedia.org/wiki/Llama_(language_model)"
+            "url": "https://en.wikipedia.org/wiki/Llama_(language_model)",
+            "date": "2026-09-07",
+            "type": "secondaire"
           }
         ]
       },
@@ -414,8 +463,9 @@
         "sources": [
           {
             "titre": "Llama (language model) — Wikipedia (EN)",
-            "type": "secondaire",
-            "url": "https://en.wikipedia.org/wiki/Llama_(language_model)"
+            "url": "https://en.wikipedia.org/wiki/Llama_(language_model)",
+            "date": "2026-09-07",
+            "type": "secondaire"
           }
         ]
       }
@@ -423,13 +473,20 @@
     "limites_connues": "Comme les autres grands modèles de langage, sujet aux hallucinations factuelles ; l'ouverture des poids soulève aussi des débats sur les risques de mésusage (désinformation, contenus malveillants) plus difficiles à contenir que sur des modèles propriétaires accessibles uniquement par API.",
     "sources": [
       {
+        "titre": "Touvron et al., « LLaMA: Open and Efficient Foundation Language Models »",
+        "url": "https://arxiv.org/abs/2302.13971",
+        "date": "2023-02-27",
+        "type": "primaire"
+      },
+      {
         "titre": "Llama (language model) — Wikipedia (EN)",
-        "type": "primaire",
-        "url": "https://en.wikipedia.org/wiki/Llama_(language_model)"
+        "url": "https://en.wikipedia.org/wiki/Llama_(language_model)",
+        "date": "2026-09-07",
+        "type": "secondaire"
       }
     ],
     "statut": "documente",
-    "derniere_verification": "2026-09-06",
+    "derniere_verification": "2026-09-07",
     "editeur": "Meta AI",
     "architecture": "Famille de grands modèles de langage (transformer décodeur), publiée en open weights à partir de février 2023"
   },
@@ -453,9 +510,21 @@
         ],
         "sources": [
           {
-            "titre": "AlphaGo — Wikipedia (EN)",
-            "type": "secondaire",
-            "url": "https://en.wikipedia.org/wiki/AlphaGo"
+            "titre": "Jumper et al., « Highly accurate protein structure prediction with AlphaFold », Nature 596 (2021)",
+            "url": "https://www.nature.com/articles/s41586-021-03819-2",
+            "type": "primaire"
+          },
+          {
+            "titre": "AlphaFold Protein Structure Database (EMBL-EBI / Google DeepMind)",
+            "url": "https://alphafold.ebi.ac.uk/",
+            "date": "2026-09-07",
+            "type": "primaire"
+          },
+          {
+            "titre": "AlphaFold — Wikipédia (article en français)",
+            "url": "https://fr.wikipedia.org/wiki/AlphaFold",
+            "date": "2026-09-07",
+            "type": "secondaire"
           }
         ]
       },
@@ -469,9 +538,10 @@
         ],
         "sources": [
           {
-            "titre": "AlphaGo — Wikipedia (EN)",
-            "type": "secondaire",
-            "url": "https://en.wikipedia.org/wiki/AlphaGo"
+            "titre": "AlphaFold — Wikipédia (article en français)",
+            "url": "https://fr.wikipedia.org/wiki/AlphaFold",
+            "date": "2026-09-07",
+            "type": "secondaire"
           }
         ]
       }
@@ -480,12 +550,30 @@
     "sources": [
       {
         "titre": "AlphaGo — Wikipedia (EN)",
-        "type": "primaire",
-        "url": "https://en.wikipedia.org/wiki/AlphaGo"
+        "url": "https://en.wikipedia.org/wiki/AlphaGo",
+        "date": "2026-09-07",
+        "type": "secondaire"
+      },
+      {
+        "titre": "Jumper et al., « Highly accurate protein structure prediction with AlphaFold », Nature 596 (2021)",
+        "url": "https://www.nature.com/articles/s41586-021-03819-2",
+        "type": "primaire"
+      },
+      {
+        "titre": "AlphaFold Protein Structure Database (EMBL-EBI / Google DeepMind)",
+        "url": "https://alphafold.ebi.ac.uk/",
+        "date": "2026-09-07",
+        "type": "primaire"
+      },
+      {
+        "titre": "AlphaFold — Wikipédia (article en français)",
+        "url": "https://fr.wikipedia.org/wiki/AlphaFold",
+        "date": "2026-09-07",
+        "type": "secondaire"
       }
     ],
     "statut": "documente",
-    "derniere_verification": "2026-09-06",
+    "derniere_verification": "2026-09-07",
     "editeur": "DeepMind (Google)",
     "architecture": "Apprentissage par renforcement profond combiné à une recherche arborescente Monte-Carlo (AlphaGo/AlphaZero) ; réseau de neurones spécialisé pour la prédiction de structures protéiques (AlphaFold)"
   },
@@ -510,8 +598,9 @@
         "sources": [
           {
             "titre": "Stable Diffusion — Wikipedia (EN)",
-            "type": "secondaire",
-            "url": "https://en.wikipedia.org/wiki/Stable_Diffusion"
+            "url": "https://en.wikipedia.org/wiki/Stable_Diffusion",
+            "date": "2026-09-07",
+            "type": "secondaire"
           }
         ]
       },
@@ -526,8 +615,9 @@
         "sources": [
           {
             "titre": "Stable Diffusion — Wikipedia (EN)",
-            "type": "secondaire",
-            "url": "https://en.wikipedia.org/wiki/Stable_Diffusion"
+            "url": "https://en.wikipedia.org/wiki/Stable_Diffusion",
+            "date": "2026-09-07",
+            "type": "secondaire"
           }
         ]
       }
@@ -535,13 +625,20 @@
     "limites_connues": "Controverses juridiques et éthiques majeures sur l'entraînement à partir d'œuvres protégées par le droit d'auteur sans consentement des artistes, risques de désinformation par images truquées (deepfakes), et difficultés persistantes à générer certains détails fins (mains, texte incrusté dans l'image).",
     "sources": [
       {
+        "titre": "Rombach et al., « High-Resolution Image Synthesis with Latent Diffusion Models »",
+        "url": "https://arxiv.org/abs/2112.10752",
+        "date": "2021-12-20",
+        "type": "primaire"
+      },
+      {
         "titre": "Stable Diffusion — Wikipedia (EN)",
-        "type": "primaire",
-        "url": "https://en.wikipedia.org/wiki/Stable_Diffusion"
+        "url": "https://en.wikipedia.org/wiki/Stable_Diffusion",
+        "date": "2026-09-07",
+        "type": "secondaire"
       }
     ],
     "statut": "documente",
-    "derniere_verification": "2026-09-06",
+    "derniere_verification": "2026-09-07",
     "editeur": "Stability AI (Stable Diffusion) ; Midjourney Inc. ; OpenAI (DALL-E)",
     "architecture": "Modèles de diffusion (et transformer pour DALL-E 3) convertissant une description textuelle en image par débruitage progressif d'un bruit aléatoire"
   },
@@ -566,8 +663,9 @@
         "sources": [
           {
             "titre": "Régression linéaire — Wikipédia",
-            "type": "secondaire",
-            "url": "https://fr.wikipedia.org/wiki/Régression_linéaire"
+            "url": "https://fr.wikipedia.org/wiki/Régression_linéaire",
+            "date": "2026-09-07",
+            "type": "secondaire"
           }
         ]
       },
@@ -582,8 +680,9 @@
         "sources": [
           {
             "titre": "Régression linéaire — Wikipédia",
-            "type": "secondaire",
-            "url": "https://fr.wikipedia.org/wiki/Régression_linéaire"
+            "url": "https://fr.wikipedia.org/wiki/Régression_linéaire",
+            "date": "2026-09-07",
+            "type": "secondaire"
           }
         ]
       }
@@ -592,12 +691,13 @@
     "sources": [
       {
         "titre": "Régression linéaire — Wikipédia",
-        "type": "primaire",
-        "url": "https://fr.wikipedia.org/wiki/Régression_linéaire"
+        "url": "https://fr.wikipedia.org/wiki/Régression_linéaire",
+        "date": "2026-09-07",
+        "type": "secondaire"
       }
     ],
     "statut": "documente",
-    "derniere_verification": "2026-09-06",
+    "derniere_verification": "2026-09-07",
     "editeur": "Méthode statistique classique (Legendre/Gauss, XIXe siècle), aujourd'hui implémentée dans toutes les bibliothèques de data science",
     "architecture": "Modèle statistique paramétrique modélisant une relation linéaire entre variables explicatives et une variable cible continue"
   },
@@ -622,8 +722,9 @@
         "sources": [
           {
             "titre": "Régression logistique — Wikipédia",
-            "type": "secondaire",
-            "url": "https://fr.wikipedia.org/wiki/Régression_logistique"
+            "url": "https://fr.wikipedia.org/wiki/Régression_logistique",
+            "date": "2026-09-07",
+            "type": "secondaire"
           }
         ]
       },
@@ -638,8 +739,9 @@
         "sources": [
           {
             "titre": "Régression logistique — Wikipédia",
-            "type": "secondaire",
-            "url": "https://fr.wikipedia.org/wiki/Régression_logistique"
+            "url": "https://fr.wikipedia.org/wiki/Régression_logistique",
+            "date": "2026-09-07",
+            "type": "secondaire"
           }
         ]
       }
@@ -648,12 +750,13 @@
     "sources": [
       {
         "titre": "Régression logistique — Wikipédia",
-        "type": "primaire",
-        "url": "https://fr.wikipedia.org/wiki/Régression_logistique"
+        "url": "https://fr.wikipedia.org/wiki/Régression_logistique",
+        "date": "2026-09-07",
+        "type": "secondaire"
       }
     ],
     "statut": "documente",
-    "derniere_verification": "2026-09-06",
+    "derniere_verification": "2026-09-07",
     "editeur": "Méthode statistique classique (développée au XXe siècle), standard dans toutes les bibliothèques de data science",
     "architecture": "Modèle statistique linéaire généralisé utilisant une fonction logistique pour modéliser une variable cible binaire ou catégorielle"
   },
@@ -678,8 +781,9 @@
         "sources": [
           {
             "titre": "Arbre de décision (apprentissage) — Wikipédia",
-            "type": "secondaire",
-            "url": "https://fr.wikipedia.org/wiki/Arbre_de_décision_(apprentissage)"
+            "url": "https://fr.wikipedia.org/wiki/Arbre_de_décision_(apprentissage)",
+            "date": "2026-09-07",
+            "type": "secondaire"
           }
         ]
       },
@@ -694,8 +798,9 @@
         "sources": [
           {
             "titre": "Arbre de décision (apprentissage) — Wikipédia",
-            "type": "secondaire",
-            "url": "https://fr.wikipedia.org/wiki/Arbre_de_décision_(apprentissage)"
+            "url": "https://fr.wikipedia.org/wiki/Arbre_de_décision_(apprentissage)",
+            "date": "2026-09-07",
+            "type": "secondaire"
           }
         ]
       }
@@ -704,12 +809,13 @@
     "sources": [
       {
         "titre": "Arbre de décision (apprentissage) — Wikipédia",
-        "type": "primaire",
-        "url": "https://fr.wikipedia.org/wiki/Arbre_de_décision_(apprentissage)"
+        "url": "https://fr.wikipedia.org/wiki/Arbre_de_décision_(apprentissage)",
+        "date": "2026-09-07",
+        "type": "secondaire"
       }
     ],
     "statut": "documente",
-    "derniere_verification": "2026-09-06",
+    "derniere_verification": "2026-09-07",
     "editeur": "Méthode d'apprentissage automatique classique (algorithmes ID3, C4.5, CART, développés à partir des années 1980)",
     "architecture": "Structure arborescente de règles de décision successives fondées sur les valeurs des variables explicatives"
   },
@@ -734,8 +840,9 @@
         "sources": [
           {
             "titre": "Forêt d'arbres décisionnels — Wikipédia",
-            "type": "secondaire",
-            "url": "https://fr.wikipedia.org/wiki/Forêt_d'arbres_décisionnels"
+            "url": "https://fr.wikipedia.org/wiki/Forêt_d'arbres_décisionnels",
+            "date": "2026-09-07",
+            "type": "secondaire"
           }
         ]
       },
@@ -750,8 +857,9 @@
         "sources": [
           {
             "titre": "Forêt d'arbres décisionnels — Wikipédia",
-            "type": "secondaire",
-            "url": "https://fr.wikipedia.org/wiki/Forêt_d'arbres_décisionnels"
+            "url": "https://fr.wikipedia.org/wiki/Forêt_d'arbres_décisionnels",
+            "date": "2026-09-07",
+            "type": "secondaire"
           }
         ]
       }
@@ -759,13 +867,19 @@
     "limites_connues": "Moins interprétable qu'un arbre de décision unique (effet de « boîte grise »), plus coûteuse en calcul et en mémoire, et généralement surpassée sur données tabulaires structurées par les méthodes de gradient boosting (XGBoost, LightGBM) en pratique compétitive.",
     "sources": [
       {
+        "titre": "Leo Breiman, « Random Forests », Machine Learning 45(1), 2001",
+        "url": "https://doi.org/10.1023/A:1010933404324",
+        "type": "primaire"
+      },
+      {
         "titre": "Forêt d'arbres décisionnels — Wikipédia",
-        "type": "primaire",
-        "url": "https://fr.wikipedia.org/wiki/Forêt_d'arbres_décisionnels"
+        "url": "https://fr.wikipedia.org/wiki/Forêt_d'arbres_décisionnels",
+        "date": "2026-09-07",
+        "type": "secondaire"
       }
     ],
     "statut": "documente",
-    "derniere_verification": "2026-09-06",
+    "derniere_verification": "2026-09-07",
     "editeur": "Méthode d'ensemble développée notamment par Leo Breiman (2001)",
     "architecture": "Ensemble (bagging) d'un grand nombre d'arbres de décision entraînés sur des sous-échantillons aléatoires des données et des variables"
   },
@@ -790,8 +904,9 @@
         "sources": [
           {
             "titre": "Machine à vecteurs de support — Wikipédia",
-            "type": "secondaire",
-            "url": "https://fr.wikipedia.org/wiki/Machine_à_vecteurs_de_support"
+            "url": "https://fr.wikipedia.org/wiki/Machine_à_vecteurs_de_support",
+            "date": "2026-09-07",
+            "type": "secondaire"
           }
         ]
       },
@@ -806,8 +921,9 @@
         "sources": [
           {
             "titre": "Machine à vecteurs de support — Wikipédia",
-            "type": "secondaire",
-            "url": "https://fr.wikipedia.org/wiki/Machine_à_vecteurs_de_support"
+            "url": "https://fr.wikipedia.org/wiki/Machine_à_vecteurs_de_support",
+            "date": "2026-09-07",
+            "type": "secondaire"
           }
         ]
       }
@@ -816,12 +932,13 @@
     "sources": [
       {
         "titre": "Machine à vecteurs de support — Wikipédia",
-        "type": "primaire",
-        "url": "https://fr.wikipedia.org/wiki/Machine_à_vecteurs_de_support"
+        "url": "https://fr.wikipedia.org/wiki/Machine_à_vecteurs_de_support",
+        "date": "2026-09-07",
+        "type": "secondaire"
       }
     ],
     "statut": "documente",
-    "derniere_verification": "2026-09-06",
+    "derniere_verification": "2026-09-07",
     "editeur": "Méthode statistique développée notamment par Vladimir Vapnik et Corinna Cortes (années 1990)",
     "architecture": "Algorithme de classification (ou régression) cherchant l'hyperplan séparateur qui maximise la marge entre les classes, avec extension non linéaire via des fonctions noyau (kernel trick)"
   },
@@ -846,8 +963,9 @@
         "sources": [
           {
             "titre": "Méthode des k plus proches voisins — Wikipédia",
-            "type": "secondaire",
-            "url": "https://fr.wikipedia.org/wiki/Méthode_des_k_plus_proches_voisins"
+            "url": "https://fr.wikipedia.org/wiki/Méthode_des_k_plus_proches_voisins",
+            "date": "2026-09-07",
+            "type": "secondaire"
           }
         ]
       },
@@ -862,8 +980,9 @@
         "sources": [
           {
             "titre": "Méthode des k plus proches voisins — Wikipédia",
-            "type": "secondaire",
-            "url": "https://fr.wikipedia.org/wiki/Méthode_des_k_plus_proches_voisins"
+            "url": "https://fr.wikipedia.org/wiki/Méthode_des_k_plus_proches_voisins",
+            "date": "2026-09-07",
+            "type": "secondaire"
           }
         ]
       }
@@ -872,12 +991,13 @@
     "sources": [
       {
         "titre": "Méthode des k plus proches voisins — Wikipédia",
-        "type": "primaire",
-        "url": "https://fr.wikipedia.org/wiki/Méthode_des_k_plus_proches_voisins"
+        "url": "https://fr.wikipedia.org/wiki/Méthode_des_k_plus_proches_voisins",
+        "date": "2026-09-07",
+        "type": "secondaire"
       }
     ],
     "statut": "documente",
-    "derniere_verification": "2026-09-06",
+    "derniere_verification": "2026-09-07",
     "editeur": "Méthode statistique classique d'apprentissage non paramétrique (années 1950-1960)",
     "architecture": "Algorithme de classification (ou régression) qui attribue à une observation la classe majoritaire (ou la moyenne) de ses k plus proches voisins dans l'espace des variables"
   },
@@ -902,8 +1022,9 @@
         "sources": [
           {
             "titre": "Classification naïve bayésienne — Wikipédia",
-            "type": "secondaire",
-            "url": "https://fr.wikipedia.org/wiki/Classification_naïve_bayésienne"
+            "url": "https://fr.wikipedia.org/wiki/Classification_naïve_bayésienne",
+            "date": "2026-09-07",
+            "type": "secondaire"
           }
         ]
       },
@@ -918,8 +1039,9 @@
         "sources": [
           {
             "titre": "Classification naïve bayésienne — Wikipédia",
-            "type": "secondaire",
-            "url": "https://fr.wikipedia.org/wiki/Classification_naïve_bayésienne"
+            "url": "https://fr.wikipedia.org/wiki/Classification_naïve_bayésienne",
+            "date": "2026-09-07",
+            "type": "secondaire"
           }
         ]
       }
@@ -928,12 +1050,13 @@
     "sources": [
       {
         "titre": "Classification naïve bayésienne — Wikipédia",
-        "type": "primaire",
-        "url": "https://fr.wikipedia.org/wiki/Classification_naïve_bayésienne"
+        "url": "https://fr.wikipedia.org/wiki/Classification_naïve_bayésienne",
+        "date": "2026-09-07",
+        "type": "secondaire"
       }
     ],
     "statut": "documente",
-    "derniere_verification": "2026-09-06",
+    "derniere_verification": "2026-09-07",
     "editeur": "Méthode statistique classique fondée sur le théorème de Bayes (utilisée en apprentissage automatique depuis les années 1960-1990)",
     "architecture": "Classifieur probabiliste appliquant le théorème de Bayes avec une hypothèse simplificatrice d'indépendance conditionnelle entre les variables explicatives"
   },
@@ -958,8 +1081,9 @@
         "sources": [
           {
             "titre": "K-moyennes — Wikipédia",
-            "type": "secondaire",
-            "url": "https://fr.wikipedia.org/wiki/K-moyennes"
+            "url": "https://fr.wikipedia.org/wiki/K-moyennes",
+            "date": "2026-09-07",
+            "type": "secondaire"
           }
         ]
       },
@@ -974,8 +1098,9 @@
         "sources": [
           {
             "titre": "K-moyennes — Wikipédia",
-            "type": "secondaire",
-            "url": "https://fr.wikipedia.org/wiki/K-moyennes"
+            "url": "https://fr.wikipedia.org/wiki/K-moyennes",
+            "date": "2026-09-07",
+            "type": "secondaire"
           }
         ]
       }
@@ -984,12 +1109,13 @@
     "sources": [
       {
         "titre": "K-moyennes — Wikipédia",
-        "type": "primaire",
-        "url": "https://fr.wikipedia.org/wiki/K-moyennes"
+        "url": "https://fr.wikipedia.org/wiki/K-moyennes",
+        "date": "2026-09-07",
+        "type": "secondaire"
       }
     ],
     "statut": "documente",
-    "derniere_verification": "2026-09-06",
+    "derniere_verification": "2026-09-07",
     "editeur": "Algorithme classique de partitionnement de données (formalisé par Stuart Lloyd et James MacQueen dans les années 1950-1960)",
     "architecture": "Algorithme de partitionnement non supervisé qui regroupe les observations en k groupes (clusters) en minimisant la distance intra-groupe aux centroïdes"
   },
@@ -1014,8 +1140,9 @@
         "sources": [
           {
             "titre": "Analyse en composantes principales — Wikipédia",
-            "type": "secondaire",
-            "url": "https://fr.wikipedia.org/wiki/Analyse_en_composantes_principales"
+            "url": "https://fr.wikipedia.org/wiki/Analyse_en_composantes_principales",
+            "date": "2026-09-07",
+            "type": "secondaire"
           }
         ]
       },
@@ -1030,8 +1157,9 @@
         "sources": [
           {
             "titre": "Analyse en composantes principales — Wikipédia",
-            "type": "secondaire",
-            "url": "https://fr.wikipedia.org/wiki/Analyse_en_composantes_principales"
+            "url": "https://fr.wikipedia.org/wiki/Analyse_en_composantes_principales",
+            "date": "2026-09-07",
+            "type": "secondaire"
           }
         ]
       }
@@ -1040,12 +1168,13 @@
     "sources": [
       {
         "titre": "Analyse en composantes principales — Wikipédia",
-        "type": "primaire",
-        "url": "https://fr.wikipedia.org/wiki/Analyse_en_composantes_principales"
+        "url": "https://fr.wikipedia.org/wiki/Analyse_en_composantes_principales",
+        "date": "2026-09-07",
+        "type": "secondaire"
       }
     ],
     "statut": "documente",
-    "derniere_verification": "2026-09-06",
+    "derniere_verification": "2026-09-07",
     "editeur": "Méthode statistique classique développée par Karl Pearson (1901) puis Harold Hotelling (1933)",
     "architecture": "Méthode de réduction de dimension linéaire projetant les données sur les axes (composantes principales) qui maximisent la variance expliquée"
   },
@@ -1070,8 +1199,9 @@
         "sources": [
           {
             "titre": "Gradient boosting — Wikipedia (EN)",
-            "type": "secondaire",
-            "url": "https://en.wikipedia.org/wiki/Gradient_boosting"
+            "url": "https://en.wikipedia.org/wiki/Gradient_boosting",
+            "date": "2026-09-07",
+            "type": "secondaire"
           }
         ]
       },
@@ -1086,8 +1216,9 @@
         "sources": [
           {
             "titre": "Gradient boosting — Wikipedia (EN)",
-            "type": "secondaire",
-            "url": "https://en.wikipedia.org/wiki/Gradient_boosting"
+            "url": "https://en.wikipedia.org/wiki/Gradient_boosting",
+            "date": "2026-09-07",
+            "type": "secondaire"
           }
         ]
       }
@@ -1096,12 +1227,13 @@
     "sources": [
       {
         "titre": "Gradient boosting — Wikipedia (EN)",
-        "type": "primaire",
-        "url": "https://en.wikipedia.org/wiki/Gradient_boosting"
+        "url": "https://en.wikipedia.org/wiki/Gradient_boosting",
+        "date": "2026-09-07",
+        "type": "secondaire"
       }
     ],
     "statut": "documente",
-    "derniere_verification": "2026-09-06",
+    "derniere_verification": "2026-09-07",
     "editeur": "Méthode de gradient boosting formalisée par Jerome Friedman (1999) ; implémentations XGBoost (2014), LightGBM (Microsoft, 2016), CatBoost (Yandex, 2017)",
     "architecture": "Méthode d'ensemble séquentielle construisant successivement des arbres de décision faibles, chacun corrigeant les erreurs résiduelles des arbres précédents par descente de gradient"
   },
@@ -1126,8 +1258,9 @@
         "sources": [
           {
             "titre": "Modèle ARIMA — Wikipédia",
-            "type": "secondaire",
-            "url": "https://fr.wikipedia.org/wiki/Modèle_ARIMA"
+            "url": "https://fr.wikipedia.org/wiki/Modèle_ARIMA",
+            "date": "2026-09-07",
+            "type": "secondaire"
           }
         ]
       },
@@ -1142,8 +1275,9 @@
         "sources": [
           {
             "titre": "Modèle ARIMA — Wikipédia",
-            "type": "secondaire",
-            "url": "https://fr.wikipedia.org/wiki/Modèle_ARIMA"
+            "url": "https://fr.wikipedia.org/wiki/Modèle_ARIMA",
+            "date": "2026-09-07",
+            "type": "secondaire"
           }
         ]
       }
@@ -1152,12 +1286,13 @@
     "sources": [
       {
         "titre": "Modèle ARIMA — Wikipédia",
-        "type": "primaire",
-        "url": "https://fr.wikipedia.org/wiki/Modèle_ARIMA"
+        "url": "https://fr.wikipedia.org/wiki/Modèle_ARIMA",
+        "date": "2026-09-07",
+        "type": "secondaire"
       }
     ],
     "statut": "documente",
-    "derniere_verification": "2026-09-06",
+    "derniere_verification": "2026-09-07",
     "editeur": "Méthodologie statistique formalisée par George Box et Gwilym Jenkins (1970)",
     "architecture": "Modèles statistiques de séries temporelles combinant autorégression (AR), différenciation (I, intégration) et moyenne mobile (MA), avec extension saisonnière pour SARIMA"
   },
@@ -1182,8 +1317,9 @@
         "sources": [
           {
             "titre": "Perceptron multicouche — Wikipédia",
-            "type": "secondaire",
-            "url": "https://fr.wikipedia.org/wiki/Perceptron_multicouche"
+            "url": "https://fr.wikipedia.org/wiki/Perceptron_multicouche",
+            "date": "2026-09-07",
+            "type": "secondaire"
           }
         ]
       },
@@ -1198,8 +1334,9 @@
         "sources": [
           {
             "titre": "Perceptron multicouche — Wikipédia",
-            "type": "secondaire",
-            "url": "https://fr.wikipedia.org/wiki/Perceptron_multicouche"
+            "url": "https://fr.wikipedia.org/wiki/Perceptron_multicouche",
+            "date": "2026-09-07",
+            "type": "secondaire"
           }
         ]
       }
@@ -1208,12 +1345,13 @@
     "sources": [
       {
         "titre": "Perceptron multicouche — Wikipédia",
-        "type": "primaire",
-        "url": "https://fr.wikipedia.org/wiki/Perceptron_multicouche"
+        "url": "https://fr.wikipedia.org/wiki/Perceptron_multicouche",
+        "date": "2026-09-07",
+        "type": "secondaire"
       }
     ],
     "statut": "documente",
-    "derniere_verification": "2026-09-06",
+    "derniere_verification": "2026-09-07",
     "editeur": "Architecture fondatrice des réseaux de neurones (popularisée par la rétropropagation du gradient, Rumelhart, Hinton, Williams, 1986)",
     "architecture": "Réseau de neurones artificiels entièrement connecté (feedforward), composé d'une couche d'entrée, d'une ou plusieurs couches cachées et d'une couche de sortie"
   },
@@ -1238,8 +1376,9 @@
         "sources": [
           {
             "titre": "Réseau neuronal convolutif — Wikipédia",
-            "type": "secondaire",
-            "url": "https://fr.wikipedia.org/wiki/Réseau_neuronal_convolutif"
+            "url": "https://fr.wikipedia.org/wiki/Réseau_neuronal_convolutif",
+            "date": "2026-09-07",
+            "type": "secondaire"
           }
         ]
       },
@@ -1254,8 +1393,9 @@
         "sources": [
           {
             "titre": "Réseau neuronal convolutif — Wikipédia",
-            "type": "secondaire",
-            "url": "https://fr.wikipedia.org/wiki/Réseau_neuronal_convolutif"
+            "url": "https://fr.wikipedia.org/wiki/Réseau_neuronal_convolutif",
+            "date": "2026-09-07",
+            "type": "secondaire"
           }
         ]
       }
@@ -1264,12 +1404,13 @@
     "sources": [
       {
         "titre": "Réseau neuronal convolutif — Wikipédia",
-        "type": "primaire",
-        "url": "https://fr.wikipedia.org/wiki/Réseau_neuronal_convolutif"
+        "url": "https://fr.wikipedia.org/wiki/Réseau_neuronal_convolutif",
+        "date": "2026-09-07",
+        "type": "secondaire"
       }
     ],
     "statut": "documente",
-    "derniere_verification": "2026-09-06",
+    "derniere_verification": "2026-09-07",
     "editeur": "Architecture développée notamment par Yann LeCun (LeNet, fin des années 1980-1990), popularisée à grande échelle par AlexNet (2012)",
     "architecture": "Réseau de neurones convolutif utilisant des couches de convolution et de pooling pour extraire des caractéristiques spatiales hiérarchiques (bords, textures, formes)"
   },
@@ -1294,8 +1435,9 @@
         "sources": [
           {
             "titre": "Réseau de neurones récurrents — Wikipédia",
-            "type": "secondaire",
-            "url": "https://fr.wikipedia.org/wiki/Réseau_de_neurones_récurrents"
+            "url": "https://fr.wikipedia.org/wiki/Réseau_de_neurones_récurrents",
+            "date": "2026-09-07",
+            "type": "secondaire"
           }
         ]
       },
@@ -1310,8 +1452,9 @@
         "sources": [
           {
             "titre": "Réseau de neurones récurrents — Wikipédia",
-            "type": "secondaire",
-            "url": "https://fr.wikipedia.org/wiki/Réseau_de_neurones_récurrents"
+            "url": "https://fr.wikipedia.org/wiki/Réseau_de_neurones_récurrents",
+            "date": "2026-09-07",
+            "type": "secondaire"
           }
         ]
       }
@@ -1320,12 +1463,13 @@
     "sources": [
       {
         "titre": "Réseau de neurones récurrents — Wikipédia",
-        "type": "primaire",
-        "url": "https://fr.wikipedia.org/wiki/Réseau_de_neurones_récurrents"
+        "url": "https://fr.wikipedia.org/wiki/Réseau_de_neurones_récurrents",
+        "date": "2026-09-07",
+        "type": "secondaire"
       }
     ],
     "statut": "documente",
-    "derniere_verification": "2026-09-06",
+    "derniere_verification": "2026-09-07",
     "editeur": "Architecture développée à partir des travaux des années 1980-1990 (Rumelhart, Hopfield, Elman, Jordan)",
     "architecture": "Réseau de neurones récurrent traitant des séquences en réutilisant un état caché mis à jour à chaque pas de temps, permettant de modéliser des dépendances temporelles"
   },
@@ -1350,8 +1494,9 @@
         "sources": [
           {
             "titre": "Long short-term memory — Wikipedia (EN)",
-            "type": "secondaire",
-            "url": "https://en.wikipedia.org/wiki/Long_short-term_memory"
+            "url": "https://en.wikipedia.org/wiki/Long_short-term_memory",
+            "date": "2026-09-07",
+            "type": "secondaire"
           }
         ]
       },
@@ -1366,8 +1511,9 @@
         "sources": [
           {
             "titre": "Long short-term memory — Wikipedia (EN)",
-            "type": "secondaire",
-            "url": "https://en.wikipedia.org/wiki/Long_short-term_memory"
+            "url": "https://en.wikipedia.org/wiki/Long_short-term_memory",
+            "date": "2026-09-07",
+            "type": "secondaire"
           }
         ]
       }
@@ -1375,13 +1521,19 @@
     "limites_connues": "Traitement intrinsèquement séquentiel (pas à pas) qui limite la parallélisation de l'entraînement par rapport aux Transformers, ce qui explique son remplacement progressif par ces derniers sur la plupart des tâches de traitement du langage depuis 2017-2018.",
     "sources": [
       {
+        "titre": "Hochreiter & Schmidhuber, « Long Short-Term Memory », Neural Computation 9(8), 1997",
+        "url": "https://doi.org/10.1162/neco.1997.9.8.1735",
+        "type": "primaire"
+      },
+      {
         "titre": "Long short-term memory — Wikipedia (EN)",
-        "type": "primaire",
-        "url": "https://en.wikipedia.org/wiki/Long_short-term_memory"
+        "url": "https://en.wikipedia.org/wiki/Long_short-term_memory",
+        "date": "2026-09-07",
+        "type": "secondaire"
       }
     ],
     "statut": "documente",
-    "derniere_verification": "2026-09-06",
+    "derniere_verification": "2026-09-07",
     "editeur": "Architecture développée par Sepp Hochreiter et Jürgen Schmidhuber (1997)",
     "architecture": "Variante de réseau de neurones récurrent dotée de portes (entrée, oubli, sortie) régulant un état de cellule mémoire à long terme, résolvant le problème de disparition du gradient des RNN classiques"
   },
@@ -1406,8 +1558,9 @@
         "sources": [
           {
             "titre": "Autoencodeur — Wikipédia",
-            "type": "secondaire",
-            "url": "https://fr.wikipedia.org/wiki/Autoencodeur"
+            "url": "https://fr.wikipedia.org/wiki/Autoencodeur",
+            "date": "2026-09-07",
+            "type": "secondaire"
           }
         ]
       },
@@ -1422,8 +1575,9 @@
         "sources": [
           {
             "titre": "Autoencodeur — Wikipédia",
-            "type": "secondaire",
-            "url": "https://fr.wikipedia.org/wiki/Autoencodeur"
+            "url": "https://fr.wikipedia.org/wiki/Autoencodeur",
+            "date": "2026-09-07",
+            "type": "secondaire"
           }
         ]
       }
@@ -1432,12 +1586,13 @@
     "sources": [
       {
         "titre": "Autoencodeur — Wikipédia",
-        "type": "primaire",
-        "url": "https://fr.wikipedia.org/wiki/Autoencodeur"
+        "url": "https://fr.wikipedia.org/wiki/Autoencodeur",
+        "date": "2026-09-07",
+        "type": "secondaire"
       }
     ],
     "statut": "documente",
-    "derniere_verification": "2026-09-06",
+    "derniere_verification": "2026-09-07",
     "editeur": "Architecture de réseau de neurones popularisée à partir des années 1980-1990, largement développée depuis les années 2010",
     "architecture": "Réseau de neurones non supervisé composé d'un encodeur qui compresse les données en une représentation latente de dimension réduite, et d'un décodeur qui tente de reconstruire les données d'origine"
   },
@@ -1462,8 +1617,9 @@
         "sources": [
           {
             "titre": "Generative adversarial network — Wikipedia (EN)",
-            "type": "secondaire",
-            "url": "https://en.wikipedia.org/wiki/Generative_adversarial_network"
+            "url": "https://en.wikipedia.org/wiki/Generative_adversarial_network",
+            "date": "2026-09-07",
+            "type": "secondaire"
           }
         ]
       },
@@ -1478,8 +1634,9 @@
         "sources": [
           {
             "titre": "Generative adversarial network — Wikipedia (EN)",
-            "type": "secondaire",
-            "url": "https://en.wikipedia.org/wiki/Generative_adversarial_network"
+            "url": "https://en.wikipedia.org/wiki/Generative_adversarial_network",
+            "date": "2026-09-07",
+            "type": "secondaire"
           }
         ]
       }
@@ -1487,13 +1644,20 @@
     "limites_connues": "Entraînement notoirement instable (risque d'effondrement du mode, mode collapse, où le générateur produit une diversité limitée de sorties), et largement supplanté depuis 2022 par les modèles de diffusion pour la génération d'images de haute qualité ; également utilisé pour créer des deepfakes, posant des risques de désinformation.",
     "sources": [
       {
+        "titre": "Goodfellow et al., « Generative Adversarial Networks »",
+        "url": "https://arxiv.org/abs/1406.2661",
+        "date": "2014-06-10",
+        "type": "primaire"
+      },
+      {
         "titre": "Generative adversarial network — Wikipedia (EN)",
-        "type": "primaire",
-        "url": "https://en.wikipedia.org/wiki/Generative_adversarial_network"
+        "url": "https://en.wikipedia.org/wiki/Generative_adversarial_network",
+        "date": "2026-09-07",
+        "type": "secondaire"
       }
     ],
     "statut": "documente",
-    "derniere_verification": "2026-09-06",
+    "derniere_verification": "2026-09-07",
     "editeur": "Concept développé par Ian Goodfellow et ses collègues (juin 2014)",
     "architecture": "Deux réseaux de neurones (un générateur et un discriminateur) mis en compétition dans un jeu à somme nulle : le générateur tente de produire des données réalistes, le discriminateur tente de les distinguer des données réelles"
   },
@@ -1518,8 +1682,9 @@
         "sources": [
           {
             "titre": "Transformer (deep learning architecture) — Wikipedia (EN)",
-            "type": "secondaire",
-            "url": "https://en.wikipedia.org/wiki/Transformer_(deep_learning_architecture)"
+            "url": "https://en.wikipedia.org/wiki/Transformer_(deep_learning_architecture)",
+            "date": "2026-09-07",
+            "type": "secondaire"
           }
         ]
       },
@@ -1534,8 +1699,9 @@
         "sources": [
           {
             "titre": "Transformer (deep learning architecture) — Wikipedia (EN)",
-            "type": "secondaire",
-            "url": "https://en.wikipedia.org/wiki/Transformer_(deep_learning_architecture)"
+            "url": "https://en.wikipedia.org/wiki/Transformer_(deep_learning_architecture)",
+            "date": "2026-09-07",
+            "type": "secondaire"
           }
         ]
       }
@@ -1543,13 +1709,20 @@
     "limites_connues": "Coût de calcul et de mémoire croissant de façon quadratique avec la longueur de la séquence traitée (attention classique), ce qui pose des défis pour le traitement de contextes très longs, et nécessite des volumes de données et de calcul d'entraînement considérables pour atteindre ses meilleures performances.",
     "sources": [
       {
+        "titre": "Vaswani et al., « Attention Is All You Need », NIPS 2017",
+        "url": "https://arxiv.org/abs/1706.03762",
+        "date": "2017-06-12",
+        "type": "primaire"
+      },
+      {
         "titre": "Transformer (deep learning architecture) — Wikipedia (EN)",
-        "type": "primaire",
-        "url": "https://en.wikipedia.org/wiki/Transformer_(deep_learning_architecture)"
+        "url": "https://en.wikipedia.org/wiki/Transformer_(deep_learning_architecture)",
+        "date": "2026-09-07",
+        "type": "secondaire"
       }
     ],
     "statut": "documente",
-    "derniere_verification": "2026-09-06",
+    "derniere_verification": "2026-09-07",
     "editeur": "Architecture introduite par des chercheurs de Google dans l'article « Attention Is All You Need » (2017)",
     "architecture": "Architecture de réseau de neurones fondée sur le mécanisme d'attention multi-têtes (self-attention), traitant l'ensemble d'une séquence en parallèle plutôt que pas à pas"
   },
@@ -1578,6 +1751,7 @@
           {
             "titre": "AutoGPT — Wikipedia",
             "url": "https://en.wikipedia.org/wiki/AutoGPT",
+            "date": "2026-09-07",
             "type": "secondaire"
           }
         ]
@@ -1595,6 +1769,7 @@
           {
             "titre": "AutoGPT — Wikipedia",
             "url": "https://en.wikipedia.org/wiki/AutoGPT",
+            "date": "2026-09-07",
             "type": "secondaire"
           }
         ]
@@ -1603,18 +1778,20 @@
     "limites_connues": "Boucles de planification souvent inefficaces ou répétitives sur des tâches complexes ; coût en tokens élevé pour un taux de succès fréquemment faible sur des objectifs ambitieux mal spécifiés ; fiabilité insuffisante pour un usage en production sans supervision humaine étroite — a surtout eu un rôle de preuve de concept médiatique en 2023 plutôt que d'outil de production robuste.",
     "sources": [
       {
-        "titre": "AutoGPT (dépôt GitHub)",
+        "titre": "AutoGPT (dépôt GitHub officiel)",
         "url": "https://github.com/Significant-Gravitas/AutoGPT",
+        "date": "2026-09-07",
         "type": "primaire"
       },
       {
         "titre": "AutoGPT — Wikipedia",
         "url": "https://en.wikipedia.org/wiki/AutoGPT",
+        "date": "2026-09-07",
         "type": "secondaire"
       }
     ],
     "statut": "documente",
-    "derniere_verification": "2026-09-06"
+    "derniere_verification": "2026-09-07"
   },
   {
     "id": "openai-operator-agents-de-navigation-web",
@@ -1639,8 +1816,9 @@
         "sources": [
           {
             "titre": "OpenAI — Wikipedia (EN)",
-            "type": "secondaire",
-            "url": "https://en.wikipedia.org/wiki/OpenAI"
+            "url": "https://en.wikipedia.org/wiki/OpenAI",
+            "date": "2026-09-07",
+            "type": "secondaire"
           }
         ]
       },
@@ -1654,8 +1832,9 @@
         "sources": [
           {
             "titre": "OpenAI — Wikipedia (EN)",
-            "type": "secondaire",
-            "url": "https://en.wikipedia.org/wiki/OpenAI"
+            "url": "https://en.wikipedia.org/wiki/OpenAI",
+            "date": "2026-09-07",
+            "type": "secondaire"
           }
         ]
       }
@@ -1664,12 +1843,13 @@
     "sources": [
       {
         "titre": "OpenAI — Wikipedia (EN)",
-        "type": "primaire",
-        "url": "https://en.wikipedia.org/wiki/OpenAI"
+        "url": "https://en.wikipedia.org/wiki/OpenAI",
+        "date": "2026-09-07",
+        "type": "secondaire"
       }
     ],
     "statut": "documente",
-    "derniere_verification": "2026-09-06"
+    "derniere_verification": "2026-09-07"
   },
   {
     "id": "devin-cognition-ai",
@@ -1694,8 +1874,9 @@
         "sources": [
           {
             "titre": "Devin AI — Wikipedia (EN)",
-            "type": "secondaire",
-            "url": "https://en.wikipedia.org/wiki/Devin_AI"
+            "url": "https://en.wikipedia.org/wiki/Devin_AI",
+            "date": "2026-09-07",
+            "type": "secondaire"
           }
         ]
       },
@@ -1709,8 +1890,9 @@
         "sources": [
           {
             "titre": "Devin AI — Wikipedia (EN)",
-            "type": "secondaire",
-            "url": "https://en.wikipedia.org/wiki/Devin_AI"
+            "url": "https://en.wikipedia.org/wiki/Devin_AI",
+            "date": "2026-09-07",
+            "type": "secondaire"
           }
         ]
       }
@@ -1719,12 +1901,13 @@
     "sources": [
       {
         "titre": "Devin AI — Wikipedia (EN)",
-        "type": "primaire",
-        "url": "https://en.wikipedia.org/wiki/Devin_AI"
+        "url": "https://en.wikipedia.org/wiki/Devin_AI",
+        "date": "2026-09-07",
+        "type": "secondaire"
       }
     ],
     "statut": "documente",
-    "derniere_verification": "2026-09-06"
+    "derniere_verification": "2026-09-07"
   },
   {
     "id": "frameworks-multi-agents-langgraph-crewai-autogen",
@@ -1748,8 +1931,16 @@
         ],
         "sources": [
           {
-            "titre": "LangChain, CrewAI, AutoGen — documentation des projets",
-            "type": "secondaire"
+            "titre": "LangGraph — documentation officielle (LangChain Inc.)",
+            "url": "https://docs.langchain.com/oss/python/langgraph/overview",
+            "date": "2026-09-07",
+            "type": "primaire"
+          },
+          {
+            "titre": "CrewAI — documentation officielle (CrewAI Inc.)",
+            "url": "https://docs.crewai.com/",
+            "date": "2026-09-07",
+            "type": "primaire"
           }
         ]
       },
@@ -1763,8 +1954,10 @@
         ],
         "sources": [
           {
-            "titre": "LangChain, CrewAI, AutoGen — documentation des projets",
-            "type": "secondaire"
+            "titre": "AutoGen — documentation officielle (Microsoft)",
+            "url": "https://microsoft.github.io/autogen/stable/",
+            "date": "2026-09-07",
+            "type": "primaire"
           }
         ]
       }
@@ -1772,17 +1965,32 @@
     "limites_connues": "La coordination entre plusieurs agents augmente la complexité de déboguage et les coûts de calcul (chaque agent consommant ses propres appels au modèle de langage), et les erreurs d'un agent peuvent se propager et s'amplifier dans le système multi-agent sans supervision humaine adéquate.",
     "sources": [
       {
-        "titre": "LangChain, CrewAI, AutoGen — documentation des projets",
+        "titre": "LangGraph — documentation officielle (LangChain Inc.)",
+        "url": "https://docs.langchain.com/oss/python/langgraph/overview",
+        "date": "2026-09-07",
+        "type": "primaire"
+      },
+      {
+        "titre": "CrewAI — documentation officielle (CrewAI Inc.)",
+        "url": "https://docs.crewai.com/",
+        "date": "2026-09-07",
+        "type": "primaire"
+      },
+      {
+        "titre": "AutoGen — documentation officielle (Microsoft)",
+        "url": "https://microsoft.github.io/autogen/stable/",
+        "date": "2026-09-07",
         "type": "primaire"
       },
       {
         "titre": "LangChain — Wikipedia",
         "url": "https://en.wikipedia.org/wiki/LangChain",
+        "date": "2026-09-07",
         "type": "secondaire"
       }
     ],
     "statut": "documente",
-    "derniere_verification": "2026-09-06"
+    "derniere_verification": "2026-09-07"
   },
   {
     "id": "alphafold-deepmind",
@@ -1805,8 +2013,16 @@
         ],
         "sources": [
           {
-            "titre": "Nature — AlphaFold Protein Structure Database",
+            "titre": "AlphaFold Protein Structure Database (EMBL-EBI / Google DeepMind)",
+            "url": "https://alphafold.ebi.ac.uk/",
+            "date": "2026-09-07",
             "type": "primaire"
+          },
+          {
+            "titre": "AlphaFold — Wikipédia (article en français)",
+            "url": "https://fr.wikipedia.org/wiki/AlphaFold",
+            "date": "2026-09-07",
+            "type": "secondaire"
           }
         ]
       },
@@ -1823,6 +2039,7 @@
           {
             "titre": "AlphaFold — Wikipédia (article en français)",
             "url": "https://fr.wikipedia.org/wiki/AlphaFold",
+            "date": "2026-09-07",
             "type": "secondaire"
           }
         ]
@@ -1831,21 +2048,31 @@
     "limites_connues": "Prédit une structure statique/probable, pas nécessairement la dynamique conformationnelle réelle d'une protéine en solution ; performance dégradée sur les protéines sans homologues connus ou fortement désordonnées ; ne remplace pas la validation expérimentale pour un usage clinique.",
     "sources": [
       {
-        "titre": "Jumper et al., 'Highly accurate protein structure prediction with AlphaFold', Nature 2021",
+        "titre": "Jumper et al., « Highly accurate protein structure prediction with AlphaFold », Nature 596 (2021)",
+        "url": "https://www.nature.com/articles/s41586-021-03819-2",
         "type": "primaire"
       },
       {
-        "titre": "Prix Nobel de chimie 2024 (Hassabis, Jumper, Baker)",
+        "titre": "AlphaFold Protein Structure Database (EMBL-EBI / Google DeepMind)",
+        "url": "https://alphafold.ebi.ac.uk/",
+        "date": "2026-09-07",
+        "type": "primaire"
+      },
+      {
+        "titre": "Prix Nobel de chimie 2024 (Baker, Hassabis, Jumper) — communiqué du comité Nobel",
+        "url": "https://www.nobelprize.org/prizes/chemistry/2024/summary/",
+        "date": "2026-09-07",
         "type": "secondaire"
       },
       {
         "titre": "AlphaFold — Wikipédia (article en français)",
         "url": "https://fr.wikipedia.org/wiki/AlphaFold",
+        "date": "2026-09-07",
         "type": "secondaire"
       }
     ],
     "statut": "documente",
-    "derniere_verification": "2026-09-06"
+    "derniere_verification": "2026-09-07"
   },
   {
     "id": "gnome-decouverte-de-materiaux",
@@ -1869,8 +2096,22 @@
         ],
         "sources": [
           {
-            "titre": "GNoME (Google DeepMind, 2023)",
+            "titre": "Merchant et al., « Scaling deep learning for materials discovery », Nature 624 (2023)",
+            "url": "https://www.nature.com/articles/s41586-023-06735-9",
+            "date": "2023-11-29",
             "type": "primaire"
+          },
+          {
+            "titre": "Applications of artificial intelligence — Wikipedia",
+            "url": "https://en.wikipedia.org/wiki/Applications_of_artificial_intelligence",
+            "date": "2026-09-07",
+            "type": "secondaire"
+          },
+          {
+            "titre": "Google DeepMind — Wikipedia",
+            "url": "https://en.wikipedia.org/wiki/Google_DeepMind",
+            "date": "2026-09-07",
+            "type": "secondaire"
           }
         ]
       },
@@ -1883,8 +2124,10 @@
         ],
         "sources": [
           {
-            "titre": "GNoME (Google DeepMind, 2023)",
-            "type": "primaire"
+            "titre": "Google DeepMind — Wikipedia",
+            "url": "https://en.wikipedia.org/wiki/Google_DeepMind",
+            "date": "2026-09-07",
+            "type": "secondaire"
           }
         ]
       }
@@ -1892,22 +2135,26 @@
     "limites_connues": "Les prédictions de stabilité restent théoriques (calculs de simulation) et nécessitent une validation expérimentale en laboratoire, longue et coûteuse, avant toute application industrielle réelle ; une partie significative des matériaux prédits stables n'a pas encore été synthétisée ni confirmée en pratique.",
     "sources": [
       {
-        "titre": "GNoME (Google DeepMind, 2023)",
+        "titre": "Merchant et al., « Scaling deep learning for materials discovery », Nature 624 (2023)",
+        "url": "https://www.nature.com/articles/s41586-023-06735-9",
+        "date": "2023-11-29",
         "type": "primaire"
       },
       {
         "titre": "Applications of artificial intelligence — Wikipedia",
         "url": "https://en.wikipedia.org/wiki/Applications_of_artificial_intelligence",
+        "date": "2026-09-07",
         "type": "secondaire"
       },
       {
         "titre": "Google DeepMind — Wikipedia",
         "url": "https://en.wikipedia.org/wiki/Google_DeepMind",
+        "date": "2026-09-07",
         "type": "secondaire"
       }
     ],
     "statut": "documente",
-    "derniere_verification": "2026-09-06"
+    "derniere_verification": "2026-09-07"
   },
   {
     "id": "ia-pour-le-controle-de-plasma-en-fusion-nucleaire",
@@ -1931,7 +2178,15 @@
         ],
         "sources": [
           {
-            "titre": "DeepMind — Magnetic control of tokamak plasmas (Nature, 2022)",
+            "titre": "Degrave et al., « Magnetic control of tokamak plasmas through deep reinforcement learning », Nature 602 (2022)",
+            "url": "https://www.nature.com/articles/s41586-021-04301-9",
+            "date": "2022-02-16",
+            "type": "primaire"
+          },
+          {
+            "titre": "Accelerating fusion science through learned plasma control (Google DeepMind)",
+            "url": "https://deepmind.google/discover/blog/accelerating-fusion-science-through-learned-plasma-control/",
+            "date": "2026-09-07",
             "type": "primaire"
           }
         ]
@@ -1945,7 +2200,9 @@
         ],
         "sources": [
           {
-            "titre": "DeepMind — Magnetic control of tokamak plasmas (Nature, 2022)",
+            "titre": "Degrave et al., « Magnetic control of tokamak plasmas through deep reinforcement learning », Nature 602 (2022)",
+            "url": "https://www.nature.com/articles/s41586-021-04301-9",
+            "date": "2022-02-16",
             "type": "primaire"
           }
         ]
@@ -1954,18 +2211,20 @@
     "limites_connues": "Démontré à ce jour uniquement sur des tokamaks expérimentaux de taille réduite ; le passage à l'échelle de réacteurs de fusion commerciaux de grande taille reste un défi ouvert, et la fusion nucléaire elle-même n'a pas encore atteint la rentabilité énergétique nette à l'échelle industrielle.",
     "sources": [
       {
-        "titre": "DeepMind — Magnetic control of tokamak plasmas (Nature, 2022)",
+        "titre": "Degrave et al., « Magnetic control of tokamak plasmas through deep reinforcement learning », Nature 602 (2022)",
+        "url": "https://www.nature.com/articles/s41586-021-04301-9",
+        "date": "2022-02-16",
         "type": "primaire"
       },
       {
         "titre": "Accelerating fusion science through learned plasma control (Google DeepMind)",
         "url": "https://deepmind.google/discover/blog/accelerating-fusion-science-through-learned-plasma-control/",
-        "date": "2022-02-16",
+        "date": "2026-09-07",
         "type": "primaire"
       }
     ],
     "statut": "documente",
-    "derniere_verification": "2026-09-06"
+    "derniere_verification": "2026-09-07"
   },
   {
     "id": "ia-en-genomique-et-drug-discovery",
@@ -1989,7 +2248,9 @@
         ],
         "sources": [
           {
-            "titre": "AlphaFold — impact sur la recherche pharmaceutique",
+            "titre": "AlphaFold — Wikipédia (article en français)",
+            "url": "https://fr.wikipedia.org/wiki/AlphaFold",
+            "date": "2026-09-07",
             "type": "secondaire"
           }
         ]
@@ -2004,7 +2265,15 @@
         ],
         "sources": [
           {
-            "titre": "AlphaFold — impact sur la recherche pharmaceutique",
+            "titre": "AlphaFold — Wikipédia (article en français)",
+            "url": "https://fr.wikipedia.org/wiki/AlphaFold",
+            "date": "2026-09-07",
+            "type": "secondaire"
+          },
+          {
+            "titre": "Applications of artificial intelligence — Wikipedia",
+            "url": "https://en.wikipedia.org/wiki/Applications_of_artificial_intelligence",
+            "date": "2026-09-07",
             "type": "secondaire"
           }
         ]
@@ -2013,22 +2282,25 @@
     "limites_connues": "Les prédictions computationnelles ne remplacent pas les essais cliniques, seule étape permettant de confirmer l'efficacité et l'innocuité réelles d'un traitement chez l'humain ; le passage du laboratoire au marché reste long (souvent une décennie) et coûteux malgré l'accélération apportée par l'IA sur les étapes amont.",
     "sources": [
       {
-        "titre": "AlphaFold — impact sur la recherche pharmaceutique",
+        "titre": "Jumper et al., « Highly accurate protein structure prediction with AlphaFold », Nature 596 (2021)",
+        "url": "https://www.nature.com/articles/s41586-021-03819-2",
         "type": "primaire"
-      },
-      {
-        "titre": "Applications of artificial intelligence — Wikipedia",
-        "url": "https://en.wikipedia.org/wiki/Applications_of_artificial_intelligence",
-        "type": "secondaire"
       },
       {
         "titre": "AlphaFold — Wikipédia (article en français)",
         "url": "https://fr.wikipedia.org/wiki/AlphaFold",
+        "date": "2026-09-07",
+        "type": "secondaire"
+      },
+      {
+        "titre": "Applications of artificial intelligence — Wikipedia",
+        "url": "https://en.wikipedia.org/wiki/Applications_of_artificial_intelligence",
+        "date": "2026-09-07",
         "type": "secondaire"
       }
     ],
     "statut": "documente",
-    "derniere_verification": "2026-09-06"
+    "derniere_verification": "2026-09-07"
   },
   {
     "id": "ia-en-modelisation-climatique-type-graphcast",
@@ -2052,8 +2324,10 @@
         ],
         "sources": [
           {
-            "titre": "GraphCast (Google DeepMind, publié dans Science, 2023)",
-            "type": "primaire"
+            "titre": "Weather forecasting — Wikipedia",
+            "url": "https://en.wikipedia.org/wiki/Weather_forecasting",
+            "date": "2026-09-07",
+            "type": "secondaire"
           }
         ]
       },
@@ -2067,7 +2341,9 @@
         ],
         "sources": [
           {
-            "titre": "GraphCast (Google DeepMind, publié dans Science, 2023)",
+            "titre": "Lam et al., « GraphCast: Learning skillful medium-range global weather forecasting » (arXiv:2212.12794 ; publié dans Science 382, 2023)",
+            "url": "https://arxiv.org/abs/2212.12794",
+            "date": "2022-12-24",
             "type": "primaire"
           }
         ]
@@ -2076,17 +2352,20 @@
     "limites_connues": "Entraîné sur des données climatiques historiques, ce type de modèle peut être moins fiable face à des conditions climatiques extrêmes ou inédites qui s'écartent significativement de la distribution des données d'entraînement, notamment dans un contexte de changement climatique modifiant les régimes météorologiques de référence.",
     "sources": [
       {
-        "titre": "GraphCast (Google DeepMind, publié dans Science, 2023)",
+        "titre": "Lam et al., « GraphCast: Learning skillful medium-range global weather forecasting » (arXiv:2212.12794 ; publié dans Science 382, 2023)",
+        "url": "https://arxiv.org/abs/2212.12794",
+        "date": "2022-12-24",
         "type": "primaire"
       },
       {
         "titre": "Weather forecasting — Wikipedia",
         "url": "https://en.wikipedia.org/wiki/Weather_forecasting",
+        "date": "2026-09-07",
         "type": "secondaire"
       }
     ],
     "statut": "documente",
-    "derniere_verification": "2026-09-06"
+    "derniere_verification": "2026-09-07"
   },
   {
     "id": "hallucination-et-fiabilite-factuelle-limite-transversale",
@@ -2113,6 +2392,7 @@
           {
             "titre": "Hallucination (intelligence artificielle) — Wikipédia",
             "url": "https://fr.wikipedia.org/wiki/Hallucination_(intelligence_artificielle)",
+            "date": "2026-09-07",
             "type": "secondaire"
           }
         ]
@@ -2129,6 +2409,7 @@
           {
             "titre": "Hallucination (intelligence artificielle) — Wikipédia",
             "url": "https://fr.wikipedia.org/wiki/Hallucination_(intelligence_artificielle)",
+            "date": "2026-09-07",
             "type": "secondaire"
           }
         ]
@@ -2144,6 +2425,7 @@
           {
             "titre": "Hallucination (intelligence artificielle) — Wikipédia",
             "url": "https://fr.wikipedia.org/wiki/Hallucination_(intelligence_artificielle)",
+            "date": "2026-09-07",
             "type": "secondaire"
           }
         ]
@@ -2152,17 +2434,20 @@
     "limites_connues": "Un modèle génératif peut produire des affirmations plausibles mais factuellement fausses (citations inventées, faits erronés) sans signal interne fiable de son propre degré d'incertitude ; le risque augmente avec la spécificité/niche du sujet et diminue avec le RAG (récupération augmentée) sur sources vérifiées, sans jamais tomber à zéro. C'est la limite la plus citée par le mégaprompt (section B5) et directement pertinente pour la fiabilité de ce référentiel lui-même — d'où l'exigence de sourcer systématiquement chaque fiche documentée.",
     "sources": [
       {
-        "titre": "Synthèses académiques sur l'hallucination des LLM (ex. Ji et al., 'Survey of Hallucination in NLG', ACM Computing Surveys)",
+        "titre": "Ji et al., « Survey of Hallucination in Natural Language Generation », ACM Computing Surveys",
+        "url": "https://arxiv.org/abs/2202.03629",
+        "date": "2022-02-08",
         "type": "secondaire"
       },
       {
         "titre": "Hallucination (intelligence artificielle) — Wikipédia",
         "url": "https://fr.wikipedia.org/wiki/Hallucination_(intelligence_artificielle)",
+        "date": "2026-09-07",
         "type": "secondaire"
       }
     ],
     "statut": "documente",
-    "derniere_verification": "2026-09-06"
+    "derniere_verification": "2026-09-07"
   },
   {
     "id": "biais-herites-des-donnees-d-entrainement-limite-transversale",
@@ -2186,7 +2471,9 @@
         ],
         "sources": [
           {
-            "titre": "Recherche académique sur l'équité algorithmique (fairness in ML)",
+            "titre": "Biais algorithmique — Wikipédia",
+            "url": "https://fr.wikipedia.org/wiki/Biais_algorithmique",
+            "date": "2026-09-07",
             "type": "secondaire"
           }
         ]
@@ -2201,7 +2488,9 @@
         ],
         "sources": [
           {
-            "titre": "Recherche académique sur l'équité algorithmique (fairness in ML)",
+            "titre": "Biais algorithmique — Wikipédia",
+            "url": "https://fr.wikipedia.org/wiki/Biais_algorithmique",
+            "date": "2026-09-07",
             "type": "secondaire"
           }
         ]
@@ -2210,17 +2499,20 @@
     "limites_connues": "Il n'existe pas de solution technique universelle et neutre pour éliminer les biais : différentes définitions mathématiques de l'équité (fairness) sont mutuellement incompatibles entre elles, ce qui signifie qu'un choix de correction reste toujours, in fine, un choix normatif et politique.",
     "sources": [
       {
-        "titre": "Recherche académique sur l'équité algorithmique (fairness in ML)",
+        "titre": "Kleinberg, Mullainathan & Raghavan, « Inherent Trade-Offs in the Fair Determination of Risk Scores »",
+        "url": "https://arxiv.org/abs/1609.05807",
+        "date": "2016-09-19",
         "type": "primaire"
       },
       {
         "titre": "Biais algorithmique — Wikipédia",
         "url": "https://fr.wikipedia.org/wiki/Biais_algorithmique",
+        "date": "2026-09-07",
         "type": "secondaire"
       }
     ],
     "statut": "documente",
-    "derniere_verification": "2026-09-06"
+    "derniere_verification": "2026-09-07"
   },
   {
     "id": "dependance-energetique-et-materielle-de-l-ia-limite-transversale",
@@ -2244,7 +2536,15 @@
         ],
         "sources": [
           {
-            "titre": "Rapports sur l'empreinte énergétique de l'IA (AIE, études académiques)",
+            "titre": "Agence internationale de l'énergie, rapport « Energy and AI »",
+            "url": "https://www.iea.org/reports/energy-and-ai",
+            "date": "2025-04-10",
+            "type": "primaire"
+          },
+          {
+            "titre": "Environmental impact of artificial intelligence — Wikipedia",
+            "url": "https://en.wikipedia.org/wiki/Environmental_impact_of_artificial_intelligence",
+            "date": "2026-09-07",
             "type": "secondaire"
           }
         ]
@@ -2259,7 +2559,9 @@
         ],
         "sources": [
           {
-            "titre": "Rapports sur l'empreinte énergétique de l'IA (AIE, études académiques)",
+            "titre": "Environmental impact of artificial intelligence — Wikipedia",
+            "url": "https://en.wikipedia.org/wiki/Environmental_impact_of_artificial_intelligence",
+            "date": "2026-09-07",
             "type": "secondaire"
           }
         ]
@@ -2268,17 +2570,20 @@
     "limites_connues": "Les gains d'efficacité énergétique par unité de calcul sont pour l'instant largement compensés par la croissance du volume de calcul consacré à l'entraînement de modèles toujours plus grands (effet rebond), ce qui rend incertaine la soutenabilité environnementale à long terme de la trajectoire actuelle de développement de l'IA.",
     "sources": [
       {
-        "titre": "Rapports sur l'empreinte énergétique de l'IA (AIE, études académiques)",
+        "titre": "Agence internationale de l'énergie, rapport « Energy and AI »",
+        "url": "https://www.iea.org/reports/energy-and-ai",
+        "date": "2025-04-10",
         "type": "primaire"
       },
       {
         "titre": "Environmental impact of artificial intelligence — Wikipedia",
         "url": "https://en.wikipedia.org/wiki/Environmental_impact_of_artificial_intelligence",
+        "date": "2026-09-07",
         "type": "secondaire"
       }
     ],
     "statut": "documente",
-    "derniere_verification": "2026-09-06"
+    "derniere_verification": "2026-09-07"
   },
   {
     "id": "jumeaux-numeriques-industriels-ia",
@@ -2302,7 +2607,9 @@
         ],
         "sources": [
           {
-            "titre": "Jumeaux numériques industriels — documentation sectorielle (Siemens, GE, Dassault Systèmes)",
+            "titre": "Jumeau numérique — Wikipédia",
+            "url": "https://fr.wikipedia.org/wiki/Jumeau_num%C3%A9rique",
+            "date": "2026-09-07",
             "type": "secondaire"
           }
         ]
@@ -2316,7 +2623,9 @@
         ],
         "sources": [
           {
-            "titre": "Jumeaux numériques industriels — documentation sectorielle (Siemens, GE, Dassault Systèmes)",
+            "titre": "Jumeau numérique — Wikipédia",
+            "url": "https://fr.wikipedia.org/wiki/Jumeau_num%C3%A9rique",
+            "date": "2026-09-07",
             "type": "secondaire"
           }
         ]
@@ -2325,17 +2634,14 @@
     "limites_connues": "La qualité prédictive du jumeau numérique dépend entièrement de la fidélité de sa calibration aux données réelles, qui se dégrade dans le temps (dérive du modèle) si elle n'est pas régulièrement réactualisée, et sa mise en place initiale reste coûteuse et complexe pour des systèmes physiques très hétérogènes.",
     "sources": [
       {
-        "titre": "Jumeaux numériques industriels — documentation sectorielle (Siemens, GE, Dassault Systèmes)",
-        "type": "primaire"
-      },
-      {
         "titre": "Jumeau numérique — Wikipédia",
         "url": "https://fr.wikipedia.org/wiki/Jumeau_num%C3%A9rique",
+        "date": "2026-09-07",
         "type": "secondaire"
       }
     ],
     "statut": "documente",
-    "derniere_verification": "2026-09-06"
+    "derniere_verification": "2026-09-07"
   },
   {
     "id": "tutorat-adaptatif-personnalise-edtech-ia",
@@ -2359,7 +2665,9 @@
         ],
         "sources": [
           {
-            "titre": "Systèmes de tutorat adaptatif — documentation sectorielle EdTech",
+            "titre": "Intelligent tutoring system — Wikipedia",
+            "url": "https://en.wikipedia.org/wiki/Intelligent_tutoring_system",
+            "date": "2026-09-07",
             "type": "secondaire"
           }
         ]
@@ -2373,7 +2681,9 @@
         ],
         "sources": [
           {
-            "titre": "Systèmes de tutorat adaptatif — documentation sectorielle EdTech",
+            "titre": "Intelligent tutoring system — Wikipedia",
+            "url": "https://en.wikipedia.org/wiki/Intelligent_tutoring_system",
+            "date": "2026-09-07",
             "type": "secondaire"
           }
         ]
@@ -2382,17 +2692,19 @@
     "limites_connues": "Les études sur l'efficacité pédagogique réelle de ces systèmes à grande échelle restent mitigées et hétérogènes selon les contextes et les disciplines, et leur généralisation soulève des questions sur la collecte de données comportementales détaillées d'élèves mineurs et sur le risque de réduire l'apprentissage à une simple optimisation algorithmique.",
     "sources": [
       {
-        "titre": "Systèmes de tutorat adaptatif — documentation sectorielle EdTech",
+        "titre": "VanLehn, « The Relative Effectiveness of Human Tutoring, Intelligent Tutoring Systems, and Other Tutoring Systems », Educational Psychologist 46(4), 2011",
+        "url": "https://doi.org/10.1080/00461520.2011.611369",
         "type": "primaire"
       },
       {
         "titre": "Intelligent tutoring system — Wikipedia",
         "url": "https://en.wikipedia.org/wiki/Intelligent_tutoring_system",
+        "date": "2026-09-07",
         "type": "secondaire"
       }
     ],
     "statut": "documente",
-    "derniere_verification": "2026-09-06"
+    "derniere_verification": "2026-09-07"
   },
   {
     "id": "criblage-virtuel-de-molecules-ia-pharmaceutique",
@@ -2416,7 +2728,9 @@
         ],
         "sources": [
           {
-            "titre": "Criblage virtuel de molécules par IA — documentation sectorielle pharmaceutique",
+            "titre": "Virtual screening — Wikipedia",
+            "url": "https://en.wikipedia.org/wiki/Virtual_screening",
+            "date": "2026-09-07",
             "type": "secondaire"
           }
         ]
@@ -2431,7 +2745,9 @@
         ],
         "sources": [
           {
-            "titre": "Criblage virtuel de molécules par IA — documentation sectorielle pharmaceutique",
+            "titre": "Virtual screening — Wikipedia",
+            "url": "https://en.wikipedia.org/wiki/Virtual_screening",
+            "date": "2026-09-07",
             "type": "secondaire"
           }
         ]
@@ -2440,17 +2756,14 @@
     "limites_connues": "Les prédictions virtuelles de propriétés moléculaires restent des approximations qui doivent être confirmées par des essais expérimentaux réels, et le taux d'échec en essais cliniques (efficacité, toxicité chez l'humain) demeure élevé même pour des molécules identifiées par criblage virtuel, ce qui limite pour l'instant le raccourcissement global du temps de développement pharmaceutique.",
     "sources": [
       {
-        "titre": "Criblage virtuel de molécules par IA — documentation sectorielle pharmaceutique",
-        "type": "primaire"
-      },
-      {
         "titre": "Virtual screening — Wikipedia",
         "url": "https://en.wikipedia.org/wiki/Virtual_screening",
+        "date": "2026-09-07",
         "type": "secondaire"
       }
     ],
     "statut": "documente",
-    "derniere_verification": "2026-09-06"
+    "derniere_verification": "2026-09-07"
   },
   {
     "id": "aide-a-la-decision-publique-govtech-ia",
@@ -2474,7 +2787,15 @@
         ],
         "sources": [
           {
-            "titre": "Systèmes d'aide à la décision publique par IA — documentation GovTech",
+            "titre": "Government by algorithm — Wikipedia",
+            "url": "https://en.wikipedia.org/wiki/Government_by_algorithm",
+            "date": "2026-09-07",
+            "type": "secondaire"
+          },
+          {
+            "titre": "Tribunal de district de La Haye, jugement SyRI du 5 février 2020 (ECLI:NL:RBDHA:2020:1878) — notice de jurisprudence ESCR-Net",
+            "url": "https://www.escr-net.org/caselaw/2020/nederlands-juristen-comite-voor-mensenrechten-et-al-v-netherlands-eclinlrbdha20201878/",
+            "date": "2026-09-07",
             "type": "secondaire"
           }
         ]
@@ -2489,7 +2810,9 @@
         ],
         "sources": [
           {
-            "titre": "Systèmes d'aide à la décision publique par IA — documentation GovTech",
+            "titre": "Government by algorithm — Wikipedia",
+            "url": "https://en.wikipedia.org/wiki/Government_by_algorithm",
+            "date": "2026-09-07",
             "type": "secondaire"
           }
         ]
@@ -2498,16 +2821,19 @@
     "limites_connues": "Plusieurs déploiements de ce type ont été annulés ou fortement critiqués après avoir été jugés discriminatoires envers des populations vulnérables (cas documentés aux Pays-Bas et au Royaume-Uni notamment), posant des questions majeures de transparence, de contestabilité des décisions automatisées et de responsabilité de l'administration envers les citoyens affectés.",
     "sources": [
       {
-        "titre": "Systèmes d'aide à la décision publique par IA — documentation GovTech",
-        "type": "primaire"
+        "titre": "Tribunal de district de La Haye, jugement SyRI du 5 février 2020 (ECLI:NL:RBDHA:2020:1878) — notice de jurisprudence ESCR-Net",
+        "url": "https://www.escr-net.org/caselaw/2020/nederlands-juristen-comite-voor-mensenrechten-et-al-v-netherlands-eclinlrbdha20201878/",
+        "date": "2026-09-07",
+        "type": "secondaire"
       },
       {
         "titre": "Government by algorithm — Wikipedia",
         "url": "https://en.wikipedia.org/wiki/Government_by_algorithm",
+        "date": "2026-09-07",
         "type": "secondaire"
       }
     ],
     "statut": "documente",
-    "derniere_verification": "2026-09-06"
+    "derniere_verification": "2026-09-07"
   }
 ]
