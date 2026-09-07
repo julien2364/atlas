@@ -9,7 +9,7 @@ import type { Question } from "@/lib/types";
 export const metadata: Metadata = {
   title: "Questions",
   description:
-    "Poser une question au référentiel ATLAS, ou lire les quatre questions-tests permanentes. Chaque réponse est donnée sous plusieurs écoles de pensée, avec hypothèses, limites, sources et niveau de confiance.",
+    `Poser une question au référentiel ATLAS, ou lire les ${questions.length} questions-tests permanentes. Chaque réponse est donnée sous plusieurs écoles de pensée, avec hypothèses, limites, sources et niveau de confiance.`,
   alternates: { canonical: "/questions" },
 };
 

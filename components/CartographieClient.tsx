@@ -42,7 +42,7 @@ const LABELS_AXE_IA: Record<AxeIA, string> = {
    (docs/design-system.md §5.2 et §5.3), couleur + glyphe. Les tables locales
    de couleurs ont été supprimées — trois fichiers en portaient une variante. */
 
-function AxeBar<T extends string>({
+function AxeBar({
   title,
   counts,
   documented,

@@ -1,6 +1,6 @@
 "use client";
 
-import { useCallback, useEffect, useMemo, useState } from "react";
+import { startTransition, useCallback, useEffect, useMemo, useState } from "react";
 
 // Interface de revue de la file de veille — mégaprompt section 7.1, tâche 3 du MP-1.
 //
@@ -179,17 +179,23 @@ export default function VeilleClient({ queue }: { queue: QueueItem[] }) {
   // fois, et un rechargement de page ne doit pas effacer le travail fait. Lecture
   // en effet (jamais pendant le rendu) pour ne pas désynchroniser l'hydratation.
   useEffect(() => {
-    try {
-      const brut = window.localStorage.getItem(CLE_STOCKAGE);
-      if (brut) {
-        const lu = JSON.parse(brut) as Record<string, Decision>;
-        if (lu && typeof lu === "object") setDecisions(lu);
+    // La reprise n'est pas une mise à jour urgente (rien à l'écran n'en dépend
+    // avant l'interaction de l'utilisateur) : `startTransition` évite d'appeler
+    // `setState` de façon synchrone dans l'effet, sans changer le résultat —
+    // la revue est bien reprise dès que l'état est disponible.
+    startTransition(() => {
+      try {
+        const brut = window.localStorage.getItem(CLE_STOCKAGE);
+        if (brut) {
+          const lu = JSON.parse(brut) as Record<string, Decision>;
+          if (lu && typeof lu === "object") setDecisions(lu);
+        }
+      } catch {
+        // Stockage indisponible (navigation privée, blocage) : la revue reste
+        // possible, elle n'est simplement pas reprise après un rechargement.
       }
-    } catch {
-      // Stockage indisponible (navigation privée, blocage) : la revue reste
-      // possible, elle n'est simplement pas reprise après un rechargement.
-    }
-    setChargeDepuisStockage(true);
+      setChargeDepuisStockage(true);
+    });
   }, []);
 
   useEffect(() => {

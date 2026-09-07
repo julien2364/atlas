@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import sourcesVeille from "@/data/seed/veille_sources.json";
+import questions from "@/data/seed/questions.json";
 import { derniereMiseAJourCorpus, fichesGap, fichesHumaines, fichesIA, formatDateFr } from "@/lib/corpus";
 
 export const metadata: Metadata = {
@@ -58,7 +59,7 @@ const ENTREES: { href: string; titre: string; desc: string }[] = [
   {
     href: "/questions",
     titre: "Questions",
-    desc: "Question libre sur le référentiel, et quatre questions-tests permanentes. Chaque réponse est donnée sous plusieurs écoles de pensée, jamais un verdict unique.",
+    desc: `Question libre sur le référentiel, et ${questions.length} questions-tests permanentes. Chaque réponse est donnée sous plusieurs écoles de pensée, jamais un verdict unique.`,
   },
   {
     href: "/veille",
