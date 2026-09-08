@@ -5923,5 +5923,833 @@
     "domaine_opaque": true,
     "statut": "en_attente",
     "created_at": "2026-09-07T13:11:15.226Z"
+  },
+  {
+    "id": "46e67a78-954b-4d8c-9284-652a17eb25e9",
+    "source_id": "anthropic-news",
+    "cible_type": "nouvelle_categorie",
+    "cible_id": null,
+    "contenu_propose": {
+      "titre": "Anthropic : Claude marque tous ses contenus générés - Brief IA",
+      "link": "https://news.google.com/rss/articles/CBMihwFBVV95cUxOd3dsMlhNbDFqd0pOb3d3VnFUS3FXbXZBTzVFbi1HcEFhRFRTcTZ1dWI0ODdpc0ZoS1RHVkd3VDgyY3l1VEpGTnhQR2U3MjFjMm5fNmlXRXQ3b2t0ZU9ZMjRVaU1XaFZHTV9RWEUwX2hBbEdZdTVlcVBxbXpzTmc2STJCSmdnZDA?oc=5",
+      "date": "2026-09-05T20:31:07.000Z",
+      "resume": "Anthropic : Claude marque tous ses contenus générés  Brief IA"
+    },
+    "score_fiabilite": 0.15,
+    "score_fiabilite_motif": "news.google.com est un redirecteur : l'url ne porte pas le domaine de l'éditeur réel, la fiabilité ne peut pas être établie sans ouvrir le lien",
+    "domaine_source": "news.google.com",
+    "domaine_opaque": true,
+    "statut": "en_attente",
+    "created_at": "2026-09-08T11:55:05.079Z"
+  },
+  {
+    "id": "f27f580e-eadc-4810-9ba6-6abfb59c9a85",
+    "source_id": "imf-news",
+    "cible_type": "nouvelle_categorie",
+    "cible_id": null,
+    "contenu_propose": {
+      "titre": "Vie chère, plan du FMI, note souveraine : le Sénégal sous pression - Courrier international",
+      "link": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxPTFFJeENTdThrSlV5VWJlcXphUEU0TFRYakJSSTV1WGZQaTdhY1FRd2h5TmVXNGxXMjRuR0ZfaDZpZGtPQ2gyWDRKNlVfQ21RbUZVYVJCYXN3QTlJekRVREVIZ3FSX25pcUstdnFSSEZsM0JJQWJJMUtLWlc0bUhnWER0a1BZMDVPM2ZkaGQ2LWJRSG8zTTh2ZlZOOFIybmZZdXhXdnpTZmxfQU1CY3hhWndzT0ZHYmNhV3IwMXEwZWpRQQ?oc=5",
+      "date": "2026-09-08T07:16:33.000Z",
+      "resume": "Vie chère, plan du FMI, note souveraine : le Sénégal sous pression  Courrier international"
+    },
+    "score_fiabilite": 0.15,
+    "score_fiabilite_motif": "news.google.com est un redirecteur : l'url ne porte pas le domaine de l'éditeur réel, la fiabilité ne peut pas être établie sans ouvrir le lien",
+    "domaine_source": "news.google.com",
+    "domaine_opaque": true,
+    "statut": "en_attente",
+    "created_at": "2026-09-08T11:55:07.162Z"
+  },
+  {
+    "id": "ef32222b-81ac-4b18-81e7-2cc8b1b08910",
+    "source_id": "oecd-news",
+    "cible_type": "nouvelle_categorie",
+    "cible_id": null,
+    "contenu_propose": {
+      "titre": "« Quand l’école décroche, l’économie suit » : les écoles forment-elles suffisamment bien aux entreprises ? - Ouest-France",
+      "link": "https://news.google.com/rss/articles/CBMijgJBVV95cUxQeXJtRFJUbjY0YlFwSFY5a1VtMUZhM3NEUXE2c0ppQkNPdC1MN2RFN29LeEE5UGMxMjE3RnV5Z3NSVHJLaTNPYXU5VjdENHlZSTdYS2RBb0lDMXJQdGlsNlFLNUdKSXdQZUJjUjRGWE1tSWZ4R254U3RmYWR2Q19WV2w3SHlUU3NHTmJwdUJRb3hLRHczcXF5VnFnR0lJX240WFlSMEJqV1lFdzYyOVNobGR5enhjYVgyei1Lb1RKTVN6YzlzbzhJTDM4Z2JQbzJWZ1dsXzFsV1duY3ZnSjFuQzh0ZWNHc3gzSHNmek56bUN4Z1BvX0wxWVM0T1hENVBKSExpV0l6cHhXa3hJc0E?oc=5",
+      "date": "2026-09-08T05:00:28.000Z",
+      "resume": "« Quand l’école décroche, l’économie suit » : les écoles forment-elles suffisamment bien aux entreprises ?  Ouest-France"
+    },
+    "score_fiabilite": 0.15,
+    "score_fiabilite_motif": "news.google.com est un redirecteur : l'url ne porte pas le domaine de l'éditeur réel, la fiabilité ne peut pas être établie sans ouvrir le lien",
+    "domaine_source": "news.google.com",
+    "domaine_opaque": true,
+    "statut": "en_attente",
+    "created_at": "2026-09-08T11:55:07.659Z"
+  },
+  {
+    "id": "47a452b4-59ab-4558-bdc8-c84815f3bd04",
+    "source_id": "oecd-news",
+    "cible_type": "nouvelle_categorie",
+    "cible_id": null,
+    "contenu_propose": {
+      "titre": "Devant l'OCDE, Akhannouch défend la trajectoire économique et sociale du Maroc - Medias24",
+      "link": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxQa1ZKTElBX29GZ2pRYy1XMV9ab21hVE9vaTlZT0VSMXZhSEhQVWdDYUc3LUw2WXRma1JnN2YxNlc2R29VeWpBUERDWVRiZkx2ODd4NHNOQmVkZXRjWEs5ZzBic3g5OFEyX1dsXzhsXzVMbkNveERJbHNtZHE0TGJaRzh1Y01aNk90bmN4OTdJS0dXS25kUk4tZ012OEhSdnU1aVZ3ckt3ZVNiUUR4ZnJBUHVKNzhfeVRF?oc=5",
+      "date": "2026-09-08T08:32:00.000Z",
+      "resume": "Devant l'OCDE, Akhannouch défend la trajectoire économique et sociale du Maroc  Medias24"
+    },
+    "score_fiabilite": 0.15,
+    "score_fiabilite_motif": "news.google.com est un redirecteur : l'url ne porte pas le domaine de l'éditeur réel, la fiabilité ne peut pas être établie sans ouvrir le lien",
+    "domaine_source": "news.google.com",
+    "domaine_opaque": true,
+    "statut": "en_attente",
+    "created_at": "2026-09-08T11:55:07.659Z"
+  },
+  {
+    "id": "9efbc273-3c51-4e84-a7dc-daf8e803936d",
+    "source_id": "oecd-news",
+    "cible_type": "nouvelle_categorie",
+    "cible_id": null,
+    "contenu_propose": {
+      "titre": "Maroc-OCDE : ce que Mathias Cormann retient de son entretien avec Aziz Akhannouch - maroc-hebdo.com",
+      "link": "https://news.google.com/rss/articles/CBMitgFBVV95cUxQUURBRndGYkxnLXQzaEtndkQ3OEpIZWk2ejI1NDBqanF3U3c2c1dVWUFXU3NyNlNXSTAyVHgwb3BCODM3amRTN2Y2YmNLQWYxdGRLU0JkT0pzLWNUb0g5N2ZpSFpwUDR4ME5jNVNQYUNXSzgwOXZMMDllS1ZlWjZUd1RXMTJHNHliQXFyTERHTHpEcTNDcGFuN0tWbmUzQlNSVEJEME84UDBWMjNBU1RxVmFyRDlHUQ?oc=5",
+      "date": "2026-09-07T16:21:00.000Z",
+      "resume": "Maroc-OCDE : ce que Mathias Cormann retient de son entretien avec Aziz Akhannouch  maroc-hebdo.com"
+    },
+    "score_fiabilite": 0.15,
+    "score_fiabilite_motif": "news.google.com est un redirecteur : l'url ne porte pas le domaine de l'éditeur réel, la fiabilité ne peut pas être établie sans ouvrir le lien",
+    "domaine_source": "news.google.com",
+    "domaine_opaque": true,
+    "statut": "en_attente",
+    "created_at": "2026-09-08T11:55:07.659Z"
+  },
+  {
+    "id": "f4612b22-dce3-4767-a5c3-101d8f1d2c6b",
+    "source_id": "oecd-news",
+    "cible_type": "nouvelle_categorie",
+    "cible_id": null,
+    "contenu_propose": {
+      "titre": "OCDE : Akhannouch réaffirme l’ambition du Maroc de devenir « plus fort et plus compétitif » - linformation.ma",
+      "link": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxPVGRXR0FicXZ1cnByd085V0dBSEozNnIyYXJJa1pTblZFcEpKUVBkLVFhaHd2dkU3X25NUzI3cE5WelhNdXdETnVJdWRjV2dkNHZUa3VGbzMyRm9SdmR5UVZldzQ3TjQwYXRacHdTWkhJQ2tfTjhNemJQVUE1UzdfOVBBS3I5blkyeGlvT3g0RER2ZzFhczdCbC05c1ZnOWlWR01pMGlXN2xBSEV0V0V5dzJMTWlXUkZYQnlfUXZzUGZRdi1EX01zNzFOU1dNY3dBU1Uw?oc=5",
+      "date": "2026-09-07T18:32:00.000Z",
+      "resume": "OCDE : Akhannouch réaffirme l’ambition du Maroc de devenir « plus fort et plus compétitif »  linformation.ma"
+    },
+    "score_fiabilite": 0.15,
+    "score_fiabilite_motif": "news.google.com est un redirecteur : l'url ne porte pas le domaine de l'éditeur réel, la fiabilité ne peut pas être établie sans ouvrir le lien",
+    "domaine_source": "news.google.com",
+    "domaine_opaque": true,
+    "statut": "en_attente",
+    "created_at": "2026-09-08T11:55:07.659Z"
+  },
+  {
+    "id": "d2b2f94c-4d98-45bf-a6b8-2b0a43ead7a4",
+    "source_id": "commission-europeenne-presse",
+    "cible_type": "nouvelle_categorie",
+    "cible_id": null,
+    "contenu_propose": {
+      "titre": "Actualités quotidiennes 08 / 09 / 2026",
+      "link": "https://ec.europa.eu/commission/presscorner/detail/fr/mex_26_1813",
+      "date": "2026-09-08T09:36:54.000Z",
+      "resume": "European Commission Actualité quotidienne Brussels, 08 Sep 2026 La Commission propose 1,1 million d'euros au titre du Fonds européen d'ajustement à la mondialisation pour soutenir les travailleurs licenciés de l'industrie pa..."
+    },
+    "score_fiabilite": 0.8,
+    "score_fiabilite_motif": "ec.europa.eu — préprint, actes de conférence ou institution publique",
+    "domaine_source": "ec.europa.eu",
+    "domaine_opaque": false,
+    "statut": "en_attente",
+    "created_at": "2026-09-08T11:55:09.652Z"
+  },
+  {
+    "id": "ee6be710-2b05-4660-92b1-f4b553340b52",
+    "source_id": "commission-europeenne-presse",
+    "cible_type": "nouvelle_categorie",
+    "cible_id": null,
+    "contenu_propose": {
+      "titre": "Commissioner Roswall's speech at the conference, “World Lake Day in the Lake Balaton Region”",
+      "link": "https://ec.europa.eu/commission/presscorner/detail/en/speech_26_1812",
+      "date": "2026-09-08T07:49:40.000Z",
+      "resume": "European Commission Speech Budapest, 08 Sep 2026 Ladies and Gentlemen, \r\n \r\nI am delighted to join you today, on the banks of the beautiful Lake Balaton. \r\n \r\nAnd I am delighted to celebrate the second World Lake ..."
+    },
+    "score_fiabilite": 0.8,
+    "score_fiabilite_motif": "ec.europa.eu — préprint, actes de conférence ou institution publique",
+    "domaine_source": "ec.europa.eu",
+    "domaine_opaque": false,
+    "statut": "en_attente",
+    "created_at": "2026-09-08T11:55:09.653Z"
+  },
+  {
+    "id": "25a1448c-0196-4531-ace5-06e63e3bc3df",
+    "source_id": "commission-europeenne-presse",
+    "cible_type": "nouvelle_categorie",
+    "cible_id": null,
+    "contenu_propose": {
+      "titre": "La Commission autorise une aide d'État allemande de 400 millions d'euros destinée à renforcer la résilience en matière d'approvisionnement en insuline",
+      "link": "https://ec.europa.eu/commission/presscorner/detail/fr/ip_26_1798",
+      "date": "2026-09-07T22:00:00.000Z",
+      "resume": "European Commission Communiqué de presse Brussels, 08 Sep 2026 La Commission européenne a autorisé une aide d'État allemande de 400 millions € en faveur de Sanofi-Aventis Deutschland, destinée à renforcer la résilience de l'approvisionnement en insulines humaines et analogues. L'Allemagne versera à Sanofi une compensation de service public pour la prestation d'un service d'intérêt économique génér"
+    },
+    "score_fiabilite": 0.8,
+    "score_fiabilite_motif": "ec.europa.eu — préprint, actes de conférence ou institution publique",
+    "domaine_source": "ec.europa.eu",
+    "domaine_opaque": false,
+    "statut": "en_attente",
+    "created_at": "2026-09-08T11:55:09.653Z"
+  },
+  {
+    "id": "9a975cc6-cee7-4a77-8585-37787c72c5da",
+    "source_id": "commission-europeenne-presse",
+    "cible_type": "nouvelle_categorie",
+    "cible_id": null,
+    "contenu_propose": {
+      "titre": "La Commission propose 1,1 million d'euros au titre du Fonds européen d'ajustement à la mondialisation pour soutenir les travailleurs licenciés de l'industrie papetière en Finlande",
+      "link": "https://ec.europa.eu/commission/presscorner/detail/fr/ip_26_1805",
+      "date": "2026-09-07T22:00:00.000Z",
+      "resume": "European Commission Communiqué de presse Brussels, 08 Sep 2026 La Commission européenne a proposé de mobiliser 1,1 million d'euros du Fonds européen d'ajustement à la mondialisation en faveur des travailleurs licenciés (FEM) pour soutenir 351 travailleurs finlandais licenciés par quatre fabricants de papier: Metsä Group, Stora Enso, UPM Communication Papers et SAPPI."
+    },
+    "score_fiabilite": 0.8,
+    "score_fiabilite_motif": "ec.europa.eu — préprint, actes de conférence ou institution publique",
+    "domaine_source": "ec.europa.eu",
+    "domaine_opaque": false,
+    "statut": "en_attente",
+    "created_at": "2026-09-08T11:55:09.653Z"
+  },
+  {
+    "id": "6ac3abc0-d5c4-4219-8a8b-91809ee9b25c",
+    "source_id": "commission-europeenne-presse",
+    "cible_type": "nouvelle_categorie",
+    "cible_id": null,
+    "contenu_propose": {
+      "titre": "Speech by Commissioner Hoekstra at the launch of Europe's largest carbon capture and storage project at Yara Sluiskil, the Netherlands",
+      "link": "https://ec.europa.eu/commission/presscorner/detail/en/speech_26_1809",
+      "date": "2026-09-07T15:25:10.000Z",
+      "resume": "European Commission Speech Sluiskil, 07 Sep 2026 Prime Ministers, Ladies and Gentlemen, \r\nPrime Minister Støre, first of all, my sincere condolences on the passing of the late King Harold V. And may I also than..."
+    },
+    "score_fiabilite": 0.8,
+    "score_fiabilite_motif": "ec.europa.eu — préprint, actes de conférence ou institution publique",
+    "domaine_source": "ec.europa.eu",
+    "domaine_opaque": false,
+    "statut": "en_attente",
+    "created_at": "2026-09-08T11:55:09.653Z"
+  },
+  {
+    "id": "776d7062-a557-471f-98e3-6645dc2b1a5f",
+    "source_id": "bri-communiques",
+    "cible_type": "nouvelle_categorie",
+    "cible_id": null,
+    "contenu_propose": {
+      "titre": "Global standard-setting bodies publish a toolkit for cyber resilience at FMIs and a discussion paper on FMIs’ reliance on third-party service providers",
+      "link": "https://www.bis.org/media-releases/20260908-global-standard-setting-bodies-publish-toolkit-cyber-resilience-fmis-and-discussion-paper-fmis",
+      "date": "2026-09-08T00:00:00.000Z",
+      "resume": "CPMI-IOSCO are seeking input from stakeholders on a cyber resilience toolkit for financial market infrastructures (FMIs) and on risks to FMIs from third-party service providers. The Cyber resilience toolkit: practical considerations for FMIs supports FMIs in strengthening their cyber resilience frameworks. The discussion paper FMIs’ reliance on third-party service providers: challenges and risks e"
+    },
+    "score_fiabilite": 0.4,
+    "score_fiabilite_motif": "bis.org — domaine absent de la table : score par défaut prudent, sous le seuil de source primaire",
+    "domaine_source": "bis.org",
+    "domaine_opaque": false,
+    "statut": "en_attente",
+    "created_at": "2026-09-08T11:55:10.182Z"
+  },
+  {
+    "id": "e3a48631-5620-45e9-9c42-3d7e9797cf86",
+    "source_id": "bri-discours-banques-centrales",
+    "cible_type": "nouvelle_categorie",
+    "cible_id": null,
+    "contenu_propose": {
+      "titre": "The everyday work of inclusion",
+      "link": "https://www.bis.org/speeches/20260901-everyday-work-inclusion",
+      "date": "2026-09-01T00:00:00.000Z",
+      "resume": "Speech by Mr Olaf Sleijpen, President of De Nederlandsche Bank, at Workplace Pride, Amsterdam, 7 August 2026."
+    },
+    "score_fiabilite": 0.4,
+    "score_fiabilite_motif": "bis.org — domaine absent de la table : score par défaut prudent, sous le seuil de source primaire",
+    "domaine_source": "bis.org",
+    "domaine_opaque": false,
+    "statut": "en_attente",
+    "created_at": "2026-09-08T11:55:10.442Z"
+  },
+  {
+    "id": "5fc40307-a5fb-4180-95a5-a114a438ca33",
+    "source_id": "ft-marches",
+    "cible_type": "nouvelle_categorie",
+    "cible_id": null,
+    "contenu_propose": {
+      "titre": "UK pays highest borrowing cost since 1998 at gilt sale",
+      "link": "https://www.ft.com/content/b23151c3-b4c1-4f96-a801-f3507d907cc7?syn-25a6b1a6=1",
+      "date": "2026-09-08T10:33:49.000Z",
+      "resume": "Thirty-year gilts priced at a yield of roughly 5.83%, underscoring pressure on public finances from global bond sell-off"
+    },
+    "score_fiabilite": 0.4,
+    "score_fiabilite_motif": "ft.com — presse généraliste ou spécialisée",
+    "domaine_source": "ft.com",
+    "domaine_opaque": false,
+    "statut": "en_attente",
+    "created_at": "2026-09-08T11:55:27.126Z"
+  },
+  {
+    "id": "4c635243-5a43-4f09-ad06-a4e90c6e7aca",
+    "source_id": "ft-marches",
+    "cible_type": "nouvelle_categorie",
+    "cible_id": null,
+    "contenu_propose": {
+      "titre": "Saudi energy facilities hit by wave of Houthi strikes",
+      "link": "https://www.ft.com/content/d9bc67e2-97f4-47ef-8de5-1ae48d841018?syn-25a6b1a6=1",
+      "date": "2026-09-08T08:48:44.000Z",
+      "resume": "Attacks threaten to open another front in war engulfing Middle East"
+    },
+    "score_fiabilite": 0.4,
+    "score_fiabilite_motif": "ft.com — presse généraliste ou spécialisée",
+    "domaine_source": "ft.com",
+    "domaine_opaque": false,
+    "statut": "en_attente",
+    "created_at": "2026-09-08T11:55:27.126Z"
+  },
+  {
+    "id": "d2b49b4c-a7a4-4c0d-98dd-9fb8c6de366a",
+    "source_id": "ft-marches",
+    "cible_type": "nouvelle_categorie",
+    "cible_id": null,
+    "contenu_propose": {
+      "titre": "The complicated implications of the spectacular ‘Apollo premium’ ",
+      "link": "https://www.ft.com/content/98d06e87-83f0-45dc-b69b-418fc789ac96",
+      "date": "2026-09-08T08:22:31.000Z",
+      "resume": "FAFOing in creditland"
+    },
+    "score_fiabilite": 0.4,
+    "score_fiabilite_motif": "ft.com — presse généraliste ou spécialisée",
+    "domaine_source": "ft.com",
+    "domaine_opaque": false,
+    "statut": "en_attente",
+    "created_at": "2026-09-08T11:55:27.126Z"
+  },
+  {
+    "id": "b5ef52ae-d9b5-4c7a-8c3b-22a780514f3c",
+    "source_id": "ft-marches",
+    "cible_type": "nouvelle_categorie",
+    "cible_id": null,
+    "contenu_propose": {
+      "titre": "DWS embraces Deutsche Bank name eight years after distancing itself",
+      "link": "https://www.ft.com/content/b5cb6500-89be-42a4-a417-e0d252e5e0e8?syn-25a6b1a6=1",
+      "date": "2026-09-08T08:21:59.000Z",
+      "resume": "German lender’s unit will become Deutsche Asset Management, reversing a decision made ahead of its IPO"
+    },
+    "score_fiabilite": 0.4,
+    "score_fiabilite_motif": "ft.com — presse généraliste ou spécialisée",
+    "domaine_source": "ft.com",
+    "domaine_opaque": false,
+    "statut": "en_attente",
+    "created_at": "2026-09-08T11:55:27.126Z"
+  },
+  {
+    "id": "f9a16eb1-2292-4e77-9378-89e68a9141ae",
+    "source_id": "ft-marches",
+    "cible_type": "nouvelle_categorie",
+    "cible_id": null,
+    "contenu_propose": {
+      "titre": "The strangely disappointing EM inflows",
+      "link": "https://www.ft.com/content/5cc2d577-0418-4728-8657-aa6b2efb6597?syn-25a6b1a6=1",
+      "date": "2026-09-08T05:30:07.000Z",
+      "resume": "Tough crowd"
+    },
+    "score_fiabilite": 0.4,
+    "score_fiabilite_motif": "ft.com — presse généraliste ou spécialisée",
+    "domaine_source": "ft.com",
+    "domaine_opaque": false,
+    "statut": "en_attente",
+    "created_at": "2026-09-08T11:55:27.126Z"
+  },
+  {
+    "id": "53a4fa8a-ee8a-4724-93a6-5414e5d16ce4",
+    "source_id": "wsj-marches",
+    "cible_type": "nouvelle_categorie",
+    "cible_id": null,
+    "contenu_propose": {
+      "titre": "Stock Market Today: Oil Nears $100, Dow Futures Dip",
+      "link": "https://www.wsj.com/livecoverage/stock-market-today-dow-sp-500-nasdaq-09-08-2026?mod=rss_markets_main",
+      "date": "2026-09-08T08:42:02.000Z",
+      "resume": "Brent crude climbs after reports of Houthi attacks on Saudi Arabia"
+    },
+    "score_fiabilite": 0.4,
+    "score_fiabilite_motif": "wsj.com — presse généraliste ou spécialisée",
+    "domaine_source": "wsj.com",
+    "domaine_opaque": false,
+    "statut": "en_attente",
+    "created_at": "2026-09-08T11:55:27.240Z"
+  },
+  {
+    "id": "cd54418d-6638-47c9-a032-d3b4d033cfb0",
+    "source_id": "wsj-marches",
+    "cible_type": "nouvelle_categorie",
+    "cible_id": null,
+    "contenu_propose": {
+      "titre": "Does Your Portfolio Need an Inflation Tax Break?",
+      "link": "https://www.wsj.com/finance/stocks/does-your-portfolio-need-an-inflation-tax-break-b65f4441?mod=rss_markets_main",
+      "date": "2026-09-08T10:11:00.000Z",
+      "resume": "Plus, oil is back near triple digits"
+    },
+    "score_fiabilite": 0.4,
+    "score_fiabilite_motif": "wsj.com — presse généraliste ou spécialisée",
+    "domaine_source": "wsj.com",
+    "domaine_opaque": false,
+    "statut": "en_attente",
+    "created_at": "2026-09-08T11:55:27.240Z"
+  },
+  {
+    "id": "895115fe-fb69-41f6-b5fe-54509c4ab90e",
+    "source_id": "wsj-marches",
+    "cible_type": "nouvelle_categorie",
+    "cible_id": null,
+    "contenu_propose": {
+      "titre": "Investors Brace for a Choppier Fall as the Fed, Inflation Return to Center Stage",
+      "link": "https://www.wsj.com/finance/investing/investors-brace-for-a-choppier-fall-as-the-fed-inflation-return-to-center-stage-81f6f11f?mod=rss_markets_main",
+      "date": "2026-09-08T09:54:00.000Z",
+      "resume": "Plus, see how drones are infiltrating NATO territory in Europe and test whether you have what it takes to be a clue writer for “Jeopardy!”"
+    },
+    "score_fiabilite": 0.4,
+    "score_fiabilite_motif": "wsj.com — presse généraliste ou spécialisée",
+    "domaine_source": "wsj.com",
+    "domaine_opaque": false,
+    "statut": "en_attente",
+    "created_at": "2026-09-08T11:55:27.240Z"
+  },
+  {
+    "id": "d22d8fae-f96c-4e47-9cc0-2ba1a671373d",
+    "source_id": "wsj-marches",
+    "cible_type": "nouvelle_categorie",
+    "cible_id": null,
+    "contenu_propose": {
+      "titre": "AI Is Disrupting Software Companies—but Not as Fast as Many Feared",
+      "link": "https://www.wsj.com/tech/ai/ai-is-disrupting-software-companiesbut-not-as-fast-as-many-feared-a380443a?mod=rss_markets_main",
+      "date": "2026-09-08T09:30:00.000Z",
+      "resume": "Even as their shares got pummeled, companies like Salesforce and Workday have been showing financial strength."
+    },
+    "score_fiabilite": 0.4,
+    "score_fiabilite_motif": "wsj.com — presse généraliste ou spécialisée",
+    "domaine_source": "wsj.com",
+    "domaine_opaque": false,
+    "statut": "en_attente",
+    "created_at": "2026-09-08T11:55:27.240Z"
+  },
+  {
+    "id": "c37544f0-d5b1-4846-916b-80da44d8104c",
+    "source_id": "wsj-marches",
+    "cible_type": "nouvelle_categorie",
+    "cible_id": null,
+    "contenu_propose": {
+      "titre": "The Stock Market’s Breezy Summer Is Over. Investors Beware.",
+      "link": "https://www.wsj.com/finance/stocks/the-stock-markets-breezy-summer-is-over-investors-beware-fb110133?mod=rss_markets_main",
+      "date": "2026-09-08T01:00:00.000Z",
+      "resume": "The Fed and inflation are back in focus as investors face down an often bumpy stretch for markets."
+    },
+    "score_fiabilite": 0.4,
+    "score_fiabilite_motif": "wsj.com — presse généraliste ou spécialisée",
+    "domaine_source": "wsj.com",
+    "domaine_opaque": false,
+    "statut": "en_attente",
+    "created_at": "2026-09-08T11:55:27.240Z"
+  },
+  {
+    "id": "b19f8b85-710a-49b0-9194-c8a8ac1761f5",
+    "source_id": "le-monde-economie",
+    "cible_type": "nouvelle_categorie",
+    "cible_id": null,
+    "contenu_propose": {
+      "titre": "Les fraudes bancaires par manipulation ont fortement augmenté en 2025",
+      "link": "https://www.lemonde.fr/economie/article/2026/09/08/les-fraudes-bancaires-par-manipulation-ont-fortement-augmente-en-2025_6768377_3234.html",
+      "date": "2026-09-08T11:35:28.000Z",
+      "resume": "Les montants liés à ce type d’escroquerie, qui consiste par exemple à se faire passer pour un conseiller bancaire afin de pousser une victime à valider une opération frauduleuse, ont bondi de 34 % sur un an pour atteindre 516 millions d’euros, selon l’Observatoire de la sécurité des moyens de paiement de la Banque de France."
+    },
+    "score_fiabilite": 0.4,
+    "score_fiabilite_motif": "lemonde.fr — presse généraliste ou spécialisée",
+    "domaine_source": "lemonde.fr",
+    "domaine_opaque": false,
+    "statut": "en_attente",
+    "created_at": "2026-09-08T11:55:27.505Z"
+  },
+  {
+    "id": "48c55056-4101-4da1-9423-35ddfd236a68",
+    "source_id": "le-monde-economie",
+    "cible_type": "nouvelle_categorie",
+    "cible_id": null,
+    "contenu_propose": {
+      "titre": "EssilorLuxottica : « Une lutte intestine fragilise un des piliers du capitalisme italien »",
+      "link": "https://www.lemonde.fr/economie/article/2026/09/08/essilorluxottica-une-lutte-intestine-fragilise-un-des-piliers-du-capitalisme-italien_6768204_3234.html",
+      "date": "2026-09-08T09:00:01.000Z",
+      "resume": "Après avoir brutalement quitté ses fonctions au sein du groupe franco-italien fin août, Leonardo Maria Del Vecchio, l’un des héritiers du fondateur d’EssilorLuxottica, a appelé dimanche à un « changement de stratégie » de l’entreprise. Il cherche ainsi à bousculer la gouvernance, et notamment le PDG, Francesco Milleri, observe Isabelle Chaperon, chroniqueuse au service Economie du « Monde »."
+    },
+    "score_fiabilite": 0.4,
+    "score_fiabilite_motif": "lemonde.fr — presse généraliste ou spécialisée",
+    "domaine_source": "lemonde.fr",
+    "domaine_opaque": false,
+    "statut": "en_attente",
+    "created_at": "2026-09-08T11:55:27.505Z"
+  },
+  {
+    "id": "8269028c-356d-493d-b817-c214184dc4e0",
+    "source_id": "le-monde-economie",
+    "cible_type": "nouvelle_categorie",
+    "cible_id": null,
+    "contenu_propose": {
+      "titre": "Le patron d’Audi appelle l’Europe à durcir le ton face aux constructeurs automobiles chinois",
+      "link": "https://www.lemonde.fr/economie/article/2026/09/08/le-patron-d-audi-appelle-l-europe-a-durcir-le-ton-face-aux-constructeurs-automobiles-chinois_6768119_3234.html",
+      "date": "2026-09-08T05:30:29.000Z",
+      "resume": "Le PDG du constructeur allemand, Gernot Döllner, demande à la Commission européenne de renforcer ses mesures protectionnistes pour éviter de nouvelles suppressions d’emplois après la vague massive annoncée par sa maison mère Volkswagen."
+    },
+    "score_fiabilite": 0.4,
+    "score_fiabilite_motif": "lemonde.fr — presse généraliste ou spécialisée",
+    "domaine_source": "lemonde.fr",
+    "domaine_opaque": false,
+    "statut": "en_attente",
+    "created_at": "2026-09-08T11:55:27.505Z"
+  },
+  {
+    "id": "2d93e065-b759-42b4-befe-6b387a08f072",
+    "source_id": "le-monde-economie",
+    "cible_type": "nouvelle_categorie",
+    "cible_id": null,
+    "contenu_propose": {
+      "titre": "Mistral AI annonce une levée de fonds à 3 milliards d’euros en réponse aux doutes sur l’évolution de sa stratégie",
+      "link": "https://www.lemonde.fr/economie/article/2026/09/08/mistral-ai-une-levee-de-fonds-a-3-milliards-d-euros-en-reponse-aux-doutes-sur-l-evolution-de-sa-strategie_6768110_3234.html",
+      "date": "2026-09-08T04:58:04.000Z",
+      "resume": "La start-up française d’intelligence artificielle, accusée par certains experts d’avoir abandonné la course face aux Américains et aux Chinois pour se développer dans les data centers et les services, assure ne pas avoir renoncé à produire des modèles de pointe. Elle signe sa plus grosse levée de fonds et voit Samsung entrer dans son capital."
+    },
+    "score_fiabilite": 0.4,
+    "score_fiabilite_motif": "lemonde.fr — presse généraliste ou spécialisée",
+    "domaine_source": "lemonde.fr",
+    "domaine_opaque": false,
+    "statut": "en_attente",
+    "created_at": "2026-09-08T11:55:27.505Z"
+  },
+  {
+    "id": "858eb437-6eba-475f-ae1b-604849de18a2",
+    "source_id": "le-monde-economie",
+    "cible_type": "nouvelle_categorie",
+    "cible_id": null,
+    "contenu_propose": {
+      "titre": "Conflit commercial avec les Etats-Unis : les mesures du Canada contre des produits américains entrent en vigueur mardi",
+      "link": "https://www.lemonde.fr/international/article/2026/09/08/conflit-commercial-avec-les-etats-unis-les-mesures-du-canada-contre-des-produits-americains-entrent-en-vigueur-mardi_6768107_3210.html",
+      "date": "2026-09-08T04:27:25.000Z",
+      "resume": "Le conflit commercial entre les deux voisins a atteint un niveau sans précédent depuis la rupture, le 21 août, par le premier ministre canadien, Mark Carney, des négociations avec la Maison Blanche."
+    },
+    "score_fiabilite": 0.4,
+    "score_fiabilite_motif": "lemonde.fr — presse généraliste ou spécialisée",
+    "domaine_source": "lemonde.fr",
+    "domaine_opaque": false,
+    "statut": "en_attente",
+    "created_at": "2026-09-08T11:55:27.505Z"
+  },
+  {
+    "id": "7a47d74a-9b1e-4748-8941-7b03fa5a6905",
+    "source_id": "la-tribune-actualites",
+    "cible_type": "nouvelle_categorie",
+    "cible_id": null,
+    "contenu_propose": {
+      "titre": "Trump menace Bombardier : 2 800 fournisseurs américains pris dans la guerre commerciale entre le Canada et les États-Unis",
+      "link": "https://www.latribune.fr/article/defense-aerospatiale/aeronautique-defense/56049911767418/trump-menace-bombardier-2-800-fournisseurs-americains-pris-dans-la-guerre-commerciale-entre-le-canada-et-les-etats-unis",
+      "date": "2026-09-08T10:59:13.000Z",
+      "resume": "Donald Trump menace de fermer le marché américain à Bombardier alors qu’Ottawa applique des surtaxes sur 27,6 milliards de dollars canadiens de produits américains. Problème : l’avionneur québécois achète plus de 2,5 milliards de dollars par an à quelque 2 800 fournisseurs américains."
+    },
+    "score_fiabilite": 0.4,
+    "score_fiabilite_motif": "latribune.fr — domaine absent de la table : score par défaut prudent, sous le seuil de source primaire",
+    "domaine_source": "latribune.fr",
+    "domaine_opaque": false,
+    "statut": "en_attente",
+    "created_at": "2026-09-08T11:55:27.843Z"
+  },
+  {
+    "id": "8be936e8-8078-4fbe-bd15-9c63f0dfc683",
+    "source_id": "la-tribune-actualites",
+    "cible_type": "nouvelle_categorie",
+    "cible_id": null,
+    "contenu_propose": {
+      "titre": "Fibre Excellence : trois mois de plus requis pour sauver la dernière usine de pâte à papier",
+      "link": "https://www.latribune.fr/article/entreprises-finance/industrie/30219050274405/fibre-excellence-trois-mois-de-plus-requis-pour-sauver-la-derniere-usine-de-pate-a-papier",
+      "date": "2026-09-08T10:34:24.000Z",
+      "resume": "Le ministère public a requis devant le tribunal de commerce de Toulouse une continuation d’activité pendant trois mois du principal producteur français de pâte à papier marchande. De quoi faciliter l'arrivée au capital d'un industriel du papier portugais, très intéressé par l'usine de Fibre Excellence."
+    },
+    "score_fiabilite": 0.4,
+    "score_fiabilite_motif": "latribune.fr — domaine absent de la table : score par défaut prudent, sous le seuil de source primaire",
+    "domaine_source": "latribune.fr",
+    "domaine_opaque": false,
+    "statut": "en_attente",
+    "created_at": "2026-09-08T11:55:27.843Z"
+  },
+  {
+    "id": "d1ec2f5f-e409-47b2-96d4-569ab50af5b8",
+    "source_id": "la-tribune-actualites",
+    "cible_type": "nouvelle_categorie",
+    "cible_id": null,
+    "contenu_propose": {
+      "titre": "Le commerce extérieur de la France a décroché cet été : les importations ont augmenté six fois plus vite que les ventes",
+      "link": "https://www.latribune.fr/article/entreprises-finance/industrie/10211760213449/le-commerce-exterieur-de-la-france-a-decroche-cet-ete-les-importations-ont-augmente-six-fois-plus-vite-que-les-ventes",
+      "date": "2026-09-08T09:48:01.000Z",
+      "resume": "En juillet, le déficit commercial français a atteint 6,7 milliards d’euros, après 5,7 milliards en juin. L’aéronautique reste excédentaire, mais elle ne compense plus la hausse des importations, la facture énergétique et les déficits de l’automobile, des médicaments et des équipements technologiques."
+    },
+    "score_fiabilite": 0.4,
+    "score_fiabilite_motif": "latribune.fr — domaine absent de la table : score par défaut prudent, sous le seuil de source primaire",
+    "domaine_source": "latribune.fr",
+    "domaine_opaque": false,
+    "statut": "en_attente",
+    "created_at": "2026-09-08T11:55:27.843Z"
+  },
+  {
+    "id": "f2990a78-1ebd-49e9-b2b6-14d27c999cbb",
+    "source_id": "la-tribune-actualites",
+    "cible_type": "nouvelle_categorie",
+    "cible_id": null,
+    "contenu_propose": {
+      "titre": "Vins de Bordeaux : « Nous aurons un premier tunnel de prix du vrac dès cet automne »",
+      "link": "https://www.latribune.fr/article/climat/agriculture-agroalimentaire/35197682359333/vins-de-bordeaux-nous-aurons-un-premier-tunnel-de-prix-du-vrac-des-cet-automne",
+      "date": "2026-09-08T08:29:16.000Z",
+      "resume": "Un an après avoir été renversé, Stéphane Gabard est de retour à la tête des appellations Bordeaux et Bordeaux Supérieur. Il détaille à La Tribune sa stratégie pour préserver la rémunération des producteurs d’un vignoble bordelais laminé par la crise. La définition d’une fourchette de prix et le bras de fer avec la grande distribution figurent parmi les urgences de la rentrée."
+    },
+    "score_fiabilite": 0.4,
+    "score_fiabilite_motif": "latribune.fr — domaine absent de la table : score par défaut prudent, sous le seuil de source primaire",
+    "domaine_source": "latribune.fr",
+    "domaine_opaque": false,
+    "statut": "en_attente",
+    "created_at": "2026-09-08T11:55:27.843Z"
+  },
+  {
+    "id": "c645c5be-97b6-4313-955f-006d78a70cab",
+    "source_id": "la-tribune-actualites",
+    "cible_type": "nouvelle_categorie",
+    "cible_id": null,
+    "contenu_propose": {
+      "titre": "Sommet spatial de Paris : des syndicats manifestent contre « la financiarisation » du secteur",
+      "link": "https://www.latribune.fr/article/defense-aerospatiale/spatial/19107086300408/sommet-spatial-de-paris-des-syndicats-manifestent-contre-la-financiarisation-du-secteur",
+      "date": "2026-09-08T08:05:04.000Z",
+      "resume": "En amont de la grand-messe organisée par Emmanuel Macron, la CGT métallurgie organise un contre-sommet avec des députés pour alerter notamment sur les conséquences de la mégafusion d’Airbus, Thales et Leonardo. Par ailleurs, une intersyndicale du Cnes prévoit de manifester au Grand Palais pour demander « un spatial au service du bien commun »."
+    },
+    "score_fiabilite": 0.4,
+    "score_fiabilite_motif": "latribune.fr — domaine absent de la table : score par défaut prudent, sous le seuil de source primaire",
+    "domaine_source": "latribune.fr",
+    "domaine_opaque": false,
+    "statut": "en_attente",
+    "created_at": "2026-09-08T11:55:27.843Z"
+  },
+  {
+    "id": "c4ede07f-6ab3-46c7-9122-5920e84915ec",
+    "source_id": "rfi-economie",
+    "cible_type": "nouvelle_categorie",
+    "cible_id": null,
+    "contenu_propose": {
+      "titre": "Chine: le commerce extérieur chinois au beau fixe, les ventes vers les États-Unis progressent encore",
+      "link": "https://www.rfi.fr/fr/%C3%A9conomie/20260908-chine-le-commerce-ext%C3%A9rieur-chinois-au-beau-fixe-les-ventes-vers-les-%C3%A9tats-unis-progressent-encore",
+      "date": "2026-09-08T10:51:52.000Z",
+      "resume": "En un an les exportations chinoises ont augmenté de 25% avec notamment une très nette accélération des échanges avec les États-Unis où les exportations ont augmenté de 34,4% en un an. Les importations sont également en hausse de 28,2% sur les 12 derniers mois. La publication de ces chiffres interviennent avant une rencontré prévue fin septembre à Washington entre Donald Trump et Xi Jinping."
+    },
+    "score_fiabilite": 0.4,
+    "score_fiabilite_motif": "rfi.fr — domaine absent de la table : score par défaut prudent, sous le seuil de source primaire",
+    "domaine_source": "rfi.fr",
+    "domaine_opaque": false,
+    "statut": "en_attente",
+    "created_at": "2026-09-08T11:55:28.336Z"
+  },
+  {
+    "id": "081c603b-2691-4120-abae-b0a8c2e4ad4f",
+    "source_id": "rfi-economie",
+    "cible_type": "nouvelle_categorie",
+    "cible_id": null,
+    "contenu_propose": {
+      "titre": "L'île Maurice mise sur de nouveaux investissements pour relancer sa filière thé",
+      "link": "https://www.rfi.fr/fr/podcasts/afrique-%C3%A9conomie/20260907-l-%C3%AEle-maurice-mise-sur-de-nouveaux-investissements-pour-relancer-sa-fili%C3%A8re-th%C3%A9",
+      "date": "2026-09-07T22:32:33.000Z",
+      "resume": "À Maurice, la filière thé cherche un nouveau modèle pour rester compétitive et répondre aux habitudes de consommation locales. Après des décennies de recul face à la canne à sucre et une diminution du nombre de planteurs, de nouveaux acteurs veulent relancer la production grâce à la mécanisation, de nouvelles techniques de culture et une meilleure valorisation du thé mauricien."
+    },
+    "score_fiabilite": 0.4,
+    "score_fiabilite_motif": "rfi.fr — domaine absent de la table : score par défaut prudent, sous le seuil de source primaire",
+    "domaine_source": "rfi.fr",
+    "domaine_opaque": false,
+    "statut": "en_attente",
+    "created_at": "2026-09-08T11:55:28.336Z"
+  },
+  {
+    "id": "217fbf00-ad70-4e73-a630-7bb274da4f11",
+    "source_id": "rfi-economie",
+    "cible_type": "nouvelle_categorie",
+    "cible_id": null,
+    "contenu_propose": {
+      "titre": "Pourquoi la reconstitution des réserves américaines de pétrole sera difficile ?",
+      "link": "https://www.rfi.fr/fr/podcasts/chronique-des-mati%C3%A8res-premi%C3%A8res/20260907-pourquoi-la-reconstitution-des-r%C3%A9serves-am%C3%A9ricaines-de-p%C3%A9trole-sera-difficile",
+      "date": "2026-09-07T22:05:08.000Z",
+      "resume": "En signant un accord d'approvisionnement en pétrole vénézuélien, Donald Trump rêve de pouvoir reconstituer les réserves stratégiques du pays à leur niveau maximal, afin notamment de faire baisser les prix à la pompe. Si Donald Trump cherche à remplir ses infrastructures de stockage, c'est parce qu'elles ont été mises à rude épreuve ces dernières années."
+    },
+    "score_fiabilite": 0.4,
+    "score_fiabilite_motif": "rfi.fr — domaine absent de la table : score par défaut prudent, sous le seuil de source primaire",
+    "domaine_source": "rfi.fr",
+    "domaine_opaque": false,
+    "statut": "en_attente",
+    "created_at": "2026-09-08T11:55:28.336Z"
+  },
+  {
+    "id": "93f9f558-da48-41c2-a6aa-a74bc6a6a616",
+    "source_id": "rfi-economie",
+    "cible_type": "nouvelle_categorie",
+    "cible_id": null,
+    "contenu_propose": {
+      "titre": "Donald Trump menace de s'en prendre aux ventes de l'avionneur canadien Bombardier aux États-Unis",
+      "link": "https://www.rfi.fr/fr/%C3%A9conomie/20260907-donald-trump-menace-de-s-en-prendre-aux-ventes-de-l-avionneur-canadien-bombardier-aux-%C3%A9tats-unis",
+      "date": "2026-09-07T20:22:17.000Z",
+      "resume": "Donald Trump a menacé lundi 7 septembre de s'en prendre aux ventes de l'avionneur canadien Bombardier, à quelques heures de l'entrée en vigueur de surtaxes canadiennes touchant une série de produits américains, en plein conflit commercial entre les deux voisins."
+    },
+    "score_fiabilite": 0.4,
+    "score_fiabilite_motif": "rfi.fr — domaine absent de la table : score par défaut prudent, sous le seuil de source primaire",
+    "domaine_source": "rfi.fr",
+    "domaine_opaque": false,
+    "statut": "en_attente",
+    "created_at": "2026-09-08T11:55:28.336Z"
+  },
+  {
+    "id": "c6f24261-8ce0-4cef-bde0-2506202909a3",
+    "source_id": "rfi-economie",
+    "cible_type": "nouvelle_categorie",
+    "cible_id": null,
+    "contenu_propose": {
+      "titre": "Les exportations de céréales russes fortement perturbées par les attaques ukrainiennes",
+      "link": "https://www.rfi.fr/fr/%C3%A9conomie/20260907-les-exportations-de-c%C3%A9r%C3%A9ales-russes-fortement-perturb%C3%A9es-par-les-attaques-ukrainiennes",
+      "date": "2026-09-07T14:07:29.000Z",
+      "resume": "Ces dernières semaines, Kiev et Moscou intensifient les attaques contre les infrastructures de l’ennemi avec pour objectif d’affaiblir son économie. Des attaques qui visent notamment la zone de la mer Noire, là où transitent les exportations de céréales russes et ukrainiennes. Résultat, la Russie, première exportatrice mondiale de blé peine à écouler ses stocks.. malgré une bonne récolte 2026."
+    },
+    "score_fiabilite": 0.4,
+    "score_fiabilite_motif": "rfi.fr — domaine absent de la table : score par défaut prudent, sous le seuil de source primaire",
+    "domaine_source": "rfi.fr",
+    "domaine_opaque": false,
+    "statut": "en_attente",
+    "created_at": "2026-09-08T11:55:28.337Z"
+  },
+  {
+    "id": "e02e03cc-452a-4ac6-ae23-e355fe226fc8",
+    "source_id": "euronews-business",
+    "cible_type": "nouvelle_categorie",
+    "cible_id": null,
+    "contenu_propose": {
+      "titre": "Six mois après le blocus de Hormuz, Qatar et Émirats testent des solutions pour maintenir le GNL",
+      "link": "http://fr.euronews.com/business/2026/09/08/six-mois-apres-le-blocus-de-hormuz-qatar-et-emirats-testent-des-solutions-pour-maintenir-l",
+      "date": "2026-09-08T10:12:57.000Z",
+      "resume": "GNL : les exportateurs contournent les perturbations à Hormuz avec des transferts en mer, alors que les exportations du Qatar et des Émirats restent loin de leurs niveaux d'avant-guerre."
+    },
+    "score_fiabilite": 0.4,
+    "score_fiabilite_motif": "fr.euronews.com — domaine absent de la table : score par défaut prudent, sous le seuil de source primaire",
+    "domaine_source": "fr.euronews.com",
+    "domaine_opaque": false,
+    "statut": "en_attente",
+    "created_at": "2026-09-08T11:55:28.963Z"
+  },
+  {
+    "id": "483b3689-8a58-4220-89b8-a192da24b11d",
+    "source_id": "euronews-business",
+    "cible_type": "nouvelle_categorie",
+    "cible_id": null,
+    "contenu_propose": {
+      "titre": "La Suède va acheter des lance-roquettes HIMARS de Lockheed Martin pour 630 M€",
+      "link": "http://fr.euronews.com/business/2026/09/08/la-suede-va-acheter-des-lance-roquettes-himars-de-lockheed-martin-pour-630-m",
+      "date": "2026-09-08T09:19:57.000Z",
+      "resume": "La Suède achète les lance-roquettes US Himars pour 7 milliards de couronnes et s'accorde avec la Finlande pour une utilisation conjointe."
+    },
+    "score_fiabilite": 0.4,
+    "score_fiabilite_motif": "fr.euronews.com — domaine absent de la table : score par défaut prudent, sous le seuil de source primaire",
+    "domaine_source": "fr.euronews.com",
+    "domaine_opaque": false,
+    "statut": "en_attente",
+    "created_at": "2026-09-08T11:55:28.963Z"
+  },
+  {
+    "id": "bc625bfe-84c6-45e4-b0b3-05c94b0ecde6",
+    "source_id": "euronews-business",
+    "cible_type": "nouvelle_categorie",
+    "cible_id": null,
+    "contenu_propose": {
+      "titre": "Jaguar Land Rover supprime 4 000 emplois dans le monde pour réduire ses coûts",
+      "link": "http://fr.euronews.com/business/2026/09/08/jaguar-land-rover-supprime-4-000-emplois-dans-le-monde-pour-reduire-ses-couts",
+      "date": "2026-09-08T09:02:53.000Z",
+      "resume": "JLR va supprimer environ 4 000 postes dans le monde en deux ans pour simplifier son organisation et économiser 1,7 milliard de livres (2 milliards d'euros)"
+    },
+    "score_fiabilite": 0.4,
+    "score_fiabilite_motif": "fr.euronews.com — domaine absent de la table : score par défaut prudent, sous le seuil de source primaire",
+    "domaine_source": "fr.euronews.com",
+    "domaine_opaque": false,
+    "statut": "en_attente",
+    "created_at": "2026-09-08T11:55:28.964Z"
+  },
+  {
+    "id": "405cf0c9-df83-40da-add2-1660c0b55453",
+    "source_id": "euronews-business",
+    "cible_type": "nouvelle_categorie",
+    "cible_id": null,
+    "contenu_propose": {
+      "titre": "Mistral AI lève un montant record de 3 milliards d'euros lors d'un tour mené par Samsung",
+      "link": "http://fr.euronews.com/business/2026/09/08/mistral-ai-leve-un-montant-record-de-3-milliards-deuros-lors-dun-tour-mene-par-samsung",
+      "date": "2026-09-08T08:40:55.000Z",
+      "resume": "Mistral AI lève 3 milliards d'euros avec Samsung et revendique la plus grosse levée de fonds d'une tech européenne"
+    },
+    "score_fiabilite": 0.4,
+    "score_fiabilite_motif": "fr.euronews.com — domaine absent de la table : score par défaut prudent, sous le seuil de source primaire",
+    "domaine_source": "fr.euronews.com",
+    "domaine_opaque": false,
+    "statut": "en_attente",
+    "created_at": "2026-09-08T11:55:28.964Z"
+  },
+  {
+    "id": "34855e60-9510-4eb6-ab44-8267187291c8",
+    "source_id": "euronews-business",
+    "cible_type": "nouvelle_categorie",
+    "cible_id": null,
+    "contenu_propose": {
+      "titre": "Transparence salariale dans l’UE : les annonces d’emploi sont-elles enfin honnêtes ?",
+      "link": "http://fr.euronews.com/business/2026/09/08/transparence-salariale-dans-lue-les-annonces-demploi-sont-elles-enfin-honnetes",
+      "date": "2026-09-08T03:33:31.000Z",
+      "resume": "Seuls quelques pays de l’UE ont respecté l’échéance fixée par la directive sur la transparence des rémunérations. Les données d’Indeed indiquent une possible évolution de la part des offres d’emploi mentionnant le salaire."
+    },
+    "score_fiabilite": 0.4,
+    "score_fiabilite_motif": "fr.euronews.com — domaine absent de la table : score par défaut prudent, sous le seuil de source primaire",
+    "domaine_source": "fr.euronews.com",
+    "domaine_opaque": false,
+    "statut": "en_attente",
+    "created_at": "2026-09-08T11:55:28.964Z"
+  },
+  {
+    "id": "1087bff5-bdae-4c42-bc22-5a1712e3b616",
+    "source_id": "guardian-economie",
+    "cible_type": "nouvelle_categorie",
+    "cible_id": null,
+    "contenu_propose": {
+      "titre": "John Healey backs growth but says Labour must be honest on spending",
+      "link": "https://www.theguardian.com/business/2026/sep/07/john-healey-growth-labour-spending-raise-taxes",
+      "date": "2026-09-07T12:54:05.000Z",
+      "resume": "Chancellor ducks questions on whether he will have to raise taxes but says he will stick firmly to fiscal rules\nJohn Healey has said boosting economic growth will be his defining mission as chancellor as he warned Labour had to “be honest” about the need to control public spending at next month’s budget.\nIn his first big speech since taking the job in July, Healey said the top priority for his 28 "
+    },
+    "score_fiabilite": 0.4,
+    "score_fiabilite_motif": "theguardian.com — presse généraliste ou spécialisée",
+    "domaine_source": "theguardian.com",
+    "domaine_opaque": false,
+    "statut": "en_attente",
+    "created_at": "2026-09-08T11:55:29.614Z"
+  },
+  {
+    "id": "bc658747-cdb5-4106-835f-f2f43e35e8c4",
+    "source_id": "guardian-economie",
+    "cible_type": "nouvelle_categorie",
+    "cible_id": null,
+    "contenu_propose": {
+      "titre": "UK pays highest borrowing rate since 1998 as pressure builds on public finances – business live",
+      "link": "https://www.theguardian.com/business/live/2026/sep/08/oil-price-approaches-100-a-barrel-saudi-attacks-bank-of-england-latest-news-updates",
+      "date": "2026-09-08T11:17:02.000Z",
+      "resume": "Saudi authorities said operations at some energy facilities have been attacked ‌by Yemen’s Iran-aligned Houthis \nGas prices are rising this morning, putting pressure on European countries who need to stock up their storage levels before the winter.\nThe month-ahead UK gas price is up around 1% at 184p a therm, close to yesterday’s highs when gas hit its highest since January 2023.\n Continue reading"
+    },
+    "score_fiabilite": 0.4,
+    "score_fiabilite_motif": "theguardian.com — presse généraliste ou spécialisée",
+    "domaine_source": "theguardian.com",
+    "domaine_opaque": false,
+    "statut": "en_attente",
+    "created_at": "2026-09-08T11:55:29.614Z"
+  },
+  {
+    "id": "aa825241-9746-45c5-b1cf-b58f08b60738",
+    "source_id": "guardian-economie",
+    "cible_type": "nouvelle_categorie",
+    "cible_id": null,
+    "contenu_propose": {
+      "titre": "‘Trust deficit’: Why India’s economic data has sparked a furore",
+      "link": "https://www.theguardian.com/world/2026/sep/07/why-indias-economic-data-faces-a-trust-deficit",
+      "date": "2026-09-08T06:30:29.000Z",
+      "resume": "India’s statistical system once commanded respect, and its data on economic and social indicators was considered rigorous – that appears to have eroded\n• Don’t get This is India delivered to your inbox? Sign up here\nThere isn’t much that we Indians agree on these days. GDP numbers are no exception. Last week, India released glowing GDP numbers for the latest quarter – 7.8% growth – higher than the"
+    },
+    "score_fiabilite": 0.4,
+    "score_fiabilite_motif": "theguardian.com — presse généraliste ou spécialisée",
+    "domaine_source": "theguardian.com",
+    "domaine_opaque": false,
+    "statut": "en_attente",
+    "created_at": "2026-09-08T11:55:29.614Z"
   }
 ]
