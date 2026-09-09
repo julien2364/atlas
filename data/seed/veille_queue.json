@@ -6751,5 +6751,1013 @@
     "domaine_opaque": false,
     "statut": "en_attente",
     "created_at": "2026-09-08T11:55:29.614Z"
+  },
+  {
+    "id": "e1e1c4eb-b504-4440-b6a4-acd4b94814b8",
+    "source_id": "anthropic-news",
+    "cible_type": "nouvelle_categorie",
+    "cible_id": null,
+    "contenu_propose": {
+      "titre": "Vous utilisez Claude AI ? Vos informations de paiement sont peut-être en danger à cause d'un malware - Journal du Geek",
+      "link": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxNUTlkTWpaTDVHbGkySzE4djkzaUlCS2QxQXkySEt4R3htek1VZ3lrU1MtTTJTZGZZaVhoQmpGc3dFbl9FX0dNRXFxcmZuSkxzd0xrTDdzeHRHUzJhdmgxNlZKdGpmcUQteU43WDhEdHB2NkFBNlhiVUNaUExJR1Nyb3VyOWJ0dU1kOHpSM2ltMlpNNWhyRjc2TnR6bzN4Mkx4YVI3Q1dJZlRMdlZWV0V1YVZyZnk2UFU2V0xFajBET00wZGMyUWVKYkFqUGw3aTV5ZE00dU9n?oc=5",
+      "date": "2026-09-08T12:02:57.000Z",
+      "resume": "Vous utilisez Claude AI ? Vos informations de paiement sont peut-être en danger à cause d'un malware  Journal du Geek"
+    },
+    "score_fiabilite": 0.15,
+    "score_fiabilite_motif": "news.google.com est un redirecteur : l'url ne porte pas le domaine de l'éditeur réel, la fiabilité ne peut pas être établie sans ouvrir le lien",
+    "domaine_source": "news.google.com",
+    "domaine_opaque": true,
+    "statut": "en_attente",
+    "created_at": "2026-09-09T12:04:53.836Z"
+  },
+  {
+    "id": "2b8f5123-36c3-4b8e-b500-e080ef8426b5",
+    "source_id": "anthropic-news",
+    "cible_type": "nouvelle_categorie",
+    "cible_id": null,
+    "contenu_propose": {
+      "titre": "Claude retient vos infos, mais vous pouvez enfin reprendre la main - Begeek",
+      "link": "https://news.google.com/rss/articles/CBMimgFBVV95cUxOVzFwSk82dWd1WGRJaUJrcFBWZjRJbW5rQlItb2M5ZFo0MnRDNWJjOTFTYVd4Sm5WNl8xMXJrMmhsenFWTjhseVpsZjV5ckRDazIxdk05S25pWmZtcmhXOEdkMGlrM1FiYnF5d0VieXo0a25ScjZTV2FRLUlCanZsYjRlYnZmRUpMTFhJM0MxSzVJSm1XWnQzcENR?oc=5",
+      "date": "2026-09-08T14:00:28.000Z",
+      "resume": "Claude retient vos infos, mais vous pouvez enfin reprendre la main  Begeek"
+    },
+    "score_fiabilite": 0.15,
+    "score_fiabilite_motif": "news.google.com est un redirecteur : l'url ne porte pas le domaine de l'éditeur réel, la fiabilité ne peut pas être établie sans ouvrir le lien",
+    "domaine_source": "news.google.com",
+    "domaine_opaque": true,
+    "statut": "en_attente",
+    "created_at": "2026-09-09T12:04:53.836Z"
+  },
+  {
+    "id": "2e34531d-2235-4110-ab7f-c0a08f0b60d3",
+    "source_id": "openai-news",
+    "cible_type": "nouvelle_categorie",
+    "cible_id": null,
+    "contenu_propose": {
+      "titre": "How GPT-5.6 Sol helps run quantum computing experiments",
+      "link": "https://openai.com/index/codex-quantum-computing-experiments",
+      "date": "2026-09-08T17:00:00.000Z",
+      "resume": "See how an MIT researcher uses GPT-5.6 Sol with Codex to autonomously run quantum computing experiments, analyze results, and calibrate qubits."
+    },
+    "score_fiabilite": 0.6,
+    "score_fiabilite_motif": "openai.com — éditeur ou laboratoire s'exprimant sur son propre produit",
+    "domaine_source": "openai.com",
+    "domaine_opaque": false,
+    "statut": "en_attente",
+    "created_at": "2026-09-09T12:04:54.199Z"
+  },
+  {
+    "id": "f4aa20ff-af1d-4f55-bd1d-7870aa70ebab",
+    "source_id": "openai-news",
+    "cible_type": "nouvelle_categorie",
+    "cible_id": null,
+    "contenu_propose": {
+      "titre": "The Work Now Within Reach",
+      "link": "https://openai.com/index/the-work-now-within-reach",
+      "date": "2026-09-08T13:00:00.000Z",
+      "resume": "Explore how more capable, affordable AI can expand the work people and businesses can accomplish—and make growth more economical."
+    },
+    "score_fiabilite": 0.6,
+    "score_fiabilite_motif": "openai.com — éditeur ou laboratoire s'exprimant sur son propre produit",
+    "domaine_source": "openai.com",
+    "domaine_opaque": false,
+    "statut": "en_attente",
+    "created_at": "2026-09-09T12:04:54.199Z"
+  },
+  {
+    "id": "265bff70-88a2-4262-8270-38dadd0f71c5",
+    "source_id": "openai-news",
+    "cible_type": "nouvelle_categorie",
+    "cible_id": null,
+    "contenu_propose": {
+      "titre": "Introducing ChatGPT Images 2.5",
+      "link": "https://openai.com/index/introducing-chatgpt-images-2-5",
+      "date": "2026-09-08T11:30:00.000Z",
+      "resume": "ChatGPT Images 2.5 helps turn your ideas, sketches, and reference photos into more personalized, polished images that better reflect your ideas."
+    },
+    "score_fiabilite": 0.6,
+    "score_fiabilite_motif": "openai.com — éditeur ou laboratoire s'exprimant sur son propre produit",
+    "domaine_source": "openai.com",
+    "domaine_opaque": false,
+    "statut": "en_attente",
+    "created_at": "2026-09-09T12:04:54.199Z"
+  },
+  {
+    "id": "42843d02-868a-4198-a25c-9339cc24d42b",
+    "source_id": "openai-news",
+    "cible_type": "nouvelle_categorie",
+    "cible_id": null,
+    "contenu_propose": {
+      "titre": "On the Navier–Stokes Millennium Prize Problem",
+      "link": "https://openai.com/index/navier-stokes-solution",
+      "date": "2026-09-08T10:00:00.000Z",
+      "resume": "We’re sharing an AI-generated solution to the Navier–Stokes Millennium Prize Problem, including a writeup and a formal proof in Lean."
+    },
+    "score_fiabilite": 0.6,
+    "score_fiabilite_motif": "openai.com — éditeur ou laboratoire s'exprimant sur son propre produit",
+    "domaine_source": "openai.com",
+    "domaine_opaque": false,
+    "statut": "en_attente",
+    "created_at": "2026-09-09T12:04:54.199Z"
+  },
+  {
+    "id": "c78f2f01-0192-442e-a082-3f73e7e5f4d5",
+    "source_id": "openai-news",
+    "cible_type": "nouvelle_categorie",
+    "cible_id": null,
+    "contenu_propose": {
+      "titre": "Funding grants for new research into AI and teen development",
+      "link": "https://openai.com/index/teen-development-research-grants",
+      "date": "2026-09-08T09:00:00.000Z",
+      "resume": "Apply now for OpenAI’s $5 million grant program supporting independent research on how generative AI affects teen development, well-being, and safety."
+    },
+    "score_fiabilite": 0.6,
+    "score_fiabilite_motif": "openai.com — éditeur ou laboratoire s'exprimant sur son propre produit",
+    "domaine_source": "openai.com",
+    "domaine_opaque": false,
+    "statut": "en_attente",
+    "created_at": "2026-09-09T12:04:54.199Z"
+  },
+  {
+    "id": "2e9cc48e-08b2-4bbd-b994-4c0d33852886",
+    "source_id": "nature-news",
+    "cible_type": "nouvelle_categorie",
+    "cible_id": null,
+    "contenu_propose": {
+      "titre": "How AI is changing PhD programmes: join our free webinar",
+      "link": "https://www.nature.com/articles/d41586-026-02751-7",
+      "date": "2026-09-09T00:00:00.000Z",
+      "resume": ""
+    },
+    "score_fiabilite": 0.9,
+    "score_fiabilite_motif": "nature.com — édition scientifique à comité de lecture",
+    "domaine_source": "nature.com",
+    "domaine_opaque": false,
+    "statut": "en_attente",
+    "created_at": "2026-09-09T12:04:54.428Z"
+  },
+  {
+    "id": "e8f3e386-9550-4254-8a59-0ba3ac8d4d03",
+    "source_id": "nature-news",
+    "cible_type": "nouvelle_categorie",
+    "cible_id": null,
+    "contenu_propose": {
+      "titre": "Why the super-fun Ig Nobel prizes bring serious value to science",
+      "link": "https://www.nature.com/articles/d41586-026-02793-x",
+      "date": "2026-09-09T00:00:00.000Z",
+      "resume": ""
+    },
+    "score_fiabilite": 0.9,
+    "score_fiabilite_motif": "nature.com — édition scientifique à comité de lecture",
+    "domaine_source": "nature.com",
+    "domaine_opaque": false,
+    "statut": "en_attente",
+    "created_at": "2026-09-09T12:04:54.428Z"
+  },
+  {
+    "id": "da040c6f-59d3-4d59-839d-5d63ebfe33fd",
+    "source_id": "nature-news",
+    "cible_type": "nouvelle_categorie",
+    "cible_id": null,
+    "contenu_propose": {
+      "titre": "Why we need an International Panel on Inequality",
+      "link": "https://www.nature.com/articles/d41586-026-02806-9",
+      "date": "2026-09-09T00:00:00.000Z",
+      "resume": ""
+    },
+    "score_fiabilite": 0.9,
+    "score_fiabilite_motif": "nature.com — édition scientifique à comité de lecture",
+    "domaine_source": "nature.com",
+    "domaine_opaque": false,
+    "statut": "en_attente",
+    "created_at": "2026-09-09T12:04:54.428Z"
+  },
+  {
+    "id": "4ab56403-fca9-4461-ae4f-748cd28d60f0",
+    "source_id": "nature-news",
+    "cible_type": "nouvelle_categorie",
+    "cible_id": null,
+    "contenu_propose": {
+      "titre": "The Einstein test: what happens when AI tries to rediscover relativity?",
+      "link": "https://www.nature.com/articles/d41586-026-02804-x",
+      "date": "2026-09-09T00:00:00.000Z",
+      "resume": ""
+    },
+    "score_fiabilite": 0.9,
+    "score_fiabilite_motif": "nature.com — édition scientifique à comité de lecture",
+    "domaine_source": "nature.com",
+    "domaine_opaque": false,
+    "statut": "en_attente",
+    "created_at": "2026-09-09T12:04:54.428Z"
+  },
+  {
+    "id": "545242f6-7166-404e-bf21-e999da3cf591",
+    "source_id": "nature-news",
+    "cible_type": "nouvelle_categorie",
+    "cible_id": null,
+    "contenu_propose": {
+      "titre": "Author Correction: Contrasting roles of histone 3 lysine 27 demethylases in acute lymphoblastic leukaemia",
+      "link": "https://www.nature.com/articles/s41586-026-11081-7",
+      "date": "2026-09-08T00:00:00.000Z",
+      "resume": ""
+    },
+    "score_fiabilite": 0.9,
+    "score_fiabilite_motif": "nature.com — édition scientifique à comité de lecture",
+    "domaine_source": "nature.com",
+    "domaine_opaque": false,
+    "statut": "en_attente",
+    "created_at": "2026-09-09T12:04:54.428Z"
+  },
+  {
+    "id": "ad716b52-e72a-496d-8cf5-918eb2f3b78b",
+    "source_id": "imf-news",
+    "cible_type": "nouvelle_categorie",
+    "cible_id": null,
+    "contenu_propose": {
+      "titre": "Élargissement de l’UE : booster la productivité est la clé des gains, selon le FMI - euractiv.com",
+      "link": "https://news.google.com/rss/articles/CBMimgFBVV95cUxOT0hWSkF1aktzRjlwUHkwWW5ocmVWd3M5dFNodnNUdzU5cjFGTVdiY21hUFZWVzNERFp4em1pa055MDN4b0FwdC1CQk0wb3dDOUhGXy1xRDJmcW55dkdmVkZ5dEl5NUVkelBHTHNXOTY4TXl1d1kzNURkelNjWEZHMUlRanVSV2g2bk5oZ24xdnExNnJZT3ZGXzdn?oc=5",
+      "date": "2026-09-08T13:52:00.000Z",
+      "resume": "Élargissement de l’UE : booster la productivité est la clé des gains, selon le FMI  euractiv.com"
+    },
+    "score_fiabilite": 0.15,
+    "score_fiabilite_motif": "news.google.com est un redirecteur : l'url ne porte pas le domaine de l'éditeur réel, la fiabilité ne peut pas être établie sans ouvrir le lien",
+    "domaine_source": "news.google.com",
+    "domaine_opaque": true,
+    "statut": "en_attente",
+    "created_at": "2026-09-09T12:04:54.951Z"
+  },
+  {
+    "id": "f1ee6df2-d016-40e9-b348-f862872ffbfe",
+    "source_id": "imf-news",
+    "cible_type": "nouvelle_categorie",
+    "cible_id": null,
+    "contenu_propose": {
+      "titre": "Côte d’Ivoire : Le FMI salue les performances économiques et le succès du programme financier - malijet.com",
+      "link": "https://news.google.com/rss/articles/CBMiugFBVV95cUxOY2hJZVV4WG9YWkI0UmRHd3g1NXh0UjBPcVk1ajgxM1huZ3JTYm93TUdEOXZEVkFOWWVHQXNJZU9GQVFVYzFuOUl6bmEzdkhHaW1BanJjT2lUU0huQVFTNkpaZHlDMEZFRXc2X2lQMDhQZ2ljODNJaWhLSXNQYVFSWmcxU2tTQm0xdEF2MjF2MEp0Yk9xU1RFSFdCam04QlczeVFMWU9WSENPdjdkaGJUM0g5NkJaUWRwYWc?oc=5",
+      "date": "2026-09-08T16:49:05.000Z",
+      "resume": "Côte d’Ivoire : Le FMI salue les performances économiques et le succès du programme financier  malijet.com"
+    },
+    "score_fiabilite": 0.15,
+    "score_fiabilite_motif": "news.google.com est un redirecteur : l'url ne porte pas le domaine de l'éditeur réel, la fiabilité ne peut pas être établie sans ouvrir le lien",
+    "domaine_source": "news.google.com",
+    "domaine_opaque": true,
+    "statut": "en_attente",
+    "created_at": "2026-09-09T12:04:54.951Z"
+  },
+  {
+    "id": "656c14f8-61b2-4808-85c7-f4cefdf77935",
+    "source_id": "oecd-news",
+    "cible_type": "nouvelle_categorie",
+    "cible_id": null,
+    "contenu_propose": {
+      "titre": "En graphiques – PISA 2025: le niveau scolaire suisse continue à décliner, mais reste supérieur à celui des pays voisins - Le Temps",
+      "link": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxOSkFya0x5VFdockZMR251OVE1a2FxQTZYSnBYWlFFQkNHTHVlQXlfbURKZ3pKMXZMY0RmeGtLT3Y3Mzh1bUJBR3d5M0VleUo1eFlhMWt2U2lfVHZ2akU5eTAzQWxXSmF0a0lSSkZtWGxIclhGNGJLSGxQUnVncGhEYkNmX2xTVTkwSFpBd3hVSXo4eDRBTmh3cXJuLThuSV9VUkhlbU5nMkVGRlRMVVpSek9SQVpjaHh3TFBpRGlOMHpOUDJya3p6VUhiNEhqZU1BWENEaU14Yw?oc=5",
+      "date": "2026-09-09T10:08:06.000Z",
+      "resume": "En graphiques – PISA 2025: le niveau scolaire suisse continue à décliner, mais reste supérieur à celui des pays voisins  Le Temps"
+    },
+    "score_fiabilite": 0.15,
+    "score_fiabilite_motif": "news.google.com est un redirecteur : l'url ne porte pas le domaine de l'éditeur réel, la fiabilité ne peut pas être établie sans ouvrir le lien",
+    "domaine_source": "news.google.com",
+    "domaine_opaque": true,
+    "statut": "en_attente",
+    "created_at": "2026-09-09T12:04:55.418Z"
+  },
+  {
+    "id": "1ae2a325-6f5c-4cba-bba5-7bab08701cfc",
+    "source_id": "oecd-news",
+    "cible_type": "nouvelle_categorie",
+    "cible_id": null,
+    "contenu_propose": {
+      "titre": "PISA 2025 : les résultats des élèves de l’OCDE au plus bas - aa.com.tr",
+      "link": "https://news.google.com/rss/articles/CBMirwFBVV95cUxNWXJmMnA4MmkxU0ZPdFRvWHJMUURFNjZ1SXJoY1dkTzFSRjFfUFdTOTR0Yy11ZmxOenVaZjQzUHY3UnpSSHVuUS1YZnppb3U2M0NkZlBRZzVibk4xcmRIX1R4S3pyZEJvdE9VOEhCSENUVXFmLWxvSnBRVTlqU1JCTzd3TG8tcmZldG9ySGNjWEg4YmJJQmFyMU91QnJ3MVJ0TDgzLWRENXpCLXJCblFB?oc=5",
+      "date": "2026-09-08T13:10:19.000Z",
+      "resume": "PISA 2025 : les résultats des élèves de l’OCDE au plus bas  aa.com.tr"
+    },
+    "score_fiabilite": 0.15,
+    "score_fiabilite_motif": "news.google.com est un redirecteur : l'url ne porte pas le domaine de l'éditeur réel, la fiabilité ne peut pas être établie sans ouvrir le lien",
+    "domaine_source": "news.google.com",
+    "domaine_opaque": true,
+    "statut": "en_attente",
+    "created_at": "2026-09-09T12:04:55.419Z"
+  },
+  {
+    "id": "b731c631-f5c6-4adc-8da5-53828dc16d98",
+    "source_id": "oecd-news",
+    "cible_type": "nouvelle_categorie",
+    "cible_id": null,
+    "contenu_propose": {
+      "titre": "Maroc-OCDE: La feuille de route 2027 dévoilée - Aujourd'hui le Maroc",
+      "link": "https://news.google.com/rss/articles/CBMiggFBVV95cUxQSk5rblZ3VVEyWF9UWm1yclZWclJneXdUbFZFdU85ZVFWTWlZZi1JSHg1eXNPMUFfVnRHM0pLRXNsUmY2LVk3c05BVkFILTBCalFIZ1ZnU3d0eU0tWlJ5Z1dWbHJVVExGMmgwSUwtazZnTUhtZEJNalNoNGhfa0l6MjRn?oc=5",
+      "date": "2026-09-08T23:01:37.000Z",
+      "resume": "Maroc-OCDE: La feuille de route 2027 dévoilée  Aujourd'hui le Maroc"
+    },
+    "score_fiabilite": 0.15,
+    "score_fiabilite_motif": "news.google.com est un redirecteur : l'url ne porte pas le domaine de l'éditeur réel, la fiabilité ne peut pas être établie sans ouvrir le lien",
+    "domaine_source": "news.google.com",
+    "domaine_opaque": true,
+    "statut": "en_attente",
+    "created_at": "2026-09-09T12:04:55.419Z"
+  },
+  {
+    "id": "9fe81848-50dc-4c67-b1a0-1f4a1734cc26",
+    "source_id": "bce-communiques",
+    "cible_type": "nouvelle_categorie",
+    "cible_id": null,
+    "contenu_propose": {
+      "titre": " Frank Elderson: Fireside chat",
+      "link": "https://www.ecb.europa.eu//press/key/date/2026/html/ecb.sp260908~3652aa828f.en.html",
+      "date": "2026-09-08T15:00:00.000Z",
+      "resume": ""
+    },
+    "score_fiabilite": 0.8,
+    "score_fiabilite_motif": "ecb.europa.eu — préprint, actes de conférence ou institution publique",
+    "domaine_source": "ecb.europa.eu",
+    "domaine_opaque": false,
+    "statut": "en_attente",
+    "created_at": "2026-09-09T12:04:56.079Z"
+  },
+  {
+    "id": "0dd7cbc4-7973-49d7-9140-6c5c422af854",
+    "source_id": "commission-europeenne-presse",
+    "cible_type": "nouvelle_categorie",
+    "cible_id": null,
+    "contenu_propose": {
+      "titre": "Actualités quotidiennes 09 / 09 / 2026",
+      "link": "https://ec.europa.eu/commission/presscorner/detail/fr/mex_26_1825",
+      "date": "2026-09-09T10:01:48.000Z",
+      "resume": "European Commission Actualité quotidienne Brussels, 09 Sep 2026 la Commission approuve une nouvelle indication géographique en provenance de RoumanieLa Commission européenne a autorisé l'enregistrement de Brânză frământată d..."
+    },
+    "score_fiabilite": 0.8,
+    "score_fiabilite_motif": "ec.europa.eu — préprint, actes de conférence ou institution publique",
+    "domaine_source": "ec.europa.eu",
+    "domaine_opaque": false,
+    "statut": "en_attente",
+    "created_at": "2026-09-09T12:04:57.517Z"
+  },
+  {
+    "id": "6157bc26-d4a9-4beb-b650-b462182f2c54",
+    "source_id": "commission-europeenne-presse",
+    "cible_type": "nouvelle_categorie",
+    "cible_id": null,
+    "contenu_propose": {
+      "titre": "President von der Leyen reaffirms Europe's choice to be present and engaged in the Arctic and in Greenland during visit to Nuuk",
+      "link": "https://ec.europa.eu/commission/presscorner/detail/en/ac_26_1824",
+      "date": "2026-09-09T07:51:57.000Z",
+      "resume": "European Commission News Brussels, 09 Sep 2026 \r\nTwo years after her first visit, President von der Leyen visited Nuuk, reaffirming the EU's commitment to be present in Greenland. The President was hosted by ..."
+    },
+    "score_fiabilite": 0.8,
+    "score_fiabilite_motif": "ec.europa.eu — préprint, actes de conférence ou institution publique",
+    "domaine_source": "ec.europa.eu",
+    "domaine_opaque": false,
+    "statut": "en_attente",
+    "created_at": "2026-09-09T12:04:57.517Z"
+  },
+  {
+    "id": "a98b2642-a909-41c1-ae9e-11cc79e5d93d",
+    "source_id": "commission-europeenne-presse",
+    "cible_type": "nouvelle_categorie",
+    "cible_id": null,
+    "contenu_propose": {
+      "titre": "Factsheet on the European Innovation Act",
+      "link": "https://ec.europa.eu/commission/presscorner/detail/en/fs_26_1815",
+      "date": "2026-09-08T22:00:00.000Z",
+      "resume": "European Commission Factsheet Brussels, 09 Sep 2026   Factsheet on the European Innovation Act  Factsheet on the European Innovation Act"
+    },
+    "score_fiabilite": 0.8,
+    "score_fiabilite_motif": "ec.europa.eu — préprint, actes de conférence ou institution publique",
+    "domaine_source": "ec.europa.eu",
+    "domaine_opaque": false,
+    "statut": "en_attente",
+    "created_at": "2026-09-09T12:04:57.517Z"
+  },
+  {
+    "id": "0d7c11df-690c-408c-9ad3-c4dcc6be0472",
+    "source_id": "commission-europeenne-presse",
+    "cible_type": "nouvelle_categorie",
+    "cible_id": null,
+    "contenu_propose": {
+      "titre": "Questions et réponses sur la loi de l'UE sur les marchés publics",
+      "link": "https://ec.europa.eu/commission/presscorner/detail/fr/qanda_26_1819",
+      "date": "2026-09-08T22:00:00.000Z",
+      "resume": "European Commission Questions et réponses Brussels, 09 Sep 2026  Pourquoi la Commission propose-t-elle la loi sur les marchés publics?  Les pouvoirs publics de l'UE consacrent environ 2 600 milliards d'euros (15 % du PI..."
+    },
+    "score_fiabilite": 0.8,
+    "score_fiabilite_motif": "ec.europa.eu — préprint, actes de conférence ou institution publique",
+    "domaine_source": "ec.europa.eu",
+    "domaine_opaque": false,
+    "statut": "en_attente",
+    "created_at": "2026-09-09T12:04:57.517Z"
+  },
+  {
+    "id": "8304060a-bf62-4fc2-ba25-b454b734ad1e",
+    "source_id": "commission-europeenne-presse",
+    "cible_type": "nouvelle_categorie",
+    "cible_id": null,
+    "contenu_propose": {
+      "titre": "La Commission propose des règles plus simples et plus stratégiques en matière de marchés publics",
+      "link": "https://ec.europa.eu/commission/presscorner/detail/fr/ip_26_1817",
+      "date": "2026-09-08T22:00:00.000Z",
+      "resume": "European Commission Communiqué de presse Brussels, 09 Sep 2026 La Commission européenne a adopté aujourd'hui une proposition de nouveau règlement visant à moderniser et à simplifier le cadre de l'UE en matière de marchés publics afin de soutenir des investissements efficaces dans les services publics et les infrastructures, conformément aux objectifs stratégiques de l'Union."
+    },
+    "score_fiabilite": 0.8,
+    "score_fiabilite_motif": "ec.europa.eu — préprint, actes de conférence ou institution publique",
+    "domaine_source": "ec.europa.eu",
+    "domaine_opaque": false,
+    "statut": "en_attente",
+    "created_at": "2026-09-09T12:04:57.517Z"
+  },
+  {
+    "id": "aee90b42-fc99-4705-95dd-9a7a671659c3",
+    "source_id": "bri-discours-banques-centrales",
+    "cible_type": "nouvelle_categorie",
+    "cible_id": null,
+    "contenu_propose": {
+      "titre": "Recent economic and financial developments in Turkey",
+      "link": "https://www.bis.org/speeches/20260901-recent-economic-and-financial-developments-turkey",
+      "date": "2026-09-01T00:00:00.000Z",
+      "resume": "Speech by Dr Fatih Karahan, Governor of the Central Bank of the Republic of Türkiye, at the briefing on the Inflation Report 2025-III, Istanbul, 13 August 2026."
+    },
+    "score_fiabilite": 0.4,
+    "score_fiabilite_motif": "bis.org — domaine absent de la table : score par défaut prudent, sous le seuil de source primaire",
+    "domaine_source": "bis.org",
+    "domaine_opaque": false,
+    "statut": "en_attente",
+    "created_at": "2026-09-09T12:04:58.402Z"
+  },
+  {
+    "id": "bbd810cb-00fc-42c8-89ae-2b5f509a2616",
+    "source_id": "france-strategie",
+    "cible_type": "nouvelle_categorie",
+    "cible_id": null,
+    "contenu_propose": {
+      "titre": "Colloque | L’évaluation socioéconomique des infrastructures de transport : au-delà des gains de temps",
+      "link": "https://www.strategie-plan.gouv.fr/colloque-levaluation-socioeconomique-des-infrastructures-de-transport-au-dela-des-gains-de-temps",
+      "date": "2026-09-08T13:11:58.000Z",
+      "resume": "Colloque | L’évaluation socioéconomique des infrastructures de transport : au-delà des gains de temps\n\n                    Le conseil scientifique des méthodes d’évaluation socioéconomique, placé auprès du Haut-commissariat à la Stratégie et au Plan, organise un colloque pour présenter et débattre du rapport « Investissements de transport : une évaluation renouvelée face aux nouveaux défis ».\n    "
+    },
+    "score_fiabilite": 0.4,
+    "score_fiabilite_motif": "strategie-plan.gouv.fr — domaine absent de la table : score par défaut prudent, sous le seuil de source primaire",
+    "domaine_source": "strategie-plan.gouv.fr",
+    "domaine_opaque": false,
+    "statut": "en_attente",
+    "created_at": "2026-09-09T12:05:01.676Z"
+  },
+  {
+    "id": "0d97f147-5703-4619-abe7-6fee8bdc347c",
+    "source_id": "ft-marches",
+    "cible_type": "nouvelle_categorie",
+    "cible_id": null,
+    "contenu_propose": {
+      "titre": "How to fix the brittleness caused by Treasury basis trades",
+      "link": "https://www.ft.com/content/55a506e8-8cba-4d8e-bf1a-e5d3e6682677",
+      "date": "2026-09-09T11:35:35.000Z",
+      "resume": "The trade fills a void the US government has the authority, the incentive and the ability to close"
+    },
+    "score_fiabilite": 0.4,
+    "score_fiabilite_motif": "ft.com — presse généraliste ou spécialisée",
+    "domaine_source": "ft.com",
+    "domaine_opaque": false,
+    "statut": "en_attente",
+    "created_at": "2026-09-09T12:05:02.100Z"
+  },
+  {
+    "id": "b9f6fcb9-39f3-47a5-8f8e-88ed9d841d27",
+    "source_id": "ft-marches",
+    "cible_type": "nouvelle_categorie",
+    "cible_id": null,
+    "contenu_propose": {
+      "titre": "Oil hits $100 for first time since July",
+      "link": "https://www.ft.com/content/c8921e49-1d06-4d27-ab38-7a1d8e3d43fe?syn-25a6b1a6=1",
+      "date": "2026-09-09T10:54:17.000Z",
+      "resume": "Brent crude advances as escalation in US-Iran war feeds fears of renewed global supply crunch"
+    },
+    "score_fiabilite": 0.4,
+    "score_fiabilite_motif": "ft.com — presse généraliste ou spécialisée",
+    "domaine_source": "ft.com",
+    "domaine_opaque": false,
+    "statut": "en_attente",
+    "created_at": "2026-09-09T12:05:02.100Z"
+  },
+  {
+    "id": "a5992c5d-10c2-40b9-b354-9ea8d5088495",
+    "source_id": "ft-marches",
+    "cible_type": "nouvelle_categorie",
+    "cible_id": null,
+    "contenu_propose": {
+      "titre": "FirstFT: Oil hits $100 as fears rise over global supplies",
+      "link": "https://www.ft.com/content/0715a142-311f-422f-a9dd-9e31bc3d7d61?syn-25a6b1a6=1",
+      "date": "2026-09-09T10:28:11.000Z",
+      "resume": "Also in today’s newsletter: Anthropic researcher quits and warns labs are ‘gambling’ with humanity’s future and Bessent warns traders not to bet against the Treasury"
+    },
+    "score_fiabilite": 0.4,
+    "score_fiabilite_motif": "ft.com — presse généraliste ou spécialisée",
+    "domaine_source": "ft.com",
+    "domaine_opaque": false,
+    "statut": "en_attente",
+    "created_at": "2026-09-09T12:05:02.100Z"
+  },
+  {
+    "id": "aec96033-7998-486d-a73f-8b88220a5e4f",
+    "source_id": "ft-marches",
+    "cible_type": "nouvelle_categorie",
+    "cible_id": null,
+    "contenu_propose": {
+      "titre": "Silver Lake to merge French software groups in €10bn deal",
+      "link": "https://www.ft.com/content/2cc88608-04b2-4dcb-8c89-698f251de170?syn-25a6b1a6=1",
+      "date": "2026-09-09T10:00:09.000Z",
+      "resume": "Plan comes as buyout groups grapple with impact of AI on software companies bought at high valuations"
+    },
+    "score_fiabilite": 0.4,
+    "score_fiabilite_motif": "ft.com — presse généraliste ou spécialisée",
+    "domaine_source": "ft.com",
+    "domaine_opaque": false,
+    "statut": "en_attente",
+    "created_at": "2026-09-09T12:05:02.100Z"
+  },
+  {
+    "id": "f922a63e-e69b-45c3-b935-6e8773ba9beb",
+    "source_id": "ft-marches",
+    "cible_type": "nouvelle_categorie",
+    "cible_id": null,
+    "contenu_propose": {
+      "titre": "‘I am the house now’: Bessent warns currency traders not to bet against yen",
+      "link": "https://www.ft.com/content/38d718f6-110b-4822-9403-f7d12a48cfa8?syn-25a6b1a6=1",
+      "date": "2026-09-09T08:26:37.000Z",
+      "resume": "Comments follow July’s rare joint intervention with Tokyo to support Japanese currency"
+    },
+    "score_fiabilite": 0.4,
+    "score_fiabilite_motif": "ft.com — presse généraliste ou spécialisée",
+    "domaine_source": "ft.com",
+    "domaine_opaque": false,
+    "statut": "en_attente",
+    "created_at": "2026-09-09T12:05:02.100Z"
+  },
+  {
+    "id": "25da1a59-a7eb-4723-bfb7-0485f254d254",
+    "source_id": "wsj-marches",
+    "cible_type": "nouvelle_categorie",
+    "cible_id": null,
+    "contenu_propose": {
+      "titre": "Stock Market Today: Oil Hits $100 for First Time Since July",
+      "link": "https://www.wsj.com/livecoverage/stock-market-today-dow-sp-500-nasdaq-09-09-2026?mod=rss_markets_main",
+      "date": "2026-09-09T07:38:00.000Z",
+      "resume": "Escalating conflict in Middle East stokes fears of supply disruptions"
+    },
+    "score_fiabilite": 0.4,
+    "score_fiabilite_motif": "wsj.com — presse généraliste ou spécialisée",
+    "domaine_source": "wsj.com",
+    "domaine_opaque": false,
+    "statut": "en_attente",
+    "created_at": "2026-09-09T12:05:02.258Z"
+  },
+  {
+    "id": "01ae4301-212a-472e-9b66-9dd40e87a860",
+    "source_id": "wsj-marches",
+    "cible_type": "nouvelle_categorie",
+    "cible_id": null,
+    "contenu_propose": {
+      "titre": "What to Know About Anthropic’s Planned IPO",
+      "link": "https://www.wsj.com/finance/stocks/what-to-know-about-anthropics-planned-ipo-c2f58908?mod=rss_markets_main",
+      "date": "2026-09-08T19:13:00.000Z",
+      "resume": "The artificial-intelligence giant has yet to officially launch its listing."
+    },
+    "score_fiabilite": 0.4,
+    "score_fiabilite_motif": "wsj.com — presse généraliste ou spécialisée",
+    "domaine_source": "wsj.com",
+    "domaine_opaque": false,
+    "statut": "en_attente",
+    "created_at": "2026-09-09T12:05:02.258Z"
+  },
+  {
+    "id": "a27c09d3-550e-4328-ae95-9e1ceadf6f58",
+    "source_id": "wsj-marches",
+    "cible_type": "nouvelle_categorie",
+    "cible_id": null,
+    "contenu_propose": {
+      "titre": "Watch the AI Boom’s Weakest Link",
+      "link": "https://www.wsj.com/finance/stocks/watch-the-ai-booms-weakest-link-0e946648?mod=rss_markets_main",
+      "date": "2026-09-09T10:16:00.000Z",
+      "resume": "Plus, Happy iPhone Day"
+    },
+    "score_fiabilite": 0.4,
+    "score_fiabilite_motif": "wsj.com — presse généraliste ou spécialisée",
+    "domaine_source": "wsj.com",
+    "domaine_opaque": false,
+    "statut": "en_attente",
+    "created_at": "2026-09-09T12:05:02.258Z"
+  },
+  {
+    "id": "5e5e3443-aab1-43f0-b415-a965f541801a",
+    "source_id": "wsj-marches",
+    "cible_type": "nouvelle_categorie",
+    "cible_id": null,
+    "contenu_propose": {
+      "titre": "The High-Stakes Gamble Playing Out in the Natural-Gas Market",
+      "link": "https://www.wsj.com/finance/commodities-futures/the-high-stakes-gamble-playing-out-in-the-natural-gas-market-334f774b?mod=rss_markets_main",
+      "date": "2026-09-09T09:30:00.000Z",
+      "resume": "Europe has stockpiled only enough natural gas to get through a mild winter."
+    },
+    "score_fiabilite": 0.4,
+    "score_fiabilite_motif": "wsj.com — presse généraliste ou spécialisée",
+    "domaine_source": "wsj.com",
+    "domaine_opaque": false,
+    "statut": "en_attente",
+    "created_at": "2026-09-09T12:05:02.258Z"
+  },
+  {
+    "id": "cabe6d4b-ad8f-4837-a679-eaa1118ec7c7",
+    "source_id": "wsj-marches",
+    "cible_type": "nouvelle_categorie",
+    "cible_id": null,
+    "contenu_propose": {
+      "titre": "Oil Near $100 Threatens U.S. Stocks’ Stellar Run",
+      "link": "https://www.wsj.com/finance/stocks/oil-near-100-threatens-u-s-stocks-stellar-run-cabbaf0c?mod=rss_markets_main",
+      "date": "2026-09-08T21:09:00.000Z",
+      "resume": "Brent crude spiked above $99 a barrel before paring gains."
+    },
+    "score_fiabilite": 0.4,
+    "score_fiabilite_motif": "wsj.com — presse généraliste ou spécialisée",
+    "domaine_source": "wsj.com",
+    "domaine_opaque": false,
+    "statut": "en_attente",
+    "created_at": "2026-09-09T12:05:02.258Z"
+  },
+  {
+    "id": "8e9d5e9f-5e5c-4007-88bb-a7f5340c44f5",
+    "source_id": "le-monde-economie",
+    "cible_type": "nouvelle_categorie",
+    "cible_id": null,
+    "contenu_propose": {
+      "titre": "Logement abordable : les propositions controversées du commissaire européen Jorgensen",
+      "link": "https://www.lemonde.fr/economie/article/2026/09/09/logement-abordable-les-propositions-controversees-du-commissaire-europeen-jorgensen_6768891_3234.html",
+      "date": "2026-09-09T11:50:56.000Z",
+      "resume": "Dan Jorgensen propose notamment un critère de définition des zones en tension, et s’intéresse aux manières de diminuer la pression sur le prix des logements ou aux leviers à la disposition des élus pour réguler l’acquisition de résidences secondaires. Mais son texte suscite inquiétudes et méfiance."
+    },
+    "score_fiabilite": 0.4,
+    "score_fiabilite_motif": "lemonde.fr — presse généraliste ou spécialisée",
+    "domaine_source": "lemonde.fr",
+    "domaine_opaque": false,
+    "statut": "en_attente",
+    "created_at": "2026-09-09T12:05:02.571Z"
+  },
+  {
+    "id": "d992c10c-c8b1-4201-8eed-9011e65bf2e8",
+    "source_id": "le-monde-economie",
+    "cible_type": "nouvelle_categorie",
+    "cible_id": null,
+    "contenu_propose": {
+      "titre": "La Commission européenne veut simplifier et « européaniser » les marchés publics",
+      "link": "https://www.lemonde.fr/economie/article/2026/09/09/la-commission-europeenne-veut-simplifier-et-europeaniser-les-marches-publics_6768890_3234.html",
+      "date": "2026-09-09T11:25:48.000Z",
+      "resume": "Cette réforme doit permettre « la fin de la domination du critère prix », qui favorise de fait les produits chinois, estime Stéphane Séjourné, vice-président exécutif de la Commission européenne. L’ensemble des marchés publics dans l’Union européenne pèsent chaque année 2 600 milliards d’euros, soit 15 % du PIB."
+    },
+    "score_fiabilite": 0.4,
+    "score_fiabilite_motif": "lemonde.fr — presse généraliste ou spécialisée",
+    "domaine_source": "lemonde.fr",
+    "domaine_opaque": false,
+    "statut": "en_attente",
+    "created_at": "2026-09-09T12:05:02.571Z"
+  },
+  {
+    "id": "21af00a7-0623-466f-91d6-41a52567ead1",
+    "source_id": "le-monde-economie",
+    "cible_type": "nouvelle_categorie",
+    "cible_id": null,
+    "contenu_propose": {
+      "titre": "Budget 2027 : Sébastien Lecornu lance une « opération déminage » auprès des chefs d’entreprise en promettant une baisse de la contribution exceptionnelle",
+      "link": "https://www.lemonde.fr/politique/article/2026/09/09/budget-2027-sebastien-lecornu-lance-une-operation-deminage-aupres-des-chefs-d-entreprise-en-promettant-une-baisse-de-la-contribution-exceptionnelle_6768889_823448.html",
+      "date": "2026-09-09T11:23:21.000Z",
+      "resume": "A trois semaines de la présentation du projet de loi de finances 2027, le premier ministre confirme que la surtaxe « exceptionnelle » sur les grandes entreprises ne va pas disparaître. Mais elle devrait baisser, et un nouveau dispositif être créé pour favoriser la reprise d’entreprises par les salariés."
+    },
+    "score_fiabilite": 0.4,
+    "score_fiabilite_motif": "lemonde.fr — presse généraliste ou spécialisée",
+    "domaine_source": "lemonde.fr",
+    "domaine_opaque": false,
+    "statut": "en_attente",
+    "created_at": "2026-09-09T12:05:02.571Z"
+  },
+  {
+    "id": "b8552a67-d54c-452e-907b-61e75a0d6f1c",
+    "source_id": "le-monde-economie",
+    "cible_type": "nouvelle_categorie",
+    "cible_id": null,
+    "contenu_propose": {
+      "titre": "La bataille des « Draghi trackers », ou comment les centres de réflexion européens suivent l’application du rapport de Mario Draghi",
+      "link": "https://www.lemonde.fr/economie/article/2026/09/09/la-bataille-des-draghi-trackers-ou-comment-les-centres-de-reflexion-europeens-suivent-l-application-du-rapport-draghi_6768882_3234.html",
+      "date": "2026-09-09T10:00:18.000Z",
+      "resume": "Trois think tanks pistent au jour le jour la progression des réformes mises en avant par l’ancien premier ministre italien et ancien président de la Banque centrale européenne pour résister au décrochage économique face aux Etats-Unis et à la Chine."
+    },
+    "score_fiabilite": 0.4,
+    "score_fiabilite_motif": "lemonde.fr — presse généraliste ou spécialisée",
+    "domaine_source": "lemonde.fr",
+    "domaine_opaque": false,
+    "statut": "en_attente",
+    "created_at": "2026-09-09T12:05:02.571Z"
+  },
+  {
+    "id": "07981ebf-f7f9-4c79-996d-d06191af8201",
+    "source_id": "le-monde-economie",
+    "cible_type": "nouvelle_categorie",
+    "cible_id": null,
+    "contenu_propose": {
+      "titre": "« Bic, qui a créé le stylo 4 couleurs et le rasoir jetable, est condamné à se réinventer »",
+      "link": "https://www.lemonde.fr/economie/article/2026/09/09/bic-qui-a-cree-le-stylo-4-couleurs-et-le-rasoir-jetable-est-condamne-a-se-reinventer_6768875_3234.html",
+      "date": "2026-09-09T09:30:09.000Z",
+      "resume": "Entre 2015 et 2025, le chiffre d’affaires du groupe français s’est effrité de près de 7 % et neuf de ses usines ont fermé. Son directeur général mise sur les pays émergents pour relancer l’entreprise, relève Isabelle Chaperon, chroniqueuse au service Economie du « Monde »."
+    },
+    "score_fiabilite": 0.4,
+    "score_fiabilite_motif": "lemonde.fr — presse généraliste ou spécialisée",
+    "domaine_source": "lemonde.fr",
+    "domaine_opaque": false,
+    "statut": "en_attente",
+    "created_at": "2026-09-09T12:05:02.571Z"
+  },
+  {
+    "id": "61971fef-236d-4407-8e0c-aa9f7e9c8048",
+    "source_id": "la-tribune-actualites",
+    "cible_type": "nouvelle_categorie",
+    "cible_id": null,
+    "contenu_propose": {
+      "titre": "OPINION. « Surenchérie ! Prouve que tu existes ! », par Gaspard Gantzer, conseiller en communication",
+      "link": "https://www.latribune.fr/article/la-tribune-dimanche/opinions/1180714346385614/opinion-surencherie-prouve-que-tu-existes-par-gaspard-gantzer-conseiller-en-communication",
+      "date": "2026-09-09T10:58:36.000Z",
+      "resume": "À l’approche de la présidentielle, les candidatures se multiplient et, avec elles, la course à la petite phrase. Pour Gaspard Gantzer, cette surenchère permanente pousse les prétendants à privilégier le buzz au détriment des sujets de fond."
+    },
+    "score_fiabilite": 0.4,
+    "score_fiabilite_motif": "latribune.fr — domaine absent de la table : score par défaut prudent, sous le seuil de source primaire",
+    "domaine_source": "latribune.fr",
+    "domaine_opaque": false,
+    "statut": "en_attente",
+    "created_at": "2026-09-09T12:05:02.784Z"
+  },
+  {
+    "id": "b3323221-3b6f-46fc-9c16-ac7a167a7e08",
+    "source_id": "la-tribune-actualites",
+    "cible_type": "nouvelle_categorie",
+    "cible_id": null,
+    "contenu_propose": {
+      "titre": "Mistral AI : que valent les actions de l'ex-secrétaire d'État Cédric O ?",
+      "link": "https://www.latribune.fr/article/tech/intelligence-artificielle/34266843208177/mistral-ai-que-valent-les-actions-de-lex-secretaire-detat-cedric-o",
+      "date": "2026-09-09T10:08:40.000Z",
+      "resume": "Après une levée de 3 milliards d'euros valorisant Mistral AI à plus de 21 milliards, la participation initiale de sa société de conseil, Nopeunteo, pourrait avoir fortement pris de la valeur. Mais sans capitalisation actualisée, catégories d'actions ni détail des cessions, aucun montant de patrimoine ne peut être établi."
+    },
+    "score_fiabilite": 0.4,
+    "score_fiabilite_motif": "latribune.fr — domaine absent de la table : score par défaut prudent, sous le seuil de source primaire",
+    "domaine_source": "latribune.fr",
+    "domaine_opaque": false,
+    "statut": "en_attente",
+    "created_at": "2026-09-09T12:05:02.784Z"
+  },
+  {
+    "id": "1ab9d669-15ec-43e8-b4c3-fb85a5399258",
+    "source_id": "la-tribune-actualites",
+    "cible_type": "nouvelle_categorie",
+    "cible_id": null,
+    "contenu_propose": {
+      "titre": "Sommet spatial : les Émirats investissent un milliard de dollars dans l’IA avec Loft Orbital",
+      "link": "https://air-cosmos.latribune.fr/article/espace/19794223548526/sommet-spatial-avec-mistral-loft-orbital-investit-un-milliard-de-dollars-aux-emirats",
+      "date": "2026-09-09T09:15:01.000Z",
+      "resume": "Ce 9 septembre, premier jour du sommet spatial international à Paris, Loft Orbital annonce un investissement d’un milliard d’euros des Émirats arabes unis dans une constellation d’observation de la Terre avec IA, avec le concours de Mistral et de Marlan Space."
+    },
+    "score_fiabilite": 0.4,
+    "score_fiabilite_motif": "air-cosmos.latribune.fr — domaine absent de la table : score par défaut prudent, sous le seuil de source primaire",
+    "domaine_source": "air-cosmos.latribune.fr",
+    "domaine_opaque": false,
+    "statut": "en_attente",
+    "created_at": "2026-09-09T12:05:02.784Z"
+  },
+  {
+    "id": "c5e8614d-2ee3-476c-90b5-ec6ecf6b1028",
+    "source_id": "la-tribune-actualites",
+    "cible_type": "nouvelle_categorie",
+    "cible_id": null,
+    "contenu_propose": {
+      "titre": "Défiant Wall Street, DeepSeek teste sa capacité à financer l’IA sur le « Nasdaq chinois »",
+      "link": "https://www.latribune.fr/article/tech/intelligence-artificielle/11994594224724/defiant-wall-street-deepseek-teste-sa-capacite-a-financer-l-ia-sur-le-nasdaq-chinois",
+      "date": "2026-09-09T09:31:33.000Z",
+      "resume": "La start-up chinoise d'intelligence artificielle prépare son introduction en Bourse sur le Star Market de Shanghai. Le projet devient le premier test concret des nouvelles règles chinoises pour financer des éditeurs de grands modèles d’IA, et ce, avant leur rentabilité."
+    },
+    "score_fiabilite": 0.4,
+    "score_fiabilite_motif": "latribune.fr — domaine absent de la table : score par défaut prudent, sous le seuil de source primaire",
+    "domaine_source": "latribune.fr",
+    "domaine_opaque": false,
+    "statut": "en_attente",
+    "created_at": "2026-09-09T12:05:02.784Z"
+  },
+  {
+    "id": "2a647141-9b60-4c81-a3a7-0443de66c671",
+    "source_id": "la-tribune-actualites",
+    "cible_type": "nouvelle_categorie",
+    "cible_id": null,
+    "contenu_propose": {
+      "titre": "«Nexans se bat pour augmenter ses capacités de production», vante son CEO, face au «boom de l’électrification»",
+      "link": "https://www.latribune.fr/article/entreprises-finance/industrie/81258264417016/nexans-se-bat-pour-augmenter-ses-capacites-de-production-vante-son-ceo-face-au-boom-de-l-electrification",
+      "date": "2026-09-09T06:07:22.000Z",
+      "resume": "L'industriel français tente de gonfler ses capacités industrielles pour répondre à la forte demande d'électrification en Europe et dans le monde. Il s'apprête à mener des opérations de croissance externe pour y parvenir et mise aussi sur l'intelligence artificielle pour optimiser son organisation."
+    },
+    "score_fiabilite": 0.4,
+    "score_fiabilite_motif": "latribune.fr — domaine absent de la table : score par défaut prudent, sous le seuil de source primaire",
+    "domaine_source": "latribune.fr",
+    "domaine_opaque": false,
+    "statut": "en_attente",
+    "created_at": "2026-09-09T12:05:02.784Z"
+  },
+  {
+    "id": "a7884568-6cac-4726-a7f3-d5eeee3f0869",
+    "source_id": "rfi-economie",
+    "cible_type": "nouvelle_categorie",
+    "cible_id": null,
+    "contenu_propose": {
+      "titre": "RDC: la baisse de la demande pèse sur les prix du cobalt congolais",
+      "link": "https://www.rfi.fr/fr/podcasts/chronique-des-mati%C3%A8res-premi%C3%A8res/20260908-la-baisse-de-la-demande-p%C3%A8se-sur-les-prix-du-cobalt-congolais",
+      "date": "2026-09-08T22:29:09.000Z",
+      "resume": "Après les restrictions successives à l'exportation mises en place par la République démocratique du Congo (RDC), il y a un an et demi, la courbe des prix du cobalt s'inverse. L'hydroxyde de cobalt, la matière première exportée de RDC, a baissé de près de 27 % alors même que la RDC contrôle toujours les volumes d'exportation via des quotas."
+    },
+    "score_fiabilite": 0.4,
+    "score_fiabilite_motif": "rfi.fr — domaine absent de la table : score par défaut prudent, sous le seuil de source primaire",
+    "domaine_source": "rfi.fr",
+    "domaine_opaque": false,
+    "statut": "en_attente",
+    "created_at": "2026-09-09T12:05:03.214Z"
+  },
+  {
+    "id": "3eed3de4-a976-4c26-916a-2b2cc44fb5f1",
+    "source_id": "rfi-economie",
+    "cible_type": "nouvelle_categorie",
+    "cible_id": null,
+    "contenu_propose": {
+      "titre": "Mistral AI lève trois milliards d’euros et accélère son virage industriel",
+      "link": "https://www.rfi.fr/fr/%C3%A9conomie/20260908-mistral-ai-l%C3%A8ve-trois-milliards-d-euros-et-acc%C3%A9l%C3%A8re-son-virage-industriel",
+      "date": "2026-09-08T16:11:47.000Z",
+      "resume": "La start-up française de l’intelligence artificielle vient de boucler la plus importante levée de fonds de son histoire : 3 milliards d’euros. Valorisé désormais à 21 milliards d’euros, Mistral AI veut désormais aller au-delà des modèles d’intelligence artificielle et investir massivement dans les infrastructures qui les font tourner. Une mue industrielle qui doit aussi lui permettre de réduire sa"
+    },
+    "score_fiabilite": 0.4,
+    "score_fiabilite_motif": "rfi.fr — domaine absent de la table : score par défaut prudent, sous le seuil de source primaire",
+    "domaine_source": "rfi.fr",
+    "domaine_opaque": false,
+    "statut": "en_attente",
+    "created_at": "2026-09-09T12:05:03.214Z"
+  },
+  {
+    "id": "16d0c8b1-bdad-49b7-aeba-6e5e8ffac10e",
+    "source_id": "euronews-business",
+    "cible_type": "nouvelle_categorie",
+    "cible_id": null,
+    "contenu_propose": {
+      "titre": "Face à la puissance industrielle chinoise, l’Europe veut reprendre le contrôle de son marché",
+      "link": "http://fr.euronews.com/my-europe/2026/09/09/un-rapport-du-parlement-europeen-pour-durcir-les-regles-dinvestissement-de-lue-face-a-la-c",
+      "date": "2026-09-09T11:26:46.000Z",
+      "resume": "L’UE veut mieux protéger ses industries stratégiques face à la puissance chinoise. Un rapport du Parlement européen propose de durcir les conditions imposées aux investisseurs étrangers dans plusieurs secteurs clés, des voitures électriques aux batteries, en passant par les panneaux solaires."
+    },
+    "score_fiabilite": 0.4,
+    "score_fiabilite_motif": "fr.euronews.com — domaine absent de la table : score par défaut prudent, sous le seuil de source primaire",
+    "domaine_source": "fr.euronews.com",
+    "domaine_opaque": false,
+    "statut": "en_attente",
+    "created_at": "2026-09-09T12:05:03.653Z"
+  },
+  {
+    "id": "1ecb3fad-6c6b-41aa-88c9-9c427f9ac2d2",
+    "source_id": "euronews-business",
+    "cible_type": "nouvelle_categorie",
+    "cible_id": null,
+    "contenu_propose": {
+      "titre": "Google investit 13 milliards d'euros dans des centres de données IA en Finlande, record européen",
+      "link": "http://fr.euronews.com/business/2026/09/09/google-investit-13-milliards-deuros-dans-des-centres-de-donnees-ia-en-finlande-record-euro",
+      "date": "2026-09-09T10:17:58.000Z",
+      "resume": "Finlande : Google va investir au moins 13 milliards d'euros en centres de données et infrastructures numériques, son plus grand investissement en Europe"
+    },
+    "score_fiabilite": 0.4,
+    "score_fiabilite_motif": "fr.euronews.com — domaine absent de la table : score par défaut prudent, sous le seuil de source primaire",
+    "domaine_source": "fr.euronews.com",
+    "domaine_opaque": false,
+    "statut": "en_attente",
+    "created_at": "2026-09-09T12:05:03.653Z"
+  },
+  {
+    "id": "3181ac90-2ce9-439f-b2f7-0e1b0497eaa9",
+    "source_id": "euronews-business",
+    "cible_type": "nouvelle_categorie",
+    "cible_id": null,
+    "contenu_propose": {
+      "titre": "Croissance proche de 1 % du PIB et hausse des recettes: quel impact sur la loi de finances 2027 ?",
+      "link": "http://fr.euronews.com/business/2026/09/08/croissance-proche-de-1-du-pib-et-hausse-des-recettes-quel-impact-sur-la-loi-de-finances-20",
+      "date": "2026-09-08T15:46:34.000Z",
+      "resume": "Italie: pour l'économiste Pietro Reichlin, une croissance de 1 % est \"réaliste\" mais insuffisante, le pays reste en queue de peloton dans l'UE, pénalisé par faible productivité et déclin démographique"
+    },
+    "score_fiabilite": 0.4,
+    "score_fiabilite_motif": "fr.euronews.com — domaine absent de la table : score par défaut prudent, sous le seuil de source primaire",
+    "domaine_source": "fr.euronews.com",
+    "domaine_opaque": false,
+    "statut": "en_attente",
+    "created_at": "2026-09-09T12:05:03.653Z"
+  },
+  {
+    "id": "28ab023e-d144-480a-8e57-bc84e1d7b81d",
+    "source_id": "euronews-business",
+    "cible_type": "nouvelle_categorie",
+    "cible_id": null,
+    "contenu_propose": {
+      "titre": "Exclusif : l'Italie propose la gratuité des paiements en euro numérique sous 10 €",
+      "link": "http://fr.euronews.com/business/2026/09/08/exclusif-litalie-propose-la-gratuite-des-paiements-en-euro-numerique-sous-10",
+      "date": "2026-09-08T11:56:52.000Z",
+      "resume": "Italie propose d'exonérer les petits commerçants de frais sur les paiements de moins de 10 €, avec le soutien des banques centrales, avant l'euro numérique."
+    },
+    "score_fiabilite": 0.4,
+    "score_fiabilite_motif": "fr.euronews.com — domaine absent de la table : score par défaut prudent, sous le seuil de source primaire",
+    "domaine_source": "fr.euronews.com",
+    "domaine_opaque": false,
+    "statut": "en_attente",
+    "created_at": "2026-09-09T12:05:03.653Z"
+  },
+  {
+    "id": "0a75a7ee-92c4-4a96-a526-bc38d2c34b01",
+    "source_id": "dw-business",
+    "cible_type": "nouvelle_categorie",
+    "cible_id": null,
+    "contenu_propose": {
+      "titre": "BRICS leaders gather in India, but does the group have a clear purpose?",
+      "link": "https://www.dw.com/en/brics-leaders-gather-in-india-but-does-the-group-have-a-clear-purpose/a-79195234?maca=en-rss-en-bus-2091-rdf",
+      "date": "2026-09-09T06:47:00.000Z",
+      "resume": "The 18th BRICS summit takes place in India this weekend. Unlike last year, the leaders of China and Russia are coming. But does the expanded group have a clear common mission and purpose?"
+    },
+    "score_fiabilite": 0.4,
+    "score_fiabilite_motif": "dw.com — domaine absent de la table : score par défaut prudent, sous le seuil de source primaire",
+    "domaine_source": "dw.com",
+    "domaine_opaque": false,
+    "statut": "en_attente",
+    "created_at": "2026-09-09T12:05:04.756Z"
+  },
+  {
+    "id": "c28e7bf0-7e3d-4b1c-a87e-e87bb81ff4ee",
+    "source_id": "guardian-economie",
+    "cible_type": "nouvelle_categorie",
+    "cible_id": null,
+    "contenu_propose": {
+      "titre": "EU unveils ‘buy European’ public procurement rules to counter China",
+      "link": "https://www.theguardian.com/world/2026/sep/09/eu-buy-european-public-procurement-rules-china-goods-services",
+      "date": "2026-09-09T11:30:49.000Z",
+      "resume": "Authorities and public bodies to be urged to buy goods and services from Europe, but without binding quotas\nEuropean authorities will be encouraged to buy more domestic goods and services when they spend public money under the EU latest effort to counter China’s economic might.\nIn a further “Buy European” plan, the European Commission published proposals on Wednesday for a sweeping overhaul of EU "
+    },
+    "score_fiabilite": 0.4,
+    "score_fiabilite_motif": "theguardian.com — presse généraliste ou spécialisée",
+    "domaine_source": "theguardian.com",
+    "domaine_opaque": false,
+    "statut": "en_attente",
+    "created_at": "2026-09-09T12:05:05.340Z"
+  },
+  {
+    "id": "039701d5-225a-45f8-a260-a0db2edcf982",
+    "source_id": "guardian-economie",
+    "cible_type": "nouvelle_categorie",
+    "cible_id": null,
+    "contenu_propose": {
+      "titre": "Electronic shelf labels likely to cost jobs and drive up grocery prices, US report warns",
+      "link": "https://www.theguardian.com/us-news/2026/sep/09/electronic-shelf-labels-grocery",
+      "date": "2026-09-09T11:00:07.000Z",
+      "resume": "AFL-CIO calls for ban on such labels to protect consumers and workers from surveillance pricing and job cuts\nThe universal adoption of electronic shelf labels in grocery stores across the US could cost tens of thousands of jobs and billions of dollars in lost wages while further driving up grocery costs, according to a report released on Tuesday.\nAn analysis by the AFL-CIO Tech Institute of the la"
+    },
+    "score_fiabilite": 0.4,
+    "score_fiabilite_motif": "theguardian.com — presse généraliste ou spécialisée",
+    "domaine_source": "theguardian.com",
+    "domaine_opaque": false,
+    "statut": "en_attente",
+    "created_at": "2026-09-09T12:05:05.340Z"
+  },
+  {
+    "id": "7a07661c-52b7-4c4a-81e0-c6b5763df8b8",
+    "source_id": "guardian-economie",
+    "cible_type": "nouvelle_categorie",
+    "cible_id": null,
+    "contenu_propose": {
+      "titre": "Ministers to put white working-class people in UK at heart of new equalities unit",
+      "link": "https://www.theguardian.com/inequality/2026/sep/09/ministers-to-put-white-working-class-people-in-uk-at-heart-of-new-equalities-unit",
+      "date": "2026-09-09T10:45:07.000Z",
+      "resume": "Bridget Phillipson to announce creation of unit which will make class a key part of its equalities agenda\n\nUK politics live – latest updates\n\nThe government is putting class at the heart of its equalities agenda by creating a new unit that will make tackling white working-class inequality a priority.\nThe unit, which the minister for women and equalities, Bridget Phillipson, will announce on Wednes"
+    },
+    "score_fiabilite": 0.4,
+    "score_fiabilite_motif": "theguardian.com — presse généraliste ou spécialisée",
+    "domaine_source": "theguardian.com",
+    "domaine_opaque": false,
+    "statut": "en_attente",
+    "created_at": "2026-09-09T12:05:05.340Z"
+  },
+  {
+    "id": "d82b873e-609a-4010-af25-ade97bbe27a0",
+    "source_id": "guardian-economie",
+    "cible_type": "nouvelle_categorie",
+    "cible_id": null,
+    "contenu_propose": {
+      "titre": "UK government pays highest interest rate on 30-year bond since 1998",
+      "link": "https://www.theguardian.com/business/2026/sep/08/uk-government-pays-highest-interest-rate-on-30-year-bond-since-1998",
+      "date": "2026-09-08T17:47:30.000Z",
+      "resume": "High yields threaten to wipe out at least half of the £24bn headroom John Healey was expecting to have for his budget\nThe UK government was forced to pay the highest interest rate for a 30-year bond since 1998 on Tuesday, underlining the fiscal challenges facing the chancellor, John Healey.\nEchoing the global bond market sell-off that has driven up yields, or interest rates, on government borrowin"
+    },
+    "score_fiabilite": 0.4,
+    "score_fiabilite_motif": "theguardian.com — presse généraliste ou spécialisée",
+    "domaine_source": "theguardian.com",
+    "domaine_opaque": false,
+    "statut": "en_attente",
+    "created_at": "2026-09-09T12:05:05.340Z"
   }
 ]
