@@ -51,6 +51,36 @@ jobs:
           fi
 
       # ---------------------------------------------------------------------
+      # Pré-tri (docs/decisions-ouvertes-2026-09-07.md, point 1, option C).
+      # La collecte dépose une trentaine de propositions par jour, le tri est
+      # humain : sans cette étape l'écart se creuse tout seul — la file est passée
+      # de 136 à 238 entrées en attente entre le 7 et le 10 septembre 2026, sans
+      # qu'aucune décision n'ait été prise.
+      #
+      # Le script n'ÉCARTE que sur des critères mécaniques — agrégateur masquant
+      # l'éditeur, URL absente, doublon dans la file, URL déjà citée par une fiche.
+      # Il n'accepte jamais rien. Écarter ne touche pas au corpus, accepter si :
+      # c'est pourquoi cette moitié-là peut tourner sans humain et pas l'autre.
+      # ---------------------------------------------------------------------
+      - name: Pré-trier la file (écarte les cas mécaniques, n'accepte rien)
+        run: node scripts/pretrier-veille.mjs --appliquer
+
+      - name: Re-valider le corpus après pré-tri
+        run: node scripts/valider-donnees.mjs
+
+      - name: Committer le pré-tri (s'il y a lieu)
+        run: |
+          git config user.name "atlas-veille-bot"
+          git config user.email "veille-bot@users.noreply.github.com"
+          if git diff --quiet -- data/seed/veille_queue.json && [ -z "$(git status --porcelain docs/)" ]; then
+            echo "Rien à écarter aujourd'hui — file inchangée."
+          else
+            git add data/seed/veille_queue.json docs/
+            git commit -m "chore(veille): pré-tri automatique de la file [skip ci]"
+            git push
+          fi
+
+      # ---------------------------------------------------------------------
       # Boucle de veille, étape « proposition » (MP-7).
       # Le cron va jusqu'à préparer le travail éditorial : il traduit les
       # propositions déjà qualifiées de la file en patchs de fiche relisibles,

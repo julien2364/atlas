@@ -3671,8 +3671,10 @@
     "score_fiabilite_motif": "news.google.com est un redirecteur : l'url ne porte pas le domaine de l'éditeur réel, la fiabilité ne peut pas être établie sans ouvrir le lien",
     "domaine_source": "news.google.com",
     "domaine_opaque": true,
-    "statut": "en_attente",
-    "created_at": "2026-09-07T11:43:32.459Z"
+    "statut": "ecarte_automatique",
+    "created_at": "2026-09-07T11:43:32.459Z",
+    "ecarte_motif": "domaine_opaque",
+    "ecarte_le": "2026-09-10"
   },
   {
     "id": "fa9e158f-e1c2-436e-a05a-3c0cb56288ad",
@@ -3689,8 +3691,10 @@
     "score_fiabilite_motif": "news.google.com est un redirecteur : l'url ne porte pas le domaine de l'éditeur réel, la fiabilité ne peut pas être établie sans ouvrir le lien",
     "domaine_source": "news.google.com",
     "domaine_opaque": true,
-    "statut": "en_attente",
-    "created_at": "2026-09-07T11:43:32.459Z"
+    "statut": "ecarte_automatique",
+    "created_at": "2026-09-07T11:43:32.459Z",
+    "ecarte_motif": "domaine_opaque",
+    "ecarte_le": "2026-09-10"
   },
   {
     "id": "b282c465-d7f9-4738-94a1-deb1f355e2c1",
@@ -3707,8 +3711,10 @@
     "score_fiabilite_motif": "news.google.com est un redirecteur : l'url ne porte pas le domaine de l'éditeur réel, la fiabilité ne peut pas être établie sans ouvrir le lien",
     "domaine_source": "news.google.com",
     "domaine_opaque": true,
-    "statut": "en_attente",
-    "created_at": "2026-09-07T11:43:32.459Z"
+    "statut": "ecarte_automatique",
+    "created_at": "2026-09-07T11:43:32.459Z",
+    "ecarte_motif": "domaine_opaque",
+    "ecarte_le": "2026-09-10"
   },
   {
     "id": "c303995f-abe7-43c9-9848-4ad0f3c8044c",
@@ -3869,8 +3875,10 @@
     "score_fiabilite_motif": "news.google.com est un redirecteur : l'url ne porte pas le domaine de l'éditeur réel, la fiabilité ne peut pas être établie sans ouvrir le lien",
     "domaine_source": "news.google.com",
     "domaine_opaque": true,
-    "statut": "en_attente",
-    "created_at": "2026-09-07T11:43:33.635Z"
+    "statut": "ecarte_automatique",
+    "created_at": "2026-09-07T11:43:33.635Z",
+    "ecarte_motif": "domaine_opaque",
+    "ecarte_le": "2026-09-10"
   },
   {
     "id": "087a9295-8dda-4d59-b882-19c8af190178",
@@ -3887,8 +3895,10 @@
     "score_fiabilite_motif": "news.google.com est un redirecteur : l'url ne porte pas le domaine de l'éditeur réel, la fiabilité ne peut pas être établie sans ouvrir le lien",
     "domaine_source": "news.google.com",
     "domaine_opaque": true,
-    "statut": "en_attente",
-    "created_at": "2026-09-07T11:43:34.149Z"
+    "statut": "ecarte_automatique",
+    "created_at": "2026-09-07T11:43:34.149Z",
+    "ecarte_motif": "domaine_opaque",
+    "ecarte_le": "2026-09-10"
   },
   {
     "id": "3fff99d1-7b30-43c0-ad3c-1ec847f4b021",
@@ -5525,8 +5535,10 @@
     "score_fiabilite_motif": "arxiv.org — préprint, actes de conférence ou institution publique",
     "domaine_source": "arxiv.org",
     "domaine_opaque": false,
-    "statut": "en_attente",
-    "created_at": "2026-09-07T13:11:12.898Z"
+    "statut": "ecarte_automatique",
+    "created_at": "2026-09-07T13:11:12.898Z",
+    "ecarte_motif": "doublon_file",
+    "ecarte_le": "2026-09-10"
   },
   {
     "id": "7572677e-d851-4b7c-888b-107f0492ac84",
@@ -5543,8 +5555,10 @@
     "score_fiabilite_motif": "arxiv.org — préprint, actes de conférence ou institution publique",
     "domaine_source": "arxiv.org",
     "domaine_opaque": false,
-    "statut": "en_attente",
-    "created_at": "2026-09-07T13:11:12.898Z"
+    "statut": "ecarte_automatique",
+    "created_at": "2026-09-07T13:11:12.898Z",
+    "ecarte_motif": "doublon_file",
+    "ecarte_le": "2026-09-10"
   },
   {
     "id": "85d533e1-51ca-469b-b294-c78f8383e3fe",
@@ -5561,8 +5575,10 @@
     "score_fiabilite_motif": "arxiv.org — préprint, actes de conférence ou institution publique",
     "domaine_source": "arxiv.org",
     "domaine_opaque": false,
-    "statut": "en_attente",
-    "created_at": "2026-09-07T13:11:12.898Z"
+    "statut": "ecarte_automatique",
+    "created_at": "2026-09-07T13:11:12.898Z",
+    "ecarte_motif": "doublon_file",
+    "ecarte_le": "2026-09-10"
   },
   {
     "id": "fa0a7526-157c-4f94-8a61-569f482a504a",
@@ -5579,8 +5595,10 @@
     "score_fiabilite_motif": "arxiv.org — préprint, actes de conférence ou institution publique",
     "domaine_source": "arxiv.org",
     "domaine_opaque": false,
-    "statut": "en_attente",
-    "created_at": "2026-09-07T13:11:12.898Z"
+    "statut": "ecarte_automatique",
+    "created_at": "2026-09-07T13:11:12.898Z",
+    "ecarte_motif": "doublon_file",
+    "ecarte_le": "2026-09-10"
   },
   {
     "id": "520c970c-fd6b-4267-96b3-9ec9caa49d09",
@@ -5597,8 +5615,10 @@
     "score_fiabilite_motif": "arxiv.org — préprint, actes de conférence ou institution publique",
     "domaine_source": "arxiv.org",
     "domaine_opaque": false,
-    "statut": "en_attente",
-    "created_at": "2026-09-07T13:11:12.898Z"
+    "statut": "ecarte_automatique",
+    "created_at": "2026-09-07T13:11:12.898Z",
+    "ecarte_motif": "doublon_file",
+    "ecarte_le": "2026-09-10"
   },
   {
     "id": "9b8b705b-011b-4c96-aff8-aec454889998",
@@ -5615,8 +5635,10 @@
     "score_fiabilite_motif": "arxiv.org — préprint, actes de conférence ou institution publique",
     "domaine_source": "arxiv.org",
     "domaine_opaque": false,
-    "statut": "en_attente",
-    "created_at": "2026-09-07T13:11:13.010Z"
+    "statut": "ecarte_automatique",
+    "created_at": "2026-09-07T13:11:13.010Z",
+    "ecarte_motif": "doublon_file",
+    "ecarte_le": "2026-09-10"
   },
   {
     "id": "588b6f3b-49f7-42a5-8ebd-0d2e62112ccd",
@@ -5633,8 +5655,10 @@
     "score_fiabilite_motif": "arxiv.org — préprint, actes de conférence ou institution publique",
     "domaine_source": "arxiv.org",
     "domaine_opaque": false,
-    "statut": "en_attente",
-    "created_at": "2026-09-07T13:11:13.010Z"
+    "statut": "ecarte_automatique",
+    "created_at": "2026-09-07T13:11:13.010Z",
+    "ecarte_motif": "doublon_file",
+    "ecarte_le": "2026-09-10"
   },
   {
     "id": "48efa067-fcef-46a1-af78-1f26073b333b",
@@ -5651,8 +5675,10 @@
     "score_fiabilite_motif": "arxiv.org — préprint, actes de conférence ou institution publique",
     "domaine_source": "arxiv.org",
     "domaine_opaque": false,
-    "statut": "en_attente",
-    "created_at": "2026-09-07T13:11:13.010Z"
+    "statut": "ecarte_automatique",
+    "created_at": "2026-09-07T13:11:13.010Z",
+    "ecarte_motif": "doublon_file",
+    "ecarte_le": "2026-09-10"
   },
   {
     "id": "a36097ad-625a-401a-a2f7-428b469d89d7",
@@ -5669,8 +5695,10 @@
     "score_fiabilite_motif": "arxiv.org — préprint, actes de conférence ou institution publique",
     "domaine_source": "arxiv.org",
     "domaine_opaque": false,
-    "statut": "en_attente",
-    "created_at": "2026-09-07T13:11:13.010Z"
+    "statut": "ecarte_automatique",
+    "created_at": "2026-09-07T13:11:13.010Z",
+    "ecarte_motif": "doublon_file",
+    "ecarte_le": "2026-09-10"
   },
   {
     "id": "b5190761-6ea8-492f-b3a6-8f7cda94fbb0",
@@ -5687,8 +5715,10 @@
     "score_fiabilite_motif": "arxiv.org — préprint, actes de conférence ou institution publique",
     "domaine_source": "arxiv.org",
     "domaine_opaque": false,
-    "statut": "en_attente",
-    "created_at": "2026-09-07T13:11:13.010Z"
+    "statut": "ecarte_automatique",
+    "created_at": "2026-09-07T13:11:13.010Z",
+    "ecarte_motif": "doublon_file",
+    "ecarte_le": "2026-09-10"
   },
   {
     "id": "2db39ffe-80d9-43ce-a627-572f938e90e9",
@@ -5705,8 +5735,10 @@
     "score_fiabilite_motif": "news.google.com est un redirecteur : l'url ne porte pas le domaine de l'éditeur réel, la fiabilité ne peut pas être établie sans ouvrir le lien",
     "domaine_source": "news.google.com",
     "domaine_opaque": true,
-    "statut": "en_attente",
-    "created_at": "2026-09-07T13:11:13.696Z"
+    "statut": "ecarte_automatique",
+    "created_at": "2026-09-07T13:11:13.696Z",
+    "ecarte_motif": "domaine_opaque",
+    "ecarte_le": "2026-09-10"
   },
   {
     "id": "338fca25-4119-4a72-b40e-877391b5dd84",
@@ -5723,8 +5755,10 @@
     "score_fiabilite_motif": "news.google.com est un redirecteur : l'url ne porte pas le domaine de l'éditeur réel, la fiabilité ne peut pas être établie sans ouvrir le lien",
     "domaine_source": "news.google.com",
     "domaine_opaque": true,
-    "statut": "en_attente",
-    "created_at": "2026-09-07T13:11:13.696Z"
+    "statut": "ecarte_automatique",
+    "created_at": "2026-09-07T13:11:13.696Z",
+    "ecarte_motif": "domaine_opaque",
+    "ecarte_le": "2026-09-10"
   },
   {
     "id": "084c1e20-69e3-4496-b2d8-fe708bff4a27",
@@ -5741,8 +5775,10 @@
     "score_fiabilite_motif": "news.google.com est un redirecteur : l'url ne porte pas le domaine de l'éditeur réel, la fiabilité ne peut pas être établie sans ouvrir le lien",
     "domaine_source": "news.google.com",
     "domaine_opaque": true,
-    "statut": "en_attente",
-    "created_at": "2026-09-07T13:11:13.696Z"
+    "statut": "ecarte_automatique",
+    "created_at": "2026-09-07T13:11:13.696Z",
+    "ecarte_motif": "domaine_opaque",
+    "ecarte_le": "2026-09-10"
   },
   {
     "id": "ae3f5465-6421-4324-9c52-9a1214ffd7f3",
@@ -5759,8 +5795,10 @@
     "score_fiabilite_motif": "openai.com — éditeur ou laboratoire s'exprimant sur son propre produit",
     "domaine_source": "openai.com",
     "domaine_opaque": false,
-    "statut": "en_attente",
-    "created_at": "2026-09-07T13:11:14.005Z"
+    "statut": "ecarte_automatique",
+    "created_at": "2026-09-07T13:11:14.005Z",
+    "ecarte_motif": "doublon_file",
+    "ecarte_le": "2026-09-10"
   },
   {
     "id": "2c9ed14f-fc34-4c74-a464-0479648f8a8e",
@@ -5777,8 +5815,10 @@
     "score_fiabilite_motif": "openai.com — éditeur ou laboratoire s'exprimant sur son propre produit",
     "domaine_source": "openai.com",
     "domaine_opaque": false,
-    "statut": "en_attente",
-    "created_at": "2026-09-07T13:11:14.005Z"
+    "statut": "ecarte_automatique",
+    "created_at": "2026-09-07T13:11:14.005Z",
+    "ecarte_motif": "doublon_file",
+    "ecarte_le": "2026-09-10"
   },
   {
     "id": "9df36f34-a8ae-4d9c-a4a4-5d7b923202ba",
@@ -5795,8 +5835,10 @@
     "score_fiabilite_motif": "openai.com — éditeur ou laboratoire s'exprimant sur son propre produit",
     "domaine_source": "openai.com",
     "domaine_opaque": false,
-    "statut": "en_attente",
-    "created_at": "2026-09-07T13:11:14.005Z"
+    "statut": "ecarte_automatique",
+    "created_at": "2026-09-07T13:11:14.005Z",
+    "ecarte_motif": "doublon_file",
+    "ecarte_le": "2026-09-10"
   },
   {
     "id": "ab18d756-be17-49ff-a94a-ed4785277320",
@@ -5813,8 +5855,10 @@
     "score_fiabilite_motif": "nature.com — édition scientifique à comité de lecture",
     "domaine_source": "nature.com",
     "domaine_opaque": false,
-    "statut": "en_attente",
-    "created_at": "2026-09-07T13:11:14.208Z"
+    "statut": "ecarte_automatique",
+    "created_at": "2026-09-07T13:11:14.208Z",
+    "ecarte_motif": "doublon_file",
+    "ecarte_le": "2026-09-10"
   },
   {
     "id": "dce38d69-63ee-4b9f-a942-1a1321266d90",
@@ -5831,8 +5875,10 @@
     "score_fiabilite_motif": "nature.com — édition scientifique à comité de lecture",
     "domaine_source": "nature.com",
     "domaine_opaque": false,
-    "statut": "en_attente",
-    "created_at": "2026-09-07T13:11:14.208Z"
+    "statut": "ecarte_automatique",
+    "created_at": "2026-09-07T13:11:14.208Z",
+    "ecarte_motif": "doublon_file",
+    "ecarte_le": "2026-09-10"
   },
   {
     "id": "0c0294c3-54e4-40dc-b0a3-4001e5b0eb9b",
@@ -5849,8 +5895,10 @@
     "score_fiabilite_motif": "nature.com — édition scientifique à comité de lecture",
     "domaine_source": "nature.com",
     "domaine_opaque": false,
-    "statut": "en_attente",
-    "created_at": "2026-09-07T13:11:14.208Z"
+    "statut": "ecarte_automatique",
+    "created_at": "2026-09-07T13:11:14.208Z",
+    "ecarte_motif": "doublon_file",
+    "ecarte_le": "2026-09-10"
   },
   {
     "id": "def2dd16-2f21-4859-90cf-068281332de8",
@@ -5867,8 +5915,10 @@
     "score_fiabilite_motif": "nature.com — édition scientifique à comité de lecture",
     "domaine_source": "nature.com",
     "domaine_opaque": false,
-    "statut": "en_attente",
-    "created_at": "2026-09-07T13:11:14.208Z"
+    "statut": "ecarte_automatique",
+    "created_at": "2026-09-07T13:11:14.208Z",
+    "ecarte_motif": "doublon_file",
+    "ecarte_le": "2026-09-10"
   },
   {
     "id": "9c40204a-6709-4d93-a4d8-d19c76966174",
@@ -5885,8 +5935,10 @@
     "score_fiabilite_motif": "nature.com — édition scientifique à comité de lecture",
     "domaine_source": "nature.com",
     "domaine_opaque": false,
-    "statut": "en_attente",
-    "created_at": "2026-09-07T13:11:14.208Z"
+    "statut": "ecarte_automatique",
+    "created_at": "2026-09-07T13:11:14.208Z",
+    "ecarte_motif": "doublon_file",
+    "ecarte_le": "2026-09-10"
   },
   {
     "id": "b4709c45-db55-4566-9719-ef04b31a4005",
@@ -5903,8 +5955,10 @@
     "score_fiabilite_motif": "news.google.com est un redirecteur : l'url ne porte pas le domaine de l'éditeur réel, la fiabilité ne peut pas être établie sans ouvrir le lien",
     "domaine_source": "news.google.com",
     "domaine_opaque": true,
-    "statut": "en_attente",
-    "created_at": "2026-09-07T13:11:14.772Z"
+    "statut": "ecarte_automatique",
+    "created_at": "2026-09-07T13:11:14.772Z",
+    "ecarte_motif": "domaine_opaque",
+    "ecarte_le": "2026-09-10"
   },
   {
     "id": "a7cd92a7-3cc2-4f65-8e73-82ad71646189",
@@ -5921,8 +5975,10 @@
     "score_fiabilite_motif": "news.google.com est un redirecteur : l'url ne porte pas le domaine de l'éditeur réel, la fiabilité ne peut pas être établie sans ouvrir le lien",
     "domaine_source": "news.google.com",
     "domaine_opaque": true,
-    "statut": "en_attente",
-    "created_at": "2026-09-07T13:11:15.226Z"
+    "statut": "ecarte_automatique",
+    "created_at": "2026-09-07T13:11:15.226Z",
+    "ecarte_motif": "domaine_opaque",
+    "ecarte_le": "2026-09-10"
   },
   {
     "id": "46e67a78-954b-4d8c-9284-652a17eb25e9",
@@ -5939,8 +5995,10 @@
     "score_fiabilite_motif": "news.google.com est un redirecteur : l'url ne porte pas le domaine de l'éditeur réel, la fiabilité ne peut pas être établie sans ouvrir le lien",
     "domaine_source": "news.google.com",
     "domaine_opaque": true,
-    "statut": "en_attente",
-    "created_at": "2026-09-08T11:55:05.079Z"
+    "statut": "ecarte_automatique",
+    "created_at": "2026-09-08T11:55:05.079Z",
+    "ecarte_motif": "domaine_opaque",
+    "ecarte_le": "2026-09-10"
   },
   {
     "id": "f27f580e-eadc-4810-9ba6-6abfb59c9a85",
@@ -5957,8 +6015,10 @@
     "score_fiabilite_motif": "news.google.com est un redirecteur : l'url ne porte pas le domaine de l'éditeur réel, la fiabilité ne peut pas être établie sans ouvrir le lien",
     "domaine_source": "news.google.com",
     "domaine_opaque": true,
-    "statut": "en_attente",
-    "created_at": "2026-09-08T11:55:07.162Z"
+    "statut": "ecarte_automatique",
+    "created_at": "2026-09-08T11:55:07.162Z",
+    "ecarte_motif": "domaine_opaque",
+    "ecarte_le": "2026-09-10"
   },
   {
     "id": "ef32222b-81ac-4b18-81e7-2cc8b1b08910",
@@ -5975,8 +6035,10 @@
     "score_fiabilite_motif": "news.google.com est un redirecteur : l'url ne porte pas le domaine de l'éditeur réel, la fiabilité ne peut pas être établie sans ouvrir le lien",
     "domaine_source": "news.google.com",
     "domaine_opaque": true,
-    "statut": "en_attente",
-    "created_at": "2026-09-08T11:55:07.659Z"
+    "statut": "ecarte_automatique",
+    "created_at": "2026-09-08T11:55:07.659Z",
+    "ecarte_motif": "domaine_opaque",
+    "ecarte_le": "2026-09-10"
   },
   {
     "id": "47a452b4-59ab-4558-bdc8-c84815f3bd04",
@@ -5993,8 +6055,10 @@
     "score_fiabilite_motif": "news.google.com est un redirecteur : l'url ne porte pas le domaine de l'éditeur réel, la fiabilité ne peut pas être établie sans ouvrir le lien",
     "domaine_source": "news.google.com",
     "domaine_opaque": true,
-    "statut": "en_attente",
-    "created_at": "2026-09-08T11:55:07.659Z"
+    "statut": "ecarte_automatique",
+    "created_at": "2026-09-08T11:55:07.659Z",
+    "ecarte_motif": "domaine_opaque",
+    "ecarte_le": "2026-09-10"
   },
   {
     "id": "9efbc273-3c51-4e84-a7dc-daf8e803936d",
@@ -6011,8 +6075,10 @@
     "score_fiabilite_motif": "news.google.com est un redirecteur : l'url ne porte pas le domaine de l'éditeur réel, la fiabilité ne peut pas être établie sans ouvrir le lien",
     "domaine_source": "news.google.com",
     "domaine_opaque": true,
-    "statut": "en_attente",
-    "created_at": "2026-09-08T11:55:07.659Z"
+    "statut": "ecarte_automatique",
+    "created_at": "2026-09-08T11:55:07.659Z",
+    "ecarte_motif": "domaine_opaque",
+    "ecarte_le": "2026-09-10"
   },
   {
     "id": "f4612b22-dce3-4767-a5c3-101d8f1d2c6b",
@@ -6029,8 +6095,10 @@
     "score_fiabilite_motif": "news.google.com est un redirecteur : l'url ne porte pas le domaine de l'éditeur réel, la fiabilité ne peut pas être établie sans ouvrir le lien",
     "domaine_source": "news.google.com",
     "domaine_opaque": true,
-    "statut": "en_attente",
-    "created_at": "2026-09-08T11:55:07.659Z"
+    "statut": "ecarte_automatique",
+    "created_at": "2026-09-08T11:55:07.659Z",
+    "ecarte_motif": "domaine_opaque",
+    "ecarte_le": "2026-09-10"
   },
   {
     "id": "d2b2f94c-4d98-45bf-a6b8-2b0a43ead7a4",
@@ -6767,8 +6835,10 @@
     "score_fiabilite_motif": "news.google.com est un redirecteur : l'url ne porte pas le domaine de l'éditeur réel, la fiabilité ne peut pas être établie sans ouvrir le lien",
     "domaine_source": "news.google.com",
     "domaine_opaque": true,
-    "statut": "en_attente",
-    "created_at": "2026-09-09T12:04:53.836Z"
+    "statut": "ecarte_automatique",
+    "created_at": "2026-09-09T12:04:53.836Z",
+    "ecarte_motif": "domaine_opaque",
+    "ecarte_le": "2026-09-10"
   },
   {
     "id": "2b8f5123-36c3-4b8e-b500-e080ef8426b5",
@@ -6785,8 +6855,10 @@
     "score_fiabilite_motif": "news.google.com est un redirecteur : l'url ne porte pas le domaine de l'éditeur réel, la fiabilité ne peut pas être établie sans ouvrir le lien",
     "domaine_source": "news.google.com",
     "domaine_opaque": true,
-    "statut": "en_attente",
-    "created_at": "2026-09-09T12:04:53.836Z"
+    "statut": "ecarte_automatique",
+    "created_at": "2026-09-09T12:04:53.836Z",
+    "ecarte_motif": "domaine_opaque",
+    "ecarte_le": "2026-09-10"
   },
   {
     "id": "2e34531d-2235-4110-ab7f-c0a08f0b60d3",
@@ -6983,8 +7055,10 @@
     "score_fiabilite_motif": "news.google.com est un redirecteur : l'url ne porte pas le domaine de l'éditeur réel, la fiabilité ne peut pas être établie sans ouvrir le lien",
     "domaine_source": "news.google.com",
     "domaine_opaque": true,
-    "statut": "en_attente",
-    "created_at": "2026-09-09T12:04:54.951Z"
+    "statut": "ecarte_automatique",
+    "created_at": "2026-09-09T12:04:54.951Z",
+    "ecarte_motif": "domaine_opaque",
+    "ecarte_le": "2026-09-10"
   },
   {
     "id": "f1ee6df2-d016-40e9-b348-f862872ffbfe",
@@ -7001,8 +7075,10 @@
     "score_fiabilite_motif": "news.google.com est un redirecteur : l'url ne porte pas le domaine de l'éditeur réel, la fiabilité ne peut pas être établie sans ouvrir le lien",
     "domaine_source": "news.google.com",
     "domaine_opaque": true,
-    "statut": "en_attente",
-    "created_at": "2026-09-09T12:04:54.951Z"
+    "statut": "ecarte_automatique",
+    "created_at": "2026-09-09T12:04:54.951Z",
+    "ecarte_motif": "domaine_opaque",
+    "ecarte_le": "2026-09-10"
   },
   {
     "id": "656c14f8-61b2-4808-85c7-f4cefdf77935",
@@ -7019,8 +7095,10 @@
     "score_fiabilite_motif": "news.google.com est un redirecteur : l'url ne porte pas le domaine de l'éditeur réel, la fiabilité ne peut pas être établie sans ouvrir le lien",
     "domaine_source": "news.google.com",
     "domaine_opaque": true,
-    "statut": "en_attente",
-    "created_at": "2026-09-09T12:04:55.418Z"
+    "statut": "ecarte_automatique",
+    "created_at": "2026-09-09T12:04:55.418Z",
+    "ecarte_motif": "domaine_opaque",
+    "ecarte_le": "2026-09-10"
   },
   {
     "id": "1ae2a325-6f5c-4cba-bba5-7bab08701cfc",
@@ -7037,8 +7115,10 @@
     "score_fiabilite_motif": "news.google.com est un redirecteur : l'url ne porte pas le domaine de l'éditeur réel, la fiabilité ne peut pas être établie sans ouvrir le lien",
     "domaine_source": "news.google.com",
     "domaine_opaque": true,
-    "statut": "en_attente",
-    "created_at": "2026-09-09T12:04:55.419Z"
+    "statut": "ecarte_automatique",
+    "created_at": "2026-09-09T12:04:55.419Z",
+    "ecarte_motif": "domaine_opaque",
+    "ecarte_le": "2026-09-10"
   },
   {
     "id": "b731c631-f5c6-4adc-8da5-53828dc16d98",
@@ -7055,8 +7135,10 @@
     "score_fiabilite_motif": "news.google.com est un redirecteur : l'url ne porte pas le domaine de l'éditeur réel, la fiabilité ne peut pas être établie sans ouvrir le lien",
     "domaine_source": "news.google.com",
     "domaine_opaque": true,
-    "statut": "en_attente",
-    "created_at": "2026-09-09T12:04:55.419Z"
+    "statut": "ecarte_automatique",
+    "created_at": "2026-09-09T12:04:55.419Z",
+    "ecarte_motif": "domaine_opaque",
+    "ecarte_le": "2026-09-10"
   },
   {
     "id": "9fe81848-50dc-4c67-b1a0-1f4a1734cc26",
