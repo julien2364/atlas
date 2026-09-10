@@ -493,12 +493,37 @@ function main() {
     process.exit(0);
   }
 
+  // L'index du moteur de réponse est construit sur les champs de CONTENU des fiches —
+  // these_centrale, apport, limites_critiques, resonance_ia et leurs équivalents IA et
+  // gap. Ajouter une source ne le périme donc pas ; réécrire un de ces champs si.
+  // L'oubli ne casse rien de visible : il rend seulement le passage modifié
+  // introuvable, ou trouvable dans sa version ancienne. On n'avertit que quand c'est
+  // le cas, pour que l'avertissement garde sa valeur — et dès la simulation, qui est
+  // l'étape où la personne relit.
+  const CHAMPS_INDEXES = new Set([
+    "these_centrale", "apport", "limites_critiques", "resonance_ia",
+    "capacites_cles", "limites_connues", "mecanisme", "mode_interaction",
+    "apport_ia", "amelioration_possible", "axes_prospectifs",
+    "scenario_present", "scenario_5ans", "scenario_15_20ans",
+  ]);
+  function avertirIndex(liste, simulation) {
+    // `appliques` porte { patch, changements } — le champ visé est dans `patch`.
+    const n = liste.filter((x) => CHAMPS_INDEXES.has(x.patch?.champ ?? x.champ)).length;
+    if (n === 0) return;
+    console.log(
+      `\n${n} patch(s) ${simulation ? "toucheraient" : "ont touché"} un champ indexé : ` +
+        `l'index du moteur de réponse ${simulation ? "serait" : "est"} périmé.`
+    );
+    console.log("  npm run indexer     puis     npm run verifier-index");
+  }
+
   if (DRY_RUN) {
     console.log(
       `\n${appliques.length} patch(s) seraient appliqués sur ${fichiersTouches.size} fichier(s) de fiches, ` +
         `${appliques.length} entrée(s) de changelog seraient ajoutées.`
     );
     console.log("SIMULATION — aucun fichier n'a été écrit, aucune fiche modifiée.");
+    avertirIndex(appliques, true);
     process.exit(0);
   }
 
@@ -538,6 +563,8 @@ function main() {
   );
   console.log("\nRappel : ces modifications viennent d'un fichier de patchs relu par une personne.");
   console.log("Aucune fiche n'est jamais modifiée automatiquement sans validation humaine.");
+
+  avertirIndex(appliques, false);
   process.exit(0);
 }
 

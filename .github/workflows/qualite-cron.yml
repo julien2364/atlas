@@ -49,6 +49,28 @@ jobs:
       - name: Re-valider l'intégrité du corpus (après audit)
         run: node scripts/valider-donnees.mjs
 
+      # L'audit de fond, hors ligne et en moins d'une seconde, dans le résumé du job :
+      # la CI garde le cliquet, celui-ci donne la photo complète, catégorie par
+      # catégorie, à qui vient regarder l'état du corpus une fois par semaine.
+      - name: Audit de fond du corpus
+        if: always()
+        run: |
+          node scripts/auditer-corpus.mjs --json > "${RUNNER_TEMP}/audit.json"
+          node -e "
+            const fs = require('fs');
+            const a = JSON.parse(fs.readFileSync(process.env.RUNNER_TEMP + '/audit.json', 'utf8'));
+            const g = a.resume_gravite;
+            const l = ['### Audit de fond du corpus', ''];
+            l.push(a.statistiques.fiches.total + ' fiches — bloquants **' + g.bloquant + '**, sérieux **' + g.serieux + '**, mineurs **' + g.mineur + '**');
+            l.push('');
+            l.push('| règle | gravité | total |'); l.push('|---|---|---:|');
+            for (const c of a.constats.filter((c) => c.total > 0).sort((x, y) => y.total - x.total)) {
+              l.push('| \\`' + c.code + '\\` | ' + c.gravite + ' | ' + c.total + ' |');
+            }
+            fs.appendFileSync(process.env.GITHUB_STEP_SUMMARY, l.join('\n') + '\n');
+            console.log('bloquants ' + g.bloquant + ' — sérieux ' + g.serieux + ' — mineurs ' + g.mineur);
+          "
+
       # Le référentiel cite plus d'un millier d'URL, et sa crédibilité tient à ce
       # qu'elles mènent quelque part. `verifier-liens.mjs` existait depuis le début et
       # n'avait jamais été planifié : la pourriture des liens est lente, silencieuse et

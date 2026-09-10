@@ -150,6 +150,42 @@ vérification ne soient touchés. `--dry-run` simule, `--limite=N` borne le nomb
 uniquement si au moins une fiche bascule. Le script ne remet jamais une fiche en arrière : seul un travail
 de re-documentation la fait repasser en `documente`.
 
+### `npm run cliquet` — le corpus ne peut plus empirer par accident
+
+`scripts/auditer-corpus.mjs` est l'audit le plus profond du dépôt : 34 règles de fond,
+614 ms, aucun appel réseau. Il relève **0 défaut bloquant, 637 sérieux, 35 mineurs** sur
+814 fiches — et il sortait en code 0 quel que soit le résultat, sans être planifié nulle
+part. Il informait sans protéger.
+
+Le cliquet enregistre un plafond par règle dans `data/qualite-reference.json` et refuse
+toute aggravation. Le corpus peut s'améliorer librement ; il ne peut plus reculer sans
+que quelqu'un le décide.
+
+**Pourquoi un cliquet et pas un seuil absolu** : exiger zéro défaut condamnerait le
+dépôt à un rouge permanent. Les 466 sources primaires sans URL sont des œuvres
+imprimées — Einstein 1916, Watson et Crick 1953 — c'est une dette assumée et
+documentée, pas une négligence. Un cliquet accepte l'état du jour comme point de départ
+et interdit seulement de reculer : la seule forme de garde-fou à la fois honnête sur la
+dette existante et protectrice contre la dette nouvelle.
+
+```bash
+npm run cliquet                # dans npm run verifier, donc dans la CI de chaque push
+npm run cliquet -- --figer     # relever les plafonds, geste délibéré
+npm run auditer                # la photo complète, 34 règles
+```
+
+Relever un plafond doit apparaître dans un commit, avec sa raison. Ajouter trois cents
+fiches fait mécaniquement monter plusieurs compteurs, et c'est normal — mais cela doit
+être décidé, pas subi. L'audit complet est aussi publié chaque semaine dans le résumé
+du cron qualité, catégorie par catégorie.
+
+### Après `appliquer-patchs` : réindexer, mais seulement s'il le faut
+
+L'index est construit sur les champs de contenu — `these_centrale`, `apport`,
+`limites_critiques`, `resonance_ia` et leurs équivalents IA et gap. **Ajouter une source
+ne le périme pas** ; réécrire un de ces champs si. `appliquer-patchs.mjs` le dit
+désormais, dès la simulation, et seulement quand c'est le cas.
+
 ### `npm run verifier-index` — l'index doit couvrir le corpus
 
 `data/index-vectoriel.json` est versionné et sert la page `/questions`. Il se régénère
@@ -171,9 +207,9 @@ survit à une fiche disparue. Correctif dans tous les cas : `npm run indexer`.
 
 | Workflow | Fréquence | Rôle |
 |---|---|---|
-| `verification-ci.yml` | à chaque push et PR sur `main` | validateur → **index** → types → lint → build, en parallèle du déploiement Vercel |
+| `verification-ci.yml` | à chaque push et PR sur `main` | validateur → **index** → **cliquet** → types → lint → build, en parallèle du déploiement Vercel |
 | `veille-cron.yml` | quotidien, 07h00 UTC | veille RSS → file de propositions → **pré-tri automatique** → patchs de fiche proposés, publiés comme artefact du job (section 7) |
-| `qualite-cron.yml` | lundi, 06h00 UTC | validation → audit de fraîcheur → re-validation → commit → **liens du corpus** → **rendement de la veille** |
+| `qualite-cron.yml` | lundi, 06h00 UTC | validation → audit de fraîcheur → re-validation → commit → **audit de fond** → **liens du corpus** → **rendement de la veille** |
 | `documentation-cron.yml` | mercredi, 05h30 UTC | propositions de sources pour les fiches à (re)documenter |
 
 `verification-ci.yml` rejoue exactement `npm run verifier`, la même porte que le script de réception :

@@ -54,6 +54,14 @@ jobs:
       # et géopolitique, étaient invisibles au moteur de réponse. Aucune erreur, aucune
       # page cassée : seulement des réponses qui ne citaient jamais un tiers du corpus.
       # Ce contrôle interdit à cet écart de se reformer en silence.
+      # `auditer-corpus.mjs` relève 34 règles de fond et sort en code 0 quel que soit le
+      # résultat : il informait sans protéger, et n'était planifié nulle part. Le
+      # cliquet en fait un garde-fou — le corpus peut s'améliorer librement, il ne peut
+      # plus empirer par accident. Un plafond se relève par `npm run cliquet -- --figer`,
+      # geste délibéré qui laisse une trace dans un commit.
+      - name: Cliquet de qualité du corpus
+        run: npm run cliquet
+
       - name: Vérifier que l'index couvre le corpus
         run: npm run verifier-index
 
