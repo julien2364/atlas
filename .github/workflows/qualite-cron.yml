@@ -49,6 +49,24 @@ jobs:
       - name: Re-valider l'intégrité du corpus (après audit)
         run: node scripts/valider-donnees.mjs
 
+      # Mesure hebdomadaire du rendement de la veille, source par source. Elle
+      # n'existait pas : 425 propositions avaient été collectées et 6 avaient abouti
+      # — 1,4 % — sans que personne puisse le voir. Une source qui répond n'est pas
+      # une source qui nourrit ; ce contrôle-ci mesure la seconde propriété.
+      # Il n'écrit rien et ne fait pas échouer le job : désactiver une source est une
+      # décision de portée éditoriale.
+      - name: Mesurer le rendement de la veille
+        if: always()
+        run: |
+          node scripts/rendement-veille.mjs | tee /tmp/rendement.txt
+          {
+            echo "### Rendement de la veille"
+            echo
+            echo '```'
+            cat /tmp/rendement.txt
+            echo '```'
+          } >> "$GITHUB_STEP_SUMMARY"
+
       - name: Committer les fiches basculées (s'il y en a)
         run: |
           git config user.name "atlas-qualite-bot"

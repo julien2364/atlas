@@ -169,6 +169,47 @@ un corpus cassé fait échouer le job sans rien committer. Les trois crons sont 
 depuis l'onglet Actions (`workflow_dispatch`), le cron qualité acceptant un `seuil` et un `dry_run`.
 
 
+### Le rendement de la veille — `npm run rendement-veille` (`scripts/rendement-veille.mjs`)
+
+Relevé du 10 septembre 2026, sur les 425 propositions accumulées : **6 ont abouti** à un
+patch appliqué ou à une fiche créée, soit **1,4 %**. Cinq viennent de deux sources,
+`nature-news` et `openai-news`. `anthropic-news` a été jugée 14 fois et rejetée 14 fois ;
+`imf-news`, 12 sur 12.
+
+Personne ne pouvait le voir : rien ne mesurait ce que les sources rapportent. Ce script
+le fait, et il est branché dans le cron qualité hebdomadaire.
+
+Il sépare deux choses que le total confond : une source **jugée en quantité et stérile**
+a eu sa chance, une source **jamais jugée** a un rendement inconnu et non nul. Les 18
+flux d'actualité, d'économie et de marchés ajoutés le 07/09 sont dans le second cas —
+169 propositions, aucune triée. Le tableau ne les condamne pas, et le script le dit.
+
+**La leçon, et elle vaut au-delà de la veille : une source qui répond n'est pas une
+source qui nourrit.** Ces 18 flux avaient tous été vérifiés flux en main — ils
+répondent, ils publient, leurs URL sont bonnes. Mais le référentiel documente des
+capacités humaines et des systèmes d'IA, pas la conjoncture. C'est la seconde propriété
+qui manquait au contrôle.
+
+### Pourquoi le cron ne produit aucun patch
+
+La boucle annoncée est collecte → patch → validation → publication. Elle s'arrête au
+deuxième maillon, et le job était vert et muet : « 0 au statut
+`a_traiter_fiche_existante`, 0 traitée », artefact vide, code de sortie 0, tous les
+jours depuis la création du cron.
+
+La cause est structurelle : `veille-rss.mjs` et `documentation-recherche.mjs` sont les
+deux seuls producteurs et n'écrivent que `en_attente` ; seul un tri humain pose
+`a_traiter_fiche_existante`. Le cron affiche désormais ce compte et cette raison dans
+son résumé, au lieu de passer au vert en silence.
+
+Un ciblage automatique a été tenté le 10/09 — recouvrement lexical pondéré par l'IDF,
+en réutilisant le tokenizer du moteur de réponse — et **abandonné sur mesure** : sur les
+197 propositions en attente, les meilleurs rattachements étaient du bruit (« Why we need
+an International Panel on Inequality » vers la fiche d'un psychologue cognitiviste, deux
+termes communs). Aucun seuil ne sépare le signal, parce qu'il n'y en a pas : 119 des 197
+propositions sont en anglais face à un corpus français, et le reste porte sur la
+conjoncture. Le problème n'est pas l'appariement, il est en amont.
+
 ### Le pré-tri de la file — `npm run pretri-veille` (`scripts/pretrier-veille.mjs`)
 
 La collecte dépose une trentaine de propositions par jour ; l'arbitrage est humain. Sans contrepoids

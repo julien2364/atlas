@@ -16,7 +16,8 @@
     "indexer-simulation": "node scripts/indexer-corpus.mjs --dry-run",
     "qualite-rag": "node scripts/comparer-qualite-rag.mjs",
     "livrer": "bash scripts/livrer-bundle.sh",
-    "pretri-veille": "node scripts/pretrier-veille.mjs"
+    "pretri-veille": "node scripts/pretrier-veille.mjs",
+    "rendement-veille": "node scripts/rendement-veille.mjs"
   },
   "dependencies": {
     "@supabase/supabase-js": "^2.115.0",

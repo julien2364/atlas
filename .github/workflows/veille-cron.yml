@@ -123,6 +123,48 @@ jobs:
             exit 1
           fi
 
+      # Le job était vert et muet : « 0 au statut a_traiter_fiche_existante, 0 traitée »,
+      # artefact vide, code 0 — tous les jours depuis la création du cron. La cause est
+      # structurelle et il faut la dire, pas la masquer : les deux producteurs
+      # (veille-rss, documentation-recherche) n'écrivent que `en_attente`, et rien
+      # d'automatique ne pose `a_traiter_fiche_existante`. La chaîne s'arrête donc ici
+      # tant qu'un humain n'a pas désigné la fiche visée par une proposition.
+      #
+      # Une tentative de ciblage automatique par recouvrement lexical a été faite le
+      # 10/09/2026 et abandonnée : sur les 197 propositions en attente, les meilleurs
+      # rattachements étaient du bruit. La raison est en amont — 119 des 197 sont en
+      # anglais face à un corpus français, et l'essentiel porte sur la conjoncture,
+      # que le référentiel ne documente pas. Voir `npm run rendement-veille`.
+      - name: Dire ce que l'étape de patchs a réellement produit
+        if: always()
+        run: |
+          FICHIER="${RUNNER_TEMP}/patchs-veille-${GITHUB_RUN_ID}.json"
+          NB=$(node -e "
+            const fs = require('fs');
+            try {
+              const p = JSON.parse(fs.readFileSync(process.argv[1], 'utf8'));
+              console.log(Array.isArray(p) ? p.length : (p.patchs ?? []).length);
+            } catch { console.log(0); }
+          " "$FICHIER")
+          ATTENTE=$(node -e "
+            const q = require('./data/seed/veille_queue.json');
+            console.log(q.filter((e) => e.statut === 'en_attente').length);
+          ")
+          {
+            echo "### Boucle de veille"
+            echo
+            echo "Patchs proposés : **$NB**"
+            echo
+            echo "Propositions en attente de tri humain : **$ATTENTE**"
+            if [ "$NB" -eq 0 ] && [ "$ATTENTE" -gt 0 ]; then
+              echo
+              echo "> Aucun patch, et ce n'est pas une panne : aucune proposition ne porte de fiche cible."
+              echo "> Les producteurs n'écrivent que \\`en_attente\\` ; seul un tri humain pose"
+              echo "> \\`a_traiter_fiche_existante\\`. La chaîne reprend au premier ciblage."
+            fi
+          } >> "$GITHUB_STEP_SUMMARY"
+          echo "Patchs : $NB — en attente : $ATTENTE"
+
       - name: Publier les patchs proposés comme artefact
         uses: actions/upload-artifact@v4
         with:
