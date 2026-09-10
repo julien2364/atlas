@@ -1,0 +1,78 @@
+name: Vérification
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+  workflow_dispatch: {}
+
+# Un push qui en suit un autre de près annule la vérification en cours : c'est le
+# sommet qui compte, pas les états intermédiaires.
+concurrency:
+  group: verification-${{ github.ref }}
+  cancel-in-progress: true
+
+permissions:
+  contents: read
+
+jobs:
+  verifier:
+    runs-on: ubuntu-latest
+    # Les crons de ce dépôt committent avec [skip ci] dans le message, mais GitHub
+    # n'honore cette convention que pour certains évènements. On la refait à la main :
+    # la veille quotidienne ne touche que la file de propositions, qu'aucune page ne
+    # rend — rejouer 1600 pages pour ça n'apporte rien.
+    if: "!contains(github.event.head_commit.message, '[skip ci]')"
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 1
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+          cache: npm
+
+      - name: Installer les dépendances
+        run: npm ci
+
+      # Chaque étape est séparée pour que l'onglet Actions dise laquelle a lâché,
+      # au lieu d'un `npm run verifier` monolithique dont il faut lire la sortie.
+      - name: Valider le corpus
+        run: npm run valider
+
+      - name: Contrôler les types
+        run: npx tsc --noEmit
+
+      - name: Lint
+        run: npm run lint
+
+      - name: Build
+        run: npm run build
+
+      # Le déploiement Vercel se déclenche sur le push, en parallèle de ce job : ce
+      # résumé sert de trace lisible quand on remonte l'historique des Actions.
+      - name: Résumé
+        if: always()
+        run: |
+          COMPTE=$(node -e "
+            const fs = require('fs');
+            const dossier = 'data/seed/fiches_humaines';
+            let humaines = 0;
+            for (const f of fs.readdirSync(dossier)) {
+              if (f.endsWith('.json')) humaines += JSON.parse(fs.readFileSync(dossier + '/' + f, 'utf8')).length;
+            }
+            const ia = JSON.parse(fs.readFileSync('data/seed/fiches_ia.json', 'utf8')).length;
+            const gaps = JSON.parse(fs.readFileSync('data/seed/fiches_gap.json', 'utf8')).length;
+            console.log(humaines + ' humaines, ' + ia + ' IA, ' + gaps + ' gaps');
+          ")
+          {
+            echo "### Vérification — ${{ job.status }}"
+            echo
+            echo "Commit : \`${{ github.sha }}\`"
+            echo
+            echo "Corpus : $COMPTE"
+            echo
+            echo "Déploiement : https://vercel.com/dyonysos/atlas-humain-ia"
+          } >> "$GITHUB_STEP_SUMMARY"

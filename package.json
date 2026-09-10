@@ -7,13 +7,15 @@
     "build": "next build",
     "start": "next start",
     "lint": "eslint",
+    "verifier": "node scripts/valider-donnees.mjs && tsc --noEmit && eslint && next build",
     "valider": "node scripts/valider-donnees.mjs",
     "veille-patchs": "node scripts/appliquer-veille.mjs",
     "appliquer-patchs": "node scripts/appliquer-patchs.mjs",
     "audit-fraicheur": "node scripts/audit-fraicheur.mjs",
     "indexer": "node scripts/indexer-corpus.mjs",
     "indexer-simulation": "node scripts/indexer-corpus.mjs --dry-run",
-    "qualite-rag": "node scripts/comparer-qualite-rag.mjs"
+    "qualite-rag": "node scripts/comparer-qualite-rag.mjs",
+    "livrer": "bash scripts/livrer-bundle.sh"
   },
   "dependencies": {
     "@supabase/supabase-js": "^2.115.0",
