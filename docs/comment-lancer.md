@@ -43,6 +43,31 @@ git push origin main
 Le déploiement en production se déclenche automatiquement (suivre l'avancement sur
 https://vercel.com/dyonysos/atlas-humain-ia).
 
+### Recevoir le travail d'une session Claude — une seule commande
+
+Le proxy git des sessions Claude refuse de pousser vers `julien2364/atlas` (« not in this session's
+authorized repository set ») : le dépôt n'est pas dans l'ensemble autorisé, et aucun jeton n'y change
+rien. Le correctif durable est d'ajouter le dépôt aux sources de la session **à sa création**. En
+attendant, la session produit un bundle et c'est le Mac qui pousse :
+
+```bash
+cd ~/Claude/atlas
+./scripts/recevoir-et-pousser.sh
+```
+
+Sans argument, le script prend le bundle `atlas-*.bundle` le plus récent de `~/Downloads`. Il refuse
+d'avancer sur un arbre sale, **récupère d'abord ce que les crons ont poussé**, applique le bundle en
+fast-forward, rejoue `npm run verifier`, puis pousse — ce qui déclenche Vercel.
+
+Cette récupération préalable est l'étape qui manquait le 7 septembre : les crons de ce dépôt committent
+directement sur `main`, donc le distant a presque toujours un ou deux commits d'avance sur la copie
+locale, et un bundle incrémental construit sur ce sommet est refusé — *« Le dépôt ne dispose pas des
+commits prérequis suivants »*. Si les historiques ont vraiment divergé, le script affiche les deux
+listes et s'arrête plutôt que de choisir à ta place.
+
+Côté session, le pendant est `npm run livrer` : il produit l'incrémental, un bundle autonome de repli
+(historique complet, applicable en toute circonstance) et l'archive complète du dépôt.
+
 Prochaine étape (à faire par Julien dans les réglages Vercel) : ajouter `atlas.dyonysos.fr` comme domaine
 personnalisé du projet, puis créer l'enregistrement DNS CNAME correspondant chez le fournisseur DNS de
 dyonysos.fr.
@@ -115,19 +140,53 @@ vérification ne soient touchés. `--dry-run` simule, `--limite=N` borne le nomb
 uniquement si au moins une fiche bascule. Le script ne remet jamais une fiche en arrière : seul un travail
 de re-documentation la fait repasser en `documente`.
 
-### Les trois crons GitHub Actions
+### Les crons GitHub Actions et la porte de vérification
 
 | Workflow | Fréquence | Rôle |
 |---|---|---|
-| `veille-cron.yml` | quotidien, 07h00 UTC | veille RSS → file de propositions à valider (`/veille`) → **patchs de fiche proposés, publiés comme artefact du job** (section 7) |
+| `verification-ci.yml` | à chaque push et PR sur `main` | validateur → types → lint → build, en parallèle du déploiement Vercel |
+| `veille-cron.yml` | quotidien, 07h00 UTC | veille RSS → file de propositions → **pré-tri automatique** → patchs de fiche proposés, publiés comme artefact du job (section 7) |
 | `qualite-cron.yml` | lundi, 06h00 UTC | validation → audit de fraîcheur → re-validation → commit des bascules |
 | `documentation-cron.yml` | mercredi, 05h30 UTC | propositions de sources pour les fiches à (re)documenter |
+
+`verification-ci.yml` rejoue exactement `npm run verifier`, la même porte que le script de réception :
+le local et la CI ne peuvent pas diverger. Les commits de cron portant `[skip ci]` sont ignorés — ils ne
+touchent que la file de propositions, qu'aucune page ne rend.
 
 Le cron documentation tournait toutes les 4 heures pour écluser le backlog initial ; il est passé en
 hebdomadaire le 06/09/2026, ce backlog étant vide. Le cron qualité valide **avant et après** l'audit :
 un corpus cassé fait échouer le job sans rien committer. Les trois crons sont aussi lançables à la main
 depuis l'onglet Actions (`workflow_dispatch`), le cron qualité acceptant un `seuil` et un `dry_run`.
 
+
+### Le pré-tri de la file — `npm run pretri-veille` (`scripts/pretrier-veille.mjs`)
+
+La collecte dépose une trentaine de propositions par jour ; l'arbitrage est humain. Sans contrepoids
+l'écart se creuse tout seul : la file est passée de 136 à 238 entrées en attente entre le 7 et le
+10 septembre 2026 sans qu'une seule décision ait été prise. Une file qu'on ne lit plus ne protège rien.
+
+Le script écarte sur quatre critères vérifiables sans jugement — agrégateur masquant l'éditeur réel
+(`news.google.com`), URL absente, doublon d'une entrée antérieure, URL déjà citée par une fiche — et
+laisse tout le reste à la relecture, classé par fiabilité décroissante puis par proximité lexicale au
+corpus. Cette proximité **ordonne** la file, elle ne ferme jamais une proposition : un sujet absent du
+corpus est peut-être exactement le trou qu'il faut combler, et ce jugement n'appartient pas à un script.
+
+```bash
+npm run pretri-veille              # rapport seul, la file n'est pas touchée
+node scripts/pretrier-veille.mjs --appliquer
+```
+
+Le rapport atterrit dans `docs/veille-pretri-<date>.md` avec les trente premières propositions à relire,
+lien compris. L'étape `--appliquer` tourne dans le cron quotidien, entre la collecte et la préparation
+des patchs, avec re-validation du corpus avant commit.
+
+**Pourquoi celle-là peut s'automatiser et pas la suivante.** Écarter une proposition ne modifie aucune
+fiche ; l'accepter, si. La dissymétrie est ce qui permet d'automatiser une moitié du tri sans entamer la
+règle « aucune fiche modifiée sans validation humaine ». C'est l'option C du point 1 de
+`docs/decisions-ouvertes-2026-09-07.md`.
+
+Premier passage, le 10 septembre : 41 des 238 écartées — 23 renvois Google News non attribuables et
+18 doublons — 197 restant à relire.
 
 ## 7. La boucle de veille de bout en bout (collecte → patch → validation → publication)
 
