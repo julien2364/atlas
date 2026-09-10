@@ -150,13 +150,30 @@ vérification ne soient touchés. `--dry-run` simule, `--limite=N` borne le nomb
 uniquement si au moins une fiche bascule. Le script ne remet jamais une fiche en arrière : seul un travail
 de re-documentation la fait repasser en `documente`.
 
+### `npm run verifier-index` — l'index doit couvrir le corpus
+
+`data/index-vectoriel.json` est versionné et sert la page `/questions`. Il se régénère
+à la main, et rien ne le liait au corpus. Relevé le 10 septembre 2026 : l'index portait
+**2 855 passages pour un corpus de 4 011** — 29 % du référentiel, dont les 300 fiches
+de sociologie, psychologie et géopolitique ajoutées la veille, **étaient invisibles au
+moteur de réponse**.
+
+Rien ne le signalait : ni erreur, ni page cassée. Seulement des réponses qui ne
+citaient jamais un tiers du corpus — le genre de défaut qu'on ne voit qu'en cherchant
+ce qui manque.
+
+L'index est régénéré, et le contrôle est désormais dans `npm run verifier`, donc dans
+la CI de chaque push. Il distingue trois défauts qu'un simple comptage confondrait : un
+passage jamais indexé, un passage indexé puis modifié, et une entrée d'index qui
+survit à une fiche disparue. Correctif dans tous les cas : `npm run indexer`.
+
 ### Les crons GitHub Actions et la porte de vérification
 
 | Workflow | Fréquence | Rôle |
 |---|---|---|
-| `verification-ci.yml` | à chaque push et PR sur `main` | validateur → types → lint → build, en parallèle du déploiement Vercel |
+| `verification-ci.yml` | à chaque push et PR sur `main` | validateur → **index** → types → lint → build, en parallèle du déploiement Vercel |
 | `veille-cron.yml` | quotidien, 07h00 UTC | veille RSS → file de propositions → **pré-tri automatique** → patchs de fiche proposés, publiés comme artefact du job (section 7) |
-| `qualite-cron.yml` | lundi, 06h00 UTC | validation → audit de fraîcheur → re-validation → commit des bascules |
+| `qualite-cron.yml` | lundi, 06h00 UTC | validation → audit de fraîcheur → re-validation → commit → **liens du corpus** → **rendement de la veille** |
 | `documentation-cron.yml` | mercredi, 05h30 UTC | propositions de sources pour les fiches à (re)documenter |
 
 `verification-ci.yml` rejoue exactement `npm run verifier`, la même porte que le script de réception :

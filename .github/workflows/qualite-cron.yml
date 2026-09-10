@@ -49,6 +49,51 @@ jobs:
       - name: Re-valider l'intégrité du corpus (après audit)
         run: node scripts/valider-donnees.mjs
 
+      # Le référentiel cite plus d'un millier d'URL, et sa crédibilité tient à ce
+      # qu'elles mènent quelque part. `verifier-liens.mjs` existait depuis le début et
+      # n'avait jamais été planifié : la pourriture des liens est lente, silencieuse et
+      # continue — exactement ce qu'un contrôle hebdomadaire attrape et qu'une
+      # relecture humaine ne voit jamais.
+      #
+      # `continue-on-error` est délibéré, et c'est le seul endroit du dépôt où il l'est :
+      # un site tiers momentanément indisponible ne doit pas faire échouer l'audit de
+      # fraîcheur ni bloquer le commit qui suit. Le rapport est publié comme artefact.
+      - name: Vérifier les liens du corpus
+        continue-on-error: true
+        run: |
+          node scripts/verifier-liens.mjs --json > "${RUNNER_TEMP}/liens.json" || true
+          node -e "
+            const fs = require('fs');
+            let r;
+            try { r = JSON.parse(fs.readFileSync(process.env.RUNNER_TEMP + '/liens.json', 'utf8')); }
+            catch { console.log('Rapport illisible — le contrôle n a pas abouti.'); process.exit(0); }
+            const defauts = (r.resultats ?? []).filter((x) => x.etat === 'morte' || x.etat === 'invalide');
+            console.log(r.urls_testees + ' URL testées — ' + defauts.length + ' en défaut');
+            const l = ['### Liens du corpus', ''];
+            l.push(r.urls_testees + ' URL distinctes testées sur ' + r.total_occurrences + ' occurrences.');
+            l.push('');
+            l.push('| état | nombre |'); l.push('|---|---:|');
+            for (const [etat, n] of Object.entries(r.repartition ?? {})) if (n > 0) l.push('| ' + etat + ' | ' + n + ' |');
+            if (defauts.length > 0) {
+              l.push(''); l.push('#### À reprendre');
+              for (const d of defauts.slice(0, 40)) {
+                const ou = (d.occurrences ?? []).slice(0, 2).map((o) => o.fiche_id ?? o.id ?? '?').join(', ');
+                l.push('- \\`' + d.url + '\\` — ' + d.etat + (ou ? ' — ' + ou : ''));
+              }
+              if (defauts.length > 40) l.push('', '… et ' + (defauts.length - 40) + ' autre(s), voir l artefact.');
+            }
+            fs.appendFileSync(process.env.GITHUB_STEP_SUMMARY, l.join('\n') + '\n');
+          "
+
+      - name: Publier le rapport de liens
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: liens-corpus-${{ github.run_id }}
+          path: ${{ runner.temp }}/liens.json
+          if-no-files-found: warn
+          retention-days: 30
+
       # Mesure hebdomadaire du rendement de la veille, source par source. Elle
       # n'existait pas : 425 propositions avaient été collectées et 6 avaient abouti
       # — 1,4 % — sans que personne puisse le voir. Une source qui répond n'est pas

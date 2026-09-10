@@ -48,6 +48,15 @@ jobs:
       - name: Lint
         run: npm run lint
 
+      # Le corpus et l'index qui le sert sont deux fichiers versionnés séparément, et
+      # rien ne les liait : le 10/09/2026 l'index portait 2 855 passages pour un corpus
+      # de 4 011 — 29 % du référentiel, dont les 300 fiches de sociologie, psychologie
+      # et géopolitique, étaient invisibles au moteur de réponse. Aucune erreur, aucune
+      # page cassée : seulement des réponses qui ne citaient jamais un tiers du corpus.
+      # Ce contrôle interdit à cet écart de se reformer en silence.
+      - name: Vérifier que l'index couvre le corpus
+        run: npm run verifier-index
+
       - name: Build
         run: npm run build
 
