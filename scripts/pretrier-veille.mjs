@@ -210,7 +210,24 @@ for (const { entree } of aRelire) {
 }
 
 const lignes = [];
-lignes.push(`# Pré-tri de la file de veille — ${aujourdhui}`);
+// Pas de date du jour dans le titre : le rapport porte un nom fixe, et une date qui
+// change à chaque passage suffirait à faire différer le fichier tous les jours — donc
+// à faire committer et pousser le cron quotidiennement, et Vercel à redéployer, pour
+// une ligne de titre. La date affichée ci-dessous est celle du dernier écartement
+// réellement appliqué : elle ne bouge que quand le contenu bouge.
+const dernierEcartement = file
+  .map((e) => e.ecarte_le)
+  .filter(Boolean)
+  .sort()
+  .pop();
+
+lignes.push("# Pré-tri de la file de veille");
+lignes.push("");
+lignes.push(
+  dernierEcartement
+    ? `Dernier écartement appliqué : ${dernierEcartement}.`
+    : "Aucun écartement appliqué à ce jour."
+);
 lignes.push("");
 lignes.push(
   `File complète : **${file.length}** entrées, dont **${enAttente.length}** en attente d'arbitrage.`

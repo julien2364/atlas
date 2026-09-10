@@ -4,9 +4,9 @@
 #
 #   ./scripts/recevoir-et-pousser.sh [chemin/vers/le.bundle]
 #
-# Sans argument, le script prend le bundle `atlas-*.bundle` le plus récent de
-# ~/Downloads. C'est le cas courant : le fichier vient d'être téléchargé depuis la
-# conversation Claude.
+# Sans argument, le script prend l'incrémental le plus récent de ~/Downloads
+# (`atlas-lots-*.bundle`), et à défaut le bundle autonome. C'est le cas courant : le
+# fichier vient d'être téléchargé depuis la conversation Claude.
 #
 # Ce que le script fait, dans cet ordre, et pourquoi :
 #
@@ -18,7 +18,11 @@
 #      presque toujours un ou deux commits d'avance sur la copie locale, et un
 #      bundle incrémental construit sur ce sommet est refusé tant qu'on ne les a
 #      pas récupérés — « Le dépôt ne dispose pas des commits prérequis suivants ».
-#   3. Contrôle l'intégrité du bundle et l'applique en fast-forward.
+#   3. Contrôle l'intégrité du bundle, puis l'applique — en fast-forward quand c'est
+#      possible, sinon en rejouant ses commits par-dessus l'état courant. Ce second
+#      cas est le plus fréquent : dès qu'un cron pousse APRÈS la fabrication du
+#      bundle, son sommet n'est plus un descendant du sommet local et
+#      `git pull --ff-only` échoue. Un bundle autonome n'y change rien.
 #   4. Rejoue la suite de vérification complète, la même que la CI.
 #   5. Pousse, ce qui déclenche le déploiement Vercel.
 #

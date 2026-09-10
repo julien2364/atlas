@@ -1,4 +1,6 @@
-# Pré-tri de la file de veille — 2026-09-10
+# Pré-tri de la file de veille
+
+Dernier écartement appliqué : 2026-09-10.
 
 File complète : **425** entrées, dont **197** en attente d'arbitrage.
 
