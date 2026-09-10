@@ -3491,8 +3491,9 @@
     "score_fiabilite_motif": "arxiv.org — préprint, actes de conférence ou institution publique",
     "domaine_source": "arxiv.org",
     "domaine_opaque": false,
-    "statut": "en_attente",
-    "created_at": "2026-09-07T11:43:31.663Z"
+    "statut": "rejete",
+    "created_at": "2026-09-07T11:43:31.663Z",
+    "trie_le": "2026-09-10"
   },
   {
     "id": "e2b1a47f-c6df-47db-a954-7fba1f7beb97",
@@ -3509,8 +3510,9 @@
     "score_fiabilite_motif": "arxiv.org — préprint, actes de conférence ou institution publique",
     "domaine_source": "arxiv.org",
     "domaine_opaque": false,
-    "statut": "en_attente",
-    "created_at": "2026-09-07T11:43:31.663Z"
+    "statut": "a_traiter_nouvelle_fiche",
+    "created_at": "2026-09-07T11:43:31.663Z",
+    "trie_le": "2026-09-10"
   },
   {
     "id": "ee2c26fa-30da-4247-96c7-bc68445b4273",
@@ -3527,8 +3529,9 @@
     "score_fiabilite_motif": "arxiv.org — préprint, actes de conférence ou institution publique",
     "domaine_source": "arxiv.org",
     "domaine_opaque": false,
-    "statut": "en_attente",
-    "created_at": "2026-09-07T11:43:31.663Z"
+    "statut": "rejete",
+    "created_at": "2026-09-07T11:43:31.663Z",
+    "trie_le": "2026-09-10"
   },
   {
     "id": "266cd398-9dd4-4b8b-983b-6c884711d45b",
@@ -3545,14 +3548,15 @@
     "score_fiabilite_motif": "arxiv.org — préprint, actes de conférence ou institution publique",
     "domaine_source": "arxiv.org",
     "domaine_opaque": false,
-    "statut": "en_attente",
-    "created_at": "2026-09-07T11:43:31.663Z"
+    "statut": "rejete",
+    "created_at": "2026-09-07T11:43:31.663Z",
+    "trie_le": "2026-09-10"
   },
   {
     "id": "998fa7b1-aca9-4316-b357-71cab1756208",
     "source_id": "arxiv-cs-ai",
-    "cible_type": "nouvelle_categorie",
-    "cible_id": null,
+    "cible_type": "fiche_ia",
+    "cible_id": "openai-operator-agents-de-navigation-web",
     "contenu_propose": {
       "titre": "Iris: Climbing to the Search Frontier",
       "link": "https://arxiv.org/abs/2609.04304",
@@ -3563,8 +3567,9 @@
     "score_fiabilite_motif": "arxiv.org — préprint, actes de conférence ou institution publique",
     "domaine_source": "arxiv.org",
     "domaine_opaque": false,
-    "statut": "en_attente",
-    "created_at": "2026-09-07T11:43:31.663Z"
+    "statut": "a_traiter_fiche_existante",
+    "created_at": "2026-09-07T11:43:31.663Z",
+    "trie_le": "2026-09-10"
   },
   {
     "id": "5878a9d4-bec1-4caa-a98c-4a8788f5586d",
@@ -3581,8 +3586,9 @@
     "score_fiabilite_motif": "arxiv.org — préprint, actes de conférence ou institution publique",
     "domaine_source": "arxiv.org",
     "domaine_opaque": false,
-    "statut": "en_attente",
-    "created_at": "2026-09-07T11:43:31.862Z"
+    "statut": "rejete",
+    "created_at": "2026-09-07T11:43:31.862Z",
+    "trie_le": "2026-09-10"
   },
   {
     "id": "b4009131-105b-4b89-84e9-c249a1485e2e",
@@ -3599,8 +3605,9 @@
     "score_fiabilite_motif": "arxiv.org — préprint, actes de conférence ou institution publique",
     "domaine_source": "arxiv.org",
     "domaine_opaque": false,
-    "statut": "en_attente",
-    "created_at": "2026-09-07T11:43:31.862Z"
+    "statut": "rejete",
+    "created_at": "2026-09-07T11:43:31.862Z",
+    "trie_le": "2026-09-10"
   },
   {
     "id": "48768f90-f80c-4208-8c23-341269fbd2f9",
@@ -3617,8 +3624,9 @@
     "score_fiabilite_motif": "arxiv.org — préprint, actes de conférence ou institution publique",
     "domaine_source": "arxiv.org",
     "domaine_opaque": false,
-    "statut": "en_attente",
-    "created_at": "2026-09-07T11:43:31.863Z"
+    "statut": "rejete",
+    "created_at": "2026-09-07T11:43:31.863Z",
+    "trie_le": "2026-09-10"
   },
   {
     "id": "c924402f-93c2-44ab-a596-9657b00e71a0",
@@ -3635,8 +3643,9 @@
     "score_fiabilite_motif": "arxiv.org — préprint, actes de conférence ou institution publique",
     "domaine_source": "arxiv.org",
     "domaine_opaque": false,
-    "statut": "en_attente",
-    "created_at": "2026-09-07T11:43:31.863Z"
+    "statut": "rejete",
+    "created_at": "2026-09-07T11:43:31.863Z",
+    "trie_le": "2026-09-10"
   },
   {
     "id": "1514ebb2-5dee-40eb-811d-b65e121e6d8d",
@@ -3653,8 +3662,9 @@
     "score_fiabilite_motif": "arxiv.org — préprint, actes de conférence ou institution publique",
     "domaine_source": "arxiv.org",
     "domaine_opaque": false,
-    "statut": "en_attente",
-    "created_at": "2026-09-07T11:43:31.863Z"
+    "statut": "rejete",
+    "created_at": "2026-09-07T11:43:31.863Z",
+    "trie_le": "2026-09-10"
   },
   {
     "id": "e6b60203-8ec2-45e5-9285-490c4b313aa5",
@@ -3731,14 +3741,15 @@
     "score_fiabilite_motif": "openai.com — éditeur ou laboratoire s'exprimant sur son propre produit",
     "domaine_source": "openai.com",
     "domaine_opaque": false,
-    "statut": "en_attente",
-    "created_at": "2026-09-07T11:43:32.796Z"
+    "statut": "rejete",
+    "created_at": "2026-09-07T11:43:32.796Z",
+    "trie_le": "2026-09-10"
   },
   {
     "id": "5bb1d5a9-11e9-4c93-8971-fa03391e831a",
     "source_id": "openai-news",
-    "cible_type": "nouvelle_categorie",
-    "cible_id": null,
+    "cible_type": "fiche_humaine",
+    "cible_id": "resilience-civilisationnelle-aux-risques-existentiels",
     "contenu_propose": {
       "titre": "An Alien Mind",
       "link": "https://openai.com/index/an-alien-mind",
@@ -3749,14 +3760,15 @@
     "score_fiabilite_motif": "openai.com — éditeur ou laboratoire s'exprimant sur son propre produit",
     "domaine_source": "openai.com",
     "domaine_opaque": false,
-    "statut": "en_attente",
-    "created_at": "2026-09-07T11:43:32.796Z"
+    "statut": "a_traiter_fiche_existante",
+    "created_at": "2026-09-07T11:43:32.796Z",
+    "trie_le": "2026-09-10"
   },
   {
     "id": "29a0492a-2a2d-4fe0-b5ba-ba215ff73eaa",
     "source_id": "openai-news",
-    "cible_type": "nouvelle_categorie",
-    "cible_id": null,
+    "cible_type": "fiche_ia",
+    "cible_id": "codex-famille-gpt",
     "contenu_propose": {
       "titre": "Research acceleration: The view inside OpenAI",
       "link": "https://openai.com/index/research-acceleration-view-inside-openai",
@@ -3767,8 +3779,9 @@
     "score_fiabilite_motif": "openai.com — éditeur ou laboratoire s'exprimant sur son propre produit",
     "domaine_source": "openai.com",
     "domaine_opaque": false,
-    "statut": "en_attente",
-    "created_at": "2026-09-07T11:43:32.796Z"
+    "statut": "a_traiter_fiche_existante",
+    "created_at": "2026-09-07T11:43:32.796Z",
+    "trie_le": "2026-09-10"
   },
   {
     "id": "47909610-526d-41bb-bf84-b9c4f7bd9e73",
@@ -3785,8 +3798,9 @@
     "score_fiabilite_motif": "nature.com — édition scientifique à comité de lecture",
     "domaine_source": "nature.com",
     "domaine_opaque": false,
-    "statut": "en_attente",
-    "created_at": "2026-09-07T11:43:32.966Z"
+    "statut": "rejete",
+    "created_at": "2026-09-07T11:43:32.966Z",
+    "trie_le": "2026-09-10"
   },
   {
     "id": "71b172a7-d284-4b02-a741-ae015f5141de",
@@ -3803,8 +3817,9 @@
     "score_fiabilite_motif": "nature.com — édition scientifique à comité de lecture",
     "domaine_source": "nature.com",
     "domaine_opaque": false,
-    "statut": "en_attente",
-    "created_at": "2026-09-07T11:43:32.966Z"
+    "statut": "rejete",
+    "created_at": "2026-09-07T11:43:32.966Z",
+    "trie_le": "2026-09-10"
   },
   {
     "id": "7f1f7855-3e27-45b5-ade0-dd24e80a6f95",
@@ -3821,8 +3836,9 @@
     "score_fiabilite_motif": "nature.com — édition scientifique à comité de lecture",
     "domaine_source": "nature.com",
     "domaine_opaque": false,
-    "statut": "en_attente",
-    "created_at": "2026-09-07T11:43:32.966Z"
+    "statut": "rejete",
+    "created_at": "2026-09-07T11:43:32.966Z",
+    "trie_le": "2026-09-10"
   },
   {
     "id": "33f6a18a-83be-41cb-bab3-0057e9b030c5",
@@ -3839,8 +3855,9 @@
     "score_fiabilite_motif": "nature.com — édition scientifique à comité de lecture",
     "domaine_source": "nature.com",
     "domaine_opaque": false,
-    "statut": "en_attente",
-    "created_at": "2026-09-07T11:43:32.966Z"
+    "statut": "rejete",
+    "created_at": "2026-09-07T11:43:32.966Z",
+    "trie_le": "2026-09-10"
   },
   {
     "id": "c04af979-f898-4041-aa4f-98f3212410c3",
@@ -3857,8 +3874,9 @@
     "score_fiabilite_motif": "nature.com — édition scientifique à comité de lecture",
     "domaine_source": "nature.com",
     "domaine_opaque": false,
-    "statut": "en_attente",
-    "created_at": "2026-09-07T11:43:32.966Z"
+    "statut": "rejete",
+    "created_at": "2026-09-07T11:43:32.966Z",
+    "trie_le": "2026-09-10"
   },
   {
     "id": "a928797b-7f74-4054-80cf-01bedc347958",
@@ -3915,8 +3933,9 @@
     "score_fiabilite_motif": "ecb.europa.eu — préprint, actes de conférence ou institution publique",
     "domaine_source": "ecb.europa.eu",
     "domaine_opaque": false,
-    "statut": "en_attente",
-    "created_at": "2026-09-07T11:43:35.041Z"
+    "statut": "rejete",
+    "created_at": "2026-09-07T11:43:35.041Z",
+    "trie_le": "2026-09-10"
   },
   {
     "id": "9cd74002-99f0-415f-9a69-53771183c4dd",
@@ -3933,8 +3952,9 @@
     "score_fiabilite_motif": "ecb.europa.eu — préprint, actes de conférence ou institution publique",
     "domaine_source": "ecb.europa.eu",
     "domaine_opaque": false,
-    "statut": "en_attente",
-    "created_at": "2026-09-07T11:43:35.041Z"
+    "statut": "rejete",
+    "created_at": "2026-09-07T11:43:35.041Z",
+    "trie_le": "2026-09-10"
   },
   {
     "id": "f158d865-d84e-411a-ac26-a8cdc8bc5ce4",
@@ -3951,8 +3971,9 @@
     "score_fiabilite_motif": "ecb.europa.eu — préprint, actes de conférence ou institution publique",
     "domaine_source": "ecb.europa.eu",
     "domaine_opaque": false,
-    "statut": "en_attente",
-    "created_at": "2026-09-07T11:43:35.041Z"
+    "statut": "rejete",
+    "created_at": "2026-09-07T11:43:35.041Z",
+    "trie_le": "2026-09-10"
   },
   {
     "id": "d9139ed4-da20-4e9f-af49-03fa6f978087",
@@ -3969,8 +3990,9 @@
     "score_fiabilite_motif": "ecb.europa.eu — préprint, actes de conférence ou institution publique",
     "domaine_source": "ecb.europa.eu",
     "domaine_opaque": false,
-    "statut": "en_attente",
-    "created_at": "2026-09-07T11:43:35.041Z"
+    "statut": "rejete",
+    "created_at": "2026-09-07T11:43:35.041Z",
+    "trie_le": "2026-09-10"
   },
   {
     "id": "1b20e231-f327-49c9-a676-6e68910987f2",
@@ -3987,8 +4009,9 @@
     "score_fiabilite_motif": "ecb.europa.eu — préprint, actes de conférence ou institution publique",
     "domaine_source": "ecb.europa.eu",
     "domaine_opaque": false,
-    "statut": "en_attente",
-    "created_at": "2026-09-07T11:43:35.041Z"
+    "statut": "rejete",
+    "created_at": "2026-09-07T11:43:35.041Z",
+    "trie_le": "2026-09-10"
   },
   {
     "id": "ac4489b0-0efc-4c51-8a49-a5bcd71f2968",
@@ -4005,8 +4028,9 @@
     "score_fiabilite_motif": "ec.europa.eu — préprint, actes de conférence ou institution publique",
     "domaine_source": "ec.europa.eu",
     "domaine_opaque": false,
-    "statut": "en_attente",
-    "created_at": "2026-09-07T11:43:35.975Z"
+    "statut": "rejete",
+    "created_at": "2026-09-07T11:43:35.975Z",
+    "trie_le": "2026-09-10"
   },
   {
     "id": "0bf86281-bf01-4d3e-bf96-896398b938e1",
@@ -4023,8 +4047,9 @@
     "score_fiabilite_motif": "ec.europa.eu — préprint, actes de conférence ou institution publique",
     "domaine_source": "ec.europa.eu",
     "domaine_opaque": false,
-    "statut": "en_attente",
-    "created_at": "2026-09-07T11:43:35.975Z"
+    "statut": "rejete",
+    "created_at": "2026-09-07T11:43:35.975Z",
+    "trie_le": "2026-09-10"
   },
   {
     "id": "947f93a2-4c14-45a0-a4b6-5cbc021a7390",
@@ -4041,8 +4066,9 @@
     "score_fiabilite_motif": "ec.europa.eu — préprint, actes de conférence ou institution publique",
     "domaine_source": "ec.europa.eu",
     "domaine_opaque": false,
-    "statut": "en_attente",
-    "created_at": "2026-09-07T11:43:35.975Z"
+    "statut": "rejete",
+    "created_at": "2026-09-07T11:43:35.975Z",
+    "trie_le": "2026-09-10"
   },
   {
     "id": "d8744a16-b54b-47c3-bdbe-d02d0e7f99b3",
@@ -4059,8 +4085,9 @@
     "score_fiabilite_motif": "ec.europa.eu — préprint, actes de conférence ou institution publique",
     "domaine_source": "ec.europa.eu",
     "domaine_opaque": false,
-    "statut": "en_attente",
-    "created_at": "2026-09-07T11:43:35.975Z"
+    "statut": "rejete",
+    "created_at": "2026-09-07T11:43:35.975Z",
+    "trie_le": "2026-09-10"
   },
   {
     "id": "4fe0c581-6220-45f4-b344-6592d02254ef",
@@ -4077,8 +4104,9 @@
     "score_fiabilite_motif": "ec.europa.eu — préprint, actes de conférence ou institution publique",
     "domaine_source": "ec.europa.eu",
     "domaine_opaque": false,
-    "statut": "en_attente",
-    "created_at": "2026-09-07T11:43:35.975Z"
+    "statut": "rejete",
+    "created_at": "2026-09-07T11:43:35.975Z",
+    "trie_le": "2026-09-10"
   },
   {
     "id": "c54a8e9e-02c7-4c17-8342-03ce28558f1b",
@@ -4095,8 +4123,9 @@
     "score_fiabilite_motif": "bis.org — domaine absent de la table : score par défaut prudent, sous le seuil de source primaire",
     "domaine_source": "bis.org",
     "domaine_opaque": false,
-    "statut": "en_attente",
-    "created_at": "2026-09-07T11:43:36.563Z"
+    "statut": "rejete",
+    "created_at": "2026-09-07T11:43:36.563Z",
+    "trie_le": "2026-09-10"
   },
   {
     "id": "795a748c-5741-4371-90a3-6190b590c6c0",
@@ -4113,8 +4142,9 @@
     "score_fiabilite_motif": "bis.org — domaine absent de la table : score par défaut prudent, sous le seuil de source primaire",
     "domaine_source": "bis.org",
     "domaine_opaque": false,
-    "statut": "en_attente",
-    "created_at": "2026-09-07T11:43:36.563Z"
+    "statut": "rejete",
+    "created_at": "2026-09-07T11:43:36.563Z",
+    "trie_le": "2026-09-10"
   },
   {
     "id": "b1c80cd5-0ab5-43db-b81e-4b8591947cf0",
@@ -4131,8 +4161,9 @@
     "score_fiabilite_motif": "bis.org — domaine absent de la table : score par défaut prudent, sous le seuil de source primaire",
     "domaine_source": "bis.org",
     "domaine_opaque": false,
-    "statut": "en_attente",
-    "created_at": "2026-09-07T11:43:36.563Z"
+    "statut": "rejete",
+    "created_at": "2026-09-07T11:43:36.563Z",
+    "trie_le": "2026-09-10"
   },
   {
     "id": "e26562aa-d49a-488e-b34e-982d63c19099",
@@ -4149,8 +4180,9 @@
     "score_fiabilite_motif": "bis.org — domaine absent de la table : score par défaut prudent, sous le seuil de source primaire",
     "domaine_source": "bis.org",
     "domaine_opaque": false,
-    "statut": "en_attente",
-    "created_at": "2026-09-07T11:43:36.563Z"
+    "statut": "rejete",
+    "created_at": "2026-09-07T11:43:36.563Z",
+    "trie_le": "2026-09-10"
   },
   {
     "id": "1dc2be11-a26b-4eac-a1b6-9e8f6524a307",
@@ -4167,8 +4199,9 @@
     "score_fiabilite_motif": "bis.org — domaine absent de la table : score par défaut prudent, sous le seuil de source primaire",
     "domaine_source": "bis.org",
     "domaine_opaque": false,
-    "statut": "en_attente",
-    "created_at": "2026-09-07T11:43:36.563Z"
+    "statut": "rejete",
+    "created_at": "2026-09-07T11:43:36.563Z",
+    "trie_le": "2026-09-10"
   },
   {
     "id": "2066c2b8-9941-4f63-b1e3-c0bf038393b9",
@@ -4185,8 +4218,9 @@
     "score_fiabilite_motif": "bis.org — domaine absent de la table : score par défaut prudent, sous le seuil de source primaire",
     "domaine_source": "bis.org",
     "domaine_opaque": false,
-    "statut": "en_attente",
-    "created_at": "2026-09-07T11:43:37.298Z"
+    "statut": "rejete",
+    "created_at": "2026-09-07T11:43:37.298Z",
+    "trie_le": "2026-09-10"
   },
   {
     "id": "86df52c8-4c4d-4849-ad42-0c072fa12f6d",
@@ -4203,8 +4237,9 @@
     "score_fiabilite_motif": "bis.org — domaine absent de la table : score par défaut prudent, sous le seuil de source primaire",
     "domaine_source": "bis.org",
     "domaine_opaque": false,
-    "statut": "en_attente",
-    "created_at": "2026-09-07T11:43:37.298Z"
+    "statut": "rejete",
+    "created_at": "2026-09-07T11:43:37.298Z",
+    "trie_le": "2026-09-10"
   },
   {
     "id": "0632fe2e-086c-423d-ae2e-5e31804ee677",
@@ -4221,8 +4256,9 @@
     "score_fiabilite_motif": "bis.org — domaine absent de la table : score par défaut prudent, sous le seuil de source primaire",
     "domaine_source": "bis.org",
     "domaine_opaque": false,
-    "statut": "en_attente",
-    "created_at": "2026-09-07T11:43:37.298Z"
+    "statut": "rejete",
+    "created_at": "2026-09-07T11:43:37.298Z",
+    "trie_le": "2026-09-10"
   },
   {
     "id": "0cf4cf8e-566f-4d20-b3c8-36f5e246adbb",
@@ -4239,8 +4275,9 @@
     "score_fiabilite_motif": "bis.org — domaine absent de la table : score par défaut prudent, sous le seuil de source primaire",
     "domaine_source": "bis.org",
     "domaine_opaque": false,
-    "statut": "en_attente",
-    "created_at": "2026-09-07T11:43:37.298Z"
+    "statut": "rejete",
+    "created_at": "2026-09-07T11:43:37.298Z",
+    "trie_le": "2026-09-10"
   },
   {
     "id": "6e30c7fc-ef49-481d-85ec-4d30795c21e4",
@@ -4257,8 +4294,9 @@
     "score_fiabilite_motif": "bis.org — domaine absent de la table : score par défaut prudent, sous le seuil de source primaire",
     "domaine_source": "bis.org",
     "domaine_opaque": false,
-    "statut": "en_attente",
-    "created_at": "2026-09-07T11:43:37.298Z"
+    "statut": "rejete",
+    "created_at": "2026-09-07T11:43:37.298Z",
+    "trie_le": "2026-09-10"
   },
   {
     "id": "55ceac44-a11b-4ff8-ba16-a0236198889f",
@@ -4275,8 +4313,9 @@
     "score_fiabilite_motif": "federalreserve.gov — domaine absent de la table : score par défaut prudent, sous le seuil de source primaire",
     "domaine_source": "federalreserve.gov",
     "domaine_opaque": false,
-    "statut": "en_attente",
-    "created_at": "2026-09-07T11:43:37.504Z"
+    "statut": "rejete",
+    "created_at": "2026-09-07T11:43:37.504Z",
+    "trie_le": "2026-09-10"
   },
   {
     "id": "bfcc9f27-a935-4a29-9252-14e0da3d508c",
@@ -4293,8 +4332,9 @@
     "score_fiabilite_motif": "federalreserve.gov — domaine absent de la table : score par défaut prudent, sous le seuil de source primaire",
     "domaine_source": "federalreserve.gov",
     "domaine_opaque": false,
-    "statut": "en_attente",
-    "created_at": "2026-09-07T11:43:37.504Z"
+    "statut": "rejete",
+    "created_at": "2026-09-07T11:43:37.504Z",
+    "trie_le": "2026-09-10"
   },
   {
     "id": "b6444601-9e48-47b0-a7c0-031a390f5dd1",
@@ -4311,8 +4351,9 @@
     "score_fiabilite_motif": "federalreserve.gov — domaine absent de la table : score par défaut prudent, sous le seuil de source primaire",
     "domaine_source": "federalreserve.gov",
     "domaine_opaque": false,
-    "statut": "en_attente",
-    "created_at": "2026-09-07T11:43:37.504Z"
+    "statut": "rejete",
+    "created_at": "2026-09-07T11:43:37.504Z",
+    "trie_le": "2026-09-10"
   },
   {
     "id": "9ef1b4b7-9e90-4671-acb8-824c179d50b1",
@@ -4329,8 +4370,9 @@
     "score_fiabilite_motif": "federalreserve.gov — domaine absent de la table : score par défaut prudent, sous le seuil de source primaire",
     "domaine_source": "federalreserve.gov",
     "domaine_opaque": false,
-    "statut": "en_attente",
-    "created_at": "2026-09-07T11:43:37.504Z"
+    "statut": "rejete",
+    "created_at": "2026-09-07T11:43:37.504Z",
+    "trie_le": "2026-09-10"
   },
   {
     "id": "46658c08-bf5f-4c25-a5e7-de84c1878e69",
@@ -4347,8 +4389,9 @@
     "score_fiabilite_motif": "federalreserve.gov — domaine absent de la table : score par défaut prudent, sous le seuil de source primaire",
     "domaine_source": "federalreserve.gov",
     "domaine_opaque": false,
-    "statut": "en_attente",
-    "created_at": "2026-09-07T11:43:37.504Z"
+    "statut": "rejete",
+    "created_at": "2026-09-07T11:43:37.504Z",
+    "trie_le": "2026-09-10"
   },
   {
     "id": "c4d6bc68-db37-4180-ad56-a171cee7d40a",
@@ -4365,8 +4408,9 @@
     "score_fiabilite_motif": "bankofengland.co.uk — domaine absent de la table : score par défaut prudent, sous le seuil de source primaire",
     "domaine_source": "bankofengland.co.uk",
     "domaine_opaque": false,
-    "statut": "en_attente",
-    "created_at": "2026-09-07T11:43:38.262Z"
+    "statut": "rejete",
+    "created_at": "2026-09-07T11:43:38.262Z",
+    "trie_le": "2026-09-10"
   },
   {
     "id": "4d69a3db-a58f-47d8-a6d7-8e77cde11377",
@@ -4383,8 +4427,9 @@
     "score_fiabilite_motif": "bankofengland.co.uk — domaine absent de la table : score par défaut prudent, sous le seuil de source primaire",
     "domaine_source": "bankofengland.co.uk",
     "domaine_opaque": false,
-    "statut": "en_attente",
-    "created_at": "2026-09-07T11:43:38.262Z"
+    "statut": "rejete",
+    "created_at": "2026-09-07T11:43:38.262Z",
+    "trie_le": "2026-09-10"
   },
   {
     "id": "9cfda23b-442c-4d50-a481-a3e01dbf9413",
@@ -4401,8 +4446,9 @@
     "score_fiabilite_motif": "bankofengland.co.uk — domaine absent de la table : score par défaut prudent, sous le seuil de source primaire",
     "domaine_source": "bankofengland.co.uk",
     "domaine_opaque": false,
-    "statut": "en_attente",
-    "created_at": "2026-09-07T11:43:38.262Z"
+    "statut": "rejete",
+    "created_at": "2026-09-07T11:43:38.262Z",
+    "trie_le": "2026-09-10"
   },
   {
     "id": "45aae576-1032-4243-b8d9-9b3a51cc8550",
@@ -4419,8 +4465,9 @@
     "score_fiabilite_motif": "bankofengland.co.uk — domaine absent de la table : score par défaut prudent, sous le seuil de source primaire",
     "domaine_source": "bankofengland.co.uk",
     "domaine_opaque": false,
-    "statut": "en_attente",
-    "created_at": "2026-09-07T11:43:38.262Z"
+    "statut": "rejete",
+    "created_at": "2026-09-07T11:43:38.262Z",
+    "trie_le": "2026-09-10"
   },
   {
     "id": "1b2c67f9-0fc7-4b1c-8504-df4d8b9cafab",
@@ -4437,8 +4484,9 @@
     "score_fiabilite_motif": "bankofengland.co.uk — domaine absent de la table : score par défaut prudent, sous le seuil de source primaire",
     "domaine_source": "bankofengland.co.uk",
     "domaine_opaque": false,
-    "statut": "en_attente",
-    "created_at": "2026-09-07T11:43:38.262Z"
+    "statut": "rejete",
+    "created_at": "2026-09-07T11:43:38.262Z",
+    "trie_le": "2026-09-10"
   },
   {
     "id": "965ee991-4461-43a4-a5f8-baeb7f148338",
@@ -4455,8 +4503,9 @@
     "score_fiabilite_motif": "bankofcanada.ca — domaine absent de la table : score par défaut prudent, sous le seuil de source primaire",
     "domaine_source": "bankofcanada.ca",
     "domaine_opaque": false,
-    "statut": "en_attente",
-    "created_at": "2026-09-07T11:43:38.603Z"
+    "statut": "rejete",
+    "created_at": "2026-09-07T11:43:38.603Z",
+    "trie_le": "2026-09-10"
   },
   {
     "id": "3c8f47f5-58c7-45a9-95f7-3d9be323982d",
@@ -4473,8 +4522,9 @@
     "score_fiabilite_motif": "bankofcanada.ca — domaine absent de la table : score par défaut prudent, sous le seuil de source primaire",
     "domaine_source": "bankofcanada.ca",
     "domaine_opaque": false,
-    "statut": "en_attente",
-    "created_at": "2026-09-07T11:43:38.604Z"
+    "statut": "rejete",
+    "created_at": "2026-09-07T11:43:38.604Z",
+    "trie_le": "2026-09-10"
   },
   {
     "id": "df83917e-cbb6-4d8f-bc80-34d4ab91dfb8",
@@ -4491,8 +4541,9 @@
     "score_fiabilite_motif": "bankofcanada.ca — domaine absent de la table : score par défaut prudent, sous le seuil de source primaire",
     "domaine_source": "bankofcanada.ca",
     "domaine_opaque": false,
-    "statut": "en_attente",
-    "created_at": "2026-09-07T11:43:38.604Z"
+    "statut": "rejete",
+    "created_at": "2026-09-07T11:43:38.604Z",
+    "trie_le": "2026-09-10"
   },
   {
     "id": "1e7106dc-757f-44ab-87da-533f4265d9db",
@@ -4509,8 +4560,9 @@
     "score_fiabilite_motif": "bankofcanada.ca — domaine absent de la table : score par défaut prudent, sous le seuil de source primaire",
     "domaine_source": "bankofcanada.ca",
     "domaine_opaque": false,
-    "statut": "en_attente",
-    "created_at": "2026-09-07T11:43:38.604Z"
+    "statut": "rejete",
+    "created_at": "2026-09-07T11:43:38.604Z",
+    "trie_le": "2026-09-10"
   },
   {
     "id": "b64b8a0d-503a-4f65-a222-6add45b2297e",
@@ -4527,8 +4579,9 @@
     "score_fiabilite_motif": "bankofcanada.ca — domaine absent de la table : score par défaut prudent, sous le seuil de source primaire",
     "domaine_source": "bankofcanada.ca",
     "domaine_opaque": false,
-    "statut": "en_attente",
-    "created_at": "2026-09-07T11:43:38.604Z"
+    "statut": "rejete",
+    "created_at": "2026-09-07T11:43:38.604Z",
+    "trie_le": "2026-09-10"
   },
   {
     "id": "fc252adf-f9e3-45a6-842d-e04614d67f07",
@@ -4545,8 +4598,9 @@
     "score_fiabilite_motif": "nber.org — domaine absent de la table : score par défaut prudent, sous le seuil de source primaire",
     "domaine_source": "nber.org",
     "domaine_opaque": false,
-    "statut": "en_attente",
-    "created_at": "2026-09-07T11:43:39.061Z"
+    "statut": "rejete",
+    "created_at": "2026-09-07T11:43:39.061Z",
+    "trie_le": "2026-09-10"
   },
   {
     "id": "b202330a-930d-4268-a260-3f2e9e28d3ca",
@@ -4563,8 +4617,9 @@
     "score_fiabilite_motif": "nber.org — domaine absent de la table : score par défaut prudent, sous le seuil de source primaire",
     "domaine_source": "nber.org",
     "domaine_opaque": false,
-    "statut": "en_attente",
-    "created_at": "2026-09-07T11:43:39.061Z"
+    "statut": "rejete",
+    "created_at": "2026-09-07T11:43:39.061Z",
+    "trie_le": "2026-09-10"
   },
   {
     "id": "86fdcf63-c2b0-4b17-b6fa-e833cb1f8f27",
@@ -4581,8 +4636,9 @@
     "score_fiabilite_motif": "nber.org — domaine absent de la table : score par défaut prudent, sous le seuil de source primaire",
     "domaine_source": "nber.org",
     "domaine_opaque": false,
-    "statut": "en_attente",
-    "created_at": "2026-09-07T11:43:39.061Z"
+    "statut": "rejete",
+    "created_at": "2026-09-07T11:43:39.061Z",
+    "trie_le": "2026-09-10"
   },
   {
     "id": "d848134a-5126-4767-9128-85adaa30895f",
@@ -4599,8 +4655,9 @@
     "score_fiabilite_motif": "nber.org — domaine absent de la table : score par défaut prudent, sous le seuil de source primaire",
     "domaine_source": "nber.org",
     "domaine_opaque": false,
-    "statut": "en_attente",
-    "created_at": "2026-09-07T11:43:39.061Z"
+    "statut": "rejete",
+    "created_at": "2026-09-07T11:43:39.061Z",
+    "trie_le": "2026-09-10"
   },
   {
     "id": "fbb73af6-46fd-4b34-a6bd-2a4a316ec01d",
@@ -4617,8 +4674,9 @@
     "score_fiabilite_motif": "nber.org — domaine absent de la table : score par défaut prudent, sous le seuil de source primaire",
     "domaine_source": "nber.org",
     "domaine_opaque": false,
-    "statut": "en_attente",
-    "created_at": "2026-09-07T11:43:39.061Z"
+    "statut": "rejete",
+    "created_at": "2026-09-07T11:43:39.061Z",
+    "trie_le": "2026-09-10"
   },
   {
     "id": "7a6de3ce-d7f1-451c-908a-650b214767ac",
@@ -4635,8 +4693,9 @@
     "score_fiabilite_motif": "bruegel.org — domaine absent de la table : score par défaut prudent, sous le seuil de source primaire",
     "domaine_source": "bruegel.org",
     "domaine_opaque": false,
-    "statut": "en_attente",
-    "created_at": "2026-09-07T11:43:39.592Z"
+    "statut": "rejete",
+    "created_at": "2026-09-07T11:43:39.592Z",
+    "trie_le": "2026-09-10"
   },
   {
     "id": "f51ea8d6-e585-4f16-8435-f88c286e95f6",
@@ -4653,8 +4712,9 @@
     "score_fiabilite_motif": "bruegel.org — domaine absent de la table : score par défaut prudent, sous le seuil de source primaire",
     "domaine_source": "bruegel.org",
     "domaine_opaque": false,
-    "statut": "en_attente",
-    "created_at": "2026-09-07T11:43:39.592Z"
+    "statut": "rejete",
+    "created_at": "2026-09-07T11:43:39.592Z",
+    "trie_le": "2026-09-10"
   },
   {
     "id": "a83ec9b1-6f6f-4328-8f2c-49b884742004",
@@ -4671,8 +4731,9 @@
     "score_fiabilite_motif": "bruegel.org — domaine absent de la table : score par défaut prudent, sous le seuil de source primaire",
     "domaine_source": "bruegel.org",
     "domaine_opaque": false,
-    "statut": "en_attente",
-    "created_at": "2026-09-07T11:43:39.592Z"
+    "statut": "rejete",
+    "created_at": "2026-09-07T11:43:39.592Z",
+    "trie_le": "2026-09-10"
   },
   {
     "id": "56f83f4a-80f7-4fc2-9f2a-415965e0b6bd",
@@ -4689,8 +4750,9 @@
     "score_fiabilite_motif": "bruegel.org — domaine absent de la table : score par défaut prudent, sous le seuil de source primaire",
     "domaine_source": "bruegel.org",
     "domaine_opaque": false,
-    "statut": "en_attente",
-    "created_at": "2026-09-07T11:43:39.592Z"
+    "statut": "rejete",
+    "created_at": "2026-09-07T11:43:39.592Z",
+    "trie_le": "2026-09-10"
   },
   {
     "id": "02997437-9e88-457a-a5ec-15d4ba13c1b7",
@@ -4707,8 +4769,9 @@
     "score_fiabilite_motif": "bruegel.org — domaine absent de la table : score par défaut prudent, sous le seuil de source primaire",
     "domaine_source": "bruegel.org",
     "domaine_opaque": false,
-    "statut": "en_attente",
-    "created_at": "2026-09-07T11:43:39.592Z"
+    "statut": "rejete",
+    "created_at": "2026-09-07T11:43:39.592Z",
+    "trie_le": "2026-09-10"
   },
   {
     "id": "2f4f6942-dd36-473d-af9f-106c3c88c54d",
@@ -4725,8 +4788,9 @@
     "score_fiabilite_motif": "strategie-plan.gouv.fr — domaine absent de la table : score par défaut prudent, sous le seuil de source primaire",
     "domaine_source": "strategie-plan.gouv.fr",
     "domaine_opaque": false,
-    "statut": "en_attente",
-    "created_at": "2026-09-07T11:43:41.145Z"
+    "statut": "rejete",
+    "created_at": "2026-09-07T11:43:41.145Z",
+    "trie_le": "2026-09-10"
   },
   {
     "id": "e8f5df9d-123b-4f44-ab55-ed5d7819f37b",
@@ -4743,8 +4807,9 @@
     "score_fiabilite_motif": "strategie-plan.gouv.fr — domaine absent de la table : score par défaut prudent, sous le seuil de source primaire",
     "domaine_source": "strategie-plan.gouv.fr",
     "domaine_opaque": false,
-    "statut": "en_attente",
-    "created_at": "2026-09-07T11:43:41.145Z"
+    "statut": "rejete",
+    "created_at": "2026-09-07T11:43:41.145Z",
+    "trie_le": "2026-09-10"
   },
   {
     "id": "84d362e5-3d51-47cf-aa4e-8b8c2e5d1bf3",
@@ -4761,8 +4826,9 @@
     "score_fiabilite_motif": "strategie-plan.gouv.fr — domaine absent de la table : score par défaut prudent, sous le seuil de source primaire",
     "domaine_source": "strategie-plan.gouv.fr",
     "domaine_opaque": false,
-    "statut": "en_attente",
-    "created_at": "2026-09-07T11:43:41.145Z"
+    "statut": "rejete",
+    "created_at": "2026-09-07T11:43:41.145Z",
+    "trie_le": "2026-09-10"
   },
   {
     "id": "9f11a344-667d-4070-a08c-35cec55af693",
@@ -4779,8 +4845,9 @@
     "score_fiabilite_motif": "strategie-plan.gouv.fr — domaine absent de la table : score par défaut prudent, sous le seuil de source primaire",
     "domaine_source": "strategie-plan.gouv.fr",
     "domaine_opaque": false,
-    "statut": "en_attente",
-    "created_at": "2026-09-07T11:43:41.146Z"
+    "statut": "rejete",
+    "created_at": "2026-09-07T11:43:41.146Z",
+    "trie_le": "2026-09-10"
   },
   {
     "id": "af4a8ddf-ec3a-49e2-89c2-2c61d48bdec8",
@@ -4797,8 +4864,9 @@
     "score_fiabilite_motif": "strategie-plan.gouv.fr — domaine absent de la table : score par défaut prudent, sous le seuil de source primaire",
     "domaine_source": "strategie-plan.gouv.fr",
     "domaine_opaque": false,
-    "statut": "en_attente",
-    "created_at": "2026-09-07T11:43:41.146Z"
+    "statut": "rejete",
+    "created_at": "2026-09-07T11:43:41.146Z",
+    "trie_le": "2026-09-10"
   },
   {
     "id": "5b98f679-8429-4217-aacf-b77352b7298d",
@@ -4815,8 +4883,9 @@
     "score_fiabilite_motif": "ft.com — presse généraliste ou spécialisée",
     "domaine_source": "ft.com",
     "domaine_opaque": false,
-    "statut": "en_attente",
-    "created_at": "2026-09-07T11:43:41.489Z"
+    "statut": "rejete",
+    "created_at": "2026-09-07T11:43:41.489Z",
+    "trie_le": "2026-09-10"
   },
   {
     "id": "e84cad26-63f6-43fa-be52-69803e533e41",
@@ -4833,8 +4902,9 @@
     "score_fiabilite_motif": "ft.com — presse généraliste ou spécialisée",
     "domaine_source": "ft.com",
     "domaine_opaque": false,
-    "statut": "en_attente",
-    "created_at": "2026-09-07T11:43:41.489Z"
+    "statut": "rejete",
+    "created_at": "2026-09-07T11:43:41.489Z",
+    "trie_le": "2026-09-10"
   },
   {
     "id": "462eb986-0d49-48c4-b355-b9a06b676fea",
@@ -4851,8 +4921,9 @@
     "score_fiabilite_motif": "ft.com — presse généraliste ou spécialisée",
     "domaine_source": "ft.com",
     "domaine_opaque": false,
-    "statut": "en_attente",
-    "created_at": "2026-09-07T11:43:41.489Z"
+    "statut": "rejete",
+    "created_at": "2026-09-07T11:43:41.489Z",
+    "trie_le": "2026-09-10"
   },
   {
     "id": "6263d68c-406a-4663-879c-6bcc084739fc",
@@ -4869,8 +4940,9 @@
     "score_fiabilite_motif": "ft.com — presse généraliste ou spécialisée",
     "domaine_source": "ft.com",
     "domaine_opaque": false,
-    "statut": "en_attente",
-    "created_at": "2026-09-07T11:43:41.489Z"
+    "statut": "rejete",
+    "created_at": "2026-09-07T11:43:41.489Z",
+    "trie_le": "2026-09-10"
   },
   {
     "id": "428b1328-d13e-4487-8ac2-89722756e7de",
@@ -4887,8 +4959,9 @@
     "score_fiabilite_motif": "ft.com — presse généraliste ou spécialisée",
     "domaine_source": "ft.com",
     "domaine_opaque": false,
-    "statut": "en_attente",
-    "created_at": "2026-09-07T11:43:41.489Z"
+    "statut": "rejete",
+    "created_at": "2026-09-07T11:43:41.489Z",
+    "trie_le": "2026-09-10"
   },
   {
     "id": "6e3df295-d6e5-4b26-b0ba-363a4e74b8a9",
@@ -4905,8 +4978,9 @@
     "score_fiabilite_motif": "wsj.com — presse généraliste ou spécialisée",
     "domaine_source": "wsj.com",
     "domaine_opaque": false,
-    "statut": "en_attente",
-    "created_at": "2026-09-07T11:43:41.692Z"
+    "statut": "rejete",
+    "created_at": "2026-09-07T11:43:41.692Z",
+    "trie_le": "2026-09-10"
   },
   {
     "id": "029c7bfc-b6bd-4bf5-b633-e35b46fd9eea",
@@ -4923,8 +4997,9 @@
     "score_fiabilite_motif": "wsj.com — presse généraliste ou spécialisée",
     "domaine_source": "wsj.com",
     "domaine_opaque": false,
-    "statut": "en_attente",
-    "created_at": "2026-09-07T11:43:41.692Z"
+    "statut": "rejete",
+    "created_at": "2026-09-07T11:43:41.692Z",
+    "trie_le": "2026-09-10"
   },
   {
     "id": "51886d72-6c8c-46e1-b444-a6069c258825",
@@ -4941,8 +5016,9 @@
     "score_fiabilite_motif": "wsj.com — presse généraliste ou spécialisée",
     "domaine_source": "wsj.com",
     "domaine_opaque": false,
-    "statut": "en_attente",
-    "created_at": "2026-09-07T11:43:41.692Z"
+    "statut": "rejete",
+    "created_at": "2026-09-07T11:43:41.692Z",
+    "trie_le": "2026-09-10"
   },
   {
     "id": "98992279-8eb1-4714-9e63-c4e3983c3cb8",
@@ -4959,8 +5035,9 @@
     "score_fiabilite_motif": "wsj.com — presse généraliste ou spécialisée",
     "domaine_source": "wsj.com",
     "domaine_opaque": false,
-    "statut": "en_attente",
-    "created_at": "2026-09-07T11:43:41.692Z"
+    "statut": "rejete",
+    "created_at": "2026-09-07T11:43:41.692Z",
+    "trie_le": "2026-09-10"
   },
   {
     "id": "f08c5864-4d85-4437-a980-bcf911e3a9ce",
@@ -4977,8 +5054,9 @@
     "score_fiabilite_motif": "wsj.com — presse généraliste ou spécialisée",
     "domaine_source": "wsj.com",
     "domaine_opaque": false,
-    "statut": "en_attente",
-    "created_at": "2026-09-07T11:43:41.692Z"
+    "statut": "rejete",
+    "created_at": "2026-09-07T11:43:41.692Z",
+    "trie_le": "2026-09-10"
   },
   {
     "id": "3c3cdff3-ba05-42ba-a18a-ff0f4f5d4f08",
@@ -4995,8 +5073,9 @@
     "score_fiabilite_motif": "lemonde.fr — presse généraliste ou spécialisée",
     "domaine_source": "lemonde.fr",
     "domaine_opaque": false,
-    "statut": "en_attente",
-    "created_at": "2026-09-07T11:43:41.892Z"
+    "statut": "rejete",
+    "created_at": "2026-09-07T11:43:41.892Z",
+    "trie_le": "2026-09-10"
   },
   {
     "id": "53c9186e-720e-4222-b3f4-1c520a1ba52d",
@@ -5013,8 +5092,9 @@
     "score_fiabilite_motif": "lemonde.fr — presse généraliste ou spécialisée",
     "domaine_source": "lemonde.fr",
     "domaine_opaque": false,
-    "statut": "en_attente",
-    "created_at": "2026-09-07T11:43:41.892Z"
+    "statut": "rejete",
+    "created_at": "2026-09-07T11:43:41.892Z",
+    "trie_le": "2026-09-10"
   },
   {
     "id": "271b31e6-999c-46a1-b7cf-0d21ea864097",
@@ -5031,8 +5111,9 @@
     "score_fiabilite_motif": "lemonde.fr — presse généraliste ou spécialisée",
     "domaine_source": "lemonde.fr",
     "domaine_opaque": false,
-    "statut": "en_attente",
-    "created_at": "2026-09-07T11:43:41.892Z"
+    "statut": "rejete",
+    "created_at": "2026-09-07T11:43:41.892Z",
+    "trie_le": "2026-09-10"
   },
   {
     "id": "abe68034-4fd7-4bdb-89df-52221a4009a7",
@@ -5049,8 +5130,9 @@
     "score_fiabilite_motif": "lemonde.fr — presse généraliste ou spécialisée",
     "domaine_source": "lemonde.fr",
     "domaine_opaque": false,
-    "statut": "en_attente",
-    "created_at": "2026-09-07T11:43:41.892Z"
+    "statut": "rejete",
+    "created_at": "2026-09-07T11:43:41.892Z",
+    "trie_le": "2026-09-10"
   },
   {
     "id": "1f0a379c-df03-4e4d-a165-3016f817dca6",
@@ -5067,8 +5149,9 @@
     "score_fiabilite_motif": "lemonde.fr — presse généraliste ou spécialisée",
     "domaine_source": "lemonde.fr",
     "domaine_opaque": false,
-    "statut": "en_attente",
-    "created_at": "2026-09-07T11:43:41.892Z"
+    "statut": "rejete",
+    "created_at": "2026-09-07T11:43:41.892Z",
+    "trie_le": "2026-09-10"
   },
   {
     "id": "3d014465-6f24-4ade-b2cf-ed5c72a0adda",
@@ -5085,8 +5168,9 @@
     "score_fiabilite_motif": "air-cosmos.latribune.fr — domaine absent de la table : score par défaut prudent, sous le seuil de source primaire",
     "domaine_source": "air-cosmos.latribune.fr",
     "domaine_opaque": false,
-    "statut": "en_attente",
-    "created_at": "2026-09-07T11:43:42.453Z"
+    "statut": "rejete",
+    "created_at": "2026-09-07T11:43:42.453Z",
+    "trie_le": "2026-09-10"
   },
   {
     "id": "31048025-c1e6-4395-8c5a-4c2b074bc83a",
@@ -5103,8 +5187,9 @@
     "score_fiabilite_motif": "latribune.fr — domaine absent de la table : score par défaut prudent, sous le seuil de source primaire",
     "domaine_source": "latribune.fr",
     "domaine_opaque": false,
-    "statut": "en_attente",
-    "created_at": "2026-09-07T11:43:42.453Z"
+    "statut": "rejete",
+    "created_at": "2026-09-07T11:43:42.453Z",
+    "trie_le": "2026-09-10"
   },
   {
     "id": "2274dc14-6d86-4312-a6a9-9d560f9d94e4",
@@ -5121,8 +5206,9 @@
     "score_fiabilite_motif": "latribune.fr — domaine absent de la table : score par défaut prudent, sous le seuil de source primaire",
     "domaine_source": "latribune.fr",
     "domaine_opaque": false,
-    "statut": "en_attente",
-    "created_at": "2026-09-07T11:43:42.453Z"
+    "statut": "rejete",
+    "created_at": "2026-09-07T11:43:42.453Z",
+    "trie_le": "2026-09-10"
   },
   {
     "id": "e5574f06-5450-4910-8951-da7676cd93dd",
@@ -5139,8 +5225,9 @@
     "score_fiabilite_motif": "latribune.fr — domaine absent de la table : score par défaut prudent, sous le seuil de source primaire",
     "domaine_source": "latribune.fr",
     "domaine_opaque": false,
-    "statut": "en_attente",
-    "created_at": "2026-09-07T11:43:42.453Z"
+    "statut": "rejete",
+    "created_at": "2026-09-07T11:43:42.453Z",
+    "trie_le": "2026-09-10"
   },
   {
     "id": "9a72de80-c3d3-44d1-8080-c86252bda489",
@@ -5157,8 +5244,9 @@
     "score_fiabilite_motif": "air-cosmos.latribune.fr — domaine absent de la table : score par défaut prudent, sous le seuil de source primaire",
     "domaine_source": "air-cosmos.latribune.fr",
     "domaine_opaque": false,
-    "statut": "en_attente",
-    "created_at": "2026-09-07T11:43:42.453Z"
+    "statut": "rejete",
+    "created_at": "2026-09-07T11:43:42.453Z",
+    "trie_le": "2026-09-10"
   },
   {
     "id": "757ee685-b3ff-4041-8019-c2ad8d4fef39",
@@ -5175,8 +5263,9 @@
     "score_fiabilite_motif": "rfi.fr — domaine absent de la table : score par défaut prudent, sous le seuil de source primaire",
     "domaine_source": "rfi.fr",
     "domaine_opaque": false,
-    "statut": "en_attente",
-    "created_at": "2026-09-07T11:43:43.343Z"
+    "statut": "rejete",
+    "created_at": "2026-09-07T11:43:43.343Z",
+    "trie_le": "2026-09-10"
   },
   {
     "id": "89424c02-7edb-4738-94fc-6a2b390e95a7",
@@ -5193,8 +5282,9 @@
     "score_fiabilite_motif": "rfi.fr — domaine absent de la table : score par défaut prudent, sous le seuil de source primaire",
     "domaine_source": "rfi.fr",
     "domaine_opaque": false,
-    "statut": "en_attente",
-    "created_at": "2026-09-07T11:43:43.343Z"
+    "statut": "rejete",
+    "created_at": "2026-09-07T11:43:43.343Z",
+    "trie_le": "2026-09-10"
   },
   {
     "id": "752ca727-5b7b-4fa1-aa08-30ad366bb58a",
@@ -5211,8 +5301,9 @@
     "score_fiabilite_motif": "rfi.fr — domaine absent de la table : score par défaut prudent, sous le seuil de source primaire",
     "domaine_source": "rfi.fr",
     "domaine_opaque": false,
-    "statut": "en_attente",
-    "created_at": "2026-09-07T11:43:43.343Z"
+    "statut": "rejete",
+    "created_at": "2026-09-07T11:43:43.343Z",
+    "trie_le": "2026-09-10"
   },
   {
     "id": "21793124-41ad-4429-a66c-cb71a8ce1329",
@@ -5229,8 +5320,9 @@
     "score_fiabilite_motif": "rfi.fr — domaine absent de la table : score par défaut prudent, sous le seuil de source primaire",
     "domaine_source": "rfi.fr",
     "domaine_opaque": false,
-    "statut": "en_attente",
-    "created_at": "2026-09-07T11:43:43.343Z"
+    "statut": "rejete",
+    "created_at": "2026-09-07T11:43:43.343Z",
+    "trie_le": "2026-09-10"
   },
   {
     "id": "b23c6990-b699-4ed8-bdc8-73c13cbf34c1",
@@ -5247,14 +5339,15 @@
     "score_fiabilite_motif": "rfi.fr — domaine absent de la table : score par défaut prudent, sous le seuil de source primaire",
     "domaine_source": "rfi.fr",
     "domaine_opaque": false,
-    "statut": "en_attente",
-    "created_at": "2026-09-07T11:43:43.343Z"
+    "statut": "rejete",
+    "created_at": "2026-09-07T11:43:43.343Z",
+    "trie_le": "2026-09-10"
   },
   {
     "id": "7f634dfd-f206-461f-bf57-43b4803d3333",
     "source_id": "euronews-business",
-    "cible_type": "nouvelle_categorie",
-    "cible_id": null,
+    "cible_type": "fiche_ia",
+    "cible_id": "dependance-energetique-et-materielle-de-l-ia-limite-transversale",
     "contenu_propose": {
       "titre": "Les géants de la tech peuvent-ils freiner la soif d'eau des centres de données d'IA ?",
       "link": "http://fr.euronews.com/business/2026/09/07/les-geants-de-la-tech-peuvent-ils-freiner-la-soif-deau-des-centres-de-donnees-dia",
@@ -5265,8 +5358,9 @@
     "score_fiabilite_motif": "fr.euronews.com — domaine absent de la table : score par défaut prudent, sous le seuil de source primaire",
     "domaine_source": "fr.euronews.com",
     "domaine_opaque": false,
-    "statut": "en_attente",
-    "created_at": "2026-09-07T11:43:43.802Z"
+    "statut": "a_traiter_fiche_existante",
+    "created_at": "2026-09-07T11:43:43.802Z",
+    "trie_le": "2026-09-10"
   },
   {
     "id": "d97425a1-046c-4804-8e48-40b17b361130",
@@ -5283,8 +5377,9 @@
     "score_fiabilite_motif": "fr.euronews.com — domaine absent de la table : score par défaut prudent, sous le seuil de source primaire",
     "domaine_source": "fr.euronews.com",
     "domaine_opaque": false,
-    "statut": "en_attente",
-    "created_at": "2026-09-07T11:43:43.802Z"
+    "statut": "rejete",
+    "created_at": "2026-09-07T11:43:43.802Z",
+    "trie_le": "2026-09-10"
   },
   {
     "id": "9ae3538f-a507-4748-b328-b5798d88aa64",
@@ -5301,8 +5396,9 @@
     "score_fiabilite_motif": "fr.euronews.com — domaine absent de la table : score par défaut prudent, sous le seuil de source primaire",
     "domaine_source": "fr.euronews.com",
     "domaine_opaque": false,
-    "statut": "en_attente",
-    "created_at": "2026-09-07T11:43:43.802Z"
+    "statut": "rejete",
+    "created_at": "2026-09-07T11:43:43.802Z",
+    "trie_le": "2026-09-10"
   },
   {
     "id": "80744cdc-63a8-45ac-820e-eac2c2ffe4aa",
@@ -5319,8 +5415,9 @@
     "score_fiabilite_motif": "fr.euronews.com — domaine absent de la table : score par défaut prudent, sous le seuil de source primaire",
     "domaine_source": "fr.euronews.com",
     "domaine_opaque": false,
-    "statut": "en_attente",
-    "created_at": "2026-09-07T11:43:43.802Z"
+    "statut": "rejete",
+    "created_at": "2026-09-07T11:43:43.802Z",
+    "trie_le": "2026-09-10"
   },
   {
     "id": "a747d05b-a898-4024-8a3d-47e60568cc22",
@@ -5337,8 +5434,9 @@
     "score_fiabilite_motif": "fr.euronews.com — domaine absent de la table : score par défaut prudent, sous le seuil de source primaire",
     "domaine_source": "fr.euronews.com",
     "domaine_opaque": false,
-    "statut": "en_attente",
-    "created_at": "2026-09-07T11:43:43.802Z"
+    "statut": "rejete",
+    "created_at": "2026-09-07T11:43:43.802Z",
+    "trie_le": "2026-09-10"
   },
   {
     "id": "5717dc70-97ff-4800-a59a-57d249faf318",
@@ -5355,8 +5453,9 @@
     "score_fiabilite_motif": "dw.com — domaine absent de la table : score par défaut prudent, sous le seuil de source primaire",
     "domaine_source": "dw.com",
     "domaine_opaque": false,
-    "statut": "en_attente",
-    "created_at": "2026-09-07T11:43:44.718Z"
+    "statut": "rejete",
+    "created_at": "2026-09-07T11:43:44.718Z",
+    "trie_le": "2026-09-10"
   },
   {
     "id": "cbb24913-4117-46cb-9321-93c8ecf415e7",
@@ -5373,8 +5472,9 @@
     "score_fiabilite_motif": "dw.com — domaine absent de la table : score par défaut prudent, sous le seuil de source primaire",
     "domaine_source": "dw.com",
     "domaine_opaque": false,
-    "statut": "en_attente",
-    "created_at": "2026-09-07T11:43:44.718Z"
+    "statut": "rejete",
+    "created_at": "2026-09-07T11:43:44.718Z",
+    "trie_le": "2026-09-10"
   },
   {
     "id": "76078740-dabf-4584-9ea8-703558339f6d",
@@ -5391,8 +5491,9 @@
     "score_fiabilite_motif": "dw.com — domaine absent de la table : score par défaut prudent, sous le seuil de source primaire",
     "domaine_source": "dw.com",
     "domaine_opaque": false,
-    "statut": "en_attente",
-    "created_at": "2026-09-07T11:43:44.718Z"
+    "statut": "rejete",
+    "created_at": "2026-09-07T11:43:44.718Z",
+    "trie_le": "2026-09-10"
   },
   {
     "id": "4ae3d0a1-656e-4657-9e67-aa57311b1fc2",
@@ -5409,8 +5510,9 @@
     "score_fiabilite_motif": "dw.com — domaine absent de la table : score par défaut prudent, sous le seuil de source primaire",
     "domaine_source": "dw.com",
     "domaine_opaque": false,
-    "statut": "en_attente",
-    "created_at": "2026-09-07T11:43:44.718Z"
+    "statut": "rejete",
+    "created_at": "2026-09-07T11:43:44.718Z",
+    "trie_le": "2026-09-10"
   },
   {
     "id": "2479962e-c9f9-44f1-82cf-66bacbc0e03d",
@@ -5427,8 +5529,9 @@
     "score_fiabilite_motif": "dw.com — domaine absent de la table : score par défaut prudent, sous le seuil de source primaire",
     "domaine_source": "dw.com",
     "domaine_opaque": false,
-    "statut": "en_attente",
-    "created_at": "2026-09-07T11:43:44.718Z"
+    "statut": "rejete",
+    "created_at": "2026-09-07T11:43:44.718Z",
+    "trie_le": "2026-09-10"
   },
   {
     "id": "9e8eacfc-a931-42c4-8a4e-a16e43602ac5",
@@ -5445,8 +5548,9 @@
     "score_fiabilite_motif": "theguardian.com — presse généraliste ou spécialisée",
     "domaine_source": "theguardian.com",
     "domaine_opaque": false,
-    "statut": "en_attente",
-    "created_at": "2026-09-07T11:43:44.976Z"
+    "statut": "rejete",
+    "created_at": "2026-09-07T11:43:44.976Z",
+    "trie_le": "2026-09-10"
   },
   {
     "id": "9713e3e4-19ea-4326-bf45-a92e5b038330",
@@ -5463,8 +5567,9 @@
     "score_fiabilite_motif": "theguardian.com — presse généraliste ou spécialisée",
     "domaine_source": "theguardian.com",
     "domaine_opaque": false,
-    "statut": "en_attente",
-    "created_at": "2026-09-07T11:43:44.976Z"
+    "statut": "rejete",
+    "created_at": "2026-09-07T11:43:44.976Z",
+    "trie_le": "2026-09-10"
   },
   {
     "id": "97854d6c-62ff-4e46-9624-adb7e0189994",
@@ -5481,8 +5586,9 @@
     "score_fiabilite_motif": "theguardian.com — presse généraliste ou spécialisée",
     "domaine_source": "theguardian.com",
     "domaine_opaque": false,
-    "statut": "en_attente",
-    "created_at": "2026-09-07T11:43:44.976Z"
+    "statut": "rejete",
+    "created_at": "2026-09-07T11:43:44.976Z",
+    "trie_le": "2026-09-10"
   },
   {
     "id": "61666d35-61b8-4b58-bc06-56f4ac6a1d16",
@@ -5499,8 +5605,9 @@
     "score_fiabilite_motif": "theguardian.com — presse généraliste ou spécialisée",
     "domaine_source": "theguardian.com",
     "domaine_opaque": false,
-    "statut": "en_attente",
-    "created_at": "2026-09-07T11:43:44.976Z"
+    "statut": "rejete",
+    "created_at": "2026-09-07T11:43:44.976Z",
+    "trie_le": "2026-09-10"
   },
   {
     "id": "adfb48c4-b888-4c42-98a5-bf64325d3c8d",
@@ -5517,8 +5624,9 @@
     "score_fiabilite_motif": "theguardian.com — presse généraliste ou spécialisée",
     "domaine_source": "theguardian.com",
     "domaine_opaque": false,
-    "statut": "en_attente",
-    "created_at": "2026-09-07T11:43:44.976Z"
+    "statut": "rejete",
+    "created_at": "2026-09-07T11:43:44.976Z",
+    "trie_le": "2026-09-10"
   },
   {
     "id": "032f6bfa-cfc2-492d-a3b0-13dc1455cdc0",
@@ -6115,8 +6223,9 @@
     "score_fiabilite_motif": "ec.europa.eu — préprint, actes de conférence ou institution publique",
     "domaine_source": "ec.europa.eu",
     "domaine_opaque": false,
-    "statut": "en_attente",
-    "created_at": "2026-09-08T11:55:09.652Z"
+    "statut": "rejete",
+    "created_at": "2026-09-08T11:55:09.652Z",
+    "trie_le": "2026-09-10"
   },
   {
     "id": "ee6be710-2b05-4660-92b1-f4b553340b52",
@@ -6133,8 +6242,9 @@
     "score_fiabilite_motif": "ec.europa.eu — préprint, actes de conférence ou institution publique",
     "domaine_source": "ec.europa.eu",
     "domaine_opaque": false,
-    "statut": "en_attente",
-    "created_at": "2026-09-08T11:55:09.653Z"
+    "statut": "rejete",
+    "created_at": "2026-09-08T11:55:09.653Z",
+    "trie_le": "2026-09-10"
   },
   {
     "id": "25a1448c-0196-4531-ace5-06e63e3bc3df",
@@ -6151,8 +6261,9 @@
     "score_fiabilite_motif": "ec.europa.eu — préprint, actes de conférence ou institution publique",
     "domaine_source": "ec.europa.eu",
     "domaine_opaque": false,
-    "statut": "en_attente",
-    "created_at": "2026-09-08T11:55:09.653Z"
+    "statut": "rejete",
+    "created_at": "2026-09-08T11:55:09.653Z",
+    "trie_le": "2026-09-10"
   },
   {
     "id": "9a975cc6-cee7-4a77-8585-37787c72c5da",
@@ -6169,8 +6280,9 @@
     "score_fiabilite_motif": "ec.europa.eu — préprint, actes de conférence ou institution publique",
     "domaine_source": "ec.europa.eu",
     "domaine_opaque": false,
-    "statut": "en_attente",
-    "created_at": "2026-09-08T11:55:09.653Z"
+    "statut": "rejete",
+    "created_at": "2026-09-08T11:55:09.653Z",
+    "trie_le": "2026-09-10"
   },
   {
     "id": "6ac3abc0-d5c4-4219-8a8b-91809ee9b25c",
@@ -6187,8 +6299,9 @@
     "score_fiabilite_motif": "ec.europa.eu — préprint, actes de conférence ou institution publique",
     "domaine_source": "ec.europa.eu",
     "domaine_opaque": false,
-    "statut": "en_attente",
-    "created_at": "2026-09-08T11:55:09.653Z"
+    "statut": "rejete",
+    "created_at": "2026-09-08T11:55:09.653Z",
+    "trie_le": "2026-09-10"
   },
   {
     "id": "776d7062-a557-471f-98e3-6645dc2b1a5f",
@@ -6205,8 +6318,9 @@
     "score_fiabilite_motif": "bis.org — domaine absent de la table : score par défaut prudent, sous le seuil de source primaire",
     "domaine_source": "bis.org",
     "domaine_opaque": false,
-    "statut": "en_attente",
-    "created_at": "2026-09-08T11:55:10.182Z"
+    "statut": "rejete",
+    "created_at": "2026-09-08T11:55:10.182Z",
+    "trie_le": "2026-09-10"
   },
   {
     "id": "e3a48631-5620-45e9-9c42-3d7e9797cf86",
@@ -6223,8 +6337,9 @@
     "score_fiabilite_motif": "bis.org — domaine absent de la table : score par défaut prudent, sous le seuil de source primaire",
     "domaine_source": "bis.org",
     "domaine_opaque": false,
-    "statut": "en_attente",
-    "created_at": "2026-09-08T11:55:10.442Z"
+    "statut": "rejete",
+    "created_at": "2026-09-08T11:55:10.442Z",
+    "trie_le": "2026-09-10"
   },
   {
     "id": "5fc40307-a5fb-4180-95a5-a114a438ca33",
@@ -6241,8 +6356,9 @@
     "score_fiabilite_motif": "ft.com — presse généraliste ou spécialisée",
     "domaine_source": "ft.com",
     "domaine_opaque": false,
-    "statut": "en_attente",
-    "created_at": "2026-09-08T11:55:27.126Z"
+    "statut": "rejete",
+    "created_at": "2026-09-08T11:55:27.126Z",
+    "trie_le": "2026-09-10"
   },
   {
     "id": "4c635243-5a43-4f09-ad06-a4e90c6e7aca",
@@ -6259,8 +6375,9 @@
     "score_fiabilite_motif": "ft.com — presse généraliste ou spécialisée",
     "domaine_source": "ft.com",
     "domaine_opaque": false,
-    "statut": "en_attente",
-    "created_at": "2026-09-08T11:55:27.126Z"
+    "statut": "rejete",
+    "created_at": "2026-09-08T11:55:27.126Z",
+    "trie_le": "2026-09-10"
   },
   {
     "id": "d2b49b4c-a7a4-4c0d-98dd-9fb8c6de366a",
@@ -6277,8 +6394,9 @@
     "score_fiabilite_motif": "ft.com — presse généraliste ou spécialisée",
     "domaine_source": "ft.com",
     "domaine_opaque": false,
-    "statut": "en_attente",
-    "created_at": "2026-09-08T11:55:27.126Z"
+    "statut": "rejete",
+    "created_at": "2026-09-08T11:55:27.126Z",
+    "trie_le": "2026-09-10"
   },
   {
     "id": "b5ef52ae-d9b5-4c7a-8c3b-22a780514f3c",
@@ -6295,8 +6413,9 @@
     "score_fiabilite_motif": "ft.com — presse généraliste ou spécialisée",
     "domaine_source": "ft.com",
     "domaine_opaque": false,
-    "statut": "en_attente",
-    "created_at": "2026-09-08T11:55:27.126Z"
+    "statut": "rejete",
+    "created_at": "2026-09-08T11:55:27.126Z",
+    "trie_le": "2026-09-10"
   },
   {
     "id": "f9a16eb1-2292-4e77-9378-89e68a9141ae",
@@ -6313,8 +6432,9 @@
     "score_fiabilite_motif": "ft.com — presse généraliste ou spécialisée",
     "domaine_source": "ft.com",
     "domaine_opaque": false,
-    "statut": "en_attente",
-    "created_at": "2026-09-08T11:55:27.126Z"
+    "statut": "rejete",
+    "created_at": "2026-09-08T11:55:27.126Z",
+    "trie_le": "2026-09-10"
   },
   {
     "id": "53a4fa8a-ee8a-4724-93a6-5414e5d16ce4",
@@ -6331,8 +6451,9 @@
     "score_fiabilite_motif": "wsj.com — presse généraliste ou spécialisée",
     "domaine_source": "wsj.com",
     "domaine_opaque": false,
-    "statut": "en_attente",
-    "created_at": "2026-09-08T11:55:27.240Z"
+    "statut": "rejete",
+    "created_at": "2026-09-08T11:55:27.240Z",
+    "trie_le": "2026-09-10"
   },
   {
     "id": "cd54418d-6638-47c9-a032-d3b4d033cfb0",
@@ -6349,8 +6470,9 @@
     "score_fiabilite_motif": "wsj.com — presse généraliste ou spécialisée",
     "domaine_source": "wsj.com",
     "domaine_opaque": false,
-    "statut": "en_attente",
-    "created_at": "2026-09-08T11:55:27.240Z"
+    "statut": "rejete",
+    "created_at": "2026-09-08T11:55:27.240Z",
+    "trie_le": "2026-09-10"
   },
   {
     "id": "895115fe-fb69-41f6-b5fe-54509c4ab90e",
@@ -6367,8 +6489,9 @@
     "score_fiabilite_motif": "wsj.com — presse généraliste ou spécialisée",
     "domaine_source": "wsj.com",
     "domaine_opaque": false,
-    "statut": "en_attente",
-    "created_at": "2026-09-08T11:55:27.240Z"
+    "statut": "rejete",
+    "created_at": "2026-09-08T11:55:27.240Z",
+    "trie_le": "2026-09-10"
   },
   {
     "id": "d22d8fae-f96c-4e47-9cc0-2ba1a671373d",
@@ -6385,8 +6508,9 @@
     "score_fiabilite_motif": "wsj.com — presse généraliste ou spécialisée",
     "domaine_source": "wsj.com",
     "domaine_opaque": false,
-    "statut": "en_attente",
-    "created_at": "2026-09-08T11:55:27.240Z"
+    "statut": "rejete",
+    "created_at": "2026-09-08T11:55:27.240Z",
+    "trie_le": "2026-09-10"
   },
   {
     "id": "c37544f0-d5b1-4846-916b-80da44d8104c",
@@ -6403,8 +6527,9 @@
     "score_fiabilite_motif": "wsj.com — presse généraliste ou spécialisée",
     "domaine_source": "wsj.com",
     "domaine_opaque": false,
-    "statut": "en_attente",
-    "created_at": "2026-09-08T11:55:27.240Z"
+    "statut": "rejete",
+    "created_at": "2026-09-08T11:55:27.240Z",
+    "trie_le": "2026-09-10"
   },
   {
     "id": "b19f8b85-710a-49b0-9194-c8a8ac1761f5",
@@ -6421,8 +6546,9 @@
     "score_fiabilite_motif": "lemonde.fr — presse généraliste ou spécialisée",
     "domaine_source": "lemonde.fr",
     "domaine_opaque": false,
-    "statut": "en_attente",
-    "created_at": "2026-09-08T11:55:27.505Z"
+    "statut": "rejete",
+    "created_at": "2026-09-08T11:55:27.505Z",
+    "trie_le": "2026-09-10"
   },
   {
     "id": "48c55056-4101-4da1-9423-35ddfd236a68",
@@ -6439,8 +6565,9 @@
     "score_fiabilite_motif": "lemonde.fr — presse généraliste ou spécialisée",
     "domaine_source": "lemonde.fr",
     "domaine_opaque": false,
-    "statut": "en_attente",
-    "created_at": "2026-09-08T11:55:27.505Z"
+    "statut": "rejete",
+    "created_at": "2026-09-08T11:55:27.505Z",
+    "trie_le": "2026-09-10"
   },
   {
     "id": "8269028c-356d-493d-b817-c214184dc4e0",
@@ -6457,8 +6584,9 @@
     "score_fiabilite_motif": "lemonde.fr — presse généraliste ou spécialisée",
     "domaine_source": "lemonde.fr",
     "domaine_opaque": false,
-    "statut": "en_attente",
-    "created_at": "2026-09-08T11:55:27.505Z"
+    "statut": "rejete",
+    "created_at": "2026-09-08T11:55:27.505Z",
+    "trie_le": "2026-09-10"
   },
   {
     "id": "2d93e065-b759-42b4-befe-6b387a08f072",
@@ -6475,8 +6603,9 @@
     "score_fiabilite_motif": "lemonde.fr — presse généraliste ou spécialisée",
     "domaine_source": "lemonde.fr",
     "domaine_opaque": false,
-    "statut": "en_attente",
-    "created_at": "2026-09-08T11:55:27.505Z"
+    "statut": "rejete",
+    "created_at": "2026-09-08T11:55:27.505Z",
+    "trie_le": "2026-09-10"
   },
   {
     "id": "858eb437-6eba-475f-ae1b-604849de18a2",
@@ -6493,8 +6622,9 @@
     "score_fiabilite_motif": "lemonde.fr — presse généraliste ou spécialisée",
     "domaine_source": "lemonde.fr",
     "domaine_opaque": false,
-    "statut": "en_attente",
-    "created_at": "2026-09-08T11:55:27.505Z"
+    "statut": "rejete",
+    "created_at": "2026-09-08T11:55:27.505Z",
+    "trie_le": "2026-09-10"
   },
   {
     "id": "7a47d74a-9b1e-4748-8941-7b03fa5a6905",
@@ -6511,8 +6641,9 @@
     "score_fiabilite_motif": "latribune.fr — domaine absent de la table : score par défaut prudent, sous le seuil de source primaire",
     "domaine_source": "latribune.fr",
     "domaine_opaque": false,
-    "statut": "en_attente",
-    "created_at": "2026-09-08T11:55:27.843Z"
+    "statut": "rejete",
+    "created_at": "2026-09-08T11:55:27.843Z",
+    "trie_le": "2026-09-10"
   },
   {
     "id": "8be936e8-8078-4fbe-bd15-9c63f0dfc683",
@@ -6529,8 +6660,9 @@
     "score_fiabilite_motif": "latribune.fr — domaine absent de la table : score par défaut prudent, sous le seuil de source primaire",
     "domaine_source": "latribune.fr",
     "domaine_opaque": false,
-    "statut": "en_attente",
-    "created_at": "2026-09-08T11:55:27.843Z"
+    "statut": "rejete",
+    "created_at": "2026-09-08T11:55:27.843Z",
+    "trie_le": "2026-09-10"
   },
   {
     "id": "d1ec2f5f-e409-47b2-96d4-569ab50af5b8",
@@ -6547,8 +6679,9 @@
     "score_fiabilite_motif": "latribune.fr — domaine absent de la table : score par défaut prudent, sous le seuil de source primaire",
     "domaine_source": "latribune.fr",
     "domaine_opaque": false,
-    "statut": "en_attente",
-    "created_at": "2026-09-08T11:55:27.843Z"
+    "statut": "rejete",
+    "created_at": "2026-09-08T11:55:27.843Z",
+    "trie_le": "2026-09-10"
   },
   {
     "id": "f2990a78-1ebd-49e9-b2b6-14d27c999cbb",
@@ -6565,8 +6698,9 @@
     "score_fiabilite_motif": "latribune.fr — domaine absent de la table : score par défaut prudent, sous le seuil de source primaire",
     "domaine_source": "latribune.fr",
     "domaine_opaque": false,
-    "statut": "en_attente",
-    "created_at": "2026-09-08T11:55:27.843Z"
+    "statut": "rejete",
+    "created_at": "2026-09-08T11:55:27.843Z",
+    "trie_le": "2026-09-10"
   },
   {
     "id": "c645c5be-97b6-4313-955f-006d78a70cab",
@@ -6583,8 +6717,9 @@
     "score_fiabilite_motif": "latribune.fr — domaine absent de la table : score par défaut prudent, sous le seuil de source primaire",
     "domaine_source": "latribune.fr",
     "domaine_opaque": false,
-    "statut": "en_attente",
-    "created_at": "2026-09-08T11:55:27.843Z"
+    "statut": "rejete",
+    "created_at": "2026-09-08T11:55:27.843Z",
+    "trie_le": "2026-09-10"
   },
   {
     "id": "c4ede07f-6ab3-46c7-9122-5920e84915ec",
@@ -6601,8 +6736,9 @@
     "score_fiabilite_motif": "rfi.fr — domaine absent de la table : score par défaut prudent, sous le seuil de source primaire",
     "domaine_source": "rfi.fr",
     "domaine_opaque": false,
-    "statut": "en_attente",
-    "created_at": "2026-09-08T11:55:28.336Z"
+    "statut": "rejete",
+    "created_at": "2026-09-08T11:55:28.336Z",
+    "trie_le": "2026-09-10"
   },
   {
     "id": "081c603b-2691-4120-abae-b0a8c2e4ad4f",
@@ -6619,8 +6755,9 @@
     "score_fiabilite_motif": "rfi.fr — domaine absent de la table : score par défaut prudent, sous le seuil de source primaire",
     "domaine_source": "rfi.fr",
     "domaine_opaque": false,
-    "statut": "en_attente",
-    "created_at": "2026-09-08T11:55:28.336Z"
+    "statut": "rejete",
+    "created_at": "2026-09-08T11:55:28.336Z",
+    "trie_le": "2026-09-10"
   },
   {
     "id": "217fbf00-ad70-4e73-a630-7bb274da4f11",
@@ -6637,8 +6774,9 @@
     "score_fiabilite_motif": "rfi.fr — domaine absent de la table : score par défaut prudent, sous le seuil de source primaire",
     "domaine_source": "rfi.fr",
     "domaine_opaque": false,
-    "statut": "en_attente",
-    "created_at": "2026-09-08T11:55:28.336Z"
+    "statut": "rejete",
+    "created_at": "2026-09-08T11:55:28.336Z",
+    "trie_le": "2026-09-10"
   },
   {
     "id": "93f9f558-da48-41c2-a6aa-a74bc6a6a616",
@@ -6655,8 +6793,9 @@
     "score_fiabilite_motif": "rfi.fr — domaine absent de la table : score par défaut prudent, sous le seuil de source primaire",
     "domaine_source": "rfi.fr",
     "domaine_opaque": false,
-    "statut": "en_attente",
-    "created_at": "2026-09-08T11:55:28.336Z"
+    "statut": "rejete",
+    "created_at": "2026-09-08T11:55:28.336Z",
+    "trie_le": "2026-09-10"
   },
   {
     "id": "c6f24261-8ce0-4cef-bde0-2506202909a3",
@@ -6673,8 +6812,9 @@
     "score_fiabilite_motif": "rfi.fr — domaine absent de la table : score par défaut prudent, sous le seuil de source primaire",
     "domaine_source": "rfi.fr",
     "domaine_opaque": false,
-    "statut": "en_attente",
-    "created_at": "2026-09-08T11:55:28.337Z"
+    "statut": "rejete",
+    "created_at": "2026-09-08T11:55:28.337Z",
+    "trie_le": "2026-09-10"
   },
   {
     "id": "e02e03cc-452a-4ac6-ae23-e355fe226fc8",
@@ -6691,8 +6831,9 @@
     "score_fiabilite_motif": "fr.euronews.com — domaine absent de la table : score par défaut prudent, sous le seuil de source primaire",
     "domaine_source": "fr.euronews.com",
     "domaine_opaque": false,
-    "statut": "en_attente",
-    "created_at": "2026-09-08T11:55:28.963Z"
+    "statut": "rejete",
+    "created_at": "2026-09-08T11:55:28.963Z",
+    "trie_le": "2026-09-10"
   },
   {
     "id": "483b3689-8a58-4220-89b8-a192da24b11d",
@@ -6709,8 +6850,9 @@
     "score_fiabilite_motif": "fr.euronews.com — domaine absent de la table : score par défaut prudent, sous le seuil de source primaire",
     "domaine_source": "fr.euronews.com",
     "domaine_opaque": false,
-    "statut": "en_attente",
-    "created_at": "2026-09-08T11:55:28.963Z"
+    "statut": "rejete",
+    "created_at": "2026-09-08T11:55:28.963Z",
+    "trie_le": "2026-09-10"
   },
   {
     "id": "bc625bfe-84c6-45e4-b0b3-05c94b0ecde6",
@@ -6727,8 +6869,9 @@
     "score_fiabilite_motif": "fr.euronews.com — domaine absent de la table : score par défaut prudent, sous le seuil de source primaire",
     "domaine_source": "fr.euronews.com",
     "domaine_opaque": false,
-    "statut": "en_attente",
-    "created_at": "2026-09-08T11:55:28.964Z"
+    "statut": "rejete",
+    "created_at": "2026-09-08T11:55:28.964Z",
+    "trie_le": "2026-09-10"
   },
   {
     "id": "405cf0c9-df83-40da-add2-1660c0b55453",
@@ -6745,8 +6888,9 @@
     "score_fiabilite_motif": "fr.euronews.com — domaine absent de la table : score par défaut prudent, sous le seuil de source primaire",
     "domaine_source": "fr.euronews.com",
     "domaine_opaque": false,
-    "statut": "en_attente",
-    "created_at": "2026-09-08T11:55:28.964Z"
+    "statut": "rejete",
+    "created_at": "2026-09-08T11:55:28.964Z",
+    "trie_le": "2026-09-10"
   },
   {
     "id": "34855e60-9510-4eb6-ab44-8267187291c8",
@@ -6763,8 +6907,9 @@
     "score_fiabilite_motif": "fr.euronews.com — domaine absent de la table : score par défaut prudent, sous le seuil de source primaire",
     "domaine_source": "fr.euronews.com",
     "domaine_opaque": false,
-    "statut": "en_attente",
-    "created_at": "2026-09-08T11:55:28.964Z"
+    "statut": "rejete",
+    "created_at": "2026-09-08T11:55:28.964Z",
+    "trie_le": "2026-09-10"
   },
   {
     "id": "1087bff5-bdae-4c42-bc22-5a1712e3b616",
@@ -6781,8 +6926,9 @@
     "score_fiabilite_motif": "theguardian.com — presse généraliste ou spécialisée",
     "domaine_source": "theguardian.com",
     "domaine_opaque": false,
-    "statut": "en_attente",
-    "created_at": "2026-09-08T11:55:29.614Z"
+    "statut": "rejete",
+    "created_at": "2026-09-08T11:55:29.614Z",
+    "trie_le": "2026-09-10"
   },
   {
     "id": "bc658747-cdb5-4106-835f-f2f43e35e8c4",
@@ -6799,8 +6945,9 @@
     "score_fiabilite_motif": "theguardian.com — presse généraliste ou spécialisée",
     "domaine_source": "theguardian.com",
     "domaine_opaque": false,
-    "statut": "en_attente",
-    "created_at": "2026-09-08T11:55:29.614Z"
+    "statut": "rejete",
+    "created_at": "2026-09-08T11:55:29.614Z",
+    "trie_le": "2026-09-10"
   },
   {
     "id": "aa825241-9746-45c5-b1cf-b58f08b60738",
@@ -6817,8 +6964,9 @@
     "score_fiabilite_motif": "theguardian.com — presse généraliste ou spécialisée",
     "domaine_source": "theguardian.com",
     "domaine_opaque": false,
-    "statut": "en_attente",
-    "created_at": "2026-09-08T11:55:29.614Z"
+    "statut": "rejete",
+    "created_at": "2026-09-08T11:55:29.614Z",
+    "trie_le": "2026-09-10"
   },
   {
     "id": "e1e1c4eb-b504-4440-b6a4-acd4b94814b8",
@@ -6863,8 +7011,8 @@
   {
     "id": "2e34531d-2235-4110-ab7f-c0a08f0b60d3",
     "source_id": "openai-news",
-    "cible_type": "nouvelle_categorie",
-    "cible_id": null,
+    "cible_type": "fiche_ia",
+    "cible_id": "codex-famille-gpt",
     "contenu_propose": {
       "titre": "How GPT-5.6 Sol helps run quantum computing experiments",
       "link": "https://openai.com/index/codex-quantum-computing-experiments",
@@ -6875,8 +7023,9 @@
     "score_fiabilite_motif": "openai.com — éditeur ou laboratoire s'exprimant sur son propre produit",
     "domaine_source": "openai.com",
     "domaine_opaque": false,
-    "statut": "en_attente",
-    "created_at": "2026-09-09T12:04:54.199Z"
+    "statut": "a_traiter_fiche_existante",
+    "created_at": "2026-09-09T12:04:54.199Z",
+    "trie_le": "2026-09-10"
   },
   {
     "id": "f4aa20ff-af1d-4f55-bd1d-7870aa70ebab",
@@ -6893,14 +7042,15 @@
     "score_fiabilite_motif": "openai.com — éditeur ou laboratoire s'exprimant sur son propre produit",
     "domaine_source": "openai.com",
     "domaine_opaque": false,
-    "statut": "en_attente",
-    "created_at": "2026-09-09T12:04:54.199Z"
+    "statut": "rejete",
+    "created_at": "2026-09-09T12:04:54.199Z",
+    "trie_le": "2026-09-10"
   },
   {
     "id": "265bff70-88a2-4262-8270-38dadd0f71c5",
     "source_id": "openai-news",
-    "cible_type": "nouvelle_categorie",
-    "cible_id": null,
+    "cible_type": "fiche_ia",
+    "cible_id": "stable-diffusion-midjourney-dall-e",
     "contenu_propose": {
       "titre": "Introducing ChatGPT Images 2.5",
       "link": "https://openai.com/index/introducing-chatgpt-images-2-5",
@@ -6911,14 +7061,15 @@
     "score_fiabilite_motif": "openai.com — éditeur ou laboratoire s'exprimant sur son propre produit",
     "domaine_source": "openai.com",
     "domaine_opaque": false,
-    "statut": "en_attente",
-    "created_at": "2026-09-09T12:04:54.199Z"
+    "statut": "a_traiter_fiche_existante",
+    "created_at": "2026-09-09T12:04:54.199Z",
+    "trie_le": "2026-09-10"
   },
   {
     "id": "42843d02-868a-4198-a25c-9339cc24d42b",
     "source_id": "openai-news",
-    "cible_type": "nouvelle_categorie",
-    "cible_id": null,
+    "cible_type": "fiche_ia",
+    "cible_id": "codex-famille-gpt",
     "contenu_propose": {
       "titre": "On the Navier–Stokes Millennium Prize Problem",
       "link": "https://openai.com/index/navier-stokes-solution",
@@ -6929,8 +7080,9 @@
     "score_fiabilite_motif": "openai.com — éditeur ou laboratoire s'exprimant sur son propre produit",
     "domaine_source": "openai.com",
     "domaine_opaque": false,
-    "statut": "en_attente",
-    "created_at": "2026-09-09T12:04:54.199Z"
+    "statut": "a_traiter_fiche_existante",
+    "created_at": "2026-09-09T12:04:54.199Z",
+    "trie_le": "2026-09-10"
   },
   {
     "id": "c78f2f01-0192-442e-a082-3f73e7e5f4d5",
@@ -6947,8 +7099,9 @@
     "score_fiabilite_motif": "openai.com — éditeur ou laboratoire s'exprimant sur son propre produit",
     "domaine_source": "openai.com",
     "domaine_opaque": false,
-    "statut": "en_attente",
-    "created_at": "2026-09-09T12:04:54.199Z"
+    "statut": "rejete",
+    "created_at": "2026-09-09T12:04:54.199Z",
+    "trie_le": "2026-09-10"
   },
   {
     "id": "2e9cc48e-08b2-4bbd-b994-4c0d33852886",
@@ -6965,8 +7118,9 @@
     "score_fiabilite_motif": "nature.com — édition scientifique à comité de lecture",
     "domaine_source": "nature.com",
     "domaine_opaque": false,
-    "statut": "en_attente",
-    "created_at": "2026-09-09T12:04:54.428Z"
+    "statut": "rejete",
+    "created_at": "2026-09-09T12:04:54.428Z",
+    "trie_le": "2026-09-10"
   },
   {
     "id": "e8f3e386-9550-4254-8a59-0ba3ac8d4d03",
@@ -6983,14 +7137,15 @@
     "score_fiabilite_motif": "nature.com — édition scientifique à comité de lecture",
     "domaine_source": "nature.com",
     "domaine_opaque": false,
-    "statut": "en_attente",
-    "created_at": "2026-09-09T12:04:54.428Z"
+    "statut": "rejete",
+    "created_at": "2026-09-09T12:04:54.428Z",
+    "trie_le": "2026-09-10"
   },
   {
     "id": "da040c6f-59d3-4d59-839d-5d63ebfe33fd",
     "source_id": "nature-news",
-    "cible_type": "nouvelle_categorie",
-    "cible_id": null,
+    "cible_type": "fiche_humaine",
+    "cible_id": "joseph-stiglitz",
     "contenu_propose": {
       "titre": "Why we need an International Panel on Inequality",
       "link": "https://www.nature.com/articles/d41586-026-02806-9",
@@ -7001,8 +7156,9 @@
     "score_fiabilite_motif": "nature.com — édition scientifique à comité de lecture",
     "domaine_source": "nature.com",
     "domaine_opaque": false,
-    "statut": "en_attente",
-    "created_at": "2026-09-09T12:04:54.428Z"
+    "statut": "a_traiter_fiche_existante",
+    "created_at": "2026-09-09T12:04:54.428Z",
+    "trie_le": "2026-09-10"
   },
   {
     "id": "4ab56403-fca9-4461-ae4f-748cd28d60f0",
@@ -7019,8 +7175,9 @@
     "score_fiabilite_motif": "nature.com — édition scientifique à comité de lecture",
     "domaine_source": "nature.com",
     "domaine_opaque": false,
-    "statut": "en_attente",
-    "created_at": "2026-09-09T12:04:54.428Z"
+    "statut": "a_traiter_nouvelle_fiche",
+    "created_at": "2026-09-09T12:04:54.428Z",
+    "trie_le": "2026-09-10"
   },
   {
     "id": "545242f6-7166-404e-bf21-e999da3cf591",
@@ -7037,8 +7194,9 @@
     "score_fiabilite_motif": "nature.com — édition scientifique à comité de lecture",
     "domaine_source": "nature.com",
     "domaine_opaque": false,
-    "statut": "en_attente",
-    "created_at": "2026-09-09T12:04:54.428Z"
+    "statut": "rejete",
+    "created_at": "2026-09-09T12:04:54.428Z",
+    "trie_le": "2026-09-10"
   },
   {
     "id": "ad716b52-e72a-496d-8cf5-918eb2f3b78b",
@@ -7155,8 +7313,9 @@
     "score_fiabilite_motif": "ecb.europa.eu — préprint, actes de conférence ou institution publique",
     "domaine_source": "ecb.europa.eu",
     "domaine_opaque": false,
-    "statut": "en_attente",
-    "created_at": "2026-09-09T12:04:56.079Z"
+    "statut": "rejete",
+    "created_at": "2026-09-09T12:04:56.079Z",
+    "trie_le": "2026-09-10"
   },
   {
     "id": "0dd7cbc4-7973-49d7-9140-6c5c422af854",
@@ -7173,8 +7332,9 @@
     "score_fiabilite_motif": "ec.europa.eu — préprint, actes de conférence ou institution publique",
     "domaine_source": "ec.europa.eu",
     "domaine_opaque": false,
-    "statut": "en_attente",
-    "created_at": "2026-09-09T12:04:57.517Z"
+    "statut": "rejete",
+    "created_at": "2026-09-09T12:04:57.517Z",
+    "trie_le": "2026-09-10"
   },
   {
     "id": "6157bc26-d4a9-4beb-b650-b462182f2c54",
@@ -7191,8 +7351,9 @@
     "score_fiabilite_motif": "ec.europa.eu — préprint, actes de conférence ou institution publique",
     "domaine_source": "ec.europa.eu",
     "domaine_opaque": false,
-    "statut": "en_attente",
-    "created_at": "2026-09-09T12:04:57.517Z"
+    "statut": "rejete",
+    "created_at": "2026-09-09T12:04:57.517Z",
+    "trie_le": "2026-09-10"
   },
   {
     "id": "a98b2642-a909-41c1-ae9e-11cc79e5d93d",
@@ -7209,8 +7370,9 @@
     "score_fiabilite_motif": "ec.europa.eu — préprint, actes de conférence ou institution publique",
     "domaine_source": "ec.europa.eu",
     "domaine_opaque": false,
-    "statut": "en_attente",
-    "created_at": "2026-09-09T12:04:57.517Z"
+    "statut": "rejete",
+    "created_at": "2026-09-09T12:04:57.517Z",
+    "trie_le": "2026-09-10"
   },
   {
     "id": "0d7c11df-690c-408c-9ad3-c4dcc6be0472",
@@ -7227,8 +7389,9 @@
     "score_fiabilite_motif": "ec.europa.eu — préprint, actes de conférence ou institution publique",
     "domaine_source": "ec.europa.eu",
     "domaine_opaque": false,
-    "statut": "en_attente",
-    "created_at": "2026-09-09T12:04:57.517Z"
+    "statut": "rejete",
+    "created_at": "2026-09-09T12:04:57.517Z",
+    "trie_le": "2026-09-10"
   },
   {
     "id": "8304060a-bf62-4fc2-ba25-b454b734ad1e",
@@ -7245,8 +7408,9 @@
     "score_fiabilite_motif": "ec.europa.eu — préprint, actes de conférence ou institution publique",
     "domaine_source": "ec.europa.eu",
     "domaine_opaque": false,
-    "statut": "en_attente",
-    "created_at": "2026-09-09T12:04:57.517Z"
+    "statut": "rejete",
+    "created_at": "2026-09-09T12:04:57.517Z",
+    "trie_le": "2026-09-10"
   },
   {
     "id": "aee90b42-fc99-4705-95dd-9a7a671659c3",
@@ -7263,8 +7427,9 @@
     "score_fiabilite_motif": "bis.org — domaine absent de la table : score par défaut prudent, sous le seuil de source primaire",
     "domaine_source": "bis.org",
     "domaine_opaque": false,
-    "statut": "en_attente",
-    "created_at": "2026-09-09T12:04:58.402Z"
+    "statut": "rejete",
+    "created_at": "2026-09-09T12:04:58.402Z",
+    "trie_le": "2026-09-10"
   },
   {
     "id": "bbd810cb-00fc-42c8-89ae-2b5f509a2616",
@@ -7281,8 +7446,9 @@
     "score_fiabilite_motif": "strategie-plan.gouv.fr — domaine absent de la table : score par défaut prudent, sous le seuil de source primaire",
     "domaine_source": "strategie-plan.gouv.fr",
     "domaine_opaque": false,
-    "statut": "en_attente",
-    "created_at": "2026-09-09T12:05:01.676Z"
+    "statut": "rejete",
+    "created_at": "2026-09-09T12:05:01.676Z",
+    "trie_le": "2026-09-10"
   },
   {
     "id": "0d97f147-5703-4619-abe7-6fee8bdc347c",
@@ -7299,8 +7465,9 @@
     "score_fiabilite_motif": "ft.com — presse généraliste ou spécialisée",
     "domaine_source": "ft.com",
     "domaine_opaque": false,
-    "statut": "en_attente",
-    "created_at": "2026-09-09T12:05:02.100Z"
+    "statut": "rejete",
+    "created_at": "2026-09-09T12:05:02.100Z",
+    "trie_le": "2026-09-10"
   },
   {
     "id": "b9f6fcb9-39f3-47a5-8f8e-88ed9d841d27",
@@ -7317,8 +7484,9 @@
     "score_fiabilite_motif": "ft.com — presse généraliste ou spécialisée",
     "domaine_source": "ft.com",
     "domaine_opaque": false,
-    "statut": "en_attente",
-    "created_at": "2026-09-09T12:05:02.100Z"
+    "statut": "rejete",
+    "created_at": "2026-09-09T12:05:02.100Z",
+    "trie_le": "2026-09-10"
   },
   {
     "id": "a5992c5d-10c2-40b9-b354-9ea8d5088495",
@@ -7335,8 +7503,9 @@
     "score_fiabilite_motif": "ft.com — presse généraliste ou spécialisée",
     "domaine_source": "ft.com",
     "domaine_opaque": false,
-    "statut": "en_attente",
-    "created_at": "2026-09-09T12:05:02.100Z"
+    "statut": "rejete",
+    "created_at": "2026-09-09T12:05:02.100Z",
+    "trie_le": "2026-09-10"
   },
   {
     "id": "aec96033-7998-486d-a73f-8b88220a5e4f",
@@ -7353,8 +7522,9 @@
     "score_fiabilite_motif": "ft.com — presse généraliste ou spécialisée",
     "domaine_source": "ft.com",
     "domaine_opaque": false,
-    "statut": "en_attente",
-    "created_at": "2026-09-09T12:05:02.100Z"
+    "statut": "rejete",
+    "created_at": "2026-09-09T12:05:02.100Z",
+    "trie_le": "2026-09-10"
   },
   {
     "id": "f922a63e-e69b-45c3-b935-6e8773ba9beb",
@@ -7371,8 +7541,9 @@
     "score_fiabilite_motif": "ft.com — presse généraliste ou spécialisée",
     "domaine_source": "ft.com",
     "domaine_opaque": false,
-    "statut": "en_attente",
-    "created_at": "2026-09-09T12:05:02.100Z"
+    "statut": "rejete",
+    "created_at": "2026-09-09T12:05:02.100Z",
+    "trie_le": "2026-09-10"
   },
   {
     "id": "25da1a59-a7eb-4723-bfb7-0485f254d254",
@@ -7389,8 +7560,9 @@
     "score_fiabilite_motif": "wsj.com — presse généraliste ou spécialisée",
     "domaine_source": "wsj.com",
     "domaine_opaque": false,
-    "statut": "en_attente",
-    "created_at": "2026-09-09T12:05:02.258Z"
+    "statut": "rejete",
+    "created_at": "2026-09-09T12:05:02.258Z",
+    "trie_le": "2026-09-10"
   },
   {
     "id": "01ae4301-212a-472e-9b66-9dd40e87a860",
@@ -7407,8 +7579,9 @@
     "score_fiabilite_motif": "wsj.com — presse généraliste ou spécialisée",
     "domaine_source": "wsj.com",
     "domaine_opaque": false,
-    "statut": "en_attente",
-    "created_at": "2026-09-09T12:05:02.258Z"
+    "statut": "rejete",
+    "created_at": "2026-09-09T12:05:02.258Z",
+    "trie_le": "2026-09-10"
   },
   {
     "id": "a27c09d3-550e-4328-ae95-9e1ceadf6f58",
@@ -7425,8 +7598,9 @@
     "score_fiabilite_motif": "wsj.com — presse généraliste ou spécialisée",
     "domaine_source": "wsj.com",
     "domaine_opaque": false,
-    "statut": "en_attente",
-    "created_at": "2026-09-09T12:05:02.258Z"
+    "statut": "rejete",
+    "created_at": "2026-09-09T12:05:02.258Z",
+    "trie_le": "2026-09-10"
   },
   {
     "id": "5e5e3443-aab1-43f0-b415-a965f541801a",
@@ -7443,8 +7617,9 @@
     "score_fiabilite_motif": "wsj.com — presse généraliste ou spécialisée",
     "domaine_source": "wsj.com",
     "domaine_opaque": false,
-    "statut": "en_attente",
-    "created_at": "2026-09-09T12:05:02.258Z"
+    "statut": "rejete",
+    "created_at": "2026-09-09T12:05:02.258Z",
+    "trie_le": "2026-09-10"
   },
   {
     "id": "cabe6d4b-ad8f-4837-a679-eaa1118ec7c7",
@@ -7461,8 +7636,9 @@
     "score_fiabilite_motif": "wsj.com — presse généraliste ou spécialisée",
     "domaine_source": "wsj.com",
     "domaine_opaque": false,
-    "statut": "en_attente",
-    "created_at": "2026-09-09T12:05:02.258Z"
+    "statut": "rejete",
+    "created_at": "2026-09-09T12:05:02.258Z",
+    "trie_le": "2026-09-10"
   },
   {
     "id": "8e9d5e9f-5e5c-4007-88bb-a7f5340c44f5",
@@ -7479,8 +7655,9 @@
     "score_fiabilite_motif": "lemonde.fr — presse généraliste ou spécialisée",
     "domaine_source": "lemonde.fr",
     "domaine_opaque": false,
-    "statut": "en_attente",
-    "created_at": "2026-09-09T12:05:02.571Z"
+    "statut": "rejete",
+    "created_at": "2026-09-09T12:05:02.571Z",
+    "trie_le": "2026-09-10"
   },
   {
     "id": "d992c10c-c8b1-4201-8eed-9011e65bf2e8",
@@ -7497,8 +7674,9 @@
     "score_fiabilite_motif": "lemonde.fr — presse généraliste ou spécialisée",
     "domaine_source": "lemonde.fr",
     "domaine_opaque": false,
-    "statut": "en_attente",
-    "created_at": "2026-09-09T12:05:02.571Z"
+    "statut": "rejete",
+    "created_at": "2026-09-09T12:05:02.571Z",
+    "trie_le": "2026-09-10"
   },
   {
     "id": "21af00a7-0623-466f-91d6-41a52567ead1",
@@ -7515,8 +7693,9 @@
     "score_fiabilite_motif": "lemonde.fr — presse généraliste ou spécialisée",
     "domaine_source": "lemonde.fr",
     "domaine_opaque": false,
-    "statut": "en_attente",
-    "created_at": "2026-09-09T12:05:02.571Z"
+    "statut": "rejete",
+    "created_at": "2026-09-09T12:05:02.571Z",
+    "trie_le": "2026-09-10"
   },
   {
     "id": "b8552a67-d54c-452e-907b-61e75a0d6f1c",
@@ -7533,8 +7712,9 @@
     "score_fiabilite_motif": "lemonde.fr — presse généraliste ou spécialisée",
     "domaine_source": "lemonde.fr",
     "domaine_opaque": false,
-    "statut": "en_attente",
-    "created_at": "2026-09-09T12:05:02.571Z"
+    "statut": "rejete",
+    "created_at": "2026-09-09T12:05:02.571Z",
+    "trie_le": "2026-09-10"
   },
   {
     "id": "07981ebf-f7f9-4c79-996d-d06191af8201",
@@ -7551,8 +7731,9 @@
     "score_fiabilite_motif": "lemonde.fr — presse généraliste ou spécialisée",
     "domaine_source": "lemonde.fr",
     "domaine_opaque": false,
-    "statut": "en_attente",
-    "created_at": "2026-09-09T12:05:02.571Z"
+    "statut": "rejete",
+    "created_at": "2026-09-09T12:05:02.571Z",
+    "trie_le": "2026-09-10"
   },
   {
     "id": "61971fef-236d-4407-8e0c-aa9f7e9c8048",
@@ -7569,8 +7750,9 @@
     "score_fiabilite_motif": "latribune.fr — domaine absent de la table : score par défaut prudent, sous le seuil de source primaire",
     "domaine_source": "latribune.fr",
     "domaine_opaque": false,
-    "statut": "en_attente",
-    "created_at": "2026-09-09T12:05:02.784Z"
+    "statut": "rejete",
+    "created_at": "2026-09-09T12:05:02.784Z",
+    "trie_le": "2026-09-10"
   },
   {
     "id": "b3323221-3b6f-46fc-9c16-ac7a167a7e08",
@@ -7587,8 +7769,9 @@
     "score_fiabilite_motif": "latribune.fr — domaine absent de la table : score par défaut prudent, sous le seuil de source primaire",
     "domaine_source": "latribune.fr",
     "domaine_opaque": false,
-    "statut": "en_attente",
-    "created_at": "2026-09-09T12:05:02.784Z"
+    "statut": "rejete",
+    "created_at": "2026-09-09T12:05:02.784Z",
+    "trie_le": "2026-09-10"
   },
   {
     "id": "1ab9d669-15ec-43e8-b4c3-fb85a5399258",
@@ -7605,8 +7788,9 @@
     "score_fiabilite_motif": "air-cosmos.latribune.fr — domaine absent de la table : score par défaut prudent, sous le seuil de source primaire",
     "domaine_source": "air-cosmos.latribune.fr",
     "domaine_opaque": false,
-    "statut": "en_attente",
-    "created_at": "2026-09-09T12:05:02.784Z"
+    "statut": "rejete",
+    "created_at": "2026-09-09T12:05:02.784Z",
+    "trie_le": "2026-09-10"
   },
   {
     "id": "c5e8614d-2ee3-476c-90b5-ec6ecf6b1028",
@@ -7623,8 +7807,9 @@
     "score_fiabilite_motif": "latribune.fr — domaine absent de la table : score par défaut prudent, sous le seuil de source primaire",
     "domaine_source": "latribune.fr",
     "domaine_opaque": false,
-    "statut": "en_attente",
-    "created_at": "2026-09-09T12:05:02.784Z"
+    "statut": "rejete",
+    "created_at": "2026-09-09T12:05:02.784Z",
+    "trie_le": "2026-09-10"
   },
   {
     "id": "2a647141-9b60-4c81-a3a7-0443de66c671",
@@ -7641,8 +7826,9 @@
     "score_fiabilite_motif": "latribune.fr — domaine absent de la table : score par défaut prudent, sous le seuil de source primaire",
     "domaine_source": "latribune.fr",
     "domaine_opaque": false,
-    "statut": "en_attente",
-    "created_at": "2026-09-09T12:05:02.784Z"
+    "statut": "rejete",
+    "created_at": "2026-09-09T12:05:02.784Z",
+    "trie_le": "2026-09-10"
   },
   {
     "id": "a7884568-6cac-4726-a7f3-d5eeee3f0869",
@@ -7659,8 +7845,9 @@
     "score_fiabilite_motif": "rfi.fr — domaine absent de la table : score par défaut prudent, sous le seuil de source primaire",
     "domaine_source": "rfi.fr",
     "domaine_opaque": false,
-    "statut": "en_attente",
-    "created_at": "2026-09-09T12:05:03.214Z"
+    "statut": "rejete",
+    "created_at": "2026-09-09T12:05:03.214Z",
+    "trie_le": "2026-09-10"
   },
   {
     "id": "3eed3de4-a976-4c26-916a-2b2cc44fb5f1",
@@ -7677,8 +7864,9 @@
     "score_fiabilite_motif": "rfi.fr — domaine absent de la table : score par défaut prudent, sous le seuil de source primaire",
     "domaine_source": "rfi.fr",
     "domaine_opaque": false,
-    "statut": "en_attente",
-    "created_at": "2026-09-09T12:05:03.214Z"
+    "statut": "rejete",
+    "created_at": "2026-09-09T12:05:03.214Z",
+    "trie_le": "2026-09-10"
   },
   {
     "id": "16d0c8b1-bdad-49b7-aeba-6e5e8ffac10e",
@@ -7695,8 +7883,9 @@
     "score_fiabilite_motif": "fr.euronews.com — domaine absent de la table : score par défaut prudent, sous le seuil de source primaire",
     "domaine_source": "fr.euronews.com",
     "domaine_opaque": false,
-    "statut": "en_attente",
-    "created_at": "2026-09-09T12:05:03.653Z"
+    "statut": "rejete",
+    "created_at": "2026-09-09T12:05:03.653Z",
+    "trie_le": "2026-09-10"
   },
   {
     "id": "1ecb3fad-6c6b-41aa-88c9-9c427f9ac2d2",
@@ -7713,8 +7902,9 @@
     "score_fiabilite_motif": "fr.euronews.com — domaine absent de la table : score par défaut prudent, sous le seuil de source primaire",
     "domaine_source": "fr.euronews.com",
     "domaine_opaque": false,
-    "statut": "en_attente",
-    "created_at": "2026-09-09T12:05:03.653Z"
+    "statut": "rejete",
+    "created_at": "2026-09-09T12:05:03.653Z",
+    "trie_le": "2026-09-10"
   },
   {
     "id": "3181ac90-2ce9-439f-b2f7-0e1b0497eaa9",
@@ -7731,8 +7921,9 @@
     "score_fiabilite_motif": "fr.euronews.com — domaine absent de la table : score par défaut prudent, sous le seuil de source primaire",
     "domaine_source": "fr.euronews.com",
     "domaine_opaque": false,
-    "statut": "en_attente",
-    "created_at": "2026-09-09T12:05:03.653Z"
+    "statut": "rejete",
+    "created_at": "2026-09-09T12:05:03.653Z",
+    "trie_le": "2026-09-10"
   },
   {
     "id": "28ab023e-d144-480a-8e57-bc84e1d7b81d",
@@ -7749,8 +7940,9 @@
     "score_fiabilite_motif": "fr.euronews.com — domaine absent de la table : score par défaut prudent, sous le seuil de source primaire",
     "domaine_source": "fr.euronews.com",
     "domaine_opaque": false,
-    "statut": "en_attente",
-    "created_at": "2026-09-09T12:05:03.653Z"
+    "statut": "rejete",
+    "created_at": "2026-09-09T12:05:03.653Z",
+    "trie_le": "2026-09-10"
   },
   {
     "id": "0a75a7ee-92c4-4a96-a526-bc38d2c34b01",
@@ -7767,8 +7959,9 @@
     "score_fiabilite_motif": "dw.com — domaine absent de la table : score par défaut prudent, sous le seuil de source primaire",
     "domaine_source": "dw.com",
     "domaine_opaque": false,
-    "statut": "en_attente",
-    "created_at": "2026-09-09T12:05:04.756Z"
+    "statut": "rejete",
+    "created_at": "2026-09-09T12:05:04.756Z",
+    "trie_le": "2026-09-10"
   },
   {
     "id": "c28e7bf0-7e3d-4b1c-a87e-e87bb81ff4ee",
@@ -7785,8 +7978,9 @@
     "score_fiabilite_motif": "theguardian.com — presse généraliste ou spécialisée",
     "domaine_source": "theguardian.com",
     "domaine_opaque": false,
-    "statut": "en_attente",
-    "created_at": "2026-09-09T12:05:05.340Z"
+    "statut": "rejete",
+    "created_at": "2026-09-09T12:05:05.340Z",
+    "trie_le": "2026-09-10"
   },
   {
     "id": "039701d5-225a-45f8-a260-a0db2edcf982",
@@ -7803,8 +7997,9 @@
     "score_fiabilite_motif": "theguardian.com — presse généraliste ou spécialisée",
     "domaine_source": "theguardian.com",
     "domaine_opaque": false,
-    "statut": "en_attente",
-    "created_at": "2026-09-09T12:05:05.340Z"
+    "statut": "rejete",
+    "created_at": "2026-09-09T12:05:05.340Z",
+    "trie_le": "2026-09-10"
   },
   {
     "id": "7a07661c-52b7-4c4a-81e0-c6b5763df8b8",
@@ -7821,8 +8016,9 @@
     "score_fiabilite_motif": "theguardian.com — presse généraliste ou spécialisée",
     "domaine_source": "theguardian.com",
     "domaine_opaque": false,
-    "statut": "en_attente",
-    "created_at": "2026-09-09T12:05:05.340Z"
+    "statut": "rejete",
+    "created_at": "2026-09-09T12:05:05.340Z",
+    "trie_le": "2026-09-10"
   },
   {
     "id": "d82b873e-609a-4010-af25-ade97bbe27a0",
@@ -7839,7 +8035,8 @@
     "score_fiabilite_motif": "theguardian.com — presse généraliste ou spécialisée",
     "domaine_source": "theguardian.com",
     "domaine_opaque": false,
-    "statut": "en_attente",
-    "created_at": "2026-09-09T12:05:05.340Z"
+    "statut": "rejete",
+    "created_at": "2026-09-09T12:05:05.340Z",
+    "trie_le": "2026-09-10"
   }
 ]

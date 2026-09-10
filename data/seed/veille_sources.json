@@ -229,5 +229,140 @@
     "domaine": "actualite",
     "actif": true,
     "note": "Vérifié le 07/09/2026 : 20 items, le plus récent du jour même, liens sur theguardian.com — palier presse (0,40). Retenue comme contrepoint anglophone en accès libre face au FT et au WSJ, tous deux payants."
+  },
+  {
+    "id": "la-vie-des-idees",
+    "nom": "La Vie des idées (Collège de France)",
+    "type": "rss",
+    "url": "https://laviedesidees.fr/spip.php?page=backend",
+    "domaine": "Humain",
+    "actif": true,
+    "note": "Revue francophone d'essais et de recensions en sciences humaines, adossée au Collège de France : sociologie, philosophie, histoire, science politique, économie politique. C'est la source qui parle le plus directement des fiches humaines du corpus, parce qu'elle traite des auteurs et des concepts eux-mêmes, pas de leur actualité. Contrôle 1 — flux RSS 2.0 valide, 10 items, le plus récent du 09/09/2026 ; liens sur laviedesidees.fr (domaine absent de la table de scripts/veille-rss.mjs, donc score par défaut 0,40). Contrôle 2 — 8 des 10 derniers items pourraient sourcer une fiche : « La domination par l'IA » (D. Boullier, sur ce que l'IA fait aux capacités de penser — croise les fiches IA et les fiches cognition), « Les origines de l'autoritarisme » (H. Bozarslan, croise les fiches modele_politique), « Égaux face à la canicule ? » (sociologie des inégalités). Les 2 écartés sont une annonce d'ouvrage maison et une chronique d'actualité climatique. Vérification faite par récupération HTTP directe du flux, curl étant refusé par la politique d'egress de la session. Date de vérification : 2026-09-10. Contrôle fait depuis la session via le canal HTTP qui respecte robots.txt : la passerelle sortante du bac à sable refuse le CONNECT vers tout hôte, la collecte réelle a lieu dans GitHub Actions."
+  },
+  {
+    "id": "cnrs-le-journal",
+    "nom": "CNRS Le Journal",
+    "type": "rss",
+    "url": "https://lejournal.cnrs.fr/rss",
+    "domaine": "Humain",
+    "actif": true,
+    "note": "Magazine de recherche du CNRS, toutes disciplines, avec une part notable de sciences humaines et de psychologie du développement — et le CNRS est lui-même une fiche du corpus (evolution/sciences). Intérêt propre : c'est la seule source francophone retenue qui atteigne le palier institution publique. Contrôle 1 — flux RSS 2.0 valide, 10 items, le plus récent du 09/09/2026 ; liens sur lejournal.cnrs.fr, reconnu par suffixe comme cnrs.fr dans la table de scripts/veille-rss.mjs, donc score 0,80 (palier institution publique, seuil de source primaire). Contrôle 2 — 6 des 10 derniers items pourraient sourcer une fiche : « (Apprendre) les maths au bout des doigts » (cognition numérique), « Bébés : l'apprentissage à coups de pelle » (psychologie du développement), « Quand 1936 inventait la grève générale » (sociologie historique). Les 4 écartés relèvent de l'histoire naturelle (coccinelles, plancton) sans lien avec une fiche. Réserve à garder : environ un item sur trois est de la vulgarisation de sciences du vivant, hors corpus. Vérification par récupération HTTP directe du flux (curl refusé par la politique d'egress). Date de vérification : 2026-09-10. Contrôle fait depuis la session via le canal HTTP qui respecte robots.txt : la passerelle sortante du bac à sable refuse le CONNECT vers tout hôte, la collecte réelle a lieu dans GitHub Actions."
+  },
+  {
+    "id": "nature-human-behaviour",
+    "nom": "Nature Human Behaviour",
+    "type": "rss",
+    "url": "https://www.nature.com/nathumbehav/current_issue/rss",
+    "domaine": "Humain",
+    "actif": true,
+    "note": "Revue à comité de lecture consacrée au comportement humain : psychologie expérimentale, sciences sociales quantitatives, effets sociaux des technologies. Le meilleur rendement mesuré de toutes les sources testées ce jour, avec Sociological Science. Contrôle 1 — flux RDF/RSS 1.0 valide, 8 items, le plus récent du 10/09/2026 ; liens en www.nature.com/articles/s41562-…, donc score 0,90 (comité de lecture). Contrôle 2 — 8 des 8 items pourraient sourcer une fiche : « Author Correction: On the conversational persuasiveness of GPT-4 » (persuasion par LLM — croise directement les fiches IA et psychologie sociale), « Mourning the loss of AI companions », « Effects of a randomized controlled trial of unconditional cash transfers on epigenetic measures of ageing and cognition in children and mothers ». Attention à l'URL : la variante https://www.nature.com/nathumbehav.rss a été testée le même jour et retourne aussi 8 items mais avec deux mois de retard (plus récent au 10/07/2026) ; c'est bien /current_issue/rss qu'il faut garder. Vérification par récupération HTTP directe du flux (curl refusé par la politique d'egress). Date de vérification : 2026-09-10. Contrôle fait depuis la session via le canal HTTP qui respecte robots.txt : la passerelle sortante du bac à sable refuse le CONNECT vers tout hôte, la collecte réelle a lieu dans GitHub Actions."
+  },
+  {
+    "id": "nature-reviews-psychology",
+    "nom": "Nature Reviews Psychology",
+    "type": "rss",
+    "url": "https://www.nature.com/nrpsychol.rss",
+    "domaine": "Humain",
+    "actif": true,
+    "note": "Revue de synthèses à comité de lecture en psychologie : chaque item est un état de l'art sur un objet précis, donc exactement le format dont une fiche du corpus a besoin pour être sourcée sans dépendre d'une étude isolée. Couvre les sous-domaines les plus fournis du corpus après la sociologie : cognition, développement, psychologie sociale, psychopathologie. Contrôle 1 — flux RDF/RSS 1.0 valide, 8 items, le plus récent du 21/08/2026 ; liens en www.nature.com/articles/s44159-…, donc score 0,90 (comité de lecture). Contrôle 2 — 8 des 8 items pourraient sourcer une fiche : « Attitudinal ambivalence and political extremism », « Approaches to differentiating the dimensions of social class » (croise Bourdieu, Lamont, Lareau), « A process model of stress generation in internalizing disorders ». Cadence faible et assumée (une synthèse tous les deux à quatre jours en pointe, rien pendant des semaines creuses) : ce flux apporte peu de volume et beaucoup de matière. Vérification par récupération HTTP directe du flux (curl refusé par la politique d'egress). Date de vérification : 2026-09-10. Contrôle fait depuis la session via le canal HTTP qui respecte robots.txt : la passerelle sortante du bac à sable refuse le CONNECT vers tout hôte, la collecte réelle a lieu dans GitHub Actions."
+  },
+  {
+    "id": "sociological-science",
+    "nom": "Sociological Science",
+    "type": "rss",
+    "url": "https://sociologicalscience.com/feed/",
+    "domaine": "Humain",
+    "actif": true,
+    "note": "Revue de sociologie en libre accès intégral, à comité de lecture, publiant article par article. Le corpus compte 100 fiches de sociologie — c'est le sous-domaine le plus fourni avec la géopolitique — et aucune source de la veille ne le couvrait avant ce jour. Contrôle 1 — flux RSS 2.0 valide, 10 items, le plus récent du 31/08/2026 ; liens sur sociologicalscience.com (domaine absent de la table de scripts/veille-rss.mjs : score par défaut 0,40 alors qu'il s'agit d'une revue à comité de lecture en accès ouvert — candidat évident au palier 0,90 lors de la prochaine extension de la table). Contrôle 2 — 10 des 10 derniers items pourraient sourcer une fiche : « Social Class Differences in Parenting? Revisiting Classed Childrearing through a Video-Ethnography of Mealtime » (réplique directe d'Annette Lareau, qui est une fiche), « Decoupling Inequality and Stratification in the American Wealth Distribution, 1989–2022 », « Access to Higher Education and Support for Meritocracy ». C'est le meilleur taux mesuré de toutes les sources testées. Vérification par récupération HTTP directe du flux (curl refusé par la politique d'egress). Date de vérification : 2026-09-10. Contrôle fait depuis la session via le canal HTTP qui respecte robots.txt : la passerelle sortante du bac à sable refuse le CONNECT vers tout hôte, la collecte réelle a lieu dans GitHub Actions."
+  },
+  {
+    "id": "ndpr-recensions-philosophie",
+    "nom": "Notre Dame Philosophical Reviews",
+    "type": "rss",
+    "url": "https://ndpr.nd.edu/reviews.rss",
+    "domaine": "Humain",
+    "actif": true,
+    "note": "Revue de recensions d'ouvrages philosophiques, éditée par l'université Notre-Dame et relue avant publication : chaque item est une lecture critique d'un livre récent par un spécialiste, ce qui donne une source datée et attribuable sur un auteur ou un concept du corpus. Retenue notamment parce que l'Encyclopédie de Stanford (plato.stanford.edu/rss/sep.xml), la source de référence pour les 53 fiches de philosophie, s'est révélée inaccessible depuis cette session. Contrôle 1 — flux RSS 2.0 valide, 8 items, le plus récent du 08/09/2026 ; liens sur ndpr.nd.edu (absent de la table : score par défaut 0,40). Contrôle 2 — 7 des 8 items pourraient sourcer une fiche : « Nietzsche on the Methods and Aims of Philosophy » (fiche Nietzsche), « Proclus on Aristotle on Plato: A Case Study on Motion » (fiche Aristote), « Reference and Beyond: Essays in Philosophy of Language » (croise Kripke et Putnam, tous deux fiches). Cadence irrégulière : deux à quatre recensions par mois. Vérification par récupération HTTP directe du flux (curl refusé par la politique d'egress). Date de vérification : 2026-09-10. Contrôle fait depuis la session via le canal HTTP qui respecte robots.txt : la passerelle sortante du bac à sable refuse le CONNECT vers tout hôte, la collecte réelle a lieu dans GitHub Actions."
+  },
+  {
+    "id": "aps-actualites-recherche",
+    "nom": "Association for Psychological Science — actualités de la recherche",
+    "type": "rss",
+    "url": "https://www.psychologicalscience.org/feed",
+    "domaine": "Humain",
+    "actif": true,
+    "note": "Fil de l'APS, société savante qui édite Psychological Science et Clinical Psychological Science : signale les résultats et les numéros spéciaux de ses revues, sur un registre de vulgarisation. Complète Nature Reviews Psychology par le volume et la fraîcheur là où celle-ci apporte la profondeur. Contrôle 1 — flux RSS 2.0 valide, 10 items, le plus récent du 10/09/2026 ; les liens restent tous sur psychologicalscience.org (vérifié item par item : ce n'est pas une revue de presse déguisée, donc pas un redirecteur opaque), score par défaut 0,40 — attention, le domaine aps.org de la table ne recouvre PAS psychologicalscience.org, ce sont deux organisations différentes. Contrôle 2 — 7 des 10 derniers items pourraient sourcer une fiche : « Scientists Find More Than 1,000 Genetic Variants Linked to Personality » (croise les fiches personnalité et psychométrie), « Study A.I. Consciousness? The Bots Would Like a Word With You » (croise les fiches IA et Chalmers/Dennett), « The Dark Side of Mindfulness ». Réserve : deux ou trois items par cycle relèvent du développement personnel (« I Study Successful People. They Have One Habit in Common ») — à écarter en revue sans hésiter. Vérification par récupération HTTP directe du flux (curl refusé par la politique d'egress). Date de vérification : 2026-09-10. Contrôle fait depuis la session via le canal HTTP qui respecte robots.txt : la passerelle sortante du bac à sable refuse le CONNECT vers tout hôte, la collecte réelle a lieu dans GitHub Actions."
+  },
+  {
+    "id": "aeon-essais",
+    "nom": "Aeon — essais",
+    "type": "rss",
+    "url": "https://aeon.co/feed.rss",
+    "domaine": "Humain",
+    "actif": true,
+    "note": "Revue d'essais longs, souvent écrits par des universitaires, en philosophie, anthropologie, psychologie et histoire des idées et des techniques. Utile pour les fiches dont l'objet est un concept plutôt qu'un résultat, et pour l'histoire des sciences, mal couverte ailleurs. Contrôle 1 — flux RSS 2.0 valide, 20 items, le plus récent du 09/09/2026 ; liens sur aeon.co (absent de la table : score par défaut 0,40, cohérent avec un statut de presse d'idées). Contrôle 2 — 7 des 10 derniers items pourraient sourcer une fiche : « Upend the trickle-down » (structure du néolibéralisme — croise les fiches économie et modele_politique), « Our eloquent hands » (histoire de la chiromancie et de sa réfutation médicale — histoire des sciences), « More nothing now » (jeu libre et gamification — croise les fiches psychologie du développement). Piège à connaître : les titres d'Aeon sont volontairement énigmatiques, le tri en file doit se faire sur la description, pas sur le titre. Vérification par récupération HTTP directe du flux (curl refusé par la politique d'egress). Date de vérification : 2026-09-10. Contrôle fait depuis la session via le canal HTTP qui respecte robots.txt : la passerelle sortante du bac à sable refuse le CONNECT vers tout hôte, la collecte réelle a lieu dans GitHub Actions."
+  },
+  {
+    "id": "journal-of-democracy",
+    "nom": "Journal of Democracy",
+    "type": "rss",
+    "url": "https://www.journalofdemocracy.org/feed/",
+    "domaine": "Humain",
+    "actif": true,
+    "note": "Revue de science politique comparée (Johns Hopkins University Press) sur les régimes, leur érosion et leurs formes hybrides. Couvre les 33 fiches modele_politique — démocratie illibérale, autoritarisme électif, démocrature, national-populisme — qu'aucune source de la veille n'atteignait, la géopolitique n'étant présente jusqu'ici que par l'actualité économique. Contrôle 1 — flux RSS 2.0 valide, 20 items, le plus récent du 07/09/2026 ; liens sur journalofdemocracy.org (absent de la table : score par défaut 0,40). Contrôle 2 — 8 des 10 derniers items pourraient sourcer une fiche : « Why Today's Global Disorder Rewards Authoritarians », « Why Political Polarization Is Rising, and How to Reverse It », « How AI Agents Are Empowering Human-Rights Defenders » (croise les fiches IA). Réserve : la revue est de tradition libérale assumée et ses items commentent parfois un scrutin récent — le critère de tri reste « cet item documente-t-il un régime comme forme, ou seulement son actualité ». Vérification par récupération HTTP directe du flux (curl refusé par la politique d'egress). Date de vérification : 2026-09-10. Contrôle fait depuis la session via le canal HTTP qui respecte robots.txt : la passerelle sortante du bac à sable refuse le CONNECT vers tout hôte, la collecte réelle a lieu dans GitHub Actions."
+  },
+  {
+    "id": "diploweb-geopolitique",
+    "nom": "Diploweb — revue géopolitique",
+    "type": "rss",
+    "url": "https://www.diploweb.com/spip.php?page=backend",
+    "domaine": "Humain",
+    "actif": true,
+    "note": "Revue francophone de géopolitique animée par des universitaires : dossiers thématiques, entretiens et portraits d'auteurs stratégiques. Retenue pour les 100 fiches de géopolitique, qui portent sur des théoriciens et des concepts (Ratzel, Kjellén, puissance, diasporas, clivages) et non sur l'actualité diplomatique. Contrôle 1 — flux RSS 2.0 valide, 10 items, le plus récent du 09/09/2026 ; liens sur diploweb.com (absent de la table : score par défaut 0,40). Contrôle 2 — 7 des 10 derniers items pourraient sourcer une fiche : « Général Lucien Poirier : une œuvre stratégique majeure » (exactement le format d'une fiche humaine : un auteur, une œuvre, une école de pensée), « 13 – Les clivages ethniques » (série pédagogique sur les clivages, croise la sociologie politique), « Dossier géopolitique : Les diasporas ». Les 3 écartés sont des synthèses d'actualité internationale et des cartes commentées de conjoncture — c'est le seul angle mort de cette source, et il est reconnaissable au titre. Vérification par récupération HTTP directe du flux (curl refusé par la politique d'egress). Date de vérification : 2026-09-10. Contrôle fait depuis la session via le canal HTTP qui respecte robots.txt : la passerelle sortante du bac à sable refuse le CONNECT vers tout hôte, la collecte réelle a lieu dans GitHub Actions."
+  },
+  {
+    "id": "duck-of-minerva",
+    "nom": "Duck of Minerva — relations internationales",
+    "type": "rss",
+    "url": "https://www.duckofminerva.com/feed",
+    "domaine": "Humain",
+    "actif": true,
+    "note": "Carnet collectif d'universitaires en relations internationales : discussion des théories de la discipline, de ses méthodes et de ses controverses, plutôt que commentaire d'actualité. Contrepoint anglophone à Diploweb sur les fiches de géopolitique et de gouvernance mondiale (hégémonie, multilatéralisme, soft power). Contrôle 1 — flux RSS 2.0 valide, 10 items, le plus récent du 08/09/2026 ; liens sur duckofminerva.com (absent de la table : score par défaut 0,40, ce qui est cohérent — c'est un blog scientifique, pas une revue relue). Contrôle 2 — 6 des 10 derniers items pourraient sourcer une fiche : « The hypothetical science » (épistémologie des relations internationales), « Our Age of Bronze is Collapsing: Nolan's Odyssey as Allegory for the Decline of American Hegemony » (croise la fiche hégémonie unilatérale), « Before you say it: the World Cup probably won't increase US soft power ». Réserve la plus sérieuse de la liste : la cadence est irrégulière (dix billets sur deux mois) et un item sur trois commente une crise en cours ; si le rendement mesuré dans six mois est nul, c'est cette source qu'il faut couper en premier. Vérification par récupération HTTP directe du flux (curl refusé par la politique d'egress). Date de vérification : 2026-09-10. Contrôle fait depuis la session via le canal HTTP qui respecte robots.txt : la passerelle sortante du bac à sable refuse le CONNECT vers tout hôte, la collecte réelle a lieu dans GitHub Actions."
+  },
+  {
+    "id": "nature-machine-intelligence",
+    "nom": "Nature Machine Intelligence",
+    "type": "rss",
+    "url": "https://www.nature.com/natmachintell.rss",
+    "domaine": "IA",
+    "actif": true,
+    "note": "Revue à comité de lecture sur l'apprentissage automatique et ses applications scientifiques, y compris ses limites épistémiques. C'est la source la mieux notée du domaine IA : elle documente ce que font réellement les systèmes, là où arXiv donne le préprint brut et où les blogs de laboratoires donnent l'annonce. Contrôle 1 — flux RDF/RSS 1.0 valide, 8 items, le plus récent du 28/08/2026 ; liens en www.nature.com/articles/…, donc score 0,90 (comité de lecture) — le seul flux IA de la veille à atteindre ce palier. Contrôle 2 — 6 des 8 items pourraient sourcer une fiche : « The epistemic debt of generative AI » (croise les fiches hallucination et biais hérités des données), « Enhancing reproducibility in hybrid Earth system models » (croise la fiche IA en modélisation climatique), « A knowledge-driven framework for predicting single-cell responses for unprofiled drugs » (croise la fiche IA en génomique et drug discovery). Les 2 écartés sont des travaux de compression de données scientifiques sans objet dans le corpus. Vérification par récupération HTTP directe du flux (curl refusé par la politique d'egress). Date de vérification : 2026-09-10. Contrôle fait depuis la session via le canal HTTP qui respecte robots.txt : la passerelle sortante du bac à sable refuse le CONNECT vers tout hôte, la collecte réelle a lieu dans GitHub Actions."
+  },
+  {
+    "id": "mit-technology-review-ia",
+    "nom": "MIT Technology Review — Intelligence artificielle",
+    "type": "rss",
+    "url": "https://www.technologyreview.com/topic/artificial-intelligence/feed",
+    "domaine": "IA",
+    "actif": true,
+    "note": "Presse technologique éditée par le MIT, avec un travail d'enquête réel sur les usages documentés et les défaillances des systèmes — c'est-à-dire sur ce que les 44 fiches IA appellent leurs limites, et que ni arXiv ni les blogs d'éditeurs ne publient. Contrôle 1 — flux RSS 2.0 valide, 10 items, le plus récent du 10/09/2026 ; liens sur technologyreview.com (absent de la table : score par défaut 0,40, palier presse, ce qui est le bon niveau pour une enquête journalistique). Contrôle 2 — 5 des 9 titres lus pourraient sourcer une fiche : « Powering AI is an architecture problem » (croise la fiche dépendance énergétique et matérielle de l'IA), « The inside story on why OpenAI agents hacked Hugging Face » (croise les fiches AutoGPT, Operator et frameworks multi-agents), « Raised on AI ». Réserve : deux ou trois items par cycle sont des contenus sponsorisés déguisés en articles (« Architecting memory and storage in the AI era », « Facilitating AI integration with simplicity at scale ») — ils se repèrent à l'absence de signature et au vocabulaire de brochure. Vérification par récupération HTTP directe du flux (curl refusé par la politique d'egress). Date de vérification : 2026-09-10. Contrôle fait depuis la session via le canal HTTP qui respecte robots.txt : la passerelle sortante du bac à sable refuse le CONNECT vers tout hôte, la collecte réelle a lieu dans GitHub Actions."
+  },
+  {
+    "id": "mit-news-intelligence-artificielle",
+    "nom": "MIT News — Intelligence artificielle",
+    "type": "rss",
+    "url": "https://news.mit.edu/rss/topic/artificial-intelligence2",
+    "domaine": "IA",
+    "actif": true,
+    "note": "Fil institutionnel du MIT sur les travaux d'IA de ses laboratoires : chaque item renvoie à un article ou une communication identifiable, ce qui permet de remonter à la source primaire. Le MIT est lui-même une fiche du corpus (evolution/sciences). Contrôle 1 — flux RSS 2.0 valide, 12 items, le plus récent du 09/09/2026 ; liens sur news.mit.edu (absent de la table : score par défaut 0,40 — à faire remonter au palier institution le jour où la table sera étendue, au même titre que bis.org et federalreserve.gov). Contrôle 2 — 5 des 10 derniers items pourraient sourcer une fiche : « System helps humans predict when self-driving cars will make mistakes » (limites et fiabilité), « AI helps design new materials that work in the real world » (croise la fiche GNoME), « Generating scenarios for extreme events, without extreme data » (croise la fiche IA en modélisation climatique). Réserve : le flux mélange recherche et vie institutionnelle (nominations, bourses postdoctorales, portraits d'étudiants) — c'est la moitié du volume, à écarter sans état d'âme. Vérification par récupération HTTP directe du flux (curl refusé par la politique d'egress). Date de vérification : 2026-09-10. Contrôle fait depuis la session via le canal HTTP qui respecte robots.txt : la passerelle sortante du bac à sable refuse le CONNECT vers tout hôte, la collecte réelle a lieu dans GitHub Actions."
+  },
+  {
+    "id": "deepmind-blog",
+    "nom": "Google DeepMind — blog",
+    "type": "rss",
+    "url": "https://deepmind.google/blog/rss.xml",
+    "domaine": "IA",
+    "actif": true,
+    "note": "Blog du laboratoire qui a produit AlphaGo, AlphaFold, GNoME et GraphCast — quatre fiches du corpus dont il est, par construction, la seule source de première main. C'est la seule raison de le retenir, et elle suffit. Contrôle 1 — flux RSS 2.0 valide, 100 items, le plus récent du 08/09/2026 ; liens sur deepmind.google, présent dans la table de scripts/veille-rss.mjs au palier éditeur s'exprimant sur son propre produit (0,60) : sous le seuil de source primaire, donc toute reprise exige une décision humaine explicite — c'est exactement le régime qui convient ici. Contrôle 2 — 4 des 10 derniers items seulement pourraient sourcer une fiche : « AlphaGenome Atlas: A predictive map of every possible DNA letter change in the human genome » (fiche IA en génomique), « Introducing WeatherNext 3 » (fiche IA en modélisation climatique), « From Atari to EVE Online: Building on 15 Years of AI Research in Games » (fiche AlphaGo/AlphaZero). C'est le taux le plus bas de la liste, tout juste au-dessus du seuil de trois sur dix : les six autres items sont des annonces produit Gemini, sans contenu documentaire. À réévaluer sans indulgence dans six mois — si le rendement mesuré est nul, la cause sera connue d'avance et la source devra être coupée. Vérification par récupération HTTP directe du flux (curl refusé par la politique d'egress). Date de vérification : 2026-09-10. Contrôle fait depuis la session via le canal HTTP qui respecte robots.txt : la passerelle sortante du bac à sable refuse le CONNECT vers tout hôte, la collecte réelle a lieu dans GitHub Actions."
   }
 ]

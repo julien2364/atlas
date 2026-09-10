@@ -1,0 +1,266 @@
+{
+  "genere_le": "2026-09-10T22:49:28.994Z",
+  "genere_par": "scripts/appliquer-veille.mjs",
+  "rappel": "AUCUNE FICHE N'EST MODIFIÉE AUTOMATIQUEMENT. Ce fichier est une PROPOSITION : relire, passer `retenu: false` sur ce qui est écarté, corriger les textes marqués « a_reformuler », puis lancer scripts/appliquer-patchs.mjs. Le script propose, l'humain dispose.",
+  "statut_lu": "a_traiter_fiche_existante",
+  "limite": null,
+  "compteurs": {
+    "propositions_au_statut": 8,
+    "propositions_traitees": 8,
+    "patchs": 8,
+    "surs": 2,
+    "a_reformuler": 6,
+    "ignorees": 0
+  },
+  "ignorees": [],
+  "patchs": [
+    {
+      "id": "patch-998fa7b1-aca9-4316-b357-71cab1756208",
+      "proposition_id": "998fa7b1-aca9-4316-b357-71cab1756208",
+      "forme_source": "rss",
+      "cible_type": "fiche_ia",
+      "cible_id": "openai-operator-agents-de-navigation-web",
+      "cible_nom": "OpenAI Operator / agents de navigation web",
+      "fichier": "data/seed/fiches_ia.json",
+      "statut_fiche_actuel": "documente",
+      "derniere_verification_actuelle": "2026-09-07",
+      "score_fiabilite": 0.8,
+      "score_fiabilite_motif": "arxiv.org — préprint, actes de conférence ou institution publique",
+      "score_fiabilite_stocke": 0.8,
+      "retenu": true,
+      "a_verifier": [
+        "Vérifier que l'URL est bien vivante et que le titre correspond au document cité"
+      ],
+      "operation": "ajout_source",
+      "champ": "sources",
+      "texte_propose": null,
+      "texte_actuel": null,
+      "source": {
+        "titre": "Iris: Climbing to the Search Frontier",
+        "url": "https://arxiv.org/abs/2609.04304",
+        "date": "2026-09-07T04:00:00.000Z",
+        "type": "primaire"
+      },
+      "matiere_brute": "arXiv:2609.04304v1 Announce Type: new \nAbstract: We present Iris-mini and Iris-pro, two search agents trained at the 35B-A3B and 397B-A17B scales, together with the data pipeline and training recipe behind them. Tasks are reverse-constructed from the hyperlink structure of a web corpus: we author multi-hop chains over an entity graph distilled from a seed page and its out-links, rewrite every non-",
+      "justification": "Item de veille rattaché à la fiche openai-operator-agents-de-navigation-web lors du tri de la file.",
+      "nature": "sur"
+    },
+    {
+      "id": "patch-5bb1d5a9-11e9-4c93-8971-fa03391e831a",
+      "proposition_id": "5bb1d5a9-11e9-4c93-8971-fa03391e831a",
+      "forme_source": "rss",
+      "cible_type": "fiche_humaine",
+      "cible_id": "resilience-civilisationnelle-aux-risques-existentiels",
+      "cible_nom": "Résilience civilisationnelle aux risques existentiels",
+      "fichier": "data/seed/fiches_humaines/serenite.json",
+      "statut_fiche_actuel": "documente",
+      "derniere_verification_actuelle": "2026-09-05",
+      "score_fiabilite": 0.6,
+      "score_fiabilite_motif": "openai.com — éditeur ou laboratoire s'exprimant sur son propre produit",
+      "score_fiabilite_stocke": 0.6,
+      "retenu": true,
+      "a_verifier": [
+        "Score de fiabilité sous le seuil de source primaire (0.6 < 0.8) — openai.com — éditeur ou laboratoire s'exprimant sur son propre produit. Recouper avant de l'ajouter au référentiel."
+      ],
+      "operation": "ajout_source",
+      "champ": "sources",
+      "texte_propose": null,
+      "texte_actuel": null,
+      "source": {
+        "titre": "An Alien Mind",
+        "url": "https://openai.com/index/an-alien-mind",
+        "date": "2026-09-06T09:00:00.000Z",
+        "type": "secondaire"
+      },
+      "matiere_brute": "Jakub Pachocki reflects on increasingly capable AI and the challenge of keeping it aligned. He calls for stronger safeguards and international coordination.",
+      "justification": "Item de veille rattaché à la fiche resilience-civilisationnelle-aux-risques-existentiels lors du tri de la file.",
+      "nature": "a_reformuler"
+    },
+    {
+      "id": "patch-29a0492a-2a2d-4fe0-b5ba-ba215ff73eaa",
+      "proposition_id": "29a0492a-2a2d-4fe0-b5ba-ba215ff73eaa",
+      "forme_source": "rss",
+      "cible_type": "fiche_ia",
+      "cible_id": "codex-famille-gpt",
+      "cible_nom": "Codex / famille GPT",
+      "fichier": "data/seed/fiches_ia.json",
+      "statut_fiche_actuel": "verifie_recemment",
+      "derniere_verification_actuelle": "2026-09-07",
+      "score_fiabilite": 0.6,
+      "score_fiabilite_motif": "openai.com — éditeur ou laboratoire s'exprimant sur son propre produit",
+      "score_fiabilite_stocke": 0.6,
+      "retenu": true,
+      "a_verifier": [
+        "Score de fiabilité sous le seuil de source primaire (0.6 < 0.8) — openai.com — éditeur ou laboratoire s'exprimant sur son propre produit. Recouper avant de l'ajouter au référentiel."
+      ],
+      "operation": "ajout_source",
+      "champ": "sources",
+      "texte_propose": null,
+      "texte_actuel": null,
+      "source": {
+        "titre": "Research acceleration: The view inside OpenAI",
+        "url": "https://openai.com/index/research-acceleration-view-inside-openai",
+        "date": "2026-09-06T08:00:00.000Z",
+        "type": "secondaire"
+      },
+      "matiere_brute": "Inside OpenAI, coding agents are reshaping AI research. Explore early data on agent usage, experiment velocity, task complexity, and research acceleration.",
+      "justification": "Item de veille rattaché à la fiche codex-famille-gpt lors du tri de la file.",
+      "nature": "a_reformuler"
+    },
+    {
+      "id": "patch-7f634dfd-f206-461f-bf57-43b4803d3333",
+      "proposition_id": "7f634dfd-f206-461f-bf57-43b4803d3333",
+      "forme_source": "rss",
+      "cible_type": "fiche_ia",
+      "cible_id": "dependance-energetique-et-materielle-de-l-ia-limite-transversale",
+      "cible_nom": "Dépendance énergétique et matérielle de l'IA (limite transversale)",
+      "fichier": "data/seed/fiches_ia.json",
+      "statut_fiche_actuel": "documente",
+      "derniere_verification_actuelle": "2026-09-07",
+      "score_fiabilite": 0.4,
+      "score_fiabilite_motif": "fr.euronews.com — domaine absent de la table : score par défaut prudent, sous le seuil de source primaire",
+      "score_fiabilite_stocke": 0.4,
+      "retenu": true,
+      "a_verifier": [
+        "Score de fiabilité sous le seuil de source primaire (0.4 < 0.8) — fr.euronews.com — domaine absent de la table : score par défaut prudent, sous le seuil de source primaire. Recouper avant de l'ajouter au référentiel."
+      ],
+      "operation": "ajout_source",
+      "champ": "sources",
+      "texte_propose": null,
+      "texte_actuel": null,
+      "source": {
+        "titre": "Les géants de la tech peuvent-ils freiner la soif d'eau des centres de données d'IA ?",
+        "url": "http://fr.euronews.com/business/2026/09/07/les-geants-de-la-tech-peuvent-ils-freiner-la-soif-deau-des-centres-de-donnees-dia",
+        "date": "2026-09-07T11:28:42.000Z",
+        "type": "secondaire"
+      },
+      "matiere_brute": "États-Unis : la contestation contre les data centers gourmands en eau monte, les géants de la tech vantent des refroidissements moins gourmands en eau mais plus énergivores",
+      "justification": "Item de veille rattaché à la fiche dependance-energetique-et-materielle-de-l-ia-limite-transversale lors du tri de la file.",
+      "nature": "a_reformuler"
+    },
+    {
+      "id": "patch-2e34531d-2235-4110-ab7f-c0a08f0b60d3",
+      "proposition_id": "2e34531d-2235-4110-ab7f-c0a08f0b60d3",
+      "forme_source": "rss",
+      "cible_type": "fiche_ia",
+      "cible_id": "codex-famille-gpt",
+      "cible_nom": "Codex / famille GPT",
+      "fichier": "data/seed/fiches_ia.json",
+      "statut_fiche_actuel": "verifie_recemment",
+      "derniere_verification_actuelle": "2026-09-07",
+      "score_fiabilite": 0.6,
+      "score_fiabilite_motif": "openai.com — éditeur ou laboratoire s'exprimant sur son propre produit",
+      "score_fiabilite_stocke": 0.6,
+      "retenu": true,
+      "a_verifier": [
+        "Score de fiabilité sous le seuil de source primaire (0.6 < 0.8) — openai.com — éditeur ou laboratoire s'exprimant sur son propre produit. Recouper avant de l'ajouter au référentiel."
+      ],
+      "operation": "ajout_source",
+      "champ": "sources",
+      "texte_propose": null,
+      "texte_actuel": null,
+      "source": {
+        "titre": "How GPT-5.6 Sol helps run quantum computing experiments",
+        "url": "https://openai.com/index/codex-quantum-computing-experiments",
+        "date": "2026-09-08T17:00:00.000Z",
+        "type": "secondaire"
+      },
+      "matiere_brute": "See how an MIT researcher uses GPT-5.6 Sol with Codex to autonomously run quantum computing experiments, analyze results, and calibrate qubits.",
+      "justification": "Item de veille rattaché à la fiche codex-famille-gpt lors du tri de la file.",
+      "nature": "a_reformuler"
+    },
+    {
+      "id": "patch-265bff70-88a2-4262-8270-38dadd0f71c5",
+      "proposition_id": "265bff70-88a2-4262-8270-38dadd0f71c5",
+      "forme_source": "rss",
+      "cible_type": "fiche_ia",
+      "cible_id": "stable-diffusion-midjourney-dall-e",
+      "cible_nom": "Stable Diffusion/Midjourney/DALL-E",
+      "fichier": "data/seed/fiches_ia.json",
+      "statut_fiche_actuel": "documente",
+      "derniere_verification_actuelle": "2026-09-07",
+      "score_fiabilite": 0.6,
+      "score_fiabilite_motif": "openai.com — éditeur ou laboratoire s'exprimant sur son propre produit",
+      "score_fiabilite_stocke": 0.6,
+      "retenu": true,
+      "a_verifier": [
+        "Score de fiabilité sous le seuil de source primaire (0.6 < 0.8) — openai.com — éditeur ou laboratoire s'exprimant sur son propre produit. Recouper avant de l'ajouter au référentiel."
+      ],
+      "operation": "ajout_source",
+      "champ": "sources",
+      "texte_propose": null,
+      "texte_actuel": null,
+      "source": {
+        "titre": "Introducing ChatGPT Images 2.5",
+        "url": "https://openai.com/index/introducing-chatgpt-images-2-5",
+        "date": "2026-09-08T11:30:00.000Z",
+        "type": "secondaire"
+      },
+      "matiere_brute": "ChatGPT Images 2.5 helps turn your ideas, sketches, and reference photos into more personalized, polished images that better reflect your ideas.",
+      "justification": "Item de veille rattaché à la fiche stable-diffusion-midjourney-dall-e lors du tri de la file.",
+      "nature": "a_reformuler"
+    },
+    {
+      "id": "patch-42843d02-868a-4198-a25c-9339cc24d42b",
+      "proposition_id": "42843d02-868a-4198-a25c-9339cc24d42b",
+      "forme_source": "rss",
+      "cible_type": "fiche_ia",
+      "cible_id": "codex-famille-gpt",
+      "cible_nom": "Codex / famille GPT",
+      "fichier": "data/seed/fiches_ia.json",
+      "statut_fiche_actuel": "verifie_recemment",
+      "derniere_verification_actuelle": "2026-09-07",
+      "score_fiabilite": 0.6,
+      "score_fiabilite_motif": "openai.com — éditeur ou laboratoire s'exprimant sur son propre produit",
+      "score_fiabilite_stocke": 0.6,
+      "retenu": true,
+      "a_verifier": [
+        "Score de fiabilité sous le seuil de source primaire (0.6 < 0.8) — openai.com — éditeur ou laboratoire s'exprimant sur son propre produit. Recouper avant de l'ajouter au référentiel."
+      ],
+      "operation": "ajout_source",
+      "champ": "sources",
+      "texte_propose": null,
+      "texte_actuel": null,
+      "source": {
+        "titre": "On the Navier–Stokes Millennium Prize Problem",
+        "url": "https://openai.com/index/navier-stokes-solution",
+        "date": "2026-09-08T10:00:00.000Z",
+        "type": "secondaire"
+      },
+      "matiere_brute": "We’re sharing an AI-generated solution to the Navier–Stokes Millennium Prize Problem, including a writeup and a formal proof in Lean.",
+      "justification": "Item de veille rattaché à la fiche codex-famille-gpt lors du tri de la file.",
+      "nature": "a_reformuler"
+    },
+    {
+      "id": "patch-da040c6f-59d3-4d59-839d-5d63ebfe33fd",
+      "proposition_id": "da040c6f-59d3-4d59-839d-5d63ebfe33fd",
+      "forme_source": "rss",
+      "cible_type": "fiche_humaine",
+      "cible_id": "joseph-stiglitz",
+      "cible_nom": "Joseph Stiglitz",
+      "fichier": "data/seed/fiches_humaines/social_1.json",
+      "statut_fiche_actuel": "documente",
+      "derniere_verification_actuelle": "2026-09-05",
+      "score_fiabilite": 0.9,
+      "score_fiabilite_motif": "nature.com — édition scientifique à comité de lecture",
+      "score_fiabilite_stocke": 0.9,
+      "retenu": true,
+      "a_verifier": [
+        "Vérifier que l'URL est bien vivante et que le titre correspond au document cité"
+      ],
+      "operation": "ajout_source",
+      "champ": "sources",
+      "texte_propose": null,
+      "texte_actuel": null,
+      "source": {
+        "titre": "Why we need an International Panel on Inequality",
+        "url": "https://www.nature.com/articles/d41586-026-02806-9",
+        "date": "2026-09-09T00:00:00.000Z",
+        "type": "primaire"
+      },
+      "matiere_brute": null,
+      "justification": "Item de veille rattaché à la fiche joseph-stiglitz lors du tri de la file.",
+      "nature": "sur"
+    }
+  ]
+}

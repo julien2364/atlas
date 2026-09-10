@@ -190,10 +190,39 @@ répondent, ils publient, leurs URL sont bonnes. Mais le référentiel documente
 capacités humaines et des systèmes d'IA, pas la conjoncture. C'est la seconde propriété
 qui manquait au contrôle.
 
-### Pourquoi le cron ne produit aucun patch
+### Le tri de la file — `scripts/trier-veille.mjs`
 
-La boucle annoncée est collecte → patch → validation → publication. Elle s'arrête au
-deuxième maillon, et le job était vert et muet : « 0 au statut
+C'est le maillon qui manquait. Le ciblage — désigner la fiche que vise une proposition
+— n'est faisable ni par la collecte ni par un algorithme (voir plus bas), et il
+supposait jusqu'ici d'éditer un JSON de 425 entrées à la main. Personne ne l'a fait,
+d'où les 0 patch quotidiens.
+
+```bash
+node scripts/trier-veille.mjs --modele > /tmp/tri.txt   # gabarit : un id + un titre par ligne
+# remplir /tmp/tri.txt
+node scripts/trier-veille.mjs --decisions=/tmp/tri.txt              # simulation
+node scripts/trier-veille.mjs --decisions=/tmp/tri.txt --appliquer
+npm run veille-patchs                                              # les patchs sortent
+```
+
+Le format est volontairement pauvre — un identifiant, une espace, une décision — pour
+se remplir dans n'importe quel éditeur : `humaine:<id>`, `ia:<id>`, `gap:<id>`,
+`rejet`, ou `nouvelle` pour un sujet réel qu'aucune fiche ne couvre. Un préfixe de huit
+caractères suffit. Chaque cible est contrôlée contre le corpus avant toute écriture :
+un identifiant de fiche inexistant fait échouer le lot entier, pour qu'on n'applique
+jamais un demi-tri.
+
+**Premier passage, 10 septembre 2026 : 197 propositions triées — 187 rejets, 8
+rattachements, 2 sujets neufs.** Le taux de rejet n'est pas un échec du tri, c'est la
+mesure de ce que la file contenait. La chaîne a produit ses premiers patchs :
+`data/patchs/patchs-veille-2026-09-10.json`, 8 patchs dont 2 mécaniques directement
+applicables, les 6 autres marqués `a_reformuler` et refusés par
+`appliquer-patchs.mjs` tant qu'un humain ne les a pas réécrits.
+
+### Pourquoi le cron ne produisait aucun patch
+
+La boucle annoncée est collecte → ciblage → patch → validation → publication. Elle
+s'arrêtait au deuxième maillon, et le job était vert et muet : « 0 au statut
 `a_traiter_fiche_existante`, 0 traitée », artefact vide, code de sortie 0, tous les
 jours depuis la création du cron.
 
