@@ -27,6 +27,14 @@
 set -euo pipefail
 
 DEPOT="$(cd "$(dirname "${BASH_SOURCE[0]}")/.." && pwd)"
+
+# Le chemin du bundle est résolu AVANT le `cd` : un chemin relatif donné depuis un
+# autre répertoire pointerait sinon à côté.
+BUNDLE_ARG="${1:-}"
+if [ -n "$BUNDLE_ARG" ] && [ -f "$BUNDLE_ARG" ]; then
+  BUNDLE_ARG="$(cd "$(dirname "$BUNDLE_ARG")" && pwd)/$(basename "$BUNDLE_ARG")"
+fi
+
 cd "$DEPOT"
 
 vert()  { printf '\033[32m%s\033[0m\n' "$*"; }
@@ -37,14 +45,17 @@ echec() { rouge "✗ $*"; exit 1; }
 
 # ---------------------------------------------------------------- 0. le bundle
 
-BUNDLE="${1:-}"
+BUNDLE="$BUNDLE_ARG"
 
 if [ -z "$BUNDLE" ]; then
-  # Le plus récent, tri par date de modification. `ls -t` suffit et évite les
-  # incompatibilités entre le find de macOS et celui de GNU.
-  BUNDLE="$(ls -t "$HOME"/Downloads/atlas-*.bundle 2>/dev/null | head -1 || true)"
+  # Une livraison dépose deux bundles : `atlas-lots-*` (incrémental, léger) et
+  # `atlas-complet-*` (historique entier). On prend l'incrémental le plus récent en
+  # priorité — le choix ne doit pas dépendre de l'ordre de téléchargement — et on
+  # bascule sur l'autre s'il n'y en a pas.
+  BUNDLE="$(ls -t "$HOME"/Downloads/atlas-lots-*.bundle 2>/dev/null | head -1 || true)"
+  [ -n "$BUNDLE" ] || BUNDLE="$(ls -t "$HOME"/Downloads/atlas-*.bundle 2>/dev/null | head -1 || true)"
   [ -n "$BUNDLE" ] || echec "Aucun bundle trouvé dans ~/Downloads. Passe le chemin en argument."
-  gras "Bundle retenu (le plus récent de ~/Downloads) :"
+  gras "Bundle retenu :"
   echo "  $BUNDLE"
 fi
 
@@ -92,19 +103,51 @@ fi
 # ------------------------------------------------ 3. contrôler puis appliquer
 
 gras "→ Contrôle du bundle"
-# LC_ALL=C : le git de macOS est souvent en français, et on filtre la sortie plus bas.
-LC_ALL=C git bundle verify "$BUNDLE" >/tmp/atlas-bundle-verif.txt 2>&1 || {
-  cat /tmp/atlas-bundle-verif.txt
+VERIF="$(mktemp)"
+trap 'rm -f "$VERIF"' EXIT
+# LC_ALL=C : le git de macOS est souvent en français, et la sortie est filtrée plus bas.
+if LC_ALL=C git bundle verify "$BUNDLE" >"$VERIF" 2>&1; then
+  if grep -q "complete history" "$VERIF"; then
+    echo "  Historique complet — aucun commit prérequis."
+  else
+    echo "  Incrémental — les commits prérequis sont présents."
+  fi
+else
+  cat "$VERIF"
   echo
-  rouge "Le bundle réclame des commits que le dépôt n'a pas, ou il est corrompu."
-  echec "Si des commits prérequis manquent malgré le fetch ci-dessus, demande un bundle autonome (historique complet)."
-}
-grep -E "complete history|requires these" /tmp/atlas-bundle-verif.txt | sed 's/^/  /' || true
+  echec "Le bundle réclame des commits absents du dépôt, ou il est corrompu. Demande un bundle autonome (historique complet)."
+fi
 
 SOMMET_AVANT="$(git rev-parse HEAD)"
 
+# Le bundle est récupéré dans une réf locale plutôt qu'appliqué par `git pull`.
+# Raison : `git pull --ff-only` échoue dès que le sommet du bundle n'est plus un
+# descendant de HEAD, ce qui arrive à chaque fois qu'un cron pousse sur `main` entre
+# la fabrication du bundle et sa réception — c'est-à-dire presque tous les jours, la
+# veille tournant à 07h00 UTC. Le fetch préalable de l'étape 2 réglait la moitié
+# « commits prérequis manquants » du problème ; celle-ci règle l'autre moitié.
+# Un bundle autonome ne sauve pas de ce cas : historique complet n'est pas
+# fast-forward possible.
+git fetch "$BUNDLE" main:refs/atlas/lot --force --quiet
+
 gras "→ Application du bundle"
-git pull --ff-only "$BUNDLE" main --quiet
+if git merge-base --is-ancestor HEAD refs/atlas/lot; then
+  git merge --ff-only refs/atlas/lot --quiet
+else
+  echo "  Le bundle a été fabriqué avant le dernier passage d'un cron."
+  echo "  Rejeu de ses commits par-dessus l'état actuel."
+  BASE="$(git merge-base HEAD refs/atlas/lot)"
+  if ! git rebase --onto HEAD "$BASE" refs/atlas/lot --quiet; then
+    git rebase --abort 2>/dev/null || true
+    git checkout -q main
+    git update-ref -d refs/atlas/lot 2>/dev/null || true
+    echec "Rejeu impossible : conflit entre le bundle et ce que les crons ont poussé. Le dépôt est intact — demande un bundle refabriqué sur le sommet actuel."
+  fi
+  # Le rebase laisse HEAD détachée sur le résultat : on y amène `main`.
+  git branch -f main HEAD
+  git checkout -q main
+fi
+git update-ref -d refs/atlas/lot
 
 NOUVEAUX="$(git rev-list --count "$SOMMET_AVANT"..HEAD)"
 if [ "$NOUVEAUX" -eq 0 ]; then

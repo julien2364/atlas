@@ -11,9 +11,15 @@
 # 7 septembre a montré qu'il en faut deux :
 #
 #   • l'incrémental (`--not origin/main`) ne pèse que les nouveaux commits, mais il
-#     réclame que la copie de destination ait exactement le sommet distant connu ici ;
-#     les crons GitHub avancent `main` entre-temps, et le pull échoue ;
-#   • l'autonome embarque tout l'historique — plus lourd, mais il s'applique toujours.
+#     réclame que la copie de destination possède déjà le sommet distant connu ici ;
+#   • l'autonome embarque tout l'historique : il sert quand ces commits prérequis
+#     manquent, par exemple sur une copie restée longtemps en arrière.
+#
+# Attention : l'autonome ne dispense PAS du rejeu. Quand un cron a avancé `main`
+# entre la fabrication du bundle et sa réception, le sommet du bundle n'est plus un
+# descendant du sommet local, et aucun des deux bundles ne s'applique en
+# fast-forward. C'est `scripts/recevoir-et-pousser.sh` qui règle ce cas, en rejouant
+# les commits du bundle par-dessus l'état courant.
 #
 # Les deux atterrissent dans /mnt/user-data/outputs, d'où ils sont livrés dans la
 # conversation.

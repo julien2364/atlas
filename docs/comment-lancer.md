@@ -55,18 +55,28 @@ cd ~/Claude/atlas
 ./scripts/recevoir-et-pousser.sh
 ```
 
-Sans argument, le script prend le bundle `atlas-*.bundle` le plus récent de `~/Downloads`. Il refuse
-d'avancer sur un arbre sale, **récupère d'abord ce que les crons ont poussé**, applique le bundle en
-fast-forward, rejoue `npm run verifier`, puis pousse — ce qui déclenche Vercel.
+Sans argument, le script prend l'incrémental le plus récent de `~/Downloads` (`atlas-lots-*.bundle`),
+et à défaut le bundle autonome. Il refuse d'avancer sur un arbre sale, **récupère d'abord ce que les
+crons ont poussé**, applique le bundle, rejoue `npm run verifier`, puis pousse — ce qui déclenche Vercel.
 
-Cette récupération préalable est l'étape qui manquait le 7 septembre : les crons de ce dépôt committent
-directement sur `main`, donc le distant a presque toujours un ou deux commits d'avance sur la copie
-locale, et un bundle incrémental construit sur ce sommet est refusé — *« Le dépôt ne dispose pas des
-commits prérequis suivants »*. Si les historiques ont vraiment divergé, le script affiche les deux
-listes et s'arrête plutôt que de choisir à ta place.
+Les crons de ce dépôt committent directement sur `main`, ce qui produit deux pannes distinctes, et il
+faut les deux réponses :
 
-Côté session, le pendant est `npm run livrer` : il produit l'incrémental, un bundle autonome de repli
-(historique complet, applicable en toute circonstance) et l'archive complète du dépôt.
+1. **La copie locale est en retard.** Le bundle réclame un commit de cron que le Mac n'a pas :
+   *« Le dépôt ne dispose pas des commits prérequis suivants »*. C'est ce qui s'est produit le
+   7 septembre. Réponse : le `git fetch` préalable.
+2. **Le bundle est en retard.** Un cron a poussé *après* sa fabrication, donc son sommet n'est plus un
+   descendant du sommet local : *« Not possible to fast-forward »*. C'est le cas le plus fréquent,
+   la veille tournant tous les jours. Réponse : le script récupère le bundle dans une réf locale et
+   **rejoue ses commits par-dessus l'état courant**. En cas de conflit il abandonne proprement — dépôt
+   intact, arbre propre, aucun rebase en suspens — et demande un bundle refabriqué.
+
+Un bundle autonome ne sauve pas du second cas : historique complet ne veut pas dire fast-forward
+possible. Si les historiques ont vraiment divergé (des commits locaux à toi *et* des commits distants),
+le script affiche les deux listes et s'arrête plutôt que de choisir à ta place.
+
+Côté session, le pendant est `npm run livrer` : il produit l'incrémental, un bundle autonome — utile
+quand la copie de destination est restée longtemps en arrière — et l'archive complète du dépôt.
 
 Prochaine étape (à faire par Julien dans les réglages Vercel) : ajouter `atlas.dyonysos.fr` comme domaine
 personnalisé du projet, puis créer l'enregistrement DNS CNAME correspondant chez le fournisseur DNS de
@@ -176,7 +186,8 @@ npm run pretri-veille              # rapport seul, la file n'est pas touchée
 node scripts/pretrier-veille.mjs --appliquer
 ```
 
-Le rapport atterrit dans `docs/veille-pretri-<date>.md` avec les trente premières propositions à relire,
+Le rapport atterrit dans `docs/veille-pretri.md` — nom fixe, réécrit à chaque passage, l'historique
+étant dans git — avec les trente premières propositions à relire,
 lien compris. L'étape `--appliquer` tourne dans le cron quotidien, entre la collecte et la préparation
 des patchs, avec re-validation du corpus avant commit.
 

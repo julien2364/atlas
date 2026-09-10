@@ -88,6 +88,9 @@ const LABELS_STATUT: Record<string, string> = {
   a_traiter_nouvelle_fiche: "à traiter — nouvelle fiche",
   rejete: "rejetée",
   applique: "appliquée",
+  fiche_creee: "fiche créée",
+  ecarte_en_relecture: "écartée en relecture",
+  ecarte_automatique: "écartée au pré-tri",
 };
 
 const LABELS_CIBLE: Record<string, string> = {

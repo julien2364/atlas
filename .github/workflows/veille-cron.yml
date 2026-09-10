@@ -68,14 +68,18 @@ jobs:
       - name: Re-valider le corpus après pré-tri
         run: node scripts/valider-donnees.mjs
 
+      # On indexe puis on laisse `git diff --cached` décider : tester l'arbre de
+      # travail avant d'indexer ratait le cas du rapport, et un nom de rapport daté
+      # rendait la condition toujours vraie. Le rapport porte un nom fixe et n'est
+      # commité que si son contenu a changé.
       - name: Committer le pré-tri (s'il y a lieu)
         run: |
           git config user.name "atlas-veille-bot"
           git config user.email "veille-bot@users.noreply.github.com"
-          if git diff --quiet -- data/seed/veille_queue.json && [ -z "$(git status --porcelain docs/)" ]; then
-            echo "Rien à écarter aujourd'hui — file inchangée."
+          git add data/seed/veille_queue.json docs/veille-pretri.md
+          if git diff --cached --quiet; then
+            echo "Rien de neuf — aucun écartement et rapport inchangé."
           else
-            git add data/seed/veille_queue.json docs/
             git commit -m "chore(veille): pré-tri automatique de la file [skip ci]"
             git push
           fi

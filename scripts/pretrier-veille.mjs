@@ -67,9 +67,13 @@ if (veutAide) {
 }
 
 const aujourdhui = new Date().toISOString().slice(0, 10);
+// Nom FIXE, réécrit à chaque passage. Un nom daté déposerait un fichier neuf par
+// jour dans docs/ — 365 par an — et forcerait un commit quotidien du cron même les
+// jours sans rien à écarter, le fichier non suivi rendant la condition toujours
+// vraie. Le rapport est un état courant, pas un journal : l'historique est dans git.
 const sortie = argSortie
   ? argSortie.slice("--sortie=".length)
-  : path.join(RACINE, `docs/veille-pretri-${aujourdhui}.md`);
+  : path.join(RACINE, "docs/veille-pretri.md");
 
 // ─────────────────────────────────────────────────────────────── lecture
 
@@ -283,7 +287,10 @@ for (const [motif, n] of Object.entries(parMotif).sort((a, b) => b[1] - a[1])) {
   console.log(`  ${motif.padEnd(20)} ${n}`);
 }
 console.log(`À relire       : ${aRelire.length}`);
-console.log(`Rapport        : ${path.relative(RACINE, sortie)}`);
+const sortieAffichee = sortie.startsWith(RACINE + path.sep)
+  ? path.relative(RACINE, sortie)
+  : sortie;
+console.log(`Rapport        : ${sortieAffichee}`);
 console.log(
   veutAppliquer && aEcarter.length > 0
     ? "File mise à jour — les écartées passent en « ecarte_automatique »."
