@@ -39,6 +39,15 @@ import type { NiveauConfiance, Perspective } from "@/lib/types";
 import { fichesGap, fichesHumaines, fichesIA, getFicheGap, getFicheHumaine, getFicheIA, libelleAxeHumain, libelleAxeIA, LABELS_SUBSTITUABILITE } from "@/lib/corpus";
 import { dedupliquerSources, niveauDepuisStatut, resoudreFiche, sourcesDeFiche, type TypeFicheRag } from "@/lib/sources-corpus";
 import { libelleChamp } from "@/lib/passages-corpus.mjs";
+import {
+  cleFiche,
+  etatGraphe,
+  LIBELLE_ROLE,
+  PRIORITE_ROLE,
+  voisinsRaisonnes,
+  type RoleCroisement,
+  type Voisin,
+} from "@/lib/relations-corpus";
 
 /** Nombre maximal de perspectives composées. Au-delà, la page devient illisible. */
 const MAX_PERSPECTIVES = 5;
@@ -80,6 +89,8 @@ export interface ReponseExtractive {
   avertissements: string[];
   /** Vrai quand toutes les fiches retenues relèvent d'un même axe. */
   convergence: boolean;
+  /** Relations qui ont fait entrer chaque perspective, dans l'ordre d'affichage. */
+  croisements: { fiche: string; role: string; enonce: string; preuve: string }[];
 }
 
 /** Regroupement d'une fiche et de tous ses passages retrouvés. */
@@ -91,6 +102,12 @@ interface GroupeFiche {
   sous_domaine: string;
   similarite_max: number;
   passages: PassagePourExtraction[];
+  /** Rôle joué dans la réponse, par rapport à la fiche pivot. Posé par `choisirFiches`. */
+  role?: RoleCroisement;
+  /** Phrase décrivant la relation au pivot, et la phrase du corpus qui la porte. */
+  relation?: { enonce: string; preuve: string };
+  /** Vrai quand la fiche n'a PAS été retrouvée par la recherche : c'est le graphe qui l'a fait entrer. */
+  introduite?: boolean;
 }
 
 /**
@@ -198,23 +215,144 @@ function choisirFiches(groupes: GroupeFiche[]): GroupeFiche[] {
   const plancher = groupes[0].similarite_max * FRACTION_PLANCHER;
   const candidats = groupes.filter((g) => g.similarite_max >= plancher);
 
-  const retenus: GroupeFiche[] = [];
+  /* --- 1. La fiche pivot --------------------------------------------------- */
+  const pivot = candidats[0];
+  pivot.role = "pivot";
+
+  /* --- 2. Ce que le graphe dit de la fiche pivot --------------------------- */
+  // `voisinsRaisonnes` rend TOUTES les fiches liées au pivot par une relation
+  // documentée, qu'elles aient été retrouvées ou non par la recherche. C'est
+  // exactement ce qui manquait : la contradiction d'une thèse n'emploie pas
+  // forcément les mots de la question.
+  const voisins = new Map<string, Voisin>();
+  for (const voisin of voisinsRaisonnes(pivot.type, pivot.id)) {
+    const cle = cleFiche(voisin.cible.type, voisin.cible.id);
+    const deja = voisins.get(cle);
+    // Une même paire peut porter deux relations (contradiction ET source
+    // commune) : on garde la plus forte.
+    if (!deja || PRIORITE_ROLE[voisin.role] > PRIORITE_ROLE[deja.role]) voisins.set(cle, voisin);
+  }
+
+  /* --- 3. Rôle de chaque candidat retrouvé --------------------------------- */
+  for (const groupe of candidats) {
+    if (groupe === pivot) continue;
+    const voisin = voisins.get(cleFiche(groupe.type, groupe.id));
+    groupe.role = voisin ? voisin.role : "voisinage_lexical";
+    if (voisin) groupe.relation = { enonce: voisin.enonce, preuve: voisin.preuve };
+  }
+
+  /* --- 4. Sélection : la relation d'abord, la proximité ensuite ------------ */
+  const retenus: GroupeFiche[] = [pivot];
   const parFamille = new Map<string, number>();
   const famille = (g: GroupeFiche) => `${g.axe}/${g.sous_domaine}`;
+  parFamille.set(famille(pivot), 1);
 
-  for (const groupe of candidats) {
+  const restants = candidats
+    .filter((g) => g !== pivot)
+    .sort(
+      (a, b) =>
+        PRIORITE_ROLE[b.role ?? "voisinage_lexical"] - PRIORITE_ROLE[a.role ?? "voisinage_lexical"] ||
+        b.similarite_max - a.similarite_max
+    );
+
+  for (const groupe of restants) {
     if (retenus.length >= MAX_PERSPECTIVES) break;
+    // Une contradiction documentée n'est jamais écartée par le plafond de
+    // famille : le plafond existe pour éviter cinq fiches d'économie qui disent
+    // la même chose, pas pour écarter celle qui dit le contraire.
+    const exemptee = groupe.role === "contradiction";
     const deja = parFamille.get(famille(groupe)) ?? 0;
-    if (deja >= MAX_PAR_FAMILLE) continue;
+    if (!exemptee && deja >= MAX_PAR_FAMILLE) continue;
     parFamille.set(famille(groupe), deja + 1);
     retenus.push(groupe);
   }
-  for (const groupe of candidats) {
-    if (retenus.length >= MAX_PERSPECTIVES) break;
-    if (retenus.includes(groupe)) continue;
-    retenus.push(groupe);
+
+  /* --- 5. Aller chercher la contradiction absente des résultats ------------ */
+  // Si aucune fiche retrouvée ne contredit le pivot, on va chercher dans le
+  // graphe celle qui le fait. C'est le seul endroit où une fiche entre dans une
+  // réponse sans avoir été retrouvée par la recherche — et elle est signalée
+  // comme telle, avec la phrase du corpus qui fonde la relation.
+  const dejaRetenue = new Set(retenus.map((g) => cleFiche(g.type, g.id)));
+  const introduisibles = [...voisins.values()]
+    .filter((v) => !dejaRetenue.has(cleFiche(v.cible.type, v.cible.id)))
+    .filter((v) => v.role !== "meme_preuve")
+    .sort((a, b) => PRIORITE_ROLE[b.role] - PRIORITE_ROLE[a.role]);
+
+  // 5a. Les places prises par un voisinage de vocabulaire FAIBLE sont rendues :
+  // une fiche appariée sur un mot ne vaut pas une fiche liée par une relation.
+  const seuil = pivot.similarite_max * PLANCHER_VOISINAGE;
+  let introduites = 0;
+  for (let i = retenus.length - 1; i >= 1 && introduites < MAX_INTRODUITES; i -= 1) {
+    const occupant = retenus[i];
+    if (occupant.role !== "voisinage_lexical" || occupant.similarite_max >= seuil) continue;
+    const voisin = introduisibles.shift();
+    if (!voisin) break;
+    const groupe = grouperFicheSansPassage(voisin);
+    if (!groupe) continue;
+    retenus[i] = groupe;
+    dejaRetenue.add(cleFiche(groupe.type, groupe.id));
+    introduites += 1;
   }
-  return retenus.sort((a, b) => b.similarite_max - a.similarite_max);
+
+  // 5b. S'il reste des places vides, une relation vaut mieux que rien.
+  while (retenus.length < MAX_PERSPECTIVES && introduites < MAX_INTRODUITES) {
+    const voisin = introduisibles.shift();
+    if (!voisin) break;
+    const groupe = grouperFicheSansPassage(voisin);
+    if (!groupe) continue;
+    dejaRetenue.add(cleFiche(groupe.type, groupe.id));
+    retenus.push(groupe);
+    introduites += 1;
+  }
+
+  // Le pivot reste en tête ; le reste suit l'ordre de la relation, pas celui du
+  // score. Une contradiction affichée en cinquième position se lit comme une
+  // note de bas de page.
+  return retenus;
+}
+
+/**
+ * Nombre maximal de fiches qu'une relation peut faire entrer dans une réponse
+ * alors que la recherche ne les a pas retrouvées.
+ *
+ * Deux : au-delà, la réponse cesse de porter sur la question posée et devient
+ * une promenade dans le graphe.
+ */
+const MAX_INTRODUITES = 2;
+
+/**
+ * Fraction de la proximité du pivot en dessous de laquelle une fiche retenue au
+ * seul voisinage de vocabulaire cède sa place à une fiche liée par une relation.
+ *
+ * Mesuré sur « la démocratie libérale est-elle encore le meilleur régime » : les
+ * deux dernières places allaient à « Structure matricielle » et à une paire
+ * « Entreprise libérée × XGBoost », appariées sur « libérale » / « libérée ».
+ * Aucune des deux ne dit quoi que ce soit du régime politique. Un antécédent
+ * historique du pivot, lui, en dit quelque chose.
+ */
+const PLANCHER_VOISINAGE = 0.5;
+
+/**
+ * Construit un groupe pour une fiche que la recherche n'a PAS retrouvée, mais
+ * qu'une relation documentée fait entrer. Elle n'a donc aucun passage : sa
+ * perspective sera composée de ses seuls champs, et le dire est obligatoire.
+ */
+function grouperFicheSansPassage(voisin: Voisin): GroupeFiche | null {
+  const resolue = resoudreFiche(voisin.cible.type, voisin.cible.id);
+  if (!resolue) return null;
+  const { axe, sous_domaine } = axeDeFiche(voisin.cible.type, voisin.cible.id);
+  return {
+    type: voisin.cible.type,
+    id: voisin.cible.id,
+    nom: resolue.nom,
+    axe,
+    sous_domaine,
+    similarite_max: 0,
+    passages: [],
+    role: voisin.role,
+    relation: { enonce: voisin.enonce, preuve: voisin.preuve },
+    introduite: true,
+  };
 }
 
 /**
@@ -228,6 +366,13 @@ function choisirFiches(groupes: GroupeFiche[]): GroupeFiche[] {
  */
 function extraitsCites(groupe: GroupeFiche, dejaRepris: string[], maximum = 3): string {
   const exclus = new Set(dejaRepris);
+  if (groupe.passages.length === 0) {
+    return (
+      "La recherche n'a retrouvé aucun passage de cette fiche : elle n'emploie pas le vocabulaire de la " +
+      "question. Les champs affichés dans cette perspective sont donc ceux de la fiche, pris tels quels, " +
+      "et non des extraits sélectionnés par la question."
+    );
+  }
   const restants = groupe.passages.filter((p) => !exclus.has(p.champ)).slice(0, maximum);
   if (restants.length === 0) {
     const champs = groupe.passages.map((p) => `« ${libelleChamp(p.champ)} »`).join(", ");
@@ -239,14 +384,56 @@ function extraitsCites(groupe: GroupeFiche, dejaRepris: string[], maximum = 3): 
   return restants.map((p) => `[${libelleChamp(p.champ)}] ${sansEntete(p.texte)}`).join("\n\n");
 }
 
+/**
+ * Pourquoi cette fiche est là.
+ *
+ * Trois cas, et trois phrases différentes — parce que les trois situations ne
+ * se valent pas et que les confondre serait mentir :
+ *
+ *   1. la fiche PIVOT : retenue sur la seule proximité de vocabulaire. On le
+ *      dit, avec le chiffre ;
+ *   2. une fiche liée au pivot par une RELATION DOCUMENTÉE : on énonce la
+ *      relation et on cite la phrase du corpus qui la porte. C'est un
+ *      croisement raisonné : il tient sur un texte, pas sur un score ;
+ *   3. une fiche INTRODUITE par le graphe, que la recherche n'avait pas
+ *      retrouvée : même énoncé, plus l'avertissement qu'elle n'emploie pas les
+ *      mots de la question.
+ */
 function justification(groupe: GroupeFiche): string {
-  const champs = groupe.passages.map((p) => `« ${libelleChamp(p.champ)} » (${p.similarite.toFixed(2)})`);
   const contexte = [libelleAxe(groupe.type, groupe.axe), groupe.sous_domaine].filter(Boolean).join(", ");
+  const situation = contexte ? ` (${contexte})` : "";
+  const role = groupe.role ?? "voisinage_lexical";
+
+  if (role === "pivot") {
+    const champs = groupe.passages.map((p) => `« ${libelleChamp(p.champ)} » (${p.similarite.toFixed(2)})`);
+    return (
+      `Fiche pivot : « ${groupe.nom} »${situation} est la fiche que la recherche place en tête sur cette ` +
+      `question, ${champs.length === 1 ? "son champ" : "ses champs"} ${champs.join(", ")} ${champs.length === 1 ? "y ressortant" : "y ressortant"}. ` +
+      "La proximité entre parenthèses est un recouvrement de vocabulaire, pas un jugement de valeur : c'est le " +
+      "point de départ du croisement, pas sa conclusion. Les perspectives suivantes sont choisies par leur " +
+      "relation documentée à celle-ci."
+    );
+  }
+
+  if (groupe.relation) {
+    const preuve = groupe.relation.preuve
+      ? ` Phrase du corpus qui fonde la relation : « ${groupe.relation.preuve} »`
+      : "";
+    const origine = groupe.introduite
+      ? " Cette fiche n'a PAS été retrouvée par la recherche : elle n'emploie pas le vocabulaire de la question. " +
+        "C'est la relation ci-dessus qui la fait entrer — c'est précisément ce qu'un croisement lexical ne sait pas faire."
+      : ` Elle a par ailleurs été retrouvée par la recherche (proximité ${groupe.similarite_max.toFixed(2)}).`;
+    return (
+      `Croisement raisonné — ${LIBELLE_ROLE[role]} : ${groupe.relation.enonce}${preuve}${origine}`
+    );
+  }
+
+  const champs = groupe.passages.map((p) => `« ${libelleChamp(p.champ)} » (${p.similarite.toFixed(2)})`);
   return (
-    `Cette perspective n'est pas raisonnée : elle est composée des champs de la fiche « ${groupe.nom} »` +
-    `${contexte ? ` (${contexte})` : ""}, retenue parce que ${champs.length === 1 ? "son champ" : "ses champs"} ` +
-    `${champs.join(", ")} ${champs.length === 1 ? "ressort" : "ressortent"} sur cette question. ` +
-    "La proximité entre parenthèses est un recouvrement de vocabulaire, pas un jugement de pertinence."
+    `Aucune relation documentée entre « ${groupe.nom} »${situation} et la fiche pivot dans le référentiel. ` +
+    `Cette fiche est ici sur le seul voisinage de vocabulaire : ${champs.join(", ")}. ` +
+    "La proximité est un recouvrement de mots, pas un jugement de pertinence — à lire comme un rapprochement " +
+    "à vérifier, pas comme un point de vue qui répond à la question."
   );
 }
 
@@ -267,6 +454,15 @@ function confiance(groupe: GroupeFiche): NiveauConfiance {
   return base;
 }
 
+/**
+ * Premier extrait retrouvé, ou constat d'absence. Une fiche introduite par le
+ * graphe n'a aucun passage : lire `passages[0]` y planterait la réponse.
+ */
+function premierExtrait(groupe: GroupeFiche): string {
+  const premier = groupe.passages[0];
+  return premier ? sansEntete(premier.texte) : "Champ non renseigné dans la fiche.";
+}
+
 /** Compose la perspective d'une fiche humaine. */
 function perspectiveHumaine(groupe: GroupeFiche): Perspective | null {
   const fiche = getFicheHumaine(groupe.id);
@@ -276,7 +472,7 @@ function perspectiveHumaine(groupe: GroupeFiche): Perspective | null {
     modele: contexte ? `${fiche.nom} (${contexte})` : fiche.nom,
     hypotheses: texteOuVide(fiche.these_centrale) || "Thèse centrale non renseignée dans la fiche.",
     etat_actuel: extraitsCites(groupe, ["these_centrale", "apport", "limites_critiques"]),
-    reponse: texteOuVide(fiche.apport) || sansEntete(groupe.passages[0].texte),
+    reponse: texteOuVide(fiche.apport) || premierExtrait(groupe),
     justification: justification(groupe),
     limites: texteOuVide(fiche.limites_critiques) || "Limites critiques non renseignées dans la fiche.",
     sources: dedupliquerSources(sourcesDeFiche("humaine", fiche.id)).slice(0, MAX_SOURCES),
@@ -296,7 +492,7 @@ function perspectiveIA(groupe: GroupeFiche): Perspective | null {
         ? `Capacités que la fiche attribue à ce système : ${fiche.capacites_cles.join(" ; ")}.`
         : "Capacités clés non renseignées dans la fiche.",
     etat_actuel: extraitsCites(groupe, ["capacites_cles", "limites_connues"]),
-    reponse: sansEntete(groupe.passages[0].texte),
+    reponse: premierExtrait(groupe),
     justification: justification(groupe),
     limites: texteOuVide(fiche.limites_connues) || "Limites connues non renseignées dans la fiche.",
     sources: dedupliquerSources(sourcesDeFiche("ia", fiche.id)).slice(0, MAX_SOURCES),
@@ -314,7 +510,7 @@ function perspectiveGap(groupe: GroupeFiche): Perspective | null {
     modele: gap.sujet ? `${groupe.nom} — ${gap.sujet}` : groupe.nom,
     hypotheses: texteOuVide(gap.mecanisme) || "Mécanisme non renseigné dans la fiche de gap.",
     etat_actuel: extraitsCites(groupe, ["mecanisme", "apport_ia", "amelioration_possible", "mode_interaction"]),
-    reponse: texteOuVide(gap.apport_ia) || sansEntete(groupe.passages[0].texte),
+    reponse: texteOuVide(gap.apport_ia) || premierExtrait(groupe),
     justification: `${justification(groupe)} Substituabilité déclarée : ${substituabilite.toLowerCase()} ; confiance de la fiche : ${gap.confiance}.`,
     limites:
       `Ce que cette paire ne règle pas — amélioration possible relevée par la fiche : ` +
@@ -355,12 +551,44 @@ export function construireReponseExtractive(
   const axes = new Set(choisis.map((g) => g.axe));
   const convergence = perspectives.length > 1 && axes.size === 1;
 
+  const croisements = choisis.map((g) => ({
+    fiche: g.nom,
+    role: LIBELLE_ROLE[g.role ?? "voisinage_lexical"],
+    enonce:
+      g.relation?.enonce ??
+      (g.role === "pivot"
+        ? "Point de départ : la fiche que la recherche place en tête. Les suivantes sont choisies par leur relation à celle-ci."
+        : ""),
+    preuve: g.relation?.preuve ?? "",
+  }));
+  const nbRaisonnes = choisis.filter((g) => g.relation).length;
+  const nbIntroduites = choisis.filter((g) => g.introduite).length;
+  const graphe = etatGraphe();
+
   const avertissements: string[] = [
     "Réponse EXTRACTIVE : composée depuis les fiches du référentiel, sans modèle génératif. " +
       "Chaque phrase de fond est recopiée d'une fiche — rien n'y est reformulé, donc rien n'y est inventé. " +
-      "En contrepartie, elle n'argumente pas et ne répond pas directement à la question : elle expose ce que " +
-      "le corpus contient de plus proche.",
+      "En contrepartie, elle n'argumente pas et ne tranche pas : elle met en regard ce que le corpus contient.",
   ];
+
+  if (nbRaisonnes > 0) {
+    avertissements.push(
+      `Croisement raisonné : ${nbRaisonnes} des ${perspectives.length} perspectives sont retenues pour leur ` +
+        "RELATION DOCUMENTÉE à la fiche pivot — contradiction, appui explicite, autre discipline sur le même " +
+        "objet, antécédent historique — et non pour leur proximité de vocabulaire. Chaque relation est adossée " +
+        "à une phrase du corpus, citée dans la justification de la perspective." +
+        (nbIntroduites > 0
+          ? ` ${nbIntroduites} d'entre elles n'auraient PAS été trouvées par la recherche lexicale : ` +
+            "c'est le graphe de relations qui les a fait entrer."
+          : "")
+    );
+  } else if (graphe.present) {
+    avertissements.push(
+      "Aucune relation documentée n'a été trouvée entre la fiche pivot et les autres fiches retrouvées : " +
+        `les perspectives ci-dessous sont rapprochées par le vocabulaire seul. Le graphe compte ` +
+        `${graphe.nb_relations} relations sur le corpus — celle qui manque ici reste à établir.`
+    );
+  }
 
   if (convergence) {
     const axe = choisis[0] ? libelleAxe(choisis[0].type, choisis[0].axe) : "";
@@ -374,8 +602,14 @@ export function construireReponseExtractive(
 
   const nomsChoisis = choisis.map((g) => g.nom);
   const anglesMorts = [
-    `Ce mode assemble des champs de fiches ; il ne raisonne pas. Il ne compare pas les ${perspectives.length} ` +
-      "perspectives entre elles, ne tranche pas, et ne dit pas laquelle répond le mieux à la question posée.",
+    `Ce mode met en regard des fiches selon des relations écrites dans le corpus ; il ne TRANCHE pas. ` +
+      `Il ne dit pas laquelle des ${perspectives.length} perspectives répond le mieux à la question, ni qui a ` +
+      "raison dans les oppositions qu'il expose — il montre le débat et où le lire.",
+    graphe.present
+      ? `Le graphe de relations est incomplet par construction : ${graphe.nb_relations} relations tissées le ` +
+        `${graphe.genere_le}, détectées sur les seules mentions explicites d'une fiche par une autre. Deux ` +
+        "fiches qui s'opposent sans se nommer restent invisibles l'une à l'autre."
+      : "Le graphe de relations est absent : les perspectives ci-dessous ne sont rapprochées que par le vocabulaire.",
     `${groupes.length} fiche(s) ont été retrouvées, ${perspectives.length} ont été retenues ` +
       `(${nomsChoisis.join(" · ")}) : les autres sont visibles dans les extraits, sans perspective composée.`,
     "La recherche est lexicale : elle retrouve les fiches qui emploient les mots de la question, pas celles " +
@@ -392,5 +626,6 @@ export function construireReponseExtractive(
     angles_morts: anglesMorts,
     avertissements,
     convergence,
+    croisements,
   };
 }

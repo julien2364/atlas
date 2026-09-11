@@ -231,6 +231,11 @@ export interface ReponseQuestion {
   message?: string;
   /** Prompt prêt à copier (mode 2), joint aussi aux réponses extractives. */
   prompt_a_copier?: string;
+  /**
+   * Relation qui a fait entrer chaque perspective (mode extractif). Vide quand
+   * la réponse vient d'un modèle : c'est lui qui a choisi, pas le graphe.
+   */
+  croisements?: { fiche: string; role: string; enonce: string; preuve: string }[];
   diagnostic: DiagnosticReponse;
 }
 
@@ -1144,6 +1149,7 @@ export async function repondreAQuestion(question: string, options: OptionsRepons
       fiches_mobilisees: regrouperFiches(passages),
       avertissements,
       prompt_a_copier: promptACopier,
+      croisements: extractive.croisements,
       diagnostic: {
         ...diagnosticDeBase(),
         statut: "repondue",
@@ -1254,8 +1260,10 @@ export async function repondreAQuestion(question: string, options: OptionsRepons
       );
     }
     const reponse = repondreExtractif([
-      "Aucun fournisseur de génération n'est configuré : le moteur a répondu en mode extractif. " +
-        "C'est le comportement prévu, pas une panne.",
+      "Aucun fournisseur de rédaction n'est configuré : la réponse ci-dessous est composée directement " +
+        "depuis les fiches du référentiel, croisées par leurs relations documentées. Elle ne peut rien " +
+        "inventer, et n'argumente pas. Poser une clé d'API gratuite (voir .env.example §3) ajoute la " +
+        "rédaction par-dessus ce même corpus — les sources et les garde-fous restent les mêmes.",
     ]);
     ecrireCache(cle, reponse);
     return reponse;

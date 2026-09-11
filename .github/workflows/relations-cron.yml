@@ -1,0 +1,74 @@
+name: Relations — retisser le graphe de croisement
+
+# Le graphe de relations (data/relations-corpus.json) est de la donnée DÉRIVÉE :
+# il se recalcule entièrement depuis les fiches. Dès qu'une fiche est ajoutée ou
+# qu'un champ « limites critiques » est réécrit, il est périmé — et `npm run
+# verifier` refuse alors de passer, ce qui est voulu mais bloquant.
+#
+# Ce cron fait le travail à la place de l'humain : il retisse, et ne commite que
+# si le résultat a changé. Il ne touche à AUCUNE fiche — il ne fait que relire
+# le corpus.
+
+on:
+  schedule:
+    # Tous les jours à 04:10 UTC, après le cron de veille (03:30) et avant celui
+    # de qualité : si la veille a fait entrer quelque chose, le graphe suit.
+    - cron: "10 4 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: relations-cron
+  cancel-in-progress: false
+
+jobs:
+  tisser:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+          cache: npm
+
+      - name: Installer les dépendances
+        run: npm ci
+
+      - name: Retisser le graphe
+        run: node scripts/tisser-relations.mjs
+
+      - name: Vérifier que le graphe correspond bien au corpus
+        run: node scripts/tisser-relations.mjs --verifier
+
+      - name: Committer le graphe (s'il a changé)
+        run: |
+          git config user.name "atlas-relations-bot"
+          git config user.email "relations-bot@users.noreply.github.com"
+          git add data/relations-corpus.json
+          if git diff --cached --quiet; then
+            echo "Graphe inchangé — le corpus n'a pas bougé."
+          else
+            node -e "
+              const g = require('./data/relations-corpus.json');
+              const parType = Object.entries(g.compte_par_type).map(([t, n]) => t + ':' + n).join(' ');
+              console.log('RESUME=' + g.relations.length + ' relations (' + parType + ')');
+            " >> "$GITHUB_ENV"
+            git commit -m "chore(relations): graphe retissé — ${RESUME:-mise à jour} [skip ci]"
+            git push
+          fi
+
+      - name: Résumé du job
+        if: always()
+        run: |
+          {
+            echo "### Graphe de relations"
+            echo ""
+            node -e "
+              const g = require('./data/relations-corpus.json');
+              console.log('- **' + g.relations.length + '** relations sur **' + g.nb_fiches + '** fiches, tissées le ' + g.genere_le);
+              for (const [t, n] of Object.entries(g.compte_par_type)) console.log('  - ' + t + ' : ' + n);
+            "
+          } >> "$GITHUB_STEP_SUMMARY"

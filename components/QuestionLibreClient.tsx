@@ -75,6 +75,7 @@ interface ReponseQuestion {
   avertissements: string[];
   message?: string;
   prompt_a_copier?: string;
+  croisements?: { fiche: string; role: string; enonce: string; preuve: string }[];
   diagnostic: Diagnostic;
 }
 
@@ -265,7 +266,7 @@ export default function QuestionLibreClient({ effectifs }: { effectifs: Effectif
             : "Index vectoriel absent : lancer « npm run indexer » (aucune clé requise)."}{" "}
           {etat.fournisseurs_configures.length > 0
             ? `Fournisseur${etat.fournisseurs_configures.length > 1 ? "s" : ""} de rédaction : ${etat.fournisseurs_configures.map((f) => `${f.nom} (${f.modele})`).join(", ")}.`
-            : "Aucun fournisseur de rédaction configuré : le mode extractif, qui n'en demande aucun, est le mode par défaut."}
+            : "Aucun fournisseur de rédaction configuré : le mode extractif est le mode par défaut. Il compose la réponse depuis les fiches et les croise par leurs relations documentées, sans rien reformuler."}
         </p>
       ) : null}
       {etat && etat.index.nb_passages_absents > 0 ? (
@@ -463,6 +464,34 @@ export default function QuestionLibreClient({ effectifs }: { effectifs: Effectif
 
           {repondue ? (
             <PerspectivesPanel key={reponse.diagnostic.genere_le} perspectives={reponse.perspectives} />
+          ) : null}
+
+          {/* Le croisement, affiché avant les angles morts : c'est le raisonnement
+              de la réponse, pas une note de bas de page. Chaque ligne dit par
+              QUELLE relation la fiche est entrée, et cite la phrase du corpus qui
+              la fonde — une relation sans preuve ne s'affiche pas. */}
+          {repondue && reponse.croisements && reponse.croisements.length > 1 ? (
+            <div className="mt-5">
+              <p className="text-xs font-semibold uppercase tracking-wide text-neutral-500 dark:text-neutral-400">
+                Comment ces perspectives ont été croisées
+              </p>
+              <ol className="mt-2 space-y-2">
+                {reponse.croisements.map((c, i) => (
+                  <li key={`${c.fiche}-${i}`} className="text-sm text-neutral-700 dark:text-neutral-300">
+                    <span className="font-medium">{c.fiche}</span>{" "}
+                    <span className="rounded bg-neutral-100 px-1.5 py-0.5 text-xs text-neutral-600 dark:bg-neutral-800 dark:text-neutral-400">
+                      {c.role}
+                    </span>
+                    {c.enonce ? <span className="block text-neutral-600 dark:text-neutral-400">{c.enonce}</span> : null}
+                    {c.preuve ? (
+                      <span className="mt-0.5 block border-l-2 border-neutral-300 pl-2 text-xs italic text-neutral-500 dark:border-neutral-700 dark:text-neutral-400">
+                        {c.preuve}
+                      </span>
+                    ) : null}
+                  </li>
+                ))}
+              </ol>
+            </div>
           ) : null}
 
           <div className="mt-5">
