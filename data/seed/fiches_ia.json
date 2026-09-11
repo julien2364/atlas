@@ -4140,5 +4140,157 @@
     ],
     "statut": "documente",
     "derniere_verification": "2026-09-11"
+  },
+  {
+    "id": "generation-d-hypotheses-scientifiques-par-ia",
+    "axe": "sectoriel",
+    "nom": "La génération d'hypothèses scientifiques par IA",
+    "editeur": null,
+    "architecture": null,
+    "capacites_cles": [
+      "Production et hiérarchisation d'hypothèses à partir de la littérature par un collectif d'agents spécialisés : le système de Google est un « multi-agent AI system built on Gemini for structured scientific thinking », dont les agents Generation, Reflection, Ranking, Evolution, Proximity et Meta-review, coordonnés par un agent Supervisor, sont « continuously generating, critiquing and refining hypotheses ».",
+      "Bouclage de l'hypothèse avec sa mise à l'épreuve matérielle : le Robot Scientist Adam « has autonomously generated functional genomics hypotheses about the yeast Saccharomyces cerevisiae and experimentally tested these hypotheses by using laboratory automation », ses conclusions ayant ensuite été confirmées par des expériences manuelles.",
+      "Enchaînement de la question au manuscrit : le système de Sakana AI « generates novel research ideas, writes code, executes experiments, visualizes results, describes its findings by writing a full scientific paper, and then runs a simulated review process for evaluation », pour un coût que ses auteurs annoncent à « less than $15 per paper »."
+    ],
+    "usages": [
+      {
+        "secteur": "recherche",
+        "description": "Formulation d'hypothèses biomédicales soumises ensuite à une équipe de laboratoire qui les confronte à ses propres résultats expérimentaux. Le système ne conduit pas l'expérience : il produit un raisonnement que des chercheurs nommés acceptent ou écartent. Le seul déploiement que les sources situent précisément est celui d'Imperial College London et de la Fleming Initiative, à Londres, avec l'équipe du professeur José Penadés, dans un communiqué du 19 février 2025 ; Imperial y précise que les résultats étaient alors « yet to be peer-reviewed », que le système « is still at an early stage » et qu'il reste à développer avec Google avant tout lancement. Aucune source de la fiche ne documente d'exploitation en routine, et c'est pourquoi aucun TRL n'est posé ici.",
+        "diffusion": "emergent",
+        "exemples": [
+          "Sur la résistance aux antimicrobiens, Google rapporte que le système a proposé de lui-même que les îlots chromosomiques inductibles par les phages, formant capside, interagissent avec des queues de phages variées — hypothèse qui recoupait des résultats obtenus par l'équipe de Penadés « prior to use of the AI co-scientist system ».",
+          "Le professeur José Penadés, cité par Imperial College London, déclare que l'algorithme a formulé « the very same hypothesis that we arrived at through years of painstaking scientific research, but in a fraction of the time », l'équipe ayant travaillé le sujet « over ten years ».",
+          "Google déclare deux autres validations expérimentales menées avec des partenaires nommés : le repositionnement de médicaments et des combinaisons synergiques pour la leucémie myéloïde aiguë avec le Houston Methodist Hospital et Sequome, validés « through in vitro experiments » ; et la découverte de cibles dans la fibrose hépatique avec l'université Stanford."
+        ],
+        "sources": [
+          {
+            "titre": "Juraj Gottweis, Wei-Hung Weng, Alexander Daryin, Tao Tu, Vivek Natarajan et al., « Accelerating scientific discovery with Co-Scientist », arXiv:2502.18864, soumis le 26 février 2025 (v2 du 29 juin 2026)",
+            "url": "https://arxiv.org/abs/2502.18864",
+            "type": "primaire",
+            "date": "2026-09-11"
+          },
+          {
+            "titre": "Juraj Gottweis, Vivek Natarajan, « Accelerating scientific breakthroughs with an AI co-scientist », Google Research, 19 février 2025 (architecture par agents, partenaires expérimentaux, chantiers ouverts)",
+            "url": "https://research.google/blog/accelerating-scientific-breakthroughs-with-an-ai-co-scientist/",
+            "type": "primaire",
+            "date": "2026-09-11"
+          },
+          {
+            "titre": "Imperial College London, « Google's AI co-scientist could enhance research, say Imperial researchers », 19 février 2025",
+            "url": "https://www.imperial.ac.uk/news/261293/googles-ai-co-scientist-could-enhance-research/",
+            "type": "primaire",
+            "date": "2026-09-11"
+          }
+        ]
+      },
+      {
+        "secteur": "science",
+        "description": "Boucles autonomes où le système formule l'hypothèse ou le plan expérimental et commande directement l'instrumentation de laboratoire, en génomique fonctionnelle puis en chimie de synthèse. Deux installations sont nommées et datées par les sources : le Robot Scientist Adam à l'université d'Aberystwyth, décrit dans Science en 2009, et Coscientist à Carnegie Mellon University, Pittsburgh, décrit dans Nature en 2023. Dans les deux cas l'exploitant est l'équipe auteure du système, sur son propre site, et aucune source ne nomme d'exploitant tiers : aucun TRL n'est donc posé.",
+        "diffusion": "emergent",
+        "exemples": [
+          "Adam « has autonomously generated functional genomics hypotheses about the yeast Saccharomyces cerevisiae and experimentally tested these hypotheses by using laboratory automation » (King et al., Science, 2009).",
+          "Coscientist, « an artificial intelligence system driven by GPT-4 that autonomously designs, plans and performs complex experiments », est évalué « across six diverse tasks, including the successful reaction optimization of palladium-catalysed cross-couplings » (Boiko et al., Nature, 2023)."
+        ],
+        "sources": [
+          {
+            "titre": "R. D. King, J. J. Rowland, S. G. Oliver, M. Young, W. Aubrey, E. L. Byrne, M. Liakata et al., « The Automation of Science », Science, vol. 324, n° 5923, 2009, p. 85-89 (notice et résumé, portail de recherche de l'université d'Aberystwyth)",
+            "url": "https://research.aber.ac.uk/en/publications/the-automation-of-science/",
+            "type": "primaire",
+            "date": "2026-09-11"
+          },
+          {
+            "titre": "Daniil A. Boiko, Robert MacKnight, Ben Kline, Gabe Gomes, « Autonomous chemical research with large language models », Nature, vol. 624, 20 décembre 2023, p. 570-578 (DOI 10.1038/s41586-023-06792-0)",
+            "url": "https://www.nature.com/articles/s41586-023-06792-0",
+            "type": "primaire",
+            "date": "2026-09-11"
+          }
+        ]
+      }
+    ],
+    "limites_connues": "L'évaluation indépendante la plus détaillée est celle de Joeran Beel, Min-Yen Kan et Moritz Baumgart (« Evaluating Sakana's AI Scientist: Bold Claims, Mixed Results, and a Promising Future? », arXiv:2502.14297, 2025), qui constate que « the system's literature reviews produced poor novelty assessments, often misclassifying established concepts (e.g., micro-batching for stochastic gradient descent) as novel », que « 42% of experiments failed due to coding errors, while others produced flawed or misleading results », et que les manuscrits produits comportent une médiane de cinq citations dont cinq seulement sur trente-quatre postérieures à 2020. Dans IEEE Spectrum, Jennifer Listgarten (UC Berkeley) objecte que la plupart des disciplines scientifiques « don't have the vast quantities of publicly available data required to train models », et Lisa Messeri (Yale) et M. J. Crockett (Princeton) que « producing papers and producing knowledge are not the same », le risque étant de produire davantage en comprenant moins ; Cong Lu, coauteur du système de Sakana AI, y reconnaît que celui-ci « sometimes it still will disobey » les consignes sur l'usage des données expérimentales. Sur le cas le plus cité, la réserve vient de l'éditeur lui-même : Google indique que l'hypothèse produite sur la résistance aux antimicrobiens recoupait des résultats obtenus par l'équipe d'Imperial « prior to use of the AI co-scientist system » — c'est la reproduction rapide d'un raisonnement déjà établi, pas une découverte indépendamment vérifiée ; Google range par ailleurs parmi ses chantiers ouverts la revue de littérature, la vérification factuelle, la validation externe et l'auto-évaluation. Aucune source de la fiche ne mesure le taux d'hypothèses générées qui se révèlent fausses à l'épreuve expérimentale.",
+    "sources": [
+      {
+        "titre": "Chris Lu, Cong Lu, Robert Tjarko Lange, Jakob Foerster, Jeff Clune, David Ha, « The AI Scientist: Towards Fully Automated Open-Ended Scientific Discovery », arXiv:2408.06292, 12 août 2024",
+        "url": "https://arxiv.org/abs/2408.06292",
+        "type": "primaire",
+        "date": "2026-09-11"
+      },
+      {
+        "titre": "Joeran Beel, Min-Yen Kan, Moritz Baumgart, « Evaluating Sakana's AI Scientist: Bold Claims, Mixed Results, and a Promising Future? », arXiv:2502.14297, 20 février 2025",
+        "url": "https://arxiv.org/abs/2502.14297",
+        "type": "secondaire",
+        "date": "2026-09-11"
+      },
+      {
+        "titre": "IEEE Spectrum, « The AI Scientist: A Tool from Sakana AI Stirs Up Controversy » — objections de Jennifer Listgarten, Lisa Messeri, M. J. Crockett, et réserves de Cong Lu",
+        "url": "https://spectrum.ieee.org/ai-for-science-2",
+        "type": "secondaire",
+        "date": "2026-09-11"
+      }
+    ],
+    "statut": "documente",
+    "derniere_verification": "2026-09-11"
+  },
+  {
+    "id": "optimisation-de-la-chaine-logistique-par-ia",
+    "axe": "sectoriel",
+    "nom": "L'optimisation de la chaîne logistique par IA",
+    "editeur": null,
+    "architecture": null,
+    "capacites_cles": [
+      "Prévision probabiliste de la demande par réseaux de neurones à grande échelle : Amazon décrit le passage de modèles de séries temporelles classiques à une « Sparse Quantile Random Forest », puis à un réseau « MQ-RNN/CNN » publié en 2018 et à un « MQTransformer » en décembre 2020.",
+      "Optimisation combinatoire des tournées de livraison à l'échelle d'un réseau national, avec recalcul quotidien de l'ordre des arrêts pour chaque chauffeur.",
+      "Décision automatisée de réapprovisionnement et de placement des stocks : le système SCOT d'Amazon décide « what products to buy, how much to buy, where to place them, and more » et est présenté par ses responsables comme « one of the largest algorithmic decision-making machines in the world for supply chain optimization »."
+    ],
+    "usages": [
+      {
+        "secteur": "industrie",
+        "description": "Planification et exécution des flux physiques chez les grands opérateurs logistiques : prévision de la demande, dimensionnement des stocks, construction des tournées. Les systèmes en service combinent recherche opérationnelle et apprentissage automatique, et les deux composants ne sont pas séparés dans les résultats publiés.",
+        "trl": 9,
+        "trl_justification": "Exploitant, lieu et date sont nommés pour ORION : l'INFORMS, qui lui a décerné son prix Franz Edelman 2016, écrit « At full deployment in 2016, 55,000 UPS drivers will be relying upon ORION to serve an average of 160 customers per day », sur le réseau américain d'UPS. Deux réserves tiennent au contenu même de la source : les gains annoncés — « $300–$400 million annually », dix millions de gallons de carburant et 100 000 tonnes de CO2 par an — sont des estimations d'UPS relayées par l'INFORMS et non une mesure indépendante ; et la page présente ORION comme un projet de recherche opérationnelle et d'analytique, non comme un système d'apprentissage automatique.",
+        "exemples": [
+          "ORION (On-Road Integrated Optimization and Navigation) chez UPS : « At full deployment in 2016, 55,000 UPS drivers will be relying upon ORION to serve an average of 160 customers per day » (INFORMS, prix Franz Edelman 2016).",
+          "Amazon déclare avoir obtenu « a 15-fold improvement in forecast accuracy » en passant d'une forêt aléatoire quantile à un réseau à propagation avant optimisé sur une perte quantile — chiffre produit par Amazon sur son propre système.",
+          "Compétition M5 sur les ventes unitaires de 3 049 produits vendus dans 10 magasins Walmart de trois États américains (42 840 séries sur douze niveaux d'agrégation) : la méthode gagnante dépasse la meilleure référence statistique de 22,4 %, et les cinq premières places reposent toutes sur des combinaisons de modèles LightGBM ou sur de l'apprentissage profond."
+        ],
+        "sources": [
+          {
+            "titre": "INFORMS, « UPS On-Road Integrated Optimization and Navigation (ORION) Project », dossier du prix Franz Edelman 2016",
+            "url": "https://www.informs.org/Impact/O.R.-Analytics-Success-Stories/Optimizing-Delivery-Routes",
+            "type": "primaire",
+            "date": "2026-09-11"
+          },
+          {
+            "titre": "Amazon Science, « The history of Amazon's forecasting algorithm » (SQRF, MQ-RNN/CNN 2018, MQTransformer décembre 2020, amélioration annoncée de la précision)",
+            "url": "https://www.amazon.science/latest-news/the-history-of-amazons-forecasting-algorithm",
+            "type": "primaire",
+            "date": "2026-09-11"
+          },
+          {
+            "titre": "Amazon Science, « reMARS revisited: Amazon's supply chain optimization », 18 octobre 2022, d'après l'intervention de Deepak Bhatia et Salal Humair à re:MARS le 27 juin 2022",
+            "url": "https://www.amazon.science/latest-news/remars-revisited-amazons-supply-chain-optimization",
+            "type": "primaire",
+            "date": "2026-09-11"
+          }
+        ]
+      }
+    ],
+    "limites_connues": "Les organisateurs de la compétition M5 — Spyros Makridakis, Evangelos Spiliotis et Vassilis Assimakopoulos — bornent eux-mêmes la portée de leur résultat : leurs conclusions « are likely more representative of the application examined but cannot be generalized beyond the specific area covered by the data », c'est-à-dire les ventes de détail de 3 049 produits dans dix magasins de trois États américains. Kaoutar Douaioui, Rachid Oucheikh, Othmane Benmoussa et Charif Mabrouki, au terme d'une revue critique de 119 articles parus entre 2015 et 2024 (Applied System Innovation, vol. 7, n° 5, 2024, article 93), relèvent que plusieurs sources de données de prévision sont peu fiables faute d'historique ou du fait de biais intrinsèques, que les algorithmes d'apprentissage classiques échouent souvent à capturer les dépendances temporelles complexes des séries, et que la qualité des données, les biais algorithmiques et l'intégration aux systèmes existants imposent une appréciation prudente des bénéfices. Enfin, les gains les plus cités proviennent des exploitants eux-mêmes et n'ont pas d'équivalent indépendant dans les sources de la fiche : l'amélioration de précision « 15-fold » est une déclaration d'Amazon sur son propre système, et les 300 à 400 millions de dollars annuels attribués à ORION sont une estimation d'UPS relayée par l'INFORMS. Aucune source de la fiche ne mesure l'effet de ces systèmes sur le niveau des stocks, sur le taux de rupture ou sur la résilience aux chocs d'approvisionnement.",
+    "sources": [
+      {
+        "titre": "Spyros Makridakis, Evangelos Spiliotis, Vassilis Assimakopoulos, « The M5 Accuracy competition: Results, findings and conclusions », préprint du 6 octobre 2020 (International Journal of Forecasting)",
+        "url": "https://statmodeling.stat.columbia.edu/wp-content/uploads/2021/10/M5_accuracy_competition.pdf",
+        "type": "primaire",
+        "date": "2026-09-11"
+      },
+      {
+        "titre": "Kaoutar Douaioui, Rachid Oucheikh, Othmane Benmoussa, Charif Mabrouki, « Machine Learning and Deep Learning Models for Demand Forecasting in Supply Chain Management: A Critical Review », Applied System Innovation, vol. 7, n° 5, 2024, article 93 (DOI 10.3390/asi7050093)",
+        "url": "https://www.mdpi.com/2571-5577/7/5/93",
+        "type": "secondaire",
+        "date": "2026-09-11"
+      }
+    ],
+    "statut": "documente",
+    "derniere_verification": "2026-09-11"
   }
 ]

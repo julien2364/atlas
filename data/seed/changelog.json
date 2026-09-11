@@ -383,5 +383,27 @@
     "type": "evolution_structurelle",
     "cible": "gouvernance",
     "resume": "Le référentiel se dote d'une chaîne d'autonomie en trois maillons : un détecteur qui mesure l'écart entre le corpus et les exigences encodées du mégaprompt, une enquête qui interroge Crossref et arXiv sans clé à partir des requêtes que le détecteur fournit, et un brief de rédaction autoportant qu'une session planifiée exécute. Observation qui l'a motivée : la veille collectait trente propositions par jour et en faisait aboutir huit sur quatre cent vingt-cinq, parce que les flux apportaient ce qu'ils publiaient et non ce qui manquait au corpus."
+  },
+  {
+    "id": "derniers-absents-et-axe-evolution-2026-09-11",
+    "date": "2026-09-11",
+    "type": "ajout",
+    "cible": "referentiel_humain",
+    "fiches_ajoutees": 9,
+    "resume": "Neuf fiches comblant les derniers items que le détecteur classait absents, et les cinq sous-dimensions de l'axe Évolution que le §3 A4 définit. Les quatre absents : le capital social et les indices de cohésion sociale côté humain, la génération d'hypothèses scientifiques et l'optimisation de la chaîne logistique côté IA. Les cinq sous-dimensions : évolution biologique de l'espèce, anthropologie et préhistoire, évolution culturelle et technologique, coévolution homme-outil, trajectoires démographiques longues. Observation qui l'a motivée : l'axe evolution comptait 57 fiches toutes de sous_domaine sciences — le catalogue Sciences rangé sous l'étiquette Évolution — et aucune sur ce que le §3 A4 demande."
+  },
+  {
+    "id": "classement-philosophes-par-courant-2026-09-11",
+    "date": "2026-09-11",
+    "type": "mise_a_jour",
+    "cible": "referentiel_humain",
+    "resume": "Les 53 fiches philosophiques reçoivent leur periode_courant, exigé par le §3 A3 et par l'annexe 12.1 qui en donne la grille : le classement par courant n'avait jamais été fait et le champ était vide sur la totalité. Vingt-huit familles distinctes, couvrant les huit courants nommés par le mégaprompt sans s'y réduire — un philosophe antique ou médiéval n'entre dans aucun. Les appartenances disputées sont écrites comme telles : Foucault « proche du post-structuralisme, étiquette qu'il récusait », Heidegger de même sur l'existentialisme. Aucun autre champ n'a été touché, et un diff de contrôle le prouve."
+  },
+  {
+    "id": "couverture-des-attentes-81-pourcent-2026-09-11",
+    "date": "2026-09-11",
+    "type": "evolution_structurelle",
+    "cible": "gouvernance",
+    "resume": "La couverture des attentes encodées du mégaprompt passe de 53,8 % à 81,3 % en une journée, et surtout de six items absents à zéro. Le détecteur de lacunes a piloté chaque lot : il nomme ce qui manque, fournit la requête qui le comblerait, et la mesure se refait à chaque passage. Ce que cette progression montre n'est pas une accélération du travail mais la fin d'un angle mort — pendant six lots, une quinzaine d'exigences littérales n'étaient mentionnées dans aucun document parce que rien ne les rappelait."
   }
 ]
