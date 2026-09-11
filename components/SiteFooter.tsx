@@ -8,6 +8,8 @@ const LIENS: { href: string; label: string; brut?: boolean }[] = [
   { href: "/veille", label: "Veille et changelog" },
   { href: "/megaprompt", label: "Spécification du projet" },
   { href: "/api/meta", label: "API publique", brut: true },
+  { href: "/mentions-legales", label: "Mentions légales" },
+  { href: "/confidentialite", label: "Confidentialité" },
 ];
 
 export default function SiteFooter() {

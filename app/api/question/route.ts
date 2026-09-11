@@ -15,6 +15,7 @@
 // Le champ `retour` du mode 2 peut en outre peser plusieurs kilo-octets, ce
 // qu'une URL ne porterait pas.
 
+import { createHash, randomBytes } from "node:crypto";
 import { NextResponse } from "next/server";
 import {
   ErreurRag,
@@ -74,10 +75,26 @@ function tropDeRequetes(ip: string): boolean {
   return entree.nombre > MAX_PAR_FENETRE;
 }
 
+/**
+ * Empreinte non réversible de l'appelant, pour la limitation de débit.
+ *
+ * L'adresse IP est une donnée à caractère personnel au sens du RGPD. La conserver en
+ * mémoire, même quelques minutes et même sans la journaliser, suppose une base légale
+ * et une information du visiteur — et le site n'en avait aucune. Limiter le débit
+ * n'exige pourtant pas de savoir QUI appelle : il suffit de distinguer DEUX appelants.
+ *
+ * L'adresse est donc hachée avec un sel tiré au démarrage du processus et jamais
+ * écrit : personne, pas même l'exploitant, ne peut remonter d'une empreinte à une
+ * adresse, et le sel disparaît à chaque redéploiement. Le compteur distingue toujours
+ * deux visiteurs, ce qui est la seule chose dont il a besoin.
+ */
+const SEL = randomBytes(32);
+
 function adresse(request: Request): string {
   const transmise = request.headers.get("x-forwarded-for");
-  if (transmise) return transmise.split(",")[0].trim();
-  return request.headers.get("x-real-ip") ?? "inconnue";
+  const brute = transmise ? transmise.split(",")[0].trim() : (request.headers.get("x-real-ip") ?? "inconnue");
+  if (brute === "inconnue") return "inconnue";
+  return createHash("sha256").update(SEL).update(brute, "utf8").digest("hex").slice(0, 32);
 }
 
 /* -------------------------------------------------------------------------- */

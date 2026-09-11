@@ -54,6 +54,8 @@ const controles = [
   { chemin: "/questions", marqueur: "<html" },
   { chemin: "/veille", marqueur: "<html" },
   { chemin: "/methodologie", marqueur: "<html" },
+  { chemin: "/mentions-legales", marqueur: "DYONYSOS" },
+  { chemin: "/confidentialite", marqueur: "RGPD" },
   { chemin: "/comparateur", marqueur: "<html" },
   { chemin: `/fiche/humaine/${ficheTemoin()}`, marqueur: "<html" },
   { chemin: `/gap/${gapTemoin()}`, marqueur: "<html" },

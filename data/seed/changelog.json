@@ -344,5 +344,44 @@
     "type": "ajout",
     "cible": "veille",
     "resume": "Les sources de veille passent de huit à vingt-six, avec l'ouverture de l'actualité, de l'économie et des marchés : banques centrales, institutions publiques européennes, instituts de recherche économique et rédactions francophones et européennes. Chaque flux a été récupéré avec le client du collecteur lui-même et retenu seulement s'il rend un XML analysable, contient des articles datés récents, et expose des liens sur le domaine de l'éditeur — ce dernier point décidant du score de fiabilité. Vingt-quatre flux ont été testés et écartés, avec leur raison, ce qui évitera de les reprendre dans six mois : pare-feu applicatif, portail rendu côté client sans flux réel, XML mal formé, ou flux abandonné depuis plus d'un an. Correction annexe : les deux flux arXiv passaient par un transport non chiffré et ne rapportaient plus rien derrière le proxy, ils sont rétablis. La collecte a rapporté 113 propositions nouvelles au premier passage."
+  },
+  {
+    "id": "referentiel-humain-sociologie-psychologie-geopolitique-2026-09-07",
+    "date": "2026-09-07",
+    "type": "ajout",
+    "cible": "referentiel_humain",
+    "fiches_ajoutees": 300,
+    "resume": "Trois cents fiches ajoutées en sociologie, psychologie et géopolitique, produites par douze relecteurs travaillant sur des lots d'identifiants disjoints à partir d'un brief commun. Le référentiel humain passe de 269 à 569 fiches. Chaque fiche porte au moins une source primaire et une secondaire, ouvertes avant citation. Motif : les trois domaines étaient les plus maigres du référentiel A, et les gaps ne pouvaient s'y appuyer."
+  },
+  {
+    "id": "fiches-ia-recrutement-et-saut-abductif-2026-09-11",
+    "date": "2026-09-11",
+    "type": "ajout",
+    "cible": "referentiel_ia",
+    "fiches_ajoutees": 2,
+    "resume": "Deux fiches IA issues du tri de la file de veille, qui les avait marquées « sujet réel, aucune fiche ne le couvre » : le recrutement algorithmique et ses agents, et la limite qui sépare restituer une théorie de la découvrir. Premier contenu produit par la boucle collecte → tri → fiche depuis sa réparation."
+  },
+  {
+    "id": "fiches-ia-gemini-mistral-qwen-2026-09-11",
+    "date": "2026-09-11",
+    "type": "ajout",
+    "cible": "referentiel_ia",
+    "fiches_ajoutees": 3,
+    "resume": "Gemini, Mistral et Qwen, nommément demandés par le §4 B1 du mégaprompt « à maintenir à jour car ce paysage change vite » et absents du corpus depuis l'origine. Lacune révélée par le détecteur d'attentes, qui l'a nommée après six lots de production où aucun document ne la mentionnait."
+  },
+  {
+    "id": "limites-transversales-et-indicateurs-2026-09-11",
+    "date": "2026-09-11",
+    "type": "ajout",
+    "cible": "referentiel_humain",
+    "fiches_ajoutees": 9,
+    "resume": "Neuf fiches comblant des exigences littérales du mégaprompt que le détecteur d'attentes a nommées : trois des six limites transversales du §4 B5 — conscience et qualia, gouvernance et alignement, supervision humaine —, deux capacités scientifiques du §4 B3 — AlphaGenome et les moteurs de simulation physique —, et quatre indicateurs de référence des §3 A1 et A5 : World Values Survey, Edelman Trust Barometer, OCDE How's Life et les indices de risque existentiel. La couverture des attentes passe de 53,8 % à 63,7 %."
+  },
+  {
+    "id": "chaine-autonomie-2026-09-11",
+    "date": "2026-09-11",
+    "type": "evolution_structurelle",
+    "cible": "gouvernance",
+    "resume": "Le référentiel se dote d'une chaîne d'autonomie en trois maillons : un détecteur qui mesure l'écart entre le corpus et les exigences encodées du mégaprompt, une enquête qui interroge Crossref et arXiv sans clé à partir des requêtes que le détecteur fournit, et un brief de rédaction autoportant qu'une session planifiée exécute. Observation qui l'a motivée : la veille collectait trente propositions par jour et en faisait aboutir huit sur quatre cent vingt-cinq, parce que les flux apportaient ce qu'ils publiaient et non ce qui manquait au corpus."
   }
 ]

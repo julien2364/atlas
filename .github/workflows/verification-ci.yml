@@ -66,6 +66,14 @@ jobs:
       # cliquet en fait un garde-fou — le corpus peut s'améliorer librement, il ne peut
       # plus empirer par accident. Un plafond se relève par `npm run cliquet -- --figer`,
       # geste délibéré qui laisse une trace dans un commit.
+      # Le §10 du mégaprompt exige « un changelog public de toute évolution ». Le
+      # changelog s'était arrêté au 07/09/2026 pendant que le corpus passait de 514 à
+      # 828 fiches : il a plus que doublé sans laisser de trace, et rien ne l'a
+      # signalé — le seul script qui y écrivait était `appliquer-patchs.mjs`, qui
+      # n'avait pas tourné. Ce contrôle rend l'omission impossible.
+      - name: Le corpus ne grandit pas sans trace
+        run: npm run verifier-changelog
+
       - name: Cliquet de qualité du corpus
         run: npm run cliquet
 

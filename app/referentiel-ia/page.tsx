@@ -14,6 +14,19 @@ export const metadata: Metadata = {
   alternates: { canonical: "/referentiel-ia" },
 };
 
+/* Le §8 du mégaprompt demande que ce référentiel soit « navigable par secteur ». Il ne
+   l'était que par axe : un lecteur qui cherche ce que l'IA fait en pharmacie devait
+   ouvrir les six axes un à un. L'entrée par secteur ci-dessous est la seconde porte —
+   les mêmes fiches, rangées par usage plutôt que par nature. */
+const SECTEURS: Record<string, string> = {
+  science: "Science",
+  recherche: "Recherche",
+  education: "Éducation",
+  industrie: "Industrie",
+  pharmaceutique: "Pharmaceutique",
+  gouvernement: "Gouvernement",
+};
+
 const AXES: Record<string, string> = {
   generatif_raisonnement: "Génératif / raisonnement",
   agentique: "Agentique",
@@ -32,6 +45,19 @@ export default function ReferentielIAPage() {
   const nombreDocumentees = data.filter((f) => f.statut === "documente").length;
   const nombreUsages = data.reduce((n, f) => n + (f.usages?.length ?? 0), 0);
 
+  /* Une fiche apparaît dans autant de secteurs qu'elle en documente : c'est le propos
+     de la grille du §4, où une même capacité est mûre ici et expérimentale là. */
+  const parSecteur = data.reduce<Record<string, { fiche: FicheIA; trl: number | null; diffusion: string | null }[]>>(
+    (acc, f) => {
+      for (const u of f.usages ?? []) {
+        if (!u.secteur) continue;
+        (acc[u.secteur] ??= []).push({ fiche: f, trl: u.trl ?? null, diffusion: u.diffusion ?? null });
+      }
+      return acc;
+    },
+    {}
+  );
+
   return (
     <div className="space-y-10">
       <header className="max-w-3xl">
@@ -44,7 +70,53 @@ export default function ReferentielIAPage() {
         </p>
         <nav aria-label="Axes du référentiel IA" className="mt-4">
           <ul className="flex flex-wrap gap-x-3 gap-y-1 text-xs">
-            {Object.entries(AXES).map(([axe, label]) => {
+            <section id="par-secteur" className="scroll-mt-24">
+        <h2 className="text-lg font-medium">Par secteur d&apos;usage</h2>
+        <p className="mt-2 max-w-3xl text-sm leading-relaxed text-neutral-600 dark:text-neutral-400">
+          Les mêmes capacités, rangées par secteur plutôt que par nature. Une fiche figure dans chaque secteur où
+          elle documente un usage — une capacité peut être déployée en industrie et expérimentale en pharmacie. Le
+          nombre entre crochets est le niveau de maturité TRL quand un déploiement nommable le fonde ; sinon, c&apos;est
+          le niveau de diffusion, délibérément non chiffré.
+        </p>
+        <div className="mt-4 grid gap-4 sm:grid-cols-2">
+          {Object.entries(SECTEURS).map(([secteur, label]) => {
+            const entrees = parSecteur[secteur] ?? [];
+            if (entrees.length === 0) return null;
+            const ordonnees = [...entrees].sort((a, b) => (b.trl ?? 0) - (a.trl ?? 0));
+            return (
+              <div
+                key={secteur}
+                id={`secteur-${secteur}`}
+                className="scroll-mt-24 rounded border border-neutral-200 p-3 dark:border-neutral-800"
+              >
+                <h3 className="font-medium">
+                  {label}{" "}
+                  <span className="text-sm font-normal text-neutral-500 dark:text-neutral-400">
+                    ({entrees.length})
+                  </span>
+                </h3>
+                <ul className="mt-2 space-y-1 text-sm">
+                  {ordonnees.map(({ fiche, trl, diffusion }) => (
+                    <li key={`${secteur}-${fiche.id}`} className="flex items-baseline justify-between gap-3">
+                      <Link
+                        href={cheminFicheIA(fiche.id)}
+                        className="underline decoration-neutral-300 hover:decoration-neutral-600 dark:decoration-neutral-600 dark:hover:decoration-neutral-300"
+                      >
+                        {fiche.nom}
+                      </Link>
+                      <span className="shrink-0 text-xs text-neutral-500 dark:text-neutral-400">
+                        {trl !== null ? `TRL ${trl}` : (diffusion ?? "—")}
+                      </span>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            );
+          })}
+        </div>
+      </section>
+
+      {Object.entries(AXES).map(([axe, label]) => {
               const n = (parAxe[axe] ?? []).length;
               return n === 0 ? null : (
                 <li key={axe}>

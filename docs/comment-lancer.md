@@ -1,20 +1,20 @@
 # COMMENT LANCER — Atlas Humain × IA
 
-Dernière mise à jour : 06/09/2026 (référentiel de contenu terminé à 100% — 311/311 fiches documentées + 86 fiches de gap ; automatisation qualité : validateur d'intégrité, audit de fraîcheur, cron hebdomadaire ; **boucle de veille de bout en bout collecte → patch → validation → publication, section 7**)
+Dernière mise à jour : 11/09/2026 — **828 fiches** (573 humaines, 54 IA, 201 gaps), toutes au statut `documente`. Huit portes de vérification automatiques, six workflows, et une chaîne d'autonomie en trois maillons. Couverture des attentes du mégaprompt mesurée : **63,7 %**.
 
 ## État actuel du projet
 
 Le projet est un vrai projet Next.js fonctionnel, déjà buildé et testé (npm run build passe sans erreur),
 versionné dans git, poussé sur GitHub (`https://github.com/julien2364/atlas`) et **déployé en ligne sur Vercel**
 (voir section 0 ci-dessous).
-Le site tourne sur des données locales (`data/seed/*.json` : 267 fiches humaines + 44 fiches IA + 86 fiches de gap),
+Le site tourne sur des données locales (`data/seed/*.json` : 573 fiches humaines + 54 fiches IA + 201 fiches de gap),
 sans avoir besoin de Supabase configuré pour l'instant — pratique pour visualiser tout de suite.
 **Le corpus est intégralement documenté depuis le 06/09/2026 : 397/397 fiches au statut `documente`, plus aucune
 fiche `a_documenter`.** Chaque fiche porte ses sources et sa date de dernière vérification.
 
-**Le référentiel de contenu est terminé à 100% (311/311 fiches au statut `"documente"`, détail dans
+**Le corpus compte 828 fiches, toutes au statut `"documente"` (détail dans
 `docs/brief-delegation-documentation.md`).** Les chantiers ouverts restants sont : validation de la file de
-veille (184 entrées en attente), audit qualité de second passage, clé API Voyage AI (bloquée côté Julien),
+veille (file intégralement triée le 10/09 : 0 en attente), audit qualité de second passage, clé API d'embeddings,
 et audit de `questions.json`.
 
 Le comparateur (`/comparateur`) est désormais un vrai sélecteur libre (n'importe quelle paire fiche humaine ×
@@ -97,11 +97,11 @@ Puis ouvrir http://localhost:3000 — pages disponibles : accueil, /referentiel-
 ## 2. État d'avancement par lot (cf. section 9 du mégaprompt)
 
 - **Lot 1 — Architecture** : ✅ terminé (Next.js/Tailwind/TypeScript, modèle de données, schéma Supabase prêt dans `supabase/schema.sql`).
-- **Lot 2/3 — Contenu des deux référentiels** : ✅ terminé (05-06/09/2026). Les 267 fiches humaines (philosophique 53, évolution 55, social_1 71, social_2 71, psychologique 12, sérénité 5) et les 44 fiches IA sont documentées, chacune à partir d'une source réellement consultée (articles Wikipédia FR, EN en repli, articles fondateurs arXiv/Nature/NeurIPS et documentation officielle pour les fiches IA) — jamais depuis la seule mémoire d'un modèle. Thèse centrale, apport, limites critiques, résonance IA, sources primaires/secondaires pour les fiches humaines ; capacités clés, usages sectoriels avec TRL, limites connues pour les fiches IA.
+- **Lot 2/3 — Contenu des deux référentiels** : ✅ terminé (05-06/09/2026). Les **573 fiches humaines** (philosophique 53, évolution 57, social_1 71, social_2 74, psychologique 112, sociologie 100, géopolitique 100, sérénité 6) et les **54 fiches IA** sont documentées, chacune à partir d'une source réellement consultée (articles Wikipédia FR, EN en repli, articles fondateurs arXiv/Nature/NeurIPS et documentation officielle pour les fiches IA) — jamais depuis la seule mémoire d'un modèle. Thèse centrale, apport, limites critiques, résonance IA, sources primaires/secondaires pour les fiches humaines ; capacités clés, usages sectoriels avec TRL, limites connues pour les fiches IA.
   Détail par fichier et méthode de recherche dans `docs/brief-delegation-documentation.md`.
 - **Audit QA (05/09/2026)** : 🔍 fait. Julien a jugé la profondeur insuffisante — deux agents indépendants (visiteur/utilisateur + vérificateur professionnel) ont audité le site en conditions réelles. Corrections appliquées : rendu de `/referentiel-humain` réparé (n'affichait jamais le contenu des fiches documentées), garde-fou anti-régression ajouté à `scripts/generate-seed.mjs` (un incident réel pendant l'audit a démontré le risque : le script a écrasé silencieusement 6 fiches documentées avant d'être corrigé et les données restaurées), axes vides comblés. Le projet est maintenant versionné dans git en local.
 - **Lot 4 — Moteur de gap analysis** : ✅ terminé (06/09/2026). 86 paires analysées (6 d'amorçage + 80 produites en lot), couvrant 86 capacités humaines distinctes croisées avec 37 fiches IA. Chaque fiche suit la méthodologie §5 du mégaprompt (apport et non-apport de l'IA, mécanisme, amélioration possible, mode d'interaction, substituabilité à 4 niveaux, scénarios présent/5 ans/15-20 ans) et le format enrichi du Lot 9 (sujet, sous-thèmes, axes de recherche, documents clés, trois axes prospectifs nommés avec niveau de confiance). Répartition de la substituabilité : 37 remplaçable avec supervision, 33 non remplaçable, 14 remplaçable avec une autre technologie nommée, 2 remplaçable totalement. Le sélecteur libre de `/comparateur` conserve son repli honnête « à documenter » pour les paires non analysées.
-- **Lot 5 — Veille autonome** : 🔄 fonctionnel. Script réel `scripts/veille-rss.mjs` testé en conditions réelles : interroge les sources RSS actives, déduplique, dépose les nouveautés dans une file de validation manuelle affichée sur `/veille`. 5 sources actives sur 8 ; 3 désactivées après échec HTTP confirmé (Anthropic News 404, FMI et OCDE 403 — documenté dans `data/seed/veille_sources.json`). Un scheduled task quotidien (7h UTC) a été créé pour lancer ce script automatiquement, mais **il n'est pas encore lié à ton ordinateur** (approbation à donner côté device pour qu'il puisse s'exécuter — sinon il tourne dans le vide). Spiderfoot (2e canal) reste à intégrer. Depuis le 06/09/2026 la boucle est complète : `scripts/appliquer-veille.mjs` traduit les propositions triées en patchs de fiche relisibles (publiés comme artefact du cron quotidien) et `scripts/appliquer-patchs.mjs` les applique après relecture, avec entrée de changelog et restauration automatique en cas d'échec de validation — voir section 7. Aucune fiche n'est mise à jour automatiquement — validation humaine requise.
+- **Lot 5 — Veille autonome** : 🔄 fonctionnel. Script réel `scripts/veille-rss.mjs` testé en conditions réelles : interroge les sources RSS actives, déduplique, dépose les nouveautés dans une file de validation manuelle affichée sur `/veille`. **40 sources actives sur 41** au 11/09/2026, la seule inactive étant le canal Spiderfoot, jamais implémenté — quinze d'entre elles ajoutées après le double contrôle « le flux répond » ET « le flux parle des sujets du corpus ». Un scheduled task quotidien (7h UTC) a été créé pour lancer ce script automatiquement, mais **il n'est pas encore lié à ton ordinateur** (approbation à donner côté device pour qu'il puisse s'exécuter — sinon il tourne dans le vide). Spiderfoot (2e canal) reste à intégrer. Depuis le 06/09/2026 la boucle est complète : `scripts/appliquer-veille.mjs` traduit les propositions triées en patchs de fiche relisibles (publiés comme artefact du cron quotidien) et `scripts/appliquer-patchs.mjs` les applique après relecture, avec entrée de changelog et restauration automatique en cas d'échec de validation — voir section 7. Aucune fiche n'est mise à jour automatiquement — validation humaine requise.
 - **Lot 6 — Moteur Q&A/RAG** : ⛔ bloqué. Nécessite un projet Supabase (extension `vector`) + une clé API Anthropic configurés. Un compte Supabase existe déjà (org "julien2364's Org", plusieurs projets actifs) — reste à décider si Atlas Humain × IA doit avoir son propre projet Supabase dédié (coût à confirmer) ou être mutualisé dans un projet existant, décision qui te revient. Les 4 questions-tests restent répondues manuellement dans `/questions` en attendant.
 - **Lot 7 — Cartographies interactives** : 🔄 fonctionnel. `/cartographie` propose une répartition par axe cliquable (humain et IA, avec liste des fiches et statut) et une matrice de gap cliquable sur les paires documentées, colorée par catégorie de substituabilité. La heatmap TRL par secteur et la frise chronologique (section 8 du mégaprompt) restent en attente : aucune fiche IA n'a encore de données réelles d'usages sectoriels renseignées.
 - **Lot 8 — QA finale/publication** : 🔄 outillé (06/09/2026). Deux scripts et un cron hebdomadaire industrialisent le contrôle qualité et l'anti-obsolescence — voir la section 6 ci-dessous. La relecture éditoriale finale fiche par fiche reste à faire.
@@ -208,6 +208,65 @@ parce que c'est exactement l'erreur qui produirait une fiche fausse et bien form
 
 Le workflow `autonomie-cron.yml` enchaîne les trois le mercredi à 06h00 UTC, committe
 les dossiers et les briefs, et les publie en artefact.
+
+### `npm run verifier-changelog` — le corpus ne grandit pas sans trace
+
+Le §10 du mégaprompt exige « un changelog public de toute évolution », et le §7.2 que
+chaque évolution dise pourquoi, quand et sur quelle observation.
+`data/seed/changelog.json` compte des entrées soignées — et il s'était **arrêté au
+7 septembre 2026** pendant que le corpus passait de 514 à 828 fiches. Le référentiel a
+plus que doublé sans laisser de trace, et rien ne l'a signalé : le seul script qui y
+écrivait était `appliquer-patchs.mjs`, qui n'avait pas tourné.
+
+Les cinq entrées manquantes ont été rattrapées, et ce contrôle rend l'omission
+impossible : il compare le nombre de fiches à ce que le changelog déclare avoir ajouté,
+et échoue sur le moindre écart. Chaque entrée porte désormais `fiches_ajoutees` ;
+`data/changelog-socle.json` fixe le point de départ du compte, et le recaler est un
+geste délibéré.
+
+### `npm run budget-ia` — le budget mensuel, son seuil et son alerte
+
+Les §11.5 et §13.5 retiennent « un budget IA mensuel avec seuils de coût et alerte si
+dépassement », marqué « retenu tel quel » à l'arbitrage. Rien n'existait : un document
+estimait un coût, mais aucun compteur, aucun plafond, aucune alerte. Une estimation qui
+ne déclenche rien n'est pas un budget.
+
+Le script projette le coût mensuel à partir du contexte **réellement** envoyé — le
+plafond de caractères du moteur, pas une supposition — et du barème de
+`data/budget-ia.json`. Un fournisseur sans tarif relevé est compté au tarif de repli,
+plus cher que la plupart : un oubli doit faire surestimer, jamais sous-estimer.
+
+**Il ne lit aucune facture, et le dit.** Aucune requête payante n'a jamais été émise,
+faute de clé, et le site tourne sur serverless : un compteur en mémoire ne survit pas
+d'une instance à l'autre, et prétendre tenir un cumul réel serait mentir.
+
+L'alarme ne se déclenche que si une clé de fournisseur est réellement posée dans
+l'environnement. Une alarme qui sonne alors qu'aucun euro n'est dépensé est une fausse
+alarme, et une fausse alarme hebdomadaire finit par être ignorée — ce qui détruit
+l'alarme utile.
+
+### Mentions légales et confidentialité — le §10 tenu
+
+Le site est public et n'avait ni mentions légales, ni politique de confidentialité,
+ni base légale énoncée — alors que `app/api/question/route.ts` gardait en mémoire les
+**adresses IP** des visiteurs pour limiter le débit.
+
+L'adresse est désormais **hachée avec un sel tiré au démarrage du processus et jamais
+écrit**. Limiter le débit n'exige pas de savoir qui appelle : il suffit de distinguer
+deux appelants. Personne, pas même l'exploitant, ne peut remonter d'une empreinte à une
+adresse, et le sel disparaît à chaque redéploiement.
+
+Les deux pages `/mentions-legales` et `/confidentialite` disent l'éditeur, l'hébergeur,
+ce qui est traité, sur quelle base légale et pour combien de temps — et ce qui ne l'est
+pas : aucun compte, aucun cookie, aucune mesure d'audience, aucun profilage. Elles sont
+au sitemap, au pied de page, et au test de fumée.
+
+### `/referentiel-ia` navigable par secteur — le §8 tenu
+
+Le §8 demande que ce référentiel soit « navigable par secteur ». Il ne l'était que par
+axe : un lecteur cherchant ce que l'IA fait en pharmacie devait ouvrir les six axes un à
+un. Une entrée par secteur ouvre la page, avec pour chaque capacité son TRL quand un
+déploiement nommable le fonde, et sinon son niveau de diffusion.
 
 ### `npm run detecter-lacunes` — ce que le corpus ne couvre pas encore
 
@@ -363,9 +422,9 @@ survit à une fiche disparue. Correctif dans tous les cas : `npm run indexer`.
 |---|---|---|
 | `autonomie-cron.yml` | mercredi, 06h00 UTC | lacunes → enquête sur Crossref et arXiv → briefs de rédaction |
 | `fumee-cron.yml` | après chaque vérification réussie, et chaque jour à 08h00 UTC | le site **déployé** répond-il, et son moteur voit-il tout le corpus |
-| `verification-ci.yml` | à chaque push et PR sur `main` | validateur → **index** → **cliquet** → **workflows** → types → lint → build, en parallèle du déploiement Vercel |
+| `verification-ci.yml` | à chaque push et PR sur `main` | validateur → **index** → **cliquet** → **changelog** → **workflows** → types → lint → build, en parallèle du déploiement Vercel |
 | `veille-cron.yml` | quotidien, 07h00 UTC | veille RSS → file de propositions → **pré-tri automatique** → patchs de fiche proposés, publiés comme artefact du job (section 7) |
-| `qualite-cron.yml` | lundi, 06h00 UTC | validation → audit de fraîcheur → re-validation → commit → **couverture des attentes** → **audit de fond** → **liens du corpus** → **rendement de la veille** |
+| `qualite-cron.yml` | lundi, 06h00 UTC | validation → audit de fraîcheur → re-validation → commit → **couverture des attentes** → **budget IA** → **audit de fond** → **liens du corpus** → **rendement de la veille** |
 | `documentation-cron.yml` | mercredi, 05h30 UTC | propositions de sources pour les fiches à (re)documenter |
 
 `verification-ci.yml` rejoue exactement `npm run verifier`, la même porte que le script de réception :

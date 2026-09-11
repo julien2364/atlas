@@ -1,0 +1,20 @@
+{
+  "commentaire": "Barème et plafond du budget IA, exigés par les §11.5 et §13.5 du mégaprompt — « un budget mensuel avec seuils de coût et alerte si dépassement », retenu tel quel à l'arbitrage. Les tarifs sont ceux publiés par les fournisseurs et changent sans préavis : ce fichier porte la date à laquelle ils ont été relevés, et un tarif non relevé vaut mieux qu'un tarif inventé — un fournisseur sans entrée est compté au tarif le plus élevé du tableau, pour que l'oubli soit conservateur et non optimiste.",
+  "version": "1.0",
+  "etabli_le": "2026-09-11",
+  "plafond_mensuel_eur": 15,
+  "seuil_alerte": 0.8,
+  "devise": "EUR",
+  "note_tarifs": "Tarifs NON RELEVÉS à la source au 11/09/2026 : le bac à sable n'a pas d'accès sortant vers les pages de tarification. Ils sont ici à null, et le calcul se fait donc au tarif de repli. Poser les vraies valeurs est un geste à faire en ouvrant chaque page de tarification, et à dater.",
+  "repli_eur_par_million": { "entree": 3.0, "sortie": 15.0 },
+  "tarifs": {
+    "anthropic": { "entree_eur_par_million": null, "sortie_eur_par_million": null, "releve_le": null },
+    "openai": { "entree_eur_par_million": null, "sortie_eur_par_million": null, "releve_le": null },
+    "google": { "entree_eur_par_million": null, "sortie_eur_par_million": null, "releve_le": null },
+    "mistral": { "entree_eur_par_million": null, "sortie_eur_par_million": null, "releve_le": null },
+    "groq": { "entree_eur_par_million": null, "sortie_eur_par_million": null, "releve_le": null },
+    "cerebras": { "entree_eur_par_million": null, "sortie_eur_par_million": null, "releve_le": null },
+    "openrouter": { "entree_eur_par_million": null, "sortie_eur_par_million": null, "releve_le": null },
+    "generique": { "entree_eur_par_million": null, "sortie_eur_par_million": null, "releve_le": null }
+  }
+}

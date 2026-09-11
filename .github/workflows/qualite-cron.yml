@@ -49,6 +49,15 @@ jobs:
       - name: Re-valider l'intégrité du corpus (après audit)
         run: node scripts/valider-donnees.mjs
 
+      # Le budget IA, exigé par les §11.5 et §13.5 et « retenu tel quel » à l'arbitrage :
+      # rien n'existait, ni compteur, ni plafond, ni alerte. Le script projette le coût
+      # mensuel à partir du contexte réellement envoyé et du barème, et ne fait échouer
+      # que si une clé de fournisseur est posée — une alarme qui sonne sans dépense est
+      # une fausse alarme, et une fausse alarme hebdomadaire détruit l'alarme utile.
+      - name: Budget IA — projection et seuil
+        if: always()
+        run: node scripts/budget-ia.mjs | tee -a "$GITHUB_STEP_SUMMARY"
+
       # La couverture des attentes du mégaprompt. C'est la mesure qui manquait le plus :
       # après six lots de production, une quinzaine d'exigences explicites des sections
       # 3 et 4 n'étaient mentionnées dans aucun document du projet — Gemini, Mistral et

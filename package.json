@@ -7,7 +7,7 @@
     "build": "next build",
     "start": "next start",
     "lint": "eslint",
-    "verifier": "node scripts/valider-donnees.mjs && node scripts/verifier-index.mjs && node scripts/cliquet-qualite.mjs && node scripts/verifier-workflows.mjs && tsc --noEmit && eslint && next build",
+    "verifier": "node scripts/valider-donnees.mjs && node scripts/verifier-index.mjs && node scripts/cliquet-qualite.mjs && node scripts/verifier-changelog.mjs && node scripts/verifier-workflows.mjs && tsc --noEmit && eslint && next build",
     "valider": "node scripts/valider-donnees.mjs",
     "veille-patchs": "node scripts/appliquer-veille.mjs",
     "appliquer-patchs": "node scripts/appliquer-patchs.mjs",
@@ -25,7 +25,9 @@
     "verifier-workflows": "node scripts/verifier-workflows.mjs",
     "detecter-lacunes": "node scripts/detecter-lacunes.mjs",
     "enqueter": "node scripts/enqueter.mjs",
-    "rediger": "node scripts/rediger.mjs"
+    "rediger": "node scripts/rediger.mjs",
+    "verifier-changelog": "node scripts/verifier-changelog.mjs",
+    "budget-ia": "node scripts/budget-ia.mjs"
   },
   "dependencies": {
     "@supabase/supabase-js": "^2.115.0",

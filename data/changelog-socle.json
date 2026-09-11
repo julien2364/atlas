@@ -1,0 +1,12 @@
+{
+  "commentaire": "Point de départ du compte des fiches. Les entrées antérieures au 07/09/2026 ne portent pas de champ fiches_ajoutees : elles ont été écrites avant ce contrôle. Ce socle dit combien de fiches existaient à ce moment-là. Le recaler est un geste délibéré, à faire dans un commit qui en donne la raison.",
+  "cale_le": "2026-09-11",
+  "fiches_au_socle": 514,
+  "detail": {
+    "humaines": 573,
+    "ia": 54,
+    "gap": 201,
+    "total": 828,
+    "declarees_au_changelog": 314
+  }
+}
