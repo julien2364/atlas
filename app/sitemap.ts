@@ -26,6 +26,7 @@ const PAGES_STATIQUES: { chemin: string; priorite: number }[] = [
   { chemin: "/comparateur", priorite: 0.8 },
   { chemin: "/cartographie", priorite: 0.8 },
   { chemin: "/questions", priorite: 0.7 },
+  { chemin: "/controverses", priorite: 0.7 },
   { chemin: "/veille", priorite: 0.5 },
   { chemin: "/methodologie", priorite: 0.5 },
   { chemin: "/mentions-legales", priorite: 0.2 },

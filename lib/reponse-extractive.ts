@@ -39,6 +39,7 @@ import type { NiveauConfiance, Perspective } from "@/lib/types";
 import { fichesGap, fichesHumaines, fichesIA, getFicheGap, getFicheHumaine, getFicheIA, libelleAxeHumain, libelleAxeIA, LABELS_SUBSTITUABILITE } from "@/lib/corpus";
 import { dedupliquerSources, niveauDepuisStatut, resoudreFiche, sourcesDeFiche, type TypeFicheRag } from "@/lib/sources-corpus";
 import { libelleChamp } from "@/lib/passages-corpus.mjs";
+import { termes as termesLexicaux } from "@/lib/embedding-lexical.mjs";
 import {
   cleFiche,
   etatGraphe,
@@ -223,6 +224,33 @@ const MAX_ANCRAGE = 4;
 const POIDS_ANCRAGE = 0.6;
 
 /**
+ * Poids du fait que la question NOMME le sous-domaine d'une fiche.
+ *
+ * « quel est le meilleur système politique » nomme `modele_politique`. Trois des
+ * cinq fiches retrouvées en relèvent, et pourtant le pivot restait « Structure
+ * matricielle » (management), première au classement lexical par un dixième de
+ * point. Le référentiel a une taxonomie : quand la question la désigne, c'est une
+ * information plus sûre qu'un écart de similarité de 0,01.
+ */
+const POIDS_FAMILLE = 0.5;
+
+/**
+ * Sous-domaines du référentiel que la question nomme explicitement.
+ * `modele_politique` → « modele », « politique ».
+ */
+function sousDomainesNommes(question: string): Set<string> {
+  const mots = new Set(termesLexicaux(question));
+  const nommes = new Set<string>();
+  for (const fiche of fichesHumaines) {
+    const sd = String(fiche.sous_domaine ?? "");
+    if (!sd || nommes.has(sd)) continue;
+    const motsSd = termesLexicaux(sd.replace(/_/g, " "));
+    if (motsSd.some((m) => m.length >= 5 && mots.has(m))) nommes.add(sd);
+  }
+  return nommes;
+}
+
+/**
  * Choisit les fiches qui deviendront des perspectives.
  *
  * Ordre de priorité assumé : la PERTINENCE d'abord, la diversité ensuite.
@@ -235,7 +263,7 @@ const POIDS_ANCRAGE = 0.6;
  *      de plus de la même famille qu'une perspective hors sujet ramassée pour
  *      faire nombre.
  */
-function choisirFiches(groupes: GroupeFiche[]): GroupeFiche[] {
+function choisirFiches(groupes: GroupeFiche[], sousDomainesNommesParLaQuestion: Set<string>): GroupeFiche[] {
   if (groupes.length === 0) return [];
   const plancher = groupes[0].similarite_max * FRACTION_PLANCHER;
   const candidats = groupes.filter((g) => g.similarite_max >= plancher);
@@ -274,7 +302,8 @@ function choisirFiches(groupes: GroupeFiche[]): GroupeFiche[] {
   const notePivot = (g: GroupeFiche) => {
     const cle = cleFiche(g.type, g.id);
     const ancrage = Math.min(degres.get(cle) ?? 0, MAX_ANCRAGE) / MAX_ANCRAGE;
-    return g.similarite_max / meilleure + POIDS_ANCRAGE * ancrage;
+    const famille = sousDomainesNommesParLaQuestion.has(g.sous_domaine) ? 1 : 0;
+    return g.similarite_max / meilleure + POIDS_ANCRAGE * ancrage + POIDS_FAMILLE * famille;
   };
   const pivot = [...candidats].sort((a, b) => notePivot(b) - notePivot(a))[0];
   pivot.role = "pivot";
@@ -331,10 +360,36 @@ function choisirFiches(groupes: GroupeFiche[]): GroupeFiche[] {
     .filter((v) => v.role !== "meme_preuve")
     .sort((a, b) => PRIORITE_ROLE[b.role] - PRIORITE_ROLE[a.role]);
 
+  // 5a-bis. Une contradiction documentée du pivot entre TOUJOURS, même si les
+  // places sont occupées par des voisins lexicaux corrects.
+  //
+  // La règle de neutralité active du projet demande qu'une réponse expose une
+  // opposition quand le corpus en contient une. Sur « quel est le meilleur
+  // système politique », le pivot « Démocratie libérale » a deux contradicteurs
+  // nommés dans sa propre fiche (Rawls, Mouffe) et aucun n'apparaissait : les
+  // cinq places étaient prises par des voisins de vocabulaire, tous au-dessus du
+  // plancher. Une place, et une seule, leur est réservée — la dernière, celle du
+  // voisin le plus faible.
+  if (!retenus.some((g) => g.role === "contradiction")) {
+    const contradicteur = introduisibles.find((v) => v.role === "contradiction");
+    if (contradicteur) {
+      const groupe = grouperFicheSansPassage(contradicteur);
+      if (groupe) {
+        const derniereLexicale = retenus.map((g) => g.role).lastIndexOf("voisinage_lexical");
+        if (derniereLexicale > 0) retenus[derniereLexicale] = groupe;
+        else if (retenus.length < MAX_PERSPECTIVES) retenus.push(groupe);
+        if (derniereLexicale > 0 || retenus.includes(groupe)) {
+          introduisibles.splice(introduisibles.indexOf(contradicteur), 1);
+          dejaRetenue.add(cleFiche(groupe.type, groupe.id));
+        }
+      }
+    }
+  }
+
   // 5a. Les places prises par un voisinage de vocabulaire FAIBLE sont rendues :
   // une fiche appariée sur un mot ne vaut pas une fiche liée par une relation.
   const seuil = pivot.similarite_max * PLANCHER_VOISINAGE;
-  let introduites = 0;
+  let introduites = retenus.filter((g) => g.introduite).length;
   for (let i = retenus.length - 1; i >= 1 && introduites < MAX_INTRODUITES; i -= 1) {
     const occupant = retenus[i];
     if (occupant.role !== "voisinage_lexical" || occupant.similarite_max >= seuil) continue;
@@ -707,7 +762,7 @@ export function construireReponseExtractive(
   passages: PassagePourExtraction[]
 ): ReponseExtractive {
   const groupes = grouperParFiche(passages);
-  const choisis = choisirFiches(groupes);
+  const choisis = choisirFiches(groupes, sousDomainesNommes(question));
   const perspectives: Perspective[] = [];
   for (const groupe of choisis) {
     const perspective = composer(groupe);

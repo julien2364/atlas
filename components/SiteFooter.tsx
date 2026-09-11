@@ -5,6 +5,7 @@ import { derniereMiseAJourCorpus, formatDateFr } from "@/lib/corpus";
    navigation côté client vers une route qui ne rend pas de page. */
 const LIENS: { href: string; label: string; brut?: boolean }[] = [
   { href: "/methodologie", label: "Méthodologie et limites" },
+  { href: "/controverses", label: "Controverses documentées" },
   { href: "/veille", label: "Veille et changelog" },
   { href: "/megaprompt", label: "Spécification du projet" },
   { href: "/api/meta", label: "API publique", brut: true },

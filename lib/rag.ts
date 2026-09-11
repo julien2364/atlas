@@ -55,7 +55,7 @@ import {
   rechercherLexical,
   type ResultatRecherche,
 } from "@/lib/index-vectoriel";
-import { MODELE_LEXICAL } from "@/lib/embedding-lexical.mjs";
+import { MODELE_LEXICAL, termes as termesLexicaux } from "@/lib/embedding-lexical.mjs";
 import { configEmbeddings, embedderLotDistant } from "@/lib/embeddings-fournisseur.mjs";
 import {
   appelerFournisseur,
@@ -66,6 +66,7 @@ import {
 } from "@/lib/fournisseurs-generation";
 import { analyserSortie, type SortieBrute } from "@/lib/analyse-sortie";
 import { construireReponseExtractive, type PassagePourExtraction } from "@/lib/reponse-extractive";
+import { cleFiche, voisinsRaisonnes } from "@/lib/relations-corpus";
 
 export type { TypeFicheRag };
 
@@ -299,6 +300,7 @@ export function empreinteCache(question: string, mode: ModeDemande): string {
       String(SEUIL_PERTINENCE),
       String(MIN_PASSAGES),
       String(MIN_TERMES_APPARIES),
+      String(MARGE_PERTINENCE),
       "v3",
     ].join("|")
   );
@@ -1011,6 +1013,86 @@ export interface OptionsReponse {
  * peut arrêter le traitement AVANT la suivante : une question hors sujet ne
  * déclenche aucune génération, et ne coûte donc rien, même avec une clé posée.
  */
+/**
+ * Fraction du seuil de pertinence en dessous de laquelle aucun rattrapage n'est
+ * possible, quelle que soit la cohérence des fiches trouvées. À 0,8, une question
+ * à 0,12 pour un seuil de 0,15 reste refusée ; une question à 0,143 peut être
+ * rattrapée si le graphe la soutient. Plus bas, on répondrait à n'importe quoi.
+ */
+export const MARGE_PERTINENCE = nombreEnv("ATLAS_RAG_MARGE_PERTINENCE", 0.8, 0.5, 1);
+
+/**
+ * Sous-domaines du référentiel que la question NOMME.
+ *
+ * « quel est le meilleur système politique… » contient « politique » ; le
+ * référentiel a un sous-domaine `modele_politique`. C'est une information que la
+ * similarité BM25 dilue — elle traite « politique » comme un mot parmi 4110
+ * passages — alors que c'est un pointeur direct vers une famille de fiches.
+ *
+ * On ne s'en sert pas pour classer (ce serait un second moteur de recherche mal
+ * fait), mais comme PREUVE INDÉPENDANTE que la question tombe dans le périmètre :
+ * elle nomme une des cases du référentiel.
+ */
+function sousDomainesNommes(question: string): Set<string> {
+  const mots = new Set(termesLexicaux(question));
+  const nommes = new Set<string>();
+  for (const fiche of fichesHumaines) {
+    const sd = String(fiche.sous_domaine ?? "");
+    if (!sd || nommes.has(sd)) continue;
+    // Le sous-domaine est nommé si l'un de ses mots (hors mots trop courts) est
+    // dans la question : `modele_politique` → « modele », « politique ».
+    const motsSd = termesLexicaux(sd.replace(/_/g, " "));
+    if (motsSd.some((m) => m.length >= 5 && mots.has(m))) nommes.add(sd);
+  }
+  return nommes;
+}
+
+/** Fiches retrouvées qui relèvent d'un des sous-domaines nommés par la question. */
+function fichesDansSousDomaines(lignes: LignePassage[], sousDomaines: Set<string>): string[] {
+  if (sousDomaines.size === 0) return [];
+  const vues = new Set<string>();
+  const noms: string[] = [];
+  for (const ligne of lignes) {
+    // Une fiche de gap est retrouvée sous son propre identifiant, mais elle porte
+    // le sous-domaine de sa fiche humaine : sans cette résolution, « Régime
+    // semi-présidentiel × Frameworks multi-agents » ne comptait pas comme une
+    // fiche de modèle politique, et le rattrapage manquait d'une voix.
+    let idHumaine: string | null = null;
+    if (ligne.type_fiche === "humaine") idHumaine = ligne.fiche_id;
+    else if (ligne.type_fiche === "gap") {
+      idHumaine = fichesGap.find((g) => g.id === ligne.fiche_id)?.fiche_humaine_id ?? null;
+    }
+    if (!idHumaine || vues.has(idHumaine)) continue;
+    vues.add(idHumaine);
+    const fiche = fichesHumaines.find((f) => f.id === idHumaine);
+    if (fiche && sousDomaines.has(String(fiche.sous_domaine ?? ""))) noms.push(fiche.nom);
+  }
+  return noms;
+}
+
+/**
+ * Cherche une relation documentée entre deux des fiches retrouvées et rend la
+ * phrase qui la décrit, ou null. C'est la preuve indépendante du rattrapage
+ * ci-dessous : elle ne dépend pas des mots de la question.
+ */
+function paireLieeParmi(lignes: LignePassage[]): string | null {
+  const presentes = new Set(lignes.map((l) => cleFiche(l.type_fiche, l.fiche_id)));
+  const examinees = new Set<string>();
+  for (const ligne of lignes) {
+    const cle = cleFiche(ligne.type_fiche, ligne.fiche_id);
+    if (examinees.has(cle)) continue;
+    examinees.add(cle);
+    for (const voisin of voisinsRaisonnes(ligne.type_fiche, ligne.fiche_id)) {
+      // « même objet, autre discipline » ne prouve rien ici : il est calculé à
+      // partir du sous-domaine, donc deux fiches voisines par construction le
+      // seraient toujours. Seules les relations ÉCRITES comptent.
+      if (voisin.role === "autre_discipline") continue;
+      if (presentes.has(cleFiche(voisin.cible.type, voisin.cible.id))) return voisin.enonce;
+    }
+  }
+  return null;
+}
+
 export async function repondreAQuestion(question: string, options: OptionsReponse = {}): Promise<ReponseQuestion> {
   const modeDemande: ModeDemande = options.mode ?? "auto";
   const retourColle = typeof options.retour === "string" ? options.retour : null;
@@ -1041,7 +1123,34 @@ export async function repondreAQuestion(question: string, options: OptionsRepons
     );
   }
 
-  if (similariteMax < SEUIL_PERTINENCE) {
+  // Sous le seuil de pertinence, une SECONDE preuve peut rattraper la première.
+  //
+  // « quel est le meilleur system politique pour els hommes ? » : 0,143 contre un
+  // seuil à 0,15, refus — alors que « Démocratie libérale », « Régime
+  // semi-présidentiel » et « Économie planifiée » étaient dans les résultats. Deux
+  // fautes de frappe suffisaient à faire passer la question sous la barre. Refuser
+  // pour 0,007 quand le corpus contient manifestement le sujet n'est pas de la
+  // prudence, c'est une erreur de mesure.
+  //
+  // La similarité n'est pas la seule preuve disponible : le graphe de relations
+  // en est une autre, et elle est INDÉPENDANTE du vocabulaire de la question. Si
+  // les fiches retrouvées se citent entre elles, elles forment un sujet, pas un
+  // ramassis de coïncidences lexicales. Trois conditions cumulatives, donc :
+  // proximité dans la marge, plusieurs termes de la question réellement
+  // retrouvés, et au moins une relation documentée entre deux fiches trouvées.
+  // La réponse est alors construite, et le fait d'être sous le seuil est dit.
+  const dansLaMarge = similariteMax >= SEUIL_PERTINENCE * MARGE_PERTINENCE;
+  const ancrageRelation = dansLaMarge ? paireLieeParmi(trouves) : null;
+  const famille = dansLaMarge ? fichesDansSousDomaines(trouves, sousDomainesNommes(question)) : [];
+  const ancrage =
+    ancrageRelation ??
+    (famille.length >= 2
+      ? `la question nomme un sous-domaine du référentiel, et ${famille.length} fiches retrouvées en relèvent ` +
+        `(${famille.slice(0, 4).join(", ")})`
+      : null);
+  const rattrapee = dansLaMarge && termesApparies >= MIN_TERMES_APPARIES + 1 && ancrage !== null;
+
+  if (similariteMax < SEUIL_PERTINENCE && !rattrapee) {
     return reponseHorsCorpus(
       question,
       trouves,
@@ -1050,6 +1159,16 @@ export async function repondreAQuestion(question: string, options: OptionsRepons
         `(meilleure similarité ${similariteMax.toFixed(2)}, seuil de pertinence ${SEUIL_PERTINENCE}). ` +
         "Les extraits les plus proches sont affichés ci-dessous à titre indicatif, sans réponse construite.",
       alertesIndex
+    );
+  }
+
+  if (rattrapee) {
+    alertesIndex.push(
+      `Réponse construite SOUS le seuil de pertinence (${similariteMax.toFixed(3)} pour un seuil de ` +
+        `${SEUIL_PERTINENCE}). Ce n'est pas le vocabulaire de la question qui l'a permis, c'est le référentiel ` +
+        `lui-même : ${ancrage} — deux fiches retrouvées se citent, donc elles traitent d'un même sujet. ` +
+        "À lire avec une prudence supplémentaire : la question est peut-être mal formulée pour ce corpus, " +
+        "ou le corpus pauvre sur ce point."
     );
   }
 

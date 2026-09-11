@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import JsonLd from "@/components/JsonLd";
+import RelationsFiche from "@/components/RelationsFiche";
 import { BadgeStatut, Bloc, CarteLien, DateVerification, Etiquette, FilAriane, ListeSources } from "@/components/FicheUI";
 import {
   cheminApiFiche,
@@ -101,6 +102,10 @@ export default async function PageFicheHumaine({ params }: { params: Promise<{ i
           <p>{fiche.resonance_ia}</p>
         </Bloc>
       ) : null}
+
+      <Bloc titre="Débats documentés">
+        <RelationsFiche type="humaine" id={fiche.id} />
+      </Bloc>
 
       <Bloc titre="Sources" id="sources">
         <ListeSources sources={fiche.sources ?? []} />

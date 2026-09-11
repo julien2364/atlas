@@ -191,23 +191,36 @@ export function bonPorteur(preuve, designation, nomCible) {
   if (designation !== motsCible[motsCible.length - 1]) return true;
 
   const prenomsCible = new Set(motsCible.slice(0, -1));
-  const mots = String(preuve).split(/\s+/);
-  let vuIsole = false;
-  for (let i = 0; i < mots.length; i += 1) {
-    if (aplatir(mots[i]).replace(/ /g, "") !== designation) continue;
-    const precedent = i > 0 ? mots[i - 1].replace(/[^\p{L}'-]/gu, "") : "";
-    const platPrecedent = aplatir(precedent);
-    const capitalise =
-      precedent.length > 1 &&
-      precedent[0] === precedent[0].toLocaleUpperCase("fr") &&
-      precedent[0] !== precedent[0].toLocaleLowerCase("fr");
-    // Précédé d'un prénom étranger à la fiche : mauvais porteur, on continue de
-    // chercher une autre occurrence dans la même phrase.
-    if (capitalise && platPrecedent && !prenomsCible.has(platPrecedent)) continue;
-    vuIsole = true;
-    break;
+  // Deux niveaux de découpage, parce que le SÉPARATEUR change le sens.
+  //
+  //   « Felix Klein »   → espace : « Felix » est le prénom de ce Klein-là, et
+  //                       ce n'est pas Mélanie. Mauvais porteur.
+  //   « Mouffe/Rawls »  → ponctuation : c'est une ÉNUMÉRATION de deux noms, pas
+  //                       un prénom suivi d'un nom. Bon porteur.
+  //
+  // Le premier découpage sépare les groupes séparés par des espaces, le second
+  // sépare à l'intérieur d'un groupe. Un patronyme qui n'est pas en tête de son
+  // groupe est donc précédé d'une ponctuation, jamais d'un prénom.
+  const groupes = String(preuve).split(/\s+/).filter(Boolean);
+  let precedentGroupe = "";
+  for (const groupe of groupes) {
+    const jetons = groupe.split(/[^\p{L}'-]+/u).filter(Boolean);
+    for (let i = 0; i < jetons.length; i += 1) {
+      if (aplatir(jetons[i]) !== designation) continue;
+      if (i > 0) return true; // précédé d'une ponctuation : énumération
+      const jetonsPrecedents = precedentGroupe.split(/[^\p{L}'-]+/u).filter(Boolean);
+      const precedent = jetonsPrecedents[jetonsPrecedents.length - 1] ?? "";
+      const platPrecedent = aplatir(precedent);
+      const capitalise =
+        precedent.length > 1 &&
+        precedent[0] === precedent[0].toLocaleUpperCase("fr") &&
+        precedent[0] !== precedent[0].toLocaleLowerCase("fr");
+      if (capitalise && platPrecedent && !prenomsCible.has(platPrecedent)) continue;
+      return true;
+    }
+    precedentGroupe = groupe;
   }
-  return vuIsole;
+  return false;
 }
 
 /* -------------------------------------------------------------------------- */

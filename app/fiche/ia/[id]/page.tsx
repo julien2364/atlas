@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import JsonLd from "@/components/JsonLd";
+import RelationsFiche from "@/components/RelationsFiche";
 import { BadgeStatut, Bloc, CarteLien, DateVerification, Etiquette, FilAriane, ListeSources } from "@/components/FicheUI";
 import {
   cheminApiFiche,
@@ -148,6 +149,10 @@ export default async function PageFicheIA({ params }: { params: Promise<{ id: st
 
       <Bloc titre="Limites connues">
         <p>{fiche.limites_connues}</p>
+      </Bloc>
+
+      <Bloc titre="Débats documentés">
+        <RelationsFiche type="ia" id={fiche.id} />
       </Bloc>
 
       <Bloc titre="Sources" id="sources">

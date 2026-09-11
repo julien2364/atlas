@@ -7,7 +7,7 @@
   "mobilise": 233,
   "couple": 201,
   "succession": 116,
-  "conteste": 104,
+  "conteste": 106,
   "mention": 93,
   "source_commune": 60,
   "resonance": 2
@@ -320,6 +320,34 @@
    "champ": "limites_critiques",
    "designation": "robert keohane",
    "preuve": "La méthode se donne elle-même pour une curiosité et non pour un programme de test d'hypothèses : elle ne produit ni généralisation ni énoncé mesurable, ce qui est l'objection que Robert Keohane adresse à ce courant dans « Beyond Dichotomy » (International Studies Quarterly, 42(1), 1998, p."
+  },
+  {
+   "type": "conteste",
+   "de": {
+    "type": "humaine",
+    "id": "democratie-liberale"
+   },
+   "vers": {
+    "type": "humaine",
+    "id": "chantal-mouffe"
+   },
+   "champ": "limites_critiques",
+   "designation": "mouffe",
+   "preuve": "Défis actuels : polarisation, désinformation, érosion de la confiance institutionnelle, tension entre État de droit et volonté majoritaire (cf. débats Mouffe/Rawls en philosophie politique)."
+  },
+  {
+   "type": "conteste",
+   "de": {
+    "type": "humaine",
+    "id": "democratie-liberale"
+   },
+   "vers": {
+    "type": "humaine",
+    "id": "john-rawls"
+   },
+   "champ": "limites_critiques",
+   "designation": "rawls",
+   "preuve": "Défis actuels : polarisation, désinformation, érosion de la confiance institutionnelle, tension entre État de droit et volonté majoritaire (cf. débats Mouffe/Rawls en philosophie politique)."
   },
   {
    "type": "conteste",
