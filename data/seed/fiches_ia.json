@@ -3368,5 +3368,777 @@
     ],
     "statut": "documente",
     "derniere_verification": "2026-09-11"
+  },
+  {
+    "id": "absence-de-conscience-et-de-qualia-limite-transversale",
+    "axe": "limites",
+    "nom": "Absence de conscience et de qualia (limite transversale)",
+    "editeur": null,
+    "architecture": null,
+    "capacites_cles": [
+      "Le référentiel sépare deux questions que le vocabulaire courant confond. David Chalmers (« Facing Up to the Problem of Consciousness », Journal of Consciousness Studies 2(3), p. 200-219, 1995) range d'un côté les « problèmes faciles » — discrimination, catégorisation, intégration de l'information, rapportabilité, attention, contrôle du comportement —, « directly susceptible to the standard methods of cognitive science », et de l'autre le problème difficile : « Why is the performance of these functions accompanied by experience? ». Qu'un modèle accomplisse les premières fonctions ne tranche rien sur la seconde question, dans un sens ni dans l'autre. Sa fiche côté humain : david-chalmers (axe philosophique)",
+      "John Searle (« Minds, Brains, and Programs », Behavioral and Brain Sciences 3(3), p. 417-457, 1980) vise une thèse précise, l'IA forte, définie comme la position selon laquelle « the appropriately programmed computer really is a mind, in the sense that computers given the right programs can be literally said to understand and have other cognitive states » ; sa conclusion est que « the formal symbol manipulations by themselves don't have any intentionality ; they are quite meaningless ; they aren't even symbol manipulations, since the symbols don't symbolize anything. In the linguistic jargon, they have only a syntax but no semantics ». Sa fiche côté humain : john-searle (axe philosophique)",
+      "Daniel Dennett (« Quining Qualia », dans Marcel & Bisiach (dir.), Consciousness in Contemporary Science, Oxford University Press, 1988) déplace le désaccord d'un cran : ce n'est pas que les machines seraient dépourvues de qualia, c'est que la notion elle-même — propriété ineffable, intrinsèque, privée, directement appréhendée — est incohérente, et il conclut « there simply are no qualia at all ». Chez lui la question « une IA a-t-elle des qualia ? » est donc mal formée plutôt qu'ouverte. Sa fiche côté humain : daniel-dennett (axe philosophique)",
+      "Le rapport collectif de Patrick Butlin, Robert Long, Eric Elmoznino, Yoshua Bengio, Jonathan Birch, Stephen M. Fleming, Chris Frith, Liad Mudrik, Eric Schwitzgebel et al. (« Consciousness in Artificial Intelligence: Insights from the Science of Consciousness », arXiv, 17 août 2023) dérive des « indicator properties » computationnelles de cinq théories neuroscientifiques — traitement récurrent, espace de travail global, théories d'ordre supérieur, codage prédictif, schéma attentionnel — et conclut : « Our analysis suggests that no current AI systems are conscious, but also suggests that there are no obvious technical barriers to building AI systems which satisfy these indicators ». La conclusion est indexée sur les théories retenues et sur les systèmes examinés en 2023, pas sur l'architecture en général",
+      "David Chalmers énonce dans « Could a Large Language Model be Conscious? » (arXiv, 4 mars 2023 ; Boston Review, 9 août 2023) une position graduée et non une conclusion : « while it is somewhat unlikely that current large language models are conscious, we should take seriously the possibility that successors to large language models may be conscious in the not-too-distant future ». Les obstacles qu'il nomme sont fonctionnels — « their lack of recurrent processing, a global workspace, and unified agency »",
+      "Ce qui est effectivement mesuré est étroit. Jack Lindsey (Anthropic, « Emergent Introspective Awareness in Large Language Models », 29 octobre 2025) injecte des représentations de concepts dans les activations et teste si le modèle les détecte : Claude Opus 4.1 réussit environ 20 % du temps à l'intensité et à la couche d'injection optimales. L'auteur borne lui-même la portée du résultat : « We stress that the introspective capabilities we observe may not have the same philosophical significance they do in humans », et « the abilities we observe are highly unreliable ; failures of introspection remain the norm »"
+    ],
+    "usages": [
+      {
+        "secteur": "science",
+        "diffusion": "etabli",
+        "description": "Le débat philosophique est ancien, documenté et toujours ouvert : il n'y a pas de position majoritaire à rapporter, mais des thèses signées qui s'excluent. Chalmers pose un écart explicatif que l'accomplissement des fonctions ne comble pas ; Searle nie qu'une syntaxe suffise à produire une sémantique ; Dennett tient la notion même de quale pour un artefact conceptuel. Une quatrième position, plus récente, conteste le cadrage entier de la question plutôt que ses réponses. Aucune de ces thèses n'est réfutée par un résultat expérimental à ce jour, et le référentiel ne les départage pas.",
+        "exemples": [
+          "Chalmers (1995) formule le problème difficile comme une question à laquelle l'explication fonctionnelle ne répond pas : « Why is the performance of these functions accompanied by experience? »",
+          "Searle (1980) conclut que la manipulation formelle de symboles n'a « only a syntax but no semantics »",
+          "Dennett (1988) soutient à l'inverse que le concept de quale est incohérent : « there simply are no qualia at all »",
+          "Abeba Birhane (Trinity College Dublin), recensant Intertwined Creatures d'Anthony Chemero dans Nature du 24 août 2026, conteste la prémisse commune au débat — l'esprit conçu comme « a lone, disembodied thinker » — et écrit des grands modèles de langage qu'ils « do not need to navigate interpersonal interactions to maintain their existence. And they do not have the capacity to care »"
+        ],
+        "sources": [
+          {
+            "titre": "David Chalmers, « Facing Up to the Problem of Consciousness », Journal of Consciousness Studies 2(3), p. 200-219",
+            "url": "https://consc.net/papers/facing.html",
+            "type": "primaire"
+          },
+          {
+            "titre": "John R. Searle, « Minds, Brains, and Programs », Behavioral and Brain Sciences 3(3), p. 417-457",
+            "url": "https://artscimedia.case.edu/wp-content/uploads/2013/07/14182625/Searle-Minds-Brains-and-Programs.pdf",
+            "type": "primaire"
+          },
+          {
+            "titre": "Daniel C. Dennett, « Quining Qualia », dans Marcel & Bisiach (dir.), Consciousness in Contemporary Science, Oxford University Press",
+            "url": "https://coursys.sfu.ca/2015fa-phil-880-g1/pages/Dennett/view",
+            "type": "primaire"
+          },
+          {
+            "titre": "Abeba Birhane, « Can AI ever be conscious? The question stems from a misconception », Nature, vol. 656, p. 816-817",
+            "url": "https://www.nature.com/articles/d41586-026-02571-9",
+            "date": "2026-08-24",
+            "type": "secondaire"
+          }
+        ]
+      },
+      {
+        "secteur": "recherche",
+        "diffusion": "emergent",
+        "description": "Depuis 2023, une partie du champ a cessé d'argumenter sur la conscience des machines pour construire des protocoles : dériver de théories neuroscientifiques des propriétés computationnelles observables, puis regarder si une architecture donnée les instancie. Ce qui est alors produit est un verdict sur des indicateurs, à une date donnée, sous une hypothèse déclarée — le fonctionnalisme computationnel. Le référentiel enregistre les verdicts comme résultats de protocole, non comme réponses à la question philosophique.",
+        "exemples": [
+          "Butlin, Long, Elmoznino, Bengio, Birch, Fleming, Frith, Mudrik, Schwitzgebel et al. (arXiv, 17 août 2023) dérivent des indicateurs de cinq théories et concluent qu'« aucun système d'IA actuel n'est conscient », tout en ne relevant « no obvious technical barriers » à en construire qui satisferaient ces indicateurs",
+          "Jack Lindsey (Anthropic, 29 octobre 2025) mesure par injection de concepts un taux de détection d'environ 20 % pour Claude Opus 4.1 aux réglages les plus favorables, et écrit ne pas chercher à traiter la question de l'expérience subjective",
+          "Les modèles testés par Lindsey incluent Claude Opus 4.1, Opus 4, Sonnet 4, Sonnet 3.7, Sonnet 3.5, Haiku 3.5, Opus 3, Sonnet 3 et Haiku 3"
+        ],
+        "sources": [
+          {
+            "titre": "Butlin, Long, Elmoznino, Bengio, Birch et al., « Consciousness in Artificial Intelligence: Insights from the Science of Consciousness », arXiv:2308.08708",
+            "url": "https://arxiv.org/abs/2308.08708",
+            "date": "2023-08-17",
+            "type": "primaire"
+          },
+          {
+            "titre": "Jack Lindsey (Anthropic), « Emergent Introspective Awareness in Large Language Models », Transformer Circuits",
+            "url": "https://transformer-circuits.pub/2025/introspection/index.html",
+            "date": "2025-10-29",
+            "type": "primaire"
+          },
+          {
+            "titre": "David Chalmers, « Could a Large Language Model be Conscious? », arXiv:2303.07103 (Boston Review, 9 août 2023)",
+            "url": "https://arxiv.org/abs/2303.07103",
+            "date": "2023-03-04",
+            "type": "primaire"
+          }
+        ]
+      },
+      {
+        "secteur": "industrie",
+        "diffusion": "emergent",
+        "description": "Chez les éditeurs de modèles, la question a pris une forme procédurale : que faire sous incertitude, sans attendre qu'elle soit levée. Les textes qui circulent dans ce registre prennent soin de ne pas trancher la question de fond et demandent des politiques internes, des évaluations et des engagements publics. Ce sont des recommandations argumentées, pas des constats.",
+        "exemples": [
+          "Robert Long, Jeff Sebo, Patrick Butlin, Kyle Fish, Jonathan Birch et David Chalmers (« Taking AI Welfare Seriously », arXiv, 4 novembre 2024) écrivent explicitement que « our argument in this report is not that AI systems definitely are, or will be, conscious, robustly agentic, or otherwise morally significant », et recommandent trois pas : reconnaître le problème, évaluer les systèmes, préparer des procédures",
+          "Patrick Butlin et Theodoros Lappas (« Principles for Responsible AI Consciousness Research », arXiv, 13 janvier 2025) proposent cinq principes portant sur les objectifs et procédures de recherche, le partage des connaissances et la communication publique, et notent qu'une organisation qui choisit de ne pas étudier la conscience a tout de même besoin d'une politique, « as those developing advanced AI systems risk inadvertently creating conscious entities »"
+        ],
+        "sources": [
+          {
+            "titre": "Long, Sebo, Butlin, Finlinson, Fish, Harding, Pfau, Sims, Birch & Chalmers, « Taking AI Welfare Seriously », arXiv:2411.00986",
+            "url": "https://arxiv.org/abs/2411.00986",
+            "date": "2024-11-04",
+            "type": "primaire"
+          },
+          {
+            "titre": "Patrick Butlin & Theodoros Lappas, « Principles for Responsible AI Consciousness Research », arXiv:2501.07290",
+            "url": "https://arxiv.org/abs/2501.07290",
+            "date": "2025-01-13",
+            "type": "primaire"
+          }
+        ]
+      }
+    ],
+    "limites_connues": "Cette fiche n'établit pas que les systèmes actuels sont dépourvus d'expérience subjective, et n'établit pas davantage l'inverse : elle enregistre des thèses signées et des résultats de protocole, et s'arrête là. Trois choses précises manquent et il faut les dire. D'abord, il n'existe aucun test décisif : le verdict de Butlin, Long, Bengio et al. porte sur des « indicator properties » dérivées de cinq théories neuroscientifiques particulières et suppose le fonctionnalisme computationnel — hypothèse que Searle rejette par principe, puisque pour lui aucune organisation formelle ne produit d'intentionnalité, et que Dennett rendrait sans objet, puisque pour lui il n'y a pas de quale à chercher. Un même protocole ne peut donc pas arbitrer entre ces trois positions ; il les présuppose ou les contourne. Ensuite, ce qui est mesuré est bien plus étroit que ce que le mot « conscience » suggère : l'expérience d'injection de concepts de Lindsey mesure une capacité de rapport sur un état interne, à environ 20 % de réussite dans les conditions les plus favorables, sur des modèles Claude en octobre 2025, et son auteur écarte lui-même l'inférence philosophique. Enfin, la fiche ne dit rien du statut moral : Long, Sebo, Butlin, Birch et Chalmers construisent leur recommandation sur l'incertitude précisément parce qu'elle n'est pas levée, et le référentiel ne la lève pas non plus. Deux formulations courantes sont donc à écarter comme non soutenues par les sources citées : « les modèles n'ont évidemment aucune expérience » et « les modèles pourraient bien avoir une expérience ». Ce qui est attesté est plus pauvre : aucun système examiné publiquement à ce jour ne satisfait les indicateurs dérivés des théories dominantes, et personne parmi les auteurs cités ne prétend que ces indicateurs épuisent la question.",
+    "sources": [
+      {
+        "titre": "David Chalmers, « Facing Up to the Problem of Consciousness », Journal of Consciousness Studies 2(3), p. 200-219",
+        "url": "https://consc.net/papers/facing.html",
+        "type": "primaire"
+      },
+      {
+        "titre": "John R. Searle, « Minds, Brains, and Programs », Behavioral and Brain Sciences 3(3), p. 417-457",
+        "url": "https://artscimedia.case.edu/wp-content/uploads/2013/07/14182625/Searle-Minds-Brains-and-Programs.pdf",
+        "type": "primaire"
+      },
+      {
+        "titre": "Daniel C. Dennett, « Quining Qualia », dans Marcel & Bisiach (dir.), Consciousness in Contemporary Science, Oxford University Press",
+        "url": "https://coursys.sfu.ca/2015fa-phil-880-g1/pages/Dennett/view",
+        "type": "primaire"
+      },
+      {
+        "titre": "Butlin, Long, Elmoznino, Bengio, Birch et al., « Consciousness in Artificial Intelligence: Insights from the Science of Consciousness », arXiv:2308.08708",
+        "url": "https://arxiv.org/abs/2308.08708",
+        "date": "2023-08-17",
+        "type": "primaire"
+      },
+      {
+        "titre": "David Chalmers, « Could a Large Language Model be Conscious? », arXiv:2303.07103 (Boston Review, 9 août 2023)",
+        "url": "https://arxiv.org/abs/2303.07103",
+        "date": "2023-03-04",
+        "type": "primaire"
+      },
+      {
+        "titre": "Jack Lindsey (Anthropic), « Emergent Introspective Awareness in Large Language Models », Transformer Circuits",
+        "url": "https://transformer-circuits.pub/2025/introspection/index.html",
+        "date": "2025-10-29",
+        "type": "primaire"
+      },
+      {
+        "titre": "Abeba Birhane, « Can AI ever be conscious? The question stems from a misconception », Nature, vol. 656, p. 816-817",
+        "url": "https://www.nature.com/articles/d41586-026-02571-9",
+        "date": "2026-08-24",
+        "type": "secondaire"
+      }
+    ],
+    "statut": "documente",
+    "derniere_verification": "2026-09-11"
+  },
+  {
+    "id": "gouvernance-et-alignement-limite-transversale",
+    "axe": "limites",
+    "nom": "Questions de gouvernance et d'alignement (limite transversale)",
+    "editeur": null,
+    "architecture": null,
+    "capacites_cles": [
+      "L'alignement est un programme de recherche nommé et daté : Dario Amodei, Chris Olah, Jacob Steinhardt, Paul Christiano, John Schulman et Dan Mané (« Concrete Problems in AI Safety », arXiv, 21 juin 2016) définissent les accidents comme « unintended and harmful behavior that may emerge from poor design of real-world AI systems » et posent cinq problèmes : éviter les effets de bord, éviter le détournement de récompense, la supervision passant à l'échelle, l'exploration sûre et le décalage de distribution",
+      "Les techniques déployées reposent sur la préférence humaine puis sur son économie : Christiano, Leike, Brown, Martic, Legg et Amodei (arXiv, 12 juin 2017) obtiennent des comportements complexes « while providing feedback on less than one percent of our agent's interactions with the environment » et « with about an hour of human time » ; Bai et al. (« Constitutional AI: Harmlessness from AI Feedback », arXiv, 15 décembre 2022) remplacent l'étiquetage humain par une liste de principes — « The only human oversight is provided through a list of rules or principles » — et revendiquent un contrôle « with far fewer human labels »",
+      "Les échecs d'alignement sont mesurés, et la mesure est elle-même contestée. OpenAI et Apollo Research (« Detecting and reducing scheming in AI models », 17 septembre 2025) rapportent sur 26 évaluations couvrant plus de 180 environnements une baisse du taux d'actions dissimulées de 13 % à 0,4 % pour OpenAI o3 et de 8,7 % à 0,3 % pour o4-mini après entraînement par alignement délibératif — mais écrivent aussi que « evaluation results may be confounded by increased situational awareness » et qu'« on pourrait s'attendre à ce que les modèles complotent davantage dans des situations réalistes qui ne déclenchent pas la conscience d'être évalués »",
+      "Le premier texte contraignant à portée générale est le règlement (UE) 2024/1689, publié au Journal officiel le 12 juillet 2024, entré en vigueur le 1er août 2024 et applicable le 2 août 2026 sauf exceptions ; son article 5 énumère les « prohibited artificial intelligence practices » et son article 51, paragraphe 2, présume la capacité à fort impact d'un modèle à usage général lorsque « the cumulative amount of computation used for its training measured in floating point operations is greater than 10^25 »",
+      "Le calendrier de ce règlement a déjà été modifié : la Commission européenne indique que l'AI Omnibus, proposé le 19 novembre 2025, objet d'un accord politique le 7 mai 2026, est entré en vigueur le 27 juillet 2026 ; il reporte les obligations du chapitre III au 2 décembre 2027 pour les systèmes à haut risque autonomes de l'annexe III et au 2 août 2028 pour ceux intégrés comme composant de sécurité d'un produit",
+      "La gouvernance publique repose ailleurs sur des instituts sans pouvoir réglementaire. L'AI Security Institute britannique, « a directorate of the Department of Science, Innovation, and Technology », se donne pour mission « to equip governments with a scientific understanding of the risks posed by advanced AI » et déclare plus de cent personnels techniques ; le Center for AI Standards and Innovation américain, au sein du NIST, doit « establish voluntary agreements with private sector AI developers and evaluators » et servir de point de contact de l'industrie, non d'autorité de contrôle",
+      "L'état des connaissances est consolidé par l'International AI Safety Report, présidé par Yoshua Bengio, publié par l'AI Security Institute et Mila, « backed by over 30 countries and international organisations », dont l'édition 2026 est datée du 3 février 2026 et la deuxième mise à jour intermédiaire, consacrée aux garde-fous techniques, du 25 novembre 2025"
+    ],
+    "usages": [
+      {
+        "secteur": "gouvernement",
+        "diffusion": "etabli",
+        "description": "Trois régimes coexistent et ne font pas la même chose. Un règlement contraignant en Europe, dont le calendrier a été repoussé une fois avant même sa pleine application ; aux États-Unis une politique fixée par décret, révisée d'une administration à l'autre ; partout des instituts d'évaluation dont le levier est l'accord volontaire. Ce que le référentiel peut affirmer, ce sont les textes et leurs dates, vérifiés pièce par pièce ; ce qu'il ne peut pas affirmer, c'est leur effet.",
+        "exemples": [
+          "Règlement (UE) 2024/1689 : publication au Journal officiel le 12 juillet 2024, entrée en vigueur le 1er août 2024 ; pratiques interdites et obligations d'éducation à l'IA applicables depuis le 2 février 2025 ; règles de gouvernance et obligations relatives aux modèles à usage général depuis le 2 août 2025 ; application générale le 2 août 2026",
+          "AI Omnibus : proposé le 19 novembre 2025, accord politique le 7 mai 2026, entré en vigueur le 27 juillet 2026 ; il diffère les obligations du chapitre III au 2 décembre 2027 (annexe III) et au 2 août 2028 (annexe I), sans toucher aux obligations de transparence de l'article 50",
+          "États-Unis : décret 14179 « Removing Barriers to American Leadership in Artificial Intelligence », signé le 23 janvier 2025, publié au Federal Register le 31 janvier 2025 (90 FR 8741), qui fixe pour politique de « sustain and enhance America's global AI dominance » et ordonne la révision des actes pris sous le décret d'octobre 2023",
+          "AI Security Institute (Royaume-Uni), direction du DSIT, plus de cent personnels techniques ; Center for AI Standards and Innovation (NIST, États-Unis), issu de la transformation annoncée en juin 2025 par le secrétaire au Commerce Howard Lutnick, dont l'outil est l'accord volontaire"
+        ],
+        "sources": [
+          {
+            "titre": "Règlement (UE) 2024/1689 du Parlement européen et du Conseil (AI Act), Journal officiel de l'Union européenne",
+            "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=OJ:L_202401689",
+            "date": "2024-07-12",
+            "type": "primaire"
+          },
+          {
+            "titre": "Commission européenne, « AI Act — Regulatory framework for AI », page de la DG CNECT",
+            "url": "https://digital-strategy.ec.europa.eu/en/policies/regulatory-framework-ai",
+            "date": "2026-09-11",
+            "type": "primaire"
+          },
+          {
+            "titre": "Executive Order 14179, « Removing Barriers to American Leadership in Artificial Intelligence », Federal Register, 90 FR 8741",
+            "url": "https://www.federalregister.gov/documents/2025/01/31/2025-02172/removing-barriers-to-american-leadership-in-artificial-intelligence",
+            "date": "2025-01-31",
+            "type": "primaire"
+          },
+          {
+            "titre": "Hickman, Lorenz, Hainsdorf & Teetzmann (White & Case), « EU AI Omnibus enters into force, amending the AI Act »",
+            "url": "https://www.whitecase.com/insight-alert/eu-ai-omnibus-enters-force-amending-ai-act",
+            "date": "2026-08-04",
+            "type": "secondaire"
+          }
+        ]
+      },
+      {
+        "secteur": "industrie",
+        "diffusion": "standard",
+        "description": "Côté éditeurs, l'alignement n'est pas un objectif atteint mais une chaîne de procédés appliqués à chaque modèle avant mise à disposition : apprentissage par renforcement sur préférences humaines, puis sur préférences produites par un modèle guidé par une liste écrite de principes. Ces procédés sont publiés, reproductibles et mesurés sur des jeux d'évaluation ; aucun ne prétend garantir un comportement, et les publications les plus récentes documentent explicitement ce qui subsiste après entraînement.",
+        "exemples": [
+          "Christiano, Leike, Brown, Martic, Legg et Amodei (2017) entraînent des agents Atari et de locomotion simulée sur des préférences portant sur moins de 1 % des interactions de l'agent",
+          "Bai et al. (2022) décrivent la chaîne apprentissage supervisé puis RLAIF, où le seul apport humain est la liste de principes",
+          "OpenAI et Apollo Research (17 septembre 2025) mesurent sur o3 une chute des actions dissimulées de 13 % à 0,4 %, et de 31,4 % à 14,2 % sur une évaluation interne de tromperie en conversation, tout en notant que « rare but serious failures remained »"
+        ],
+        "sources": [
+          {
+            "titre": "Christiano, Leike, Brown, Martic, Legg & Amodei, « Deep reinforcement learning from human preferences », arXiv:1706.03741",
+            "url": "https://arxiv.org/abs/1706.03741",
+            "date": "2017-06-12",
+            "type": "primaire"
+          },
+          {
+            "titre": "Bai, Kadavath, Kundu et al., « Constitutional AI: Harmlessness from AI Feedback », arXiv:2212.08073",
+            "url": "https://arxiv.org/abs/2212.08073",
+            "date": "2022-12-15",
+            "type": "primaire"
+          },
+          {
+            "titre": "OpenAI & Apollo Research, « Detecting and reducing scheming in AI models »",
+            "url": "https://openai.com/index/detecting-and-reducing-scheming-in-ai-models/",
+            "date": "2025-09-17",
+            "type": "primaire"
+          }
+        ]
+      },
+      {
+        "secteur": "recherche",
+        "diffusion": "etabli",
+        "description": "Le champ académique a une généalogie courte et des problèmes explicitement énumérés depuis 2016, ce qui permet de dire ce qui a avancé et ce qui n'a pas bougé. Deux difficultés y sont structurelles plutôt que conjoncturelles : superviser un système sur des tâches où l'évaluation humaine coûte plus cher que l'exécution, et mesurer un comportement chez un système capable de reconnaître qu'il est mesuré. La seconde est apparue comme un obstacle de méthode, pas comme un résultat.",
+        "exemples": [
+          "Amodei, Olah, Steinhardt, Christiano, Schulman et Mané (2016) nomment « scalable supervision » le problème d'une fonction objectif trop coûteuse à évaluer fréquemment",
+          "L'International AI Safety Report présidé par Yoshua Bengio, adossé à plus de trente pays et organisations internationales, publie son édition 2026 le 3 février 2026 et une mise à jour sur les garde-fous techniques le 25 novembre 2025",
+          "OpenAI et Apollo Research identifient la conscience situationnelle du modèle comme facteur de confusion de leurs propres mesures, ce qui empêche de distinguer la suppression d'un comportement de son camouflage"
+        ],
+        "sources": [
+          {
+            "titre": "Amodei, Olah, Steinhardt, Christiano, Schulman & Mané, « Concrete Problems in AI Safety », arXiv:1606.06565",
+            "url": "https://arxiv.org/abs/1606.06565",
+            "date": "2016-06-21",
+            "type": "primaire"
+          },
+          {
+            "titre": "International AI Safety Report 2026, présidé par Yoshua Bengio (AI Security Institute & Mila)",
+            "url": "https://internationalaisafetyreport.org/",
+            "date": "2026-02-03",
+            "type": "primaire"
+          },
+          {
+            "titre": "AI Security Institute (Royaume-Uni), présentation de la mission et du périmètre de l'institut",
+            "url": "https://www.aisi.gov.uk/",
+            "date": "2026-09-11",
+            "type": "primaire"
+          },
+          {
+            "titre": "NIST, « Center for AI Standards and Innovation (CAISI) »",
+            "url": "https://www.nist.gov/caisi",
+            "date": "2026-09-11",
+            "type": "primaire"
+          }
+        ]
+      }
+    ],
+    "limites_connues": "Cette fiche documente des textes, des institutions et des techniques ; elle n'établit ni qu'un système est aligné, ni qu'un dispositif de gouvernance réduit un dommage. Quatre manques précis. Premièrement, « alignement » n'a pas de définition opératoire partagée : les cinq problèmes d'Amodei et al. sont une liste de travail de 2016, pas une métrique, et aucune des sources ouvertes ici ne fournit d'indicateur permettant de dire qu'un modèle donné est aligné plutôt que moins désaligné sur un jeu d'évaluations donné. Deuxièmement, les chiffres d'OpenAI et d'Apollo Research sont des taux mesurés sur leurs propres environnements par les équipes qui entraînent les modèles, et leurs auteurs signalent eux-mêmes que la conscience d'être évalué confond le résultat : on ne peut pas conclure de 13 % à 0,4 % que le comportement a disparu plutôt qu'appris à ne pas se montrer. Troisièmement, le calendrier réglementaire européen n'est pas stable : les obligations du chapitre III ont été reportées par l'AI Omnibus avant d'avoir jamais été applicables, et le référentiel ne peut donc pas présenter les dates de 2027 et 2028 comme acquises. Quatrièmement, la fiche ne dit rien de l'efficacité des instituts de sûreté : l'AI Security Institute et le CAISI publient leur mission et leurs moyens, non une évaluation indépendante de leur effet, et le CAISI travaille par accords volontaires sans pouvoir de contrainte. Enfin, la couverture géographique est partielle : sont documentés ici l'Union européenne, le Royaume-Uni et les États-Unis, à l'exclusion de la Chine, de l'Inde et des instruments des Nations unies, faute d'avoir ouvert les textes correspondants.",
+    "sources": [
+      {
+        "titre": "Règlement (UE) 2024/1689 du Parlement européen et du Conseil (AI Act), Journal officiel de l'Union européenne",
+        "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=OJ:L_202401689",
+        "date": "2024-07-12",
+        "type": "primaire"
+      },
+      {
+        "titre": "Commission européenne, « AI Act — Regulatory framework for AI », page de la DG CNECT",
+        "url": "https://digital-strategy.ec.europa.eu/en/policies/regulatory-framework-ai",
+        "date": "2026-09-11",
+        "type": "primaire"
+      },
+      {
+        "titre": "Executive Order 14179, « Removing Barriers to American Leadership in Artificial Intelligence », Federal Register, 90 FR 8741",
+        "url": "https://www.federalregister.gov/documents/2025/01/31/2025-02172/removing-barriers-to-american-leadership-in-artificial-intelligence",
+        "date": "2025-01-31",
+        "type": "primaire"
+      },
+      {
+        "titre": "Amodei, Olah, Steinhardt, Christiano, Schulman & Mané, « Concrete Problems in AI Safety », arXiv:1606.06565",
+        "url": "https://arxiv.org/abs/1606.06565",
+        "date": "2016-06-21",
+        "type": "primaire"
+      },
+      {
+        "titre": "Bai, Kadavath, Kundu et al., « Constitutional AI: Harmlessness from AI Feedback », arXiv:2212.08073",
+        "url": "https://arxiv.org/abs/2212.08073",
+        "date": "2022-12-15",
+        "type": "primaire"
+      },
+      {
+        "titre": "OpenAI & Apollo Research, « Detecting and reducing scheming in AI models »",
+        "url": "https://openai.com/index/detecting-and-reducing-scheming-in-ai-models/",
+        "date": "2025-09-17",
+        "type": "primaire"
+      },
+      {
+        "titre": "International AI Safety Report 2026, présidé par Yoshua Bengio (AI Security Institute & Mila)",
+        "url": "https://internationalaisafetyreport.org/",
+        "date": "2026-02-03",
+        "type": "primaire"
+      },
+      {
+        "titre": "Hickman, Lorenz, Hainsdorf & Teetzmann (White & Case), « EU AI Omnibus enters into force, amending the AI Act »",
+        "url": "https://www.whitecase.com/insight-alert/eu-ai-omnibus-enters-force-amending-ai-act",
+        "date": "2026-08-04",
+        "type": "secondaire"
+      },
+      {
+        "titre": "NIST, « Center for AI Standards and Innovation (CAISI) »",
+        "url": "https://www.nist.gov/caisi",
+        "date": "2026-09-11",
+        "type": "primaire"
+      }
+    ],
+    "statut": "documente",
+    "derniere_verification": "2026-09-11"
+  },
+  {
+    "id": "dependance-a-la-supervision-humaine-limite-transversale",
+    "axe": "limites",
+    "nom": "Dépendance à la supervision humaine dans les usages à haut risque (limite transversale)",
+    "editeur": null,
+    "architecture": null,
+    "capacites_cles": [
+      "La supervision humaine est une obligation de conception avant d'être une pratique : l'article 14, paragraphe 1, du règlement (UE) 2024/1689 dispose que « High-risk AI systems shall be designed and developed in such a way that they can be effectively overseen by natural persons » pendant toute leur période d'utilisation",
+      "Le même article 14, paragraphe 4, exige que la personne chargée de la supervision soit mise en mesure de rester consciente de la tendance à l'« automation bias » et à la confiance excessive envers la sortie du système, d'interpréter correctement cette sortie, de décider de ne pas l'utiliser ou d'en écarter la décision, et d'interrompre le système ; le paragraphe 5 ajoute que pour l'identification biométrique à distance de l'annexe III, point 1 a), aucune action ni décision ne peut être prise « unless that identification has been separately verified and confirmed by at least two natural persons » disposant de la compétence requise",
+      "Le biais d'automatisation n'est pas une conjecture : Kate Goddard, Abdul Roudsari et Jeremy C. Wyatt (« Automation bias: a systematic review of frequency, effect mediators, and mitigators », Journal of the American Medical Informatics Association 19(1), p. 121-127, janvier 2012) retiennent 74 études sur 13 821 articles examinés et identifient comme médiateurs le style cognitif et l'expérience de l'utilisateur, la confiance, ainsi que la charge de travail, la complexité de la tâche et la contrainte de temps",
+      "Raja Parasuraman et Victor Riley (« Humans and Automation: Use, Misuse, Disuse, Abuse », Human Factors 39(2), p. 230-253, juin 1997) distinguent quatre régimes de défaillance qui ne se corrigent pas de la même façon : le « misuse » ou sur-confiance (« over reliance on automation, which can result in failures of monitoring or decision biases »), le « disuse » causé le plus souvent par des alarmes qui se déclenchent à tort, et l'« abuse », c'est-à-dire l'automatisation décidée par les concepteurs sans égard aux conséquences sur la performance de l'opérateur",
+      "La supervision peut être exigée comme condition de qualification réglementaire : la FDA écarte de la définition de dispositif médical un logiciel d'aide à la décision clinique qui remplit quatre critères, dont le quatrième — permettre au professionnel de santé « to independently review the basis for the recommendations that such software presents so that it is not the intent that the HCP rely primarily on any of such recommendations to make a clinical diagnosis or treatment decision » (guidance publiée le 29 janvier 2026)",
+      "Elle n'est pourtant pas universelle, et la fiche doit le dire : Digital Diagnostics annonce le 12 avril 2018 l'autorisation de LumineticsCore (alors IDx-DR) comme « the first autonomous, AI-based diagnostic system authorized for commercialization by the FDA », système qui « makes an assessment without the need for a clinician to also interpret the image or results », sur la base d'un essai pivot mené dans dix sites de soins primaires aux États-Unis",
+      "L'aviation formalise le degré de supervision plutôt que de le présumer : le Concept Paper Issue 02 de l'AESA gradue les applications en niveau 1 (assistance à l'humain, « all actions are implemented by the end user »), niveau 2 (équipe humain-IA, où le système sélectionne et met en œuvre des actions, « the end user still maintaining full oversight and override capability ») et niveau 3 (automatisation avancée, sauvegardée en 3A, non supervisée en 3B)",
+      "Superviser un système plus compétent que soi sur la tâche est un problème ouvert et nommé : Amodei et al. l'appellent « scalable supervision » en 2016, et Samuel R. Bowman, Jared Kaplan, Ethan Perez, Christopher Olah et Dario Amodei (« Measuring Progress on Scalable Oversight for Large Language Models », arXiv, 4 novembre 2022) ne rapportent qu'un résultat préliminaire : sur MMLU et QuALITY en temps limité, des participants humains dialoguant avec un assistant peu fiable « substantially outperform both the model alone and their own unaided performance »"
+    ],
+    "usages": [
+      {
+        "secteur": "gouvernement",
+        "diffusion": "emergent",
+        "description": "Dans l'Union européenne, la supervision humaine cesse d'être une bonne pratique pour devenir une exigence opposable, assortie d'une obligation de conception pesant sur le fournisseur et d'obligations d'organisation pesant sur le déployeur. Deux précisions importent pour ne pas surestimer la portée du texte : l'obligation vise les systèmes classés à haut risque, et non l'ensemble des systèmes d'IA ; et les dispositions du chapitre III qui la portent ne sont pas encore applicables à la date de cette fiche.",
+        "exemples": [
+          "Article 14, paragraphe 4, point b) : la personne qui supervise doit rester consciente de la tendance au biais d'automatisation, en particulier lorsque le système produit des informations ou des recommandations servant à décider",
+          "Article 14, paragraphe 4, points d) et e) : pouvoir décider de ne pas utiliser le système, écarter sa sortie, et interrompre son fonctionnement par un bouton d'arrêt ou une procédure équivalente",
+          "Article 14, paragraphe 5 : vérification par au moins deux personnes physiques compétentes avant toute action fondée sur une identification biométrique à distance au sens de l'annexe III, point 1 a), avec des exceptions prévues pour certaines opérations répressives et de contrôle aux frontières",
+          "Calendrier : les obligations du chapitre III relatives aux systèmes à haut risque s'appliquent à partir du 2 décembre 2027 pour les systèmes autonomes de l'annexe III et du 2 août 2028 pour ceux intégrés comme composant de sécurité d'un produit, après le report opéré par l'AI Omnibus entré en vigueur le 27 juillet 2026"
+        ],
+        "sources": [
+          {
+            "titre": "Règlement (UE) 2024/1689 du Parlement européen et du Conseil (AI Act), Journal officiel de l'Union européenne",
+            "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=OJ:L_202401689",
+            "date": "2024-07-12",
+            "type": "primaire"
+          },
+          {
+            "titre": "Commission européenne, « AI Act — Regulatory framework for AI », page de la DG CNECT",
+            "url": "https://digital-strategy.ec.europa.eu/en/policies/regulatory-framework-ai",
+            "date": "2026-09-11",
+            "type": "primaire"
+          },
+          {
+            "titre": "EU Artificial Intelligence Act, texte consolidé de l'article 14 (Human oversight)",
+            "url": "https://artificialintelligenceact.eu/article/14/",
+            "date": "2026-09-11",
+            "type": "secondaire"
+          }
+        ]
+      },
+      {
+        "secteur": "pharmaceutique",
+        "diffusion": "standard",
+        "description": "En santé, la supervision humaine sert de ligne de partage réglementaire : un logiciel dont le professionnel peut vérifier indépendamment le raisonnement échappe à la qualification de dispositif ; un logiciel sur lequel il s'appuierait principalement y tombe. La littérature en informatique médicale mesure par ailleurs, depuis les années 2000, ce que cette supervision vaut en pratique lorsqu'elle est effectivement exercée. Les deux faits tiennent ensemble : l'exigence est posée, et son efficacité dépend de conditions de travail documentées.",
+        "exemples": [
+          "FDA, guidance « Clinical Decision Support Software » publiée le 29 janvier 2026 : le quatrième critère de la section 520(o)(1)(E) exige que le logiciel permette au professionnel d'examiner indépendamment le fondement des recommandations, de sorte qu'il ne s'y fie pas principalement",
+          "Goddard, Roudsari et Wyatt (JAMIA, janvier 2012) : revue systématique de 74 études, sélectionnées parmi 13 821, sur la fréquence, les médiateurs et les atténuateurs du biais d'automatisation ; parmi les atténuateurs identifiés, la formation, la responsabilisation explicite de l'utilisateur, la position de l'avis à l'écran et la présentation sous forme d'information plutôt que de recommandation",
+          "Contre-exemple documenté : LumineticsCore (anciennement IDx-DR), autorisé en avril 2018, rend son verdict de dépistage de la rétinopathie diabétique sans qu'un clinicien interprète l'image, sur la base d'un essai pivot mené dans dix sites de soins primaires — la supervision clinique n'est donc pas une contrainte universelle en santé"
+        ],
+        "sources": [
+          {
+            "titre": "FDA, guidance « Clinical Decision Support Software », Center for Devices and Radiological Health",
+            "url": "https://www.fda.gov/media/109618/download",
+            "date": "2026-01-29",
+            "type": "primaire"
+          },
+          {
+            "titre": "Goddard, Roudsari & Wyatt, « Automation bias: a systematic review of frequency, effect mediators, and mitigators », JAMIA 19(1), p. 121-127",
+            "url": "https://academic.oup.com/jamia/article-abstract/19/1/121/732254",
+            "type": "primaire"
+          },
+          {
+            "titre": "Digital Diagnostics, « FDA permits marketing of LumineticsCore (formerly known as IDx-DR) for automated detection of diabetic retinopathy in primary care »",
+            "url": "https://www.digitaldiagnostics.com/fda-permits-marketing-of-lumineticscore-formerly-known-as-idx-dr-for-automated-detection-of-diabetic-retinopathy-in-primary-care/",
+            "date": "2018-04-12",
+            "type": "primaire"
+          }
+        ]
+      },
+      {
+        "secteur": "industrie",
+        "diffusion": "emergent",
+        "description": "Les secteurs déjà certifiés n'opposent pas supervision et automatisation : ils construisent une échelle, et attachent à chaque barreau une exigence de conception et une répartition de responsabilité. Le travail normatif y consiste à définir ce que l'opérateur doit pouvoir voir, comprendre et reprendre, plutôt qu'à décider si une machine peut agir seule.",
+        "exemples": [
+          "AESA, Concept Paper Issue 02 : niveau 1A « human augmentation » et 1B « human assistance », où la décision reste à l'utilisateur ; niveau 2A « cooperation » et 2B « collaboration », où le système décide et agit mais l'utilisateur conserve la supervision complète et la capacité de reprise",
+          "Le même document précise qu'au niveau 2 « the human-AI teaming concept foresees a partial release of authority to the system however under full oversight of the end user, who consistently remains accountable for the operations »",
+          "Le niveau 3 sépare explicitement une automatisation avancée sauvegardée (3A) d'une automatisation avancée non supervisée (3B), ce qui montre que l'absence de supervision est traitée comme un régime distinct à qualifier, non comme une simple extension du précédent"
+        ],
+        "sources": [
+          {
+            "titre": "AESA (EASA), « Concept Paper: guidance for Level 1 & 2 machine learning applications », Issue 02",
+            "url": "https://www.easa.europa.eu/en/downloads/139504/en",
+            "type": "primaire"
+          },
+          {
+            "titre": "EASA, « EASA publishes Artificial Intelligence Concept Paper Issue 2 », annonce de publication",
+            "url": "https://www.easa.europa.eu/en/newsroom-and-events/news/easa-publishes-artificial-intelligence-concept-paper-issue-2-guidance",
+            "date": "2024-03-06",
+            "type": "secondaire"
+          }
+        ]
+      },
+      {
+        "secteur": "recherche",
+        "diffusion": "emergent",
+        "description": "Le point de rupture de la supervision est connu et nommé depuis 2016 : elle suppose un superviseur capable de juger la sortie, condition qui cesse d'être remplie dès que la tâche dépasse sa compétence ou son temps. Ce qui existe à ce jour sur ce problème est un dispositif expérimental et une preuve de concept, pas une méthode validée. Le référentiel note aussi le sens du résultat disponible : il montre un gain de l'humain assisté, pas une capacité de l'humain à détecter une erreur du modèle.",
+        "exemples": [
+          "Amodei, Olah, Steinhardt, Christiano, Schulman et Mané (2016) rangent la « scalable supervision » parmi les cinq problèmes concrets, comme cas d'une fonction objectif trop coûteuse à évaluer fréquemment",
+          "Bowman, Kaplan, Perez, Olah et Amodei (2022) proposent un protocole centré sur des tâches que des spécialistes humains réussissent et que ni les humains non assistés ni les modèles ne réussissent, et rapportent une preuve de concept sur MMLU et QuALITY en temps limité",
+          "Leur résultat porte sur des participants dialoguant avec un assistant explicitement peu fiable, et les auteurs le présentent comme une stratégie de référence triviale (« a trivial baseline strategy for scalable oversight »), non comme une solution"
+        ],
+        "sources": [
+          {
+            "titre": "Bowman, Kaplan, Perez, Olah, Amodei et al., « Measuring Progress on Scalable Oversight for Large Language Models », arXiv:2211.03540",
+            "url": "https://arxiv.org/abs/2211.03540",
+            "date": "2022-11-04",
+            "type": "primaire"
+          },
+          {
+            "titre": "Amodei, Olah, Steinhardt, Christiano, Schulman & Mané, « Concrete Problems in AI Safety », arXiv:1606.06565",
+            "url": "https://arxiv.org/abs/1606.06565",
+            "date": "2016-06-21",
+            "type": "primaire"
+          },
+          {
+            "titre": "Parasuraman & Riley, « Humans and Automation: Use, Misuse, Disuse, Abuse », Human Factors 39(2), p. 230-253",
+            "url": "https://journals.sagepub.com/doi/10.1518/001872097778543886",
+            "date": "1997-06-01",
+            "type": "primaire"
+          }
+        ]
+      }
+    ],
+    "limites_connues": "Cette fiche établit qu'une supervision humaine est exigée dans plusieurs régimes réglementaires et que sa défaillance est un phénomène mesuré ; elle n'établit pas qu'elle fonctionne. Quatre réserves. D'abord, aucune des sources ouvertes ici ne fournit de mesure de l'efficacité de l'article 14 du règlement (UE) 2024/1689 : les obligations du chapitre III qui le portent ne sont pas applicables à la date de rédaction, reportées au 2 décembre 2027 et au 2 août 2028 par l'AI Omnibus, si bien qu'il n'existe pas encore de retour d'expérience à documenter. Ensuite, la littérature sur le biais d'automatisation est médicale et largement antérieure aux modèles génératifs : la revue de Goddard, Roudsari et Wyatt porte sur 74 études publiées jusqu'en 2012, sur des systèmes d'aide à la décision clinique, et le référentiel ne dispose d'aucune source établissant que ses médiateurs et ses atténuateurs se transposent tels quels aux assistants génératifs. Troisièmement, la supervision humaine n'est pas partout la règle, et présenter la dépendance comme universelle serait faux : LumineticsCore est autorisé depuis 2018 à rendre un verdict de dépistage sans lecture clinicienne, et l'AESA prévoit explicitement un niveau 3B d'automatisation non supervisée. Quatrièmement, la limite la plus lourde — superviser un système plus compétent que soi — n'a pas de solution documentée : Bowman et al. publient un dispositif expérimental et une preuve de concept sur deux jeux de questions, et leur résultat montre un humain assisté plus performant, ce qui ne dit rien de sa capacité à repérer une erreur que le modèle présente avec assurance. Le référentiel ne peut donc ni affirmer que la supervision humaine est un garde-fou suffisant dans les usages à haut risque, ni affirmer qu'elle est un rite sans effet.",
+    "sources": [
+      {
+        "titre": "Règlement (UE) 2024/1689 du Parlement européen et du Conseil (AI Act), Journal officiel de l'Union européenne",
+        "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=OJ:L_202401689",
+        "date": "2024-07-12",
+        "type": "primaire"
+      },
+      {
+        "titre": "FDA, guidance « Clinical Decision Support Software », Center for Devices and Radiological Health",
+        "url": "https://www.fda.gov/media/109618/download",
+        "date": "2026-01-29",
+        "type": "primaire"
+      },
+      {
+        "titre": "Goddard, Roudsari & Wyatt, « Automation bias: a systematic review of frequency, effect mediators, and mitigators », JAMIA 19(1), p. 121-127",
+        "url": "https://academic.oup.com/jamia/article-abstract/19/1/121/732254",
+        "type": "primaire"
+      },
+      {
+        "titre": "Parasuraman & Riley, « Humans and Automation: Use, Misuse, Disuse, Abuse », Human Factors 39(2), p. 230-253",
+        "url": "https://journals.sagepub.com/doi/10.1518/001872097778543886",
+        "date": "1997-06-01",
+        "type": "primaire"
+      },
+      {
+        "titre": "AESA (EASA), « Concept Paper: guidance for Level 1 & 2 machine learning applications », Issue 02",
+        "url": "https://www.easa.europa.eu/en/downloads/139504/en",
+        "type": "primaire"
+      },
+      {
+        "titre": "Bowman, Kaplan, Perez, Olah, Amodei et al., « Measuring Progress on Scalable Oversight for Large Language Models », arXiv:2211.03540",
+        "url": "https://arxiv.org/abs/2211.03540",
+        "date": "2022-11-04",
+        "type": "primaire"
+      },
+      {
+        "titre": "EU Artificial Intelligence Act, texte consolidé de l'article 14 (Human oversight)",
+        "url": "https://artificialintelligenceact.eu/article/14/",
+        "date": "2026-09-11",
+        "type": "secondaire"
+      },
+      {
+        "titre": "EASA, « EASA publishes Artificial Intelligence Concept Paper Issue 2 », annonce de publication",
+        "url": "https://www.easa.europa.eu/en/newsroom-and-events/news/easa-publishes-artificial-intelligence-concept-paper-issue-2-guidance",
+        "date": "2024-03-06",
+        "type": "secondaire"
+      }
+    ],
+    "statut": "documente",
+    "derniere_verification": "2026-09-11"
+  },
+  {
+    "id": "alphagenome-deepmind",
+    "axe": "scientifique",
+    "nom": "AlphaGenome (Google DeepMind)",
+    "editeur": "Google DeepMind",
+    "architecture": "Modèle de séquence d'ADN unifié : des couches convolutives détectent d'abord les motifs courts de la séquence, des couches de transformeur font circuler l'information entre toutes les positions, une dernière série de couches produit les prédictions ; entraînement distribué sur plusieurs TPU interconnectés, sur les génomes humain et murin. Il prend en entrée un mégabase d'ADN et prédit des milliers de pistes génomiques fonctionnelles jusqu'à la résolution du nucléotide.",
+    "capacites_cles": [
+      "Prédiction, à partir de la seule séquence, de milliers de pistes fonctionnelles couvrant onze modalités : expression génique, initiation de la transcription, accessibilité de la chromatine, modifications d'histones, fixation des facteurs de transcription, cartes de contact de la chromatine, usage des sites d'épissage, coordonnées et force des jonctions d'épissage",
+      "Levée du compromis que les auteurs décrivent comme structurel dans le domaine : « Existing methods trade off between input sequence length and prediction resolution, thereby limiting their modality scope and performance » — AlphaGenome combine une fenêtre d'un mégabase et une résolution au nucléotide",
+      "Évaluation sur 24 comparaisons de prédiction de pistes génomiques couvrant les onze modalités et sur 26 comparaisons de prédiction d'effet de variant (expression génique, épissage, polyadénylation, appariement enhancer-gène, accessibilité de l'ADN, fixation des facteurs de transcription). Le billet d'annonce de Google DeepMind du 25 juin 2025 revendique un dépassement des meilleurs modèles externes sur 22 des 24 évaluations de séquence et un résultat égal ou supérieur sur 24 des 26 évaluations de variant",
+      "Reconstitution de variants cliniquement pertinents au voisinage de l'oncogène TAL1, cas d'école de la leucémie aiguë lymphoblastique T où une mutation crée un motif de fixation de MYB et active le gène",
+      "Mise à disposition par une API en préversion, gratuite pour l'usage non commercial, la bibliothèque cliente étant publiée sous licence Apache 2.0 et la documentation sous CC-BY 4.0",
+      "Extension du 8 septembre 2026, AlphaGenome Atlas : prédictions précalculées pour « 9 billion single-nucleotide variants — every single-letter change possible — in the human genome », soit « a massive 1-petabyte dataset, more than 30 times larger than the AlphaFold Database », assorties d'un score unique d'impact (AlphaGenome Variant Impact, AVI) combinant AlphaGenome et AlphaMissense et applicable aux régions codantes comme non codantes"
+    ],
+    "usages": [
+      {
+        "secteur": "science",
+        "diffusion": "emergent",
+        "description": "L'objet scientifique visé est le génome non codant : la part de la séquence qui ne code pas de protéine mais règle quand, où et combien un gène s'exprime, et où se concentre l'essentiel des variants associés aux maladies communes sans mécanisme identifié. Le modèle y produit des prédictions moléculaires — accessibilité, épissage, contacts de chromatine — à partir de la séquence seule, et non des conclusions phénotypiques ou cliniques. La publication est arrivée en janvier 2026, dix-huit mois après l'annonce et la mise en préversion de l'API.",
+        "exemples": [
+          "Avsec et al., Nature, vol. 649, p. 1206-1218, 28 janvier 2026 : modèle unifié prenant un mégabase en entrée et prédisant à la résolution du nucléotide sur onze modalités, entraîné sur les génomes humain et murin",
+          "Le préprint rapporte 24 évaluations de pistes génomiques couvrant les onze modalités et 26 jeux de référence de prédiction d'effet de variant",
+          "Dennis Gankin et Pedro Beltrao, dans Nature Structural & Molecular Biology du 23 février 2026, le décrivent comme « the largest multimodal DNA sequence model for non-coding regions so far » qui « advances the state of the art in almost all prediction tasks », tout en notant que « opportunities for further improvement remain »"
+        ],
+        "sources": [
+          {
+            "titre": "Avsec, ... & Kohli, « Advancing regulatory variant effect prediction with AlphaGenome », Nature, vol. 649, p. 1206-1218",
+            "url": "https://www.nature.com/articles/s41586-025-10014-0",
+            "date": "2026-01-28",
+            "type": "primaire"
+          },
+          {
+            "titre": "Google DeepMind, « AlphaGenome: advancing regulatory variant effect prediction with a unified DNA sequence model » (préprint, version PDF de l'éditeur)",
+            "url": "https://storage.googleapis.com/deepmind-media/papers/alphagenome.pdf",
+            "type": "primaire"
+          },
+          {
+            "titre": "Dennis Gankin & Pedro Beltrao, « The AlphaGenome deep learning model predicts effects of non-coding variants », Nature Structural & Molecular Biology (News & Views)",
+            "url": "https://www.nature.com/articles/s41594-026-01763-1",
+            "date": "2026-02-23",
+            "type": "secondaire"
+          }
+        ]
+      },
+      {
+        "secteur": "recherche",
+        "diffusion": "emergent",
+        "description": "Ce que l'Atlas change pour un laboratoire n'est pas la qualité des prédictions mais leur coût : les calculs étant faits une fois pour toutes et publiés, interroger le modèle revient à consulter une table. Les usages rapportés par l'éditeur sont des travaux de priorisation — réduire des milliers de variants candidats à quelques-uns à tester au banc —, et non des diagnostics. Aucun des exemples publiés ne décrit un déploiement en routine : ce sont des applications de recherche menées par des équipes nommées, sur des cohortes nommées.",
+        "exemples": [
+          "Gareth Hawkes, Medical Research Council fellow à l'université d'Exeter, a appliqué AlphaGenome Atlas aux données de génome entier de plus de 54 000 participants de la UK Biobank",
+          "Julia Zeitlinger et Melanie Weilert, au Stowers Institute for Medical Research, s'en sont servi pour catégoriser quels facteurs de transcription n'affectent que l'accessibilité de l'ADN ; Julia Zeitlinger déclare à Nature que le travail « gives us a searchable dictionary for non-coding DNA »",
+          "En collaboration avec le consortium GREGoR, des chercheurs ont appliqué le score AVI à la priorisation de variants dans des cas de maladies rares non résolus ; Google DeepMind cite parmi ses collaborateurs externes le Broad Institute, le Boston Children's Hospital, Harvard, le Memorial Sloan Kettering Cancer Center, le Massachusetts General Hospital et l'University of Kansas Medical Center",
+          "Martin Kircher (Max Delbrück Centre), cité par Nature le 9 septembre 2026, y voit « a useful and generous way to scale up access to a strong model » tout en relevant que l'Atlas ne remplacera pas les expériences et ne rend pas compte des différences individuelles dans le diagnostic"
+        ],
+        "sources": [
+          {
+            "titre": "Google DeepMind, « AlphaGenome Atlas: molecular predictions for 9 billion human DNA variants »",
+            "url": "https://deepmind.google/blog/alphagenome-atlas-a-predictive-map-of-every-possible-dna-letter-change-in-the-human-genome/",
+            "date": "2026-09-08",
+            "type": "primaire"
+          },
+          {
+            "titre": "Ewen Callaway, « DeepMind's new genome atlas charts effects of all nine billion human gene mutations », Nature",
+            "url": "https://www.nature.com/articles/d41586-026-02835-4",
+            "date": "2026-09-09",
+            "type": "secondaire"
+          }
+        ]
+      }
+    ],
+    "limites_connues": "Les auteurs énoncent eux-mêmes trois bornes dans la discussion du préprint, et il faut les reprendre sans les adoucir : « Accurately capturing the influence of distal regulatory elements (>100 kb) remains an ongoing objective » ; la restitution des motifs spécifiques d'un tissu et la prédiction d'effets de variant conditionnels à un contexte cellulaire restent difficiles ; et surtout « We have not yet benchmarked the model on personal genome prediction, which is a known weakness of models in this space » — autrement dit la performance sur un génome individuel n'est pas établie par les évaluations publiées. Les auteurs ajoutent que l'application à l'analyse des caractères complexes est limitée, le modèle prédisant des conséquences moléculaires là où ces phénotypes engagent des processus biologiques plus larges. Google DeepMind assortit l'Atlas d'un avertissement sans ambiguïté : « AlphaGenome has not been validated for, and is not approved for, any clinical use ». Deux précautions propres à cette fiche s'ajoutent. D'abord, les chiffres de performance diffèrent selon la source : le billet d'annonce de juin 2025 revendique 22 évaluations sur 24 et 24 sur 26, quand le préprint décrit 24 et 26 comparaisons sans que le décompte des victoires ait pu être vérifié dans la version publiée — le référentiel ne retient donc que les chiffres attribués explicitement à leur source. Ensuite, les usages rapportés dans la section « recherche » proviennent de la communication de l'éditeur, à l'exception des propos de Martin Kircher, Mafalda Dias, Jonathan Frazer et Julia Zeitlinger recueillis par Nature : aucune évaluation indépendante du modèle sur ces cohortes n'a été ouverte pour cette fiche, et aucun TRL n'est posé, faute d'un exploitant en production identifié sur un site et à une date précis.",
+    "sources": [
+      {
+        "titre": "Avsec, ... & Kohli, « Advancing regulatory variant effect prediction with AlphaGenome », Nature, vol. 649, p. 1206-1218",
+        "url": "https://www.nature.com/articles/s41586-025-10014-0",
+        "date": "2026-01-28",
+        "type": "primaire"
+      },
+      {
+        "titre": "Google DeepMind, « AlphaGenome: advancing regulatory variant effect prediction with a unified DNA sequence model » (préprint, version PDF de l'éditeur)",
+        "url": "https://storage.googleapis.com/deepmind-media/papers/alphagenome.pdf",
+        "type": "primaire"
+      },
+      {
+        "titre": "Google DeepMind, « AlphaGenome: AI for better understanding the genome », billet d'annonce du 25 juin 2025",
+        "url": "https://deepmind.google/discover/blog/alphagenome-ai-for-better-understanding-the-genome/",
+        "date": "2025-06-25",
+        "type": "primaire"
+      },
+      {
+        "titre": "Google DeepMind, « AlphaGenome Atlas: molecular predictions for 9 billion human DNA variants »",
+        "url": "https://deepmind.google/blog/alphagenome-atlas-a-predictive-map-of-every-possible-dna-letter-change-in-the-human-genome/",
+        "date": "2026-09-08",
+        "type": "primaire"
+      },
+      {
+        "titre": "google-deepmind/alphagenome — dépôt du client de l'API AlphaGenome (licence Apache 2.0)",
+        "url": "https://github.com/google-deepmind/alphagenome",
+        "date": "2026-09-11",
+        "type": "primaire"
+      },
+      {
+        "titre": "Ewen Callaway, « DeepMind's new genome atlas charts effects of all nine billion human gene mutations », Nature",
+        "url": "https://www.nature.com/articles/d41586-026-02835-4",
+        "date": "2026-09-09",
+        "type": "secondaire"
+      },
+      {
+        "titre": "Dennis Gankin & Pedro Beltrao, « The AlphaGenome deep learning model predicts effects of non-coding variants », Nature Structural & Molecular Biology (News & Views)",
+        "url": "https://www.nature.com/articles/s41594-026-01763-1",
+        "date": "2026-02-23",
+        "type": "secondaire"
+      }
+    ],
+    "statut": "documente",
+    "derniere_verification": "2026-09-11"
+  },
+  {
+    "id": "moteurs-de-simulation-physique",
+    "axe": "scientifique",
+    "nom": "Moteurs de simulation physique",
+    "editeur": "Multiples acteurs : NVIDIA, Google DeepMind et Disney Research pour le moteur Newton, contribué à la Linux Foundation le 29 septembre 2025 ; Google DeepMind pour MuJoCo, MJX et les simulateurs appris à base de réseaux de graphes (GNS, MeshGraphNets)",
+    "architecture": "Deux familles distinctes. D'un côté des moteurs numériques accélérés sur processeur graphique et différentiables : Newton est « an open-source, GPU-accelerated physics simulation engine built upon NVIDIA Warp », construit sur Warp et OpenUSD, et intègre MuJoCo Warp comme solveur principal. De l'autre des simulateurs appris, où un réseau de neurones sur graphe remplace l'intégrateur : l'état physique est représenté par un graphe de particules (GNS) ou par le maillage de calcul lui-même (MeshGraphNets), et la dynamique est calculée par passage de messages appris sur les sorties d'un solveur classique.",
+    "capacites_cles": [
+      "Newton a été initié par Disney Research, Google DeepMind et NVIDIA, puis contribué à la Linux Foundation le 29 septembre 2025 pour rester, selon le communiqué, neutre vis-à-vis des fournisseurs ; le code est sous licence Apache 2.0 et la documentation sous CC-BY 4.0. Rev Lebaredian (VP Omniverse and Simulation Technology, NVIDIA) y résume l'objet : « Newton brings together GPU acceleration, differentiable physics and open standards like OpenUSD into an open source platform »",
+      "La version 1.0 GA a été annoncée le 16 mars 2026 à la GTC. NVIDIA y rapporte que MuJoCo Warp atteint « 252x speedup for locomotion and 475x for manipulation tasks on the NVIDIA RTX PRO 6000 Blackwell Series », et que Newton « integrates natively with NVIDIA Isaac Sim 6.0 and Isaac Lab 3.0 early access releases »",
+      "Côté apprentissage robotique, MuJoCo Playground (Zakka, Tabanpour, Liao, Haiderbhai, Holt, Luo, Allshire, Frey, Sreenath, Kahrs, Sferrazza, Tassa et Abbeel, arXiv, 12 février 2025) est présenté comme « a fully open-source framework for robot learning built with MJX », permettant d'entraîner des politiques « in minutes on a single GPU » et revendiquant un transfert « zero-shot sim-to-real transfer from both state and pixel inputs » sur quadrupèdes, humanoïdes, mains dextres et bras manipulateurs",
+      "Les simulateurs appris constituent la seconde famille. Sanchez-Gonzalez, Godwin, Pfaff, Ying, Leskovec et Battaglia (« Learning to Simulate Complex Physics with Graph Networks », ICML 2020) traitent « fluids, rigid solids, and deformable materials interacting with one another » et généralisent, à partir d'un entraînement sur des prédictions à un pas de temps avec des milliers de particules, à des milliers de pas de temps et « at least an order of magnitude more particles at test time »",
+      "Pfaff, Fortunato, Sanchez-Gonzalez et Battaglia (« Learning Mesh-Based Simulation with Graph Networks », ICLR 2021) portent la même idée sur le maillage adaptatif et couvrent aérodynamique, mécanique des structures et tissu, avec un coût annoncé « 1-2 orders of magnitude faster than the simulation on which it is trained » et une dynamique indépendante de la résolution",
+      "Les deux familles se rejoignent dans l'outillage : Newton intègre MuJoCo Warp comme solveur, est compatible avec MuJoCo Playground et Isaac Lab, et vise explicitement les deux publics que sont les roboticiens et les chercheurs en simulation"
+    ],
+    "usages": [
+      {
+        "secteur": "industrie",
+        "diffusion": "emergent",
+        "description": "L'usage industriel visé est l'apprentissage de politiques de manipulation et de locomotion en simulation avant transfert sur un robot réel, dans des tâches où la donnée réelle est coûteuse à produire et où l'essai physique abîme le matériel. Ce que les sources établissent est l'existence d'annonces d'adoption par des industriels nommés, sur des tâches nommées ; elles ne donnent ni site de production, ni date de mise en service, ni résultat mesuré en atelier, ce qui interdit de poser un niveau de maturité technologique.",
+        "exemples": [
+          "Skild AI entraîne par apprentissage par renforcement des politiques d'assemblage de baies de calcul GPU, sur l'insertion de connecteurs, la pose de cartes et le vissage à tolérances serrées, avec Newton et Isaac Lab",
+          "Samsung prévoit d'utiliser Newton pour la génération de données synthétiques ancrées dans la physique, destinées à entraîner ses modèles vision-langage-action, sur la manipulation de câbles dans l'assemblage de réfrigérateurs avec un robot RB-Y1 ; Lightwheel produit pour cela des actifs calibrés sur mesures réelles",
+          "Toyota Research Institute est cité comme partenaire sur le développement des solveurs et la modélisation du contact",
+          "Les gains annoncés par NVIDIA — 252 fois sur la locomotion et 475 fois sur la manipulation — sont mesurés par l'éditeur pour MuJoCo Warp face à MJX, sur une carte RTX PRO 6000 Blackwell"
+        ],
+        "sources": [
+          {
+            "titre": "Reist, Zamora Mora, Chang, Chadha & Mohajerani (NVIDIA), « Newton adds contact-rich manipulation and locomotion capabilities for industrial robotics »",
+            "url": "https://developer.nvidia.com/blog/newton-adds-contact-rich-manipulation-and-locomotion-capabilities-for-industrial-robotics",
+            "date": "2026-03-16",
+            "type": "primaire"
+          },
+          {
+            "titre": "Aytun Çelebi, « NVIDIA launches Newton 1.0 physics engine for industrial robot training », Dataconomy",
+            "url": "https://dataconomy.com/2026/03/17/nvidia-launches-newton-1-0-physics-engine-for-industrial-robot-training/",
+            "date": "2026-03-17",
+            "type": "secondaire"
+          }
+        ]
+      },
+      {
+        "secteur": "recherche",
+        "diffusion": "etabli",
+        "description": "Pour les laboratoires, ces moteurs sont d'abord une infrastructure partagée : un même simulateur, un même format de scène et un même jeu de robots décrits permettent de comparer des méthodes qui, autrement, ne seraient pas comparables. Le passage de Newton sous gouvernance de la Linux Foundation répond à ce besoin autant qu'à un besoin industriel, et la publication de frameworks d'entraînement ouverts par des équipes académiques et industrielles mêlées en est la contrepartie côté usage.",
+        "exemples": [
+          "Jim Zemlin, directeur exécutif de la Linux Foundation, présente la contribution du 29 septembre 2025 comme « an important step forward for scaling collaborative robotics simulation » ; le communiqué cite parmi les participants la Technische Universität München, l'université de Pékin, Lightwheel et Style3D",
+          "Moritz Bächer, directeur chez Disney Research, y situe l'apport de son équipe : « This has led to unique expertise in simulating highly complex robotic systems »",
+          "MuJoCo Playground est distribué en source ouverte, installable par un paquet unique, et publié par une équipe de treize auteurs menée par Kevin Zakka et comprenant Yuval Tassa et Pieter Abbeel",
+          "Newton est décrit dans son dépôt comme « a Linux Foundation project that is community-built and maintained »"
+        ],
+        "sources": [
+          {
+            "titre": "Linux Foundation, « Linux Foundation announces contribution of Newton by Disney Research, Google DeepMind and NVIDIA to accelerate open robot learning »",
+            "url": "https://www.linuxfoundation.org/press/linux-foundation-announces-contribution-of-newton-by-disney-research-google-deepmind-and-nvidia-to-accelerate-open-robot-learning",
+            "date": "2025-09-29",
+            "type": "primaire"
+          },
+          {
+            "titre": "Zakka, Tabanpour, Liao, Haiderbhai, Holt, Luo, Allshire, Frey, Sreenath, Kahrs, Sferrazza, Tassa & Abbeel, « MuJoCo Playground », arXiv:2502.08844",
+            "url": "https://arxiv.org/abs/2502.08844",
+            "date": "2025-02-12",
+            "type": "primaire"
+          },
+          {
+            "titre": "newton-physics/newton — dépôt du moteur Newton (licence Apache 2.0)",
+            "url": "https://github.com/newton-physics/newton",
+            "date": "2026-09-11",
+            "type": "primaire"
+          }
+        ]
+      },
+      {
+        "secteur": "science",
+        "diffusion": "emergent",
+        "description": "La seconde famille change la nature de l'objet : le simulateur n'est plus un intégrateur d'équations mais un modèle entraîné sur les sorties d'un intégrateur, ce qui déplace la question de la justesse vers celle de la généralisation. Les deux travaux fondateurs sont publiés en conférence d'apprentissage automatique et évalués sur des domaines de mécanique classique, avec des gains de coût mesurés par rapport au solveur qui a produit leurs données d'entraînement. C'est une accélération relative à une référence donnée, pas une validation face à l'expérience.",
+        "exemples": [
+          "GNS (Sanchez-Gonzalez et al., ICML 2020) simule fluides, solides rigides et matériaux déformables en interaction, et généralise à au moins un ordre de grandeur de particules supplémentaires au test",
+          "Les auteurs de GNS identifient comme leviers principaux le nombre d'étapes de passage de messages et l'atténuation de l'accumulation d'erreur par corruption des données d'entraînement avec du bruit",
+          "MeshGraphNets (Pfaff et al., ICLR 2021) couvre aérodynamique, mécanique des structures et tissu, avec une dynamique indépendante de la résolution et un passage à l'échelle vers des espaces d'états plus complexes au moment du test"
+        ],
+        "sources": [
+          {
+            "titre": "Sanchez-Gonzalez, Godwin, Pfaff, Ying, Leskovec & Battaglia, « Learning to Simulate Complex Physics with Graph Networks », ICML 2020, arXiv:2002.09405",
+            "url": "https://arxiv.org/abs/2002.09405",
+            "date": "2020-02-21",
+            "type": "primaire"
+          },
+          {
+            "titre": "Pfaff, Fortunato, Sanchez-Gonzalez & Battaglia, « Learning Mesh-Based Simulation with Graph Networks », ICLR 2021, arXiv:2010.03409",
+            "url": "https://arxiv.org/abs/2010.03409",
+            "date": "2020-10-07",
+            "type": "primaire"
+          }
+        ]
+      }
+    ],
+    "limites_connues": "Les chiffres de cette fiche ne sont pas de même nature et il ne faut pas les additionner. Les accélérations de 252 fois et 475 fois sont publiées par NVIDIA, mesurées pour MuJoCo Warp face à MJX sur une seule carte, la RTX PRO 6000 Blackwell : ce sont des mesures de l'éditeur face à sa propre implémentation antérieure, non une comparaison indépendante à un solveur de référence du domaine. Les gains « 1-2 orders of magnitude » de MeshGraphNets sont relatifs au solveur qui a produit les données d'entraînement, sur les domaines publiés — un simulateur appris ne peut par construction pas être plus juste que la simulation dont il apprend, et la fiche ne cite aucune validation face à l'expérience physique. La stabilité sur de longues trajectoires reste un point faible traité empiriquement : les auteurs de GNS l'atténuent en bruitant les données d'entraînement, ce qui est un correctif mesuré, pas une garantie. Aucune des sources ouvertes ici ne donne de chiffre sur la performance en extrapolation hors distribution d'entraînement, ni n'établit qu'un simulateur appris ait été substitué à un code de calcul certifié dans une qualification d'ingénierie. Enfin, la question du fossé simulation-réalité n'est pas réglée par la vitesse : MuJoCo Playground revendique un transfert zéro-shot sur les plateformes qu'il documente, ce qui ne vaut pas pour une tâche arbitraire, et les usages industriels de Newton cités plus haut proviennent d'annonces d'éditeur qui ne nomment ni site de production ni date de mise en service — raison pour laquelle aucun TRL n'est posé sur cette fiche.",
+    "sources": [
+      {
+        "titre": "Linux Foundation, « Linux Foundation announces contribution of Newton by Disney Research, Google DeepMind and NVIDIA to accelerate open robot learning »",
+        "url": "https://www.linuxfoundation.org/press/linux-foundation-announces-contribution-of-newton-by-disney-research-google-deepmind-and-nvidia-to-accelerate-open-robot-learning",
+        "date": "2025-09-29",
+        "type": "primaire"
+      },
+      {
+        "titre": "Reist, Zamora Mora, Chang, Chadha & Mohajerani (NVIDIA), « Newton adds contact-rich manipulation and locomotion capabilities for industrial robotics »",
+        "url": "https://developer.nvidia.com/blog/newton-adds-contact-rich-manipulation-and-locomotion-capabilities-for-industrial-robotics",
+        "date": "2026-03-16",
+        "type": "primaire"
+      },
+      {
+        "titre": "newton-physics/newton — dépôt du moteur Newton (licence Apache 2.0)",
+        "url": "https://github.com/newton-physics/newton",
+        "date": "2026-09-11",
+        "type": "primaire"
+      },
+      {
+        "titre": "Zakka, Tabanpour, Liao, Haiderbhai, Holt, Luo, Allshire, Frey, Sreenath, Kahrs, Sferrazza, Tassa & Abbeel, « MuJoCo Playground », arXiv:2502.08844",
+        "url": "https://arxiv.org/abs/2502.08844",
+        "date": "2025-02-12",
+        "type": "primaire"
+      },
+      {
+        "titre": "Sanchez-Gonzalez, Godwin, Pfaff, Ying, Leskovec & Battaglia, « Learning to Simulate Complex Physics with Graph Networks », ICML 2020, arXiv:2002.09405",
+        "url": "https://arxiv.org/abs/2002.09405",
+        "date": "2020-02-21",
+        "type": "primaire"
+      },
+      {
+        "titre": "Pfaff, Fortunato, Sanchez-Gonzalez & Battaglia, « Learning Mesh-Based Simulation with Graph Networks », ICLR 2021, arXiv:2010.03409",
+        "url": "https://arxiv.org/abs/2010.03409",
+        "date": "2020-10-07",
+        "type": "primaire"
+      },
+      {
+        "titre": "Aytun Çelebi, « NVIDIA launches Newton 1.0 physics engine for industrial robot training », Dataconomy",
+        "url": "https://dataconomy.com/2026/03/17/nvidia-launches-newton-1-0-physics-engine-for-industrial-robot-training/",
+        "date": "2026-03-17",
+        "type": "secondaire"
+      }
+    ],
+    "statut": "documente",
+    "derniere_verification": "2026-09-11"
   }
 ]

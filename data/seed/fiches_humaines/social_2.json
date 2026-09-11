@@ -1750,5 +1750,128 @@
     "statut": "documente",
     "derniere_verification": "2026-09-07",
     "resonance_ia": "Les entreprises à mission développant ou déployant de l'IA sont de plus en plus attendues sur la cohérence entre leur raison d'être affichée et l'impact social réel de leurs systèmes algorithmiques, un terrain propice à de nouvelles accusations de washing si l'écart se creuse."
+  },
+  {
+    "id": "world-values-survey",
+    "axe": "social",
+    "sous_domaine": "indicateurs_sociaux",
+    "nom": "World Values Survey",
+    "periode_courant": "Enquête par vagues depuis 1981 ; vague 7 achevée sur la période 2017-2022",
+    "these_centrale": "Le World Values Survey pose que les valeurs d'une population sont des attitudes déclarées, mesurables par un questionnaire standardisé et comparables d'un pays à l'autre dès lors que le même instrument y est administré dans les mêmes conditions : population cible « all people in the age 18 and older residing within private households in each country », échantillon minimal de 1 200 personnes, entretien en face-à-face à domicile — tout autre mode de collecte exigeant l'accord écrit du Scientific Advisory Committee. Le postulat le plus exposé n'est pas la mesure mais la traduction : le questionnaire est fourni en anglais, espagnol, arabe et russe et doit être traduit dans toute langue première d'au moins 15 % de la population, l'équivalence sémantique de l'item traduit étant supposée acquise. La vague 7 réunit 64 enquêtes et plus de 80 000 répondants.",
+    "apport": "L'enquête fournit une série sur les valeurs qui court de 1981 à 2022 et couvre, vague après vague, la plus grande partie du monde habité — objet dont aucune enquête nationale ne dispose et qui rend possibles les comparaisons diachroniques entre sociétés éloignées. Elle a produit un instrument d'analyse repris bien au-delà de son producteur, la carte culturelle d'Inglehart et Welzel, qui projette les pays sur deux axes construits à partir des réponses : valeurs traditionnelles contre séculières-rationnelles, valeurs de survie contre valeurs d'expression de soi. Le dispositif est porté par une association académique sans but lucratif dont le siège légal est en Suède, auprès de l'Institute for Future Studies de Stockholm, l'archive de données étant dirigée depuis Madrid et mise en accès libre.",
+    "limites_critiques": "Max Haller (European Sociological Review, vol. 18, n° 2, 2002, p. 139-158) attaque la théorie et l'instrument ensemble : la thèse d'Inglehart lui paraît « matérialiste, unilinéaire et comparative-statique », réduisant le changement de valeurs au développement technologique et à la croissance ; les deux échelles de la carte culturelle sont selon lui des « collections hétérogènes d'items » ; le classement des pays en zones culturelles est jugé « peu cohérent » et la distinction entre niveaux macro et micro d'analyse ignorée. Sur les données elles-mêmes, Steven G. Ludeke et Erik Gahner Larsen (Personality and Individual Differences, vol. 112, 2017, p. 103-105) montrent que dans le module de personnalité de la vague 6 « items from the same trait correlate negatively with each other as often as not, occasionally to truly extreme degrees », et concluent qu'aucune correction simple n'est identifiable, d'où leur mise en garde à l'usage de ces données. Limite interne du protocole, indépendante de ces objections : le seuil de traduction à 15 % laisse par construction hors du questionnaire les langues premières en deçà de ce seuil.",
+    "resonance_ia": "L'axe survie / expression de soi que l'enquête construit oppose la sécurité matérielle à l'autonomie de choix — soit exactement les deux termes que l'automatisation du travail déplace en sens contraire. L'instrument ne dit rien de l'IA, mais fournit la base de comparaison sur quarante ans à laquelle un effet de ce type devrait se lire, s'il existe.",
+    "sources": [
+      {
+        "titre": "World Values Survey Association — Fieldwork and Sampling (protocole d'enquête : population cible, échantillon minimal, mode de collecte, règle de traduction)",
+        "type": "primaire",
+        "url": "https://www.worldvaluessurvey.org/WVSContents.jsp?CMSID=FieldworkSampling",
+        "date": "2026-09-11"
+      },
+      {
+        "titre": "World Values Survey Association — WVS Wave 7 (2017-2022) : périmètre des vagues, siège de l'association et de l'archive de données",
+        "type": "primaire",
+        "url": "https://www.worldvaluessurvey.org/WVSContents.jsp?CMSID=Documentation",
+        "date": "2026-09-11"
+      },
+      {
+        "titre": "Max Haller, « Theory and Method in the Comparative Study of Values: Critique and Alternative to Inglehart », European Sociological Review, vol. 18, n° 2, 2002, p. 139-158",
+        "type": "secondaire",
+        "url": "https://academic.oup.com/esr/article-abstract/18/2/139/586148",
+        "date": "2026-09-11"
+      },
+      {
+        "titre": "Steven G. Ludeke, Erik Gahner Larsen, « Problems with the Big Five assessment in the World Values Survey », Personality and Individual Differences, vol. 112, 2017, p. 103-105 (DOI 10.1016/j.paid.2017.02.042)",
+        "type": "secondaire",
+        "url": "https://portal.findresearcher.sdu.dk/en/publications/problems-with-the-big-five-assessment-in-the-world-values-survey/",
+        "date": "2026-09-11"
+      }
+    ],
+    "statut": "documente",
+    "derniere_verification": "2026-09-11"
+  },
+  {
+    "id": "edelman-trust-barometer",
+    "axe": "social",
+    "sous_domaine": "indicateurs_sociaux",
+    "nom": "Edelman Trust Barometer",
+    "periode_courant": "Publication annuelle en janvier ; vingt-sixième édition en 2026",
+    "these_centrale": "Le baromètre pose que la confiance est une propriété des institutions, réductible à quatre d'entre elles — entreprises, gouvernement, médias, ONG — et objectivée par une note sur une échelle en neuf points dont on retient les quatre positions hautes comme « confiance » ; le Trust Index en est la moyenne, défini comme « the average percent trust in business, government, media, and NGOs ». La collecte est un entretien en ligne de trente minutes dans 28 pays : l'édition 2026, intitulée « Trust Amid Insularity », repose sur 33 938 répondants interrogés du 25 octobre au 16 novembre 2025, environ 1 200 par pays, avec une marge d'erreur annoncée de ±0,7 point au niveau mondial et de ±3,3 à ±3,7 points par pays à 99 % de confiance. Le producteur n'est pas un institut académique mais Edelman, agence de relations publiques, à travers son Edelman Trust Institute, qui déclare se conformer au Code of Standards and Ethics de l'Insights Association et aux règles d'ESOMAR.",
+    "apport": "Reconduire chaque année le même questionnaire, la même échelle et la même fenêtre de terrain produit une série de confiance institutionnelle comparable d'un pays à l'autre et d'une année sur l'autre, ce dont la recherche académique dispose rarement à cette cadence et à cette échelle. Le baromètre a installé dans le débat public des objets que la littérature n'avait pas popularisés : la mise en concurrence des quatre institutions, puis l'écart de confiance selon le revenu, dont l'édition 2026 affirme qu'il a plus que doublé depuis 2012. Le calendrier — lancement chaque janvier, rapports thématiques ensuite — en fait un point de repère annuel repris par la presse et les organisations, indépendamment de la valeur de chaque chiffre pris isolément.",
+    "limites_critiques": "Stephen Waddington, dans « Edelman and the trust business » (19 janvier 2023), décrit le baromètre comme « a marketing and thought leadership exercise for the consultancy », rapporte que des chercheurs académiques y relèvent « the lack of literature review, peer review » ainsi que des préoccupations éthiques, et observe qu'Edelman promeut la confiance climatique à Davos tout en restant « silent on any action related to high-emitting clients within its own portfolio ». Duncan Meisel, pour Clean Creatives, objecte que les résultats gouvernementaux recoupent le portefeuille de l'agence — « Four of the six highest-ranked governments in the 2023 Edelman Trust Barometer are current or past Edelman clients » — et que l'enquête en régime autoritaire subit un « autocratic trust bias » où la crainte gonfle la confiance déclarée envers l'État. Limite interne du dispositif, indépendante de ces objections : la représentativité revendiquée porte sur l'âge, le genre et la région à l'intérieur de chaque pays, et la marge d'erreur publiée ne couvre que l'aléa d'échantillonnage, pas l'effet du mode de collecte exclusivement en ligne.",
+    "resonance_ia": "Les quatre institutions dont le baromètre agrège la confiance sont aussi celles qui déploient, financent et régulent les systèmes d'IA. L'instrument ne sépare pas la confiance accordée à une institution de celle accordée aux systèmes qu'elle met en service : un basculement de l'une vers l'autre resterait invisible dans le Trust Index.",
+    "sources": [
+      {
+        "titre": "2026 Edelman Trust Barometer — « Trust Amid Insularity » (Edelman Trust Institute)",
+        "type": "primaire",
+        "url": "https://www.edelman.com/trust/2026/trust-barometer",
+        "date": "2026-09-11"
+      },
+      {
+        "titre": "2026 Edelman Trust Barometer — U.S. Report (annexe technique : échelle en 9 points, définition du Trust Index, terrain du 25 octobre au 16 novembre 2025, marges d'erreur)",
+        "type": "primaire",
+        "url": "https://www.edelman.com/sites/g/files/aatuss191/files/2026-02/2026%20Edelman%20Trust%20Barometer_U.S.%20Report.pdf",
+        "date": "2026-09-11"
+      },
+      {
+        "titre": "About the Edelman Trust Barometer — page de méthodologie d'Edelman",
+        "type": "primaire",
+        "url": "https://www.edelman.com/trust/our-methodology",
+        "date": "2026-09-11"
+      },
+      {
+        "titre": "Stephen Waddington, « Edelman and the trust business », 19 janvier 2023",
+        "type": "secondaire",
+        "url": "https://wadds.substack.com/p/edelman-and-the-trust-business",
+        "date": "2026-09-11"
+      },
+      {
+        "titre": "Duncan Meisel, « Edelman Trust Barometer Fact Check », Clean Creatives",
+        "type": "secondaire",
+        "url": "https://cleancreatives.org/news/edelman-trust-barometer-fact-check",
+        "date": "2026-09-11"
+      }
+    ],
+    "statut": "documente",
+    "derniere_verification": "2026-09-11"
+  },
+  {
+    "id": "ocde-how-s-life-better-life-index",
+    "axe": "social",
+    "sous_domaine": "indicateurs_sociaux",
+    "nom": "OCDE — How's Life ? et Better Life Index",
+    "periode_courant": "Better Life Index publié depuis le 24 mai 2011 ; How's Life ?, sixième édition en 2024",
+    "these_centrale": "Le cadre de mesure de l'OCDE pose que le bien-être n'est pas une grandeur unique mais un vecteur : onze dimensions de bien-être actuel — « Work and Job Quality, Housing, Income and Wealth, Health, Environmental Quality, Knowledge and Skills, Subjective Well-being, Safety, Work-life Balance, Social Connections, Civic Engagement » — auxquelles s'ajoutent des stocks de ressources conditionnant le bien-être futur, capital économique, humain et social. Le refus d'agréger est le postulat central : How's Life ? aligne « over 80 indicators covering current well-being outcomes » côte à côte sans note de synthèse, et le Better Life Index en ligne remet la pondération à l'utilisateur, qui note chacun des onze thèmes de 0 à 5 et obtient son propre classement. Le bien-être y est donc défini comme ce qui est comparable dimension par dimension, jamais comme un score dont l'organisation aurait arbitré la composition.",
+    "apport": "L'OCDE a installé une alternative au PIB à l'intérieur même de l'institution qui produit les comparaisons économiques de référence, ce qui a donné à la mesure du bien-être un point d'ancrage statistique officiel plutôt que militant. Le dispositif traite les inégalités comme une partie de la mesure et non comme un commentaire : l'édition 2024 constate que « well-being gaps by age and gender have narrowed over the past decade » tout en notant que les résultats des jeunes et des hommes se sont dégradés relativement davantage. Le Better Life Index a par ailleurs introduit un geste méthodologique rare, l'externalisation explicite de la pondération vers le lecteur, qui rend visible l'arbitrage normalement dissimulé dans la construction d'un indice composite.",
+    "limites_critiques": "Tahsin Mehdi (Social Indicators Research, vol. 143, n° 3, juin 2019, p. 917-954) objecte que les classements tirés du Better Life Index ne sont pas éprouvés quant à leur sensibilité aux schémas de pondération des onze dimensions, et propose une approche de dominance stochastique identifiant les pondérations les plus optimiste et les plus pessimiste au lieu d'en privilégier une arbitrairement. Une seconde objection, recensée dans la littérature de comparaison des indices, tient au périmètre retenu : le Better Life Index mobilise un sous-ensemble d'indicateurs plus étroit que d'autres mesures du bien-être, tels le Sustainable Society Index ou l'indice de bonheur national brut bhoutanais. Limite interne assumée : la couverture est celle des pays de l'OCDE, ce qui exclut par construction la majeure partie de la population mondiale d'un cadre qui se donne pour général ; et le refus d'agréger, qui protège l'instrument d'un arbitrage caché, le prive du classement unique qui fait la portée publique des indicateurs concurrents.",
+    "resonance_ia": "Le cadre sépare « Work and Job Quality » de « Income and Wealth » et de « Knowledge and Skills » : un gain de productivité lié à l'automatisation peut donc y être distingué d'un gain de qualité d'emploi, ce qu'un indicateur agrégé confondrait. C'est une capacité de distinction, pas une mesure de l'effet, que l'instrument n'établit pas.",
+    "sources": [
+      {
+        "titre": "OCDE, How's Life? 2024 — Reader's guide (cadre de mesure, nombre d'indicateurs, sixième édition, traitement des inégalités)",
+        "type": "primaire",
+        "url": "https://www.oecd.org/en/publications/2024/11/how-s-life-2024_bdcf2f9f/full-report/component-3.html",
+        "date": "2026-09-11"
+      },
+      {
+        "titre": "Carrie Exton (Centre WISE de l'OCDE), présentation du cadre de mesure du bien-être de l'OCDE devant l'Inter-Agency and Expert Group on Gender Statistics des Nations unies, 2024",
+        "type": "primaire",
+        "url": "https://unstats.un.org/unsd/demographic-social/meetings/2024/iaeggs-20241203/4.2_OECD.pdf",
+        "date": "2026-09-11"
+      },
+      {
+        "titre": "Tahsin Mehdi, « Stochastic Dominance Approach to OECD's Better Life Index », Social Indicators Research, vol. 143, n° 3, juin 2019, p. 917-954 (DOI 10.1007/s11205-018-2014-0)",
+        "type": "secondaire",
+        "url": "https://ideas.repec.org/a/spr/soinre/v143y2019i3d10.1007_s11205-018-2014-0.html",
+        "date": "2026-09-11"
+      },
+      {
+        "titre": "OECD Better Life Index — Wikipedia (date de première publication, mécanique de pondération par l'utilisateur, section critique)",
+        "type": "secondaire",
+        "url": "https://en.wikipedia.org/wiki/OECD_Better_Life_Index",
+        "date": "2026-09-11"
+      }
+    ],
+    "statut": "documente",
+    "derniere_verification": "2026-09-11"
   }
 ]

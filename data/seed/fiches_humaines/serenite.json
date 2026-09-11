@@ -119,5 +119,56 @@
     ],
     "statut": "documente",
     "derniere_verification": "2026-09-05"
+  },
+  {
+    "id": "indices-de-risque-existentiel",
+    "axe": "serenite",
+    "sous_domaine": "risques_existentiels",
+    "nom": "Indices de risque existentiel",
+    "periode_courant": "Doomsday Clock créé en 1947 ; tournois de prévision quantifiée à partir des années 2020",
+    "these_centrale": "Ces dispositifs posent qu'un risque dépourvu de précédent empirique — extinction de l'humanité, effondrement irréversible — peut néanmoins être chiffré, et ils s'y prennent de deux manières opposées. Le Doomsday Clock du Bulletin of the Atomic Scientists, créé en 1947, convertit le jugement annuel de son Science and Security Board en une distance symbolique à minuit, agrégeant sans formule le risque nucléaire, le climat, les menaces biologiques et les technologies de rupture dont l'intelligence artificielle : 85 secondes en 2026 contre 90 l'année précédente, « the closest it has ever been to catastrophe ». L'Existential Risk Persuasion Tournament du Forecasting Research Institute prend la voie inverse : exiger des probabilités explicites de personnes identifiées, puis mesurer si la confrontation les fait converger.",
+    "apport": "Le tournoi, conduit de juin à octobre 2022, a produit ce dont le champ ne disposait pas : des estimations obtenues sous protocole identique par deux populations distinctes, 80 experts de domaine et 89 superprévisionnistes, sur 169 prévisionnistes au total dont 111 ont achevé toutes les étapes, avec une rémunération médiane de 2 500 dollars. Les résultats publiés le 8 août 2023 par Ezra Karger, Josh Rosenberg, Zachary Jacobs et leurs coauteurs donnent, pour l'horizon 2100, un expert médian à 20 % de probabilité de catastrophe et 6 % d'extinction humaine contre 1 % d'extinction chez les superprévisionnistes, et sur l'extinction imputable à l'IA 3 % contre 0,38 %. L'horloge, elle, apporte une chose d'un autre ordre — une audience : Rachel Bronson chiffrait la reprise de l'annonce de 2018 à plus de 7 500 articles et deux millions de spectateurs en direct. L'ancrage institutionnel du champ reste en revanche fragile : le Future of Humanity Institute d'Oxford a fermé le 16 avril 2024 après dix-neuf ans, la Faculté de philosophie ayant gelé recrutements et collecte de fonds en 2020 puis décidé fin 2023 de ne pas renouveler les contrats restants ; son bilan de clôture ne désigne aucun héritier et renvoie à un écosystème dispersé — laboratoires d'IA, agences publiques, organisations à but non lucratif, centres académiques spécialisés —, les seules continuations nommées étant des centres préexistants comme le Centre for the Study of Existential Risk et le Machine Intelligence Research Institute.",
+    "limites_critiques": "Steven Pinker qualifie le Doomsday Clock de « gimmick » et de « propaganda stunt » et soutient qu'une population persuadée que le monde est « screwed » se paralyse au lieu d'agir ; Rachel Bronson lui répond dans le Bulletin le 11 avril 2018 sans défendre la valeur métrologique de l'horloge, mais son efficacité de mobilisation — ce qui revient à en déplacer la justification du terrain de la mesure vers celui de l'alerte. Le tournoi de prévision rapporte lui-même son échec de convergence : « large-scale disagreement and minimal convergence of beliefs over the course of the XPT, with the largest disagreement about risks from artificial intelligence » ; quatre mois d'échange rémunéré n'ont pas rapproché experts et superprévisionnistes, et l'instrument mesure donc d'abord la persistance du désaccord. Timnit Gebru et Émile P. Torres (First Monday, vol. 29, n° 4, 14 avril 2024) contestent la généalogie du champ lui-même, qu'ils rattachent à la tradition eugéniste anglo-américaine du XXe siècle et accusent d'employer le langage de la « sécurité » pour échapper à la responsabilité présente.",
+    "resonance_ia": "L'IA est à la fois l'objet le plus discuté de ces dispositifs et celui sur lequel ils divergent le plus : c'est sur elle que le tournoi de 2022 enregistre le plus grand écart entre experts et superprévisionnistes, et c'est elle que la déclaration 2026 du Doomsday Clock range parmi les technologies de rupture, notamment dans ses applications militaires.",
+    "sources": [
+      {
+        "titre": "Future of Humanity Institute — page de clôture de l'institut (Université d'Oxford) : date de fermeture, motifs, absence de successeur désigné",
+        "type": "primaire",
+        "url": "https://www.futureofhumanityinstitute.org/",
+        "date": "2026-09-11"
+      },
+      {
+        "titre": "Ezra Karger, Josh Rosenberg, Zachary Jacobs et al., « Forecasting Existential Risks: Evidence from a Long-Run Forecasting Tournament », Forecasting Research Institute, 8 août 2023",
+        "type": "primaire",
+        "url": "https://forecastingresearch.org/pdf/existential-risk-persuasion-tournament.pdf",
+        "date": "2026-09-11"
+      },
+      {
+        "titre": "2026 Doomsday Clock Statement, Bulletin of the Atomic Scientists, 27 janvier 2026",
+        "type": "primaire",
+        "url": "https://thebulletin.org/doomsday-clock/2026-statement/",
+        "date": "2026-09-11"
+      },
+      {
+        "titre": "Rachel Bronson, « Welcome to the discussion, Professor Pinker », Bulletin of the Atomic Scientists, 11 avril 2018",
+        "type": "secondaire",
+        "url": "https://thebulletin.org/2018/04/welcome-to-the-discussion-professor-pinker/",
+        "date": "2026-09-11"
+      },
+      {
+        "titre": "Timnit Gebru, Émile P. Torres, « The TESCREAL bundle: Eugenics and the promise of utopia through artificial general intelligence », First Monday, vol. 29, n° 4, 14 avril 2024",
+        "type": "secondaire",
+        "url": "https://firstmonday.org/ojs/index.php/fm/article/view/13636",
+        "date": "2026-09-11"
+      },
+      {
+        "titre": "Future of Humanity Institute — Wikipedia (fermeture, motif invoqué par l'université, organisations poursuivant des travaux comparables)",
+        "type": "secondaire",
+        "url": "https://en.wikipedia.org/wiki/Future_of_Humanity_Institute",
+        "date": "2026-09-11"
+      }
+    ],
+    "statut": "documente",
+    "derniere_verification": "2026-09-11"
   }
 ]
