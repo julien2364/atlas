@@ -91,6 +91,13 @@ export interface ReponseExtractive {
   convergence: boolean;
   /** Relations qui ont fait entrer chaque perspective, dans l'ordre d'affichage. */
   croisements: { fiche: string; role: string; enonce: string; preuve: string }[];
+  /**
+   * Mise en tension des perspectives entre elles : qui s'oppose à qui, sur quoi,
+   * et ce que le corpus ne tranche pas. Assemblée de phrases du corpus — aucune
+   * n'est reformulée — mais ORGANISÉE, ce que le simple empilement de fiches ne
+   * faisait pas.
+   */
+  synthese: string;
 }
 
 /** Regroupement d'une fiche et de tous ses passages retrouvés. */
@@ -198,6 +205,24 @@ function grouperParFiche(passages: PassagePourExtraction[]): GroupeFiche[] {
 const FRACTION_PLANCHER = 0.25;
 
 /**
+ * Nombre de liens documentés au-delà duquel l'ancrage d'une fiche ne compte plus
+ * davantage. Quatre : une fiche reliée à quatre autres du lot est déjà,
+ * manifestement, au centre du sujet.
+ */
+const MAX_ANCRAGE = 4;
+
+/**
+ * Poids de l'ancrage relationnel face à la proximité lexicale dans le choix du
+ * pivot. À 0,6, une fiche reliée à trois autres l'emporte sur une fiche isolée
+ * qui la devance de moins de 45 % en proximité — ce qui était exactement le cas
+ * de « Structure matricielle » (0,26) contre « Démocratie libérale » (0,25) sur
+ * une question de régime politique. Au-delà de 1, l'ancrage écraserait la
+ * pertinence et une fiche très connectée deviendrait le pivot de toutes les
+ * questions.
+ */
+const POIDS_ANCRAGE = 0.6;
+
+/**
  * Choisit les fiches qui deviendront des perspectives.
  *
  * Ordre de priorité assumé : la PERTINENCE d'abord, la diversité ensuite.
@@ -216,7 +241,42 @@ function choisirFiches(groupes: GroupeFiche[]): GroupeFiche[] {
   const candidats = groupes.filter((g) => g.similarite_max >= plancher);
 
   /* --- 1. La fiche pivot --------------------------------------------------- */
-  const pivot = candidats[0];
+  // Le pivot n'est PAS simplement la fiche la mieux classée. Sur « la démocratie
+  // libérale est-elle encore le meilleur régime », la recherche lexicale plaçait
+  // « Structure matricielle » en tête (0,26) — la fiche parle de coordination,
+  // de double autorité hiérarchique, de logiques de regroupement : du vocabulaire
+  // partagé, aucun rapport avec la question. Une réponse construite autour de ce
+  // pivot est fausse dès sa première ligne.
+  //
+  // On choisit donc le pivot en combinant deux signaux : la proximité lexicale,
+  // et le nombre de LIENS DOCUMENTÉS que la fiche entretient avec les AUTRES
+  // fiches retrouvées. Une fiche isolée au milieu d'un peloton qui se cite
+  // mutuellement est presque toujours un faux ami du vocabulaire ; une fiche que
+  // trois des autres nomment est le sujet réel de la question.
+  const clesCandidats = new Set(candidats.map((g) => cleFiche(g.type, g.id)));
+  const voisinagesParCandidat = new Map<string, Map<string, Voisin>>();
+  const degres = new Map<string, number>();
+  for (const groupe of candidats) {
+    const cle = cleFiche(groupe.type, groupe.id);
+    const table = new Map<string, Voisin>();
+    let degre = 0;
+    for (const voisin of voisinsRaisonnes(groupe.type, groupe.id)) {
+      const cleCible = cleFiche(voisin.cible.type, voisin.cible.id);
+      const deja = table.get(cleCible);
+      if (!deja || PRIORITE_ROLE[voisin.role] > PRIORITE_ROLE[deja.role]) table.set(cleCible, voisin);
+      if (clesCandidats.has(cleCible)) degre += 1;
+    }
+    voisinagesParCandidat.set(cle, table);
+    degres.set(cle, degre);
+  }
+
+  const meilleure = candidats[0].similarite_max || 1;
+  const notePivot = (g: GroupeFiche) => {
+    const cle = cleFiche(g.type, g.id);
+    const ancrage = Math.min(degres.get(cle) ?? 0, MAX_ANCRAGE) / MAX_ANCRAGE;
+    return g.similarite_max / meilleure + POIDS_ANCRAGE * ancrage;
+  };
+  const pivot = [...candidats].sort((a, b) => notePivot(b) - notePivot(a))[0];
   pivot.role = "pivot";
 
   /* --- 2. Ce que le graphe dit de la fiche pivot --------------------------- */
@@ -224,14 +284,7 @@ function choisirFiches(groupes: GroupeFiche[]): GroupeFiche[] {
   // documentée, qu'elles aient été retrouvées ou non par la recherche. C'est
   // exactement ce qui manquait : la contradiction d'une thèse n'emploie pas
   // forcément les mots de la question.
-  const voisins = new Map<string, Voisin>();
-  for (const voisin of voisinsRaisonnes(pivot.type, pivot.id)) {
-    const cle = cleFiche(voisin.cible.type, voisin.cible.id);
-    const deja = voisins.get(cle);
-    // Une même paire peut porter deux relations (contradiction ET source
-    // commune) : on garde la plus forte.
-    if (!deja || PRIORITE_ROLE[voisin.role] > PRIORITE_ROLE[deja.role]) voisins.set(cle, voisin);
-  }
+  const voisins = voisinagesParCandidat.get(cleFiche(pivot.type, pivot.id)) ?? new Map<string, Voisin>();
 
   /* --- 3. Rôle de chaque candidat retrouvé --------------------------------- */
   for (const groupe of candidats) {
@@ -527,6 +580,114 @@ function composer(groupe: GroupeFiche): Perspective | null {
   return perspectiveGap(groupe);
 }
 
+/** Première phrase d'un texte, pour citer sans noyer. */
+function premierePhrase(texte: string, maximum = 320): string {
+  const propre = String(texte ?? "").trim();
+  if (!propre) return "";
+  // On ne coupe qu'à une vraie fin de phrase : un point suivi d'une majuscule ou
+  // d'un guillemet ouvrant. Sans ce garde-fou, « (cf. débats Mouffe/Rawls…) »
+  // était tronqué à « (cf. » — la citation perdait exactement son contenu.
+  const coupe = propre.split(/(?<=[.!?])\s+(?=[«"A-ZÀ-ÖØ-Þ])/)[0] ?? propre;
+  return coupe.length > maximum ? `${coupe.slice(0, maximum).trim()}…` : coupe;
+}
+
+/** Thèse portée par une fiche, quel que soit son type. */
+function theseDe(groupe: GroupeFiche): string {
+  if (groupe.type === "humaine") return texteOuVide(getFicheHumaine(groupe.id)?.these_centrale);
+  if (groupe.type === "ia") {
+    const capacites = getFicheIA(groupe.id)?.capacites_cles ?? [];
+    return capacites.length > 0 ? capacites.join(" ; ") : "";
+  }
+  return texteOuVide(getFicheGap(groupe.id)?.mecanisme);
+}
+
+/** Ce que la fiche pose comme limite. */
+function limiteDe(groupe: GroupeFiche): string {
+  if (groupe.type === "humaine") return texteOuVide(getFicheHumaine(groupe.id)?.limites_critiques);
+  if (groupe.type === "ia") return texteOuVide(getFicheIA(groupe.id)?.limites_connues);
+  return texteOuVide(getFicheGap(groupe.id)?.amelioration_possible);
+}
+
+/**
+ * Mise en tension — l'étape qui manquait.
+ *
+ * Le reproche était juste : empiler cinq fiches, c'est un dictionnaire. Ce
+ * paragraphe ne rédige rien de neuf (il ne le peut pas, il n'y a pas de modèle
+ * ici), mais il ORGANISE : il dit quelle fiche est au centre, qui la conteste et
+ * sur quelle phrase, qui s'y adosse, ce qui précède, et il nomme ce que le
+ * corpus laisse ouvert. Chaque citation est recopiée.
+ */
+function mettreEnTension(choisis: GroupeFiche[]): string {
+  const pivot = choisis[0];
+  if (!pivot) return "";
+
+  const morceaux: string[] = [];
+  const situation = [libelleAxe(pivot.type, pivot.axe), pivot.sous_domaine].filter(Boolean).join(", ");
+  const these = premierePhrase(theseDe(pivot));
+  morceaux.push(
+    `Le corpus place au centre de cette question « ${pivot.nom} »${situation ? ` (${situation})` : ""}` +
+      (these ? ` : ${these}` : ".")
+  );
+
+  const contradicteurs = choisis.filter((g) => g.role === "contradiction");
+  if (contradicteurs.length > 0) {
+    const noms = contradicteurs.map((g) => `« ${g.nom} »`).join(" et ");
+    const limite = premierePhrase(limiteDe(pivot));
+    morceaux.push(
+      `${contradicteurs.length === 1 ? "Une fiche s'y oppose" : `${contradicteurs.length} fiches s'y opposent`}, ` +
+        `${noms}, et c'est la fiche pivot elle-même qui les nomme dans ses limites` +
+        (limite ? ` : « ${limite} »` : ".")
+    );
+    for (const c of contradicteurs) {
+      const contre = premierePhrase(theseDe(c));
+      if (contre) morceaux.push(`Ce que ${`« ${c.nom} »`} oppose, dans ses propres termes : « ${contre} »`);
+    }
+  } else {
+    morceaux.push(
+      "Aucune des fiches retenues ne conteste nommément la fiche pivot. Sur une question disputée, c'est un " +
+        "signe à prendre au sérieux : soit le corpus n'a pas encore le contradicteur, soit la relation existe " +
+        "mais n'est écrite dans aucune fiche."
+    );
+  }
+
+  const appuis = choisis.filter((g) => g.role === "appui");
+  if (appuis.length > 0) {
+    morceaux.push(
+      `${appuis.map((g) => `« ${g.nom} »`).join(" et ")} ${appuis.length === 1 ? "s'y adosse" : "s'y adossent"} ` +
+        "plutôt que de s'y opposer : leur accord ne vaut donc pas confirmation indépendante."
+    );
+  }
+
+  const anteriorite = choisis.filter((g) => g.role === "antecedent" || g.role === "posterite");
+  for (const a of anteriorite) {
+    if (a.relation?.enonce) morceaux.push(a.relation.enonce);
+  }
+
+  const autres = choisis.filter((g) => g.role === "autre_discipline");
+  if (autres.length > 0) {
+    morceaux.push(
+      `${autres.map((g) => `« ${g.nom} »`).join(" et ")} ${autres.length === 1 ? "regarde" : "regardent"} le même ` +
+        "objet depuis un autre axe du référentiel : la divergence y est disciplinaire avant d'être doctrinale."
+    );
+  }
+
+  const lexicaux = choisis.filter((g) => g.role === "voisinage_lexical");
+  if (lexicaux.length > 0) {
+    morceaux.push(
+      `${lexicaux.map((g) => `« ${g.nom} »`).join(", ")} ${lexicaux.length === 1 ? "n'a" : "n'ont"} aucun lien ` +
+        "documenté avec la fiche pivot : à lire comme un rapprochement de vocabulaire à vérifier, pas comme une " +
+        "position sur la question."
+    );
+  }
+
+  morceaux.push(
+    "Ce que le corpus ne tranche pas : il expose les positions et leurs oppositions, il ne dit pas qui a raison. " +
+      "Aucune de ces phrases n'a été reformulée — elles sont recopiées des fiches citées."
+  );
+
+  return morceaux.join(" ");
+}
+
 /**
  * Construit la réponse extractive. Ne lève jamais et ne fabrique jamais de
  * contenu : si rien n'est composable, elle rend zéro perspective et
@@ -570,6 +731,17 @@ export function construireReponseExtractive(
       "Chaque phrase de fond est recopiée d'une fiche — rien n'y est reformulé, donc rien n'y est inventé. " +
       "En contrepartie, elle n'argumente pas et ne tranche pas : elle met en regard ce que le corpus contient.",
   ];
+
+  // Le pivot retenu n'est pas toujours la fiche la mieux classée : quand la
+  // première du classement lexical n'a aucun lien avec les autres, elle est
+  // écartée du rôle de point de départ. Le lecteur doit le savoir.
+  if (choisis[0] && groupes[0] && choisis[0].id !== groupes[0].id) {
+    avertissements.push(
+      `La fiche la mieux classée par la recherche — « ${groupes[0].nom} » — n'a PAS été prise comme point de ` +
+        "départ : elle n'entretient aucun lien documenté avec les autres fiches retrouvées, ce qui est la " +
+        `signature d'un faux ami du vocabulaire. C'est « ${choisis[0].nom} », reliée aux autres, qui sert de pivot.`
+    );
+  }
 
   if (nbRaisonnes > 0) {
     avertissements.push(
@@ -627,5 +799,6 @@ export function construireReponseExtractive(
     avertissements,
     convergence,
     croisements,
+    synthese: mettreEnTension(choisis),
   };
 }

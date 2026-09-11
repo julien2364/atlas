@@ -29,7 +29,8 @@
     "verifier-changelog": "node scripts/verifier-changelog.mjs",
     "budget-ia": "node scripts/budget-ia.mjs",
     "tisser": "node scripts/tisser-relations.mjs",
-    "verifier-relations": "node scripts/tisser-relations.mjs --verifier"
+    "verifier-relations": "node scripts/tisser-relations.mjs --verifier",
+    "moissonner": "node scripts/moissonner.mjs"
   },
   "dependencies": {
     "@supabase/supabase-js": "^2.115.0",

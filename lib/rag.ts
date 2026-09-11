@@ -236,6 +236,8 @@ export interface ReponseQuestion {
    * la réponse vient d'un modèle : c'est lui qui a choisi, pas le graphe.
    */
   croisements?: { fiche: string; role: string; enonce: string; preuve: string }[];
+  /** Mise en tension des perspectives (mode extractif uniquement). */
+  synthese?: string;
   diagnostic: DiagnosticReponse;
 }
 
@@ -1150,6 +1152,7 @@ export async function repondreAQuestion(question: string, options: OptionsRepons
       avertissements,
       prompt_a_copier: promptACopier,
       croisements: extractive.croisements,
+      synthese: extractive.synthese,
       diagnostic: {
         ...diagnosticDeBase(),
         statut: "repondue",

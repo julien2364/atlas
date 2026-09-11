@@ -1,0 +1,102 @@
+name: Moisson — sources pour les fiches mal étayées
+
+# Enrichissement continu du référentiel, côté SOURCES.
+#
+# Chaque passage choisit les fiches qui manquent le plus de sources vérifiables
+# (aucune URL, une seule référence, aucune source primaire, vérification
+# ancienne), interroge six fonds ouverts, et publie une proposition à relire.
+#
+# Discipline, identique à celle de la boucle de veille :
+#   - la proposition est écrite dans RUNNER_TEMP, HORS du dépôt : ce job ne peut
+#     structurellement pas modifier une fiche ;
+#   - seuls le rapport lisible et l'index de mémoire sont commités ;
+#   - l'ajout réel d'une source passe par `--appliquer`, à la main, après
+#     lecture. Aucune fiche n'est modifiée sans validation humaine.
+
+on:
+  schedule:
+    # 05:20 UTC, après le retissage des relations (04:10) : les sources ajoutées
+    # la veille sont déjà dans le graphe quand la moisson repart.
+    - cron: "20 5 * * *"
+  workflow_dispatch:
+    inputs:
+      cibles:
+        description: "Nombre de fiches traitées sur ce passage"
+        required: false
+        default: "10"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: moisson-cron
+  cancel-in-progress: false
+
+jobs:
+  moissonner:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+          cache: npm
+
+      - name: Installer les dépendances
+        run: npm ci
+
+      - name: Moissonner
+        id: moisson
+        run: |
+          CIBLES="${{ github.event.inputs.cibles || '10' }}"
+          node scripts/moissonner.mjs \
+            --cibles="$CIBLES" \
+            --sortie="$RUNNER_TEMP/moisson-$(date -u +%F).json" \
+            --json > "$RUNNER_TEMP/resume.json" || echo "moisson en échec partiel"
+          cat "$RUNNER_TEMP/resume.json"
+
+      - name: Publier la proposition comme artefact
+        uses: actions/upload-artifact@v4
+        with:
+          name: moisson-${{ github.run_id }}
+          path: |
+            ${{ runner.temp }}/moisson-*.json
+            ${{ runner.temp }}/resume.json
+          retention-days: 30
+          if-no-files-found: warn
+
+      - name: Committer le rapport et la mémoire
+        run: |
+          git config user.name "atlas-moisson-bot"
+          git config user.email "moisson-bot@users.noreply.github.com"
+          git add docs/moisson.md data/moisson-index.json
+          if git diff --cached --quiet; then
+            echo "Rien de neuf — rapport et mémoire inchangés."
+          else
+            git commit -m "chore(moisson): propositions de sources du jour [skip ci]"
+            git push
+          fi
+
+      - name: Résumé du job
+        if: always()
+        run: |
+          {
+            echo "### Moisson de sources"
+            echo ""
+            if [ -f "$RUNNER_TEMP/resume.json" ]; then
+              node -e "
+                const fs = require('fs');
+                const r = JSON.parse(fs.readFileSync(process.env.RUNNER_TEMP + '/resume.json', 'utf8'));
+                console.log('- **' + r.nb_propositions + '** propositions pour **' + r.nb_fiches + '** fiches.');
+                if ((r.echecs || []).length > 0) {
+                  console.log('- ' + r.echecs.length + ' appel(s) en échec :');
+                  for (const e of r.echecs.slice(0, 10)) console.log('  - ' + e);
+                }
+              "
+            else
+              echo "Aucun résumé produit — la moisson a échoué avant d'écrire."
+            fi
+            echo ""
+            echo "La proposition complète est dans l'artefact du job. Aucune fiche n'a été modifiée."
+          } >> "$GITHUB_STEP_SUMMARY"

@@ -76,6 +76,7 @@ interface ReponseQuestion {
   message?: string;
   prompt_a_copier?: string;
   croisements?: { fiche: string; role: string; enonce: string; preuve: string }[];
+  synthese?: string;
   diagnostic: Diagnostic;
 }
 
@@ -459,6 +460,18 @@ export default function QuestionLibreClient({ effectifs }: { effectifs: Effectif
               >
                 {chargement ? "Lecture…" : "Analyser la réponse collée"}
               </button>
+            </div>
+          ) : null}
+
+          {/* La mise en tension vient AVANT les perspectives : c'est la lecture
+              d'ensemble. Sans elle, la page empile cinq fiches et laisse le
+              lecteur faire seul le travail de comparaison. */}
+          {repondue && reponse.synthese ? (
+            <div className="mt-5 rounded-lg border border-neutral-200 bg-neutral-50 p-4 dark:border-neutral-800 dark:bg-neutral-900">
+              <p className="text-xs font-semibold uppercase tracking-wide text-neutral-500 dark:text-neutral-400">
+                Ce que le corpus met en tension
+              </p>
+              <p className="mt-2 text-sm leading-relaxed text-neutral-800 dark:text-neutral-200">{reponse.synthese}</p>
             </div>
           ) : null}
 
