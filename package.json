@@ -22,7 +22,8 @@
     "cliquet": "node scripts/cliquet-qualite.mjs",
     "auditer": "node scripts/auditer-corpus.mjs",
     "fumee": "node scripts/fumee-site.mjs",
-    "verifier-workflows": "node scripts/verifier-workflows.mjs"
+    "verifier-workflows": "node scripts/verifier-workflows.mjs",
+    "detecter-lacunes": "node scripts/detecter-lacunes.mjs"
   },
   "dependencies": {
     "@supabase/supabase-js": "^2.115.0",

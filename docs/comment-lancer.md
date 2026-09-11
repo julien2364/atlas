@@ -150,6 +150,46 @@ vérification ne soient touchés. `--dry-run` simule, `--limite=N` borne le nomb
 uniquement si au moins une fiche bascule. Le script ne remet jamais une fiche en arrière : seul un travail
 de re-documentation la fait repasser en `documente`.
 
+### `npm run detecter-lacunes` — ce que le corpus ne couvre pas encore
+
+Un référentiel qui doit s'incrémenter seul a d'abord besoin de mesurer sa propre
+incomplétude. Sans cela il ne peut que réagir à ce qu'une source lui apporte — ce que
+faisait la veille, avec le rendement qu'on sait : 8 aboutissements sur 425 propositions,
+parce que les flux parlaient de ce qu'ils voulaient et non de ce qui manquait.
+
+`data/attentes-megaprompt.json` encode les exigences des sections 3 et 4 du mégaprompt
+sous une forme vérifiable : 80 items en 11 groupes — sous-dimensions des cinq axes
+humains, écoles de psychologie, courants philosophiques, indicateurs nommés, familles de
+modèles, systèmes scientifiques, limites transversales, usages sectoriels. Chaque item
+porte les indices textuels qui permettent de le reconnaître dans le corpus, et la
+requête de recherche qui servirait à le combler.
+
+**Mesure du 11 septembre 2026 : 53,8 % de couverture.** 42 items couverts, 1 couvert
+dans l'autre référentiel, 31 seulement effleurés — mentionnés dans une fiche consacrée à
+autre chose — et 6 absents.
+
+Ce chiffre est ce qui manquait le plus. Après six lots de production, une quinzaine
+d'exigences explicites n'étaient mentionnées dans aucun document du projet : Gemini,
+Mistral et Qwen nommément demandés au §4 B1, trois des six limites transversales du
+§4 B5, AlphaGenome, le classement des 50 philosophes par courant dont l'annexe 12.1
+donne pourtant la grille toute faite, les indicateurs World Values Survey et OCDE
+*How's Life?*. Personne ne les avait oubliées par négligence : rien ne les rappelait.
+
+Le script distingue trois états, et la nuance porte tout le travail restant : **couvert**
+quand une fiche porte l'indice dans son nom ou son identifiant ; **effleuré** quand
+l'indice n'apparaît que dans le corps d'une fiche consacrée à autre chose ; **absent**
+quand rien ne le mentionne. Il signale une absence de trace, pas une absence de qualité —
+un item couvert peut l'être mal, et c'est l'affaire de l'audit de fond.
+
+```bash
+npm run detecter-lacunes              # le tableau
+npm run detecter-lacunes -- --requetes # les requêtes d'enquête, une par ligne
+npm run detecter-lacunes -- --json
+```
+
+Il ne fait échouer personne par défaut : combler une lacune est un travail, pas une
+correction. Le cron qualité hebdomadaire en publie la mesure chaque lundi.
+
 ### `npm run verifier-workflows` — le shell et le JS embarqués dans les crons
 
 Les workflows contiennent des blocs `run:` — 31 dans ce dépôt — dont six embarquent du
@@ -265,7 +305,7 @@ survit à une fiche disparue. Correctif dans tous les cas : `npm run indexer`.
 | `fumee-cron.yml` | après chaque vérification réussie, et chaque jour à 08h00 UTC | le site **déployé** répond-il, et son moteur voit-il tout le corpus |
 | `verification-ci.yml` | à chaque push et PR sur `main` | validateur → **index** → **cliquet** → **workflows** → types → lint → build, en parallèle du déploiement Vercel |
 | `veille-cron.yml` | quotidien, 07h00 UTC | veille RSS → file de propositions → **pré-tri automatique** → patchs de fiche proposés, publiés comme artefact du job (section 7) |
-| `qualite-cron.yml` | lundi, 06h00 UTC | validation → audit de fraîcheur → re-validation → commit → **audit de fond** → **liens du corpus** → **rendement de la veille** |
+| `qualite-cron.yml` | lundi, 06h00 UTC | validation → audit de fraîcheur → re-validation → commit → **couverture des attentes** → **audit de fond** → **liens du corpus** → **rendement de la veille** |
 | `documentation-cron.yml` | mercredi, 05h30 UTC | propositions de sources pour les fiches à (re)documenter |
 
 `verification-ci.yml` rejoue exactement `npm run verifier`, la même porte que le script de réception :

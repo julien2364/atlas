@@ -1,0 +1,122 @@
+{
+  "commentaire": "Ce que le mégaprompt exige, sous une forme que le code peut vérifier. Chaque entrée nomme une attente, les indices textuels qui permettent de la reconnaître dans le corpus, et la requête de recherche qui servirait à la combler. C'est la mémoire de la demande : sans elle, une exigence oubliée le reste, et l'audit du 11/09/2026 a montré que c'est exactement ce qui s'était produit sur une quinzaine de points. Modifier ce fichier, c'est amender la lecture du mégaprompt — à faire dans un commit qui en donne la raison.",
+  "source": "docs/megaprompt.md, sections 3 et 4",
+  "version": "1.0",
+  "etabli_le": "2026-09-11",
+  "attentes": [
+    { "id": "A1-sous-dimensions", "section": "3 A1", "nature": "sous_dimension", "referentiel": "humain", "axe": "social",
+      "items": [
+        { "nom": "coopération et confiance", "indices": ["cooperation", "confiance", "trust", "reciprocite"] },
+        { "nom": "institutions et contrats sociaux", "indices": ["institution", "contrat social", "etat de droit"] },
+        { "nom": "structures familiales et communautaires", "indices": ["famille", "parente", "communaute"] },
+        { "nom": "culture et transmission", "indices": ["culture", "transmission", "heritage", "memoire collective"] },
+        { "nom": "communication et langage", "indices": ["langage", "communication", "linguistique"] },
+        { "nom": "conflits et régulation sociale", "indices": ["conflit", "regulation sociale", "violence", "mediation"] },
+        { "nom": "capital social", "indices": ["capital social"] }
+      ] },
+    { "id": "A1-indicateurs", "section": "3 A1", "nature": "indicateur", "referentiel": "humain", "axe": "social",
+      "items": [
+        { "nom": "World Values Survey", "indices": ["world values survey"], "requete": "World Values Survey methodology waves findings" },
+        { "nom": "Edelman Trust Barometer", "indices": ["edelman"], "requete": "Edelman Trust Barometer methodology annual report" },
+        { "nom": "indices de cohésion sociale", "indices": ["cohesion sociale", "social cohesion index"], "requete": "social cohesion index measurement methodology" },
+        { "nom": "OCDE How's Life?", "indices": ["how's life", "hows life", "vivre mieux", "better life"], "requete": "OECD How's Life well-being framework indicators" }
+      ] },
+    { "id": "A2-ecoles", "section": "3 A2", "nature": "ecole", "referentiel": "humain", "axe": "psychologique",
+      "items": [
+        { "nom": "psychanalyse", "indices": ["psychanalyse", "freud", "jung", "lacan"] },
+        { "nom": "béhaviorisme", "indices": ["behaviorisme", "skinner", "watson"] },
+        { "nom": "cognitivisme", "indices": ["cognitivisme", "cognitiviste"] },
+        { "nom": "thérapies cognitivo-comportementales", "indices": ["cognitivo-comportement", "tcc", "beck"] },
+        { "nom": "psychologie humaniste", "indices": ["maslow", "rogers", "humaniste"] },
+        { "nom": "psychologie positive", "indices": ["seligman", "psychologie positive"] },
+        { "nom": "psychologie du développement", "indices": ["piaget", "vygotski", "developpement de l'enfant"] },
+        { "nom": "neurosciences cognitives et affectives", "indices": ["neuroscience", "damasio", "ledoux"] }
+      ] },
+    { "id": "A3-courants", "section": "3 A3", "nature": "courant", "referentiel": "humain", "axe": "philosophique",
+      "controle": "periode_courant",
+      "items": [
+        { "nom": "existentialisme", "indices": ["existentialisme"] },
+        { "nom": "phénoménologie", "indices": ["phenomenologie"] },
+        { "nom": "philosophie analytique", "indices": ["analytique"] },
+        { "nom": "philosophie du langage", "indices": ["philosophie du langage"] },
+        { "nom": "théorie critique", "indices": ["theorie critique", "ecole de francfort"] },
+        { "nom": "postmodernisme", "indices": ["postmodern", "post-structuralisme"] },
+        { "nom": "posthumanisme et nouveau matérialisme", "indices": ["posthumanisme", "nouveau materialisme"] },
+        { "nom": "philosophie de l'esprit computationnelle", "indices": ["philosophie de l'esprit", "computationnelle"] }
+      ] },
+    { "id": "A4-sous-dimensions", "section": "3 A4", "nature": "sous_dimension", "referentiel": "humain", "axe": "evolution",
+      "items": [
+        { "nom": "évolution biologique de l'espèce humaine", "indices": ["evolution biologique", "hominide", "selection naturelle", "darwin"], "requete": "human biological evolution hominin lineage review" },
+        { "nom": "anthropologie et préhistoire", "indices": ["anthropolog", "prehistoire", "paleolithique"], "requete": "anthropology prehistory human origins synthesis" },
+        { "nom": "évolution culturelle et technologique", "indices": ["evolution culturelle", "evolution technologique"], "requete": "cultural evolution theory cumulative culture" },
+        { "nom": "coévolution homme-outil", "indices": ["coevolution", "homme-outil", "technique et humanite"], "requete": "human tool coevolution technology anthropology" },
+        { "nom": "hypothèses transhumanistes et post-humaines", "indices": ["transhuman", "posthum"], "requete": "transhumanism posthumanism philosophy critique" },
+        { "nom": "trajectoires démographiques longues", "indices": ["demograph", "transition demographique", "population mondiale"], "requete": "long term demographic transition world population projections" }
+      ] },
+    { "id": "A5-indicateurs", "section": "3 A5", "nature": "indicateur", "referentiel": "humain", "axe": "serenite",
+      "items": [
+        { "nom": "World Happiness Report", "indices": ["world happiness"] },
+        { "nom": "Global Peace Index", "indices": ["global peace index"] },
+        { "nom": "limites planétaires", "indices": ["limites planetaires", "planetary boundaries"] },
+        { "nom": "indices de risque existentiel", "indices": ["risque existentiel", "existential risk"], "requete": "existential risk index methodology Future of Humanity Institute" }
+      ] },
+    { "id": "B1-familles", "section": "4 B1", "nature": "famille_modele", "referentiel": "ia",
+      "items": [
+        { "nom": "Claude / Cowork", "indices": ["claude"] },
+        { "nom": "Codex / famille GPT", "indices": ["codex", "gpt"] },
+        { "nom": "DeepSeek", "indices": ["deepseek"] },
+        { "nom": "Gemini", "indices": ["gemini"] },
+        { "nom": "Llama", "indices": ["llama"] },
+        { "nom": "Mistral", "indices": ["mistral"] },
+        { "nom": "Qwen", "indices": ["qwen"] }
+      ] },
+    { "id": "B3-systemes", "section": "4 B3", "nature": "systeme_scientifique", "referentiel": "ia",
+      "items": [
+        { "nom": "AlphaFold / AlphaGenome", "indices": ["alphafold", "alphagenome"] },
+        { "nom": "GNoME et découverte de matériaux", "indices": ["gnome", "decouverte de materiaux"] },
+        { "nom": "moteurs de simulation physique", "indices": ["simulation physique", "physics simulation", "solveur physique"], "requete": "AI physics simulation engine neural surrogate solver" },
+        { "nom": "IA pour la fusion nucléaire", "indices": ["fusion nucleaire", "tokamak"] },
+        { "nom": "IA en génomique et drug discovery", "indices": ["genomique", "drug discovery", "criblage"] },
+        { "nom": "IA en climatologie", "indices": ["climatolog", "meteo", "weather", "graphcast"] }
+      ] },
+    { "id": "B5-limites", "section": "4 B5", "nature": "limite_transversale", "referentiel": "ia",
+      "items": [
+        { "nom": "hallucination et fiabilité factuelle", "indices": ["hallucination"] },
+        { "nom": "absence de conscience et qualia", "indices": ["conscience", "qualia"], "requete": "machine consciousness qualia debate Chalmers Dennett Searle artificial intelligence" },
+        { "nom": "biais hérités des données d'entraînement", "indices": ["biais"] },
+        { "nom": "dépendance énergétique et matérielle", "indices": ["energetique", "energie", "materielle"] },
+        { "nom": "gouvernance et alignement", "indices": ["alignement", "gouvernance de l'ia", "alignment"], "requete": "AI alignment governance research state of the art" },
+        { "nom": "dépendance à la supervision humaine", "indices": ["supervision humaine", "human oversight", "human in the loop"], "requete": "human oversight high risk AI systems requirement research" }
+      ] },
+    { "id": "B4-usages", "section": "4 B4", "nature": "usage_sectoriel", "referentiel": "ia",
+      "items": [
+        { "nom": "revue de littérature automatisée", "indices": ["revue de litterature"], "requete": "automated literature review AI systematic review tools" },
+        { "nom": "génération d'hypothèses", "indices": ["generation d'hypothese", "hypothese scientifique"], "requete": "AI hypothesis generation scientific discovery systems" },
+        { "nom": "aide à la conception expérimentale", "indices": ["conception experimentale", "design of experiments"], "requete": "AI experimental design automation laboratory" },
+        { "nom": "tutorat adaptatif", "indices": ["tutorat", "adaptatif"] },
+        { "nom": "évaluation automatisée", "indices": ["evaluation automatisee", "notation automatique"], "requete": "automated assessment grading AI education deployment" },
+        { "nom": "contenus pédagogiques différenciés", "indices": ["contenu pedagogique", "differencie"] },
+        { "nom": "jumeaux numériques", "indices": ["jumeau numerique", "jumeaux numeriques"] },
+        { "nom": "maintenance prédictive", "indices": ["maintenance predictive"], "requete": "predictive maintenance AI industrial deployment case" },
+        { "nom": "optimisation de chaînes logistiques", "indices": ["chaine logistique", "supply chain"], "requete": "AI supply chain optimization deployment industry" },
+        { "nom": "contrôle qualité par vision", "indices": ["controle qualite", "vision industrielle"] },
+        { "nom": "criblage virtuel de molécules", "indices": ["criblage virtuel", "criblage moleculaire"] },
+        { "nom": "optimisation d'essais cliniques", "indices": ["essai clinique"], "requete": "AI clinical trial optimization deployment regulatory" },
+        { "nom": "pharmacovigilance automatisée", "indices": ["pharmacovigilance"], "requete": "automated pharmacovigilance AI signal detection" },
+        { "nom": "aide à la décision publique", "indices": ["decision publique"] },
+        { "nom": "prévision publique", "indices": ["prevision economique", "prevision sanitaire", "prevision climatique"], "requete": "AI forecasting public policy economic health deployment" },
+        { "nom": "cybersécurité", "indices": ["cybersecurite", "cyberdefense"], "requete": "AI cybersecurity defense deployment government" },
+        { "nom": "systèmes de défense", "indices": ["systeme de defense", "militaire", "armement"], "requete": "military AI defense systems deployment documented" }
+      ] },
+    { "id": "B2-capacites", "section": "4 B2", "nature": "capacite_agentique", "referentiel": "ia",
+      "items": [
+        { "nom": "autonomie d'exécution", "indices": ["autonomie d'execution", "agent autonome"] },
+        { "nom": "orchestration d'outils", "indices": ["orchestration", "outil"] },
+        { "nom": "usage d'ordinateur et de navigateur", "indices": ["navigateur", "computer use", "operator"] },
+        { "nom": "génération et exécution de code", "indices": ["generation de code", "execution de code"] },
+        { "nom": "recherche documentaire autonome", "indices": ["recherche documentaire", "deep research"], "requete": "autonomous deep research agent systems evaluation" },
+        { "nom": "mémoire long terme", "indices": ["memoire long terme", "memoire persistante"], "requete": "long term memory LLM agents architecture" },
+        { "nom": "coordination multi-agents", "indices": ["multi-agent", "multi agents"], "requete": "multi-agent coordination LLM systems research" }
+      ] }
+  ]
+}

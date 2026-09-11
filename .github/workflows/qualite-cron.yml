@@ -49,6 +49,32 @@ jobs:
       - name: Re-valider l'intégrité du corpus (après audit)
         run: node scripts/valider-donnees.mjs
 
+      # La couverture des attentes du mégaprompt. C'est la mesure qui manquait le plus :
+      # après six lots de production, une quinzaine d'exigences explicites des sections
+      # 3 et 4 n'étaient mentionnées dans aucun document du projet — Gemini, Mistral et
+      # Qwen nommément demandés, trois des six limites transversales, AlphaGenome, le
+      # classement des philosophes par courant. Personne ne les avait oubliées par
+      # négligence : rien ne les rappelait. Ceci les rappelle, chaque lundi.
+      - name: Couverture des attentes du mégaprompt
+        if: always()
+        run: |
+          node scripts/detecter-lacunes.mjs --json > "${RUNNER_TEMP}/lacunes.json"
+          node -e "
+            const fs = require('fs');
+            const r = JSON.parse(fs.readFileSync(process.env.RUNNER_TEMP + '/lacunes.json', 'utf8'));
+            const l = ['### Couverture des attentes du mégaprompt', ''];
+            l.push('**' + (100 * r.couverture).toFixed(1) + ' %** sur ' + r.total + ' items — couverts ' + r.compte.couvert + ', effleurés ' + r.compte.effleure + ', absents ' + r.compte.absent + '.');
+            const aCombler = r.resultats.filter((x) => x.etat === 'absent' || x.etat === 'effleure');
+            if (aCombler.length > 0) {
+              l.push('');
+              l.push('| section | item | état | requête d enquête |');
+              l.push('|---|---|---|---|');
+              for (const x of aCombler) l.push('| ' + x.section + ' | ' + x.nom + ' | ' + x.etat + ' | ' + (x.requete || '—') + ' |');
+            }
+            fs.appendFileSync(process.env.GITHUB_STEP_SUMMARY, l.join('\n') + '\n');
+            console.log('couverture ' + (100 * r.couverture).toFixed(1) + ' % — ' + aCombler.length + ' item(s) à combler');
+          "
+
       # L'audit de fond, hors ligne et en moins d'une seconde, dans le résumé du job :
       # la CI garde le cliquet, celui-ci donne la photo complète, catégorie par
       # catégorie, à qui vient regarder l'état du corpus une fois par semaine.
