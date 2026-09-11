@@ -2799,5 +2799,242 @@
     ],
     "statut": "documente",
     "derniere_verification": "2026-09-07"
+  },
+  {
+    "id": "recrutement-algorithmique-et-agents-de-recrutement-ia",
+    "axe": "sectoriel",
+    "nom": "Recrutement algorithmique et agents de recrutement (IA)",
+    "editeur": null,
+    "architecture": "Chaînes de traitement en plusieurs étapes plutôt qu'un modèle unique : la revue de Zhao et Wei décrit un déplacement de l'objet automatisé, « from profile pairs and ranked lists to multi-stage workflows that retrieve evidence, compare candidates, and support or execute actions », en passant par la recherche bilatérale, le classement comportemental, l'appariement neuronal personne–poste, des composants à base de grands modèles de langage, puis des agents de recrutement à usage d'outils.",
+    "capacites_cles": [
+      "Analyse de CV multilingues et de mises en page hétérogènes, et travail sur les offres elles-mêmes : « extract fine-grained requirements or rewrite low-quality job descriptions » (Zhao et Wei, 2026)",
+      "Recherche de candidats par canaux multiples combinant appariement lexical, représentations denses, signaux comportementaux et parcours de graphes, là où un moteur de mots-clés ne fait qu'un seul de ces passages",
+      "Classement en cascade progressive des candidatures, jusqu'à un reclassement final par comparaison de listes confiée à un grand modèle de langage",
+      "Production d'évaluations assorties de « criterion-specific rationales » et de questions d'entretien adossées aux pièces du dossier (« evidence-grounded questions over resumes and job descriptions ») plutôt qu'à un questionnaire figé",
+      "Sourcing agentique à usage d'outils : clarifier un poste, interroger des bases et le web public, fusionner des entités, avec des points d'approbation humaine explicites avant toute action externe"
+    ],
+    "usages": [
+      {
+        "secteur": "industrie",
+        "description": "Sourcing, tri et présélection de candidatures dans le recrutement d'entreprise, désormais sous forme d'agents intégrés aux plateformes de recrutement plutôt que de simples moteurs d'appariement",
+        "trl": 9,
+        "trl_justification": "Produit commercialisé et déployé, dont l'exploitant et la date sont nommés : la salle de presse de LinkedIn du 3 septembre 2025 annonce la disponibilité mondiale de Hiring Assistant en anglais, « by end of September », et nomme ses clients, dont Siemens, Microsoft, Expedia Group, AMD, Wipro, Chewy, Jacobs, Aurecon, Fabletics, Insite et MediaNews Group. Vincent Mercandetti (Siemens) y est cité nommément sur l'usage du produit. La source annonce une disponibilité mondiale et ne nomme aucun lieu de déploiement : la troisième jambe de la règle n'est donc pas tenue par un lieu mais par la liste des exploitants.",
+        "exemples": [
+          "LinkedIn Hiring Assistant, présenté comme le premier agent IA de LinkedIn pour les recruteurs, rendu disponible mondialement en anglais fin septembre 2025 auprès de clients nommés — Siemens, Microsoft, Expedia Group, AMD, Wipro, Chewy, Jacobs, Aurecon, Fabletics, Insite, MediaNews Group",
+          "Gains annoncés par l'éditeur à partir de retours d'« early adopters », et non mesurés par une étude indépendante : « saving 4+ hours per role », « reviewing 62% fewer profiles », « seeing a 69% improvement in InMail acceptance rates »",
+          "Systèmes de recommandation d'emploi en production cités par la revue de Zhao et Wei : l'architecture de recherche et de classement multi-étages de LinkedIn, le déploiement de XING avec recommandations poussées en direct au RecSys Challenge 2017, et un déploiement de 17 mois chez Jobindex portant sur 41 390 offres"
+        ],
+        "sources": [
+          {
+            "titre": "« Hiring Assistant, LinkedIn's first AI agent for recruiters, to become globally available » — salle de presse LinkedIn",
+            "url": "https://news.linkedin.com/2025/hiring-assistant-globally-available",
+            "date": "2025-09-03",
+            "type": "primaire"
+          },
+          {
+            "titre": "Zhao et Wei, « From Matching Models to Recruiting Agents: A Systematized Narrative Review of AI Recruitment Systems, Evaluation, and Governance », arXiv:2609.04286",
+            "url": "https://arxiv.org/abs/2609.04286",
+            "date": "2026-09-03",
+            "type": "primaire"
+          }
+        ]
+      },
+      {
+        "secteur": "recherche",
+        "description": "Champ de recherche constitué sur l'appariement personne–poste et son évaluation, dont la revue de 2026 organise l'état par un protocole de recension explicite",
+        "diffusion": "etabli",
+        "exemples": [
+          "Revue narrative systématisée organisant « 40 representative works with supporting industrial and legal sources », sur un protocole de recherche et de codage « updated through 23 July 2026, plus targeted updates through 2 September 2026 »",
+          "Prototypes académiques nommés par la revue — ConFit, DPGNN, xbench — dont elle souligne qu'ils ne disposent pas de validation en déploiement",
+          "Proposition d'une échelle de preuve (« field-, pair-, list-, case-, trajectory-, and outcome-level evidence ») reliant le type d'évaluation disponible à la revendication la plus forte que l'on puisse défendre"
+        ],
+        "sources": [
+          {
+            "titre": "Zhao et Wei, « From Matching Models to Recruiting Agents: A Systematized Narrative Review of AI Recruitment Systems, Evaluation, and Governance », arXiv:2609.04286",
+            "url": "https://arxiv.org/abs/2609.04286",
+            "date": "2026-09-03",
+            "type": "primaire"
+          }
+        ]
+      }
+    ],
+    "limites_connues": "Cinq réserves documentées, dont quatre attribuables nominativement. (1) Zhao et Wei (2026) situent le défaut principal dans l'évaluation elle-même : les étiquettes comportementales servant d'apprentissage « confound exposure, preference, and qualification » — un clic de recruteur mêle ce qui a été montré, ce qui est préféré et ce qui est qualifié ; « private and synthetic data limit external validity » ; « final-output scores conceal pipeline failures » ; et, dans l'ensemble codé, « privacy is not directly evaluated », aucune ligne n'évaluant conjointement utilité, équité, vie privée et sécurité. Les auteurs précisent que ces constats décrivent leur corpus codé et non le champ entier. (2) La même revue relève que les gains mesurés hors ligne n'établissent pas une « improved hiring quality or job performance » : l'efficacité réelle de ces outils sur la qualité des recrutements reste à la date de la fiche une question ouverte plutôt qu'un acquis, et les chiffres de gain les plus circulés — « saving 4+ hours per role », « reviewing 62% fewer profiles » publiés par LinkedIn le 3 septembre 2025 — sont des retours d'utilisateurs rapportés par l'éditeur, non des mesures indépendantes. (3) Le recrutement est explicitement encadré, et cet encadrement est lui-même une contrainte de conception : à New York, la Local Law 144 de 2021, appliquée par le Department of Consumer and Worker Protection depuis le 5 juillet 2023, interdit l'usage d'un outil automatisé de décision d'emploi sauf si « the tool has been subject to a bias audit within one year of the use of the tool », si les informations sur cet audit sont publiques et si « certain notices have been provided to employees or job candidates » ; dans l'Union européenne, l'annexe III, point 4 a), du règlement (UE) 2024/1689 du 13 juin 2024 classe à haut risque les « AI systems intended to be used for the recruitment or selection of natural persons, in particular to place targeted job advertisements, to analyse and filter job applications, and to evaluate candidates », la page de l'AI Act Explorer consacrée à l'article 113 et consultée le 11/09/2026 situant l'application des sections 1 à 3 du chapitre III au 2 décembre 2027 pour ces systèmes. (4) L'existence d'une obligation ne vaut pas son effectivité : Wright, Muenster, Vecchione, Metcalf, Matias et leurs coauteurs (FAccT 2024) montrent que sur 391 employeurs examinés, 18 ont publié un rapport d'audit de biais et 13 un avis de transparence ; et que parmi les 267 qui publiaient des offres à New York — la population que vise réellement la loi — ils n'ont trouvé que 14 rapports d'audit et 12 avis. Ils nomment « null compliance » l'état où la non-conformité n'est pas vérifiable, la discrétion laissée à l'employeur sur le périmètre de la loi empêchant de savoir si l'outil employé y entre. (5) Sur la discrimination algorithmique, le cas le plus cité est celui d'Amazon et il appelle une lecture prudente : selon MIT Technology Review (10 octobre 2018), l'entreprise a développé à partir de 2014 un système de notation des candidats de une à cinq étoiles, entraîné sur dix ans de CV reçus, qui pénalisait les CV contenant le mot « women's » ou le nom de certains établissements exclusivement féminins ; Amazon a neutralisé ces termes puis abandonné le projet, ayant « lost confidence that the program was indeed gender neutral in all other areas ». Ce qui est établi est l'apparition du biais et l'abandon ; la source n'établit pas que le système ait servi à écarter des candidates réelles, et la thèse générale selon laquelle tout outil entraîné sur des décisions passées en reproduit nécessairement les écarts reste une hypothèse que ce cas illustre sans la démontrer. Aucune source vérifiable n'a par ailleurs pu être attribuée à un auteur nommé pour une mesure de l'effet de ces outils sur les candidats eux-mêmes — taux de rappel par groupe, contestabilité effective d'un refus : ce manque est signalé plutôt que comblé.",
+    "sources": [
+      {
+        "titre": "Zhao et Wei, « From Matching Models to Recruiting Agents: A Systematized Narrative Review of AI Recruitment Systems, Evaluation, and Governance », arXiv:2609.04286",
+        "url": "https://arxiv.org/abs/2609.04286",
+        "date": "2026-09-03",
+        "type": "primaire"
+      },
+      {
+        "titre": "Wright, Muenster, Vecchione, Qu, Cai, Smith, Metcalf, Matias et al., « Null Compliance: NYC Local Law 144 and the Challenges of Algorithm Accountability », FAccT '24",
+        "url": "https://arxiv.org/abs/2406.01399",
+        "type": "primaire",
+        "date": "2024-06-03"
+      },
+      {
+        "titre": "Automated Employment Decision Tools (AEDT) — NYC Department of Consumer and Worker Protection",
+        "url": "https://www.nyc.gov/site/dca/about/automated-employment-decision-tools.page",
+        "date": "2026-09-11",
+        "type": "primaire"
+      },
+      {
+        "titre": "« Hiring Assistant, LinkedIn's first AI agent for recruiters, to become globally available » — salle de presse LinkedIn",
+        "url": "https://news.linkedin.com/2025/hiring-assistant-globally-available",
+        "date": "2025-09-03",
+        "type": "primaire"
+      },
+      {
+        "titre": "Règlement (UE) 2024/1689 du Parlement européen et du Conseil du 13 juin 2024 établissant des règles harmonisées concernant l'intelligence artificielle (règlement sur l'IA) — Journal officiel",
+        "url": "https://eur-lex.europa.eu/eli/reg/2024/1689/oj/eng",
+        "date": "2024-06-13",
+        "type": "primaire"
+      },
+      {
+        "titre": "Annexe III du règlement (UE) 2024/1689 — restitution de l'AI Act Explorer",
+        "url": "https://artificialintelligenceact.eu/annex/3/",
+        "date": "2026-09-11",
+        "type": "secondaire"
+      },
+      {
+        "titre": "Article 113 du règlement (UE) 2024/1689, « Entry into force and application » — restitution de l'AI Act Explorer",
+        "url": "https://artificialintelligenceact.eu/article/113/",
+        "date": "2026-09-11",
+        "type": "secondaire"
+      },
+      {
+        "titre": "Erin Winick, « Amazon ditched AI recruitment software because it was biased against women », MIT Technology Review",
+        "url": "https://www.technologyreview.com/2018/10/10/139858/amazon-ditched-ai-recruitment-software-because-it-was-biased-against-women/",
+        "date": "2018-10-10",
+        "type": "secondaire"
+      }
+    ],
+    "statut": "documente",
+    "derniere_verification": "2026-09-11"
+  },
+  {
+    "id": "capacite-de-decouverte-et-saut-abductif-limite-transversale",
+    "axe": "limites",
+    "nom": "Capacité de découverte et saut abductif (limite transversale)",
+    "editeur": null,
+    "architecture": null,
+    "capacites_cles": [
+      "Écart entre prédire correctement et inférer la loi sous-jacente : un transformeur entraîné sur des trajectoires orbitales atteint un R² supérieur à 0,9999 en prédiction de séquence, mais la régression symbolique appliquée au vecteur de force qu'il implique « finds a different implied law of gravitation for each sample » (Vafa, Chang, Rambachan & Mullainathan, ICML 2025)",
+      "Sur le même protocole, les modèles « consistently fail to apply Newtonian mechanics when adapted to new physics tasks » et développent à la place des « task-specific heuristics that fail to generalize »",
+      "Distinction posée par Tom Zahavy (Google DeepMind) dans « Position: LLMs can't jump » (ICML 2026) : les modèles maîtrisent l'induction (« statistical pattern matching »), progressent en déduction (« formal proof »), mais resteraient « structurally incapable of the abductive \"Jump\" » — la formulation d'une hypothèse explicative nouvelle",
+      "Frontière floue entre recombinaison et invention : un modèle d'OpenAI a réfuté une conjecture de Paul Erdős vieille de quatre-vingts ans ; Sendhil Mullainathan (MIT) y voit un « genuine conceptual advance » tout en relevant que la solution « bring together ideas already extant in the mathematical literature » (Nature, 9 septembre 2026)",
+      "Comportement observé sur les modèles entraînés sur textes antérieurs à 1900 par Michael Hla, chercheur indépendant à San Francisco : des « glimpses of intuition » mais un modèle qui se borne à « parroting words that seem plausible », sans « any sort of strong internal representation of the world »"
+    ],
+    "usages": [
+      {
+        "secteur": "science",
+        "diffusion": "emergent",
+        "description": "Le phénomène s'observe d'abord sur des protocoles de redécouverte construits pour le mesurer : on donne au modèle les données d'un phénomène dont la loi est connue de l'expérimentateur, puis on lui demande non de prédire mais d'énoncer la loi. Ce qui est mesuré est un résultat sur un protocole donné, à une date donnée — un modèle précis, un corpus synthétique précis, un jeu de tâches d'adaptation précis. Le même champ produit aussi le résultat inverse : une construction mathématique inédite trouvée par recherche de programmes guidée par un modèle de langage. Les deux tiennent ensemble et bornent ce que l'on peut conclure.",
+        "exemples": [
+          "Vafa, Chang, Rambachan et Mullainathan (ICML 2025) entraînent un transformeur sur des trajectoires orbitales : R² supérieur à 0,9999 sur les données de test, mais la régression symbolique appliquée au vecteur de force extrait ne retrouve pas la loi de Newton et donne « a different implied law of gravitation for each sample »",
+          "Leur sonde de biais inductif est appliquée à d'autres domaines (treillis, Othello) et y constate également des « weak inductive biases toward the given world models »",
+          "À l'inverse, FunSearch (Romera-Paredes et al., Nature, décembre 2023) trouve en dimension 8 un cap set plus grand que tout ce qui était alors connu et porte la borne inférieure de la capacité de 2,2180 à 2,2184, puis à 2,2202 — « the largest improvement in 20 years to the asymptotic lower bound »",
+          "Le même travail dégage pour le bin packing en ligne des heuristiques qui « improve on widely used baselines »"
+        ],
+        "sources": [
+          {
+            "titre": "Vafa, Chang, Rambachan & Mullainathan, « What Has a Foundation Model Found? Using Inductive Bias to Probe for World Models », ICML 2025",
+            "url": "https://arxiv.org/abs/2507.06952",
+            "date": "2025-07-09",
+            "type": "primaire"
+          },
+          {
+            "titre": "Romera-Paredes et al., « Mathematical discoveries from program search with large language models », Nature, vol. 625",
+            "url": "https://www.nature.com/articles/s41586-023-06924-6",
+            "date": "2023-12-14",
+            "type": "primaire"
+          }
+        ]
+      },
+      {
+        "secteur": "recherche",
+        "diffusion": "emergent",
+        "description": "Tester la découverte suppose un modèle qui ignore la réponse, d'où les modèles entraînés sur des corpus arrêtés à une date historique. L'instrument de mesure est ici le premier obstacle : la fuite temporelle rend un résultat négatif ambigu, puisqu'on ne sait pas séparer l'incapacité du modèle d'un défaut du protocole. Les équipes qui construisent ces modèles publient leurs taux de fuite plutôt que de les présumer nuls.",
+        "exemples": [
+          "TypewriterLM (Luo et al., juin 2026) : 7,24 milliards de paramètres, coupure de connaissance en 1913, entraîné sur un corpus de 54 milliards de jetons couvrant 1700-1913",
+          "La fuite post-coupure y est mesurée entre 0,0 % et 0,6 % selon le modèle et le critère, et les auteurs écrivent que « leakage remains difficult to eliminate entirely »",
+          "Nick Levine, chercheur indépendant à San Francisco, a construit un modèle arrêté à 1930 et décrit le même écueil : « If you ask it about what happened in the 1950s, often it'll just accidentally answer »",
+          "Daniel Göttlich (ETH Zurich) et le projet Ranke-4B, aux coupures 1913, 1929, 1933, 1939 et 1946, visent explicitement un objectif abaissé : « What we are testing for, figuratively speaking, is not so much genius, but sparks of genius »"
+        ],
+        "sources": [
+          {
+            "titre": "Luo, Shinnick, Griesshaber et al., « Pretraining Language Models on Historical Text », arXiv:2606.02991v1",
+            "url": "https://arxiv.org/html/2606.02991v1",
+            "date": "2026-06-02",
+            "type": "primaire"
+          },
+          {
+            "titre": "Philip Ball, « The Einstein test: what happens when AI tries to rediscover relativity? », Nature, vol. 657",
+            "url": "https://www.nature.com/articles/d41586-026-02804-x",
+            "date": "2026-09-09",
+            "type": "secondaire"
+          }
+        ]
+      },
+      {
+        "secteur": "industrie",
+        "diffusion": "emergent",
+        "description": "Dans les laboratoires industriels, le saut inventif fonctionne moins comme une propriété mesurée que comme un critère proposé pour arbitrer les affirmations sur l'intelligence générale. Ce déplacement est important : ce que l'on trouve ici, ce sont des propositions de test et des prises de position argumentées, pas des mesures. Les auteurs les plus critiques assortissent d'ailleurs leur thèse d'une voie de sortie technique.",
+        "exemples": [
+          "Demis Hassabis (Google DeepMind) propose d'entraîner un modèle sur l'ensemble des connaissances antérieures à 1911 pour voir s'il reproduit la relativité générale : « That would be a good test for AGI »",
+          "Tom Zahavy (Google DeepMind) formule sa thèse comme un position paper, prend la relativité générale comme cas d'étude, et propose d'y remédier par des « physically consistent, multimodal world models » — l'incapacité qu'il décrit est donc pour lui contingente de l'architecture actuelle, pas définitive",
+          "Owain Evans (Truthful AI, Berkeley) est crédité par Nature de la proposition initiale de modèles « vintage » ou historiques, lors d'une intervention de décembre 2024"
+        ],
+        "sources": [
+          {
+            "titre": "Tom Zahavy, « Position: LLMs can't jump », ICML 2026",
+            "url": "https://icml.cc/virtual/2026/poster/67091",
+            "date": "2026-07-09",
+            "type": "primaire"
+          },
+          {
+            "titre": "Philip Ball, « The Einstein test: what happens when AI tries to rediscover relativity? », Nature, vol. 657",
+            "url": "https://www.nature.com/articles/d41586-026-02804-x",
+            "date": "2026-09-09",
+            "type": "secondaire"
+          }
+        ]
+      }
+    ],
+    "limites_connues": "Cette limite est beaucoup moins établie que les autres limites transversales du référentiel, et il faut dire précisément ce qu'elle ne démontre pas. La sonde de biais inductif de Vafa et al. mesure des modèles donnés, entraînés sur des données synthétiques données, adaptés à des tâches données : c'est un résultat expérimental, pas une propriété prouvée de l'architecture transformeur ni de l'apprentissage par prédiction de séquence en général. La thèse de Tom Zahavy est un position paper de l'ICML 2026, c'est-à-dire un argument soumis à discussion, et son auteur y adjoint lui-même un remède architectural. Sur les protocoles de redécouverte historique, un échec reste ambigu tant que la fuite temporelle n'est pas nulle, et elle ne l'est pas : les auteurs de TypewriterLM la mesurent et la documentent plutôt que de l'écarter. Il n'existe par ailleurs aucun critère de réussite partagé pour un « test d'Einstein » — Göttlich abaisse explicitement la cible à des « sparks of genius ». Enfin, la conclusion inverse est tout aussi peu fondée : FunSearch a produit une construction combinatoire qui n'était pas dans la littérature, et Ido Kaminer (Technion, Haïfa), coauteur de « Can AI Follow In Einstein's Footsteps? », soutient dans Nature qu'« a relativity-like breakthrough is not inherently out of reach for AI », tout en ajoutant qu'« it won't happen without rethinking some of the principles on which today's models are built ». En l'état, ce qui est attesté est étroit : sur plusieurs protocoles publiés entre 2025 et 2026, des modèles qui prédisent très bien un phénomène n'en restituent pas la loi générale, et les cas de découverte avérés relèvent de la recherche guidée dans un espace de solutions vérifiable mécaniquement, non de la formulation d'un principe nouveau à partir de données rares.",
+    "sources": [
+      {
+        "titre": "Vafa, Chang, Rambachan & Mullainathan, « What Has a Foundation Model Found? Using Inductive Bias to Probe for World Models », ICML 2025",
+        "url": "https://arxiv.org/abs/2507.06952",
+        "date": "2025-07-09",
+        "type": "primaire"
+      },
+      {
+        "titre": "Tom Zahavy, « Position: LLMs can't jump », ICML 2026",
+        "url": "https://icml.cc/virtual/2026/poster/67091",
+        "date": "2026-07-09",
+        "type": "primaire"
+      },
+      {
+        "titre": "Romera-Paredes et al., « Mathematical discoveries from program search with large language models », Nature, vol. 625",
+        "url": "https://www.nature.com/articles/s41586-023-06924-6",
+        "date": "2023-12-14",
+        "type": "primaire"
+      },
+      {
+        "titre": "Luo, Shinnick, Griesshaber et al., « Pretraining Language Models on Historical Text », arXiv:2606.02991v1",
+        "url": "https://arxiv.org/html/2606.02991v1",
+        "date": "2026-06-02",
+        "type": "primaire"
+      },
+      {
+        "titre": "Philip Ball, « The Einstein test: what happens when AI tries to rediscover relativity? », Nature, vol. 657",
+        "url": "https://www.nature.com/articles/d41586-026-02804-x",
+        "date": "2026-09-09",
+        "type": "secondaire"
+      }
+    ],
+    "statut": "documente",
+    "derniere_verification": "2026-09-11"
   }
 ]

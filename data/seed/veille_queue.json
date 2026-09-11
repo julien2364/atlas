@@ -3498,8 +3498,8 @@
   {
     "id": "e2b1a47f-c6df-47db-a954-7fba1f7beb97",
     "source_id": "arxiv-cs-ai",
-    "cible_type": "nouvelle_categorie",
-    "cible_id": null,
+    "cible_type": "fiche_ia",
+    "cible_id": "recrutement-algorithmique-et-agents-de-recrutement-ia",
     "contenu_propose": {
       "titre": "From Matching Models to Recruiting Agents: A Systematized Narrative Review of AI Recruitment Systems, Evaluation, and Governance",
       "link": "https://arxiv.org/abs/2609.04286",
@@ -3510,9 +3510,10 @@
     "score_fiabilite_motif": "arxiv.org — préprint, actes de conférence ou institution publique",
     "domaine_source": "arxiv.org",
     "domaine_opaque": false,
-    "statut": "a_traiter_nouvelle_fiche",
+    "statut": "fiche_creee",
     "created_at": "2026-09-07T11:43:31.663Z",
-    "trie_le": "2026-09-10"
+    "trie_le": "2026-09-10",
+    "fiche_creee_le": "2026-09-11"
   },
   {
     "id": "ee2c26fa-30da-4247-96c7-bc68445b4273",
@@ -7163,8 +7164,8 @@
   {
     "id": "4ab56403-fca9-4461-ae4f-748cd28d60f0",
     "source_id": "nature-news",
-    "cible_type": "nouvelle_categorie",
-    "cible_id": null,
+    "cible_type": "fiche_ia",
+    "cible_id": "capacite-de-decouverte-et-saut-abductif-limite-transversale",
     "contenu_propose": {
       "titre": "The Einstein test: what happens when AI tries to rediscover relativity?",
       "link": "https://www.nature.com/articles/d41586-026-02804-x",
@@ -7175,9 +7176,10 @@
     "score_fiabilite_motif": "nature.com — édition scientifique à comité de lecture",
     "domaine_source": "nature.com",
     "domaine_opaque": false,
-    "statut": "a_traiter_nouvelle_fiche",
+    "statut": "fiche_creee",
     "created_at": "2026-09-09T12:04:54.428Z",
-    "trie_le": "2026-09-10"
+    "trie_le": "2026-09-10",
+    "fiche_creee_le": "2026-09-11"
   },
   {
     "id": "545242f6-7166-404e-bf21-e999da3cf591",
