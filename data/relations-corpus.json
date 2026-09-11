@@ -1,59 +1,18 @@
 {
- "modele": "relations-corpus-v1",
- "empreinte_corpus": "d8389fc91ee0b08a8ebfcf317d56ecfa",
+ "modele": "relations-corpus-v2",
+ "empreinte_corpus": "bd5b798d9323286bb7c5331c6d5971cd",
  "genere_le": "2026-09-11",
  "nb_fiches": 636,
  "compte_par_type": {
-  "mobilise": 267,
-  "conteste": 239,
+  "mobilise": 233,
   "couple": 201,
   "succession": 116,
+  "conteste": 104,
+  "mention": 93,
   "source_commune": 60,
   "resonance": 2
  },
  "relations": [
-  {
-   "type": "conteste",
-   "de": {
-    "type": "humaine",
-    "id": "aaron-cicourel"
-   },
-   "vers": {
-    "type": "humaine",
-    "id": "dorothy-smith"
-   },
-   "champ": "limites_critiques",
-   "designation": "smith",
-   "preuve": "Aucune réfutation nommément attribuée n'a été trouvée : Robin James Smith et Paul Atkinson (« Method and Measurement in Sociology, Fifty Years On ») présentent au contraire cette critique comme fondatrice et prolongée par Michael Lynch, Harold Garfinkel, Geoffrey Bowker et Susan Leigh Star."
-  },
-  {
-   "type": "conteste",
-   "de": {
-    "type": "humaine",
-    "id": "aaron-cicourel"
-   },
-   "vers": {
-    "type": "humaine",
-    "id": "harold-garfinkel"
-   },
-   "champ": "limites_critiques",
-   "designation": "harold garfinkel",
-   "preuve": "Aucune réfutation nommément attribuée n'a été trouvée : Robin James Smith et Paul Atkinson (« Method and Measurement in Sociology, Fifty Years On ») présentent au contraire cette critique comme fondatrice et prolongée par Michael Lynch, Harold Garfinkel, Geoffrey Bowker et Susan Leigh Star."
-  },
-  {
-   "type": "conteste",
-   "de": {
-    "type": "humaine",
-    "id": "aaron-cicourel"
-   },
-   "vers": {
-    "type": "humaine",
-    "id": "william-james"
-   },
-   "champ": "limites_critiques",
-   "designation": "james",
-   "preuve": "Aucune réfutation nommément attribuée n'a été trouvée : Robin James Smith et Paul Atkinson (« Method and Measurement in Sociology, Fifty Years On ») présentent au contraire cette critique comme fondatrice et prolongée par Michael Lynch, Harold Garfinkel, Geoffrey Bowker et Susan Leigh Star."
-  },
   {
    "type": "conteste",
    "de": {
@@ -72,90 +31,6 @@
    "type": "conteste",
    "de": {
     "type": "humaine",
-    "id": "achille-mbembe"
-   },
-   "vers": {
-    "type": "humaine",
-    "id": "melanie-klein"
-   },
-   "champ": "limites_critiques",
-   "designation": "klein",
-   "preuve": "La controverse allemande de 2020 est le point le plus documenté : Felix Klein, commissaire du gouvernement fédéral à l'antisémitisme, a demandé l'annulation de sa conférence d'ouverture de la Ruhrtriennale en soutenant qu'il aurait relativisé la Shoah et nié le droit d'Israël à exister ;"
-  },
-  {
-   "type": "conteste",
-   "de": {
-    "type": "humaine",
-    "id": "albert-camus"
-   },
-   "vers": {
-    "type": "humaine",
-    "id": "ecologie-globale-et-science-du-systeme-terre"
-   },
-   "champ": "limites_critiques",
-   "designation": "terre",
-   "preuve": "Rupture publique avec Sartre sur la légitimité de la violence révolutionnaire (querelle de 1952) ; ambiguïtés de sa position sur la guerre d'Algérie, où il refusa de choisir entre justice et attachement à sa terre natale ;"
-  },
-  {
-   "type": "conteste",
-   "de": {
-    "type": "humaine",
-    "id": "albert-wohlstetter"
-   },
-   "vers": {
-    "type": "humaine",
-    "id": "bernard-brodie"
-   },
-   "champ": "limites_critiques",
-   "designation": "bernard brodie",
-   "preuve": "Son rival Bernard Brodie l'accusa en 1963 de manquement à la sécurité et de malversations financières ;"
-  },
-  {
-   "type": "conteste",
-   "de": {
-    "type": "humaine",
-    "id": "alexander-wendt"
-   },
-   "vers": {
-    "type": "humaine",
-    "id": "john-mearsheimer"
-   },
-   "champ": "limites_critiques",
-   "designation": "john mearsheimer",
-   "preuve": "John Mearsheimer, dans « The False Promise of International Institutions » (International Security, 1994), soutient que les idées et les normes ne comptent qu'à la marge."
-  },
-  {
-   "type": "conteste",
-   "de": {
-    "type": "humaine",
-    "id": "alfred-binet"
-   },
-   "vers": {
-    "type": "humaine",
-    "id": "herbert-simon"
-   },
-   "champ": "limites_critiques",
-   "designation": "simon",
-   "preuve": "Stanford-Binet, 1937), opération qui a largement effacé le nom de Simon et transformé un repère développemental en quotient traité comme stable."
-  },
-  {
-   "type": "conteste",
-   "de": {
-    "type": "humaine",
-    "id": "alfred-binet"
-   },
-   "vers": {
-    "type": "humaine",
-    "id": "universite-de-stanford"
-   },
-   "champ": "limites_critiques",
-   "designation": "stanford",
-   "preuve": "L'usage a échappé à ses réserves : Lewis Terman standardise l'échelle sur un large échantillon américain (Stanford revision, 1916 ;"
-  },
-  {
-   "type": "conteste",
-   "de": {
-    "type": "humaine",
     "id": "alfred-schutz"
    },
    "vers": {
@@ -165,20 +40,6 @@
    "champ": "limites_critiques",
    "designation": "george herbert mead",
    "preuve": "Schütz fut lui-même un critique sévère de l'approche behavioriste de George Herbert Mead."
-  },
-  {
-   "type": "conteste",
-   "de": {
-    "type": "humaine",
-    "id": "alfred-schutz"
-   },
-   "vers": {
-    "type": "humaine",
-    "id": "talcott-parsons"
-   },
-   "champ": "limites_critiques",
-   "designation": "talcott parsons",
-   "preuve": "Sa correspondance avec Talcott Parsons sur le concept d'action sociale a laissé apparaître des différences irréductibles : les travaux de David Rehorick (1980), puis de Rehorick et William Buxton (1988) qui y révèlent la participation cachée d'Eric Voegelin, concluent que leurs divergences conceptuelles tiennent à des « manières de connaître » distinctes, donc à des orientations incompatibles envers la pensée scientifique du social."
   },
   {
    "type": "conteste",
@@ -212,20 +73,6 @@
    "type": "conteste",
    "de": {
     "type": "humaine",
-    "id": "anselm-strauss"
-   },
-   "vers": {
-    "type": "humaine",
-    "id": "william-james"
-   },
-   "champ": "limites_critiques",
-   "designation": "james",
-   "preuve": "Gary Thomas et David James (2006) contestent la méthode elle-même : revendication excessive du statut de théorie, confusion entre généralisation et surgénéralisation, portée causale prêtée à de simples associations."
-  },
-  {
-   "type": "conteste",
-   "de": {
-    "type": "humaine",
     "id": "anthony-giddens"
    },
    "vers": {
@@ -235,34 +82,6 @@
    "champ": "limites_critiques",
    "designation": "margaret archer",
    "preuve": "Margaret Archer lui oppose une « conflation centrale » : fondre structure et agence en des mouvements non spécifiés de co-constitution interdit d'examiner l'influence relative de chacune, alors que les deux opèrent sur des temporalités distinctes et peuvent être analytiquement séparées (Realist Social Theory, Cambridge University Press, 1995)."
-  },
-  {
-   "type": "conteste",
-   "de": {
-    "type": "humaine",
-    "id": "antoine-henri-jomini"
-   },
-   "vers": {
-    "type": "humaine",
-    "id": "carl-von-clausewitz"
-   },
-   "champ": "limites_critiques",
-   "designation": "clausewitz",
-   "preuve": "Jomini traite par ailleurs peu la dimension politique qui, chez Clausewitz, commande l'objet même de la guerre."
-  },
-  {
-   "type": "conteste",
-   "de": {
-    "type": "humaine",
-    "id": "antonio-damasio"
-   },
-   "vers": {
-    "type": "humaine",
-    "id": "william-james"
-   },
-   "champ": "limites_critiques",
-   "designation": "james",
-   "preuve": "Tiago Maia et James McClelland (Proceedings of the National Academy of Sciences 101(45), 16075-16080, 2004) réexaminent les données et concluent que les participants disposent d'une connaissance explicite exacte des possibilités de la tâche, ce qui prive de son objet le mécanisme implicite postulé."
   },
   {
    "type": "conteste",
@@ -291,20 +110,6 @@
    "champ": "limites_critiques",
    "designation": "ali mazrui",
    "preuve": "Il s'est également opposé à Ali Mazrui sur l'« africanité » et à Achille Mbembe, dont il refusait la notion d'afro-pessimisme."
-  },
-  {
-   "type": "conteste",
-   "de": {
-    "type": "humaine",
-    "id": "arlene-b-tickner"
-   },
-   "vers": {
-    "type": "humaine",
-    "id": "barry-buzan"
-   },
-   "champ": "limites_critiques",
-   "designation": "barry buzan",
-   "preuve": "Ils jugent enfin « quelque peu sommaires » les explications d'Amitav Acharya et Barry Buzan sur les mécanismes par lesquels l'hégémonie occidentale empêcherait la théorisation locale."
   },
   {
    "type": "conteste",
@@ -352,20 +157,6 @@
    "type": "conteste",
    "de": {
     "type": "humaine",
-    "id": "basil-liddell-hart"
-   },
-   "vers": {
-    "type": "humaine",
-    "id": "john-mearsheimer"
-   },
-   "champ": "limites_critiques",
-   "designation": "john mearsheimer",
-   "preuve": "John Mearsheimer, dans Liddell Hart and the Weight of History (1988), soutient qu'il a « mis des mots dans la bouche des généraux allemands » pour se créer rétrospectivement une influence sur la doctrine blindée allemande."
-  },
-  {
-   "type": "conteste",
-   "de": {
-    "type": "humaine",
     "id": "beatrice-giblin"
    },
    "vers": {
@@ -380,34 +171,6 @@
    "type": "conteste",
    "de": {
     "type": "humaine",
-    "id": "beatrice-webb"
-   },
-   "vers": {
-    "type": "humaine",
-    "id": "lewis-fry-richardson"
-   },
-   "champ": "limites_critiques",
-   "designation": "richardson",
-   "preuve": "(1935) a été durement critiqué par les historiens pour son tableau non critique de l'URSS de Staline, publié pendant les purges et la collectivisation forcée : l'historien trotskiste Al Richardson y voit « de la pure propagande soviétique dans ce qu'elle a de plus mensonger », et A."
-  },
-  {
-   "type": "conteste",
-   "de": {
-    "type": "humaine",
-    "id": "beatrice-webb"
-   },
-   "vers": {
-    "type": "humaine",
-    "id": "peter-j-taylor"
-   },
-   "champ": "limites_critiques",
-   "designation": "taylor",
-   "preuve": "Taylor le tient pour « le livre le plus absurde jamais écrit sur la Russie »."
-  },
-  {
-   "type": "conteste",
-   "de": {
-    "type": "humaine",
     "id": "bernard-brodie"
    },
    "vers": {
@@ -417,62 +180,6 @@
    "champ": "limites_critiques",
    "designation": "albert wohlstetter",
    "preuve": "Sa position initiale, selon laquelle la dissuasion découlerait quasi automatiquement de la possession réciproque de l'arme, est contestée par Albert Wohlstetter dans The Delicate Balance of Terror (RAND, P-1472, 1958), qui soutient qu'un équilibre dissuasif n'est pas donné mais exige un effort continu et six conditions techniques et organisationnelles distinctes."
-  },
-  {
-   "type": "conteste",
-   "de": {
-    "type": "humaine",
-    "id": "bernard-stiegler"
-   },
-   "vers": {
-    "type": "humaine",
-    "id": "jacques-derrida"
-   },
-   "champ": "limites_critiques",
-   "designation": "derrida",
-   "preuve": "Style jugé difficile, articulant Heidegger, Simondon et Derrida de façon parfois peu systématique ;"
-  },
-  {
-   "type": "conteste",
-   "de": {
-    "type": "humaine",
-    "id": "bernard-stiegler"
-   },
-   "vers": {
-    "type": "humaine",
-    "id": "martin-heidegger"
-   },
-   "champ": "limites_critiques",
-   "designation": "heidegger",
-   "preuve": "Style jugé difficile, articulant Heidegger, Simondon et Derrida de façon parfois peu systématique ;"
-  },
-  {
-   "type": "conteste",
-   "de": {
-    "type": "humaine",
-    "id": "bina-agarwal"
-   },
-   "vers": {
-    "type": "humaine",
-    "id": "ecologie-globale-et-science-du-systeme-terre"
-   },
-   "champ": "limites_critiques",
-   "designation": "terre",
-   "preuve": "La première est que l'accès formel à la terre et son contrôle effectif ne coïncident pas : une reconnaissance juridique peut rester sans effet sur la négociation réelle si les normes locales de succession la neutralisent, ce qui rend la variable difficile à isoler."
-  },
-  {
-   "type": "conteste",
-   "de": {
-    "type": "humaine",
-    "id": "bipolarite-guerre-froide"
-   },
-   "vers": {
-    "type": "humaine",
-    "id": "mouvement-des-non-alignes"
-   },
-   "champ": "limites_critiques",
-   "designation": "mouvement des non alignes",
-   "preuve": "Le système a rapidement paralysé les institutions censées gouverner mondialement : l'ONU ne peut agir dès que les intérêts majeurs de l'un des deux blocs sont en jeu, du fait du droit de veto, et de nombreux pays du tiers-monde ont formé le mouvement des non-alignés pour échapper à cette bipolarisation imposée."
   },
   {
    "type": "conteste",
@@ -520,48 +227,6 @@
    "type": "conteste",
    "de": {
     "type": "humaine",
-    "id": "c-raja-mohan"
-   },
-   "vers": {
-    "type": "humaine",
-    "id": "bina-agarwal"
-   },
-   "champ": "limites_critiques",
-   "designation": "agarwal",
-   "preuve": "Manmohan Agarwal, de la School of International Studies de Jawaharlal Nehru University, lui a consacré une recension dans China Report (40(3), août 2004, p."
-  },
-  {
-   "type": "conteste",
-   "de": {
-    "type": "humaine",
-    "id": "c-raja-mohan"
-   },
-   "vers": {
-    "type": "humaine",
-    "id": "world-happiness-report"
-   },
-   "champ": "limites_critiques",
-   "designation": "report",
-   "preuve": "Manmohan Agarwal, de la School of International Studies de Jawaharlal Nehru University, lui a consacré une recension dans China Report (40(3), août 2004, p."
-  },
-  {
-   "type": "conteste",
-   "de": {
-    "type": "humaine",
-    "id": "capital-social"
-   },
-   "vers": {
-    "type": "humaine",
-    "id": "hilary-putnam"
-   },
-   "champ": "limites_critiques",
-   "designation": "putnam",
-   "preuve": "F459-F479) attaque la mesure : examinant trois études de référence pour savoir si elles établissent l'importance empirique du capital social, « my conclusion is no », et il tient la littérature pour « particularly plagued by vague definition of concepts, poorly measured data, absence of appropriate exchangeability conditions, and lack of information necessary to make identification claims plausible », jugeant les affirmations de Putnam « very likely exaggerated »."
-  },
-  {
-   "type": "conteste",
-   "de": {
-    "type": "humaine",
     "id": "capitalisme-de-marche-libre-laissez-faire"
    },
    "vers": {
@@ -604,62 +269,6 @@
    "type": "conteste",
    "de": {
     "type": "humaine",
-    "id": "carol-cohn"
-   },
-   "vers": {
-    "type": "humaine",
-    "id": "christine-sylvester"
-   },
-   "champ": "limites_critiques",
-   "designation": "christine sylvester",
-   "preuve": "La réception documentée de son travail est essentiellement favorable, Christine Sylvester et Laura J."
-  },
-  {
-   "type": "conteste",
-   "de": {
-    "type": "humaine",
-    "id": "carol-dweck"
-   },
-   "vers": {
-    "type": "humaine",
-    "id": "judith-butler"
-   },
-   "champ": "limites_critiques",
-   "designation": "butler",
-   "preuve": "Les deux méta-analyses de Victoria Sisk, Alexander Burgoyne, Jingze Sun, Jennifer Butler et Brooke Macnamara (Psychological Science, 2018, 29(4), 549-571) rapportent des effets globalement faibles, tant pour l'association entre état d'esprit et réussite scolaire (k = 273, N = 365 915) que pour les interventions (k = 43, N = 57 155), un bénéfice subsistant surtout chez les élèves de statut socio-économique faible ou en difficulté."
-  },
-  {
-   "type": "conteste",
-   "de": {
-    "type": "humaine",
-    "id": "carol-dweck"
-   },
-   "vers": {
-    "type": "humaine",
-    "id": "william-james"
-   },
-   "champ": "limites_critiques",
-   "designation": "james",
-   "preuve": "David James reproche en outre à la théorie d'individualiser l'échec."
-  },
-  {
-   "type": "conteste",
-   "de": {
-    "type": "humaine",
-    "id": "carol-gilligan"
-   },
-   "vers": {
-    "type": "humaine",
-    "id": "milton-friedman"
-   },
-   "champ": "limites_critiques",
-   "designation": "friedman",
-   "preuve": "Jaclyn Friedman objecte que les écarts observés tiennent aux attentes sociales et non à des dispositions distinctes, la dichotomie risquant de reproduire ce qu'elle décrit."
-  },
-  {
-   "type": "conteste",
-   "de": {
-    "type": "humaine",
     "id": "charles-spearman"
    },
    "vers": {
@@ -669,48 +278,6 @@
    "champ": "limites_critiques",
    "designation": "louis leon thurstone",
    "preuve": "Louis Leon Thurstone lui oppose en 1938 sept aptitudes primaires, avant de concéder qu'un facteur général existe bien parmi les mesures d'aptitude ;"
-  },
-  {
-   "type": "conteste",
-   "de": {
-    "type": "humaine",
-    "id": "charles-tilly"
-   },
-   "vers": {
-    "type": "humaine",
-    "id": "peter-j-taylor"
-   },
-   "champ": "limites_critiques",
-   "designation": "taylor",
-   "preuve": "Brian Taylor et Roxana Botea soutiennent, à partir du cas afghan, que la guerre peut détruire l'État autant que le construire, et que les populations centrales et les révolutions sont des variables aussi déterminantes."
-  },
-  {
-   "type": "conteste",
-   "de": {
-    "type": "humaine",
-    "id": "christine-ladd-franklin"
-   },
-   "vers": {
-    "type": "humaine",
-    "id": "hermann-von-helmholtz"
-   },
-   "champ": "limites_critiques",
-   "designation": "helmholtz",
-   "preuve": "La description aujourd'hui admise combine les deux positions qu'elle voulait concilier sans passer par son hypothèse évolutive : l'œil possède trois types de récepteurs sensibles à la couleur, comme le soutenaient Young, Maxwell et Helmholtz, dont les signaux sont ensuite recombinés en trois canaux antagonistes, comme le soutenait Hering — synthèse établie par la mise en évidence de cellules ganglionnaires à opposition chromatique dans la rétine et le corps genouillé latéral."
-  },
-  {
-   "type": "conteste",
-   "de": {
-    "type": "humaine",
-    "id": "christine-sylvester"
-   },
-   "vers": {
-    "type": "humaine",
-    "id": "cynthia-weber"
-   },
-   "champ": "limites_critiques",
-   "designation": "cynthia weber",
-   "preuve": "L'ouvrage a été recensé dès sa parution dans l'American Political Science Review par Cynthia Weber (88(4), 1994, p."
   },
   {
    "type": "conteste",
@@ -758,76 +325,6 @@
    "type": "conteste",
    "de": {
     "type": "humaine",
-    "id": "daniel-dennett"
-   },
-   "vers": {
-    "type": "humaine",
-    "id": "david-chalmers"
-   },
-   "champ": "limites_critiques",
-   "designation": "chalmers",
-   "preuve": "Accusé par Chalmers et d'autres de pratiquer une « explication qui esquive » le problème difficile plutôt que de le résoudre, en niant l'existence de ce qu'il ne peut expliquer ;"
-  },
-  {
-   "type": "conteste",
-   "de": {
-    "type": "humaine",
-    "id": "david-chalmers"
-   },
-   "vers": {
-    "type": "humaine",
-    "id": "daniel-dennett"
-   },
-   "champ": "limites_critiques",
-   "designation": "dennett",
-   "preuve": "Accusé par les fonctionnalistes, Dennett en tête, de réifier une intuition — le « gap explicatif » — en un mystère métaphysique irréductible, alors qu'elle ne serait qu'un artefact de nos limites conceptuelles actuelles ;"
-  },
-  {
-   "type": "conteste",
-   "de": {
-    "type": "humaine",
-    "id": "democratie-chretienne"
-   },
-   "vers": {
-    "type": "humaine",
-    "id": "limites-planetaires-stockholm-resilience-centre"
-   },
-   "champ": "limites_critiques",
-   "designation": "centre",
-   "preuve": "Son ancrage confessionnel s'est progressivement estompé au profit d'un positionnement de centre-droit plus généraliste, au risque de perdre son identité doctrinale propre — une évolution que la source décrit par la trajectoire de ses partis, sans en trancher les causes."
-  },
-  {
-   "type": "conteste",
-   "de": {
-    "type": "humaine",
-    "id": "democratie-liberale"
-   },
-   "vers": {
-    "type": "humaine",
-    "id": "chantal-mouffe"
-   },
-   "champ": "limites_critiques",
-   "designation": "mouffe",
-   "preuve": "Défis actuels : polarisation, désinformation, érosion de la confiance institutionnelle, tension entre État de droit et volonté majoritaire (cf. débats Mouffe/Rawls en philosophie politique)."
-  },
-  {
-   "type": "conteste",
-   "de": {
-    "type": "humaine",
-    "id": "democratie-liberale"
-   },
-   "vers": {
-    "type": "humaine",
-    "id": "john-rawls"
-   },
-   "champ": "limites_critiques",
-   "designation": "rawls",
-   "preuve": "Défis actuels : polarisation, désinformation, érosion de la confiance institutionnelle, tension entre État de droit et volonté majoritaire (cf. débats Mouffe/Rawls en philosophie politique)."
-  },
-  {
-   "type": "conteste",
-   "de": {
-    "type": "humaine",
     "id": "donald-broadbent"
    },
    "vers": {
@@ -837,48 +334,6 @@
    "champ": "limites_critiques",
    "designation": "anne treisman",
    "preuve": "Anne Treisman lui oppose en 1964 un modèle d'atténuation : l'information non attendue est affaiblie, non supprimée, ce qu'elle établit par des tâches d'écoute dichotique."
-  },
-  {
-   "type": "conteste",
-   "de": {
-    "type": "humaine",
-    "id": "donald-hebb"
-   },
-   "vers": {
-    "type": "humaine",
-    "id": "anna-julia-cooper"
-   },
-   "champ": "limites_critiques",
-   "designation": "cooper",
-   "preuve": "Les modèles ultérieurs recourent donc à des règles normalisées — règle d'Oja, algorithme hebbien généralisé — ou à la théorie BCM d'Elie Bienenstock, Leon Cooper et Paul Munro (« Theory for the development of neuron selectivity », Journal of Neuroscience, 2(1), 1982, p."
-  },
-  {
-   "type": "conteste",
-   "de": {
-    "type": "humaine",
-    "id": "double-helice-de-l-adn"
-   },
-   "vers": {
-    "type": "humaine",
-    "id": "francis-crick"
-   },
-   "champ": "limites_critiques",
-   "designation": "crick",
-   "preuve": "La contribution déterminante de Rosalind Franklin (dont le cliché 51 fut consulté sans son accord explicite) a été durablement minorée par rapport à celle de Watson et Crick, seuls lauréats du prix Nobel avec Wilkins en 1962 — un cas devenu emblématique des biais de reconnaissance scientifique envers les femmes."
-  },
-  {
-   "type": "conteste",
-   "de": {
-    "type": "humaine",
-    "id": "double-helice-de-l-adn"
-   },
-   "vers": {
-    "type": "humaine",
-    "id": "rosalind-franklin"
-   },
-   "champ": "limites_critiques",
-   "designation": "rosalind franklin",
-   "preuve": "La contribution déterminante de Rosalind Franklin (dont le cliché 51 fut consulté sans son accord explicite) a été durablement minorée par rapport à celle de Watson et Crick, seuls lauréats du prix Nobel avec Wilkins en 1962 — un cas devenu emblématique des biais de reconnaissance scientifique envers les femmes."
   },
   {
    "type": "conteste",
@@ -898,48 +353,6 @@
    "type": "conteste",
    "de": {
     "type": "humaine",
-    "id": "e-h-carr"
-   },
-   "vers": {
-    "type": "humaine",
-    "id": "william-julius-wilson"
-   },
-   "champ": "limites_critiques",
-   "designation": "wilson",
-   "preuve": "Peter Wilson juge que le concept d'utopie chez Carr n'est pas un concept scientifique construit mais « un procédé rhétorique très commode »."
-  },
-  {
-   "type": "conteste",
-   "de": {
-    "type": "humaine",
-    "id": "economie-planifiee-modele-sovietique"
-   },
-   "vers": {
-    "type": "humaine",
-    "id": "limites-planetaires-stockholm-resilience-centre"
-   },
-   "champ": "limites_critiques",
-   "designation": "centre",
-   "preuve": "Ludwig von Mises a théorisé qu'en se privant du mécanisme des prix libres, les planificateurs se privent de tout calcul économique rationnel, le centre étant submergé d'informations à mesure que l'économie se complexifie."
-  },
-  {
-   "type": "conteste",
-   "de": {
-    "type": "humaine",
-    "id": "edward-said"
-   },
-   "vers": {
-    "type": "humaine",
-    "id": "limites-planetaires-stockholm-resilience-centre"
-   },
-   "champ": "limites_critiques",
-   "designation": "centre",
-   "preuve": "Robert Irwin (For Lust of Knowing, 2006) juge le corpus mal choisi, centré sur la Palestine et l'Égypte et ignorant la prépondérance allemande et hongroise dans l'orientalisme savant."
-  },
-  {
-   "type": "conteste",
-   "de": {
-    "type": "humaine",
     "id": "edward-thorndike"
    },
    "vers": {
@@ -949,132 +362,6 @@
    "champ": "limites_critiques",
    "designation": "wolfgang kohler",
    "preuve": "Wolfgang Köhler oppose de son côté à l'essai-erreur graduel des résolutions par restructuration soudaine chez le chimpanzé."
-  },
-  {
-   "type": "conteste",
-   "de": {
-    "type": "humaine",
-    "id": "edward-tolman"
-   },
-   "vers": {
-    "type": "humaine",
-    "id": "clark-hull"
-   },
-   "champ": "limites_critiques",
-   "designation": "clark hull",
-   "preuve": "Clark Hull opposait à l'approche stimulus-stimulus de Tolman une théorie stimulus-réponse fondée sur le renforcement, et ses partisans ont produit des explications alternatives des résultats de Tolman."
-  },
-  {
-   "type": "conteste",
-   "de": {
-    "type": "humaine",
-    "id": "edward-tolman"
-   },
-   "vers": {
-    "type": "humaine",
-    "id": "mamie-phipps-clark"
-   },
-   "champ": "limites_critiques",
-   "designation": "clark",
-   "preuve": "Clark Hull opposait à l'approche stimulus-stimulus de Tolman une théorie stimulus-réponse fondée sur le renforcement, et ses partisans ont produit des explications alternatives des résultats de Tolman."
-  },
-  {
-   "type": "conteste",
-   "de": {
-    "type": "humaine",
-    "id": "eleanor-rosch"
-   },
-   "vers": {
-    "type": "humaine",
-    "id": "dorothy-smith"
-   },
-   "champ": "limites_critiques",
-   "designation": "smith",
-   "preuve": "Daniel Osherson et Edward Smith (Cognition 9, 35-58, 1981) opposent le problème de la composition, illustré par « poisson d'aquarium », dont le prototype ne se déduit pas de ceux de ses constituants ;"
-  },
-  {
-   "type": "conteste",
-   "de": {
-    "type": "humaine",
-    "id": "elisee-reclus"
-   },
-   "vers": {
-    "type": "humaine",
-    "id": "ecologie-globale-et-science-du-systeme-terre"
-   },
-   "champ": "limites_critiques",
-   "designation": "terre",
-   "preuve": "La limite interne est ailleurs : L'Homme et la Terre mêle une synthèse savante à une philosophie progressiste de l'histoire dont les conclusions ne se déduisent pas du matériau géographique rassemblé."
-  },
-  {
-   "type": "conteste",
-   "de": {
-    "type": "humaine",
-    "id": "elisee-reclus"
-   },
-   "vers": {
-    "type": "humaine",
-    "id": "paul-vidal-de-la-blache"
-   },
-   "champ": "limites_critiques",
-   "designation": "blache",
-   "preuve": "Son refus des positions institutionnelles l'a privé de l'école qui aurait transmis son programme : sa radicalité politique — engagement dans la Commune, condamnation à la déportation commuée en bannissement en 1873, adhésion à l'Association internationale des travailleurs et à la Fédération jurassienne — l'a tenu hors de l'université française, tandis que Vidal de La Blache institutionnalisait la sienne."
-  },
-  {
-   "type": "conteste",
-   "de": {
-    "type": "humaine",
-    "id": "elisee-reclus"
-   },
-   "vers": {
-    "type": "humaine",
-    "id": "yves-lacoste"
-   },
-   "champ": "limites_critiques",
-   "designation": "yves lacoste",
-   "preuve": "Yves Lacoste voit en lui le père de la pensée géopolitique française, lecture rétrospective qui vaut revendication d'héritage autant que constat."
-  },
-  {
-   "type": "conteste",
-   "de": {
-    "type": "humaine",
-    "id": "elizabeth-spelke"
-   },
-   "vers": {
-    "type": "humaine",
-    "id": "renee-baillargeon"
-   },
-   "champ": "limites_critiques",
-   "designation": "baillargeon",
-   "preuve": "», Infant Behavior and Development, 21(2), 1998, 167-179) nomme Spelke et Baillargeon comme tenantes d'une interprétation « riche » : le paradigme du regard a été conçu pour des questions sensorielles et perceptives, la nouveauté, la familiarité ou la saillance suffisent souvent à expliquer un regard plus long sans postuler raisonnement ni surprise, et les occlusions employées, de trois secondes ou moins, laissent ouverte l'hypothèse d'une trace sensorielle persistante plutôt que d'une représentation symbolique."
-  },
-  {
-   "type": "conteste",
-   "de": {
-    "type": "humaine",
-    "id": "ellen-churchill-semple"
-   },
-   "vers": {
-    "type": "humaine",
-    "id": "daron-acemoglu"
-   },
-   "champ": "limites_critiques",
-   "designation": "daron acemoglu",
-   "preuve": "Daron Acemoglu et James Robinson (Why Nations Fail) le tiennent pour dépassé et incapable d'expliquer les écarts de croissance après 1500."
-  },
-  {
-   "type": "conteste",
-   "de": {
-    "type": "humaine",
-    "id": "ellen-churchill-semple"
-   },
-   "vers": {
-    "type": "humaine",
-    "id": "william-james"
-   },
-   "champ": "limites_critiques",
-   "designation": "james",
-   "preuve": "Daron Acemoglu et James Robinson (Why Nations Fail) le tiennent pour dépassé et incapable d'expliquer les écarts de croissance après 1500."
   },
   {
    "type": "conteste",
@@ -1094,20 +381,6 @@
    "type": "conteste",
    "de": {
     "type": "humaine",
-    "id": "emmanuelle-charpentier"
-   },
-   "vers": {
-    "type": "humaine",
-    "id": "jennifer-doudna"
-   },
-   "champ": "limites_critiques",
-   "designation": "doudna",
-   "preuve": "La paternité exacte et la chronologie des contributions respectives de Charpentier, Doudna et de l'équipe de Feng Zhang au Broad Institute sur l'application de CRISPR aux cellules eucaryotes ont donné lieu à un contentieux de brevets : l'USPTO a jugé en février 2017 que les revendications du Broad étaient distinctes de celles de l'université de Californie, puis a tranché en mars 2022 en faveur du Broad au motif qu'il avait déposé le premier."
-  },
-  {
-   "type": "conteste",
-   "de": {
-    "type": "humaine",
     "id": "erik-erikson"
    },
    "vers": {
@@ -1122,48 +395,6 @@
    "type": "conteste",
    "de": {
     "type": "humaine",
-    "id": "ernst-heinrich-weber"
-   },
-   "vers": {
-    "type": "humaine",
-    "id": "dorothy-smith"
-   },
-   "champ": "limites_critiques",
-   "designation": "smith",
-   "preuve": "Stanley Smith Stevens y substitue en 1957, dans « On the psychophysical law » (Psychological Review, 64(3), p."
-  },
-  {
-   "type": "conteste",
-   "de": {
-    "type": "humaine",
-    "id": "erving-goffman"
-   },
-   "vers": {
-    "type": "humaine",
-    "id": "anthony-giddens"
-   },
-   "champ": "limites_critiques",
-   "designation": "anthony giddens",
-   "preuve": "Anthony Giddens (1988) note qu'il a délibérément évité tout engagement avec la grande échelle et le long terme, et Theodore D."
-  },
-  {
-   "type": "conteste",
-   "de": {
-    "type": "humaine",
-    "id": "erving-goffman"
-   },
-   "vers": {
-    "type": "humaine",
-    "id": "dorothy-smith"
-   },
-   "champ": "limites_critiques",
-   "designation": "smith",
-   "preuve": "Ces objections sont recensées par Greg Smith et Michael Hviid Jacobsen, « Misgivings about Goffman »."
-  },
-  {
-   "type": "conteste",
-   "de": {
-    "type": "humaine",
     "id": "esther-thelen"
    },
    "vers": {
@@ -1173,20 +404,6 @@
    "champ": "limites_critiques",
    "designation": "renee baillargeon",
    "preuve": "Cette lecture s'oppose frontalement à celle des tenants de la connaissance centrale : Gregor Schöner et Thelen soutenaient que Renée Baillargeon extrapolait ses résultats et qu'un regard prolongé peut n'indiquer qu'une détection de différence entre stimuli, là où le camp représentationnel maintient l'interprétation en termes de connaissance de l'objet."
-  },
-  {
-   "type": "conteste",
-   "de": {
-    "type": "humaine",
-    "id": "evgueni-primakov"
-   },
-   "vers": {
-    "type": "humaine",
-    "id": "alexandre-douguine"
-   },
-   "champ": "limites_critiques",
-   "designation": "douguine",
-   "preuve": "Mark Bassin la rapproche des visions eurasiennes de Ziouganov et de Douguine, rapprochement que la doctrine elle-même ne revendique pas et qui reste une lecture d'auteur."
   },
   {
    "type": "conteste",
@@ -1220,48 +437,6 @@
    "type": "conteste",
    "de": {
     "type": "humaine",
-    "id": "evgueni-primakov"
-   },
-   "vers": {
-    "type": "humaine",
-    "id": "peter-singer"
-   },
-   "champ": "limites_critiques",
-   "designation": "singer",
-   "preuve": "David Singer défendaient la position inverse et que Bruce Bueno de Mesquita juge la corrélation entre polarité et conflit statistiquement faible."
-  },
-  {
-   "type": "conteste",
-   "de": {
-    "type": "humaine",
-    "id": "evgueni-primakov"
-   },
-   "vers": {
-    "type": "humaine",
-    "id": "saul-b-cohen"
-   },
-   "champ": "limites_critiques",
-   "designation": "cohen",
-   "preuve": "L'appréciation de la doctrine est disputée entre analystes nommés : Ariel Cohen la lit comme un jeu à somme nulle ;"
-  },
-  {
-   "type": "conteste",
-   "de": {
-    "type": "humaine",
-    "id": "evolution-biologique-de-l-espece-humaine"
-   },
-   "vers": {
-    "type": "humaine",
-    "id": "peter-berger"
-   },
-   "champ": "limites_critiques",
-   "designation": "berger",
-   "preuve": "Ils reprochent aussi à Lee Berger et ses coauteurs d'avoir maintenu en promotion publique des textes dont les relectures étaient « unanimes à considérer la preuve inadéquate en l'état »."
-  },
-  {
-   "type": "conteste",
-   "de": {
-    "type": "humaine",
     "id": "fascisme"
    },
    "vers": {
@@ -1285,34 +460,6 @@
    "champ": "limites_critiques",
    "designation": "totalitarisme",
    "preuve": "Qualifié par ses détracteurs de tyrannie délibérément anti-démocratique marquée par l'opportunisme idéologique, le fascisme reste débattu par les historiens quant à ses origines exactes et à sa distinction d'avec le nazisme, avec lequel il partage le totalitarisme et le culte du chef sans que les deux régimes se confondent."
-  },
-  {
-   "type": "conteste",
-   "de": {
-    "type": "humaine",
-    "id": "ferdinand-tonnies"
-   },
-   "vers": {
-    "type": "humaine",
-    "id": "nazisme"
-   },
-   "champ": "limites_critiques",
-   "designation": "nazisme",
-   "preuve": "L'ambiguïté du dispositif tient à ce qu'il reconnaît le caractère volontaire de l'association tout en affirmant que toute organisation sociale possède une volonté collective : cette thèse a facilité des usages politiques que Tönnies n'a pas voulus — il a désavoué le totalitarisme et le nazisme — mais que son vocabulaire de la communauté a rendus disponibles."
-  },
-  {
-   "type": "conteste",
-   "de": {
-    "type": "humaine",
-    "id": "ferdinand-tonnies"
-   },
-   "vers": {
-    "type": "humaine",
-    "id": "totalitarisme"
-   },
-   "champ": "limites_critiques",
-   "designation": "totalitarisme",
-   "preuve": "L'ambiguïté du dispositif tient à ce qu'il reconnaît le caractère volontaire de l'association tout en affirmant que toute organisation sociale possède une volonté collective : cette thèse a facilité des usages politiques que Tönnies n'a pas voulus — il a désavoué le totalitarisme et le nazisme — mais que son vocabulaire de la communauté a rendus disponibles."
   },
   {
    "type": "conteste",
@@ -1327,48 +474,6 @@
    "champ": "limites_critiques",
    "designation": "jacques derrida",
    "preuve": "Jacques Derrida lui oppose Spectres de Marx (1993) ;"
-  },
-  {
-   "type": "conteste",
-   "de": {
-    "type": "humaine",
-    "id": "francis-fukuyama"
-   },
-   "vers": {
-    "type": "humaine",
-    "id": "samuel-huntington"
-   },
-   "champ": "limites_critiques",
-   "designation": "samuel huntington",
-   "preuve": "Samuel Huntington la grille civilisationnelle de « The Clash of Civilizations?"
-  },
-  {
-   "type": "conteste",
-   "de": {
-    "type": "humaine",
-    "id": "francis-fukuyama"
-   },
-   "vers": {
-    "type": "humaine",
-    "id": "walter-benjamin"
-   },
-   "champ": "limites_critiques",
-   "designation": "benjamin",
-   "preuve": "» (1993) puis du livre de 1996 ; Benjamin Barber Jihad vs."
-  },
-  {
-   "type": "conteste",
-   "de": {
-    "type": "humaine",
-    "id": "frederic-bartlett"
-   },
-   "vers": {
-    "type": "humaine",
-    "id": "william-james"
-   },
-   "champ": "limites_critiques",
-   "designation": "james",
-   "preuve": "James Ost et Alan Costall (« Misremembering Bartlett: a study in serial reproduction », British Journal of Psychology 93(2), 243-255, 2002) montrent que la littérature lui prête un énoncé qu'il n'a pas soutenu — que le souvenir ne pourrait jamais être exact et serait toujours une distorsion — alors que ni ses expériences ni sa position théorique ne l'autorisent, et qu'il fournit lui-même plusieurs exemples de rappels détaillés et exacts qu'il cherche à expliquer dans le cadre de sa théorie des schémas."
   },
   {
    "type": "conteste",
@@ -1392,53 +497,11 @@
    },
    "vers": {
     "type": "humaine",
-    "id": "karl-haushofer"
-   },
-   "champ": "limites_critiques",
-   "designation": "karl haushofer",
-   "preuve": "La postérité est plus lourde : Kjellén convertit sa théorie en « géopolitique », Karl Haushofer se présente en 1940 comme l'héritier légitime du Lebensraum, et des juristes du régime nazi — Carl Schmitt, Reinhard Höhn, Werner Best — annexent son vocabulaire à des cadres racio-biologiques."
-  },
-  {
-   "type": "conteste",
-   "de": {
-    "type": "humaine",
-    "id": "friedrich-ratzel"
-   },
-   "vers": {
-    "type": "humaine",
     "id": "paul-vidal-de-la-blache"
    },
    "champ": "limites_critiques",
    "designation": "paul vidal de la blache",
    "preuve": "Ses contemporains contestent d'emblée la solidité de l'appareil : Émile Durkheim (1897-1898) juge ses concepts trop vagues et le domaine de recherche mal délimité, Alfred Hettner refuse dès 1887 d'y voir un fondement de la géographie humaine, et Paul Vidal de La Blache, plus favorable en 1898, relève la même imprécision conceptuelle."
-  },
-  {
-   "type": "conteste",
-   "de": {
-    "type": "humaine",
-    "id": "friedrich-ratzel"
-   },
-   "vers": {
-    "type": "humaine",
-    "id": "peter-j-taylor"
-   },
-   "champ": "limites_critiques",
-   "designation": "taylor",
-   "preuve": "Taylor (The Origins of the Second World War, 1961) tient la notion pour un lieu commun de son époque, Ulrike Jureit et Patricia Chiantera-Stutte (2023) montrent que la filiation passe par une « réception de la réception » plutôt que par ses textes, et Ian Klinke et Mark Bassin rouvrent le dossier en 2018 dans le Journal of Historical Geography."
-  },
-  {
-   "type": "conteste",
-   "de": {
-    "type": "humaine",
-    "id": "friedrich-ratzel"
-   },
-   "vers": {
-    "type": "humaine",
-    "id": "rudolf-kjellen"
-   },
-   "champ": "limites_critiques",
-   "designation": "kjellen",
-   "preuve": "La postérité est plus lourde : Kjellén convertit sa théorie en « géopolitique », Karl Haushofer se présente en 1940 comme l'héritier légitime du Lebensraum, et des juristes du régime nazi — Carl Schmitt, Reinhard Höhn, Werner Best — annexent son vocabulaire à des cadres racio-biologiques."
   },
   {
    "type": "conteste",
@@ -1472,20 +535,6 @@
    "type": "conteste",
    "de": {
     "type": "humaine",
-    "id": "gearoid-o-tuathail"
-   },
-   "vers": {
-    "type": "humaine",
-    "id": "william-james"
-   },
-   "champ": "limites_critiques",
-   "designation": "james",
-   "preuve": "Klaus Dodds et James Sidaway (1994), Sanjay Chaturvedi (2003) et Kuus elle-même (2004) relèvent que le champ traite surtout de l'Amérique du Nord et de l'Europe occidentale."
-  },
-  {
-   "type": "conteste",
-   "de": {
-    "type": "humaine",
     "id": "georg-simmel"
    },
    "vers": {
@@ -1495,20 +544,6 @@
    "champ": "limites_critiques",
    "designation": "emile durkheim",
    "preuve": "Son œuvre a été critiquée par Émile Durkheim et par Georg Lukács."
-  },
-  {
-   "type": "conteste",
-   "de": {
-    "type": "humaine",
-    "id": "george-a-miller"
-   },
-   "vers": {
-    "type": "humaine",
-    "id": "alan-baddeley"
-   },
-   "champ": "limites_critiques",
-   "designation": "alan baddeley",
-   "preuve": "Alan Baddeley propose de son côté une limite temporelle (durée de prononciation) plutôt que numérique."
   },
   {
    "type": "conteste",
@@ -1528,20 +563,6 @@
    "type": "conteste",
    "de": {
     "type": "humaine",
-    "id": "gerard-debreu"
-   },
-   "vers": {
-    "type": "humaine",
-    "id": "kenneth-arrow"
-   },
-   "champ": "limites_critiques",
-   "designation": "arrow",
-   "preuve": "Le modèle d'équilibre général d'Arrow-Debreu a été durement contesté par Maurice Allais (prix Nobel 1988) : « La construction de Debreu n'a aucune valeur scientifique, tant elle est totalement étrangère au monde de l'expérience."
-  },
-  {
-   "type": "conteste",
-   "de": {
-    "type": "humaine",
     "id": "gerd-gigerenzer"
    },
    "vers": {
@@ -1556,34 +577,6 @@
    "type": "conteste",
    "de": {
     "type": "humaine",
-    "id": "giulio-douhet"
-   },
-   "vers": {
-    "type": "humaine",
-    "id": "world-values-survey"
-   },
-   "champ": "limites_critiques",
-   "designation": "survey",
-   "preuve": "La thèse a été soumise à l'épreuve la plus complète possible et n'y a pas résisté : l'United States Strategic Bombing Survey, commandé sur directive de Roosevelt et constitué par le secrétaire à la Guerre Henry L."
-  },
-  {
-   "type": "conteste",
-   "de": {
-    "type": "humaine",
-    "id": "gustav-fechner"
-   },
-   "vers": {
-    "type": "humaine",
-    "id": "dorothy-smith"
-   },
-   "champ": "limites_critiques",
-   "designation": "smith",
-   "preuve": "Stanley Smith Stevens lui substitue en 1957, dans « On the psychophysical law » (Psychological Review, 64(3), p."
-  },
-  {
-   "type": "conteste",
-   "de": {
-    "type": "humaine",
     "id": "gustav-fechner"
    },
    "vers": {
@@ -1593,20 +586,6 @@
    "champ": "limites_critiques",
    "designation": "hermann von helmholtz",
    "preuve": "La notice de la Wikipédia francophone qui lui est consacrée recense plusieurs contestations nommées : Hermann von Helmholtz juge la loi trop spéculative et contredite par les seuils de détection ;"
-  },
-  {
-   "type": "conteste",
-   "de": {
-    "type": "humaine",
-    "id": "halford-mackinder"
-   },
-   "vers": {
-    "type": "humaine",
-    "id": "karl-haushofer"
-   },
-   "champ": "limites_critiques",
-   "designation": "karl haushofer",
-   "preuve": "Sa réception par Karl Haushofer lui a valu, après 1945, un discrédit qui portait moins sur ses erreurs que sur ses lecteurs."
   },
   {
    "type": "conteste",
@@ -1654,34 +633,6 @@
    "type": "conteste",
    "de": {
     "type": "humaine",
-    "id": "harold-garfinkel"
-   },
-   "vers": {
-    "type": "humaine",
-    "id": "william-james"
-   },
-   "champ": "limites_critiques",
-   "designation": "james",
-   "preuve": "691-700), et le symposium de recension de 1968 auquel participaient James Coleman, Guy Swanson et Walter Wallace."
-  },
-  {
-   "type": "conteste",
-   "de": {
-    "type": "humaine",
-    "id": "hedley-bull"
-   },
-   "vers": {
-    "type": "humaine",
-    "id": "martin-wight"
-   },
-   "champ": "limites_critiques",
-   "designation": "wight",
-   "preuve": "1-13), juge que l'école, malgré la qualité de ses membres — Bull, Wight, Manning —, s'est installée dans la répétition et plaide sa fermeture."
-  },
-  {
-   "type": "conteste",
-   "de": {
-    "type": "humaine",
     "id": "herbert-blumer"
    },
    "vers": {
@@ -1710,20 +661,6 @@
    "type": "conteste",
    "de": {
     "type": "humaine",
-    "id": "herbert-spencer"
-   },
-   "vers": {
-    "type": "humaine",
-    "id": "universite-de-stanford"
-   },
-   "champ": "limites_critiques",
-   "designation": "stanford",
-   "preuve": "Sur l'usage : Richard Hofstadter en a fait un ultra-conservateur justifiant le capitalisme par la biologie, lecture que la Stanford Encyclopedia of Philosophy juge erronée et présente comme une récupération de la formule « survival of the fittest » à des fins que Spencer, utilitariste libéral soucieux d'articuler utilité générale et liberté individuelle, ne soutenait pas."
-  },
-  {
-   "type": "conteste",
-   "de": {
-    "type": "humaine",
     "id": "herfried-munkler"
    },
    "vers": {
@@ -1732,20 +669,6 @@
    },
    "champ": "limites_critiques",
    "designation": "mary kaldor",
-   "preuve": "Le paradigme des « nouvelles guerres » auquel appartient son analyse a été contesté frontalement, comme le recense Mary Kaldor dans « In Defence of New Wars » (2013) : Sven Chojnacki y juge les critères d'identification arbitraires et non reproductibles, Errol Henderson et David Singer parlent d'un concept fourre-tout, John Mueller estime qu'il s'agit de criminalité et non de guerre."
-  },
-  {
-   "type": "conteste",
-   "de": {
-    "type": "humaine",
-    "id": "herfried-munkler"
-   },
-   "vers": {
-    "type": "humaine",
-    "id": "peter-singer"
-   },
-   "champ": "limites_critiques",
-   "designation": "singer",
    "preuve": "Le paradigme des « nouvelles guerres » auquel appartient son analyse a été contesté frontalement, comme le recense Mary Kaldor dans « In Defence of New Wars » (2013) : Sven Chojnacki y juge les critères d'identification arbitraires et non reproductibles, Errol Henderson et David Singer parlent d'un concept fourre-tout, John Mueller estime qu'il s'agit de criminalité et non de guerre."
   },
   {
@@ -1766,48 +689,6 @@
    "type": "conteste",
    "de": {
     "type": "humaine",
-    "id": "herman-kahn"
-   },
-   "vers": {
-    "type": "humaine",
-    "id": "william-james"
-   },
-   "champ": "limites_critiques",
-   "designation": "james",
-   "preuve": "James R."
-  },
-  {
-   "type": "conteste",
-   "de": {
-    "type": "humaine",
-    "id": "howard-gardner"
-   },
-   "vers": {
-    "type": "humaine",
-    "id": "harrison-white"
-   },
-   "champ": "limites_critiques",
-   "designation": "white",
-   "preuve": "John White estime le choix et l'application des critères subjectifs et arbitraires."
-  },
-  {
-   "type": "conteste",
-   "de": {
-    "type": "humaine",
-    "id": "howard-gardner"
-   },
-   "vers": {
-    "type": "humaine",
-    "id": "melanie-klein"
-   },
-   "champ": "limites_critiques",
-   "designation": "klein",
-   "preuve": "Perry Klein la juge tautologique et donc infalsifiable — une habileté musicale élevée explique la compétence musicale, qui explique l'habileté."
-  },
-  {
-   "type": "conteste",
-   "de": {
-    "type": "humaine",
     "id": "immanuel-wallerstein"
    },
    "vers": {
@@ -1817,62 +698,6 @@
    "champ": "limites_critiques",
    "designation": "theda skocpol",
    "preuve": "Theda Skocpol (« Wallerstein's World Capitalist System: A Theoretical and Historical Critique », American Journal of Sociology, 82(5), 1977, p."
-  },
-  {
-   "type": "conteste",
-   "de": {
-    "type": "humaine",
-    "id": "indices-de-cohesion-sociale"
-   },
-   "vers": {
-    "type": "humaine",
-    "id": "world-values-survey"
-   },
-   "champ": "limites_critiques",
-   "designation": "world values survey",
-   "preuve": "95-120), montrent que ces instruments ne délimitent pas le même objet : les Cohesion Regimes Components « stretch[] the conceptual scope to the extreme by embracing a number of 'inputs' such as social policies », l'indice de l'Afrobarometer ne dit pas « why exactly these three domains were chosen, and not others », et les dimensions tirées du World Values Survey combinent « no fewer than four concepts »."
-  },
-  {
-   "type": "conteste",
-   "de": {
-    "type": "humaine",
-    "id": "isaiah-bowman"
-   },
-   "vers": {
-    "type": "humaine",
-    "id": "dorothy-smith"
-   },
-   "champ": "limites_critiques",
-   "designation": "smith",
-   "preuve": "Neil Smith, dans American Empire: Roosevelt's Geographer and the Prelude to Globalization (2003), fait de lui le géographe d'une expansion américaine qui ne se disait pas impériale, et documente son antisémitisme ainsi que sa conduite du Project M, chargé à partir de 1939 de trouver des lieux de refuge aux émigrants juifs d'Europe ;"
-  },
-  {
-   "type": "conteste",
-   "de": {
-    "type": "humaine",
-    "id": "isaiah-bowman"
-   },
-   "vers": {
-    "type": "humaine",
-    "id": "gearoid-o-tuathail"
-   },
-   "champ": "limites_critiques",
-   "designation": "gearoid o tuathail",
-   "preuve": "Gearóid Ó Tuathail le relit en 1994 dans Progress in Human Geography comme producteur de discours géopolitique, ce qui retourne contre lui sa propre opposition à la Geopolitik : sa géographie « pratique » était elle aussi située."
-  },
-  {
-   "type": "conteste",
-   "de": {
-    "type": "humaine",
-    "id": "j-ann-tickner"
-   },
-   "vers": {
-    "type": "humaine",
-    "id": "robert-keohane"
-   },
-   "champ": "limites_critiques",
-   "designation": "robert keohane",
-   "preuve": "Robert Keohane lui répond dans la même revue l'année suivante par un commentaire de cinq pages, « Beyond Dichotomy: Conversations Between International Relations and Feminist Theory » (International Studies Quarterly, 42(1), 1998, p."
   },
   {
    "type": "conteste",
@@ -1906,90 +731,6 @@
    "type": "conteste",
    "de": {
     "type": "humaine",
-    "id": "jacques-ranciere"
-   },
-   "vers": {
-    "type": "humaine",
-    "id": "pierre-bourdieu"
-   },
-   "champ": "limites_critiques",
-   "designation": "pierre bourdieu",
-   "preuve": "(2012) aux tensions entre sa philosophie de l'émancipation et la sociologie de la domination de Pierre Bourdieu, et la politique comme pur événement d'égalité reste difficile à traduire en programme institutionnel."
-  },
-  {
-   "type": "conteste",
-   "de": {
-    "type": "humaine",
-    "id": "james-a-robinson"
-   },
-   "vers": {
-    "type": "humaine",
-    "id": "francis-fukuyama"
-   },
-   "champ": "limites_critiques",
-   "designation": "francis fukuyama",
-   "preuve": "Francis Fukuyama, de simplifier à l'excès par la bifurcation inclusif/extractif ;"
-  },
-  {
-   "type": "conteste",
-   "de": {
-    "type": "humaine",
-    "id": "james-watson"
-   },
-   "vers": {
-    "type": "humaine",
-    "id": "rosalind-franklin"
-   },
-   "champ": "limites_critiques",
-   "designation": "rosalind franklin",
-   "preuve": "A minoré dans ses mémoires (La Double Hélice, 1968) le rôle de Rosalind Franklin dans la découverte ;"
-  },
-  {
-   "type": "conteste",
-   "de": {
-    "type": "humaine",
-    "id": "jean-claude-passeron"
-   },
-   "vers": {
-    "type": "humaine",
-    "id": "pierre-bourdieu"
-   },
-   "champ": "limites_critiques",
-   "designation": "bourdieu",
-   "preuve": "Aucune réfutation nommément attribuée n'a été trouvée dans les pages consultées, qui documentent la prise de distance avec Bourdieu à partir du début des années 1970 sans en énoncer les griefs."
-  },
-  {
-   "type": "conteste",
-   "de": {
-    "type": "humaine",
-    "id": "jean-francois-lyotard"
-   },
-   "vers": {
-    "type": "humaine",
-    "id": "jurgen-habermas"
-   },
-   "champ": "limites_critiques",
-   "designation": "habermas",
-   "preuve": "Le diagnostic de la « fin des grands récits » est accusé, notamment par Habermas, d'être lui-même un grand récit déguisé sur la fragmentation du savoir ;"
-  },
-  {
-   "type": "conteste",
-   "de": {
-    "type": "humaine",
-    "id": "jerome-bruner"
-   },
-   "vers": {
-    "type": "humaine",
-    "id": "mamie-phipps-clark"
-   },
-   "champ": "limites_critiques",
-   "designation": "clark",
-   "preuve": "Paul Kirschner, John Sweller et Richard Clark (Educational Psychologist, 41(2), 2006, 75-86) soutiennent que l'enseignement à guidage minimal — découverte, apprentissage par problèmes, démarche d'investigation — est moins efficace et moins efficient que l'instruction guidée, parce qu'il ignore l'architecture cognitive humaine et ses contraintes de charge ;"
-  },
-  {
-   "type": "conteste",
-   "de": {
-    "type": "humaine",
     "id": "john-maynard-keynes"
    },
    "vers": {
@@ -2013,20 +754,6 @@
    "champ": "limites_critiques",
    "designation": "amartya sen",
    "preuve": "Amartya Sen lui oppose, en s'inspirant de Montesquieu, que le droit ne peut se limiter à poser des principes généraux de justice mais doit refléter le mouvement des mœurs — d'où sa notion de capabilité et sa critique des critères rawlsiens de liberté réelle ;"
-  },
-  {
-   "type": "conteste",
-   "de": {
-    "type": "humaine",
-    "id": "karl-mannheim"
-   },
-   "vers": {
-    "type": "humaine",
-    "id": "karl-popper"
-   },
-   "champ": "limites_critiques",
-   "designation": "karl popper",
-   "preuve": "Karl Popper réduit sa sociologie à de l'historicisme."
   },
   {
    "type": "conteste",
@@ -2060,34 +787,6 @@
    "type": "conteste",
    "de": {
     "type": "humaine",
-    "id": "kenneth-waltz"
-   },
-   "vers": {
-    "type": "humaine",
-    "id": "john-ruggie"
-   },
-   "champ": "limites_critiques",
-   "designation": "ruggie",
-   "preuve": "John Gerard Ruggie, dans « Continuity and Transformation in the World Polity: Toward a Neorealist Synthesis » (World Politics, 35(2), 1983, p."
-  },
-  {
-   "type": "conteste",
-   "de": {
-    "type": "humaine",
-    "id": "kurt-lewin"
-   },
-   "vers": {
-    "type": "humaine",
-    "id": "leon-festinger"
-   },
-   "champ": "limites_critiques",
-   "designation": "leon festinger",
-   "preuve": "Le modèle « unfreeze-change-refreeze » universellement porté à son crédit en gestion du changement n'est pas de lui : Stephen Cummings, Todd Bridgman et Kenneth Brown établissent dans Human Relations (2016, 69(1), 33-60) que Lewin n'a écrit qu'un passage de 131 mots dans son article de 1947, où figurent seulement « unfreezing » et « moving », le terme « refreezing » ayant été introduit par Leon Festinger en 1950, après sa mort, avant que Ronald Lippitt et Edgar Schein n'en fassent un outil d'intervention."
-  },
-  {
-   "type": "conteste",
-   "de": {
-    "type": "humaine",
     "id": "lawrence-kohlberg"
    },
    "vers": {
@@ -2102,62 +801,6 @@
    "type": "conteste",
    "de": {
     "type": "humaine",
-    "id": "lawrence-kohlberg"
-   },
-   "vers": {
-    "type": "humaine",
-    "id": "william-james"
-   },
-   "champ": "limites_critiques",
-   "designation": "james",
-   "preuve": "Elliot Turiel et James Rest ont ensuite reformulé le domaine."
-  },
-  {
-   "type": "conteste",
-   "de": {
-    "type": "humaine",
-    "id": "leon-festinger"
-   },
-   "vers": {
-    "type": "humaine",
-    "id": "charles-wright-mills"
-   },
-   "champ": "limites_critiques",
-   "designation": "mills",
-   "preuve": "La page Wikipédia consacrée à Festinger signale d'autres explications alternatives ultérieures et des travaux sur la méthodologie de la dissonance (Harmon-Jones, Mills, Vaidis et Bran)."
-  },
-  {
-   "type": "conteste",
-   "de": {
-    "type": "humaine",
-    "id": "loic-wacquant"
-   },
-   "vers": {
-    "type": "humaine",
-    "id": "shalom-schwartz"
-   },
-   "champ": "limites_critiques",
-   "designation": "schwartz",
-   "preuve": "Schwartz, dans Ghetto: The History of a Word (2019), tout en saluant sa rigueur, relève que son cadre réduit le ghetto à quatre éléments — stigmate, contrainte, confinement spatial, parallélisme institutionnel —, définition dont la portée historique est plus étroite que celle du mot."
-  },
-  {
-   "type": "conteste",
-   "de": {
-    "type": "humaine",
-    "id": "louis-leon-thurstone"
-   },
-   "vers": {
-    "type": "humaine",
-    "id": "charles-spearman"
-   },
-   "champ": "limites_critiques",
-   "designation": "spearman",
-   "preuve": "Sa propre concession — l'existence d'un facteur général parmi les mesures d'aptitude — indique que le différend avec Spearman tenait moins aux données qu'au choix de la rotation appliquée à une même matrice de corrélations."
-  },
-  {
-   "type": "conteste",
-   "de": {
-    "type": "humaine",
     "id": "louis-leon-thurstone"
    },
    "vers": {
@@ -2167,76 +810,6 @@
    "champ": "limites_critiques",
    "designation": "johnson",
    "preuve": "Kevin McGrew a intégré ce modèle à celui de Horn et Cattell en 2005 (modèle Cattell-Horn-Carroll), intégration que Johnson et Bouchard contestent à leur tour en proposant un modèle g-VPR."
-  },
-  {
-   "type": "conteste",
-   "de": {
-    "type": "humaine",
-    "id": "luce-irigaray"
-   },
-   "vers": {
-    "type": "humaine",
-    "id": "judith-butler"
-   },
-   "champ": "limites_critiques",
-   "designation": "judith butler",
-   "preuve": "Accusée par des courants féministes matérialistes et constructivistes, dont Judith Butler, d'essentialiser le féminin en lui attribuant une spécificité fixe, à l'inverse de la déconstruction du genre qu'elles défendent ;"
-  },
-  {
-   "type": "conteste",
-   "de": {
-    "type": "humaine",
-    "id": "mahmood-mamdani"
-   },
-   "vers": {
-    "type": "humaine",
-    "id": "anna-julia-cooper"
-   },
-   "champ": "limites_critiques",
-   "designation": "cooper",
-   "preuve": "Frederick Cooper (International Labor and Working-Class History, automne 1997) et Jean Copans (Transformation, 1998) ont consacré des recensions à l'ouvrage, Copans y voyant une réinterprétation de l'Afrique coloniale et postcoloniale tenant compte des exigences démocratiques récentes."
-  },
-  {
-   "type": "conteste",
-   "de": {
-    "type": "humaine",
-    "id": "marcel-mauss"
-   },
-   "vers": {
-    "type": "humaine",
-    "id": "anselm-strauss"
-   },
-   "champ": "limites_critiques",
-   "designation": "strauss",
-   "preuve": "Claude Lévi-Strauss a salué le caractère révolutionnaire de l'essai ;"
-  },
-  {
-   "type": "conteste",
-   "de": {
-    "type": "humaine",
-    "id": "marcel-mauss"
-   },
-   "vers": {
-    "type": "humaine",
-    "id": "pierre-bourdieu"
-   },
-   "champ": "limites_critiques",
-   "designation": "pierre bourdieu",
-   "preuve": "Pierre Bourdieu en propose une lecture pessimiste, centrée sur la domination masquée qu'exerce le donateur sur l'obligé, ce qui déplace le don de la réciprocité vers le pouvoir."
-  },
-  {
-   "type": "conteste",
-   "de": {
-    "type": "humaine",
-    "id": "marianne-weber"
-   },
-   "vers": {
-    "type": "humaine",
-    "id": "max-weber"
-   },
-   "champ": "limites_critiques",
-   "designation": "max weber",
-   "preuve": "Sa réception pose toutefois un problème identifiable : après la mort de Max Weber en 1920, elle consacre l'essentiel de son activité à l'édition de dix volumes de ses écrits puis à la biographie Max Weber."
   },
   {
    "type": "conteste",
@@ -2270,20 +843,6 @@
    "type": "conteste",
    "de": {
     "type": "humaine",
-    "id": "mary-kaldor"
-   },
-   "vers": {
-    "type": "humaine",
-    "id": "peter-singer"
-   },
-   "champ": "limites_critiques",
-   "designation": "singer",
-   "preuve": "Errol Henderson et David Singer qualifient le concept de fourre-tout ;"
-  },
-  {
-   "type": "conteste",
-   "de": {
-    "type": "humaine",
     "id": "mary-whiton-calkins"
    },
    "vers": {
@@ -2293,20 +852,6 @@
    "champ": "limites_critiques",
    "designation": "james",
    "preuve": "James Rowland Angell, du côté fonctionnaliste, lui reproche un conservatisme scientifique extrême consistant à refuser au soi d'avoir un corps, et qualifie son moi d'esprit purement désincarné."
-  },
-  {
-   "type": "conteste",
-   "de": {
-    "type": "humaine",
-    "id": "max-weber"
-   },
-   "vers": {
-    "type": "humaine",
-    "id": "universite-de-stanford"
-   },
-   "champ": "limites_critiques",
-   "designation": "stanford",
-   "preuve": "Sur la méthode, la Stanford Encyclopedia of Philosophy relève l'accusation d'eurocentrisme visant sa rationalisation, tenue pour une téléologie métahistorique plaçant l'Occident au-dessus de l'Orient, et une lacune sur la place de la démocratie dans sa théorie de la domination."
   },
   {
    "type": "conteste",
@@ -2326,62 +871,6 @@
    "type": "conteste",
    "de": {
     "type": "humaine",
-    "id": "mecanique-quantique-modele-de-bohr"
-   },
-   "vers": {
-    "type": "humaine",
-    "id": "werner-heisenberg"
-   },
-   "champ": "limites_critiques",
-   "designation": "heisenberg",
-   "preuve": "Le modèle est aujourd'hui considéré comme obsolète : il échoue à expliquer les spectres d'atomes à plusieurs électrons et repose sur des orbites classiques bien définies incompatibles avec le principe d'incertitude de Heisenberg qui l'a supplanté."
-  },
-  {
-   "type": "conteste",
-   "de": {
-    "type": "humaine",
-    "id": "melanie-klein"
-   },
-   "vers": {
-    "type": "humaine",
-    "id": "sigmund-freud"
-   },
-   "champ": "limites_critiques",
-   "designation": "freud",
-   "preuve": "Ses thèses ont été contestées frontalement lors des Controversial Discussions de la Société britannique de psychanalyse, dont la première séance se tient le 21 octobre 1942 et la dernière en mars 1944 : Anna Freud et Edward Glover attaquent sa légitimité même d'analyste et le caractère freudien de sa théorie, la discussion se concentrant sur le rapport de Susan Isaacs relatif au fantasme inconscient ;"
-  },
-  {
-   "type": "conteste",
-   "de": {
-    "type": "humaine",
-    "id": "michel-crozier"
-   },
-   "vers": {
-    "type": "humaine",
-    "id": "noam-chomsky"
-   },
-   "champ": "limites_critiques",
-   "designation": "noam chomsky",
-   "preuve": "Noam Chomsky, dans « The Carter Administration: Myth and Reality », y voit l'expression de l'hostilité de l'aile libérale de l'élite dirigeante envers la démocratie populaire."
-  },
-  {
-   "type": "conteste",
-   "de": {
-    "type": "humaine",
-    "id": "michel-crozier"
-   },
-   "vers": {
-    "type": "humaine",
-    "id": "samuel-huntington"
-   },
-   "champ": "limites_critiques",
-   "designation": "huntington",
-   "preuve": "Huntington et Joji Watanuki, The Crisis of Democracy: On the Governability of Democracies (New York University Press, 1975), qui impute la crise de gouvernabilité des démocraties occidentales à un « excès de démocratie »."
-  },
-  {
-   "type": "conteste",
-   "de": {
-    "type": "humaine",
     "id": "michel-foucault"
    },
    "vers": {
@@ -2396,20 +885,6 @@
    "type": "conteste",
    "de": {
     "type": "humaine",
-    "id": "michel-foucher"
-   },
-   "vers": {
-    "type": "humaine",
-    "id": "anne-laure-amilhat-szary"
-   },
-   "champ": "limites_critiques",
-   "designation": "anne laure amilhat szary",
-   "preuve": "La limite du programme est dans son objet : l'horogenèse suit la production de tracés linéaires par des États, alors que les travaux de frontières mobiles conduits par Anne-Laure Amilhat Szary et Frédéric Giraut soutiennent que le contrôle frontalier s'est en partie détaché du tracé, pour se répartir dans des aéroports, des fichiers et des corps."
-  },
-  {
-   "type": "conteste",
-   "de": {
-    "type": "humaine",
     "id": "michele-lamont"
    },
    "vers": {
@@ -2419,20 +894,6 @@
    "champ": "limites_critiques",
    "designation": "bourdieu",
    "preuve": "Le même texte reproche à Lamont d'assimiler valeurs individuelles et discours culturel sans distinguer les deux : ce qu'elle recueille pourrait n'être qu'« a vocabulary, a set of expressions, stories and such » plutôt qu'un habitus, ce qui affaiblirait sa propre critique de Bourdieu au lieu de la fonder."
-  },
-  {
-   "type": "conteste",
-   "de": {
-    "type": "humaine",
-    "id": "nasa"
-   },
-   "vers": {
-    "type": "humaine",
-    "id": "world-happiness-report"
-   },
-   "champ": "limites_critiques",
-   "designation": "report",
-   "preuve": "Les budgets et priorités de la NASA sont directement dépendants des choix politiques successifs de l'exécutif et du Congrès américains, ce qui a entraîné l'annulation ou le report répété de plusieurs grands programmes (dont Constellation en 2010) au fil des changements d'administration."
   },
   {
    "type": "conteste",
@@ -2461,20 +922,6 @@
    "champ": "limites_critiques",
    "designation": "pierre bourdieu",
    "preuve": "Joseph Stiglitz le qualifie de « fondamentalisme de marché » réfuté par les faits, tandis que Pierre Bourdieu y voit un programme de destruction méthodique des solidarités collectives ;"
-  },
-  {
-   "type": "conteste",
-   "de": {
-    "type": "humaine",
-    "id": "nicholas-onuf"
-   },
-   "vers": {
-    "type": "humaine",
-    "id": "alexander-wendt"
-   },
-   "champ": "limites_critiques",
-   "designation": "alexander wendt",
-   "preuve": "C'est la version étatocentrée et systémique d'Alexander Wendt, non celle d'Onuf, qui a engendré le programme de recherche : la littérature reconnaît à Onuf la paternité du terme et tient Wendt pour le principal avocat du courant, ce qui est une manière de dire que le dispositif d'Onuf s'est révélé peu maniable empiriquement."
   },
   {
    "type": "conteste",
@@ -2522,34 +969,6 @@
    "type": "conteste",
    "de": {
     "type": "humaine",
-    "id": "ocde"
-   },
-   "vers": {
-    "type": "humaine",
-    "id": "limites-planetaires-stockholm-resilience-centre"
-   },
-   "champ": "limites_critiques",
-   "designation": "centre",
-   "preuve": "Dépourvue de pouvoir contraignant, elle ne peut qu'émettre des recommandations que les États restent libres de ne pas appliquer, et son recrutement centré sur les pays riches limite sa représentativité pour traiter des enjeux véritablement mondiaux."
-  },
-  {
-   "type": "conteste",
-   "de": {
-    "type": "humaine",
-    "id": "ocde-how-s-life-better-life-index"
-   },
-   "vers": {
-    "type": "humaine",
-    "id": "global-peace-index"
-   },
-   "champ": "limites_critiques",
-   "designation": "index",
-   "preuve": "917-954) objecte que les classements tirés du Better Life Index ne sont pas éprouvés quant à leur sensibilité aux schémas de pondération des onze dimensions, et propose une approche de dominance stochastique identifiant les pondérations les plus optimiste et les plus pessimiste au lieu d'en privilégier une arbitrairement."
-  },
-  {
-   "type": "conteste",
-   "de": {
-    "type": "humaine",
     "id": "patricia-hill-collins"
    },
    "vers": {
@@ -2578,34 +997,6 @@
    "type": "conteste",
    "de": {
     "type": "humaine",
-    "id": "paul-vidal-de-la-blache"
-   },
-   "vers": {
-    "type": "humaine",
-    "id": "friedrich-ratzel"
-   },
-   "champ": "limites_critiques",
-   "designation": "ratzel",
-   "preuve": "André-Louis Sanguin (Bulletin de l'Association de géographes français, 1988) reprend l'ensemble du dossier de ses contributions à la géographie politique, face à Ratzel, sur la carte administrative, sur les frontières et sur l'expansion coloniale en Afrique."
-  },
-  {
-   "type": "conteste",
-   "de": {
-    "type": "humaine",
-    "id": "paul-vidal-de-la-blache"
-   },
-   "vers": {
-    "type": "humaine",
-    "id": "yves-lacoste"
-   },
-   "champ": "limites_critiques",
-   "designation": "yves lacoste",
-   "preuve": "Yves Lacoste a fait de l'école vidalienne sa cible en 1976 puis dans l'article d'Hérodote « À bas Vidal… Viva Vidal !"
-  },
-  {
-   "type": "conteste",
-   "de": {
-    "type": "humaine",
     "id": "peter-j-taylor"
    },
    "vers": {
@@ -2615,20 +1006,6 @@
    "champ": "limites_critiques",
    "designation": "james",
    "preuve": "James Sidaway, Michiel van Meeteren et Colin Flint (GeoJournal, 2020) rapportent que le cadre systèmes-monde s'est vu reprocher une vision mécanique du monde, où tout s'emboîte sans nuance — reproche que Taylor conteste, tout en observant que la couverture de son livre, ornée d'engrenages, l'a involontairement confirmé."
-  },
-  {
-   "type": "conteste",
-   "de": {
-    "type": "humaine",
-    "id": "pierre-bourdieu"
-   },
-   "vers": {
-    "type": "humaine",
-    "id": "bruno-latour"
-   },
-   "champ": "limites_critiques",
-   "designation": "bruno latour",
-   "preuve": "Bruno Latour une posture surplombante réduisant les enquêtés à des informateurs sans réflexivité ;"
   },
   {
    "type": "conteste",
@@ -2690,20 +1067,6 @@
    "type": "conteste",
    "de": {
     "type": "humaine",
-    "id": "raewyn-connell"
-   },
-   "vers": {
-    "type": "humaine",
-    "id": "william-james"
-   },
-   "champ": "limites_critiques",
-   "designation": "james",
-   "preuve": "Connell et James Messerschmidt ont reformulé la théorie dans Gender & Society (décembre 2005)."
-  },
-  {
-   "type": "conteste",
-   "de": {
-    "type": "humaine",
     "id": "randall-collins"
    },
    "vers": {
@@ -2713,20 +1076,6 @@
    "champ": "limites_critiques",
    "designation": "michael mann",
    "preuve": "Michael Mann (« Fear, loathing, and moral qualms on the battlefield ») conteste sa microsociologie de la violence : les soldats éprouvent des scrupules moraux avant leur premier meurtre, scrupules qui s'atténuent ensuite avec la répétition."
-  },
-  {
-   "type": "conteste",
-   "de": {
-    "type": "humaine",
-    "id": "raul-prebisch"
-   },
-   "vers": {
-    "type": "humaine",
-    "id": "peter-singer"
-   },
-   "champ": "limites_critiques",
-   "designation": "singer",
-   "preuve": "L'hypothèse a été testée et les résultats divergent selon les méthodes, comme le récapitulent Harvey, Kellard, Madsen et Wohar dans « The Prebisch-Singer Hypothesis: Four Centuries of Evidence » (2010) : Spraos (1980) et Sapsford (1985) concluent à une dégradation ;"
   },
   {
    "type": "conteste",
@@ -2746,48 +1095,6 @@
    "type": "conteste",
    "de": {
     "type": "humaine",
-    "id": "rcep"
-   },
-   "vers": {
-    "type": "humaine",
-    "id": "cptpp"
-   },
-   "champ": "limites_critiques",
-   "designation": "cptpp",
-   "preuve": "Moins ambitieux que le CPTPP en matière de normes (travail, environnement, propriété intellectuelle), il est perçu comme reflétant avant tout les intérêts chinois dans la région et laisse l'Inde en dehors, celle-ci s'étant retirée des négociations en 2019."
-  },
-  {
-   "type": "conteste",
-   "de": {
-    "type": "humaine",
-    "id": "relativite-generale-et-restreinte"
-   },
-   "vers": {
-    "type": "humaine",
-    "id": "max-planck"
-   },
-   "champ": "limites_critiques",
-   "designation": "planck",
-   "preuve": "Incompatible mathématiquement avec la mécanique quantique aux échelles de Planck, ce qui rend une théorie unifiée de la gravité quantique toujours manquante un siècle après sa formulation ;"
-  },
-  {
-   "type": "conteste",
-   "de": {
-    "type": "humaine",
-    "id": "renee-baillargeon"
-   },
-   "vers": {
-    "type": "humaine",
-    "id": "esther-thelen"
-   },
-   "champ": "limites_critiques",
-   "designation": "esther thelen",
-   "preuve": "Gregor Schöner et Esther Thelen ont soutenu que Baillargeon extrapolait ses résultats, et que le regard prolongé peut n'indiquer qu'une détection de différence entre stimuli plutôt qu'une surprise devant un impossible."
-  },
-  {
-   "type": "conteste",
-   "de": {
-    "type": "humaine",
     "id": "richard-rorty"
    },
    "vers": {
@@ -2802,34 +1109,6 @@
    "type": "conteste",
    "de": {
     "type": "humaine",
-    "id": "robert-gilpin"
-   },
-   "vers": {
-    "type": "humaine",
-    "id": "robert-keohane"
-   },
-   "champ": "limites_critiques",
-   "designation": "robert keohane",
-   "preuve": "Robert Keohane l'établit de son côté empiriquement dans After Hegemony (1984) : les régimes internationaux ont survécu au déclin relatif américain qu'ils étaient censés accompagner."
-  },
-  {
-   "type": "conteste",
-   "de": {
-    "type": "humaine",
-    "id": "robert-keohane"
-   },
-   "vers": {
-    "type": "humaine",
-    "id": "john-mearsheimer"
-   },
-   "champ": "limites_critiques",
-   "designation": "john mearsheimer",
-   "preuve": "John Mearsheimer, dans « The False Promise of International Institutions » (International Security, 1994), soutient plus radicalement que les institutions reflètent la distribution de puissance sans la modifier."
-  },
-  {
-   "type": "conteste",
-   "de": {
-    "type": "humaine",
     "id": "robert-michels"
    },
    "vers": {
@@ -2839,34 +1118,6 @@
    "champ": "limites_critiques",
    "designation": "fascisme",
    "preuve": "Sur l'usage : socialiste dans sa jeunesse, Michels en est venu à juger la domination des élites non seulement inévitable mais souhaitable, et ne s'est pas opposé à l'avènement du fascisme en Italie ;"
-  },
-  {
-   "type": "conteste",
-   "de": {
-    "type": "humaine",
-    "id": "rudolf-kjellen"
-   },
-   "vers": {
-    "type": "humaine",
-    "id": "friedrich-ratzel"
-   },
-   "champ": "limites_critiques",
-   "designation": "ratzel",
-   "preuve": "Sa réception l'a compromise : la Geopolitik allemande, et Karl Haushofer au premier chef, se réclame directement de sa lecture de Ratzel."
-  },
-  {
-   "type": "conteste",
-   "de": {
-    "type": "humaine",
-    "id": "rudolf-kjellen"
-   },
-   "vers": {
-    "type": "humaine",
-    "id": "karl-haushofer"
-   },
-   "champ": "limites_critiques",
-   "designation": "karl haushofer",
-   "preuve": "Sa réception l'a compromise : la Geopolitik allemande, et Karl Haushofer au premier chef, se réclame directement de sa lecture de Ratzel."
   },
   {
    "type": "conteste",
@@ -2914,34 +1165,6 @@
    "type": "conteste",
    "de": {
     "type": "humaine",
-    "id": "simon-baron-cohen"
-   },
-   "vers": {
-    "type": "humaine",
-    "id": "limites-planetaires-stockholm-resilience-centre"
-   },
-   "champ": "limites_critiques",
-   "designation": "centre",
-   "preuve": "Une revue de portée publiée en 2024 met en doute la validité du test des yeux comme mesure de la théorie de l'esprit, et son échantillonnage centré sur des personnes autistes sans déficience intellectuelle borne la généralisation de ses résultats."
-  },
-  {
-   "type": "conteste",
-   "de": {
-    "type": "humaine",
-    "id": "simon-baron-cohen"
-   },
-   "vers": {
-    "type": "humaine",
-    "id": "saul-b-cohen"
-   },
-   "champ": "limites_critiques",
-   "designation": "cohen",
-   "preuve": "Baron-Cohen répond que ses différences portent sur des moyennes de groupe et non sur des individus."
-  },
-  {
-   "type": "conteste",
-   "de": {
-    "type": "humaine",
     "id": "simone-de-beauvoir"
    },
    "vers": {
@@ -2956,20 +1179,6 @@
    "type": "conteste",
    "de": {
     "type": "humaine",
-    "id": "slavoj-zizek"
-   },
-   "vers": {
-    "type": "humaine",
-    "id": "jacques-lacan"
-   },
-   "champ": "limites_critiques",
-   "designation": "lacan",
-   "preuve": "Son style volontairement provocateur et truffé de références à la culture populaire privilégie l'effet rhétorique sur la démonstration systématique, et ses positions théoriques changent d'un livre à l'autre — sur la question de savoir si Lacan est structuraliste ou post-structuraliste par exemple —, ce qui lui a valu des accusations d'incohérence auxquelles Ian Parker répond qu'il n'existe pas de système philosophique žižekien ;"
-  },
-  {
-   "type": "conteste",
-   "de": {
-    "type": "humaine",
     "id": "socrate"
    },
    "vers": {
@@ -2979,34 +1188,6 @@
    "champ": "limites_critiques",
    "designation": "aristote",
    "preuve": "N'a rien écrit lui-même : tout nous vient de Platon (et, différemment, de Xénophon), rendant difficile la distinction entre le « Socrate historique » et le personnage littéraire platonicien ; son intellectualisme moral (savoir le bien suffit à le faire) est explicitement contesté par Aristote lui-même (akrasia, la faiblesse de la volonté)."
-  },
-  {
-   "type": "conteste",
-   "de": {
-    "type": "humaine",
-    "id": "stanley-milgram"
-   },
-   "vers": {
-    "type": "humaine",
-    "id": "william-james"
-   },
-   "champ": "limites_critiques",
-   "designation": "james",
-   "preuve": "James Waller et Thomas Blass jugent enfin que le dispositif rend mal compte de la Shoah, dont les auteurs furent inventifs et mus par la haine plutôt que simplement obéissants."
-  },
-  {
-   "type": "conteste",
-   "de": {
-    "type": "humaine",
-    "id": "stephen-walt"
-   },
-   "vers": {
-    "type": "humaine",
-    "id": "john-mearsheimer"
-   },
-   "champ": "limites_critiques",
-   "designation": "mearsheimer",
-   "preuve": "Sur son travail avec Mearsheimer relatif au lobby israélien, Christopher Hitchens a soutenu qu'ils caractérisaient gravement mal l'origine du problème."
   },
   {
    "type": "conteste",
@@ -3077,20 +1258,6 @@
    "champ": "limites_critiques",
    "designation": "jurgen habermas",
    "preuve": "Jürgen Habermas soutient que théorie des systèmes et théorie de l'action y sont intrinsèquement opposées, la première étant mécanique, positiviste et anti-volontariste."
-  },
-  {
-   "type": "conteste",
-   "de": {
-    "type": "humaine",
-    "id": "talcott-parsons"
-   },
-   "vers": {
-    "type": "humaine",
-    "id": "theda-skocpol"
-   },
-   "champ": "limites_critiques",
-   "designation": "theda skocpol",
-   "preuve": "Alvin Gouldner le tient pour socialement conservateur et Theda Skocpol pour incapable d'expliquer l'oppression systémique, l'Afrique du Sud de l'apartheid contredisant son cadre."
   },
   {
    "type": "conteste",
@@ -3212,20 +1379,6 @@
    },
    "vers": {
     "type": "humaine",
-    "id": "saul-b-cohen"
-   },
-   "champ": "limites_critiques",
-   "designation": "cohen",
-   "preuve": "En 2026, ses déclarations selon lesquelles le spectre autistique se serait élargi « jusqu'au point de son effondrement » ont été critiquées par Simon Baron-Cohen, par d'autres chercheurs et par des membres de la communauté autiste."
-  },
-  {
-   "type": "conteste",
-   "de": {
-    "type": "humaine",
-    "id": "uta-frith"
-   },
-   "vers": {
-    "type": "humaine",
     "id": "simon-baron-cohen"
    },
    "champ": "limites_critiques",
@@ -3264,20 +1417,6 @@
    "type": "conteste",
    "de": {
     "type": "humaine",
-    "id": "wilhelm-wundt"
-   },
-   "vers": {
-    "type": "humaine",
-    "id": "william-james"
-   },
-   "champ": "limites_critiques",
-   "designation": "william james",
-   "preuve": "William James, Granville Stanley Hall et Edwin Boring ont propagé des malentendus massifs sur son œuvre."
-  },
-  {
-   "type": "conteste",
-   "de": {
-    "type": "humaine",
     "id": "william-julius-wilson"
    },
    "vers": {
@@ -3296,39 +1435,11 @@
    },
    "vers": {
     "type": "humaine",
-    "id": "edward-thorndike"
-   },
-   "champ": "limites_critiques",
-   "designation": "thorndike",
-   "preuve": "Enfin l'opposition entre insight et loi de l'effet de Thorndike n'a jamais été tranchée par une expérience unique : les deux protocoles diffèrent par la visibilité des éléments de la solution, ce qui rend la comparaison directe des résultats incertaine."
-  },
-  {
-   "type": "conteste",
-   "de": {
-    "type": "humaine",
-    "id": "wolfgang-kohler"
-   },
-   "vers": {
-    "type": "humaine",
     "id": "karl-lashley"
    },
    "champ": "limites_critiques",
    "designation": "karl lashley",
    "preuve": "Le versant physiologique de sa doctrine a été expérimentalement infirmé : Karl Lashley, Kao Liang Chow et Josephine Semmes ont examiné la théorie des champs électriques d'intégration cérébrale (Psychological Review, 58(2), 1951, p."
-  },
-  {
-   "type": "conteste",
-   "de": {
-    "type": "humaine",
-    "id": "yves-lacoste"
-   },
-   "vers": {
-    "type": "humaine",
-    "id": "beatrice-giblin"
-   },
-   "champ": "limites_critiques",
-   "designation": "beatrice giblin",
-   "preuve": "Béatrice Giblin note en 2026 que ses accointances nationalistes et militaires coexistaient mal, aux yeux de certains collègues, avec un parcours de gauche, et qu'il se disait lui-même « colonial-anticolonialiste » à propos de l'Algérie et du Maroc."
   },
   {
    "type": "conteste",
@@ -6173,6 +4284,1308 @@
    "preuve": "Modèles de risque appliqués aux données administratives pour allouer des ressources publiques limitées — contrôles fiscaux, inspections, aides sociales — et automatisation partielle du traitement de dossiers volumineux. Les cas documentés par la fiche IA sont des dispositifs de détection de fraude et de notation, non des dispositifs de mesure du bien-être."
   },
   {
+   "type": "mention",
+   "de": {
+    "type": "humaine",
+    "id": "aaron-cicourel"
+   },
+   "vers": {
+    "type": "humaine",
+    "id": "harold-garfinkel"
+   },
+   "champ": "limites_critiques",
+   "designation": "harold garfinkel",
+   "preuve": "Aucune réfutation nommément attribuée n'a été trouvée : Robin James Smith et Paul Atkinson (« Method and Measurement in Sociology, Fifty Years On ») présentent au contraire cette critique comme fondatrice et prolongée par Michael Lynch, Harold Garfinkel, Geoffrey Bowker et Susan Leigh Star."
+  },
+  {
+   "type": "mention",
+   "de": {
+    "type": "humaine",
+    "id": "albert-camus"
+   },
+   "vers": {
+    "type": "humaine",
+    "id": "ecologie-globale-et-science-du-systeme-terre"
+   },
+   "champ": "limites_critiques",
+   "designation": "terre",
+   "preuve": "Rupture publique avec Sartre sur la légitimité de la violence révolutionnaire (querelle de 1952) ; ambiguïtés de sa position sur la guerre d'Algérie, où il refusa de choisir entre justice et attachement à sa terre natale ;"
+  },
+  {
+   "type": "mention",
+   "de": {
+    "type": "humaine",
+    "id": "albert-wohlstetter"
+   },
+   "vers": {
+    "type": "humaine",
+    "id": "bernard-brodie"
+   },
+   "champ": "limites_critiques",
+   "designation": "bernard brodie",
+   "preuve": "Son rival Bernard Brodie l'accusa en 1963 de manquement à la sécurité et de malversations financières ;"
+  },
+  {
+   "type": "mention",
+   "de": {
+    "type": "humaine",
+    "id": "alexander-wendt"
+   },
+   "vers": {
+    "type": "humaine",
+    "id": "john-mearsheimer"
+   },
+   "champ": "limites_critiques",
+   "designation": "john mearsheimer",
+   "preuve": "John Mearsheimer, dans « The False Promise of International Institutions » (International Security, 1994), soutient que les idées et les normes ne comptent qu'à la marge."
+  },
+  {
+   "type": "mention",
+   "de": {
+    "type": "humaine",
+    "id": "alfred-binet"
+   },
+   "vers": {
+    "type": "humaine",
+    "id": "herbert-simon"
+   },
+   "champ": "limites_critiques",
+   "designation": "simon",
+   "preuve": "Stanford-Binet, 1937), opération qui a largement effacé le nom de Simon et transformé un repère développemental en quotient traité comme stable."
+  },
+  {
+   "type": "mention",
+   "de": {
+    "type": "humaine",
+    "id": "alfred-binet"
+   },
+   "vers": {
+    "type": "humaine",
+    "id": "universite-de-stanford"
+   },
+   "champ": "limites_critiques",
+   "designation": "stanford",
+   "preuve": "L'usage a échappé à ses réserves : Lewis Terman standardise l'échelle sur un large échantillon américain (Stanford revision, 1916 ;"
+  },
+  {
+   "type": "mention",
+   "de": {
+    "type": "humaine",
+    "id": "alfred-schutz"
+   },
+   "vers": {
+    "type": "humaine",
+    "id": "talcott-parsons"
+   },
+   "champ": "limites_critiques",
+   "designation": "talcott parsons",
+   "preuve": "Sa correspondance avec Talcott Parsons sur le concept d'action sociale a laissé apparaître des différences irréductibles : les travaux de David Rehorick (1980), puis de Rehorick et William Buxton (1988) qui y révèlent la participation cachée d'Eric Voegelin, concluent que leurs divergences conceptuelles tiennent à des « manières de connaître » distinctes, donc à des orientations incompatibles envers la pensée scientifique du social."
+  },
+  {
+   "type": "mention",
+   "de": {
+    "type": "humaine",
+    "id": "antoine-henri-jomini"
+   },
+   "vers": {
+    "type": "humaine",
+    "id": "carl-von-clausewitz"
+   },
+   "champ": "limites_critiques",
+   "designation": "clausewitz",
+   "preuve": "Jomini traite par ailleurs peu la dimension politique qui, chez Clausewitz, commande l'objet même de la guerre."
+  },
+  {
+   "type": "mention",
+   "de": {
+    "type": "humaine",
+    "id": "antonio-damasio"
+   },
+   "vers": {
+    "type": "humaine",
+    "id": "william-james"
+   },
+   "champ": "limites_critiques",
+   "designation": "james",
+   "preuve": "Tiago Maia et James McClelland (Proceedings of the National Academy of Sciences 101(45), 16075-16080, 2004) réexaminent les données et concluent que les participants disposent d'une connaissance explicite exacte des possibilités de la tâche, ce qui prive de son objet le mécanisme implicite postulé."
+  },
+  {
+   "type": "mention",
+   "de": {
+    "type": "humaine",
+    "id": "arlene-b-tickner"
+   },
+   "vers": {
+    "type": "humaine",
+    "id": "barry-buzan"
+   },
+   "champ": "limites_critiques",
+   "designation": "barry buzan",
+   "preuve": "Ils jugent enfin « quelque peu sommaires » les explications d'Amitav Acharya et Barry Buzan sur les mécanismes par lesquels l'hégémonie occidentale empêcherait la théorisation locale."
+  },
+  {
+   "type": "mention",
+   "de": {
+    "type": "humaine",
+    "id": "basil-liddell-hart"
+   },
+   "vers": {
+    "type": "humaine",
+    "id": "john-mearsheimer"
+   },
+   "champ": "limites_critiques",
+   "designation": "john mearsheimer",
+   "preuve": "John Mearsheimer, dans Liddell Hart and the Weight of History (1988), soutient qu'il a « mis des mots dans la bouche des généraux allemands » pour se créer rétrospectivement une influence sur la doctrine blindée allemande."
+  },
+  {
+   "type": "mention",
+   "de": {
+    "type": "humaine",
+    "id": "beatrice-webb"
+   },
+   "vers": {
+    "type": "humaine",
+    "id": "peter-j-taylor"
+   },
+   "champ": "limites_critiques",
+   "designation": "taylor",
+   "preuve": "Taylor le tient pour « le livre le plus absurde jamais écrit sur la Russie »."
+  },
+  {
+   "type": "mention",
+   "de": {
+    "type": "humaine",
+    "id": "bernard-stiegler"
+   },
+   "vers": {
+    "type": "humaine",
+    "id": "jacques-derrida"
+   },
+   "champ": "limites_critiques",
+   "designation": "derrida",
+   "preuve": "Style jugé difficile, articulant Heidegger, Simondon et Derrida de façon parfois peu systématique ;"
+  },
+  {
+   "type": "mention",
+   "de": {
+    "type": "humaine",
+    "id": "bernard-stiegler"
+   },
+   "vers": {
+    "type": "humaine",
+    "id": "martin-heidegger"
+   },
+   "champ": "limites_critiques",
+   "designation": "heidegger",
+   "preuve": "Style jugé difficile, articulant Heidegger, Simondon et Derrida de façon parfois peu systématique ;"
+  },
+  {
+   "type": "mention",
+   "de": {
+    "type": "humaine",
+    "id": "bina-agarwal"
+   },
+   "vers": {
+    "type": "humaine",
+    "id": "ecologie-globale-et-science-du-systeme-terre"
+   },
+   "champ": "limites_critiques",
+   "designation": "terre",
+   "preuve": "La première est que l'accès formel à la terre et son contrôle effectif ne coïncident pas : une reconnaissance juridique peut rester sans effet sur la négociation réelle si les normes locales de succession la neutralisent, ce qui rend la variable difficile à isoler."
+  },
+  {
+   "type": "mention",
+   "de": {
+    "type": "humaine",
+    "id": "bipolarite-guerre-froide"
+   },
+   "vers": {
+    "type": "humaine",
+    "id": "mouvement-des-non-alignes"
+   },
+   "champ": "limites_critiques",
+   "designation": "mouvement des non alignes",
+   "preuve": "Le système a rapidement paralysé les institutions censées gouverner mondialement : l'ONU ne peut agir dès que les intérêts majeurs de l'un des deux blocs sont en jeu, du fait du droit de veto, et de nombreux pays du tiers-monde ont formé le mouvement des non-alignés pour échapper à cette bipolarisation imposée."
+  },
+  {
+   "type": "mention",
+   "de": {
+    "type": "humaine",
+    "id": "capital-social"
+   },
+   "vers": {
+    "type": "humaine",
+    "id": "hilary-putnam"
+   },
+   "champ": "limites_critiques",
+   "designation": "putnam",
+   "preuve": "F459-F479) attaque la mesure : examinant trois études de référence pour savoir si elles établissent l'importance empirique du capital social, « my conclusion is no », et il tient la littérature pour « particularly plagued by vague definition of concepts, poorly measured data, absence of appropriate exchangeability conditions, and lack of information necessary to make identification claims plausible », jugeant les affirmations de Putnam « very likely exaggerated »."
+  },
+  {
+   "type": "mention",
+   "de": {
+    "type": "humaine",
+    "id": "carol-cohn"
+   },
+   "vers": {
+    "type": "humaine",
+    "id": "christine-sylvester"
+   },
+   "champ": "limites_critiques",
+   "designation": "christine sylvester",
+   "preuve": "La réception documentée de son travail est essentiellement favorable, Christine Sylvester et Laura J."
+  },
+  {
+   "type": "mention",
+   "de": {
+    "type": "humaine",
+    "id": "christine-ladd-franklin"
+   },
+   "vers": {
+    "type": "humaine",
+    "id": "hermann-von-helmholtz"
+   },
+   "champ": "limites_critiques",
+   "designation": "helmholtz",
+   "preuve": "La description aujourd'hui admise combine les deux positions qu'elle voulait concilier sans passer par son hypothèse évolutive : l'œil possède trois types de récepteurs sensibles à la couleur, comme le soutenaient Young, Maxwell et Helmholtz, dont les signaux sont ensuite recombinés en trois canaux antagonistes, comme le soutenait Hering — synthèse établie par la mise en évidence de cellules ganglionnaires à opposition chromatique dans la rétine et le corps genouillé latéral."
+  },
+  {
+   "type": "mention",
+   "de": {
+    "type": "humaine",
+    "id": "christine-sylvester"
+   },
+   "vers": {
+    "type": "humaine",
+    "id": "cynthia-weber"
+   },
+   "champ": "limites_critiques",
+   "designation": "cynthia weber",
+   "preuve": "L'ouvrage a été recensé dès sa parution dans l'American Political Science Review par Cynthia Weber (88(4), 1994, p."
+  },
+  {
+   "type": "mention",
+   "de": {
+    "type": "humaine",
+    "id": "daniel-dennett"
+   },
+   "vers": {
+    "type": "humaine",
+    "id": "david-chalmers"
+   },
+   "champ": "limites_critiques",
+   "designation": "chalmers",
+   "preuve": "Accusé par Chalmers et d'autres de pratiquer une « explication qui esquive » le problème difficile plutôt que de le résoudre, en niant l'existence de ce qu'il ne peut expliquer ;"
+  },
+  {
+   "type": "mention",
+   "de": {
+    "type": "humaine",
+    "id": "david-chalmers"
+   },
+   "vers": {
+    "type": "humaine",
+    "id": "daniel-dennett"
+   },
+   "champ": "limites_critiques",
+   "designation": "dennett",
+   "preuve": "Accusé par les fonctionnalistes, Dennett en tête, de réifier une intuition — le « gap explicatif » — en un mystère métaphysique irréductible, alors qu'elle ne serait qu'un artefact de nos limites conceptuelles actuelles ;"
+  },
+  {
+   "type": "mention",
+   "de": {
+    "type": "humaine",
+    "id": "double-helice-de-l-adn"
+   },
+   "vers": {
+    "type": "humaine",
+    "id": "francis-crick"
+   },
+   "champ": "limites_critiques",
+   "designation": "crick",
+   "preuve": "La contribution déterminante de Rosalind Franklin (dont le cliché 51 fut consulté sans son accord explicite) a été durablement minorée par rapport à celle de Watson et Crick, seuls lauréats du prix Nobel avec Wilkins en 1962 — un cas devenu emblématique des biais de reconnaissance scientifique envers les femmes."
+  },
+  {
+   "type": "mention",
+   "de": {
+    "type": "humaine",
+    "id": "double-helice-de-l-adn"
+   },
+   "vers": {
+    "type": "humaine",
+    "id": "rosalind-franklin"
+   },
+   "champ": "limites_critiques",
+   "designation": "rosalind franklin",
+   "preuve": "La contribution déterminante de Rosalind Franklin (dont le cliché 51 fut consulté sans son accord explicite) a été durablement minorée par rapport à celle de Watson et Crick, seuls lauréats du prix Nobel avec Wilkins en 1962 — un cas devenu emblématique des biais de reconnaissance scientifique envers les femmes."
+  },
+  {
+   "type": "mention",
+   "de": {
+    "type": "humaine",
+    "id": "economie-planifiee-modele-sovietique"
+   },
+   "vers": {
+    "type": "humaine",
+    "id": "limites-planetaires-stockholm-resilience-centre"
+   },
+   "champ": "limites_critiques",
+   "designation": "centre",
+   "preuve": "Ludwig von Mises a théorisé qu'en se privant du mécanisme des prix libres, les planificateurs se privent de tout calcul économique rationnel, le centre étant submergé d'informations à mesure que l'économie se complexifie."
+  },
+  {
+   "type": "mention",
+   "de": {
+    "type": "humaine",
+    "id": "edward-said"
+   },
+   "vers": {
+    "type": "humaine",
+    "id": "limites-planetaires-stockholm-resilience-centre"
+   },
+   "champ": "limites_critiques",
+   "designation": "centre",
+   "preuve": "Robert Irwin (For Lust of Knowing, 2006) juge le corpus mal choisi, centré sur la Palestine et l'Égypte et ignorant la prépondérance allemande et hongroise dans l'orientalisme savant."
+  },
+  {
+   "type": "mention",
+   "de": {
+    "type": "humaine",
+    "id": "edward-tolman"
+   },
+   "vers": {
+    "type": "humaine",
+    "id": "clark-hull"
+   },
+   "champ": "limites_critiques",
+   "designation": "clark hull",
+   "preuve": "Clark Hull opposait à l'approche stimulus-stimulus de Tolman une théorie stimulus-réponse fondée sur le renforcement, et ses partisans ont produit des explications alternatives des résultats de Tolman."
+  },
+  {
+   "type": "mention",
+   "de": {
+    "type": "humaine",
+    "id": "edward-tolman"
+   },
+   "vers": {
+    "type": "humaine",
+    "id": "mamie-phipps-clark"
+   },
+   "champ": "limites_critiques",
+   "designation": "clark",
+   "preuve": "Clark Hull opposait à l'approche stimulus-stimulus de Tolman une théorie stimulus-réponse fondée sur le renforcement, et ses partisans ont produit des explications alternatives des résultats de Tolman."
+  },
+  {
+   "type": "mention",
+   "de": {
+    "type": "humaine",
+    "id": "elisee-reclus"
+   },
+   "vers": {
+    "type": "humaine",
+    "id": "ecologie-globale-et-science-du-systeme-terre"
+   },
+   "champ": "limites_critiques",
+   "designation": "terre",
+   "preuve": "La limite interne est ailleurs : L'Homme et la Terre mêle une synthèse savante à une philosophie progressiste de l'histoire dont les conclusions ne se déduisent pas du matériau géographique rassemblé."
+  },
+  {
+   "type": "mention",
+   "de": {
+    "type": "humaine",
+    "id": "elisee-reclus"
+   },
+   "vers": {
+    "type": "humaine",
+    "id": "paul-vidal-de-la-blache"
+   },
+   "champ": "limites_critiques",
+   "designation": "blache",
+   "preuve": "Son refus des positions institutionnelles l'a privé de l'école qui aurait transmis son programme : sa radicalité politique — engagement dans la Commune, condamnation à la déportation commuée en bannissement en 1873, adhésion à l'Association internationale des travailleurs et à la Fédération jurassienne — l'a tenu hors de l'université française, tandis que Vidal de La Blache institutionnalisait la sienne."
+  },
+  {
+   "type": "mention",
+   "de": {
+    "type": "humaine",
+    "id": "elisee-reclus"
+   },
+   "vers": {
+    "type": "humaine",
+    "id": "yves-lacoste"
+   },
+   "champ": "limites_critiques",
+   "designation": "yves lacoste",
+   "preuve": "Yves Lacoste voit en lui le père de la pensée géopolitique française, lecture rétrospective qui vaut revendication d'héritage autant que constat."
+  },
+  {
+   "type": "mention",
+   "de": {
+    "type": "humaine",
+    "id": "elizabeth-spelke"
+   },
+   "vers": {
+    "type": "humaine",
+    "id": "renee-baillargeon"
+   },
+   "champ": "limites_critiques",
+   "designation": "baillargeon",
+   "preuve": "», Infant Behavior and Development, 21(2), 1998, 167-179) nomme Spelke et Baillargeon comme tenantes d'une interprétation « riche » : le paradigme du regard a été conçu pour des questions sensorielles et perceptives, la nouveauté, la familiarité ou la saillance suffisent souvent à expliquer un regard plus long sans postuler raisonnement ni surprise, et les occlusions employées, de trois secondes ou moins, laissent ouverte l'hypothèse d'une trace sensorielle persistante plutôt que d'une représentation symbolique."
+  },
+  {
+   "type": "mention",
+   "de": {
+    "type": "humaine",
+    "id": "ellen-churchill-semple"
+   },
+   "vers": {
+    "type": "humaine",
+    "id": "daron-acemoglu"
+   },
+   "champ": "limites_critiques",
+   "designation": "daron acemoglu",
+   "preuve": "Daron Acemoglu et James Robinson (Why Nations Fail) le tiennent pour dépassé et incapable d'expliquer les écarts de croissance après 1500."
+  },
+  {
+   "type": "mention",
+   "de": {
+    "type": "humaine",
+    "id": "ellen-churchill-semple"
+   },
+   "vers": {
+    "type": "humaine",
+    "id": "william-james"
+   },
+   "champ": "limites_critiques",
+   "designation": "james",
+   "preuve": "Daron Acemoglu et James Robinson (Why Nations Fail) le tiennent pour dépassé et incapable d'expliquer les écarts de croissance après 1500."
+  },
+  {
+   "type": "mention",
+   "de": {
+    "type": "humaine",
+    "id": "erving-goffman"
+   },
+   "vers": {
+    "type": "humaine",
+    "id": "anthony-giddens"
+   },
+   "champ": "limites_critiques",
+   "designation": "anthony giddens",
+   "preuve": "Anthony Giddens (1988) note qu'il a délibérément évité tout engagement avec la grande échelle et le long terme, et Theodore D."
+  },
+  {
+   "type": "mention",
+   "de": {
+    "type": "humaine",
+    "id": "evgueni-primakov"
+   },
+   "vers": {
+    "type": "humaine",
+    "id": "alexandre-douguine"
+   },
+   "champ": "limites_critiques",
+   "designation": "douguine",
+   "preuve": "Mark Bassin la rapproche des visions eurasiennes de Ziouganov et de Douguine, rapprochement que la doctrine elle-même ne revendique pas et qui reste une lecture d'auteur."
+  },
+  {
+   "type": "mention",
+   "de": {
+    "type": "humaine",
+    "id": "ferdinand-tonnies"
+   },
+   "vers": {
+    "type": "humaine",
+    "id": "nazisme"
+   },
+   "champ": "limites_critiques",
+   "designation": "nazisme",
+   "preuve": "L'ambiguïté du dispositif tient à ce qu'il reconnaît le caractère volontaire de l'association tout en affirmant que toute organisation sociale possède une volonté collective : cette thèse a facilité des usages politiques que Tönnies n'a pas voulus — il a désavoué le totalitarisme et le nazisme — mais que son vocabulaire de la communauté a rendus disponibles."
+  },
+  {
+   "type": "mention",
+   "de": {
+    "type": "humaine",
+    "id": "ferdinand-tonnies"
+   },
+   "vers": {
+    "type": "humaine",
+    "id": "totalitarisme"
+   },
+   "champ": "limites_critiques",
+   "designation": "totalitarisme",
+   "preuve": "L'ambiguïté du dispositif tient à ce qu'il reconnaît le caractère volontaire de l'association tout en affirmant que toute organisation sociale possède une volonté collective : cette thèse a facilité des usages politiques que Tönnies n'a pas voulus — il a désavoué le totalitarisme et le nazisme — mais que son vocabulaire de la communauté a rendus disponibles."
+  },
+  {
+   "type": "mention",
+   "de": {
+    "type": "humaine",
+    "id": "francis-fukuyama"
+   },
+   "vers": {
+    "type": "humaine",
+    "id": "samuel-huntington"
+   },
+   "champ": "limites_critiques",
+   "designation": "samuel huntington",
+   "preuve": "Samuel Huntington la grille civilisationnelle de « The Clash of Civilizations?"
+  },
+  {
+   "type": "mention",
+   "de": {
+    "type": "humaine",
+    "id": "francis-fukuyama"
+   },
+   "vers": {
+    "type": "humaine",
+    "id": "walter-benjamin"
+   },
+   "champ": "limites_critiques",
+   "designation": "benjamin",
+   "preuve": "» (1993) puis du livre de 1996 ; Benjamin Barber Jihad vs."
+  },
+  {
+   "type": "mention",
+   "de": {
+    "type": "humaine",
+    "id": "frederic-bartlett"
+   },
+   "vers": {
+    "type": "humaine",
+    "id": "william-james"
+   },
+   "champ": "limites_critiques",
+   "designation": "james",
+   "preuve": "James Ost et Alan Costall (« Misremembering Bartlett: a study in serial reproduction », British Journal of Psychology 93(2), 243-255, 2002) montrent que la littérature lui prête un énoncé qu'il n'a pas soutenu — que le souvenir ne pourrait jamais être exact et serait toujours une distorsion — alors que ni ses expériences ni sa position théorique ne l'autorisent, et qu'il fournit lui-même plusieurs exemples de rappels détaillés et exacts qu'il cherche à expliquer dans le cadre de sa théorie des schémas."
+  },
+  {
+   "type": "mention",
+   "de": {
+    "type": "humaine",
+    "id": "friedrich-ratzel"
+   },
+   "vers": {
+    "type": "humaine",
+    "id": "karl-haushofer"
+   },
+   "champ": "limites_critiques",
+   "designation": "karl haushofer",
+   "preuve": "La postérité est plus lourde : Kjellén convertit sa théorie en « géopolitique », Karl Haushofer se présente en 1940 comme l'héritier légitime du Lebensraum, et des juristes du régime nazi — Carl Schmitt, Reinhard Höhn, Werner Best — annexent son vocabulaire à des cadres racio-biologiques."
+  },
+  {
+   "type": "mention",
+   "de": {
+    "type": "humaine",
+    "id": "friedrich-ratzel"
+   },
+   "vers": {
+    "type": "humaine",
+    "id": "peter-j-taylor"
+   },
+   "champ": "limites_critiques",
+   "designation": "taylor",
+   "preuve": "Taylor (The Origins of the Second World War, 1961) tient la notion pour un lieu commun de son époque, Ulrike Jureit et Patricia Chiantera-Stutte (2023) montrent que la filiation passe par une « réception de la réception » plutôt que par ses textes, et Ian Klinke et Mark Bassin rouvrent le dossier en 2018 dans le Journal of Historical Geography."
+  },
+  {
+   "type": "mention",
+   "de": {
+    "type": "humaine",
+    "id": "friedrich-ratzel"
+   },
+   "vers": {
+    "type": "humaine",
+    "id": "rudolf-kjellen"
+   },
+   "champ": "limites_critiques",
+   "designation": "kjellen",
+   "preuve": "La postérité est plus lourde : Kjellén convertit sa théorie en « géopolitique », Karl Haushofer se présente en 1940 comme l'héritier légitime du Lebensraum, et des juristes du régime nazi — Carl Schmitt, Reinhard Höhn, Werner Best — annexent son vocabulaire à des cadres racio-biologiques."
+  },
+  {
+   "type": "mention",
+   "de": {
+    "type": "humaine",
+    "id": "gearoid-o-tuathail"
+   },
+   "vers": {
+    "type": "humaine",
+    "id": "william-james"
+   },
+   "champ": "limites_critiques",
+   "designation": "james",
+   "preuve": "Klaus Dodds et James Sidaway (1994), Sanjay Chaturvedi (2003) et Kuus elle-même (2004) relèvent que le champ traite surtout de l'Amérique du Nord et de l'Europe occidentale."
+  },
+  {
+   "type": "mention",
+   "de": {
+    "type": "humaine",
+    "id": "george-a-miller"
+   },
+   "vers": {
+    "type": "humaine",
+    "id": "alan-baddeley"
+   },
+   "champ": "limites_critiques",
+   "designation": "alan baddeley",
+   "preuve": "Alan Baddeley propose de son côté une limite temporelle (durée de prononciation) plutôt que numérique."
+  },
+  {
+   "type": "mention",
+   "de": {
+    "type": "humaine",
+    "id": "halford-mackinder"
+   },
+   "vers": {
+    "type": "humaine",
+    "id": "karl-haushofer"
+   },
+   "champ": "limites_critiques",
+   "designation": "karl haushofer",
+   "preuve": "Sa réception par Karl Haushofer lui a valu, après 1945, un discrédit qui portait moins sur ses erreurs que sur ses lecteurs."
+  },
+  {
+   "type": "mention",
+   "de": {
+    "type": "humaine",
+    "id": "harold-garfinkel"
+   },
+   "vers": {
+    "type": "humaine",
+    "id": "william-james"
+   },
+   "champ": "limites_critiques",
+   "designation": "james",
+   "preuve": "691-700), et le symposium de recension de 1968 auquel participaient James Coleman, Guy Swanson et Walter Wallace."
+  },
+  {
+   "type": "mention",
+   "de": {
+    "type": "humaine",
+    "id": "herbert-spencer"
+   },
+   "vers": {
+    "type": "humaine",
+    "id": "universite-de-stanford"
+   },
+   "champ": "limites_critiques",
+   "designation": "stanford",
+   "preuve": "Sur l'usage : Richard Hofstadter en a fait un ultra-conservateur justifiant le capitalisme par la biologie, lecture que la Stanford Encyclopedia of Philosophy juge erronée et présente comme une récupération de la formule « survival of the fittest » à des fins que Spencer, utilitariste libéral soucieux d'articuler utilité générale et liberté individuelle, ne soutenait pas."
+  },
+  {
+   "type": "mention",
+   "de": {
+    "type": "humaine",
+    "id": "herman-kahn"
+   },
+   "vers": {
+    "type": "humaine",
+    "id": "william-james"
+   },
+   "champ": "limites_critiques",
+   "designation": "james",
+   "preuve": "James R."
+  },
+  {
+   "type": "mention",
+   "de": {
+    "type": "humaine",
+    "id": "indices-de-cohesion-sociale"
+   },
+   "vers": {
+    "type": "humaine",
+    "id": "world-values-survey"
+   },
+   "champ": "limites_critiques",
+   "designation": "world values survey",
+   "preuve": "95-120), montrent que ces instruments ne délimitent pas le même objet : les Cohesion Regimes Components « stretch[] the conceptual scope to the extreme by embracing a number of 'inputs' such as social policies », l'indice de l'Afrobarometer ne dit pas « why exactly these three domains were chosen, and not others », et les dimensions tirées du World Values Survey combinent « no fewer than four concepts »."
+  },
+  {
+   "type": "mention",
+   "de": {
+    "type": "humaine",
+    "id": "isaiah-bowman"
+   },
+   "vers": {
+    "type": "humaine",
+    "id": "gearoid-o-tuathail"
+   },
+   "champ": "limites_critiques",
+   "designation": "gearoid o tuathail",
+   "preuve": "Gearóid Ó Tuathail le relit en 1994 dans Progress in Human Geography comme producteur de discours géopolitique, ce qui retourne contre lui sa propre opposition à la Geopolitik : sa géographie « pratique » était elle aussi située."
+  },
+  {
+   "type": "mention",
+   "de": {
+    "type": "humaine",
+    "id": "j-ann-tickner"
+   },
+   "vers": {
+    "type": "humaine",
+    "id": "robert-keohane"
+   },
+   "champ": "limites_critiques",
+   "designation": "robert keohane",
+   "preuve": "Robert Keohane lui répond dans la même revue l'année suivante par un commentaire de cinq pages, « Beyond Dichotomy: Conversations Between International Relations and Feminist Theory » (International Studies Quarterly, 42(1), 1998, p."
+  },
+  {
+   "type": "mention",
+   "de": {
+    "type": "humaine",
+    "id": "jacques-ranciere"
+   },
+   "vers": {
+    "type": "humaine",
+    "id": "pierre-bourdieu"
+   },
+   "champ": "limites_critiques",
+   "designation": "pierre bourdieu",
+   "preuve": "(2012) aux tensions entre sa philosophie de l'émancipation et la sociologie de la domination de Pierre Bourdieu, et la politique comme pur événement d'égalité reste difficile à traduire en programme institutionnel."
+  },
+  {
+   "type": "mention",
+   "de": {
+    "type": "humaine",
+    "id": "james-a-robinson"
+   },
+   "vers": {
+    "type": "humaine",
+    "id": "francis-fukuyama"
+   },
+   "champ": "limites_critiques",
+   "designation": "francis fukuyama",
+   "preuve": "Francis Fukuyama, de simplifier à l'excès par la bifurcation inclusif/extractif ;"
+  },
+  {
+   "type": "mention",
+   "de": {
+    "type": "humaine",
+    "id": "james-watson"
+   },
+   "vers": {
+    "type": "humaine",
+    "id": "rosalind-franklin"
+   },
+   "champ": "limites_critiques",
+   "designation": "rosalind franklin",
+   "preuve": "A minoré dans ses mémoires (La Double Hélice, 1968) le rôle de Rosalind Franklin dans la découverte ;"
+  },
+  {
+   "type": "mention",
+   "de": {
+    "type": "humaine",
+    "id": "jean-claude-passeron"
+   },
+   "vers": {
+    "type": "humaine",
+    "id": "pierre-bourdieu"
+   },
+   "champ": "limites_critiques",
+   "designation": "bourdieu",
+   "preuve": "Aucune réfutation nommément attribuée n'a été trouvée dans les pages consultées, qui documentent la prise de distance avec Bourdieu à partir du début des années 1970 sans en énoncer les griefs."
+  },
+  {
+   "type": "mention",
+   "de": {
+    "type": "humaine",
+    "id": "jean-francois-lyotard"
+   },
+   "vers": {
+    "type": "humaine",
+    "id": "jurgen-habermas"
+   },
+   "champ": "limites_critiques",
+   "designation": "habermas",
+   "preuve": "Le diagnostic de la « fin des grands récits » est accusé, notamment par Habermas, d'être lui-même un grand récit déguisé sur la fragmentation du savoir ;"
+  },
+  {
+   "type": "mention",
+   "de": {
+    "type": "humaine",
+    "id": "karl-mannheim"
+   },
+   "vers": {
+    "type": "humaine",
+    "id": "karl-popper"
+   },
+   "champ": "limites_critiques",
+   "designation": "karl popper",
+   "preuve": "Karl Popper réduit sa sociologie à de l'historicisme."
+  },
+  {
+   "type": "mention",
+   "de": {
+    "type": "humaine",
+    "id": "kurt-lewin"
+   },
+   "vers": {
+    "type": "humaine",
+    "id": "leon-festinger"
+   },
+   "champ": "limites_critiques",
+   "designation": "leon festinger",
+   "preuve": "Le modèle « unfreeze-change-refreeze » universellement porté à son crédit en gestion du changement n'est pas de lui : Stephen Cummings, Todd Bridgman et Kenneth Brown établissent dans Human Relations (2016, 69(1), 33-60) que Lewin n'a écrit qu'un passage de 131 mots dans son article de 1947, où figurent seulement « unfreezing » et « moving », le terme « refreezing » ayant été introduit par Leon Festinger en 1950, après sa mort, avant que Ronald Lippitt et Edgar Schein n'en fassent un outil d'intervention."
+  },
+  {
+   "type": "mention",
+   "de": {
+    "type": "humaine",
+    "id": "lawrence-kohlberg"
+   },
+   "vers": {
+    "type": "humaine",
+    "id": "william-james"
+   },
+   "champ": "limites_critiques",
+   "designation": "james",
+   "preuve": "Elliot Turiel et James Rest ont ensuite reformulé le domaine."
+  },
+  {
+   "type": "mention",
+   "de": {
+    "type": "humaine",
+    "id": "loic-wacquant"
+   },
+   "vers": {
+    "type": "humaine",
+    "id": "shalom-schwartz"
+   },
+   "champ": "limites_critiques",
+   "designation": "schwartz",
+   "preuve": "Schwartz, dans Ghetto: The History of a Word (2019), tout en saluant sa rigueur, relève que son cadre réduit le ghetto à quatre éléments — stigmate, contrainte, confinement spatial, parallélisme institutionnel —, définition dont la portée historique est plus étroite que celle du mot."
+  },
+  {
+   "type": "mention",
+   "de": {
+    "type": "humaine",
+    "id": "louis-leon-thurstone"
+   },
+   "vers": {
+    "type": "humaine",
+    "id": "charles-spearman"
+   },
+   "champ": "limites_critiques",
+   "designation": "spearman",
+   "preuve": "Sa propre concession — l'existence d'un facteur général parmi les mesures d'aptitude — indique que le différend avec Spearman tenait moins aux données qu'au choix de la rotation appliquée à une même matrice de corrélations."
+  },
+  {
+   "type": "mention",
+   "de": {
+    "type": "humaine",
+    "id": "luce-irigaray"
+   },
+   "vers": {
+    "type": "humaine",
+    "id": "judith-butler"
+   },
+   "champ": "limites_critiques",
+   "designation": "judith butler",
+   "preuve": "Accusée par des courants féministes matérialistes et constructivistes, dont Judith Butler, d'essentialiser le féminin en lui attribuant une spécificité fixe, à l'inverse de la déconstruction du genre qu'elles défendent ;"
+  },
+  {
+   "type": "mention",
+   "de": {
+    "type": "humaine",
+    "id": "marcel-mauss"
+   },
+   "vers": {
+    "type": "humaine",
+    "id": "pierre-bourdieu"
+   },
+   "champ": "limites_critiques",
+   "designation": "pierre bourdieu",
+   "preuve": "Pierre Bourdieu en propose une lecture pessimiste, centrée sur la domination masquée qu'exerce le donateur sur l'obligé, ce qui déplace le don de la réciprocité vers le pouvoir."
+  },
+  {
+   "type": "mention",
+   "de": {
+    "type": "humaine",
+    "id": "marianne-weber"
+   },
+   "vers": {
+    "type": "humaine",
+    "id": "max-weber"
+   },
+   "champ": "limites_critiques",
+   "designation": "max weber",
+   "preuve": "Sa réception pose toutefois un problème identifiable : après la mort de Max Weber en 1920, elle consacre l'essentiel de son activité à l'édition de dix volumes de ses écrits puis à la biographie Max Weber."
+  },
+  {
+   "type": "mention",
+   "de": {
+    "type": "humaine",
+    "id": "max-weber"
+   },
+   "vers": {
+    "type": "humaine",
+    "id": "universite-de-stanford"
+   },
+   "champ": "limites_critiques",
+   "designation": "stanford",
+   "preuve": "Sur la méthode, la Stanford Encyclopedia of Philosophy relève l'accusation d'eurocentrisme visant sa rationalisation, tenue pour une téléologie métahistorique plaçant l'Occident au-dessus de l'Orient, et une lacune sur la place de la démocratie dans sa théorie de la domination."
+  },
+  {
+   "type": "mention",
+   "de": {
+    "type": "humaine",
+    "id": "mecanique-quantique-modele-de-bohr"
+   },
+   "vers": {
+    "type": "humaine",
+    "id": "werner-heisenberg"
+   },
+   "champ": "limites_critiques",
+   "designation": "heisenberg",
+   "preuve": "Le modèle est aujourd'hui considéré comme obsolète : il échoue à expliquer les spectres d'atomes à plusieurs électrons et repose sur des orbites classiques bien définies incompatibles avec le principe d'incertitude de Heisenberg qui l'a supplanté."
+  },
+  {
+   "type": "mention",
+   "de": {
+    "type": "humaine",
+    "id": "michel-crozier"
+   },
+   "vers": {
+    "type": "humaine",
+    "id": "noam-chomsky"
+   },
+   "champ": "limites_critiques",
+   "designation": "noam chomsky",
+   "preuve": "Noam Chomsky, dans « The Carter Administration: Myth and Reality », y voit l'expression de l'hostilité de l'aile libérale de l'élite dirigeante envers la démocratie populaire."
+  },
+  {
+   "type": "mention",
+   "de": {
+    "type": "humaine",
+    "id": "michel-crozier"
+   },
+   "vers": {
+    "type": "humaine",
+    "id": "samuel-huntington"
+   },
+   "champ": "limites_critiques",
+   "designation": "huntington",
+   "preuve": "Huntington et Joji Watanuki, The Crisis of Democracy: On the Governability of Democracies (New York University Press, 1975), qui impute la crise de gouvernabilité des démocraties occidentales à un « excès de démocratie »."
+  },
+  {
+   "type": "mention",
+   "de": {
+    "type": "humaine",
+    "id": "michel-foucher"
+   },
+   "vers": {
+    "type": "humaine",
+    "id": "anne-laure-amilhat-szary"
+   },
+   "champ": "limites_critiques",
+   "designation": "anne laure amilhat szary",
+   "preuve": "La limite du programme est dans son objet : l'horogenèse suit la production de tracés linéaires par des États, alors que les travaux de frontières mobiles conduits par Anne-Laure Amilhat Szary et Frédéric Giraut soutiennent que le contrôle frontalier s'est en partie détaché du tracé, pour se répartir dans des aéroports, des fichiers et des corps."
+  },
+  {
+   "type": "mention",
+   "de": {
+    "type": "humaine",
+    "id": "nasa"
+   },
+   "vers": {
+    "type": "humaine",
+    "id": "world-happiness-report"
+   },
+   "champ": "limites_critiques",
+   "designation": "report",
+   "preuve": "Les budgets et priorités de la NASA sont directement dépendants des choix politiques successifs de l'exécutif et du Congrès américains, ce qui a entraîné l'annulation ou le report répété de plusieurs grands programmes (dont Constellation en 2010) au fil des changements d'administration."
+  },
+  {
+   "type": "mention",
+   "de": {
+    "type": "humaine",
+    "id": "nicholas-onuf"
+   },
+   "vers": {
+    "type": "humaine",
+    "id": "alexander-wendt"
+   },
+   "champ": "limites_critiques",
+   "designation": "alexander wendt",
+   "preuve": "C'est la version étatocentrée et systémique d'Alexander Wendt, non celle d'Onuf, qui a engendré le programme de recherche : la littérature reconnaît à Onuf la paternité du terme et tient Wendt pour le principal avocat du courant, ce qui est une manière de dire que le dispositif d'Onuf s'est révélé peu maniable empiriquement."
+  },
+  {
+   "type": "mention",
+   "de": {
+    "type": "humaine",
+    "id": "ocde"
+   },
+   "vers": {
+    "type": "humaine",
+    "id": "limites-planetaires-stockholm-resilience-centre"
+   },
+   "champ": "limites_critiques",
+   "designation": "centre",
+   "preuve": "Dépourvue de pouvoir contraignant, elle ne peut qu'émettre des recommandations que les États restent libres de ne pas appliquer, et son recrutement centré sur les pays riches limite sa représentativité pour traiter des enjeux véritablement mondiaux."
+  },
+  {
+   "type": "mention",
+   "de": {
+    "type": "humaine",
+    "id": "paul-vidal-de-la-blache"
+   },
+   "vers": {
+    "type": "humaine",
+    "id": "friedrich-ratzel"
+   },
+   "champ": "limites_critiques",
+   "designation": "ratzel",
+   "preuve": "André-Louis Sanguin (Bulletin de l'Association de géographes français, 1988) reprend l'ensemble du dossier de ses contributions à la géographie politique, face à Ratzel, sur la carte administrative, sur les frontières et sur l'expansion coloniale en Afrique."
+  },
+  {
+   "type": "mention",
+   "de": {
+    "type": "humaine",
+    "id": "paul-vidal-de-la-blache"
+   },
+   "vers": {
+    "type": "humaine",
+    "id": "yves-lacoste"
+   },
+   "champ": "limites_critiques",
+   "designation": "yves lacoste",
+   "preuve": "Yves Lacoste a fait de l'école vidalienne sa cible en 1976 puis dans l'article d'Hérodote « À bas Vidal… Viva Vidal !"
+  },
+  {
+   "type": "mention",
+   "de": {
+    "type": "humaine",
+    "id": "pierre-bourdieu"
+   },
+   "vers": {
+    "type": "humaine",
+    "id": "bruno-latour"
+   },
+   "champ": "limites_critiques",
+   "designation": "bruno latour",
+   "preuve": "Bruno Latour une posture surplombante réduisant les enquêtés à des informateurs sans réflexivité ;"
+  },
+  {
+   "type": "mention",
+   "de": {
+    "type": "humaine",
+    "id": "raewyn-connell"
+   },
+   "vers": {
+    "type": "humaine",
+    "id": "william-james"
+   },
+   "champ": "limites_critiques",
+   "designation": "james",
+   "preuve": "Connell et James Messerschmidt ont reformulé la théorie dans Gender & Society (décembre 2005)."
+  },
+  {
+   "type": "mention",
+   "de": {
+    "type": "humaine",
+    "id": "rcep"
+   },
+   "vers": {
+    "type": "humaine",
+    "id": "cptpp"
+   },
+   "champ": "limites_critiques",
+   "designation": "cptpp",
+   "preuve": "Moins ambitieux que le CPTPP en matière de normes (travail, environnement, propriété intellectuelle), il est perçu comme reflétant avant tout les intérêts chinois dans la région et laisse l'Inde en dehors, celle-ci s'étant retirée des négociations en 2019."
+  },
+  {
+   "type": "mention",
+   "de": {
+    "type": "humaine",
+    "id": "relativite-generale-et-restreinte"
+   },
+   "vers": {
+    "type": "humaine",
+    "id": "max-planck"
+   },
+   "champ": "limites_critiques",
+   "designation": "planck",
+   "preuve": "Incompatible mathématiquement avec la mécanique quantique aux échelles de Planck, ce qui rend une théorie unifiée de la gravité quantique toujours manquante un siècle après sa formulation ;"
+  },
+  {
+   "type": "mention",
+   "de": {
+    "type": "humaine",
+    "id": "renee-baillargeon"
+   },
+   "vers": {
+    "type": "humaine",
+    "id": "esther-thelen"
+   },
+   "champ": "limites_critiques",
+   "designation": "esther thelen",
+   "preuve": "Gregor Schöner et Esther Thelen ont soutenu que Baillargeon extrapolait ses résultats, et que le regard prolongé peut n'indiquer qu'une détection de différence entre stimuli plutôt qu'une surprise devant un impossible."
+  },
+  {
+   "type": "mention",
+   "de": {
+    "type": "humaine",
+    "id": "robert-gilpin"
+   },
+   "vers": {
+    "type": "humaine",
+    "id": "robert-keohane"
+   },
+   "champ": "limites_critiques",
+   "designation": "robert keohane",
+   "preuve": "Robert Keohane l'établit de son côté empiriquement dans After Hegemony (1984) : les régimes internationaux ont survécu au déclin relatif américain qu'ils étaient censés accompagner."
+  },
+  {
+   "type": "mention",
+   "de": {
+    "type": "humaine",
+    "id": "robert-keohane"
+   },
+   "vers": {
+    "type": "humaine",
+    "id": "john-mearsheimer"
+   },
+   "champ": "limites_critiques",
+   "designation": "john mearsheimer",
+   "preuve": "John Mearsheimer, dans « The False Promise of International Institutions » (International Security, 1994), soutient plus radicalement que les institutions reflètent la distribution de puissance sans la modifier."
+  },
+  {
+   "type": "mention",
+   "de": {
+    "type": "humaine",
+    "id": "rudolf-kjellen"
+   },
+   "vers": {
+    "type": "humaine",
+    "id": "friedrich-ratzel"
+   },
+   "champ": "limites_critiques",
+   "designation": "ratzel",
+   "preuve": "Sa réception l'a compromise : la Geopolitik allemande, et Karl Haushofer au premier chef, se réclame directement de sa lecture de Ratzel."
+  },
+  {
+   "type": "mention",
+   "de": {
+    "type": "humaine",
+    "id": "rudolf-kjellen"
+   },
+   "vers": {
+    "type": "humaine",
+    "id": "karl-haushofer"
+   },
+   "champ": "limites_critiques",
+   "designation": "karl haushofer",
+   "preuve": "Sa réception l'a compromise : la Geopolitik allemande, et Karl Haushofer au premier chef, se réclame directement de sa lecture de Ratzel."
+  },
+  {
+   "type": "mention",
+   "de": {
+    "type": "humaine",
+    "id": "simon-baron-cohen"
+   },
+   "vers": {
+    "type": "humaine",
+    "id": "limites-planetaires-stockholm-resilience-centre"
+   },
+   "champ": "limites_critiques",
+   "designation": "centre",
+   "preuve": "Une revue de portée publiée en 2024 met en doute la validité du test des yeux comme mesure de la théorie de l'esprit, et son échantillonnage centré sur des personnes autistes sans déficience intellectuelle borne la généralisation de ses résultats."
+  },
+  {
+   "type": "mention",
+   "de": {
+    "type": "humaine",
+    "id": "slavoj-zizek"
+   },
+   "vers": {
+    "type": "humaine",
+    "id": "jacques-lacan"
+   },
+   "champ": "limites_critiques",
+   "designation": "lacan",
+   "preuve": "Son style volontairement provocateur et truffé de références à la culture populaire privilégie l'effet rhétorique sur la démonstration systématique, et ses positions théoriques changent d'un livre à l'autre — sur la question de savoir si Lacan est structuraliste ou post-structuraliste par exemple —, ce qui lui a valu des accusations d'incohérence auxquelles Ian Parker répond qu'il n'existe pas de système philosophique žižekien ;"
+  },
+  {
+   "type": "mention",
+   "de": {
+    "type": "humaine",
+    "id": "stanley-milgram"
+   },
+   "vers": {
+    "type": "humaine",
+    "id": "william-james"
+   },
+   "champ": "limites_critiques",
+   "designation": "james",
+   "preuve": "James Waller et Thomas Blass jugent enfin que le dispositif rend mal compte de la Shoah, dont les auteurs furent inventifs et mus par la haine plutôt que simplement obéissants."
+  },
+  {
+   "type": "mention",
+   "de": {
+    "type": "humaine",
+    "id": "stephen-walt"
+   },
+   "vers": {
+    "type": "humaine",
+    "id": "john-mearsheimer"
+   },
+   "champ": "limites_critiques",
+   "designation": "mearsheimer",
+   "preuve": "Sur son travail avec Mearsheimer relatif au lobby israélien, Christopher Hitchens a soutenu qu'ils caractérisaient gravement mal l'origine du problème."
+  },
+  {
+   "type": "mention",
+   "de": {
+    "type": "humaine",
+    "id": "talcott-parsons"
+   },
+   "vers": {
+    "type": "humaine",
+    "id": "theda-skocpol"
+   },
+   "champ": "limites_critiques",
+   "designation": "theda skocpol",
+   "preuve": "Alvin Gouldner le tient pour socialement conservateur et Theda Skocpol pour incapable d'expliquer l'oppression systémique, l'Afrique du Sud de l'apartheid contredisant son cadre."
+  },
+  {
+   "type": "mention",
+   "de": {
+    "type": "humaine",
+    "id": "wilhelm-wundt"
+   },
+   "vers": {
+    "type": "humaine",
+    "id": "william-james"
+   },
+   "champ": "limites_critiques",
+   "designation": "william james",
+   "preuve": "William James, Granville Stanley Hall et Edwin Boring ont propagé des malentendus massifs sur son œuvre."
+  },
+  {
+   "type": "mention",
+   "de": {
+    "type": "humaine",
+    "id": "wolfgang-kohler"
+   },
+   "vers": {
+    "type": "humaine",
+    "id": "edward-thorndike"
+   },
+   "champ": "limites_critiques",
+   "designation": "thorndike",
+   "preuve": "Enfin l'opposition entre insight et loi de l'effet de Thorndike n'a jamais été tranchée par une expérience unique : les deux protocoles diffèrent par la visibilité des éléments de la solution, ce qui rend la comparaison directe des résultats incertaine."
+  },
+  {
+   "type": "mention",
+   "de": {
+    "type": "humaine",
+    "id": "yves-lacoste"
+   },
+   "vers": {
+    "type": "humaine",
+    "id": "beatrice-giblin"
+   },
+   "champ": "limites_critiques",
+   "designation": "beatrice giblin",
+   "preuve": "Béatrice Giblin note en 2026 que ses accointances nationalistes et militaires coexistaient mal, aux yeux de certains collègues, avec un parcours de gauche, et qu'il se disait lui-même « colonial-anticolonialiste » à propos de l'Algérie et du Maroc."
+  },
+  {
    "type": "mobilise",
    "de": {
     "type": "humaine",
@@ -6302,20 +5715,6 @@
    "type": "mobilise",
    "de": {
     "type": "humaine",
-    "id": "alexandre-luria"
-   },
-   "vers": {
-    "type": "humaine",
-    "id": "lev-vygotski"
-   },
-   "champ": "these_centrale",
-   "designation": "vygotski",
-   "preuve": "Avec Vygotski, il tient ces fonctions pour médiatisées par la culture, et d'abord par le langage."
-  },
-  {
-   "type": "mobilise",
-   "de": {
-    "type": "humaine",
     "id": "alfred-binet"
    },
    "vers": {
@@ -6400,20 +5799,6 @@
    "type": "mobilise",
    "de": {
     "type": "humaine",
-    "id": "allen-newell"
-   },
-   "vers": {
-    "type": "humaine",
-    "id": "herbert-simon"
-   },
-   "champ": "these_centrale",
-   "designation": "simon",
-   "preuve": "Avec Simon, il pose que tout comportement intelligent se ramène à la manipulation de symboles physiques."
-  },
-  {
-   "type": "mobilise",
-   "de": {
-    "type": "humaine",
     "id": "ann-swidler"
    },
    "vers": {
@@ -6437,20 +5822,6 @@
    "champ": "these_centrale",
    "designation": "broadbent",
    "preuve": "Elle avait auparavant, en 1964, corrigé le filtre de Broadbent en proposant que l'information non attendue soit atténuée plutôt que supprimée."
-  },
-  {
-   "type": "mobilise",
-   "de": {
-    "type": "humaine",
-    "id": "antoine-henri-jomini"
-   },
-   "vers": {
-    "type": "humaine",
-    "id": "alfred-thayer-mahan"
-   },
-   "champ": "apport",
-   "designation": "mahan",
-   "preuve": "Sa doctrine a dominé l'instruction à West Point avant la guerre de Sécession, transmise par Dennis Hart Mahan aux officiers des deux camps."
   },
   {
    "type": "mobilise",
@@ -6498,20 +5869,6 @@
    "type": "mobilise",
    "de": {
     "type": "humaine",
-    "id": "arlene-b-tickner"
-   },
-   "vers": {
-    "type": "humaine",
-    "id": "dorothy-smith"
-   },
-   "champ": "apport",
-   "designation": "smith",
-   "preuve": "Blaney, et dans la collection « Worlding Beyond the West » (Routledge), elle a construit un programme d'enquête en quatre volumes : International Relations Scholarship Around the World (avec Ole Wæver, 2009), Thinking International Relations Differently (2012), Claiming the International (2013) et International Relations from the Global South: Worlds of Difference (avec Karen Smith, 2020)."
-  },
-  {
-   "type": "mobilise",
-   "de": {
-    "type": "humaine",
     "id": "astrobiologie-et-exoplanetes"
    },
    "vers": {
@@ -6521,20 +5878,6 @@
    "champ": "these_centrale",
    "designation": "terre",
    "preuve": "L'astrobiologie (ou exobiologie) étudie les conditions et processus, notamment géochimiques et biochimiques, pouvant mener à l'apparition et à l'évolution de la vie ailleurs que sur Terre, en s'appuyant en particulier sur la découverte et la caractérisation des exoplanètes — plus de 8000 confirmées en 2026."
-  },
-  {
-   "type": "mobilise",
-   "de": {
-    "type": "humaine",
-    "id": "astrobiologie-et-exoplanetes"
-   },
-   "vers": {
-    "type": "humaine",
-    "id": "william-james"
-   },
-   "champ": "apport",
-   "designation": "james",
-   "preuve": "Les missions spatiales (Kepler, TESS, James Webb) ont permis la détection systématique de planètes en dehors du système solaire et l'analyse spectroscopique de leur atmosphère, ouvrant la recherche de biosignatures chimiques potentielles."
   },
   {
    "type": "mobilise",
@@ -6574,9 +5917,9 @@
     "type": "humaine",
     "id": "carl-von-clausewitz"
    },
-   "champ": "these_centrale",
+   "champ": "apport",
    "designation": "clausewitz",
-   "preuve": "Heuser (née en 1961) soutient que la pensée stratégique occidentale a une histoire longue, continue et largement antérieure au canon Clausewitz-Jomini auquel le XXe siècle l'a réduite : les questions de la guerre juste, de la petite guerre, de la stratégie navale ou de la contre-insurrection ont été traitées bien avant, et le prestige du canon tient à sa transmission institutionnelle autant qu'à son contenu."
+   "preuve": "The Evolution of Strategy: Thinking War from Antiquity to the Present (2010) et The Strategy Makers: Thoughts on War and Society from Machiavelli to Clausewitz (2010) reconstituent cette généalogie ;"
   },
   {
    "type": "mobilise",
@@ -6591,20 +5934,6 @@
    "champ": "apport",
    "designation": "herman kahn",
    "preuve": "Membre senior de la RAND de 1951 à 1966, il y installe la réflexion stratégique civile aux côtés de Herman Kahn."
-  },
-  {
-   "type": "mobilise",
-   "de": {
-    "type": "humaine",
-    "id": "big-bang-modele-cosmologique"
-   },
-   "vers": {
-    "type": "humaine",
-    "id": "max-planck"
-   },
-   "champ": "apport",
-   "designation": "planck",
-   "preuve": "Cadre standard de la cosmologie moderne (modèle ΛCDM) ; confirmé avec une précision croissante par les missions spatiales d'observation du fond diffus cosmologique (COBE, WMAP, Planck) ;"
   },
   {
    "type": "mobilise",
@@ -6714,9 +6043,9 @@
     "type": "humaine",
     "id": "pierre-bourdieu"
    },
-   "champ": "these_centrale",
+   "champ": "apport",
    "designation": "bourdieu",
-   "preuve": "Chez Bourdieu, c'est un bien individuel — « Social capital is the aggregate of the actual or potential resources which are linked to possession of a durable network of more or less institutionalized relationships of mutual acquaintance and recognition » —, dont « the volume of the social capital possessed by a given agent thus depends on the size of the network of connections he can effectively mobilize and on the volume of the capital (economic, cultural or symbolic) possessed in his own right by each of those to whom he is connected »."
+   "preuve": "Bourdieu a donné à la sociologie de la reproduction un terme qui manquait : un actif relationnel distinct du capital économique et du capital culturel, et dont l'entretien a un coût — « The reproduction of social capital presupposes an unceasing effort of sociability, a continuous series of exchanges in which recognition is endlessly affirmed and reaffirmed »."
   },
   {
    "type": "mobilise",
@@ -6862,20 +6191,6 @@
    "type": "mobilise",
    "de": {
     "type": "humaine",
-    "id": "christine-ladd-franklin"
-   },
-   "vers": {
-    "type": "humaine",
-    "id": "rosalind-franklin"
-   },
-   "champ": "these_centrale",
-   "designation": "franklin",
-   "preuve": "Ladd-Franklin soutient que la vision des couleurs s'est constituée par différenciation évolutive en trois étapes successives : une vision achromatique en noir et blanc, puis une sensibilité bleu-jaune, enfin une sensibilité rouge-vert, la plus récemment acquise."
-  },
-  {
-   "type": "mobilise",
-   "de": {
-    "type": "humaine",
     "id": "christine-sylvester"
    },
    "vers": {
@@ -6904,43 +6219,15 @@
    "type": "mobilise",
    "de": {
     "type": "humaine",
-    "id": "cnrs"
-   },
-   "vers": {
-    "type": "humaine",
-    "id": "limites-planetaires-stockholm-resilience-centre"
-   },
-   "champ": "these_centrale",
-   "designation": "centre",
-   "preuve": "Le CNRS (Centre national de la recherche scientifique, fondé en 1939) est le principal organisme public de recherche pluridisciplinaire en France, couvrant l'ensemble des domaines scientifiques des mathématiques aux sciences humaines et sociales, en partenariat étroit avec les universités."
-  },
-  {
-   "type": "mobilise",
-   "de": {
-    "type": "humaine",
-    "id": "croissance-de-solow-swan"
-   },
-   "vers": {
-    "type": "humaine",
-    "id": "mamie-phipps-clark"
-   },
-   "champ": "apport",
-   "designation": "clark",
-   "preuve": "Robert Solow a reçu pour ces travaux le prix de la Banque de Suède en sciences économiques en mémoire d'Alfred Nobel en 1987, après la médaille John Bates Clark en 1961."
-  },
-  {
-   "type": "mobilise",
-   "de": {
-    "type": "humaine",
     "id": "croissance-de-solow-swan"
    },
    "vers": {
     "type": "humaine",
     "id": "robert-solow"
    },
-   "champ": "these_centrale",
-   "designation": "solow",
-   "preuve": "Le modèle de croissance de Solow-Swan (1956) explique la croissance économique de long terme par l'accumulation du capital et le facteur travail, l'économie convergeant vers un équilibre de long terme appelé état stationnaire."
+   "champ": "apport",
+   "designation": "robert solow",
+   "preuve": "Robert Solow a reçu pour ces travaux le prix de la Banque de Suède en sciences économiques en mémoire d'Alfred Nobel en 1987, après la médaille John Bates Clark en 1961."
   },
   {
    "type": "mobilise",
@@ -7123,34 +6410,6 @@
    "champ": "these_centrale",
    "designation": "social democratie",
    "preuve": "L'économie sociale de marché, mise en place en Allemagne de l'Ouest par l'Union chrétienne-démocrate sous la direction du chancelier Konrad Adenauer, applique le principe « autant de marché que possible, autant d'État que nécessaire » ; elle est inspirée par l'ordolibéralisme, par les idées de la social-démocratie et par la doctrine sociale de l'Église catholique — trois sources distinctes qu'il ne faut pas confondre avec un modèle social-démocrate au sens partisan."
-  },
-  {
-   "type": "mobilise",
-   "de": {
-    "type": "humaine",
-    "id": "edelman-trust-barometer"
-   },
-   "vers": {
-    "type": "humaine",
-    "id": "global-peace-index"
-   },
-   "champ": "these_centrale",
-   "designation": "index",
-   "preuve": "Le baromètre pose que la confiance est une propriété des institutions, réductible à quatre d'entre elles — entreprises, gouvernement, médias, ONG — et objectivée par une note sur une échelle en neuf points dont on retient les quatre positions hautes comme « confiance » ; le Trust Index en est la moyenne, défini comme « the average percent trust in business, government, media, and NGOs »."
-  },
-  {
-   "type": "mobilise",
-   "de": {
-    "type": "humaine",
-    "id": "edward-luttwak"
-   },
-   "vers": {
-    "type": "humaine",
-    "id": "william-james"
-   },
-   "champ": "apport",
-   "designation": "james",
-   "preuve": "Coup d'État: A Practical Handbook (1968) et The Grand Strategy of the Roman Empire (1976) l'ont précédé ; il fut consultant du secrétaire à la Défense James Schlesinger et travailla avec l'Office of Net Assessment pendant une quarantaine d'années."
   },
   {
    "type": "mobilise",
@@ -7366,20 +6625,6 @@
    "type": "mobilise",
    "de": {
     "type": "humaine",
-    "id": "erving-goffman"
-   },
-   "vers": {
-    "type": "humaine",
-    "id": "limites-planetaires-stockholm-resilience-centre"
-   },
-   "champ": "apport",
-   "designation": "centre",
-   "preuve": "Il fonde l'analyse dramaturgique (The Presentation of Self in Everyday Life, University of Edinburgh Social Sciences Research Centre, 1956 ;"
-  },
-  {
-   "type": "mobilise",
-   "de": {
-    "type": "humaine",
     "id": "esa"
    },
    "vers": {
@@ -7487,20 +6732,6 @@
    "champ": "these_centrale",
    "designation": "centre",
    "preuve": "Fei soutient que la société rurale chinoise ne s'organise pas, comme la société occidentale, par appartenance à des groupes aux contours définis, mais par cercles de relations personnelles dont chaque individu est le centre et dont la force décroît à mesure qu'on s'en éloigne — les ondes concentriques que produit une pierre jetée dans l'eau."
-  },
-  {
-   "type": "mobilise",
-   "de": {
-    "type": "humaine",
-    "id": "forum-economique-mondial-wef"
-   },
-   "vers": {
-    "type": "humaine",
-    "id": "world-happiness-report"
-   },
-   "champ": "apport",
-   "designation": "report",
-   "preuve": "Il est devenu un lieu de convergence médiatisé où se nouent des annonces économiques et diplomatiques, et publie une série de rapports repris par les décideurs et les médias : Global Competitiveness Report (1979), Global Information Technology Report (2001), Global Gender Gap Report (2005), Global Risk Report (2006), Travel and Tourism Competitiveness Report (2007), Global Enabling Trade Report (2008)."
   },
   {
    "type": "mobilise",
@@ -7650,20 +6881,6 @@
    },
    "vers": {
     "type": "humaine",
-    "id": "baruch-spinoza"
-   },
-   "champ": "apport",
-   "designation": "spinoza",
-   "preuve": "Renouvellement de l'histoire de la philosophie (Nietzsche, Spinoza, Bergson) par une lecture non représentative ;"
-  },
-  {
-   "type": "mobilise",
-   "de": {
-    "type": "humaine",
-    "id": "gilles-deleuze"
-   },
-   "vers": {
-    "type": "humaine",
     "id": "friedrich-nietzsche"
    },
    "champ": "apport",
@@ -7795,20 +7012,6 @@
    "champ": "apport",
    "designation": "johnson",
    "preuve": "Sa cinquième maxime — ne pas confondre la morale d'un État avec la morale tout court — lui a servi à s'opposer publiquement à l'engagement américain au Viêt Nam, qu'il tenait pour une guerre civile dont la portée mondiale était lointaine ; il fut écarté en 1965 de son rôle de consultant de l'administration Johnson."
-  },
-  {
-   "type": "mobilise",
-   "de": {
-    "type": "humaine",
-    "id": "harold-garfinkel"
-   },
-   "vers": {
-    "type": "humaine",
-    "id": "emile-durkheim"
-   },
-   "champ": "apport",
-   "designation": "durkheim",
-   "preuve": "Studies in Ethnomethodology (Prentice-Hall, 1967) fixe le programme, poursuivi dans Ethnomethodology's Program: Working Out Durkheim's Aphorism (Rowman & Littlefield, 2002)."
   },
   {
    "type": "mobilise",
@@ -8142,9 +7345,9 @@
     "type": "humaine",
     "id": "pierre-bourdieu"
    },
-   "champ": "these_centrale",
+   "champ": "apport",
    "designation": "bourdieu",
-   "preuve": "Avec Bourdieu, Passeron soutient que l'école transmet un arbitraire culturel qu'elle impose comme légitime : la violence symbolique est doublement arbitraire, en ce qu'elle impose des significations arbitraires par un pouvoir arbitraire, et elle s'exerce avec le consentement implicite des dominés, qui ne disposent pas d'une autre grille conceptuelle que celle des dominants pour l'interpréter."
+   "preuve": "Éléments pour une théorie du système d'enseignement (Minuit, 1970), écrits avec Bourdieu, fournissent à la sociologie de l'éducation sa théorie de référence pour un demi-siècle."
   },
   {
    "type": "mobilise",
@@ -8234,20 +7437,6 @@
    "type": "mobilise",
    "de": {
     "type": "humaine",
-    "id": "joseph-nye"
-   },
-   "vers": {
-    "type": "humaine",
-    "id": "robert-keohane"
-   },
-   "champ": "these_centrale",
-   "designation": "keohane",
-   "preuve": "Avec Keohane, il avait établi que dans une interdépendance complexe l'utilité politique de la force diminue sans disparaître."
-  },
-  {
-   "type": "mobilise",
-   "de": {
-    "type": "humaine",
     "id": "k-m-panikkar"
    },
    "vers": {
@@ -8290,20 +7479,6 @@
    "type": "mobilise",
    "de": {
     "type": "humaine",
-    "id": "kathryn-sikkink"
-   },
-   "vers": {
-    "type": "humaine",
-    "id": "martha-finnemore"
-   },
-   "champ": "apport",
-   "designation": "finnemore",
-   "preuve": "Avec Finnemore, elle a fourni le modèle du cycle de vie des normes."
-  },
-  {
-   "type": "mobilise",
-   "de": {
-    "type": "humaine",
     "id": "kenneth-arrow"
    },
    "vers": {
@@ -8327,20 +7502,6 @@
    "champ": "apport",
    "designation": "stanford",
    "preuve": "« Mapping the Margins » (Stanford Law Review, 1991) en tire l'analyse des violences faites aux femmes de couleur ;"
-  },
-  {
-   "type": "mobilise",
-   "de": {
-    "type": "humaine",
-    "id": "kurt-lewin"
-   },
-   "vers": {
-    "type": "humaine",
-    "id": "harrison-white"
-   },
-   "champ": "apport",
-   "designation": "white",
-   "preuve": "L'étude conduite avec Ronald Lippitt et Ralph White en 1939 sur les climats de leadership — autoritaire, démocratique, laisser-faire — ouvre l'étude expérimentale des atmosphères de groupe."
   },
   {
    "type": "mobilise",
@@ -8686,39 +7847,11 @@
    },
    "vers": {
     "type": "humaine",
-    "id": "norbert-elias"
-   },
-   "champ": "apport",
-   "designation": "elias",
-   "preuve": "Georg Elias Müller la reprend et la rebaptise Treffermethode, Titchener l'inclut dans son Student's Manual, et la méthode reste en usage."
-  },
-  {
-   "type": "mobilise",
-   "de": {
-    "type": "humaine",
-    "id": "mary-whiton-calkins"
-   },
-   "vers": {
-    "type": "humaine",
     "id": "william-james"
    },
    "champ": "apport",
    "designation": "william james",
    "preuve": "Harvard, sur décision du président Charles William Eliot, lui refusa en 1895 le doctorat malgré la recommandation unanime du département et le jugement de William James, qui tenait son examen pour le plus brillant que Harvard eût connu."
-  },
-  {
-   "type": "mobilise",
-   "de": {
-    "type": "humaine",
-    "id": "mauricio-ferraris"
-   },
-   "vers": {
-    "type": "humaine",
-    "id": "richard-rorty"
-   },
-   "champ": "apport",
-   "designation": "rorty",
-   "preuve": "Manifeste du nouveau réalisme (2012), qui a relancé un débat international majeur contre l'héritage postmoderne (Vattimo, Rorty) ;"
   },
   {
    "type": "mobilise",
@@ -8906,20 +8039,6 @@
    "type": "mobilise",
    "de": {
     "type": "humaine",
-    "id": "ocde-how-s-life-better-life-index"
-   },
-   "vers": {
-    "type": "humaine",
-    "id": "global-peace-index"
-   },
-   "champ": "these_centrale",
-   "designation": "index",
-   "preuve": "Le refus d'agréger est le postulat central : How's Life ? aligne « over 80 indicators covering current well-being outcomes » côte à côte sans note de synthèse, et le Better Life Index en ligne remet la pondération à l'utilisateur, qui note chacun des onze thèmes de 0 à 5 et obtient son propre classement."
-  },
-  {
-   "type": "mobilise",
-   "de": {
-    "type": "humaine",
     "id": "oliver-cromwell-cox"
    },
    "vers": {
@@ -8943,20 +8062,6 @@
    "champ": "apport",
    "designation": "ratzel",
    "preuve": "Il oppose au déterminisme de Ratzel — dont il recommandait pourtant la lecture aux géographes en 1898, tout en en relevant l'imprécision conceptuelle — un cadre où l'initiative humaine reste première."
-  },
-  {
-   "type": "mobilise",
-   "de": {
-    "type": "humaine",
-    "id": "paul-vidal-de-la-blache"
-   },
-   "vers": {
-    "type": "humaine",
-    "id": "pierre-marie-gallois"
-   },
-   "champ": "apport",
-   "designation": "gallois",
-   "preuve": "Il fonde l'école française de géographie et lui donne ses outils : la notion de genre de vie, l'analyse par milieux et régions, et une revue, les Annales de géographie, cofondée en 1891 avec Marcel Dubois et Lucien Gallois."
   },
   {
    "type": "mobilise",
@@ -9004,20 +8109,6 @@
    "type": "mobilise",
    "de": {
     "type": "humaine",
-    "id": "peter-wason"
-   },
-   "vers": {
-    "type": "humaine",
-    "id": "simon-johnson"
-   },
-   "champ": "apport",
-   "designation": "johnson",
-   "preuve": "Psychology of Reasoning, écrit avec Philip Johnson-Laird en 1972, en tire un programme sur le contenu du raisonnement."
-  },
-  {
-   "type": "mobilise",
-   "de": {
-    "type": "humaine",
     "id": "philip-johnson-laird"
    },
    "vers": {
@@ -9027,20 +8118,6 @@
    "champ": "apport",
    "designation": "peter wason",
    "preuve": "Mental Models (Harvard University Press, 1983) donne à la théorie des modèles mentaux sa forme canonique, après Psychology of Reasoning: Structure and Content écrit avec Peter Wason (1972)."
-  },
-  {
-   "type": "mobilise",
-   "de": {
-    "type": "humaine",
-    "id": "philip-johnson-laird"
-   },
-   "vers": {
-    "type": "humaine",
-    "id": "simon-johnson"
-   },
-   "champ": "these_centrale",
-   "designation": "johnson",
-   "preuve": "Johnson-Laird soutient que raisonner consiste à se représenter les possibilités compatibles avec le point de départ — perception, assertions, souvenir — et à en tirer une conclusion, non à appliquer des règles formelles d'inférence à la forme logique des phrases."
   },
   {
    "type": "mobilise",
@@ -9410,20 +8487,6 @@
    "type": "mobilise",
    "de": {
     "type": "humaine",
-    "id": "rosi-braidotti"
-   },
-   "vers": {
-    "type": "humaine",
-    "id": "luce-irigaray"
-   },
-   "champ": "apport",
-   "designation": "irigaray",
-   "preuve": "The Posthuman (2013), référence majeure des études posthumanistes contemporaines, articulant féminisme, philosophie de la différence (Deleuze, Irigaray) et critique de l'anthropocentrisme."
-  },
-  {
-   "type": "mobilise",
-   "de": {
-    "type": "humaine",
     "id": "rudolf-kjellen"
    },
    "vers": {
@@ -9433,34 +8496,6 @@
    "champ": "apport",
    "designation": "social democratie",
    "preuve": "Il est également l'auteur du mot folkhemmet, le « foyer du peuple », que la social-démocratie suédoise reprendra à son compte."
-  },
-  {
-   "type": "mobilise",
-   "de": {
-    "type": "humaine",
-    "id": "samir-amin"
-   },
-   "vers": {
-    "type": "humaine",
-    "id": "limites-planetaires-stockholm-resilience-centre"
-   },
-   "champ": "these_centrale",
-   "designation": "centre",
-   "preuve": "Amin soutient que les économies sous-développées ne sont pas des économies en retard mais des composantes structurelles d'un même système capitaliste mondial : développement et sous-développement sont deux faces de la même expansion, et la polarisation centre-périphérie est produite par le système, non résiduelle."
-  },
-  {
-   "type": "mobilise",
-   "de": {
-    "type": "humaine",
-    "id": "samuel-huntington"
-   },
-   "vers": {
-    "type": "humaine",
-    "id": "herbert-simon"
-   },
-   "champ": "apport",
-   "designation": "simon",
-   "preuve": "22-49), puis The Clash of Civilizations and the Remaking of World Order (New York, Simon & Schuster, 1996), ont donné à la période d'après 1989 une grille d'interprétation dont la fortune publique a dépassé de loin l'adhésion académique — elle a organisé le débat plus qu'elle ne l'a emporté."
   },
   {
    "type": "mobilise",
@@ -9503,34 +8538,6 @@
    "champ": "these_centrale",
    "designation": "durkheim",
    "preuve": "Il soutient enfin, dans le prolongement de Durkheim, que l'intégration se décompose en types d'attachement — filiation, participation élective, participation organique, citoyenneté — dont les fragilisations se cumulent."
-  },
-  {
-   "type": "mobilise",
-   "de": {
-    "type": "humaine",
-    "id": "shalom-schwartz"
-   },
-   "vers": {
-    "type": "humaine",
-    "id": "world-values-survey"
-   },
-   "champ": "apport",
-   "designation": "survey",
-   "preuve": "« Universals in the content and structure of values: Theoretical advances and empirical tests in 20 countries » (Advances in Experimental Social Psychology, 1992, 25, 1-65) pose dix types de valeurs et leur structure circulaire, avec l'instrument correspondant, le Schwartz Value Survey."
-  },
-  {
-   "type": "mobilise",
-   "de": {
-    "type": "humaine",
-    "id": "simon-baron-cohen"
-   },
-   "vers": {
-    "type": "humaine",
-    "id": "saul-b-cohen"
-   },
-   "champ": "these_centrale",
-   "designation": "cohen",
-   "preuve": "Baron-Cohen soutient que les difficultés de communication sociale dans l'autisme s'expliquent par un retard ou un déficit de théorie de l'esprit — la « cécité mentale » —, c'est-à-dire de la capacité à attribuer à autrui une croyance différente de la sienne."
   },
   {
    "type": "mobilise",
@@ -9634,20 +8641,6 @@
    "type": "mobilise",
    "de": {
     "type": "humaine",
-    "id": "stanislas-dehaene"
-   },
-   "vers": {
-    "type": "humaine",
-    "id": "saul-b-cohen"
-   },
-   "champ": "apport",
-   "designation": "cohen",
-   "preuve": "Les Neurones de la lecture (2007) et « Cultural Recycling of Cortical Maps », avec Laurent Cohen (Neuron 56(2), 384-398, 2007), donnent une explication neurobiologique de la stabilité interculturelle des circuits de la lecture et une base à l'intervention pédagogique."
-  },
-  {
-   "type": "mobilise",
-   "de": {
-    "type": "humaine",
     "id": "stephen-hawking"
    },
    "vers": {
@@ -9671,34 +8664,6 @@
    "champ": "apport",
    "designation": "elizabeth spelke",
    "preuve": "Avec Elizabeth Spelke, elle formule la proposition d'un jeu de systèmes de cognition centrale — objets, agents, nombre, peut-être causalité et espace — présents dès le début, et applique l'ensemble à l'acquisition des entiers, où l'individuation parallèle d'un petit nombre d'objets et la représentation analogique des magnitudes sont mobilisées tour à tour."
-  },
-  {
-   "type": "mobilise",
-   "de": {
-    "type": "humaine",
-    "id": "susan-fiske"
-   },
-   "vers": {
-    "type": "humaine",
-    "id": "peter-j-taylor"
-   },
-   "champ": "apport",
-   "designation": "taylor",
-   "preuve": "Avec Shelley Taylor, elle a fixé le domaine dans le manuel Social Cognition ;"
-  },
-  {
-   "type": "mobilise",
-   "de": {
-    "type": "humaine",
-    "id": "susan-strange"
-   },
-   "vers": {
-    "type": "humaine",
-    "id": "saul-b-cohen"
-   },
-   "champ": "apport",
-   "designation": "cohen",
-   "preuve": "Blackwell, 1986) puis The Retreat of the State (Cambridge University Press, 1996) fondent la variante britannique de la discipline, interprétative et généraliste, en face d'une économie politique internationale américaine positiviste et quantitative — partage dont Benjamin Cohen a écrit l'histoire intellectuelle."
   },
   {
    "type": "mobilise",
@@ -9848,20 +8813,6 @@
    },
    "vers": {
     "type": "humaine",
-    "id": "saul-b-cohen"
-   },
-   "champ": "apport",
-   "designation": "cohen",
-   "preuve": "Elle est coautrice, avec Simon Baron-Cohen et Alan Leslie, de l'article de 1985 qui établit expérimentalement le déficit de fausse croyance."
-  },
-  {
-   "type": "mobilise",
-   "de": {
-    "type": "humaine",
-    "id": "uta-frith"
-   },
-   "vers": {
-    "type": "humaine",
     "id": "simon-baron-cohen"
    },
    "champ": "apport",
@@ -9881,20 +8832,6 @@
    "champ": "these_centrale",
    "designation": "gary becker",
    "preuve": "Elle récuse deux positions symétriques : celle des « mondes hostiles », qui tient relations personnelles et échange marchand pour incompatibles et voudrait les séparer, et la réduction « rien que », qui ramène les relations affectives à un calcul économique, telle que la pratique l'économiste Gary Becker."
-  },
-  {
-   "type": "mobilise",
-   "de": {
-    "type": "humaine",
-    "id": "vladimir-kolossov"
-   },
-   "vers": {
-    "type": "humaine",
-    "id": "limites-planetaires-stockholm-resilience-centre"
-   },
-   "champ": "these_centrale",
-   "designation": "centre",
-   "preuve": "Kolossov soutient que la frontière n'est pas une ligne donnée mais un objet à construire théoriquement, et que son étude — la limologie — doit tenir ensemble quatre familles d'approches irréductibles l'une à l'autre : les identités territoriales et le rapport centre-périphérie, les facteurs géopolitiques et culturels liés à la sécurité, la diversité des visions du monde chez les dirigeants et dans l'opinion, enfin l'entrelacement des institutions et des réseaux transfrontaliers à plusieurs échelles territoriales."
   },
   {
    "type": "mobilise",

@@ -22,6 +22,7 @@ import type { TypeFicheRag } from "@/lib/sources-corpus";
 
 export type TypeRelation =
   | "conteste"
+  | "mention"
   | "mobilise"
   | "source_commune"
   | "succession"
@@ -67,6 +68,7 @@ export type RoleCroisement =
   | "contradiction"
   | "autre_discipline"
   | "appui"
+  | "mention_limites"
   | "antecedent"
   | "posterite"
   | "meme_preuve"
@@ -146,6 +148,8 @@ function roleDepuis(type: TypeRelation, sortante: boolean): RoleCroisement | nul
   switch (type) {
     case "conteste":
       return "contradiction";
+    case "mention":
+      return "mention_limites";
     case "mobilise":
       return "appui";
     case "succession":
@@ -174,6 +178,13 @@ function enonceDe(role: RoleCroisement, nomSource: string, nomCible: string, sor
       return sortante
         ? `« ${nomSource} » nomme « ${nomCible} » dans sa thèse ou son apport : elle s'y adosse.`
         : `« ${nomCible} » nomme « ${nomSource} » dans sa thèse ou son apport : elle s'y adosse.`;
+    // Nommée dans les limites, sans marque d'opposition. Le lien est réel, le
+    // désaccord ne l'est pas : le dire autrement serait fabriquer une
+    // controverse.
+    case "mention_limites":
+      return sortante
+        ? `« ${nomSource} » nomme « ${nomCible} » dans ses limites critiques, sans en faire une objection.`
+        : `« ${nomCible} » nomme « ${nomSource} » dans ses limites critiques, sans en faire une objection.`;
     case "antecedent":
       return `« ${nomCible} » précède « ${nomSource} » dans le même sous-domaine.`;
     case "posterite":
@@ -249,6 +260,7 @@ export const PRIORITE_ROLE: Record<RoleCroisement, number> = {
   contradiction: 90,
   autre_discipline: 70,
   appui: 60,
+  mention_limites: 55,
   antecedent: 50,
   posterite: 45,
   couple_ia: 40,
@@ -262,6 +274,7 @@ export const LIBELLE_ROLE: Record<RoleCroisement, string> = {
   contradiction: "contradiction documentée",
   autre_discipline: "même objet, autre discipline",
   appui: "appui explicite",
+  mention_limites: "nommée dans les limites",
   antecedent: "antécédent historique",
   posterite: "postérité",
   couple_ia: "paire humain × IA documentée",

@@ -1,4 +1,4 @@
-name: Relations — retisser le graphe de croisement
+name: Relations — graphe de croisement et questionnement du jour
 
 # Le graphe de relations (data/relations-corpus.json) est de la donnée DÉRIVÉE :
 # il se recalcule entièrement depuis les fiches. Dès qu'une fiche est ajoutée ou
@@ -43,11 +43,18 @@ jobs:
       - name: Vérifier que le graphe correspond bien au corpus
         run: node scripts/tisser-relations.mjs --verifier
 
-      - name: Committer le graphe (s'il a changé)
+      # Le questionnement tourne sur le graphe : il change quand le graphe change,
+      # et de toute façon chaque jour (la rotation des angles est datée). Il est
+      # régénéré ici pour que la page ne présente jamais des angles calculés sur
+      # un graphe périmé.
+      - name: Régénérer le questionnement du jour
+        run: node scripts/questionnement.mjs
+
+      - name: Committer le graphe et le questionnement (s'ils ont changé)
         run: |
           git config user.name "atlas-relations-bot"
           git config user.email "relations-bot@users.noreply.github.com"
-          git add data/relations-corpus.json
+          git add data/relations-corpus.json data/seed/questionnement.json
           if git diff --cached --quiet; then
             echo "Graphe inchangé — le corpus n'a pas bougé."
           else
@@ -56,7 +63,7 @@ jobs:
               const parType = Object.entries(g.compte_par_type).map(([t, n]) => t + ':' + n).join(' ');
               console.log('RESUME=' + g.relations.length + ' relations (' + parType + ')');
             " >> "$GITHUB_ENV"
-            git commit -m "chore(relations): graphe retissé — ${RESUME:-mise à jour} [skip ci]"
+            git commit -m "chore(relations): graphe et questionnement du jour — ${RESUME:-mise à jour} [skip ci]"
             git push
           fi
 

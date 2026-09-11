@@ -650,6 +650,15 @@ function mettreEnTension(choisis: GroupeFiche[]): string {
     );
   }
 
+  const mentions = choisis.filter((g) => g.role === "mention_limites");
+  if (mentions.length > 0) {
+    morceaux.push(
+      `${mentions.map((g) => `« ${g.nom} »`).join(" et ")} ${mentions.length === 1 ? "est nommée" : "sont nommées"} ` +
+        "dans les limites de la fiche pivot, mais sans objection formulée : le lien est établi, le désaccord ne " +
+        "l'est pas."
+    );
+  }
+
   const appuis = choisis.filter((g) => g.role === "appui");
   if (appuis.length > 0) {
     morceaux.push(

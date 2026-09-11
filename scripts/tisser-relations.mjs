@@ -17,8 +17,13 @@
  *
  * Les six types de relations
  * --------------------------
- *   conteste        A nomme B dans ses LIMITES CRITIQUES. A oppose quelque
- *                   chose à B. Preuve : la phrase de A qui nomme B.
+ *   conteste        A nomme B dans ses LIMITES CRITIQUES, et la phrase porte une
+ *                   marque d'opposition (conteste, réfute, en tension, débat…).
+ *                   Preuve : la phrase de A qui nomme B.
+ *   mention         A nomme B dans ses LIMITES CRITIQUES, mais SANS marque
+ *                   d'opposition — ou avec une marque qui la nie
+ *                   explicitement (« aucune réfutation… au contraire »).
+ *                   Le lien existe, le désaccord n'est pas établi.
  *   mobilise        A nomme B dans sa THÈSE ou son APPORT. A s'appuie sur B.
  *   source_commune  A et B citent la même source. Leur accord éventuel pèse
  *                   moins lourd qu'il n'en a l'air — c'est la même preuve.
@@ -55,7 +60,7 @@ const SEED = join(RACINE, "data/seed");
 const SORTIE = join(RACINE, "data/relations-corpus.json");
 
 /** Version du tisseur. Change dès que la détection change : le garde-fou le voit. */
-export const MODELE_RELATIONS = "relations-corpus-v1";
+export const MODELE_RELATIONS = "relations-corpus-v2";
 
 /* -------------------------------------------------------------------------- */
 /* Lecture du corpus                                                          */
@@ -167,6 +172,44 @@ export function phrasePreuve(texte, designation) {
   return null;
 }
 
+/**
+ * Rejette un patronyme porté par quelqu'un d'autre.
+ *
+ * « Achille Mbembe » nomme « Felix Klein, commissaire du gouvernement fédéral à
+ * l'antisémitisme » : le patronyme « klein » rattachait la fiche à « Mélanie
+ * Klein », psychanalyste, qui n'a rien à voir. La règle : si l'occurrence est
+ * précédée d'un prénom (mot capitalisé) qui n'est PAS celui de la fiche visée,
+ * ce n'est pas la bonne personne.
+ *
+ * Ne s'applique qu'aux désignations par patronyme seul : un nom complet trouvé
+ * en entier ne souffre pas de cette ambiguïté.
+ */
+export function bonPorteur(preuve, designation, nomCible) {
+  const motsCible = aplatir(nomCible).split(" ").filter(Boolean);
+  if (motsCible.length < 2) return true;
+  if (designation === aplatir(nomCible)) return true;
+  if (designation !== motsCible[motsCible.length - 1]) return true;
+
+  const prenomsCible = new Set(motsCible.slice(0, -1));
+  const mots = String(preuve).split(/\s+/);
+  let vuIsole = false;
+  for (let i = 0; i < mots.length; i += 1) {
+    if (aplatir(mots[i]).replace(/ /g, "") !== designation) continue;
+    const precedent = i > 0 ? mots[i - 1].replace(/[^\p{L}'-]/gu, "") : "";
+    const platPrecedent = aplatir(precedent);
+    const capitalise =
+      precedent.length > 1 &&
+      precedent[0] === precedent[0].toLocaleUpperCase("fr") &&
+      precedent[0] !== precedent[0].toLocaleLowerCase("fr");
+    // Précédé d'un prénom étranger à la fiche : mauvais porteur, on continue de
+    // chercher une autre occurrence dans la même phrase.
+    if (capitalise && platPrecedent && !prenomsCible.has(platPrecedent)) continue;
+    vuIsole = true;
+    break;
+  }
+  return vuIsole;
+}
+
 /* -------------------------------------------------------------------------- */
 /* Périodes                                                                   */
 /* -------------------------------------------------------------------------- */
@@ -224,6 +267,71 @@ const CHAMPS_NOMINATIFS = [
   { champ: "apport", type: "mobilise" },
 ];
 
+/**
+ * Marques d'opposition. Être nommé dans le champ « limites critiques » ne suffit
+ * pas à établir un désaccord : la fiche « Aaron Cicourel » y écrit « Aucune
+ * réfutation nommément attribuée n'a été trouvée : Robin James Smith et Paul
+ * Atkinson présentent AU CONTRAIRE cette critique comme fondatrice ». Classer
+ * cela en « conteste » était un contresens — et le plus grave possible, puisque
+ * la réponse le présentait ensuite comme la contradiction de la question.
+ *
+ * Une phrase ne fonde une contestation que si elle porte une de ces marques.
+ * Sinon la relation existe quand même, mais comme simple MENTION.
+ */
+const MARQUES_OPPOSITION = [
+  "conteste",
+  "contestee",
+  "contestation",
+  "critique",
+  "critiquee",
+  "reproche",
+  "objecte",
+  "objection",
+  "refute",
+  "refutation",
+  "refuse",
+  "recuse",
+  "s oppose",
+  "oppose",
+  "en tension",
+  "en desaccord",
+  "desaccord",
+  "controverse",
+  "debat",
+  "debats",
+  "polemique",
+  "remet en cause",
+  "met en cause",
+  "infirme",
+  "invalide",
+  "limite de",
+  "insuffisant",
+];
+
+/** Marques qui NIENT l'opposition : elles l'emportent sur les précédentes. */
+const MARQUES_NEGATION = [
+  "aucune refutation",
+  "aucune critique",
+  "au contraire",
+  "n a ete trouvee",
+  "n a pas ete trouvee",
+  "fondatrice",
+  "prolongee par",
+  "prolonge par",
+  "dans la continuite",
+];
+
+/**
+ * Le type réellement porté par une phrase du champ « limites critiques ».
+ * Renvoie « conteste » ou « mention ».
+ */
+export function typeDepuisPreuve(preuve) {
+  const p = ` ${aplatir(preuve)} `;
+  for (const marque of MARQUES_NEGATION) if (p.includes(` ${marque} `) || p.includes(`${marque} `)) return "mention";
+  for (const marque of MARQUES_OPPOSITION) if (p.includes(` ${marque}`)) return "conteste";
+  return "mention";
+}
+
 /** Plafond d'arêtes nominatives sortantes par fiche et par type. */
 const MAX_ARETES_PAR_FICHE = 8;
 
@@ -264,9 +372,10 @@ export function tisser(corpus) {
         if (deja >= MAX_ARETES_PAR_FICHE) continue;
         const preuve = phrasePreuve(texte, designation);
         if (!preuve) continue;
+        if (!bonPorteur(preuve, designation, cible.nom)) continue;
         comptes.set(type, deja + 1);
         ajouter({
-          type,
+          type: type === "conteste" ? typeDepuisPreuve(preuve) : type,
           de: { type: "humaine", id: fiche.id },
           vers: { type: cible.type, id: cible.id },
           champ,
@@ -289,6 +398,7 @@ export function tisser(corpus) {
       if (compte >= MAX_ARETES_PAR_FICHE) break;
       const preuve = phrasePreuve(texte, designation);
       if (!preuve) continue;
+      if (!bonPorteur(preuve, designation, cibles[0].nom)) continue;
       compte += 1;
       ajouter({
         type: "resonance",
