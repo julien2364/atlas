@@ -1,0 +1,99 @@
+{
+  "version": 1,
+  "etabli_le": "2026-09-11",
+  "pourquoi": "Sans étalon, régler le moteur de réponse se fait à l'impression : on change un poids, on relit cinq réponses, on trouve que « c'est mieux », et on se trompe une fois sur deux. Ce fichier fixe, pour des questions dont le référentiel contient manifestement la matière, les fiches qu'une bonne réponse DOIT mobiliser. Il ne dit pas quelle réponse est juste — il dit quelles fiches sont hors de discussion sur cette question.",
+  "comment_lire": "attendues = fiches que la réponse doit mobiliser (au moins une, mesurée en rappel@5) ; pivot_acceptable = fiches qui peuvent légitimement servir de point de départ. Une question dont aucune fiche attendue n'apparaît est un échec de recherche, pas un désaccord de goût.",
+  "limite_assumee": "18 questions, choisies parmi des sujets que le corpus couvre bien. L'étalon mesure donc la capacité à retrouver ce qui EXISTE, pas la couverture du référentiel — et il ne protège pas contre un réglage qui dégraderait des questions hors de cette liste.",
+  "questions": [
+    {
+      "question": "Comment se forment les inégalités sociales ?",
+      "attendues": ["pierre-bourdieu", "michele-lamont", "capital-social"],
+      "pivot_acceptable": ["pierre-bourdieu", "michele-lamont"]
+    },
+    {
+      "question": "La conscience est-elle réductible au cerveau ?",
+      "attendues": ["daniel-dennett", "roger-sperry", "john-searle"],
+      "pivot_acceptable": ["daniel-dennett", "roger-sperry", "john-searle"]
+    },
+    {
+      "question": "Le langage détermine-t-il la pensée ?",
+      "attendues": ["ludwig-wittgenstein", "noam-chomsky", "john-searle", "lev-vygotski"],
+      "pivot_acceptable": ["ludwig-wittgenstein", "noam-chomsky", "john-searle"]
+    },
+    {
+      "question": "Les réseaux sociaux transforment-ils les liens sociaux ?",
+      "attendues": ["mark-granovetter", "capital-social", "emile-durkheim"],
+      "pivot_acceptable": ["mark-granovetter", "capital-social"]
+    },
+    {
+      "question": "La démocratie libérale est-elle encore le meilleur régime politique ?",
+      "attendues": ["democratie-liberale", "chantal-mouffe", "john-rawls"],
+      "pivot_acceptable": ["democratie-liberale"]
+    },
+    {
+      "question": "Comment mesure-t-on la cohésion d'une société ?",
+      "attendues": ["indices-de-cohesion-sociale", "capital-social", "emile-durkheim"],
+      "pivot_acceptable": ["indices-de-cohesion-sociale", "capital-social"]
+    },
+    {
+      "question": "Comment expliquer la montée des populismes ?",
+      "attendues": ["national-populisme", "populisme-de-gauche", "populisme-de-droite", "democratie-illiberale"],
+      "pivot_acceptable": ["national-populisme", "populisme-de-gauche", "populisme-de-droite"]
+    },
+    {
+      "question": "Qu'est-ce qui distingue une théorie scientifique d'une théorie non scientifique ?",
+      "attendues": ["karl-popper"],
+      "pivot_acceptable": ["karl-popper"]
+    },
+    {
+      "question": "L'inflation se combat-elle par la monnaie ou par la demande ?",
+      "attendues": ["milton-friedman", "john-maynard-keynes", "is-lm-keynesianisme-de-synthese"],
+      "pivot_acceptable": ["milton-friedman", "john-maynard-keynes", "is-lm-keynesianisme-de-synthese"]
+    },
+    {
+      "question": "Le marché s'autorégule-t-il ou faut-il l'encastrer dans la société ?",
+      "attendues": ["karl-polanyi"],
+      "pivot_acceptable": ["karl-polanyi"]
+    },
+    {
+      "question": "Comment l'enfant apprend-il ?",
+      "attendues": ["jean-piaget", "lev-vygotski"],
+      "pivot_acceptable": ["jean-piaget", "lev-vygotski"]
+    },
+    {
+      "question": "Le comportement humain s'explique-t-il par le conditionnement ?",
+      "attendues": ["b-f-skinner"],
+      "pivot_acceptable": ["b-f-skinner"]
+    },
+    {
+      "question": "Qu'est-ce que la bureaucratie et pourquoi s'étend-elle ?",
+      "attendues": ["bureaucratie-weberienne", "max-weber"],
+      "pivot_acceptable": ["bureaucratie-weberienne", "max-weber"]
+    },
+    {
+      "question": "L'homme partage-t-il une culture avec les autres primates ?",
+      "attendues": ["jane-goodall", "michael-tomasello"],
+      "pivot_acceptable": ["jane-goodall", "michael-tomasello"]
+    },
+    {
+      "question": "Qu'est-ce qu'une société juste ?",
+      "attendues": ["john-rawls", "chantal-mouffe"],
+      "pivot_acceptable": ["john-rawls"]
+    },
+    {
+      "question": "Le totalitarisme est-il un régime politique comme un autre ?",
+      "attendues": ["hannah-arendt", "totalitarisme"],
+      "pivot_acceptable": ["hannah-arendt", "totalitarisme"]
+    },
+    {
+      "question": "L'inconscient explique-t-il nos actes ?",
+      "attendues": ["sigmund-freud"],
+      "pivot_acceptable": ["sigmund-freud"]
+    },
+    {
+      "question": "Quel est le meilleur système politique pour les hommes ?",
+      "attendues": ["democratie-liberale", "regime-semi-presidentiel", "totalitarisme"],
+      "pivot_acceptable": ["democratie-liberale", "regime-semi-presidentiel"]
+    }
+  ]
+}

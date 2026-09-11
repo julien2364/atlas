@@ -1,0 +1,263 @@
+{
+ "mesure_le": "2026-09-11",
+ "total": 18,
+ "pivot_acceptable": 12,
+ "rappel_at_5": 15,
+ "refus": 0,
+ "taux_pivot": 0.667,
+ "taux_rappel": 0.833,
+ "lignes": [
+  {
+   "question": "Comment se forment les inégalités sociales ?",
+   "statut": "repondue",
+   "pivot": "michele-lamont",
+   "pivot_bon": true,
+   "rappel": true,
+   "noms": [
+    "Michèle Lamont",
+    "Pierre Bourdieu",
+    "John Rawls",
+    "Libertarianisme",
+    "Communisme × Llama"
+   ]
+  },
+  {
+   "question": "La conscience est-elle réductible au cerveau ?",
+   "statut": "repondue",
+   "pivot": "roger-sperry",
+   "pivot_bon": true,
+   "rappel": true,
+   "noms": [
+    "Roger Sperry",
+    "Michael Gazzaniga",
+    "Neurosciences cognitives et connectome humain",
+    "Daniel Dennett",
+    "Simon Baron-Cohen"
+   ]
+  },
+  {
+   "question": "Le langage détermine-t-il la pensée ?",
+   "statut": "repondue",
+   "pivot": "yan-xuetong",
+   "pivot_bon": false,
+   "rappel": false,
+   "noms": [
+    "Yan Xuetong",
+    "Alan Turing × Claude (Anthropic) / Cowork",
+    "Joan Robinson",
+    "Théorie du chaos et systèmes complexes",
+    "George Herbert Mead"
+   ]
+  },
+  {
+   "question": "Les réseaux sociaux transforment-ils les liens sociaux ?",
+   "statut": "repondue",
+   "pivot": "mark-granovetter",
+   "pivot_bon": true,
+   "rappel": true,
+   "noms": [
+    "Mark Granovetter",
+    "Neurosciences cognitives et connectome humain × ResNet",
+    "Abhijit Banerjee",
+    "ResNet",
+    "Karl Polanyi"
+   ]
+  },
+  {
+   "question": "La démocratie libérale est-elle encore le meilleur régime politique ?",
+   "statut": "repondue",
+   "pivot": "democratie-liberale",
+   "pivot_bon": true,
+   "rappel": true,
+   "noms": [
+    "Démocratie libérale",
+    "John Rawls",
+    "Social-démocratie",
+    "Chantal Mouffe",
+    "Structure matricielle"
+   ]
+  },
+  {
+   "question": "Comment mesure-t-on la cohésion d'une société ?",
+   "statut": "repondue",
+   "pivot": "indices-de-cohesion-sociale",
+   "pivot_bon": true,
+   "rappel": true,
+   "noms": [
+    "Les indices de cohésion sociale",
+    "Ibn Khaldoun",
+    "Karl Polanyi",
+    "World Values Survey",
+    "Conseil de l'Europe"
+   ]
+  },
+  {
+   "question": "Comment expliquer la montée des populismes ?",
+   "statut": "repondue",
+   "pivot": "b-f-skinner",
+   "pivot_bon": false,
+   "rappel": false,
+   "noms": [
+    "B.F. Skinner",
+    "AlphaGo/AlphaZero/AlphaFold",
+    "B.F. Skinner × AlphaGo/AlphaZero/AlphaFold",
+    "Conseil de l'Europe × Arbres de décision",
+    "Noam Chomsky"
+   ]
+  },
+  {
+   "question": "Qu'est-ce qui distingue une théorie scientifique d'une théorie non scientifique ?",
+   "statut": "repondue",
+   "pivot": "cnrs",
+   "pivot_bon": false,
+   "rappel": true,
+   "noms": [
+    "CNRS",
+    "Werner Heisenberg × Hallucination et fiabilité factuelle (limite transversale)",
+    "Karl Popper",
+    "Michael Tomasello",
+    "Kenneth Waltz"
+   ]
+  },
+  {
+   "question": "L'inflation se combat-elle par la monnaie ou par la demande ?",
+   "statut": "repondue",
+   "pivot": "theorie-moderne-de-la-monnaie-mmt",
+   "pivot_bon": false,
+   "rappel": true,
+   "noms": [
+    "Théorie moderne de la monnaie (MMT)",
+    "Milton Friedman",
+    "Séries temporelles ARIMA/SARIMA",
+    "Big Bang (modèle cosmologique) × PCA",
+    "Herfried Münkler"
+   ]
+  },
+  {
+   "question": "Le marché s'autorégule-t-il ou faut-il l'encastrer dans la société ?",
+   "statut": "repondue",
+   "pivot": "karl-polanyi",
+   "pivot_bon": true,
+   "rappel": true,
+   "noms": [
+    "Karl Polanyi",
+    "Herbert Spencer",
+    "Capitalisme de marché libre (laissez-faire) × Biais hérités des données d'entraînement (limite transversale)",
+    "John Ruggie",
+    "Mark Granovetter"
+   ]
+  },
+  {
+   "question": "Comment l'enfant apprend-il ?",
+   "statut": "repondue",
+   "pivot": "michael-tomasello",
+   "pivot_bon": false,
+   "rappel": false,
+   "noms": [
+    "Michael Tomasello",
+    "James Watson × IA en génomique et drug discovery",
+    "Rosalind Franklin × Biais hérités des données d'entraînement (limite transversale)",
+    "Union africaine (UA) / OUA × Biais hérités des données d'entraînement (limite transversale)",
+    "Elizabeth Spelke"
+   ]
+  },
+  {
+   "question": "Le comportement humain s'explique-t-il par le conditionnement ?",
+   "statut": "repondue",
+   "pivot": "b-f-skinner",
+   "pivot_bon": true,
+   "rappel": true,
+   "noms": [
+    "B.F. Skinner",
+    "John B. Watson × Hallucination et fiabilité factuelle (limite transversale)",
+    "Friedrich Nietzsche × Claude (Anthropic) / Cowork",
+    "Beth Simmons",
+    "Noam Chomsky"
+   ]
+  },
+  {
+   "question": "Qu'est-ce que la bureaucratie et pourquoi s'étend-elle ?",
+   "statut": "repondue",
+   "pivot": "bureaucratie-weberienne",
+   "pivot_bon": true,
+   "rappel": true,
+   "noms": [
+    "Bureaucratie wébérienne",
+    "Gary Becker",
+    "Robert Michels",
+    "Béatrice Giblin",
+    "Elizabeth Loftus"
+   ]
+  },
+  {
+   "question": "L'homme partage-t-il une culture avec les autres primates ?",
+   "statut": "repondue",
+   "pivot": "jane-goodall",
+   "pivot_bon": true,
+   "rappel": true,
+   "noms": [
+    "Jane Goodall",
+    "Ligue arabe",
+    "Jacques Derrida",
+    "Patricia Goldman-Rakic",
+    "Amílcar Cabral"
+   ]
+  },
+  {
+   "question": "Qu'est-ce qu'une société juste ?",
+   "statut": "repondue",
+   "pivot": "john-rawls",
+   "pivot_bon": true,
+   "rappel": true,
+   "noms": [
+    "John Rawls",
+    "Biais hérités des données d'entraînement (limite transversale)",
+    "Toyotisme / Lean Management",
+    "Peter Berger",
+    "Démocratie libérale"
+   ]
+  },
+  {
+   "question": "Le totalitarisme est-il un régime politique comme un autre ?",
+   "statut": "repondue",
+   "pivot": "totalitarisme",
+   "pivot_bon": true,
+   "rappel": true,
+   "noms": [
+    "Totalitarisme",
+    "Fascisme",
+    "Théocratie islamique",
+    "Hannah Arendt",
+    "Raymond Aron"
+   ]
+  },
+  {
+   "question": "L'inconscient explique-t-il nos actes ?",
+   "statut": "repondue",
+   "pivot": "ivan-setchenov",
+   "pivot_bon": false,
+   "rappel": true,
+   "noms": [
+    "Ivan Setchenov",
+    "Hermann von Helmholtz",
+    "Carl Jung",
+    "Stanley Milgram",
+    "Sigmund Freud"
+   ]
+  },
+  {
+   "question": "Quel est le meilleur système politique pour les hommes ?",
+   "statut": "repondue",
+   "pivot": "democratie-liberale",
+   "pivot_bon": true,
+   "rappel": true,
+   "noms": [
+    "Démocratie libérale",
+    "Bipolarité (Guerre froide) × Transformers",
+    "Donna Haraway × Claude (Anthropic) / Cowork",
+    "Structure matricielle",
+    "Chantal Mouffe"
+   ]
+  }
+ ]
+}

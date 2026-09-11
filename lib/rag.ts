@@ -1123,6 +1123,23 @@ export async function repondreAQuestion(question: string, options: OptionsRepons
     );
   }
 
+  // Une question qui NOMME une fiche n'est pas une coïncidence de vocabulaire.
+  //
+  // « Qu'est-ce que la bureaucratie et pourquoi s'étend-elle ? » était refusée :
+  // un seul terme de contenu retrouvé (« bureaucratie »), les autres étant des
+  // mots-outils. Le garde-fou est juste dans le principe — une similarité gagnée
+  // sur un mot isolé n'est pas un sujet traité — mais faux dans ce cas : le mot
+  // isolé était le NOM de la fiche la mieux classée. Le référentiel a une fiche
+  // « Bureaucratie wébérienne » ; refuser d'en parler est absurde.
+  const nommeLaMeilleureFiche = (() => {
+    const meilleure = trouves[0];
+    if (!meilleure) return false;
+    const resolue = resoudreFiche(meilleure.type_fiche, meilleure.fiche_id);
+    if (!resolue?.nom) return false;
+    const motsQuestion = new Set(termesLexicaux(question));
+    return termesLexicaux(resolue.nom).some((m) => m.length >= 5 && motsQuestion.has(m));
+  })();
+
   // Sous le seuil de pertinence, une SECONDE preuve peut rattraper la première.
   //
   // « quel est le meilleur system politique pour els hommes ? » : 0,143 contre un
@@ -1148,7 +1165,9 @@ export async function repondreAQuestion(question: string, options: OptionsRepons
       ? `la question nomme un sous-domaine du référentiel, et ${famille.length} fiches retrouvées en relèvent ` +
         `(${famille.slice(0, 4).join(", ")})`
       : null);
-  const rattrapee = dansLaMarge && termesApparies >= MIN_TERMES_APPARIES + 1 && ancrage !== null;
+  const rattrapee =
+    dansLaMarge &&
+    ((termesApparies >= MIN_TERMES_APPARIES + 1 && ancrage !== null) || nommeLaMeilleureFiche);
 
   if (similariteMax < SEUIL_PERTINENCE && !rattrapee) {
     return reponseHorsCorpus(
@@ -1184,7 +1203,7 @@ export async function repondreAQuestion(question: string, options: OptionsRepons
     );
   }
 
-  if (etatIndex().lexical && termesApparies < MIN_TERMES_APPARIES) {
+  if (etatIndex().lexical && termesApparies < MIN_TERMES_APPARIES && !nommeLaMeilleureFiche) {
     return reponseHorsCorpus(
       question,
       trouves,

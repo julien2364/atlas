@@ -235,6 +235,81 @@ const POIDS_ANCRAGE = 0.6;
 const POIDS_FAMILLE = 0.5;
 
 /**
+ * Champs qui disent ce qu'une fiche EST, par opposition à ceux qui disent ce
+ * qu'elle apporte, ce qu'on lui reproche ou ce qu'elle deviendra.
+ */
+const CHAMPS_COEUR = new Set(["these_centrale", "capacites_cles", "mecanisme"]);
+
+/**
+ * Poids d'un appariement sur le CŒUR de la fiche.
+ *
+ * Mesuré sur un banc de 18 questions : « qu'est-ce qui fonde l'autorité de
+ * l'État ? » donnait le GIEC en pivot, « qu'est-ce qu'une preuve scientifique ? »
+ * une paire Arendt × AutoGPT, « peut-on prévoir les crises économiques ? » le
+ * FMI. Le point commun de ces échecs : la fiche est appariée sur son apport ou
+ * ses limites — du vocabulaire de contexte — et jamais sur sa thèse. Une fiche
+ * dont la THÈSE répond à la question est d'une autre nature qu'une fiche qui
+ * emploie les mêmes mots en passant.
+ */
+const POIDS_COEUR = 0.35;
+
+/**
+ * Vocabulaire qui signale que la question porte sur l'IA. Racines, parce que la
+ * comparaison se fait sur les termes normalisés du moteur.
+ */
+const SIGNES_IA = [
+  "intelligence artificielle",
+  " ia ",
+  " ia?",
+  "algorithm",
+  "automatis",
+  "machine",
+  "modele de langue",
+  "modeles de langue",
+  "chatgpt",
+  "llm",
+  "robot",
+  "numerique",
+  "logiciel",
+  "apprentissage automatique",
+  "reseau de neurones",
+];
+
+/**
+ * La question porte-t-elle sur l'IA ?
+ *
+ * Une fiche de gap est une COMPARAISON humain × IA, et une fiche IA décrit un
+ * système. Ni l'une ni l'autre n'est un point de vue sur « le langage
+ * détermine-t-il la pensée ? » — et pourtant « Alan Turing × Claude » y était
+ * pivot, devant Searle et Wittgenstein, parce que son texte est long et parle de
+ * langage. Quand la question ne parle pas d'IA, ces fiches sont reléguées : elles
+ * restent visibles dans les extraits, elles ne dictent plus la réponse.
+ */
+function questionParleDIA(question: string): boolean {
+  const plat = ` ${question
+    .normalize("NFD")
+    .replace(/[̀-ͯ]/g, "")
+    .toLowerCase()
+    .replace(/[^a-z0-9]+/g, " ")
+    .trim()} `;
+  return SIGNES_IA.some((signe) => plat.includes(signe.replace(/\?/g, "")));
+}
+
+/**
+ * Malus appliqué à une fiche IA ou de gap quand la question ne parle pas d'IA.
+ *
+ * Mesuré sur l'étalon : sans lui, 11 pivots acceptables sur 18 ; les échecs
+ * restants étaient presque tous des paires humain × IA promues sur une question
+ * de philosophie ou de psychologie.
+ */
+const MALUS_HORS_SUJET_IA = 0.5;
+
+/** Vrai si la recherche a retrouvé le cœur de la fiche, pas seulement sa périphérie. */
+function apparieSurLeCoeur(groupe: GroupeFiche): boolean {
+  return groupe.passages.some((p) => CHAMPS_COEUR.has(p.champ));
+}
+
+/**
  * Sous-domaines du référentiel que la question nomme explicitement.
  * `modele_politique` → « modele », « politique ».
  */
@@ -263,7 +338,11 @@ function sousDomainesNommes(question: string): Set<string> {
  *      de plus de la même famille qu'une perspective hors sujet ramassée pour
  *      faire nombre.
  */
-function choisirFiches(groupes: GroupeFiche[], sousDomainesNommesParLaQuestion: Set<string>): GroupeFiche[] {
+function choisirFiches(
+  groupes: GroupeFiche[],
+  sousDomainesNommesParLaQuestion: Set<string>,
+  sujetIA: boolean
+): GroupeFiche[] {
   if (groupes.length === 0) return [];
   const plancher = groupes[0].similarite_max * FRACTION_PLANCHER;
   const candidats = groupes.filter((g) => g.similarite_max >= plancher);
@@ -303,7 +382,15 @@ function choisirFiches(groupes: GroupeFiche[], sousDomainesNommesParLaQuestion: 
     const cle = cleFiche(g.type, g.id);
     const ancrage = Math.min(degres.get(cle) ?? 0, MAX_ANCRAGE) / MAX_ANCRAGE;
     const famille = sousDomainesNommesParLaQuestion.has(g.sous_domaine) ? 1 : 0;
-    return g.similarite_max / meilleure + POIDS_ANCRAGE * ancrage + POIDS_FAMILLE * famille;
+    const coeur = apparieSurLeCoeur(g) ? 1 : 0;
+    const horsSujetIA = !sujetIA && (g.type === "ia" || g.type === "gap") ? 1 : 0;
+    return (
+      g.similarite_max / meilleure +
+      POIDS_ANCRAGE * ancrage +
+      POIDS_FAMILLE * famille +
+      POIDS_COEUR * coeur -
+      MALUS_HORS_SUJET_IA * horsSujetIA
+    );
   };
   const pivot = [...candidats].sort((a, b) => notePivot(b) - notePivot(a))[0];
   pivot.role = "pivot";
@@ -334,6 +421,9 @@ function choisirFiches(groupes: GroupeFiche[], sousDomainesNommesParLaQuestion: 
     .sort(
       (a, b) =>
         PRIORITE_ROLE[b.role ?? "voisinage_lexical"] - PRIORITE_ROLE[a.role ?? "voisinage_lexical"] ||
+        // À rôle égal, une fiche appariée sur sa thèse passe devant une fiche
+        // appariée sur son apport, même un peu moins bien classée.
+        Number(apparieSurLeCoeur(b)) - Number(apparieSurLeCoeur(a)) ||
         b.similarite_max - a.similarite_max
     );
 
@@ -762,7 +852,7 @@ export function construireReponseExtractive(
   passages: PassagePourExtraction[]
 ): ReponseExtractive {
   const groupes = grouperParFiche(passages);
-  const choisis = choisirFiches(groupes, sousDomainesNommes(question));
+  const choisis = choisirFiches(groupes, sousDomainesNommes(question), questionParleDIA(question));
   const perspectives: Perspective[] = [];
   for (const groupe of choisis) {
     const perspective = composer(groupe);

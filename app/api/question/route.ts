@@ -54,7 +54,19 @@ function erreur(code: string, message: string, statut: number, details?: Record<
 // extractif et la recherche sont gratuits, mais un fournisseur d'API configuré
 // se facture, et rien d'autre n'empêche un robot d'enchaîner les questions.
 const FENETRE_MS = 60_000;
-const MAX_PAR_FENETRE = 5;
+
+/**
+ * Questions autorisées par minute et par empreinte d'appelant.
+ *
+ * Réglable par `ATLAS_QUESTIONS_PAR_MINUTE` : le plafond de 5 protège le site
+ * public, mais il rend impossible toute mesure sérieuse du moteur — une
+ * campagne de 18 questions met quatre minutes, ou casse à la sixième. Un banc
+ * d'essai local pose la variable ; la production ne la pose pas et garde 5.
+ */
+const MAX_PAR_FENETRE = (() => {
+  const brut = Number(process.env.ATLAS_QUESTIONS_PAR_MINUTE);
+  return Number.isFinite(brut) && brut >= 1 && brut <= 10_000 ? Math.floor(brut) : 5;
+})();
 const compteurs = new Map<string, { debut: number; nombre: number }>();
 
 function tropDeRequetes(ip: string): boolean {
