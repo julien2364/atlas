@@ -328,6 +328,19 @@ mesure de ce que la file contenait. La chaîne a produit ses premiers patchs :
 applicables, les 6 autres marqués `a_reformuler` et refusés par
 `appliquer-patchs.mjs` tant qu'un humain ne les a pas réécrits.
 
+**Le gabarit arrive rempli d'avance.** Le cron quotidien écrit `docs/veille-a-trier.txt`
+et le committe : la seule étape que la machine ne sait pas faire ne commence pas, en
+plus, par une commande à taper. Il suffit d'ouvrir le fichier, d'écrire une décision par
+ligne, puis de lancer la simulation et l'application.
+
+**Et l'arriéré se signale tout seul.** Au-delà de 60 propositions en attente, le job de
+veille échoue volontairement. Un job rouge déclenche la notification GitHub par défaut —
+aucun canal nouveau à construire, et c'est exactement ce qui manquait : la file est
+passée de 136 à 238 propositions en trois jours sans que personne le voie, et la boucle
+a produit 0 patch par jour depuis sa création faute de tri. L'outil existe désormais ;
+ceci en est le réveil. L'alerte est placée en dernier, après la publication de
+l'artefact de patchs, pour ne pas emporter avec elle ce qu'elle vient signaler.
+
 ### Pourquoi le cron ne produisait aucun patch
 
 La boucle annoncée est collecte → ciblage → patch → validation → publication. Elle

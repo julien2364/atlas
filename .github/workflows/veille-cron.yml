@@ -165,6 +165,23 @@ jobs:
           } >> "$GITHUB_STEP_SUMMARY"
           echo "Patchs : $NB — en attente : $ATTENTE"
 
+      # Le gabarit de tri, écrit à chaque passage et commité avec le reste : la seule
+      # étape que la machine ne sait pas faire ne doit pas, en plus, commencer par une
+      # commande à taper. Le fichier arrive prêt à remplir, à côté du rapport de
+      # pré-tri qui donne les titres et les liens.
+      - name: Écrire le gabarit de tri
+        run: |
+          node scripts/trier-veille.mjs --modele > docs/veille-a-trier.txt
+          git config user.name "atlas-veille-bot"
+          git config user.email "veille-bot@users.noreply.github.com"
+          git add docs/veille-a-trier.txt
+          if git diff --cached --quiet; then
+            echo "Gabarit inchangé."
+          else
+            git commit -m "chore(veille): gabarit de tri [skip ci]"
+            git push
+          fi
+
       - name: Publier les patchs proposés comme artefact
         uses: actions/upload-artifact@v4
         with:
@@ -172,3 +189,39 @@ jobs:
           path: ${{ runner.temp }}/patchs-veille-${{ github.run_id }}.json
           if-no-files-found: warn
           retention-days: 30
+
+      # Garde-fou sur l'arriéré. La boucle a produit 0 patch par jour depuis sa
+      # création parce que le tri humain n'avait ni outil ni signal : la file est
+      # passée de 136 à 238 propositions en trois jours sans que personne le voie.
+      # L'outil existe désormais ; le signal, c'est ceci. Un job rouge déclenche la
+      # notification GitHub par défaut — aucun canal nouveau à construire, et c'est
+      # exactement ce qui manquait.
+      #
+      # `continue-on-error` serait ici un contresens : un arriéré silencieux est
+      # précisément le défaut qu'on veut rendre bruyant.
+      - name: Alerter si l'arriéré de tri s'accumule
+        run: |
+          SEUIL=60
+          ATTENTE=$(node -e "
+            const q = require('./data/seed/veille_queue.json');
+            console.log(q.filter((e) => e.statut === 'en_attente').length);
+          ")
+          echo "Propositions en attente de tri : $ATTENTE (seuil $SEUIL)"
+          {
+            echo "### Arriéré de tri"
+            echo
+            echo "**$ATTENTE** proposition(s) en attente — seuil d'alerte : $SEUIL."
+            if [ "$ATTENTE" -ge "$SEUIL" ]; then
+              echo
+              echo "Le gabarit est prêt dans \`docs/veille-a-trier.txt\`. Une fois rempli :"
+              echo '```'
+              echo "node scripts/trier-veille.mjs --decisions=docs/veille-a-trier.txt"
+              echo "node scripts/trier-veille.mjs --decisions=docs/veille-a-trier.txt --appliquer"
+              echo "npm run veille-patchs"
+              echo '```'
+            fi
+          } >> "$GITHUB_STEP_SUMMARY"
+          if [ "$ATTENTE" -ge "$SEUIL" ]; then
+            echo "::error::$ATTENTE propositions attendent un tri humain. Sans lui, la boucle de veille ne produit aucun patch."
+            exit 1
+          fi
