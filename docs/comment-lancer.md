@@ -150,6 +150,65 @@ vérification ne soient touchés. `--dry-run` simule, `--limite=N` borne le nomb
 uniquement si au moins une fiche bascule. Le script ne remet jamais une fiche en arrière : seul un travail
 de re-documentation la fait repasser en `documente`.
 
+## La chaîne d'autonomie
+
+Le référentiel doit s'incrémenter seul : aller chercher ses sources, se mettre à jour,
+combler ses propres trous. Trois maillons, dont deux tournent sans clé ni modèle.
+
+```
+détecter les lacunes  →  enquêter  →  brief de rédaction  →  [rédaction]  →  garde-fous
+     (hors ligne)          (réseau)        (hors ligne)        (un modèle)     (CI)
+```
+
+**Le renversement est là.** La veille apportait ce que les flux publiaient — de la
+conjoncture, 8 aboutissements sur 425 propositions. Ici c'est le corpus qui demande, à
+partir de son propre écart au mégaprompt.
+
+### `npm run enqueter` — aller chercher soi-même
+
+Part des requêtes que le détecteur fournit et interroge **deux fonds ouverts, sans
+aucune clé** :
+
+- **Crossref** — la littérature publiée avec DOI. Forme du JSON vérifiée le 11/09/2026 :
+  `message.items[]`, `title` en tableau, `issued.date-parts` en `[[année, mois, jour]]`.
+  Quand la date n'a que son année, **aucune date n'est écrite** : la règle du corpus
+  interdit le jour inventé, et le cliquet compte les sources sans date.
+- **arXiv** — les préprints, en Atom, lus par `rss-parser`, la dépendance que le dépôt
+  emploie déjà en production sur les flux arXiv.
+
+Les deux demandent une adresse de contact : c'est la contrepartie de l'accès libre, et
+le script la donne, puis attend entre deux appels plutôt que de marteler un service
+gratuit. Le score est un simple recouvrement de mots entre la requête et le titre, les
+auteurs et le résumé, avec une prime de fraîcheur — **il ordonne, il ne juge pas**.
+
+Le bac à sable des sessions Claude n'a pas d'accès sortant : ce script vit dans GitHub
+Actions et s'éprouve en local par `--fixture`, sur des réponses enregistrées au format
+réel des deux fonds. C'est cette épreuve qui a révélé deux défauts : un même article
+présent dans les deux fonds échappait au dédoublonnage selon qu'il portait un DOI ou
+non, et « Minds, Brains, and Programs » marquait zéro sur une requête nommant Searle,
+parce que le score ignorait les auteurs.
+
+### `npm run rediger` — le brief autoportant
+
+Transforme chaque dossier d'enquête en une instruction de rédaction complète : la
+lacune et la section du mégaprompt qui l'exige, le schéma exact, **trois fiches voisines
+choisies d'après la nature de la lacune** — pour une limite transversale, les autres
+limites, pas les premières fiches de modèle venues —, les règles de sourçage durcies
+après quatre audits, la règle du TRL, et les candidats trouvés par l'enquête.
+
+Il n'appelle aucun modèle, et c'est délibéré. L'interface à sept fournisseurs existe
+mais aucune clé n'est posée, et en dupliquer la logique dans un script créerait une
+seconde définition de la même chose. Surtout, un modèle est déjà disponible sans clé :
+**une tâche planifiée ouvre une session Claude complète**, qui lit, ouvre les sources et
+écrit. Le brief est ce qui lui évite de tout redécouvrir.
+
+**Un brief n'est pas une fiche, et les candidats ne sont pas des sources.** L'enquête a
+trouvé des titres dans deux fonds ; elle n'a rien lu. Le brief le dit en toutes lettres,
+parce que c'est exactement l'erreur qui produirait une fiche fausse et bien formée.
+
+Le workflow `autonomie-cron.yml` enchaîne les trois le mercredi à 06h00 UTC, committe
+les dossiers et les briefs, et les publie en artefact.
+
 ### `npm run detecter-lacunes` — ce que le corpus ne couvre pas encore
 
 Un référentiel qui doit s'incrémenter seul a d'abord besoin de mesurer sa propre
@@ -302,6 +361,7 @@ survit à une fiche disparue. Correctif dans tous les cas : `npm run indexer`.
 
 | Workflow | Fréquence | Rôle |
 |---|---|---|
+| `autonomie-cron.yml` | mercredi, 06h00 UTC | lacunes → enquête sur Crossref et arXiv → briefs de rédaction |
 | `fumee-cron.yml` | après chaque vérification réussie, et chaque jour à 08h00 UTC | le site **déployé** répond-il, et son moteur voit-il tout le corpus |
 | `verification-ci.yml` | à chaque push et PR sur `main` | validateur → **index** → **cliquet** → **workflows** → types → lint → build, en parallèle du déploiement Vercel |
 | `veille-cron.yml` | quotidien, 07h00 UTC | veille RSS → file de propositions → **pré-tri automatique** → patchs de fiche proposés, publiés comme artefact du job (section 7) |

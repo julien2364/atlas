@@ -1,0 +1,5 @@
+# Les dossiers d'enquête sont produits par `scripts/enqueter.mjs`, qui a besoin du
+# réseau : ils naissent dans GitHub Actions, pas sur un poste. Ce qui est versionné,
+# c'est le script et les attentes qui le pilotent — pas le résultat d'une interrogation
+# datée de deux fonds documentaires, qui se rejoue à tout moment.
+*.json

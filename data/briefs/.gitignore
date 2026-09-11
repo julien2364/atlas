@@ -1,0 +1,5 @@
+# Les briefs sont produits par `scripts/rediger.mjs` à partir des dossiers d'enquête,
+# qui naissent dans GitHub Actions. Ce qui est versionné, c'est le script et les
+# attentes qui le pilotent. Les briefs d'une exécution donnée sont publiés comme
+# artefact du job, et le cron les committe quand ils portent du travail à faire.
+*.md

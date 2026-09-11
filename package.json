@@ -23,7 +23,9 @@
     "auditer": "node scripts/auditer-corpus.mjs",
     "fumee": "node scripts/fumee-site.mjs",
     "verifier-workflows": "node scripts/verifier-workflows.mjs",
-    "detecter-lacunes": "node scripts/detecter-lacunes.mjs"
+    "detecter-lacunes": "node scripts/detecter-lacunes.mjs",
+    "enqueter": "node scripts/enqueter.mjs",
+    "rediger": "node scripts/rediger.mjs"
   },
   "dependencies": {
     "@supabase/supabase-js": "^2.115.0",

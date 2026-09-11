@@ -1,0 +1,99 @@
+name: Autonomie — lacunes, enquête, briefs
+
+on:
+  # Le mercredi, entre le cron documentation (05h30) et rien d'autre : l'enquête
+  # interroge des fonds gratuits, elle n'a aucune raison de se presser.
+  schedule:
+    - cron: "0 6 * * 3"
+  workflow_dispatch:
+    inputs:
+      lacune:
+        description: "Un groupe de lacunes en particulier (ex. B5-limites)"
+        required: false
+      limite:
+        description: "Nombre maximum de lacunes à enquêter"
+        required: false
+        default: "12"
+
+permissions:
+  contents: write
+
+jobs:
+  autonomie:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 1
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+          cache: npm
+
+      - name: Installer les dépendances
+        run: npm ci
+
+      # Premier maillon. Il ne fait échouer personne : une lacune est un travail à
+      # faire, pas une régression.
+      - name: Mesurer ce qui manque
+        run: |
+          node scripts/detecter-lacunes.mjs | tee "${RUNNER_TEMP}/lacunes.txt"
+          node scripts/detecter-lacunes.mjs --json > "${RUNNER_TEMP}/lacunes.json"
+
+      # Deuxième maillon. Le bac à sable des sessions Claude n'a pas d'accès sortant ;
+      # ce job en a un, et c'est la seule raison pour laquelle l'enquête vit ici.
+      - name: Enquêter sur les lacunes
+        run: |
+          node scripts/enqueter.mjs \
+            ${{ github.event.inputs.lacune && format('--lacune={0}', github.event.inputs.lacune) || '' }} \
+            --limite=${{ github.event.inputs.limite || '12' }}
+
+      # Troisième maillon : le brief, autoportant, qu'une session Claude ou un humain
+      # exécute. La rédaction elle-même n'est pas ici — elle exige de lire les sources,
+      # et lire n'est pas télécharger.
+      - name: Produire les briefs de rédaction
+        run: node scripts/rediger.mjs --min-candidats=2
+
+      - name: Résumé
+        if: always()
+        run: |
+          node -e "
+            const fs = require('fs');
+            const r = JSON.parse(fs.readFileSync(process.env.RUNNER_TEMP + '/lacunes.json', 'utf8'));
+            const enquetes = fs.existsSync('data/enquetes') ? fs.readdirSync('data/enquetes').filter((f) => f.endsWith('.json')) : [];
+            const briefs = fs.existsSync('data/briefs') ? fs.readdirSync('data/briefs').filter((f) => f.endsWith('.md')) : [];
+            const l = ['### Chaîne d autonomie', ''];
+            l.push('Couverture des attentes : **' + (100 * r.couverture).toFixed(1) + ' %** — ' + r.compte.absent + ' absent(s), ' + r.compte.effleure + ' effleuré(s).');
+            l.push('');
+            l.push('Enquêtes produites : **' + enquetes.length + '** · briefs de rédaction : **' + briefs.length + '**');
+            l.push('');
+            for (const f of briefs) l.push('- \`data/briefs/' + f + '\`');
+            fs.appendFileSync(process.env.GITHUB_STEP_SUMMARY, l.join('\n') + '\n');
+            console.log(enquetes.length + ' enquête(s), ' + briefs.length + ' brief(s)');
+          "
+
+      # On committe les briefs et les dossiers : ce sont eux le travail à faire, et ils
+      # doivent être lisibles depuis le dépôt sans aller chercher un artefact.
+      - name: Committer les briefs et les dossiers
+        run: |
+          git config user.name "atlas-autonomie-bot"
+          git config user.email "autonomie-bot@users.noreply.github.com"
+          git add -f data/enquetes/*.json data/briefs/*.md 2>/dev/null || true
+          if git diff --cached --quiet; then
+            echo "Rien de neuf — aucune enquête n a changé."
+          else
+            git commit -m "chore(autonomie): enquêtes et briefs de rédaction [skip ci]"
+            git push
+          fi
+
+      - name: Publier enquêtes et briefs comme artefact
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: autonomie-${{ github.run_id }}
+          path: |
+            data/enquetes
+            data/briefs
+          if-no-files-found: warn
+          retention-days: 60
