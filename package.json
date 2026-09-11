@@ -20,7 +20,8 @@
     "rendement-veille": "node scripts/rendement-veille.mjs",
     "verifier-index": "node scripts/verifier-index.mjs",
     "cliquet": "node scripts/cliquet-qualite.mjs",
-    "auditer": "node scripts/auditer-corpus.mjs"
+    "auditer": "node scripts/auditer-corpus.mjs",
+    "fumee": "node scripts/fumee-site.mjs"
   },
   "dependencies": {
     "@supabase/supabase-js": "^2.115.0",

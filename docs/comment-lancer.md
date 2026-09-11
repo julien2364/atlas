@@ -150,6 +150,40 @@ vérification ne soient touchés. `--dry-run` simule, `--limite=N` borne le nomb
 uniquement si au moins une fiche bascule. Le script ne remet jamais une fiche en arrière : seul un travail
 de re-documentation la fait repasser en `documente`.
 
+### `npm run fumee` — le site **servi** fonctionne-t-il ?
+
+La CI vérifie le dépôt, Vercel construit et déploie, et personne ne vérifiait que le
+site servi fonctionne. Ce sont trois choses différentes : un build qui réussit ne
+prouve pas qu'une route dynamique répond, et un déploiement qui aboutit ne prouve pas
+que le moteur de réponse a chargé son index.
+
+```bash
+npm run fumee                              # contre l'URL du projet
+npm run fumee -- --url=https://atlas.dyonysos.fr
+npm run fumee -- --sans-question           # saute le POST
+```
+
+Quinze contrôles : les onze pages et fichiers publics — accueil, deux référentiels,
+questions, veille, méthodologie, comparateur, une fiche, un gap, `sitemap.xml`,
+`robots.txt` — puis quatre sur le moteur.
+
+**Celui qui compte est `moteur — index à jour`.** `GET /api/question` fait dire au
+moteur, *en production*, combien de passages du corpus lui manquent. Le 10 septembre
+l'index versionné couvrait 2 855 passages sur 4 011 : 29 % du référentiel était
+invisible aux réponses et rien ne le signalait. Ce contrôle l'aurait crié.
+
+Le dernier pose une vraie question en mode extractif — celui qui ne demande aucune clé
+— et vérifie que la réponse comporte des perspectives, des passages retrouvés et les
+fiches d'où ils viennent. Une réponse vide compte comme un échec.
+
+L'identifiant de fiche testé est **lu dans le corpus**, jamais écrit en dur : une URL
+figée finirait par désigner une fiche renommée, et le test échouerait pour une raison
+qui n'est pas celle qu'il surveille.
+
+Le workflow `fumee-cron.yml` le lance après chaque vérification réussie sur `main` —
+avec 90 secondes d'attente, le temps que Vercel mette en ligne — et chaque jour à 08h00
+UTC, car un site peut cesser de fonctionner sans qu'on y touche.
+
 ### `npm run cliquet` — le corpus ne peut plus empirer par accident
 
 `scripts/auditer-corpus.mjs` est l'audit le plus profond du dépôt : 34 règles de fond,
@@ -203,10 +237,11 @@ la CI de chaque push. Il distingue trois défauts qu'un simple comptage confondr
 passage jamais indexé, un passage indexé puis modifié, et une entrée d'index qui
 survit à une fiche disparue. Correctif dans tous les cas : `npm run indexer`.
 
-### Les crons GitHub Actions et la porte de vérification
+### Les crons GitHub Actions et les portes de vérification
 
 | Workflow | Fréquence | Rôle |
 |---|---|---|
+| `fumee-cron.yml` | après chaque vérification réussie, et chaque jour à 08h00 UTC | le site **déployé** répond-il, et son moteur voit-il tout le corpus |
 | `verification-ci.yml` | à chaque push et PR sur `main` | validateur → **index** → **cliquet** → types → lint → build, en parallèle du déploiement Vercel |
 | `veille-cron.yml` | quotidien, 07h00 UTC | veille RSS → file de propositions → **pré-tri automatique** → patchs de fiche proposés, publiés comme artefact du job (section 7) |
 | `qualite-cron.yml` | lundi, 06h00 UTC | validation → audit de fraîcheur → re-validation → commit → **audit de fond** → **liens du corpus** → **rendement de la veille** |

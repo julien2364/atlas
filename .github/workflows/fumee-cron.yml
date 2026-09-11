@@ -1,0 +1,72 @@
+name: Test de fumée du site déployé
+
+on:
+  # Après chaque vérification réussie sur main : c'est le moment où un déploiement
+  # Vercel vient d'être déclenché par le même push. Le délai d'attente ci-dessous
+  # laisse à la mise en ligne le temps d'aboutir.
+  workflow_run:
+    workflows: ["Vérification"]
+    types: [completed]
+    branches: [main]
+  # Et tous les jours : un site peut cesser de fonctionner sans qu'on y touche —
+  # expiration d'un certificat, quota dépassé, dépendance externe en panne.
+  schedule:
+    - cron: "0 8 * * *"
+  workflow_dispatch:
+    inputs:
+      url:
+        description: "URL à tester (par défaut celle du projet)"
+        required: false
+
+permissions:
+  contents: read
+
+jobs:
+  fumee:
+    runs-on: ubuntu-latest
+    # Sur workflow_run, on ne teste que si la vérification a réussi : inutile de
+    # constater qu'un site est cassé quand on sait déjà que le code l'était.
+    if: ${{ github.event_name != 'workflow_run' || github.event.workflow_run.conclusion == 'success' }}
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 1
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+
+      # Aucune dépendance : le script n'utilise que `fetch` et le corpus du dépôt,
+      # dont il tire un identifiant de fiche réel — une URL de fiche écrite en dur
+      # finirait par désigner une fiche renommée.
+      - name: Laisser le déploiement aboutir
+        if: github.event_name == 'workflow_run'
+        run: sleep 90
+
+      - name: Test de fumée
+        run: |
+          node scripts/fumee-site.mjs \
+            ${{ github.event.inputs.url && format('--url={0}', github.event.inputs.url) || '' }} \
+            --json > fumee.json || true
+          node -e "
+            const fs = require('fs');
+            const r = JSON.parse(fs.readFileSync('fumee.json', 'utf8'));
+            const echecs = r.resultats.filter((x) => !x.ok);
+            const l = ['### Test de fumée — ' + r.url, ''];
+            l.push(r.ok ? 'Les ' + r.resultats.length + ' contrôles passent.' : '**' + echecs.length + ' contrôle(s) en échec** sur ' + r.resultats.length + '.');
+            l.push('');
+            l.push('| contrôle | état | détail |'); l.push('|---|---|---|');
+            for (const x of r.resultats) l.push('| \`' + x.nom + '\` | ' + (x.ok ? 'ok' : '**échec**') + ' | ' + x.detail + ' |');
+            fs.appendFileSync(process.env.GITHUB_STEP_SUMMARY, l.join('\n') + '\n');
+            for (const x of echecs) console.log('ÉCHEC ' + x.nom + ' — ' + x.detail);
+            process.exit(r.ok ? 0 : 1);
+          "
+
+      - name: Publier le rapport
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: fumee-${{ github.run_id }}
+          path: fumee.json
+          if-no-files-found: warn
+          retention-days: 30
