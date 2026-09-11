@@ -150,6 +150,27 @@ vérification ne soient touchés. `--dry-run` simule, `--limite=N` borne le nomb
 uniquement si au moins une fiche bascule. Le script ne remet jamais une fiche en arrière : seul un travail
 de re-documentation la fait repasser en `documente`.
 
+### `npm run verifier-workflows` — le shell et le JS embarqués dans les crons
+
+Les workflows contiennent des blocs `run:` — 31 dans ce dépôt — dont six embarquent du
+JavaScript passé à `node -e`, avec deux niveaux d'échappement : celui du YAML et celui
+des guillemets du shell. Rien ne les vérifiait.
+
+Le coût de l'absence de ce contrôle n'est pas dans la CI, qui échouerait de toute façon :
+il est dans les crons. Une faute dans le bloc du cron qualité, qui tourne le lundi, se
+découvre le lundi suivant. Ce contrôle la trouve au push, en moins d'une seconde, et il
+est dans `npm run verifier`.
+
+Il vérifie la **syntaxe** — que le shell parse, que le JavaScript parse — et rien
+d'autre : ni la logique, ni les variables d'environnement, ni les actions tierces. C'est
+un filet contre la faute bête, celle qui coûte un aller-retour de push pour rien. Les
+expressions `${{ … }}` sont neutralisées avant analyse : ce n'est pas du shell, et
+`bash -n` les rejetterait à tort.
+
+Éprouvé sur trois workflows de test — un shell sans `fi`, un tableau JavaScript sans
+crochet fermant, un correct : les deux premiers sont signalés avec leur ligne, le
+troisième passe.
+
 ### `npm run fumee` — le site **servi** fonctionne-t-il ?
 
 La CI vérifie le dépôt, Vercel construit et déploie, et personne ne vérifiait que le
@@ -242,7 +263,7 @@ survit à une fiche disparue. Correctif dans tous les cas : `npm run indexer`.
 | Workflow | Fréquence | Rôle |
 |---|---|---|
 | `fumee-cron.yml` | après chaque vérification réussie, et chaque jour à 08h00 UTC | le site **déployé** répond-il, et son moteur voit-il tout le corpus |
-| `verification-ci.yml` | à chaque push et PR sur `main` | validateur → **index** → **cliquet** → types → lint → build, en parallèle du déploiement Vercel |
+| `verification-ci.yml` | à chaque push et PR sur `main` | validateur → **index** → **cliquet** → **workflows** → types → lint → build, en parallèle du déploiement Vercel |
 | `veille-cron.yml` | quotidien, 07h00 UTC | veille RSS → file de propositions → **pré-tri automatique** → patchs de fiche proposés, publiés comme artefact du job (section 7) |
 | `qualite-cron.yml` | lundi, 06h00 UTC | validation → audit de fraîcheur → re-validation → commit → **audit de fond** → **liens du corpus** → **rendement de la veille** |
 | `documentation-cron.yml` | mercredi, 05h30 UTC | propositions de sources pour les fiches à (re)documenter |

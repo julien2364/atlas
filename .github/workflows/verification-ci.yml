@@ -42,6 +42,13 @@ jobs:
       - name: Valider le corpus
         run: npm run valider
 
+      # Les workflows embarquent du shell et du JavaScript passé à `node -e`, avec
+      # deux niveaux d'échappement — celui du YAML et celui des guillemets du shell.
+      # Rien ne les vérifiait. Une faute dans le cron du lundi se découvrait le lundi
+      # suivant ; celui-ci la trouve au push, en moins d'une seconde.
+      - name: Contrôler la syntaxe des workflows
+        run: npm run verifier-workflows
+
       - name: Contrôler les types
         run: npx tsc --noEmit
 
