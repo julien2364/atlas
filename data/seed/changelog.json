@@ -405,5 +405,13 @@
     "type": "evolution_structurelle",
     "cible": "gouvernance",
     "resume": "La couverture des attentes encodées du mégaprompt passe de 53,8 % à 81,3 % en une journée, et surtout de six items absents à zéro. Le détecteur de lacunes a piloté chaque lot : il nomme ce qui manque, fournit la requête qui le comblerait, et la mesure se refait à chaque passage. Ce que cette progression montre n'est pas une accélération du travail mais la fin d'un angle mort — pendant six lots, une quinzaine d'exigences littérales n'étaient mentionnées dans aucun document parce que rien ne les rappelait."
+  },
+  {
+    "id": "2026-09-12-couverture-megaprompt-complete",
+    "date": "2026-09-12",
+    "type": "ajout",
+    "cible": "Référentiel B — 15 fiches",
+    "resume": "Quinze fiches ferment les quinze derniers éléments « effleurés » de la mesure de couverture du mégaprompt : dix usages sectoriels (revue de littérature automatisée, conception expérimentale assistée, évaluation automatisée, contenu pédagogique différencié, maintenance prédictive, contrôle qualité par vision industrielle, optimisation d'essai clinique, pharmacovigilance automatisée, prévision climatique opérationnelle, cybersécurité assistée) et cinq capacités agentiques (autonomie d'exécution, orchestration d'outils, génération et exécution de code, recherche documentaire autonome, mémoire long terme). Couverture portée de 81,3 % à 100 %, sans élément absent ni effleuré. Chaque fiche porte ses sources datées ; la maturité n'est déclarée qu'en présence d'un exploitant nommé, d'un lieu et d'une date, sinon la diffusion est donnée sans TRL.",
+    "fiches_ajoutees": 15
   }
 ]

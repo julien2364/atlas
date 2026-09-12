@@ -4292,5 +4292,729 @@
     ],
     "statut": "documente",
     "derniere_verification": "2026-09-11"
+  },
+  {
+    "id": "revue-de-litterature-automatisee",
+    "axe": "scientifique",
+    "nom": "Revue de littérature automatisée",
+    "editeur": "Plusieurs éditeurs et projets académiques : Rayyan Systems, Veritas Health Innovation (Covidence), Elicit Inc., et le consortium RobotReviewer (King's College London, UCL, Northeastern, Monash).",
+    "capacites_cles": [
+      "Tri semi-automatique des résumés par pertinence, fondé sur l'apprentissage actif (Rayyan, Covidence)",
+      "Extraction de données et synthèse de résultats en langage naturel (Elicit)",
+      "Classification automatique du risque de biais dans les essais randomisés à partir du texte intégral, entraînée sur des jugements humains antérieurs (RobotReviewer)"
+    ],
+    "usages": [
+      {
+        "secteur": "recherche",
+        "description": "Tri des résumés, extraction de données et évaluation du risque de biais dans les revues systématiques",
+        "exemples": [
+          "Essai randomisé RobotReviewer (Annals of Internal Medicine, 2022) : 7 équipes de revue, 145 études évaluées",
+          "Étude comparative d'Elicit sur quatre revues systématiques Cochrane réelles, par Oscar Lau (Hull York Medical School) et Su Golder (University of York), medRxiv, 2025"
+        ],
+        "trl": null,
+        "diffusion": "etabli",
+        "sources": [
+          {
+            "titre": "Arno A. et al., « Accuracy and Efficiency of Machine Learning–Assisted Risk-of-Bias Assessments in \"Real-World\" Systematic Reviews: A Noninferiority Randomized Controlled Trial », Annals of Internal Medicine, 2022",
+            "type": "primaire",
+            "date": "2026-09-12",
+            "url": "https://doi.org/10.7326/M22-0092"
+          }
+        ]
+      }
+    ],
+    "limites_connues": "Deux mesures indépendantes contredisent la promesse d'efficacité. (1) L'essai randomisé de 2022 sur RobotReviewer établit une précision non inférieure (88,8 % pour le groupe avec assistance contre 90,2 % sans) mais un gain de temps NON significatif : 1,4 minute en moyenne, résultat incertain. (2) Oscar Lau et Su Golder (medRxiv, 2025) mesurent sur Elicit un rappel de 37,9 % en moyenne contre 93,5 % pour une recherche documentaire classique, ainsi qu'une application incorrecte de critères d'exclusion explicites ; leur conclusion est qu'il s'agit d'un outil d'appoint pour dégrossir, inadapté en autonomie. Aucun chiffre d'adoption institutionnel daté n'a été trouvé pour Rayyan et Covidence, largement cités dans les guides méthodologiques universitaires sans quantification vérifiable.",
+    "sources": [
+      {
+        "titre": "Lau O., Golder S., « Comparison of Elicit AI and Traditional Literature Searching in Systematic Reviews using Four Case Studies », medRxiv, 2025",
+        "type": "primaire",
+        "date": "2026-09-12",
+        "url": "https://www.medrxiv.org/content/10.1101/2025.06.17.25329772v1.full"
+      },
+      {
+        "titre": "King's College London, « AI tools in evidence synthesis » — guide méthodologique de bibliothèque universitaire, consulté en 2026",
+        "type": "secondaire",
+        "date": "2026-09-12",
+        "url": "https://libguides.kcl.ac.uk/systematicreview/ai"
+      }
+    ],
+    "statut": "documente",
+    "derniere_verification": "2026-09-12"
+  },
+  {
+    "id": "conception-experimentale-assistee-et-laboratoires-autonomes",
+    "axe": "scientifique",
+    "nom": "Conception expérimentale assistée et laboratoires autonomes",
+    "editeur": "Laboratoires de recherche publics et société commerciale : Lawrence Berkeley National Laboratory (A-Lab, équipe Gerbrand Ceder), Carnegie Mellon University (Coscientist, équipe Gabe Gomes), Emerald Cloud Lab Inc.",
+    "capacites_cles": [
+      "Planification de synthèses à partir d'un modèle entraîné sur 33 343 procédures issues de la littérature, couplé à un algorithme d'apprentissage actif (A-Lab)",
+      "Pilotage physique d'instruments de laboratoire par un agent fondé sur un modèle de langue : planification, recherche documentaire, écriture de code et exécution (Coscientist)",
+      "Exécution robotisée d'expériences programmées à distance (Emerald Cloud Lab)"
+    ],
+    "usages": [
+      {
+        "secteur": "science",
+        "description": "Synthèse autonome de matériaux inorganiques et optimisation de réactions chimiques",
+        "exemples": [
+          "A-Lab, Lawrence Berkeley National Laboratory : campagne de 17 jours, 353 expériences, 36 des 57 matériaux cibles synthétisés (Nature, novembre 2023)",
+          "Coscientist, Carnegie Mellon University : agent pilotant des instruments de chimie, Nature, décembre 2023"
+        ],
+        "trl": null,
+        "diffusion": "emergent",
+        "sources": [
+          {
+            "titre": "Szymanski N. et al., « An autonomous laboratory for the accelerated synthesis of new materials », Nature, 2023",
+            "type": "primaire",
+            "date": "2026-09-12",
+            "url": "https://www.nature.com/articles/s41586-023-06734-w"
+          }
+        ]
+      }
+    ],
+    "limites_connues": "Le résultat le plus visible de ce domaine est contesté nominativement. Robert Palgrave (University College London) et Leslie Schoop (Princeton), cités par Chemistry World en 2024, qualifient l'analyse par diffraction des rayons X de l'A-Lab de « très mauvaise, niveau débutant » : environ deux tiers des composés présentés comme nouveaux seraient des composés déjà connus, mal identifiés faute de prise en compte du désordre compositionnel. Conclusion de Palgrave : aucune découverte n'a probablement été faite. L'étude originale documente par ailleurs elle-même 21 cibles non synthétisées, classées en quatre catégories d'échec (cinétique lente, volatilité des précurseurs, amorphisation, erreurs de calcul DFT). Pour Emerald Cloud Lab, aucun client nommé avec une date de déploiement n'a été trouvé dans une source indépendante : la diffusion commerciale n'est établie que par l'éditeur lui-même.",
+    "sources": [
+      {
+        "titre": "Daniil A. Boiko, Robert MacKnight, Ben Kline, Gabe Gomes, « Autonomous chemical research with large language models », Nature, vol. 624, 20 décembre 2023, p. 570-578 (DOI 10.1038/s41586-023-06792-0)",
+        "type": "primaire",
+        "date": "2026-09-12",
+        "url": "https://www.nature.com/articles/s41586-023-06792-0"
+      },
+      {
+        "titre": "Chemistry World, « New analysis raises doubts over autonomous lab's materials discoveries », 2024 — critique de Robert Palgrave (UCL) et Leslie Schoop (Princeton)",
+        "type": "secondaire",
+        "date": "2026-09-12",
+        "url": "https://www.chemistryworld.com/news/new-analysis-raises-doubts-over-autonomous-labs-materials-discoveries/4018791.article"
+      }
+    ],
+    "statut": "documente",
+    "derniere_verification": "2026-09-12"
+  },
+  {
+    "id": "evaluation-automatisee-et-notation-automatique",
+    "axe": "sectoriel",
+    "nom": "Évaluation automatisée et notation automatique de copies",
+    "editeur": "Educational Testing Service (e-rater), Turnitin (Gradescope), et moteurs propriétaires de départements d'éducation publics.",
+    "capacites_cles": [
+      "Notation d'essais par analyse de traits linguistiques — grammaire, usage, mécanique, style, organisation (e-rater)",
+      "Attribution d'un score par comparaison à un jeu de réponses préalablement notées par des humains, avec sous-score de conventions séparé (moteur de l'État de l'Ohio)",
+      "Regroupement automatique des réponses similaires pour accélérer une notation humaine assistée, plutôt qu'une notation autonome (Gradescope)"
+    ],
+    "usages": [
+      {
+        "secteur": "education",
+        "description": "Notation d'essais et de réponses construites dans des évaluations à enjeu",
+        "trl": 9,
+        "trl_justification": "Le département de l'Éducation de l'Ohio emploie la notation automatique pour ses évaluations d'anglais depuis 2015, avec une transition complète en 2018 : exploitant public nommé, périmètre nommé, dates établies par son propre document officiel. e-rater est par ailleurs employé opérationnellement par ETS pour le GRE et le TOEFL iBT, toujours en tandem avec une notation humaine.",
+        "exemples": [
+          "Ohio Department of Education : notation automatique des évaluations d'anglais depuis 2015, transition complète en 2018, avec extraction vers un correcteur humain quand le système ne reconnaît pas la réponse",
+          "ETS e-rater : sections Analytical Writing du GRE et Writing du TOEFL iBT, en tandem avec une notation humaine ; employé seul uniquement en contexte de faible enjeu"
+        ],
+        "sources": [
+          {
+            "titre": "Ohio Department of Education, « Machine Scoring FAQs » — document officiel du régulateur de l'État, consulté en 2026",
+            "type": "primaire",
+            "date": "2026-09-12",
+            "url": "https://education.ohio.gov/getattachment/Topics/Learning-in-Ohio/English-Language-Art/Assessments-for-English-Language-Arts/Machine-Scoring-FAQs.pdf.aspx"
+          }
+        ]
+      }
+    ],
+    "limites_connues": "L'échec de référence du domaine reste la standardisation algorithmique des A-levels au Royaume-Uni en août 2020. Il faut le décrire exactement : il ne s'agissait pas de noter des copies — les examens étaient annulés — mais de modérer statistiquement les notes prédites par les enseignants. L'algorithme d'Ofqual a abaissé 36 % des notes d'un cran et 3 % de deux crans, avec un biais systématique défavorable aux élèves des écoles publiques et favorable aux petits effectifs des écoles privées. Il a été abandonné le 17 août 2020 par Ofqual et le ministre de l'Éducation Gavin Williamson, suivi des démissions de Sally Collier (directrice d'Ofqual) et Jonathan Slater (haut fonctionnaire). Les deux systèmes opérationnels cités plus haut gardent d'ailleurs un humain dans la boucle : l'Ohio extrait les réponses non reconnues vers un correcteur, ETS double la notation automatique d'une notation humaine sur les tests à fort enjeu. Le chiffre d'adoption de Gradescope (plus de 600 institutions, plus de 60 millions de réponses notées) date de son rachat par Turnitin en octobre 2018 et provient d'un communiqué commercial ; aucun chiffre plus récent et indépendant n'a été trouvé.",
+    "sources": [
+      {
+        "titre": "Educational Testing Service, « About the e-rater Scoring Engine », consulté en 2026",
+        "type": "primaire",
+        "date": "2026-09-12",
+        "url": "https://www.ets.org/erater/about.html"
+      },
+      {
+        "titre": "« 2020 United Kingdom school exam grading controversy » — synthèse de la standardisation algorithmique des A-levels et de son abandon",
+        "type": "secondaire",
+        "date": "2026-09-12",
+        "url": "https://en.wikipedia.org/wiki/2020_United_Kingdom_school_exam_grading_controversy"
+      }
+    ],
+    "statut": "documente",
+    "derniere_verification": "2026-09-12"
+  },
+  {
+    "id": "contenu-pedagogique-differencie-par-ia",
+    "axe": "sectoriel",
+    "nom": "Contenu pédagogique différencié par IA",
+    "editeur": "Khan Academy (Khanmigo) et MagicSchool Inc. (MagicSchool AI) ; les deux déploiements documentés sont des districts scolaires publics américains, Newark Public Schools et Dublin City Schools.",
+    "capacites_cles": [
+      "Adaptation instantanée du niveau de lecture d'un texte donné (« leveler » de MagicSchool)",
+      "Génération de retours différenciés sur les écrits d'élèves, en dialogue",
+      "Aide à la planification de cours et création de ressources par niveau, côté enseignant (Khanmigo)"
+    ],
+    "usages": [
+      {
+        "secteur": "education",
+        "description": "Adaptation du niveau des supports et différenciation pédagogique en classe",
+        "trl": 8,
+        "trl_justification": "Dublin City Schools (Ohio, environ 16 000 élèves) a lancé un pilote MagicSchool en décembre 2023 sous la direction de Kathy Parker-Jones, renforcé à l'automne 2024, avec une journée de formation à l'échelle du district en novembre 2024 : exploitant nommé, lieu nommé, dates établies. Le taux d'adoption de 90 % au printemps 2025 provient toutefois d'une étude de cas publiée par l'éditeur lui-même, ce qui interdit le niveau supérieur.",
+        "exemples": [
+          "Dublin City Schools (Ohio) : pilote MagicSchool depuis décembre 2023, usage documenté du « leveler » de texte pour la différenciation",
+          "Newark Public Schools (New Jersey) : pilote Khanmigo achevé en juin 2023 à la First Avenue School, niveaux 5 à 8 ; extension financée par une subvention de 25 000 dollars de la Gates Foundation annoncée en novembre 2024"
+        ],
+        "sources": [
+          {
+            "titre": "MagicSchool, « Dublin City Schools : 90 % d'adoption chez les éducateurs au printemps 2025 » — étude de cas publiée par l'éditeur",
+            "type": "secondaire",
+            "date": "2026-09-12",
+            "url": "https://www.magicschool.ai/case-studies/dublin-city-schools"
+          }
+        ]
+      }
+    ],
+    "limites_connues": "Le pilote de Newark, rapporté par Chalkbeat en 2024, a relevé trois défauts : des erreurs mathématiques de Khanmigo (corrigées depuis, selon Khan Academy), un outil qui fournissait « trop d'aide » pendant les évaluations — donc un problème d'intégrité académique — et une demande de formation supplémentaire des enseignants sur la distinction entre mode élève et mode enseignant. Surtout, la seule donnée publiée sur Dublin City Schools est un taux d'adoption (90 %), pas un effet sur les apprentissages, et elle émane de l'éditeur : l'efficacité pédagogique réelle de la différenciation automatique n'est établie par aucune mesure indépendante trouvée.",
+    "sources": [
+      {
+        "titre": "Chalkbeat, « Newark Public Schools wants new AI tutor after pilot testing », 13 mai 2024",
+        "type": "secondaire",
+        "date": "2026-09-12",
+        "url": "https://www.chalkbeat.org/newark/2024/05/13/artificial-intelligence-khanmigo-chatbot-tutor-pilot-testing-districtwide-expansion/"
+      },
+      {
+        "titre": "Chalkbeat, « Newark receives $25K Gates Foundation grant to expand Khanmigo AI tutor chatbot », 15 novembre 2024",
+        "type": "secondaire",
+        "date": "2026-09-12",
+        "url": "https://www.chalkbeat.org/newark/2024/11/15/newark-receives-25k-gates-foundation-grant-to-expand-khanmigo-ai-tutor-chatbot/"
+      }
+    ],
+    "statut": "documente",
+    "derniere_verification": "2026-09-12"
+  },
+  {
+    "id": "recherche-documentaire-autonome-deep-research",
+    "axe": "agentique",
+    "nom": "Recherche documentaire autonome (deep research)",
+    "editeur": "OpenAI (Deep Research, intégré à ChatGPT) et Google (Gemini Deep Research, via l'application et l'API Gemini) ; Perplexity, Ai2 ScholarQA et STORM (Stanford) existent aussi mais n'ont pas été vérifiés ici.",
+    "capacites_cles": [
+      "Exploration autonome de centaines de sources avec restitution des citations (OpenAI)",
+      "Cycle itératif planification → recherche → lecture → synthèse, exécuté en arrière-plan sur 20 à 60 minutes (Gemini)",
+      "Traitement de données par exécution de code et lecture de fichiers déposés par l'utilisateur"
+    ],
+    "usages": [
+      {
+        "secteur": "recherche",
+        "description": "Production autonome de rapports documentaires sourcés à partir d'une question",
+        "trl": null,
+        "diffusion": "etabli",
+        "exemples": [
+          "OpenAI Deep Research : lancé le 2 février 2025 pour les abonnés ChatGPT Pro, puis élargi aux autres abonnements payants",
+          "Gemini Deep Research : disponible via l'API Gemini au statut « preview » déclaré par Google ; variante « Deep Research Max » annoncée en décembre 2025"
+        ],
+        "sources": [
+          {
+            "titre": "OpenAI, « Introducing deep research », 2 février 2025",
+            "type": "primaire",
+            "date": "2026-09-12",
+            "url": "https://openai.com/index/introducing-deep-research/"
+          }
+        ]
+      }
+    ],
+    "limites_connues": "Les deux éditeurs documentent eux-mêmes les limites, ce qui est le plus solide dont on dispose ici. OpenAI signale que son agent peut halluciner des faits ou produire des inférences incorrectes — à un taux qu'elle dit plus faible que ses modèles standards, sans le chiffrer —, qu'il calibre mal son incertitude, qu'il distingue difficilement une source faisant autorité d'une rumeur, et que la durée de traitement est imprévisible (5 à 30 minutes). Google indique que son agent ne produit pas de sorties structurées, n'accepte pas d'outils personnalisés hors MCP, plafonne à 60 minutes, et coûte entre 1 et 7 dollars par tâche — chiffre donné par Google, non vérifié par un tiers. Aucune évaluation indépendante de la qualité factuelle de ces rapports n'a été trouvée.",
+    "sources": [
+      {
+        "titre": "Google AI for Developers, « Gemini Deep Research Agent » — documentation de l'API, statut « preview » déclaré par l'éditeur, consulté en 2026",
+        "type": "primaire",
+        "date": "2026-09-12",
+        "url": "https://ai.google.dev/gemini-api/docs/interactions/deep-research"
+      },
+      {
+        "titre": "TechCrunch, « Google launched its deepest AI research agent yet », 11 décembre 2025",
+        "type": "secondaire",
+        "date": "2026-09-12",
+        "url": "https://techcrunch.com/2025/12/11/google-launched-its-deepest-ai-research-agent-yet-on-the-same-day-openai-dropped-gpt-5-2/"
+      }
+    ],
+    "statut": "documente",
+    "derniere_verification": "2026-09-12"
+  },
+  {
+    "id": "maintenance-predictive-industrielle",
+    "axe": "sectoriel",
+    "nom": "Maintenance prédictive industrielle",
+    "editeur": "KONUX (Allemagne), Alstom (HealthHub), Siemens Mobility ; côté exploitant, SNCF Réseau développe ses propres dispositifs.",
+    "capacites_cles": [
+      "Fusion de données de capteurs et analyse prédictive pour anticiper la défaillance de composants — aiguillages notamment (KONUX)",
+      "Surveillance continue de l'infrastructure par des trains commerciaux instrumentés (SNCF Réseau)",
+      "Détection de cavités souterraines par méthodes sismiques couplées à l'apprentissage automatique (SNCF Réseau avec Sercel, sur le RER B)"
+    ],
+    "usages": [
+      {
+        "secteur": "industrie",
+        "description": "Anticipation des défaillances d'infrastructure et de matériel roulant ferroviaires",
+        "trl": null,
+        "diffusion": "etabli",
+        "exemples": [
+          "SNCF Réseau : prototype de train commercial instrumenté en circulation depuis environ trois ans à la date de la publication de 2020",
+          "SNCF Réseau avec Sercel : pilote de détection de cavités souterraines sur le RER B (Paris)",
+          "Deutsche Bahn et Siemens Mobility : contrat de maintenance prédictive pour la flotte ICE 4"
+        ],
+        "sources": [
+          {
+            "titre": "SNCF Réseau, « La maintenance prédictive : état des lieux d'une révolution », consulté en 2026",
+            "type": "primaire",
+            "date": "2026-09-12",
+            "url": "https://www.sncf-reseau.com/fr/a/maintenance-predictive-etat-lieux-dune-revolution-0"
+          }
+        ]
+      }
+    ],
+    "limites_connues": "L'exploitant public est ici plus prudent que les fournisseurs, et c'est sa parole qu'il faut retenir. SNCF Réseau écrit que l'IA « ne peut pas atteindre 100 % de fiabilité », qu'elle exige un ré-entraînement continu sous peine de dérive, que « l'algorithme doit rester contrôlable » — aucune boîte noire n'est acceptable sur un système de sécurité — et qu'un agent humain « peut détecter des fissures parfois avant les capteurs ». À l'opposé, le gain le plus cité du domaine, une réduction de 25 % des coûts de maintenance chez Deutsche Bahn, provient d'une étude de cas publiée par le fournisseur KONUX lui-même : il n'est corroboré par aucune mesure indépendante, et la date de déploiement correspondante n'a pas été trouvée.",
+    "sources": [
+      {
+        "titre": "Best Practice AI, « Deutsche Bahn réduit de 25 % ses coûts de maintenance avec KONUX » — reprise d'une étude de cas commerciale du fournisseur, consulté en 2026",
+        "type": "secondaire",
+        "date": "2026-09-12",
+        "url": "https://bestpractice.ai/ai-use-cases/case-studies/transportation-logistics/deutsche-bahn-reduces-maintenance-cost-by-25-and-delay-causing-failures-using-machine-learning"
+      },
+      {
+        "titre": "Railway Technology, « Siemens wins predictive maintenance contract from Deutsche Bahn » — contrat de maintenance prédictive pour la flotte ICE 4, consulté en 2026",
+        "type": "secondaire",
+        "date": "2026-09-12",
+        "url": "https://www.railway-technology.com/news/newssiemens-wins-predictive-maintenance-contract-from-deutsche-bahn-5882558/"
+      }
+    ],
+    "statut": "documente",
+    "derniere_verification": "2026-09-12"
+  },
+  {
+    "id": "controle-qualite-par-vision-industrielle",
+    "axe": "sectoriel",
+    "nom": "Contrôle qualité par vision industrielle",
+    "editeur": "Cognex (OneVision), Landing AI (LandingLens) ; côté exploitant, BMW Group développe ses propres applications.",
+    "capacites_cles": [
+      "Détection de défauts de soudure en carrosserie et de fissures sur pièces embouties (BMW Group)",
+      "Contrôle de conformité des désignations de modèles sur chaîne d'assemblage (BMW Group, usine de Dingolfing)",
+      "Inspection paramétrable adaptée à des situations d'assemblage variées (GenAI4Q, BMW Regensburg)"
+    ],
+    "usages": [
+      {
+        "secteur": "industrie",
+        "description": "Inspection visuelle automatisée des pièces et des assemblages en production",
+        "trl": 9,
+        "trl_justification": "BMW Group exploite des applications de reconnaissance d'image en production depuis 2018 dans ses usines de Dingolfing et de Steyr, selon son propre communiqué officiel : exploitant nommé, sites nommés, date établie. Le pilote GenAI4Q de l'usine de Regensburg (2024-2025) porte sur des contrôles personnalisés en assemblage.",
+        "exemples": [
+          "BMW Group, usine de Dingolfing : contrôle des désignations de modèles et détection de fissures sur pièces embouties, depuis 2018",
+          "BMW Group, usine de Steyr : tests moteur et logistique",
+          "BMW Group, usine de Regensburg : pilote GenAI4Q de contrôle qualité personnalisé en assemblage véhicule"
+        ],
+        "sources": [
+          {
+            "titre": "BMW Group PressClub, « Fast, efficient, reliable: Artificial intelligence in BMW Group Production » — communiqué officiel, consulté en 2026",
+            "type": "primaire",
+            "date": "2026-09-12",
+            "url": "https://www.press.bmwgroup.com/global/article/detail/T0298650EN/fast-efficient-reliable:-artificial-intelligence-in-bmw-group-production?language=en"
+          }
+        ]
+      }
+    ],
+    "limites_connues": "La documentation disponible est presque entièrement promotionnelle, et c'est en soi la limite principale. Le communiqué de BMW revendique une « fiabilité de 100 % » après entraînement : aucune entreprise ne publie de taux de faux positifs ou de faux négatifs, et aucun audit indépendant n'a été trouvé pour BMW, Cognex ou Landing AI. Cognex annonce une adoption croissante de sa plateforme OneVision « à l'échelle mondiale » dans un communiqué de presse, sans nommer un seul client vérifiable. Un projet Safran-CEA d'automatisation du contrôle qualité existe selon la presse spécialisée, mais la page n'a pas pu être consultée. En l'état, le référentiel documente une capacité largement déployée et une opacité complète sur ses taux d'erreur.",
+    "sources": [
+      {
+        "titre": "Automotive Manufacturing Solutions, « BMW's GenAI4Q Reinvents Quality Control at Regensburg Plant », consulté en 2026",
+        "type": "secondaire",
+        "date": "2026-09-12",
+        "url": "https://www.automotivemanufacturingsolutions.com/smart-factory/bmw-regensburg-deploys-genai-to-reinvent-quality-checks/649724"
+      },
+      {
+        "titre": "Cognex, « OneVision Adoption Ramps as Manufacturers Scale AI Vision Globally » — communiqué commercial, aucun client nommé, consulté en 2026",
+        "type": "secondaire",
+        "date": "2026-09-12",
+        "url": "https://www.prnewswire.com/news-releases/cognex-onevision-adoption-ramps-as-manufacturers-scale-ai-vision-globally-302768368.html"
+      }
+    ],
+    "statut": "documente",
+    "derniere_verification": "2026-09-12"
+  },
+  {
+    "id": "optimisation-d-essai-clinique-par-ia",
+    "axe": "sectoriel",
+    "nom": "Optimisation d'essai clinique par IA",
+    "editeur": "Unlearn.ai (Digital Twin Generators), Medidata / Dassault Systèmes (Synthetic Control Arm), Tempus AI.",
+    "capacites_cles": [
+      "Génération de jumeaux numériques individuels à partir de données historiques, pour prédire la trajectoire du bras placebo (Unlearn.ai)",
+      "Réduction de la taille du bras de contrôle réel à puissance statistique constante",
+      "Appariement de patients à des essais à partir de données cliniques (Tempus AI)"
+    ],
+    "usages": [
+      {
+        "secteur": "pharmaceutique",
+        "description": "Bras de contrôle synthétiques et réduction d'effectifs dans les essais cliniques",
+        "trl": 7,
+        "trl_justification": "Johnson & Johnson Innovative Medicine a employé les Digital Twin Generators d'Unlearn.ai dans trois essais pivots de phase III sur la maladie d'Alzheimer légère à modérée, et AbbVie dans un essai de phase II, résultats présentés à l'Alzheimer's Association International Conference de juillet 2024. Exploitants nommés, phases nommées, date établie — mais la source est un communiqué de l'éditeur de la technologie, et aucune qualification réglementaire spécifique n'a été confirmée, ce qui interdit d'aller plus haut.",
+        "exemples": [
+          "Johnson & Johnson Innovative Medicine : trois essais pivots de phase III (Alzheimer), réduction du bras de contrôle de 33 % sur ADAS-Cog11 à 18 mois et de 19 % sur CDR-SB à 12 mois",
+          "AbbVie : essai de phase II (Alzheimer), réduction d'effectifs de 10 à 15 % sur CDR-SB à 96 semaines"
+        ],
+        "sources": [
+          {
+            "titre": "Businesswire, « Unlearn Presents Studies on AI powered Clinical Trials with AbbVie and Johnson & Johnson Innovative Medicine », juillet 2024 — communiqué de l'éditeur de la technologie",
+            "type": "secondaire",
+            "date": "2026-09-12",
+            "url": "https://www.businesswire.com/news/home/20240730183686/en/Unlearn-Presents-Studies-on-AI-powered-Clinical-Trials-with-AbbVie-and-Johnson-Johnson-Innovative-Medicine-at-the-Alzheimers-Association-International-Conference-2024"
+          }
+        ]
+      }
+    ],
+    "limites_connues": "Tous les chiffres de gain cités proviennent de communiqués de l'éditeur de la technologie évaluée : aucun n'a été audité indépendamment, et aucune donnée n'a été trouvée sur les taux d'erreur ou les biais de sélection des jumeaux numériques eux-mêmes. Côté réglementaire, le programme ISTAND de la FDA a accepté des lettres d'intention pour des outils d'IA comparables, mais aucune qualification spécifique à Unlearn.ai n'a été confirmée ; la procédure est par ailleurs décrite comme longue, et l'agence privilégie des usages supplémentaires plutôt que le remplacement complet d'un bras de contrôle traditionnel. Enfin, pour la sélection de patients par IA, aucun établissement de santé nommé avec une date de déploiement n'a été trouvé au-delà des pages produit de Tempus.",
+    "sources": [
+      {
+        "titre": "Medidata (Dassault Systèmes), « Synthetic Control Arm in Clinical Trials » — description du produit par son éditeur, sans étude de cas nommée, consulté en 2026",
+        "type": "secondaire",
+        "date": "2026-09-12",
+        "url": "https://www.medidata.com/en/study-experience/real-world-data/synthetic-control-arm/"
+      },
+      {
+        "titre": "IntuitionLabs, « FDA ISTAND Program: AI Drug Development Tool Qualification » — synthèse de documents de la FDA sur la qualification des outils d'IA, consulté en 2026",
+        "type": "secondaire",
+        "date": "2026-09-12",
+        "url": "https://intuitionlabs.ai/articles/fda-istand-ai-drug-development-tool"
+      }
+    ],
+    "statut": "documente",
+    "derniere_verification": "2026-09-12"
+  },
+  {
+    "id": "pharmacovigilance-automatisee",
+    "axe": "sectoriel",
+    "nom": "Pharmacovigilance automatisée",
+    "editeur": "Uppsala Monitoring Centre (vigiRank, vigiMatch, sur VigiBase pour l'OMS), Pfizer (outil interne), Oracle (Argus Safety) et ArisGlobal (LifeSphere).",
+    "capacites_cles": [
+      "Automatisation de la réception des cas : validation de la légitimité d'un rapport, détection du caractère grave ou fatal (Pfizer)",
+      "Détection statistique de signaux combinant fréquence, plausibilité et nouveauté (vigiRank, Uppsala Monitoring Centre)",
+      "Criblage automatisé de la littérature scientifique à la recherche de signaux de sécurité (Agence européenne des médicaments)"
+    ],
+    "usages": [
+      {
+        "secteur": "pharmaceutique",
+        "description": "Traitement des cas de sécurité et détection de signaux d'effets indésirables",
+        "trl": 8,
+        "trl_justification": "Pfizer a démarré en 2014 un dispositif d'automatisation de la réception des cas dans son unité Drug Safety de Rome, en Italie, et cite un volume de l'ordre de 1,4 million d'événements indésirables traités dans le monde en 2019 : exploitant nommé, lieu nommé, dates établies par son propre communiqué. L'Agence européenne des médicaments a confirmé en septembre 2025 l'usage d'un outil d'IA de criblage de la littérature.",
+        "exemples": [
+          "Pfizer, unité Drug Safety de Rome : automatisation de l'intake depuis 2014",
+          "Uppsala Monitoring Centre : vigiRank employé sur VigiBase, base de l'OMS alimentée par plus de 150 pays membres, usage prospectif documenté par Caster et al. en 2017",
+          "Agence européenne des médicaments : criblage de la littérature par IA, confirmé lors du symposium TOPRA du 30 septembre 2025"
+        ],
+        "sources": [
+          {
+            "titre": "Pfizer, « AI in Drug Safety: Building the Elusive Loch Ness Monster of Reporting Tools », consulté en 2026",
+            "type": "primaire",
+            "date": "2026-09-12",
+            "url": "https://www.pfizer.com/news/articles/ai-drug-safety-building-elusive-%E2%80%98loch-ness-monster%E2%80%99-reporting-tools"
+          }
+        ]
+      }
+    ],
+    "limites_connues": "Pfizer écrit elle-même que ces outils « ne remplaceront pas les humains » et que le passage à l'échelle industrielle reste difficile : l'objectif déclaré est de libérer du temps d'expert pour l'analyse de signaux, pas d'automatiser la décision. Aucune mesure indépendante de performance en routine — sensibilité, spécificité, taux de faux signaux — n'a pu être confirmée : l'article de référence sur l'usage prospectif de vigiRank (Caster et al., Pharmacoepidemiology and Drug Safety, 2017) et la publication de Novartis sur le traitement automatisé des cas (Schmider et al., 2019) n'ont pas pu être lus intégralement, leur éditeur refusant l'accès. Le nom de l'outil employé par l'Agence européenne des médicaments n'a pas été identifié dans les sources consultées.",
+    "sources": [
+      {
+        "titre": "Caster O. et al., « vigiRank for statistical signal detection in pharmacovigilance: First results from prospective real-world use », Pharmacoepidemiology and Drug Safety, 2017 — accès refusé à la lecture intégrale",
+        "type": "primaire",
+        "date": "2026-09-12",
+        "url": "https://onlinelibrary.wiley.com/doi/10.1002/pds.4247"
+      },
+      {
+        "titre": "Citeline / Pink Sheet, « EMA Unveils AI Tool That Improves Pharmacovigilance Signal Detection » — symposium TOPRA du 30 septembre 2025",
+        "type": "secondaire",
+        "date": "2026-09-12",
+        "url": "https://insights.citeline.com/pink-sheet/conferences/topra/ema-unveils-ai-tool-that-improves-pharmacovigilance-signal-detection-Y4KB7RWC7BG25BGIQX5ZBYXXDQ/"
+      }
+    ],
+    "statut": "documente",
+    "derniere_verification": "2026-09-12"
+  },
+  {
+    "id": "prevision-climatique-operationnelle-par-ia",
+    "axe": "scientifique",
+    "nom": "Prévision climatique et météorologique opérationnelle par IA",
+    "editeur": "Centre européen pour les prévisions météorologiques à moyen terme (AIFS) et NOAA avec Google DeepMind (GraphCast / WeatherNext).",
+    "capacites_cles": [
+      "Prévision déterministe sur grille de 28 kilomètres de résolution (AIFS Single, ECMWF)",
+      "Prévision du vent, de la température et du type de précipitations",
+      "Consommation énergétique réduite d'environ mille fois par rapport aux modèles physiques traditionnels, selon l'ECMWF"
+    ],
+    "usages": [
+      {
+        "secteur": "gouvernement",
+        "description": "Prévision météorologique opérationnelle par un service public : production quotidienne de prévisions déterministes servies aux États membres, en remplacement partiel d'un modèle physique",
+        "trl": 9,
+        "trl_justification": "L'AIFS du Centre européen pour les prévisions météorologiques à moyen terme est opérationnel depuis le 25 février 2025, selon le communiqué officiel du Centre, qui réunit 35 États membres et coopérants. Exploitant public nommé, date établie, mise en production confirmée par l'institution elle-même. C'est le déploiement le mieux documenté de tout ce lot.",
+        "exemples": [
+          "ECMWF : AIFS opérationnel depuis le 25 février 2025, gains atteignant 20 % sur la trajectoire des cyclones tropicaux",
+          "NOAA : déploiement d'une génération de modèles mondiaux pilotés par IA, développés avec Google DeepMind"
+        ],
+        "sources": [
+          {
+            "titre": "ECMWF, « ECMWF's AI forecasts become operational » — communiqué officiel, 25 février 2025",
+            "type": "primaire",
+            "date": "2026-09-12",
+            "url": "https://www.ecmwf.int/en/about/media-centre/news/2025/ecmwfs-ai-forecasts-become-operational"
+          }
+        ]
+      }
+    ],
+    "limites_connues": "L'ECMWF borne lui-même sa propre annonce, et c'est ce qui la rend crédible : la version opérationnelle AIFS Single ne produit qu'une seule prévision déterministe à la fois, les prévisions d'ensemble à cinquante membres et les prévisions infra-saisonnières restent en développement, et le service doit encore, selon ses propres termes, monter en maturité complète. Le gain énergétique d'un facteur mille et les 20 % sur la trajectoire des cyclones émanent de l'institution, non d'un tiers. Le communiqué de la NOAA n'a pas pu être consulté intégralement, l'accès ayant été refusé : seule l'existence du déploiement est établie, pas son périmètre.",
+    "sources": [
+      {
+        "titre": "ECMWF Newsletter 178, « AIFS: a new ECMWF forecasting system », consulté en 2026",
+        "type": "primaire",
+        "date": "2026-09-12",
+        "url": "https://www.ecmwf.int/en/newsletter/178/news/aifs-new-ecmwf-forecasting-system"
+      },
+      {
+        "titre": "NOAA, « NOAA deploys new generation of AI-driven global weather models » — accès refusé à la lecture intégrale, seule l'existence du déploiement est établie, consulté en 2026",
+        "type": "primaire",
+        "date": "2026-09-12",
+        "url": "https://www.noaa.gov/news-release/noaa-deploys-new-generation-of-ai-driven-global-weather-models"
+      }
+    ],
+    "statut": "documente",
+    "derniere_verification": "2026-09-12"
+  },
+  {
+    "id": "autonomie-d-execution-des-agents",
+    "axe": "agentique",
+    "nom": "Autonomie d'exécution des agents",
+    "editeur": "Capacité transverse ; mesurée par METR, organisation indépendante à but non lucratif. Systèmes évalués : Claude (Anthropic), GPT (OpenAI), Devin (Cognition Labs).",
+    "capacites_cles": [
+      "Conduite d'une tâche longue sans reprise humaine à chaque étape",
+      "Horizon de tâche mesuré : durée de tâche réussie une fois sur deux",
+      "Reprise après erreur au sein d'une même session, sans réinitialisation"
+    ],
+    "usages": [
+      {
+        "secteur": "recherche",
+        "description": "Mesure de l'horizon temporel des tâches menées sans intervention humaine",
+        "trl": null,
+        "diffusion": "emergent",
+        "exemples": [
+          "METR, Time Horizon 1.1 (29 janvier 2026) : Claude Opus 4.5 à 320 minutes de tâche réussie une fois sur deux, intervalle de confiance 170-729 minutes ; GPT-5 à 214 minutes ; o3 à 121 minutes",
+          "Doublement de l'horizon tous les 131 jours environ sur la période postérieure à 2023, contre sept mois sur 2019-2025"
+        ],
+        "sources": [
+          {
+            "titre": "METR, « Task-Completion Time Horizons of Frontier AI Models », consulté en 2026",
+            "type": "primaire",
+            "date": "2026-09-12",
+            "url": "https://metr.org/time-horizons/"
+          }
+        ]
+      }
+    ],
+    "limites_connues": "METR borne elle-même sa mesure, et cette réserve est plus instructive que le chiffre : au-delà de seize heures, les mesures « ne sont pas fiables avec la suite de tâches actuelle » ; sur 31 tâches longues de plus de huit heures, cinq seulement disposent d'une véritable ligne de base humaine mesurée, les autres étant estimées ; les intervalles de confiance sont très larges — de 170 à 729 minutes pour une valeur centrale de 320. Sur le terrain, la seule évaluation indépendante trouvée est celle d'Answer.AI, qui a fait tourner Devin pendant un mois sur vingt tâches réelles en janvier 2025 : trois succès, quatorze échecs, trois résultats non concluants, avec un constat qualitatif de code inutilement complexe et de fixation en débogage. Cette mesure a vingt mois, ce qui est considérable dans ce domaine, mais aucune évaluation indépendante plus récente et comparable n'a été trouvée.",
+    "sources": [
+      {
+        "titre": "METR, « Time Horizon 1.1 », 29 janvier 2026",
+        "type": "primaire",
+        "date": "2026-09-12",
+        "url": "https://metr.org/blog/2026-1-29-time-horizon-1-1/"
+      },
+      {
+        "titre": "Answer.AI, « Thoughts On A Month With Devin », 8 janvier 2025 — évaluation indépendante sur vingt tâches réelles",
+        "type": "primaire",
+        "date": "2026-09-12",
+        "url": "https://www.answer.ai/posts/2025-01-08-devin.html"
+      }
+    ],
+    "statut": "documente",
+    "derniere_verification": "2026-09-12"
+  },
+  {
+    "id": "orchestration-d-outils-et-protocoles-d-integration",
+    "axe": "agentique",
+    "nom": "Orchestration d'outils et protocoles d'intégration",
+    "editeur": "Model Context Protocol, lancé par Anthropic fin 2024 et gouverné depuis sous LF Projects (Linux Foundation) ; Berkeley Function-Calling Leaderboard, université de Californie à Berkeley.",
+    "capacites_cles": [
+      "Appel d'outils externes par un modèle, sur un protocole commun (MCP)",
+      "Chaînage d'outils au sein d'une même tâche, avec requêtes multi-aller-retour",
+      "Exécution en terminal réel, mesurée par Terminal-Bench"
+    ],
+    "usages": [
+      {
+        "secteur": "industrie",
+        "description": "Intégration d'un modèle à des systèmes tiers par un protocole normalisé",
+        "trl": null,
+        "diffusion": "etabli",
+        "exemples": [
+          "Spécification MCP du 28 juillet 2026 : protocole rendu sans état, routage par en-têtes HTTP, durcissement de l'autorisation",
+          "Terminal-Bench 2.0, agrégé par llm-stats.com sur données de mai 2026 : GPT-5.5 à 82,7 %, Claude Sonnet 5 à 80,4 %, Gemini 3.5 Flash à 76,2 %, sur 53 modèles évalués"
+        ],
+        "sources": [
+          {
+            "titre": "Model Context Protocol, « The 2026-07-28 Specification »",
+            "type": "primaire",
+            "date": "2026-09-12",
+            "url": "https://blog.modelcontextprotocol.io/posts/2026-07-28/"
+          }
+        ]
+      }
+    ],
+    "limites_connues": "La National Security Agency a publié en mai 2026 une fiche d'information de cybersécurité consacrée à MCP (référence U/OO/6030316-26) qui documente des défauts structurels : composants sans authentification obligatoire, injection de paramètres par messages malformés, collisions de noms d'outils permettant de charger du code contrôlé par un attaquant, accès en lecture et écriture non restreint à des dépôts via des outils MCP, et la vulnérabilité CVE-2025-49596 (exécution de code à distance dans MCP-Inspector). La NSA qualifie de systémique le risque d'empoisonnement de sortie et d'injection de consigne en cascade dans les flux multi-agents. Par ailleurs, la liste d'adoptants citée par l'organisme de spécification (AWS, Cloudflare, Google Cloud, Microsoft, Figma…) est une déclaration de cet organisme, pas une mesure d'usage réel ; et les scores chiffrés du Berkeley Function-Calling Leaderboard n'ont pas pu être extraits, la page n'étant pas lisible hors navigateur.",
+    "sources": [
+      {
+        "titre": "National Security Agency, « Model Context Protocol (MCP): Security Design », fiche d'information de cybersécurité, mai 2026",
+        "type": "primaire",
+        "date": "2026-09-12",
+        "url": "https://media.defense.gov/2026/Jun/02/2003943289/-1/-1/0/CSI_MCP_SECURITY.PDF"
+      },
+      {
+        "titre": "llm-stats.com, « Terminal-Bench 2.0 Leaderboard » — agrégateur tiers, données de mai 2026",
+        "type": "secondaire",
+        "date": "2026-09-12",
+        "url": "https://llm-stats.com/benchmarks/terminal-bench-2"
+      }
+    ],
+    "statut": "documente",
+    "derniere_verification": "2026-09-12"
+  },
+  {
+    "id": "generation-de-code-et-son-execution-autonome",
+    "axe": "agentique",
+    "nom": "Génération de code et son exécution autonome",
+    "editeur": "Anthropic (Claude Code), OpenAI (Codex), Cognition Labs (Devin) ; évaluation par l'équipe SWE-bench.",
+    "capacites_cles": [
+      "Résolution de tickets réels sur des dépôts existants, mesurée par SWE-bench Verified",
+      "Exécution du code produit en environnement shell, mesurée par Terminal-Bench",
+      "Reprise et correction après échec d'exécution, au sein de la même session"
+    ],
+    "usages": [
+      {
+        "secteur": "industrie",
+        "description": "Production de code applicatif par un agent, puis exécution de ce code en environnement réel, avec reprise après échec au sein de la même session",
+        "trl": null,
+        "diffusion": "etabli",
+        "exemples": [
+          "SWE-bench Verified, campagne complète exécutée par l'équipe du banc d'essai et rapportée le 19 février 2026 : Claude 4.5 Opus à 76,8 %, Gemini 3 Flash et MiniMax M2.5 à 75,8 %, GPT-5.2 et Claude 4.5 Sonnet à 72,8 %, DeepSeek V3.2 à 70,8 %",
+          "Terminal-Bench 2.0 : GPT-5.5 à 82,7 % sur l'exécution en terminal réel"
+        ],
+        "sources": [
+          {
+            "titre": "Simon Willison, « SWE-bench February 2026 leaderboard update », 19 février 2026 — campagne exécutée par l'équipe du banc d'essai",
+            "type": "secondaire",
+            "date": "2026-09-12",
+            "url": "https://simonwillison.net/2026/Feb/19/swe-bench/"
+          }
+        ]
+      }
+    ],
+    "limites_connues": "L'écart entre le banc d'essai et le terrain est le fait le mieux établi de cette fiche. Sur SWE-bench Verified, les meilleurs modèles dépassent 75 % ; la seule évaluation indépendante en conditions réelles trouvée — un mois d'usage de Devin sur vingt tâches par Answer.AI en janvier 2025, détaillée dans la fiche « Autonomie d'exécution des agents » — aboutit à 15 % de réussite. Cette mesure porte sur un seul produit et a vingt mois, ce qui est considérable ici ; qu'aucune évaluation indépendante plus récente en conditions réelles n'ait été trouvée est en soi une lacune du domaine, et elle interdit de transposer les scores de banc d'essai à un usage professionnel. Enfin, la campagne SWE-bench est conduite par l'équipe du banc d'essai : plus indépendante qu'une auto-déclaration d'éditeur, sans être un audit externe.",
+    "sources": [
+      {
+        "titre": "llm-stats.com, « Terminal-Bench 2.0 Leaderboard » — agrégateur tiers, données de mai 2026",
+        "type": "secondaire",
+        "date": "2026-09-12",
+        "url": "https://llm-stats.com/benchmarks/terminal-bench-2"
+      },
+      {
+        "titre": "SWE-bench — banc d'essai de résolution de tickets réels sur dépôts existants, consulté en 2026",
+        "type": "primaire",
+        "date": "2026-09-12",
+        "url": "https://www.swebench.com/"
+      }
+    ],
+    "statut": "documente",
+    "derniere_verification": "2026-09-12"
+  },
+  {
+    "id": "cybersecurite-assistee-par-ia",
+    "axe": "sectoriel",
+    "nom": "Cybersécurité assistée par IA",
+    "editeur": "Anthropic publie les rapports de menace documentant l'usage offensif de ses propres modèles ; la National Security Agency publie la guidance défensive sur les protocoles d'orchestration.",
+    "capacites_cles": [
+      "Conduite largement autonome d'une campagne d'intrusion, avec quelques points de décision humaine",
+      "Production d'exploits à grande cadence",
+      "Refus opposé à certaines demandes, documenté comme garde-fou effectif"
+    ],
+    "usages": [
+      {
+        "secteur": "gouvernement",
+        "description": "Usage offensif et défensif de modèles agentiques en sécurité informatique",
+        "trl": null,
+        "diffusion": "etabli",
+        "exemples": [
+          "Campagne GTG-1002 (novembre 2025) : une trentaine de cibles, 80 à 90 % de la campagne conduite sans intervention humaine, quatre à six points de décision humaine",
+          "Campagne GTG-50014 : plus de 2 100 jetons Azure AD exfiltrés en 34 heures",
+          "Campagne GTG-50020 : tentative d'accès à un modèle en pré-version, chaque chemin tenté ayant échoué — cas documenté de défense réussie"
+        ],
+        "sources": [
+          {
+            "titre": "Anthropic, « Disrupting an AI-orchestrated cyber espionage campaign », 13 novembre 2025",
+            "type": "primaire",
+            "date": "2026-09-12",
+            "url": "https://www.anthropic.com/news/disrupting-AI-espionage"
+          }
+        ]
+      }
+    ],
+    "limites_connues": "Toute la matière chiffrée de cette fiche provient d'Anthropic, c'est-à-dire de l'éditeur des modèles employés : source intéressée, mais qui documente aussi ses propres échecs, ce qui est le plus solide dont on dispose. Deux d'entre eux méritent d'être retenus : le modèle a halluciné des identifiants, et a prétendu avoir exfiltré des données secrètes qui étaient en réalité publiques. Le rapport constate lui-même une « documentation minimale des échecs de l'IA » dans la plupart des cas examinés. Surtout — et c'est le déséquilibre central de ce sujet — aucune mesure indépendante de la défense assistée par IA n'a été trouvée : ni taux de faux positifs, ni efficacité mesurée d'un outil défensif nommé. Le référentiel documente donc bien mieux l'attaque que la défense, et il faut le dire plutôt que de laisser croire à une symétrie.",
+    "sources": [
+      {
+        "titre": "Anthropic, rapport de menace de septembre 2026 — campagnes GTG-20006, GTG-50014, GTG-10007, GTG-50020 et GTG-50029, décembre 2025 à août 2026",
+        "type": "primaire",
+        "date": "2026-09-12",
+        "url": "https://www.anthropic.com/threat-intelligence-report-september-2026"
+      },
+      {
+        "titre": "National Security Agency, « Model Context Protocol (MCP): Security Design », fiche d'information de cybersécurité, mai 2026",
+        "type": "primaire",
+        "date": "2026-09-12",
+        "url": "https://media.defense.gov/2026/Jun/02/2003943289/-1/-1/0/CSI_MCP_SECURITY.PDF"
+      }
+    ],
+    "statut": "documente",
+    "derniere_verification": "2026-09-12"
+  },
+  {
+    "id": "memoire-long-terme-des-agents",
+    "axe": "agentique",
+    "nom": "Mémoire long terme des agents",
+    "editeur": "Mem0.ai, Letta (issu des travaux MemGPT de l'université de Californie à Berkeley), Zep AI.",
+    "capacites_cles": [
+      "Conservation d'informations au-delà de la fenêtre de contexte, par mémoire vectorielle ou en graphe (Mem0)",
+      "Gestion de mémoire inspirée de la pagination des systèmes d'exploitation (Letta, ex-MemGPT)",
+      "Réduction du nombre de jetons par appel face à une approche à contexte complet"
+    ],
+    "usages": [
+      {
+        "secteur": "recherche",
+        "description": "Mémoire conversationnelle persistante pour agents : conservation et rappel d'informations au-delà de la fenêtre de contexte, entre sessions successives",
+        "trl": null,
+        "diffusion": "emergent",
+        "exemples": [
+          "Benchmark LoCoMo, « Evaluating Very Long-Term Conversational Memory of LLM Agents », arXiv 2402.17753, publié en février 2024 et toujours la référence employée en 2026",
+          "Mem0 revendique un score global de 92,5 sur LoCoMo et 94,4 sur LongMemEval, pour environ 6 956 jetons par appel contre plus de 25 000 en contexte complet"
+        ],
+        "sources": [
+          {
+            "titre": "« Evaluating Very Long-Term Conversational Memory of LLM Agents » (LoCoMo), arXiv 2402.17753, février 2024",
+            "type": "primaire",
+            "date": "2026-09-12",
+            "url": "https://arxiv.org/abs/2402.17753"
+          }
+        ]
+      }
+    ],
+    "limites_connues": "C'est le sujet le moins bien établi de ce lot, et il faut le dire franchement. Les chiffres de performance cités sont exclusivement auto-rapportés par Mem0, éditeur du produit évalué ; sa page de recherche ne présente aucun comparatif nommé avec Letta ou Zep, et aucune validation par un tiers n'a été trouvée. Aucun client nommé en production n'a pu être identifié pour Mem0, Letta ou Zep : les résultats de recherche renvoient à des articles comparatifs de blogs, pas à des études de cas primaires. Aucune limite chiffrée et sourcée indépendamment n'existe non plus — latence de récupération et dérive de cohérence sont évoquées dans des sources secondaires sans méthodologie vérifiable. Enfin, le benchmark de référence date de février 2024, ce qui est ancien pour ce domaine.",
+    "sources": [
+      {
+        "titre": "« Mem0: Building Production-Ready AI Agents with Scalable Long-Term Memory », arXiv 2504.19413, avril 2025 — auteurs employés par l'éditeur évalué",
+        "type": "primaire",
+        "date": "2026-09-12",
+        "url": "https://arxiv.org/pdf/2504.19413"
+      },
+      {
+        "titre": "mem0.ai, « Research » — chiffres de performance auto-rapportés par l'éditeur, sans comparatif nommé ni validation tierce, consulté en 2026",
+        "type": "secondaire",
+        "date": "2026-09-12",
+        "url": "https://mem0.ai/research"
+      }
+    ],
+    "statut": "documente",
+    "derniere_verification": "2026-09-12"
   }
 ]

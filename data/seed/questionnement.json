@@ -1,10 +1,10 @@
 {
- "genere_le": "2026-09-11",
+ "genere_le": "2026-09-12",
  "fenetre_jours": 60,
  "nb_items_examines": 250,
- "nb_contestations_documentees": 101,
+ "nb_contestations_documentees": 103,
  "nb_angles": 24,
- "nb_avec_actualite": 0,
+ "nb_avec_actualite": 2,
  "fiches_ecartees_pour_bruit": [
   "humaine:indices-de-cohesion-sociale",
   "ia:gouvernance-et-alignement-limite-transversale",
@@ -15,197 +15,44 @@
  "avertissement": "Chaque angle part d'une contestation ÉCRITE dans le référentiel : une fiche en nomme une autre dans ses limites critiques, avec une marque d'opposition, et la phrase est citée. La question, elle, est formulée par gabarit — le script ne comprend ni l'une ni l'autre. C'est une amorce de travail, à vérifier et à retravailler avant toute publication. Les actualités accrochées le sont par recouvrement de vocabulaire : sur des flux majoritairement anglophones face à un corpus français, ce rattachement reste faible, et la plupart des angles n'en portent aucune.",
  "angles": [
   {
-   "id": "jacques-derrida--john-searle",
+   "id": "carl-von-clausewitz--martin-van-creveld",
    "fiches": [
     {
      "type": "humaine",
-     "id": "jacques-derrida",
-     "nom": "Jacques Derrida",
-     "axe": "philosophique",
-     "sous_domaine": "philosophie",
-     "these": "Tout texte et tout système de pensée reposent sur des oppositions hiérarchisées instables (parole/écriture, présence/absence) que la « déconstruction » révèle et déjoue, sans jamais atteindre un sens ou une origine stabilisée.",
-     "limite": "Accusé d'obscurantisme et d'absence de rigueur argumentative par des courants analytiques — la controverse avec John Searle sur la lecture d'Austin en reste l'épisode le plus célèbre ; difficulté à tirer de la déconstruction des positions normatives positives."
-    },
-    {
-     "type": "humaine",
-     "id": "john-searle",
-     "nom": "John Searle",
-     "axe": "philosophique",
-     "sous_domaine": "philosophie",
-     "these": "La syntaxe — manipulation formelle de symboles — n'est jamais suffisante pour produire de la sémantique : une machine peut manipuler parfaitement des symboles selon des règles sans rien comprendre de ce qu'elle fait, comme le montre l'expérience de la « chambre chinoise » — l'IA « forte » est, selon…",
-     "limite": "La Chambre chinoise a fait l'objet de dizaines de réfutations, notamment la « réponse des systèmes » (ce n'est pas l'homme dans la chambre qui comprendrait, mais le système pris comme un tout), que Searle a toujours rejetées sans convaincre l'ensemble de la communauté ; accusations tardives de harcè…"
-    }
-   ],
-   "preuve": "Accusé d'obscurantisme et d'absence de rigueur argumentative par des courants analytiques — la controverse avec John Searle sur la lecture d'Austin en reste l'épisode le plus célèbre ;",
-   "champ": "limites_critiques",
-   "question": "Le référentiel documente une opposition entre « Jacques Derrida » et « John Searle ». La fiche « Jacques Derrida » l'écrit ainsi : « Accusé d'obscurantisme et d'absence de rigueur argumentative par des courants analytiques — la controverse avec John Searle sur la lecture d'Austin en reste l'épisode le plus célèbre ; » Sur quoi porte exactement le désaccord, et qu'est-ce qui, aujourd'hui, permettrait de le trancher ?",
-   "actualites": []
-  },
-  {
-   "id": "jacques-lacan--sigmund-freud",
-   "fiches": [
-    {
-     "type": "humaine",
-     "id": "jacques-lacan",
-     "nom": "Jacques Lacan",
-     "axe": "psychologique",
-     "sous_domaine": "psychanalyse",
-     "these": "Lacan relit Freud à travers la linguistique structurale, affirmant que « l'inconscient est structuré comme un langage » et développant les registres du Réel, du Symbolique et de l'Imaginaire pour penser le sujet désirant.",
-     "limite": "Son style volontairement obscur et ses formalisations mathématiques (les « mathèmes ») sont critiqués pour leur scientificité douteuse ; il est parfois qualifié de psychanalyste le plus controversé depuis Freud, accusé d'un usage rhétorique du formalisme scientifique."
-    },
-    {
-     "type": "humaine",
-     "id": "sigmund-freud",
-     "nom": "Sigmund Freud",
-     "axe": "psychologique",
-     "sous_domaine": "psychanalyse",
-     "these": "Freud fonde la psychanalyse sur l'hypothèse d'un inconscient structuré, où des pulsions et désirs refoulés (souvent d'origine sexuelle infantile) déterminent une part importante du psychisme et se manifestent via les rêves, lapsus et symptômes névrotiques.",
-     "limite": "Sa théorie est critiquée pour son manque de validation empirique rigoureuse (Popper la qualifie d'irréfutable), sa focalisation univoque sur la sexualité infantile, et des méthodes de collecte de données jugées peu scientifiques ; le behaviorisme et les neurosciences cognitives lui opposent des modè…"
-    }
-   ],
-   "preuve": "Son style volontairement obscur et ses formalisations mathématiques (les « mathèmes ») sont critiqués pour leur scientificité douteuse ; il est parfois qualifié de psychanalyste le plus controversé depuis Freud, accusé d'un usage rhétorique du formalisme scientifique.",
-   "champ": "limites_critiques",
-   "question": "Le référentiel documente une opposition entre « Jacques Lacan » et « Sigmund Freud ». La fiche « Jacques Lacan » l'écrit ainsi : « Son style volontairement obscur et ses formalisations mathématiques (les « mathèmes ») sont critiqués pour leur scientificité douteuse ; il est parfois qualifié de psychanalyste le plus controversé depuis Freud, accusé d'un usage rhétorique du formalisme scien… » Sur quoi porte exactement le désaccord, et qu'est-ce qui, aujourd'hui, permettrait de le trancher ?",
-   "actualites": []
-  },
-  {
-   "id": "john-maynard-keynes--milton-friedman",
-   "fiches": [
-    {
-     "type": "humaine",
-     "id": "john-maynard-keynes",
-     "nom": "John Maynard Keynes",
-     "axe": "social",
-     "sous_domaine": "economie",
-     "these": "Keynes fonde la macroéconomie moderne en soutenant que les économies de marché peuvent rester durablement en sous-emploi en l'absence de demande suffisante, justifiant une intervention publique contracyclique (dépense, politique monétaire) pour stabiliser l'activité.",
-     "limite": "Le keynésianisme a été contesté à partir des années 1970 par les monétaristes (Friedman) et les nouveaux classiques, qui lui reprochent de sous-estimer les anticipations des agents et le risque inflationniste des politiques de relance."
-    },
-    {
-     "type": "humaine",
-     "id": "milton-friedman",
-     "nom": "Milton Friedman",
-     "axe": "social",
-     "sous_domaine": "economie",
-     "these": "Friedman fonde le monétarisme, soutenant que la masse monétaire est le déterminant principal de l'activité économique et de l'inflation à long terme, et plaide pour une intervention étatique minimale au profit des mécanismes de marché.",
-     "limite": "Le monétarisme pur a perdu de son influence après que les banques centrales ont constaté l'instabilité de la relation entre masse monétaire et inflation dans la pratique, les conduisant à adopter des cadres de politique monétaire plus éclectiques (ciblage d'inflation)."
-    }
-   ],
-   "preuve": "Le keynésianisme a été contesté à partir des années 1970 par les monétaristes (Friedman) et les nouveaux classiques, qui lui reprochent de sous-estimer les anticipations des agents et le risque inflationniste des politiques de relance.",
-   "champ": "limites_critiques",
-   "question": "Le référentiel documente une opposition entre « John Maynard Keynes » et « Milton Friedman ». La fiche « John Maynard Keynes » l'écrit ainsi : « Le keynésianisme a été contesté à partir des années 1970 par les monétaristes (Friedman) et les nouveaux classiques, qui lui reprochent de sous-estimer les anticipations des agents et le risque inflationniste des politiques de relance. » Sur quoi porte exactement le désaccord, et qu'est-ce qui, aujourd'hui, permettrait de le trancher ?",
-   "actualites": []
-  },
-  {
-   "id": "john-rawls--amartya-sen",
-   "fiches": [
-    {
-     "type": "humaine",
-     "id": "john-rawls",
-     "nom": "John Rawls",
-     "axe": "philosophique",
-     "sous_domaine": "philosophie",
-     "these": "Une société juste est celle dont les principes seraient choisis par des individus rationnels placés sous un « voile d'ignorance » (ignorant leur propre position sociale future) : liberté égale pour tous, et inégalités tolérées seulement si elles profitent aux plus défavorisés.",
-     "limite": "Amartya Sen lui oppose, en s'inspirant de Montesquieu, que le droit ne peut se limiter à poser des principes généraux de justice mais doit refléter le mouvement des mœurs — d'où sa notion de capabilité et sa critique des critères rawlsiens de liberté réelle ; l'économiste et philosophe Francisco Ver…"
-    },
-    {
-     "type": "humaine",
-     "id": "amartya-sen",
-     "nom": "Amartya Sen",
-     "axe": "social",
-     "sous_domaine": "economie",
-     "these": "Sen développe l'approche des « capabilités », définissant le développement non par le seul revenu mais par la capacité réelle des personnes à convertir des ressources en libertés concrètes, et démontre que les famines résultent d'inégalités de distribution plutôt que d'un manque absolu de nourriture…",
-     "limite": "L'opérationnalisation empirique du concept de « capabilités », plus riche mais plus complexe à mesurer qu'un simple indicateur monétaire de revenu, reste un défi méthodologique pour les politiques publiques qui s'en inspirent."
-    }
-   ],
-   "preuve": "Amartya Sen lui oppose, en s'inspirant de Montesquieu, que le droit ne peut se limiter à poser des principes généraux de justice mais doit refléter le mouvement des mœurs — d'où sa notion de capabilité et sa critique des critères rawlsiens de liberté réelle ;",
-   "champ": "limites_critiques",
-   "question": "Le référentiel documente une opposition entre « John Rawls » et « Amartya Sen ». La fiche « John Rawls » l'écrit ainsi : « Amartya Sen lui oppose, en s'inspirant de Montesquieu, que le droit ne peut se limiter à poser des principes généraux de justice mais doit refléter le mouvement des mœurs — d'où sa notion de capabilité et sa critique des critères rawlsiens de liberté réelle ; » Sur quoi porte exactement le désaccord, et qu'est-ce qui, aujourd'hui, permettrait de le trancher ?",
-   "actualites": []
-  },
-  {
-   "id": "karl-marx--marxisme-leninisme",
-   "fiches": [
-    {
-     "type": "humaine",
-     "id": "karl-marx",
-     "nom": "Karl Marx",
-     "axe": "social",
-     "sous_domaine": "sociologie",
-     "these": "Marx soutient que la structure économique d'une société — l'état de ses forces productives et les rapports de production qui l'accompagnent — explique la forme de ses institutions politiques et juridiques, et que l'histoire des sociétés est celle des conflits entre les classes définies par la place…",
-     "limite": "Sur la contribution : G."
-    },
-    {
-     "type": "humaine",
-     "id": "marxisme-leninisme",
-     "nom": "Marxisme-léninisme",
-     "axe": "social",
-     "sous_domaine": "modele_politique",
-     "these": "Le marxisme-léninisme combine la pensée de Marx avec l'apport théorique de Lénine (le parti d'avant-garde révolutionnaire, le centralisme démocratique), formalisé et rigidifié par Staline à partir des années 1920 en doctrine officielle de l'URSS.",
-     "limite": "D'autres courants marxistes — conseillistes, dont Anton Pannekoek, trotskistes, luxemburgistes — lui reprochent d'avoir instauré une dictature de la bureaucratie plutôt que la dictature du prolétariat annoncée ; l'historien Nicholas Riasanovsky y voit pour sa part une « pseudo-religion » offrant une…"
-    }
-   ],
-   "preuve": "Sur l'usage : la doctrine d'État de l'URSS s'est construite en marxisme-léninisme, avec l'apport propre de Lénine puis la codification stalinienne, contre lequel d'autres courants marxistes — conseillistes, trotskistes, luxemburgistes — ont objecté qu'il avait institué une dictature de la bureaucratie ;",
-   "champ": "limites_critiques",
-   "question": "Le référentiel documente une opposition entre « Karl Marx » et « Marxisme-léninisme ». La fiche « Karl Marx » l'écrit ainsi : « Sur l'usage : la doctrine d'État de l'URSS s'est construite en marxisme-léninisme, avec l'apport propre de Lénine puis la codification stalinienne, contre lequel d'autres courants marxistes — conseillistes, trotskistes, luxemburgistes — ont objecté qu'il avait… » Sur quoi porte exactement le désaccord, et qu'est-ce qui, aujourd'hui, permettrait de le trancher ?",
-   "actualites": []
-  },
-  {
-   "id": "karl-marx--saul-b-cohen",
-   "fiches": [
-    {
-     "type": "humaine",
-     "id": "karl-marx",
-     "nom": "Karl Marx",
-     "axe": "social",
-     "sous_domaine": "sociologie",
-     "these": "Marx soutient que la structure économique d'une société — l'état de ses forces productives et les rapports de production qui l'accompagnent — explique la forme de ses institutions politiques et juridiques, et que l'histoire des sociétés est celle des conflits entre les classes définies par la place…",
-     "limite": "Sur la contribution : G."
-    },
-    {
-     "type": "humaine",
-     "id": "saul-b-cohen",
-     "nom": "Saul B. Cohen",
+     "id": "carl-von-clausewitz",
+     "nom": "Carl von Clausewitz",
      "axe": "social",
      "sous_domaine": "geopolitique",
-     "these": "Cohen (1925-2021) soutient qu'un système mondial ne se lit ni comme un affrontement binaire ni comme une mosaïque d'États, mais comme une hiérarchie d'espaces emboîtés : des sphères géostratégiques, subdivisées en régions géopolitiques, entre lesquelles s'intercalent des zones de fracture.",
-     "limite": "La révision est aussi la faiblesse du modèle : réaménagé sur sept décennies pour absorber les configurations successives, il perd la capacité de trancher a priori entre plusieurs découpages possibles, et sa valeur prédictive reste indéterminée."
-    }
-   ],
-   "preuve": "Cohen a reconstruit le matérialisme historique comme explication fonctionnelle, mais Jon Elster objecte qu'à défaut d'un mécanisme nommé assurant le remplacement des structures devenues dysfonctionnelles, la théorie invoque une finalité historique mystérieuse, alors que le dossier empirique montre de longues périodes de stagnation ;",
-   "champ": "limites_critiques",
-   "question": "Le référentiel documente une opposition entre « Karl Marx » et « Saul B. Cohen ». La fiche « Karl Marx » l'écrit ainsi : « Cohen a reconstruit le matérialisme historique comme explication fonctionnelle, mais Jon Elster objecte qu'à défaut d'un mécanisme nommé assurant le remplacement des structures devenues dysfonctionnelles, la théorie invoque une finalité historique mystérieuse,… » Sur quoi porte exactement le désaccord, et qu'est-ce qui, aujourd'hui, permettrait de le trancher ?",
-   "actualites": []
-  },
-  {
-   "id": "lawrence-kohlberg--carol-gilligan",
-   "fiches": [
-    {
-     "type": "humaine",
-     "id": "lawrence-kohlberg",
-     "nom": "Lawrence Kohlberg",
-     "axe": "psychologique",
-     "sous_domaine": "developpement",
-     "these": "Kohlberg soutient que ce qui se développe en morale n'est pas le contenu des réponses mais la structure des justifications : six stades regroupés en trois niveaux — pré-conventionnel, conventionnel, post-conventionnel — que chacun parcourt dans le même ordre, sans nécessairement les parcourir tous.",
-     "limite": "Carol Gilligan objecte qu'un raisonnement organisé par la responsabilité envers autrui n'est pas un stade inférieur mais une autre orientation morale, et que l'échelle, construite sur des échantillons masculins, la classe mécaniquement plus bas."
+     "these": "Clausewitz (1780-1831) soutient que la guerre n'a pas de logique propre : elle est la continuation de la politique par d'autres moyens, et c'est l'objet politique qui fixe la mesure de l'effort militaire.",
+     "limite": "John Keegan, dans A History of Warfare (1993), présente Clausewitz comme le philosophe d'une guerre totale d'État à État, inapte à rendre compte des guerres tribales ou rituelles ; Christopher Bassford lui répond dans « John Keegan and the Grand Tradition of Trashing Clausewitz » (War in History, 19…"
     },
     {
      "type": "humaine",
-     "id": "carol-gilligan",
-     "nom": "Carol Gilligan",
-     "axe": "psychologique",
-     "sous_domaine": "developpement",
-     "these": "Gilligan soutient qu'il existe une seconde orientation morale, organisée par le soin et le maintien des relations, distincte de l'orientation par la justice et les droits que les échelles de jugement moral prennent pour norme.",
-     "limite": "Christina Hoff Sommers juge la recherche mal fondée et soutient qu'aucune donnée n'appuie sa conclusion."
+     "id": "martin-van-creveld",
+     "nom": "Martin van Creveld",
+     "axe": "social",
+     "sous_domaine": "geopolitique",
+     "these": "Van Creveld (né en 1946) soutient que l'issue des campagnes se décide bien davantage dans l'approvisionnement que dans la manœuvre : la logistique fixe ce qui est possible, et l'histoire des opérations relue par ce prisme dément une part des explications reçues.",
+     "limite": "Daniel Moran et Christopher Bassford contestent sa lecture de Clausewitz : Bassford soutient qu'il attribue à la « trinité » clausewitzienne des termes qui n'y figurent pas — le texte parle de violence primordiale, de hasard et de probabilité, et de subordination à la politique, non de peuple, d'arm…"
     }
    ],
-   "preuve": "Carol Gilligan objecte qu'un raisonnement organisé par la responsabilité envers autrui n'est pas un stade inférieur mais une autre orientation morale, et que l'échelle, construite sur des échantillons masculins, la classe mécaniquement plus bas.",
+   "preuve": "Basil Liddell Hart avait ouvert cette tradition d'attaque, et Martin van Creveld range Clausewitz du côté d'un modèle « trinitaire » étatique qu'il juge dépassé — Bassford objecte que van Creveld attribue à la trinité des termes (peuple, armée, gouvernement) qui ne sont pas ceux du texte.",
    "champ": "limites_critiques",
-   "question": "Le référentiel documente une opposition entre « Lawrence Kohlberg » et « Carol Gilligan ». La fiche « Lawrence Kohlberg » l'écrit ainsi : « Carol Gilligan objecte qu'un raisonnement organisé par la responsabilité envers autrui n'est pas un stade inférieur mais une autre orientation morale, et que l'échelle, construite sur des échantillons masculins, la classe mécaniquement plus bas. » Sur quoi porte exactement le désaccord, et qu'est-ce qui, aujourd'hui, permettrait de le trancher ?",
+   "question": "Le référentiel documente une opposition entre « Carl von Clausewitz » et « Martin van Creveld ». La fiche « Carl von Clausewitz » l'écrit ainsi : « Basil Liddell Hart avait ouvert cette tradition d'attaque, et Martin van Creveld range Clausewitz du côté d'un modèle « trinitaire » étatique qu'il juge dépassé — Bassford objecte que van Creveld attribue à la trinité des termes (peuple, armée, gouvernement) q… » Sur quoi porte exactement le désaccord, et qu'est-ce qui, aujourd'hui, permettrait de le trancher ?",
    "actualites": []
   },
   {
-   "id": "louis-leon-thurstone--simon-johnson",
+   "id": "charles-spearman--louis-leon-thurstone",
    "fiches": [
+    {
+     "type": "humaine",
+     "id": "charles-spearman",
+     "nom": "Charles Spearman",
+     "axe": "psychologique",
+     "sous_domaine": "psychometrie",
+     "these": "Spearman constate que les performances à des épreuves cognitives très différentes corrèlent positivement entre elles, et il en infère ce qu'il appelle l'« unité universelle de la fonction intellective » : un facteur général g intervient dans toutes les tâches, à côté de facteurs spécifiques s propre…",
+     "limite": "Louis Leon Thurstone lui oppose en 1938 sept aptitudes primaires, avant de concéder qu'un facteur général existe bien parmi les mesures d'aptitude ; Godfrey Thomson conteste le modèle, le désaccord portant, selon la source, davantage sur la méthode et l'épistémologie que sur les données."
+    },
     {
      "type": "humaine",
      "id": "louis-leon-thurstone",
@@ -214,222 +61,186 @@
      "sous_domaine": "psychometrie",
      "these": "Thurstone soutient que les corrélations entre épreuves ne requièrent pas un facteur unique mais s'expliquent par plusieurs facteurs communs de même rang, et qu'il n'appartient pas au chercheur d'imposer les axes : ceux-ci doivent être tirés des constellations que forment empiriquement les traits.",
      "limite": "Sa propre concession — l'existence d'un facteur général parmi les mesures d'aptitude — indique que le différend avec Spearman tenait moins aux données qu'au choix de la rotation appliquée à une même matrice de corrélations."
-    },
-    {
-     "type": "humaine",
-     "id": "simon-johnson",
-     "nom": "Simon Johnson",
-     "axe": "social",
-     "sous_domaine": "economie",
-     "these": "Simon Johnson, économiste britanno-américain (ancien chef économiste du FMI), soutient, en écho à Acemoglu et Robinson, que le contrôle du pouvoir économique et technologique par une élite restreinte — qu'il s'agisse de la finance ou de l'IA — menace la stabilité institutionnelle et démocratique.",
-     "limite": "Ses recommandations de régulation plus stricte du pouvoir financier et technologique concentré restent contestées par les courants économiques plus libéraux, pour lesquels la régulation souffre des mêmes défaillances d'information que les marchés qu'elle prétend corriger."
     }
    ],
-   "preuve": "Kevin McGrew a intégré ce modèle à celui de Horn et Cattell en 2005 (modèle Cattell-Horn-Carroll), intégration que Johnson et Bouchard contestent à leur tour en proposant un modèle g-VPR.",
+   "preuve": "Louis Leon Thurstone lui oppose en 1938 sept aptitudes primaires, avant de concéder qu'un facteur général existe bien parmi les mesures d'aptitude ;",
    "champ": "limites_critiques",
-   "question": "Le référentiel documente une opposition entre « Louis Leon Thurstone » et « Simon Johnson ». La fiche « Louis Leon Thurstone » l'écrit ainsi : « Kevin McGrew a intégré ce modèle à celui de Horn et Cattell en 2005 (modèle Cattell-Horn-Carroll), intégration que Johnson et Bouchard contestent à leur tour en proposant un modèle g-VPR. » Sur quoi porte exactement le désaccord, et qu'est-ce qui, aujourd'hui, permettrait de le trancher ?",
+   "question": "Le référentiel documente une opposition entre « Charles Spearman » et « Louis Leon Thurstone ». La fiche « Charles Spearman » l'écrit ainsi : « Louis Leon Thurstone lui oppose en 1938 sept aptitudes primaires, avant de concéder qu'un facteur général existe bien parmi les mesures d'aptitude ; » Sur quoi porte exactement le désaccord, et qu'est-ce qui, aujourd'hui, permettrait de le trancher ?",
    "actualites": []
   },
   {
-   "id": "martin-seligman--william-james",
+   "id": "christine-sylvester--robert-keohane",
    "fiches": [
     {
      "type": "humaine",
-     "id": "martin-seligman",
-     "nom": "Martin Seligman",
-     "axe": "psychologique",
-     "sous_domaine": "psychologie_positive",
-     "these": "Seligman fonde la psychologie positive, orientant la discipline vers l'étude scientifique du bien-être, des forces de caractère et de l'épanouissement, après avoir d'abord théorisé l'impuissance apprise (learned helplessness).",
-     "limite": "La psychologie positive lui vaut le reproche d'un optimisme prescriptif proche du développement personnel et d'une attention faible aux déterminants sociaux du bien-être."
-    },
-    {
-     "type": "humaine",
-     "id": "william-james",
-     "nom": "William James",
-     "axe": "psychologique",
-     "sous_domaine": "fondations_experimentales",
-     "these": "James soutient que la conscience n'est pas une mosaïque d'éléments juxtaposés mais un flux continu, personnel, changeant et sélectif — un courant de pensée dont l'analyse en unités trahit la nature.",
-     "limite": "Walter Cannon oppose en 1927 à la théorie James-Lange cinq objections expérimentales : la séparation chirurgicale des viscères et du système nerveux ne supprime pas le comportement émotionnel chez l'animal ; les mêmes changements viscéraux se produisent dans des états émotionnels très différents et…"
-    }
-   ],
-   "preuve": "Une controverse plus lourde est documentée : en octobre 2014, le journaliste James Risen a affirmé que l'American Psychological Association, qu'il avait présidée, avait travaillé avec la CIA sur des programmes de torture ;",
-   "champ": "limites_critiques",
-   "question": "Le référentiel documente une opposition entre « Martin Seligman » et « William James ». La fiche « Martin Seligman » l'écrit ainsi : « Une controverse plus lourde est documentée : en octobre 2014, le journaliste James Risen a affirmé que l'American Psychological Association, qu'il avait présidée, avait travaillé avec la CIA sur des programmes de torture ; » Sur quoi porte exactement le désaccord, et qu'est-ce qui, aujourd'hui, permettrait de le trancher ?",
-   "actualites": []
-  },
-  {
-   "id": "mary-whiton-calkins--william-james",
-   "fiches": [
-    {
-     "type": "humaine",
-     "id": "mary-whiton-calkins",
-     "nom": "Mary Whiton Calkins",
-     "axe": "psychologique",
-     "sous_domaine": "fondations_experimentales",
-     "these": "Calkins soutient que l'objet propre de la psychologie est le soi conscient en relation avec son environnement, et non une somme de processus mentaux traités isolément : il n'y a pas de perception ni de souvenir sans un moi qui perçoit et se souvient, et l'analyse qui met le soi hors du champ manque…",
-     "limite": "James Rowland Angell, du côté fonctionnaliste, lui reproche un conservatisme scientifique extrême consistant à refuser au soi d'avoir un corps, et qualifie son moi d'esprit purement désincarné."
-    },
-    {
-     "type": "humaine",
-     "id": "william-james",
-     "nom": "William James",
-     "axe": "psychologique",
-     "sous_domaine": "fondations_experimentales",
-     "these": "James soutient que la conscience n'est pas une mosaïque d'éléments juxtaposés mais un flux continu, personnel, changeant et sélectif — un courant de pensée dont l'analyse en unités trahit la nature.",
-     "limite": "Walter Cannon oppose en 1927 à la théorie James-Lange cinq objections expérimentales : la séparation chirurgicale des viscères et du système nerveux ne supprime pas le comportement émotionnel chez l'animal ; les mêmes changements viscéraux se produisent dans des états émotionnels très différents et…"
-    }
-   ],
-   "preuve": "James Rowland Angell, du côté fonctionnaliste, lui reproche un conservatisme scientifique extrême consistant à refuser au soi d'avoir un corps, et qualifie son moi d'esprit purement désincarné.",
-   "champ": "limites_critiques",
-   "question": "Le référentiel documente une opposition entre « Mary Whiton Calkins » et « William James ». La fiche « Mary Whiton Calkins » l'écrit ainsi : « James Rowland Angell, du côté fonctionnaliste, lui reproche un conservatisme scientifique extrême consistant à refuser au soi d'avoir un corps, et qualifie son moi d'esprit purement désincarné. » Sur quoi porte exactement le désaccord, et qu'est-ce qui, aujourd'hui, permettrait de le trancher ?",
-   "actualites": []
-  },
-  {
-   "id": "max-wertheimer--karl-lashley",
-   "fiches": [
-    {
-     "type": "humaine",
-     "id": "max-wertheimer",
-     "nom": "Max Wertheimer",
-     "axe": "psychologique",
-     "sous_domaine": "perception",
-     "these": "Wertheimer soutient qu'une expérience perceptive peut exister sans qu'aucun élément sensoriel ne lui corresponde : entre deux lumières allumées successivement à un intervalle bien choisi, on voit un mouvement, alors que rien ne se déplace.",
-     "limite": "La notice consacrée à la psychologie de la forme rapporte que la théorie physiologique des gestaltistes est tombée en désuétude et qu'il en reste un ensemble de principes descriptifs sans modèle du traitement perceptif ; elle relève la difficulté à définir précisément des termes comme la Prägnanz, à…"
-    },
-    {
-     "type": "humaine",
-     "id": "karl-lashley",
-     "nom": "Karl Lashley",
-     "axe": "psychologique",
-     "sous_domaine": "neuropsychologie",
-     "these": "Lashley soutient, au terme de trente ans de lésions corticales chez le rat, que la trace mnésique n'est pas logée en un point du cortex : l'ampleur du déficit d'apprentissage dépend de la quantité de tissu détruit et non du site détruit (action de masse), et une région peut assumer la fonction d'une…",
-     "limite": "La distribution des engrammes existe bien, mais elle n'est pas égale entre toutes les aires corticales comme Lashley le supposait : la notice qui lui est consacrée note que sa théorie était incomplète plutôt qu'entièrement fausse."
-    }
-   ],
-   "preuve": "L'expérimentation de Karl Lashley, Kao Liang Chow et Josephine Semmes (Psychological Review, 58(2), 1951) a infirmé les prédictions de la théorie des champs électriques corticaux sur laquelle reposait le versant physiologique de la doctrine.",
-   "champ": "limites_critiques",
-   "question": "Le référentiel documente une opposition entre « Max Wertheimer » et « Karl Lashley ». La fiche « Max Wertheimer » l'écrit ainsi : « L'expérimentation de Karl Lashley, Kao Liang Chow et Josephine Semmes (Psychological Review, 58(2), 1951) a infirmé les prédictions de la théorie des champs électriques corticaux sur laquelle reposait le versant physiologique de la doctrine. » Sur quoi porte exactement le désaccord, et qu'est-ce qui, aujourd'hui, permettrait de le trancher ?",
-   "actualites": []
-  },
-  {
-   "id": "michel-foucault--jurgen-habermas",
-   "fiches": [
-    {
-     "type": "humaine",
-     "id": "michel-foucault",
-     "nom": "Michel Foucault",
-     "axe": "philosophique",
-     "sous_domaine": "philosophie",
-     "these": "Le pouvoir n'est pas seulement répressif mais productif : il façonne les savoirs, les normes et les sujets eux-mêmes à travers des dispositifs disciplinaires (prison, école, hôpital, sexualité) diffus dans tout le corps social.",
-     "limite": "Absence de théorie normative claire (comment distinguer un « bon » et un « mauvais » pouvoir ?), reprochée notamment par Habermas ; usage parfois flou et englobant de la notion de « pouvoir »."
-    },
-    {
-     "type": "humaine",
-     "id": "jurgen-habermas",
-     "nom": "Jürgen Habermas",
-     "axe": "philosophique",
-     "sous_domaine": "philosophie",
-     "these": "La légitimité des normes sociales et politiques repose sur l'agir communicationnel : une norme est valide si elle pourrait recueillir l'assentiment de tous les participants concernés dans une discussion libre et sans contrainte (éthique de la discussion).",
-     "limite": "L'idéal de « situation de parole idéale » jugé irréaliste par les critiques, qui pointent les asymétries de pouvoir et d'accès à l'information ; accusé de sous-estimer les rapports de force réels dans l'espace public."
-    }
-   ],
-   "preuve": "Absence de théorie normative claire (comment distinguer un « bon » et un « mauvais » pouvoir ?), reprochée notamment par Habermas ;",
-   "champ": "limites_critiques",
-   "question": "Le référentiel documente une opposition entre « Michel Foucault » et « Jürgen Habermas ». La fiche « Michel Foucault » l'écrit ainsi : « Absence de théorie normative claire (comment distinguer un « bon » et un « mauvais » pouvoir ?), reprochée notamment par Habermas ; » Sur quoi porte exactement le désaccord, et qu'est-ce qui, aujourd'hui, permettrait de le trancher ?",
-   "actualites": []
-  },
-  {
-   "id": "michele-lamont--pierre-bourdieu",
-   "fiches": [
-    {
-     "type": "humaine",
-     "id": "michele-lamont",
-     "nom": "Michèle Lamont",
-     "axe": "social",
-     "sous_domaine": "sociologie",
-     "these": "Lamont soutient que les hiérarchies sociales passent par des frontières symboliques — les distinctions conceptuelles que les acteurs tracent eux-mêmes entre « eux » et « nous » — à distinguer des frontières sociales, formes objectivées de ces différences dans l'accès inégal aux ressources.",
-     "limite": "La recension de Money, Morals, and Manners parue dans Contemporary Sociology objecte que l'analyse ne tranche pas l'écart entre le discours d'entretien et la conduite effective — « What are we to make of this discrepancy between 'talk' and 'behavior'? » —, question classique des sciences sociales qu…"
-    },
-    {
-     "type": "humaine",
-     "id": "pierre-bourdieu",
-     "nom": "Pierre Bourdieu",
-     "axe": "social",
-     "sous_domaine": "sociologie",
-     "these": "Bourdieu soutient que les pratiques ne s'expliquent ni par le calcul conscient des agents ni par l'application mécanique de règles, mais par la rencontre entre un habitus — des « structures structurées prédisposées à fonctionner comme structures structurantes », dispositions durables et transposable…",
-     "limite": "Jacques Rancière (Le Philosophe et ses pauvres) lui objecte que le dispositif reconduit indéfiniment la domination et perd la perspective d'émancipation."
-    }
-   ],
-   "preuve": "Le même texte reproche à Lamont d'assimiler valeurs individuelles et discours culturel sans distinguer les deux : ce qu'elle recueille pourrait n'être qu'« a vocabulary, a set of expressions, stories and such » plutôt qu'un habitus, ce qui affaiblirait sa propre critique de Bourdieu au lieu de la fonder.",
-   "champ": "limites_critiques",
-   "question": "Le référentiel documente une opposition entre « Michèle Lamont » et « Pierre Bourdieu ». La fiche « Michèle Lamont » l'écrit ainsi : « Le même texte reproche à Lamont d'assimiler valeurs individuelles et discours culturel sans distinguer les deux : ce qu'elle recueille pourrait n'être qu'« a vocabulary, a set of expressions, stories and such » plutôt qu'un habitus, ce qui affaiblirait sa prop… » Sur quoi porte exactement le désaccord, et qu'est-ce qui, aujourd'hui, permettrait de le trancher ?",
-   "actualites": []
-  },
-  {
-   "id": "neoliberalisme-etatique--joseph-stiglitz",
-   "fiches": [
-    {
-     "type": "humaine",
-     "id": "neoliberalisme-etatique",
-     "nom": "Néolibéralisme étatique",
-     "axe": "social",
-     "sous_domaine": "modele_politique",
-     "these": "Le néolibéralisme désigne un ensemble de doctrines économiques prônant la réduction du rôle de l'État, la dérégulation des marchés et la priorité donnée aux mécanismes de marché, l'État étant réduit à la création d'un cadre légal favorable plutôt qu'à un rôle d'intervention directe.",
-     "limite": "Joseph Stiglitz le qualifie de « fondamentalisme de marché » réfuté par les faits, tandis que Pierre Bourdieu y voit un programme de destruction méthodique des solidarités collectives ; le terme lui-même reste flou, presque personne ne s'en revendiquant explicitement."
-    },
-    {
-     "type": "humaine",
-     "id": "joseph-stiglitz",
-     "nom": "Joseph Stiglitz",
-     "axe": "social",
-     "sous_domaine": "economie",
-     "these": "Stiglitz démontre que lorsque l'information est imparfaite et distribuée de façon asymétrique entre acteurs économiques, les marchés ne fonctionnent pas efficacement, remettant en cause la théorie classique de la « main invisible ».",
-     "limite": "Ses préconisations d'intervention publique pour corriger les défaillances de marché liées à l'information asymétrique sont contestées par les courants plus libéraux, qui estiment que la régulation elle-même souffre souvent de défaillances d'information comparables."
-    }
-   ],
-   "preuve": "Joseph Stiglitz le qualifie de « fondamentalisme de marché » réfuté par les faits, tandis que Pierre Bourdieu y voit un programme de destruction méthodique des solidarités collectives ;",
-   "champ": "limites_critiques",
-   "question": "Le référentiel documente une opposition entre « Néolibéralisme étatique » et « Joseph Stiglitz ». La fiche « Néolibéralisme étatique » l'écrit ainsi : « Joseph Stiglitz le qualifie de « fondamentalisme de marché » réfuté par les faits, tandis que Pierre Bourdieu y voit un programme de destruction méthodique des solidarités collectives ; » Sur quoi porte exactement le désaccord, et qu'est-ce qui, aujourd'hui, permettrait de le trancher ?",
-   "actualites": []
-  },
-  {
-   "id": "neoliberalisme-etatique--pierre-bourdieu",
-   "fiches": [
-    {
-     "type": "humaine",
-     "id": "neoliberalisme-etatique",
-     "nom": "Néolibéralisme étatique",
-     "axe": "social",
-     "sous_domaine": "modele_politique",
-     "these": "Le néolibéralisme désigne un ensemble de doctrines économiques prônant la réduction du rôle de l'État, la dérégulation des marchés et la priorité donnée aux mécanismes de marché, l'État étant réduit à la création d'un cadre légal favorable plutôt qu'à un rôle d'intervention directe.",
-     "limite": "Joseph Stiglitz le qualifie de « fondamentalisme de marché » réfuté par les faits, tandis que Pierre Bourdieu y voit un programme de destruction méthodique des solidarités collectives ; le terme lui-même reste flou, presque personne ne s'en revendiquant explicitement."
-    },
-    {
-     "type": "humaine",
-     "id": "pierre-bourdieu",
-     "nom": "Pierre Bourdieu",
-     "axe": "social",
-     "sous_domaine": "sociologie",
-     "these": "Bourdieu soutient que les pratiques ne s'expliquent ni par le calcul conscient des agents ni par l'application mécanique de règles, mais par la rencontre entre un habitus — des « structures structurées prédisposées à fonctionner comme structures structurantes », dispositions durables et transposable…",
-     "limite": "Jacques Rancière (Le Philosophe et ses pauvres) lui objecte que le dispositif reconduit indéfiniment la domination et perd la perspective d'émancipation."
-    }
-   ],
-   "preuve": "Joseph Stiglitz le qualifie de « fondamentalisme de marché » réfuté par les faits, tandis que Pierre Bourdieu y voit un programme de destruction méthodique des solidarités collectives ;",
-   "champ": "limites_critiques",
-   "question": "Le référentiel documente une opposition entre « Néolibéralisme étatique » et « Pierre Bourdieu ». La fiche « Néolibéralisme étatique » l'écrit ainsi : « Joseph Stiglitz le qualifie de « fondamentalisme de marché » réfuté par les faits, tandis que Pierre Bourdieu y voit un programme de destruction méthodique des solidarités collectives ; » Sur quoi porte exactement le désaccord, et qu'est-ce qui, aujourd'hui, permettrait de le trancher ?",
-   "actualites": []
-  },
-  {
-   "id": "nicholas-onuf--john-mearsheimer",
-   "fiches": [
-    {
-     "type": "humaine",
-     "id": "nicholas-onuf",
-     "nom": "Nicholas Onuf",
+     "id": "christine-sylvester",
+     "nom": "Christine Sylvester",
      "axe": "social",
      "sous_domaine": "geopolitique",
-     "these": "Onuf soutient que le monde social est fait de règles et que les règles se produisent par des actes de langage : à trois types d'énoncés — instructifs, directifs, engageants — correspondent trois types de règles, qui engendrent trois configurations de domination, l'hégémonie, la hiérarchie et l'hétér…",
-     "limite": "C'est la version étatocentrée et systémique d'Alexander Wendt, non celle d'Onuf, qui a engendré le programme de recherche : la littérature reconnaît à Onuf la paternité du terme et tient Wendt pour le principal avocat du courant, ce qui est une manière de dire que le dispositif d'Onuf s'est révélé p…"
+     "these": "Sylvester soutient que la théorie féministe n'a pas à réclamer une place dans les trois grands débats de la discipline mais à les retravailler, et que l'épistémologie postmoderne interdit d'y substituer un point de vue féminin unifié qui reproduirait le geste qu'elle conteste.",
+     "limite": "Limite interne, et assumée comme telle par la position postmoderne : la coopération empathique est une proposition normative et méthodologique dépourvue de critère externe de validation, et son objet — l'expérience située — se prête mal à la comparaison réglée."
+    },
+    {
+     "type": "humaine",
+     "id": "robert-keohane",
+     "nom": "Robert Keohane",
+     "axe": "social",
+     "sous_domaine": "geopolitique",
+     "these": "Keohane soutient que la coopération internationale ne suppose ni harmonie d'intérêts ni hégémon : elle est possible entre États égoïstes et rationnels dès lors que des institutions réduisent les coûts de transaction, produisent de l'information et rendent les engagements vérifiables.",
+     "limite": "Joseph M."
+    }
+   ],
+   "preuve": "L'objection méthodologique que le courant positiviste de la discipline adresse à cette famille de travaux est celle que Robert Keohane formule dans « Beyond Dichotomy » (International Studies Quarterly, 42(1), 1998, p.",
+   "champ": "limites_critiques",
+   "question": "Le référentiel documente une opposition entre « Christine Sylvester » et « Robert Keohane ». La fiche « Christine Sylvester » l'écrit ainsi : « L'objection méthodologique que le courant positiviste de la discipline adresse à cette famille de travaux est celle que Robert Keohane formule dans « Beyond Dichotomy » (International Studies Quarterly, 42(1), 1998, p. » Sur quoi porte exactement le désaccord, et qu'est-ce qui, aujourd'hui, permettrait de le trancher ?",
+   "actualites": []
+  },
+  {
+   "id": "clark-hull--edward-tolman",
+   "fiches": [
+    {
+     "type": "humaine",
+     "id": "clark-hull",
+     "nom": "Clark Hull",
+     "axe": "psychologique",
+     "sous_domaine": "behaviorisme",
+     "these": "Hull soutient que le comportement obéit à des lois quantitatives déductibles d'un petit nombre de postulats explicites, à la manière d'une physique : le potentiel excitateur d'une réponse est le produit de la force de l'habitude, de la pulsion, de l'intensité du stimulus et de l'incitation (sEr = sH…",
+     "limite": "Edward Tolman a opposé au système que le comportement est dirigé vers un but et non gouverné par des pulsions et des renforcements aveugles, et ses expériences de labyrinthe ont montré que le rat apprend sans renforcement — l'apprentissage latent, que la réduction de pulsion ne prédit pas."
+    },
+    {
+     "type": "humaine",
+     "id": "edward-tolman",
+     "nom": "Edward Tolman",
+     "axe": "psychologique",
+     "sous_domaine": "behaviorisme",
+     "these": "Tolman soutient que l'unité pertinente du comportement n'est pas le réflexe élémentaire mais l'acte molaire dirigé vers un but, et que le rat qui parcourt un labyrinthe n'acquiert pas une chaîne de réponses mais une carte cognitive de son environnement, utilisable de façon flexible pour atteindre un…",
+     "limite": "Clark Hull opposait à l'approche stimulus-stimulus de Tolman une théorie stimulus-réponse fondée sur le renforcement, et ses partisans ont produit des explications alternatives des résultats de Tolman."
+    }
+   ],
+   "preuve": "Edward Tolman a opposé au système que le comportement est dirigé vers un but et non gouverné par des pulsions et des renforcements aveugles, et ses expériences de labyrinthe ont montré que le rat apprend sans renforcement — l'apprentissage latent, que la réduction de pulsion ne prédit pas.",
+   "champ": "limites_critiques",
+   "question": "Le référentiel documente une opposition entre « Clark Hull » et « Edward Tolman ». La fiche « Clark Hull » l'écrit ainsi : « Edward Tolman a opposé au système que le comportement est dirigé vers un but et non gouverné par des pulsions et des renforcements aveugles, et ses expériences de labyrinthe ont montré que le rat apprend sans renforcement — l'apprentissage latent, que la réduc… » Sur quoi porte exactement le désaccord, et qu'est-ce qui, aujourd'hui, permettrait de le trancher ?",
+   "actualites": []
+  },
+  {
+   "id": "cynthia-enloe--robert-keohane",
+   "fiches": [
+    {
+     "type": "humaine",
+     "id": "cynthia-enloe",
+     "nom": "Cynthia Enloe",
+     "axe": "social",
+     "sous_domaine": "geopolitique",
+     "these": "Enloe soutient que la politique internationale repose sur des rapports de genre que sa description ordinaire rend invisibles, et que la question « où sont les femmes ? » suffit à les faire apparaître : épouses de diplomates, prostituées autour des bases, ouvrières des plantations et de la confection…",
+     "limite": "La méthode se donne elle-même pour une curiosité et non pour un programme de test d'hypothèses : elle ne produit ni généralisation ni énoncé mesurable, ce qui est l'objection que Robert Keohane adresse à ce courant dans « Beyond Dichotomy » (International Studies Quarterly, 42(1), 1998, p. 193-197)…"
+    },
+    {
+     "type": "humaine",
+     "id": "robert-keohane",
+     "nom": "Robert Keohane",
+     "axe": "social",
+     "sous_domaine": "geopolitique",
+     "these": "Keohane soutient que la coopération internationale ne suppose ni harmonie d'intérêts ni hégémon : elle est possible entre États égoïstes et rationnels dès lors que des institutions réduisent les coûts de transaction, produisent de l'information et rendent les engagements vérifiables.",
+     "limite": "Joseph M."
+    }
+   ],
+   "preuve": "La méthode se donne elle-même pour une curiosité et non pour un programme de test d'hypothèses : elle ne produit ni généralisation ni énoncé mesurable, ce qui est l'objection que Robert Keohane adresse à ce courant dans « Beyond Dichotomy » (International Studies Quarterly, 42(1), 1998, p.",
+   "champ": "limites_critiques",
+   "question": "Le référentiel documente une opposition entre « Cynthia Enloe » et « Robert Keohane ». La fiche « Cynthia Enloe » l'écrit ainsi : « La méthode se donne elle-même pour une curiosité et non pour un programme de test d'hypothèses : elle ne produit ni généralisation ni énoncé mesurable, ce qui est l'objection que Robert Keohane adresse à ce courant dans « Beyond Dichotomy » (International Stud… » Sur quoi porte exactement le désaccord, et qu'est-ce qui, aujourd'hui, permettrait de le trancher ?",
+   "actualites": []
+  },
+  {
+   "id": "democratie-liberale--chantal-mouffe",
+   "fiches": [
+    {
+     "type": "humaine",
+     "id": "democratie-liberale",
+     "nom": "Démocratie libérale",
+     "axe": "social",
+     "sous_domaine": "modele_politique",
+     "these": "Régime combinant élections pluralistes compétitives, séparation des pouvoirs, État de droit et protection constitutionnelle des libertés individuelles.",
+     "limite": "Défis actuels : polarisation, désinformation, érosion de la confiance institutionnelle, tension entre État de droit et volonté majoritaire (cf. débats Mouffe/Rawls en philosophie politique)."
+    },
+    {
+     "type": "humaine",
+     "id": "chantal-mouffe",
+     "nom": "Chantal Mouffe",
+     "axe": "philosophique",
+     "sous_domaine": "philosophie",
+     "these": "La démocratie ne doit pas chercher un consensus rationnel final (comme chez Habermas ou Rawls) car le politique est irréductiblement traversé par l'antagonisme ; l'objectif démocratique est de transformer l'antagonisme (ennemis à détruire) en agonisme (adversaires légitimes en désaccord).",
+     "limite": "Accusée par des penseurs libéraux de légitimer, voire de banaliser, le conflit politique au détriment de l'État de droit et des procédures consensuelles ; son concept d'« hégémonie », emprunté à Gramsci, s'éloigne de l'analyse matérialiste des classes dont il est issu."
+    }
+   ],
+   "preuve": "Défis actuels : polarisation, désinformation, érosion de la confiance institutionnelle, tension entre État de droit et volonté majoritaire (cf. débats Mouffe/Rawls en philosophie politique).",
+   "champ": "limites_critiques",
+   "question": "Le référentiel documente une opposition entre « Démocratie libérale » et « Chantal Mouffe ». La fiche « Démocratie libérale » l'écrit ainsi : « Défis actuels : polarisation, désinformation, érosion de la confiance institutionnelle, tension entre État de droit et volonté majoritaire (cf. débats Mouffe/Rawls en philosophie politique). » Sur quoi porte exactement le désaccord, et qu'est-ce qui, aujourd'hui, permettrait de le trancher ?",
+   "actualites": []
+  },
+  {
+   "id": "democratie-liberale--john-rawls",
+   "fiches": [
+    {
+     "type": "humaine",
+     "id": "democratie-liberale",
+     "nom": "Démocratie libérale",
+     "axe": "social",
+     "sous_domaine": "modele_politique",
+     "these": "Régime combinant élections pluralistes compétitives, séparation des pouvoirs, État de droit et protection constitutionnelle des libertés individuelles.",
+     "limite": "Défis actuels : polarisation, désinformation, érosion de la confiance institutionnelle, tension entre État de droit et volonté majoritaire (cf. débats Mouffe/Rawls en philosophie politique)."
+    },
+    {
+     "type": "humaine",
+     "id": "john-rawls",
+     "nom": "John Rawls",
+     "axe": "philosophique",
+     "sous_domaine": "philosophie",
+     "these": "Une société juste est celle dont les principes seraient choisis par des individus rationnels placés sous un « voile d'ignorance » (ignorant leur propre position sociale future) : liberté égale pour tous, et inégalités tolérées seulement si elles profitent aux plus défavorisés.",
+     "limite": "Amartya Sen lui oppose, en s'inspirant de Montesquieu, que le droit ne peut se limiter à poser des principes généraux de justice mais doit refléter le mouvement des mœurs — d'où sa notion de capabilité et sa critique des critères rawlsiens de liberté réelle ; l'économiste et philosophe Francisco Ver…"
+    }
+   ],
+   "preuve": "Défis actuels : polarisation, désinformation, érosion de la confiance institutionnelle, tension entre État de droit et volonté majoritaire (cf. débats Mouffe/Rawls en philosophie politique).",
+   "champ": "limites_critiques",
+   "question": "Le référentiel documente une opposition entre « Démocratie libérale » et « John Rawls ». La fiche « Démocratie libérale » l'écrit ainsi : « Défis actuels : polarisation, désinformation, érosion de la confiance institutionnelle, tension entre État de droit et volonté majoritaire (cf. débats Mouffe/Rawls en philosophie politique). » Sur quoi porte exactement le désaccord, et qu'est-ce qui, aujourd'hui, permettrait de le trancher ?",
+   "actualites": []
+  },
+  {
+   "id": "donald-broadbent--anne-treisman",
+   "fiches": [
+    {
+     "type": "humaine",
+     "id": "donald-broadbent",
+     "nom": "Donald Broadbent",
+     "axe": "psychologique",
+     "sous_domaine": "cognition",
+     "these": "Broadbent soutient que le système nerveux est un canal de capacité limitée précédé d'un filtre : les caractéristiques physiques d'un message — hauteur, intensité — servent à sélectionner un seul message à traiter, les autres étant écartés avant tout traitement du sens.",
+     "limite": "Le modèle explique mal l'effet cocktail party décrit par Colin Cherry, c'est-à-dire la détection d'informations pertinentes dans le canal non attendu."
+    },
+    {
+     "type": "humaine",
+     "id": "anne-treisman",
+     "nom": "Anne Treisman",
+     "axe": "psychologique",
+     "sous_domaine": "cognition",
+     "these": "Treisman soutient que les traits élémentaires — couleur, forme, orientation — sont encodés séparément et en parallèle à un stade précoce de la perception, et que c'est l'attention focalisée qui les combine en objets perçus.",
+     "limite": "Jeremy Wolfe, Kyle Cave et Susan Franzel (Journal of Experimental Psychology: Human Perception and Performance 15(3), 419-433, 1989) rapportent des recherches de conjonction couleur × forme, couleur × orientation et couleur × taille aux pentes très faibles — moins de 6 ms par item chez la moitié de…"
+    }
+   ],
+   "preuve": "Anne Treisman lui oppose en 1964 un modèle d'atténuation : l'information non attendue est affaiblie, non supprimée, ce qu'elle établit par des tâches d'écoute dichotique.",
+   "champ": "limites_critiques",
+   "question": "Le référentiel documente une opposition entre « Donald Broadbent » et « Anne Treisman ». La fiche « Donald Broadbent » l'écrit ainsi : « Anne Treisman lui oppose en 1964 un modèle d'atténuation : l'information non attendue est affaiblie, non supprimée, ce qu'elle établit par des tâches d'écoute dichotique. » Sur quoi porte exactement le désaccord, et qu'est-ce qui, aujourd'hui, permettrait de le trancher ?",
+   "actualites": []
+  },
+  {
+   "id": "e-h-carr--john-mearsheimer",
+   "fiches": [
+    {
+     "type": "humaine",
+     "id": "e-h-carr",
+     "nom": "E. H. Carr",
+     "axe": "social",
+     "sous_domaine": "geopolitique",
+     "these": "Carr oppose deux modes de pensée du monde international : l'utopisme, qui juge le réel à l'aune de ce qui devrait être, et le réalisme, qui part des rapports de force existants — et il tient qu'aucun des deux ne suffit seul.",
+     "limite": "Le livre est adossé à une position politique datée : la première édition de 1939 défendait l'apaisement et les accords de Munich comme la seule politique réaliste, et Carr a réécrit l'ouvrage en 1946 dans un sens nettement plus hostile à la politique étrangère allemande."
     },
     {
      "type": "humaine",
@@ -441,95 +252,309 @@
      "limite": "Glenn Snyder, dans « Mearsheimer's World — Offensive Realism and the Struggle for Security: A Review Essay » (International Security, été 2002), reconnaît une avancée théorique mais juge le pessimisme sur le comportement des États insuffisamment justifié et reproche à la théorie de négliger les inst…"
     }
    ],
-   "preuve": "À l'extérieur du courant, John Mearsheimer, dans « The False Promise of International Institutions » (International Security, 1994), conteste au constructivisme dans son ensemble tout effet qui ne soit pas marginal.",
+   "preuve": "John Mearsheimer lui reproche l'absence de socle théorique : Carr dit peu de choses sur les raisons pour lesquelles les États tiennent à la puissance, ni sur la quantité de puissance qu'ils recherchent.",
    "champ": "limites_critiques",
-   "question": "Le référentiel documente une opposition entre « Nicholas Onuf » et « John Mearsheimer ». La fiche « Nicholas Onuf » l'écrit ainsi : « À l'extérieur du courant, John Mearsheimer, dans « The False Promise of International Institutions » (International Security, 1994), conteste au constructivisme dans son ensemble tout effet qui ne soit pas marginal. » Sur quoi porte exactement le désaccord, et qu'est-ce qui, aujourd'hui, permettrait de le trancher ?",
+   "question": "Le référentiel documente une opposition entre « E. H. Carr » et « John Mearsheimer ». La fiche « E. H. Carr » l'écrit ainsi : « John Mearsheimer lui reproche l'absence de socle théorique : Carr dit peu de choses sur les raisons pour lesquelles les États tiennent à la puissance, ni sur la quantité de puissance qu'ils recherchent. » Sur quoi porte exactement le désaccord, et qu'est-ce qui, aujourd'hui, permettrait de le trancher ?",
    "actualites": []
   },
   {
-   "id": "niels-bohr--albert-einstein",
+   "id": "edward-thorndike--wolfgang-kohler",
    "fiches": [
     {
      "type": "humaine",
-     "id": "niels-bohr",
-     "nom": "Niels Bohr",
-     "axe": "evolution",
-     "sous_domaine": "sciences",
-     "these": "Bohr a introduit la quantification de l'énergie dans le modèle atomique (1913) puis a formulé le principe de complémentarité, selon lequel des descriptions apparemment contradictoires d'un même phénomène quantique (onde/particule) peuvent être toutes deux nécessaires et complémentaires plutôt que mu…",
-     "limite": "Son interprétation de Copenhague, en particulier le rôle de la mesure dans l'effondrement de la fonction d'onde, a fait l'objet de débats fondamentaux non résolus avec Einstein (paradoxe EPR) et reste contestée par des interprétations alternatives (Bohm, mondes multiples)."
+     "id": "edward-thorndike",
+     "nom": "Edward Thorndike",
+     "axe": "psychologique",
+     "sous_domaine": "behaviorisme",
+     "these": "Thorndike soutient que l'apprentissage animal ne procède ni par raisonnement ni par imitation mais par essai et erreur : les réponses suivies d'un état satisfaisant sont davantage reproduites, celles suivies d'un état désagréable le sont moins — c'est la loi de l'effet.",
+     "limite": "Thorndike a lui-même abandonné la loi de l'exercice, la pratique seule ne renforçant pas les associations, et révisé la loi de l'effet en concluant que la punition est inefficace ; Wolfgang Köhler oppose de son côté à l'essai-erreur graduel des résolutions par restructuration soudaine chez le chimpa…"
     },
     {
      "type": "humaine",
-     "id": "albert-einstein",
-     "nom": "Albert Einstein",
-     "axe": "evolution",
-     "sous_domaine": "sciences",
-     "these": "Einstein a établi que les lois de la physique et la vitesse de la lumière sont invariantes pour tout observateur en mouvement uniforme (relativité restreinte, 1905), puis que la gravitation résulte de la courbure de l'espace-temps par la masse et l'énergie (relativité générale, 1915), révolutionnant…",
-     "limite": "A passé les dernières décennies de sa carrière à chercher, sans succès, une théorie du champ unifié reliant gravitation et électromagnétisme ; est resté profondément sceptique envers l'interprétation probabiliste de la mécanique quantique (« Dieu ne joue pas aux dés »), un débat aujourd'hui largemen…"
+     "id": "wolfgang-kohler",
+     "nom": "Wolfgang Köhler",
+     "axe": "psychologique",
+     "sous_domaine": "perception",
+     "these": "Köhler soutient que le chimpanzé, placé devant un problème dont tous les éléments sont visibles, ne procède pas par essais graduels mais par restructuration soudaine du champ : la solution apparaît d'un coup, puis se répète sans hésitation — c'est l'Einsicht.",
+     "limite": "Le versant physiologique de sa doctrine a été expérimentalement infirmé : Karl Lashley, Kao Liang Chow et Josephine Semmes ont examiné la théorie des champs électriques d'intégration cérébrale (Psychological Review, 58(2), 1951, p. 123-136) et en ont contredit les prédictions."
     }
    ],
-   "preuve": "Son interprétation de Copenhague, en particulier le rôle de la mesure dans l'effondrement de la fonction d'onde, a fait l'objet de débats fondamentaux non résolus avec Einstein (paradoxe EPR) et reste contestée par des interprétations alternatives (Bohm, mondes multiples).",
+   "preuve": "Wolfgang Köhler oppose de son côté à l'essai-erreur graduel des résolutions par restructuration soudaine chez le chimpanzé.",
    "champ": "limites_critiques",
-   "question": "Le référentiel documente une opposition entre « Niels Bohr » et « Albert Einstein ». La fiche « Niels Bohr » l'écrit ainsi : « Son interprétation de Copenhague, en particulier le rôle de la mesure dans l'effondrement de la fonction d'onde, a fait l'objet de débats fondamentaux non résolus avec Einstein (paradoxe EPR) et reste contestée par des interprétations alternatives (Bohm, monde… » Sur quoi porte exactement le désaccord, et qu'est-ce qui, aujourd'hui, permettrait de le trancher ?",
+   "question": "Le référentiel documente une opposition entre « Edward Thorndike » et « Wolfgang Köhler ». La fiche « Edward Thorndike » l'écrit ainsi : « Wolfgang Köhler oppose de son côté à l'essai-erreur graduel des résolutions par restructuration soudaine chez le chimpanzé. » Sur quoi porte exactement le désaccord, et qu'est-ce qui, aujourd'hui, permettrait de le trancher ?",
    "actualites": []
   },
   {
-   "id": "niklas-luhmann--jurgen-habermas",
+   "id": "emile-durkheim--lawrence-freedman",
    "fiches": [
     {
      "type": "humaine",
-     "id": "niklas-luhmann",
-     "nom": "Niklas Luhmann",
+     "id": "emile-durkheim",
+     "nom": "Émile Durkheim",
      "axe": "social",
      "sous_domaine": "sociologie",
-     "these": "Luhmann soutient que les systèmes sociaux sont des systèmes de communication et non d'action, et que la société est le système social le plus englobant, formé de toutes les communications en cours.",
-     "limite": "Jürgen Habermas conteste avec lui le rendement de la théorie des systèmes dans un volume commun (Theorie der Gesellschaft oder Sozialtechnologie – Was leistet die Systemforschung ?, Suhrkamp, 1971), lui reprochant l'incapacité à rendre compte de la normativité et d'un potentiel émancipateur."
+     "these": "Durkheim soutient qu'il existe une catégorie de faits — les faits sociaux — extérieurs à l'individu et dotés d'un pouvoir de contrainte sur lui, et qu'ils doivent être traités « comme des choses », c'est-à-dire comme des objets ayant une réalité propre, non comme des idées à interpréter.",
+     "limite": "L'argument statistique du Suicide a été attaqué comme une erreur écologique — conclure du comportement individuel à partir d'agrégats : Selvin (1965) puis Freedman (2002) formulent l'objection, tandis que Van Poppel et Day (1996) la déplacent sur le terrain empirique, en montrant que protestants et…"
     },
     {
      "type": "humaine",
-     "id": "jurgen-habermas",
-     "nom": "Jürgen Habermas",
-     "axe": "philosophique",
-     "sous_domaine": "philosophie",
-     "these": "La légitimité des normes sociales et politiques repose sur l'agir communicationnel : une norme est valide si elle pourrait recueillir l'assentiment de tous les participants concernés dans une discussion libre et sans contrainte (éthique de la discussion).",
-     "limite": "L'idéal de « situation de parole idéale » jugé irréaliste par les critiques, qui pointent les asymétries de pouvoir et d'accès à l'information ; accusé de sous-estimer les rapports de force réels dans l'espace public."
+     "id": "lawrence-freedman",
+     "nom": "Lawrence Freedman",
+     "axe": "social",
+     "sous_domaine": "geopolitique",
+     "these": "Freedman (né en 1948) soutient que la stratégie nucléaire n'est pas un corps de vérités déduites mais une histoire d'idées successives, forgées dans des controverses institutionnelles et souvent démenties par les archives.",
+     "limite": "Les sources consultées ne comportent pas de critique nommée de son œuvre ; la limite retenue est interne et tient au dispositif même."
     }
    ],
-   "preuve": "Jürgen Habermas conteste avec lui le rendement de la théorie des systèmes dans un volume commun (Theorie der Gesellschaft oder Sozialtechnologie – Was leistet die Systemforschung ?, Suhrkamp, 1971), lui reprochant l'incapacité à rendre compte de la normativité et d'un potentiel émancipateur.",
+   "preuve": "L'argument statistique du Suicide a été attaqué comme une erreur écologique — conclure du comportement individuel à partir d'agrégats : Selvin (1965) puis Freedman (2002) formulent l'objection, tandis que Van Poppel et Day (1996) la déplacent sur le terrain empirique, en montrant que protestants et catholiques n'enregistraient pas les décès de la même manière.",
    "champ": "limites_critiques",
-   "question": "Le référentiel documente une opposition entre « Niklas Luhmann » et « Jürgen Habermas ». La fiche « Niklas Luhmann » l'écrit ainsi : « Jürgen Habermas conteste avec lui le rendement de la théorie des systèmes dans un volume commun (Theorie der Gesellschaft oder Sozialtechnologie – Was leistet die Systemforschung ?, Suhrkamp, 1971), lui reprochant l'incapacité à rendre compte de la normativité… » Sur quoi porte exactement le désaccord, et qu'est-ce qui, aujourd'hui, permettrait de le trancher ?",
+   "question": "Le référentiel documente une opposition entre « Émile Durkheim » et « Lawrence Freedman ». La fiche « Émile Durkheim » l'écrit ainsi : « L'argument statistique du Suicide a été attaqué comme une erreur écologique — conclure du comportement individuel à partir d'agrégats : Selvin (1965) puis Freedman (2002) formulent l'objection, tandis que Van Poppel et Day (1996) la déplacent sur le terrain em… » Sur quoi porte exactement le désaccord, et qu'est-ce qui, aujourd'hui, permettrait de le trancher ?",
    "actualites": []
   },
   {
-   "id": "patricia-hill-collins--donna-haraway",
+   "id": "erik-erikson--carol-gilligan",
    "fiches": [
     {
      "type": "humaine",
-     "id": "patricia-hill-collins",
-     "nom": "Patricia Hill Collins",
+     "id": "erik-erikson",
+     "nom": "Erik Erikson",
+     "axe": "psychologique",
+     "sous_domaine": "developpement",
+     "these": "Erikson soutient que le développement ne s'arrête pas à l'enfance et qu'il est psychosocial avant d'être pulsionnel : la vie entière se découpe en huit stades, chacun organisé par une tension entre deux issues — confiance contre méfiance, autonomie contre honte, initiative contre culpabilité, applic…",
+     "limite": "Carol Gilligan, dans In a Different Voice (1982), objecte que le modèle décrit d'abord le développement d'hommes européens ou américains."
+    },
+    {
+     "type": "humaine",
+     "id": "carol-gilligan",
+     "nom": "Carol Gilligan",
+     "axe": "psychologique",
+     "sous_domaine": "developpement",
+     "these": "Gilligan soutient qu'il existe une seconde orientation morale, organisée par le soin et le maintien des relations, distincte de l'orientation par la justice et les droits que les échelles de jugement moral prennent pour norme.",
+     "limite": "Christina Hoff Sommers juge la recherche mal fondée et soutient qu'aucune donnée n'appuie sa conclusion."
+    }
+   ],
+   "preuve": "Carol Gilligan, dans In a Different Voice (1982), objecte que le modèle décrit d'abord le développement d'hommes européens ou américains.",
+   "champ": "limites_critiques",
+   "question": "Le référentiel documente une opposition entre « Erik Erikson » et « Carol Gilligan ». La fiche « Erik Erikson » l'écrit ainsi : « Carol Gilligan, dans In a Different Voice (1982), objecte que le modèle décrit d'abord le développement d'hommes européens ou américains. » Sur quoi porte exactement le désaccord, et qu'est-ce qui, aujourd'hui, permettrait de le trancher ?",
+   "actualites": []
+  },
+  {
+   "id": "esther-thelen--renee-baillargeon",
+   "fiches": [
+    {
+     "type": "humaine",
+     "id": "esther-thelen",
+     "nom": "Esther Thelen",
+     "axe": "psychologique",
+     "sous_domaine": "developpement",
+     "these": "Thelen soutient que le développement n'exécute aucun programme préétabli : un comportement émerge de l'assemblage, à chaque instant, d'un système qui comprend le corps de l'enfant, la tâche et l'environnement, et il se réorganise quand un seul de ces paramètres change.",
+     "limite": "Cette lecture s'oppose frontalement à celle des tenants de la connaissance centrale : Gregor Schöner et Thelen soutenaient que Renée Baillargeon extrapolait ses résultats et qu'un regard prolongé peut n'indiquer qu'une détection de différence entre stimuli, là où le camp représentationnel maintient…"
+    },
+    {
+     "type": "humaine",
+     "id": "renee-baillargeon",
+     "nom": "Renée Baillargeon",
+     "axe": "psychologique",
+     "sous_domaine": "developpement",
+     "these": "Baillargeon soutient que la permanence de l'objet est bien antérieure au terme fixé par Piaget : dès cinq mois, et selon ses travaux ultérieurs dès trois mois et demi, les nourrissons regardent plus longtemps un événement physiquement impossible mettant en jeu un objet caché.",
+     "limite": "Gregor Schöner et Esther Thelen ont soutenu que Baillargeon extrapolait ses résultats, et que le regard prolongé peut n'indiquer qu'une détection de différence entre stimuli plutôt qu'une surprise devant un impossible."
+    }
+   ],
+   "preuve": "Cette lecture s'oppose frontalement à celle des tenants de la connaissance centrale : Gregor Schöner et Thelen soutenaient que Renée Baillargeon extrapolait ses résultats et qu'un regard prolongé peut n'indiquer qu'une détection de différence entre stimuli, là où le camp représentationnel maintient l'interprétation en termes de connaissance de l'objet.",
+   "champ": "limites_critiques",
+   "question": "Le référentiel documente une opposition entre « Esther Thelen » et « Renée Baillargeon ». La fiche « Esther Thelen » l'écrit ainsi : « Cette lecture s'oppose frontalement à celle des tenants de la connaissance centrale : Gregor Schöner et Thelen soutenaient que Renée Baillargeon extrapolait ses résultats et qu'un regard prolongé peut n'indiquer qu'une détection de différence entre stimuli, là… » Sur quoi porte exactement le désaccord, et qu'est-ce qui, aujourd'hui, permettrait de le trancher ?",
+   "actualites": []
+  },
+  {
+   "id": "evgueni-primakov--john-mearsheimer",
+   "fiches": [
+    {
+     "type": "humaine",
+     "id": "evgueni-primakov",
+     "nom": "Evgueni Primakov",
+     "axe": "social",
+     "sous_domaine": "geopolitique",
+     "these": "Primakov soutient que l'unipolarité américaine issue de 1991 n'est ni durable ni acceptable, et que la sécurité de la Russie suppose qu'elle conserve un statut de grande puissance et mène une politique étrangère indépendante orientée vers un monde multipolaire gouverné par plusieurs puissances.",
+     "limite": "L'appréciation de la doctrine est disputée entre analystes nommés : Ariel Cohen la lit comme un jeu à somme nulle ; Emanuel Copilaș la décrit comme « l'articulation politique du néo-eurasisme » ; Mark Bassin la rapproche des visions eurasiennes de Ziouganov et de Douguine, rapprochement que la doctr…"
+    },
+    {
+     "type": "humaine",
+     "id": "john-mearsheimer",
+     "nom": "John Mearsheimer",
+     "axe": "social",
+     "sous_domaine": "geopolitique",
+     "these": "Mearsheimer soutient que dans un système anarchique les grandes puissances sont conduites, non par agressivité mais par calcul rationnel de sécurité, à maximiser leur part relative de puissance jusqu'à l'hégémonie régionale ; l'hégémonie mondiale étant hors d'atteinte, un hégémon régional s'emploie…",
+     "limite": "Glenn Snyder, dans « Mearsheimer's World — Offensive Realism and the Struggle for Security: A Review Essay » (International Security, été 2002), reconnaît une avancée théorique mais juge le pessimisme sur le comportement des États insuffisamment justifié et reproche à la théorie de négliger les inst…"
+    }
+   ],
+   "preuve": "Sa prémisse — un monde multipolaire serait plus stable — est contestée dans la théorie des relations internationales : Kenneth Waltz (1979) et John Mearsheimer (2001) tiennent la bipolarité pour la configuration la plus stable, Thomas Christensen et Jack Snyder soutiennent que la multipolarité tend à l'instabilité et à l'escalade, tandis que Karl Deutsch et J.",
+   "champ": "limites_critiques",
+   "question": "Le référentiel documente une opposition entre « Evgueni Primakov » et « John Mearsheimer ». La fiche « Evgueni Primakov » l'écrit ainsi : « Sa prémisse — un monde multipolaire serait plus stable — est contestée dans la théorie des relations internationales : Kenneth Waltz (1979) et John Mearsheimer (2001) tiennent la bipolarité pour la configuration la plus stable, Thomas Christensen et Jack Snyde… » Sur quoi porte exactement le désaccord, et qu'est-ce qui, aujourd'hui, permettrait de le trancher ?",
+   "actualites": [
+    {
+     "date": "2026-09-08",
+     "source": "RFI — Économie",
+     "titre": "Chine: le commerce extérieur chinois au beau fixe, les ventes vers les États-Unis progressent encore",
+     "lien": "https://www.rfi.fr/fr/%C3%A9conomie/20260908-chine-le-commerce-ext%C3%A9rieur-chinois-au-beau-fixe-les-ventes-vers-les-%C3%A9tats-unis-progressent-encore",
+     "fiche_touchee": "Evgueni Primakov"
+    }
+   ]
+  },
+  {
+   "id": "evgueni-primakov--kenneth-waltz",
+   "fiches": [
+    {
+     "type": "humaine",
+     "id": "evgueni-primakov",
+     "nom": "Evgueni Primakov",
+     "axe": "social",
+     "sous_domaine": "geopolitique",
+     "these": "Primakov soutient que l'unipolarité américaine issue de 1991 n'est ni durable ni acceptable, et que la sécurité de la Russie suppose qu'elle conserve un statut de grande puissance et mène une politique étrangère indépendante orientée vers un monde multipolaire gouverné par plusieurs puissances.",
+     "limite": "L'appréciation de la doctrine est disputée entre analystes nommés : Ariel Cohen la lit comme un jeu à somme nulle ; Emanuel Copilaș la décrit comme « l'articulation politique du néo-eurasisme » ; Mark Bassin la rapproche des visions eurasiennes de Ziouganov et de Douguine, rapprochement que la doctr…"
+    },
+    {
+     "type": "humaine",
+     "id": "kenneth-waltz",
+     "nom": "Kenneth Waltz",
+     "axe": "social",
+     "sous_domaine": "geopolitique",
+     "these": "Waltz soutient que le comportement des États s'explique par des pressions systémiques et non par la nature humaine ou la forme de leur régime : la structure internationale se définit par l'anarchie — l'absence d'autorité surplombante — et par la distribution des capacités entre unités fonctionnellem…",
+     "limite": "John Gerard Ruggie, dans « Continuity and Transformation in the World Polity: Toward a Neorealist Synthesis » (World Politics, 35(2), 1983, p. 261-285), établit trois défauts : la définition de la structure est trop étroite pour saisir le passage du système médiéval au système moderne, la méthode po…"
+    }
+   ],
+   "preuve": "Sa prémisse — un monde multipolaire serait plus stable — est contestée dans la théorie des relations internationales : Kenneth Waltz (1979) et John Mearsheimer (2001) tiennent la bipolarité pour la configuration la plus stable, Thomas Christensen et Jack Snyder soutiennent que la multipolarité tend à l'instabilité et à l'escalade, tandis que Karl Deutsch et J.",
+   "champ": "limites_critiques",
+   "question": "Le référentiel documente une opposition entre « Evgueni Primakov » et « Kenneth Waltz ». La fiche « Evgueni Primakov » l'écrit ainsi : « Sa prémisse — un monde multipolaire serait plus stable — est contestée dans la théorie des relations internationales : Kenneth Waltz (1979) et John Mearsheimer (2001) tiennent la bipolarité pour la configuration la plus stable, Thomas Christensen et Jack Snyde… » Sur quoi porte exactement le désaccord, et qu'est-ce qui, aujourd'hui, permettrait de le trancher ?",
+   "actualites": [
+    {
+     "date": "2026-09-08",
+     "source": "RFI — Économie",
+     "titre": "Chine: le commerce extérieur chinois au beau fixe, les ventes vers les États-Unis progressent encore",
+     "lien": "https://www.rfi.fr/fr/%C3%A9conomie/20260908-chine-le-commerce-ext%C3%A9rieur-chinois-au-beau-fixe-les-ventes-vers-les-%C3%A9tats-unis-progressent-encore",
+     "fiche_touchee": "Evgueni Primakov"
+    }
+   ]
+  },
+  {
+   "id": "fascisme--nazisme",
+   "fiches": [
+    {
+     "type": "humaine",
+     "id": "fascisme",
+     "nom": "Fascisme",
+     "axe": "social",
+     "sous_domaine": "modele_politique",
+     "these": "Le fascisme est un système politique autoritaire associant nationalisme exacerbé, populisme et totalitarisme, fondamentalement opposé à la démocratie parlementaire et à l'individualisme hérité des Lumières, apparu en Italie sous Mussolini après la Première Guerre mondiale.",
+     "limite": "Qualifié par ses détracteurs de tyrannie délibérément anti-démocratique marquée par l'opportunisme idéologique, le fascisme reste débattu par les historiens quant à ses origines exactes et à sa distinction d'avec le nazisme, avec lequel il partage le totalitarisme et le culte du chef sans que les de…"
+    },
+    {
+     "type": "humaine",
+     "id": "nazisme",
+     "nom": "Nazisme",
+     "axe": "social",
+     "sous_domaine": "modele_politique",
+     "these": "Le national-socialisme (nazisme) est l'idéologie du parti NSDAP fondé en 1920 en Allemagne et dirigé par Adolf Hitler, combinant nationalisme extrême, antisémitisme théorisé en doctrine raciale et volonté d'expansion territoriale.",
+     "limite": "Le nazisme constitue l'exemple paradigmatique de dérive totalitaire et génocidaire, condamné unanimement, dont l'étude continue néanmoins de faire débat chez les historiens quant aux mécanismes précis de son accession et de son maintien au pouvoir."
+    }
+   ],
+   "preuve": "Qualifié par ses détracteurs de tyrannie délibérément anti-démocratique marquée par l'opportunisme idéologique, le fascisme reste débattu par les historiens quant à ses origines exactes et à sa distinction d'avec le nazisme, avec lequel il partage le totalitarisme et le culte du chef sans que les deux régimes se confondent.",
+   "champ": "limites_critiques",
+   "question": "Le référentiel documente une opposition entre « Fascisme » et « Nazisme ». La fiche « Fascisme » l'écrit ainsi : « Qualifié par ses détracteurs de tyrannie délibérément anti-démocratique marquée par l'opportunisme idéologique, le fascisme reste débattu par les historiens quant à ses origines exactes et à sa distinction d'avec le nazisme, avec lequel il partage le totalitar… » Sur quoi porte exactement le désaccord, et qu'est-ce qui, aujourd'hui, permettrait de le trancher ?",
+   "actualites": []
+  },
+  {
+   "id": "fascisme--totalitarisme",
+   "fiches": [
+    {
+     "type": "humaine",
+     "id": "fascisme",
+     "nom": "Fascisme",
+     "axe": "social",
+     "sous_domaine": "modele_politique",
+     "these": "Le fascisme est un système politique autoritaire associant nationalisme exacerbé, populisme et totalitarisme, fondamentalement opposé à la démocratie parlementaire et à l'individualisme hérité des Lumières, apparu en Italie sous Mussolini après la Première Guerre mondiale.",
+     "limite": "Qualifié par ses détracteurs de tyrannie délibérément anti-démocratique marquée par l'opportunisme idéologique, le fascisme reste débattu par les historiens quant à ses origines exactes et à sa distinction d'avec le nazisme, avec lequel il partage le totalitarisme et le culte du chef sans que les de…"
+    },
+    {
+     "type": "humaine",
+     "id": "totalitarisme",
+     "nom": "Totalitarisme",
+     "axe": "social",
+     "sous_domaine": "modele_politique",
+     "these": "Le totalitarisme est un système politique où un parti unique exerce un contrôle absolu sur tous les aspects de la vie publique et privée en supprimant toute opposition organisée ; Hannah Arendt en identifie les traits essentiels dans le monopole idéologique et le recours systématique à la terreur d'…",
+     "limite": "Des historiens comme Ian Kershaw contestent l'idée que ces régimes aient réellement atomisé complètement la société civile, et le concept se voit reprocher d'obscurcir les différences réelles entre fascisme et communisme en les plaçant sur un même plan analytique."
+    }
+   ],
+   "preuve": "Qualifié par ses détracteurs de tyrannie délibérément anti-démocratique marquée par l'opportunisme idéologique, le fascisme reste débattu par les historiens quant à ses origines exactes et à sa distinction d'avec le nazisme, avec lequel il partage le totalitarisme et le culte du chef sans que les deux régimes se confondent.",
+   "champ": "limites_critiques",
+   "question": "Le référentiel documente une opposition entre « Fascisme » et « Totalitarisme ». La fiche « Fascisme » l'écrit ainsi : « Qualifié par ses détracteurs de tyrannie délibérément anti-démocratique marquée par l'opportunisme idéologique, le fascisme reste débattu par les historiens quant à ses origines exactes et à sa distinction d'avec le nazisme, avec lequel il partage le totalitar… » Sur quoi porte exactement le désaccord, et qu'est-ce qui, aujourd'hui, permettrait de le trancher ?",
+   "actualites": []
+  },
+  {
+   "id": "francis-fukuyama--jacques-derrida",
+   "fiches": [
+    {
+     "type": "humaine",
+     "id": "francis-fukuyama",
+     "nom": "Francis Fukuyama",
+     "axe": "social",
+     "sous_domaine": "geopolitique",
+     "these": "Fukuyama soutient que l'évolution idéologique de l'humanité s'est achevée, non que les événements auraient cessé : au sens hégélien repris de Kojève, la démocratie libérale aurait épuisé les alternatives systématiques capables de lui opposer un principe de légitimité concurrent.",
+     "limite": "Jacques Derrida lui oppose Spectres de Marx (1993) ; Samuel Huntington la grille civilisationnelle de « The Clash of Civilizations? » (1993) puis du livre de 1996 ; Benjamin Barber Jihad vs."
+    },
+    {
+     "type": "humaine",
+     "id": "jacques-derrida",
+     "nom": "Jacques Derrida",
+     "axe": "philosophique",
+     "sous_domaine": "philosophie",
+     "these": "Tout texte et tout système de pensée reposent sur des oppositions hiérarchisées instables (parole/écriture, présence/absence) que la « déconstruction » révèle et déjoue, sans jamais atteindre un sens ou une origine stabilisée.",
+     "limite": "Accusé d'obscurantisme et d'absence de rigueur argumentative par des courants analytiques — la controverse avec John Searle sur la lecture d'Austin en reste l'épisode le plus célèbre ; difficulté à tirer de la déconstruction des positions normatives positives."
+    }
+   ],
+   "preuve": "Jacques Derrida lui oppose Spectres de Marx (1993) ;",
+   "champ": "limites_critiques",
+   "question": "Le référentiel documente une opposition entre « Francis Fukuyama » et « Jacques Derrida ». La fiche « Francis Fukuyama » l'écrit ainsi : « Jacques Derrida lui oppose Spectres de Marx (1993) ; » Sur quoi porte exactement le désaccord, et qu'est-ce qui, aujourd'hui, permettrait de le trancher ?",
+   "actualites": []
+  },
+  {
+   "id": "friedrich-ratzel--emile-durkheim",
+   "fiches": [
+    {
+     "type": "humaine",
+     "id": "friedrich-ratzel",
+     "nom": "Friedrich Ratzel",
+     "axe": "social",
+     "sous_domaine": "geopolitique",
+     "these": "Ratzel (1844-1904) soutient que l'État doit être traité comme un objet géographique et non seulement juridique : il tient à un sol (Boden), à une position et à un espace, et sa croissance territoriale exprime la vitalité de la population qui le porte.",
+     "limite": "Ses contemporains contestent d'emblée la solidité de l'appareil : Émile Durkheim (1897-1898) juge ses concepts trop vagues et le domaine de recherche mal délimité, Alfred Hettner refuse dès 1887 d'y voir un fondement de la géographie humaine, et Paul Vidal de La Blache, plus favorable en 1898, relèv…"
+    },
+    {
+     "type": "humaine",
+     "id": "emile-durkheim",
+     "nom": "Émile Durkheim",
      "axe": "social",
      "sous_domaine": "sociologie",
-     "these": "Hill Collins soutient que la pensée féministe noire est une tradition intellectuelle produite au sein des communautés noires elles-mêmes, et non une réaction au féminisme blanc ni un supplément à la sociologie établie.",
-     "limite": "Susan Hekman, dans « Truth and Method: Feminist Standpoint Theory Revisited » (Signs, 22(2), 1997), relève une inconsistance dans sa position épistémologique : Collins revendique d'abord une objectivité pour la position d'« outsider within », puis se retire de cette revendication ; elle souscrit à l…"
-    },
-    {
-     "type": "humaine",
-     "id": "donna-haraway",
-     "nom": "Donna Haraway",
-     "axe": "philosophique",
-     "sous_domaine": "philosophie",
-     "these": "Contre les dualismes fondateurs de la pensée occidentale (nature/culture, humain/animal, organisme/machine), la figure du « cyborg » — hybride de machine et d'organisme — offre une position féministe permettant de penser l'identité comme construite et partielle plutôt que comme essence naturelle ; l…",
-     "limite": "La réception de son œuvre lui a en partie échappé : une partie des cyberféministes qu'elle a inspirées ont pris le contrepied de ses thèses, en glorifiant le lien entre femmes et machines tout en mettant à l'écart le féminisme socialiste et les politiques antiracistes qui sont au cœur de sa démarche…"
+     "these": "Durkheim soutient qu'il existe une catégorie de faits — les faits sociaux — extérieurs à l'individu et dotés d'un pouvoir de contrainte sur lui, et qu'ils doivent être traités « comme des choses », c'est-à-dire comme des objets ayant une réalité propre, non comme des idées à interpréter.",
+     "limite": "L'argument statistique du Suicide a été attaqué comme une erreur écologique — conclure du comportement individuel à partir d'agrégats : Selvin (1965) puis Freedman (2002) formulent l'objection, tandis que Van Poppel et Day (1996) la déplacent sur le terrain empirique, en montrant que protestants et…"
     }
    ],
-   "preuve": "Susan Hekman, dans « Truth and Method: Feminist Standpoint Theory Revisited » (Signs, 22(2), 1997), relève une inconsistance dans sa position épistémologique : Collins revendique d'abord une objectivité pour la position d'« outsider within », puis se retire de cette revendication ; elle souscrit à l'idée, empruntée à Donna Haraway, d'un point de vue comme « only one angle of vision », mais refuse d'en tirer toutes les conséquences.",
+   "preuve": "Ses contemporains contestent d'emblée la solidité de l'appareil : Émile Durkheim (1897-1898) juge ses concepts trop vagues et le domaine de recherche mal délimité, Alfred Hettner refuse dès 1887 d'y voir un fondement de la géographie humaine, et Paul Vidal de La Blache, plus favorable en 1898, relève la même imprécision conceptuelle.",
    "champ": "limites_critiques",
-   "question": "Le référentiel documente une opposition entre « Patricia Hill Collins » et « Donna Haraway ». La fiche « Patricia Hill Collins » l'écrit ainsi : « Susan Hekman, dans « Truth and Method: Feminist Standpoint Theory Revisited » (Signs, 22(2), 1997), relève une inconsistance dans sa position épistémologique : Collins revendique d'abord une objectivité pour la position d'« outsider within », puis se retire de… » Sur quoi porte exactement le désaccord, et qu'est-ce qui, aujourd'hui, permettrait de le trancher ?",
+   "question": "Le référentiel documente une opposition entre « Friedrich Ratzel » et « Émile Durkheim ». La fiche « Friedrich Ratzel » l'écrit ainsi : « Ses contemporains contestent d'emblée la solidité de l'appareil : Émile Durkheim (1897-1898) juge ses concepts trop vagues et le domaine de recherche mal délimité, Alfred Hettner refuse dès 1887 d'y voir un fondement de la géographie humaine, et Paul Vidal de… » Sur quoi porte exactement le désaccord, et qu'est-ce qui, aujourd'hui, permettrait de le trancher ?",
    "actualites": []
   },
   {
-   "id": "paul-vidal-de-la-blache--beatrice-giblin",
+   "id": "friedrich-ratzel--paul-vidal-de-la-blache",
    "fiches": [
+    {
+     "type": "humaine",
+     "id": "friedrich-ratzel",
+     "nom": "Friedrich Ratzel",
+     "axe": "social",
+     "sous_domaine": "geopolitique",
+     "these": "Ratzel (1844-1904) soutient que l'État doit être traité comme un objet géographique et non seulement juridique : il tient à un sol (Boden), à une position et à un espace, et sa croissance territoriale exprime la vitalité de la population qui le porte.",
+     "limite": "Ses contemporains contestent d'emblée la solidité de l'appareil : Émile Durkheim (1897-1898) juge ses concepts trop vagues et le domaine de recherche mal délimité, Alfred Hettner refuse dès 1887 d'y voir un fondement de la géographie humaine, et Paul Vidal de La Blache, plus favorable en 1898, relèv…"
+    },
     {
      "type": "humaine",
      "id": "paul-vidal-de-la-blache",
@@ -538,128 +563,119 @@
      "sous_domaine": "geopolitique",
      "these": "Vidal de La Blache (1845-1918) soutient que le milieu n'impose pas un mode de vie mais ouvre un éventail de possibles, dans lequel une société choisit et stabilise un « genre de vie » — Lucien Febvre nommera « possibilisme » cette position que Vidal lui-même n'a jamais désignée ainsi.",
      "limite": "Yves Lacoste a fait de l'école vidalienne sa cible en 1976 puis dans l'article d'Hérodote « À bas Vidal… Viva Vidal ! » (1979) : il lui reproche d'avoir produit une géographie descriptive, dépolitisée, qui masque que le savoir géographique sert d'abord à faire la guerre — Béatrice Giblin résume ce j…"
-    },
-    {
-     "type": "humaine",
-     "id": "beatrice-giblin",
-     "nom": "Béatrice Giblin",
-     "axe": "social",
-     "sous_domaine": "geopolitique",
-     "these": "Giblin soutient que la grille des rivalités de pouvoirs sur des territoires ne s'applique pas qu'aux relations entre États : elle vaut à l'intérieur d'un pays, entre régions, communes et quartiers, où des acteurs porteurs de représentations contradictoires se disputent des espaces.",
-     "limite": "Le déplacement d'échelle est aussi le point de tension : la notion de rivalité de pouvoirs, forgée pour des conflits entre acteurs disposant de moyens de contrainte, s'affaiblit lorsqu'elle descend au conseil régional ou au quartier, où les rapports de force relèvent souvent d'autres catégories — ad…"
     }
    ],
-   "preuve": "» (1979) : il lui reproche d'avoir produit une géographie descriptive, dépolitisée, qui masque que le savoir géographique sert d'abord à faire la guerre — Béatrice Giblin résume ce jugement en 2026 par le mot de « géographie désossée et fastidieuse ».",
+   "preuve": "Ses contemporains contestent d'emblée la solidité de l'appareil : Émile Durkheim (1897-1898) juge ses concepts trop vagues et le domaine de recherche mal délimité, Alfred Hettner refuse dès 1887 d'y voir un fondement de la géographie humaine, et Paul Vidal de La Blache, plus favorable en 1898, relève la même imprécision conceptuelle.",
    "champ": "limites_critiques",
-   "question": "Le référentiel documente une opposition entre « Paul Vidal de La Blache » et « Béatrice Giblin ». La fiche « Paul Vidal de La Blache » l'écrit ainsi : « » (1979) : il lui reproche d'avoir produit une géographie descriptive, dépolitisée, qui masque que le savoir géographique sert d'abord à faire la guerre — Béatrice Giblin résume ce jugement en 2026 par le mot de « géographie désossée et fastidieuse ». » Sur quoi porte exactement le désaccord, et qu'est-ce qui, aujourd'hui, permettrait de le trancher ?",
+   "question": "Le référentiel documente une opposition entre « Friedrich Ratzel » et « Paul Vidal de La Blache ». La fiche « Friedrich Ratzel » l'écrit ainsi : « Ses contemporains contestent d'emblée la solidité de l'appareil : Émile Durkheim (1897-1898) juge ses concepts trop vagues et le domaine de recherche mal délimité, Alfred Hettner refuse dès 1887 d'y voir un fondement de la géographie humaine, et Paul Vidal de… » Sur quoi porte exactement le désaccord, et qu'est-ce qui, aujourd'hui, permettrait de le trancher ?",
    "actualites": []
   },
   {
-   "id": "peter-j-taylor--william-james",
+   "id": "gabriel-tarde--emile-durkheim",
    "fiches": [
     {
      "type": "humaine",
-     "id": "peter-j-taylor",
-     "nom": "Peter J. Taylor",
-     "axe": "social",
-     "sous_domaine": "geopolitique",
-     "these": "Taylor (né en 1944) soutient que la géographie politique doit prendre pour cadre l'économie-monde et non l'État, et il organise son analyse en trois échelles articulées : l'échelle mondiale, qui est celle de la réalité, l'échelle nationale, qui est celle de l'idéologie, et l'échelle locale, qui est…",
-     "limite": "James Sidaway, Michiel van Meeteren et Colin Flint (GeoJournal, 2020) rapportent que le cadre systèmes-monde s'est vu reprocher une vision mécanique du monde, où tout s'emboîte sans nuance — reproche que Taylor conteste, tout en observant que la couverture de son livre, ornée d'engrenages, l'a invol…"
-    },
-    {
-     "type": "humaine",
-     "id": "william-james",
-     "nom": "William James",
-     "axe": "psychologique",
-     "sous_domaine": "fondations_experimentales",
-     "these": "James soutient que la conscience n'est pas une mosaïque d'éléments juxtaposés mais un flux continu, personnel, changeant et sélectif — un courant de pensée dont l'analyse en unités trahit la nature.",
-     "limite": "Walter Cannon oppose en 1927 à la théorie James-Lange cinq objections expérimentales : la séparation chirurgicale des viscères et du système nerveux ne supprime pas le comportement émotionnel chez l'animal ; les mêmes changements viscéraux se produisent dans des états émotionnels très différents et…"
-    }
-   ],
-   "preuve": "James Sidaway, Michiel van Meeteren et Colin Flint (GeoJournal, 2020) rapportent que le cadre systèmes-monde s'est vu reprocher une vision mécanique du monde, où tout s'emboîte sans nuance — reproche que Taylor conteste, tout en observant que la couverture de son livre, ornée d'engrenages, l'a involontairement confirmé.",
-   "champ": "limites_critiques",
-   "question": "Le référentiel documente une opposition entre « Peter J. Taylor » et « William James ». La fiche « Peter J. Taylor » l'écrit ainsi : « James Sidaway, Michiel van Meeteren et Colin Flint (GeoJournal, 2020) rapportent que le cadre systèmes-monde s'est vu reprocher une vision mécanique du monde, où tout s'emboîte sans nuance — reproche que Taylor conteste, tout en observant que la couverture de… » Sur quoi porte exactement le désaccord, et qu'est-ce qui, aujourd'hui, permettrait de le trancher ?",
-   "actualites": []
-  },
-  {
-   "id": "pierre-bourdieu--jacques-ranciere",
-   "fiches": [
-    {
-     "type": "humaine",
-     "id": "pierre-bourdieu",
-     "nom": "Pierre Bourdieu",
+     "id": "gabriel-tarde",
+     "nom": "Gabriel Tarde",
      "axe": "social",
      "sous_domaine": "sociologie",
-     "these": "Bourdieu soutient que les pratiques ne s'expliquent ni par le calcul conscient des agents ni par l'application mécanique de règles, mais par la rencontre entre un habitus — des « structures structurées prédisposées à fonctionner comme structures structurantes », dispositions durables et transposable…",
-     "limite": "Jacques Rancière (Le Philosophe et ses pauvres) lui objecte que le dispositif reconduit indéfiniment la domination et perd la perspective d'émancipation."
+     "these": "Tarde soutient que le fait social élémentaire n'est pas le groupe mais l'action interspirituelle entre individus, et qu'elle se décompose en trois processus : l'invention, source du progrès et fait rare — il l'estime à une personne sur cent —, l'imitation, par laquelle l'innovation se propage en var…",
+     "limite": "Sa controverse avec Émile Durkheim porte sur le statut même du social : Durkheim tient la société pour une unité collective irréductible, Tarde privilégie l'individu au sein d'un agrégat, et c'est la position durkheimienne qui a organisé la discipline française pour un demi-siècle."
     },
     {
      "type": "humaine",
-     "id": "jacques-ranciere",
-     "nom": "Jacques Rancière",
-     "axe": "philosophique",
-     "sous_domaine": "philosophie",
-     "these": "La politique authentique ne consiste pas à gérer une communauté déjà répartie en rôles et compétences (ce qu'il appelle la « police »), mais à faire irruption du principe d'égalité de n'importe qui avec n'importe qui, en contestant le « partage du sensible » établi par cet ordre.",
-     "limite": "Son concept de « police », qui englobe tout ordre social établi y compris démocratique, distingue mal des régimes politiques réellement différents ; Philippe Corcuff a consacré deux chapitres d'Où est passée la critique sociale ? (2012) aux tensions entre sa philosophie de l'émancipation et la socio…"
-    }
-   ],
-   "preuve": "Jacques Rancière (Le Philosophe et ses pauvres) lui objecte que le dispositif reconduit indéfiniment la domination et perd la perspective d'émancipation.",
-   "champ": "limites_critiques",
-   "question": "Le référentiel documente une opposition entre « Pierre Bourdieu » et « Jacques Rancière ». La fiche « Pierre Bourdieu » l'écrit ainsi : « Jacques Rancière (Le Philosophe et ses pauvres) lui objecte que le dispositif reconduit indéfiniment la domination et perd la perspective d'émancipation. » Sur quoi porte exactement le désaccord, et qu'est-ce qui, aujourd'hui, permettrait de le trancher ?",
-   "actualites": []
-  },
-  {
-   "id": "pierre-bourdieu--judith-butler",
-   "fiches": [
-    {
-     "type": "humaine",
-     "id": "pierre-bourdieu",
-     "nom": "Pierre Bourdieu",
+     "id": "emile-durkheim",
+     "nom": "Émile Durkheim",
      "axe": "social",
      "sous_domaine": "sociologie",
-     "these": "Bourdieu soutient que les pratiques ne s'expliquent ni par le calcul conscient des agents ni par l'application mécanique de règles, mais par la rencontre entre un habitus — des « structures structurées prédisposées à fonctionner comme structures structurantes », dispositions durables et transposable…",
-     "limite": "Jacques Rancière (Le Philosophe et ses pauvres) lui objecte que le dispositif reconduit indéfiniment la domination et perd la perspective d'émancipation."
-    },
-    {
-     "type": "humaine",
-     "id": "judith-butler",
-     "nom": "Judith Butler",
-     "axe": "philosophique",
-     "sous_domaine": "philosophie",
-     "these": "Le genre n'est pas l'expression d'une identité intérieure préexistante mais une « performance » : il est produit par la répétition stylisée d'actes et de discours socialement codés, qui donnent rétroactivement l'illusion d'une substance de genre naturelle et stable.",
-     "limite": "Accusée par des féministes matérialistes de dissoudre la catégorie « femme » dans un pur jeu discursif — Susan Bordo soutient au contraire que le corps détermine en majeure partie le genre, s'opposant à sa vision performative ; son style a valu à sa « prose impénétrable, jargonnante » le premier pri…"
+     "these": "Durkheim soutient qu'il existe une catégorie de faits — les faits sociaux — extérieurs à l'individu et dotés d'un pouvoir de contrainte sur lui, et qu'ils doivent être traités « comme des choses », c'est-à-dire comme des objets ayant une réalité propre, non comme des idées à interpréter.",
+     "limite": "L'argument statistique du Suicide a été attaqué comme une erreur écologique — conclure du comportement individuel à partir d'agrégats : Selvin (1965) puis Freedman (2002) formulent l'objection, tandis que Van Poppel et Day (1996) la déplacent sur le terrain empirique, en montrant que protestants et…"
     }
    ],
-   "preuve": "Nicole-Claude Mathieu et Judith Butler ont contesté La Domination masculine, la première pour des manquements méthodologiques et déontologiques, la seconde pour l'ignorance des travaux féministes de référence.",
+   "preuve": "Sa controverse avec Émile Durkheim porte sur le statut même du social : Durkheim tient la société pour une unité collective irréductible, Tarde privilégie l'individu au sein d'un agrégat, et c'est la position durkheimienne qui a organisé la discipline française pour un demi-siècle.",
    "champ": "limites_critiques",
-   "question": "Le référentiel documente une opposition entre « Pierre Bourdieu » et « Judith Butler ». La fiche « Pierre Bourdieu » l'écrit ainsi : « Nicole-Claude Mathieu et Judith Butler ont contesté La Domination masculine, la première pour des manquements méthodologiques et déontologiques, la seconde pour l'ignorance des travaux féministes de référence. » Sur quoi porte exactement le désaccord, et qu'est-ce qui, aujourd'hui, permettrait de le trancher ?",
+   "question": "Le référentiel documente une opposition entre « Gabriel Tarde » et « Émile Durkheim ». La fiche « Gabriel Tarde » l'écrit ainsi : « Sa controverse avec Émile Durkheim porte sur le statut même du social : Durkheim tient la société pour une unité collective irréductible, Tarde privilégie l'individu au sein d'un agrégat, et c'est la position durkheimienne qui a organisé la discipline français… » Sur quoi porte exactement le désaccord, et qu'est-ce qui, aujourd'hui, permettrait de le trancher ?",
    "actualites": []
   },
   {
-   "id": "pierre-janet--sigmund-freud",
+   "id": "gearoid-o-tuathail--jennifer-hyndman",
    "fiches": [
     {
      "type": "humaine",
-     "id": "pierre-janet",
-     "nom": "Pierre Janet",
-     "axe": "psychologique",
-     "sous_domaine": "psychopathologie",
-     "these": "Janet soutient que subsistent, sous le seuil de la conscience personnelle, des actes psychologiques complets — perceptions, souvenirs, conduites — qui échappent à la synthèse du moi : c'est l'automatisme psychologique, et sa forme pathologique la désagrégation, ou dissociation.",
-     "limite": "Après que Janet eut contesté la terminologie psychanalytique au congrès de médecine de Londres en 1913, l'attitude de Freud se refroidit et il refusa ensuite de le rencontrer ; l'éclipse de Janet dans la seconde moitié du siècle tient largement à la trajectoire de la psychanalyse, ce que documente H…"
+     "id": "gearoid-o-tuathail",
+     "nom": "Gearóid Ó Tuathail",
+     "axe": "social",
+     "sous_domaine": "geopolitique",
+     "these": "Ó Tuathail (Gerard Toal) soutient que la géopolitique n'est pas une description du monde mais une pratique d'écriture du monde : les acteurs y spatialisent les affaires internationales, et cette spatialisation est un exercice de pouvoir, non un constat.",
+     "limite": "Merje Kuus recense trois séries d'objections."
     },
     {
      "type": "humaine",
-     "id": "sigmund-freud",
-     "nom": "Sigmund Freud",
-     "axe": "psychologique",
-     "sous_domaine": "psychanalyse",
-     "these": "Freud fonde la psychanalyse sur l'hypothèse d'un inconscient structuré, où des pulsions et désirs refoulés (souvent d'origine sexuelle infantile) déterminent une part importante du psychisme et se manifestent via les rêves, lapsus et symptômes névrotiques.",
-     "limite": "Sa théorie est critiquée pour son manque de validation empirique rigoureuse (Popper la qualifie d'irréfutable), sa focalisation univoque sur la sexualité infantile, et des méthodes de collecte de données jugées peu scientifiques ; le behaviorisme et les neurosciences cognitives lui opposent des modè…"
+     "id": "jennifer-hyndman",
+     "nom": "Jennifer Hyndman",
+     "axe": "social",
+     "sous_domaine": "geopolitique",
+     "these": "Hyndman soutient que la géopolitique doit changer d'unité d'analyse : examiner la politique à d'autres échelles que celle de l'État-nation, et rendre compte de relations inégales et souvent violentes entre personnes plutôt que d'intérêts nationaux abstraits.",
+     "limite": "Elle a elle-même exposé les tensions du programme dans « Unsettling feminist geopolitics » (Gender, Place & Culture, vol. 26, n° 1, 2019, p. 3-29) : elle y discute le déplacement opéré par Deborah Dixon dans Feminist Geopolitics: Material States (2015) vers les géographies non humaines et un matéria…"
     }
    ],
-   "preuve": "Après que Janet eut contesté la terminologie psychanalytique au congrès de médecine de Londres en 1913, l'attitude de Freud se refroidit et il refusa ensuite de le rencontrer ;",
+   "preuve": "Wendy Dowler et Joanne Sharp (2001) puis Jennifer Hyndman (2004) reprochent aux premiers travaux de se concentrer sur les intellectuels masculins de l'art de gouverner, reconduisant l'élitisme qu'ils dénonçaient.",
    "champ": "limites_critiques",
-   "question": "Le référentiel documente une opposition entre « Pierre Janet » et « Sigmund Freud ». La fiche « Pierre Janet » l'écrit ainsi : « Après que Janet eut contesté la terminologie psychanalytique au congrès de médecine de Londres en 1913, l'attitude de Freud se refroidit et il refusa ensuite de le rencontrer ; » Sur quoi porte exactement le désaccord, et qu'est-ce qui, aujourd'hui, permettrait de le trancher ?",
+   "question": "Le référentiel documente une opposition entre « Gearóid Ó Tuathail » et « Jennifer Hyndman ». La fiche « Gearóid Ó Tuathail » l'écrit ainsi : « Wendy Dowler et Joanne Sharp (2001) puis Jennifer Hyndman (2004) reprochent aux premiers travaux de se concentrer sur les intellectuels masculins de l'art de gouverner, reconduisant l'élitisme qu'ils dénonçaient. » Sur quoi porte exactement le désaccord, et qu'est-ce qui, aujourd'hui, permettrait de le trancher ?",
+   "actualites": []
+  },
+  {
+   "id": "georg-simmel--emile-durkheim",
+   "fiches": [
+    {
+     "type": "humaine",
+     "id": "georg-simmel",
+     "nom": "Georg Simmel",
+     "axe": "social",
+     "sous_domaine": "sociologie",
+     "these": "Simmel soutient que la sociologie n'a pas d'objet propre du côté des contenus — politiques, économiques, esthétiques — mais du côté des formes : il y a société partout où plusieurs individus agissent les uns sur les autres, et la discipline doit isoler les formes récurrentes de cette action réciproq…",
+     "limite": "Son œuvre a été critiquée par Émile Durkheim et par Georg Lukács."
+    },
+    {
+     "type": "humaine",
+     "id": "emile-durkheim",
+     "nom": "Émile Durkheim",
+     "axe": "social",
+     "sous_domaine": "sociologie",
+     "these": "Durkheim soutient qu'il existe une catégorie de faits — les faits sociaux — extérieurs à l'individu et dotés d'un pouvoir de contrainte sur lui, et qu'ils doivent être traités « comme des choses », c'est-à-dire comme des objets ayant une réalité propre, non comme des idées à interpréter.",
+     "limite": "L'argument statistique du Suicide a été attaqué comme une erreur écologique — conclure du comportement individuel à partir d'agrégats : Selvin (1965) puis Freedman (2002) formulent l'objection, tandis que Van Poppel et Day (1996) la déplacent sur le terrain empirique, en montrant que protestants et…"
+    }
+   ],
+   "preuve": "Son œuvre a été critiquée par Émile Durkheim et par Georg Lukács.",
+   "champ": "limites_critiques",
+   "question": "Le référentiel documente une opposition entre « Georg Simmel » et « Émile Durkheim ». La fiche « Georg Simmel » l'écrit ainsi : « Son œuvre a été critiquée par Émile Durkheim et par Georg Lukács. » Sur quoi porte exactement le désaccord, et qu'est-ce qui, aujourd'hui, permettrait de le trancher ?",
+   "actualites": []
+  },
+  {
+   "id": "gerd-gigerenzer--daniel-kahneman",
+   "fiches": [
+    {
+     "type": "humaine",
+     "id": "gerd-gigerenzer",
+     "nom": "Gerd Gigerenzer",
+     "axe": "psychologique",
+     "sous_domaine": "cognition",
+     "these": "Gigerenzer soutient qu'une procédure de jugement ne s'évalue pas contre une norme logique indépendante du contexte mais contre la structure de l'environnement où elle s'applique : une heuristique est bonne lorsqu'elle est ajustée à cette structure.",
+     "limite": "Le différend avec le programme des biais est explicite et non tranché : Daniel Kahneman et Amos Tversky lui répondent dans « On the reality of cognitive illusions » (Psychological Review 103(3), 582-591, 1996), il réplique dans le même numéro par « On narrow norms and vague heuristics » (592-596), l…"
+    },
+    {
+     "type": "humaine",
+     "id": "daniel-kahneman",
+     "nom": "Daniel Kahneman",
+     "axe": "social",
+     "sous_domaine": "economie",
+     "these": "Daniel Kahneman, psychologue et économiste, a démontré avec Amos Tversky (théorie des perspectives, 1979) que la prise de décision humaine s'écarte systématiquement de la rationalité économique classique, notamment par l'aversion à la perte, jetant les bases de l'économie et de la finance comporteme…",
+     "limite": "Plusieurs études de biais cognitifs largement citées dans son œuvre (notamment sur l'amorçage social) n'ont pas été répliquées lors de la crise de réplication qui a touché la psychologie sociale dans les années 2010, ce que Kahneman lui-même a publiquement reconnu et discuté."
+    }
+   ],
+   "preuve": "Le différend avec le programme des biais est explicite et non tranché : Daniel Kahneman et Amos Tversky lui répondent dans « On the reality of cognitive illusions » (Psychological Review 103(3), 582-591, 1996), il réplique dans le même numéro par « On narrow norms and vague heuristics » (592-596), le désaccord portant sur la légitimité des normes au regard desquelles un jugement est déclaré biaisé.",
+   "champ": "limites_critiques",
+   "question": "Le référentiel documente une opposition entre « Gerd Gigerenzer » et « Daniel Kahneman ». La fiche « Gerd Gigerenzer » l'écrit ainsi : « Le différend avec le programme des biais est explicite et non tranché : Daniel Kahneman et Amos Tversky lui répondent dans « On the reality of cognitive illusions » (Psychological Review 103(3), 582-591, 1996), il réplique dans le même numéro par « On narrow n… » Sur quoi porte exactement le désaccord, et qu'est-ce qui, aujourd'hui, permettrait de le trancher ?",
    "actualites": []
   }
  ]

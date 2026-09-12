@@ -1,15 +1,15 @@
 {
  "modele": "relations-corpus-v2",
- "empreinte_corpus": "bd5b798d9323286bb7c5331c6d5971cd",
- "genere_le": "2026-09-11",
- "nb_fiches": 636,
+ "empreinte_corpus": "b900b8990561cc4ac1b05dbc631b201e",
+ "genere_le": "2026-09-12",
+ "nb_fiches": 651,
  "compte_par_type": {
   "mobilise": 233,
   "couple": 201,
   "succession": 116,
   "conteste": 106,
   "mention": 93,
-  "source_commune": 60,
+  "source_commune": 62,
   "resonance": 2
  },
  "relations": [
@@ -9742,6 +9742,34 @@
    "champ": "sources",
    "designation": "url:eur-lex.europa.eu/legal-content/en/txt/html",
    "preuve": "Les deux fiches citent « Règlement (UE) 2024/1689 du Parlement européen et du Conseil (AI Act), Journal officiel de l'Union européenne »."
+  },
+  {
+   "type": "source_commune",
+   "de": {
+    "type": "ia",
+    "id": "orchestration-d-outils-et-protocoles-d-integration"
+   },
+   "vers": {
+    "type": "ia",
+    "id": "cybersecurite-assistee-par-ia"
+   },
+   "champ": "sources",
+   "designation": "url:media.defense.gov/2026/jun/02/2003943289/-1/-1/0/csi_mcp_security.pdf",
+   "preuve": "Les deux fiches citent « National Security Agency, « Model Context Protocol (MCP): Security Design », fiche d'information de cybersécurité, mai 2026 »."
+  },
+  {
+   "type": "source_commune",
+   "de": {
+    "type": "ia",
+    "id": "orchestration-d-outils-et-protocoles-d-integration"
+   },
+   "vers": {
+    "type": "ia",
+    "id": "generation-de-code-et-son-execution-autonome"
+   },
+   "champ": "sources",
+   "designation": "url:llm-stats.com/benchmarks/terminal-bench-2",
+   "preuve": "Les deux fiches citent « llm-stats.com, « Terminal-Bench 2.0 Leaderboard » — agrégateur tiers, données de mai 2026 »."
   },
   {
    "type": "succession",
