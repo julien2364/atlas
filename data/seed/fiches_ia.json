@@ -4419,10 +4419,10 @@
         ]
       }
     ],
-    "limites_connues": "L'échec de référence du domaine reste la standardisation algorithmique des A-levels au Royaume-Uni en août 2020. Il faut le décrire exactement : il ne s'agissait pas de noter des copies — les examens étaient annulés — mais de modérer statistiquement les notes prédites par les enseignants. L'algorithme d'Ofqual a abaissé 36 % des notes d'un cran et 3 % de deux crans, avec un biais systématique défavorable aux élèves des écoles publiques et favorable aux petits effectifs des écoles privées. Il a été abandonné le 17 août 2020 par Ofqual et le ministre de l'Éducation Gavin Williamson, suivi des démissions de Sally Collier (directrice d'Ofqual) et Jonathan Slater (haut fonctionnaire). Les deux systèmes opérationnels cités plus haut gardent d'ailleurs un humain dans la boucle : l'Ohio extrait les réponses non reconnues vers un correcteur, ETS double la notation automatique d'une notation humaine sur les tests à fort enjeu. Le chiffre d'adoption de Gradescope (plus de 600 institutions, plus de 60 millions de réponses notées) date de son rachat par Turnitin en octobre 2018 et provient d'un communiqué commercial ; aucun chiffre plus récent et indépendant n'a été trouvé.",
+    "limites_connues": "L'échec de référence du domaine reste la standardisation algorithmique des A-levels au Royaume-Uni en août 2020. Il faut le décrire exactement : il ne s'agissait pas de noter des copies — les examens étaient annulés — mais de modérer statistiquement les notes prédites par les enseignants. L'algorithme d'Ofqual a abaissé 36 % des notes d'un cran et 3 % de deux crans, avec un biais systématique défavorable aux élèves des écoles publiques et favorable aux petits effectifs des écoles privées. Il a été abandonné le 17 août 2020 par Ofqual et le ministre de l'Éducation Gavin Williamson, suivi des démissions de Sally Collier (directrice d'Ofqual) et Jonathan Slater (haut fonctionnaire). Tout ce récit — les pourcentages, la date d'abandon, les démissions — repose ici sur une seule source encyclopédique, ce qui est peu pour un fait de cette portée : il demande à être doublé du rapport d'Ofqual avant toute réutilisation. Les deux systèmes opérationnels cités plus haut gardent d'ailleurs un humain dans la boucle : l'Ohio extrait les réponses non reconnues vers un correcteur, ETS double la notation automatique d'une notation humaine sur les tests à fort enjeu. Le chiffre d'adoption de Gradescope (plus de 600 institutions, plus de 60 millions de réponses notées) date de son rachat par Turnitin en octobre 2018 et provient d'un communiqué commercial ; aucun chiffre plus récent et indépendant n'a été trouvé.",
     "sources": [
       {
-        "titre": "Educational Testing Service, « About the e-rater Scoring Engine », consulté en 2026",
+        "titre": "Educational Testing Service, « About the e-rater Scoring Engine », 2026 — page produit de l'organisme qui vend le GRE et le TOEFL",
         "type": "primaire",
         "date": "2026-09-12",
         "url": "https://www.ets.org/erater/about.html"
@@ -4432,6 +4432,12 @@
         "type": "secondaire",
         "date": "2026-09-12",
         "url": "https://en.wikipedia.org/wiki/2020_United_Kingdom_school_exam_grading_controversy"
+      },
+      {
+        "titre": "Turnitin, « Turnitin Acquires Gradescope », communiqué de presse d'entreprise, octobre 2018 — source commerciale, seule origine des chiffres d'adoption cités",
+        "type": "secondaire",
+        "date": "2026-09-12",
+        "url": "https://www.turnitin.com/press/turnitin-acquires-gradescope"
       }
     ],
     "statut": "documente",
@@ -4507,7 +4513,7 @@
         ],
         "sources": [
           {
-            "titre": "OpenAI, « Introducing deep research », 2 février 2025",
+            "titre": "OpenAI, « Introducing deep research », 2 février 2025 — annonce produit de l'éditeur",
             "type": "primaire",
             "date": "2026-09-12",
             "url": "https://openai.com/index/introducing-deep-research/"
@@ -4573,7 +4579,7 @@
         "url": "https://bestpractice.ai/ai-use-cases/case-studies/transportation-logistics/deutsche-bahn-reduces-maintenance-cost-by-25-and-delay-causing-failures-using-machine-learning"
       },
       {
-        "titre": "Railway Technology, « Siemens wins predictive maintenance contract from Deutsche Bahn » — contrat de maintenance prédictive pour la flotte ICE 4, consulté en 2026",
+        "titre": "Railway Technology, « Siemens wins predictive maintenance contract from Deutsche Bahn », 2026 — presse spécialisée reprenant l'annonce du fournisseur",
         "type": "secondaire",
         "date": "2026-09-12",
         "url": "https://www.railway-technology.com/news/newssiemens-wins-predictive-maintenance-contract-from-deutsche-bahn-5882558/"
@@ -4613,7 +4619,7 @@
         ]
       }
     ],
-    "limites_connues": "La documentation disponible est presque entièrement promotionnelle, et c'est en soi la limite principale. Le communiqué de BMW revendique une « fiabilité de 100 % » après entraînement : aucune entreprise ne publie de taux de faux positifs ou de faux négatifs, et aucun audit indépendant n'a été trouvé pour BMW, Cognex ou Landing AI. Cognex annonce une adoption croissante de sa plateforme OneVision « à l'échelle mondiale » dans un communiqué de presse, sans nommer un seul client vérifiable. Un projet Safran-CEA d'automatisation du contrôle qualité existe selon la presse spécialisée, mais la page n'a pas pu être consultée. En l'état, le référentiel documente une capacité largement déployée et une opacité complète sur ses taux d'erreur.",
+    "limites_connues": "La documentation disponible est presque entièrement promotionnelle, et c'est en soi la limite principale. Le communiqué de BMW revendique une « fiabilité de 100 % » après entraînement : aucune entreprise ne publie de taux de faux positifs ou de faux négatifs, et aucun audit indépendant n'a été trouvé pour BMW, Cognex ou Landing AI. Cognex annonce une adoption croissante de sa plateforme OneVision « à l'échelle mondiale » dans un communiqué de presse, sans nommer un seul client vérifiable. En l'état, le référentiel documente une capacité largement déployée et une opacité complète sur ses taux d'erreur.",
     "sources": [
       {
         "titre": "Automotive Manufacturing Solutions, « BMW's GenAI4Q Reinvents Quality Control at Regensburg Plant », consulté en 2026",
@@ -4645,8 +4651,6 @@
       {
         "secteur": "pharmaceutique",
         "description": "Bras de contrôle synthétiques et réduction d'effectifs dans les essais cliniques",
-        "trl": 7,
-        "trl_justification": "Johnson & Johnson Innovative Medicine a employé les Digital Twin Generators d'Unlearn.ai dans trois essais pivots de phase III sur la maladie d'Alzheimer légère à modérée, et AbbVie dans un essai de phase II, résultats présentés à l'Alzheimer's Association International Conference de juillet 2024. Exploitants nommés, phases nommées, date établie — mais la source est un communiqué de l'éditeur de la technologie, et aucune qualification réglementaire spécifique n'a été confirmée, ce qui interdit d'aller plus haut.",
         "exemples": [
           "Johnson & Johnson Innovative Medicine : trois essais pivots de phase III (Alzheimer), réduction du bras de contrôle de 33 % sur ADAS-Cog11 à 18 mois et de 19 % sur CDR-SB à 12 mois",
           "AbbVie : essai de phase II (Alzheimer), réduction d'effectifs de 10 à 15 % sur CDR-SB à 96 semaines"
@@ -4658,7 +4662,9 @@
             "date": "2026-09-12",
             "url": "https://www.businesswire.com/news/home/20240730183686/en/Unlearn-Presents-Studies-on-AI-powered-Clinical-Trials-with-AbbVie-and-Johnson-Johnson-Innovative-Medicine-at-the-Alzheimers-Association-International-Conference-2024"
           }
-        ]
+        ],
+        "trl": null,
+        "diffusion": "emergent"
       }
     ],
     "limites_connues": "Tous les chiffres de gain cités proviennent de communiqués de l'éditeur de la technologie évaluée : aucun n'a été audité indépendamment, et aucune donnée n'a été trouvée sur les taux d'erreur ou les biais de sélection des jumeaux numériques eux-mêmes. Côté réglementaire, le programme ISTAND de la FDA a accepté des lettres d'intention pour des outils d'IA comparables, mais aucune qualification spécifique à Unlearn.ai n'a été confirmée ; la procédure est par ailleurs décrite comme longue, et l'agence privilégie des usages supplémentaires plutôt que le remplacement complet d'un bras de contrôle traditionnel. Enfin, pour la sélection de patients par IA, aucun établissement de santé nommé avec une date de déploiement n'a été trouvé au-delà des pages produit de Tempus.",
@@ -4670,7 +4676,7 @@
         "url": "https://www.medidata.com/en/study-experience/real-world-data/synthetic-control-arm/"
       },
       {
-        "titre": "IntuitionLabs, « FDA ISTAND Program: AI Drug Development Tool Qualification » — synthèse de documents de la FDA sur la qualification des outils d'IA, consulté en 2026",
+        "titre": "IntuitionLabs, « FDA ISTAND Program: AI Drug Development Tool Qualification », 2026 — synthèse produite par un cabinet commercial à partir de documents de la FDA",
         "type": "secondaire",
         "date": "2026-09-12",
         "url": "https://intuitionlabs.ai/articles/fda-istand-ai-drug-development-tool"
@@ -4697,7 +4703,7 @@
         "trl_justification": "Pfizer a démarré en 2014 un dispositif d'automatisation de la réception des cas dans son unité Drug Safety de Rome, en Italie, et cite un volume de l'ordre de 1,4 million d'événements indésirables traités dans le monde en 2019 : exploitant nommé, lieu nommé, dates établies par son propre communiqué. L'Agence européenne des médicaments a confirmé en septembre 2025 l'usage d'un outil d'IA de criblage de la littérature.",
         "exemples": [
           "Pfizer, unité Drug Safety de Rome : automatisation de l'intake depuis 2014",
-          "Uppsala Monitoring Centre : vigiRank employé sur VigiBase, base de l'OMS alimentée par plus de 150 pays membres, usage prospectif documenté par Caster et al. en 2017",
+          "Uppsala Monitoring Centre : vigiRank employé sur VigiBase, base mondiale de pharmacovigilance de l'Organisation mondiale de la santé, usage prospectif documenté par Caster et al. en 2017",
           "Agence européenne des médicaments : criblage de la littérature par IA, confirmé lors du symposium TOPRA du 30 septembre 2025"
         ],
         "sources": [
@@ -4710,7 +4716,7 @@
         ]
       }
     ],
-    "limites_connues": "Pfizer écrit elle-même que ces outils « ne remplaceront pas les humains » et que le passage à l'échelle industrielle reste difficile : l'objectif déclaré est de libérer du temps d'expert pour l'analyse de signaux, pas d'automatiser la décision. Aucune mesure indépendante de performance en routine — sensibilité, spécificité, taux de faux signaux — n'a pu être confirmée : l'article de référence sur l'usage prospectif de vigiRank (Caster et al., Pharmacoepidemiology and Drug Safety, 2017) et la publication de Novartis sur le traitement automatisé des cas (Schmider et al., 2019) n'ont pas pu être lus intégralement, leur éditeur refusant l'accès. Le nom de l'outil employé par l'Agence européenne des médicaments n'a pas été identifié dans les sources consultées.",
+    "limites_connues": "Pfizer écrit elle-même que ces outils « ne remplaceront pas les humains » et que le passage à l'échelle industrielle reste difficile : l'objectif déclaré est de libérer du temps d'expert pour l'analyse de signaux, pas d'automatiser la décision. Aucune mesure indépendante de performance en routine — sensibilité, spécificité, taux de faux signaux — n'a pu être confirmée : l'article de référence sur l'usage prospectif de vigiRank (Caster et al., Pharmacoepidemiology and Drug Safety, 2017), dont la fiche ne cite que la notice n'a pas pu être lu intégralement, son éditeur refusant l'accès. Le nom de l'outil employé par l'Agence européenne des médicaments n'a pas été identifié dans les sources consultées.",
     "sources": [
       {
         "titre": "Caster O. et al., « vigiRank for statistical signal detection in pharmacovigilance: First results from prospective real-world use », Pharmacoepidemiology and Drug Safety, 2017 — accès refusé à la lecture intégrale",
@@ -4742,8 +4748,6 @@
       {
         "secteur": "gouvernement",
         "description": "Prévision météorologique opérationnelle par un service public : production quotidienne de prévisions déterministes servies aux États membres, en remplacement partiel d'un modèle physique",
-        "trl": 9,
-        "trl_justification": "L'AIFS du Centre européen pour les prévisions météorologiques à moyen terme est opérationnel depuis le 25 février 2025, selon le communiqué officiel du Centre, qui réunit 35 États membres et coopérants. Exploitant public nommé, date établie, mise en production confirmée par l'institution elle-même. C'est le déploiement le mieux documenté de tout ce lot.",
         "exemples": [
           "ECMWF : AIFS opérationnel depuis le 25 février 2025, gains atteignant 20 % sur la trajectoire des cyclones tropicaux",
           "NOAA : déploiement d'une génération de modèles mondiaux pilotés par IA, développés avec Google DeepMind"
@@ -4755,7 +4759,9 @@
             "date": "2026-09-12",
             "url": "https://www.ecmwf.int/en/about/media-centre/news/2025/ecmwfs-ai-forecasts-become-operational"
           }
-        ]
+        ],
+        "trl": null,
+        "diffusion": "etabli"
       }
     ],
     "limites_connues": "L'ECMWF borne lui-même sa propre annonce, et c'est ce qui la rend crédible : la version opérationnelle AIFS Single ne produit qu'une seule prévision déterministe à la fois, les prévisions d'ensemble à cinquante membres et les prévisions infra-saisonnières restent en développement, et le service doit encore, selon ses propres termes, monter en maturité complète. Le gain énergétique d'un facteur mille et les 20 % sur la trajectoire des cyclones émanent de l'institution, non d'un tiers. Le communiqué de la NOAA n'a pas pu être consulté intégralement, l'accès ayant été refusé : seule l'existence du déploiement est établie, pas son périmètre.",
@@ -4828,7 +4834,7 @@
     "id": "orchestration-d-outils-et-protocoles-d-integration",
     "axe": "agentique",
     "nom": "Orchestration d'outils et protocoles d'intégration",
-    "editeur": "Model Context Protocol, lancé par Anthropic fin 2024 et gouverné depuis sous LF Projects (Linux Foundation) ; Berkeley Function-Calling Leaderboard, université de Californie à Berkeley.",
+    "editeur": "Model Context Protocol, lancé par Anthropic fin 2024 et gouverné depuis sous LF Projects (Linux Foundation) ; les mesures d'usage d'outils citées ici viennent de Terminal-Bench, agrégé par un tiers.",
     "capacites_cles": [
       "Appel d'outils externes par un modèle, sur un protocole commun (MCP)",
       "Chaînage d'outils au sein d'une même tâche, avec requêtes multi-aller-retour",
@@ -4854,7 +4860,7 @@
         ]
       }
     ],
-    "limites_connues": "La National Security Agency a publié en mai 2026 une fiche d'information de cybersécurité consacrée à MCP (référence U/OO/6030316-26) qui documente des défauts structurels : composants sans authentification obligatoire, injection de paramètres par messages malformés, collisions de noms d'outils permettant de charger du code contrôlé par un attaquant, accès en lecture et écriture non restreint à des dépôts via des outils MCP, et la vulnérabilité CVE-2025-49596 (exécution de code à distance dans MCP-Inspector). La NSA qualifie de systémique le risque d'empoisonnement de sortie et d'injection de consigne en cascade dans les flux multi-agents. Par ailleurs, la liste d'adoptants citée par l'organisme de spécification (AWS, Cloudflare, Google Cloud, Microsoft, Figma…) est une déclaration de cet organisme, pas une mesure d'usage réel ; et les scores chiffrés du Berkeley Function-Calling Leaderboard n'ont pas pu être extraits, la page n'étant pas lisible hors navigateur.",
+    "limites_connues": "La National Security Agency a publié en mai 2026 une fiche d'information de cybersécurité consacrée à MCP (référence U/OO/6030316-26) qui documente des défauts structurels : composants sans authentification obligatoire, injection de paramètres par messages malformés, collisions de noms d'outils permettant de charger du code contrôlé par un attaquant, accès en lecture et écriture non restreint à des dépôts via des outils MCP, et la vulnérabilité CVE-2025-49596 (exécution de code à distance dans MCP-Inspector). La NSA qualifie de systémique le risque d'empoisonnement de sortie et d'injection de consigne en cascade dans les flux multi-agents. Par ailleurs, la liste d'adoptants citée par l'organisme de spécification (AWS, Cloudflare, Google Cloud, Microsoft, Figma…) est une déclaration de cet organisme, pas une mesure d'usage réel. Le Berkeley Function-Calling Leaderboard, autre référence du domaine, n'a pas pu être exploité : sa page n'est pas lisible hors navigateur, et la fiche ne le cite donc pas.",
     "sources": [
       {
         "titre": "National Security Agency, « Model Context Protocol (MCP): Security Design », fiche d'information de cybersécurité, mai 2026",
