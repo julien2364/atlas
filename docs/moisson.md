@@ -1,8 +1,8 @@
 # Moisson de sources
 
-Dernier passage : **2026-09-12** · fonds interrogés : openalex, crossref, arxiv, hal, doaj, europepmc.
+Dernier passage : **2026-09-13** · fonds interrogés : openalex, crossref, arxiv, hal, doaj, europepmc.
 
-**40 propositions** pour **10 fiches**, écrites dans `../../_temp/moisson-2026-09-12.json`.
+**38 propositions** pour **10 fiches**, écrites dans `../../_temp/moisson-2026-09-13.json`.
 
 Ce fichier ne modifie aucune fiche. Pour en ajouter une partie au corpus : remplir le champ
 `retenues` de chaque bloc avec les clés choisies, puis lancer
@@ -10,30 +10,30 @@ Ce fichier ne modifie aucune fiche. Pour en ajouter une partie au corpus : rempl
 
 | Fiche | Besoin | Propositions | Meilleure proposition |
 |---|---:|---:|---|
-| Abhijit Banerjee | 7 | 4 | [Pinostrobin: for Neuropathic Pain](https://doi.org/10.2139/ssrn.5661330) — crossref, 2025 |
-| Alliance solaire internationale (ASI) | 7 | 4 | [Communauté internationale et organisation internationale. The Internat](https://doi.org/10.1163/ej.9789024736584.3-685.2) — crossref |
-| Amartya Sen | 7 | 4 | [3 enfants, 1 flûte : le choix des principes de justice chez Amartya Se](https://doi.org/10.3917/leco.083.0086) — crossref, 2019 |
-| Anarchisme | 7 | 4 | [Anarchisme et décolonisation en Algérie. Le Mouvement libertaire nord-](https://doi.org/10.4000/histoirepolitique.3268) — crossref, 2019 |
-| Banque africaine de développement (BAfD) | 7 | 4 | [Appliquer l'évaluation à l'aide au développement : une solution pour c](https://doi.org/10.3917/edd.264.0125) — openalex, 2013 |
-| Bipolarité (Guerre froide) | 7 | 4 | [Penser l'après-guerre froide](https://doi.org/10.4000/conflits.535) — crossref, 1992 |
-| Black-Scholes | 7 | 4 | [Black-Scholes-Formel](https://doi.org/10.1007/978-3-658-00988-5_10) — crossref, 2012 |
-| BRICS(+) | 7 | 4 | [The BRICS and soft power: an introduction](https://doi.org/10.1080/2158379x.2016.1232284) — openalex, 2016 |
-| Capitalisme de marché libre (laissez-faire) | 7 | 4 | [Capitalisme et marché à la Renaissance](https://doi.org/10.3917/leco.030.0087) — crossref, 2006 |
-| CEI | 7 | 4 | [Norme de responsabilité et responsabilité des normes : le cas d'ISO 26](https://doi.org/10.3917/mav.023.0091) — openalex, 2009 |
+| Abhijit Banerjee | 7 | 4 | [Ingénierie de la pauvreté et développement](https://shs.hal.science/halshs-03518844v1) — hal, 2019 |
+| Alliance solaire internationale (ASI) | 7 | 2 | [Internationale Seefunksatelliten-Organisation (International Maritime ](https://doi.org/10.1007/978-3-322-86673-8_62) — crossref, 1995 |
+| Amartya Sen | 7 | 4 | [Une autre approche du travail en économie : Amartya Sen](https://shs.hal.science/halshs-00421843v1) — hal, 2002 |
+| Anarchisme | 7 | 4 | [Landauer : anarchisme, culture et politique](https://hal.science/hal-01169121v1) — hal, 2014 |
+| Banque africaine de développement (BAfD) | 7 | 4 | [Scolarisation](https://doi.org/10.1787/aeo-2009-table3_19-fr) — crossref, 2009 |
+| Bipolarité (Guerre froide) | 7 | 4 | [Nouveaux regards sur la coopération pour le développement et ses trans](https://doi.org/10.3917/med.165.0007) — openalex, 2014 |
+| Black-Scholes | 7 | 4 | [STATIC HEDGING OF BARRIER OPTIONS WITH A SMILE: AN INVERSE PROBLEM](https://hal.science/hal-01477102v1) — hal, 2002 |
+| BRICS(+) | 7 | 4 | [Directives Facultatives pour la Conception, la Construction et l’Équip](https://doi.org/10.62454/ea761f) — crossref, 2006 |
+| Capitalisme de marché libre (laissez-faire) | 7 | 4 | [Conflit entre marché et État dans la société technicienne](https://doi.org/10.7202/040495ar) — openalex, 1985 |
+| CEI | 7 | 4 | [Diplomaţie şi actori geopolitici în epoca interdependenţei complexe, C](https://hal.science/hal-05196295v1) — hal, 2021 |
 
 ## Fonds indisponibles sur ce passage
 
-- hal / abhijit-banerjee : fetch failed
-- hal / alliance-solaire-internationale-asi : fetch failed
-- hal / amartya-sen : fetch failed
-- hal / anarchisme : fetch failed
-- hal / banque-africaine-de-developpement-bafd : fetch failed
-- hal / bipolarite-guerre-froide : fetch failed
-- hal / black-scholes : fetch failed
-- hal / brics : fetch failed
+- arxiv / abhijit-banerjee : HTTP 429
+- arxiv / alliance-solaire-internationale-asi : This operation was aborted
+- arxiv / amartya-sen : This operation was aborted
+- arxiv / anarchisme : HTTP 429
+- arxiv / banque-africaine-de-developpement-bafd : This operation was aborted
+- arxiv / bipolarite-guerre-froide : HTTP 429
+- arxiv / black-scholes : HTTP 429
+- arxiv / brics : HTTP 429
 - doaj / brics : This operation was aborted
-- hal / capitalisme-de-marche-libre-laissez-faire : fetch failed
-- hal / cei : fetch failed
+- arxiv / capitalisme-de-marche-libre-laissez-faire : HTTP 429
+- arxiv / cei : HTTP 429
 
 ## Ce que la moisson ne fait pas
 
