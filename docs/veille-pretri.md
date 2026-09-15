@@ -1,17 +1,16 @@
 # Pré-tri de la file de veille
 
-Dernier écartement appliqué : 2026-09-10.
+Dernier écartement appliqué : 2026-09-13.
 
-File complète : **569** entrées, dont **144** en attente d'arbitrage.
+File complète : **670** entrées, dont **233** en attente d'arbitrage.
 
-Le pré-tri écarte **12** propositions sur des critères mécaniques et en laisse **132** à la relecture humaine, classées par fiabilité décroissante.
+Le pré-tri écarte **6** propositions sur des critères mécaniques et en laisse **227** à la relecture humaine, classées par fiabilité décroissante.
 
 ## Écartées, et pourquoi
 
 | Motif | Nombre | Ce que ça veut dire |
 |---|---:|---|
-| `domaine_opaque` | 11 | Agrégateur masquant l'éditeur réel — source non attribuable |
-| `deja_dans_le_corpus` | 1 | URL déjà citée en source par une fiche |
+| `domaine_opaque` | 6 | Agrégateur masquant l'éditeur réel — source non attribuable |
 
 Aucun de ces motifs ne porte de jugement sur le fond : ils constatent qu'une proposition n'est pas citable, pas attribuable, ou déjà connue.
 
@@ -19,10 +18,10 @@ Aucun de ces motifs ne porte de jugement sur le fond : ils constatent qu'une pro
 
 | Score | Nombre |
 |---:|---:|
-| 0.9 | 15 |
-| 0.8 | 15 |
-| 0.6 | 9 |
-| 0.4 | 93 |
+| 0.9 | 25 |
+| 0.8 | 35 |
+| 0.6 | 10 |
+| 0.4 | 157 |
 
 ### Les trente premières
 
@@ -30,6 +29,10 @@ Aucun de ces motifs ne porte de jugement sur le fond : ils constatent qu'une pro
   How Registered Reports can improve trust in machine learning research  
   <https://www.nature.com/articles/s41562-026-02586-2>  
   `636ea497-3999-4812-86c2-fc77988408f0`
+- **0.9** · nature.com · 2 terme(s) du corpus  
+  A wake-up call: diversify global research funding  
+  <https://www.nature.com/articles/d41586-026-02904-8>  
+  `4cb62426-1090-4191-80e9-e0420037ffbf`
 - **0.9** · nature.com · 1 terme(s) du corpus  
   NSF moves to overhaul funding approach in line with White House priorities  
   <https://www.nature.com/articles/d41586-026-02892-9>  
@@ -46,6 +49,14 @@ Aucun de ces motifs ne porte de jugement sur le fond : ils constatent qu'une pro
   Effects of a randomized controlled trial of unconditional cash transfers on epigenetic measures of ageing and cognition in children and mothers  
   <https://www.nature.com/articles/s41562-026-02568-4>  
   `bb40e6d9-76cc-4059-86bf-8b48456772f2`
+- **0.9** · nature.com · 1 terme(s) du corpus  
+  Make AI traceable before it shapes global climate assessments  
+  <https://www.nature.com/articles/d41586-026-02905-7>  
+  `2079a71e-12f5-4261-9c04-81d3ac811ce9`
+- **0.9** · nature.com · 1 terme(s) du corpus  
+  A collaborative agent with two lightweight synergistic models for autonomous crystal materials research  
+  <https://www.nature.com/articles/s42256-026-01298-6>  
+  `b5964fc3-d616-43bb-966a-8b413cd7bd42`
 - **0.9** · nature.com · 0 terme(s) du corpus  
   Briefing Chat: The Bunsen burner myth that turns out to be just hot air  
   <https://www.nature.com/articles/d41586-026-02893-8>  
@@ -86,10 +97,42 @@ Aucun de ces motifs ne porte de jugement sur le fond : ils constatent qu'une pro
   From static disorders to dynamic phase transitions in psychopathology  
   <https://www.nature.com/articles/s44159-026-00615-5>  
   `0c33050e-8e5b-4536-8294-9f7b1cdfdd12`
+- **0.9** · nature.com · 0 terme(s) du corpus  
+  Author Correction: Erythropoietin receptor on cDC1s dictates immune tolerance  
+  <https://www.nature.com/articles/s41586-026-11137-8>  
+  `6a334829-c1eb-45b8-9d69-e52cd78879f3`
+- **0.9** · nature.com · 0 terme(s) du corpus  
+  Why Nepal floods resulted in a disaster even after satellites spotted danger  
+  <https://www.nature.com/articles/d41586-026-02907-5>  
+  `356a04d3-2dcc-4c27-8dce-f1d9b3153c3d`
+- **0.9** · nature.com · 0 terme(s) du corpus  
+  Why the NIH must resist the metrics trap  
+  <https://www.nature.com/articles/d41586-026-02906-6>  
+  `9199d232-07c2-433b-bbb6-77c6f7dfb470`
+- **0.9** · nature.com · 0 terme(s) du corpus  
+  Causal evidence that language models use confidence to drive behaviour  
+  <https://www.nature.com/articles/s42256-026-01293-x>  
+  `a4cf5341-70e9-46d1-9b74-cf2da116b4c9`
+- **0.9** · nature.com · 0 terme(s) du corpus  
+  Quantum neural operators with implicit quadratic frame and expressivity advantages  
+  <https://www.nature.com/articles/s42256-026-01289-7>  
+  `de24bd5f-b445-4791-9c74-a1be15f53aa0`
+- **0.9** · nature.com · 0 terme(s) du corpus  
+  NucleicBERT interprets RNA sequence space through self-supervised language modelling  
+  <https://www.nature.com/articles/s42256-026-01295-9>  
+  `36e28353-e95a-4e7b-81fc-013133c6fd5c`
+- **0.9** · nature.com · 0 terme(s) du corpus  
+  Steering machine reasoning with brain signals  
+  <https://www.nature.com/articles/s42256-026-01302-z>  
+  `56dd0f66-39a7-4680-8ffc-78fbcc60af0c`
 - **0.8** · lejournal.cnrs.fr · 5 terme(s) du corpus  
   Quand 1936 inventait la grève générale  
   <https://lejournal.cnrs.fr/articles/quand-1936-inventait-la-greve-generale>  
   `9e557777-c878-4464-9288-8a6b54c1db23`
+- **0.8** · arxiv.org · 5 terme(s) du corpus  
+  Converge Then Diversify: Decoupling Convergence and Diversity in Multi-Objective Bayesian Optimisation  
+  <https://arxiv.org/abs/2609.13396>  
+  `5826f8fd-48ea-4412-b5ee-ee7cfeabbba9`
 - **0.8** · lejournal.cnrs.fr · 4 terme(s) du corpus  
   Comment la coccinelle passe au rouge  
   <https://lejournal.cnrs.fr/articles/comment-la-coccinelle-passe-au-rouge>  
@@ -98,54 +141,10 @@ Aucun de ces motifs ne porte de jugement sur le fond : ils constatent qu'une pro
   Terminator II avait-il raison ?  
   <https://lejournal.cnrs.fr/billets/terminator-ii-avait-il-raison>  
   `55c7e517-7313-4da8-96ad-7cf0fee24c03`
-- **0.8** · ec.europa.eu · 3 terme(s) du corpus  
-  Nouvelles quotidiennes 11 / 09 / 2026  
-  <https://ec.europa.eu/commission/presscorner/detail/fr/mex_26_1856>  
-  `0cfc42be-9d6e-4792-bd92-cf979f20015e`
-- **0.8** · ecb.europa.eu · 2 terme(s) du corpus  
-  Christine Lagarde: Europe seen from Normandy  
-  <https://www.ecb.europa.eu//press/key/date/2026/html/ecb.sp260912~fafa4b35b0.en.html>  
-  `78cdfe9e-4404-45a3-8f39-10bd311204f8`
-- **0.8** · lejournal.cnrs.fr · 2 terme(s) du corpus  
-  Bébés : l’apprentissage à coups de pelle  
-  <https://lejournal.cnrs.fr/videos/bebes-lapprentissage-a-coups-de-pelle>  
-  `ce5a23af-28c9-4184-8d06-212596ce4e99`
-- **0.8** · lejournal.cnrs.fr · 2 terme(s) du corpus  
-  Petit plancton, petits poissons ?  
-  <https://lejournal.cnrs.fr/audios/petit-plancton-petits-poissons>  
-  `1c2be6e3-5496-49a3-91f5-292da9e5346d`
-- **0.8** · ecb.europa.eu · 1 terme(s) du corpus  
-  Christine Lagarde: Interview with Ouest-France  
-  <https://www.ecb.europa.eu//press/inter/date/2026/html/ecb.in260912~3cc706f4d6.en.html>  
-  `260e651b-787c-4c0a-9f31-7d9eb3cecbba`
-- **0.8** · ecb.europa.eu · 1 terme(s) du corpus  
-  Philip R. Lane: Outlook for the euro area economy  
-  <https://www.ecb.europa.eu//press/key/date/2026/html/ecb.sp260911~a4d6526f00.en.pdf>  
-  `1a2b4673-5005-4e67-ab17-c8516ea1423e`
-- **0.8** · ecb.europa.eu · 1 terme(s) du corpus  
-  Christine Lagarde, Boris Vujčić: Monetary policy statement (with Q&A)  
-  <https://www.ecb.europa.eu//press/press_conference/monetary-policy-statement/2026/html/ecb.is260910~6a45359cfc.en.html>  
-  `091f01a1-c018-42a0-a03d-f67577abfe8a`
-- **0.8** · ec.europa.eu · 1 terme(s) du corpus  
-  Press Remarks by Commissioner Lahbib in Moldova  
-  <https://ec.europa.eu/commission/presscorner/detail/en/speech_26_1862>  
-  `0162249a-696c-4a18-8c97-0d388d8236fd`
-- **0.8** · ec.europa.eu · 1 terme(s) du corpus  
-  Commissioner Roswall's speech at the event, ‘Experimentation Journey for Achieving Circularity' hosted by the JRC  
-  <https://ec.europa.eu/commission/presscorner/detail/en/speech_26_1850>  
-  `18161ea0-acfb-484f-90a6-928f6fa495fe`
-- **0.8** · ec.europa.eu · 1 terme(s) du corpus  
-  Speaking notes by Commissioner Kubilius at the first Board meeting of the EU-Ukraine Drone Alliance  
-  <https://ec.europa.eu/commission/presscorner/detail/en/speech_26_1849>  
-  `6473b472-0c12-491d-8687-d6f529f823e6`
-- **0.8** · ecb.europa.eu · 0 terme(s) du corpus  
-  Monetary policy decisions  
-  <https://www.ecb.europa.eu//press/pr/date/2026/html/ecb.mp260910~314e508016.en.html>  
-  `748dd3d9-3a21-458c-8615-a394650eabf2`
-- **0.8** · ec.europa.eu · 0 terme(s) du corpus  
-  Speech by Executive Vice-President Virkkunen at Irish Presidency's Conference on Online Safety for Children and Young People  
-  <https://ec.europa.eu/commission/presscorner/detail/en/speech_26_1846>  
-  `9303220b-2f06-4cdb-a6ab-4a2311dc62f8`
+- **0.8** · arxiv.org · 4 terme(s) du corpus  
+  Toward Self-Adaptive Physical AI: Can LLM Agents Manage Long-Horizon Physical Tasks?  
+  <https://arxiv.org/abs/2609.13436>  
+  `809fee53-ec1d-4cd2-958f-d4e075abab30`
 
 ---
 
