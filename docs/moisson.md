@@ -1,8 +1,8 @@
 # Moisson de sources
 
-Dernier passage : **2026-09-14** · fonds interrogés : openalex, crossref, arxiv, hal, doaj, europepmc.
+Dernier passage : **2026-09-15** · fonds interrogés : openalex, crossref, arxiv, hal, doaj, europepmc.
 
-**21 propositions** pour **10 fiches**, écrites dans `../../_temp/moisson-2026-09-14.json`.
+**10 propositions** pour **10 fiches**, écrites dans `../../_temp/moisson-2026-09-15.json`.
 
 Ce fichier ne modifie aucune fiche. Pour en ajouter une partie au corpus : remplir le champ
 `retenues` de chaque bloc avec les clés choisies, puis lancer
@@ -10,29 +10,30 @@ Ce fichier ne modifie aucune fiche. Pour en ajouter une partie au corpus : rempl
 
 | Fiche | Besoin | Propositions | Meilleure proposition |
 |---|---:|---:|---|
-| Abhijit Banerjee | 7 | 4 | [Heights and Human Welfare: Recent Developments and New Directions](https://doi.org/10.3386/w14536) — openalex, 2008 |
+| Abhijit Banerjee | 7 | 3 | [Corruption](https://doi.org/10.3386/w17968) — crossref, 2012 |
 | Alliance solaire internationale (ASI) | 7 | 0 | — |
-| Amartya Sen | 7 | 4 | [Amartya Sen; Nobelprijswinnaar Economie 1998](https://research.tilburguniversity.edu/en/publications/9ff36b64-7af5-4022-80df-db87619fdd4b) — openalex, 1998 |
-| Anarchisme | 7 | 4 | [La communication politique : construction d'un modele](https://doi.org/10.4267/2042/15353) — crossref, 1989 |
+| Amartya Sen | 7 | 4 | [Les Africains, sont-ils heureux ? « Retour au rire » en temps de guerr](https://doi.org/10.2139/ssrn.4099388) — europepmc, 2022 |
+| Anarchisme | 7 | 2 | [L’art public altruiste dans l’Espagne contemporaine: Similitudes avec ](https://hal.science/hal-01390533v1) — hal, 2012 |
 | Banque africaine de développement (BAfD) | 7 | 0 | — |
 | Bipolarité (Guerre froide) | 7 | 0 | — |
-| Black-Scholes | 7 | 4 | [Varieties of capitalism en de Nederlandse economie in de periode 1950-](https://doi.org/10.18352/tseg.645) — openalex, 2006 |
-| BRICS(+) | 7 | 2 | [A living mapping review for COVID-19 funded research projects: final (](https://doi.org/10.12688/wellcomeopenres.16259.10) — europepmc, 2020 |
-| Capitalisme de marché libre (laissez-faire) | 7 | 1 | [O Estado e o processo de globalização*](https://univ-grenoble-alpes.hal.science/hal-05676742v1) — hal, 1998 |
-| CEI | 7 | 2 | [Contributions to Software Engineering and to the Development and Deplo](https://theses.hal.science/tel-00483255v1) — hal, 2009 |
+| Black-Scholes | 7 | 1 | [Three Risky Decades: A Time for Econophysics?](https://doi.org/10.3390/e24050627) — europepmc, 2022 |
+| BRICS(+) | 7 | 0 | — |
+| Capitalisme de marché libre (laissez-faire) | 7 | 0 | — |
+| CEI | 7 | 0 | — |
 
 ## Fonds indisponibles sur ce passage
 
-- arxiv / abhijit-banerjee : This operation was aborted
+- arxiv / abhijit-banerjee : HTTP 429
 - arxiv / alliance-solaire-internationale-asi : HTTP 429
-- arxiv / amartya-sen : HTTP 429
+- arxiv / amartya-sen : This operation was aborted
 - arxiv / anarchisme : HTTP 429
+- arxiv / banque-africaine-de-developpement-bafd : This operation was aborted
 - arxiv / bipolarite-guerre-froide : HTTP 429
-- arxiv / black-scholes : This operation was aborted
-- arxiv / brics : This operation was aborted
+- arxiv / black-scholes : HTTP 429
+- arxiv / brics : HTTP 429
 - doaj / brics : This operation was aborted
-- arxiv / capitalisme-de-marche-libre-laissez-faire : HTTP 429
-- arxiv / cei : HTTP 429
+- arxiv / capitalisme-de-marche-libre-laissez-faire : This operation was aborted
+- arxiv / cei : This operation was aborted
 
 ## Ce que la moisson ne fait pas
 
