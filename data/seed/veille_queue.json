@@ -12682,8 +12682,10 @@
     "score_fiabilite_motif": "news.google.com est un redirecteur : l'url ne porte pas le domaine de l'éditeur réel, la fiabilité ne peut pas être établie sans ouvrir le lien",
     "domaine_source": "news.google.com",
     "domaine_opaque": true,
-    "statut": "en_attente",
-    "created_at": "2026-09-16T12:20:55.069Z"
+    "statut": "ecarte_automatique",
+    "created_at": "2026-09-16T12:20:55.069Z",
+    "ecarte_motif": "domaine_opaque",
+    "ecarte_le": "2026-09-16"
   },
   {
     "id": "cea78937-291e-4397-95cc-6d0e29746cb7",
@@ -12700,8 +12702,10 @@
     "score_fiabilite_motif": "news.google.com est un redirecteur : l'url ne porte pas le domaine de l'éditeur réel, la fiabilité ne peut pas être établie sans ouvrir le lien",
     "domaine_source": "news.google.com",
     "domaine_opaque": true,
-    "statut": "en_attente",
-    "created_at": "2026-09-16T12:20:55.069Z"
+    "statut": "ecarte_automatique",
+    "created_at": "2026-09-16T12:20:55.069Z",
+    "ecarte_motif": "domaine_opaque",
+    "ecarte_le": "2026-09-16"
   },
   {
     "id": "ce19ac06-1609-4fac-888b-c4867de70326",
@@ -12718,8 +12722,10 @@
     "score_fiabilite_motif": "news.google.com est un redirecteur : l'url ne porte pas le domaine de l'éditeur réel, la fiabilité ne peut pas être établie sans ouvrir le lien",
     "domaine_source": "news.google.com",
     "domaine_opaque": true,
-    "statut": "en_attente",
-    "created_at": "2026-09-16T12:20:56.441Z"
+    "statut": "ecarte_automatique",
+    "created_at": "2026-09-16T12:20:56.441Z",
+    "ecarte_motif": "domaine_opaque",
+    "ecarte_le": "2026-09-16"
   },
   {
     "id": "64771696-4946-4145-99e5-fddf6313688a",
@@ -12736,8 +12742,10 @@
     "score_fiabilite_motif": "news.google.com est un redirecteur : l'url ne porte pas le domaine de l'éditeur réel, la fiabilité ne peut pas être établie sans ouvrir le lien",
     "domaine_source": "news.google.com",
     "domaine_opaque": true,
-    "statut": "en_attente",
-    "created_at": "2026-09-16T12:20:56.441Z"
+    "statut": "ecarte_automatique",
+    "created_at": "2026-09-16T12:20:56.441Z",
+    "ecarte_motif": "domaine_opaque",
+    "ecarte_le": "2026-09-16"
   },
   {
     "id": "01b0a337-6908-418e-97cb-7a0f4102292e",
@@ -12754,8 +12762,10 @@
     "score_fiabilite_motif": "news.google.com est un redirecteur : l'url ne porte pas le domaine de l'éditeur réel, la fiabilité ne peut pas être établie sans ouvrir le lien",
     "domaine_source": "news.google.com",
     "domaine_opaque": true,
-    "statut": "en_attente",
-    "created_at": "2026-09-16T12:20:56.907Z"
+    "statut": "ecarte_automatique",
+    "created_at": "2026-09-16T12:20:56.907Z",
+    "ecarte_motif": "domaine_opaque",
+    "ecarte_le": "2026-09-16"
   },
   {
     "id": "9b415227-006e-4565-91b6-6795805838d8",
@@ -12772,8 +12782,10 @@
     "score_fiabilite_motif": "news.google.com est un redirecteur : l'url ne porte pas le domaine de l'éditeur réel, la fiabilité ne peut pas être établie sans ouvrir le lien",
     "domaine_source": "news.google.com",
     "domaine_opaque": true,
-    "statut": "en_attente",
-    "created_at": "2026-09-16T12:20:56.907Z"
+    "statut": "ecarte_automatique",
+    "created_at": "2026-09-16T12:20:56.907Z",
+    "ecarte_motif": "domaine_opaque",
+    "ecarte_le": "2026-09-16"
   },
   {
     "id": "f746f77f-88c2-445b-91fe-a0130c4b04fb",
@@ -12790,8 +12802,10 @@
     "score_fiabilite_motif": "news.google.com est un redirecteur : l'url ne porte pas le domaine de l'éditeur réel, la fiabilité ne peut pas être établie sans ouvrir le lien",
     "domaine_source": "news.google.com",
     "domaine_opaque": true,
-    "statut": "en_attente",
-    "created_at": "2026-09-16T12:20:56.907Z"
+    "statut": "ecarte_automatique",
+    "created_at": "2026-09-16T12:20:56.907Z",
+    "ecarte_motif": "domaine_opaque",
+    "ecarte_le": "2026-09-16"
   },
   {
     "id": "cafd3b23-f0f3-4163-9d38-d396a560a54c",
@@ -13402,8 +13416,10 @@
     "score_fiabilite_motif": "rfi.fr — domaine absent de la table : score par défaut prudent, sous le seuil de source primaire",
     "domaine_source": "rfi.fr",
     "domaine_opaque": false,
-    "statut": "en_attente",
-    "created_at": "2026-09-16T12:21:03.797Z"
+    "statut": "ecarte_automatique",
+    "created_at": "2026-09-16T12:21:03.797Z",
+    "ecarte_motif": "doublon_file",
+    "ecarte_le": "2026-09-16"
   },
   {
     "id": "2660aecf-c5c8-410e-b825-af63e3a3140c",
@@ -13420,8 +13436,10 @@
     "score_fiabilite_motif": "rfi.fr — domaine absent de la table : score par défaut prudent, sous le seuil de source primaire",
     "domaine_source": "rfi.fr",
     "domaine_opaque": false,
-    "statut": "en_attente",
-    "created_at": "2026-09-16T12:21:03.797Z"
+    "statut": "ecarte_automatique",
+    "created_at": "2026-09-16T12:21:03.797Z",
+    "ecarte_motif": "doublon_file",
+    "ecarte_le": "2026-09-16"
   },
   {
     "id": "bf8e50bf-d301-4e42-b87a-28fb08ecbd3e",
@@ -13438,8 +13456,10 @@
     "score_fiabilite_motif": "rfi.fr — domaine absent de la table : score par défaut prudent, sous le seuil de source primaire",
     "domaine_source": "rfi.fr",
     "domaine_opaque": false,
-    "statut": "en_attente",
-    "created_at": "2026-09-16T12:21:03.797Z"
+    "statut": "ecarte_automatique",
+    "created_at": "2026-09-16T12:21:03.797Z",
+    "ecarte_motif": "doublon_file",
+    "ecarte_le": "2026-09-16"
   },
   {
     "id": "e4fab7a3-3ecd-4390-9f4e-55204b17e270",

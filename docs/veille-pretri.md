@@ -1,16 +1,17 @@
 # Pré-tri de la file de veille
 
-Dernier écartement appliqué : 2026-09-13.
+Dernier écartement appliqué : 2026-09-15.
 
-File complète : **670** entrées, dont **233** en attente d'arbitrage.
+File complète : **750** entrées, dont **307** en attente d'arbitrage.
 
-Le pré-tri écarte **6** propositions sur des critères mécaniques et en laisse **227** à la relecture humaine, classées par fiabilité décroissante.
+Le pré-tri écarte **10** propositions sur des critères mécaniques et en laisse **297** à la relecture humaine, classées par fiabilité décroissante.
 
 ## Écartées, et pourquoi
 
 | Motif | Nombre | Ce que ça veut dire |
 |---|---:|---|
-| `domaine_opaque` | 6 | Agrégateur masquant l'éditeur réel — source non attribuable |
+| `domaine_opaque` | 7 | Agrégateur masquant l'éditeur réel — source non attribuable |
+| `doublon_file` | 3 | URL déjà portée par une entrée antérieure de la file |
 
 Aucun de ces motifs ne porte de jugement sur le fond : ils constatent qu'une proposition n'est pas citable, pas attribuable, ou déjà connue.
 
@@ -18,10 +19,10 @@ Aucun de ces motifs ne porte de jugement sur le fond : ils constatent qu'une pro
 
 | Score | Nombre |
 |---:|---:|
-| 0.9 | 25 |
-| 0.8 | 35 |
-| 0.6 | 10 |
-| 0.4 | 157 |
+| 0.9 | 30 |
+| 0.8 | 51 |
+| 0.6 | 11 |
+| 0.4 | 205 |
 
 ### Les trente premières
 
@@ -33,6 +34,10 @@ Aucun de ces motifs ne porte de jugement sur le fond : ils constatent qu'une pro
   A wake-up call: diversify global research funding  
   <https://www.nature.com/articles/d41586-026-02904-8>  
   `4cb62426-1090-4191-80e9-e0420037ffbf`
+- **0.9** · nature.com · 2 terme(s) du corpus  
+  Author Correction: Improving computational reproducibility in the social sciences  
+  <https://www.nature.com/articles/s41562-026-02609-y>  
+  `d75392c5-b1ed-4462-82f5-5864ea14f19f`
 - **0.9** · nature.com · 1 terme(s) du corpus  
   NSF moves to overhaul funding approach in line with White House priorities  
   <https://www.nature.com/articles/d41586-026-02892-9>  
@@ -125,26 +130,22 @@ Aucun de ces motifs ne porte de jugement sur le fond : ils constatent qu'une pro
   Steering machine reasoning with brain signals  
   <https://www.nature.com/articles/s42256-026-01302-z>  
   `56dd0f66-39a7-4680-8ffc-78fbcc60af0c`
-- **0.8** · lejournal.cnrs.fr · 5 terme(s) du corpus  
-  Quand 1936 inventait la grève générale  
-  <https://lejournal.cnrs.fr/articles/quand-1936-inventait-la-greve-generale>  
-  `9e557777-c878-4464-9288-8a6b54c1db23`
-- **0.8** · arxiv.org · 5 terme(s) du corpus  
-  Converge Then Diversify: Decoupling Convergence and Diversity in Multi-Objective Bayesian Optimisation  
-  <https://arxiv.org/abs/2609.13396>  
-  `5826f8fd-48ea-4412-b5ee-ee7cfeabbba9`
-- **0.8** · lejournal.cnrs.fr · 4 terme(s) du corpus  
-  Comment la coccinelle passe au rouge  
-  <https://lejournal.cnrs.fr/articles/comment-la-coccinelle-passe-au-rouge>  
-  `ed05d7a1-b608-42ee-b992-77b8a2f26c25`
-- **0.8** · lejournal.cnrs.fr · 4 terme(s) du corpus  
-  Terminator II avait-il raison ?  
-  <https://lejournal.cnrs.fr/billets/terminator-ii-avait-il-raison>  
-  `55c7e517-7313-4da8-96ad-7cf0fee24c03`
-- **0.8** · arxiv.org · 4 terme(s) du corpus  
-  Toward Self-Adaptive Physical AI: Can LLM Agents Manage Long-Horizon Physical Tasks?  
-  <https://arxiv.org/abs/2609.13436>  
-  `809fee53-ec1d-4cd2-958f-d4e075abab30`
+- **0.9** · nature.com · 0 terme(s) du corpus  
+  Staying in academia after extended leave  
+  <https://www.nature.com/articles/s41562-026-02594-2>  
+  `cc78bba0-4b41-453e-9737-e22938387e3e`
+- **0.9** · nature.com · 0 terme(s) du corpus  
+  Loneliness and desire for thinness explain sex differences in adolescent internalizing problems  
+  <https://www.nature.com/articles/s41562-026-02578-2>  
+  `8675e323-a4db-497e-912b-282d064a7bb9`
+- **0.9** · nature.com · 0 terme(s) du corpus  
+  Complexity is a unified cognitive kind  
+  <https://www.nature.com/articles/s41562-026-02502-8>  
+  `9a136766-dda9-4d45-a5b0-42b743a46246`
+- **0.9** · nature.com · 0 terme(s) du corpus  
+  Building health-literate artificial intelligence  
+  <https://www.nature.com/articles/s41562-026-02595-1>  
+  `7be33d00-b5b6-4dce-be33-833cb47fe48b`
 
 ---
 
