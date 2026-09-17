@@ -1,17 +1,16 @@
 # Pré-tri de la file de veille
 
-Dernier écartement appliqué : 2026-09-15.
+Dernier écartement appliqué : 2026-09-16.
 
-File complète : **750** entrées, dont **307** en attente d'arbitrage.
+File complète : **833** entrées, dont **380** en attente d'arbitrage.
 
-Le pré-tri écarte **10** propositions sur des critères mécaniques et en laisse **297** à la relecture humaine, classées par fiabilité décroissante.
+Le pré-tri écarte **5** propositions sur des critères mécaniques et en laisse **375** à la relecture humaine, classées par fiabilité décroissante.
 
 ## Écartées, et pourquoi
 
 | Motif | Nombre | Ce que ça veut dire |
 |---|---:|---|
-| `domaine_opaque` | 7 | Agrégateur masquant l'éditeur réel — source non attribuable |
-| `doublon_file` | 3 | URL déjà portée par une entrée antérieure de la file |
+| `domaine_opaque` | 5 | Agrégateur masquant l'éditeur réel — source non attribuable |
 
 Aucun de ces motifs ne porte de jugement sur le fond : ils constatent qu'une proposition n'est pas citable, pas attribuable, ou déjà connue.
 
@@ -19,10 +18,10 @@ Aucun de ces motifs ne porte de jugement sur le fond : ils constatent qu'une pro
 
 | Score | Nombre |
 |---:|---:|
-| 0.9 | 30 |
-| 0.8 | 51 |
-| 0.6 | 11 |
-| 0.4 | 205 |
+| 0.9 | 37 |
+| 0.8 | 67 |
+| 0.6 | 16 |
+| 0.4 | 255 |
 
 ### Les trente premières
 
@@ -62,6 +61,10 @@ Aucun de ces motifs ne porte de jugement sur le fond : ils constatent qu'une pro
   A collaborative agent with two lightweight synergistic models for autonomous crystal materials research  
   <https://www.nature.com/articles/s42256-026-01298-6>  
   `b5964fc3-d616-43bb-966a-8b413cd7bd42`
+- **0.9** · nature.com · 1 terme(s) du corpus  
+  OpenAI maths bombshell sparks debate about who gets credit in age of AI  
+  <https://www.nature.com/articles/d41586-026-02910-w>  
+  `b9435665-988f-435a-b083-a66c02beb98c`
 - **0.9** · nature.com · 0 terme(s) du corpus  
   Briefing Chat: The Bunsen burner myth that turns out to be just hot air  
   <https://www.nature.com/articles/d41586-026-02893-8>  
@@ -142,10 +145,6 @@ Aucun de ces motifs ne porte de jugement sur le fond : ils constatent qu'une pro
   Complexity is a unified cognitive kind  
   <https://www.nature.com/articles/s41562-026-02502-8>  
   `9a136766-dda9-4d45-a5b0-42b743a46246`
-- **0.9** · nature.com · 0 terme(s) du corpus  
-  Building health-literate artificial intelligence  
-  <https://www.nature.com/articles/s41562-026-02595-1>  
-  `7be33d00-b5b6-4dce-be33-833cb47fe48b`
 
 ---
 
