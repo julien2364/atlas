@@ -1,10 +1,10 @@
 {
- "genere_le": "2026-09-18",
+ "genere_le": "2026-09-19",
  "fenetre_jours": 60,
- "nb_items_examines": 657,
+ "nb_items_examines": 655,
  "nb_contestations_documentees": 103,
  "nb_angles": 24,
- "nb_avec_actualite": 0,
+ "nb_avec_actualite": 2,
  "fiches_ecartees_pour_bruit": [
   "ia:dependance-a-la-supervision-humaine-limite-transversale",
   "ia:absence-de-conscience-et-de-qualia-limite-transversale",
@@ -15,610 +15,97 @@
  "avertissement": "Chaque angle part d'une contestation ÉCRITE dans le référentiel : une fiche en nomme une autre dans ses limites critiques, avec une marque d'opposition, et la phrase est citée. La question, elle, est formulée par gabarit — le script ne comprend ni l'une ni l'autre. C'est une amorce de travail, à vérifier et à retravailler avant toute publication. Les actualités accrochées le sont par recouvrement de vocabulaire : sur des flux majoritairement anglophones face à un corpus français, ce rattachement reste faible, et la plupart des angles n'en portent aucune.",
  "angles": [
   {
-   "id": "martin-seligman--william-james",
+   "id": "simone-de-beauvoir--limites-planetaires-stockholm-resilience-centre",
    "fiches": [
     {
      "type": "humaine",
-     "id": "martin-seligman",
-     "nom": "Martin Seligman",
-     "axe": "psychologique",
-     "sous_domaine": "psychologie_positive",
-     "these": "Seligman fonde la psychologie positive, orientant la discipline vers l'étude scientifique du bien-être, des forces de caractère et de l'épanouissement, après avoir d'abord théorisé l'impuissance apprise (learned helplessness).",
-     "limite": "La psychologie positive lui vaut le reproche d'un optimisme prescriptif proche du développement personnel et d'une attention faible aux déterminants sociaux du bien-être."
-    },
-    {
-     "type": "humaine",
-     "id": "william-james",
-     "nom": "William James",
-     "axe": "psychologique",
-     "sous_domaine": "fondations_experimentales",
-     "these": "James soutient que la conscience n'est pas une mosaïque d'éléments juxtaposés mais un flux continu, personnel, changeant et sélectif — un courant de pensée dont l'analyse en unités trahit la nature.",
-     "limite": "Walter Cannon oppose en 1927 à la théorie James-Lange cinq objections expérimentales : la séparation chirurgicale des viscères et du système nerveux ne supprime pas le comportement émotionnel chez l'animal ; les mêmes changements viscéraux se produisent dans des états émotionnels très différents et…"
-    }
-   ],
-   "preuve": "Une controverse plus lourde est documentée : en octobre 2014, le journaliste James Risen a affirmé que l'American Psychological Association, qu'il avait présidée, avait travaillé avec la CIA sur des programmes de torture ;",
-   "champ": "limites_critiques",
-   "question": "Le référentiel documente une opposition entre « Martin Seligman » et « William James ». La fiche « Martin Seligman » l'écrit ainsi : « Une controverse plus lourde est documentée : en octobre 2014, le journaliste James Risen a affirmé que l'American Psychological Association, qu'il avait présidée, avait travaillé avec la CIA sur des programmes de torture ; » Sur quoi porte exactement le désaccord, et qu'est-ce qui, aujourd'hui, permettrait de le trancher ?",
-   "actualites": []
-  },
-  {
-   "id": "mary-whiton-calkins--william-james",
-   "fiches": [
-    {
-     "type": "humaine",
-     "id": "mary-whiton-calkins",
-     "nom": "Mary Whiton Calkins",
-     "axe": "psychologique",
-     "sous_domaine": "fondations_experimentales",
-     "these": "Calkins soutient que l'objet propre de la psychologie est le soi conscient en relation avec son environnement, et non une somme de processus mentaux traités isolément : il n'y a pas de perception ni de souvenir sans un moi qui perçoit et se souvient, et l'analyse qui met le soi hors du champ manque…",
-     "limite": "James Rowland Angell, du côté fonctionnaliste, lui reproche un conservatisme scientifique extrême consistant à refuser au soi d'avoir un corps, et qualifie son moi d'esprit purement désincarné."
-    },
-    {
-     "type": "humaine",
-     "id": "william-james",
-     "nom": "William James",
-     "axe": "psychologique",
-     "sous_domaine": "fondations_experimentales",
-     "these": "James soutient que la conscience n'est pas une mosaïque d'éléments juxtaposés mais un flux continu, personnel, changeant et sélectif — un courant de pensée dont l'analyse en unités trahit la nature.",
-     "limite": "Walter Cannon oppose en 1927 à la théorie James-Lange cinq objections expérimentales : la séparation chirurgicale des viscères et du système nerveux ne supprime pas le comportement émotionnel chez l'animal ; les mêmes changements viscéraux se produisent dans des états émotionnels très différents et…"
-    }
-   ],
-   "preuve": "James Rowland Angell, du côté fonctionnaliste, lui reproche un conservatisme scientifique extrême consistant à refuser au soi d'avoir un corps, et qualifie son moi d'esprit purement désincarné.",
-   "champ": "limites_critiques",
-   "question": "Le référentiel documente une opposition entre « Mary Whiton Calkins » et « William James ». La fiche « Mary Whiton Calkins » l'écrit ainsi : « James Rowland Angell, du côté fonctionnaliste, lui reproche un conservatisme scientifique extrême consistant à refuser au soi d'avoir un corps, et qualifie son moi d'esprit purement désincarné. » Sur quoi porte exactement le désaccord, et qu'est-ce qui, aujourd'hui, permettrait de le trancher ?",
-   "actualites": []
-  },
-  {
-   "id": "max-wertheimer--karl-lashley",
-   "fiches": [
-    {
-     "type": "humaine",
-     "id": "max-wertheimer",
-     "nom": "Max Wertheimer",
-     "axe": "psychologique",
-     "sous_domaine": "perception",
-     "these": "Wertheimer soutient qu'une expérience perceptive peut exister sans qu'aucun élément sensoriel ne lui corresponde : entre deux lumières allumées successivement à un intervalle bien choisi, on voit un mouvement, alors que rien ne se déplace.",
-     "limite": "La notice consacrée à la psychologie de la forme rapporte que la théorie physiologique des gestaltistes est tombée en désuétude et qu'il en reste un ensemble de principes descriptifs sans modèle du traitement perceptif ; elle relève la difficulté à définir précisément des termes comme la Prägnanz, à…"
-    },
-    {
-     "type": "humaine",
-     "id": "karl-lashley",
-     "nom": "Karl Lashley",
-     "axe": "psychologique",
-     "sous_domaine": "neuropsychologie",
-     "these": "Lashley soutient, au terme de trente ans de lésions corticales chez le rat, que la trace mnésique n'est pas logée en un point du cortex : l'ampleur du déficit d'apprentissage dépend de la quantité de tissu détruit et non du site détruit (action de masse), et une région peut assumer la fonction d'une…",
-     "limite": "La distribution des engrammes existe bien, mais elle n'est pas égale entre toutes les aires corticales comme Lashley le supposait : la notice qui lui est consacrée note que sa théorie était incomplète plutôt qu'entièrement fausse."
-    }
-   ],
-   "preuve": "L'expérimentation de Karl Lashley, Kao Liang Chow et Josephine Semmes (Psychological Review, 58(2), 1951) a infirmé les prédictions de la théorie des champs électriques corticaux sur laquelle reposait le versant physiologique de la doctrine.",
-   "champ": "limites_critiques",
-   "question": "Le référentiel documente une opposition entre « Max Wertheimer » et « Karl Lashley ». La fiche « Max Wertheimer » l'écrit ainsi : « L'expérimentation de Karl Lashley, Kao Liang Chow et Josephine Semmes (Psychological Review, 58(2), 1951) a infirmé les prédictions de la théorie des champs électriques corticaux sur laquelle reposait le versant physiologique de la doctrine. » Sur quoi porte exactement le désaccord, et qu'est-ce qui, aujourd'hui, permettrait de le trancher ?",
-   "actualites": []
-  },
-  {
-   "id": "michel-foucault--jurgen-habermas",
-   "fiches": [
-    {
-     "type": "humaine",
-     "id": "michel-foucault",
-     "nom": "Michel Foucault",
+     "id": "simone-de-beauvoir",
+     "nom": "Simone de Beauvoir",
      "axe": "philosophique",
      "sous_domaine": "philosophie",
-     "these": "Le pouvoir n'est pas seulement répressif mais productif : il façonne les savoirs, les normes et les sujets eux-mêmes à travers des dispositifs disciplinaires (prison, école, hôpital, sexualité) diffus dans tout le corps social.",
-     "limite": "Absence de théorie normative claire (comment distinguer un « bon » et un « mauvais » pouvoir ?), reprochée notamment par Habermas ; usage parfois flou et englobant de la notion de « pouvoir »."
+     "these": "« On ne naît pas femme, on le devient » : la condition féminine est une construction sociale et historique, non une nature biologique, qui a assigné aux femmes le rôle d'Autre par rapport au sujet masculin universel.",
+     "limite": "Critiquée ultérieurement par des courants féministes essentialistes, décoloniaux et intersectionnels pour un universalisme jugé trop centré sur l'expérience occidentale et bourgeoise."
     },
     {
      "type": "humaine",
-     "id": "jurgen-habermas",
-     "nom": "Jürgen Habermas",
+     "id": "limites-planetaires-stockholm-resilience-centre",
+     "nom": "Limites planétaires (Stockholm Resilience Centre)",
+     "axe": "serenite",
+     "sous_domaine": "soutenabilite",
+     "these": "Neuf processus biophysiques régulent la stabilité du système Terre (climat, biodiversité, cycles de l'azote/phosphore, acidification des océans, etc.), chacun avec un seuil au-delà duquel le risque de basculement abrupt et irréversible augmente fortement ; plusieurs de ces limites sont aujourd'hui j…",
+     "limite": "Les seuils précis font l'objet de débats scientifiques sur leur robustesse méthodologique (incertitudes fortes sur certains, notamment les flux d'azote et de phosphore) ; le cadre est descriptif et scientifique mais ne prescrit aucune trajectoire politique pour rester dans les limites — le « comment…"
+    }
+   ],
+   "preuve": "Critiquée ultérieurement par des courants féministes essentialistes, décoloniaux et intersectionnels pour un universalisme jugé trop centré sur l'expérience occidentale et bourgeoise.",
+   "champ": "limites_critiques",
+   "question": "Le référentiel documente une opposition entre « Simone de Beauvoir » et « Limites planétaires (Stockholm Resilience Centre) ». La fiche « Simone de Beauvoir » l'écrit ainsi : « Critiquée ultérieurement par des courants féministes essentialistes, décoloniaux et intersectionnels pour un universalisme jugé trop centré sur l'expérience occidentale et bourgeoise. » Sur quoi porte exactement le désaccord, et qu'est-ce qui, aujourd'hui, permettrait de le trancher ?",
+   "actualites": []
+  },
+  {
+   "id": "socrate--aristote",
+   "fiches": [
+    {
+     "type": "humaine",
+     "id": "socrate",
+     "nom": "Socrate",
      "axe": "philosophique",
      "sous_domaine": "philosophie",
-     "these": "La légitimité des normes sociales et politiques repose sur l'agir communicationnel : une norme est valide si elle pourrait recueillir l'assentiment de tous les participants concernés dans une discussion libre et sans contrainte (éthique de la discussion).",
-     "limite": "L'idéal de « situation de parole idéale » jugé irréaliste par les critiques, qui pointent les asymétries de pouvoir et d'accès à l'information ; accusé de sous-estimer les rapports de force réels dans l'espace public."
-    }
-   ],
-   "preuve": "Absence de théorie normative claire (comment distinguer un « bon » et un « mauvais » pouvoir ?), reprochée notamment par Habermas ;",
-   "champ": "limites_critiques",
-   "question": "Le référentiel documente une opposition entre « Michel Foucault » et « Jürgen Habermas ». La fiche « Michel Foucault » l'écrit ainsi : « Absence de théorie normative claire (comment distinguer un « bon » et un « mauvais » pouvoir ?), reprochée notamment par Habermas ; » Sur quoi porte exactement le désaccord, et qu'est-ce qui, aujourd'hui, permettrait de le trancher ?",
-   "actualites": []
-  },
-  {
-   "id": "michele-lamont--pierre-bourdieu",
-   "fiches": [
-    {
-     "type": "humaine",
-     "id": "michele-lamont",
-     "nom": "Michèle Lamont",
-     "axe": "social",
-     "sous_domaine": "sociologie",
-     "these": "Lamont soutient que les hiérarchies sociales passent par des frontières symboliques — les distinctions conceptuelles que les acteurs tracent eux-mêmes entre « eux » et « nous » — à distinguer des frontières sociales, formes objectivées de ces différences dans l'accès inégal aux ressources.",
-     "limite": "La recension de Money, Morals, and Manners parue dans Contemporary Sociology objecte que l'analyse ne tranche pas l'écart entre le discours d'entretien et la conduite effective — « What are we to make of this discrepancy between 'talk' and 'behavior'? » —, question classique des sciences sociales qu…"
+     "these": "La vertu est un savoir qui s'atteint par l'examen dialogique de ses propres croyances (maïeutique) plutôt que par la transmission de doctrines toutes faites ; « une vie sans examen ne vaut pas la peine d'être vécue ».",
+     "limite": "N'a rien écrit lui-même : tout nous vient de Platon (et, différemment, de Xénophon), rendant difficile la distinction entre le « Socrate historique » et le personnage littéraire platonicien ; son intellectualisme moral (savoir le bien suffit à le faire) est explicitement contesté par Aristote lui-mê…"
     },
     {
      "type": "humaine",
-     "id": "pierre-bourdieu",
-     "nom": "Pierre Bourdieu",
-     "axe": "social",
-     "sous_domaine": "sociologie",
-     "these": "Bourdieu soutient que les pratiques ne s'expliquent ni par le calcul conscient des agents ni par l'application mécanique de règles, mais par la rencontre entre un habitus — des « structures structurées prédisposées à fonctionner comme structures structurantes », dispositions durables et transposable…",
-     "limite": "Jacques Rancière (Le Philosophe et ses pauvres) lui objecte que le dispositif reconduit indéfiniment la domination et perd la perspective d'émancipation."
+     "id": "aristote",
+     "nom": "Aristote",
+     "axe": "philosophique",
+     "sous_domaine": "philosophie",
+     "these": "Le bonheur (eudaimonia) est l'activité de l'âme conforme à la vertu, atteinte par le juste milieu (mésotès) et l'habituation ; la logique syllogistique fonde le raisonnement valide ; tout être tend vers sa fin propre (téléologie).",
+     "limite": "Sa téléologie biologique est rejetée par la biologie évolutionniste moderne (la sélection naturelle ne vise aucune « fin ») ; certaines de ses positions (justification de l'esclavage et hiérarchie naturelle des sexes dans la Politique) sont aujourd'hui jugées inacceptables et doivent être historicis…"
     }
    ],
-   "preuve": "Le même texte reproche à Lamont d'assimiler valeurs individuelles et discours culturel sans distinguer les deux : ce qu'elle recueille pourrait n'être qu'« a vocabulary, a set of expressions, stories and such » plutôt qu'un habitus, ce qui affaiblirait sa propre critique de Bourdieu au lieu de la fonder.",
+   "preuve": "N'a rien écrit lui-même : tout nous vient de Platon (et, différemment, de Xénophon), rendant difficile la distinction entre le « Socrate historique » et le personnage littéraire platonicien ; son intellectualisme moral (savoir le bien suffit à le faire) est explicitement contesté par Aristote lui-même (akrasia, la faiblesse de la volonté).",
    "champ": "limites_critiques",
-   "question": "Le référentiel documente une opposition entre « Michèle Lamont » et « Pierre Bourdieu ». La fiche « Michèle Lamont » l'écrit ainsi : « Le même texte reproche à Lamont d'assimiler valeurs individuelles et discours culturel sans distinguer les deux : ce qu'elle recueille pourrait n'être qu'« a vocabulary, a set of expressions, stories and such » plutôt qu'un habitus, ce qui affaiblirait sa prop… » Sur quoi porte exactement le désaccord, et qu'est-ce qui, aujourd'hui, permettrait de le trancher ?",
+   "question": "Le référentiel documente une opposition entre « Socrate » et « Aristote ». La fiche « Socrate » l'écrit ainsi : « N'a rien écrit lui-même : tout nous vient de Platon (et, différemment, de Xénophon), rendant difficile la distinction entre le « Socrate historique » et le personnage littéraire platonicien ; son intellectualisme moral (savoir le bien suffit à le faire) est ex… » Sur quoi porte exactement le désaccord, et qu'est-ce qui, aujourd'hui, permettrait de le trancher ?",
    "actualites": []
   },
   {
-   "id": "neoliberalisme-etatique--joseph-stiglitz",
+   "id": "susan-strange--saul-b-cohen",
    "fiches": [
     {
      "type": "humaine",
-     "id": "neoliberalisme-etatique",
-     "nom": "Néolibéralisme étatique",
-     "axe": "social",
-     "sous_domaine": "modele_politique",
-     "these": "Le néolibéralisme désigne un ensemble de doctrines économiques prônant la réduction du rôle de l'État, la dérégulation des marchés et la priorité donnée aux mécanismes de marché, l'État étant réduit à la création d'un cadre légal favorable plutôt qu'à un rôle d'intervention directe.",
-     "limite": "Joseph Stiglitz le qualifie de « fondamentalisme de marché » réfuté par les faits, tandis que Pierre Bourdieu y voit un programme de destruction méthodique des solidarités collectives ; le terme lui-même reste flou, presque personne ne s'en revendiquant explicitement."
-    },
-    {
-     "type": "humaine",
-     "id": "joseph-stiglitz",
-     "nom": "Joseph Stiglitz",
-     "axe": "social",
-     "sous_domaine": "economie",
-     "these": "Stiglitz démontre que lorsque l'information est imparfaite et distribuée de façon asymétrique entre acteurs économiques, les marchés ne fonctionnent pas efficacement, remettant en cause la théorie classique de la « main invisible ».",
-     "limite": "Ses préconisations d'intervention publique pour corriger les défaillances de marché liées à l'information asymétrique sont contestées par les courants plus libéraux, qui estiment que la régulation elle-même souffre souvent de défaillances d'information comparables."
-    }
-   ],
-   "preuve": "Joseph Stiglitz le qualifie de « fondamentalisme de marché » réfuté par les faits, tandis que Pierre Bourdieu y voit un programme de destruction méthodique des solidarités collectives ;",
-   "champ": "limites_critiques",
-   "question": "Le référentiel documente une opposition entre « Néolibéralisme étatique » et « Joseph Stiglitz ». La fiche « Néolibéralisme étatique » l'écrit ainsi : « Joseph Stiglitz le qualifie de « fondamentalisme de marché » réfuté par les faits, tandis que Pierre Bourdieu y voit un programme de destruction méthodique des solidarités collectives ; » Sur quoi porte exactement le désaccord, et qu'est-ce qui, aujourd'hui, permettrait de le trancher ?",
-   "actualites": []
-  },
-  {
-   "id": "neoliberalisme-etatique--pierre-bourdieu",
-   "fiches": [
-    {
-     "type": "humaine",
-     "id": "neoliberalisme-etatique",
-     "nom": "Néolibéralisme étatique",
-     "axe": "social",
-     "sous_domaine": "modele_politique",
-     "these": "Le néolibéralisme désigne un ensemble de doctrines économiques prônant la réduction du rôle de l'État, la dérégulation des marchés et la priorité donnée aux mécanismes de marché, l'État étant réduit à la création d'un cadre légal favorable plutôt qu'à un rôle d'intervention directe.",
-     "limite": "Joseph Stiglitz le qualifie de « fondamentalisme de marché » réfuté par les faits, tandis que Pierre Bourdieu y voit un programme de destruction méthodique des solidarités collectives ; le terme lui-même reste flou, presque personne ne s'en revendiquant explicitement."
-    },
-    {
-     "type": "humaine",
-     "id": "pierre-bourdieu",
-     "nom": "Pierre Bourdieu",
-     "axe": "social",
-     "sous_domaine": "sociologie",
-     "these": "Bourdieu soutient que les pratiques ne s'expliquent ni par le calcul conscient des agents ni par l'application mécanique de règles, mais par la rencontre entre un habitus — des « structures structurées prédisposées à fonctionner comme structures structurantes », dispositions durables et transposable…",
-     "limite": "Jacques Rancière (Le Philosophe et ses pauvres) lui objecte que le dispositif reconduit indéfiniment la domination et perd la perspective d'émancipation."
-    }
-   ],
-   "preuve": "Joseph Stiglitz le qualifie de « fondamentalisme de marché » réfuté par les faits, tandis que Pierre Bourdieu y voit un programme de destruction méthodique des solidarités collectives ;",
-   "champ": "limites_critiques",
-   "question": "Le référentiel documente une opposition entre « Néolibéralisme étatique » et « Pierre Bourdieu ». La fiche « Néolibéralisme étatique » l'écrit ainsi : « Joseph Stiglitz le qualifie de « fondamentalisme de marché » réfuté par les faits, tandis que Pierre Bourdieu y voit un programme de destruction méthodique des solidarités collectives ; » Sur quoi porte exactement le désaccord, et qu'est-ce qui, aujourd'hui, permettrait de le trancher ?",
-   "actualites": []
-  },
-  {
-   "id": "nicholas-onuf--john-mearsheimer",
-   "fiches": [
-    {
-     "type": "humaine",
-     "id": "nicholas-onuf",
-     "nom": "Nicholas Onuf",
+     "id": "susan-strange",
+     "nom": "Susan Strange",
      "axe": "social",
      "sous_domaine": "geopolitique",
-     "these": "Onuf soutient que le monde social est fait de règles et que les règles se produisent par des actes de langage : à trois types d'énoncés — instructifs, directifs, engageants — correspondent trois types de règles, qui engendrent trois configurations de domination, l'hégémonie, la hiérarchie et l'hétér…",
-     "limite": "C'est la version étatocentrée et systémique d'Alexander Wendt, non celle d'Onuf, qui a engendré le programme de recherche : la littérature reconnaît à Onuf la paternité du terme et tient Wendt pour le principal avocat du courant, ce qui est une manière de dire que le dispositif d'Onuf s'est révélé p…"
+     "these": "Strange soutient que la question pertinente n'est pas qui l'emporte dans une négociation — pouvoir relationnel — mais qui façonne le cadre dans lequel les autres doivent opérer : c'est le pouvoir structurel, exercé dans quatre structures qu'elle tient pour irréductibles l'une à l'autre — sécurité, p…",
+     "limite": "Linda Weiss, dans The Myth of the Powerless State (Ithaca, Cornell University Press, 1998), conteste la thèse du retrait de l'État : l'examen des politiques économiques du Japon, de l'Allemagne, de la Suède et de l'Asie de l'Est dans la période d'intégration mondiale montre des capacités étatiques d…"
     },
     {
      "type": "humaine",
-     "id": "john-mearsheimer",
-     "nom": "John Mearsheimer",
+     "id": "saul-b-cohen",
+     "nom": "Saul B. Cohen",
      "axe": "social",
      "sous_domaine": "geopolitique",
-     "these": "Mearsheimer soutient que dans un système anarchique les grandes puissances sont conduites, non par agressivité mais par calcul rationnel de sécurité, à maximiser leur part relative de puissance jusqu'à l'hégémonie régionale ; l'hégémonie mondiale étant hors d'atteinte, un hégémon régional s'emploie…",
-     "limite": "Glenn Snyder, dans « Mearsheimer's World — Offensive Realism and the Struggle for Security: A Review Essay » (International Security, été 2002), reconnaît une avancée théorique mais juge le pessimisme sur le comportement des États insuffisamment justifié et reproche à la théorie de négliger les inst…"
+     "these": "Cohen (1925-2021) soutient qu'un système mondial ne se lit ni comme un affrontement binaire ni comme une mosaïque d'États, mais comme une hiérarchie d'espaces emboîtés : des sphères géostratégiques, subdivisées en régions géopolitiques, entre lesquelles s'intercalent des zones de fracture.",
+     "limite": "La révision est aussi la faiblesse du modèle : réaménagé sur sept décennies pour absorber les configurations successives, il perd la capacité de trancher a priori entre plusieurs découpages possibles, et sa valeur prédictive reste indéterminée."
     }
    ],
-   "preuve": "À l'extérieur du courant, John Mearsheimer, dans « The False Promise of International Institutions » (International Security, 1994), conteste au constructivisme dans son ensemble tout effet qui ne soit pas marginal.",
+   "preuve": "La difficulté est aussi méthodologique : le cadre des quatre structures est une grande théorie interprétative, non un dispositif conçu pour l'épreuve quantitative — ce qui est exactement le reproche que la tradition américaine de la discipline, telle que Cohen la décrit, adresse à l'école britannique, et que celle-ci lui retourne.",
    "champ": "limites_critiques",
-   "question": "Le référentiel documente une opposition entre « Nicholas Onuf » et « John Mearsheimer ». La fiche « Nicholas Onuf » l'écrit ainsi : « À l'extérieur du courant, John Mearsheimer, dans « The False Promise of International Institutions » (International Security, 1994), conteste au constructivisme dans son ensemble tout effet qui ne soit pas marginal. » Sur quoi porte exactement le désaccord, et qu'est-ce qui, aujourd'hui, permettrait de le trancher ?",
+   "question": "Le référentiel documente une opposition entre « Susan Strange » et « Saul B. Cohen ». La fiche « Susan Strange » l'écrit ainsi : « La difficulté est aussi méthodologique : le cadre des quatre structures est une grande théorie interprétative, non un dispositif conçu pour l'épreuve quantitative — ce qui est exactement le reproche que la tradition américaine de la discipline, telle que Cohen… » Sur quoi porte exactement le désaccord, et qu'est-ce qui, aujourd'hui, permettrait de le trancher ?",
    "actualites": []
   },
   {
-   "id": "niels-bohr--albert-einstein",
+   "id": "syed-hussein-alatas--edward-said",
    "fiches": [
     {
      "type": "humaine",
-     "id": "niels-bohr",
-     "nom": "Niels Bohr",
-     "axe": "evolution",
-     "sous_domaine": "sciences",
-     "these": "Bohr a introduit la quantification de l'énergie dans le modèle atomique (1913) puis a formulé le principe de complémentarité, selon lequel des descriptions apparemment contradictoires d'un même phénomène quantique (onde/particule) peuvent être toutes deux nécessaires et complémentaires plutôt que mu…",
-     "limite": "Son interprétation de Copenhague, en particulier le rôle de la mesure dans l'effondrement de la fonction d'onde, a fait l'objet de débats fondamentaux non résolus avec Einstein (paradoxe EPR) et reste contestée par des interprétations alternatives (Bohm, mondes multiples)."
-    },
-    {
-     "type": "humaine",
-     "id": "albert-einstein",
-     "nom": "Albert Einstein",
-     "axe": "evolution",
-     "sous_domaine": "sciences",
-     "these": "Einstein a établi que les lois de la physique et la vitesse de la lumière sont invariantes pour tout observateur en mouvement uniforme (relativité restreinte, 1905), puis que la gravitation résulte de la courbure de l'espace-temps par la masse et l'énergie (relativité générale, 1915), révolutionnant…",
-     "limite": "A passé les dernières décennies de sa carrière à chercher, sans succès, une théorie du champ unifié reliant gravitation et électromagnétisme ; est resté profondément sceptique envers l'interprétation probabiliste de la mécanique quantique (« Dieu ne joue pas aux dés »), un débat aujourd'hui largemen…"
-    }
-   ],
-   "preuve": "Son interprétation de Copenhague, en particulier le rôle de la mesure dans l'effondrement de la fonction d'onde, a fait l'objet de débats fondamentaux non résolus avec Einstein (paradoxe EPR) et reste contestée par des interprétations alternatives (Bohm, mondes multiples).",
-   "champ": "limites_critiques",
-   "question": "Le référentiel documente une opposition entre « Niels Bohr » et « Albert Einstein ». La fiche « Niels Bohr » l'écrit ainsi : « Son interprétation de Copenhague, en particulier le rôle de la mesure dans l'effondrement de la fonction d'onde, a fait l'objet de débats fondamentaux non résolus avec Einstein (paradoxe EPR) et reste contestée par des interprétations alternatives (Bohm, monde… » Sur quoi porte exactement le désaccord, et qu'est-ce qui, aujourd'hui, permettrait de le trancher ?",
-   "actualites": []
-  },
-  {
-   "id": "niklas-luhmann--jurgen-habermas",
-   "fiches": [
-    {
-     "type": "humaine",
-     "id": "niklas-luhmann",
-     "nom": "Niklas Luhmann",
+     "id": "syed-hussein-alatas",
+     "nom": "Syed Hussein Alatas",
      "axe": "social",
      "sous_domaine": "sociologie",
-     "these": "Luhmann soutient que les systèmes sociaux sont des systèmes de communication et non d'action, et que la société est le système social le plus englobant, formé de toutes les communications en cours.",
-     "limite": "Jürgen Habermas conteste avec lui le rendement de la théorie des systèmes dans un volume commun (Theorie der Gesellschaft oder Sozialtechnologie – Was leistet die Systemforschung ?, Suhrkamp, 1971), lui reprochant l'incapacité à rendre compte de la normativité et d'un potentiel émancipateur."
-    },
-    {
-     "type": "humaine",
-     "id": "jurgen-habermas",
-     "nom": "Jürgen Habermas",
-     "axe": "philosophique",
-     "sous_domaine": "philosophie",
-     "these": "La légitimité des normes sociales et politiques repose sur l'agir communicationnel : une norme est valide si elle pourrait recueillir l'assentiment de tous les participants concernés dans une discussion libre et sans contrainte (éthique de la discussion).",
-     "limite": "L'idéal de « situation de parole idéale » jugé irréaliste par les critiques, qui pointent les asymétries de pouvoir et d'accès à l'information ; accusé de sous-estimer les rapports de force réels dans l'espace public."
-    }
-   ],
-   "preuve": "Jürgen Habermas conteste avec lui le rendement de la théorie des systèmes dans un volume commun (Theorie der Gesellschaft oder Sozialtechnologie – Was leistet die Systemforschung ?, Suhrkamp, 1971), lui reprochant l'incapacité à rendre compte de la normativité et d'un potentiel émancipateur.",
-   "champ": "limites_critiques",
-   "question": "Le référentiel documente une opposition entre « Niklas Luhmann » et « Jürgen Habermas ». La fiche « Niklas Luhmann » l'écrit ainsi : « Jürgen Habermas conteste avec lui le rendement de la théorie des systèmes dans un volume commun (Theorie der Gesellschaft oder Sozialtechnologie – Was leistet die Systemforschung ?, Suhrkamp, 1971), lui reprochant l'incapacité à rendre compte de la normativité… » Sur quoi porte exactement le désaccord, et qu'est-ce qui, aujourd'hui, permettrait de le trancher ?",
-   "actualites": []
-  },
-  {
-   "id": "patricia-hill-collins--donna-haraway",
-   "fiches": [
-    {
-     "type": "humaine",
-     "id": "patricia-hill-collins",
-     "nom": "Patricia Hill Collins",
-     "axe": "social",
-     "sous_domaine": "sociologie",
-     "these": "Hill Collins soutient que la pensée féministe noire est une tradition intellectuelle produite au sein des communautés noires elles-mêmes, et non une réaction au féminisme blanc ni un supplément à la sociologie établie.",
-     "limite": "Susan Hekman, dans « Truth and Method: Feminist Standpoint Theory Revisited » (Signs, 22(2), 1997), relève une inconsistance dans sa position épistémologique : Collins revendique d'abord une objectivité pour la position d'« outsider within », puis se retire de cette revendication ; elle souscrit à l…"
-    },
-    {
-     "type": "humaine",
-     "id": "donna-haraway",
-     "nom": "Donna Haraway",
-     "axe": "philosophique",
-     "sous_domaine": "philosophie",
-     "these": "Contre les dualismes fondateurs de la pensée occidentale (nature/culture, humain/animal, organisme/machine), la figure du « cyborg » — hybride de machine et d'organisme — offre une position féministe permettant de penser l'identité comme construite et partielle plutôt que comme essence naturelle ; l…",
-     "limite": "La réception de son œuvre lui a en partie échappé : une partie des cyberféministes qu'elle a inspirées ont pris le contrepied de ses thèses, en glorifiant le lien entre femmes et machines tout en mettant à l'écart le féminisme socialiste et les politiques antiracistes qui sont au cœur de sa démarche…"
-    }
-   ],
-   "preuve": "Susan Hekman, dans « Truth and Method: Feminist Standpoint Theory Revisited » (Signs, 22(2), 1997), relève une inconsistance dans sa position épistémologique : Collins revendique d'abord une objectivité pour la position d'« outsider within », puis se retire de cette revendication ; elle souscrit à l'idée, empruntée à Donna Haraway, d'un point de vue comme « only one angle of vision », mais refuse d'en tirer toutes les conséquences.",
-   "champ": "limites_critiques",
-   "question": "Le référentiel documente une opposition entre « Patricia Hill Collins » et « Donna Haraway ». La fiche « Patricia Hill Collins » l'écrit ainsi : « Susan Hekman, dans « Truth and Method: Feminist Standpoint Theory Revisited » (Signs, 22(2), 1997), relève une inconsistance dans sa position épistémologique : Collins revendique d'abord une objectivité pour la position d'« outsider within », puis se retire de… » Sur quoi porte exactement le désaccord, et qu'est-ce qui, aujourd'hui, permettrait de le trancher ?",
-   "actualites": []
-  },
-  {
-   "id": "paul-vidal-de-la-blache--beatrice-giblin",
-   "fiches": [
-    {
-     "type": "humaine",
-     "id": "paul-vidal-de-la-blache",
-     "nom": "Paul Vidal de La Blache",
-     "axe": "social",
-     "sous_domaine": "geopolitique",
-     "these": "Vidal de La Blache (1845-1918) soutient que le milieu n'impose pas un mode de vie mais ouvre un éventail de possibles, dans lequel une société choisit et stabilise un « genre de vie » — Lucien Febvre nommera « possibilisme » cette position que Vidal lui-même n'a jamais désignée ainsi.",
-     "limite": "Yves Lacoste a fait de l'école vidalienne sa cible en 1976 puis dans l'article d'Hérodote « À bas Vidal… Viva Vidal ! » (1979) : il lui reproche d'avoir produit une géographie descriptive, dépolitisée, qui masque que le savoir géographique sert d'abord à faire la guerre — Béatrice Giblin résume ce j…"
-    },
-    {
-     "type": "humaine",
-     "id": "beatrice-giblin",
-     "nom": "Béatrice Giblin",
-     "axe": "social",
-     "sous_domaine": "geopolitique",
-     "these": "Giblin soutient que la grille des rivalités de pouvoirs sur des territoires ne s'applique pas qu'aux relations entre États : elle vaut à l'intérieur d'un pays, entre régions, communes et quartiers, où des acteurs porteurs de représentations contradictoires se disputent des espaces.",
-     "limite": "Le déplacement d'échelle est aussi le point de tension : la notion de rivalité de pouvoirs, forgée pour des conflits entre acteurs disposant de moyens de contrainte, s'affaiblit lorsqu'elle descend au conseil régional ou au quartier, où les rapports de force relèvent souvent d'autres catégories — ad…"
-    }
-   ],
-   "preuve": "» (1979) : il lui reproche d'avoir produit une géographie descriptive, dépolitisée, qui masque que le savoir géographique sert d'abord à faire la guerre — Béatrice Giblin résume ce jugement en 2026 par le mot de « géographie désossée et fastidieuse ».",
-   "champ": "limites_critiques",
-   "question": "Le référentiel documente une opposition entre « Paul Vidal de La Blache » et « Béatrice Giblin ». La fiche « Paul Vidal de La Blache » l'écrit ainsi : « » (1979) : il lui reproche d'avoir produit une géographie descriptive, dépolitisée, qui masque que le savoir géographique sert d'abord à faire la guerre — Béatrice Giblin résume ce jugement en 2026 par le mot de « géographie désossée et fastidieuse ». » Sur quoi porte exactement le désaccord, et qu'est-ce qui, aujourd'hui, permettrait de le trancher ?",
-   "actualites": []
-  },
-  {
-   "id": "peter-j-taylor--william-james",
-   "fiches": [
-    {
-     "type": "humaine",
-     "id": "peter-j-taylor",
-     "nom": "Peter J. Taylor",
-     "axe": "social",
-     "sous_domaine": "geopolitique",
-     "these": "Taylor (né en 1944) soutient que la géographie politique doit prendre pour cadre l'économie-monde et non l'État, et il organise son analyse en trois échelles articulées : l'échelle mondiale, qui est celle de la réalité, l'échelle nationale, qui est celle de l'idéologie, et l'échelle locale, qui est…",
-     "limite": "James Sidaway, Michiel van Meeteren et Colin Flint (GeoJournal, 2020) rapportent que le cadre systèmes-monde s'est vu reprocher une vision mécanique du monde, où tout s'emboîte sans nuance — reproche que Taylor conteste, tout en observant que la couverture de son livre, ornée d'engrenages, l'a invol…"
-    },
-    {
-     "type": "humaine",
-     "id": "william-james",
-     "nom": "William James",
-     "axe": "psychologique",
-     "sous_domaine": "fondations_experimentales",
-     "these": "James soutient que la conscience n'est pas une mosaïque d'éléments juxtaposés mais un flux continu, personnel, changeant et sélectif — un courant de pensée dont l'analyse en unités trahit la nature.",
-     "limite": "Walter Cannon oppose en 1927 à la théorie James-Lange cinq objections expérimentales : la séparation chirurgicale des viscères et du système nerveux ne supprime pas le comportement émotionnel chez l'animal ; les mêmes changements viscéraux se produisent dans des états émotionnels très différents et…"
-    }
-   ],
-   "preuve": "James Sidaway, Michiel van Meeteren et Colin Flint (GeoJournal, 2020) rapportent que le cadre systèmes-monde s'est vu reprocher une vision mécanique du monde, où tout s'emboîte sans nuance — reproche que Taylor conteste, tout en observant que la couverture de son livre, ornée d'engrenages, l'a involontairement confirmé.",
-   "champ": "limites_critiques",
-   "question": "Le référentiel documente une opposition entre « Peter J. Taylor » et « William James ». La fiche « Peter J. Taylor » l'écrit ainsi : « James Sidaway, Michiel van Meeteren et Colin Flint (GeoJournal, 2020) rapportent que le cadre systèmes-monde s'est vu reprocher une vision mécanique du monde, où tout s'emboîte sans nuance — reproche que Taylor conteste, tout en observant que la couverture de… » Sur quoi porte exactement le désaccord, et qu'est-ce qui, aujourd'hui, permettrait de le trancher ?",
-   "actualites": []
-  },
-  {
-   "id": "pierre-bourdieu--jacques-ranciere",
-   "fiches": [
-    {
-     "type": "humaine",
-     "id": "pierre-bourdieu",
-     "nom": "Pierre Bourdieu",
-     "axe": "social",
-     "sous_domaine": "sociologie",
-     "these": "Bourdieu soutient que les pratiques ne s'expliquent ni par le calcul conscient des agents ni par l'application mécanique de règles, mais par la rencontre entre un habitus — des « structures structurées prédisposées à fonctionner comme structures structurantes », dispositions durables et transposable…",
-     "limite": "Jacques Rancière (Le Philosophe et ses pauvres) lui objecte que le dispositif reconduit indéfiniment la domination et perd la perspective d'émancipation."
-    },
-    {
-     "type": "humaine",
-     "id": "jacques-ranciere",
-     "nom": "Jacques Rancière",
-     "axe": "philosophique",
-     "sous_domaine": "philosophie",
-     "these": "La politique authentique ne consiste pas à gérer une communauté déjà répartie en rôles et compétences (ce qu'il appelle la « police »), mais à faire irruption du principe d'égalité de n'importe qui avec n'importe qui, en contestant le « partage du sensible » établi par cet ordre.",
-     "limite": "Son concept de « police », qui englobe tout ordre social établi y compris démocratique, distingue mal des régimes politiques réellement différents ; Philippe Corcuff a consacré deux chapitres d'Où est passée la critique sociale ? (2012) aux tensions entre sa philosophie de l'émancipation et la socio…"
-    }
-   ],
-   "preuve": "Jacques Rancière (Le Philosophe et ses pauvres) lui objecte que le dispositif reconduit indéfiniment la domination et perd la perspective d'émancipation.",
-   "champ": "limites_critiques",
-   "question": "Le référentiel documente une opposition entre « Pierre Bourdieu » et « Jacques Rancière ». La fiche « Pierre Bourdieu » l'écrit ainsi : « Jacques Rancière (Le Philosophe et ses pauvres) lui objecte que le dispositif reconduit indéfiniment la domination et perd la perspective d'émancipation. » Sur quoi porte exactement le désaccord, et qu'est-ce qui, aujourd'hui, permettrait de le trancher ?",
-   "actualites": []
-  },
-  {
-   "id": "pierre-bourdieu--judith-butler",
-   "fiches": [
-    {
-     "type": "humaine",
-     "id": "pierre-bourdieu",
-     "nom": "Pierre Bourdieu",
-     "axe": "social",
-     "sous_domaine": "sociologie",
-     "these": "Bourdieu soutient que les pratiques ne s'expliquent ni par le calcul conscient des agents ni par l'application mécanique de règles, mais par la rencontre entre un habitus — des « structures structurées prédisposées à fonctionner comme structures structurantes », dispositions durables et transposable…",
-     "limite": "Jacques Rancière (Le Philosophe et ses pauvres) lui objecte que le dispositif reconduit indéfiniment la domination et perd la perspective d'émancipation."
-    },
-    {
-     "type": "humaine",
-     "id": "judith-butler",
-     "nom": "Judith Butler",
-     "axe": "philosophique",
-     "sous_domaine": "philosophie",
-     "these": "Le genre n'est pas l'expression d'une identité intérieure préexistante mais une « performance » : il est produit par la répétition stylisée d'actes et de discours socialement codés, qui donnent rétroactivement l'illusion d'une substance de genre naturelle et stable.",
-     "limite": "Accusée par des féministes matérialistes de dissoudre la catégorie « femme » dans un pur jeu discursif — Susan Bordo soutient au contraire que le corps détermine en majeure partie le genre, s'opposant à sa vision performative ; son style a valu à sa « prose impénétrable, jargonnante » le premier pri…"
-    }
-   ],
-   "preuve": "Nicole-Claude Mathieu et Judith Butler ont contesté La Domination masculine, la première pour des manquements méthodologiques et déontologiques, la seconde pour l'ignorance des travaux féministes de référence.",
-   "champ": "limites_critiques",
-   "question": "Le référentiel documente une opposition entre « Pierre Bourdieu » et « Judith Butler ». La fiche « Pierre Bourdieu » l'écrit ainsi : « Nicole-Claude Mathieu et Judith Butler ont contesté La Domination masculine, la première pour des manquements méthodologiques et déontologiques, la seconde pour l'ignorance des travaux féministes de référence. » Sur quoi porte exactement le désaccord, et qu'est-ce qui, aujourd'hui, permettrait de le trancher ?",
-   "actualites": []
-  },
-  {
-   "id": "pierre-janet--sigmund-freud",
-   "fiches": [
-    {
-     "type": "humaine",
-     "id": "pierre-janet",
-     "nom": "Pierre Janet",
-     "axe": "psychologique",
-     "sous_domaine": "psychopathologie",
-     "these": "Janet soutient que subsistent, sous le seuil de la conscience personnelle, des actes psychologiques complets — perceptions, souvenirs, conduites — qui échappent à la synthèse du moi : c'est l'automatisme psychologique, et sa forme pathologique la désagrégation, ou dissociation.",
-     "limite": "Après que Janet eut contesté la terminologie psychanalytique au congrès de médecine de Londres en 1913, l'attitude de Freud se refroidit et il refusa ensuite de le rencontrer ; l'éclipse de Janet dans la seconde moitié du siècle tient largement à la trajectoire de la psychanalyse, ce que documente H…"
-    },
-    {
-     "type": "humaine",
-     "id": "sigmund-freud",
-     "nom": "Sigmund Freud",
-     "axe": "psychologique",
-     "sous_domaine": "psychanalyse",
-     "these": "Freud fonde la psychanalyse sur l'hypothèse d'un inconscient structuré, où des pulsions et désirs refoulés (souvent d'origine sexuelle infantile) déterminent une part importante du psychisme et se manifestent via les rêves, lapsus et symptômes névrotiques.",
-     "limite": "Sa théorie est critiquée pour son manque de validation empirique rigoureuse (Popper la qualifie d'irréfutable), sa focalisation univoque sur la sexualité infantile, et des méthodes de collecte de données jugées peu scientifiques ; le behaviorisme et les neurosciences cognitives lui opposent des modè…"
-    }
-   ],
-   "preuve": "Après que Janet eut contesté la terminologie psychanalytique au congrès de médecine de Londres en 1913, l'attitude de Freud se refroidit et il refusa ensuite de le rencontrer ;",
-   "champ": "limites_critiques",
-   "question": "Le référentiel documente une opposition entre « Pierre Janet » et « Sigmund Freud ». La fiche « Pierre Janet » l'écrit ainsi : « Après que Janet eut contesté la terminologie psychanalytique au congrès de médecine de Londres en 1913, l'attitude de Freud se refroidit et il refusa ensuite de le rencontrer ; » Sur quoi porte exactement le désaccord, et qu'est-ce qui, aujourd'hui, permettrait de le trancher ?",
-   "actualites": []
-  },
-  {
-   "id": "raewyn-connell--patricia-hill-collins",
-   "fiches": [
-    {
-     "type": "humaine",
-     "id": "raewyn-connell",
-     "nom": "Raewyn Connell",
-     "axe": "social",
-     "sous_domaine": "sociologie",
-     "these": "Connell soutient que le genre est une structure sociale de grande échelle, et non une identité personnelle ou un rôle : il s'organise en domaines articulés — le pouvoir, la production et le travail, les relations émotionnelles et sexuelles.",
-     "limite": "Sur la masculinité hégémonique : Margaret Wetherell et Nigel Edley (1999) objectent que le concept ne spécifie pas à quoi ressemble en pratique la conformité à cette masculinité ; Stephen Whitehead (2002) qu'on ne sait pas qui est l'homme hégémonique concret ; Demetrakis Demetriou (2001) que la dist…"
-    },
-    {
-     "type": "humaine",
-     "id": "patricia-hill-collins",
-     "nom": "Patricia Hill Collins",
-     "axe": "social",
-     "sous_domaine": "sociologie",
-     "these": "Hill Collins soutient que la pensée féministe noire est une tradition intellectuelle produite au sein des communautés noires elles-mêmes, et non une réaction au féminisme blanc ni un supplément à la sociologie établie.",
-     "limite": "Susan Hekman, dans « Truth and Method: Feminist Standpoint Theory Revisited » (Signs, 22(2), 1997), relève une inconsistance dans sa position épistémologique : Collins revendique d'abord une objectivité pour la position d'« outsider within », puis se retire de cette revendication ; elle souscrit à l…"
-    }
-   ],
-   "preuve": "Sur Southern Theory : Mustafa Emirbayer lui reproche de surgénéraliser la « théorie du Nord », Patricia Hill Collins de ne considérer que des élites lettrées du Sud, Isaac Ariail Reed de laisser ses concepts sous-développés.",
-   "champ": "limites_critiques",
-   "question": "Le référentiel documente une opposition entre « Raewyn Connell » et « Patricia Hill Collins ». La fiche « Raewyn Connell » l'écrit ainsi : « Sur Southern Theory : Mustafa Emirbayer lui reproche de surgénéraliser la « théorie du Nord », Patricia Hill Collins de ne considérer que des élites lettrées du Sud, Isaac Ariail Reed de laisser ses concepts sous-développés. » Sur quoi porte exactement le désaccord, et qu'est-ce qui, aujourd'hui, permettrait de le trancher ?",
-   "actualites": []
-  },
-  {
-   "id": "randall-collins--michael-mann",
-   "fiches": [
-    {
-     "type": "humaine",
-     "id": "randall-collins",
-     "nom": "Randall Collins",
-     "axe": "social",
-     "sous_domaine": "sociologie",
-     "these": "Collins soutient que le ressort de l'action n'est pas l'intérêt calculé mais l'énergie émotionnelle : les rituels d'interaction réussis produisent des symboles d'appartenance et rechargent les participants, les rituels ratés les épuisent, et l'enchaînement de ces situations — les chaînes de rituels…",
-     "limite": "Le numéro spécial « The Sociology of Randall Collins » de Thesis Eleven (n° 154, octobre 2019, dirigé par Siniša Malešević et Steven Loyal) rassemble des objections précises."
-    },
-    {
-     "type": "humaine",
-     "id": "michael-mann",
-     "nom": "Michael Mann",
-     "axe": "social",
-     "sous_domaine": "sociologie",
-     "these": "Mann soutient que les sociétés ne sont pas des totalités bornées mais des enchevêtrements de réseaux socio-spatiaux de pouvoir qui se recouvrent partiellement sans coïncider.",
-     "limite": "Gianfranco Poggi conteste la séparation du pouvoir militaire d'avec le pouvoir politique et économique, jugeant la distinction analytiquement instable."
-    }
-   ],
-   "preuve": "Michael Mann (« Fear, loathing, and moral qualms on the battlefield ») conteste sa microsociologie de la violence : les soldats éprouvent des scrupules moraux avant leur premier meurtre, scrupules qui s'atténuent ensuite avec la répétition.",
-   "champ": "limites_critiques",
-   "question": "Le référentiel documente une opposition entre « Randall Collins » et « Michael Mann ». La fiche « Randall Collins » l'écrit ainsi : « Michael Mann (« Fear, loathing, and moral qualms on the battlefield ») conteste sa microsociologie de la violence : les soldats éprouvent des scrupules moraux avant leur premier meurtre, scrupules qui s'atténuent ensuite avec la répétition. » Sur quoi porte exactement le désaccord, et qu'est-ce qui, aujourd'hui, permettrait de le trancher ?",
-   "actualites": []
-  },
-  {
-   "id": "raymond-boudon--pierre-bourdieu",
-   "fiches": [
-    {
-     "type": "humaine",
-     "id": "raymond-boudon",
-     "nom": "Raymond Boudon",
-     "axe": "social",
-     "sous_domaine": "sociologie",
-     "these": "Boudon fait de l'acteur individuel « l'atome logique de l'analyse » : les phénomènes sociaux résultent de l'agrégation d'actions motivées par des raisons, dans un contexte donné.",
-     "limite": "Son antagoniste principal est Pierre Bourdieu : là où Boudon fait porter l'explication sur l'ambition et l'arbitrage individuels, Bourdieu la fait porter sur l'origine sociale et la reproduction culturelle, le désaccord se cristallisant sur l'explication de la mobilité scolaire."
-    },
-    {
-     "type": "humaine",
-     "id": "pierre-bourdieu",
-     "nom": "Pierre Bourdieu",
-     "axe": "social",
-     "sous_domaine": "sociologie",
-     "these": "Bourdieu soutient que les pratiques ne s'expliquent ni par le calcul conscient des agents ni par l'application mécanique de règles, mais par la rencontre entre un habitus — des « structures structurées prédisposées à fonctionner comme structures structurantes », dispositions durables et transposable…",
-     "limite": "Jacques Rancière (Le Philosophe et ses pauvres) lui objecte que le dispositif reconduit indéfiniment la domination et perd la perspective d'émancipation."
-    }
-   ],
-   "preuve": "Son antagoniste principal est Pierre Bourdieu : là où Boudon fait porter l'explication sur l'ambition et l'arbitrage individuels, Bourdieu la fait porter sur l'origine sociale et la reproduction culturelle, le désaccord se cristallisant sur l'explication de la mobilité scolaire.",
-   "champ": "limites_critiques",
-   "question": "Le référentiel documente une opposition entre « Raymond Boudon » et « Pierre Bourdieu ». La fiche « Raymond Boudon » l'écrit ainsi : « Son antagoniste principal est Pierre Bourdieu : là où Boudon fait porter l'explication sur l'ambition et l'arbitrage individuels, Bourdieu la fait porter sur l'origine sociale et la reproduction culturelle, le désaccord se cristallisant sur l'explication de la… » Sur quoi porte exactement le désaccord, et qu'est-ce qui, aujourd'hui, permettrait de le trancher ?",
-   "actualites": []
-  },
-  {
-   "id": "richard-rorty--hilary-putnam",
-   "fiches": [
-    {
-     "type": "humaine",
-     "id": "richard-rorty",
-     "nom": "Richard Rorty",
-     "axe": "philosophique",
-     "sous_domaine": "philosophie",
-     "these": "La philosophie occidentale s'est fourvoyée en cherchant un fondement épistémologique certain, un « miroir de la nature » qui représenterait fidèlement la réalité : il faut abandonner cette quête au profit d'un pragmatisme qui juge nos vocabulaires à leur utilité pratique pour la conversation humaine…",
-     "limite": "Son antifondationnalisme radical est accusé par des réalistes, dont Putnam, son ami et interlocuteur critique, de verser dans un relativisme qui prive de toute base la distinction entre une croyance vraie et une croyance simplement utile ou consensuelle."
-    },
-    {
-     "type": "humaine",
-     "id": "hilary-putnam",
-     "nom": "Hilary Putnam",
-     "axe": "philosophique",
-     "sous_domaine": "philosophie",
-     "these": "Le sens d'un terme ne dépend pas seulement de l'état mental de celui qui l'emploie mais aussi du monde extérieur et de la division sociale du travail linguistique (expérience de la Terre Jumelle) — « le sens n'est tout simplement pas dans la tête ».",
-     "limite": "Ses revirements théoriques répétés sont lus tantôt comme une intégrité intellectuelle rare, tantôt comme un manque de position stable ; le réalisme interne reste flou quant à sa différence réelle avec le relativisme qu'il prétend éviter."
-    }
-   ],
-   "preuve": "Son antifondationnalisme radical est accusé par des réalistes, dont Putnam, son ami et interlocuteur critique, de verser dans un relativisme qui prive de toute base la distinction entre une croyance vraie et une croyance simplement utile ou consensuelle.",
-   "champ": "limites_critiques",
-   "question": "Le référentiel documente une opposition entre « Richard Rorty » et « Hilary Putnam ». La fiche « Richard Rorty » l'écrit ainsi : « Son antifondationnalisme radical est accusé par des réalistes, dont Putnam, son ami et interlocuteur critique, de verser dans un relativisme qui prive de toute base la distinction entre une croyance vraie et une croyance simplement utile ou consensuelle. » Sur quoi porte exactement le désaccord, et qu'est-ce qui, aujourd'hui, permettrait de le trancher ?",
-   "actualites": []
-  },
-  {
-   "id": "robert-michels--fascisme",
-   "fiches": [
-    {
-     "type": "humaine",
-     "id": "robert-michels",
-     "nom": "Robert Michels",
-     "axe": "social",
-     "sous_domaine": "sociologie",
-     "these": "Michels soutient que les partis politiques et les organisations de masse tendent inévitablement vers l'oligarchie, l'autoritarisme et la bureaucratie : « qui dit organisation dit tendance à l'oligarchie », et l'organisation est elle-même la source d'où naît la domination des élus sur les électeurs.",
-     "limite": "Seymour Martin Lipset a cherché des contre-exemples et en a établi un — un grand syndicat américain de typographes restant démocratique grâce aux petits groupes de travail et à la diffusion du savoir des experts —, ce qui rétrograde la loi d'airain au rang de tendance contournable plutôt que de néce…"
-    },
-    {
-     "type": "humaine",
-     "id": "fascisme",
-     "nom": "Fascisme",
-     "axe": "social",
-     "sous_domaine": "modele_politique",
-     "these": "Le fascisme est un système politique autoritaire associant nationalisme exacerbé, populisme et totalitarisme, fondamentalement opposé à la démocratie parlementaire et à l'individualisme hérité des Lumières, apparu en Italie sous Mussolini après la Première Guerre mondiale.",
-     "limite": "Qualifié par ses détracteurs de tyrannie délibérément anti-démocratique marquée par l'opportunisme idéologique, le fascisme reste débattu par les historiens quant à ses origines exactes et à sa distinction d'avec le nazisme, avec lequel il partage le totalitarisme et le culte du chef sans que les de…"
-    }
-   ],
-   "preuve": "Sur l'usage : socialiste dans sa jeunesse, Michels en est venu à juger la domination des élites non seulement inévitable mais souhaitable, et ne s'est pas opposé à l'avènement du fascisme en Italie ;",
-   "champ": "limites_critiques",
-   "question": "Le référentiel documente une opposition entre « Robert Michels » et « Fascisme ». La fiche « Robert Michels » l'écrit ainsi : « Sur l'usage : socialiste dans sa jeunesse, Michels en est venu à juger la domination des élites non seulement inévitable mais souhaitable, et ne s'est pas opposé à l'avènement du fascisme en Italie ; » Sur quoi porte exactement le désaccord, et qu'est-ce qui, aujourd'hui, permettrait de le trancher ?",
-   "actualites": []
-  },
-  {
-   "id": "samuel-huntington--amartya-sen",
-   "fiches": [
-    {
-     "type": "humaine",
-     "id": "samuel-huntington",
-     "nom": "Samuel Huntington",
-     "axe": "social",
-     "sous_domaine": "geopolitique",
-     "these": "Huntington soutient deux thèses distinctes, séparées par quarante ans.",
-     "limite": "Edward Said, dans « The Clash of Ignorance » (The Nation, octobre 2001), objecte que les civilisations y sont traitées comme des blocs étanches et homogènes, ce que ni leur histoire ni leurs conflits internes ne permettent."
-    },
-    {
-     "type": "humaine",
-     "id": "amartya-sen",
-     "nom": "Amartya Sen",
-     "axe": "social",
-     "sous_domaine": "economie",
-     "these": "Sen développe l'approche des « capabilités », définissant le développement non par le seul revenu mais par la capacité réelle des personnes à convertir des ressources en libertés concrètes, et démontre que les famines résultent d'inégalités de distribution plutôt que d'un manque absolu de nourriture…",
-     "limite": "L'opérationnalisation empirique du concept de « capabilités », plus riche mais plus complexe à mesurer qu'un simple indicateur monétaire de revenu, reste un défi méthodologique pour les politiques publiques qui s'en inspirent."
-    }
-   ],
-   "preuve": "Amartya Sen, dans « Democracy as a Universal Value » (Journal of Democracy, 10(3), 1999) puis Identity and Violence (2006), conteste la réduction des personnes à une identité unique dont dériverait leur conduite politique.",
-   "champ": "limites_critiques",
-   "question": "Le référentiel documente une opposition entre « Samuel Huntington » et « Amartya Sen ». La fiche « Samuel Huntington » l'écrit ainsi : « Amartya Sen, dans « Democracy as a Universal Value » (Journal of Democracy, 10(3), 1999) puis Identity and Violence (2006), conteste la réduction des personnes à une identité unique dont dériverait leur conduite politique. » Sur quoi porte exactement le désaccord, et qu'est-ce qui, aujourd'hui, permettrait de le trancher ?",
-   "actualites": []
-  },
-  {
-   "id": "samuel-huntington--edward-said",
-   "fiches": [
-    {
-     "type": "humaine",
-     "id": "samuel-huntington",
-     "nom": "Samuel Huntington",
-     "axe": "social",
-     "sous_domaine": "geopolitique",
-     "these": "Huntington soutient deux thèses distinctes, séparées par quarante ans.",
-     "limite": "Edward Said, dans « The Clash of Ignorance » (The Nation, octobre 2001), objecte que les civilisations y sont traitées comme des blocs étanches et homogènes, ce que ni leur histoire ni leurs conflits internes ne permettent."
+     "these": "Alatas soutient que l'image du « natif indolent » — le Malais, le Philippin, le Javanais paresseux, borné, arriéré, traître — n'est pas une observation ethnographique mais une construction idéologique dont la fonction est de justifier la contrainte au travail et la domination coloniale, et il en ret…",
+     "limite": "Les sources encyclopédiques consultées ne recensent aucune objection nommée à ses thèses, seulement des appréciations favorables dont celle d'Edward Said."
     },
     {
      "type": "humaine",
@@ -630,36 +117,565 @@
      "limite": "Les objections sont nombreuses et attribuées."
     }
    ],
-   "preuve": "Edward Said, dans « The Clash of Ignorance » (The Nation, octobre 2001), objecte que les civilisations y sont traitées comme des blocs étanches et homogènes, ce que ni leur histoire ni leurs conflits internes ne permettent.",
+   "preuve": "Les sources encyclopédiques consultées ne recensent aucune objection nommée à ses thèses, seulement des appréciations favorables dont celle d'Edward Said.",
    "champ": "limites_critiques",
-   "question": "Le référentiel documente une opposition entre « Samuel Huntington » et « Edward Said ». La fiche « Samuel Huntington » l'écrit ainsi : « Edward Said, dans « The Clash of Ignorance » (The Nation, octobre 2001), objecte que les civilisations y sont traitées comme des blocs étanches et homogènes, ce que ni leur histoire ni leurs conflits internes ne permettent. » Sur quoi porte exactement le désaccord, et qu'est-ce qui, aujourd'hui, permettrait de le trancher ?",
+   "question": "Le référentiel documente une opposition entre « Syed Hussein Alatas » et « Edward Said ». La fiche « Syed Hussein Alatas » l'écrit ainsi : « Les sources encyclopédiques consultées ne recensent aucune objection nommée à ses thèses, seulement des appréciations favorables dont celle d'Edward Said. » Sur quoi porte exactement le désaccord, et qu'est-ce qui, aujourd'hui, permettrait de le trancher ?",
    "actualites": []
   },
   {
-   "id": "sigmund-freud--karl-popper",
+   "id": "talcott-parsons--charles-wright-mills",
    "fiches": [
     {
      "type": "humaine",
-     "id": "sigmund-freud",
-     "nom": "Sigmund Freud",
-     "axe": "psychologique",
-     "sous_domaine": "psychanalyse",
-     "these": "Freud fonde la psychanalyse sur l'hypothèse d'un inconscient structuré, où des pulsions et désirs refoulés (souvent d'origine sexuelle infantile) déterminent une part importante du psychisme et se manifestent via les rêves, lapsus et symptômes névrotiques.",
-     "limite": "Sa théorie est critiquée pour son manque de validation empirique rigoureuse (Popper la qualifie d'irréfutable), sa focalisation univoque sur la sexualité infantile, et des méthodes de collecte de données jugées peu scientifiques ; le behaviorisme et les neurosciences cognitives lui opposent des modè…"
+     "id": "talcott-parsons",
+     "nom": "Talcott Parsons",
+     "axe": "social",
+     "sous_domaine": "sociologie",
+     "these": "Parsons soutient que l'action n'est intelligible qu'à travers les valeurs culturelles et les structures sociales qui limitent les choix des acteurs, et que l'ordre social tient à l'intériorisation de valeurs communes plutôt qu'à la contrainte ou au calcul d'intérêt.",
+     "limite": "C."
     },
     {
      "type": "humaine",
-     "id": "karl-popper",
-     "nom": "Karl Popper",
-     "axe": "philosophique",
-     "sous_domaine": "philosophie",
-     "these": "Une théorie n'est scientifique que si elle est falsifiable, c'est-à-dire si elle peut en principe être réfutée par l'expérience ; la connaissance progresse par conjectures hardies et réfutations, jamais par vérification définitive.",
-     "limite": "Le critère de falsifiabilité est difficile à appliquer tel quel à des théories dont les énoncés ne sont réfutables que conjointement à des hypothèses auxiliaires ; sa critique de l'historicisme dans La Société ouverte et ses ennemis, qui vise Platon, Hegel et Marx, est discutée par les spécialistes…"
+     "id": "charles-wright-mills",
+     "nom": "Charles Wright Mills",
+     "axe": "social",
+     "sous_domaine": "sociologie",
+     "these": "Mills soutient que l'imagination sociologique consiste à relier les « épreuves personnelles » aux « enjeux publics », c'est-à-dire à saisir le sens du grand mouvement historique pour la vie intérieure des personnes, en croisant histoire, biographie et structure sociale.",
+     "limite": "The Power Elite a été contesté dès sa parution : Dennis Wrong (Commentary, septembre 1956) y voit un mélange inégal de journalisme, de sociologie et d'indignation morale ; Adolf Berle lui reconnaît une part inconfortable de vérité tout en le qualifiant de caricature en colère plutôt que de tableau s…"
     }
    ],
-   "preuve": "Sa théorie est critiquée pour son manque de validation empirique rigoureuse (Popper la qualifie d'irréfutable), sa focalisation univoque sur la sexualité infantile, et des méthodes de collecte de données jugées peu scientifiques ;",
+   "preuve": "Wright Mills lui oppose une théorie mécanique, incapable de rendre compte du changement social et de la souffrance ;",
    "champ": "limites_critiques",
-   "question": "Le référentiel documente une opposition entre « Sigmund Freud » et « Karl Popper ». La fiche « Sigmund Freud » l'écrit ainsi : « Sa théorie est critiquée pour son manque de validation empirique rigoureuse (Popper la qualifie d'irréfutable), sa focalisation univoque sur la sexualité infantile, et des méthodes de collecte de données jugées peu scientifiques ; » Sur quoi porte exactement le désaccord, et qu'est-ce qui, aujourd'hui, permettrait de le trancher ?",
+   "question": "Le référentiel documente une opposition entre « Talcott Parsons » et « Charles Wright Mills ». La fiche « Talcott Parsons » l'écrit ainsi : « Wright Mills lui oppose une théorie mécanique, incapable de rendre compte du changement social et de la souffrance ; » Sur quoi porte exactement le désaccord, et qu'est-ce qui, aujourd'hui, permettrait de le trancher ?",
+   "actualites": []
+  },
+  {
+   "id": "talcott-parsons--erik-olin-wright",
+   "fiches": [
+    {
+     "type": "humaine",
+     "id": "talcott-parsons",
+     "nom": "Talcott Parsons",
+     "axe": "social",
+     "sous_domaine": "sociologie",
+     "these": "Parsons soutient que l'action n'est intelligible qu'à travers les valeurs culturelles et les structures sociales qui limitent les choix des acteurs, et que l'ordre social tient à l'intériorisation de valeurs communes plutôt qu'à la contrainte ou au calcul d'intérêt.",
+     "limite": "C."
+    },
+    {
+     "type": "humaine",
+     "id": "erik-olin-wright",
+     "nom": "Erik Olin Wright",
+     "axe": "social",
+     "sous_domaine": "sociologie",
+     "these": "Wright soutient que la classe se définit par le contrôle des ressources productives et l'exclusion de leur accès, ainsi que par le contrôle différentiel de l'effort de travail — une reformulation du concept marxiste destinée à expliquer les intérêts matériels et l'action collective.",
+     "limite": "Peter F."
+    }
+   ],
+   "preuve": "Wright Mills lui oppose une théorie mécanique, incapable de rendre compte du changement social et de la souffrance ;",
+   "champ": "limites_critiques",
+   "question": "Le référentiel documente une opposition entre « Talcott Parsons » et « Erik Olin Wright ». La fiche « Talcott Parsons » l'écrit ainsi : « Wright Mills lui oppose une théorie mécanique, incapable de rendre compte du changement social et de la souffrance ; » Sur quoi porte exactement le désaccord, et qu'est-ce qui, aujourd'hui, permettrait de le trancher ?",
+   "actualites": []
+  },
+  {
+   "id": "talcott-parsons--jurgen-habermas",
+   "fiches": [
+    {
+     "type": "humaine",
+     "id": "talcott-parsons",
+     "nom": "Talcott Parsons",
+     "axe": "social",
+     "sous_domaine": "sociologie",
+     "these": "Parsons soutient que l'action n'est intelligible qu'à travers les valeurs culturelles et les structures sociales qui limitent les choix des acteurs, et que l'ordre social tient à l'intériorisation de valeurs communes plutôt qu'à la contrainte ou au calcul d'intérêt.",
+     "limite": "C."
+    },
+    {
+     "type": "humaine",
+     "id": "jurgen-habermas",
+     "nom": "Jürgen Habermas",
+     "axe": "philosophique",
+     "sous_domaine": "philosophie",
+     "these": "La légitimité des normes sociales et politiques repose sur l'agir communicationnel : une norme est valide si elle pourrait recueillir l'assentiment de tous les participants concernés dans une discussion libre et sans contrainte (éthique de la discussion).",
+     "limite": "L'idéal de « situation de parole idéale » jugé irréaliste par les critiques, qui pointent les asymétries de pouvoir et d'accès à l'information ; accusé de sous-estimer les rapports de force réels dans l'espace public."
+    }
+   ],
+   "preuve": "Jürgen Habermas soutient que théorie des systèmes et théorie de l'action y sont intrinsèquement opposées, la première étant mécanique, positiviste et anti-volontariste.",
+   "champ": "limites_critiques",
+   "question": "Le référentiel documente une opposition entre « Talcott Parsons » et « Jürgen Habermas ». La fiche « Talcott Parsons » l'écrit ainsi : « Jürgen Habermas soutient que théorie des systèmes et théorie de l'action y sont intrinsèquement opposées, la première étant mécanique, positiviste et anti-volontariste. » Sur quoi porte exactement le désaccord, et qu'est-ce qui, aujourd'hui, permettrait de le trancher ?",
+   "actualites": []
+  },
+  {
+   "id": "theocratie-islamique--totalitarisme",
+   "fiches": [
+    {
+     "type": "humaine",
+     "id": "theocratie-islamique",
+     "nom": "Théocratie islamique",
+     "axe": "social",
+     "sous_domaine": "modele_politique",
+     "these": "Une théocratie islamique est un régime où le pouvoir politique est directement exercé par des autorités religieuses au nom d'une autorité divine, l'Iran constituant l'exemple principal contemporain via le système du velayat-e faqih (tutelle du jurisconsulte).",
+     "limite": "Le terme est devenu en partie péjoratif dans le débat contemporain, désignant tantôt une confusion politique-religieuse, tantôt une forme d'autoritarisme ou de totalitarisme, ce qui en complique l'usage analytique rigoureux."
+    },
+    {
+     "type": "humaine",
+     "id": "totalitarisme",
+     "nom": "Totalitarisme",
+     "axe": "social",
+     "sous_domaine": "modele_politique",
+     "these": "Le totalitarisme est un système politique où un parti unique exerce un contrôle absolu sur tous les aspects de la vie publique et privée en supprimant toute opposition organisée ; Hannah Arendt en identifie les traits essentiels dans le monopole idéologique et le recours systématique à la terreur d'…",
+     "limite": "Des historiens comme Ian Kershaw contestent l'idée que ces régimes aient réellement atomisé complètement la société civile, et le concept se voit reprocher d'obscurcir les différences réelles entre fascisme et communisme en les plaçant sur un même plan analytique."
+    }
+   ],
+   "preuve": "Le terme est devenu en partie péjoratif dans le débat contemporain, désignant tantôt une confusion politique-religieuse, tantôt une forme d'autoritarisme ou de totalitarisme, ce qui en complique l'usage analytique rigoureux.",
+   "champ": "limites_critiques",
+   "question": "Le référentiel documente une opposition entre « Théocratie islamique » et « Totalitarisme ». La fiche « Théocratie islamique » l'écrit ainsi : « Le terme est devenu en partie péjoratif dans le débat contemporain, désignant tantôt une confusion politique-religieuse, tantôt une forme d'autoritarisme ou de totalitarisme, ce qui en complique l'usage analytique rigoureux. » Sur quoi porte exactement le désaccord, et qu'est-ce qui, aujourd'hui, permettrait de le trancher ?",
+   "actualites": []
+  },
+  {
+   "id": "thomas-nagel--daniel-dennett",
+   "fiches": [
+    {
+     "type": "humaine",
+     "id": "thomas-nagel",
+     "nom": "Thomas Nagel",
+     "axe": "philosophique",
+     "sous_domaine": "philosophie",
+     "these": "Il existe un fait irréductiblement subjectif à toute expérience consciente — « ce que cela fait » d'être un sujet donné — qui ne peut en principe être capturé par une description objective et complète, en troisième personne, des processus physiques cérébraux, aussi détaillée soit-elle.",
+     "limite": "Les physicalistes, dont Dennett, lui reprochent de transformer une simple limite épistémique actuelle en une impossibilité de principe non démontrée ; son ouvrage tardif Mind and Cosmos (2012) a été très largement rejeté par la communauté scientifique comme empiriquement infondé."
+    },
+    {
+     "type": "humaine",
+     "id": "daniel-dennett",
+     "nom": "Daniel Dennett",
+     "axe": "philosophique",
+     "sous_domaine": "philosophie",
+     "these": "La conscience n'est pas une « scène cartésienne » unifiée observée par un homoncule, mais le produit émergent de multiples processus computationnels parallèles en compétition dans le cerveau (« modèle des versions multiples ») ; les qualia et le « problème difficile » de la conscience sont largement…",
+     "limite": "Accusé par Chalmers et d'autres de pratiquer une « explication qui esquive » le problème difficile plutôt que de le résoudre, en niant l'existence de ce qu'il ne peut expliquer ; son fonctionnalisme se heurte à l'intuition largement partagée qu'il existe un « quelque chose que cela fait » d'être con…"
+    }
+   ],
+   "preuve": "Les physicalistes, dont Dennett, lui reprochent de transformer une simple limite épistémique actuelle en une impossibilité de principe non démontrée ;",
+   "champ": "limites_critiques",
+   "question": "Le référentiel documente une opposition entre « Thomas Nagel » et « Daniel Dennett ». La fiche « Thomas Nagel » l'écrit ainsi : « Les physicalistes, dont Dennett, lui reprochent de transformer une simple limite épistémique actuelle en une impossibilité de principe non démontrée ; » Sur quoi porte exactement le désaccord, et qu'est-ce qui, aujourd'hui, permettrait de le trancher ?",
+   "actualites": []
+  },
+  {
+   "id": "thomas-schelling--hedley-bull",
+   "fiches": [
+    {
+     "type": "humaine",
+     "id": "thomas-schelling",
+     "nom": "Thomas Schelling",
+     "axe": "social",
+     "sous_domaine": "geopolitique",
+     "these": "Schelling (1921-2016) soutient que le conflit est presque toujours un marchandage : les adversaires ont des intérêts opposés mais partagent celui d'éviter le pire, ce qui rend la coordination tacite constitutive de l'affrontement.",
+     "limite": "Anatol Rapoport (Strategy and Conscience, 1964) et Philip Green (Deadly Logic: The Theory of Nuclear Deterrence, 1966) contestent la scientificité de cette stratégie formalisée : selon Green, l'approche est profondément non scientifique et inattentive aux dimensions morales et politiques de la guerr…"
+    },
+    {
+     "type": "humaine",
+     "id": "hedley-bull",
+     "nom": "Hedley Bull",
+     "axe": "social",
+     "sous_domaine": "geopolitique",
+     "these": "Bull soutient que l'anarchie internationale n'est pas le désordre : des États conscients d'intérêts et de valeurs communs et se tenant pour liés par un corps de règles communes forment une société d'États, distincte d'un simple système d'interactions.",
+     "limite": "Morton A."
+    }
+   ],
+   "preuve": "Hedley Bull (World Politics, 1968) recense ces critiques et les ramène à trois griefs — méthode, utilité sociale, intégrité d'intention.",
+   "champ": "limites_critiques",
+   "question": "Le référentiel documente une opposition entre « Thomas Schelling » et « Hedley Bull ». La fiche « Thomas Schelling » l'écrit ainsi : « Hedley Bull (World Politics, 1968) recense ces critiques et les ramène à trois griefs — méthode, utilité sociale, intégrité d'intention. » Sur quoi porte exactement le désaccord, et qu'est-ce qui, aujourd'hui, permettrait de le trancher ?",
+   "actualites": []
+  },
+  {
+   "id": "thorstein-veblen--raymond-aron",
+   "fiches": [
+    {
+     "type": "humaine",
+     "id": "thorstein-veblen",
+     "nom": "Thorstein Veblen",
+     "axe": "social",
+     "sous_domaine": "sociologie",
+     "these": "Veblen soutient que la consommation des classes aisées ne s'explique pas par l'utilité mais par la démonstration : « pour s'attirer et conserver l'estime des hommes, il ne suffit pas de posséder richesse ou pouvoir ; il faut encore les mettre en évidence ».",
+     "limite": "La source consultée ne rapporte pas de réfutation nommée de sa thèse : elle situe sa position par rapport à Marx, dont il refuse la téléologie au profit d'une évolution sans finalité, et cite l'appréciation de Raymond Aron, qui voit en lui le véritable défenseur des pauvres."
+    },
+    {
+     "type": "humaine",
+     "id": "raymond-aron",
+     "nom": "Raymond Aron",
+     "axe": "philosophique",
+     "sous_domaine": "philosophie",
+     "these": "Il n'existe pas de sens unique et nécessaire de l'Histoire, contre les philosophies déterministes marxistes ou hégéliennes : l'action politique se déploie dans l'incertitude et la pluralité des interprétations possibles, ce qui exige un libéralisme lucide, sceptique envers les systèmes totalisants m…",
+     "limite": "Sa proximité assumée avec le libéralisme atlantiste et son scepticisme envers le marxisme lui ont valu d'être longtemps marginalisé dans le champ intellectuel français dominé par la gauche sartrienne, avant une réévaluation plus favorable après la chute du bloc soviétique."
+    }
+   ],
+   "preuve": "La source consultée ne rapporte pas de réfutation nommée de sa thèse : elle situe sa position par rapport à Marx, dont il refuse la téléologie au profit d'une évolution sans finalité, et cite l'appréciation de Raymond Aron, qui voit en lui le véritable défenseur des pauvres.",
+   "champ": "limites_critiques",
+   "question": "Le référentiel documente une opposition entre « Thorstein Veblen » et « Raymond Aron ». La fiche « Thorstein Veblen » l'écrit ainsi : « La source consultée ne rapporte pas de réfutation nommée de sa thèse : elle situe sa position par rapport à Marx, dont il refuse la téléologie au profit d'une évolution sans finalité, et cite l'appréciation de Raymond Aron, qui voit en lui le véritable défense… » Sur quoi porte exactement le désaccord, et qu'est-ce qui, aujourd'hui, permettrait de le trancher ?",
+   "actualites": []
+  },
+  {
+   "id": "totalitarisme--communisme",
+   "fiches": [
+    {
+     "type": "humaine",
+     "id": "totalitarisme",
+     "nom": "Totalitarisme",
+     "axe": "social",
+     "sous_domaine": "modele_politique",
+     "these": "Le totalitarisme est un système politique où un parti unique exerce un contrôle absolu sur tous les aspects de la vie publique et privée en supprimant toute opposition organisée ; Hannah Arendt en identifie les traits essentiels dans le monopole idéologique et le recours systématique à la terreur d'…",
+     "limite": "Des historiens comme Ian Kershaw contestent l'idée que ces régimes aient réellement atomisé complètement la société civile, et le concept se voit reprocher d'obscurcir les différences réelles entre fascisme et communisme en les plaçant sur un même plan analytique."
+    },
+    {
+     "type": "humaine",
+     "id": "communisme",
+     "nom": "Communisme",
+     "axe": "social",
+     "sous_domaine": "modele_politique",
+     "these": "Le communisme regroupe un ensemble de doctrines politiques, principalement issues du marxisme, visant l'instauration d'une société sans classes sociales, sans État et sans propriété privée des moyens de production, via la socialisation démocratique de l'économie.",
+     "limite": "Sa mise en œuvre historique dans les États dits communistes a été marquée par des régimes autoritaires ou totalitaires (URSS, Chine maoïste, Cambodge des Khmers rouges) responsables de répressions massives, largement documentées et éloignées de l'idéal théorique d'émancipation."
+    }
+   ],
+   "preuve": "Des historiens comme Ian Kershaw contestent l'idée que ces régimes aient réellement atomisé complètement la société civile, et le concept se voit reprocher d'obscurcir les différences réelles entre fascisme et communisme en les plaçant sur un même plan analytique.",
+   "champ": "limites_critiques",
+   "question": "Le référentiel documente une opposition entre « Totalitarisme » et « Communisme ». La fiche « Totalitarisme » l'écrit ainsi : « Des historiens comme Ian Kershaw contestent l'idée que ces régimes aient réellement atomisé complètement la société civile, et le concept se voit reprocher d'obscurcir les différences réelles entre fascisme et communisme en les plaçant sur un même plan analyti… » Sur quoi porte exactement le désaccord, et qu'est-ce qui, aujourd'hui, permettrait de le trancher ?",
+   "actualites": []
+  },
+  {
+   "id": "ulrich-beck--niklas-luhmann",
+   "fiches": [
+    {
+     "type": "humaine",
+     "id": "ulrich-beck",
+     "nom": "Ulrich Beck",
+     "axe": "social",
+     "sous_domaine": "sociologie",
+     "these": "Beck soutient que les sociétés industrielles avancées produisent, comme sous-produit systématique de leurs succès, des dangers d'un type nouveau — pollution, radioactivité, risques technologiques — qui échappent aux frontières de classe et de nation, même si les populations aisées tentent de s'en pr…",
+     "limite": "Klaus Rasborg (« '(World) risk society' or 'new rationalities of risk'?"
+    },
+    {
+     "type": "humaine",
+     "id": "niklas-luhmann",
+     "nom": "Niklas Luhmann",
+     "axe": "social",
+     "sous_domaine": "sociologie",
+     "these": "Luhmann soutient que les systèmes sociaux sont des systèmes de communication et non d'action, et que la société est le système social le plus englobant, formé de toutes les communications en cours.",
+     "limite": "Jürgen Habermas conteste avec lui le rendement de la théorie des systèmes dans un volume commun (Theorie der Gesellschaft oder Sozialtechnologie – Was leistet die Systemforschung ?, Suhrkamp, 1971), lui reprochant l'incapacité à rendre compte de la normativité et d'un potentiel émancipateur."
+    }
+   ],
+   "preuve": "il oppose à Beck les cadres de Jeffrey C. Alexander, Niklas Luhmann et Mitchell Dean.",
+   "champ": "limites_critiques",
+   "question": "Le référentiel documente une opposition entre « Ulrich Beck » et « Niklas Luhmann ». La fiche « Ulrich Beck » l'écrit ainsi : « il oppose à Beck les cadres de Jeffrey C. » Sur quoi porte exactement le désaccord, et qu'est-ce qui, aujourd'hui, permettrait de le trancher ?",
+   "actualites": []
+  },
+  {
+   "id": "uta-frith--herbert-simon",
+   "fiches": [
+    {
+     "type": "humaine",
+     "id": "uta-frith",
+     "nom": "Uta Frith",
+     "axe": "psychologique",
+     "sous_domaine": "developpement",
+     "these": "Frith soutient que l'autisme et la dyslexie relèvent d'explications au niveau cognitif, intermédiaire entre le comportement observé et sa base biologique, et non d'une cause unique d'ordre affectif ou éducatif.",
+     "limite": "Helen Tager-Flusberg (Current Directions in Psychological Science, 16(6), 2007) relève que tous les enfants autistes n'échouent pas aux tâches de théorie de l'esprit, que des enfants sourds y échouent également, et que l'hypothèse ne rend compte ni des comportements restreints et répétitifs ni des p…"
+    },
+    {
+     "type": "humaine",
+     "id": "herbert-simon",
+     "nom": "Herbert Simon",
+     "axe": "psychologique",
+     "sous_domaine": "cognition",
+     "these": "Simon soutient que l'agent réel décide sous des limites cognitives, informationnelles et temporelles : il ne maximise pas mais se satisfait de la première option jugée acceptable — le satisficing.",
+     "limite": "Hubert Dreyfus, dans le rapport RAND « Alchemy and Artificial Intelligence » (P-3244, 1965), soutient que réduire le comportement intelligent au langage d'un ordinateur numérique élimine trois capacités humaines — la conscience marginale, la distinction de l'essentiel et de l'accidentel, la toléranc…"
+    }
+   ],
+   "preuve": "En 2026, ses déclarations selon lesquelles le spectre autistique se serait élargi « jusqu'au point de son effondrement » ont été critiquées par Simon Baron-Cohen, par d'autres chercheurs et par des membres de la communauté autiste.",
+   "champ": "limites_critiques",
+   "question": "Le référentiel documente une opposition entre « Uta Frith » et « Herbert Simon ». La fiche « Uta Frith » l'écrit ainsi : « En 2026, ses déclarations selon lesquelles le spectre autistique se serait élargi « jusqu'au point de son effondrement » ont été critiquées par Simon Baron-Cohen, par d'autres chercheurs et par des membres de la communauté autiste. » Sur quoi porte exactement le désaccord, et qu'est-ce qui, aujourd'hui, permettrait de le trancher ?",
+   "actualites": []
+  },
+  {
+   "id": "uta-frith--simon-baron-cohen",
+   "fiches": [
+    {
+     "type": "humaine",
+     "id": "uta-frith",
+     "nom": "Uta Frith",
+     "axe": "psychologique",
+     "sous_domaine": "developpement",
+     "these": "Frith soutient que l'autisme et la dyslexie relèvent d'explications au niveau cognitif, intermédiaire entre le comportement observé et sa base biologique, et non d'une cause unique d'ordre affectif ou éducatif.",
+     "limite": "Helen Tager-Flusberg (Current Directions in Psychological Science, 16(6), 2007) relève que tous les enfants autistes n'échouent pas aux tâches de théorie de l'esprit, que des enfants sourds y échouent également, et que l'hypothèse ne rend compte ni des comportements restreints et répétitifs ni des p…"
+    },
+    {
+     "type": "humaine",
+     "id": "simon-baron-cohen",
+     "nom": "Simon Baron-Cohen",
+     "axe": "psychologique",
+     "sous_domaine": "developpement",
+     "these": "Baron-Cohen soutient que les difficultés de communication sociale dans l'autisme s'expliquent par un retard ou un déficit de théorie de l'esprit — la « cécité mentale » —, c'est-à-dire de la capacité à attribuer à autrui une croyance différente de la sienne.",
+     "limite": "Cordelia Fine, Gina Rippon et Lise Eliot contestent la théorie du cerveau masculin extrême et parlent de « neurosexisme » ; Baron-Cohen répond que ses différences portent sur des moyennes de groupe et non sur des individus."
+    }
+   ],
+   "preuve": "En 2026, ses déclarations selon lesquelles le spectre autistique se serait élargi « jusqu'au point de son effondrement » ont été critiquées par Simon Baron-Cohen, par d'autres chercheurs et par des membres de la communauté autiste.",
+   "champ": "limites_critiques",
+   "question": "Le référentiel documente une opposition entre « Uta Frith » et « Simon Baron-Cohen ». La fiche « Uta Frith » l'écrit ainsi : « En 2026, ses déclarations selon lesquelles le spectre autistique se serait élargi « jusqu'au point de son effondrement » ont été critiquées par Simon Baron-Cohen, par d'autres chercheurs et par des membres de la communauté autiste. » Sur quoi porte exactement le désaccord, et qu'est-ce qui, aujourd'hui, permettrait de le trancher ?",
+   "actualites": []
+  },
+  {
+   "id": "vilfredo-pareto--fascisme",
+   "fiches": [
+    {
+     "type": "humaine",
+     "id": "vilfredo-pareto",
+     "nom": "Vilfredo Pareto",
+     "axe": "social",
+     "sous_domaine": "sociologie",
+     "these": "Pareto soutient que la plupart des conduites sociales sont des actions non logiques, où les fins subjectives et les fins objectives divergent, et qu'il faut distinguer en elles les résidus — noyaux de sentiments stables — des dérivations, justifications rationalisantes que les acteurs leur donnent a…",
+     "limite": "Son accueil favorable à Mussolini en 1922 alimente une controverse historiographique qui n'est pas close : l'historien Renato Cirillo soutient qu'il est resté un libertarien radical et aurait vraisemblablement rejeté le fascisme s'il avait vécu plus longtemps, tandis que la théorie de la supériorité…"
+    },
+    {
+     "type": "humaine",
+     "id": "fascisme",
+     "nom": "Fascisme",
+     "axe": "social",
+     "sous_domaine": "modele_politique",
+     "these": "Le fascisme est un système politique autoritaire associant nationalisme exacerbé, populisme et totalitarisme, fondamentalement opposé à la démocratie parlementaire et à l'individualisme hérité des Lumières, apparu en Italie sous Mussolini après la Première Guerre mondiale.",
+     "limite": "Qualifié par ses détracteurs de tyrannie délibérément anti-démocratique marquée par l'opportunisme idéologique, le fascisme reste débattu par les historiens quant à ses origines exactes et à sa distinction d'avec le nazisme, avec lequel il partage le totalitarisme et le culte du chef sans que les de…"
+    }
+   ],
+   "preuve": "Son accueil favorable à Mussolini en 1922 alimente une controverse historiographique qui n'est pas close : l'historien Renato Cirillo soutient qu'il est resté un libertarien radical et aurait vraisemblablement rejeté le fascisme s'il avait vécu plus longtemps, tandis que la théorie de la supériorité des élites l'a fait associer à cette idéologie.",
+   "champ": "limites_critiques",
+   "question": "Le référentiel documente une opposition entre « Vilfredo Pareto » et « Fascisme ». La fiche « Vilfredo Pareto » l'écrit ainsi : « Son accueil favorable à Mussolini en 1922 alimente une controverse historiographique qui n'est pas close : l'historien Renato Cirillo soutient qu'il est resté un libertarien radical et aurait vraisemblablement rejeté le fascisme s'il avait vécu plus longtemps,… » Sur quoi porte exactement le désaccord, et qu'est-ce qui, aujourd'hui, permettrait de le trancher ?",
+   "actualites": []
+  },
+  {
+   "id": "walter-benjamin--theodor-adorno",
+   "fiches": [
+    {
+     "type": "humaine",
+     "id": "walter-benjamin",
+     "nom": "Walter Benjamin",
+     "axe": "philosophique",
+     "sous_domaine": "philosophie",
+     "these": "La reproductibilité technique des œuvres d'art fait perdre à l'œuvre son « aura » — son caractère unique lié à son inscription dans une tradition — ce qui a des effets ambivalents : perte d'authenticité, mais aussi démocratisation potentielle de l'accès à l'art et possibilité d'un usage politique ém…",
+     "limite": "L'articulation entre son marxisme et sa dimension théologique/messianique reste débattue quant à sa cohérence philosophique d'ensemble ; son œuvre, largement inachevée et fragmentaire, a été en partie construite a posteriori par ses éditeurs et lecteurs, dont Adorno."
+    },
+    {
+     "type": "humaine",
+     "id": "theodor-adorno",
+     "nom": "Theodor Adorno",
+     "axe": "philosophique",
+     "sous_domaine": "philosophie",
+     "these": "La raison des Lumières, censée émanciper l'humanité, s'est retournée dialectiquement en un nouvel instrument de domination — la « raison instrumentale » qui réduit la nature et les êtres humains à de purs moyens calculables ; l'industrie culturelle de masse standardise à son tour la pensée et l'expé…",
+     "limite": "Son pessimisme envers la culture de masse lui a valu, lors des événements de mai 1968, d'être attaqué par ses propres étudiants qui prenaient prétexte de son élitisme culturel pour l'accuser de complicité avec le pouvoir bourgeois ; la théorie critique s'est plus largement vu reprocher par la gauche…"
+    }
+   ],
+   "preuve": "L'articulation entre son marxisme et sa dimension théologique/messianique reste débattue quant à sa cohérence philosophique d'ensemble ; son œuvre, largement inachevée et fragmentaire, a été en partie construite a posteriori par ses éditeurs et lecteurs, dont Adorno.",
+   "champ": "limites_critiques",
+   "question": "Le référentiel documente une opposition entre « Walter Benjamin » et « Theodor Adorno ». La fiche « Walter Benjamin » l'écrit ainsi : « L'articulation entre son marxisme et sa dimension théologique/messianique reste débattue quant à sa cohérence philosophique d'ensemble ; son œuvre, largement inachevée et fragmentaire, a été en partie construite a posteriori par ses éditeurs et lecteurs, dont… » Sur quoi porte exactement le désaccord, et qu'est-ce qui, aujourd'hui, permettrait de le trancher ?",
+   "actualites": []
+  },
+  {
+   "id": "william-julius-wilson--loic-wacquant",
+   "fiches": [
+    {
+     "type": "humaine",
+     "id": "william-julius-wilson",
+     "nom": "William Julius Wilson",
+     "axe": "social",
+     "sous_domaine": "sociologie",
+     "these": "Wilson soutient qu'après le mouvement des droits civiques, la structure de classe est devenue un déterminant croissant des chances de vie des Afro-Américains, ce qui déplace l'explication des inégalités de la seule discrimination raciale vers la position économique.",
+     "limite": "Douglas Massey et Nancy Denton, dans American Apartheid: Segregation and the Making of the Underclass (Harvard University Press), soutiennent que la variable indépendante est la ségrégation résidentielle et non la désindustrialisation : sous ségrégation extrême, toute hausse du taux de pauvreté noir…"
+    },
+    {
+     "type": "humaine",
+     "id": "loic-wacquant",
+     "nom": "Loïc Wacquant",
+     "axe": "social",
+     "sous_domaine": "sociologie",
+     "these": "Wacquant soutient que la relégation urbaine des sociétés post-industrielles constitue une « marginalité avancée » : non un résidu du développement, mais un produit des politiques publiques, qui exclut durablement des populations du marché du travail formel et des institutions.",
+     "limite": "Patricia A."
+    }
+   ],
+   "preuve": "Loïc Wacquant objecte que ce statut est imposé de l'extérieur et d'en haut aux Noirs urbains par les journalistes, les responsables politiques et les universitaires.",
+   "champ": "limites_critiques",
+   "question": "Le référentiel documente une opposition entre « William Julius Wilson » et « Loïc Wacquant ». La fiche « William Julius Wilson » l'écrit ainsi : « Loïc Wacquant objecte que ce statut est imposé de l'extérieur et d'en haut aux Noirs urbains par les journalistes, les responsables politiques et les universitaires. » Sur quoi porte exactement le désaccord, et qu'est-ce qui, aujourd'hui, permettrait de le trancher ?",
+   "actualites": []
+  },
+  {
+   "id": "wolfgang-kohler--karl-lashley",
+   "fiches": [
+    {
+     "type": "humaine",
+     "id": "wolfgang-kohler",
+     "nom": "Wolfgang Köhler",
+     "axe": "psychologique",
+     "sous_domaine": "perception",
+     "these": "Köhler soutient que le chimpanzé, placé devant un problème dont tous les éléments sont visibles, ne procède pas par essais graduels mais par restructuration soudaine du champ : la solution apparaît d'un coup, puis se répète sans hésitation — c'est l'Einsicht.",
+     "limite": "Le versant physiologique de sa doctrine a été expérimentalement infirmé : Karl Lashley, Kao Liang Chow et Josephine Semmes ont examiné la théorie des champs électriques d'intégration cérébrale (Psychological Review, 58(2), 1951, p. 123-136) et en ont contredit les prédictions."
+    },
+    {
+     "type": "humaine",
+     "id": "karl-lashley",
+     "nom": "Karl Lashley",
+     "axe": "psychologique",
+     "sous_domaine": "neuropsychologie",
+     "these": "Lashley soutient, au terme de trente ans de lésions corticales chez le rat, que la trace mnésique n'est pas logée en un point du cortex : l'ampleur du déficit d'apprentissage dépend de la quantité de tissu détruit et non du site détruit (action de masse), et une région peut assumer la fonction d'une…",
+     "limite": "La distribution des engrammes existe bien, mais elle n'est pas égale entre toutes les aires corticales comme Lashley le supposait : la notice qui lui est consacrée note que sa théorie était incomplète plutôt qu'entièrement fausse."
+    }
+   ],
+   "preuve": "Le versant physiologique de sa doctrine a été expérimentalement infirmé : Karl Lashley, Kao Liang Chow et Josephine Semmes ont examiné la théorie des champs électriques d'intégration cérébrale (Psychological Review, 58(2), 1951, p.",
+   "champ": "limites_critiques",
+   "question": "Le référentiel documente une opposition entre « Wolfgang Köhler » et « Karl Lashley ». La fiche « Wolfgang Köhler » l'écrit ainsi : « Le versant physiologique de sa doctrine a été expérimentalement infirmé : Karl Lashley, Kao Liang Chow et Josephine Semmes ont examiné la théorie des champs électriques d'intégration cérébrale (Psychological Review, 58(2), 1951, p. » Sur quoi porte exactement le désaccord, et qu'est-ce qui, aujourd'hui, permettrait de le trancher ?",
+   "actualites": []
+  },
+  {
+   "id": "yves-lacoste--gearoid-o-tuathail",
+   "fiches": [
+    {
+     "type": "humaine",
+     "id": "yves-lacoste",
+     "nom": "Yves Lacoste",
+     "axe": "social",
+     "sous_domaine": "geopolitique",
+     "these": "Lacoste (1929-2026) soutient que la géographie est d'abord un savoir stratégique : elle « sert d'abord à faire la guerre » et à organiser les territoires pour mieux contrôler les populations soumises à l'autorité de l'État.",
+     "limite": "Claude Raffestin lui reproche du nationalisme et une imprécision idéologique, Dominique Roche un manque de rigueur."
+    },
+    {
+     "type": "humaine",
+     "id": "gearoid-o-tuathail",
+     "nom": "Gearóid Ó Tuathail",
+     "axe": "social",
+     "sous_domaine": "geopolitique",
+     "these": "Ó Tuathail (Gerard Toal) soutient que la géopolitique n'est pas une description du monde mais une pratique d'écriture du monde : les acteurs y spatialisent les affaires internationales, et cette spatialisation est un exercice de pouvoir, non un constat.",
+     "limite": "Merje Kuus recense trois séries d'objections."
+    }
+   ],
+   "preuve": "Gearóid Ó Tuathail le relit de façon critique dans Progress in Human Geography (vol.",
+   "champ": "limites_critiques",
+   "question": "Le référentiel documente une opposition entre « Yves Lacoste » et « Gearóid Ó Tuathail ». La fiche « Yves Lacoste » l'écrit ainsi : « Gearóid Ó Tuathail le relit de façon critique dans Progress in Human Geography (vol. » Sur quoi porte exactement le désaccord, et qu'est-ce qui, aujourd'hui, permettrait de le trancher ?",
+   "actualites": [
+    {
+     "date": "2026-09-16",
+     "source": "Diploweb — revue géopolitique",
+     "titre": "Dans le Radar du Diploweb. Juillet et août 2026",
+     "lien": "https://www.diploweb.com/Dans-le-Radar-du-Diploweb-Juillet-et-aout-2026.html",
+     "fiche_touchee": "Yves Lacoste"
+    }
+   ]
+  },
+  {
+   "id": "yves-lacoste--isaiah-bowman",
+   "fiches": [
+    {
+     "type": "humaine",
+     "id": "yves-lacoste",
+     "nom": "Yves Lacoste",
+     "axe": "social",
+     "sous_domaine": "geopolitique",
+     "these": "Lacoste (1929-2026) soutient que la géographie est d'abord un savoir stratégique : elle « sert d'abord à faire la guerre » et à organiser les territoires pour mieux contrôler les populations soumises à l'autorité de l'État.",
+     "limite": "Claude Raffestin lui reproche du nationalisme et une imprécision idéologique, Dominique Roche un manque de rigueur."
+    },
+    {
+     "type": "humaine",
+     "id": "isaiah-bowman",
+     "nom": "Isaiah Bowman",
+     "axe": "social",
+     "sous_domaine": "geopolitique",
+     "these": "Bowman (1878-1950) soutient que la géographie doit servir directement au règlement des différends territoriaux, et il en fait la démonstration en produisant l'inventaire des problèmes frontaliers du monde d'après 1918 dans The New World: Problems in Political Geography (1921).",
+     "limite": "Neil Smith, dans American Empire: Roosevelt's Geographer and the Prelude to Globalization (2003), fait de lui le géographe d'une expansion américaine qui ne se disait pas impériale, et documente son antisémitisme ainsi que sa conduite du Project M, chargé à partir de 1939 de trouver des lieux de ref…"
+    }
+   ],
+   "preuve": "18, n° 3, 1994) aux côtés de Wittfogel et de Bowman, c'est-à-dire qu'il le range parmi les producteurs de discours géopolitique et non parmi ses analystes extérieurs — objection de fond pour une œuvre qui se donnait comme démystification.",
+   "champ": "limites_critiques",
+   "question": "Le référentiel documente une opposition entre « Yves Lacoste » et « Isaiah Bowman ». La fiche « Yves Lacoste » l'écrit ainsi : « 18, n° 3, 1994) aux côtés de Wittfogel et de Bowman, c'est-à-dire qu'il le range parmi les producteurs de discours géopolitique et non parmi ses analystes extérieurs — objection de fond pour une œuvre qui se donnait comme démystification. » Sur quoi porte exactement le désaccord, et qu'est-ce qui, aujourd'hui, permettrait de le trancher ?",
+   "actualites": [
+    {
+     "date": "2026-09-16",
+     "source": "Diploweb — revue géopolitique",
+     "titre": "Dans le Radar du Diploweb. Juillet et août 2026",
+     "lien": "https://www.diploweb.com/Dans-le-Radar-du-Diploweb-Juillet-et-aout-2026.html",
+     "fiche_touchee": "Yves Lacoste"
+    }
+   ]
+  },
+  {
+   "id": "achille-mbembe--judith-butler",
+   "fiches": [
+    {
+     "type": "humaine",
+     "id": "achille-mbembe",
+     "nom": "Achille Mbembe",
+     "axe": "social",
+     "sous_domaine": "geopolitique",
+     "these": "Mbembe soutient que la biopolitique ne suffit plus à décrire les formes contemporaines d'assujettissement et lui substitue la nécropolitique : la souveraineté s'exerce désormais par la création de zones de mort, la mort devenant l'exercice ultime de la domination et non son échec.",
+     "limite": "La controverse allemande de 2020 est le point le plus documenté : Felix Klein, commissaire du gouvernement fédéral à l'antisémitisme, a demandé l'annulation de sa conférence d'ouverture de la Ruhrtriennale en soutenant qu'il aurait relativisé la Shoah et nié le droit d'Israël à exister ; plus de qua…"
+    },
+    {
+     "type": "humaine",
+     "id": "judith-butler",
+     "nom": "Judith Butler",
+     "axe": "philosophique",
+     "sous_domaine": "philosophie",
+     "these": "Le genre n'est pas l'expression d'une identité intérieure préexistante mais une « performance » : il est produit par la répétition stylisée d'actes et de discours socialement codés, qui donnent rétroactivement l'illusion d'une substance de genre naturelle et stable.",
+     "limite": "Accusée par des féministes matérialistes de dissoudre la catégorie « femme » dans un pur jeu discursif — Susan Bordo soutient au contraire que le corps détermine en majeure partie le genre, s'opposant à sa vision performative ; son style a valu à sa « prose impénétrable, jargonnante » le premier pri…"
+    }
+   ],
+   "preuve": "La controverse allemande de 2020 est le point le plus documenté : Felix Klein, commissaire du gouvernement fédéral à l'antisémitisme, a demandé l'annulation de sa conférence d'ouverture de la Ruhrtriennale en soutenant qu'il aurait relativisé la Shoah et nié le droit d'Israël à exister ; plus de quatre cents chercheurs, parmi lesquels Judith Butler et Gayatri Spivak, ont signé un texte s'opposant à ce qu'ils qualifient d'« ingérence idéologique ou politique ».",
+   "champ": "limites_critiques",
+   "question": "Le référentiel documente une opposition entre « Achille Mbembe » et « Judith Butler ». La fiche « Achille Mbembe » l'écrit ainsi : « La controverse allemande de 2020 est le point le plus documenté : Felix Klein, commissaire du gouvernement fédéral à l'antisémitisme, a demandé l'annulation de sa conférence d'ouverture de la Ruhrtriennale en soutenant qu'il aurait relativisé la Shoah et nié l… » Sur quoi porte exactement le désaccord, et qu'est-ce qui, aujourd'hui, permettrait de le trancher ?",
+   "actualites": []
+  },
+  {
+   "id": "alfred-schutz--george-herbert-mead",
+   "fiches": [
+    {
+     "type": "humaine",
+     "id": "alfred-schutz",
+     "nom": "Alfred Schütz",
+     "axe": "social",
+     "sous_domaine": "sociologie",
+     "these": "Schütz soutient que la sociologie compréhensive de Max Weber a laissé inexpliqué le concept même de sens visé, et entreprend d'en fournir les fondements philosophiques.",
+     "limite": "Sa correspondance avec Talcott Parsons sur le concept d'action sociale a laissé apparaître des différences irréductibles : les travaux de David Rehorick (1980), puis de Rehorick et William Buxton (1988) qui y révèlent la participation cachée d'Eric Voegelin, concluent que leurs divergences conceptue…"
+    },
+    {
+     "type": "humaine",
+     "id": "george-herbert-mead",
+     "nom": "George Herbert Mead",
+     "axe": "social",
+     "sous_domaine": "sociologie",
+     "these": "Mead soutient que l'esprit n'est pas une substance logée dans un domaine transcendant : il n'y a « ni esprit ni pensée sans langage », et le langage est un produit de l'interaction sociale.",
+     "limite": "Alfred Schütz fut un critique sévère de l'approche behavioriste de Mead, à laquelle il opposait une analyse phénoménologique du sens visé."
+    }
+   ],
+   "preuve": "Schütz fut lui-même un critique sévère de l'approche behavioriste de George Herbert Mead.",
+   "champ": "limites_critiques",
+   "question": "Le référentiel documente une opposition entre « Alfred Schütz » et « George Herbert Mead ». La fiche « Alfred Schütz » l'écrit ainsi : « Schütz fut lui-même un critique sévère de l'approche behavioriste de George Herbert Mead. » Sur quoi porte exactement le désaccord, et qu'est-ce qui, aujourd'hui, permettrait de le trancher ?",
+   "actualites": []
+  },
+  {
+   "id": "ann-oakley--christine-delphy",
+   "fiches": [
+    {
+     "type": "humaine",
+     "id": "ann-oakley",
+     "nom": "Ann Oakley",
+     "axe": "social",
+     "sous_domaine": "sociologie",
+     "these": "Oakley soutient que le travail domestique est un travail : il a des conditions d'exercice, une durée, une fragmentation et une monotonie descriptibles, comparables à celles de l'atelier, et non l'expression d'un lien affectif ou d'une disposition naturelle.",
+     "limite": "Christine Delphy, dans « Rethinking Sex and Gender » (Women's Studies International Forum, 16(1), 1993), tient la définition d'Oakley pour insuffisante : elle distingue bien le sexe du genre mais omet ce qui est central, « the fundamental asymmetry [...] and hierarchy between the two groups, or role…"
+    },
+    {
+     "type": "humaine",
+     "id": "christine-delphy",
+     "nom": "Christine Delphy",
+     "axe": "social",
+     "sous_domaine": "sociologie",
+     "these": "Delphy soutient qu'il existe un mode de production domestique distinct du mode de production capitaliste : dans la famille, le travail des femmes est approprié gratuitement, ce qui constitue une exploitation d'une classe de sexe par une autre et non une division fonctionnelle des tâches.",
+     "limite": "Ses travaux ont été contestés sur deux plans qu'il faut distinguer."
+    }
+   ],
+   "preuve": "Christine Delphy, dans « Rethinking Sex and Gender » (Women's Studies International Forum, 16(1), 1993), tient la définition d'Oakley pour insuffisante : elle distingue bien le sexe du genre mais omet ce qui est central, « the fundamental asymmetry [...] and hierarchy between the two groups, or roles, or sexes, or genders ».",
+   "champ": "limites_critiques",
+   "question": "Le référentiel documente une opposition entre « Ann Oakley » et « Christine Delphy ». La fiche « Ann Oakley » l'écrit ainsi : « Christine Delphy, dans « Rethinking Sex and Gender » (Women's Studies International Forum, 16(1), 1993), tient la définition d'Oakley pour insuffisante : elle distingue bien le sexe du genre mais omet ce qui est central, « the fundamental asymmetry [...] and h… » Sur quoi porte exactement le désaccord, et qu'est-ce qui, aujourd'hui, permettrait de le trancher ?",
    "actualites": []
   }
  ]
