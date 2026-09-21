@@ -1,8 +1,8 @@
 # Moisson de sources
 
-Dernier passage : **2026-09-20** · fonds interrogés : openalex, crossref, arxiv, hal, doaj, europepmc.
+Dernier passage : **2026-09-21** · fonds interrogés : openalex, crossref, arxiv, hal, doaj, europepmc.
 
-**4 propositions** pour **10 fiches**, écrites dans `../../_temp/moisson-2026-09-20.json`.
+**1 propositions** pour **10 fiches**, écrites dans `../../_temp/moisson-2026-09-21.json`.
 
 Ce fichier ne modifie aucune fiche. Pour en ajouter une partie au corpus : remplir le champ
 `retenues` de chaque bloc avec les clés choisies, puis lancer
@@ -11,11 +11,11 @@ Ce fichier ne modifie aucune fiche. Pour en ajouter une partie au corpus : rempl
 | Fiche | Besoin | Propositions | Meilleure proposition |
 |---|---:|---:|---|
 | Abhijit Banerjee | 7 | 0 | — |
-| Alliance solaire internationale (ASI) | 7 | 0 | — |
-| Amartya Sen | 7 | 2 | [Amartya Sen : un allié pour l’économie de la personne contre la métriq](https://doi.org/10.3917/rpec.191.0049) — openalex, 2018 |
+| Alliance solaire internationale (ASI) | 7 | 1 | [Communauté internationale et organisation internationale | The Interna](https://doi.org/10.1163/ej.9789041111197.3-967.2) — crossref |
+| Amartya Sen | 7 | 0 | — |
 | Anarchisme | 7 | 0 | — |
-| Banque africaine de développement (BAfD) | 7 | 1 | [Le retour de Moscou en Afrique subsaharienne ?](https://doi.org/10.3917/afco.248.0061) — openalex, 2014 |
-| Bipolarité (Guerre froide) | 7 | 1 | [Les nouveaux interventionnismes militaires africains](https://doi.org/10.3917/polaf.098.0111) — openalex, 1981 |
+| Banque africaine de développement (BAfD) | 7 | 0 | — |
+| Bipolarité (Guerre froide) | 7 | 0 | — |
 | Black-Scholes | 7 | 0 | — |
 | BRICS(+) | 7 | 0 | — |
 | Capitalisme de marché libre (laissez-faire) | 7 | 0 | — |
