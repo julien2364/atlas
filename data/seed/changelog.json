@@ -413,5 +413,12 @@
     "cible": "Référentiel B — 15 fiches",
     "resume": "Quinze fiches ferment les quinze derniers éléments « effleurés » de la mesure de couverture du mégaprompt : dix usages sectoriels (revue de littérature automatisée, conception expérimentale assistée, évaluation automatisée, contenu pédagogique différencié, maintenance prédictive, contrôle qualité par vision industrielle, optimisation d'essai clinique, pharmacovigilance automatisée, prévision climatique opérationnelle, cybersécurité assistée) et cinq capacités agentiques (autonomie d'exécution, orchestration d'outils, génération et exécution de code, recherche documentaire autonome, mémoire long terme). Couverture portée de 81,3 % à 100 %, sans élément absent ni effleuré. Chaque fiche porte ses sources datées ; la maturité n'est déclarée qu'en présence d'un exploitant nommé, d'un lieu et d'une date, sinon la diffusion est donnée sans TRL.",
     "fiches_ajoutees": 15
+  },
+  {
+    "id": "2026-09-24-mention-aipm-methodologie",
+    "date": "2026-09-24",
+    "type": "mise_a_jour",
+    "cible": "Page méthodologie",
+    "resume": "La section « Documents de référence » de la page méthodologie signale désormais une réutilisation des données d'Atlas : le référentiel AIPM (https://aipm.dyonysos.fr/), référentiel de gestion de projet à l'ère de l'IA agentique publié par DYONYSOS, s'appuie sur ces données. Aucune fiche n'est modifiée."
   }
 ]

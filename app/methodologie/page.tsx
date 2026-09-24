@@ -201,6 +201,14 @@ export default function MethodologiePage() {
           </a>
           .
         </p>
+        <p className="leading-relaxed text-neutral-700 dark:text-neutral-300">
+          Ces données sont réutilisées ailleurs : le référentiel{" "}
+          <a href="https://aipm.dyonysos.fr/" className="underline">
+            AIPM
+          </a>
+          , référentiel de gestion de projet à l&apos;ère de l&apos;IA agentique publié par DYONYSOS, s&apos;appuie
+          sur les données d&apos;Atlas.
+        </p>
       </section>
     </div>
   );
