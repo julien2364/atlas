@@ -1,16 +1,16 @@
 # Pré-tri de la file de veille
 
-Dernier écartement appliqué : 2026-09-24.
+Dernier écartement appliqué : 2026-09-25.
 
-File complète : **1057** entrées, dont **584** en attente d'arbitrage.
+File complète : **1099** entrées, dont **619** en attente d'arbitrage.
 
-Le pré-tri écarte **7** propositions sur des critères mécaniques et en laisse **577** à la relecture humaine, classées par fiabilité décroissante.
+Le pré-tri écarte **5** propositions sur des critères mécaniques et en laisse **614** à la relecture humaine, classées par fiabilité décroissante.
 
 ## Écartées, et pourquoi
 
 | Motif | Nombre | Ce que ça veut dire |
 |---|---:|---|
-| `domaine_opaque` | 7 | Agrégateur masquant l'éditeur réel — source non attribuable |
+| `domaine_opaque` | 5 | Agrégateur masquant l'éditeur réel — source non attribuable |
 
 Aucun de ces motifs ne porte de jugement sur le fond : ils constatent qu'une proposition n'est pas citable, pas attribuable, ou déjà connue.
 
@@ -18,10 +18,10 @@ Aucun de ces motifs ne porte de jugement sur le fond : ils constatent qu'une pro
 
 | Score | Nombre |
 |---:|---:|
-| 0.9 | 53 |
-| 0.8 | 107 |
-| 0.6 | 24 |
-| 0.4 | 393 |
+| 0.9 | 58 |
+| 0.8 | 109 |
+| 0.6 | 25 |
+| 0.4 | 422 |
 
 ### Les trente premières
 
@@ -37,6 +37,10 @@ Aucun de ces motifs ne porte de jugement sur le fond : ils constatent qu'une pro
   Author Correction: Improving computational reproducibility in the social sciences  
   <https://www.nature.com/articles/s41562-026-02609-y>  
   `d75392c5-b1ed-4462-82f5-5864ea14f19f`
+- **0.9** · nature.com · 2 terme(s) du corpus  
+  Anthropic’s AI biolab finds ‘CRISPR-like’ DNA in viruses. What’s next?  
+  <https://www.nature.com/articles/d41586-026-03039-6>  
+  `ab7ba093-c38f-469b-bbf6-b6510e36e92e`
 - **0.9** · nature.com · 1 terme(s) du corpus  
   NSF moves to overhaul funding approach in line with White House priorities  
   <https://www.nature.com/articles/d41586-026-02892-9>  
@@ -65,6 +69,10 @@ Aucun de ces motifs ne porte de jugement sur le fond : ils constatent qu'une pro
   OpenAI maths bombshell sparks debate about who gets credit in age of AI  
   <https://www.nature.com/articles/d41586-026-02910-w>  
   `b9435665-988f-435a-b083-a66c02beb98c`
+- **0.9** · nature.com · 1 terme(s) du corpus  
+  Why science wouldn’t exist without alchemy, curiosity and great writing: Books in brief  
+  <https://www.nature.com/articles/d41586-026-03032-z>  
+  `5bda7404-73b8-4f88-94dd-3311e850febd`
 - **0.9** · nature.com · 0 terme(s) du corpus  
   Briefing Chat: The Bunsen burner myth that turns out to be just hot air  
   <https://www.nature.com/articles/d41586-026-02893-8>  
@@ -137,14 +145,6 @@ Aucun de ces motifs ne porte de jugement sur le fond : ils constatent qu'une pro
   Staying in academia after extended leave  
   <https://www.nature.com/articles/s41562-026-02594-2>  
   `cc78bba0-4b41-453e-9737-e22938387e3e`
-- **0.9** · nature.com · 0 terme(s) du corpus  
-  Loneliness and desire for thinness explain sex differences in adolescent internalizing problems  
-  <https://www.nature.com/articles/s41562-026-02578-2>  
-  `8675e323-a4db-497e-912b-282d064a7bb9`
-- **0.9** · nature.com · 0 terme(s) du corpus  
-  Complexity is a unified cognitive kind  
-  <https://www.nature.com/articles/s41562-026-02502-8>  
-  `9a136766-dda9-4d45-a5b0-42b743a46246`
 
 ---
 
