@@ -110,6 +110,19 @@ const CHEMIN_QUEUE = path.join(RACINE, "data", "seed", "veille_queue.json");
 
 const parser = new Parser({ timeout: 15000 });
 
+// 29/09/2026 — plafond dur par flux. Le `timeout` de rss-parser ne couvre pas tous les cas
+// (redirections, corps servi au compte-gouttes) : treize passages du cron ont tourne ~225 min
+// chacun avant d'etre coupes, soit 2 926 minutes GitHub Actions en douze jours. Un flux qui
+// ne repond pas en 20 s compte comme un echec, et la collecte continue.
+const DELAI_FLUX_MS = 20000;
+function lireFlux(url) {
+  let minuteur;
+  const delai = new Promise((_, rejeter) => {
+    minuteur = setTimeout(() => rejeter(new Error(`delai de ${DELAI_FLUX_MS / 1000} s depasse`)), DELAI_FLUX_MS);
+  });
+  return Promise.race([parser.parseURL(url), delai]).finally(() => clearTimeout(minuteur));
+}
+
 // ---------------------------------------------------------------------------
 // Table de domaines — le cœur du score, donc entièrement explicite ici
 // ---------------------------------------------------------------------------
@@ -406,7 +419,7 @@ async function collecter() {
 
   for (const source of sources) {
     try {
-      const feed = await parser.parseURL(source.url);
+      const feed = await lireFlux(source.url);
       let ajoutees = 0;
       for (const item of (feed.items ?? []).slice(0, 5)) {
         if (!item.link || dejaVues.has(item.link)) continue;
@@ -484,4 +497,11 @@ async function main() {
   }
 }
 
-if (LANCE_DIRECTEMENT) main();
+// Sortie explicite : une requete abandonnee par `lireFlux` peut garder sa connexion ouverte,
+// et Node attendrait alors sa fin au lieu de rendre la main au cron.
+if (LANCE_DIRECTEMENT) {
+  main().then(
+    () => process.exit(process.exitCode ?? 0),
+    (erreur) => { console.error(erreur); process.exit(1); },
+  );
+}

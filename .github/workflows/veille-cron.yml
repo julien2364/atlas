@@ -12,6 +12,9 @@ permissions:
 jobs:
   veille:
     runs-on: ubuntu-latest
+    # 29/09/2026 — sans plafond, GitHub laisse tourner 6 h : 13 passages bloques ont
+    # consomme 2 926 minutes en douze jours. Un passage normal dure quelques minutes.
+    timeout-minutes: 20
     steps:
       - uses: actions/checkout@v4
         with:
