@@ -1,16 +1,16 @@
 # Pré-tri de la file de veille
 
-Dernier écartement appliqué : 2026-09-25.
+Dernier écartement appliqué : 2026-09-26.
 
-File complète : **1099** entrées, dont **619** en attente d'arbitrage.
+File complète : **1194** entrées, dont **709** en attente d'arbitrage.
 
-Le pré-tri écarte **5** propositions sur des critères mécaniques et en laisse **614** à la relecture humaine, classées par fiabilité décroissante.
+Le pré-tri écarte **9** propositions sur des critères mécaniques et en laisse **700** à la relecture humaine, classées par fiabilité décroissante.
 
 ## Écartées, et pourquoi
 
 | Motif | Nombre | Ce que ça veut dire |
 |---|---:|---|
-| `domaine_opaque` | 5 | Agrégateur masquant l'éditeur réel — source non attribuable |
+| `domaine_opaque` | 9 | Agrégateur masquant l'éditeur réel — source non attribuable |
 
 Aucun de ces motifs ne porte de jugement sur le fond : ils constatent qu'une proposition n'est pas citable, pas attribuable, ou déjà connue.
 
@@ -18,10 +18,10 @@ Aucun de ces motifs ne porte de jugement sur le fond : ils constatent qu'une pro
 
 | Score | Nombre |
 |---:|---:|
-| 0.9 | 58 |
-| 0.8 | 109 |
-| 0.6 | 25 |
-| 0.4 | 422 |
+| 0.9 | 62 |
+| 0.8 | 122 |
+| 0.6 | 30 |
+| 0.4 | 486 |
 
 ### Les trente premières
 
@@ -73,6 +73,14 @@ Aucun de ces motifs ne porte de jugement sur le fond : ils constatent qu'une pro
   Why science wouldn’t exist without alchemy, curiosity and great writing: Books in brief  
   <https://www.nature.com/articles/d41586-026-03032-z>  
   `5bda7404-73b8-4f88-94dd-3311e850febd`
+- **0.9** · nature.com · 1 terme(s) du corpus  
+  Regional climate risk assessment from climate models using probabilistic machine learning  
+  <https://www.nature.com/articles/s42256-026-01308-7>  
+  `03d1aca9-c5ac-4c57-b753-fd56ff6d688a`
+- **0.9** · nature.com · 1 terme(s) du corpus  
+  Minute-scale training for microrobot navigation  
+  <https://www.nature.com/articles/s42256-026-01305-w>  
+  `aeb90b7f-4a7e-4d94-9711-a84f873ae5eb`
 - **0.9** · nature.com · 0 terme(s) du corpus  
   Briefing Chat: The Bunsen burner myth that turns out to be just hot air  
   <https://www.nature.com/articles/d41586-026-02893-8>  
@@ -137,14 +145,6 @@ Aucun de ces motifs ne porte de jugement sur le fond : ils constatent qu'une pro
   NucleicBERT interprets RNA sequence space through self-supervised language modelling  
   <https://www.nature.com/articles/s42256-026-01295-9>  
   `36e28353-e95a-4e7b-81fc-013133c6fd5c`
-- **0.9** · nature.com · 0 terme(s) du corpus  
-  Steering machine reasoning with brain signals  
-  <https://www.nature.com/articles/s42256-026-01302-z>  
-  `56dd0f66-39a7-4680-8ffc-78fbcc60af0c`
-- **0.9** · nature.com · 0 terme(s) du corpus  
-  Staying in academia after extended leave  
-  <https://www.nature.com/articles/s41562-026-02594-2>  
-  `cc78bba0-4b41-453e-9737-e22938387e3e`
 
 ---
 
