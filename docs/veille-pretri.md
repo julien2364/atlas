@@ -1,16 +1,16 @@
 # Pré-tri de la file de veille
 
-Dernier écartement appliqué : 2026-09-26.
+Dernier écartement appliqué : 2026-09-29.
 
-File complète : **1194** entrées, dont **709** en attente d'arbitrage.
+File complète : **1271** entrées, dont **777** en attente d'arbitrage.
 
-Le pré-tri écarte **9** propositions sur des critères mécaniques et en laisse **700** à la relecture humaine, classées par fiabilité décroissante.
+Le pré-tri écarte **7** propositions sur des critères mécaniques et en laisse **770** à la relecture humaine, classées par fiabilité décroissante.
 
 ## Écartées, et pourquoi
 
 | Motif | Nombre | Ce que ça veut dire |
 |---|---:|---|
-| `domaine_opaque` | 9 | Agrégateur masquant l'éditeur réel — source non attribuable |
+| `domaine_opaque` | 7 | Agrégateur masquant l'éditeur réel — source non attribuable |
 
 Aucun de ces motifs ne porte de jugement sur le fond : ils constatent qu'une proposition n'est pas citable, pas attribuable, ou déjà connue.
 
@@ -18,10 +18,10 @@ Aucun de ces motifs ne porte de jugement sur le fond : ils constatent qu'une pro
 
 | Score | Nombre |
 |---:|---:|
-| 0.9 | 62 |
-| 0.8 | 122 |
-| 0.6 | 30 |
-| 0.4 | 486 |
+| 0.9 | 68 |
+| 0.8 | 139 |
+| 0.6 | 33 |
+| 0.4 | 530 |
 
 ### Les trente premières
 
@@ -81,6 +81,14 @@ Aucun de ces motifs ne porte de jugement sur le fond : ils constatent qu'une pro
   Minute-scale training for microrobot navigation  
   <https://www.nature.com/articles/s42256-026-01305-w>  
   `aeb90b7f-4a7e-4d94-9711-a84f873ae5eb`
+- **0.9** · nature.com · 1 terme(s) du corpus  
+  Tuberculosis treatment has advanced — now we need to stop drug resistance dragging us backwards  
+  <https://www.nature.com/articles/d41586-026-02963-x>  
+  `89f612bf-1bd9-4924-9dda-a816952c79b9`
+- **0.9** · nature.com · 1 terme(s) du corpus  
+  Beware sham scientific societies: the research community must be more vigilant  
+  <https://www.nature.com/articles/d41586-026-03047-6>  
+  `bbcda171-113c-4729-ac43-59b8ed62cd0d`
 - **0.9** · nature.com · 0 terme(s) du corpus  
   Briefing Chat: The Bunsen burner myth that turns out to be just hot air  
   <https://www.nature.com/articles/d41586-026-02893-8>  
@@ -137,14 +145,6 @@ Aucun de ces motifs ne porte de jugement sur le fond : ils constatent qu'une pro
   Causal evidence that language models use confidence to drive behaviour  
   <https://www.nature.com/articles/s42256-026-01293-x>  
   `a4cf5341-70e9-46d1-9b74-cf2da116b4c9`
-- **0.9** · nature.com · 0 terme(s) du corpus  
-  Quantum neural operators with implicit quadratic frame and expressivity advantages  
-  <https://www.nature.com/articles/s42256-026-01289-7>  
-  `de24bd5f-b445-4791-9c74-a1be15f53aa0`
-- **0.9** · nature.com · 0 terme(s) du corpus  
-  NucleicBERT interprets RNA sequence space through self-supervised language modelling  
-  <https://www.nature.com/articles/s42256-026-01295-9>  
-  `36e28353-e95a-4e7b-81fc-013133c6fd5c`
 
 ---
 
