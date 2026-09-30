@@ -22020,5 +22020,1391 @@
     "domaine_opaque": false,
     "statut": "en_attente",
     "created_at": "2026-09-29T13:37:27.781Z"
+  },
+  {
+    "id": "8db01eda-2fd8-46dc-9fe6-6cb8983c6a68",
+    "source_id": "arxiv-cs-ai",
+    "cible_type": "nouvelle_categorie",
+    "cible_id": null,
+    "contenu_propose": {
+      "titre": "OpenAI-HuggingFace: A Reproduction & Lessons for Alignment Testing",
+      "link": "https://arxiv.org/abs/2609.35799",
+      "date": "2026-09-30T04:00:00.000Z",
+      "resume": "arXiv:2609.35799v1 Announce Type: new \nAbstract: In July 2026, OpenAI's agents coordinated over channels outside their intended environment to breach Hugging Face's secured infrastructure. Could existing alignment testing practices have foreseen this incident? If not, what needs to change? We explore these questions. First, we identify the misaligned behaviors that caused this incident. Then, we s"
+    },
+    "score_fiabilite": 0.8,
+    "score_fiabilite_motif": "arxiv.org — préprint, actes de conférence ou institution publique",
+    "domaine_source": "arxiv.org",
+    "domaine_opaque": false,
+    "statut": "en_attente",
+    "created_at": "2026-09-30T13:13:22.046Z"
+  },
+  {
+    "id": "7910750f-6139-4ea5-9a05-2bee27d7a043",
+    "source_id": "arxiv-cs-ai",
+    "cible_type": "nouvelle_categorie",
+    "cible_id": null,
+    "contenu_propose": {
+      "titre": "Neurosymbolic Routing for Reliable Reasoning on Resource-Constrained Edge Devices",
+      "link": "https://arxiv.org/abs/2609.35833",
+      "date": "2026-09-30T04:00:00.000Z",
+      "resume": "arXiv:2609.35833v1 Announce Type: new \nAbstract: Running a language model on edge hardware provides private and low-latency reasoning without a network connection, and yet the small models that fit on such devices are unreliable on the tasks computers are expected to handle well, such as arithmetic, algebra, and formal logic problems. We argue that much of this unreliability is avoidable. Many que"
+    },
+    "score_fiabilite": 0.8,
+    "score_fiabilite_motif": "arxiv.org — préprint, actes de conférence ou institution publique",
+    "domaine_source": "arxiv.org",
+    "domaine_opaque": false,
+    "statut": "en_attente",
+    "created_at": "2026-09-30T13:13:22.046Z"
+  },
+  {
+    "id": "dd0d3182-3c68-4c66-94ba-5c5da86d76c7",
+    "source_id": "arxiv-cs-ai",
+    "cible_type": "nouvelle_categorie",
+    "cible_id": null,
+    "contenu_propose": {
+      "titre": "Is Human-Readable Text Necessary for Effective LLM Fine-Tuning?",
+      "link": "https://arxiv.org/abs/2609.35868",
+      "date": "2026-09-30T04:00:00.000Z",
+      "resume": "arXiv:2609.35868v1 Announce Type: new \nAbstract: Is human readability necessary for effective fine-tuning of large language models? We investigate whether model-conditioned training representations can preserve or improve adaptation utility without requiring a human-readable textual form. We propose Desired-Update-Aligned Synthetic Data (DASA), which uses activation-gradient feedback from a frozen"
+    },
+    "score_fiabilite": 0.8,
+    "score_fiabilite_motif": "arxiv.org — préprint, actes de conférence ou institution publique",
+    "domaine_source": "arxiv.org",
+    "domaine_opaque": false,
+    "statut": "en_attente",
+    "created_at": "2026-09-30T13:13:22.046Z"
+  },
+  {
+    "id": "9d75e3b2-980a-45dc-bd4d-b4e1e58f7eb0",
+    "source_id": "arxiv-cs-ai",
+    "cible_type": "nouvelle_categorie",
+    "cible_id": null,
+    "contenu_propose": {
+      "titre": "The Price of Token Boundaries: Compression Certificates and Prediction",
+      "link": "https://arxiv.org/abs/2609.35869",
+      "date": "2026-09-30T04:00:00.000Z",
+      "resume": "arXiv:2609.35869v1 Announce Type: new \nAbstract: Pre-tokenisation restricts which text fragments can become prediction units, but its compression cost is obscured when tokenisers are compared only under the same boundaries. We measure this cost by bounding the minimum token count from both sides, with and without a regular-expression boundary rule. Nonnegative prices on token occurrences yield a l"
+    },
+    "score_fiabilite": 0.8,
+    "score_fiabilite_motif": "arxiv.org — préprint, actes de conférence ou institution publique",
+    "domaine_source": "arxiv.org",
+    "domaine_opaque": false,
+    "statut": "en_attente",
+    "created_at": "2026-09-30T13:13:22.046Z"
+  },
+  {
+    "id": "16c1bde1-6f19-42d0-bdfd-7ea549cfa54e",
+    "source_id": "arxiv-cs-ai",
+    "cible_type": "nouvelle_categorie",
+    "cible_id": null,
+    "contenu_propose": {
+      "titre": "More Programs or More Rolls? Separating Coverage from Specialization in LLM Harnesses",
+      "link": "https://arxiv.org/abs/2609.35873",
+      "date": "2026-09-30T04:00:00.000Z",
+      "resume": "arXiv:2609.35873v1 Announce Type: new \nAbstract: Automated generation of LLM harnesses promises to improve inference through task specialization. Yet additional answer coverage can arise from repeated execution of the same program, making specialization difficult to identify. We introduce a controlled evaluation that separates answer coverage, repeatable task advantages, and gains from pre-executi"
+    },
+    "score_fiabilite": 0.8,
+    "score_fiabilite_motif": "arxiv.org — préprint, actes de conférence ou institution publique",
+    "domaine_source": "arxiv.org",
+    "domaine_opaque": false,
+    "statut": "en_attente",
+    "created_at": "2026-09-30T13:13:22.046Z"
+  },
+  {
+    "id": "8ec4f2d5-90c9-49cf-a37b-33936c39652f",
+    "source_id": "arxiv-cs-cl",
+    "cible_type": "nouvelle_categorie",
+    "cible_id": null,
+    "contenu_propose": {
+      "titre": "FD-VAD: Semantic Endpoint Detection for Streaming Full-Duplex Speech",
+      "link": "https://arxiv.org/abs/2609.35791",
+      "date": "2026-09-30T04:00:00.000Z",
+      "resume": "arXiv:2609.35791v1 Announce Type: new \nAbstract: Natural turn-taking in full-duplex voice interaction requires determining from partial speech whether a pause reflects hesitation or a completed conversational intent. Acoustic voice activity detection lacks this semantic information, while cascaded ASR-based endpointing introduces transcription dependence and additional processing stages. We formul"
+    },
+    "score_fiabilite": 0.8,
+    "score_fiabilite_motif": "arxiv.org — préprint, actes de conférence ou institution publique",
+    "domaine_source": "arxiv.org",
+    "domaine_opaque": false,
+    "statut": "en_attente",
+    "created_at": "2026-09-30T13:13:22.106Z"
+  },
+  {
+    "id": "da4b39fc-69e4-4204-b448-00fa19dafed2",
+    "source_id": "arxiv-cs-cl",
+    "cible_type": "nouvelle_categorie",
+    "cible_id": null,
+    "contenu_propose": {
+      "titre": "Sieve and Sage: Efficient Distraction Filtering for Reliable RALM Abstention",
+      "link": "https://arxiv.org/abs/2609.35794",
+      "date": "2026-09-30T04:00:00.000Z",
+      "resume": "arXiv:2609.35794v1 Announce Type: new \nAbstract: Just as Socrates recognized the limits of his own knowledge, Retrieval-Augmented Language Models (RALMs) should learn to abstain when the retrieved evidence cannot support a reliable response. Existing approaches largely rely on monolithic LLMs to handle heterogeneous retrieval failures in a single step, resulting in limited abstention performance a"
+    },
+    "score_fiabilite": 0.8,
+    "score_fiabilite_motif": "arxiv.org — préprint, actes de conférence ou institution publique",
+    "domaine_source": "arxiv.org",
+    "domaine_opaque": false,
+    "statut": "en_attente",
+    "created_at": "2026-09-30T13:13:22.106Z"
+  },
+  {
+    "id": "d353509f-909e-42fe-9fd6-e70776688db8",
+    "source_id": "arxiv-cs-cl",
+    "cible_type": "nouvelle_categorie",
+    "cible_id": null,
+    "contenu_propose": {
+      "titre": "Developing an OCR model for Extracting Information from Invoices with Korean Language",
+      "link": "https://arxiv.org/abs/2609.35796",
+      "date": "2026-09-30T04:00:00.000Z",
+      "resume": "arXiv:2609.35796v1 Announce Type: new \nAbstract: Invoices are commercial documents that contain various pieces of information, including the purchased items, time, and total money. Making the extraction of important information crucial. The stored information serves different purposes. Korean language is the native language of about 80 million people, playing an important role in not only South an"
+    },
+    "score_fiabilite": 0.8,
+    "score_fiabilite_motif": "arxiv.org — préprint, actes de conférence ou institution publique",
+    "domaine_source": "arxiv.org",
+    "domaine_opaque": false,
+    "statut": "en_attente",
+    "created_at": "2026-09-30T13:13:22.106Z"
+  },
+  {
+    "id": "92ee94a5-7e2c-4691-898d-48b186aec723",
+    "source_id": "arxiv-cs-cl",
+    "cible_type": "nouvelle_categorie",
+    "cible_id": null,
+    "contenu_propose": {
+      "titre": "Evaluating the Effects of Prompt Perturbation on Bias and Hallucination in Large Language Models",
+      "link": "https://arxiv.org/abs/2609.35804",
+      "date": "2026-09-30T04:00:00.000Z",
+      "resume": "arXiv:2609.35804v1 Announce Type: new \nAbstract: Large language models (LLMs) have shown remarkable capabilities in various natural language processing tasks, leading to their widespread deployment as intelligent assistants in decision-making contexts. However, the increasing complexity of these models raises concerns about their reliability, particularly regarding bias and hallucination. In this "
+    },
+    "score_fiabilite": 0.8,
+    "score_fiabilite_motif": "arxiv.org — préprint, actes de conférence ou institution publique",
+    "domaine_source": "arxiv.org",
+    "domaine_opaque": false,
+    "statut": "en_attente",
+    "created_at": "2026-09-30T13:13:22.106Z"
+  },
+  {
+    "id": "9571e4b8-b81c-4083-b123-8835382a8913",
+    "source_id": "arxiv-cs-cl",
+    "cible_type": "nouvelle_categorie",
+    "cible_id": null,
+    "contenu_propose": {
+      "titre": "Alignment Forecasting: Predicting Misalignment From Training Data",
+      "link": "https://arxiv.org/abs/2609.35805",
+      "date": "2026-09-30T04:00:00.000Z",
+      "resume": "arXiv:2609.35805v1 Announce Type: new \nAbstract: Training a language model on data with a narrow flaw can sometimes make the model broadly misaligned. Inspecting the data at face value often does not settle whether it will emerge, and today it is caught only after training, by auditing the resulting model. To complement post-hoc audits, we introduce Alignment Forecasting: the task of predicting al"
+    },
+    "score_fiabilite": 0.8,
+    "score_fiabilite_motif": "arxiv.org — préprint, actes de conférence ou institution publique",
+    "domaine_source": "arxiv.org",
+    "domaine_opaque": false,
+    "statut": "en_attente",
+    "created_at": "2026-09-30T13:13:22.106Z"
+  },
+  {
+    "id": "37fc78d0-cf5d-4a3c-9483-8ae3dd404f3c",
+    "source_id": "anthropic-news",
+    "cible_type": "nouvelle_categorie",
+    "cible_id": null,
+    "contenu_propose": {
+      "titre": "Claude en panne ce 29 septembre : des centaines de signalements et plusieurs services touchés - Les Numériques",
+      "link": "https://news.google.com/rss/articles/CBMi8gFBVV95cUxQcDFyWjFUbEJxeXpHNmM5Z3NhMXZ1dElKM1c1VThqSm9lMDNBZlhKbUxmYlVtdEhyOXlYT0Vpa2ZYYXEtM0VNTVdBaW9hejdaam9JN1RRRENYaHFIWUFMdDhzeUVDaHNZbUFuaVVsaUZiYlcxajUwSFdXRnN2blpud05OZHg2Si1RWmFmS200OGJBOE1OUElJMmc0bjQtVG9RSFFxSmRQVGg4NnVJUkxFQTJMVWdneXAzakczN3h1WkZIOVVuNXoxajJDdU9vS1pHVm1kZEJWM0lkaDVYNVVOWGdhQmM4QVc4WEJxbXh2UHhoQQ?oc=5",
+      "date": "2026-09-30T07:53:00.000Z",
+      "resume": "Claude en panne ce 29 septembre : des centaines de signalements et plusieurs services touchés  Les Numériques"
+    },
+    "score_fiabilite": 0.15,
+    "score_fiabilite_motif": "news.google.com est un redirecteur : l'url ne porte pas le domaine de l'éditeur réel, la fiabilité ne peut pas être établie sans ouvrir le lien",
+    "domaine_source": "news.google.com",
+    "domaine_opaque": true,
+    "statut": "en_attente",
+    "created_at": "2026-09-30T13:13:22.673Z"
+  },
+  {
+    "id": "74e278ce-53c1-4126-a005-42417f327954",
+    "source_id": "anthropic-news",
+    "cible_type": "nouvelle_categorie",
+    "cible_id": null,
+    "contenu_propose": {
+      "titre": "Claude est en panne, les signalements explosent : voici ce que l’on sait - Numerama",
+      "link": "https://news.google.com/rss/articles/CBMiswFBVV95cUxPaGdHejdWcjBRSXpMaVdmTTh3LXVJTzJJX0VLRmVpWjAzOW9XamRFN18tQnBrLXNkMnBJbmxaWWVIVTN4ZlFSY0JSODlDSDNSVXY2LVptaVd6ckNNQ2diN3lNRmd6YXJkeVhFWVdOTERySjJUOGZYa28wMXBqd1I3LWFiQUdMdkkyTGZ5SzZ1UlVpb29sd2hieW9pam9tdVl3X083OFl3QnpfbDFwVFJQaXBRYw?oc=5",
+      "date": "2026-09-29T14:28:13.000Z",
+      "resume": "Claude est en panne, les signalements explosent : voici ce que l’on sait  Numerama"
+    },
+    "score_fiabilite": 0.15,
+    "score_fiabilite_motif": "news.google.com est un redirecteur : l'url ne porte pas le domaine de l'éditeur réel, la fiabilité ne peut pas être établie sans ouvrir le lien",
+    "domaine_source": "news.google.com",
+    "domaine_opaque": true,
+    "statut": "en_attente",
+    "created_at": "2026-09-30T13:13:22.673Z"
+  },
+  {
+    "id": "9b4bcae6-59cf-4121-896f-c7db2cc919f1",
+    "source_id": "anthropic-news",
+    "cible_type": "nouvelle_categorie",
+    "cible_id": null,
+    "contenu_propose": {
+      "titre": "Claude est en panne : Anthropic confirme un incident qui touche une large partie de ses services - Clubic",
+      "link": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxOUGtuUXJwZmxvQXU3dlBuMW92R09Vajg5REg3STQyOGZ0Y2NzYi1LRTlRLUJ2TVBlWjNLcUY0Qm45T0JibVZGWGdSanFQTF9QNEV5QmZZc3hKXzIxaDlXX2lTeEcxbGFBUkZRUDl2VGcyQXh5QnpScnp4Vy1OTGlwczQ5S3BIM29HMlhTTGxJbm9zU0VBdFMyNHp4MUV3TElrangtNEJscW1Vb2hkcXk4Y3UxdndTb29icHlvSjc0UnlTMXR6WEZMZW9IYlY0ZmxfOWx5S0tB?oc=5",
+      "date": "2026-09-29T14:45:00.000Z",
+      "resume": "Claude est en panne : Anthropic confirme un incident qui touche une large partie de ses services  Clubic"
+    },
+    "score_fiabilite": 0.15,
+    "score_fiabilite_motif": "news.google.com est un redirecteur : l'url ne porte pas le domaine de l'éditeur réel, la fiabilité ne peut pas être établie sans ouvrir le lien",
+    "domaine_source": "news.google.com",
+    "domaine_opaque": true,
+    "statut": "en_attente",
+    "created_at": "2026-09-30T13:13:22.673Z"
+  },
+  {
+    "id": "2448b59a-7328-4ddb-8c68-e88299d8692b",
+    "source_id": "anthropic-news",
+    "cible_type": "nouvelle_categorie",
+    "cible_id": null,
+    "contenu_propose": {
+      "titre": "Claude Sonnet 5.5 est là : presque aussi puissant qu'Opus 5.5, pour moitié moins cher - Les Numériques",
+      "link": "https://news.google.com/rss/articles/CBMi5gFBVV95cUxQSWVoQmtFNnBNeUhHbDJoN0Z5U0I1LWEzdjNFS2ZjWjF6cmlDanVCa2wwOEFqNkVNUWdZTXB1UE01V3pfUDJib0VDb3VtMkQtakZqeDJQZ3R5enNxOHZOSHQxWk9QNTFQTXh5UElSZW9fNGtzSGMybVF0RVo2TVhCUHRkRlNlMVpvVWYtdlRDT1UtOWxocDE3WFhuMjFxeFVHeHBwTnU3RkxueHhVYUZJM01UTE1LelFtbldNWTJqRXpremxqcGNyZ1ZQMnE3WlkzZE9CY3BYZFdxWjRRN1RKTVZSSVVudw?oc=5",
+      "date": "2026-09-29T06:14:00.000Z",
+      "resume": "Claude Sonnet 5.5 est là : presque aussi puissant qu'Opus 5.5, pour moitié moins cher  Les Numériques"
+    },
+    "score_fiabilite": 0.15,
+    "score_fiabilite_motif": "news.google.com est un redirecteur : l'url ne porte pas le domaine de l'éditeur réel, la fiabilité ne peut pas être établie sans ouvrir le lien",
+    "domaine_source": "news.google.com",
+    "domaine_opaque": true,
+    "statut": "en_attente",
+    "created_at": "2026-09-30T13:13:22.673Z"
+  },
+  {
+    "id": "abccbc96-a110-415f-852b-089b6bc4c8c0",
+    "source_id": "openai-news",
+    "cible_type": "nouvelle_categorie",
+    "cible_id": null,
+    "contenu_propose": {
+      "titre": "Introducing GPT-6.1 Sol",
+      "link": "https://openai.com/index/introducing-gpt-6-1-sol",
+      "date": "2026-09-29T10:00:00.000Z",
+      "resume": "Meet GPT-6.1 Sol: near-Astra intelligence for coding, computer use, and professional work at one-fifth of Astra’s standard API input and output token prices."
+    },
+    "score_fiabilite": 0.6,
+    "score_fiabilite_motif": "openai.com — éditeur ou laboratoire s'exprimant sur son propre produit",
+    "domaine_source": "openai.com",
+    "domaine_opaque": false,
+    "statut": "en_attente",
+    "created_at": "2026-09-30T13:13:22.873Z"
+  },
+  {
+    "id": "662496f7-2dcd-4f48-b7bf-de135f1622ea",
+    "source_id": "openai-news",
+    "cible_type": "nouvelle_categorie",
+    "cible_id": null,
+    "contenu_propose": {
+      "titre": "DevDay 2026 Recap",
+      "link": "https://openai.com/index/devday-2026-recap",
+      "date": "2026-09-29T10:00:00.000Z",
+      "resume": "Explore more than 20 announcements from OpenAI DevDay 2026, including GPT-6 Astra, ChatGPT, Codex, APIs, security, and new tools for builders."
+    },
+    "score_fiabilite": 0.6,
+    "score_fiabilite_motif": "openai.com — éditeur ou laboratoire s'exprimant sur son propre produit",
+    "domaine_source": "openai.com",
+    "domaine_opaque": false,
+    "statut": "en_attente",
+    "created_at": "2026-09-30T13:13:22.873Z"
+  },
+  {
+    "id": "75a74756-bd50-4226-b019-3801813f4732",
+    "source_id": "openai-news",
+    "cible_type": "nouvelle_categorie",
+    "cible_id": null,
+    "contenu_propose": {
+      "titre": "Introducing dots",
+      "link": "https://openai.com/index/introducing-dots",
+      "date": "2026-09-29T00:00:00.000Z",
+      "resume": "Dots by OpenAI are proactive assistants that can keep working across complex projects and everyday tasks. Learn how dots help you stay in control while work moves forward."
+    },
+    "score_fiabilite": 0.6,
+    "score_fiabilite_motif": "openai.com — éditeur ou laboratoire s'exprimant sur son propre produit",
+    "domaine_source": "openai.com",
+    "domaine_opaque": false,
+    "statut": "en_attente",
+    "created_at": "2026-09-30T13:13:22.873Z"
+  },
+  {
+    "id": "0d9b1556-96cf-490d-88b7-2884fc9af763",
+    "source_id": "nature-news",
+    "cible_type": "nouvelle_categorie",
+    "cible_id": null,
+    "contenu_propose": {
+      "titre": "The super El Niño is cooking coral reefs — can lullabies and probiotics save them?",
+      "link": "https://www.nature.com/articles/d41586-026-02965-9",
+      "date": "2026-09-30T00:00:00.000Z",
+      "resume": ""
+    },
+    "score_fiabilite": 0.9,
+    "score_fiabilite_motif": "nature.com — édition scientifique à comité de lecture",
+    "domaine_source": "nature.com",
+    "domaine_opaque": false,
+    "statut": "en_attente",
+    "created_at": "2026-09-30T13:13:23.003Z"
+  },
+  {
+    "id": "89f612bf-1bd9-4924-9dda-a816952c79b9",
+    "source_id": "nature-news",
+    "cible_type": "nouvelle_categorie",
+    "cible_id": null,
+    "contenu_propose": {
+      "titre": "Tuberculosis treatment has advanced — now we need to stop drug resistance dragging us backwards",
+      "link": "https://www.nature.com/articles/d41586-026-02963-x",
+      "date": "2026-09-30T00:00:00.000Z",
+      "resume": ""
+    },
+    "score_fiabilite": 0.9,
+    "score_fiabilite_motif": "nature.com — édition scientifique à comité de lecture",
+    "domaine_source": "nature.com",
+    "domaine_opaque": false,
+    "statut": "en_attente",
+    "created_at": "2026-09-30T13:13:23.003Z"
+  },
+  {
+    "id": "bbcda171-113c-4729-ac43-59b8ed62cd0d",
+    "source_id": "nature-news",
+    "cible_type": "nouvelle_categorie",
+    "cible_id": null,
+    "contenu_propose": {
+      "titre": "Beware sham scientific societies: the research community must be more vigilant",
+      "link": "https://www.nature.com/articles/d41586-026-03047-6",
+      "date": "2026-09-30T00:00:00.000Z",
+      "resume": ""
+    },
+    "score_fiabilite": 0.9,
+    "score_fiabilite_motif": "nature.com — édition scientifique à comité de lecture",
+    "domaine_source": "nature.com",
+    "domaine_opaque": false,
+    "statut": "en_attente",
+    "created_at": "2026-09-30T13:13:23.003Z"
+  },
+  {
+    "id": "c5912fe5-6af0-4291-a532-1c406108d280",
+    "source_id": "nature-news",
+    "cible_type": "nouvelle_categorie",
+    "cible_id": null,
+    "contenu_propose": {
+      "titre": "The buck stops with me",
+      "link": "https://www.nature.com/articles/d41586-026-02863-0",
+      "date": "2026-09-30T00:00:00.000Z",
+      "resume": ""
+    },
+    "score_fiabilite": 0.9,
+    "score_fiabilite_motif": "nature.com — édition scientifique à comité de lecture",
+    "domaine_source": "nature.com",
+    "domaine_opaque": false,
+    "statut": "en_attente",
+    "created_at": "2026-09-30T13:13:23.003Z"
+  },
+  {
+    "id": "b954abc1-d768-47da-bf0c-a075f538d230",
+    "source_id": "nature-news",
+    "cible_type": "nouvelle_categorie",
+    "cible_id": null,
+    "contenu_propose": {
+      "titre": "I turn up late to meetings to dodge small talk. Am I wrong?",
+      "link": "https://www.nature.com/articles/d41586-026-02201-4",
+      "date": "2026-09-30T00:00:00.000Z",
+      "resume": ""
+    },
+    "score_fiabilite": 0.9,
+    "score_fiabilite_motif": "nature.com — édition scientifique à comité de lecture",
+    "domaine_source": "nature.com",
+    "domaine_opaque": false,
+    "statut": "en_attente",
+    "created_at": "2026-09-30T13:13:23.003Z"
+  },
+  {
+    "id": "d9dbbcb6-f0a6-4353-b964-6d563b25ede8",
+    "source_id": "imf-news",
+    "cible_type": "nouvelle_categorie",
+    "cible_id": null,
+    "contenu_propose": {
+      "titre": "Financements du FMI : le verdict attendu demain pour les 3e et 4e revues des FEC et FRD - Madagascar-Tribune.com",
+      "link": "https://news.google.com/rss/articles/CBMiugFBVV95cUxNYnRXbEFzOG5LbGFQdFJ1Ny1kWU9DUTdNSFU1MmtqWXRtR1U5aFVWRkxWSmFTYVdUeXVkVmNfUzFtUjN0Q2RvV21kUV9zbjJ3Z0VzLUcwVFZ6US1TUnNFZEtWbEZzalBKVjAxWXdxZW55M1d2NEJVdlc3dGFBa3N4NkZwaU1xelJrSUE4SlczSmxiWFRaelZQalRMU1Y3N2xRem9WTEtEMGpLVHVRQk5fVW9Nb1ZVTjZNdUE?oc=5",
+      "date": "2026-09-30T11:48:45.000Z",
+      "resume": "Financements du FMI : le verdict attendu demain pour les 3e et 4e revues des FEC et FRD  Madagascar-Tribune.com"
+    },
+    "score_fiabilite": 0.15,
+    "score_fiabilite_motif": "news.google.com est un redirecteur : l'url ne porte pas le domaine de l'éditeur réel, la fiabilité ne peut pas être établie sans ouvrir le lien",
+    "domaine_source": "news.google.com",
+    "domaine_opaque": true,
+    "statut": "en_attente",
+    "created_at": "2026-09-30T13:13:23.497Z"
+  },
+  {
+    "id": "197890fe-b358-4771-9c10-21624f1b3300",
+    "source_id": "imf-news",
+    "cible_type": "nouvelle_categorie",
+    "cible_id": null,
+    "contenu_propose": {
+      "titre": "Économie algérienne : Brahim Guendouzi décrypte les prévisions du FMI - tsa-algerie.com",
+      "link": "https://news.google.com/rss/articles/CBMinAFBVV95cUxNcHJhT1FDalhMLVk0Ty1nZ0pVbzRnOXFubW5ERngwWFhrR05oNXRFVXdobHlpNGxfbGpTeHpSVEdiNkwyUjUtSVJXVkJwTjY2cWJDVW5XbTB1MHlUWWlBbmg4cWlodVZVd1RvVGRKcGtPQU9jRUUyRzVsVFhIVUZkMkt1cUhxQ3RQUm9HekliV240X3pkYlNWc2tNbGY?oc=5",
+      "date": "2026-09-27T07:30:10.000Z",
+      "resume": "Économie algérienne : Brahim Guendouzi décrypte les prévisions du FMI  tsa-algerie.com"
+    },
+    "score_fiabilite": 0.15,
+    "score_fiabilite_motif": "news.google.com est un redirecteur : l'url ne porte pas le domaine de l'éditeur réel, la fiabilité ne peut pas être établie sans ouvrir le lien",
+    "domaine_source": "news.google.com",
+    "domaine_opaque": true,
+    "statut": "en_attente",
+    "created_at": "2026-09-30T13:13:23.497Z"
+  },
+  {
+    "id": "311ca1a3-b179-49c2-a951-c837a9e590c6",
+    "source_id": "oecd-news",
+    "cible_type": "nouvelle_categorie",
+    "cible_id": null,
+    "contenu_propose": {
+      "titre": "L’économie mondiale : entre chocs et innovation : les perspectives de l’OCDE pour 2026-2027 - Montenapo Daily",
+      "link": "https://news.google.com/rss/articles/CBMixgFBVV95cUxNWVRIejctdWtpNVJTMGNrTFNfNjNWT3NfZnRLSzM4TWRVT25mRTNTMHUtZzlhMGdQMXVpN1pjY2E3Ry16bVRpRTNUVS1OUVgtOFkyNElNX3VPYTUwa0F6bDU0eWdaMVRRLXR1bTUtV0luSnlmcWgzZVNFTURjNHJWVlNiUy04WmdlV016aGlOeW1sRXpuRVRJWUF6elJDalY5UkNtZVRFVjlBeWQ0YW5XWElWYWJMbEFYLUN4bnprUFNjX1VseFE?oc=5",
+      "date": "2026-09-29T09:33:30.000Z",
+      "resume": "L’économie mondiale : entre chocs et innovation : les perspectives de l’OCDE pour 2026-2027  Montenapo Daily"
+    },
+    "score_fiabilite": 0.15,
+    "score_fiabilite_motif": "news.google.com est un redirecteur : l'url ne porte pas le domaine de l'éditeur réel, la fiabilité ne peut pas être établie sans ouvrir le lien",
+    "domaine_source": "news.google.com",
+    "domaine_opaque": true,
+    "statut": "en_attente",
+    "created_at": "2026-09-30T13:13:23.932Z"
+  },
+  {
+    "id": "7eb54bbf-ec99-4eca-9de7-71ad1e7c9942",
+    "source_id": "bce-communiques",
+    "cible_type": "nouvelle_categorie",
+    "cible_id": null,
+    "contenu_propose": {
+      "titre": " Frank Elderson: Supervisory risk appetite, efficiency and effectiveness",
+      "link": "https://www.ecb.europa.eu//press/key/date/2026/html/ecb.sp260930~d495288355.en.html",
+      "date": "2026-09-30T02:20:00.000Z",
+      "resume": ""
+    },
+    "score_fiabilite": 0.8,
+    "score_fiabilite_motif": "ecb.europa.eu — préprint, actes de conférence ou institution publique",
+    "domaine_source": "ecb.europa.eu",
+    "domaine_opaque": false,
+    "statut": "en_attente",
+    "created_at": "2026-09-30T13:13:24.827Z"
+  },
+  {
+    "id": "58f0753b-90b0-4abb-94e0-3be9e56f3ee4",
+    "source_id": "commission-europeenne-presse",
+    "cible_type": "nouvelle_categorie",
+    "cible_id": null,
+    "contenu_propose": {
+      "titre": "President von der Leyen attends UN General Assembly underscoring the EU's commitment to multilateralism",
+      "link": "https://ec.europa.eu/commission/presscorner/detail/en/ac_26_2026",
+      "date": "2026-09-30T12:50:13.000Z",
+      "resume": "European Commission News Brussels, 30 Sep 2026 \r\nPresident Ursula von der Leyen was in New York last week to participate in the 81st UN General Assembly. Throughout the week, the President engaged with world ..."
+    },
+    "score_fiabilite": 0.8,
+    "score_fiabilite_motif": "ec.europa.eu — préprint, actes de conférence ou institution publique",
+    "domaine_source": "ec.europa.eu",
+    "domaine_opaque": false,
+    "statut": "en_attente",
+    "created_at": "2026-09-30T13:13:26.158Z"
+  },
+  {
+    "id": "f8cfe9a4-f1bb-4dae-94cb-0471a304b3a7",
+    "source_id": "commission-europeenne-presse",
+    "cible_type": "nouvelle_categorie",
+    "cible_id": null,
+    "contenu_propose": {
+      "titre": "Remarks by Commissioner Brunner at the press conference on the European Union Critical Communication System",
+      "link": "https://ec.europa.eu/commission/presscorner/detail/en/speech_26_2025",
+      "date": "2026-09-30T09:51:23.000Z",
+      "resume": "European Commission Speech Brussels, 30 Sep 2026 Thank you, Henna. Today, we deliver on another proposal that makes our Union stronger. Step by step, we are delivering on our internal security strategy, Protec..."
+    },
+    "score_fiabilite": 0.8,
+    "score_fiabilite_motif": "ec.europa.eu — préprint, actes de conférence ou institution publique",
+    "domaine_source": "ec.europa.eu",
+    "domaine_opaque": false,
+    "statut": "en_attente",
+    "created_at": "2026-09-30T13:13:26.158Z"
+  },
+  {
+    "id": "3c73dbe7-5ba0-453e-8c2a-1c276e1a5d79",
+    "source_id": "commission-europeenne-presse",
+    "cible_type": "nouvelle_categorie",
+    "cible_id": null,
+    "contenu_propose": {
+      "titre": "Remarks by Executive Vice-President Virkkunen and Commissioner Brunner on the EU Critical Communication System",
+      "link": "https://ec.europa.eu/commission/presscorner/detail/en/speech_26_2024",
+      "date": "2026-09-30T09:44:04.000Z",
+      "resume": "European Commission Speech Brussels, 30 Sep 2026 Executive Vice-President Virkkunen:\r\nGood morning, everyone, and welcome to today's read-out of the College meeting.\r\nToday, we adopted two proposals linked to th..."
+    },
+    "score_fiabilite": 0.8,
+    "score_fiabilite_motif": "ec.europa.eu — préprint, actes de conférence ou institution publique",
+    "domaine_source": "ec.europa.eu",
+    "domaine_opaque": false,
+    "statut": "en_attente",
+    "created_at": "2026-09-30T13:13:26.158Z"
+  },
+  {
+    "id": "ee5ddd42-25ba-4d09-885f-7adb6ad90efe",
+    "source_id": "commission-europeenne-presse",
+    "cible_type": "nouvelle_categorie",
+    "cible_id": null,
+    "contenu_propose": {
+      "titre": "Nouvelles quotidiennes 30 / 09 / 2026",
+      "link": "https://ec.europa.eu/commission/presscorner/detail/fr/mex_26_2021",
+      "date": "2026-09-30T09:06:33.000Z",
+      "resume": "European Commission Actualité quotidienne Brussels, 30 Sep 2026 Le Centre européen pour la résilience démocratique lance une coopération avec les parties prenantesLe Centre européen pour la résilience démocratique a lancé la..."
+    },
+    "score_fiabilite": 0.8,
+    "score_fiabilite_motif": "ec.europa.eu — préprint, actes de conférence ou institution publique",
+    "domaine_source": "ec.europa.eu",
+    "domaine_opaque": false,
+    "statut": "en_attente",
+    "created_at": "2026-09-30T13:13:26.158Z"
+  },
+  {
+    "id": "54bd3820-c32c-4bcc-8bc5-6a56872995d8",
+    "source_id": "commission-europeenne-presse",
+    "cible_type": "nouvelle_categorie",
+    "cible_id": null,
+    "contenu_propose": {
+      "titre": "Trois employés de l'UE sur quatre sont confrontés à des cybermenaces au travail, selon un nouvel Eurobaromètre",
+      "link": "https://ec.europa.eu/commission/presscorner/detail/fr/ip_26_2020",
+      "date": "2026-09-30T08:48:53.000Z",
+      "resume": "European Commission Communiqué de presse Brussels, 30 Sep 2026 Trois employés sur quatre dans l'Union européenne ont été confrontés à des courriels, des messages ou des liens suspects au travail, selon une nouvelle enquête Eurobaromètre publiée aujourd'hui par la Commission européenne. Les résultats ont été publiés alors que le mois européen de la cybersécurité commence dans les 27 États membres."
+    },
+    "score_fiabilite": 0.8,
+    "score_fiabilite_motif": "ec.europa.eu — préprint, actes de conférence ou institution publique",
+    "domaine_source": "ec.europa.eu",
+    "domaine_opaque": false,
+    "statut": "en_attente",
+    "created_at": "2026-09-30T13:13:26.158Z"
+  },
+  {
+    "id": "bf3f6b61-dae9-4b8a-9427-a7deba3d8e9e",
+    "source_id": "bri-discours-banques-centrales",
+    "cible_type": "nouvelle_categorie",
+    "cible_id": null,
+    "contenu_propose": {
+      "titre": "Tending the public garden - accountable for today, stewarding for tomorrow",
+      "link": "https://www.bis.org/speeches/20260928-tending-public-garden-accountable-today-stewarding-tomorrow",
+      "date": "2026-09-30T00:00:00.000Z",
+      "resume": "Remarks by Mr Colm Kincaid, Deputy Governor of the Bank of Ireland, to the DPER (Department of Public Expenditure and Reform) Management Conference, Dublin, 10 September 2026."
+    },
+    "score_fiabilite": 0.4,
+    "score_fiabilite_motif": "bis.org — domaine absent de la table : score par défaut prudent, sous le seuil de source primaire",
+    "domaine_source": "bis.org",
+    "domaine_opaque": false,
+    "statut": "en_attente",
+    "created_at": "2026-09-30T13:13:27.299Z"
+  },
+  {
+    "id": "31592459-0948-4e3d-8605-432b94c22666",
+    "source_id": "bri-discours-banques-centrales",
+    "cible_type": "nouvelle_categorie",
+    "cible_id": null,
+    "contenu_propose": {
+      "titre": "Statement - base rate of the National Bank of Kazakhstan",
+      "link": "https://www.bis.org/speeches/20260930-statement-base-rate-national-bank-kazakhstan",
+      "date": "2026-09-30T00:00:00.000Z",
+      "resume": "Statement by Mr Timur M Suleimenov, Governor of the National Bank of Kazakhstan, on the base rate of the National Bank of Kazakhstan, Astana, 24 July 2026."
+    },
+    "score_fiabilite": 0.4,
+    "score_fiabilite_motif": "bis.org — domaine absent de la table : score par défaut prudent, sous le seuil de source primaire",
+    "domaine_source": "bis.org",
+    "domaine_opaque": false,
+    "statut": "en_attente",
+    "created_at": "2026-09-30T13:13:27.299Z"
+  },
+  {
+    "id": "a5990db7-8d1a-419c-9948-0a7664a59514",
+    "source_id": "bri-discours-banques-centrales",
+    "cible_type": "nouvelle_categorie",
+    "cible_id": null,
+    "contenu_propose": {
+      "titre": "Keynote speech - Hong Kong Green Finance Association (HKGFA)-GBA Green Finance Alliance Annual Forum (GFA) Annual Forum",
+      "link": "https://www.bis.org/speeches/20260930-keynote-speech-hong-kong-green-finance-association-hkgfa-gba-green-finance-alliance-annual-forum-gfa-annual-forum",
+      "date": "2026-09-30T00:00:00.000Z",
+      "resume": "Keynote speech by Mr Arthur Yuen, Acting Chief Executive of the Hong Kong Monetary Authority, at the Hong Kong Green Finance Association (HKGFA)-GBA Green Finance Alliance Annual Forum (GFA) Annual Forum, Hong Kong, 7 September 2026."
+    },
+    "score_fiabilite": 0.4,
+    "score_fiabilite_motif": "bis.org — domaine absent de la table : score par défaut prudent, sous le seuil de source primaire",
+    "domaine_source": "bis.org",
+    "domaine_opaque": false,
+    "statut": "en_attente",
+    "created_at": "2026-09-30T13:13:27.299Z"
+  },
+  {
+    "id": "b89da9fd-2961-4f58-b43a-0a2f00094ab5",
+    "source_id": "bri-discours-banques-centrales",
+    "cible_type": "nouvelle_categorie",
+    "cible_id": null,
+    "contenu_propose": {
+      "titre": "The Indian economy in an ever more volatile and complex world",
+      "link": "https://www.bis.org/speeches/20260930-indian-economy-ever-more-volatile-and-complex-world",
+      "date": "2026-09-30T00:00:00.000Z",
+      "resume": "Special address by Dr Poonam Gupta, Deputy Governor of the Reserve Bank of India, at the 13th SBI (State Bank of India) Banking and Economics Conclave, Mumbai, 23 September 2026."
+    },
+    "score_fiabilite": 0.4,
+    "score_fiabilite_motif": "bis.org — domaine absent de la table : score par défaut prudent, sous le seuil de source primaire",
+    "domaine_source": "bis.org",
+    "domaine_opaque": false,
+    "statut": "en_attente",
+    "created_at": "2026-09-30T13:13:27.299Z"
+  },
+  {
+    "id": "a90fd6a9-e931-45ed-9569-3cd4fbd1141c",
+    "source_id": "bri-discours-banques-centrales",
+    "cible_type": "nouvelle_categorie",
+    "cible_id": null,
+    "contenu_propose": {
+      "titre": "Digital innovation - hindrance or booster for banks’ business models?",
+      "link": "https://www.bis.org/speeches/20260930-digital-innovation-hindrance-or-booster-banks-business-models",
+      "date": "2026-09-30T00:00:00.000Z",
+      "resume": "Keynote speech by Prof Claudia Buch, Chair of the Supervisory Board of the European Central Bank, at the, annual Foreign Bankers’ Association of the Netherlands conference, Amsterdam, 22 September 2026."
+    },
+    "score_fiabilite": 0.4,
+    "score_fiabilite_motif": "bis.org — domaine absent de la table : score par défaut prudent, sous le seuil de source primaire",
+    "domaine_source": "bis.org",
+    "domaine_opaque": false,
+    "statut": "en_attente",
+    "created_at": "2026-09-30T13:13:27.299Z"
+  },
+  {
+    "id": "abb29176-e822-426c-bb9a-82319df0bd0c",
+    "source_id": "fed-communiques",
+    "cible_type": "nouvelle_categorie",
+    "cible_id": null,
+    "contenu_propose": {
+      "titre": "Federal Reserve Board finalizes changes to enhance the transparency and public accountability of its stress test and reduce volatility in its stress test-related capital requirements",
+      "link": "https://www.federalreserve.gov/newsevents/pressreleases/bcreg20260930a.htm",
+      "date": "2026-09-30T13:00:00.000Z",
+      "resume": "Federal Reserve Board finalizes changes to enhance the transparency and public accountability of its stress test and reduce volatility in its stress test-related capital requirements"
+    },
+    "score_fiabilite": 0.4,
+    "score_fiabilite_motif": "federalreserve.gov — domaine absent de la table : score par défaut prudent, sous le seuil de source primaire",
+    "domaine_source": "federalreserve.gov",
+    "domaine_opaque": false,
+    "statut": "en_attente",
+    "created_at": "2026-09-30T13:13:27.366Z"
+  },
+  {
+    "id": "2aea336f-071b-440c-95c5-26ea12f587e2",
+    "source_id": "fed-communiques",
+    "cible_type": "nouvelle_categorie",
+    "cible_id": null,
+    "contenu_propose": {
+      "titre": "Agencies publish resolution plan feedback letters for 15 banking organizations",
+      "link": "https://www.federalreserve.gov/newsevents/pressreleases/bcreg20260929a.htm",
+      "date": "2026-09-29T20:00:00.000Z",
+      "resume": "Agencies publish resolution plan feedback letters for 15 banking organizations"
+    },
+    "score_fiabilite": 0.4,
+    "score_fiabilite_motif": "federalreserve.gov — domaine absent de la table : score par défaut prudent, sous le seuil de source primaire",
+    "domaine_source": "federalreserve.gov",
+    "domaine_opaque": false,
+    "statut": "en_attente",
+    "created_at": "2026-09-30T13:13:27.366Z"
+  },
+  {
+    "id": "80fbe89f-0fb0-4e17-8b28-74618ec7a4ff",
+    "source_id": "banque-angleterre-actualites",
+    "cible_type": "nouvelle_categorie",
+    "cible_id": null,
+    "contenu_propose": {
+      "titre": "Financial Policy Committee Record – September 2026",
+      "link": "https://www.bankofengland.co.uk/financial-policy-committee-record/2026/september-2026",
+      "date": "2026-09-30T09:30:00.000Z",
+      "resume": "Our Financial Policy Committee (FPC) meets to identify risks to financial stability and agree policy actions aimed at safeguarding the resilience of the UK financial system."
+    },
+    "score_fiabilite": 0.4,
+    "score_fiabilite_motif": "bankofengland.co.uk — domaine absent de la table : score par défaut prudent, sous le seuil de source primaire",
+    "domaine_source": "bankofengland.co.uk",
+    "domaine_opaque": false,
+    "statut": "en_attente",
+    "created_at": "2026-09-30T13:13:27.605Z"
+  },
+  {
+    "id": "c5a82ab9-c668-4caa-b665-7d2d55332c5c",
+    "source_id": "france-strategie",
+    "cible_type": "nouvelle_categorie",
+    "cible_id": null,
+    "contenu_propose": {
+      "titre": "Webconférence | Événements climatiques extrêmes : tirer les leçons de l’été 2026 pour mieux préparer l’avenir",
+      "link": "https://www.strategie-plan.gouv.fr/webconference-evenements-climatiques-extremes-tirer-les-lecons-de-lete-2026-pour-mieux-preparer",
+      "date": "2026-09-30T09:38:27.000Z",
+      "resume": "Webconférence | Événements climatiques extrêmes : tirer les leçons de l’été 2026 pour mieux préparer l’avenir\n\n                    Canicules à répétition, sécheresse exceptionnelle, records d’hectares brûlés, orages violents… : l’été 2026 aura particulièrement marqué les esprits par la fréquence et l’intensité des événements climatiques qui ont touché la France – et leurs conséquences bien réelles"
+    },
+    "score_fiabilite": 0.4,
+    "score_fiabilite_motif": "strategie-plan.gouv.fr — domaine absent de la table : score par défaut prudent, sous le seuil de source primaire",
+    "domaine_source": "strategie-plan.gouv.fr",
+    "domaine_opaque": false,
+    "statut": "en_attente",
+    "created_at": "2026-09-30T13:13:30.365Z"
+  },
+  {
+    "id": "62afa884-b95d-45f4-a5f1-ad475a57f9dc",
+    "source_id": "ft-marches",
+    "cible_type": "nouvelle_categorie",
+    "cible_id": null,
+    "contenu_propose": {
+      "titre": "Bond investors 💔 OATs",
+      "link": "https://www.ft.com/content/e7c044f0-5448-4d90-9b86-9786ffafbc7b",
+      "date": "2026-09-30T12:08:17.000Z",
+      "resume": "Sacré bleu"
+    },
+    "score_fiabilite": 0.4,
+    "score_fiabilite_motif": "ft.com — presse généraliste ou spécialisée",
+    "domaine_source": "ft.com",
+    "domaine_opaque": false,
+    "statut": "en_attente",
+    "created_at": "2026-09-30T13:13:30.741Z"
+  },
+  {
+    "id": "66e34d1c-92f3-44fd-b3ae-036d671ab3cf",
+    "source_id": "ft-marches",
+    "cible_type": "nouvelle_categorie",
+    "cible_id": null,
+    "contenu_propose": {
+      "titre": "Trump’s coal drive plays into Beijing’s hands",
+      "link": "https://www.ft.com/content/d36aa5b9-d770-4800-ba76-70bfbb62f4a7?syn-25a6b1a6=1",
+      "date": "2026-09-30T11:00:06.000Z",
+      "resume": "Agreement on Chinese coal purchases reflects the administration’s misplaced focus"
+    },
+    "score_fiabilite": 0.4,
+    "score_fiabilite_motif": "ft.com — presse généraliste ou spécialisée",
+    "domaine_source": "ft.com",
+    "domaine_opaque": false,
+    "statut": "en_attente",
+    "created_at": "2026-09-30T13:13:30.741Z"
+  },
+  {
+    "id": "4649cd8a-7cec-480a-a18a-91ee74d40a2b",
+    "source_id": "ft-marches",
+    "cible_type": "nouvelle_categorie",
+    "cible_id": null,
+    "contenu_propose": {
+      "titre": "Bond markets rebound after sell-off",
+      "link": "https://www.ft.com/content/cd22d20a-3b65-4534-ac04-f5008810e10a?syn-25a6b1a6=1",
+      "date": "2026-09-30T09:54:18.000Z",
+      "resume": "US long-term borrowing costs hit highest level in almost 25 years on Tuesday"
+    },
+    "score_fiabilite": 0.4,
+    "score_fiabilite_motif": "ft.com — presse généraliste ou spécialisée",
+    "domaine_source": "ft.com",
+    "domaine_opaque": false,
+    "statut": "en_attente",
+    "created_at": "2026-09-30T13:13:30.741Z"
+  },
+  {
+    "id": "0dd59d8e-1fcb-4346-8fa2-9461782138dc",
+    "source_id": "ft-marches",
+    "cible_type": "nouvelle_categorie",
+    "cible_id": null,
+    "contenu_propose": {
+      "titre": "Vanguard warns France is ‘degrading credit’ as borrowing costs surge",
+      "link": "https://www.ft.com/content/7820a84f-338e-4b91-a9b6-241a9bf81539?syn-25a6b1a6=1",
+      "date": "2026-09-30T08:42:21.000Z",
+      "resume": "Iran war has exacerbated fiscal pressures on Paris as budget battle looms"
+    },
+    "score_fiabilite": 0.4,
+    "score_fiabilite_motif": "ft.com — presse généraliste ou spécialisée",
+    "domaine_source": "ft.com",
+    "domaine_opaque": false,
+    "statut": "en_attente",
+    "created_at": "2026-09-30T13:13:30.741Z"
+  },
+  {
+    "id": "511d314a-ebc1-4e89-91b5-d04a467bab0e",
+    "source_id": "wsj-marches",
+    "cible_type": "nouvelle_categorie",
+    "cible_id": null,
+    "contenu_propose": {
+      "titre": "Stock Market Today: Stronger-Than-Expected GDP Reading Boosts Stock Futures",
+      "link": "https://www.wsj.com/livecoverage/stock-market-today-dow-sp-500-nasdaq-09-30-2026?mod=rss_markets_main",
+      "date": "2026-09-30T08:25:01.000Z",
+      "resume": "PCE inflation comes in cooler than expected"
+    },
+    "score_fiabilite": 0.4,
+    "score_fiabilite_motif": "wsj.com — presse généraliste ou spécialisée",
+    "domaine_source": "wsj.com",
+    "domaine_opaque": false,
+    "statut": "en_attente",
+    "created_at": "2026-09-30T13:13:30.860Z"
+  },
+  {
+    "id": "b80be1d2-af11-46f0-8ea8-320199389bd1",
+    "source_id": "wsj-marches",
+    "cible_type": "nouvelle_categorie",
+    "cible_id": null,
+    "contenu_propose": {
+      "titre": "Bonds Slammed Your Retirement Fund. Time for a Second Chance?",
+      "link": "https://www.wsj.com/finance/investing/bonds-slammed-your-retirement-fund-time-for-a-second-chance-9d89fb04?mod=rss_markets_main",
+      "date": "2026-09-30T10:31:00.000Z",
+      "resume": "Plus, all eyes on Micron and inflation."
+    },
+    "score_fiabilite": 0.4,
+    "score_fiabilite_motif": "wsj.com — presse généraliste ou spécialisée",
+    "domaine_source": "wsj.com",
+    "domaine_opaque": false,
+    "statut": "en_attente",
+    "created_at": "2026-09-30T13:13:30.860Z"
+  },
+  {
+    "id": "e32ba8ae-4045-4c59-8433-d0c6a22b6290",
+    "source_id": "wsj-marches",
+    "cible_type": "nouvelle_categorie",
+    "cible_id": null,
+    "contenu_propose": {
+      "titre": "China Has the Power to Bail Out the Diesel Market. Will It Use It?",
+      "link": "https://www.wsj.com/business/energy-oil/china-has-the-power-to-bail-out-the-diesel-market-will-it-use-it-5950c34a?mod=rss_markets_main",
+      "date": "2026-09-30T09:30:00.000Z",
+      "resume": "Chinese oil refineries are only using 75% of their capacity at the moment."
+    },
+    "score_fiabilite": 0.4,
+    "score_fiabilite_motif": "wsj.com — presse généraliste ou spécialisée",
+    "domaine_source": "wsj.com",
+    "domaine_opaque": false,
+    "statut": "en_attente",
+    "created_at": "2026-09-30T13:13:30.860Z"
+  },
+  {
+    "id": "0edc9b68-b06c-45c7-adea-7ef512c9f145",
+    "source_id": "wsj-marches",
+    "cible_type": "nouvelle_categorie",
+    "cible_id": null,
+    "contenu_propose": {
+      "titre": "Wall Street’s Hopes for a Blockbuster IPO Season Are Fading",
+      "link": "https://www.wsj.com/finance/stocks/wall-streets-hopes-for-a-blockbuster-ipo-season-are-starting-to-fade-1bb8f8db?mod=rss_markets_main",
+      "date": "2026-09-30T01:00:00.000Z",
+      "resume": "Market choppiness and AI safety fears are spooking investors and throwing into disarray what was expected to be a string of major IPOs this fall."
+    },
+    "score_fiabilite": 0.4,
+    "score_fiabilite_motif": "wsj.com — presse généraliste ou spécialisée",
+    "domaine_source": "wsj.com",
+    "domaine_opaque": false,
+    "statut": "en_attente",
+    "created_at": "2026-09-30T13:13:30.860Z"
+  },
+  {
+    "id": "2a60603d-afeb-440b-ba76-d54fa508a8aa",
+    "source_id": "wsj-marches",
+    "cible_type": "nouvelle_categorie",
+    "cible_id": null,
+    "contenu_propose": {
+      "titre": "Robinhood’s Next Big Bet: AI Bots That Trade While You Sleep",
+      "link": "https://www.wsj.com/finance/investing/robinhoods-next-big-bet-ai-bots-that-trade-while-you-sleep-f9d40f62?mod=rss_markets_main",
+      "date": "2026-09-29T23:15:00.000Z",
+      "resume": "The brokerage’s app made it easy to trade stocks on a smartphone. Now Robinhood sees AI agents in individual investors’ future."
+    },
+    "score_fiabilite": 0.4,
+    "score_fiabilite_motif": "wsj.com — presse généraliste ou spécialisée",
+    "domaine_source": "wsj.com",
+    "domaine_opaque": false,
+    "statut": "en_attente",
+    "created_at": "2026-09-30T13:13:30.860Z"
+  },
+  {
+    "id": "15c1cb3c-8586-4775-be8c-0a3445f918e9",
+    "source_id": "le-monde-economie",
+    "cible_type": "nouvelle_categorie",
+    "cible_id": null,
+    "contenu_propose": {
+      "titre": "Baisser la TVA sur les carburants : la proposition de Marine Le Pen est-elle réaliste ?",
+      "link": "https://www.lemonde.fr/les-decodeurs/article/2026/09/30/baisser-la-tva-sur-les-carburants-la-proposition-de-marine-le-pen-est-elle-realiste_6786069_4355770.html",
+      "date": "2026-09-30T13:00:08.000Z",
+      "resume": "Illégale, chère, non ciblée, anti-écolo… Passage en revue des principales critiques à propos de la promesse phare du Rassemblement national pour faire baisser les prix à la pompe."
+    },
+    "score_fiabilite": 0.4,
+    "score_fiabilite_motif": "lemonde.fr — presse généraliste ou spécialisée",
+    "domaine_source": "lemonde.fr",
+    "domaine_opaque": false,
+    "statut": "en_attente",
+    "created_at": "2026-09-30T13:13:31.152Z"
+  },
+  {
+    "id": "fb0a43d2-38aa-4641-8e58-60eb1e46b19e",
+    "source_id": "le-monde-economie",
+    "cible_type": "nouvelle_categorie",
+    "cible_id": null,
+    "contenu_propose": {
+      "titre": "Bugdet 2027 : Sébastien Lecornu alerte sur les risques d’une crise financière en France avant de présenter un projet de « redressement »",
+      "link": "https://www.lemonde.fr/politique/article/2026/09/30/sebastien-lecornu-alerte-sur-les-risques-d-une-crise-financiere-avant-de-proposer-un-budget-de-redressement_6786052_823448.html",
+      "date": "2026-09-30T11:18:33.000Z",
+      "resume": "Les taux d’intérêt à dix ans auxquels la France refinance sa dette sur les marchés ont dépassé, mardi, le seuil de 4,8 %, pour la première fois depuis 2008."
+    },
+    "score_fiabilite": 0.4,
+    "score_fiabilite_motif": "lemonde.fr — presse généraliste ou spécialisée",
+    "domaine_source": "lemonde.fr",
+    "domaine_opaque": false,
+    "statut": "en_attente",
+    "created_at": "2026-09-30T13:13:31.152Z"
+  },
+  {
+    "id": "331edd61-7c5f-4636-a542-fbc801d92121",
+    "source_id": "le-monde-economie",
+    "cible_type": "nouvelle_categorie",
+    "cible_id": null,
+    "contenu_propose": {
+      "titre": "Pompes à chaleur : le gouvernement lance un leasing pour les ménages modestes",
+      "link": "https://www.lemonde.fr/economie/article/2026/09/30/pompes-a-chaleur-le-gouvernement-lance-un-leasing-pour-les-menages-modestes_6786050_3234.html",
+      "date": "2026-09-30T11:07:28.000Z",
+      "resume": "Disponible à partir du 1ᵉʳ octobre, le dispositif s’adresse aux propriétaires de maisons individuelles appartenant aux catégories de revenus modestes et très modestes, comme un couple avec un enfant habitant en Ile-de-France gagnant jusqu’à 4 750 euros par mois à deux."
+    },
+    "score_fiabilite": 0.4,
+    "score_fiabilite_motif": "lemonde.fr — presse généraliste ou spécialisée",
+    "domaine_source": "lemonde.fr",
+    "domaine_opaque": false,
+    "statut": "en_attente",
+    "created_at": "2026-09-30T13:13:31.152Z"
+  },
+  {
+    "id": "cd35c3fa-43be-4518-954d-b6b957c48d11",
+    "source_id": "le-monde-economie",
+    "cible_type": "nouvelle_categorie",
+    "cible_id": null,
+    "contenu_propose": {
+      "titre": "L’IA émettra six fois plus de CO₂ en 2030 qu’en 2025, selon l’étude d’un collectif d’experts",
+      "link": "https://www.lemonde.fr/pixels/article/2026/09/30/l-ia-emettra-six-fois-plus-de-co-en-2030-qu-en-2025-selon-l-etude-d-un-collectif-d-experts_6786040_4408996.html",
+      "date": "2026-09-30T10:00:07.000Z",
+      "resume": "Les émissions globales de gaz à effet de serre du secteur de l’intelligence artificielle pourraient atteindre un niveau inquiétant à la fin de la décennie, d’après une étude publiée mercredi par le collectif français Green IT. Sans compter les dommages causés aux milieux aquatiques et la pollution aux particules fines."
+    },
+    "score_fiabilite": 0.4,
+    "score_fiabilite_motif": "lemonde.fr — presse généraliste ou spécialisée",
+    "domaine_source": "lemonde.fr",
+    "domaine_opaque": false,
+    "statut": "en_attente",
+    "created_at": "2026-09-30T13:13:31.152Z"
+  },
+  {
+    "id": "0c13b5ee-240e-4713-a254-17d510a7f622",
+    "source_id": "le-monde-economie",
+    "cible_type": "nouvelle_categorie",
+    "cible_id": null,
+    "contenu_propose": {
+      "titre": "Chaussures André : « Quitter le “Titanic” sur un radeau de fortune n’aura pas suffi à sauver les anciennes gloires de l’empire Vivarte »",
+      "link": "https://www.lemonde.fr/economie/article/2026/09/30/chaussures-andre-quitter-le-titanic-sur-un-radeau-de-fortune-n-aura-pas-suffi-a-sauver-les-anciennes-gloires-de-l-empire-vivarte_6786032_3234.html",
+      "date": "2026-09-30T09:00:06.000Z",
+      "resume": "Le tribunal des activités économiques de Paris a prononcé, le 9 septembre, la liquidation judiciaire d’Heritage 1896, la société qui exploitait depuis janvier les reliquats du chausseur, né en 1896 à Nancy, raconte Isabelle Chaperon, chroniqueuse au service Economie du « Monde »."
+    },
+    "score_fiabilite": 0.4,
+    "score_fiabilite_motif": "lemonde.fr — presse généraliste ou spécialisée",
+    "domaine_source": "lemonde.fr",
+    "domaine_opaque": false,
+    "statut": "en_attente",
+    "created_at": "2026-09-30T13:13:31.152Z"
+  },
+  {
+    "id": "d5cc0282-595a-4b13-ba58-f04aa1e26304",
+    "source_id": "la-tribune-actualites",
+    "cible_type": "nouvelle_categorie",
+    "cible_id": null,
+    "contenu_propose": {
+      "titre": "OpenAI reporte son IPO et négocie 30 milliards de dollars en privé",
+      "link": "https://www.latribune.fr/article/banques-finance/industrie-financiere/83340241692508/openai-reporte-son-ipo-et-negocie-30-milliards-de-dollars-en-prive",
+      "date": "2026-09-30T09:48:25.000Z",
+      "resume": "OpenAI négocie au moins 30 milliards de dollars de capitaux privés sur une valorisation pre-money d’environ 1 400 milliards, selon Bloomberg. Le report de son IPO à 2027 au plus tôt maintient le groupe hors du marché coté et laisse Anthropic en première ligne pour une cotation."
+    },
+    "score_fiabilite": 0.4,
+    "score_fiabilite_motif": "latribune.fr — domaine absent de la table : score par défaut prudent, sous le seuil de source primaire",
+    "domaine_source": "latribune.fr",
+    "domaine_opaque": false,
+    "statut": "en_attente",
+    "created_at": "2026-09-30T13:13:31.452Z"
+  },
+  {
+    "id": "d2e6f746-5d9f-4c1c-877f-a7387709e1e8",
+    "source_id": "la-tribune-actualites",
+    "cible_type": "nouvelle_categorie",
+    "cible_id": null,
+    "contenu_propose": {
+      "titre": "Pour gagner sa place sur le marché, l’écosystème spatial allemand poursuit sa structuration",
+      "link": "https://air-cosmos.latribune.fr/article/strategies/30039364494231/pour-gagner-sa-place-sur-le-marche-l-ecosysteme-spatial-allemand-poursuit-sa-structuration",
+      "date": "2026-09-30T10:00:27.000Z",
+      "resume": "Entre ouverture d’usine et rachat d’entreprises, l’écosystème spatial allemand évolue, en phase avec les ambitions du gouvernement de Friedrich Merz de former une base industrielle et technologique à même de se hisser aux plus hauts rangs européens."
+    },
+    "score_fiabilite": 0.4,
+    "score_fiabilite_motif": "air-cosmos.latribune.fr — domaine absent de la table : score par défaut prudent, sous le seuil de source primaire",
+    "domaine_source": "air-cosmos.latribune.fr",
+    "domaine_opaque": false,
+    "statut": "en_attente",
+    "created_at": "2026-09-30T13:13:31.452Z"
+  },
+  {
+    "id": "24f9505a-f56a-497c-bd3c-214847f2eed9",
+    "source_id": "la-tribune-actualites",
+    "cible_type": "nouvelle_categorie",
+    "cible_id": null,
+    "contenu_propose": {
+      "titre": "Inflation à 3 % : le budget 2027 arrive au moment où la demande se contracte",
+      "link": "https://www.latribune.fr/article/economie/finances-publiques/17021134807136/inflation-a-3-le-budget-2027-arrive-au-moment-ou-la-demande-se-contracte",
+      "date": "2026-09-30T08:39:07.000Z",
+      "resume": "L’inflation provisoire a accéléré à 3,0 % sur un an en septembre, portée par l’énergie, tandis que les dépenses des ménages en biens ont reculé de 0,5 % en août. À la veille du projet de budget 2027, le gouvernement doit défendre sa trajectoire de déficit et préparer un programme d’emprunt de 340 milliards d’euros."
+    },
+    "score_fiabilite": 0.4,
+    "score_fiabilite_motif": "latribune.fr — domaine absent de la table : score par défaut prudent, sous le seuil de source primaire",
+    "domaine_source": "latribune.fr",
+    "domaine_opaque": false,
+    "statut": "en_attente",
+    "created_at": "2026-09-30T13:13:31.452Z"
+  },
+  {
+    "id": "24b2d968-76c3-4a97-992d-feb0db7a437a",
+    "source_id": "la-tribune-actualites",
+    "cible_type": "nouvelle_categorie",
+    "cible_id": null,
+    "contenu_propose": {
+      "titre": "Malgré les alertes de cybersécurité, OpenAI lance Dots, son agent IA à tout faire",
+      "link": "https://www.latribune.fr/article/tech/intelligence-artificielle/25475047722306/malgre-les-alertes-de-cybersecurite-openai-lance-dots-son-agent-ia-a-tout-faire",
+      "date": "2026-09-30T08:11:54.000Z",
+      "resume": "OpenAI présente Dots, un agent IA destiné à automatiser des tâches personnelles et professionnelles pour ses abonnés ChatGPT Pro. Le lancement intervient après plusieurs incidents de cybersécurité impliquant ses modèles, qui interrogent la capacité de ces assistants à agir de manière autonome."
+    },
+    "score_fiabilite": 0.4,
+    "score_fiabilite_motif": "latribune.fr — domaine absent de la table : score par défaut prudent, sous le seuil de source primaire",
+    "domaine_source": "latribune.fr",
+    "domaine_opaque": false,
+    "statut": "en_attente",
+    "created_at": "2026-09-30T13:13:31.452Z"
+  },
+  {
+    "id": "92ea91c9-31a9-49cb-947c-ed57e92327d4",
+    "source_id": "la-tribune-actualites",
+    "cible_type": "nouvelle_categorie",
+    "cible_id": null,
+    "contenu_propose": {
+      "titre": "Le Pentagone choisit Boeing pour développer le futur avion de combat de l'US Navy",
+      "link": "https://www.latribune.fr/article/defense-aerospatiale/defense/99806994196364/le-pentagone-choisit-boeing-pour-developper-le-futur-avion-de-combat-de-lus-navy",
+      "date": "2026-09-30T05:48:57.000Z",
+      "resume": "Boeing cumule les programmes militaires les plus prestigieux auprès du Pentagone. Après avoir été sélectionné pour développer l'avion de nouvelle génération de l'armée de l'air américaine (F-47), le constructeur américain a décroché le contrat de plus de 20 milliards de dollars pour concevoir le futur avion de combat de l'US Navy. Il va remplacer la flotte de F/A-18 Super Hornet de la marine améri"
+    },
+    "score_fiabilite": 0.4,
+    "score_fiabilite_motif": "latribune.fr — domaine absent de la table : score par défaut prudent, sous le seuil de source primaire",
+    "domaine_source": "latribune.fr",
+    "domaine_opaque": false,
+    "statut": "en_attente",
+    "created_at": "2026-09-30T13:13:31.452Z"
+  },
+  {
+    "id": "12104335-658b-4d58-8595-327ad909dbf3",
+    "source_id": "rfi-economie",
+    "cible_type": "nouvelle_categorie",
+    "cible_id": null,
+    "contenu_propose": {
+      "titre": "Industrie ferroviaire: pourquoi le marché mondial des trains est en pleine explosion",
+      "link": "https://www.rfi.fr/fr/podcasts/aujourd-hui-l-%C3%A9conomie/20260930-marche-ferroviaire-mondial-croissance-chine-europe",
+      "date": "2026-09-30T09:05:32.000Z",
+      "resume": "Le marché ferroviaire mondial se porte bien. Portés par les investissements publics, les enjeux climatiques et le développement des transports collectifs, les fabricants de trains, de locomotives, de métros et de tramways voient leurs carnets de commandes se remplir. Mais derrière cette croissance se joue aussi une bataille industrielle entre l'Europe et la Chine."
+    },
+    "score_fiabilite": 0.4,
+    "score_fiabilite_motif": "rfi.fr — domaine absent de la table : score par défaut prudent, sous le seuil de source primaire",
+    "domaine_source": "rfi.fr",
+    "domaine_opaque": false,
+    "statut": "en_attente",
+    "created_at": "2026-09-30T13:13:33.626Z"
+  },
+  {
+    "id": "c9dc2e13-82a8-45c0-a6c6-d7bb12bc6e3a",
+    "source_id": "rfi-economie",
+    "cible_type": "nouvelle_categorie",
+    "cible_id": null,
+    "contenu_propose": {
+      "titre": "France: un budget très attendu alors que la dette atteint une part record du PIB",
+      "link": "https://www.rfi.fr/fr/%C3%A9conomie/20260930-france-un-budget-tr%C3%A8s-attendu-alors-que-la-dette-atteint-une-part-record-du-pib",
+      "date": "2026-09-30T04:42:06.000Z",
+      "resume": "La France empruntera un montant record de 340 milliards d'euros sur les marchés en 2027, soit 28 milliards de plus qu'en 2026, a indiqué l'Agence France Trésor mardi 29 septembre, deux jours avant la présentation du budget de l'État pour l'an prochain. Celui-ci sera particulièrement scruté par les investisseurs qui prêtent à la France, alors que sa dette publique a encore grimpé au deuxième trimes"
+    },
+    "score_fiabilite": 0.4,
+    "score_fiabilite_motif": "rfi.fr — domaine absent de la table : score par défaut prudent, sous le seuil de source primaire",
+    "domaine_source": "rfi.fr",
+    "domaine_opaque": false,
+    "statut": "en_attente",
+    "created_at": "2026-09-30T13:13:33.626Z"
+  },
+  {
+    "id": "06aaf278-000a-4458-b12c-4e70ed50a7c9",
+    "source_id": "euronews-business",
+    "cible_type": "nouvelle_categorie",
+    "cible_id": null,
+    "contenu_propose": {
+      "titre": "L'inflation repart à la hausse en Italie : En septembre +4,2 %, un plus haut depuis trois ans",
+      "link": "https://fr.euronews.com/2026/09/30/linflation-repart-a-la-hausse-en-italie-en-septembre-42-un-plus-haut-depuis-trois-ans",
+      "date": "2026-09-30T12:10:33.000Z",
+      "resume": "L'indice des prix à la consommation accélère, porté par l'énergie et les produits frais. Entre mémoire historique et préoccupations quotidiennes, l'Istat constate un net recul de la confiance des ménages et des entreprises."
+    },
+    "score_fiabilite": 0.4,
+    "score_fiabilite_motif": "fr.euronews.com — domaine absent de la table : score par défaut prudent, sous le seuil de source primaire",
+    "domaine_source": "fr.euronews.com",
+    "domaine_opaque": false,
+    "statut": "en_attente",
+    "created_at": "2026-09-30T13:13:33.890Z"
+  },
+  {
+    "id": "439a632e-870d-454e-8414-6874eb387de8",
+    "source_id": "euronews-business",
+    "cible_type": "nouvelle_categorie",
+    "cible_id": null,
+    "contenu_propose": {
+      "titre": "Les constructeurs européens face à la concurrence accrue de l'IA pour les composants clés",
+      "link": "https://fr.euronews.com/2026/09/30/les-constructeurs-europeens-face-a-la-concurrence-accrue-de-lia-pour-les-composants-cles",
+      "date": "2026-09-30T10:40:56.000Z",
+      "resume": "L'industrie automobile européenne dépend trop de quelques pays pour les puces et matières critiques, avertit un rapport, en concurrence avec l'IA et les centres de données pour les mêmes ressources."
+    },
+    "score_fiabilite": 0.4,
+    "score_fiabilite_motif": "fr.euronews.com — domaine absent de la table : score par défaut prudent, sous le seuil de source primaire",
+    "domaine_source": "fr.euronews.com",
+    "domaine_opaque": false,
+    "statut": "en_attente",
+    "created_at": "2026-09-30T13:13:33.890Z"
+  },
+  {
+    "id": "57393da3-dd3e-47d1-a762-527210aacc98",
+    "source_id": "euronews-business",
+    "cible_type": "nouvelle_categorie",
+    "cible_id": null,
+    "contenu_propose": {
+      "titre": "Exclusif: L'Allemagne soustrait une partie de Deutsche Börse à la surveillance de l'UE",
+      "link": "https://fr.euronews.com/2026/09/30/exclusif-lallemagne-soustrait-une-partie-de-deutsche-borse-a-la-surveillance-de-lue",
+      "date": "2026-09-30T06:40:00.000Z",
+      "resume": "L'Union européenne négocie à Bruxelles une réforme pour mieux intégrer ses marchés de capitaux. L'Allemagne a obtenu une exemption pour les plateformes nationales de Deutsche Börse, qui restent hors de la supervision centralisée."
+    },
+    "score_fiabilite": 0.4,
+    "score_fiabilite_motif": "fr.euronews.com — domaine absent de la table : score par défaut prudent, sous le seuil de source primaire",
+    "domaine_source": "fr.euronews.com",
+    "domaine_opaque": false,
+    "statut": "en_attente",
+    "created_at": "2026-09-30T13:13:33.890Z"
+  },
+  {
+    "id": "614294c6-6a3a-4315-abad-5bd1bacc90bd",
+    "source_id": "euronews-business",
+    "cible_type": "nouvelle_categorie",
+    "cible_id": null,
+    "contenu_propose": {
+      "titre": "Carburants au-dessus de deux euros : qui paiera la facture la plus élevée au Portugal ?",
+      "link": "https://fr.euronews.com/2026/09/30/carburants-au-dessus-de-deux-euros-qui-paiera-la-facture-la-plus-elevee-au-portugal",
+      "date": "2026-09-30T06:08:16.000Z",
+      "resume": "De la pêche à l'agriculture, en passant par le transport de marchandises et de passagers, de nombreux secteurs subissent la hausse marquée des prix des carburants au Portugal depuis le début de la guerre au Moyen-Orient."
+    },
+    "score_fiabilite": 0.4,
+    "score_fiabilite_motif": "fr.euronews.com — domaine absent de la table : score par défaut prudent, sous le seuil de source primaire",
+    "domaine_source": "fr.euronews.com",
+    "domaine_opaque": false,
+    "statut": "en_attente",
+    "created_at": "2026-09-30T13:13:33.890Z"
+  },
+  {
+    "id": "253515e9-676f-498c-b4ea-2bca5aaacffa",
+    "source_id": "euronews-business",
+    "cible_type": "nouvelle_categorie",
+    "cible_id": null,
+    "contenu_propose": {
+      "titre": "Stellantis va arrêter quatre usines françaises pendant plusieurs jours faute d'approvisionnements suffisants",
+      "link": "https://fr.euronews.com/2026/09/29/stellantis-va-arreter-quatre-usines-francaises-pendant-plusieurs-jours-faute-dapprovisionn",
+      "date": "2026-09-29T18:46:30.000Z",
+      "resume": "Le constructeur automobile italo-franco-américain est victime de la forte demande pour les véhicules électriques, notamment de la part des professionnels."
+    },
+    "score_fiabilite": 0.4,
+    "score_fiabilite_motif": "fr.euronews.com — domaine absent de la table : score par défaut prudent, sous le seuil de source primaire",
+    "domaine_source": "fr.euronews.com",
+    "domaine_opaque": false,
+    "statut": "en_attente",
+    "created_at": "2026-09-30T13:13:33.890Z"
+  },
+  {
+    "id": "6ed27ad3-7fed-44de-a038-d31a0738bd25",
+    "source_id": "dw-business",
+    "cible_type": "nouvelle_categorie",
+    "cible_id": null,
+    "contenu_propose": {
+      "titre": "Is US President Donald Trump right to rename AI as 'Super Intelligence'?",
+      "link": "https://www.dw.com/en/is-us-president-donald-trump-right-to-rename-ai-as-super-intelligence/a-79430388?maca=en-rss-en-bus-2091-rdf",
+      "date": "2026-09-30T09:33:00.000Z",
+      "resume": "Donald Trump thinks the name artificial intelligence sounds \"fake\" and has ordered US agencies to use \"Super Intelligence\" instead. Yet, tech firms and researchers have little reason to play along."
+    },
+    "score_fiabilite": 0.4,
+    "score_fiabilite_motif": "dw.com — domaine absent de la table : score par défaut prudent, sous le seuil de source primaire",
+    "domaine_source": "dw.com",
+    "domaine_opaque": false,
+    "statut": "en_attente",
+    "created_at": "2026-09-30T13:13:34.383Z"
+  },
+  {
+    "id": "4e545954-b9b2-405e-b3a1-7da15181a35e",
+    "source_id": "guardian-economie",
+    "cible_type": "nouvelle_categorie",
+    "cible_id": null,
+    "contenu_propose": {
+      "titre": "Economic growth in UK and US revised higher; diesel on brink of £2 a litre for first time – business live",
+      "link": "https://www.theguardian.com/business/live/2026/sep/30/uk-economy-growth-revised-up-stock-markets-greggs-job-cuts-energy-prices-latest-news-updates",
+      "date": "2026-09-30T12:51:35.000Z",
+      "resume": "UK cements its place as fastest-growing G7 country so far this year\nThis morning’s upgrade to UK growth in April-June is a boost to Andy Burnham, analysts say, even though he didn’t take office until almost a month later.\nChris Beauchamp, chief market analyst at IG, says:\n“Still on a post-speech high, the upgraded figure is yet more good news for the UK’s still-new(ish) prime minister.\nThe highest"
+    },
+    "score_fiabilite": 0.4,
+    "score_fiabilite_motif": "theguardian.com — presse généraliste ou spécialisée",
+    "domaine_source": "theguardian.com",
+    "domaine_opaque": false,
+    "statut": "en_attente",
+    "created_at": "2026-09-30T13:13:34.587Z"
+  },
+  {
+    "id": "cfdeeccb-6065-4544-8412-2e22a994ae59",
+    "source_id": "guardian-economie",
+    "cible_type": "nouvelle_categorie",
+    "cible_id": null,
+    "contenu_propose": {
+      "titre": "Inflation leaps to 4% stoking fears of fifth interest rate hike before Christmas",
+      "link": "https://www.theguardian.com/australia-news/2026/sep/30/australia-inflation-rise-stokes-fears-fifth-interest-rate-hike-before-christmas",
+      "date": "2026-09-30T04:40:25.000Z",
+      "resume": "Jim Chalmers says ‘higher global oil prices flowing through to oil prices in Australia’ are to blame for inflation rising from 3.5%\n\nFollow our Australia news live blog for latest updates\n\nGet our breaking news email, free app or daily news podcast\n\nInflation has jumped to 4% in the year to August, from 3.5%, as Jim Chalmers was again forced to defend Labor’s economic management amid fears the Res"
+    },
+    "score_fiabilite": 0.4,
+    "score_fiabilite_motif": "theguardian.com — presse généraliste ou spécialisée",
+    "domaine_source": "theguardian.com",
+    "domaine_opaque": false,
+    "statut": "en_attente",
+    "created_at": "2026-09-30T13:13:34.587Z"
+  },
+  {
+    "id": "1baa077d-24da-46be-b499-2350a7235a53",
+    "source_id": "guardian-economie",
+    "cible_type": "nouvelle_categorie",
+    "cible_id": null,
+    "contenu_propose": {
+      "titre": "The Standard of Living review – Rory Kinnear has bags of charm as Bloomsbury economist Keynes",
+      "link": "https://www.theguardian.com/stage/2026/sep/30/the-standard-of-living-review-rory-kinnear-theatre-royal-haymarket-london-james-graham-nicholas-hytner",
+      "date": "2026-09-29T23:01:03.000Z",
+      "resume": "Theatre Royal Haymarket, London\nJames Graham’s high-wire writing brings economic theory to life and connects it with art and fulfilment in this polished, ravishingly staged story of John Maynard Keynes\nNot everyone will know that the Bloomsbury group had a jobbing economist among them. One with superstar status and a firm belief in capitalism. John Maynard Keynes (Rory Kinnear) may not have cut a "
+    },
+    "score_fiabilite": 0.4,
+    "score_fiabilite_motif": "theguardian.com — presse généraliste ou spécialisée",
+    "domaine_source": "theguardian.com",
+    "domaine_opaque": false,
+    "statut": "en_attente",
+    "created_at": "2026-09-30T13:13:34.587Z"
+  },
+  {
+    "id": "a6d9dd2b-e532-481a-b2e1-becbc598e5be",
+    "source_id": "la-vie-des-idees",
+    "cible_type": "nouvelle_categorie",
+    "cible_id": null,
+    "contenu_propose": {
+      "titre": "La mécanique d'une répression d'État",
+      "link": "https://laviedesidees.fr/Crimes-contre-l-humanite-a-l-ESMA",
+      "date": "2026-09-30T08:00:00.000Z",
+      "resume": "L'École de mécanique de la Marine (ESMA) fut l'un des principaux centre clandestins d'enfermement, de torture et d'assassinat de la dictature argentine (1976-1983). Érigé en lieu de mémoire, il est aujourd'hui menacé par un discours révisionniste au plus haut sommet de l'État."
+    },
+    "score_fiabilite": 0.4,
+    "score_fiabilite_motif": "laviedesidees.fr — domaine absent de la table : score par défaut prudent, sous le seuil de source primaire",
+    "domaine_source": "laviedesidees.fr",
+    "domaine_opaque": false,
+    "statut": "en_attente",
+    "created_at": "2026-09-30T13:13:35.557Z"
+  },
+  {
+    "id": "46ee454a-a4bf-41ff-81ef-9126a1ede306",
+    "source_id": "cnrs-le-journal",
+    "cible_type": "nouvelle_categorie",
+    "cible_id": null,
+    "contenu_propose": {
+      "titre": "Ukraine : l’environnement pour cible (1)",
+      "link": "https://lejournal.cnrs.fr/articles/ukraine-lenvironnement-pour-cible-1",
+      "date": "2026-09-30T08:21:54.000Z",
+      "resume": "Les chercheurs ukrainiens documentent en temps réel la destruction de leur environnement. Avec l’idée d’estimer ce qu’il sera possible de restaurer, comment et en combien de temps."
+    },
+    "score_fiabilite": 0.8,
+    "score_fiabilite_motif": "lejournal.cnrs.fr — préprint, actes de conférence ou institution publique",
+    "domaine_source": "lejournal.cnrs.fr",
+    "domaine_opaque": false,
+    "statut": "en_attente",
+    "created_at": "2026-09-30T13:13:36.445Z"
+  },
+  {
+    "id": "2f07c7d0-b1f2-4700-8192-33adcc4d68c6",
+    "source_id": "aeon-essais",
+    "cible_type": "nouvelle_categorie",
+    "cible_id": null,
+    "contenu_propose": {
+      "titre": "Passportless mess",
+      "link": "https://aeon.co/videos/searching-for-a-local-legend-a-filmmaker-stumbles-into-a-tragicomedy",
+      "date": "2026-09-30T10:01:00.000Z",
+      "resume": "A fool, a genius, or ‘a man who destroys everything’? Piecing together Zoran, a mythic figure of Belgrade\n- by Aeon Video\nWatch on Aeon"
+    },
+    "score_fiabilite": 0.4,
+    "score_fiabilite_motif": "aeon.co — domaine absent de la table : score par défaut prudent, sous le seuil de source primaire",
+    "domaine_source": "aeon.co",
+    "domaine_opaque": false,
+    "statut": "en_attente",
+    "created_at": "2026-09-30T13:13:39.841Z"
+  },
+  {
+    "id": "195a2cac-db6e-4a40-b408-3cdc2d3d7923",
+    "source_id": "journal-of-democracy",
+    "cible_type": "nouvelle_categorie",
+    "cible_id": null,
+    "contenu_propose": {
+      "titre": "Zambia’s Authoritarian Turn",
+      "link": "https://www.journalofdemocracy.org/online-exclusive/zambias-authoritarian-turn/",
+      "date": "2026-09-29T15:37:00.000Z",
+      "resume": "Hakainde Hichilema came to power five years ago promising to restore Zambia’s democracy. But his government now commits the very abuses he once railed against. \nSource"
+    },
+    "score_fiabilite": 0.4,
+    "score_fiabilite_motif": "journalofdemocracy.org — domaine absent de la table : score par défaut prudent, sous le seuil de source primaire",
+    "domaine_source": "journalofdemocracy.org",
+    "domaine_opaque": false,
+    "statut": "en_attente",
+    "created_at": "2026-09-30T13:13:39.902Z"
+  },
+  {
+    "id": "f89b826b-a51a-4cf5-974e-a50e456b6a4c",
+    "source_id": "diploweb-geopolitique",
+    "cible_type": "nouvelle_categorie",
+    "cible_id": null,
+    "contenu_propose": {
+      "titre": "Planisphère. Comment comprendre la Russie de V. Poutine ? Avec C. Fauconnier",
+      "link": "https://www.diploweb.com/Planisphere-Comment-comprendre-la-Russie-de-V-Poutine-Avec-C-Fauconnier.html",
+      "date": "2026-09-29T14:31:57.000Z",
+      "resume": "La Russie est devenue une forme d'immense trou noir où il est difficile de travailler pour les journalistes et quasi impossible pour un doctorant étranger d'y conduire une recherche universitaire. Dans ce contexte, comment comprendre la Russie de Vladimir Poutine ? C. Fauconnier répond au micro de Planisphère. Podcast et synthèse rédigée.\nPodcasts\n\n/ \nRussie , \nUkraine, \nGéopolitique, \nPuissance, "
+    },
+    "score_fiabilite": 0.4,
+    "score_fiabilite_motif": "diploweb.com — domaine absent de la table : score par défaut prudent, sous le seuil de source primaire",
+    "domaine_source": "diploweb.com",
+    "domaine_opaque": false,
+    "statut": "en_attente",
+    "created_at": "2026-09-30T13:13:40.668Z"
+  },
+  {
+    "id": "0e2303a5-3b0f-4a4e-b43f-62241126688c",
+    "source_id": "nature-machine-intelligence",
+    "cible_type": "nouvelle_categorie",
+    "cible_id": null,
+    "contenu_propose": {
+      "titre": "Towards foundation-style models for energy-frontier heterogeneous neutrino detectors via self-supervised pretraining",
+      "link": "https://www.nature.com/articles/s42256-026-01309-6",
+      "date": "2026-09-30T00:00:00.000Z",
+      "resume": ""
+    },
+    "score_fiabilite": 0.9,
+    "score_fiabilite_motif": "nature.com — édition scientifique à comité de lecture",
+    "domaine_source": "nature.com",
+    "domaine_opaque": false,
+    "statut": "en_attente",
+    "created_at": "2026-09-30T13:13:41.142Z"
+  },
+  {
+    "id": "47094c33-43df-408e-a8e9-33a273ac0ed2",
+    "source_id": "mit-technology-review-ia",
+    "cible_type": "nouvelle_categorie",
+    "cible_id": null,
+    "contenu_propose": {
+      "titre": "“We’re not going to shoot ourselves in the foot” over hack fallout, says OpenAI’s chief research officer",
+      "link": "https://www.technologyreview.com/2026/09/30/1145339/were-not-going-to-shoot-ourselves-in-the-foot-over-hugging-face-says-openais-chief-research-officer/",
+      "date": "2026-09-30T10:40:30.000Z",
+      "resume": "Two months after the bombshell news that a swarm of its agents had broken their containment and hacked into the computers of the AI company Hugging Face, OpenAI is still putting out fires. A steady drip of disclosures about other hacks in the weeks since has kept OpenAI in the spotlight and raised serious questions…"
+    },
+    "score_fiabilite": 0.4,
+    "score_fiabilite_motif": "technologyreview.com — presse généraliste ou spécialisée",
+    "domaine_source": "technologyreview.com",
+    "domaine_opaque": false,
+    "statut": "en_attente",
+    "created_at": "2026-09-30T13:13:41.361Z"
   }
 ]
