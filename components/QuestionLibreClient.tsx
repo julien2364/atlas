@@ -346,22 +346,7 @@ export default function QuestionLibreClient({ effectifs }: { effectifs: Effectif
 
       {reponse ? (
         <div className="mt-6 border-t border-neutral-200 pt-5 dark:border-neutral-800" aria-live="polite">
-          {/* Le mode employé, toujours, en tête de réponse. */}
-          <p
-            className={`inline-block rounded border px-2 py-1 text-xs font-medium ${
-              extractif
-                ? "border-emerald-300 bg-emerald-50 text-emerald-900 dark:border-emerald-800 dark:bg-emerald-950 dark:text-emerald-200"
-                : "border-neutral-300 bg-neutral-50 text-neutral-700 dark:border-neutral-700 dark:bg-neutral-900 dark:text-neutral-300"
-            }`}
-          >
-            {reponse.diagnostic.mode
-              ? reponse.diagnostic.mode_libelle
-              : "Aucune réponse construite — le moteur a refusé"}
-            {reponse.diagnostic.fournisseur ? ` · ${reponse.diagnostic.fournisseur}` : null}
-            {reponse.diagnostic.modele_reponse ? ` · ${reponse.diagnostic.modele_reponse}` : null}
-          </p>
-
-          <p className="mt-3 text-xs font-semibold uppercase tracking-wide text-neutral-500 dark:text-neutral-400">
+          <p className="text-xs font-semibold uppercase tracking-wide text-neutral-500 dark:text-neutral-400">
             Question comprise comme
           </p>
           <p className="mt-1 text-sm text-neutral-700 dark:text-neutral-300">{reponse.reformulation}</p>
@@ -371,14 +356,6 @@ export default function QuestionLibreClient({ effectifs }: { effectifs: Effectif
             <p className="mt-4 rounded border border-neutral-300 bg-neutral-50 px-3 py-2 text-sm text-neutral-700 dark:border-neutral-700 dark:bg-neutral-900 dark:text-neutral-300">
               {reponse.message}
             </p>
-          ) : null}
-
-          {reponse.avertissements.length > 0 ? (
-            <ul className="mt-4 space-y-1 rounded border border-amber-300 bg-amber-50 px-3 py-2 text-xs text-amber-800 dark:border-amber-800 dark:bg-amber-950 dark:text-amber-300">
-              {reponse.avertissements.map((a, i) => (
-                <li key={i}>{a}</li>
-              ))}
-            </ul>
           ) : null}
 
           {/* Mode 2 — prompt à copier, puis zone de collage du retour. */}
@@ -508,7 +485,7 @@ export default function QuestionLibreClient({ effectifs }: { effectifs: Effectif
                     </a>
                     <span className="text-neutral-500 dark:text-neutral-400">{LIBELLE_TYPE[f.type]}</span>
                     <span className="text-neutral-500 dark:text-neutral-400">
-                      {f.champs.map(libelleChamp).join(", ")} · proximité {f.similarite_max.toFixed(2)}
+                      {f.champs.map(libelleChamp).join(", ")}
                     </span>
                   </li>
                 ))}
@@ -525,7 +502,7 @@ export default function QuestionLibreClient({ effectifs }: { effectifs: Effectif
                 {reponse.passages_mobilises.map((p, i) => (
                   <li key={i} className="border-l-2 border-neutral-200 pl-3 dark:border-neutral-800">
                     <span className="text-neutral-500 dark:text-neutral-400">
-                      {p.titre_fiche} · {libelleChamp(p.champ)} · {p.similarite.toFixed(3)}
+                      {p.titre_fiche} · {libelleChamp(p.champ)}
                     </span>
                     <p className="mt-1">{p.extrait}</p>
                   </li>
@@ -534,23 +511,11 @@ export default function QuestionLibreClient({ effectifs }: { effectifs: Effectif
             </details>
           ) : null}
 
-          <p className="mt-4 text-xs text-neutral-500 dark:text-neutral-400">
-            {reponse.diagnostic.depuis_cache ? "Réponse servie depuis le cache" : "Réponse construite"} ·{" "}
-            {reponse.diagnostic.nb_passages_utilises}/{reponse.diagnostic.nb_passages_trouves} extraits retenus ·
-            proximité maximale {reponse.diagnostic.similarite_max.toFixed(3)} (seuil{" "}
-            {reponse.diagnostic.seuil_pertinence}) · {reponse.diagnostic.termes_apparies_max} terme(s) de la question
-            retrouvé(s) · recherche « {reponse.diagnostic.modele_embedding} » · corpus au{" "}
-            {reponse.diagnostic.corpus_maj}
-            {reponse.diagnostic.tokens_sortie > 0
-              ? ` · ${reponse.diagnostic.tokens_entree} tokens en entrée, ${reponse.diagnostic.tokens_sortie} en sortie`
-              : null}
-          </p>
-
           {/* Transparence : la mention dépend du mode, parce que la réalité en
               dépend. Annoncer « contenu généré par IA » sur une réponse extractive
               serait faux, et l'inverse serait grave. */}
           {repondue && !extractif ? (
-            <p className="mt-1 text-xs text-neutral-500 dark:text-neutral-400">
+            <p className="mt-4 text-xs text-neutral-500 dark:text-neutral-400">
               Contenu généré par IA à partir du référentiel ATLAS.
             </p>
           ) : null}
