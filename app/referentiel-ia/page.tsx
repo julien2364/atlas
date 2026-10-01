@@ -76,7 +76,7 @@ export default function ReferentielIAPage() {
           Les mêmes capacités, rangées par secteur plutôt que par nature. Une fiche figure dans chaque secteur où
           elle documente un usage — une capacité peut être déployée en industrie et expérimentale en pharmacie. Le
           nombre entre crochets est le niveau de maturité TRL quand un déploiement nommable le fonde ; sinon, c&apos;est
-          le niveau de diffusion, délibérément non chiffré.
+          le niveau de diffusion.
         </p>
         <div className="mt-4 grid gap-4 sm:grid-cols-2">
           {Object.entries(SECTEURS).map(([secteur, label]) => {

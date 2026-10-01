@@ -145,7 +145,7 @@ export default async function PageGap({ params }: { params: Promise<{ id: string
       </Bloc>
 
       {gap.axes_prospectifs && gap.axes_prospectifs.length > 0 ? (
-        <Bloc titre="Axes possibles (perspectives, pas des prédictions tranchées)">
+        <Bloc titre="Axes possibles">
           <div className="space-y-2">
             {gap.axes_prospectifs.map((axe, index) => (
               <div key={index} className="rounded border border-neutral-200 p-3 dark:border-neutral-800">

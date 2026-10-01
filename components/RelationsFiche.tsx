@@ -23,14 +23,14 @@ const ORDRE: { role: RoleCroisement; titre: string; explication: string }[] = [
     titre: "Ce que cette fiche met en cause, et ce qui la met en cause",
     explication:
       "Une fiche nomme l'autre dans son champ « limites critiques », et la phrase porte une marque " +
-      "d'opposition. C'est un désaccord écrit dans le référentiel, pas un rapprochement calculé.",
+      "d'opposition.",
   },
   {
     role: "mention_limites",
     titre: "Nommée dans les limites, sans objection formulée",
     explication:
       "Le lien est établi — une fiche nomme l'autre en discutant ses limites — mais aucune opposition n'y " +
-      "est formulée. Le distinguer d'une contestation évite de fabriquer une controverse.",
+      "est formulée.",
   },
   {
     role: "appui",
@@ -73,9 +73,7 @@ export default function RelationsFiche({ type, id }: { type: TypeFicheRag; id: s
   if (voisins.length === 0) {
     return (
       <p className="text-neutral-500">
-        Aucune autre fiche du référentiel ne nomme celle-ci, et celle-ci n&apos;en nomme aucune. Ce n&apos;est pas
-        un signe d&apos;accord : c&apos;est un silence documentaire, et il se comble en écrivant les limites de la
-        fiche avec des noms.
+        Aucune autre fiche du référentiel ne nomme celle-ci, et celle-ci n&apos;en nomme aucune.
       </p>
     );
   }

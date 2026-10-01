@@ -1,7 +1,7 @@
 "use client";
 
 import { useMemo, useState } from "react";
-import type { FicheHumaine, FicheIA, FicheGap, AxeHumain, AxeIA, Substituabilite, ChangelogEntry, SecteurUsage, NiveauConfiance } from "@/lib/types";
+import type { FicheHumaine, FicheIA, FicheGap, AxeHumain, AxeIA, Substituabilite, SecteurUsage, NiveauConfiance } from "@/lib/types";
 import Treemap, { type TreemapItem } from "@/components/Treemap";
 import {
   BadgeConfiance,
@@ -11,7 +11,6 @@ import {
 } from "@/components/Badges";
 import { LABELS_NIVEAU_CONFIANCE, LABELS_SUBSTITUABILITE } from "@/lib/corpus";
 import RadarChart, { type RadarAxisDatum } from "@/components/RadarChart";
-import FriseChangelog, { type JalonVolume } from "@/components/FriseChangelog";
 import HeatmapTRL, { LABELS_SECTEUR, SECTEURS } from "@/components/HeatmapTRL";
 import HeatmapAxeSecteur from "@/components/HeatmapAxeSecteur";
 import GrapheConnaissances from "@/components/GrapheConnaissances";
@@ -102,12 +101,10 @@ export default function CartographieClient({
   humaines,
   ia,
   gaps,
-  changelog,
 }: {
   humaines: FicheHumaine[];
   ia: FicheIA[];
   gaps: FicheGap[];
-  changelog: ChangelogEntry[];
 }) {
   const [axeHumainFiltre, setAxeHumainFiltre] = useState<string | null>(null);
   const [axeIAFiltre, setAxeIAFiltre] = useState<string | null>(null);
@@ -245,22 +242,6 @@ export default function CartographieClient({
       .sort((a, b) => a.label.localeCompare(b.label));
   }, [ia]);
 
-  // Volume de fiches documentées atteint à chaque jalon du changelog. Recompté
-  // depuis les fiches elles-mêmes (date de `derniere_verification` <= jalon)
-  // plutôt que lu dans le résumé textuel des entrées : c'est la seule datation
-  // réellement vérifiable, et elle reste juste si le corpus évolue.
-  const volumesFrise: JalonVolume[] = useMemo(() => {
-    const jours = Array.from(new Set(changelog.map((e) => e.date.slice(0, 10)))).sort();
-    const compte = (fiches: { statut: string; derniere_verification: string }[], j: string) =>
-      fiches.filter((f) => f.statut === "documente" && f.derniere_verification.slice(0, 10) <= j).length;
-    return jours.map((j) => ({
-      date: j,
-      humaines: compte(humaines, j),
-      ia: compte(ia, j),
-      gaps: compte(gaps, j),
-    }));
-  }, [changelog, humaines, ia, gaps]);
-
   return (
     <div className="space-y-10">
       <section>
@@ -315,10 +296,8 @@ export default function CartographieClient({
         </h3>
         <p className="mt-1 max-w-3xl text-xs text-neutral-500">
           Une ligne par fiche humaine <strong>portant au moins une analyse de gap</strong>, une colonne par fiche IA
-          citée par au moins une analyse : les {humaines.length} × {ia.length} combinaisons théoriques donneraient une
-          grille illisible et presque vide. Cellule vide = paire pas encore analysée (voir /comparateur, qui affiche le
-          statut réel de n&apos;importe quelle paire). Chaque cellule analysée porte le glyphe de sa substituabilité en
-          plus de sa couleur, et s&apos;active au clavier.
+          citée par au moins une analyse. Cellule vide = paire pas encore analysée (voir /comparateur). Chaque cellule
+          analysée porte le glyphe de sa substituabilité en plus de sa couleur, et s&apos;active au clavier.
         </p>
         <div className="mt-3 flex flex-wrap items-end gap-3 text-xs">
           <label className="flex flex-col gap-1 text-neutral-500">
@@ -490,7 +469,7 @@ export default function CartographieClient({
         <h3 className="text-sm font-medium">Radar de maturité — TRL moyen par secteur d&apos;usage (fiches IA)</h3>
         <p className="mt-1 text-xs text-neutral-500">
           Moyenne des TRL (1-9) renseignés dans les usages sectoriels des fiches IA documentées. Un secteur
-          n&apos;apparaît que s&apos;il a au moins une donnée réelle — rien n&apos;est extrapolé.
+          n&apos;apparaît que s&apos;il a au moins une donnée.
         </p>
         <div className="mt-3 max-w-md">
           <RadarChart data={radarData} />
@@ -503,10 +482,10 @@ export default function CartographieClient({
         </h3>
         <p className="mt-1 text-xs text-neutral-500">
           Le détail de ce que le radar résume : une même capacité peut être TRL 9 en industrie et TRL 4 en
-          pharmaceutique (mégaprompt §4). Chaque cellule porte son TRL en toutes lettres — la couleur ne fait que le
-          renforcer — et une cellule hachurée « n. d. » signale une absence de donnée, ce qui n&apos;est pas la même
-          chose qu&apos;une maturité faible. Cliquer (ou activer au clavier) une cellule affiche la description, les
-          exemples et les sources de l&apos;usage. Filtrer par axe pour réduire la matrice.
+          pharmaceutique. Chaque cellule porte son TRL en toutes lettres — la couleur ne fait que le renforcer — et
+          une cellule hachurée « n. d. » signale une absence de donnée. Cliquer (ou activer au clavier) une cellule
+          affiche la description, les exemples et les sources de l&apos;usage. Filtrer par axe pour réduire la
+          matrice.
         </p>
         <div className="mt-3">
           <HeatmapTRL fiches={ia} />
@@ -519,12 +498,10 @@ export default function CartographieClient({
         </h3>
         <p className="mt-1 text-xs text-neutral-500">
           Le niveau intermédiaire entre le radar (une valeur par secteur, toutes capacités confondues) et la heatmap
-          fiche par fiche : « quelle FAMILLE de capacités IA est mûre dans quel secteur ». Une moyenne calculée sur
-          deux observations n&apos;étant pas une mesure, chaque cellule affiche son effectif et l&apos;étendue des TRL
-          agrégés, et les cellules sous trois
-          observations portent une marque « ! ». Une cellule hachurée « n. d. » ne contient aucun usage
-          documenté — ce n&apos;est pas une maturité faible. Activer une cellule affiche la distribution des TRL et la
-          liste des fiches qui composent la moyenne.
+          fiche par fiche : « quelle FAMILLE de capacités IA est mûre dans quel secteur ». Chaque cellule affiche son
+          effectif et l&apos;étendue des TRL agrégés, et les cellules sous trois observations portent une marque « ! ».
+          Une cellule hachurée « n. d. » ne contient aucun usage documenté. Activer une cellule affiche la
+          distribution des TRL et la liste des fiches qui composent la moyenne.
         </p>
         <div className="mt-3">
           <HeatmapAxeSecteur fiches={ia} />
@@ -534,29 +511,13 @@ export default function CartographieClient({
       <section>
         <h3 className="text-sm font-medium">Graphe de connaissances — fiche humaine ↔ fiche de gap ↔ fiche IA</h3>
         <p className="mt-1 text-xs text-neutral-500">
-          Simulation de forces faite main (SVG, sans librairie), calculée côté navigateur et déterministe. Le corpus
-          compte {humaines.length + ia.length + gaps.length} fiches et {gaps.length * 2} arêtes documentées : les
-          afficher d&apos;un bloc ne produirait qu&apos;une pelote. L&apos;entrée se fait donc toujours par un filtre —
-          autour d&apos;une fiche IA, autour d&apos;une fiche humaine (avec son voisinage à deux pas), par axe IA ou par
-          sous-domaine humain. La forme distingue le type de fiche, la couleur ne porte qu&apos;une seule information
-          (le verdict de substituabilité de la paire), et le contenu du graphe est repris sous forme de liste
-          navigable au clavier.
+          L&apos;entrée se fait par un filtre — autour d&apos;une fiche IA, autour d&apos;une fiche humaine (avec son
+          voisinage à deux pas), par axe IA ou par sous-domaine humain. La forme distingue le type de fiche, la
+          couleur ne porte qu&apos;une seule information (le verdict de substituabilité de la paire), et le contenu
+          du graphe est repris sous forme de liste navigable au clavier.
         </p>
         <div className="mt-3">
           <GrapheConnaissances humaines={humaines} ia={ia} gaps={gaps} />
-        </div>
-      </section>
-
-      <section>
-        <h3 className="text-sm font-medium">Frise chronologique — évolution du corpus dans le temps</h3>
-        <p className="mt-1 text-xs text-neutral-500">
-          En attendant des dates d&apos;apparition sourcées pour chaque capacité IA (chantier de documentation en
-          cours), cette frise retrace les jalons réels et datés du projet lui-même (changelog), regroupés par jour.
-          Chaque étape indique le volume de fiches documentées atteint à cette date, recompté depuis la date de
-          dernière vérification des fiches — rien n&apos;est interpolé entre deux jalons.
-        </p>
-        <div className="mt-3">
-          <FriseChangelog entries={changelog} volumes={volumesFrise} />
         </div>
       </section>
 
@@ -565,8 +526,7 @@ export default function CartographieClient({
         <p className="mt-1 text-xs text-neutral-500">
           Les axes prospectifs nommés dans le comparateur (section « Axes possibles » de chaque fiche de gap),
           regroupés par sujet plutôt que par paire — pour repérer d&apos;un coup d&apos;œil où le référentiel est
-          établi (fait vérifié, consensus) et où il reste spéculatif (hypothèse prospective). Aucune prédiction
-          unique n&apos;est présentée comme acquise : ce sont des scénarios nommés, pas des probabilités calculées.
+          établi (fait vérifié, consensus) et où il reste spéculatif (hypothèse prospective).
         </p>
         <div className="mt-3 flex flex-wrap gap-2">
           <button

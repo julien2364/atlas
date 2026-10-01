@@ -146,7 +146,7 @@ const MODES: { valeur: ModeDemande; libelle: string; aide: string }[] = [
   {
     valeur: "extractif",
     libelle: "Extractif (sans modèle)",
-    aide: "Aucune clé, aucun modèle génératif : chaque perspective est assemblée depuis les champs des fiches retrouvées. Rien n'y est reformulé, donc rien n'y est inventé.",
+    aide: "Aucune clé, aucun modèle génératif : chaque perspective est assemblée depuis les champs des fiches retrouvées.",
   },
 ];
 
@@ -259,25 +259,6 @@ export default function QuestionLibreClient({ effectifs }: { effectifs: Effectif
         le référentiel ne couvre pas la question, le moteur le dit et ne répond pas.
       </p>
 
-      {/* État réel du moteur : ni promesse, ni alarme. */}
-      {etat ? (
-        <p className="mt-3 text-xs text-neutral-500 dark:text-neutral-400">
-          {etat.index.present
-            ? `Index local : ${etat.index.nb_passages_indexes.toLocaleString("fr-FR")} passages · modèle « ${etat.index.modele_embedding} » · aucune base de données, aucun appel réseau pour chercher.`
-            : "Index vectoriel absent : lancer « npm run indexer » (aucune clé requise)."}{" "}
-          {etat.fournisseurs_configures.length > 0
-            ? `Fournisseur${etat.fournisseurs_configures.length > 1 ? "s" : ""} de rédaction : ${etat.fournisseurs_configures.map((f) => `${f.nom} (${f.modele})`).join(", ")}.`
-            : "Aucun fournisseur de rédaction configuré : le mode extractif est le mode par défaut. Il compose la réponse depuis les fiches et les croise par leurs relations documentées, sans rien reformuler."}
-        </p>
-      ) : null}
-      {etat && etat.index.nb_passages_absents > 0 ? (
-        <p className="mt-2 rounded border border-amber-300 bg-amber-50 px-3 py-2 text-xs text-amber-800 dark:border-amber-800 dark:bg-amber-950 dark:text-amber-300">
-          {etat.index.nb_passages_absents.toLocaleString("fr-FR")} passage(s) du corpus ne sont pas dans l&apos;index :
-          la recherche porte sur moins de matière qu&apos;annoncé. Relancer{" "}
-          <code className="font-mono">npm run indexer</code>.
-        </p>
-      ) : null}
-
       {/* Choix du mode. aria-pressed plutôt que des radios : ce sont des bascules
           de configuration, pas un champ de formulaire soumis avec la question. */}
       <fieldset className="mt-4">
@@ -365,22 +346,7 @@ export default function QuestionLibreClient({ effectifs }: { effectifs: Effectif
 
       {reponse ? (
         <div className="mt-6 border-t border-neutral-200 pt-5 dark:border-neutral-800" aria-live="polite">
-          {/* Le mode employé, toujours, en tête de réponse. */}
-          <p
-            className={`inline-block rounded border px-2 py-1 text-xs font-medium ${
-              extractif
-                ? "border-emerald-300 bg-emerald-50 text-emerald-900 dark:border-emerald-800 dark:bg-emerald-950 dark:text-emerald-200"
-                : "border-neutral-300 bg-neutral-50 text-neutral-700 dark:border-neutral-700 dark:bg-neutral-900 dark:text-neutral-300"
-            }`}
-          >
-            {reponse.diagnostic.mode
-              ? reponse.diagnostic.mode_libelle
-              : "Aucune réponse construite — le moteur a refusé"}
-            {reponse.diagnostic.fournisseur ? ` · ${reponse.diagnostic.fournisseur}` : null}
-            {reponse.diagnostic.modele_reponse ? ` · ${reponse.diagnostic.modele_reponse}` : null}
-          </p>
-
-          <p className="mt-3 text-xs font-semibold uppercase tracking-wide text-neutral-500 dark:text-neutral-400">
+          <p className="text-xs font-semibold uppercase tracking-wide text-neutral-500 dark:text-neutral-400">
             Question comprise comme
           </p>
           <p className="mt-1 text-sm text-neutral-700 dark:text-neutral-300">{reponse.reformulation}</p>
@@ -390,14 +356,6 @@ export default function QuestionLibreClient({ effectifs }: { effectifs: Effectif
             <p className="mt-4 rounded border border-neutral-300 bg-neutral-50 px-3 py-2 text-sm text-neutral-700 dark:border-neutral-700 dark:bg-neutral-900 dark:text-neutral-300">
               {reponse.message}
             </p>
-          ) : null}
-
-          {reponse.avertissements.length > 0 ? (
-            <ul className="mt-4 space-y-1 rounded border border-amber-300 bg-amber-50 px-3 py-2 text-xs text-amber-800 dark:border-amber-800 dark:bg-amber-950 dark:text-amber-300">
-              {reponse.avertissements.map((a, i) => (
-                <li key={i}>{a}</li>
-              ))}
-            </ul>
           ) : null}
 
           {/* Mode 2 — prompt à copier, puis zone de collage du retour. */}
@@ -438,8 +396,7 @@ export default function QuestionLibreClient({ effectifs }: { effectifs: Effectif
               </h3>
               <p className="mt-1 text-xs text-neutral-500 dark:text-neutral-400">
                 Le texte peut contenir du bavardage, un bloc de code ou des guillemets typographiques : il sera
-                nettoyé. Les identifiants de fiches cités seront vérifiés contre le corpus, et les sources
-                rattachées depuis les fiches réelles — un identifiant inventé est rejeté.
+                nettoyé.
               </p>
               <label className="sr-only" htmlFor="retour-modele">
                 Réponse du modèle à analyser
@@ -528,7 +485,7 @@ export default function QuestionLibreClient({ effectifs }: { effectifs: Effectif
                     </a>
                     <span className="text-neutral-500 dark:text-neutral-400">{LIBELLE_TYPE[f.type]}</span>
                     <span className="text-neutral-500 dark:text-neutral-400">
-                      {f.champs.map(libelleChamp).join(", ")} · proximité {f.similarite_max.toFixed(2)}
+                      {f.champs.map(libelleChamp).join(", ")}
                     </span>
                   </li>
                 ))}
@@ -545,7 +502,7 @@ export default function QuestionLibreClient({ effectifs }: { effectifs: Effectif
                 {reponse.passages_mobilises.map((p, i) => (
                   <li key={i} className="border-l-2 border-neutral-200 pl-3 dark:border-neutral-800">
                     <span className="text-neutral-500 dark:text-neutral-400">
-                      {p.titre_fiche} · {libelleChamp(p.champ)} · {p.similarite.toFixed(3)}
+                      {p.titre_fiche} · {libelleChamp(p.champ)}
                     </span>
                     <p className="mt-1">{p.extrait}</p>
                   </li>
@@ -554,28 +511,14 @@ export default function QuestionLibreClient({ effectifs }: { effectifs: Effectif
             </details>
           ) : null}
 
-          <p className="mt-4 text-xs text-neutral-500 dark:text-neutral-400">
-            {reponse.diagnostic.depuis_cache ? "Réponse servie depuis le cache" : "Réponse construite"} ·{" "}
-            {reponse.diagnostic.nb_passages_utilises}/{reponse.diagnostic.nb_passages_trouves} extraits retenus ·
-            proximité maximale {reponse.diagnostic.similarite_max.toFixed(3)} (seuil{" "}
-            {reponse.diagnostic.seuil_pertinence}) · {reponse.diagnostic.termes_apparies_max} terme(s) de la question
-            retrouvé(s) · recherche « {reponse.diagnostic.modele_embedding} » · corpus au{" "}
-            {reponse.diagnostic.corpus_maj}
-            {reponse.diagnostic.tokens_sortie > 0
-              ? ` · ${reponse.diagnostic.tokens_entree} tokens en entrée, ${reponse.diagnostic.tokens_sortie} en sortie`
-              : null}
-          </p>
-
           {/* Transparence : la mention dépend du mode, parce que la réalité en
               dépend. Annoncer « contenu généré par IA » sur une réponse extractive
               serait faux, et l'inverse serait grave. */}
-          <p className="mt-1 text-xs text-neutral-500 dark:text-neutral-400">
-            {extractif
-              ? "Aucun modèle génératif n'est intervenu : chaque phrase de fond est recopiée d'une fiche du référentiel. Les fiches sources sont listées ci-dessus."
-              : repondue
-                ? "Contenu généré par IA à partir du référentiel ATLAS (transparence AI Act) : à vérifier via les fiches sources ci-dessus avant toute réutilisation."
-                : "Aucun contenu n'a été généré pour cette question."}
-          </p>
+          {repondue && !extractif ? (
+            <p className="mt-4 text-xs text-neutral-500 dark:text-neutral-400">
+              Contenu généré par IA à partir du référentiel ATLAS.
+            </p>
+          ) : null}
         </div>
       ) : null}
     </section>
