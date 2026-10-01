@@ -1,16 +1,16 @@
 # Pré-tri de la file de veille
 
-Dernier écartement appliqué : 2026-09-29.
+Dernier écartement appliqué : 2026-09-30.
 
-File complète : **1271** entrées, dont **777** en attente d'arbitrage.
+File complète : **1358** entrées, dont **857** en attente d'arbitrage.
 
-Le pré-tri écarte **7** propositions sur des critères mécaniques et en laisse **770** à la relecture humaine, classées par fiabilité décroissante.
+Le pré-tri écarte **3** propositions sur des critères mécaniques et en laisse **854** à la relecture humaine, classées par fiabilité décroissante.
 
 ## Écartées, et pourquoi
 
 | Motif | Nombre | Ce que ça veut dire |
 |---|---:|---|
-| `domaine_opaque` | 7 | Agrégateur masquant l'éditeur réel — source non attribuable |
+| `domaine_opaque` | 3 | Agrégateur masquant l'éditeur réel — source non attribuable |
 
 Aucun de ces motifs ne porte de jugement sur le fond : ils constatent qu'une proposition n'est pas citable, pas attribuable, ou déjà connue.
 
@@ -18,10 +18,10 @@ Aucun de ces motifs ne porte de jugement sur le fond : ils constatent qu'une pro
 
 | Score | Nombre |
 |---:|---:|
-| 0.9 | 68 |
-| 0.8 | 139 |
-| 0.6 | 33 |
-| 0.4 | 530 |
+| 0.9 | 78 |
+| 0.8 | 158 |
+| 0.6 | 37 |
+| 0.4 | 581 |
 
 ### Les trente premières
 
@@ -89,6 +89,18 @@ Aucun de ces motifs ne porte de jugement sur le fond : ils constatent qu'une pro
   Beware sham scientific societies: the research community must be more vigilant  
   <https://www.nature.com/articles/d41586-026-03047-6>  
   `bbcda171-113c-4729-ac43-59b8ed62cd0d`
+- **0.9** · nature.com · 1 terme(s) du corpus  
+  The ‘missed disease’ that affects 190 million: endometriosis drug shows early promise  
+  <https://www.nature.com/articles/d41586-026-03042-x>  
+  `e49fba26-78c7-416b-824e-f1a76146b5c4`
+- **0.9** · nature.com · 1 terme(s) du corpus  
+  Gaze into the cosmos and through the eyes of a bee — September’s best science images  
+  <https://www.nature.com/articles/d41586-026-03101-3>  
+  `1c34c079-c5f9-44ae-b043-c0838cd86bc0`
+- **0.9** · nature.com · 1 terme(s) du corpus  
+  Intrinsic rewards guide visual resource allocation via reinforcement learning  
+  <https://www.nature.com/articles/s41562-026-02573-7>  
+  `db9c0820-a123-4010-93a4-1a2fa5bc16e9`
 - **0.9** · nature.com · 0 terme(s) du corpus  
   Briefing Chat: The Bunsen burner myth that turns out to be just hot air  
   <https://www.nature.com/articles/d41586-026-02893-8>  
@@ -133,18 +145,6 @@ Aucun de ces motifs ne porte de jugement sur le fond : ils constatent qu'une pro
   Author Correction: Erythropoietin receptor on cDC1s dictates immune tolerance  
   <https://www.nature.com/articles/s41586-026-11137-8>  
   `6a334829-c1eb-45b8-9d69-e52cd78879f3`
-- **0.9** · nature.com · 0 terme(s) du corpus  
-  Why Nepal floods resulted in a disaster even after satellites spotted danger  
-  <https://www.nature.com/articles/d41586-026-02907-5>  
-  `356a04d3-2dcc-4c27-8dce-f1d9b3153c3d`
-- **0.9** · nature.com · 0 terme(s) du corpus  
-  Why the NIH must resist the metrics trap  
-  <https://www.nature.com/articles/d41586-026-02906-6>  
-  `9199d232-07c2-433b-bbb6-77c6f7dfb470`
-- **0.9** · nature.com · 0 terme(s) du corpus  
-  Causal evidence that language models use confidence to drive behaviour  
-  <https://www.nature.com/articles/s42256-026-01293-x>  
-  `a4cf5341-70e9-46d1-9b74-cf2da116b4c9`
 
 ---
 
