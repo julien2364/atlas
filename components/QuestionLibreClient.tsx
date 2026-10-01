@@ -146,7 +146,7 @@ const MODES: { valeur: ModeDemande; libelle: string; aide: string }[] = [
   {
     valeur: "extractif",
     libelle: "Extractif (sans modèle)",
-    aide: "Aucune clé, aucun modèle génératif : chaque perspective est assemblée depuis les champs des fiches retrouvées. Rien n'y est reformulé, donc rien n'y est inventé.",
+    aide: "Aucune clé, aucun modèle génératif : chaque perspective est assemblée depuis les champs des fiches retrouvées.",
   },
 ];
 
@@ -258,25 +258,6 @@ export default function QuestionLibreClient({ effectifs }: { effectifs: Effectif
         de gap, puis réponse construite <strong>en perspectives concurrentes</strong>, jamais en verdict unique. Si
         le référentiel ne couvre pas la question, le moteur le dit et ne répond pas.
       </p>
-
-      {/* État réel du moteur : ni promesse, ni alarme. */}
-      {etat ? (
-        <p className="mt-3 text-xs text-neutral-500 dark:text-neutral-400">
-          {etat.index.present
-            ? `Index local : ${etat.index.nb_passages_indexes.toLocaleString("fr-FR")} passages · modèle « ${etat.index.modele_embedding} » · aucune base de données, aucun appel réseau pour chercher.`
-            : "Index vectoriel absent : lancer « npm run indexer » (aucune clé requise)."}{" "}
-          {etat.fournisseurs_configures.length > 0
-            ? `Fournisseur${etat.fournisseurs_configures.length > 1 ? "s" : ""} de rédaction : ${etat.fournisseurs_configures.map((f) => `${f.nom} (${f.modele})`).join(", ")}.`
-            : "Aucun fournisseur de rédaction configuré : le mode extractif est le mode par défaut. Il compose la réponse depuis les fiches et les croise par leurs relations documentées, sans rien reformuler."}
-        </p>
-      ) : null}
-      {etat && etat.index.nb_passages_absents > 0 ? (
-        <p className="mt-2 rounded border border-amber-300 bg-amber-50 px-3 py-2 text-xs text-amber-800 dark:border-amber-800 dark:bg-amber-950 dark:text-amber-300">
-          {etat.index.nb_passages_absents.toLocaleString("fr-FR")} passage(s) du corpus ne sont pas dans l&apos;index :
-          la recherche porte sur moins de matière qu&apos;annoncé. Relancer{" "}
-          <code className="font-mono">npm run indexer</code>.
-        </p>
-      ) : null}
 
       {/* Choix du mode. aria-pressed plutôt que des radios : ce sont des bascules
           de configuration, pas un champ de formulaire soumis avec la question. */}
@@ -438,8 +419,7 @@ export default function QuestionLibreClient({ effectifs }: { effectifs: Effectif
               </h3>
               <p className="mt-1 text-xs text-neutral-500 dark:text-neutral-400">
                 Le texte peut contenir du bavardage, un bloc de code ou des guillemets typographiques : il sera
-                nettoyé. Les identifiants de fiches cités seront vérifiés contre le corpus, et les sources
-                rattachées depuis les fiches réelles — un identifiant inventé est rejeté.
+                nettoyé.
               </p>
               <label className="sr-only" htmlFor="retour-modele">
                 Réponse du modèle à analyser
@@ -569,13 +549,11 @@ export default function QuestionLibreClient({ effectifs }: { effectifs: Effectif
           {/* Transparence : la mention dépend du mode, parce que la réalité en
               dépend. Annoncer « contenu généré par IA » sur une réponse extractive
               serait faux, et l'inverse serait grave. */}
-          <p className="mt-1 text-xs text-neutral-500 dark:text-neutral-400">
-            {extractif
-              ? "Aucun modèle génératif n'est intervenu : chaque phrase de fond est recopiée d'une fiche du référentiel. Les fiches sources sont listées ci-dessus."
-              : repondue
-                ? "Contenu généré par IA à partir du référentiel ATLAS (transparence AI Act) : à vérifier via les fiches sources ci-dessus avant toute réutilisation."
-                : "Aucun contenu n'a été généré pour cette question."}
-          </p>
+          {repondue && !extractif ? (
+            <p className="mt-1 text-xs text-neutral-500 dark:text-neutral-400">
+              Contenu généré par IA à partir du référentiel ATLAS.
+            </p>
+          ) : null}
         </div>
       ) : null}
     </section>

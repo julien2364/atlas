@@ -15,8 +15,7 @@ export default function MentionsLegalesPage() {
       <header>
         <h1 className="text-2xl font-semibold tracking-tight">Mentions légales</h1>
         <p className="mt-3 leading-relaxed text-neutral-600 dark:text-neutral-400">
-          {SITE_NAME} est un référentiel public. Cette page dit qui l&apos;édite, qui l&apos;héberge, et à quelles
-          conditions son contenu peut être repris.
+          {SITE_NAME} est un référentiel public.
         </p>
       </header>
 
@@ -49,7 +48,7 @@ export default function MentionsLegalesPage() {
           <Link className="underline underline-offset-2" href="/methodologie">
             page méthodologie
           </Link>{" "}
-          expose comment les fiches sont écrites et ce qu&apos;elles ne prétendent pas établir.
+          expose comment les fiches sont écrites.
         </p>
         <p className="leading-relaxed text-neutral-700 dark:text-neutral-300">
           Ce n&apos;est ni un conseil professionnel, ni une expertise, ni une recommandation d&apos;investissement ou
@@ -63,8 +62,7 @@ export default function MentionsLegalesPage() {
         <p className="leading-relaxed text-neutral-700 dark:text-neutral-300">
           Les fiches sont rédigées par l&apos;éditeur. Les sources citées appartiennent à leurs auteurs et éditeurs
           respectifs : les liens renvoient vers les documents d&apos;origine, jamais vers une copie hébergée ici. Toute
-          reprise d&apos;une fiche doit citer {SITE_NAME}, l&apos;URL de la fiche et sa date de dernière vérification —
-          sans cette date, la citation perd ce qui la rend vérifiable.
+          reprise d&apos;une fiche doit citer {SITE_NAME}, l&apos;URL de la fiche et sa date de dernière vérification.
         </p>
       </section>
 
@@ -75,8 +73,7 @@ export default function MentionsLegalesPage() {
           <a className="underline underline-offset-2" href="mailto:welcome@dyonysos.fr">
             welcome@dyonysos.fr
           </a>{" "}
-          en indiquant l&apos;URL de la fiche. Les corrections sont tracées dans le changelog du référentiel, et aucune
-          fiche n&apos;est modifiée sans relecture humaine.
+          en indiquant l&apos;URL de la fiche.
         </p>
       </section>
 

@@ -47,6 +47,7 @@ export const metadata: Metadata = {
   description:
     "Sources de veille configurées, file de propositions en attente de revue humaine, et journal daté des évolutions du corpus ATLAS. Aucune fiche n'est modifiée sans validation tracée.",
   alternates: { canonical: "/veille" },
+  robots: { index: false, follow: false },
 };
 
 export default function VeillePage() {
