@@ -26152,8 +26152,10 @@
     "score_fiabilite_motif": "news.google.com est un redirecteur : l'url ne porte pas le domaine de l'éditeur réel, la fiabilité ne peut pas être établie sans ouvrir le lien",
     "domaine_source": "news.google.com",
     "domaine_opaque": true,
-    "statut": "en_attente",
-    "created_at": "2026-10-03T12:09:43.791Z"
+    "statut": "ecarte_automatique",
+    "created_at": "2026-10-03T12:09:43.791Z",
+    "ecarte_motif": "domaine_opaque",
+    "ecarte_le": "2026-10-03"
   },
   {
     "id": "194c05d0-1773-4a7a-aaa8-cd1751197122",

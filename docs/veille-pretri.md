@@ -1,16 +1,16 @@
 # Pré-tri de la file de veille
 
-Dernier écartement appliqué : 2026-10-01.
+Dernier écartement appliqué : 2026-10-02.
 
-File complète : **1421** entrées, dont **917** en attente d'arbitrage.
+File complète : **1460** entrées, dont **951** en attente d'arbitrage.
 
-Le pré-tri écarte **5** propositions sur des critères mécaniques et en laisse **912** à la relecture humaine, classées par fiabilité décroissante.
+Le pré-tri écarte **1** propositions sur des critères mécaniques et en laisse **950** à la relecture humaine, classées par fiabilité décroissante.
 
 ## Écartées, et pourquoi
 
 | Motif | Nombre | Ce que ça veut dire |
 |---|---:|---|
-| `domaine_opaque` | 5 | Agrégateur masquant l'éditeur réel — source non attribuable |
+| `domaine_opaque` | 1 | Agrégateur masquant l'éditeur réel — source non attribuable |
 
 Aucun de ces motifs ne porte de jugement sur le fond : ils constatent qu'une proposition n'est pas citable, pas attribuable, ou déjà connue.
 
@@ -18,10 +18,10 @@ Aucun de ces motifs ne porte de jugement sur le fond : ils constatent qu'une pro
 
 | Score | Nombre |
 |---:|---:|
-| 0.9 | 80 |
-| 0.8 | 171 |
-| 0.6 | 40 |
-| 0.4 | 621 |
+| 0.9 | 81 |
+| 0.8 | 175 |
+| 0.6 | 42 |
+| 0.4 | 652 |
 
 ### Les trente premières
 
@@ -101,6 +101,10 @@ Aucun de ces motifs ne porte de jugement sur le fond : ils constatent qu'une pro
   Intrinsic rewards guide visual resource allocation via reinforcement learning  
   <https://www.nature.com/articles/s41562-026-02573-7>  
   `db9c0820-a123-4010-93a4-1a2fa5bc16e9`
+- **0.9** · nature.com · 1 terme(s) du corpus  
+  Science-informed opinion on generative AI for young children  
+  <https://www.nature.com/articles/s44159-026-00625-3>  
+  `76b6ab47-bb61-4589-8bd3-c8a5a035f00a`
 - **0.9** · nature.com · 0 terme(s) du corpus  
   Briefing Chat: The Bunsen burner myth that turns out to be just hot air  
   <https://www.nature.com/articles/d41586-026-02893-8>  
@@ -141,10 +145,6 @@ Aucun de ces motifs ne porte de jugement sur le fond : ils constatent qu'une pro
   From static disorders to dynamic phase transitions in psychopathology  
   <https://www.nature.com/articles/s44159-026-00615-5>  
   `0c33050e-8e5b-4536-8294-9f7b1cdfdd12`
-- **0.9** · nature.com · 0 terme(s) du corpus  
-  Author Correction: Erythropoietin receptor on cDC1s dictates immune tolerance  
-  <https://www.nature.com/articles/s41586-026-11137-8>  
-  `6a334829-c1eb-45b8-9d69-e52cd78879f3`
 
 ---
 
