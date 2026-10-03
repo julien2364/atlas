@@ -26136,5 +26136,707 @@
     "domaine_opaque": false,
     "statut": "en_attente",
     "created_at": "2026-10-02T13:24:30.184Z"
+  },
+  {
+    "id": "c9d38430-f043-42b0-b93c-6ca2f5c7d97c",
+    "source_id": "anthropic-news",
+    "cible_type": "nouvelle_categorie",
+    "cible_id": null,
+    "contenu_propose": {
+      "titre": "Anthropic signale une interruption de service sur Claude.ai, Code, Cowork et l’API - Unite.AI",
+      "link": "https://news.google.com/rss/articles/CBMinwFBVV95cUxOWHRFOC1pU1ZVN01aeXBKY0tVcGltYnFUdWlYODllb3RDWjE4X0J0SnMzS09rbG1UNFN1bDF1cnJ4WDJ1d2xfUUxNRjNZZy1ELThjdmNkZ3NZLTJCcDB6aHFVOTRMR2NmVlExOHhnTFFwQWJoWnlkU3V0Z0tpTDZyQnQzRUpBVWZqTjJCSEFNTF8yQlN5NEZ5QzBJczNQdXc?oc=5",
+      "date": "2026-09-29T15:16:12.000Z",
+      "resume": "Anthropic signale une interruption de service sur Claude.ai, Code, Cowork et l’API  Unite.AI"
+    },
+    "score_fiabilite": 0.15,
+    "score_fiabilite_motif": "news.google.com est un redirecteur : l'url ne porte pas le domaine de l'éditeur réel, la fiabilité ne peut pas être établie sans ouvrir le lien",
+    "domaine_source": "news.google.com",
+    "domaine_opaque": true,
+    "statut": "en_attente",
+    "created_at": "2026-10-03T12:09:43.791Z"
+  },
+  {
+    "id": "194c05d0-1773-4a7a-aaa8-cd1751197122",
+    "source_id": "openai-news",
+    "cible_type": "nouvelle_categorie",
+    "cible_id": null,
+    "contenu_propose": {
+      "titre": "A model guide for the GPT-6 family",
+      "link": "https://openai.com/index/practical-guide-building-gpt-6",
+      "date": "2026-10-02T16:15:00.000Z",
+      "resume": "Learn how startups can choose GPT-6 models, tune reasoning effort, improve prompts and skills, coordinate tools, and prepare workflows for production."
+    },
+    "score_fiabilite": 0.6,
+    "score_fiabilite_motif": "openai.com — éditeur ou laboratoire s'exprimant sur son propre produit",
+    "domaine_source": "openai.com",
+    "domaine_opaque": false,
+    "statut": "en_attente",
+    "created_at": "2026-10-03T12:09:43.987Z"
+  },
+  {
+    "id": "3a766c04-1478-44ac-b96f-a79fe0476c0a",
+    "source_id": "openai-news",
+    "cible_type": "nouvelle_categorie",
+    "cible_id": null,
+    "contenu_propose": {
+      "titre": "Chatham scales its capital markets expertise with OpenAI",
+      "link": "https://openai.com/index/chatham-financial",
+      "date": "2026-10-02T00:00:00.000Z",
+      "resume": "Chatham Financial uses Codex and GPT-5.6 to build technology and redesign workflows, cutting trade validation from 30 minutes to under 4."
+    },
+    "score_fiabilite": 0.6,
+    "score_fiabilite_motif": "openai.com — éditeur ou laboratoire s'exprimant sur son propre produit",
+    "domaine_source": "openai.com",
+    "domaine_opaque": false,
+    "statut": "en_attente",
+    "created_at": "2026-10-03T12:09:43.987Z"
+  },
+  {
+    "id": "e221215a-176e-4ee2-a690-447eba832cce",
+    "source_id": "commission-europeenne-presse",
+    "cible_type": "nouvelle_categorie",
+    "cible_id": null,
+    "contenu_propose": {
+      "titre": "Statement by Commissioner Lahbib on the siege of Oleshky, Ukraine",
+      "link": "https://ec.europa.eu/commission/presscorner/detail/en/statement_26_2063",
+      "date": "2026-10-02T15:38:58.000Z",
+      "resume": "European Commission Statement Brussels, 02 Oct 2026 What is happening in Oleshky, Ukraine, is appalling. Civilians are trapped under siege by Russian forces without access to food, medicine, clean water and basic..."
+    },
+    "score_fiabilite": 0.8,
+    "score_fiabilite_motif": "ec.europa.eu — préprint, actes de conférence ou institution publique",
+    "domaine_source": "ec.europa.eu",
+    "domaine_opaque": false,
+    "statut": "en_attente",
+    "created_at": "2026-10-03T12:09:47.061Z"
+  },
+  {
+    "id": "c233c9cf-a3d5-41eb-a980-d67203402662",
+    "source_id": "commission-europeenne-presse",
+    "cible_type": "nouvelle_categorie",
+    "cible_id": null,
+    "contenu_propose": {
+      "titre": "G7 Leaders' Statement on global energy security and market stability",
+      "link": "https://ec.europa.eu/commission/presscorner/detail/en/statement_26_2057",
+      "date": "2026-10-02T14:23:24.000Z",
+      "resume": "European Commission Statement Brussels, 02 Oct 2026 Today, we, the Leaders of the G7, convened a virtual meeting to address the deepening challenges to our energy security. Facing unprecedented volatility in oil ..."
+    },
+    "score_fiabilite": 0.8,
+    "score_fiabilite_motif": "ec.europa.eu — préprint, actes de conférence ou institution publique",
+    "domaine_source": "ec.europa.eu",
+    "domaine_opaque": false,
+    "statut": "en_attente",
+    "created_at": "2026-10-03T12:09:47.061Z"
+  },
+  {
+    "id": "6d20f631-47d2-4408-bed0-fcf923debec1",
+    "source_id": "commission-europeenne-presse",
+    "cible_type": "nouvelle_categorie",
+    "cible_id": null,
+    "contenu_propose": {
+      "titre": "Déclaration de la présidente von der Leyen en présence du Premier ministre de la Macédoine du Nord, M. Mickoski",
+      "link": "https://ec.europa.eu/commission/presscorner/detail/fr/statement_26_2053",
+      "date": "2026-10-02T10:19:03.000Z",
+      "resume": "European Commission Déclaration Skopje, 02 Oct 2026 Monsieur le premier ministre, cher Hristijan,\r\nJe suis très heureuse d'être de retour à Skopje. Je vous remercie vivement de cet accueil si chaleureux. La Macédo..."
+    },
+    "score_fiabilite": 0.8,
+    "score_fiabilite_motif": "ec.europa.eu — préprint, actes de conférence ou institution publique",
+    "domaine_source": "ec.europa.eu",
+    "domaine_opaque": false,
+    "statut": "en_attente",
+    "created_at": "2026-10-03T12:09:47.061Z"
+  },
+  {
+    "id": "9d633c7e-ed89-4efe-875a-9b0583547fbe",
+    "source_id": "commission-europeenne-presse",
+    "cible_type": "nouvelle_categorie",
+    "cible_id": null,
+    "contenu_propose": {
+      "titre": "Factsheet - EU solidarity with Ukraine",
+      "link": "https://ec.europa.eu/commission/presscorner/detail/en/fs_22_3862",
+      "date": "2026-10-01T22:00:00.000Z",
+      "resume": "European Commission Factsheet Brussels, 02 Oct 2026   Factsheet - EU solidarity with Ukraine Factsheet - EU solidarity with Ukraine"
+    },
+    "score_fiabilite": 0.8,
+    "score_fiabilite_motif": "ec.europa.eu — préprint, actes de conférence ou institution publique",
+    "domaine_source": "ec.europa.eu",
+    "domaine_opaque": false,
+    "statut": "en_attente",
+    "created_at": "2026-10-03T12:09:47.061Z"
+  },
+  {
+    "id": "7f7ebe84-b100-4a73-9152-9ab4478463fd",
+    "source_id": "fed-communiques",
+    "cible_type": "nouvelle_categorie",
+    "cible_id": null,
+    "contenu_propose": {
+      "titre": "Federal Reserve Board announces approval of application by Fleur Capital Corporation",
+      "link": "https://www.federalreserve.gov/newsevents/pressreleases/orders20261002a.htm",
+      "date": "2026-10-02T20:45:00.000Z",
+      "resume": "Federal Reserve Board announces approval of application by Fleur Capital Corporation"
+    },
+    "score_fiabilite": 0.4,
+    "score_fiabilite_motif": "federalreserve.gov — domaine absent de la table : score par défaut prudent, sous le seuil de source primaire",
+    "domaine_source": "federalreserve.gov",
+    "domaine_opaque": false,
+    "statut": "en_attente",
+    "created_at": "2026-10-03T12:09:47.862Z"
+  },
+  {
+    "id": "23e2b695-6da8-414d-a5d8-432200936e4e",
+    "source_id": "fed-communiques",
+    "cible_type": "nouvelle_categorie",
+    "cible_id": null,
+    "contenu_propose": {
+      "titre": "Federal Reserve Board announces it will extend, until November 4, the comment period on its proposal to modernize Regulation O",
+      "link": "https://www.federalreserve.gov/newsevents/pressreleases/bcreg20261002a.htm",
+      "date": "2026-10-02T20:00:00.000Z",
+      "resume": "Federal Reserve Board announces it will extend, until November 4, the comment period on its proposal to modernize Regulation O"
+    },
+    "score_fiabilite": 0.4,
+    "score_fiabilite_motif": "federalreserve.gov — domaine absent de la table : score par défaut prudent, sous le seuil de source primaire",
+    "domaine_source": "federalreserve.gov",
+    "domaine_opaque": false,
+    "statut": "en_attente",
+    "created_at": "2026-10-03T12:09:47.862Z"
+  },
+  {
+    "id": "f1134257-6b23-4933-b576-8ecfae8fcb10",
+    "source_id": "fed-communiques",
+    "cible_type": "nouvelle_categorie",
+    "cible_id": null,
+    "contenu_propose": {
+      "titre": "Federal Reserve Board issues enforcement action with Ontario Bancorporation, Inc.",
+      "link": "https://www.federalreserve.gov/newsevents/pressreleases/enforcement20261002a.htm",
+      "date": "2026-10-02T15:00:00.000Z",
+      "resume": "Federal Reserve Board issues enforcement action with Ontario Bancorporation, Inc."
+    },
+    "score_fiabilite": 0.4,
+    "score_fiabilite_motif": "federalreserve.gov — domaine absent de la table : score par défaut prudent, sous le seuil de source primaire",
+    "domaine_source": "federalreserve.gov",
+    "domaine_opaque": false,
+    "statut": "en_attente",
+    "created_at": "2026-10-03T12:09:47.862Z"
+  },
+  {
+    "id": "1ebb71d2-abdd-4a18-850c-f2174918d645",
+    "source_id": "ft-marches",
+    "cible_type": "nouvelle_categorie",
+    "cible_id": null,
+    "contenu_propose": {
+      "titre": "What’s driving the global bond sell-off?",
+      "link": "https://www.ft.com/content/f212d7b9-95e0-4aa0-84bf-4df7b43bc80a?syn-25a6b1a6=1",
+      "date": "2026-10-03T09:30:10.000Z",
+      "resume": "Looking at the most cited factors reveals a mixed picture"
+    },
+    "score_fiabilite": 0.4,
+    "score_fiabilite_motif": "ft.com — presse généraliste ou spécialisée",
+    "domaine_source": "ft.com",
+    "domaine_opaque": false,
+    "statut": "en_attente",
+    "created_at": "2026-10-03T12:09:50.323Z"
+  },
+  {
+    "id": "1838d42f-9636-44dd-8a3e-8e3db0578032",
+    "source_id": "ft-marches",
+    "cible_type": "nouvelle_categorie",
+    "cible_id": null,
+    "contenu_propose": {
+      "titre": "Rising gilt yields attract retail investors hunting for tax-efficient assets",
+      "link": "https://www.ft.com/content/17a502a2-f8cb-4d79-996e-f2c7018585de?syn-25a6b1a6=1",
+      "date": "2026-10-03T04:00:39.000Z",
+      "resume": "30-year yields are above 6 per cent for the first time since 1998"
+    },
+    "score_fiabilite": 0.4,
+    "score_fiabilite_motif": "ft.com — presse généraliste ou spécialisée",
+    "domaine_source": "ft.com",
+    "domaine_opaque": false,
+    "statut": "en_attente",
+    "created_at": "2026-10-03T12:09:50.323Z"
+  },
+  {
+    "id": "d0dce05b-9057-42d1-953e-91a8481675e0",
+    "source_id": "ft-marches",
+    "cible_type": "nouvelle_categorie",
+    "cible_id": null,
+    "contenu_propose": {
+      "titre": "The coming futures market in AI compute",
+      "link": "https://www.ft.com/content/a1815bc5-b5d5-47ff-bbbc-e1a689929321",
+      "date": "2026-10-03T04:00:39.000Z",
+      "resume": "Big swings in the price of chip rentals are spurring the creation of a trading opportunity"
+    },
+    "score_fiabilite": 0.4,
+    "score_fiabilite_motif": "ft.com — presse généraliste ou spécialisée",
+    "domaine_source": "ft.com",
+    "domaine_opaque": false,
+    "statut": "en_attente",
+    "created_at": "2026-10-03T12:09:50.323Z"
+  },
+  {
+    "id": "283a3910-db6d-4aa4-9fae-e1f417a48445",
+    "source_id": "ft-marches",
+    "cible_type": "nouvelle_categorie",
+    "cible_id": null,
+    "contenu_propose": {
+      "titre": "Dethroning FICO won’t much help US homeowners",
+      "link": "https://www.ft.com/content/a752a765-8b64-41a5-b051-5237957e13c1?syn-25a6b1a6=1",
+      "date": "2026-10-03T04:00:29.000Z",
+      "resume": "Housing tsar Bill Pulte wants more competition among consumer credit agencies, but borrowers may just seek the most lenient"
+    },
+    "score_fiabilite": 0.4,
+    "score_fiabilite_motif": "ft.com — presse généraliste ou spécialisée",
+    "domaine_source": "ft.com",
+    "domaine_opaque": false,
+    "statut": "en_attente",
+    "created_at": "2026-10-03T12:09:50.323Z"
+  },
+  {
+    "id": "1770a9d3-3cde-42de-a0b3-94ee85d64ecd",
+    "source_id": "ft-marches",
+    "cible_type": "nouvelle_categorie",
+    "cible_id": null,
+    "contenu_propose": {
+      "titre": "Private capital checks into Europe’s booming hostel market",
+      "link": "https://www.ft.com/content/9742e08a-aa07-4f81-abbb-e6b6769c6c77?syn-25a6b1a6=1",
+      "date": "2026-10-03T04:00:10.000Z",
+      "resume": "Brookfield and Apollo among firms investing in a long-ignored corner of the travel industry"
+    },
+    "score_fiabilite": 0.4,
+    "score_fiabilite_motif": "ft.com — presse généraliste ou spécialisée",
+    "domaine_source": "ft.com",
+    "domaine_opaque": false,
+    "statut": "en_attente",
+    "created_at": "2026-10-03T12:09:50.323Z"
+  },
+  {
+    "id": "ca6fd55c-c44d-42c6-a487-4a0d7ae253e0",
+    "source_id": "wsj-marches",
+    "cible_type": "nouvelle_categorie",
+    "cible_id": null,
+    "contenu_propose": {
+      "titre": "Luxury Stocks Are Selling at Fast-Fashion Prices",
+      "link": "https://www.wsj.com/business/retail/luxury-stocks-are-selling-at-fast-fashion-prices-691ae978?mod=rss_markets_main",
+      "date": "2026-10-03T09:30:00.000Z",
+      "resume": "Trends that made luxury companies like LVMH such a brilliant investment over the past 20 years are fading."
+    },
+    "score_fiabilite": 0.4,
+    "score_fiabilite_motif": "wsj.com — presse généraliste ou spécialisée",
+    "domaine_source": "wsj.com",
+    "domaine_opaque": false,
+    "statut": "en_attente",
+    "created_at": "2026-10-03T12:09:50.402Z"
+  },
+  {
+    "id": "5a09517b-cbdf-49fd-9419-1da15fbc302b",
+    "source_id": "wsj-marches",
+    "cible_type": "nouvelle_categorie",
+    "cible_id": null,
+    "contenu_propose": {
+      "titre": "How the French Bond Trade Backfired on Investors",
+      "link": "https://www.wsj.com/finance/investing/how-the-french-bond-trade-backfired-on-investors-4f2aba71?mod=rss_markets_main",
+      "date": "2026-10-03T09:30:00.000Z",
+      "resume": "Hedge funds piled into leveraged bets over the summer, figuring French politics wouldn’t get much rockier."
+    },
+    "score_fiabilite": 0.4,
+    "score_fiabilite_motif": "wsj.com — presse généraliste ou spécialisée",
+    "domaine_source": "wsj.com",
+    "domaine_opaque": false,
+    "statut": "en_attente",
+    "created_at": "2026-10-03T12:09:50.402Z"
+  },
+  {
+    "id": "590296bb-8c3d-4c56-a7d3-f354b0178c4f",
+    "source_id": "wsj-marches",
+    "cible_type": "nouvelle_categorie",
+    "cible_id": null,
+    "contenu_propose": {
+      "titre": "Meet the Gen-Z High Rollers Dominating the Prediction Markets",
+      "link": "https://www.wsj.com/finance/kalshi-prediction-traders-profiles-2130f3b0?mod=rss_markets_main",
+      "date": "2026-10-03T09:30:00.000Z",
+      "resume": "Upstart trading firms loom large on platforms such as Kalshi and Polymarket. They are starting to raise capital."
+    },
+    "score_fiabilite": 0.4,
+    "score_fiabilite_motif": "wsj.com — presse généraliste ou spécialisée",
+    "domaine_source": "wsj.com",
+    "domaine_opaque": false,
+    "statut": "en_attente",
+    "created_at": "2026-10-03T12:09:50.402Z"
+  },
+  {
+    "id": "a943f4d5-7f56-45a9-a651-e453e96124a8",
+    "source_id": "wsj-marches",
+    "cible_type": "nouvelle_categorie",
+    "cible_id": null,
+    "contenu_propose": {
+      "titre": "AI Is Squeezing Out the Rest of the Stock Market",
+      "link": "https://www.wsj.com/finance/investing/ai-is-squeezing-out-the-rest-of-the-stock-market-60928dd3?mod=rss_markets_main",
+      "date": "2026-10-02T23:00:00.000Z",
+      "resume": "Expect stocks outside tech to struggle, earnings to expand more slowly and concern about credit risk to grow."
+    },
+    "score_fiabilite": 0.4,
+    "score_fiabilite_motif": "wsj.com — presse généraliste ou spécialisée",
+    "domaine_source": "wsj.com",
+    "domaine_opaque": false,
+    "statut": "en_attente",
+    "created_at": "2026-10-03T12:09:50.402Z"
+  },
+  {
+    "id": "12003a57-7990-46ea-b314-c7dd72ebca49",
+    "source_id": "le-monde-economie",
+    "cible_type": "nouvelle_categorie",
+    "cible_id": null,
+    "contenu_propose": {
+      "titre": "La compagnie aérienne Air Corsica dans la tourmente, une partie de sa flotte étant clouée au sol par « mesure de précaution »",
+      "link": "https://www.lemonde.fr/economie/article/2026/10/03/la-compagnie-aerienne-air-corsica-dans-la-tourmente-une-partie-de-sa-flotte-etant-clouee-au-sol-par-mesure-de-precaution_6787792_3234.html",
+      "date": "2026-10-03T12:00:16.000Z",
+      "resume": "Cette crise fragilise la compagnie régionale qui mène un plan de départ volontaire de 70 personnes d’ici à 2027, alors que deux syndicats de pilotes ont déposé un préavis de grève."
+    },
+    "score_fiabilite": 0.4,
+    "score_fiabilite_motif": "lemonde.fr — presse généraliste ou spécialisée",
+    "domaine_source": "lemonde.fr",
+    "domaine_opaque": false,
+    "statut": "en_attente",
+    "created_at": "2026-10-03T12:09:50.531Z"
+  },
+  {
+    "id": "70da6645-9b50-48ef-9a5a-6311d9b0fd17",
+    "source_id": "le-monde-economie",
+    "cible_type": "nouvelle_categorie",
+    "cible_id": null,
+    "contenu_propose": {
+      "titre": "Georgia Meloni prête à relancer le nucléaire quarante ans après l’abandon de l’atome par l’Italie",
+      "link": "https://www.lemonde.fr/economie/article/2026/10/03/georgia-meloni-prete-a-relancer-le-nucleaire-quarante-ans-apres-la-sortie-italienne-de-l-atome_6787741_3234.html",
+      "date": "2026-10-03T08:00:07.000Z",
+      "resume": "Le Sénat a voté un texte donnant douze mois au gouvernement pour réécrire le cadre réglementaire d’une réouverture de réacteurs en 2034."
+    },
+    "score_fiabilite": 0.4,
+    "score_fiabilite_motif": "lemonde.fr — presse généraliste ou spécialisée",
+    "domaine_source": "lemonde.fr",
+    "domaine_opaque": false,
+    "statut": "en_attente",
+    "created_at": "2026-10-03T12:09:50.531Z"
+  },
+  {
+    "id": "b35e81aa-0e0d-4948-8f29-f393882979c1",
+    "source_id": "le-monde-economie",
+    "cible_type": "nouvelle_categorie",
+    "cible_id": null,
+    "contenu_propose": {
+      "titre": "Jean Pisani-Ferry : « Les marchés sont demandeurs de sérieux budgétaire, pas d’austérité »",
+      "link": "https://www.lemonde.fr/idees/article/2026/10/03/jean-pisani-ferry-les-marches-sont-demandeurs-de-serieux-budgetaire-pas-d-austerite_6787635_3232.html",
+      "date": "2026-10-03T06:00:07.000Z",
+      "resume": "La France ne doit pas attendre le résultat du scrutin présidentiel pour réduire son déficit. Dans sa chronique, l’économiste récuse la règle d’or, mais préconise la construction d’une plateforme commune par des forces politiques en mesure de se coaliser."
+    },
+    "score_fiabilite": 0.4,
+    "score_fiabilite_motif": "lemonde.fr — presse généraliste ou spécialisée",
+    "domaine_source": "lemonde.fr",
+    "domaine_opaque": false,
+    "statut": "en_attente",
+    "created_at": "2026-10-03T12:09:50.531Z"
+  },
+  {
+    "id": "9bda1354-9330-420c-a54b-4942e3e6f51a",
+    "source_id": "le-monde-economie",
+    "cible_type": "nouvelle_categorie",
+    "cible_id": null,
+    "contenu_propose": {
+      "titre": "L’impact du régime fiscal sur le traitement des loyers impayés en location meublée",
+      "link": "https://www.lemonde.fr/argent/article/2026/10/03/l-impact-du-regime-fiscal-sur-le-traitement-des-loyers-impayes-en-location-meublee_6787531_1657007.html",
+      "date": "2026-10-03T04:00:25.000Z",
+      "resume": "Dans certains cas, les loyers sont imposables dès lors qu’ils sont dus, rappelle Baptiste Bochart, juriste au cabinet JD2M."
+    },
+    "score_fiabilite": 0.4,
+    "score_fiabilite_motif": "lemonde.fr — presse généraliste ou spécialisée",
+    "domaine_source": "lemonde.fr",
+    "domaine_opaque": false,
+    "statut": "en_attente",
+    "created_at": "2026-10-03T12:09:50.531Z"
+  },
+  {
+    "id": "1a90f8ed-ac35-469b-ae56-993fdc611fa5",
+    "source_id": "le-monde-economie",
+    "cible_type": "nouvelle_categorie",
+    "cible_id": null,
+    "contenu_propose": {
+      "titre": "Quand des agents IA s’occuperont de nos achats en ligne, d’un panier de courses à un billet d’avion",
+      "link": "https://www.lemonde.fr/economie/article/2026/10/03/comment-les-agents-ia-feront-les-courses-a-votre-place_6787530_3234.html",
+      "date": "2026-10-03T04:00:06.000Z",
+      "resume": "Les Français pourront bientôt déléguer leurs achats à des robots. L’absence de cadre réglementaire inquiète tous les acteurs, des commerçants aux banques en passant par les consommateurs."
+    },
+    "score_fiabilite": 0.4,
+    "score_fiabilite_motif": "lemonde.fr — presse généraliste ou spécialisée",
+    "domaine_source": "lemonde.fr",
+    "domaine_opaque": false,
+    "statut": "en_attente",
+    "created_at": "2026-10-03T12:09:50.531Z"
+  },
+  {
+    "id": "d87f1d2c-38ed-4e71-99ab-09200efdcd62",
+    "source_id": "la-tribune-actualites",
+    "cible_type": "nouvelle_categorie",
+    "cible_id": null,
+    "contenu_propose": {
+      "titre": "Aux États-Unis, Bayer prends du poids avec un investissement de 2,2 milliards de dollars",
+      "link": "https://www.latribune.fr/article/entreprises-finance/chimie-pharmacie/1183540864674114/aux-etats-unis-bayer-prends-du-poids-avec-un-investissement-de-2-2-milliards-de-dollars",
+      "date": "2026-10-03T11:40:49.000Z",
+      "resume": "L'allemand Bayer a dévoilé un investissement massif dans un site de production pharmaceutique aux États-Unis. L'opération s'inscrit dans la volonté affichée de l'administration Trump d'attirer davantage d'usines de fabrication de médicaments sur le sol américain."
+    },
+    "score_fiabilite": 0.4,
+    "score_fiabilite_motif": "latribune.fr — domaine absent de la table : score par défaut prudent, sous le seuil de source primaire",
+    "domaine_source": "latribune.fr",
+    "domaine_opaque": false,
+    "statut": "en_attente",
+    "created_at": "2026-10-03T12:09:50.703Z"
+  },
+  {
+    "id": "dd143fba-3497-4a04-b6b0-c70207ad69ea",
+    "source_id": "la-tribune-actualites",
+    "cible_type": "nouvelle_categorie",
+    "cible_id": null,
+    "contenu_propose": {
+      "titre": "Boeing 737 MAX : le bug informatique jugé sans risque, le MAX 10 en passe d’être enfin certifié",
+      "link": "https://www.latribune.fr/article/defense-aerospatiale/63013380869442/boeing-737-max-le-bug-informatique-juge-sans-risque-le-max-10-en-passe-d-etre-enfin-certifie",
+      "date": "2026-10-03T10:17:03.000Z",
+      "resume": "Le bug informatique découvert sur certains Boeing 737 MAX ne constitue pas un enjeu de sécurité, selon le régulateur américain de l’aviation civile. De quoi lever le dernier obstacle à la certification de la plus longue version de l’appareil, le 737 MAX 10, seul à même de concurrencer le best-seller actuel des monocouloirs, l’Airbus A321neo."
+    },
+    "score_fiabilite": 0.4,
+    "score_fiabilite_motif": "latribune.fr — domaine absent de la table : score par défaut prudent, sous le seuil de source primaire",
+    "domaine_source": "latribune.fr",
+    "domaine_opaque": false,
+    "statut": "en_attente",
+    "created_at": "2026-10-03T12:09:50.704Z"
+  },
+  {
+    "id": "ac8a01f2-fc02-4c38-823a-f356929e4dbb",
+    "source_id": "la-tribune-actualites",
+    "cible_type": "nouvelle_categorie",
+    "cible_id": null,
+    "contenu_propose": {
+      "titre": "Automobile : les constructeurs américains talonnés par les marques asiatiques et leurs véhicules hybrides",
+      "link": "https://www.latribune.fr/article/transports/automobile/14758700090927/automobile-les-constructeurs-americains-talonnes-par-les-marques-asiatiques-et-leurs-vehicules-hybrides",
+      "date": "2026-10-03T07:41:02.000Z",
+      "resume": "Aux Etats-Unis, les constructeurs automobiles asiatiques ne cessent de gagner du terrain face aux acteurs historiques. Leurs motorisations hybrides séduisent les conducteurs, sur fond de flambée du prix du pétrole."
+    },
+    "score_fiabilite": 0.4,
+    "score_fiabilite_motif": "latribune.fr — domaine absent de la table : score par défaut prudent, sous le seuil de source primaire",
+    "domaine_source": "latribune.fr",
+    "domaine_opaque": false,
+    "statut": "en_attente",
+    "created_at": "2026-10-03T12:09:50.704Z"
+  },
+  {
+    "id": "0d9d9686-bfe6-4e52-9c4a-4ee363be764d",
+    "source_id": "la-tribune-actualites",
+    "cible_type": "nouvelle_categorie",
+    "cible_id": null,
+    "contenu_propose": {
+      "titre": "OPINION. « L’attractivité de la destination France se gagne aussi dans les airs »",
+      "link": "https://www.latribune.fr/article/idees/53448670289594/opinion-l-attractivite-de-la-destination-france-se-gagne-aussi-dans-les-airs",
+      "date": "2026-10-03T07:10:02.000Z",
+      "resume": "Pour rester une puissance touristique, la France doit faire de la connectivité aérienne un pilier assumé de sa stratégie nationale et territoriale"
+    },
+    "score_fiabilite": 0.4,
+    "score_fiabilite_motif": "latribune.fr — domaine absent de la table : score par défaut prudent, sous le seuil de source primaire",
+    "domaine_source": "latribune.fr",
+    "domaine_opaque": false,
+    "statut": "en_attente",
+    "created_at": "2026-10-03T12:09:50.704Z"
+  },
+  {
+    "id": "e08a8888-5420-4653-9776-f30f4a20638e",
+    "source_id": "la-tribune-actualites",
+    "cible_type": "nouvelle_categorie",
+    "cible_id": null,
+    "contenu_propose": {
+      "titre": "F-16 ukrainiens : le démenti ferme de Sabena Engineering et de l’Ukraine",
+      "link": "https://air-cosmos.latribune.fr/article/defense/11060396896034/f-16-ukrainiens-le-dementi-ferme-de-sabena-engineering-et-de-l-ukraine",
+      "date": "2026-10-02T17:33:46.000Z",
+      "resume": "Alors que le Wall Street Journal évoque une faible disponibilité des F-16 ukrainiens en raison de longs délais de maintenance, Sabena Engineering, la Belgique et Kiev réfutent ces informations."
+    },
+    "score_fiabilite": 0.4,
+    "score_fiabilite_motif": "air-cosmos.latribune.fr — domaine absent de la table : score par défaut prudent, sous le seuil de source primaire",
+    "domaine_source": "air-cosmos.latribune.fr",
+    "domaine_opaque": false,
+    "statut": "en_attente",
+    "created_at": "2026-10-03T12:09:50.704Z"
+  },
+  {
+    "id": "c7e06562-111a-4fd1-ade6-1afebdec4e90",
+    "source_id": "rfi-economie",
+    "cible_type": "nouvelle_categorie",
+    "cible_id": null,
+    "contenu_propose": {
+      "titre": "RDC, Ukraine, Sénégal, France : trois regards sur des économies sous tension",
+      "link": "https://www.rfi.fr/fr/podcasts/%C3%A9co-d-ici-%C3%A9co-d-ailleurs/20261002-rdc-ukraine-s%C3%A9n%C3%A9gal-france-trois-regards-sur-des-%C3%A9conomies-sous-tension",
+      "date": "2026-10-02T15:26:04.000Z",
+      "resume": "Guerres, dépendances, dette publique : trois problématiques mais un même enjeu de souveraineté et de financements. En RDC, les banques accompagnent la diversification d’une économie tirée par le secteur minier. En Ukraine, la guerre fragilise agriculteurs et ports, menaçant les marchés alimentaires mondiaux. Au Sénégal et en France, la dette pose la question : jusqu’où un État peut-il emprunter et"
+    },
+    "score_fiabilite": 0.4,
+    "score_fiabilite_motif": "rfi.fr — domaine absent de la table : score par défaut prudent, sous le seuil de source primaire",
+    "domaine_source": "rfi.fr",
+    "domaine_opaque": false,
+    "statut": "en_attente",
+    "created_at": "2026-10-03T12:09:51.020Z"
+  },
+  {
+    "id": "d8ec5482-f7e2-4d76-9d4a-ce0a62306883",
+    "source_id": "rfi-economie",
+    "cible_type": "nouvelle_categorie",
+    "cible_id": null,
+    "contenu_propose": {
+      "titre": "La justice donne raison à Romy Castel dans la bataille de pouvoir au sein de Castel, géant des boissons en Afrique",
+      "link": "https://www.rfi.fr/fr/%C3%A9conomie/20261002-la-justice-donne-raison-%C3%A0-romy-castel-dans-la-bataille-de-pouvoir-au-sein-de-castel-g%C3%A9ant-des-boissons-en-afrique",
+      "date": "2026-10-02T15:01:46.000Z",
+      "resume": "Nouvel épisode dans la saga Castel. Vendredi 2 octobre dans la matinée, la Haute cour de Singapour, où est enregistrée une holding du groupe, a donné raison à Romy Castel, fille unique du fondateur Pierre Castel, en validant son droit de vote, qui était contesté. Cette décision, à effet immédiat, lui permet de devenir majoritaire au sein d'IBBM, présentée comme la holding de tête du géant bordelai"
+    },
+    "score_fiabilite": 0.4,
+    "score_fiabilite_motif": "rfi.fr — domaine absent de la table : score par défaut prudent, sous le seuil de source primaire",
+    "domaine_source": "rfi.fr",
+    "domaine_opaque": false,
+    "statut": "en_attente",
+    "created_at": "2026-10-03T12:09:51.020Z"
+  },
+  {
+    "id": "69543a16-7b1f-4611-ae39-e42a31f5d13c",
+    "source_id": "guardian-economie",
+    "cible_type": "nouvelle_categorie",
+    "cible_id": null,
+    "contenu_propose": {
+      "titre": "John Maynard Keynes: the cultured economist who governments turn to in a crisis",
+      "link": "https://www.theguardian.com/business/2026/oct/02/john-maynard-keynes-the-cultured-economist-who-governments-turn-to-in-a-crisis",
+      "date": "2026-10-02T14:00:09.000Z",
+      "resume": "A new play about the art-loving Bloomsbury Group member speaks of the enduring battle of ideas with his free-market rival Friedrich Hayek\nThe sound of guns from the advancing German armies could be heard clearly by John Maynard Keynes as his train trundled across northern France in the spring of 1918. The evidence of the struggle on the western front was everywhere but Keynes, then a Treasury offi"
+    },
+    "score_fiabilite": 0.4,
+    "score_fiabilite_motif": "theguardian.com — presse généraliste ou spécialisée",
+    "domaine_source": "theguardian.com",
+    "domaine_opaque": false,
+    "statut": "en_attente",
+    "created_at": "2026-10-03T12:09:51.823Z"
+  },
+  {
+    "id": "b7b98ad6-3caf-4505-804d-ea5e4bb4bded",
+    "source_id": "guardian-economie",
+    "cible_type": "nouvelle_categorie",
+    "cible_id": null,
+    "contenu_propose": {
+      "titre": "‘There’s no such thing as democracy’: Yanis Varoufakis | Radical Thinking with Aditya Chakrabortty – podcast",
+      "link": "https://www.theguardian.com/news/audio/2026/oct/03/democracy-yanis-varoufakis-radical-thinking-with-aditya-chakrabortty-podcast",
+      "date": "2026-10-03T07:00:53.000Z",
+      "resume": "Who is really in charge – the people or the markets? In the first episode of Radical Thinking, a new series from the Guardian, senior economics commentator Aditya Chakrabortty speaks to the former Greek finance minister Yanis Varoufakis about what it was like during the eurozone crisis when he went head to head with those who wanted to stop his reforms\nWatch Radical Thinking with Aditya Chakrabort"
+    },
+    "score_fiabilite": 0.4,
+    "score_fiabilite_motif": "theguardian.com — presse généraliste ou spécialisée",
+    "domaine_source": "theguardian.com",
+    "domaine_opaque": false,
+    "statut": "en_attente",
+    "created_at": "2026-10-03T12:09:51.823Z"
+  },
+  {
+    "id": "14c560cd-5b75-43df-825d-50ace852001d",
+    "source_id": "guardian-economie",
+    "cible_type": "nouvelle_categorie",
+    "cible_id": null,
+    "contenu_propose": {
+      "titre": "'There’s no such thing as democracy': Yanis Varoufakis | Radical Thinking with Aditya Chakrabortty – podcast",
+      "link": "https://www.theguardian.com/politics/audio/2026/oct/03/theres-no-such-thing-as-democracy-yanis-varoufakis-radical-thinking-with-aditya-chakrabortty-podcast",
+      "date": "2026-10-03T06:50:52.000Z",
+      "resume": "Who is really in charge – the people or the markets? In the first episode of Radical Thinking, a new series from the Guardian, senior economics commentator Aditya Chakrabortty speaks to the former Greek finance minister Yanis Varoufakis. What was it like during the eurozone crisis when Varoufakis went head to head with those who wanted to stop his reforms?\nWatch Radical Thinking with Aditya Chakra"
+    },
+    "score_fiabilite": 0.4,
+    "score_fiabilite_motif": "theguardian.com — presse généraliste ou spécialisée",
+    "domaine_source": "theguardian.com",
+    "domaine_opaque": false,
+    "statut": "en_attente",
+    "created_at": "2026-10-03T12:09:51.823Z"
+  },
+  {
+    "id": "90e1da5b-1771-44e2-9949-3668ee5da54d",
+    "source_id": "guardian-economie",
+    "cible_type": "nouvelle_categorie",
+    "cible_id": null,
+    "contenu_propose": {
+      "titre": "DoJ declines to reopen investigation into former Fed chair Jay Powell",
+      "link": "https://www.theguardian.com/business/2026/oct/02/doj-fed-chair-jerome-powell-investigation",
+      "date": "2026-10-02T22:32:21.000Z",
+      "resume": "Kevin Warsh’s predecessor had been investigated over cost overruns related to central bank renovation project\nThe US ⁠justice department is not reopening a criminal investigation into former Federal Reserve chair Jerome Powell ⁠for cost overruns ⁠related ​to the central bank’s building renovation project, a department spokesperson said on Friday.\nAttorney general Todd ⁠Blanche – in comments to Blo"
+    },
+    "score_fiabilite": 0.4,
+    "score_fiabilite_motif": "theguardian.com — presse généraliste ou spécialisée",
+    "domaine_source": "theguardian.com",
+    "domaine_opaque": false,
+    "statut": "en_attente",
+    "created_at": "2026-10-03T12:09:51.823Z"
+  },
+  {
+    "id": "76b6ab47-bb61-4589-8bd3-c8a5a035f00a",
+    "source_id": "nature-reviews-psychology",
+    "cible_type": "nouvelle_categorie",
+    "cible_id": null,
+    "contenu_propose": {
+      "titre": "Science-informed opinion on generative AI for young children",
+      "link": "https://www.nature.com/articles/s44159-026-00625-3",
+      "date": "2026-10-02T00:00:00.000Z",
+      "resume": ""
+    },
+    "score_fiabilite": 0.9,
+    "score_fiabilite_motif": "nature.com — édition scientifique à comité de lecture",
+    "domaine_source": "nature.com",
+    "domaine_opaque": false,
+    "statut": "en_attente",
+    "created_at": "2026-10-03T12:09:53.379Z"
+  },
+  {
+    "id": "69a30094-83ca-404d-bb20-13cfa4a90b0b",
+    "source_id": "mit-technology-review-ia",
+    "cible_type": "nouvelle_categorie",
+    "cible_id": null,
+    "contenu_propose": {
+      "titre": "Redefining enterprise intelligence with autonomous AI",
+      "link": "https://www.technologyreview.com/2026/10/02/1143774/redefining-enterprise-intelligence-with-autonomous-ai/",
+      "date": "2026-10-02T15:49:04.000Z",
+      "resume": "Enterprise AI is no longer a future ambition. It is in full operational flight. Model capabilities are advancing faster than most organizations can absorb, while the cost of performance continues to fall. Globally, AI investment is set to reach $2.5 trillion in 2026, up 44% from the previous year. For many enterprises, this investment has…"
+    },
+    "score_fiabilite": 0.4,
+    "score_fiabilite_motif": "technologyreview.com — presse généraliste ou spécialisée",
+    "domaine_source": "technologyreview.com",
+    "domaine_opaque": false,
+    "statut": "en_attente",
+    "created_at": "2026-10-03T12:09:56.498Z"
+  },
+  {
+    "id": "e081ccda-4b2f-4e82-858a-f00e9b1c7ace",
+    "source_id": "mit-news-intelligence-artificielle",
+    "cible_type": "nouvelle_categorie",
+    "cible_id": null,
+    "contenu_propose": {
+      "titre": "Computational tools for society’s most complex challenges",
+      "link": "https://news.mit.edu/2026/computational-tools-for-societys-most-complex-challenges-cathy-wu-1002",
+      "date": "2026-10-02T19:30:00.000Z",
+      "resume": "Associate Professor Cathy Wu uses reinforcement learning to help map out improvements to transportation and other multifaceted systems."
+    },
+    "score_fiabilite": 0.4,
+    "score_fiabilite_motif": "news.mit.edu — domaine absent de la table : score par défaut prudent, sous le seuil de source primaire",
+    "domaine_source": "news.mit.edu",
+    "domaine_opaque": false,
+    "statut": "en_attente",
+    "created_at": "2026-10-03T12:09:56.613Z"
+  },
+  {
+    "id": "e56a967f-3ca6-4149-8146-b0cd1d8fdf5f",
+    "source_id": "mit-news-intelligence-artificielle",
+    "cible_type": "nouvelle_categorie",
+    "cible_id": null,
+    "contenu_propose": {
+      "titre": "Documenting the tech worker movement",
+      "link": "https://news.mit.edu/2026/documenting-tech-worker-movement-0918",
+      "date": "2026-10-02T17:00:00.000Z",
+      "resume": "Writing as a participant and researcher, PhD student JS Tan SM ’22 has co-authored a new book about the rise of tech worker protests and the employer backlash that followed."
+    },
+    "score_fiabilite": 0.4,
+    "score_fiabilite_motif": "news.mit.edu — domaine absent de la table : score par défaut prudent, sous le seuil de source primaire",
+    "domaine_source": "news.mit.edu",
+    "domaine_opaque": false,
+    "statut": "en_attente",
+    "created_at": "2026-10-03T12:09:56.613Z"
   }
 ]
