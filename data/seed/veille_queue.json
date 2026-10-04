@@ -26840,5 +26840,527 @@
     "domaine_opaque": false,
     "statut": "en_attente",
     "created_at": "2026-10-03T12:09:56.613Z"
+  },
+  {
+    "id": "b304a8f4-d28b-4395-8a57-e250ead5f108",
+    "source_id": "anthropic-news",
+    "cible_type": "nouvelle_categorie",
+    "cible_id": null,
+    "contenu_propose": {
+      "titre": "Anthropic lance la Frontier Academy, 100 M$ pour former 10 000 ingénieurs - Pasquale Pillitteri",
+      "link": "https://news.google.com/rss/articles/CBMiswFBVV95cUxPS2RDbVhBalVhYVhpSWQ4dXlfcVl1WWtPYXV1UzBScmplVTRleDgwXzY1c1gta3UtdDk5SWJlUEs4MGRGY3lYRWN5dy1Dek1xckUyeUpQc0gtVUlscDcxYkNZYUlYYzNzSDJHUzZwbk9WdFlEQ0tTbmdXY0tSdHRDZEhiczduTWtrYlpvV3hCWE5vekItMXI4Q3JEeWdXX0tZVGVNeUplVjZPM0ZFdDQwUmJNUQ?oc=5",
+      "date": "2026-10-04T07:23:18.000Z",
+      "resume": "Anthropic lance la Frontier Academy, 100 M$ pour former 10 000 ingénieurs  Pasquale Pillitteri"
+    },
+    "score_fiabilite": 0.15,
+    "score_fiabilite_motif": "news.google.com est un redirecteur : l'url ne porte pas le domaine de l'éditeur réel, la fiabilité ne peut pas être établie sans ouvrir le lien",
+    "domaine_source": "news.google.com",
+    "domaine_opaque": true,
+    "statut": "en_attente",
+    "created_at": "2026-10-04T12:59:14.214Z"
+  },
+  {
+    "id": "f0b1515d-bdd0-4c52-8552-2860678f9bfd",
+    "source_id": "nature-news",
+    "cible_type": "nouvelle_categorie",
+    "cible_id": null,
+    "contenu_propose": {
+      "titre": "Location, location, location: how to edit genes only in the cells you want",
+      "link": "https://www.nature.com/articles/d41586-026-03037-8",
+      "date": "2026-10-02T00:00:00.000Z",
+      "resume": ""
+    },
+    "score_fiabilite": 0.9,
+    "score_fiabilite_motif": "nature.com — édition scientifique à comité de lecture",
+    "domaine_source": "nature.com",
+    "domaine_opaque": false,
+    "statut": "en_attente",
+    "created_at": "2026-10-04T12:59:14.611Z"
+  },
+  {
+    "id": "c07e6fb1-e27d-4423-9c42-7765821723b6",
+    "source_id": "nature-news",
+    "cible_type": "nouvelle_categorie",
+    "cible_id": null,
+    "contenu_propose": {
+      "titre": "‘Learning about physics changed my life’: author Hernan Diaz on his new novel <i>Ply</i>",
+      "link": "https://www.nature.com/articles/d41586-026-03057-4",
+      "date": "2026-10-02T00:00:00.000Z",
+      "resume": ""
+    },
+    "score_fiabilite": 0.9,
+    "score_fiabilite_motif": "nature.com — édition scientifique à comité de lecture",
+    "domaine_source": "nature.com",
+    "domaine_opaque": false,
+    "statut": "en_attente",
+    "created_at": "2026-10-04T12:59:14.611Z"
+  },
+  {
+    "id": "446808d7-35ba-4ed3-bd3c-617ed271b1f7",
+    "source_id": "nature-news",
+    "cible_type": "nouvelle_categorie",
+    "cible_id": null,
+    "contenu_propose": {
+      "titre": "How to respond to hate speech without fuelling it further",
+      "link": "https://www.nature.com/articles/d41586-026-03058-3",
+      "date": "2026-10-02T00:00:00.000Z",
+      "resume": ""
+    },
+    "score_fiabilite": 0.9,
+    "score_fiabilite_motif": "nature.com — édition scientifique à comité de lecture",
+    "domaine_source": "nature.com",
+    "domaine_opaque": false,
+    "statut": "en_attente",
+    "created_at": "2026-10-04T12:59:14.611Z"
+  },
+  {
+    "id": "2c002707-1891-473b-8ba5-82a7003e4d8c",
+    "source_id": "nature-news",
+    "cible_type": "nouvelle_categorie",
+    "cible_id": null,
+    "contenu_propose": {
+      "titre": "Stunning fossil shows dinosaurs’ distinctive path to flight",
+      "link": "https://www.nature.com/articles/d41586-026-03126-8",
+      "date": "2026-10-02T00:00:00.000Z",
+      "resume": ""
+    },
+    "score_fiabilite": 0.9,
+    "score_fiabilite_motif": "nature.com — édition scientifique à comité de lecture",
+    "domaine_source": "nature.com",
+    "domaine_opaque": false,
+    "statut": "en_attente",
+    "created_at": "2026-10-04T12:59:14.611Z"
+  },
+  {
+    "id": "e6a37b82-6fae-4d2c-9393-0f24a4fcda31",
+    "source_id": "nature-news",
+    "cible_type": "nouvelle_categorie",
+    "cible_id": null,
+    "contenu_propose": {
+      "titre": "Nature has rights — it is time the world recognized them",
+      "link": "https://www.nature.com/articles/d41586-026-03145-5",
+      "date": "2026-10-02T00:00:00.000Z",
+      "resume": ""
+    },
+    "score_fiabilite": 0.9,
+    "score_fiabilite_motif": "nature.com — édition scientifique à comité de lecture",
+    "domaine_source": "nature.com",
+    "domaine_opaque": false,
+    "statut": "en_attente",
+    "created_at": "2026-10-04T12:59:14.611Z"
+  },
+  {
+    "id": "6a15d790-8551-4fa3-ad05-b32e8eb72274",
+    "source_id": "imf-news",
+    "cible_type": "nouvelle_categorie",
+    "cible_id": null,
+    "contenu_propose": {
+      "titre": "Madagascar obtient 155 millions de dollars du FMI malgré le différend sur les carburants - LSi Africa",
+      "link": "https://news.google.com/rss/articles/CBMikwFBVV95cUxOUTBQcFNXSmw4ZkNPYlB2bFprcWViRzQ4UEloYkt1Qkl4RE9tVkVOWWVNbXdCVG1oQ3pIdDFobkJ1NjhMMVpOUUpkNVQ2Q3VvY3A1VGwzWnVkNTNpMTBUb2VFU1U4RlNfYTJWZndrVFkxcXRmc3hnUVJlNnRzQXc0SnhlcldUTFBrX3pyVk1ldHhGbms?oc=5",
+      "date": "2026-10-04T05:14:19.000Z",
+      "resume": "Madagascar obtient 155 millions de dollars du FMI malgré le différend sur les carburants  LSi Africa"
+    },
+    "score_fiabilite": 0.15,
+    "score_fiabilite_motif": "news.google.com est un redirecteur : l'url ne porte pas le domaine de l'éditeur réel, la fiabilité ne peut pas être établie sans ouvrir le lien",
+    "domaine_source": "news.google.com",
+    "domaine_opaque": true,
+    "statut": "en_attente",
+    "created_at": "2026-10-04T12:59:15.038Z"
+  },
+  {
+    "id": "4c1add07-cb8f-457b-9ac9-7cd737d41098",
+    "source_id": "ft-marches",
+    "cible_type": "nouvelle_categorie",
+    "cible_id": null,
+    "contenu_propose": {
+      "titre": "What can revive the battered government bond market?",
+      "link": "https://www.ft.com/content/1a94931f-421e-4d0e-888a-7727f15c3d5f?syn-25a6b1a6=1",
+      "date": "2026-10-04T11:00:08.000Z",
+      "resume": "Market Questions is the FT’s guide to the week ahead"
+    },
+    "score_fiabilite": 0.4,
+    "score_fiabilite_motif": "ft.com — presse généraliste ou spécialisée",
+    "domaine_source": "ft.com",
+    "domaine_opaque": false,
+    "statut": "en_attente",
+    "created_at": "2026-10-04T12:59:24.422Z"
+  },
+  {
+    "id": "a0a22303-7935-4ad9-8624-75b2a840015a",
+    "source_id": "ft-marches",
+    "cible_type": "nouvelle_categorie",
+    "cible_id": null,
+    "contenu_propose": {
+      "titre": "Why the IPO market is booming and busting",
+      "link": "https://www.ft.com/content/8b7e2800-3e36-4d0c-9016-32deaae67b62",
+      "date": "2026-10-04T09:29:09.000Z",
+      "resume": "Flotations have stalled and returns from new listings have been weak"
+    },
+    "score_fiabilite": 0.4,
+    "score_fiabilite_motif": "ft.com — presse généraliste ou spécialisée",
+    "domaine_source": "ft.com",
+    "domaine_opaque": false,
+    "statut": "en_attente",
+    "created_at": "2026-10-04T12:59:24.423Z"
+  },
+  {
+    "id": "4f8dfce3-2435-49fe-9e25-c1a9cb60c22d",
+    "source_id": "ft-marches",
+    "cible_type": "nouvelle_categorie",
+    "cible_id": null,
+    "contenu_propose": {
+      "titre": "US to receive potash shipment from Belarus as relations thaw",
+      "link": "https://www.ft.com/content/9cbc0aea-259a-41eb-bbf4-ad8a674ca8b7?syn-25a6b1a6=1",
+      "date": "2026-10-04T09:00:07.000Z",
+      "resume": "Washington has begun to ease sanctions on Minsk in exchange for the release of political prisoners"
+    },
+    "score_fiabilite": 0.4,
+    "score_fiabilite_motif": "ft.com — presse généraliste ou spécialisée",
+    "domaine_source": "ft.com",
+    "domaine_opaque": false,
+    "statut": "en_attente",
+    "created_at": "2026-10-04T12:59:24.423Z"
+  },
+  {
+    "id": "fabc6cb2-1226-4711-8af4-626b9baa6ab6",
+    "source_id": "ft-marches",
+    "cible_type": "nouvelle_categorie",
+    "cible_id": null,
+    "contenu_propose": {
+      "titre": "Wall Street’s IPO fervour cools on tepid demand and valuation worries ",
+      "link": "https://www.ft.com/content/b8924d77-364b-46c1-b783-5db73a91f351?syn-25a6b1a6=1",
+      "date": "2026-10-04T04:01:05.000Z",
+      "resume": "Several listings have been paused in recent weeks as delay in Anthropic’s public debut sends a chill through markets"
+    },
+    "score_fiabilite": 0.4,
+    "score_fiabilite_motif": "ft.com — presse généraliste ou spécialisée",
+    "domaine_source": "ft.com",
+    "domaine_opaque": false,
+    "statut": "en_attente",
+    "created_at": "2026-10-04T12:59:24.423Z"
+  },
+  {
+    "id": "5c0ab6a0-50e6-412d-8611-8cd5facfa14e",
+    "source_id": "wsj-marches",
+    "cible_type": "nouvelle_categorie",
+    "cible_id": null,
+    "contenu_propose": {
+      "titre": "Paramount’s $52 Billion Debt Sale Shows How Higher Rates Are Biting Corporate America",
+      "link": "https://www.wsj.com/finance/investing/paramounts-52-billion-debt-sale-shows-how-higher-rates-are-biting-corporate-america-aed59897?mod=rss_markets_main",
+      "date": "2026-10-04T09:30:00.000Z",
+      "resume": "The media company paid through the nose for its record-setting bond deal. Other corporate issuers will too."
+    },
+    "score_fiabilite": 0.4,
+    "score_fiabilite_motif": "wsj.com — presse généraliste ou spécialisée",
+    "domaine_source": "wsj.com",
+    "domaine_opaque": false,
+    "statut": "en_attente",
+    "created_at": "2026-10-04T12:59:24.474Z"
+  },
+  {
+    "id": "a389e665-0ce8-484a-9458-2819e0364197",
+    "source_id": "wsj-marches",
+    "cible_type": "nouvelle_categorie",
+    "cible_id": null,
+    "contenu_propose": {
+      "titre": "Five Things I Learned in Hiring a Financial Adviser",
+      "link": "https://www.wsj.com/finance/investing/hiring-financial-advisor-tips-02056b3e?mod=rss_markets_main",
+      "date": "2026-10-03T14:00:00.000Z",
+      "resume": "I’ve been the family financial decision-maker for a quarter of a century. Handing the reins to somebody else has taught me a lot about my blind spots."
+    },
+    "score_fiabilite": 0.4,
+    "score_fiabilite_motif": "wsj.com — presse généraliste ou spécialisée",
+    "domaine_source": "wsj.com",
+    "domaine_opaque": false,
+    "statut": "en_attente",
+    "created_at": "2026-10-04T12:59:24.474Z"
+  },
+  {
+    "id": "adf0d212-8556-4e2b-be67-70f5ee299b7b",
+    "source_id": "le-monde-economie",
+    "cible_type": "nouvelle_categorie",
+    "cible_id": null,
+    "contenu_propose": {
+      "titre": "« A réduire la dépense, on s’expose à réduire l’activité et, partant, à ne pas réduire le déficit »",
+      "link": "https://www.lemonde.fr/idees/article/2026/10/04/a-reduire-la-depense-on-s-expose-a-reduire-l-activite-et-partant-a-ne-pas-reduire-le-deficit_6788262_3232.html",
+      "date": "2026-10-04T12:00:22.000Z",
+      "resume": "L’économiste Christophe Ramaux défend, dans une tribune au « Monde », les vertus insoupçonnées de l’intervention publique et rappelle que l’Etat social permet de réduire les inégalités."
+    },
+    "score_fiabilite": 0.4,
+    "score_fiabilite_motif": "lemonde.fr — presse généraliste ou spécialisée",
+    "domaine_source": "lemonde.fr",
+    "domaine_opaque": false,
+    "statut": "en_attente",
+    "created_at": "2026-10-04T12:59:24.874Z"
+  },
+  {
+    "id": "bff2a484-7f37-49bf-8234-4488a239770e",
+    "source_id": "le-monde-economie",
+    "cible_type": "nouvelle_categorie",
+    "cible_id": null,
+    "contenu_propose": {
+      "titre": "L’absence de ventes du fabricant ASML en Europe, symbole du manque d’investissements dans les puces électroniques",
+      "link": "https://www.lemonde.fr/economie/article/2026/10/04/l-absence-de-ventes-du-fabricant-asml-en-europe-symbole-du-manque-d-investissements-dans-les-puces-electroniques_6788218_3234.html",
+      "date": "2026-10-04T10:00:03.000Z",
+      "resume": "L’industriel néerlandais ne vend aucune de ses machines de fabrication de semi-conducteurs en Europe. De quoi jeter une lumière crue sur les lacunes du premier Chips Act de la Commission européenne, à l’heure où elle planche sur un nouveau volet de ce plan censé assurer sa souveraineté dans ce domaine."
+    },
+    "score_fiabilite": 0.4,
+    "score_fiabilite_motif": "lemonde.fr — presse généraliste ou spécialisée",
+    "domaine_source": "lemonde.fr",
+    "domaine_opaque": false,
+    "statut": "en_attente",
+    "created_at": "2026-10-04T12:59:24.874Z"
+  },
+  {
+    "id": "86344b54-0df1-4c82-92ce-89f20f6a3755",
+    "source_id": "le-monde-economie",
+    "cible_type": "nouvelle_categorie",
+    "cible_id": null,
+    "contenu_propose": {
+      "titre": "Le parcours de Marine et Maëlle, devenues propriétaires d’un appartement au Mans",
+      "link": "https://www.lemonde.fr/argent/article/2026/10/04/le-parcours-de-marine-et-maelle-devenues-proprietaires-d-un-appartement-au-mans_6788215_1657007.html",
+      "date": "2026-10-04T09:06:47.000Z",
+      "resume": "Les deux jeunes femmes, dans leur vingtaine, ont décidé d’acheter au Mans pour se rapprocher de leurs familles et bénéficier d’un logement spacieux à prix abordable, à une heure de train de Paris."
+    },
+    "score_fiabilite": 0.4,
+    "score_fiabilite_motif": "lemonde.fr — presse généraliste ou spécialisée",
+    "domaine_source": "lemonde.fr",
+    "domaine_opaque": false,
+    "statut": "en_attente",
+    "created_at": "2026-10-04T12:59:24.874Z"
+  },
+  {
+    "id": "176cd261-c751-487f-beb3-4f1ebef56efd",
+    "source_id": "le-monde-economie",
+    "cible_type": "nouvelle_categorie",
+    "cible_id": null,
+    "contenu_propose": {
+      "titre": "Christian Grataloup, historien : « Les routes commerciales suscitent presque toujours des enjeux de contrôle »",
+      "link": "https://www.lemonde.fr/economie/article/2026/10/04/christian-grataloup-historien-les-routes-commerciales-suscitent-presque-toujours-des-enjeux-de-controle_6788214_3234.html",
+      "date": "2026-10-04T09:00:05.000Z",
+      "resume": "Les routes commerciales sont, par nature et depuis longtemps, des espaces stratégiques que les Etats cherchent à maîtriser, observe Christian Grataloup. Ainsi que nous le montre l’actualité, les détroits, naturels ou artificiels, occupent une place majeure dans les échanges mondiaux."
+    },
+    "score_fiabilite": 0.4,
+    "score_fiabilite_motif": "lemonde.fr — presse généraliste ou spécialisée",
+    "domaine_source": "lemonde.fr",
+    "domaine_opaque": false,
+    "statut": "en_attente",
+    "created_at": "2026-10-04T12:59:24.874Z"
+  },
+  {
+    "id": "04f35af7-8ec1-4f9f-9187-2d0ae5571910",
+    "source_id": "le-monde-economie",
+    "cible_type": "nouvelle_categorie",
+    "cible_id": null,
+    "contenu_propose": {
+      "titre": "« Une politique juste de réduction des émissions ne consiste pas à demander le même effort à tous, mais à cibler en priorité les mobilités les plus carbonées »",
+      "link": "https://www.lemonde.fr/idees/article/2026/10/04/une-politique-juste-de-reduction-des-emissions-ne-consiste-pas-a-demander-le-meme-effort-a-tous-mais-a-cibler-en-priorite-les-mobilites-les-plus-carbonees_6788111_3232.html",
+      "date": "2026-10-04T08:00:11.000Z",
+      "resume": "A l’occasion de la conférence « Grille, baby, grille ! » associant « Le Monde » et le Forum vies mobiles, un collectif de chercheuses et chercheurs internationaux plaide, dans une tribune au « Monde », pour un tournant radical des mobilités face aux limites planétaires."
+    },
+    "score_fiabilite": 0.4,
+    "score_fiabilite_motif": "lemonde.fr — presse généraliste ou spécialisée",
+    "domaine_source": "lemonde.fr",
+    "domaine_opaque": false,
+    "statut": "en_attente",
+    "created_at": "2026-10-04T12:59:24.874Z"
+  },
+  {
+    "id": "73f8baf8-9b11-410f-93db-a34ac8735e12",
+    "source_id": "la-tribune-actualites",
+    "cible_type": "nouvelle_categorie",
+    "cible_id": null,
+    "contenu_propose": {
+      "titre": "Pourquoi les Italiens achètent des plaques d’immatriculation polonaises ?",
+      "link": "https://www.latribune.fr/article/economie/agroconso/4520643894520/pourquoi-les-italiens-achetent-des-plaques-d-immatriculation-polonaises",
+      "date": "2026-10-04T12:30:04.000Z",
+      "resume": "De plus en plus d’automobilistes italiens roulent avec des plaques polonaises pour réduire le coût de leur voiture, notamment celui de l’assurance. Rome compte serrer la vis."
+    },
+    "score_fiabilite": 0.4,
+    "score_fiabilite_motif": "latribune.fr — domaine absent de la table : score par défaut prudent, sous le seuil de source primaire",
+    "domaine_source": "latribune.fr",
+    "domaine_opaque": false,
+    "statut": "en_attente",
+    "created_at": "2026-10-04T12:59:25.128Z"
+  },
+  {
+    "id": "4aa3ac9a-26e3-4020-a6b2-df7cf6daa2d4",
+    "source_id": "la-tribune-actualites",
+    "cible_type": "nouvelle_categorie",
+    "cible_id": null,
+    "contenu_propose": {
+      "titre": "Budget 2027 : le gouvernement pourra compter sur LR, selon Wauquiez",
+      "link": "https://www.latribune.fr/article/economie/finances-publiques/21773998121818/budget-2027-le-gouvernement-pourra-compter-sur-lr-selon-wauquiez",
+      "date": "2026-10-04T11:00:03.000Z",
+      "resume": "En écartant une stratégie de censure sur le budget 2027, Laurent Wauquiez offre au gouvernement un point d’appui pour faire adopter un texte sous forte contrainte financière. LR entend toutefois déplacer davantage l’effort vers les dépenses."
+    },
+    "score_fiabilite": 0.4,
+    "score_fiabilite_motif": "latribune.fr — domaine absent de la table : score par défaut prudent, sous le seuil de source primaire",
+    "domaine_source": "latribune.fr",
+    "domaine_opaque": false,
+    "statut": "en_attente",
+    "created_at": "2026-10-04T12:59:25.128Z"
+  },
+  {
+    "id": "1860f3e8-1de2-44a1-bcec-e5d92db87bfa",
+    "source_id": "la-tribune-actualites",
+    "cible_type": "nouvelle_categorie",
+    "cible_id": null,
+    "contenu_propose": {
+      "titre": "L’État loue un deuxième Falcon 8X à Dassault Aviation",
+      "link": "https://www.latribune.fr/article/defense-aerospatiale/aeronautique-defense/26252704919498/l-etat-loue-un-deuxieme-falcon-8x-a-dassault-aviation",
+      "date": "2026-10-04T09:45:04.000Z",
+      "resume": "L’État français va louer un nouveau Falcon 8X à Dassault Aviation et lui conférer temporairement le statut d’aéronef militaire, selon une décision publiée ce dimanche au Journal officiel. Il s’agit du deuxième appareil de ce type concerné en moins de trois semaines."
+    },
+    "score_fiabilite": 0.4,
+    "score_fiabilite_motif": "latribune.fr — domaine absent de la table : score par défaut prudent, sous le seuil de source primaire",
+    "domaine_source": "latribune.fr",
+    "domaine_opaque": false,
+    "statut": "en_attente",
+    "created_at": "2026-10-04T12:59:25.128Z"
+  },
+  {
+    "id": "f672af88-eaa0-4e7f-b68d-7a21e75f5630",
+    "source_id": "la-tribune-actualites",
+    "cible_type": "nouvelle_categorie",
+    "cible_id": null,
+    "contenu_propose": {
+      "titre": "G20 : comment la Chine a fait dérailler l’offensive américaine sur les surcapacités",
+      "link": "https://www.latribune.fr/article/economie/international/1918245896393814/g20-comment-la-chine-a-fait-derailler-l-offensive-americaine-sur-les-surcapacites",
+      "date": "2026-10-04T08:30:30.000Z",
+      "resume": "La Chine a empêché le G20 de s’accorder sur les surcapacités industrielles, un sujet poussé par Washington et largement dirigé contre Pékin. Mais derrière ce blocage se dessine une fracture plus large entre les États-Unis et plusieurs de leurs partenaires sur l’usage des droits de douane comme arme commerciale."
+    },
+    "score_fiabilite": 0.4,
+    "score_fiabilite_motif": "latribune.fr — domaine absent de la table : score par défaut prudent, sous le seuil de source primaire",
+    "domaine_source": "latribune.fr",
+    "domaine_opaque": false,
+    "statut": "en_attente",
+    "created_at": "2026-10-04T12:59:25.128Z"
+  },
+  {
+    "id": "595a09ec-d639-4052-b869-5187b3d69add",
+    "source_id": "la-tribune-actualites",
+    "cible_type": "nouvelle_categorie",
+    "cible_id": null,
+    "contenu_propose": {
+      "titre": "Sécheresse : l’élevage français redoute un automne sous tension",
+      "link": "https://www.latribune.fr/article/economie/21088151773019/secheresse-l-elevage-francais-redoute-un-automne-sous-tension",
+      "date": "2026-10-04T07:40:26.000Z",
+      "resume": "Sécheresse, canicules, manque de fourrage et abattages anticipés : l’élevage français aborde l’automne dans une situation de forte fragilité, alors que s’ouvre mardi le Sommet de l’élevage à Cournon-d’Auvergne."
+    },
+    "score_fiabilite": 0.4,
+    "score_fiabilite_motif": "latribune.fr — domaine absent de la table : score par défaut prudent, sous le seuil de source primaire",
+    "domaine_source": "latribune.fr",
+    "domaine_opaque": false,
+    "statut": "en_attente",
+    "created_at": "2026-10-04T12:59:25.128Z"
+  },
+  {
+    "id": "c7a067ee-4eea-4942-8ba3-a9ad27853c2a",
+    "source_id": "euronews-business",
+    "cible_type": "nouvelle_categorie",
+    "cible_id": null,
+    "contenu_propose": {
+      "titre": "Le meilleur pays pour la retraite à l'étranger n'est plus en Europe, mais six des dix premiers y sont",
+      "link": "https://fr.euronews.com/2026/10/04/le-meilleur-pays-pour-la-retraite-a-letranger-nest-plus-en-europe-mais-six-des-dix-premier",
+      "date": "2026-10-04T05:00:50.000Z",
+      "resume": "Les destinations européennes se classent en tête d'un nouveau classement mondial des retraites : six pays figurent dans le top 10, alors que les candidats à la retraite à l'étranger arbitrent entre fiscalité plus élevée et qualité de vie."
+    },
+    "score_fiabilite": 0.4,
+    "score_fiabilite_motif": "fr.euronews.com — domaine absent de la table : score par défaut prudent, sous le seuil de source primaire",
+    "domaine_source": "fr.euronews.com",
+    "domaine_opaque": false,
+    "statut": "en_attente",
+    "created_at": "2026-10-04T12:59:25.898Z"
+  },
+  {
+    "id": "d97c2c76-3d82-4921-81c4-8ae068273591",
+    "source_id": "guardian-economie",
+    "cible_type": "nouvelle_categorie",
+    "cible_id": null,
+    "contenu_propose": {
+      "titre": "Burnham must remember: more regulation is not the best way to improve public services | Phillip Inman",
+      "link": "https://www.theguardian.com/business/2026/oct/03/andy-burnham-regulation-public-services-nhs",
+      "date": "2026-10-03T15:00:02.000Z",
+      "resume": "In the NHS as in the private sector, the measure of success should be customer satisfaction and not just box-ticking\nAndy Burnham said he wanted to “rewire” the economy. Then he seemed to slam on the brakes, kicking most reforms into the 2030s.\nLocal government reorganisation is on hold, along with an overhaul of the much-maligned water industry. Social care and significant welfare reform are matt"
+    },
+    "score_fiabilite": 0.4,
+    "score_fiabilite_motif": "theguardian.com — presse généraliste ou spécialisée",
+    "domaine_source": "theguardian.com",
+    "domaine_opaque": false,
+    "statut": "en_attente",
+    "created_at": "2026-10-04T12:59:26.693Z"
+  },
+  {
+    "id": "89b747a4-bd91-4039-91fb-1d5d496b3274",
+    "source_id": "guardian-economie",
+    "cible_type": "nouvelle_categorie",
+    "cible_id": null,
+    "contenu_propose": {
+      "titre": "Burnham’s plans for social care and its workers are admirable but changes must come quickly | Heather Stewart",
+      "link": "https://www.theguardian.com/business/2026/oct/04/andy-burnham-plans-social-care-workers-changes",
+      "date": "2026-10-04T10:37:59.000Z",
+      "resume": "Money is needed now for a system that has left families including mine struggling their way unsupported and forgotten \nAs one of many hundreds of thousands of people in the UK with a parent with Alzheimer’s, the passage in Andy Burnham’s speech about social care moved me to tears.\nMy mother had not even been diagnosed when I watched Theresa May announce her 2017 general election manifesto in a hal"
+    },
+    "score_fiabilite": 0.4,
+    "score_fiabilite_motif": "theguardian.com — presse généraliste ou spécialisée",
+    "domaine_source": "theguardian.com",
+    "domaine_opaque": false,
+    "statut": "en_attente",
+    "created_at": "2026-10-04T12:59:26.693Z"
+  },
+  {
+    "id": "3ba2e2db-69d5-4dee-a26c-91e021a7b7de",
+    "source_id": "guardian-economie",
+    "cible_type": "nouvelle_categorie",
+    "cible_id": null,
+    "contenu_propose": {
+      "titre": "UK car industry faces ‘difficult trade-off’ between Chinese and EU markets",
+      "link": "https://www.theguardian.com/business/2026/oct/04/uk-car-industry-trade-off-china-made-in-europe-laws",
+      "date": "2026-10-04T05:00:18.000Z",
+      "resume": "Britain under pressure to put tariffs on cheap Chinese vehicle imports ahead of protectionist trade measures\nBritain’s car industry is grappling with a “difficult trade-off” between China and Europe, as manufacturers struggle to balance the benefits of both markets ahead of looming trade measures that could restrict UK exports to the EU.\nThe UK is an outlier in choosing not to put import taxes on "
+    },
+    "score_fiabilite": 0.4,
+    "score_fiabilite_motif": "theguardian.com — presse généraliste ou spécialisée",
+    "domaine_source": "theguardian.com",
+    "domaine_opaque": false,
+    "statut": "en_attente",
+    "created_at": "2026-10-04T12:59:26.693Z"
+  },
+  {
+    "id": "fceca0ee-5c19-4440-96a4-5278672d8c11",
+    "source_id": "guardian-economie",
+    "cible_type": "nouvelle_categorie",
+    "cible_id": null,
+    "contenu_propose": {
+      "titre": "Tories plan to extend cuts beyond £47bn previously pledged, leak reveals",
+      "link": "https://www.theguardian.com/politics/2026/oct/03/conservatives-extend-cuts-andrew-griffith-leaked-comments",
+      "date": "2026-10-03T15:00:01.000Z",
+      "resume": "Exclusive: Shadow chancellor Andrew Griffith told party members last year he had discussed making further savings if they win next election\nThe Conservatives are planning to make sweeping cuts beyond the £47bn announced last year if they win the next election, according to leaked comments by the shadow chancellor.\nSpeaking last year when he was shadow business secretary, Andrew Griffith told Conse"
+    },
+    "score_fiabilite": 0.4,
+    "score_fiabilite_motif": "theguardian.com — presse généraliste ou spécialisée",
+    "domaine_source": "theguardian.com",
+    "domaine_opaque": false,
+    "statut": "en_attente",
+    "created_at": "2026-10-04T12:59:26.693Z"
+  },
+  {
+    "id": "ba23d6f8-dbac-4e35-aace-33533341722e",
+    "source_id": "diploweb-geopolitique",
+    "cible_type": "nouvelle_categorie",
+    "cible_id": null,
+    "contenu_propose": {
+      "titre": "Chine, la défaite de l'Occident ? Entretien avec P A Donnet",
+      "link": "https://www.diploweb.com/Chine-la-defaite-de-l-Occident-Entretien-avec-P-A-Donnet.html",
+      "date": "2026-10-04T08:52:44.000Z",
+      "resume": "Quelles sont les responsabilités des Etats-Unis et de l'Europe dans l'émergence d'un compétiteur qui contribue désormais activement à la désoccidentalisation du monde ? L'Occident a-t-il déjà perdu la partie en matière industrielle et de RD ? P.-A. Donnet répond avec franchise.\nChine\n\n/ \nUnion européenne, \nEtats-Unis, \nRépublique populaire de Chine , \nPuissance, \nRecherche et Développement, \nDicta"
+    },
+    "score_fiabilite": 0.4,
+    "score_fiabilite_motif": "diploweb.com — domaine absent de la table : score par défaut prudent, sous le seuil de source primaire",
+    "domaine_source": "diploweb.com",
+    "domaine_opaque": false,
+    "statut": "en_attente",
+    "created_at": "2026-10-04T12:59:33.646Z"
   }
 ]
