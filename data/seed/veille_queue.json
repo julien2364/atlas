@@ -26856,8 +26856,10 @@
     "score_fiabilite_motif": "news.google.com est un redirecteur : l'url ne porte pas le domaine de l'éditeur réel, la fiabilité ne peut pas être établie sans ouvrir le lien",
     "domaine_source": "news.google.com",
     "domaine_opaque": true,
-    "statut": "en_attente",
-    "created_at": "2026-10-04T12:59:14.214Z"
+    "statut": "ecarte_automatique",
+    "created_at": "2026-10-04T12:59:14.214Z",
+    "ecarte_motif": "domaine_opaque",
+    "ecarte_le": "2026-10-04"
   },
   {
     "id": "f0b1515d-bdd0-4c52-8552-2860678f9bfd",
@@ -26964,8 +26966,10 @@
     "score_fiabilite_motif": "news.google.com est un redirecteur : l'url ne porte pas le domaine de l'éditeur réel, la fiabilité ne peut pas être établie sans ouvrir le lien",
     "domaine_source": "news.google.com",
     "domaine_opaque": true,
-    "statut": "en_attente",
-    "created_at": "2026-10-04T12:59:15.038Z"
+    "statut": "ecarte_automatique",
+    "created_at": "2026-10-04T12:59:15.038Z",
+    "ecarte_motif": "domaine_opaque",
+    "ecarte_le": "2026-10-04"
   },
   {
     "id": "4c1add07-cb8f-457b-9ac9-7cd737d41098",

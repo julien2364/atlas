@@ -1,16 +1,16 @@
 # Pré-tri de la file de veille
 
-Dernier écartement appliqué : 2026-10-02.
+Dernier écartement appliqué : 2026-10-03.
 
-File complète : **1460** entrées, dont **951** en attente d'arbitrage.
+File complète : **1489** entrées, dont **979** en attente d'arbitrage.
 
-Le pré-tri écarte **1** propositions sur des critères mécaniques et en laisse **950** à la relecture humaine, classées par fiabilité décroissante.
+Le pré-tri écarte **2** propositions sur des critères mécaniques et en laisse **977** à la relecture humaine, classées par fiabilité décroissante.
 
 ## Écartées, et pourquoi
 
 | Motif | Nombre | Ce que ça veut dire |
 |---|---:|---|
-| `domaine_opaque` | 1 | Agrégateur masquant l'éditeur réel — source non attribuable |
+| `domaine_opaque` | 2 | Agrégateur masquant l'éditeur réel — source non attribuable |
 
 Aucun de ces motifs ne porte de jugement sur le fond : ils constatent qu'une proposition n'est pas citable, pas attribuable, ou déjà connue.
 
@@ -18,10 +18,10 @@ Aucun de ces motifs ne porte de jugement sur le fond : ils constatent qu'une pro
 
 | Score | Nombre |
 |---:|---:|
-| 0.9 | 81 |
+| 0.9 | 86 |
 | 0.8 | 175 |
 | 0.6 | 42 |
-| 0.4 | 652 |
+| 0.4 | 674 |
 
 ### Les trente premières
 
@@ -41,6 +41,10 @@ Aucun de ces motifs ne porte de jugement sur le fond : ils constatent qu'une pro
   Anthropic’s AI biolab finds ‘CRISPR-like’ DNA in viruses. What’s next?  
   <https://www.nature.com/articles/d41586-026-03039-6>  
   `ab7ba093-c38f-469b-bbf6-b6510e36e92e`
+- **0.9** · nature.com · 2 terme(s) du corpus  
+  ‘Learning about physics changed my life’: author Hernan Diaz on his new novel <i>Ply</i>  
+  <https://www.nature.com/articles/d41586-026-03057-4>  
+  `c07e6fb1-e27d-4423-9c42-7765821723b6`
 - **0.9** · nature.com · 1 terme(s) du corpus  
   NSF moves to overhaul funding approach in line with White House priorities  
   <https://www.nature.com/articles/d41586-026-02892-9>  
@@ -105,6 +109,10 @@ Aucun de ces motifs ne porte de jugement sur le fond : ils constatent qu'une pro
   Science-informed opinion on generative AI for young children  
   <https://www.nature.com/articles/s44159-026-00625-3>  
   `76b6ab47-bb61-4589-8bd3-c8a5a035f00a`
+- **0.9** · nature.com · 1 terme(s) du corpus  
+  Nature has rights — it is time the world recognized them  
+  <https://www.nature.com/articles/d41586-026-03145-5>  
+  `e6a37b82-6fae-4d2c-9393-0f24a4fcda31`
 - **0.9** · nature.com · 0 terme(s) du corpus  
   Briefing Chat: The Bunsen burner myth that turns out to be just hot air  
   <https://www.nature.com/articles/d41586-026-02893-8>  
@@ -137,14 +145,6 @@ Aucun de ces motifs ne porte de jugement sur le fond : ils constatent qu'une pro
   An appraisal–coping framework of collective victimization beliefs and their consequences  
   <https://www.nature.com/articles/s44159-026-00610-w>  
   `9e6cab6b-3b39-4a45-941f-4858b655571e`
-- **0.9** · nature.com · 0 terme(s) du corpus  
-  What clinicians should know about how large language models reason  
-  <https://www.nature.com/articles/s44159-026-00617-3>  
-  `1a419b6c-3b42-4f57-bed6-4be378919fcb`
-- **0.9** · nature.com · 0 terme(s) du corpus  
-  From static disorders to dynamic phase transitions in psychopathology  
-  <https://www.nature.com/articles/s44159-026-00615-5>  
-  `0c33050e-8e5b-4536-8294-9f7b1cdfdd12`
 
 ---
 
