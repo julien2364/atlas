@@ -1,16 +1,16 @@
 # Pré-tri de la file de veille
 
-Dernier écartement appliqué : 2026-10-05.
+Dernier écartement appliqué : 2026-10-06.
 
-File complète : **1624** entrées, dont **1106** en attente d'arbitrage.
+File complète : **1704** entrées, dont **1176** en attente d'arbitrage.
 
-Le pré-tri écarte **10** propositions sur des critères mécaniques et en laisse **1096** à la relecture humaine, classées par fiabilité décroissante.
+Le pré-tri écarte **7** propositions sur des critères mécaniques et en laisse **1169** à la relecture humaine, classées par fiabilité décroissante.
 
 ## Écartées, et pourquoi
 
 | Motif | Nombre | Ce que ça veut dire |
 |---|---:|---|
-| `domaine_opaque` | 10 | Agrégateur masquant l'éditeur réel — source non attribuable |
+| `domaine_opaque` | 7 | Agrégateur masquant l'éditeur réel — source non attribuable |
 
 Aucun de ces motifs ne porte de jugement sur le fond : ils constatent qu'une proposition n'est pas citable, pas attribuable, ou déjà connue.
 
@@ -18,10 +18,10 @@ Aucun de ces motifs ne porte de jugement sur le fond : ils constatent qu'une pro
 
 | Score | Nombre |
 |---:|---:|
-| 0.9 | 91 |
-| 0.8 | 198 |
-| 0.6 | 44 |
-| 0.4 | 763 |
+| 0.9 | 96 |
+| 0.8 | 215 |
+| 0.6 | 49 |
+| 0.4 | 809 |
 
 ### Les trente premières
 
@@ -113,6 +113,18 @@ Aucun de ces motifs ne porte de jugement sur le fond : ils constatent qu'une pro
   Nature has rights — it is time the world recognized them  
   <https://www.nature.com/articles/d41586-026-03145-5>  
   `e6a37b82-6fae-4d2c-9393-0f24a4fcda31`
+- **0.9** · nature.com · 1 terme(s) du corpus  
+  A guide to Nature Index tables  
+  <https://www.nature.com/articles/d41586-026-02999-z>  
+  `7bc498af-45e2-40ed-923d-23fd459bdd7e`
+- **0.9** · nature.com · 1 terme(s) du corpus  
+  Why sound, strong science alone isn’t enough in pandemic preparedness  
+  <https://www.nature.com/articles/d41586-026-02985-5>  
+  `0ac294d0-854b-4124-ab4e-f7a5bfc7d589`
+- **0.9** · nature.com · 1 terme(s) du corpus  
+  ‘When prevention disappears, infections rise’: can the world still end AIDS?  
+  <https://www.nature.com/articles/d41586-026-03127-7>  
+  `39282f7c-df4c-443e-84f3-9d223dff62fe`
 - **0.9** · nature.com · 0 terme(s) du corpus  
   Briefing Chat: The Bunsen burner myth that turns out to be just hot air  
   <https://www.nature.com/articles/d41586-026-02893-8>  
@@ -133,18 +145,6 @@ Aucun de ces motifs ne porte de jugement sur le fond : ils constatent qu'une pro
   The gender gap reconsidered  
   <https://www.nature.com/articles/s41562-026-02448-x>  
   `f3a008ab-b3cf-4faa-9f5b-ec1d21c0f8d3`
-- **0.9** · nature.com · 0 terme(s) du corpus  
-  Psychological drivers of men’s perpetration of intimate partner violence against women  
-  <https://www.nature.com/articles/s44159-026-00616-4>  
-  `42dafcbe-af3f-4d1b-97dc-afced2eac82b`
-- **0.9** · nature.com · 0 terme(s) du corpus  
-  Understanding how experience supports the development of executive function skills  
-  <https://www.nature.com/articles/s44159-026-00614-6>  
-  `ba29da6f-d928-47b3-bde1-c29d932e2ebb`
-- **0.9** · nature.com · 0 terme(s) du corpus  
-  An appraisal–coping framework of collective victimization beliefs and their consequences  
-  <https://www.nature.com/articles/s44159-026-00610-w>  
-  `9e6cab6b-3b39-4a45-941f-4858b655571e`
 
 ---
 
