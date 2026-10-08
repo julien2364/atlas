@@ -1,8 +1,8 @@
 # Moisson de sources
 
-Dernier passage : **2026-10-07** · fonds interrogés : openalex, crossref, arxiv, hal, doaj, europepmc.
+Dernier passage : **2026-10-08** · fonds interrogés : openalex, crossref, arxiv, hal, doaj, europepmc.
 
-**1 propositions** pour **10 fiches**, écrites dans `../../_temp/moisson-2026-10-07.json`.
+**2 propositions** pour **10 fiches**, écrites dans `../../_temp/moisson-2026-10-08.json`.
 
 Ce fichier ne modifie aucune fiche. Pour en ajouter une partie au corpus : remplir le champ
 `retenues` de chaque bloc avec les clés choisies, puis lancer
@@ -14,9 +14,9 @@ Ce fichier ne modifie aucune fiche. Pour en ajouter une partie au corpus : rempl
 | Alliance solaire internationale (ASI) | 7 | 0 | — |
 | Amartya Sen | 7 | 0 | — |
 | Anarchisme | 7 | 0 | — |
-| Banque africaine de développement (BAfD) | 7 | 1 | [Tirer le meilleur parti de l'aide : Défis pour l'agro-industrie africa](https://doi.org/10.1787/238038840288) — openalex, 2008 |
-| Bipolarité (Guerre froide) | 7 | 0 | — |
-| Black-Scholes | 7 | 0 | — |
+| Banque africaine de développement (BAfD) | 7 | 0 | — |
+| Bipolarité (Guerre froide) | 7 | 1 | [Les altercations de la guerre froide et ambitions de demeurer au pouvo](https://doi.org/10.5281/zenodo.6058797) — openalex, 2022 |
+| Black-Scholes | 7 | 1 | [Nobelprijs Economie 1990](https://doi.org/10.5117/mab.65.16771) — openalex, 1991 |
 | BRICS(+) | 7 | 0 | — |
 | Capitalisme de marché libre (laissez-faire) | 7 | 0 | — |
 | CEI | 7 | 0 | — |
