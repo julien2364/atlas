@@ -1,10 +1,10 @@
 # Pré-tri de la file de veille
 
-Dernier écartement appliqué : 2026-10-06.
+Dernier écartement appliqué : 2026-10-07.
 
-File complète : **1704** entrées, dont **1176** en attente d'arbitrage.
+File complète : **1783** entrées, dont **1248** en attente d'arbitrage.
 
-Le pré-tri écarte **7** propositions sur des critères mécaniques et en laisse **1169** à la relecture humaine, classées par fiabilité décroissante.
+Le pré-tri écarte **7** propositions sur des critères mécaniques et en laisse **1241** à la relecture humaine, classées par fiabilité décroissante.
 
 ## Écartées, et pourquoi
 
@@ -18,10 +18,10 @@ Aucun de ces motifs ne porte de jugement sur le fond : ils constatent qu'une pro
 
 | Score | Nombre |
 |---:|---:|
-| 0.9 | 96 |
-| 0.8 | 215 |
-| 0.6 | 49 |
-| 0.4 | 809 |
+| 0.9 | 106 |
+| 0.8 | 227 |
+| 0.6 | 52 |
+| 0.4 | 856 |
 
 ### Les trente premières
 
@@ -45,6 +45,10 @@ Aucun de ces motifs ne porte de jugement sur le fond : ils constatent qu'une pro
   ‘Learning about physics changed my life’: author Hernan Diaz on his new novel <i>Ply</i>  
   <https://www.nature.com/articles/d41586-026-03057-4>  
   `c07e6fb1-e27d-4423-9c42-7765821723b6`
+- **0.9** · nature.com · 2 terme(s) du corpus  
+  NASA releases trove of Moon data from historic Artemis II flight  
+  <https://www.nature.com/articles/d41586-026-03197-7>  
+  `2a08488b-1136-4340-be9c-027356273474`
 - **0.9** · nature.com · 1 terme(s) du corpus  
   NSF moves to overhaul funding approach in line with White House priorities  
   <https://www.nature.com/articles/d41586-026-02892-9>  
@@ -125,26 +129,22 @@ Aucun de ces motifs ne porte de jugement sur le fond : ils constatent qu'une pro
   ‘When prevention disappears, infections rise’: can the world still end AIDS?  
   <https://www.nature.com/articles/d41586-026-03127-7>  
   `39282f7c-df4c-443e-84f3-9d223dff62fe`
+- **0.9** · nature.com · 1 terme(s) du corpus  
+  UAE completes Arab world's first solo space probe <b>– </b>and sets course for an asteroid  
+  <https://www.nature.com/articles/d41586-026-03154-4>  
+  `66760640-134d-4215-800d-7f2b56ec20c1`
+- **0.9** · nature.com · 1 terme(s) du corpus  
+  Microdelays disrupt online learning  
+  <https://www.nature.com/articles/s41562-026-02598-y>  
+  `f2c5876c-2073-4032-a1af-8ab6deb551f7`
+- **0.9** · nature.com · 1 terme(s) du corpus  
+  How physical information explains infants’ supposed psychological world  
+  <https://www.nature.com/articles/s44159-026-00628-0>  
+  `0f5e8390-8ffc-41f3-bbc0-744e259117b5`
 - **0.9** · nature.com · 0 terme(s) du corpus  
   Briefing Chat: The Bunsen burner myth that turns out to be just hot air  
   <https://www.nature.com/articles/d41586-026-02893-8>  
   `c067db05-fe9f-4553-a5d8-7409c2aab7db`
-- **0.9** · nature.com · 0 terme(s) du corpus  
-  El Niño goes viral — and scientists learn what makes people care about the climate  
-  <https://www.nature.com/articles/d41586-026-02763-3>  
-  `d532ae8c-bfc6-4f55-838e-18c7d5cc8946`
-- **0.9** · nature.com · 0 terme(s) du corpus  
-  Successful early-career scientists rely on network of mentors  
-  <https://www.nature.com/articles/d41586-026-02827-4>  
-  `f920ca19-5389-41eb-80bf-ae60f17a6dc8`
-- **0.9** · nature.com · 0 terme(s) du corpus  
-  Author Correction: On the conversational persuasiveness of GPT-4  
-  <https://www.nature.com/articles/s41562-026-02588-0>  
-  `02959c66-b827-4e85-acbd-2e1004e02896`
-- **0.9** · nature.com · 0 terme(s) du corpus  
-  The gender gap reconsidered  
-  <https://www.nature.com/articles/s41562-026-02448-x>  
-  `f3a008ab-b3cf-4faa-9f5b-ec1d21c0f8d3`
 
 ---
 
