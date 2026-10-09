@@ -1,16 +1,16 @@
 # Pré-tri de la file de veille
 
-Dernier écartement appliqué : 2026-10-07.
+Dernier écartement appliqué : 2026-10-08.
 
-File complète : **1783** entrées, dont **1248** en attente d'arbitrage.
+File complète : **1861** entrées, dont **1319** en attente d'arbitrage.
 
-Le pré-tri écarte **7** propositions sur des critères mécaniques et en laisse **1241** à la relecture humaine, classées par fiabilité décroissante.
+Le pré-tri écarte **6** propositions sur des critères mécaniques et en laisse **1313** à la relecture humaine, classées par fiabilité décroissante.
 
 ## Écartées, et pourquoi
 
 | Motif | Nombre | Ce que ça veut dire |
 |---|---:|---|
-| `domaine_opaque` | 7 | Agrégateur masquant l'éditeur réel — source non attribuable |
+| `domaine_opaque` | 6 | Agrégateur masquant l'éditeur réel — source non attribuable |
 
 Aucun de ces motifs ne porte de jugement sur le fond : ils constatent qu'une proposition n'est pas citable, pas attribuable, ou déjà connue.
 
@@ -18,10 +18,10 @@ Aucun de ces motifs ne porte de jugement sur le fond : ils constatent qu'une pro
 
 | Score | Nombre |
 |---:|---:|
-| 0.9 | 106 |
-| 0.8 | 227 |
-| 0.6 | 52 |
-| 0.4 | 856 |
+| 0.9 | 111 |
+| 0.8 | 243 |
+| 0.6 | 57 |
+| 0.4 | 902 |
 
 ### Les trente premières
 
@@ -49,6 +49,10 @@ Aucun de ces motifs ne porte de jugement sur le fond : ils constatent qu'une pro
   NASA releases trove of Moon data from historic Artemis II flight  
   <https://www.nature.com/articles/d41586-026-03197-7>  
   `2a08488b-1136-4340-be9c-027356273474`
+- **0.9** · nature.com · 2 terme(s) du corpus  
+  The life of Darwin and the science of clouds: Books in brief  
+  <https://www.nature.com/articles/d41586-026-03217-6>  
+  `fea745f6-f8c8-414e-81dc-eaf19433b375`
 - **0.9** · nature.com · 1 terme(s) du corpus  
   NSF moves to overhaul funding approach in line with White House priorities  
   <https://www.nature.com/articles/d41586-026-02892-9>  
@@ -141,10 +145,6 @@ Aucun de ces motifs ne porte de jugement sur le fond : ils constatent qu'une pro
   How physical information explains infants’ supposed psychological world  
   <https://www.nature.com/articles/s44159-026-00628-0>  
   `0f5e8390-8ffc-41f3-bbc0-744e259117b5`
-- **0.9** · nature.com · 0 terme(s) du corpus  
-  Briefing Chat: The Bunsen burner myth that turns out to be just hot air  
-  <https://www.nature.com/articles/d41586-026-02893-8>  
-  `c067db05-fe9f-4553-a5d8-7409c2aab7db`
 
 ---
 
