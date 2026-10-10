@@ -34134,5 +34134,653 @@
     "domaine_opaque": false,
     "statut": "en_attente",
     "created_at": "2026-10-09T14:02:14.176Z"
+  },
+  {
+    "id": "2780ccfe-9717-4898-ac75-c090cdf68d65",
+    "source_id": "anthropic-news",
+    "cible_type": "nouvelle_categorie",
+    "cible_id": null,
+    "contenu_propose": {
+      "titre": "Vous insultez votre IA ? Claude va désormais pouvoir couper court à vos échanges - Frandroid",
+      "link": "https://news.google.com/rss/articles/CBMigAJBVV95cUxPVkNHR0hYMzNjREhyZDBYd2I1SXpPaEJBS2JoeDZUQnA5QWJpLUpjajFvVDAweEstanBsYXJlWkk1UXktRE52V1BtN2dyYWJoOHdjX0RoeHl6NU9Sc05lbWdBRXY2OHIwV2xOTDZuZkhIVEV3NVVfSWphc3pvdHN3TkpSOGpucmV4NWd5cXB1YktjRzFabUUwRFoybkNCRGR4SWRzTnRQLUwwWWYyUEFaT3NwaTNMQ3RpUVVjZ01WMmc3RGtYaGZaM3FIY2R3eTRfQmliR0QtYy11V3piSi1EMlFZYlphMGtCYlFDU2txZkpOMm40WnJwV0dvSmkxcWZ5?oc=5",
+      "date": "2026-10-09T07:21:41.000Z",
+      "resume": "Vous insultez votre IA ? Claude va désormais pouvoir couper court à vos échanges  Frandroid"
+    },
+    "score_fiabilite": 0.15,
+    "score_fiabilite_motif": "news.google.com est un redirecteur : l'url ne porte pas le domaine de l'éditeur réel, la fiabilité ne peut pas être établie sans ouvrir le lien",
+    "domaine_source": "news.google.com",
+    "domaine_opaque": true,
+    "statut": "en_attente",
+    "created_at": "2026-10-10T13:10:55.280Z"
+  },
+  {
+    "id": "6ddee914-1be2-4e65-8b83-8739504e5431",
+    "source_id": "openai-news",
+    "cible_type": "nouvelle_categorie",
+    "cible_id": null,
+    "contenu_propose": {
+      "titre": "Asana cuts model costs 76x in browser tests with GPT-6.1 Sol",
+      "link": "https://openai.com/index/asana-browser-agent",
+      "date": "2026-10-09T07:00:00.000Z",
+      "resume": "Using GPT-6 Astra in Codex, Asana made its browser agent 76x cheaper and 5x faster in tests to offer customers more capable models."
+    },
+    "score_fiabilite": 0.6,
+    "score_fiabilite_motif": "openai.com — éditeur ou laboratoire s'exprimant sur son propre produit",
+    "domaine_source": "openai.com",
+    "domaine_opaque": false,
+    "statut": "en_attente",
+    "created_at": "2026-10-10T13:10:55.512Z"
+  },
+  {
+    "id": "53534cd7-5a18-4071-8c41-9b8e91a1a28a",
+    "source_id": "nature-news",
+    "cible_type": "nouvelle_categorie",
+    "cible_id": null,
+    "contenu_propose": {
+      "titre": "Breaking down nerve-cell scaffold relieves chronic pain in mice",
+      "link": "https://www.nature.com/articles/d41586-026-03159-z",
+      "date": "2026-10-09T00:00:00.000Z",
+      "resume": ""
+    },
+    "score_fiabilite": 0.9,
+    "score_fiabilite_motif": "nature.com — édition scientifique à comité de lecture",
+    "domaine_source": "nature.com",
+    "domaine_opaque": false,
+    "statut": "en_attente",
+    "created_at": "2026-10-10T13:10:55.676Z"
+  },
+  {
+    "id": "43f33253-437f-4160-8233-77badffb0385",
+    "source_id": "nature-news",
+    "cible_type": "nouvelle_categorie",
+    "cible_id": null,
+    "contenu_propose": {
+      "titre": "Watch this invisible tattoo appear under UV light",
+      "link": "https://www.nature.com/articles/d41586-026-03210-z",
+      "date": "2026-10-09T00:00:00.000Z",
+      "resume": ""
+    },
+    "score_fiabilite": 0.9,
+    "score_fiabilite_motif": "nature.com — édition scientifique à comité de lecture",
+    "domaine_source": "nature.com",
+    "domaine_opaque": false,
+    "statut": "en_attente",
+    "created_at": "2026-10-10T13:10:55.676Z"
+  },
+  {
+    "id": "c11fd033-58eb-4515-9c55-6b95a46b9ebb",
+    "source_id": "oecd-news",
+    "cible_type": "nouvelle_categorie",
+    "cible_id": null,
+    "contenu_propose": {
+      "titre": "Perspectives de l'OCDE : l'économie mondiale résiste, mais les risques d'inflation persistent - Boursorama",
+      "link": "https://news.google.com/rss/articles/CBMi_AFBVV95cUxOWEQyd0ZTdzRUREQyd1dTVHowX2xnQ2k3MGxRRnhGOWsyd3AzRHdDaEZtRlFkVkxMWHdYUk00Q3dsWEV0OUtwdjBjTHY2OVBsQjhyMmt0RUZuYTNiM2tBWkFIZ0lSeWtTSTBja2l0S0cwdVY5Z2ZtWE1zQWU3VUJqTkRTd1BER3h0QzRKYnBBSnRQdXQ0NjQ1ZmhrWXZHZWRtcFNZMlRHa2cyLWVuQlA0cXFPaWowMTNjNUcxd2VlUFhKVW55enRvU2t3QVNlWnEydjFvV1l1YjFEeGhPWGhMNndsaHJCS0NBQXZFQTBkMFptc2JoOFRZbmZRVlPSAYICQVVfeXFMTTJRQU82aW5mSnBEZ0l3THhIc3ZaZXFKdVpJU2gxQnZUbEhTQ3FmTk1oZU5yQUVSSS05VEZkdGV1RDRpZVViSjhNTmpLOU51SUJsS19Dc1owNXY0Q1BNWFA3V052STdVeEFmOFN1ZzlMNU5nT0swSnBoLWtsX0ZINFN5SjBKWkhQSlhNbE9USnV2R1RCdE1teWZGMkcxWjNyVTI0emxJLVo0bjRzZkZ3UlhEXzRvaXNkV2NwMHMyRHZCYk5PR0xlanM1bXFkUVVkV2E0X2FfSkFydW5wZ2tWazFhTkx5ZkUydkY0M0ZfM1dBdlZzWTNZTXpLSUMxUkZ0VlBn?oc=5",
+      "date": "2026-09-23T07:00:00.000Z",
+      "resume": "Perspectives de l'OCDE : l'économie mondiale résiste, mais les risques d'inflation persistent  Boursorama"
+    },
+    "score_fiabilite": 0.15,
+    "score_fiabilite_motif": "news.google.com est un redirecteur : l'url ne porte pas le domaine de l'éditeur réel, la fiabilité ne peut pas être établie sans ouvrir le lien",
+    "domaine_source": "news.google.com",
+    "domaine_opaque": true,
+    "statut": "en_attente",
+    "created_at": "2026-10-10T13:10:56.675Z"
+  },
+  {
+    "id": "8e6a3a05-5654-4281-89f0-6cf616e457df",
+    "source_id": "commission-europeenne-presse",
+    "cible_type": "nouvelle_categorie",
+    "cible_id": null,
+    "contenu_propose": {
+      "titre": "Press Remarks by Commissioner Lahbib at the Foreign Affairs Council on Development",
+      "link": "https://ec.europa.eu/commission/presscorner/detail/en/speech_26_2129",
+      "date": "2026-10-09T15:09:05.000Z",
+      "resume": "European Commission Speech Dublin, 09 Oct 2026 Yesterday evening we discussed the future of development, along with the important link between humanitarian aid and development, together with key stakeholders..."
+    },
+    "score_fiabilite": 0.8,
+    "score_fiabilite_motif": "ec.europa.eu — préprint, actes de conférence ou institution publique",
+    "domaine_source": "ec.europa.eu",
+    "domaine_opaque": false,
+    "statut": "en_attente",
+    "created_at": "2026-10-10T13:10:58.274Z"
+  },
+  {
+    "id": "50779669-510b-4b4d-a923-c11b6aca55be",
+    "source_id": "commission-europeenne-presse",
+    "cible_type": "nouvelle_categorie",
+    "cible_id": null,
+    "contenu_propose": {
+      "titre": "Déclaration sur la Cour pénale internationale à la suite de l'annonce des sanctions américaines",
+      "link": "https://ec.europa.eu/commission/presscorner/detail/fr/statement_26_2127",
+      "date": "2026-10-09T12:14:20.000Z",
+      "resume": "European Commission Déclaration Brussels, 09 Oct 2026 L'Union européenne a toujours soutenu la Cour pénale internationale (CPI). Il est profondément regrettable que les États-Unis aient annoncé leur intention d'imp..."
+    },
+    "score_fiabilite": 0.8,
+    "score_fiabilite_motif": "ec.europa.eu — préprint, actes de conférence ou institution publique",
+    "domaine_source": "ec.europa.eu",
+    "domaine_opaque": false,
+    "statut": "en_attente",
+    "created_at": "2026-10-10T13:10:58.274Z"
+  },
+  {
+    "id": "2b917ff6-edbd-47ac-b238-3bcaa2aa1a8a",
+    "source_id": "bri-discours-banques-centrales",
+    "cible_type": "nouvelle_categorie",
+    "cible_id": null,
+    "contenu_propose": {
+      "titre": "Shifting ground – how geopolitics is reshaping growth, monetary policy and the role of gold as a reserve asset",
+      "link": "https://www.bis.org/speeches/20261007-shifting-ground-how-geopolitics-reshaping-growth-monetary-policy-and-role-gold-reserve-asset",
+      "date": "2026-10-08T00:00:00.000Z",
+      "resume": "Keynote speech by Dr Joachim Nagel, President of the Deutsche Bundesbank, at the Global Precious Metals Conference, Sorrento, 5 October 2026."
+    },
+    "score_fiabilite": 0.4,
+    "score_fiabilite_motif": "bis.org — domaine absent de la table : score par défaut prudent, sous le seuil de source primaire",
+    "domaine_source": "bis.org",
+    "domaine_opaque": false,
+    "statut": "en_attente",
+    "created_at": "2026-10-10T13:10:59.227Z"
+  },
+  {
+    "id": "e870978c-cedf-42a4-b7c0-6d1b84206ce0",
+    "source_id": "bri-discours-banques-centrales",
+    "cible_type": "nouvelle_categorie",
+    "cible_id": null,
+    "contenu_propose": {
+      "titre": "The European project, the role of rating agencies and the prospects of the Greek economy",
+      "link": "https://www.bis.org/speeches/20261007-european-project-role-rating-agencies-and-prospects-greek-economy",
+      "date": "2026-10-08T00:00:00.000Z",
+      "resume": "Speech by Mr Yannis Stournaras, Governor of the Bank of Greece, at the Annual Reunion of the Scope Ratings \"The European project, the role of rating agencies and the prospects of the Greek economy\", Athens, 24 September 2026."
+    },
+    "score_fiabilite": 0.4,
+    "score_fiabilite_motif": "bis.org — domaine absent de la table : score par défaut prudent, sous le seuil de source primaire",
+    "domaine_source": "bis.org",
+    "domaine_opaque": false,
+    "statut": "en_attente",
+    "created_at": "2026-10-10T13:10:59.227Z"
+  },
+  {
+    "id": "b6c1652b-0cb9-4a93-b11b-01a7f36ec351",
+    "source_id": "ft-marches",
+    "cible_type": "nouvelle_categorie",
+    "cible_id": null,
+    "contenu_propose": {
+      "titre": "India’s central bank tries to shore up rupee as it nears record lows",
+      "link": "https://www.ft.com/content/b373cf00-9a94-4dc7-bdda-bc7006da1148?syn-25a6b1a6=1",
+      "date": "2026-10-10T11:57:36.000Z",
+      "resume": "Rise in energy costs due to US-Israel war on Iran has put downward pressure on the currency of the world’s fastest-growing major economy"
+    },
+    "score_fiabilite": 0.4,
+    "score_fiabilite_motif": "ft.com — presse généraliste ou spécialisée",
+    "domaine_source": "ft.com",
+    "domaine_opaque": false,
+    "statut": "en_attente",
+    "created_at": "2026-10-10T13:11:02.314Z"
+  },
+  {
+    "id": "9c069948-7bd7-41d1-b96b-b8f49f2e4f44",
+    "source_id": "ft-marches",
+    "cible_type": "nouvelle_categorie",
+    "cible_id": null,
+    "contenu_propose": {
+      "titre": "AI borrowing slows as investors grow wary of debt binge",
+      "link": "https://www.ft.com/content/9c13d40e-d2b2-45d5-921c-a68cd4b308f9?syn-25a6b1a6=1",
+      "date": "2026-10-10T11:00:07.000Z",
+      "resume": "Appetite for financing infrastructure boom is tested after months of record-breaking bond issuance"
+    },
+    "score_fiabilite": 0.4,
+    "score_fiabilite_motif": "ft.com — presse généraliste ou spécialisée",
+    "domaine_source": "ft.com",
+    "domaine_opaque": false,
+    "statut": "en_attente",
+    "created_at": "2026-10-10T13:11:02.314Z"
+  },
+  {
+    "id": "72a406f3-424f-4375-a238-b794cfc08f17",
+    "source_id": "ft-marches",
+    "cible_type": "nouvelle_categorie",
+    "cible_id": null,
+    "contenu_propose": {
+      "titre": "Oil and gas production disrupted and power outages as Hurricane Isaias hits",
+      "link": "https://www.ft.com/content/f7d90625-0d78-44b2-927f-d63f4dbc5e8d?syn-25a6b1a6=1",
+      "date": "2026-10-10T10:58:00.000Z",
+      "resume": "Power outages across as first major Atlantic storm of the season sweeps Florida, Alabama and Georgia"
+    },
+    "score_fiabilite": 0.4,
+    "score_fiabilite_motif": "ft.com — presse généraliste ou spécialisée",
+    "domaine_source": "ft.com",
+    "domaine_opaque": false,
+    "statut": "en_attente",
+    "created_at": "2026-10-10T13:11:02.314Z"
+  },
+  {
+    "id": "028677ab-5cd1-4d1d-86ed-a927867993e5",
+    "source_id": "ft-marches",
+    "cible_type": "nouvelle_categorie",
+    "cible_id": null,
+    "contenu_propose": {
+      "titre": "The US productivity-pay gap",
+      "link": "https://www.ft.com/content/abaab361-8714-422f-b2eb-9eb447e4d8c3?syn-25a6b1a6=1",
+      "date": "2026-10-10T09:30:07.000Z",
+      "resume": "Workers’ share of output is shrinking"
+    },
+    "score_fiabilite": 0.4,
+    "score_fiabilite_motif": "ft.com — presse généraliste ou spécialisée",
+    "domaine_source": "ft.com",
+    "domaine_opaque": false,
+    "statut": "en_attente",
+    "created_at": "2026-10-10T13:11:02.314Z"
+  },
+  {
+    "id": "630f1477-d5ed-4a3c-9e77-381d87dd53ef",
+    "source_id": "ft-marches",
+    "cible_type": "nouvelle_categorie",
+    "cible_id": null,
+    "contenu_propose": {
+      "titre": "The world of one trade — AI",
+      "link": "https://www.ft.com/content/3f54c442-c2b7-4876-a960-5229951c9a46?syn-25a6b1a6=1",
+      "date": "2026-10-10T06:36:04.000Z",
+      "resume": "Investor portfolios have become alarmingly reliant on the fortunes of just one bet on the build-out of an uncertain technology"
+    },
+    "score_fiabilite": 0.4,
+    "score_fiabilite_motif": "ft.com — presse généraliste ou spécialisée",
+    "domaine_source": "ft.com",
+    "domaine_opaque": false,
+    "statut": "en_attente",
+    "created_at": "2026-10-10T13:11:02.314Z"
+  },
+  {
+    "id": "74cffe40-23e2-4e71-a123-c6326cbc651a",
+    "source_id": "wsj-marches",
+    "cible_type": "nouvelle_categorie",
+    "cible_id": null,
+    "contenu_propose": {
+      "titre": "At Robinhood’s Mecca for Risk-Loving Traders, Everyone Has a Tale of Getting Rich",
+      "link": "https://www.wsj.com/finance/at-robinhoods-mecca-for-risk-loving-traders-everyone-has-a-tale-of-getting-rich-f960d8c2?mod=rss_markets_main",
+      "date": "2026-10-10T02:00:00.000Z",
+      "resume": "The stock market is back at records. These everyday Americans are one reason why."
+    },
+    "score_fiabilite": 0.4,
+    "score_fiabilite_motif": "wsj.com — presse généraliste ou spécialisée",
+    "domaine_source": "wsj.com",
+    "domaine_opaque": false,
+    "statut": "en_attente",
+    "created_at": "2026-10-10T13:11:02.609Z"
+  },
+  {
+    "id": "16bf2bfb-f8cc-44a7-a3d3-5e76b85c5911",
+    "source_id": "wsj-marches",
+    "cible_type": "nouvelle_categorie",
+    "cible_id": null,
+    "contenu_propose": {
+      "titre": "Kalshi Examines Bets on Trump’s Pick for New White House Press Secretary",
+      "link": "https://www.wsj.com/finance/regulation/kalshi-probes-bets-on-trumps-pick-for-new-white-house-press-secretary-8b73a546?mod=rss_markets_main",
+      "date": "2026-10-09T21:47:00.000Z",
+      "resume": "The prediction market is examining a series of trades that correctly predicted the appointment of Katie Zacharia, who wasn’t previously seen as a front-runner."
+    },
+    "score_fiabilite": 0.4,
+    "score_fiabilite_motif": "wsj.com — presse généraliste ou spécialisée",
+    "domaine_source": "wsj.com",
+    "domaine_opaque": false,
+    "statut": "en_attente",
+    "created_at": "2026-10-10T13:11:02.609Z"
+  },
+  {
+    "id": "2f708339-4112-49f9-acdd-ebf36b606515",
+    "source_id": "wsj-marches",
+    "cible_type": "nouvelle_categorie",
+    "cible_id": null,
+    "contenu_propose": {
+      "titre": "As Yields Surged, Small-Cap Stocks Were Hit Hard",
+      "link": "https://www.wsj.com/finance/stocks/as-yields-surged-small-cap-stocks-were-hit-hard-7470f7e4?mod=rss_markets_main",
+      "date": "2026-10-09T21:45:00.000Z",
+      "resume": "The Russell 2000, which tracks the shares of small companies, closed Friday on a five-week losing streak."
+    },
+    "score_fiabilite": 0.4,
+    "score_fiabilite_motif": "wsj.com — presse généraliste ou spécialisée",
+    "domaine_source": "wsj.com",
+    "domaine_opaque": false,
+    "statut": "en_attente",
+    "created_at": "2026-10-10T13:11:02.609Z"
+  },
+  {
+    "id": "5c715185-7964-4647-8ee9-dfeeab5c28c2",
+    "source_id": "wsj-marches",
+    "cible_type": "nouvelle_categorie",
+    "cible_id": null,
+    "contenu_propose": {
+      "titre": "U.S. Natural Gas Futures Settle Higher",
+      "link": "https://www.wsj.com/finance/commodities-futures/u-s-natural-gas-futures-pick-up-in-early-trading-31da69cb?mod=rss_markets_main",
+      "date": "2026-10-09T21:06:00.000Z",
+      "resume": "U.S. natural gas futures recovered the previous session’s losses as markets focus on Hurricane Isaias as it approaches the U.S. Gulf coast."
+    },
+    "score_fiabilite": 0.4,
+    "score_fiabilite_motif": "wsj.com — presse généraliste ou spécialisée",
+    "domaine_source": "wsj.com",
+    "domaine_opaque": false,
+    "statut": "en_attente",
+    "created_at": "2026-10-10T13:11:02.609Z"
+  },
+  {
+    "id": "3a0cdc5c-b3ed-44a2-baff-d5ff4bf1a350",
+    "source_id": "le-monde-economie",
+    "cible_type": "nouvelle_categorie",
+    "cible_id": null,
+    "contenu_propose": {
+      "titre": "« Tout porte à craindre qu’une crise de la dette souveraine française ait des répercussions mondiales »",
+      "link": "https://www.lemonde.fr/idees/article/2026/10/10/tout-porte-a-craindre-qu-une-crise-de-la-dette-souveraine-francaise-ait-des-repercussions-mondiales_6790998_3232.html",
+      "date": "2026-10-10T13:00:14.000Z",
+      "resume": "La France, qui doit remettre en ordre ses finances publiques, aurait tort de trop compter sur le filet de sécurité de la Banque centrale européenne, juge Desmond Lachman, ancien directeur adjoint du Fonds monétaire international, dans une tribune au « Monde »."
+    },
+    "score_fiabilite": 0.4,
+    "score_fiabilite_motif": "lemonde.fr — presse généraliste ou spécialisée",
+    "domaine_source": "lemonde.fr",
+    "domaine_opaque": false,
+    "statut": "en_attente",
+    "created_at": "2026-10-10T13:11:02.823Z"
+  },
+  {
+    "id": "69e9a6e9-720c-4403-a21d-18f3015690ce",
+    "source_id": "le-monde-economie",
+    "cible_type": "nouvelle_categorie",
+    "cible_id": null,
+    "contenu_propose": {
+      "titre": "Starlink accélère son projet de devenir un opérateur de téléphonie mobile aux Etats-Unis",
+      "link": "https://www.lemonde.fr/economie/article/2026/10/10/starlink-accelere-son-projet-de-devenir-un-operateur-de-telephonie-mobile-aux-etats-unis_6790997_3234.html",
+      "date": "2026-10-10T13:00:10.000Z",
+      "resume": "Le groupe d’Elon Musk a acquis des fréquences essentielles au déploiement d’un réseau terrestre de téléphonie mobile, avec l’ambition de mieux couvrir les métropoles, où sa constellation de satellites atteint ses limites."
+    },
+    "score_fiabilite": 0.4,
+    "score_fiabilite_motif": "lemonde.fr — presse généraliste ou spécialisée",
+    "domaine_source": "lemonde.fr",
+    "domaine_opaque": false,
+    "statut": "en_attente",
+    "created_at": "2026-10-10T13:11:02.823Z"
+  },
+  {
+    "id": "56aacca7-3626-4123-8e4b-7680bc26b8b9",
+    "source_id": "le-monde-economie",
+    "cible_type": "nouvelle_categorie",
+    "cible_id": null,
+    "contenu_propose": {
+      "titre": "L’étonnante résistance des ventes d’appareils photo, malgré le smartphone",
+      "link": "https://www.lemonde.fr/economie/article/2026/10/10/l-etonnante-resistance-des-ventes-d-appareils-photo-malgre-le-smartphone_6790989_3234.html",
+      "date": "2026-10-10T12:00:07.000Z",
+      "resume": "Les ventes de boîtiers hybrides rebondissent depuis la fin de la crise due au Covid-19, portées par l’intérêt d’une nouvelle génération d’utilisateurs."
+    },
+    "score_fiabilite": 0.4,
+    "score_fiabilite_motif": "lemonde.fr — presse généraliste ou spécialisée",
+    "domaine_source": "lemonde.fr",
+    "domaine_opaque": false,
+    "statut": "en_attente",
+    "created_at": "2026-10-10T13:11:02.823Z"
+  },
+  {
+    "id": "1af97cc6-01e6-43c3-b53f-7f3308e22a09",
+    "source_id": "le-monde-economie",
+    "cible_type": "nouvelle_categorie",
+    "cible_id": null,
+    "contenu_propose": {
+      "titre": "Le fonds pétrolier norvégien et ses 2 000 milliards d’euros d’actifs, une bénédiction pour l’Etat-providence",
+      "link": "https://www.lemonde.fr/economie/article/2026/10/10/le-fonds-petrolier-norvegien-et-ses-2-000-milliards-d-euros-d-actifs-une-benediction-pour-l-etat-providence_6790973_3234.html",
+      "date": "2026-10-10T08:00:22.000Z",
+      "resume": "Alimenté par les revenus de l’extraction du gaz et du pétrole, le plus grand fonds souverain du monde finance désormais un quart du budget de l’Etat norvégien. S’il a contribué à la prospérité du royaume et de ses habitants, son impact sur l’économie et la société fait aujourd’hui débat."
+    },
+    "score_fiabilite": 0.4,
+    "score_fiabilite_motif": "lemonde.fr — presse généraliste ou spécialisée",
+    "domaine_source": "lemonde.fr",
+    "domaine_opaque": false,
+    "statut": "en_attente",
+    "created_at": "2026-10-10T13:11:02.823Z"
+  },
+  {
+    "id": "815defb8-42ea-4397-b923-dbf1ad523f68",
+    "source_id": "le-monde-economie",
+    "cible_type": "nouvelle_categorie",
+    "cible_id": null,
+    "contenu_propose": {
+      "titre": "Dominique Méda, sociologue : « Alors que notre société est de plus en plus régie par la Silicon Valley, l’autoritarisme d’entreprise devient une menace croissante »",
+      "link": "https://www.lemonde.fr/idees/article/2026/10/10/dominique-meda-sociologue-alors-que-notre-societe-est-de-plus-en-plus-regie-par-la-silicon-valley-l-autoritarisme-d-entreprise-devient-une-menace-croissante_6790972_3232.html",
+      "date": "2026-10-10T08:00:11.000Z",
+      "resume": "Le fonctionnement de plus en plus autoritaire des fondateurs ou des dirigeants de groupes américains de la Tech, comme Elon Musk ou Peter Thiel, appelle une régulation, estime la sociologue dans sa chronique."
+    },
+    "score_fiabilite": 0.4,
+    "score_fiabilite_motif": "lemonde.fr — presse généraliste ou spécialisée",
+    "domaine_source": "lemonde.fr",
+    "domaine_opaque": false,
+    "statut": "en_attente",
+    "created_at": "2026-10-10T13:11:02.823Z"
+  },
+  {
+    "id": "27382502-0b44-40a5-8099-c686c6ad88a2",
+    "source_id": "la-tribune-actualites",
+    "cible_type": "nouvelle_categorie",
+    "cible_id": null,
+    "contenu_propose": {
+      "titre": "140 milliards d'euros de coupes : le contre-budget européen de l'Irlande pour débloquer les divergences franco-allemandes",
+      "link": "https://www.latribune.fr/article/economie/international/1140621415111814/140-milliards-deuros-de-coupes-le-contre-budget-europeen-de-lirlande-pour-debloquer-les-divergences-franco-allemandes",
+      "date": "2026-10-10T10:01:57.000Z",
+      "resume": "L'Irlande, qui préside le Conseil de l'UE, a présenté ce samedi un projet de budget européen de 2028 à 2034 réduit d'environ 140 milliards d'euros par rapport à la proposition initiale de Bruxelles, pour tenter de réconcilier les différents camps."
+    },
+    "score_fiabilite": 0.4,
+    "score_fiabilite_motif": "latribune.fr — domaine absent de la table : score par défaut prudent, sous le seuil de source primaire",
+    "domaine_source": "latribune.fr",
+    "domaine_opaque": false,
+    "statut": "en_attente",
+    "created_at": "2026-10-10T13:11:03.124Z"
+  },
+  {
+    "id": "0f2639ae-9653-4fef-bc64-079732ed6726",
+    "source_id": "la-tribune-actualites",
+    "cible_type": "nouvelle_categorie",
+    "cible_id": null,
+    "contenu_propose": {
+      "titre": "Trump scelle un accord avec Poutine pour la livraison massive de diesel russe",
+      "link": "https://www.latribune.fr/article/entreprises-finance/energie-environnement/35760670749159/trump-scelle-un-accord-avec-poutine-pour-une-livraison-massive-de-diesel-russe",
+      "date": "2026-10-10T09:11:00.000Z",
+      "resume": "Donald Trump a annoncé ce vendredi avoir négocié la livraison de quantités massives de diesel russe aux marchés américain et mondial, levant pour ce faire des sanctions qui pèsent sur Moscou. Volodymyr Zelensky qui a dénoncé une décision « indigne »."
+    },
+    "score_fiabilite": 0.4,
+    "score_fiabilite_motif": "latribune.fr — domaine absent de la table : score par défaut prudent, sous le seuil de source primaire",
+    "domaine_source": "latribune.fr",
+    "domaine_opaque": false,
+    "statut": "en_attente",
+    "created_at": "2026-10-10T13:11:03.124Z"
+  },
+  {
+    "id": "51d8ffb2-c800-4b02-8795-c137ba04b7cd",
+    "source_id": "la-tribune-actualites",
+    "cible_type": "nouvelle_categorie",
+    "cible_id": null,
+    "contenu_propose": {
+      "titre": "OPINION « Numérique en santé : pas de souveraineté sans filière d’excellence »",
+      "link": "https://www.latribune.fr/article/idees/1526073252877314/opinion-numerique-en-sante-pas-de-souverainete-sans-filiere-d-excellence",
+      "date": "2026-10-10T09:00:19.000Z",
+      "resume": "L'avenir du numérique en santé français se joue sur la capacité à bâtir une filière d'excellence, compétitive et durable, capable d'investir et d'innover. Il s'agit de créer un marché équitable où l'offre française et européenne puisse rivaliser avec les acteurs mondiaux, assurant ainsi l'autonomie stratégique et la qualité des soins de demain."
+    },
+    "score_fiabilite": 0.4,
+    "score_fiabilite_motif": "latribune.fr — domaine absent de la table : score par défaut prudent, sous le seuil de source primaire",
+    "domaine_source": "latribune.fr",
+    "domaine_opaque": false,
+    "statut": "en_attente",
+    "created_at": "2026-10-10T13:11:03.124Z"
+  },
+  {
+    "id": "cc9dc55c-7477-41e3-baa5-302d196aa649",
+    "source_id": "la-tribune-actualites",
+    "cible_type": "nouvelle_categorie",
+    "cible_id": null,
+    "contenu_propose": {
+      "titre": "OPINION. « Lycéens mobilisés : nous prenons parti pour leur avenir »",
+      "link": "https://www.latribune.fr/article/idees/13507064895165/opinion-lyceens-mobilises-nous-prenons-parti-pour-leur-avenir",
+      "date": "2026-10-10T11:10:16.000Z",
+      "resume": "Ils ont 16 ou 17 ans et, depuis fin septembre, ils tiennent la grille de leur lycée. La Fédération Léo Lagrange a choisi de les entendre et de s'engager."
+    },
+    "score_fiabilite": 0.4,
+    "score_fiabilite_motif": "latribune.fr — domaine absent de la table : score par défaut prudent, sous le seuil de source primaire",
+    "domaine_source": "latribune.fr",
+    "domaine_opaque": false,
+    "statut": "en_attente",
+    "created_at": "2026-10-10T13:11:03.124Z"
+  },
+  {
+    "id": "b0c65cb6-6644-4b61-b519-15270c0e8a66",
+    "source_id": "la-tribune-actualites",
+    "cible_type": "nouvelle_categorie",
+    "cible_id": null,
+    "contenu_propose": {
+      "titre": "OPINION. « Le 11 octobre doit devenir la Journée internationale des droits des filles »",
+      "link": "https://www.latribune.fr/article/idees/69687572851629/opinion-le-11-octobre-doit-devenir-la-journee-internationale-des-droits-des-filles",
+      "date": "2026-10-10T05:00:42.000Z",
+      "resume": "Elizabeth Tchoungui et Laurence Beldowski, de Capital Filles, appellent l'ONU à renommer la Journée internationale de la fille. Elles estiment que cette évolution, soutenue par la diplomatie féministe française, est cruciale pour affirmer que les droits des filles sont un enjeu fondamental, dès l'enfance, pour construire une égalité durable."
+    },
+    "score_fiabilite": 0.4,
+    "score_fiabilite_motif": "latribune.fr — domaine absent de la table : score par défaut prudent, sous le seuil de source primaire",
+    "domaine_source": "latribune.fr",
+    "domaine_opaque": false,
+    "statut": "en_attente",
+    "created_at": "2026-10-10T13:11:03.124Z"
+  },
+  {
+    "id": "8c19b385-5896-4877-9861-0e31a5a34925",
+    "source_id": "rfi-economie",
+    "cible_type": "nouvelle_categorie",
+    "cible_id": null,
+    "contenu_propose": {
+      "titre": "Accord Moscou-Washington sur le pétrole: quelles conséquences après la levée des sanctions américaines?",
+      "link": "https://www.rfi.fr/fr/%C3%A9conomie/20261010-accord-moscou-washington-sur-le-p%C3%A9trole-quelles-cons%C3%A9quences-apr%C3%A8s-la-lev%C3%A9e-des-sanctions-am%C3%A9ricaines",
+      "date": "2026-10-10T11:06:47.000Z",
+      "resume": "Alors qu'une délégation ukrainienne se trouve à Washington et que des discussions sont en cours avec les émissaires de Donald Trump, le président américain a annoncé, le 9 octobre, la levée des sanctions américaines contre le pétrole russe et un accord prévoyant la livraison immédiate de 300 000 tonnes de diesel."
+    },
+    "score_fiabilite": 0.4,
+    "score_fiabilite_motif": "rfi.fr — domaine absent de la table : score par défaut prudent, sous le seuil de source primaire",
+    "domaine_source": "rfi.fr",
+    "domaine_opaque": false,
+    "statut": "en_attente",
+    "created_at": "2026-10-10T13:11:03.739Z"
+  },
+  {
+    "id": "43401c39-065f-4fd9-8aed-6337a7229f28",
+    "source_id": "rfi-economie",
+    "cible_type": "nouvelle_categorie",
+    "cible_id": null,
+    "contenu_propose": {
+      "titre": "Terres rares: l'Union européenne va soutenir 46 nouveaux projets pour réduire sa dépendance à la Chine",
+      "link": "https://www.rfi.fr/fr/%C3%A9conomie/20261010-terres-rares-l-union-europ%C3%A9enne-va-soutenir-46-nouveaux-projets-pour-r%C3%A9duire-sa-d%C3%A9pendance-%C3%A0-la-chine",
+      "date": "2026-10-10T11:01:24.000Z",
+      "resume": "Vendredi 9 octobre, Pékin et Bruxelles ont annoncé de premières avancées pour tenter de rééquilibrer leurs échanges commerciaux, après deux jours de discussions en Chine, avec le commissaire européen au Commerce. L’Union européenne fait un pas supplémentaire dans sa stratégie visant à réduire sa dépendance à Pékin en ce qui concerne les métaux stratégiques. Bruxelles s'apprête à soutenir 46 nouvea"
+    },
+    "score_fiabilite": 0.4,
+    "score_fiabilite_motif": "rfi.fr — domaine absent de la table : score par défaut prudent, sous le seuil de source primaire",
+    "domaine_source": "rfi.fr",
+    "domaine_opaque": false,
+    "statut": "en_attente",
+    "created_at": "2026-10-10T13:11:03.739Z"
+  },
+  {
+    "id": "16d8e3e4-594d-456d-8f80-99b3ddad8152",
+    "source_id": "rfi-economie",
+    "cible_type": "nouvelle_categorie",
+    "cible_id": null,
+    "contenu_propose": {
+      "titre": "IA, une course aux milliards : qui paiera la facture?",
+      "link": "https://www.rfi.fr/fr/podcasts/%C3%A9co-d-ici-%C3%A9co-d-ailleurs/20261009-ia-une-course-aux-milliards-qui-paiera-la-facture",
+      "date": "2026-10-09T15:53:10.000Z",
+      "resume": "L’intelligence artificielle transforme l’économie, bouleverse le travail et soulève des questions majeures de sécurité et de démocratie. Mais cette révolution a un coût : les géants du secteur investissent des centaines de milliards de dollars dans les centres de données, les puces et l’énergie, sans garantir leur rentabilité. Entre risques de bulle financière, régulation insuffisante et recherche"
+    },
+    "score_fiabilite": 0.4,
+    "score_fiabilite_motif": "rfi.fr — domaine absent de la table : score par défaut prudent, sous le seuil de source primaire",
+    "domaine_source": "rfi.fr",
+    "domaine_opaque": false,
+    "statut": "en_attente",
+    "created_at": "2026-10-10T13:11:03.739Z"
+  },
+  {
+    "id": "fab8a08e-7287-4a7b-906a-73d66e435c8f",
+    "source_id": "dw-business",
+    "cible_type": "nouvelle_categorie",
+    "cible_id": null,
+    "contenu_propose": {
+      "titre": "Finland, the world's happiest nation, faces a glum winter",
+      "link": "https://www.dw.com/en/finland-the-world-s-happiest-nation-faces-a-glum-winter/a-79544348?maca=en-rss-en-bus-2091-rdf",
+      "date": "2026-10-09T08:12:00.000Z",
+      "resume": "Finns have many reasons to feel content, but the country's pile of debt is not one of them. Russia's war in Ukraine has added to the fiscal burden. Can the Nordic nation absorb another shock?"
+    },
+    "score_fiabilite": 0.4,
+    "score_fiabilite_motif": "dw.com — domaine absent de la table : score par défaut prudent, sous le seuil de source primaire",
+    "domaine_source": "dw.com",
+    "domaine_opaque": false,
+    "statut": "en_attente",
+    "created_at": "2026-10-10T13:11:04.934Z"
+  },
+  {
+    "id": "eeebfcb8-3e56-4c67-9f5e-9cb5043ba0b9",
+    "source_id": "guardian-economie",
+    "cible_type": "nouvelle_categorie",
+    "cible_id": null,
+    "contenu_propose": {
+      "titre": "France’s dilemma: protesters demand spending as markets require fiscal restraint",
+      "link": "https://www.theguardian.com/world/2026/oct/10/france-caught-between-bond-markets-student-worker-blockades",
+      "date": "2026-10-10T04:00:47.000Z",
+      "resume": "Waves of protests expose debt crisis faced by French government, but political wrangling is stalling an escape plan. Is there a way out?\nEight years have passed since rising fuel prices brought the gilets jaunes (yellow vest) demonstrators to the streets of France, prompting the first big crisis of Emmanuel Macron’s time in the Élysée Palace.\nAs the French president contemplates his exit next year"
+    },
+    "score_fiabilite": 0.4,
+    "score_fiabilite_motif": "theguardian.com — presse généraliste ou spécialisée",
+    "domaine_source": "theguardian.com",
+    "domaine_opaque": false,
+    "statut": "en_attente",
+    "created_at": "2026-10-10T13:11:05.159Z"
+  },
+  {
+    "id": "470901f5-7851-4199-bed2-6b9377fcfbea",
+    "source_id": "nature-reviews-psychology",
+    "cible_type": "nouvelle_categorie",
+    "cible_id": null,
+    "contenu_propose": {
+      "titre": "Reply to ‘How physical information explains infants’ supposed inner psychological world’",
+      "link": "https://www.nature.com/articles/s44159-026-00629-z",
+      "date": "2026-10-09T00:00:00.000Z",
+      "resume": ""
+    },
+    "score_fiabilite": 0.9,
+    "score_fiabilite_motif": "nature.com — édition scientifique à comité de lecture",
+    "domaine_source": "nature.com",
+    "domaine_opaque": false,
+    "statut": "en_attente",
+    "created_at": "2026-10-10T13:11:07.097Z"
+  },
+  {
+    "id": "64ee4b6b-be3a-4988-b178-49ae5afa112e",
+    "source_id": "nature-reviews-psychology",
+    "cible_type": "nouvelle_categorie",
+    "cible_id": null,
+    "contenu_propose": {
+      "titre": "Understanding the bidirectional associations between parenting and child anxiety",
+      "link": "https://www.nature.com/articles/s44159-026-00618-2",
+      "date": "2026-10-09T00:00:00.000Z",
+      "resume": ""
+    },
+    "score_fiabilite": 0.9,
+    "score_fiabilite_motif": "nature.com — édition scientifique à comité de lecture",
+    "domaine_source": "nature.com",
+    "domaine_opaque": false,
+    "statut": "en_attente",
+    "created_at": "2026-10-10T13:11:07.097Z"
+  },
+  {
+    "id": "ac7241fe-f5b5-4d04-bafb-23a00e109172",
+    "source_id": "nature-reviews-psychology",
+    "cible_type": "nouvelle_categorie",
+    "cible_id": null,
+    "contenu_propose": {
+      "titre": "Integrating the Hierarchical Taxonomy of Psychopathology and computational psychiatry",
+      "link": "https://www.nature.com/articles/s44159-026-00621-7",
+      "date": "2026-10-09T00:00:00.000Z",
+      "resume": ""
+    },
+    "score_fiabilite": 0.9,
+    "score_fiabilite_motif": "nature.com — édition scientifique à comité de lecture",
+    "domaine_source": "nature.com",
+    "domaine_opaque": false,
+    "statut": "en_attente",
+    "created_at": "2026-10-10T13:11:07.097Z"
   }
 ]
