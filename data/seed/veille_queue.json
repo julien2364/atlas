@@ -34786,5 +34786,473 @@
     "domaine_opaque": false,
     "statut": "en_attente",
     "created_at": "2026-10-10T13:11:07.097Z"
+  },
+  {
+    "id": "a4f36a08-6802-41db-be55-604cf4dc3213",
+    "source_id": "anthropic-news",
+    "cible_type": "nouvelle_categorie",
+    "cible_id": null,
+    "contenu_propose": {
+      "titre": "Intelligence artificielle : On a demandé à Claude ce qu’il pense de l’interdiction de l’insulter - 20 Minutes",
+      "link": "https://news.google.com/rss/articles/CBMivAFBVV95cUxOSURQRU1VSzEzQzc4YXhyeWZrdDd3WGNhSXNCTWgyaElSTW8xZVM5MUxWYnZuVHRIcWRuRlRZMzJSejVhVWl6YlRGZENRV044U3lHV1FmTHlQQXN4RWNYVWc0UVduVmZoa2hCZG5ZMHFqSjFUSkxDbUQ2NGVRV1FadHJKU1V0UG9aeW04YXJBWmZUUklXNktKMTVGaW56c3cyRWxNUkVRVzFRSHB1NW1iejJMM2Ytem1uemhTWg?oc=5",
+      "date": "2026-10-10T15:58:00.000Z",
+      "resume": "Intelligence artificielle : On a demandé à Claude ce qu’il pense de l’interdiction de l’insulter  20 Minutes"
+    },
+    "score_fiabilite": 0.15,
+    "score_fiabilite_motif": "news.google.com est un redirecteur : l'url ne porte pas le domaine de l'éditeur réel, la fiabilité ne peut pas être établie sans ouvrir le lien",
+    "domaine_source": "news.google.com",
+    "domaine_opaque": true,
+    "statut": "en_attente",
+    "created_at": "2026-10-11T13:41:19.433Z"
+  },
+  {
+    "id": "b31517f8-2dde-448e-b095-709ae2e73848",
+    "source_id": "anthropic-news",
+    "cible_type": "nouvelle_categorie",
+    "cible_id": null,
+    "contenu_propose": {
+      "titre": "Claude n’aime pas qu’on lui dise non, Anthropic révèle de nouveaux dérapages de ses IA - MacGeneration",
+      "link": "https://news.google.com/rss/articles/CBMi3AFBVV95cUxOZnpxZ1BOeEpMVzRVSDBqVHUzTzI1eS1ONEo1Rjc0c3BneW5vS2w1RVRGdTdGR1E3SVI0aDFWUk9UaVZuQzJTcHJyanlrdFFWUU05V3VXM0loYjZhLTBHMTVTZnZtSFFSMUVSUnNZN3RUMWpMRTJ0ZkJ4S0QyT0lPZVUxbGdGaFVWVTlkSUhRMmhjNUt3QmhIeFdpUTVBckxIUW03Mnd3ZGJ0N2piWUJmRDM1bk1wNVVIdTlROXBBOHhzdDhmOTY2NlctRmRtaktyeEhfRGZXSDMzM1J5?oc=5",
+      "date": "2026-10-10T11:30:00.000Z",
+      "resume": "Claude n’aime pas qu’on lui dise non, Anthropic révèle de nouveaux dérapages de ses IA  MacGeneration"
+    },
+    "score_fiabilite": 0.15,
+    "score_fiabilite_motif": "news.google.com est un redirecteur : l'url ne porte pas le domaine de l'éditeur réel, la fiabilité ne peut pas être établie sans ouvrir le lien",
+    "domaine_source": "news.google.com",
+    "domaine_opaque": true,
+    "statut": "en_attente",
+    "created_at": "2026-10-11T13:41:19.433Z"
+  },
+  {
+    "id": "638a2951-0474-4e0e-bdac-5948c6dc81c6",
+    "source_id": "imf-news",
+    "cible_type": "nouvelle_categorie",
+    "cible_id": null,
+    "contenu_propose": {
+      "titre": "FMI : l'économie mondiale tiraillée entre l'IA et le choc énergétique - Le nouvel Economiste",
+      "link": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxOblZuNk9rd0ZuOXpqemthSFBweWRnZnY3c0tVZTJfbGtWNVAzdGtQMnJnMV9QcFVNX0t1MkgwNUFxNjBMUV9yS0xxUFYzVVRlZVB1d1NPTHJZWGUycEpkUXFRVVNPV0J6Z3JrUEFQU21nZFNMcHRqZnJLLV9BRWFFZGFmQTI3cHVVSU82UkRZMnItSTg4UXE3OUJ0VUNNQ21zTjVTM25mUjF1WkE?oc=5",
+      "date": "2026-10-11T06:29:25.000Z",
+      "resume": "FMI : l'économie mondiale tiraillée entre l'IA et le choc énergétique  Le nouvel Economiste"
+    },
+    "score_fiabilite": 0.15,
+    "score_fiabilite_motif": "news.google.com est un redirecteur : l'url ne porte pas le domaine de l'éditeur réel, la fiabilité ne peut pas être établie sans ouvrir le lien",
+    "domaine_source": "news.google.com",
+    "domaine_opaque": true,
+    "statut": "en_attente",
+    "created_at": "2026-10-11T13:41:20.088Z"
+  },
+  {
+    "id": "d8b5d852-7310-4ad1-8804-5093f0fb165d",
+    "source_id": "oecd-news",
+    "cible_type": "nouvelle_categorie",
+    "cible_id": null,
+    "contenu_propose": {
+      "titre": "Réguler les données sans tarir la valeur : ce que le rapport OCDE-OMC 2025 enseigne à nos politiques numériques - Social Net Link",
+      "link": "https://news.google.com/rss/articles/CBMi5gFBVV95cUxNa0NqWUN5bUJSMzRHYjR1RGRtQWdZeE5UZ1pIS0RTeENHd0F1QktLYmNZVmpMZksyOGYxTG0tSkpzZkE2SmkzOUphVWc2T1d6NDVKMWQtR1RZRFRoY2xKMXQxa0tYdTNwX2JtMmJYS1dOSG90NlpxQldTOTFhR2V0SWxReFJJQ1BLNjVKcHRmcUp2WlFIdy1Mdy1IUlpuUlJVc09QNXpFeWNaTk1BY1RQRjFENnNXMVBWS0FRRF9TMUlWd2RPVE9LdWRFc1lkNVpncjhhY0phd21tYlhWSFdtRjJGYkw0dw?oc=5",
+      "date": "2026-10-10T21:45:59.000Z",
+      "resume": "Réguler les données sans tarir la valeur : ce que le rapport OCDE-OMC 2025 enseigne à nos politiques numériques  Social Net Link"
+    },
+    "score_fiabilite": 0.15,
+    "score_fiabilite_motif": "news.google.com est un redirecteur : l'url ne porte pas le domaine de l'éditeur réel, la fiabilité ne peut pas être établie sans ouvrir le lien",
+    "domaine_source": "news.google.com",
+    "domaine_opaque": true,
+    "statut": "en_attente",
+    "created_at": "2026-10-11T13:41:20.520Z"
+  },
+  {
+    "id": "e39c615e-2609-4362-91a4-03a02c2f3f7e",
+    "source_id": "ft-marches",
+    "cible_type": "nouvelle_categorie",
+    "cible_id": null,
+    "contenu_propose": {
+      "titre": "US hits commercial tanker in Gulf of Oman as tensions flare",
+      "link": "https://www.ft.com/content/f9b9f937-97b0-4a03-90f6-05d7c7344ab9?syn-25a6b1a6=1",
+      "date": "2026-10-11T05:26:18.000Z",
+      "resume": "The ship tried to break through America’s naval blockade of Iranian ports, Central Command says of its first attack in a month"
+    },
+    "score_fiabilite": 0.4,
+    "score_fiabilite_motif": "ft.com — presse généraliste ou spécialisée",
+    "domaine_source": "ft.com",
+    "domaine_opaque": false,
+    "statut": "en_attente",
+    "created_at": "2026-10-11T13:41:26.689Z"
+  },
+  {
+    "id": "66d1b417-0fdf-438b-a503-766005f3bfd7",
+    "source_id": "ft-marches",
+    "cible_type": "nouvelle_categorie",
+    "cible_id": null,
+    "contenu_propose": {
+      "titre": "Private equity can cut ‘best’ deals in current climate, says Permira boss",
+      "link": "https://www.ft.com/content/b42bb760-3eda-430d-adfd-69c359425c1d?syn-25a6b1a6=1",
+      "date": "2026-10-11T04:00:16.000Z",
+      "resume": "Lower valuations and reduced competition should help sector to ‘exceptional returns’, says Dipan Patel"
+    },
+    "score_fiabilite": 0.4,
+    "score_fiabilite_motif": "ft.com — presse généraliste ou spécialisée",
+    "domaine_source": "ft.com",
+    "domaine_opaque": false,
+    "statut": "en_attente",
+    "created_at": "2026-10-11T13:41:26.690Z"
+  },
+  {
+    "id": "95b3ae30-a336-4995-9fd1-232820bafe02",
+    "source_id": "ft-marches",
+    "cible_type": "nouvelle_categorie",
+    "cible_id": null,
+    "contenu_propose": {
+      "titre": "JPMorgan bets on European asset management growth",
+      "link": "https://www.ft.com/content/bad44d91-2324-444c-9070-ea5beb406593?syn-25a6b1a6=1",
+      "date": "2026-10-11T04:00:15.000Z",
+      "resume": "Patrick Thomson, who heads the bank’s asset management business in Europe, said he was ‘bullish on the UK’"
+    },
+    "score_fiabilite": 0.4,
+    "score_fiabilite_motif": "ft.com — presse généraliste ou spécialisée",
+    "domaine_source": "ft.com",
+    "domaine_opaque": false,
+    "statut": "en_attente",
+    "created_at": "2026-10-11T13:41:26.690Z"
+  },
+  {
+    "id": "8e23e570-593d-4b61-b760-8c527fbbe658",
+    "source_id": "ft-marches",
+    "cible_type": "nouvelle_categorie",
+    "cible_id": null,
+    "contenu_propose": {
+      "titre": "Global private equity fuels Indian healthcare’s push into smaller cities",
+      "link": "https://www.ft.com/content/09cde3c2-26d3-4390-8fc0-f6292561a5bf?syn-25a6b1a6=1",
+      "date": "2026-10-11T03:02:49.000Z",
+      "resume": "Hospitals flush with foreign money are expanding rapidly and filling gaps in public infrastructure"
+    },
+    "score_fiabilite": 0.4,
+    "score_fiabilite_motif": "ft.com — presse généraliste ou spécialisée",
+    "domaine_source": "ft.com",
+    "domaine_opaque": false,
+    "statut": "en_attente",
+    "created_at": "2026-10-11T13:41:26.690Z"
+  },
+  {
+    "id": "bf0e3c7c-b895-404d-8656-dde2d747baf8",
+    "source_id": "wsj-marches",
+    "cible_type": "nouvelle_categorie",
+    "cible_id": null,
+    "contenu_propose": {
+      "titre": "Home Sellers Are Starting to Blink on Prices. That’s Bad for Builders.",
+      "link": "https://www.wsj.com/economy/housing/homhome-prices-sellers-mortgage-ratese-sellers-are-starting-to-blink-on-prices-thats-bad-for-builders-9512512f?mod=rss_markets_main",
+      "date": "2026-10-11T09:30:00.000Z",
+      "resume": "Competition for buyers is heating up, which will force companies like Lennar and KB home to beef up incentives."
+    },
+    "score_fiabilite": 0.4,
+    "score_fiabilite_motif": "wsj.com — presse généraliste ou spécialisée",
+    "domaine_source": "wsj.com",
+    "domaine_opaque": false,
+    "statut": "en_attente",
+    "created_at": "2026-10-11T13:41:26.874Z"
+  },
+  {
+    "id": "55d7bf14-40b2-4093-b2c7-0beaf50b69d6",
+    "source_id": "wsj-marches",
+    "cible_type": "nouvelle_categorie",
+    "cible_id": null,
+    "contenu_propose": {
+      "titre": "Why Economists Think Higher Bond Yields Are Here to Stay",
+      "link": "https://www.wsj.com/finance/investing/economists-bond-yields-forecast-aaa2ff5c?mod=rss_markets_main",
+      "date": "2026-10-11T09:30:00.000Z",
+      "resume": "The WSJ quarterly survey reveals that forecasters think inflation, Federal Reserve rate increases and debt will keep borrowing costs higher for longer."
+    },
+    "score_fiabilite": 0.4,
+    "score_fiabilite_motif": "wsj.com — presse généraliste ou spécialisée",
+    "domaine_source": "wsj.com",
+    "domaine_opaque": false,
+    "statut": "en_attente",
+    "created_at": "2026-10-11T13:41:26.874Z"
+  },
+  {
+    "id": "da16f8d7-fdaa-4436-9955-5ef61f3f7512",
+    "source_id": "wsj-marches",
+    "cible_type": "nouvelle_categorie",
+    "cible_id": null,
+    "contenu_propose": {
+      "titre": "The Sleepy Insurance Product That Came to Power Private Credit’s Ascent",
+      "link": "https://www.wsj.com/finance/the-sleepy-insurance-product-that-came-to-power-private-credits-ascent-e9586fa3?mod=rss_markets_main",
+      "date": "2026-10-11T02:46:00.000Z",
+      "resume": "Indexed annuities guarantee no market losses, but insurers can periodically adjust the formula for returns."
+    },
+    "score_fiabilite": 0.4,
+    "score_fiabilite_motif": "wsj.com — presse généraliste ou spécialisée",
+    "domaine_source": "wsj.com",
+    "domaine_opaque": false,
+    "statut": "en_attente",
+    "created_at": "2026-10-11T13:41:26.874Z"
+  },
+  {
+    "id": "0cc86591-9b5a-4d4b-aa2d-ee4c8977c7c6",
+    "source_id": "le-monde-economie",
+    "cible_type": "nouvelle_categorie",
+    "cible_id": null,
+    "contenu_propose": {
+      "titre": "BMW-Mini, Toyota, Porsche, Nissan… les grands absents du Mondial de l’auto à Paris",
+      "link": "https://www.lemonde.fr/economie/article/2026/10/11/bmw-mini-toyota-porsche-nissan-les-grands-absents-du-mondial-de-l-auto-a-paris_6791784_3234.html",
+      "date": "2026-10-11T12:00:21.000Z",
+      "resume": "Un salon de l’auto ne rassemble jamais 100 % des forces en présence. Et si l’édition 2026 du Mondial accueille de nombreux constructeurs, plusieurs acteurs majeurs du secteur manquent à l’appel."
+    },
+    "score_fiabilite": 0.4,
+    "score_fiabilite_motif": "lemonde.fr — presse généraliste ou spécialisée",
+    "domaine_source": "lemonde.fr",
+    "domaine_opaque": false,
+    "statut": "en_attente",
+    "created_at": "2026-10-11T13:41:26.891Z"
+  },
+  {
+    "id": "5f88d5b3-a472-425e-8d95-22e47bb318ef",
+    "source_id": "le-monde-economie",
+    "cible_type": "nouvelle_categorie",
+    "cible_id": null,
+    "contenu_propose": {
+      "titre": "Porsche, toujours plus chère et plus sportive pour une clientèle de passionnés",
+      "link": "https://www.lemonde.fr/economie/article/2026/10/11/porsche-toujours-plus-chere-et-plus-sportive-pour-une-clientele-de-passionnes_6791782_3234.html",
+      "date": "2026-10-11T12:00:05.000Z",
+      "resume": "Dans son plan stratégique, Michael Leiters, le nouveau patron du constructeur allemand, affiche une volonté de montée en gamme, susceptible de séduire les connaisseurs à très fort pouvoir d’achat."
+    },
+    "score_fiabilite": 0.4,
+    "score_fiabilite_motif": "lemonde.fr — presse généraliste ou spécialisée",
+    "domaine_source": "lemonde.fr",
+    "domaine_opaque": false,
+    "statut": "en_attente",
+    "created_at": "2026-10-11T13:41:26.891Z"
+  },
+  {
+    "id": "2a148593-1c66-4aac-bffd-6408f4b96323",
+    "source_id": "le-monde-economie",
+    "cible_type": "nouvelle_categorie",
+    "cible_id": null,
+    "contenu_propose": {
+      "titre": "« La France protège mieux ses retraités les plus modestes que l’Allemagne, mais elle finance son système de retraite généreux à crédit »",
+      "link": "https://www.lemonde.fr/idees/article/2026/10/11/la-france-protege-mieux-ses-retraites-les-plus-modestes-que-l-allemagne-mais-elle-finance-son-systeme-de-retraite-genereux-a-credit_6791781_3232.html",
+      "date": "2026-10-11T12:00:04.000Z",
+      "resume": "L’Etat français consacre 12,8 % de son PIB aux dépenses de vieillesse, contre 10,4 % en Allemagne. Et il le fait sur une base active plus étroite, ce qui explique son important endettement public, estime l’économiste Pierre-André Buigues, dans une tribune au « Monde »."
+    },
+    "score_fiabilite": 0.4,
+    "score_fiabilite_motif": "lemonde.fr — presse généraliste ou spécialisée",
+    "domaine_source": "lemonde.fr",
+    "domaine_opaque": false,
+    "statut": "en_attente",
+    "created_at": "2026-10-11T13:41:26.892Z"
+  },
+  {
+    "id": "6ecf3ca9-8b0b-433a-8c15-05ac6c886142",
+    "source_id": "le-monde-economie",
+    "cible_type": "nouvelle_categorie",
+    "cible_id": null,
+    "contenu_propose": {
+      "titre": "Venise, quelques îlots devenus un empire du commerce et du tourisme",
+      "link": "https://www.lemonde.fr/histoire/article/2026/10/11/venise-quelques-ilots-devenus-un-empire-du-commerce-et-du-tourisme_6791711_4655323.html",
+      "date": "2026-10-11T11:00:09.000Z",
+      "resume": "Comment une lagune infestée de moustiques s’est-elle muée en superpuissance commerciale, puis en paradis des fêtes masquées ? La République de Venise ne tire pas sa fortune de la guerre, mais plutôt du négoce et de privilèges commerciaux savamment obtenus."
+    },
+    "score_fiabilite": 0.4,
+    "score_fiabilite_motif": "lemonde.fr — presse généraliste ou spécialisée",
+    "domaine_source": "lemonde.fr",
+    "domaine_opaque": false,
+    "statut": "en_attente",
+    "created_at": "2026-10-11T13:41:26.892Z"
+  },
+  {
+    "id": "2b57d11b-91c5-4e9a-8bbc-2841dfe86490",
+    "source_id": "le-monde-economie",
+    "cible_type": "nouvelle_categorie",
+    "cible_id": null,
+    "contenu_propose": {
+      "titre": "La fin contrariée du grand chantier d’installation de la fibre optique en France",
+      "link": "https://www.lemonde.fr/economie/article/2026/10/11/la-fin-contrariee-du-grand-chantier-d-installation-de-la-fibre-optique-en-france_6791510_3234.html",
+      "date": "2026-10-11T08:00:02.000Z",
+      "resume": "Entre les difficultés à raccorder les derniers logements, le coût des réseaux ruraux et les malfaçons, l’achèvement de ce gigantesque chantier suscite des inquiétudes."
+    },
+    "score_fiabilite": 0.4,
+    "score_fiabilite_motif": "lemonde.fr — presse généraliste ou spécialisée",
+    "domaine_source": "lemonde.fr",
+    "domaine_opaque": false,
+    "statut": "en_attente",
+    "created_at": "2026-10-11T13:41:26.892Z"
+  },
+  {
+    "id": "d7761d36-bfa7-45b8-bab2-c1d9b3848c1e",
+    "source_id": "la-tribune-actualites",
+    "cible_type": "nouvelle_categorie",
+    "cible_id": null,
+    "contenu_propose": {
+      "titre": "Carburants : pourquoi les Bretons paient l'essence moins cher que les Alsaciens",
+      "link": "https://www.latribune.fr/article/economie/41208081109197/carburants-pourquoi-les-bretons-paient-lessence-moins-cher-que-les-alsaciens",
+      "date": "2026-10-11T13:25:15.000Z",
+      "resume": "D'une région à l'autre, les automobilistes français ne paient pas le même prix pour leur plein. Alors que la Bretagne figure régulièrement parmi les territoires les moins chers, l'Alsace affiche certains des tarifs les plus élevés de l'Hexagone."
+    },
+    "score_fiabilite": 0.4,
+    "score_fiabilite_motif": "latribune.fr — domaine absent de la table : score par défaut prudent, sous le seuil de source primaire",
+    "domaine_source": "latribune.fr",
+    "domaine_opaque": false,
+    "statut": "en_attente",
+    "created_at": "2026-10-11T13:41:27.105Z"
+  },
+  {
+    "id": "27ddedd6-65f8-49aa-baf8-f931cdf78038",
+    "source_id": "la-tribune-actualites",
+    "cible_type": "nouvelle_categorie",
+    "cible_id": null,
+    "contenu_propose": {
+      "titre": "Rheinmetall, Saab...Pour les patrons de l'armement, la menace de l'assassinat",
+      "link": "https://www.latribune.fr/article/defense-aerospatiale/defense/58466164430093/rheinmetall-saab-pour-les-patrons-de-larmement-la-menace-de-lassassinat",
+      "date": "2026-10-11T11:15:19.000Z",
+      "resume": "Selon cinq services de renseignement européens interrogés par le Financial Times, Moscou multiplierait les projets d’assassinat visant les dirigeants et cadres de l’industrie de défense. Les entreprises renforcent leur sécurité, au risque de voir leurs coûts et leurs contraintes opérationnelles augmenter."
+    },
+    "score_fiabilite": 0.4,
+    "score_fiabilite_motif": "latribune.fr — domaine absent de la table : score par défaut prudent, sous le seuil de source primaire",
+    "domaine_source": "latribune.fr",
+    "domaine_opaque": false,
+    "statut": "en_attente",
+    "created_at": "2026-10-11T13:41:27.105Z"
+  },
+  {
+    "id": "f01a3063-85ed-4124-91d3-d93597055955",
+    "source_id": "la-tribune-actualites",
+    "cible_type": "nouvelle_categorie",
+    "cible_id": null,
+    "contenu_propose": {
+      "titre": "Portrait : Capitaine Florent, pilote de voltige à l’EVAAE",
+      "link": "https://air-cosmos.latribune.fr/article/defense/34025409476713/portrait-capitaine-florent-pilote-de-voltige-a-l-evaae",
+      "date": "2026-10-11T10:00:27.000Z",
+      "resume": "La passion pour moteur, les titres mondiaux pour horizon."
+    },
+    "score_fiabilite": 0.4,
+    "score_fiabilite_motif": "air-cosmos.latribune.fr — domaine absent de la table : score par défaut prudent, sous le seuil de source primaire",
+    "domaine_source": "air-cosmos.latribune.fr",
+    "domaine_opaque": false,
+    "statut": "en_attente",
+    "created_at": "2026-10-11T13:41:27.105Z"
+  },
+  {
+    "id": "aa7cb864-8767-4f6b-8d59-85e7ab7a2ba9",
+    "source_id": "la-tribune-actualites",
+    "cible_type": "nouvelle_categorie",
+    "cible_id": null,
+    "contenu_propose": {
+      "titre": "Au Brésil, Meta accusé d'interférer dans la présidentielle",
+      "link": "https://www.latribune.fr/article/tech/25473997153884/au-bresil-meta-accuse-dinterferer-dans-la-presidentielle",
+      "date": "2026-10-11T09:30:03.000Z",
+      "resume": "Visé par une plainte de l'équipe de Lula, le groupe américain doit expliquer à la justice électorale d'éventuelles restrictions à la diffusion de contenus sur Instagram."
+    },
+    "score_fiabilite": 0.4,
+    "score_fiabilite_motif": "latribune.fr — domaine absent de la table : score par défaut prudent, sous le seuil de source primaire",
+    "domaine_source": "latribune.fr",
+    "domaine_opaque": false,
+    "statut": "en_attente",
+    "created_at": "2026-10-11T13:41:27.105Z"
+  },
+  {
+    "id": "02962a64-fcbb-4411-8712-9a15ac87f610",
+    "source_id": "la-tribune-actualites",
+    "cible_type": "nouvelle_categorie",
+    "cible_id": null,
+    "contenu_propose": {
+      "titre": "Certificats d'économies d'énergie : l'État resserre les contrôles",
+      "link": "https://www.latribune.fr/article/economie/biens-d-equipement-btp-immobilier/59873065252856/certificats-deconomies-denergie-letat-resserre-les-controles",
+      "date": "2026-10-11T08:40:01.000Z",
+      "resume": "Signe des dérives de ce marché opaque, un décret publié ce dimanche renforce la vigilance des acheteurs de certificats d'économies d'énergie (CEE) et les contrôles avant leur délivrance."
+    },
+    "score_fiabilite": 0.4,
+    "score_fiabilite_motif": "latribune.fr — domaine absent de la table : score par défaut prudent, sous le seuil de source primaire",
+    "domaine_source": "latribune.fr",
+    "domaine_opaque": false,
+    "statut": "en_attente",
+    "created_at": "2026-10-11T13:41:27.105Z"
+  },
+  {
+    "id": "7d39e4bc-227a-4881-b088-eba0ec144d13",
+    "source_id": "rfi-economie",
+    "cible_type": "nouvelle_categorie",
+    "cible_id": null,
+    "contenu_propose": {
+      "titre": "Les pays en développement assommés par le poids des intérêts de la dette publique",
+      "link": "https://www.rfi.fr/fr/%C3%A9conomie/20261010-les-pays-en-d%C3%A9veloppement-assomm%C3%A9s-par-le-poids-des-int%C3%A9r%C3%AAts-de-la-dette-publique",
+      "date": "2026-10-10T20:58:43.000Z",
+      "resume": "En 2025, le remboursement des intérêts liés à la dette publique a approché 1 000 milliards de dollars. Un chiffre qui donne le tournis, alors que l'agence de l'ONU pour le commerce et le développement (Cnuced) s'inquiète, dans un rapport, du poids de la dette, en particulier pour les pays en développement."
+    },
+    "score_fiabilite": 0.4,
+    "score_fiabilite_motif": "rfi.fr — domaine absent de la table : score par défaut prudent, sous le seuil de source primaire",
+    "domaine_source": "rfi.fr",
+    "domaine_opaque": false,
+    "statut": "en_attente",
+    "created_at": "2026-10-11T13:41:27.311Z"
+  },
+  {
+    "id": "cb175c32-fdc9-4979-9f5f-cf420684cb84",
+    "source_id": "guardian-economie",
+    "cible_type": "nouvelle_categorie",
+    "cible_id": null,
+    "contenu_propose": {
+      "titre": "Developing nations face triple shock from energy crisis, El Niño and borrowing costs, UN warns",
+      "link": "https://www.theguardian.com/business/2026/oct/11/developing-nations-triple-shock-energy-crisis-el-nino-borrowing-costs-un-warns",
+      "date": "2026-10-11T04:00:15.000Z",
+      "resume": "UN’s development arm calls for urgent action as crises could ‘throw tens if not hundreds of millions back into poverty’\nDeveloping countries face a triple shock from the energy crisis, El Niño and surging borrowing costs and need urgent support from the international community, the UN’s development arm has warned.\nSpeaking before the International Monetary Fund (IMF) and World Bank annual meetings"
+    },
+    "score_fiabilite": 0.4,
+    "score_fiabilite_motif": "theguardian.com — presse généraliste ou spécialisée",
+    "domaine_source": "theguardian.com",
+    "domaine_opaque": false,
+    "statut": "en_attente",
+    "created_at": "2026-10-11T13:41:28.193Z"
+  },
+  {
+    "id": "8990298d-2b47-4184-b4f6-869c9bb597eb",
+    "source_id": "guardian-economie",
+    "cible_type": "nouvelle_categorie",
+    "cible_id": null,
+    "contenu_propose": {
+      "titre": "US’s Reagan-era economic promises return as Trump’s AI-fueled growth fantasy",
+      "link": "https://www.theguardian.com/business/2026/oct/11/trump-ai-economy-reagan",
+      "date": "2026-10-11T11:00:25.000Z",
+      "resume": "‘Even if AI supercharged the economy, its impact on the government’s finances would be muted’\nBack through political history to the age of Ronald Reagan, Republicans have repeatedly promised the US public that tax cuts would pay for themselves, firing up economic growth and filling the government’s coffers.\nThe promise never really panned out. From the Gipper’s day on, the Republicans’ tax cuts in"
+    },
+    "score_fiabilite": 0.4,
+    "score_fiabilite_motif": "theguardian.com — presse généraliste ou spécialisée",
+    "domaine_source": "theguardian.com",
+    "domaine_opaque": false,
+    "statut": "en_attente",
+    "created_at": "2026-10-11T13:41:28.193Z"
+  },
+  {
+    "id": "c23b77a5-0328-455d-88b6-3b3bf74ebb32",
+    "source_id": "guardian-economie",
+    "cible_type": "nouvelle_categorie",
+    "cible_id": null,
+    "contenu_propose": {
+      "titre": "Labour has got the message – developing nations suffer most from bond market turmoil | Heather Stewart",
+      "link": "https://www.theguardian.com/business/2026/oct/11/labour-bond-market-turmoil-developing-nations-andy-burnham-brown-blair",
+      "date": "2026-10-11T10:11:19.000Z",
+      "resume": "Just as Brown and Blair did in 2005, Andy Burnham aims to champion debt relief to help developing countries\n\nDeveloping nations face triple shock, UN warns\n\n\nFrom Washington to Paris, London to Tokyo, policymakers in every large economy have been counting the costs of bond market turmoil in recent weeks. But the brunt of the pain is being borne by heavily indebted developing countries that have li"
+    },
+    "score_fiabilite": 0.4,
+    "score_fiabilite_motif": "theguardian.com — presse généraliste ou spécialisée",
+    "domaine_source": "theguardian.com",
+    "domaine_opaque": false,
+    "statut": "en_attente",
+    "created_at": "2026-10-11T13:41:28.193Z"
+  },
+  {
+    "id": "ca53ec21-20c2-4a67-acc6-73ff48c1aa19",
+    "source_id": "diploweb-geopolitique",
+    "cible_type": "nouvelle_categorie",
+    "cible_id": null,
+    "contenu_propose": {
+      "titre": "Puissance maritime : agir sur les océans. Quand le « comment » importe aussi",
+      "link": "https://www.diploweb.com/Puissance-maritime-agir-sur-les-oceans-Quand-le-comment-importe-aussi.html",
+      "date": "2026-10-11T05:56:07.000Z",
+      "resume": "Il est impératif de regarder les océans pour prédire les évolutions et les modalités d'un monde où des pouvoirs sont en recomposition. Cela passe par des grilles d'analyse de la puissance maritime. Y. Giron en présente ici les préalables et les déclinaisons pratiques.\nTransversaux\n\n/ \nFrance , \nPuissance, \nRoutes maritimes, \nEspaces maritimes, \nZone économique exclusive (ZEE), \nTrafic maritime, \nS"
+    },
+    "score_fiabilite": 0.4,
+    "score_fiabilite_motif": "diploweb.com — domaine absent de la table : score par défaut prudent, sous le seuil de source primaire",
+    "domaine_source": "diploweb.com",
+    "domaine_opaque": false,
+    "statut": "en_attente",
+    "created_at": "2026-10-11T13:41:32.628Z"
   }
 ]
