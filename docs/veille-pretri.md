@@ -1,16 +1,16 @@
 # Pré-tri de la file de veille
 
-Dernier écartement appliqué : 2026-10-10.
+Dernier écartement appliqué : 2026-10-11.
 
-File complète : **1923** entrées, dont **1373** en attente d'arbitrage.
+File complète : **1992** entrées, dont **1438** en attente d'arbitrage.
 
-Le pré-tri écarte **4** propositions sur des critères mécaniques et en laisse **1369** à la relecture humaine, classées par fiabilité décroissante.
+Le pré-tri écarte **6** propositions sur des critères mécaniques et en laisse **1432** à la relecture humaine, classées par fiabilité décroissante.
 
 ## Écartées, et pourquoi
 
 | Motif | Nombre | Ce que ça veut dire |
 |---|---:|---|
-| `domaine_opaque` | 4 | Agrégateur masquant l'éditeur réel — source non attribuable |
+| `domaine_opaque` | 6 | Agrégateur masquant l'éditeur réel — source non attribuable |
 
 Aucun de ces motifs ne porte de jugement sur le fond : ils constatent qu'une proposition n'est pas citable, pas attribuable, ou déjà connue.
 
@@ -18,10 +18,10 @@ Aucun de ces motifs ne porte de jugement sur le fond : ils constatent qu'une pro
 
 | Score | Nombre |
 |---:|---:|
-| 0.9 | 116 |
-| 0.8 | 245 |
+| 0.9 | 125 |
+| 0.8 | 260 |
 | 0.6 | 58 |
-| 0.4 | 950 |
+| 0.4 | 989 |
 
 ### Les trente premières
 
@@ -53,6 +53,10 @@ Aucun de ces motifs ne porte de jugement sur le fond : ils constatent qu'une pro
   The life of Darwin and the science of clouds: Books in brief  
   <https://www.nature.com/articles/d41586-026-03217-6>  
   `fea745f6-f8c8-414e-81dc-eaf19433b375`
+- **0.9** · nature.com · 2 terme(s) du corpus  
+  What does a PhD pay? Data reveal huge gaps across Europe  
+  <https://www.nature.com/articles/d41586-026-03181-1>  
+  `5e0e1699-4542-4cb4-a8c2-7c68fe24f6f6`
 - **0.9** · nature.com · 1 terme(s) du corpus  
   NSF moves to overhaul funding approach in line with White House priorities  
   <https://www.nature.com/articles/d41586-026-02892-9>  
@@ -141,10 +145,6 @@ Aucun de ces motifs ne porte de jugement sur le fond : ils constatent qu'une pro
   Microdelays disrupt online learning  
   <https://www.nature.com/articles/s41562-026-02598-y>  
   `f2c5876c-2073-4032-a1af-8ab6deb551f7`
-- **0.9** · nature.com · 1 terme(s) du corpus  
-  How physical information explains infants’ supposed psychological world  
-  <https://www.nature.com/articles/s44159-026-00628-0>  
-  `0f5e8390-8ffc-41f3-bbc0-744e259117b5`
 
 ---
 
