@@ -1,16 +1,16 @@
 # Pré-tri de la file de veille
 
-Dernier écartement appliqué : 2026-10-11.
+Dernier écartement appliqué : 2026-10-12.
 
-File complète : **1992** entrées, dont **1438** en attente d'arbitrage.
+File complète : **2059** entrées, dont **1499** en attente d'arbitrage.
 
-Le pré-tri écarte **6** propositions sur des critères mécaniques et en laisse **1432** à la relecture humaine, classées par fiabilité décroissante.
+Le pré-tri écarte **9** propositions sur des critères mécaniques et en laisse **1490** à la relecture humaine, classées par fiabilité décroissante.
 
 ## Écartées, et pourquoi
 
 | Motif | Nombre | Ce que ça veut dire |
 |---|---:|---|
-| `domaine_opaque` | 6 | Agrégateur masquant l'éditeur réel — source non attribuable |
+| `domaine_opaque` | 9 | Agrégateur masquant l'éditeur réel — source non attribuable |
 
 Aucun de ces motifs ne porte de jugement sur le fond : ils constatent qu'une proposition n'est pas citable, pas attribuable, ou déjà connue.
 
@@ -18,10 +18,10 @@ Aucun de ces motifs ne porte de jugement sur le fond : ils constatent qu'une pro
 
 | Score | Nombre |
 |---:|---:|
-| 0.9 | 125 |
-| 0.8 | 260 |
+| 0.9 | 131 |
+| 0.8 | 266 |
 | 0.6 | 58 |
-| 0.4 | 989 |
+| 0.4 | 1035 |
 
 ### Les trente premières
 
@@ -57,6 +57,14 @@ Aucun de ces motifs ne porte de jugement sur le fond : ils constatent qu'une pro
   What does a PhD pay? Data reveal huge gaps across Europe  
   <https://www.nature.com/articles/d41586-026-03181-1>  
   `5e0e1699-4542-4cb4-a8c2-7c68fe24f6f6`
+- **0.9** · nature.com · 2 terme(s) du corpus  
+  Preserve research data for tomorrow’s AI-enabled integrity checks  
+  <https://www.nature.com/articles/d41586-026-03244-3>  
+  `8efa25bd-4471-49fd-87f1-b4a5a5b153ce`
+- **0.9** · nature.com · 2 terme(s) du corpus  
+  Why not every global problem can be tackled by an IPCC-like organization  
+  <https://www.nature.com/articles/d41586-026-03234-5>  
+  `dc00cc91-a9ff-4f36-bf45-7d4cde873d9b`
 - **0.9** · nature.com · 1 terme(s) du corpus  
   NSF moves to overhaul funding approach in line with White House priorities  
   <https://www.nature.com/articles/d41586-026-02892-9>  
@@ -137,14 +145,6 @@ Aucun de ces motifs ne porte de jugement sur le fond : ils constatent qu'une pro
   ‘When prevention disappears, infections rise’: can the world still end AIDS?  
   <https://www.nature.com/articles/d41586-026-03127-7>  
   `39282f7c-df4c-443e-84f3-9d223dff62fe`
-- **0.9** · nature.com · 1 terme(s) du corpus  
-  UAE completes Arab world's first solo space probe <b>– </b>and sets course for an asteroid  
-  <https://www.nature.com/articles/d41586-026-03154-4>  
-  `66760640-134d-4215-800d-7f2b56ec20c1`
-- **0.9** · nature.com · 1 terme(s) du corpus  
-  Microdelays disrupt online learning  
-  <https://www.nature.com/articles/s41562-026-02598-y>  
-  `f2c5876c-2073-4032-a1af-8ab6deb551f7`
 
 ---
 
