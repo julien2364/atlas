@@ -1,8 +1,8 @@
 # Moisson de sources
 
-Dernier passage : **2026-10-13** · fonds interrogés : openalex, crossref, arxiv, hal, doaj, europepmc.
+Dernier passage : **2026-10-14** · fonds interrogés : openalex, crossref, arxiv, hal, doaj, europepmc.
 
-**1 propositions** pour **10 fiches**, écrites dans `../../_temp/moisson-2026-10-13.json`.
+**0 propositions** pour **10 fiches**, écrites dans `../../_temp/moisson-2026-10-14.json`.
 
 Ce fichier ne modifie aucune fiche. Pour en ajouter une partie au corpus : remplir le champ
 `retenues` de chaque bloc avec les clés choisies, puis lancer
@@ -14,7 +14,7 @@ Ce fichier ne modifie aucune fiche. Pour en ajouter une partie au corpus : rempl
 | Alliance solaire internationale (ASI) | 7 | 0 | — |
 | Amartya Sen | 7 | 0 | — |
 | Anarchisme | 7 | 0 | — |
-| Banque africaine de développement (BAfD) | 7 | 1 | [Indicateurs de base, 2008](https://doi.org/10.1787/aeo-2009-table3_1-fr) — crossref, 2009 |
+| Banque africaine de développement (BAfD) | 7 | 0 | — |
 | Bipolarité (Guerre froide) | 7 | 0 | — |
 | Black-Scholes | 7 | 0 | — |
 | BRICS(+) | 7 | 0 | — |
