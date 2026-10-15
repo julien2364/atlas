@@ -1,10 +1,10 @@
 # Pré-tri de la file de veille
 
-Dernier écartement appliqué : 2026-10-13.
+Dernier écartement appliqué : 2026-10-14.
 
-File complète : **2128** entrées, dont **1559** en attente d'arbitrage.
+File complète : **2205** entrées, dont **1628** en attente d'arbitrage.
 
-Le pré-tri écarte **8** propositions sur des critères mécaniques et en laisse **1551** à la relecture humaine, classées par fiabilité décroissante.
+Le pré-tri écarte **8** propositions sur des critères mécaniques et en laisse **1620** à la relecture humaine, classées par fiabilité décroissante.
 
 ## Écartées, et pourquoi
 
@@ -18,10 +18,10 @@ Aucun de ces motifs ne porte de jugement sur le fond : ils constatent qu'une pro
 
 | Score | Nombre |
 |---:|---:|
-| 0.9 | 134 |
-| 0.8 | 273 |
-| 0.6 | 60 |
-| 0.4 | 1084 |
+| 0.9 | 139 |
+| 0.8 | 289 |
+| 0.6 | 64 |
+| 0.4 | 1128 |
 
 ### Les trente premières
 
