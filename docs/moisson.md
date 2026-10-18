@@ -1,8 +1,8 @@
 # Moisson de sources
 
-Dernier passage : **2026-10-17** · fonds interrogés : openalex, crossref, arxiv, hal, doaj, europepmc.
+Dernier passage : **2026-10-18** · fonds interrogés : openalex, crossref, arxiv, hal, doaj, europepmc.
 
-**0 propositions** pour **10 fiches**, écrites dans `../../_temp/moisson-2026-10-17.json`.
+**1 propositions** pour **10 fiches**, écrites dans `../../_temp/moisson-2026-10-18.json`.
 
 Ce fichier ne modifie aucune fiche. Pour en ajouter une partie au corpus : remplir le champ
 `retenues` de chaque bloc avec les clés choisies, puis lancer
@@ -10,7 +10,7 @@ Ce fichier ne modifie aucune fiche. Pour en ajouter une partie au corpus : rempl
 
 | Fiche | Besoin | Propositions | Meilleure proposition |
 |---|---:|---:|---|
-| Abhijit Banerjee | 7 | 0 | — |
+| Abhijit Banerjee | 7 | 1 | [On the Analogy between Field Experiments in Economics and Clinical Tri](https://hal.science/hal-02092631v1) — hal, 2016 |
 | Alliance solaire internationale (ASI) | 7 | 0 | — |
 | Amartya Sen | 7 | 0 | — |
 | Anarchisme | 7 | 0 | — |
