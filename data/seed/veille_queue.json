@@ -42860,5 +42860,437 @@
     "domaine_opaque": false,
     "statut": "en_attente",
     "created_at": "2026-10-17T11:17:56.871Z"
+  },
+  {
+    "id": "b8fa4391-9a57-483c-ac3b-c6757a5da74a",
+    "source_id": "anthropic-news",
+    "cible_type": "nouvelle_categorie",
+    "cible_id": null,
+    "contenu_propose": {
+      "titre": "IA: pourquoi il faut lui parler poliment - RFI",
+      "link": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxQeF96OEs1Vzg3MnEtRGVzMVRjX2t5YjVhcVM5cERmc3JOdHYxS0UzalBIOWF5d2R4ZXN1U05qZEtGbGhjUEVYeTh5QVEtYjJZYUdIS3BNMFJUejdxSjVNZEl4dkprR0ctVVdvUHB2V3FRaUI4S01uOXJXQ1FwQ1h0TlNrWUNBX0xmTS1R?oc=5",
+      "date": "2026-10-18T05:03:00.000Z",
+      "resume": "IA: pourquoi il faut lui parler poliment  RFI"
+    },
+    "score_fiabilite": 0.15,
+    "score_fiabilite_motif": "news.google.com est un redirecteur : l'url ne porte pas le domaine de l'éditeur réel, la fiabilité ne peut pas être établie sans ouvrir le lien",
+    "domaine_source": "news.google.com",
+    "domaine_opaque": true,
+    "statut": "en_attente",
+    "created_at": "2026-10-18T11:53:36.814Z"
+  },
+  {
+    "id": "3f0de95d-c636-42eb-ac2f-bd83f049729f",
+    "source_id": "oecd-news",
+    "cible_type": "nouvelle_categorie",
+    "cible_id": null,
+    "contenu_propose": {
+      "titre": "Économie russe : les dépenses publiques se rapprochent de la moyenne de l’OCDE - Le Grand Continent",
+      "link": "https://news.google.com/rss/articles/CBMiugFBVV95cUxNdGF4NDlpTU0tRkphR2tvNmdvbERDVnN2Sy1KTHhPTnNWcHpUYm1ZVng2Q2U5czI2RGN4bGV5WmwxR2swc2RuSnpVR016QklUWG40Z3pzVUE3NWlSazQ2TUZCdGhBcUxPQ1Q5MloyTmx5STZfZ0VseTVvdWFQUkhLeXZiUGN1aEFvVjlfYTU1TE9saG1QVVljTXd3UmMxUzdRWjZSU3BQWWx3TVB5alZFamZkUEk1YjhDRGc?oc=5",
+      "date": "2026-10-18T04:30:00.000Z",
+      "resume": "Économie russe : les dépenses publiques se rapprochent de la moyenne de l’OCDE  Le Grand Continent"
+    },
+    "score_fiabilite": 0.15,
+    "score_fiabilite_motif": "news.google.com est un redirecteur : l'url ne porte pas le domaine de l'éditeur réel, la fiabilité ne peut pas être établie sans ouvrir le lien",
+    "domaine_source": "news.google.com",
+    "domaine_opaque": true,
+    "statut": "en_attente",
+    "created_at": "2026-10-18T11:53:37.908Z"
+  },
+  {
+    "id": "c53a0ed8-8d3c-48da-828c-fac21da5374c",
+    "source_id": "oecd-news",
+    "cible_type": "nouvelle_categorie",
+    "cible_id": null,
+    "contenu_propose": {
+      "titre": "La France dépense 28% de plus que la moyenne de l’OCDE pour ses lycéens: alors pourquoi manque-t-il toujours des moyens? - BFM",
+      "link": "https://news.google.com/rss/articles/CBMiigJBVV95cUxOeVFBVjJ1Y2dUNzl0MHM4SGY1NS1TejREWWhEd3JQcFRSTi1OV0ZnS0ZGelFCdl8wWEFFUnJ4eWhQcjUwQk1jZnlpX1I4RS0yTlhXU1hodDREUmhueUpZQnJud1VNQ082RmRFcU9ha21DQlg5anM1UGM1N0RKMUFrbTFLTkdiNU50ZFNvcUJLWTk2dEZRWGJIWWI2bEEwRmdnWXdvakk0dlR1ZW9lTzgwTUxGd0J5Tmk2X1FPaDZWSGRIMGlqX0lJN1J0U2FXQkMwX3hnVE5mZEVNZXotbWVVUXBoSzFrVHB1MmRBWlFtQktTTmtTb3E1dWxPN1laSTN5dXhsMFBrOEUwZw?oc=5",
+      "date": "2026-10-07T07:00:00.000Z",
+      "resume": "La France dépense 28% de plus que la moyenne de l’OCDE pour ses lycéens: alors pourquoi manque-t-il toujours des moyens?  BFM"
+    },
+    "score_fiabilite": 0.15,
+    "score_fiabilite_motif": "news.google.com est un redirecteur : l'url ne porte pas le domaine de l'éditeur réel, la fiabilité ne peut pas être établie sans ouvrir le lien",
+    "domaine_source": "news.google.com",
+    "domaine_opaque": true,
+    "statut": "en_attente",
+    "created_at": "2026-10-18T11:53:37.908Z"
+  },
+  {
+    "id": "16452658-fa25-4570-bfd9-4c854a3694f0",
+    "source_id": "ft-marches",
+    "cible_type": "nouvelle_categorie",
+    "cible_id": null,
+    "contenu_propose": {
+      "titre": "‘Cash is making a comeback’ in digital India",
+      "link": "https://www.ft.com/content/886006f8-284c-4a20-9411-3cfd9deead3f?syn-25a6b1a6=1",
+      "date": "2026-10-18T04:11:11.000Z",
+      "resume": "Shadow economy drives demand for physical currency as new charge could hit popularity of the UPI digital payments interface"
+    },
+    "score_fiabilite": 0.4,
+    "score_fiabilite_motif": "ft.com — presse généraliste ou spécialisée",
+    "domaine_source": "ft.com",
+    "domaine_opaque": false,
+    "statut": "en_attente",
+    "created_at": "2026-10-18T11:53:42.495Z"
+  },
+  {
+    "id": "218f1476-eed4-42fc-bd5f-a7f077b847b2",
+    "source_id": "ft-marches",
+    "cible_type": "nouvelle_categorie",
+    "cible_id": null,
+    "contenu_propose": {
+      "titre": "Listings in south-east Asia gain momentum with $1bn IPO",
+      "link": "https://www.ft.com/content/a2b83aa7-49e0-4735-b115-d406fcb24de8?syn-25a6b1a6=1",
+      "date": "2026-10-18T01:00:06.000Z",
+      "resume": "Owner of digital wallet GCash set to start trading in region’s biggest debut this year"
+    },
+    "score_fiabilite": 0.4,
+    "score_fiabilite_motif": "ft.com — presse généraliste ou spécialisée",
+    "domaine_source": "ft.com",
+    "domaine_opaque": false,
+    "statut": "en_attente",
+    "created_at": "2026-10-18T11:53:42.496Z"
+  },
+  {
+    "id": "26edd388-a00f-46c7-986c-6ae0c617413d",
+    "source_id": "ft-marches",
+    "cible_type": "nouvelle_categorie",
+    "cible_id": null,
+    "contenu_propose": {
+      "titre": "BoE’s Bailey tells G30 they ‘have got to address’ AI agent concerns",
+      "link": "https://www.ft.com/content/3185b4cd-ab35-4efc-9d75-dcecc1631625?syn-25a6b1a6=1",
+      "date": "2026-10-17T10:31:21.000Z",
+      "resume": "Central Bank governor warns rapid development of AI is a major issue for financial stability"
+    },
+    "score_fiabilite": 0.4,
+    "score_fiabilite_motif": "ft.com — presse généraliste ou spécialisée",
+    "domaine_source": "ft.com",
+    "domaine_opaque": false,
+    "statut": "en_attente",
+    "created_at": "2026-10-18T11:53:42.496Z"
+  },
+  {
+    "id": "2a038cb3-4c3a-4d16-9531-bfff14e6797a",
+    "source_id": "wsj-marches",
+    "cible_type": "nouvelle_categorie",
+    "cible_id": null,
+    "contenu_propose": {
+      "titre": "The AI Stock Market Wobble Is a Reminder: This Time Isn’t Different",
+      "link": "https://www.wsj.com/finance/stocks/the-ai-stock-market-wobble-is-a-reminder-this-time-isnt-different-d3ea7f07?mod=rss_markets_main",
+      "date": "2026-10-18T09:30:00.000Z",
+      "resume": "The artificial intelligence build-out hasn’t shown it can avoid the problems of past massive capital projects, such as railways and the internet."
+    },
+    "score_fiabilite": 0.4,
+    "score_fiabilite_motif": "wsj.com — presse généraliste ou spécialisée",
+    "domaine_source": "wsj.com",
+    "domaine_opaque": false,
+    "statut": "en_attente",
+    "created_at": "2026-10-18T11:53:42.663Z"
+  },
+  {
+    "id": "2a2b57d7-c424-4c78-9792-b70686123e8c",
+    "source_id": "wsj-marches",
+    "cible_type": "nouvelle_categorie",
+    "cible_id": null,
+    "contenu_propose": {
+      "titre": "My Daughter and I Went Into Business Together. It Has Been an Adjustment.",
+      "link": "https://www.wsj.com/finance/investing/father-daughter-family-business-workplace-c68630aa?mod=rss_markets_main",
+      "date": "2026-10-17T16:02:00.000Z",
+      "resume": "I’ve learned that boomers and millennials live on different workplace planets. But it’s one of the most-rewarding experiences I’ve ever had."
+    },
+    "score_fiabilite": 0.4,
+    "score_fiabilite_motif": "wsj.com — presse généraliste ou spécialisée",
+    "domaine_source": "wsj.com",
+    "domaine_opaque": false,
+    "statut": "en_attente",
+    "created_at": "2026-10-18T11:53:42.663Z"
+  },
+  {
+    "id": "90435e0b-4571-4296-84b1-96b7ab1f3a9c",
+    "source_id": "wsj-marches",
+    "cible_type": "nouvelle_categorie",
+    "cible_id": null,
+    "contenu_propose": {
+      "titre": "Nearly All Volume on FIFA-Linked Prediction Market Is Circular Trading",
+      "link": "https://www.wsj.com/finance/nearly-all-volume-on-fifa-linked-prediction-market-is-circular-trading-549393f3?mod=rss_markets_main",
+      "date": "2026-10-17T16:02:00.000Z",
+      "resume": "ADI Predictstreet, backed by Abu Dhabi’s royal family, paid close to $150 million for advertising rights during the World Cup."
+    },
+    "score_fiabilite": 0.4,
+    "score_fiabilite_motif": "wsj.com — presse généraliste ou spécialisée",
+    "domaine_source": "wsj.com",
+    "domaine_opaque": false,
+    "statut": "en_attente",
+    "created_at": "2026-10-18T11:53:42.664Z"
+  },
+  {
+    "id": "00e46359-f7ad-47d4-9946-9608fb4f02f8",
+    "source_id": "le-monde-economie",
+    "cible_type": "nouvelle_categorie",
+    "cible_id": null,
+    "contenu_propose": {
+      "titre": "Comment l’industrie allemande a changé de position face à la Chine",
+      "link": "https://www.lemonde.fr/idees/article/2026/10/18/comment-l-industrie-allemande-a-change-de-position-face-a-la-chine_6797048_3232.html",
+      "date": "2026-10-18T08:00:06.000Z",
+      "resume": "En prenant conscience que le sacro-saint libre-échange atteignait ses limites, l’industrie d’outre-Rhin, confrontée à une perte massive d’emplois, a joué un rôle décisif dans les derniers accords scellés entre Paris et Berlin pour protéger l’Europe face à la concurrence déloyale de Pékin."
+    },
+    "score_fiabilite": 0.4,
+    "score_fiabilite_motif": "lemonde.fr — presse généraliste ou spécialisée",
+    "domaine_source": "lemonde.fr",
+    "domaine_opaque": false,
+    "statut": "en_attente",
+    "created_at": "2026-10-18T11:53:42.837Z"
+  },
+  {
+    "id": "1657fe4e-4958-4d3e-9ba1-fbfc00ab714c",
+    "source_id": "le-monde-economie",
+    "cible_type": "nouvelle_categorie",
+    "cible_id": null,
+    "contenu_propose": {
+      "titre": "« Si nous n’étions pas aveuglés par le marché, nous pourrions tout de suite proposer un autre horizon à la jeunesse »",
+      "link": "https://www.lemonde.fr/idees/article/2026/10/18/si-nous-n-etions-pas-aveugles-par-le-marche-nous-pourrions-tout-de-suite-proposer-un-autre-horizon-a-la-jeunesse_6797037_3232.html",
+      "date": "2026-10-18T04:30:13.000Z",
+      "resume": "Etranglé par la pression des marchés financiers et de l’énergie, le gouvernement cherche à canaliser la colère de la jeunesse par la violence, signe avant-coureur de l’effondrement démocratique, analyse l’économiste Nicolas Postel dans une tribune au « Monde »."
+    },
+    "score_fiabilite": 0.4,
+    "score_fiabilite_motif": "lemonde.fr — presse généraliste ou spécialisée",
+    "domaine_source": "lemonde.fr",
+    "domaine_opaque": false,
+    "statut": "en_attente",
+    "created_at": "2026-10-18T11:53:42.837Z"
+  },
+  {
+    "id": "dbcb5ea1-cad3-47a0-83ea-c09301c85421",
+    "source_id": "le-monde-economie",
+    "cible_type": "nouvelle_categorie",
+    "cible_id": null,
+    "contenu_propose": {
+      "titre": "Marché du timbre : 15 774 euros pour une feuille de 50 exemplaires du 20 francs « Pont du Gard »",
+      "link": "https://www.lemonde.fr/argent/article/2026/10/18/marche-du-timbre-15-774-euros-pour-une-feuille-de-50-exemplaires-du-20-francs-pont-du-gard_6796996_1657007.html",
+      "date": "2026-10-18T04:00:32.000Z",
+      "resume": "Un bloc de quatre du 15 centimes vert « Cérès », émis en 1850, vendu à 80 000 euros et des lettres signées Victor Hugo, Louis Pasteur ou par le général Jourdan ainsi qu’un étonnant timbre émis en janvier constituent les points forts des deux dernières ventes de rentrée, clôturées le 6 octobre."
+    },
+    "score_fiabilite": 0.4,
+    "score_fiabilite_motif": "lemonde.fr — presse généraliste ou spécialisée",
+    "domaine_source": "lemonde.fr",
+    "domaine_opaque": false,
+    "statut": "en_attente",
+    "created_at": "2026-10-18T11:53:42.837Z"
+  },
+  {
+    "id": "68e41c64-8c38-4069-b4af-d723dd87dce4",
+    "source_id": "le-monde-economie",
+    "cible_type": "nouvelle_categorie",
+    "cible_id": null,
+    "contenu_propose": {
+      "titre": "Le ramonage des appareils de chauffage est-il obligatoire ?",
+      "link": "https://www.lemonde.fr/argent/article/2026/10/18/le-ramonage-des-appareils-de-chauffage-est-il-obligatoire_6796958_1657007.html",
+      "date": "2026-10-18T04:00:06.000Z",
+      "resume": "L’intervention, à réaliser au minimum tous les douze mois, doit être confiée à un professionnel qualifié, explique Olivier Moustacakis, cofondateur d’Assurland.com."
+    },
+    "score_fiabilite": 0.4,
+    "score_fiabilite_motif": "lemonde.fr — presse généraliste ou spécialisée",
+    "domaine_source": "lemonde.fr",
+    "domaine_opaque": false,
+    "statut": "en_attente",
+    "created_at": "2026-10-18T11:53:42.837Z"
+  },
+  {
+    "id": "a93f1c01-e3b8-4004-b1b0-77aaa4922cbe",
+    "source_id": "le-monde-economie",
+    "cible_type": "nouvelle_categorie",
+    "cible_id": null,
+    "contenu_propose": {
+      "titre": "« L’économie du Brésil est en croissance grâce au niveau élevé des cours mondiaux des matières premières plus qu’à un succès du gouvernement Lula »",
+      "link": "https://www.lemonde.fr/idees/article/2026/10/17/l-economie-du-bresil-est-en-croissance-grace-au-niveau-eleve-des-cours-mondiaux-des-matieres-premieres-plus-qu-a-un-succes-du-gouvernement-lula_6796586_3232.html",
+      "date": "2026-10-17T18:00:12.000Z",
+      "resume": "Si, le 25 octobre, Lula échoue au second tour de la présidentielle au Brésil, sa défaite sera celle d’un homme du passé, mais aussi celle d’une gauche restée aveugle à la hausse du coût de la vie et aux menaces du crime organisé au Brésil, estime l’économiste chilien Andrés Velasco, dans une tribune au « Monde »."
+    },
+    "score_fiabilite": 0.4,
+    "score_fiabilite_motif": "lemonde.fr — presse généraliste ou spécialisée",
+    "domaine_source": "lemonde.fr",
+    "domaine_opaque": false,
+    "statut": "en_attente",
+    "created_at": "2026-10-18T11:53:42.837Z"
+  },
+  {
+    "id": "9f15b08a-82be-4850-9782-f481542f0496",
+    "source_id": "la-tribune-actualites",
+    "cible_type": "nouvelle_categorie",
+    "cible_id": null,
+    "contenu_propose": {
+      "titre": "Feux de forêt : la filière tabac devra payer près d'un million d'euros à l'État",
+      "link": "https://www.latribune.fr/article/economie/finances-publiques/12506175279491/feux-de-foret-la-filiere-tabac-devra-payer-pres-dun-million-deuros-a-letat",
+      "date": "2026-10-18T10:15:03.000Z",
+      "resume": "Un arrêté paru ce dimanche porte à 990 943 euros la contribution de l'industrie du tabac aux campagnes publiques de prévention des incendies, en hausse de 5,8 % sur un an. Les relations de la filière avec l'État se dégradent."
+    },
+    "score_fiabilite": 0.4,
+    "score_fiabilite_motif": "latribune.fr — domaine absent de la table : score par défaut prudent, sous le seuil de source primaire",
+    "domaine_source": "latribune.fr",
+    "domaine_opaque": false,
+    "statut": "en_attente",
+    "created_at": "2026-10-18T11:53:42.981Z"
+  },
+  {
+    "id": "fdca202c-2c71-4c09-8631-9a861fe7f7ed",
+    "source_id": "la-tribune-actualites",
+    "cible_type": "nouvelle_categorie",
+    "cible_id": null,
+    "contenu_propose": {
+      "titre": "Portrait : Vittorio Lorenzo Della Bella, Président d’ATR",
+      "link": "https://air-cosmos.latribune.fr/article/strategies/61259910107328/portrait-vittorio-lorenzo-della-bella-president-d-atr",
+      "date": "2026-10-18T10:00:01.000Z",
+      "resume": "Des voilures tournantes à l’avion de transport régional."
+    },
+    "score_fiabilite": 0.4,
+    "score_fiabilite_motif": "air-cosmos.latribune.fr — domaine absent de la table : score par défaut prudent, sous le seuil de source primaire",
+    "domaine_source": "air-cosmos.latribune.fr",
+    "domaine_opaque": false,
+    "statut": "en_attente",
+    "created_at": "2026-10-18T11:53:42.981Z"
+  },
+  {
+    "id": "371c7c8b-b155-4a05-941e-42734138f163",
+    "source_id": "la-tribune-actualites",
+    "cible_type": "nouvelle_categorie",
+    "cible_id": null,
+    "contenu_propose": {
+      "titre": "Carburants : près de 600 stations à sec, le Grand Est particulièrement touché",
+      "link": "https://www.latribune.fr/article/entreprises-finance/energie-environnement/3682903016799114/carburants-pres-de-600-stations-a-sec-le-grand-est-particulierement-touche",
+      "date": "2026-10-18T09:00:04.000Z",
+      "resume": "Près d’une station-service sur six signale une rupture d’au moins un carburant ce dimanche. Les difficultés se concentrent surtout chez TotalEnergies, dont les prix plafonnés attirent les automobilistes."
+    },
+    "score_fiabilite": 0.4,
+    "score_fiabilite_motif": "latribune.fr — domaine absent de la table : score par défaut prudent, sous le seuil de source primaire",
+    "domaine_source": "latribune.fr",
+    "domaine_opaque": false,
+    "statut": "en_attente",
+    "created_at": "2026-10-18T11:53:42.981Z"
+  },
+  {
+    "id": "cce8b93b-2e86-4986-bd89-d6ccee5921eb",
+    "source_id": "la-tribune-actualites",
+    "cible_type": "nouvelle_categorie",
+    "cible_id": null,
+    "contenu_propose": {
+      "titre": "Géothermie : À Marseille, l'État autorise des recherches sur 390 km²",
+      "link": "https://www.latribune.fr/article/regions/provence-alpes-cote-d-azur/39627024789794/geothermie-a-marseille-letat-autorise-des-recherches-sur-390-km",
+      "date": "2026-10-18T08:25:02.000Z",
+      "resume": "Un arrêté publié ce dimanche accorde à Géothermar un permis exclusif de recherches dans les Bouches-du-Rhône. Derrière cette décision se dessine le futur réseau de chaleur de Vitrolles, confié à Engie pour 93 millions d'euros d'investissements."
+    },
+    "score_fiabilite": 0.4,
+    "score_fiabilite_motif": "latribune.fr — domaine absent de la table : score par défaut prudent, sous le seuil de source primaire",
+    "domaine_source": "latribune.fr",
+    "domaine_opaque": false,
+    "statut": "en_attente",
+    "created_at": "2026-10-18T11:53:42.981Z"
+  },
+  {
+    "id": "8f0e5352-e0f7-453e-bcd2-ed462ac78d57",
+    "source_id": "la-tribune-actualites",
+    "cible_type": "nouvelle_categorie",
+    "cible_id": null,
+    "contenu_propose": {
+      "titre": "Trump suspend de nouvelles sanctions contre la Russie",
+      "link": "https://www.latribune.fr/article/economie/international/3646472299249214/trump-suspend-de-nouvelles-sanctions-contre-la-russie",
+      "date": "2026-10-18T07:36:07.000Z",
+      "resume": "Un mois après avoir promulgué une loi durcissant les sanctions contre Moscou, le président américain en suspend l’essentiel. Marco Rubio évoque un examen de 60 jours, sur fond de flambée du diesel."
+    },
+    "score_fiabilite": 0.4,
+    "score_fiabilite_motif": "latribune.fr — domaine absent de la table : score par défaut prudent, sous le seuil de source primaire",
+    "domaine_source": "latribune.fr",
+    "domaine_opaque": false,
+    "statut": "en_attente",
+    "created_at": "2026-10-18T11:53:42.981Z"
+  },
+  {
+    "id": "b1fa19d5-92a1-4ee0-902d-b2abc2092046",
+    "source_id": "guardian-economie",
+    "cible_type": "nouvelle_categorie",
+    "cible_id": null,
+    "contenu_propose": {
+      "titre": "World leaders must wise up to threat of cyber-attacks or rogue fridges will be least of their worries | Heather Stewart",
+      "link": "https://www.theguardian.com/business/2026/oct/18/world-leaders-threat-cyber-attacks-rogue-fridges-financial-system",
+      "date": "2026-10-18T11:46:50.000Z",
+      "resume": "Global cooperation seems unlikely despite AI increasing the risk of digital fraud and the need to protect the financial system\nRogue French fridges were an unlikely talking point for the world’s leading economists, central bankers and finance chiefs meeting in a sultry Bangkok last week – helping to underline the spiralling cost of cyber-attacks.\nKristalina Georgieva, the managing director of the "
+    },
+    "score_fiabilite": 0.4,
+    "score_fiabilite_motif": "theguardian.com — presse généraliste ou spécialisée",
+    "domaine_source": "theguardian.com",
+    "domaine_opaque": false,
+    "statut": "en_attente",
+    "created_at": "2026-10-18T11:53:44.152Z"
+  },
+  {
+    "id": "283ecaee-73c1-4699-a769-663c7d285d3d",
+    "source_id": "guardian-economie",
+    "cible_type": "nouvelle_categorie",
+    "cible_id": null,
+    "contenu_propose": {
+      "titre": "World Bank says ‘small AI’ could transform developing countries",
+      "link": "https://www.theguardian.com/technology/2026/oct/18/world-bank-artificial-intelligence-developing-economies",
+      "date": "2026-10-18T10:00:56.000Z",
+      "resume": "Bank’s chief knowledge officer says the tech could speed up economic development from centuries to decades\nThe World Bank is urging developing countries to kickstart the creation of “small AI” models, which can run on a mobile phone with low connectivity, to reap the full benefits of artificial intelligence.\nWhile Silicon Valley big tech firms are focused on ever more sophisticated consumer produc"
+    },
+    "score_fiabilite": 0.4,
+    "score_fiabilite_motif": "theguardian.com — presse généraliste ou spécialisée",
+    "domaine_source": "theguardian.com",
+    "domaine_opaque": false,
+    "statut": "en_attente",
+    "created_at": "2026-10-18T11:53:44.152Z"
+  },
+  {
+    "id": "ef487c11-c988-4fb1-9de9-52e713a5de5f",
+    "source_id": "guardian-economie",
+    "cible_type": "nouvelle_categorie",
+    "cible_id": null,
+    "contenu_propose": {
+      "titre": "‘Austerity is inevitably painful’: How Michael Gove justifies his politics | Radical Thinking with Aditya Chakrabortty",
+      "link": "https://www.theguardian.com/news/audio/2026/oct/18/michael-gove-justifies-his-politics-radical-thinking-with-aditya-chakrabortty",
+      "date": "2026-10-18T07:00:53.000Z",
+      "resume": "For more than three decades, Michael Gove has been a leading figure in British Conservatism. As a journalist, government minister and now editor of the Tory bible the Spectator, he has helped shape the right even as it has moved further rightwards. In the latest episode of Radical Thinking, Gove joins Aditya Chakrabortty to discuss the future of the right, his record on Brexit and austerity, and t"
+    },
+    "score_fiabilite": 0.4,
+    "score_fiabilite_motif": "theguardian.com — presse généraliste ou spécialisée",
+    "domaine_source": "theguardian.com",
+    "domaine_opaque": false,
+    "statut": "en_attente",
+    "created_at": "2026-10-18T11:53:44.152Z"
+  },
+  {
+    "id": "91090489-b095-46c5-bc57-c9d2f89fb4a7",
+    "source_id": "guardian-economie",
+    "cible_type": "nouvelle_categorie",
+    "cible_id": null,
+    "contenu_propose": {
+      "titre": "Why Britain should reject the lure of cheap – and  scary – Chinese AI",
+      "link": "https://www.theguardian.com/business/2026/oct/17/why-britain-should-reject-the-lure-of-cheap-and-scary-chinese-ai",
+      "date": "2026-10-17T15:00:33.000Z",
+      "resume": "In the west the technology comes with at least some effort to provide security and a benign intent – not so from China\nThere is much to fear from artificial intelligence developed in China and handed to businesses and governments in the west almost free of charge.\nEvery month Chinese AI developers such as DeepSeek and Xiaomi dispatch the latest versions of their “open-weight” models that allow use"
+    },
+    "score_fiabilite": 0.4,
+    "score_fiabilite_motif": "theguardian.com — presse généraliste ou spécialisée",
+    "domaine_source": "theguardian.com",
+    "domaine_opaque": false,
+    "statut": "en_attente",
+    "created_at": "2026-10-18T11:53:44.152Z"
+  },
+  {
+    "id": "c325074a-8729-4b34-a0fb-4963d86fcb7b",
+    "source_id": "mit-news-intelligence-artificielle",
+    "cible_type": "nouvelle_categorie",
+    "cible_id": null,
+    "contenu_propose": {
+      "titre": "Giving AI a “crystal clear” view of the materials world",
+      "link": "https://news.mit.edu/2026/giving-ai-crystal-clear-view-of-materials-world-1018",
+      "date": "2026-10-18T04:00:00.000Z",
+      "resume": "New research can help AI models understand crystalline materials in 3D and reason about their properties."
+    },
+    "score_fiabilite": 0.4,
+    "score_fiabilite_motif": "news.mit.edu — domaine absent de la table : score par défaut prudent, sous le seuil de source primaire",
+    "domaine_source": "news.mit.edu",
+    "domaine_opaque": false,
+    "statut": "en_attente",
+    "created_at": "2026-10-18T11:53:48.581Z"
   }
 ]
