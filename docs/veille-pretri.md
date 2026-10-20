@@ -1,16 +1,16 @@
 # Pré-tri de la file de veille
 
-Dernier écartement appliqué : 2026-10-18.
+Dernier écartement appliqué : 2026-10-19.
 
-File complète : **2436** entrées, dont **1833** en attente d'arbitrage.
+File complète : **2504** entrées, dont **1896** en attente d'arbitrage.
 
-Le pré-tri écarte **5** propositions sur des critères mécaniques et en laisse **1828** à la relecture humaine, classées par fiabilité décroissante.
+Le pré-tri écarte **6** propositions sur des critères mécaniques et en laisse **1890** à la relecture humaine, classées par fiabilité décroissante.
 
 ## Écartées, et pourquoi
 
 | Motif | Nombre | Ce que ça veut dire |
 |---|---:|---|
-| `domaine_opaque` | 5 | Agrégateur masquant l'éditeur réel — source non attribuable |
+| `domaine_opaque` | 6 | Agrégateur masquant l'éditeur réel — source non attribuable |
 
 Aucun de ces motifs ne porte de jugement sur le fond : ils constatent qu'une proposition n'est pas citable, pas attribuable, ou déjà connue.
 
@@ -18,10 +18,10 @@ Aucun de ces motifs ne porte de jugement sur le fond : ils constatent qu'une pro
 
 | Score | Nombre |
 |---:|---:|
-| 0.9 | 160 |
-| 0.8 | 324 |
-| 0.6 | 75 |
-| 0.4 | 1269 |
+| 0.9 | 170 |
+| 0.8 | 330 |
+| 0.6 | 76 |
+| 0.4 | 1314 |
 
 ### Les trente premières
 
@@ -29,6 +29,14 @@ Aucun de ces motifs ne porte de jugement sur le fond : ils constatent qu'une pro
   How Registered Reports can improve trust in machine learning research  
   <https://www.nature.com/articles/s41562-026-02586-2>  
   `636ea497-3999-4812-86c2-fc77988408f0`
+- **0.9** · nature.com · 3 terme(s) du corpus  
+  Europe and the rest of the world must come up with an answer to US science strategy  
+  <https://www.nature.com/articles/d41586-026-03352-0>  
+  `e704d5aa-8e57-4bbc-bc5c-03122a67772e`
+- **0.9** · nature.com · 3 terme(s) du corpus  
+  Reusability report: multi-sample omics network inference operates in distinct robustness regimes defined by prior knowledge and data availability  
+  <https://www.nature.com/articles/s42256-026-01311-y>  
+  `8a217f54-30f2-446d-b6a5-ed9ff4b2860b`
 - **0.9** · nature.com · 2 terme(s) du corpus  
   A wake-up call: diversify global research funding  
   <https://www.nature.com/articles/d41586-026-02904-8>  
@@ -137,14 +145,6 @@ Aucun de ces motifs ne porte de jugement sur le fond : ils constatent qu'une pro
   A guide to Nature Index tables  
   <https://www.nature.com/articles/d41586-026-02999-z>  
   `7bc498af-45e2-40ed-923d-23fd459bdd7e`
-- **0.9** · nature.com · 1 terme(s) du corpus  
-  Why sound, strong science alone isn’t enough in pandemic preparedness  
-  <https://www.nature.com/articles/d41586-026-02985-5>  
-  `0ac294d0-854b-4124-ab4e-f7a5bfc7d589`
-- **0.9** · nature.com · 1 terme(s) du corpus  
-  ‘When prevention disappears, infections rise’: can the world still end AIDS?  
-  <https://www.nature.com/articles/d41586-026-03127-7>  
-  `39282f7c-df4c-443e-84f3-9d223dff62fe`
 
 ---
 
