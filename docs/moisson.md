@@ -1,8 +1,8 @@
 # Moisson de sources
 
-Dernier passage : **2026-10-19** · fonds interrogés : openalex, crossref, arxiv, hal, doaj, europepmc.
+Dernier passage : **2026-10-20** · fonds interrogés : openalex, crossref, arxiv, hal, doaj, europepmc.
 
-**0 propositions** pour **10 fiches**, écrites dans `../../_temp/moisson-2026-10-19.json`.
+**0 propositions** pour **10 fiches**, écrites dans `../../_temp/moisson-2026-10-20.json`.
 
 Ce fichier ne modifie aucune fiche. Pour en ajouter une partie au corpus : remplir le champ
 `retenues` de chaque bloc avec les clés choisies, puis lancer
