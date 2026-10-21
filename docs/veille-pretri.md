@@ -1,16 +1,16 @@
 # Pré-tri de la file de veille
 
-Dernier écartement appliqué : 2026-10-19.
+Dernier écartement appliqué : 2026-10-20.
 
-File complète : **2504** entrées, dont **1896** en attente d'arbitrage.
+File complète : **2580** entrées, dont **1966** en attente d'arbitrage.
 
-Le pré-tri écarte **6** propositions sur des critères mécaniques et en laisse **1890** à la relecture humaine, classées par fiabilité décroissante.
+Le pré-tri écarte **4** propositions sur des critères mécaniques et en laisse **1962** à la relecture humaine, classées par fiabilité décroissante.
 
 ## Écartées, et pourquoi
 
 | Motif | Nombre | Ce que ça veut dire |
 |---|---:|---|
-| `domaine_opaque` | 6 | Agrégateur masquant l'éditeur réel — source non attribuable |
+| `domaine_opaque` | 4 | Agrégateur masquant l'éditeur réel — source non attribuable |
 
 Aucun de ces motifs ne porte de jugement sur le fond : ils constatent qu'une proposition n'est pas citable, pas attribuable, ou déjà connue.
 
@@ -18,10 +18,10 @@ Aucun de ces motifs ne porte de jugement sur le fond : ils constatent qu'une pro
 
 | Score | Nombre |
 |---:|---:|
-| 0.9 | 170 |
-| 0.8 | 330 |
-| 0.6 | 76 |
-| 0.4 | 1314 |
+| 0.9 | 175 |
+| 0.8 | 347 |
+| 0.6 | 79 |
+| 0.4 | 1361 |
 
 ### Les trente premières
 
@@ -73,6 +73,10 @@ Aucun de ces motifs ne porte de jugement sur le fond : ils constatent qu'une pro
   Why not every global problem can be tackled by an IPCC-like organization  
   <https://www.nature.com/articles/d41586-026-03234-5>  
   `dc00cc91-a9ff-4f36-bf45-7d4cde873d9b`
+- **0.9** · nature.com · 2 terme(s) du corpus  
+  Global emissions slow — but world hurtles towards 2 °C of warming  
+  <https://www.nature.com/articles/d41586-026-03355-x>  
+  `561ce281-2bd1-4659-86e0-2a32f4ff8ee1`
 - **0.9** · nature.com · 1 terme(s) du corpus  
   NSF moves to overhaul funding approach in line with White House priorities  
   <https://www.nature.com/articles/d41586-026-02892-9>  
@@ -141,10 +145,6 @@ Aucun de ces motifs ne porte de jugement sur le fond : ils constatent qu'une pro
   Nature has rights — it is time the world recognized them  
   <https://www.nature.com/articles/d41586-026-03145-5>  
   `e6a37b82-6fae-4d2c-9393-0f24a4fcda31`
-- **0.9** · nature.com · 1 terme(s) du corpus  
-  A guide to Nature Index tables  
-  <https://www.nature.com/articles/d41586-026-02999-z>  
-  `7bc498af-45e2-40ed-923d-23fd459bdd7e`
 
 ---
 
