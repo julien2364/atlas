@@ -43,8 +43,7 @@ export const metadata: Metadata = {
 /**
  * Pose la classe de thème AVANT le premier rendu du contenu.
  * Ce script est délibérément écrit à la main, minifié, et placé en tout premier
- * enfant de <body>
-        <DyoVisitorIntelligence /> : le navigateur l'exécute avant de peindre quoi que ce soit
+ * enfant de <body> : le navigateur l'exécute avant de peindre quoi que ce soit
  * du document, donc pas de flash de thème clair à l'ouverture d'une page en
  * mode sombre. Il est volontairement enveloppé d'un try/catch : en navigation
  * privée stricte, `localStorage` peut lever, et le site doit rester affiché.
@@ -60,6 +59,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
     // style de <html> avant l'hydratation ; React ne doit pas s'en émouvoir.
     <html lang="fr" suppressHydrationWarning>
       <body className="min-h-screen bg-white text-neutral-900 antialiased dark:bg-neutral-950 dark:text-neutral-100">
+        <DyoVisitorIntelligence />
         <script dangerouslySetInnerHTML={{ __html: SCRIPT_THEME }} />
         <a href="#contenu" className="lien-evitement">
           Aller au contenu
