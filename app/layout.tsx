@@ -5,6 +5,7 @@ import SiteFooter from "@/components/SiteFooter";
 import JsonLd from "@/components/JsonLd";
 import { jsonLdSite } from "@/lib/seo";
 import { SITE_DESCRIPTION, SITE_MODE, SITE_NAME, SITE_URL } from "@/lib/site-config";
+import DyoVisitorIntelligence from "./dyo-visitor-intelligence";
 
 const TITRE = "ATLAS Humain × IA — DYONYSOS";
 
@@ -42,7 +43,8 @@ export const metadata: Metadata = {
 /**
  * Pose la classe de thème AVANT le premier rendu du contenu.
  * Ce script est délibérément écrit à la main, minifié, et placé en tout premier
- * enfant de <body> : le navigateur l'exécute avant de peindre quoi que ce soit
+ * enfant de <body>
+        <DyoVisitorIntelligence /> : le navigateur l'exécute avant de peindre quoi que ce soit
  * du document, donc pas de flash de thème clair à l'ouverture d'une page en
  * mode sombre. Il est volontairement enveloppé d'un try/catch : en navigation
  * privée stricte, `localStorage` peut lever, et le site doit rester affiché.
