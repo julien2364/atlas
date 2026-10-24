@@ -49786,5 +49786,671 @@
     "domaine_opaque": false,
     "statut": "en_attente",
     "created_at": "2026-10-23T12:19:15.459Z"
+  },
+  {
+    "id": "2b67e209-d58b-4bb4-b0af-f78f0de40261",
+    "source_id": "anthropic-news",
+    "cible_type": "nouvelle_categorie",
+    "cible_id": null,
+    "contenu_propose": {
+      "titre": "Attention, Claude ne vous demandera bientôt plus la permission pour agir - Frandroid",
+      "link": "https://news.google.com/rss/articles/CBMiugFBVV95cUxPbW11NEFQVG40ajRzM1dCbzh2U3FvaFhfNDVDaW5LbUwyalRrLWVIWGFyd3JFSmNoMHRPbHdlbXczSnpraGVvR3JNbzhmeWtOaHgwcXUwckthYnhwWnUzLWZNU0NOV2FQT3FLWnVVUTczRFdNZXJYWTNQWlNuMi1Ydi1HR29SWkd6WjYzX1BtdzFELUxpTGQ2aFdKekJ1VXNoQ003OHVvZkM0V2pDWThNM3Y4MTlJb0hWOUE?oc=5",
+      "date": "2026-10-23T15:04:28.000Z",
+      "resume": "Attention, Claude ne vous demandera bientôt plus la permission pour agir  Frandroid"
+    },
+    "score_fiabilite": 0.15,
+    "score_fiabilite_motif": "news.google.com est un redirecteur : l'url ne porte pas le domaine de l'éditeur réel, la fiabilité ne peut pas être établie sans ouvrir le lien",
+    "domaine_source": "news.google.com",
+    "domaine_opaque": true,
+    "statut": "en_attente",
+    "created_at": "2026-10-24T11:45:12.184Z"
+  },
+  {
+    "id": "9fcdb194-7cb9-471c-bc31-bd4d44dcaf45",
+    "source_id": "anthropic-news",
+    "cible_type": "nouvelle_categorie",
+    "cible_id": null,
+    "contenu_propose": {
+      "titre": "Claude Duet : l’agent IA d’Anthropic qui gère vos tâches à votre place - Android MT",
+      "link": "https://news.google.com/rss/articles/CBMitAFBVV95cUxOQmdpUE4tT3VUN2FkZksxTFN2c2JaT0ctc21vQVJyREczQ282X08xbmdXLVU0bzhVREYtWE1LQ3B1a3FqX1RwU2YxOHpGR1NXWHRvYzNRMVEwT3JrX3ctZFEwQVF2cGFuYnlGd09NUHlack81QkFfOVd1bExuSjlkMklJRThOV1FJUWxtU19ZLV9ULUhTVDZBcXRWdkIzM05IeGFJTWhsZi1tYklfMjdVcDZYS1k?oc=5",
+      "date": "2026-10-24T05:45:16.000Z",
+      "resume": "Claude Duet : l’agent IA d’Anthropic qui gère vos tâches à votre place  Android MT"
+    },
+    "score_fiabilite": 0.15,
+    "score_fiabilite_motif": "news.google.com est un redirecteur : l'url ne porte pas le domaine de l'éditeur réel, la fiabilité ne peut pas être établie sans ouvrir le lien",
+    "domaine_source": "news.google.com",
+    "domaine_opaque": true,
+    "statut": "en_attente",
+    "created_at": "2026-10-24T11:45:12.184Z"
+  },
+  {
+    "id": "08ab3a6f-ddd4-481b-88a6-462ea83d3c6f",
+    "source_id": "openai-news",
+    "cible_type": "nouvelle_categorie",
+    "cible_id": null,
+    "contenu_propose": {
+      "titre": "Rapidly scaling online storage to serve over 1 billion ChatGPT users (Part II)",
+      "link": "https://openai.com/index/scaling-storage-one-billion-users-part-two",
+      "date": "2026-10-23T17:00:00.000Z",
+      "resume": "Learn how OpenAI scaled Habitat with reliable multi-tenancy, global caching, and Azure Cosmos DB to deliver 12× faster reads for ChatGPT."
+    },
+    "score_fiabilite": 0.6,
+    "score_fiabilite_motif": "openai.com — éditeur ou laboratoire s'exprimant sur son propre produit",
+    "domaine_source": "openai.com",
+    "domaine_opaque": false,
+    "statut": "en_attente",
+    "created_at": "2026-10-24T11:45:12.329Z"
+  },
+  {
+    "id": "6934f552-cfd2-4686-b571-f449dfb7786b",
+    "source_id": "openai-news",
+    "cible_type": "nouvelle_categorie",
+    "cible_id": null,
+    "contenu_propose": {
+      "titre": "Securing our frontier model training environment",
+      "link": "https://openai.com/index/securing-our-frontier-model-training-environment",
+      "date": "2026-10-23T10:00:00.000Z",
+      "resume": "OpenAI explains how we strengthened containment for frontier model training and evaluation, including offline environments and high-compute red-teaming."
+    },
+    "score_fiabilite": 0.6,
+    "score_fiabilite_motif": "openai.com — éditeur ou laboratoire s'exprimant sur son propre produit",
+    "domaine_source": "openai.com",
+    "domaine_opaque": false,
+    "statut": "en_attente",
+    "created_at": "2026-10-24T11:45:12.329Z"
+  },
+  {
+    "id": "9cb7193a-0570-40c6-b02e-c3e6d3ab86ab",
+    "source_id": "imf-news",
+    "cible_type": "nouvelle_categorie",
+    "cible_id": null,
+    "contenu_propose": {
+      "titre": "Focus | Maroc : depuis 2018, les taux d’intérêt pèsent trois fois plus sur l’activité économique, selon le FMI - Article19.ma",
+      "link": "https://news.google.com/rss/articles/CBMiV0FVX3lxTE1YWFZkWWdoSnllM0hTd1NpQUZQNmNVODZNekN3LUk0SGRmcXRnUGVIQk02dnFDdXZjSm1MQVhGWnRlT1pLOE5xbmdrWndHcG5Rd0RSX204VQ?oc=5",
+      "date": "2026-10-24T08:35:56.000Z",
+      "resume": "Focus | Maroc : depuis 2018, les taux d’intérêt pèsent trois fois plus sur l’activité économique, selon le FMI  Article19.ma"
+    },
+    "score_fiabilite": 0.15,
+    "score_fiabilite_motif": "news.google.com est un redirecteur : l'url ne porte pas le domaine de l'éditeur réel, la fiabilité ne peut pas être établie sans ouvrir le lien",
+    "domaine_source": "news.google.com",
+    "domaine_opaque": true,
+    "statut": "en_attente",
+    "created_at": "2026-10-24T11:45:13.893Z"
+  },
+  {
+    "id": "6b42e73a-5573-4c29-925e-a2497567c28b",
+    "source_id": "imf-news",
+    "cible_type": "nouvelle_categorie",
+    "cible_id": null,
+    "contenu_propose": {
+      "titre": "FMI : les économies en développement sous pression - Africanews",
+      "link": "https://news.google.com/rss/articles/CBMijwFBVV95cUxNckZTS0xaUF96dGx5UFZpWnZzUTJjVkVUcFFpeGtXN28yZ2ZZdW1xTGVHd3VMcTM2OWg2MmwzTVJ4bXBSV1pRN3pzVE5GTTZuWUhqN3lmbnI3di1zelo5TGZmbGhCZUQ2SWdXX0s1WnpIRzJyaXRQMGFFZUszbzBWNHV6YjRleEVudWdOcWU3Z9IBlAFBVV95cUxQSy1iblUxSnJHVl9ZTWY3UWJueklDX2ZJVlBNMURZcC1Qbjc2T19EMzQ3WXVySXc4ek43MzFBVzR6dmlSU1dQbXhPdDl2UHZ1MU1OdDlFQmRjMkFHQmtLOW9EanhqUlZGSDQ3M1hrNjZUSVBOYXBIRno4cGk1MGJ2bXhBaUZvbTEyUkF4WkJtUU1jTnMz?oc=5",
+      "date": "2026-10-19T09:05:30.000Z",
+      "resume": "FMI : les économies en développement sous pression  Africanews"
+    },
+    "score_fiabilite": 0.15,
+    "score_fiabilite_motif": "news.google.com est un redirecteur : l'url ne porte pas le domaine de l'éditeur réel, la fiabilité ne peut pas être établie sans ouvrir le lien",
+    "domaine_source": "news.google.com",
+    "domaine_opaque": true,
+    "statut": "en_attente",
+    "created_at": "2026-10-24T11:45:13.893Z"
+  },
+  {
+    "id": "be2996d0-0299-4fd8-bcc3-93fe19c34f85",
+    "source_id": "oecd-news",
+    "cible_type": "nouvelle_categorie",
+    "cible_id": null,
+    "contenu_propose": {
+      "titre": "Le FMI et l'OCDE s'inquiètent des risques de l'IA pour les pays en développement - IDNFinancials",
+      "link": "https://news.google.com/rss/articles/CBMiywFBVV95cUxQQzBRYkRaeGtoV0t3ZXlveW84am9kcTM1ZENYcEZ4eWVDN1JxRnp6ejVLZ21jZF9CZkVSMzNQWUxENlhfQmZyXzZEdGVvaE1LNzl6QXRtMVhDd2h0Wko0Mkp2VXlnY3dKbWk1VTVabFhBeFBNY29jZTdCbFZ4bGhzSXZ4WHNOM3pfVmhrb2MzNTc0WUhwNVZ3TjBkTkxXWU1jajdrYVJELUhEcHpGREpRU25KWGk0czlTWEYyYnowNFJycHpLUGtWUVJ1MA?oc=5",
+      "date": "2026-10-23T23:00:00.000Z",
+      "resume": "Le FMI et l'OCDE s'inquiètent des risques de l'IA pour les pays en développement  IDNFinancials"
+    },
+    "score_fiabilite": 0.15,
+    "score_fiabilite_motif": "news.google.com est un redirecteur : l'url ne porte pas le domaine de l'éditeur réel, la fiabilité ne peut pas être établie sans ouvrir le lien",
+    "domaine_source": "news.google.com",
+    "domaine_opaque": true,
+    "statut": "en_attente",
+    "created_at": "2026-10-24T11:45:14.289Z"
+  },
+  {
+    "id": "3085c9e7-6cb2-4444-9336-9ed0848b17c4",
+    "source_id": "bce-communiques",
+    "cible_type": "nouvelle_categorie",
+    "cible_id": null,
+    "contenu_propose": {
+      "titre": " Piero Cipollone: Interview with Milano Finanza",
+      "link": "https://www.ecb.europa.eu//press/inter/date/2026/html/ecb.in261024~ee2ba73cf3.en.html",
+      "date": "2026-10-24T06:00:00.000Z",
+      "resume": ""
+    },
+    "score_fiabilite": 0.8,
+    "score_fiabilite_motif": "ecb.europa.eu — préprint, actes de conférence ou institution publique",
+    "domaine_source": "ecb.europa.eu",
+    "domaine_opaque": false,
+    "statut": "en_attente",
+    "created_at": "2026-10-24T11:45:16.632Z"
+  },
+  {
+    "id": "f23f5f1a-83fb-4133-a10f-a53d3d5bde26",
+    "source_id": "commission-europeenne-presse",
+    "cible_type": "nouvelle_categorie",
+    "cible_id": null,
+    "contenu_propose": {
+      "titre": "Remarks by Commissioner Šefčovič at the press conference following the informal Foreign Affairs Council (Trade)",
+      "link": "https://ec.europa.eu/commission/presscorner/detail/en/speech_26_2252",
+      "date": "2026-10-23T14:54:52.000Z",
+      "resume": "European Commission Speech Dublin, 23 Oct 2026 Good afternoon and thank you, Minister – dear Helen – for your hospitality. I always leave Dublin impressed by its positive energy and this time, also grateful ..."
+    },
+    "score_fiabilite": 0.8,
+    "score_fiabilite_motif": "ec.europa.eu — préprint, actes de conférence ou institution publique",
+    "domaine_source": "ec.europa.eu",
+    "domaine_opaque": false,
+    "statut": "en_attente",
+    "created_at": "2026-10-24T11:45:21.283Z"
+  },
+  {
+    "id": "5bc497fd-554e-4122-b58c-b6f670f2f189",
+    "source_id": "commission-europeenne-presse",
+    "cible_type": "nouvelle_categorie",
+    "cible_id": null,
+    "contenu_propose": {
+      "titre": "Discours de la présidente von der Leyen devant l'Assemblée nationale hongroise à l'occasion du 70e anniversaire de la révolution hongroise de 1956",
+      "link": "https://ec.europa.eu/commission/presscorner/detail/fr/speech_26_2251",
+      "date": "2026-10-23T09:40:50.000Z",
+      "resume": "European Commission Discours Budapest, 23 Oct 2026 « Seul le prononcé fait foi »\r\n \r\nMadame la Présidente Forsthoffer,\r\nMonsieur le Président Baka,\r\nMonsieur le Premier ministre Magyar,\r\nMonsieur le Président Costa,\r\n..."
+    },
+    "score_fiabilite": 0.8,
+    "score_fiabilite_motif": "ec.europa.eu — préprint, actes de conférence ou institution publique",
+    "domaine_source": "ec.europa.eu",
+    "domaine_opaque": false,
+    "statut": "en_attente",
+    "created_at": "2026-10-24T11:45:21.283Z"
+  },
+  {
+    "id": "0b7b7edd-77b3-4447-ba1d-62a75fcaf2b7",
+    "source_id": "bri-discours-banques-centrales",
+    "cible_type": "nouvelle_categorie",
+    "cible_id": null,
+    "contenu_propose": {
+      "titre": "Don’t stop thinking about tomorrow - building resilience to climate shocks today",
+      "link": "https://www.bis.org/speeches/20261021-dont-stop-thinking-about-tomorrow-building-resilience-climate-shocks-today",
+      "date": "2026-10-21T00:00:00.000Z",
+      "resume": "Opening address by Mr Fabio Panetta, Governor of the Bank of Italy, at the Green Swan 2026 Conference, Manila, 19 October 2026."
+    },
+    "score_fiabilite": 0.4,
+    "score_fiabilite_motif": "bis.org — domaine absent de la table : score par défaut prudent, sous le seuil de source primaire",
+    "domaine_source": "bis.org",
+    "domaine_opaque": false,
+    "statut": "en_attente",
+    "created_at": "2026-10-24T11:45:22.903Z"
+  },
+  {
+    "id": "2d3504ff-9826-4c3a-817f-d46963a4cc32",
+    "source_id": "ft-marches",
+    "cible_type": "nouvelle_categorie",
+    "cible_id": null,
+    "contenu_propose": {
+      "titre": "French government and corporate bond yields are converging",
+      "link": "https://www.ft.com/content/473c0e0b-d4f7-449c-9192-648b82077222?syn-25a6b1a6=1",
+      "date": "2026-10-24T09:30:04.000Z",
+      "resume": "Some companies’ bonds now yield less than government bonds"
+    },
+    "score_fiabilite": 0.4,
+    "score_fiabilite_motif": "ft.com — presse généraliste ou spécialisée",
+    "domaine_source": "ft.com",
+    "domaine_opaque": false,
+    "statut": "en_attente",
+    "created_at": "2026-10-24T11:45:26.675Z"
+  },
+  {
+    "id": "ed95ff22-8e57-4fb6-a5b1-751b7dd60f35",
+    "source_id": "ft-marches",
+    "cible_type": "nouvelle_categorie",
+    "cible_id": null,
+    "contenu_propose": {
+      "titre": "A little bit of luck is lifting UK Budget expectations ",
+      "link": "https://www.ft.com/content/6a059ab0-a9fc-4e4c-8ae7-1d110faf5adf",
+      "date": "2026-10-24T04:00:33.000Z",
+      "resume": "Healey is poised to deliver his plans just as this year’s drag on global bonds appears to be turning"
+    },
+    "score_fiabilite": 0.4,
+    "score_fiabilite_motif": "ft.com — presse généraliste ou spécialisée",
+    "domaine_source": "ft.com",
+    "domaine_opaque": false,
+    "statut": "en_attente",
+    "created_at": "2026-10-24T11:45:26.675Z"
+  },
+  {
+    "id": "d3def458-6eee-484b-bf98-11cb6c2f16b7",
+    "source_id": "ft-marches",
+    "cible_type": "nouvelle_categorie",
+    "cible_id": null,
+    "contenu_propose": {
+      "titre": "‘Disrupter’ exchanges battle for ETFs in challenge to NYSE and Nasdaq",
+      "link": "https://www.ft.com/content/8dd8e115-c45e-4b66-8390-b5eeea4671d5?syn-25a6b1a6=1",
+      "date": "2026-10-24T04:00:04.000Z",
+      "resume": "Cboe captures nearly half of US listings as intensifying competition reflects rapid growth in derivative-heavy funds"
+    },
+    "score_fiabilite": 0.4,
+    "score_fiabilite_motif": "ft.com — presse généraliste ou spécialisée",
+    "domaine_source": "ft.com",
+    "domaine_opaque": false,
+    "statut": "en_attente",
+    "created_at": "2026-10-24T11:45:26.675Z"
+  },
+  {
+    "id": "0cc816cc-1219-4f39-9446-e00cac8b864c",
+    "source_id": "ft-marches",
+    "cible_type": "nouvelle_categorie",
+    "cible_id": null,
+    "contenu_propose": {
+      "titre": "US executives quit $25bn gas venture over claims of secret Russian control ",
+      "link": "https://www.ft.com/content/e9cfbfbb-e65a-4303-aebb-20d59319ef1b?syn-25a6b1a6=1",
+      "date": "2026-10-24T00:22:20.000Z",
+      "resume": "Former CEO of Polar Train LNG tells FT that energy giant Novatek financed and held reins of strategic Alaska project without Washington’s approval"
+    },
+    "score_fiabilite": 0.4,
+    "score_fiabilite_motif": "ft.com — presse généraliste ou spécialisée",
+    "domaine_source": "ft.com",
+    "domaine_opaque": false,
+    "statut": "en_attente",
+    "created_at": "2026-10-24T11:45:26.675Z"
+  },
+  {
+    "id": "e8d74e5f-5251-4ff9-baca-943e6bfde756",
+    "source_id": "ft-marches",
+    "cible_type": "nouvelle_categorie",
+    "cible_id": null,
+    "contenu_propose": {
+      "titre": "France avoids downgrade from Moody’s in boost for Macron’s government",
+      "link": "https://www.ft.com/content/840f9c94-cb41-4340-9fc4-41e76d908831?syn-25a6b1a6=1",
+      "date": "2026-10-23T22:28:52.000Z",
+      "resume": "Rating agency retains Aa3 score as it assumes ‘deficit-reducing budget for 2027 will be adopted’"
+    },
+    "score_fiabilite": 0.4,
+    "score_fiabilite_motif": "ft.com — presse généraliste ou spécialisée",
+    "domaine_source": "ft.com",
+    "domaine_opaque": false,
+    "statut": "en_attente",
+    "created_at": "2026-10-24T11:45:26.675Z"
+  },
+  {
+    "id": "edf22060-e2a4-4fbf-bdb6-b20bdaaeaed2",
+    "source_id": "wsj-marches",
+    "cible_type": "nouvelle_categorie",
+    "cible_id": null,
+    "contenu_propose": {
+      "titre": "Moderna Investors Should Brace for More Whiplash",
+      "link": "https://www.wsj.com/health/pharma/moderna-investors-should-brace-for-more-whiplash-5c32f32d?mod=rss_markets_main",
+      "date": "2026-10-24T09:30:00.000Z",
+      "resume": "Even after its latest sharp fall, the drugmaker’s stock price assumes wild successes."
+    },
+    "score_fiabilite": 0.4,
+    "score_fiabilite_motif": "wsj.com — presse généraliste ou spécialisée",
+    "domaine_source": "wsj.com",
+    "domaine_opaque": false,
+    "statut": "en_attente",
+    "created_at": "2026-10-24T11:45:26.773Z"
+  },
+  {
+    "id": "3db851f8-df12-42d7-9cf6-acd06a1cd595",
+    "source_id": "wsj-marches",
+    "cible_type": "nouvelle_categorie",
+    "cible_id": null,
+    "contenu_propose": {
+      "titre": "JetBlue Creditors Hire Advisers as Airline’s Shares, Bonds Sink",
+      "link": "https://www.wsj.com/pro/bankruptcy/jetblue-creditors-huddle-with-restructuring-adviser-as-bonds-shares-sink-43866c42?mod=rss_markets_main",
+      "date": "2026-10-24T02:35:00.000Z",
+      "resume": "Senior creditors to the airline are working with financial adviser PJT Partners and law firm Akin."
+    },
+    "score_fiabilite": 0.4,
+    "score_fiabilite_motif": "wsj.com — presse généraliste ou spécialisée",
+    "domaine_source": "wsj.com",
+    "domaine_opaque": false,
+    "statut": "en_attente",
+    "created_at": "2026-10-24T11:45:26.773Z"
+  },
+  {
+    "id": "ef7273b1-0bc6-4305-af9c-3df980776321",
+    "source_id": "wsj-marches",
+    "cible_type": "nouvelle_categorie",
+    "cible_id": null,
+    "contenu_propose": {
+      "titre": "Stocks Pulled in Two Directions, Fall to End Volatile Week",
+      "link": "https://www.wsj.com/finance/stocks/stocks-pulled-in-two-directions-fall-to-end-volatile-week-0c2042a8?mod=rss_markets_main",
+      "date": "2026-10-23T21:10:00.000Z",
+      "resume": "Inflation and jitters over artificial intelligence are fighting for investors’ attention."
+    },
+    "score_fiabilite": 0.4,
+    "score_fiabilite_motif": "wsj.com — presse généraliste ou spécialisée",
+    "domaine_source": "wsj.com",
+    "domaine_opaque": false,
+    "statut": "en_attente",
+    "created_at": "2026-10-24T11:45:26.773Z"
+  },
+  {
+    "id": "8f4287ba-2fd0-4ffb-b953-74ce18540229",
+    "source_id": "wsj-marches",
+    "cible_type": "nouvelle_categorie",
+    "cible_id": null,
+    "contenu_propose": {
+      "titre": "Stock Selloff Continues as Oil Surges",
+      "link": "https://www.wsj.com/finance/stocks/stock-selloff-continues-as-oil-surges-a6d20245?mod=rss_markets_main",
+      "date": "2026-10-23T20:19:00.000Z",
+      "resume": "Plus, SK Hynix scraps U.S. IPO plan for its flash-memory subsidiary and American Express cuts 5% of its headcount."
+    },
+    "score_fiabilite": 0.4,
+    "score_fiabilite_motif": "wsj.com — presse généraliste ou spécialisée",
+    "domaine_source": "wsj.com",
+    "domaine_opaque": false,
+    "statut": "en_attente",
+    "created_at": "2026-10-24T11:45:26.773Z"
+  },
+  {
+    "id": "4e17a665-54b6-4294-a3e0-8029b9d06fec",
+    "source_id": "wsj-marches",
+    "cible_type": "nouvelle_categorie",
+    "cible_id": null,
+    "contenu_propose": {
+      "titre": "Weil Gotshal Loses More Top Lawyers as Merger Talks Collapse",
+      "link": "https://www.wsj.com/business/deals/weil-gotshal-bleeds-more-top-lawyers-as-it-holds-merger-talks-4d0388ad?mod=rss_markets_main",
+      "date": "2026-10-23T14:01:00.000Z",
+      "resume": "Partners are leaving for rivals including Sidley Austin and Davis Polk, increasing pressure on the law firm to secure its future."
+    },
+    "score_fiabilite": 0.4,
+    "score_fiabilite_motif": "wsj.com — presse généraliste ou spécialisée",
+    "domaine_source": "wsj.com",
+    "domaine_opaque": false,
+    "statut": "en_attente",
+    "created_at": "2026-10-24T11:45:26.773Z"
+  },
+  {
+    "id": "6deb5d27-e56b-4373-901a-59c37cbaf3a6",
+    "source_id": "le-monde-economie",
+    "cible_type": "nouvelle_categorie",
+    "cible_id": null,
+    "contenu_propose": {
+      "titre": "Prix des carburants : un décret en vue de la libération de stocks stratégiques de gazole publié au « Journal officiel »",
+      "link": "https://www.lemonde.fr/economie/article/2026/10/24/prix-des-carburants-un-decret-en-vue-de-la-liberation-de-stocks-strategiques-de-gazole-publie-au-journal-officiel_6799684_3234.html",
+      "date": "2026-10-24T09:20:17.000Z",
+      "resume": "Les distributeurs auront l’obligation de répercuter intégralement la baisse de prix. Cette répercussion peut avoir lieu par anticipation à compter du 1ᵉʳ novembre, selon le décret. Le gouvernement espère une baisse de 12 à 18 centimes par litre de gazole."
+    },
+    "score_fiabilite": 0.4,
+    "score_fiabilite_motif": "lemonde.fr — presse généraliste ou spécialisée",
+    "domaine_source": "lemonde.fr",
+    "domaine_opaque": false,
+    "statut": "en_attente",
+    "created_at": "2026-10-24T11:45:27.062Z"
+  },
+  {
+    "id": "e8b75f3c-f1f7-4b22-907c-dbf4a839f323",
+    "source_id": "le-monde-economie",
+    "cible_type": "nouvelle_categorie",
+    "cible_id": null,
+    "contenu_propose": {
+      "titre": "Neuf ans après l’incendie dramatique de la tour Grenfell, à Londres, la très lente mise aux normes des immeubles britanniques",
+      "link": "https://www.lemonde.fr/economie/article/2026/10/24/neuf-ans-apres-l-incendie-dramatique-de-la-tour-grenfell-a-londres-la-tres-lente-mise-aux-normes-des-immeubles-britanniques_6799682_3234.html",
+      "date": "2026-10-24T09:00:01.000Z",
+      "resume": "Moins de 40 % des immeubles britanniques recouverts d’un dangereux revêtement inflammable ont été assainis depuis le drame qui a causé la mort de 72 personnes en 2017. Le gouvernement a déposé un projet de loi pour accélérer les rénovations et soulager les habitants concernés."
+    },
+    "score_fiabilite": 0.4,
+    "score_fiabilite_motif": "lemonde.fr — presse généraliste ou spécialisée",
+    "domaine_source": "lemonde.fr",
+    "domaine_opaque": false,
+    "statut": "en_attente",
+    "created_at": "2026-10-24T11:45:27.062Z"
+  },
+  {
+    "id": "5f073a66-315c-49ba-b20f-81593decffe7",
+    "source_id": "le-monde-economie",
+    "cible_type": "nouvelle_categorie",
+    "cible_id": null,
+    "contenu_propose": {
+      "titre": "La raffinerie nigériane de Dangote entre en Bourse, portée par l’envolée des prix des carburants",
+      "link": "https://www.lemonde.fr/economie/article/2026/10/24/la-raffinerie-nigeriane-de-dangote-entre-en-bourse-portee-par-l-envolee-des-prix-des-carburants_6799662_3234.html",
+      "date": "2026-10-24T06:00:07.000Z",
+      "resume": "Une sursouscription est anticipée pour cette opération qui se termine mardi 27 octobre. La mégaraffinerie de Lagos affiche des bénéfices en forte hausse, dans un contexte géopolitique et économique porteur."
+    },
+    "score_fiabilite": 0.4,
+    "score_fiabilite_motif": "lemonde.fr — presse généraliste ou spécialisée",
+    "domaine_source": "lemonde.fr",
+    "domaine_opaque": false,
+    "statut": "en_attente",
+    "created_at": "2026-10-24T11:45:27.062Z"
+  },
+  {
+    "id": "2a96d23e-67cd-4dd3-b76b-2827b02189b5",
+    "source_id": "le-monde-economie",
+    "cible_type": "nouvelle_categorie",
+    "cible_id": null,
+    "contenu_propose": {
+      "titre": "« Le fléchage de l’épargne réglementée offre une piste, modeste mais réelle, pour financer les investissements dont la société a besoin »",
+      "link": "https://www.lemonde.fr/idees/article/2026/10/24/le-flechage-de-l-epargne-reglementee-offre-une-piste-modeste-mais-reelle-pour-financer-les-investissements-dont-la-societe-a-besoin_6799554_3232.html",
+      "date": "2026-10-24T04:00:45.000Z",
+      "resume": "Face à l’inertie de la BCE, la France doit trouver les moyens d’orienter certains placements pour soutenir l’investissement dans la transition écologique et les services publics, plaide l’économiste Jézabel Couppey-Soubeyran dans sa chronique."
+    },
+    "score_fiabilite": 0.4,
+    "score_fiabilite_motif": "lemonde.fr — presse généraliste ou spécialisée",
+    "domaine_source": "lemonde.fr",
+    "domaine_opaque": false,
+    "statut": "en_attente",
+    "created_at": "2026-10-24T11:45:27.062Z"
+  },
+  {
+    "id": "c8a2f1f1-049d-4a79-87c5-702f4ee80370",
+    "source_id": "le-monde-economie",
+    "cible_type": "nouvelle_categorie",
+    "cible_id": null,
+    "contenu_propose": {
+      "titre": "Puis-je renoncer à une succession ?",
+      "link": "https://www.lemonde.fr/argent/article/2026/10/24/puis-je-renoncer-a-une-succession_6799552_1657007.html",
+      "date": "2026-10-24T04:00:32.000Z",
+      "resume": "Une succession déficitaire n’est pas le seul cas dans lequel la renonciation présente un intérêt, indique Marie-Laure Decobert, ingénieure patrimoniale à Swiss Life Banque privée."
+    },
+    "score_fiabilite": 0.4,
+    "score_fiabilite_motif": "lemonde.fr — presse généraliste ou spécialisée",
+    "domaine_source": "lemonde.fr",
+    "domaine_opaque": false,
+    "statut": "en_attente",
+    "created_at": "2026-10-24T11:45:27.062Z"
+  },
+  {
+    "id": "48c4fb54-29af-4107-9da4-7fb6a970f57f",
+    "source_id": "la-tribune-actualites",
+    "cible_type": "nouvelle_categorie",
+    "cible_id": null,
+    "contenu_propose": {
+      "titre": "OPINION. « La France ne peut plus se contenter d’un État qui éteint les incendies »",
+      "link": "https://www.latribune.fr/article/idees/18104637539914/opinion-la-france-ne-peut-plus-se-contenter-d-un-etat-qui-eteint-les-incendies",
+      "date": "2026-10-24T08:21:32.000Z",
+      "resume": "Face aux crises et à la dette, la France doit anticiper, agir et rendre des comptes."
+    },
+    "score_fiabilite": 0.4,
+    "score_fiabilite_motif": "latribune.fr — domaine absent de la table : score par défaut prudent, sous le seuil de source primaire",
+    "domaine_source": "latribune.fr",
+    "domaine_opaque": false,
+    "statut": "en_attente",
+    "created_at": "2026-10-24T11:45:27.237Z"
+  },
+  {
+    "id": "9aca1199-168c-4908-9d48-7617dd88f092",
+    "source_id": "la-tribune-actualites",
+    "cible_type": "nouvelle_categorie",
+    "cible_id": null,
+    "contenu_propose": {
+      "titre": "Manifestations du 24 octobre : nouvelle journée de mobilisation sous très haute sécurité après le chaos du 17 octobre",
+      "link": "https://www.latribune.fr/article/economie/69026230397379/manifestations-du-24-octobre-nouvelle-journee-de-mobilisation-sous-tres-haute-securite-apres-le-chaos-du-17-octobre",
+      "date": "2026-10-24T08:13:59.000Z",
+      "resume": "Gilets jaunes, syndicats, lycéens et étudiants défileront samedi lors d'une nouvelle journée de mobilisation dans un contexte de très forte tension, après l'interdiction de nombreux cortèges, et sous très haute sécurité, avec 70.000 policiers et gendarmes mobilisés une semaine après des violences et pillages."
+    },
+    "score_fiabilite": 0.4,
+    "score_fiabilite_motif": "latribune.fr — domaine absent de la table : score par défaut prudent, sous le seuil de source primaire",
+    "domaine_source": "latribune.fr",
+    "domaine_opaque": false,
+    "statut": "en_attente",
+    "created_at": "2026-10-24T11:45:27.237Z"
+  },
+  {
+    "id": "01295a71-7d67-4028-8f9c-0a09da4b7872",
+    "source_id": "la-tribune-actualites",
+    "cible_type": "nouvelle_categorie",
+    "cible_id": null,
+    "contenu_propose": {
+      "titre": "Manifestations du 24 octobre : la gauche inquiète et furieuse du changement de parcours parisien",
+      "link": "https://www.latribune.fr/article/economie/51723497254537/manifestations-du-24-octobre-la-gauche-inquiete-et-furieuse-du-changement-de-parcours-parisien",
+      "date": "2026-10-24T07:57:41.000Z",
+      "resume": "Le changement de parcours de la manifestation parisienne de samedi, imposé par la préfecture de police, risque de créer une confusion majeure pour les participants. Les leaders de gauche craignent que cette décision de dernière minute ne conduise à des \"rassemblements sauvages\" à Bastille et mette en danger les manifestants, notamment les jeunes, en générant un chaos potentiellement dangereux."
+    },
+    "score_fiabilite": 0.4,
+    "score_fiabilite_motif": "latribune.fr — domaine absent de la table : score par défaut prudent, sous le seuil de source primaire",
+    "domaine_source": "latribune.fr",
+    "domaine_opaque": false,
+    "statut": "en_attente",
+    "created_at": "2026-10-24T11:45:27.237Z"
+  },
+  {
+    "id": "2a90609d-3795-406c-b3de-1576c46eab8b",
+    "source_id": "la-tribune-actualites",
+    "cible_type": "nouvelle_categorie",
+    "cible_id": null,
+    "contenu_propose": {
+      "titre": "OPINION. « Dans le luxe, la création est au cœur de la valeur, mais à la marge du pouvoir »",
+      "link": "https://www.latribune.fr/article/idees/3202637583590/opinion-dans-le-luxe-la-creation-est-au-coeur-de-la-valeur-mais-a-la-marge-du-pouvoir",
+      "date": "2026-10-24T07:24:51.000Z",
+      "resume": "L'industrie du luxe français, pilier de l'économie nationale, fait face à un défi stratégique majeur : comment pérenniser la valeur créative face à la volatilité des talents ?"
+    },
+    "score_fiabilite": 0.4,
+    "score_fiabilite_motif": "latribune.fr — domaine absent de la table : score par défaut prudent, sous le seuil de source primaire",
+    "domaine_source": "latribune.fr",
+    "domaine_opaque": false,
+    "statut": "en_attente",
+    "created_at": "2026-10-24T11:45:27.237Z"
+  },
+  {
+    "id": "0ac10ab1-b0b3-4868-a3ce-f340137fed02",
+    "source_id": "la-tribune-actualites",
+    "cible_type": "nouvelle_categorie",
+    "cible_id": null,
+    "contenu_propose": {
+      "titre": "En Ukraine et en Russie, la quête de l’alternative à Starlink",
+      "link": "https://air-cosmos.latribune.fr/article/espace/31335116837886/en-ukraine-et-en-russie-la-quete-de-l-alternative-a-starlink",
+      "date": "2026-10-24T05:00:03.000Z",
+      "resume": "La limitation arbitraire de la connectivité de Starlink est devenue en Ukraine un sujet politique aussi important que le difficile approvisionnement en missile intercepteur Patriot. Les alternatives, aussi en cours de déploiement en Russie, sont très attendues."
+    },
+    "score_fiabilite": 0.4,
+    "score_fiabilite_motif": "air-cosmos.latribune.fr — domaine absent de la table : score par défaut prudent, sous le seuil de source primaire",
+    "domaine_source": "air-cosmos.latribune.fr",
+    "domaine_opaque": false,
+    "statut": "en_attente",
+    "created_at": "2026-10-24T11:45:27.237Z"
+  },
+  {
+    "id": "73f08511-524c-4f17-806c-d41b605a7891",
+    "source_id": "rfi-economie",
+    "cible_type": "nouvelle_categorie",
+    "cible_id": null,
+    "contenu_propose": {
+      "titre": "France: l'agence Moody's maintient la note souveraine à Aa3 avec perspective négative",
+      "link": "https://www.rfi.fr/fr/%C3%A9conomie/20261023-france-l-agence-moody-s-maintient-la-note-souveraine-%C3%A0-aa3-avec-perspective-n%C3%A9gative",
+      "date": "2026-10-23T21:26:18.000Z",
+      "resume": "L'agence Moody's s'est abstenue vendredi 23 octobre de toute action de notation sur la dette française, maintenant de fait son appréciation à Aa3 avec perspective négative."
+    },
+    "score_fiabilite": 0.4,
+    "score_fiabilite_motif": "rfi.fr — domaine absent de la table : score par défaut prudent, sous le seuil de source primaire",
+    "domaine_source": "rfi.fr",
+    "domaine_opaque": false,
+    "statut": "en_attente",
+    "created_at": "2026-10-24T11:45:27.525Z"
+  },
+  {
+    "id": "71b02699-0c03-4953-9208-6dd0ac35244b",
+    "source_id": "rfi-economie",
+    "cible_type": "nouvelle_categorie",
+    "cible_id": null,
+    "contenu_propose": {
+      "titre": "Cybersécurité : l'intelligence artificielle, amie des entreprises?",
+      "link": "https://www.rfi.fr/fr/podcasts/%C3%A9co-d-ici-%C3%A9co-d-ailleurs/20261023-cybers%C3%A9curit%C3%A9-l-ia-est-elle-l-amie-des-entreprises",
+      "date": "2026-10-23T15:10:39.000Z",
+      "resume": "Rançons, vols de données, interruptions d’activité, assurances et investissements dans la protection : le coût des cyberattaques explose. Comment fonctionnent ces réseaux criminels ? Comment les entreprises et les États peuvent-ils se défendre ? Dans le monde entier, la cybersécurité est désormais un enjeu de souveraineté et de croissance. Une problématique augmentée par le développement de l'inte"
+    },
+    "score_fiabilite": 0.4,
+    "score_fiabilite_motif": "rfi.fr — domaine absent de la table : score par défaut prudent, sous le seuil de source primaire",
+    "domaine_source": "rfi.fr",
+    "domaine_opaque": false,
+    "statut": "en_attente",
+    "created_at": "2026-10-24T11:45:27.525Z"
+  },
+  {
+    "id": "272cd2f3-72bf-4e17-9513-d504a1b8b685",
+    "source_id": "dw-business",
+    "cible_type": "nouvelle_categorie",
+    "cible_id": null,
+    "contenu_propose": {
+      "titre": "Can Germany revive its economy before the AfD gains ground?",
+      "link": "https://www.dw.com/en/can-germany-revive-its-economy-before-the-afd-gains-ground/a-79696102?maca=en-rss-en-bus-2091-rdf",
+      "date": "2026-10-22T09:10:00.000Z",
+      "resume": "Conflicts, rising costs and Chinese competition are testing Germany's economic model like never before. Can new growth sectors create jobs and ease voters' economic fears, thereby helping contain the far-right AfD?"
+    },
+    "score_fiabilite": 0.4,
+    "score_fiabilite_motif": "dw.com — domaine absent de la table : score par défaut prudent, sous le seuil de source primaire",
+    "domaine_source": "dw.com",
+    "domaine_opaque": false,
+    "statut": "en_attente",
+    "created_at": "2026-10-24T11:45:27.948Z"
+  },
+  {
+    "id": "f639d2bb-0734-429c-a66f-0b7109faab9e",
+    "source_id": "duck-of-minerva",
+    "cible_type": "nouvelle_categorie",
+    "cible_id": null,
+    "contenu_propose": {
+      "titre": "Proxy Patrimonialism and the Path to Pre-modernity",
+      "link": "https://www.duckofminerva.com/2026/10/proxy-patrimonialism-and-the-path-to-pre-modernity.html",
+      "date": "2026-10-23T16:54:46.000Z",
+      "resume": "Patrimonialism has been making a comeback recently as a framework for interpreting Trumpian governance.  Kopstein and Rauch set out masterful dissections of why Trump’s actions fit in with this schema;  Fukuyama argues that the United States is being repatrimonialized. Others use different terminology — such as “Neo-Royalism,” “Neo-Feudalism,” and “Kleptocracy” — but they are all talking about bas"
+    },
+    "score_fiabilite": 0.4,
+    "score_fiabilite_motif": "duckofminerva.com — domaine absent de la table : score par défaut prudent, sous le seuil de source primaire",
+    "domaine_source": "duckofminerva.com",
+    "domaine_opaque": false,
+    "statut": "en_attente",
+    "created_at": "2026-10-24T11:45:35.471Z"
+  },
+  {
+    "id": "58e5de1c-a2d1-4690-8ac3-6e29d9080da9",
+    "source_id": "mit-news-intelligence-artificielle",
+    "cible_type": "nouvelle_categorie",
+    "cible_id": null,
+    "contenu_propose": {
+      "titre": "At MIT, Martha Minow speaks on sustaining democracy, both by using and overcoming AI",
+      "link": "https://news.mit.edu/2026/martha-minow-speaks-on-sustaining-democracy-using-overcoming-ai-1023",
+      "date": "2026-10-23T21:00:00.000Z",
+      "resume": "In Compton Lecture, the distinguished legal scholar warns of potential “loss of the Enlightenment” while suggesting ways innovations can meet our civic and cultural needs."
+    },
+    "score_fiabilite": 0.4,
+    "score_fiabilite_motif": "news.mit.edu — domaine absent de la table : score par défaut prudent, sous le seuil de source primaire",
+    "domaine_source": "news.mit.edu",
+    "domaine_opaque": false,
+    "statut": "en_attente",
+    "created_at": "2026-10-24T11:45:35.808Z"
+  },
+  {
+    "id": "85485b6f-d7c2-40e0-a5c5-83b6807ace69",
+    "source_id": "mit-news-intelligence-artificielle",
+    "cible_type": "nouvelle_categorie",
+    "cible_id": null,
+    "contenu_propose": {
+      "titre": "Reinforcing the value of human understanding at MIT",
+      "link": "https://news.mit.edu/2026/reinforcing-value-of-human-understanding-at-mit-1023",
+      "date": "2026-10-23T19:35:00.000Z",
+      "resume": "During the School of Humanities, Arts, and Social Sciences’ 75th Anniversary Symposium, President Sally Kornbluth said “MIT has never needed your particular insight and guidance more than we do now.”"
+    },
+    "score_fiabilite": 0.4,
+    "score_fiabilite_motif": "news.mit.edu — domaine absent de la table : score par défaut prudent, sous le seuil de source primaire",
+    "domaine_source": "news.mit.edu",
+    "domaine_opaque": false,
+    "statut": "en_attente",
+    "created_at": "2026-10-24T11:45:35.808Z"
   }
 ]
