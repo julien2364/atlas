@@ -1,16 +1,15 @@
 # Pré-tri de la file de veille
 
-Dernier écartement appliqué : 2026-10-23.
+Dernier écartement appliqué : 2026-10-24.
 
-File complète : **2758** entrées, dont **2124** en attente d'arbitrage.
+File complète : **2783** entrées, dont **2144** en attente d'arbitrage.
 
-Le pré-tri écarte **5** propositions sur des critères mécaniques et en laisse **2119** à la relecture humaine, classées par fiabilité décroissante.
+Le pré-tri écarte **0** propositions sur des critères mécaniques et en laisse **2144** à la relecture humaine, classées par fiabilité décroissante.
 
 ## Écartées, et pourquoi
 
 | Motif | Nombre | Ce que ça veut dire |
 |---|---:|---|
-| `domaine_opaque` | 5 | Agrégateur masquant l'éditeur réel — source non attribuable |
 
 Aucun de ces motifs ne porte de jugement sur le fond : ils constatent qu'une proposition n'est pas citable, pas attribuable, ou déjà connue.
 
@@ -18,10 +17,10 @@ Aucun de ces motifs ne porte de jugement sur le fond : ils constatent qu'une pro
 
 | Score | Nombre |
 |---:|---:|
-| 0.9 | 183 |
+| 0.9 | 190 |
 | 0.8 | 378 |
 | 0.6 | 91 |
-| 0.4 | 1467 |
+| 0.4 | 1485 |
 
 ### Les trente premières
 
@@ -77,6 +76,10 @@ Aucun de ces motifs ne porte de jugement sur le fond : ils constatent qu'une pro
   Global emissions slow — but world hurtles towards 2 °C of warming  
   <https://www.nature.com/articles/d41586-026-03355-x>  
   `561ce281-2bd1-4659-86e0-2a32f4ff8ee1`
+- **0.9** · nature.com · 2 terme(s) du corpus  
+  The role of long-term memory, flexible templates and learning in attentional guidance  
+  <https://www.nature.com/articles/s44159-026-00626-2>  
+  `fd67a363-ddf5-4118-b0a4-37f82bb680af`
 - **0.9** · nature.com · 1 terme(s) du corpus  
   NSF moves to overhaul funding approach in line with White House priorities  
   <https://www.nature.com/articles/d41586-026-02892-9>  
@@ -141,10 +144,6 @@ Aucun de ces motifs ne porte de jugement sur le fond : ils constatent qu'une pro
   Science-informed opinion on generative AI for young children  
   <https://www.nature.com/articles/s44159-026-00625-3>  
   `76b6ab47-bb61-4589-8bd3-c8a5a035f00a`
-- **0.9** · nature.com · 1 terme(s) du corpus  
-  Nature has rights — it is time the world recognized them  
-  <https://www.nature.com/articles/d41586-026-03145-5>  
-  `e6a37b82-6fae-4d2c-9393-0f24a4fcda31`
 
 ---
 
