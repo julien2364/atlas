@@ -50462,5 +50462,455 @@
     "domaine_opaque": false,
     "statut": "en_attente",
     "created_at": "2026-10-24T11:45:35.808Z"
+  },
+  {
+    "id": "0a9160db-d297-45da-a758-e9b87fbdaaed",
+    "source_id": "nature-news",
+    "cible_type": "nouvelle_categorie",
+    "cible_id": null,
+    "contenu_propose": {
+      "titre": "ctDNA clearance and outcomes for resectable lung cancer from NeoCOAST-2",
+      "link": "https://www.nature.com/articles/s41586-026-11328-3",
+      "date": "2026-10-25T00:00:00.000Z",
+      "resume": ""
+    },
+    "score_fiabilite": 0.9,
+    "score_fiabilite_motif": "nature.com — édition scientifique à comité de lecture",
+    "domaine_source": "nature.com",
+    "domaine_opaque": false,
+    "statut": "en_attente",
+    "created_at": "2026-10-25T12:14:52.332Z"
+  },
+  {
+    "id": "38c074ad-c886-406b-9313-6617307fd84e",
+    "source_id": "nature-news",
+    "cible_type": "nouvelle_categorie",
+    "cible_id": null,
+    "contenu_propose": {
+      "titre": "Author Correction: DYNLL1 binds to MRE11 to limit DNA end resection in BRCA1-deficient cells",
+      "link": "https://www.nature.com/articles/s41586-026-11303-y",
+      "date": "2026-10-23T00:00:00.000Z",
+      "resume": ""
+    },
+    "score_fiabilite": 0.9,
+    "score_fiabilite_motif": "nature.com — édition scientifique à comité de lecture",
+    "domaine_source": "nature.com",
+    "domaine_opaque": false,
+    "statut": "en_attente",
+    "created_at": "2026-10-25T12:14:52.332Z"
+  },
+  {
+    "id": "f13bfc14-f981-4d22-92dd-2e5afef696c4",
+    "source_id": "nature-news",
+    "cible_type": "nouvelle_categorie",
+    "cible_id": null,
+    "contenu_propose": {
+      "titre": "Elusive snow leopards and evasive particles: Books in brief",
+      "link": "https://www.nature.com/articles/d41586-026-03395-3",
+      "date": "2026-10-23T00:00:00.000Z",
+      "resume": ""
+    },
+    "score_fiabilite": 0.9,
+    "score_fiabilite_motif": "nature.com — édition scientifique à comité de lecture",
+    "domaine_source": "nature.com",
+    "domaine_opaque": false,
+    "statut": "en_attente",
+    "created_at": "2026-10-25T12:14:52.332Z"
+  },
+  {
+    "id": "a8651bdb-1bbc-4482-b893-38ad1876a201",
+    "source_id": "nature-news",
+    "cible_type": "nouvelle_categorie",
+    "cible_id": null,
+    "contenu_propose": {
+      "titre": "Sleep declines in rural communities after electricity arrives",
+      "link": "https://www.nature.com/articles/d41586-026-03318-2",
+      "date": "2026-10-23T00:00:00.000Z",
+      "resume": ""
+    },
+    "score_fiabilite": 0.9,
+    "score_fiabilite_motif": "nature.com — édition scientifique à comité de lecture",
+    "domaine_source": "nature.com",
+    "domaine_opaque": false,
+    "statut": "en_attente",
+    "created_at": "2026-10-25T12:14:52.332Z"
+  },
+  {
+    "id": "4e03d114-8dd8-42f0-8d7a-6467ddbd3bc8",
+    "source_id": "nature-news",
+    "cible_type": "nouvelle_categorie",
+    "cible_id": null,
+    "contenu_propose": {
+      "titre": "Briefing Chat: How physicists successfully trapped the electron's antimatter equivalent",
+      "link": "https://www.nature.com/articles/d41586-026-03418-z",
+      "date": "2026-10-23T00:00:00.000Z",
+      "resume": ""
+    },
+    "score_fiabilite": 0.9,
+    "score_fiabilite_motif": "nature.com — édition scientifique à comité de lecture",
+    "domaine_source": "nature.com",
+    "domaine_opaque": false,
+    "statut": "en_attente",
+    "created_at": "2026-10-25T12:14:52.332Z"
+  },
+  {
+    "id": "6ef5bb13-0d53-4995-9044-53b447927594",
+    "source_id": "ft-marches",
+    "cible_type": "nouvelle_categorie",
+    "cible_id": null,
+    "contenu_propose": {
+      "titre": "Mercuria challenging the ‘Dow Jones of shipping’ in court after Hormuz losses",
+      "link": "https://www.ft.com/content/eedb7159-65df-45de-91f9-fde8de99e61c?syn-25a6b1a6=1",
+      "date": "2026-10-25T05:00:10.000Z",
+      "resume": "Case will test the Baltic Exchange’s decision to keep publishing price estimates for shipping oil through the Strait of Hormuz during the war"
+    },
+    "score_fiabilite": 0.4,
+    "score_fiabilite_motif": "ft.com — presse généraliste ou spécialisée",
+    "domaine_source": "ft.com",
+    "domaine_opaque": false,
+    "statut": "en_attente",
+    "created_at": "2026-10-25T12:15:02.169Z"
+  },
+  {
+    "id": "f9f3235a-81a4-451f-82b4-db5e05940b7c",
+    "source_id": "ft-marches",
+    "cible_type": "nouvelle_categorie",
+    "cible_id": null,
+    "contenu_propose": {
+      "titre": "The Black Sea is now the world’s deadliest shipping route",
+      "link": "https://www.ft.com/content/8c874f60-0041-476d-9c53-8524c374443f?syn-25a6b1a6=1",
+      "date": "2026-10-25T05:00:02.000Z",
+      "resume": "Fatalities of commercial sailors caught in battle between Russia and Ukraine are outstripping deaths in the Gulf"
+    },
+    "score_fiabilite": 0.4,
+    "score_fiabilite_motif": "ft.com — presse généraliste ou spécialisée",
+    "domaine_source": "ft.com",
+    "domaine_opaque": false,
+    "statut": "en_attente",
+    "created_at": "2026-10-25T12:15:02.169Z"
+  },
+  {
+    "id": "4cc41860-52f2-4d1f-ba39-b492c2a667f9",
+    "source_id": "wsj-marches",
+    "cible_type": "nouvelle_categorie",
+    "cible_id": null,
+    "contenu_propose": {
+      "titre": "The Earnings Boom Is Heavily Reliant on Just a Handful of Stocks",
+      "link": "https://www.wsj.com/finance/stocks/the-earnings-boom-is-heavily-reliant-on-just-a-handful-of-stocks-21decb53?mod=rss_markets_main",
+      "date": "2026-10-25T01:00:00.000Z",
+      "resume": "Ten companies—including Nvidia, Micron and other AI giants—account for roughly two-thirds of corporate profit growth."
+    },
+    "score_fiabilite": 0.4,
+    "score_fiabilite_motif": "wsj.com — presse généraliste ou spécialisée",
+    "domaine_source": "wsj.com",
+    "domaine_opaque": false,
+    "statut": "en_attente",
+    "created_at": "2026-10-25T12:15:02.326Z"
+  },
+  {
+    "id": "d63893f5-5814-4190-adfe-fec53d590fa9",
+    "source_id": "wsj-marches",
+    "cible_type": "nouvelle_categorie",
+    "cible_id": null,
+    "contenu_propose": {
+      "titre": "The Cat-and-Mouse Game Between Premium Credit-Card Firms and Points Junkies",
+      "link": "https://www.wsj.com/finance/banking/the-cat-and-mouse-game-between-premium-credit-card-firms-and-points-junkies-8ce2e30a?mod=rss_markets_main",
+      "date": "2026-10-25T00:00:00.000Z",
+      "resume": "A subculture of people obsessed with reaping rewards is prompting banks to adjust to their evolving tactics."
+    },
+    "score_fiabilite": 0.4,
+    "score_fiabilite_motif": "wsj.com — presse généraliste ou spécialisée",
+    "domaine_source": "wsj.com",
+    "domaine_opaque": false,
+    "statut": "en_attente",
+    "created_at": "2026-10-25T12:15:02.326Z"
+  },
+  {
+    "id": "1181eeb0-c470-4783-8852-fde8e783de96",
+    "source_id": "wsj-marches",
+    "cible_type": "nouvelle_categorie",
+    "cible_id": null,
+    "contenu_propose": {
+      "titre": "How Expensive is Gasoline Where You Live?",
+      "link": "https://www.wsj.com/finance/commodities-futures/how-expensive-is-gasoline-where-you-live-4acc6026?mod=rss_markets_main",
+      "date": "2026-10-24T17:19:00.000Z",
+      "resume": "Track the latest prices at the pump in your area and nationwide."
+    },
+    "score_fiabilite": 0.4,
+    "score_fiabilite_motif": "wsj.com — presse généraliste ou spécialisée",
+    "domaine_source": "wsj.com",
+    "domaine_opaque": false,
+    "statut": "en_attente",
+    "created_at": "2026-10-25T12:15:02.326Z"
+  },
+  {
+    "id": "ebdd33cc-05fe-47a9-b935-d35d293de357",
+    "source_id": "le-monde-economie",
+    "cible_type": "nouvelle_categorie",
+    "cible_id": null,
+    "contenu_propose": {
+      "titre": "« Les câbles sous-marins sont utilisés par la Russie ou la Chine pour affaiblir leurs ennemis et par les géants numériques pour asseoir leur domination »",
+      "link": "https://www.lemonde.fr/idees/article/2026/10/25/les-cables-sous-marins-sont-utilises-par-la-russie-ou-la-chine-pour-affaiblir-leurs-ennemis-et-par-les-geants-numeriques-pour-asseoir-leur-domination_6800072_3232.html",
+      "date": "2026-10-25T11:00:17.000Z",
+      "resume": "Autrice de « La Guerre silencieuse. Enquête sur les câbles sous-marins », Marie Baléo raconte, dans un entretien au « Monde », comment ces structures sont devenues un enjeu géopolitique majeur, et parfois la cible de sabotages par des services d’espionnage."
+    },
+    "score_fiabilite": 0.4,
+    "score_fiabilite_motif": "lemonde.fr — presse généraliste ou spécialisée",
+    "domaine_source": "lemonde.fr",
+    "domaine_opaque": false,
+    "statut": "en_attente",
+    "created_at": "2026-10-25T12:15:02.643Z"
+  },
+  {
+    "id": "dce48af5-0933-446b-9e8b-5847e106f31f",
+    "source_id": "le-monde-economie",
+    "cible_type": "nouvelle_categorie",
+    "cible_id": null,
+    "contenu_propose": {
+      "titre": "La « fatigue informationnelle » touche de plus en plus de Français",
+      "link": "https://www.lemonde.fr/economie/article/2026/10/25/la-fatigue-informationnelle-touche-de-plus-en-plus-de-francais_6800054_3234.html",
+      "date": "2026-10-25T07:00:24.000Z",
+      "resume": "La troisième vague de l’enquête de L’Observatoire Société & Consommation et de la Fondation Jean Jaurès fait apparaître que 55 % des Français cherchent désormais à se protéger de l’information, en s’impliquant moins dans sa recherche et sa consultation. Ce qui n’est pas sans risque pour le débat démocratique."
+    },
+    "score_fiabilite": 0.4,
+    "score_fiabilite_motif": "lemonde.fr — presse généraliste ou spécialisée",
+    "domaine_source": "lemonde.fr",
+    "domaine_opaque": false,
+    "statut": "en_attente",
+    "created_at": "2026-10-25T12:15:02.643Z"
+  },
+  {
+    "id": "2b255b75-9d25-4801-a4f2-790e278f006f",
+    "source_id": "le-monde-economie",
+    "cible_type": "nouvelle_categorie",
+    "cible_id": null,
+    "contenu_propose": {
+      "titre": "Un nouveau timbre créé par l’artiste urbain C215 : « Je crois que mes peintures peuvent réellement aider à changer le monde »",
+      "link": "https://www.lemonde.fr/argent/article/2026/10/25/un-nouveau-timbre-cree-par-l-artiste-urbain-c215-je-crois-que-mes-peintures-peuvent-reellement-aider-a-changer-le-monde_6800053_1657007.html",
+      "date": "2026-10-25T07:00:07.000Z",
+      "resume": "L’artiste C215 signe pour les Terres australes et antarctiques françaises un timbre qui représente un manchot avec une paire de lunettes de soleil. Une façon de traiter avec humour la question du dérèglement climatique qui menace ces régions."
+    },
+    "score_fiabilite": 0.4,
+    "score_fiabilite_motif": "lemonde.fr — presse généraliste ou spécialisée",
+    "domaine_source": "lemonde.fr",
+    "domaine_opaque": false,
+    "statut": "en_attente",
+    "created_at": "2026-10-25T12:15:02.643Z"
+  },
+  {
+    "id": "576ea061-d1d4-4a1f-94eb-8cb9de265c64",
+    "source_id": "le-monde-economie",
+    "cible_type": "nouvelle_categorie",
+    "cible_id": null,
+    "contenu_propose": {
+      "titre": "Pour le couturier Julien Fournié, « le bon timbre va raconter au bon moment la bonne histoire »",
+      "link": "https://www.lemonde.fr/argent/article/2026/10/25/pour-le-couturier-julien-fournie-le-bon-timbre-va-raconter-au-bon-moment-la-bonne-histoire_6800050_1657007.html",
+      "date": "2026-10-25T06:00:07.000Z",
+      "resume": "Le styliste Julien Fournié a créé, pour les Terres australes et antarctiques françaises, un timbre représentant le mystérieux paysage nocturne d’une aurore australe, dont les tons font écho à l’univers graphique de sa maison de haute couture."
+    },
+    "score_fiabilite": 0.4,
+    "score_fiabilite_motif": "lemonde.fr — presse généraliste ou spécialisée",
+    "domaine_source": "lemonde.fr",
+    "domaine_opaque": false,
+    "statut": "en_attente",
+    "created_at": "2026-10-25T12:15:02.643Z"
+  },
+  {
+    "id": "ae352adb-8d2d-430d-96aa-ad2a18271dbd",
+    "source_id": "le-monde-economie",
+    "cible_type": "nouvelle_categorie",
+    "cible_id": null,
+    "contenu_propose": {
+      "titre": "Mobilisation sociale : « Les syndicats, qui devaient canaliser la colère, ne jouent plus leur rôle »",
+      "link": "https://www.lemonde.fr/idees/article/2026/10/25/mobilisation-sociale-les-syndicats-qui-devaient-canaliser-la-colere-ne-jouent-plus-leur-role_6800034_3232.html",
+      "date": "2026-10-25T04:30:19.000Z",
+      "resume": "Les débordements observés dans les manifestations s’expliquent d’abord par la dérive de notre modèle social, qui a entraîné une baisse du taux de syndicalisation, rappellent les économistes Pierre Cahuc et André Zylberberg, dans une tribune au « Monde »."
+    },
+    "score_fiabilite": 0.4,
+    "score_fiabilite_motif": "lemonde.fr — presse généraliste ou spécialisée",
+    "domaine_source": "lemonde.fr",
+    "domaine_opaque": false,
+    "statut": "en_attente",
+    "created_at": "2026-10-25T12:15:02.643Z"
+  },
+  {
+    "id": "712d73c3-7d1e-4c79-adb0-778223deeed9",
+    "source_id": "la-tribune-actualites",
+    "cible_type": "nouvelle_categorie",
+    "cible_id": null,
+    "contenu_propose": {
+      "titre": "OPINION. « Cyberattaques : informer les victimes ne devrait pas être la dernière étape de la gestion de crise »",
+      "link": "https://www.latribune.fr/article/idees/66462769643685/opinion-cyberattaques-informer-les-victimes-ne-devrait-pas-etre-la-derniere-etape-de-la-gestion-de-crise",
+      "date": "2026-10-25T11:12:12.000Z",
+      "resume": "Des millions de personnes, patients ou abonnés, se retrouvent exposées après des cyberattaques, mais ne sont pas toujours informées adéquatement. Les cas de Free et de l'Hôpital privé de la Loire, épinglés par la CNIL, révèlent que l'information transmise est souvent incomplète ou tardive, laissant les victimes démunies face aux risques. Une défaillance qui accroît leur vulnérabilité."
+    },
+    "score_fiabilite": 0.4,
+    "score_fiabilite_motif": "latribune.fr — domaine absent de la table : score par défaut prudent, sous le seuil de source primaire",
+    "domaine_source": "latribune.fr",
+    "domaine_opaque": false,
+    "statut": "en_attente",
+    "created_at": "2026-10-25T12:15:02.854Z"
+  },
+  {
+    "id": "a35969cf-811c-4562-b5f1-219f49fcdfad",
+    "source_id": "la-tribune-actualites",
+    "cible_type": "nouvelle_categorie",
+    "cible_id": null,
+    "contenu_propose": {
+      "titre": "OPINION. « Avec les manifestations, les jeunes ont pourtant bien quitté leurs écrans pour descendre dans la rue »",
+      "link": "https://www.latribune.fr/article/idees/2058283034903914/opinion-avec-les-manifestations-les-jeunes-ont-pourtant-bien-quitte-leurs-ecrans-pour-descendre-dans-la-rue",
+      "date": "2026-10-25T10:18:05.000Z",
+      "resume": "Les manifestations lycéennes ont tordu le cou à une croyance aussi injuste que tenace : la génération Z ne serait qu’une génération TikTok, indifférente à la politique et désabusée face aux institutions."
+    },
+    "score_fiabilite": 0.4,
+    "score_fiabilite_motif": "latribune.fr — domaine absent de la table : score par défaut prudent, sous le seuil de source primaire",
+    "domaine_source": "latribune.fr",
+    "domaine_opaque": false,
+    "statut": "en_attente",
+    "created_at": "2026-10-25T12:15:02.854Z"
+  },
+  {
+    "id": "a84fdffd-a058-4a68-8fc0-7181e2c529f5",
+    "source_id": "la-tribune-actualites",
+    "cible_type": "nouvelle_categorie",
+    "cible_id": null,
+    "contenu_propose": {
+      "titre": "Attentat à Trappes : la garde à vue du tireur suspendue pour raisons psychiatriques, du cannabis et de la cocaïne retrouvés dans son sang",
+      "link": "https://www.latribune.fr/article/la-tribune-dimanche/societe/18317409493017/attentat-a-trappes-la-garde-a-vue-du-tireur-suspendue-pour-raisons-psychiatriques-du-cannabis-et-de-la-cocaine-retrouves-dans-son-sang",
+      "date": "2026-10-25T10:01:18.000Z",
+      "resume": "Le parquet national antiterroriste a annoncé la suspension de la garde à vue de l'assaillant ayant tué une personne et blessé cinq autres, ce vendredi 23 octobre à Trappes."
+    },
+    "score_fiabilite": 0.4,
+    "score_fiabilite_motif": "latribune.fr — domaine absent de la table : score par défaut prudent, sous le seuil de source primaire",
+    "domaine_source": "latribune.fr",
+    "domaine_opaque": false,
+    "statut": "en_attente",
+    "created_at": "2026-10-25T12:15:02.854Z"
+  },
+  {
+    "id": "b10cc7a5-00e8-4c44-9291-37ddaddbf12a",
+    "source_id": "la-tribune-actualites",
+    "cible_type": "nouvelle_categorie",
+    "cible_id": null,
+    "contenu_propose": {
+      "titre": "Manifestations du 24 octobre : 1.314 interpellations et 53 membres des forces de l'ordre blessés en France",
+      "link": "https://www.latribune.fr/article/la-tribune-dimanche/societe/39333203345164/manifestations-du-24-octobre-142-interpellations-dont-126-gardes-a-vue-a-paris",
+      "date": "2026-10-25T08:16:05.000Z",
+      "resume": "Au lendemain des manifestations du samedi 24 octobre, les premiers chiffres des retombées humaines sont divulgués par différentes sources, avec notamment 1.314 interpellations à travers le territoire et 53 membres de forces de l'ordre blessés"
+    },
+    "score_fiabilite": 0.4,
+    "score_fiabilite_motif": "latribune.fr — domaine absent de la table : score par défaut prudent, sous le seuil de source primaire",
+    "domaine_source": "latribune.fr",
+    "domaine_opaque": false,
+    "statut": "en_attente",
+    "created_at": "2026-10-25T12:15:02.854Z"
+  },
+  {
+    "id": "93e00fbe-bcf7-4dcc-8a83-f7c28c674fa3",
+    "source_id": "la-tribune-actualites",
+    "cible_type": "nouvelle_categorie",
+    "cible_id": null,
+    "contenu_propose": {
+      "titre": "Donald Trump annonce un « énorme investissement » d'Audi aux États-Unis",
+      "link": "https://www.latribune.fr/article/transports/automobile/30445659579657/donald-trump-annonce-un-enorme-investissement-daudi-aux-etats-unis",
+      "date": "2026-10-25T07:15:36.000Z",
+      "resume": "Le président américain Donald Trump a annoncé lors d'un meeting de campagne samedi que le constructeur automobile allemand Audi prévoyait d'investir 4,2 milliards de dollars pour construire une usine dans l'État de Géorgie qui produira 200.000 véhicules par an."
+    },
+    "score_fiabilite": 0.4,
+    "score_fiabilite_motif": "latribune.fr — domaine absent de la table : score par défaut prudent, sous le seuil de source primaire",
+    "domaine_source": "latribune.fr",
+    "domaine_opaque": false,
+    "statut": "en_attente",
+    "created_at": "2026-10-25T12:15:02.854Z"
+  },
+  {
+    "id": "b90d06ab-7ae0-4d5e-94a1-125fed3b2202",
+    "source_id": "euronews-business",
+    "cible_type": "nouvelle_categorie",
+    "cible_id": null,
+    "contenu_propose": {
+      "titre": "Quatre milliards pour une usine aux États-Unis : Audi signe avec Trump",
+      "link": "https://fr.euronews.com/2026/10/25/quatre-milliards-pour-une-usine-aux-etats-unis-audi-signe-avec-trump",
+      "date": "2026-10-25T09:16:04.000Z",
+      "resume": "Audi va construire sa première usine automobile aux États-Unis. Le constructeur d'Ingolstadt prévoit d'investir des milliards d'euros dans un nouveau site de production en Géorgie."
+    },
+    "score_fiabilite": 0.4,
+    "score_fiabilite_motif": "fr.euronews.com — domaine absent de la table : score par défaut prudent, sous le seuil de source primaire",
+    "domaine_source": "fr.euronews.com",
+    "domaine_opaque": false,
+    "statut": "en_attente",
+    "created_at": "2026-10-25T12:15:03.291Z"
+  },
+  {
+    "id": "8a49a46d-5e93-4026-b23a-b44db61625f4",
+    "source_id": "guardian-economie",
+    "cible_type": "nouvelle_categorie",
+    "cible_id": null,
+    "contenu_propose": {
+      "titre": "Interest rates unlikely to reach 4.75% by next summer, say City economists",
+      "link": "https://www.theguardian.com/business/2026/oct/25/interest-rates-bank-of-england-rises-summer-2027",
+      "date": "2026-10-25T12:00:05.000Z",
+      "resume": "Experts say Bank of England  unlikely to increase rates by full percentage point – and could lower them by end of 2027\nFinancial markets are wrong to predict the Bank of England will raise UK interest rates by a full percentage point or more by next summer, City economists believe.\nAccording to market-implied interest rate expectations, the Bank is likely to raise interest rates at least four time"
+    },
+    "score_fiabilite": 0.4,
+    "score_fiabilite_motif": "theguardian.com — presse généraliste ou spécialisée",
+    "domaine_source": "theguardian.com",
+    "domaine_opaque": false,
+    "statut": "en_attente",
+    "created_at": "2026-10-25T12:15:03.789Z"
+  },
+  {
+    "id": "fd67a363-ddf5-4118-b0a4-37f82bb680af",
+    "source_id": "nature-reviews-psychology",
+    "cible_type": "nouvelle_categorie",
+    "cible_id": null,
+    "contenu_propose": {
+      "titre": "The role of long-term memory, flexible templates and learning in attentional guidance",
+      "link": "https://www.nature.com/articles/s44159-026-00626-2",
+      "date": "2026-10-23T00:00:00.000Z",
+      "resume": ""
+    },
+    "score_fiabilite": 0.9,
+    "score_fiabilite_motif": "nature.com — édition scientifique à comité de lecture",
+    "domaine_source": "nature.com",
+    "domaine_opaque": false,
+    "statut": "en_attente",
+    "created_at": "2026-10-25T12:15:05.855Z"
+  },
+  {
+    "id": "61ef6991-fbd3-4b9f-a889-a81c9c3ddd5e",
+    "source_id": "nature-reviews-psychology",
+    "cible_type": "nouvelle_categorie",
+    "cible_id": null,
+    "contenu_propose": {
+      "titre": "From sample diversity to interpretive convergence",
+      "link": "https://www.nature.com/articles/s44159-026-00636-0",
+      "date": "2026-10-22T00:00:00.000Z",
+      "resume": ""
+    },
+    "score_fiabilite": 0.9,
+    "score_fiabilite_motif": "nature.com — édition scientifique à comité de lecture",
+    "domaine_source": "nature.com",
+    "domaine_opaque": false,
+    "statut": "en_attente",
+    "created_at": "2026-10-25T12:15:05.855Z"
+  },
+  {
+    "id": "4f7159f3-3389-4100-9e54-b53d271dbb5c",
+    "source_id": "diploweb-geopolitique",
+    "cible_type": "nouvelle_categorie",
+    "cible_id": null,
+    "contenu_propose": {
+      "titre": "La fiction permet-elle une immersion dans le combat cyber ? Entretien avec A. Namor et B. Boyer",
+      "link": "https://www.diploweb.com/La-fiction-permet-elle-une-immersion-dans-le-combat-cyber-Entretien-avec-A-Namor-et-B-Boyer.html",
+      "date": "2026-10-25T08:57:20.000Z",
+      "resume": "Est-il possible de bénéficier de la pratique terrain et de la réflexion d'experts de la guerre électronique et de cyberdéfense pour mieux comprendre le combat cyber ? Oui quand A. Namor et B. Boyer répondent au Diploweb.com. Entretien exclusif.\nTransversaux\n\n/ \nMonde, \nFrance , \nDéfense, \nLivres géopolitiques, \nStratégie, \nArmée, \nEcole de guerre (EdG), \nCyberguerre, \nCybersécurité, \nCyberstratégi"
+    },
+    "score_fiabilite": 0.4,
+    "score_fiabilite_motif": "diploweb.com — domaine absent de la table : score par défaut prudent, sous le seuil de source primaire",
+    "domaine_source": "diploweb.com",
+    "domaine_opaque": false,
+    "statut": "en_attente",
+    "created_at": "2026-10-25T12:15:08.668Z"
   }
 ]
