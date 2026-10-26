@@ -2,14 +2,15 @@
 
 Dernier écartement appliqué : 2026-10-24.
 
-File complète : **2783** entrées, dont **2144** en attente d'arbitrage.
+File complète : **2854** entrées, dont **2215** en attente d'arbitrage.
 
-Le pré-tri écarte **0** propositions sur des critères mécaniques et en laisse **2144** à la relecture humaine, classées par fiabilité décroissante.
+Le pré-tri écarte **2** propositions sur des critères mécaniques et en laisse **2213** à la relecture humaine, classées par fiabilité décroissante.
 
 ## Écartées, et pourquoi
 
 | Motif | Nombre | Ce que ça veut dire |
 |---|---:|---|
+| `domaine_opaque` | 2 | Agrégateur masquant l'éditeur réel — source non attribuable |
 
 Aucun de ces motifs ne porte de jugement sur le fond : ils constatent qu'une proposition n'est pas citable, pas attribuable, ou déjà connue.
 
@@ -17,10 +18,10 @@ Aucun de ces motifs ne porte de jugement sur le fond : ils constatent qu'une pro
 
 | Score | Nombre |
 |---:|---:|
-| 0.9 | 190 |
-| 0.8 | 378 |
+| 0.9 | 198 |
+| 0.8 | 396 |
 | 0.6 | 91 |
-| 0.4 | 1485 |
+| 0.4 | 1528 |
 
 ### Les trente premières
 
@@ -80,6 +81,10 @@ Aucun de ces motifs ne porte de jugement sur le fond : ils constatent qu'une pro
   The role of long-term memory, flexible templates and learning in attentional guidance  
   <https://www.nature.com/articles/s44159-026-00626-2>  
   `fd67a363-ddf5-4118-b0a4-37f82bb680af`
+- **0.9** · nature.com · 2 terme(s) du corpus  
+  Turing-like tests for language and vision demonstrate a narrowing gap between humans and AI  
+  <https://www.nature.com/articles/s41562-026-02590-6>  
+  `d2e72941-e838-4cd8-a129-9a6dbad979c7`
 - **0.9** · nature.com · 1 terme(s) du corpus  
   NSF moves to overhaul funding approach in line with White House priorities  
   <https://www.nature.com/articles/d41586-026-02892-9>  
@@ -140,10 +145,6 @@ Aucun de ces motifs ne porte de jugement sur le fond : ils constatent qu'une pro
   Intrinsic rewards guide visual resource allocation via reinforcement learning  
   <https://www.nature.com/articles/s41562-026-02573-7>  
   `db9c0820-a123-4010-93a4-1a2fa5bc16e9`
-- **0.9** · nature.com · 1 terme(s) du corpus  
-  Science-informed opinion on generative AI for young children  
-  <https://www.nature.com/articles/s44159-026-00625-3>  
-  `76b6ab47-bb61-4589-8bd3-c8a5a035f00a`
 
 ---
 
