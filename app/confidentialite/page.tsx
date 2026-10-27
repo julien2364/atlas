@@ -16,7 +16,6 @@ export default function ConfidentialitePage() {
         <h1 className="text-2xl font-semibold tracking-tight">Politique de confidentialité</h1>
         <p className="mt-3 leading-relaxed text-neutral-600 dark:text-neutral-400">
           {SITE_NAME} est un site de consultation. Il ne demande aucun compte, aucune inscription, aucun formulaire.
-          Cette page dit exactement ce qui est traité, et ce qui ne l&apos;est pas.
         </p>
       </header>
 
@@ -81,7 +80,7 @@ export default function ConfidentialitePage() {
           <a className="underline underline-offset-2" href="mailto:welcome@dyonysos.fr">
             welcome@dyonysos.fr
           </a>
-          . La demande est traitée sous un mois, et la suite donnée est tracée dans le changelog.
+          . La demande est traitée sous un mois.
         </p>
       </section>
 

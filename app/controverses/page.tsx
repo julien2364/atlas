@@ -93,14 +93,8 @@ export default function PageControverses() {
         <h1 className="text-2xl font-semibold tracking-tight">Controverses documentées</h1>
         <p className="mt-3 text-sm leading-relaxed text-neutral-600 dark:text-neutral-400">
           {controverses.length} désaccords que le référentiel établit nommément : une fiche met une autre en cause
-          dans son champ « limites critiques », et la phrase qui le dit est citée sous chaque paire. Aucune
-          controverse n&apos;est ici parce qu&apos;un calcul a rapproché deux textes — chacune tient sur une phrase
-          écrite dans une fiche. Graphe tissé le {genereLe}.
-        </p>
-        <p className="mt-3 text-xs leading-relaxed text-neutral-500 dark:text-neutral-400">
-          Ce que cette page ne dit pas : qui a raison. Elle montre où le débat se tient et permet d&apos;aller lire
-          les deux fiches. Ce qu&apos;elle rate : deux positions qui s&apos;opposent sans se nommer restent
-          invisibles l&apos;une à l&apos;autre — la détection ne lit que les mentions explicites.
+          dans son champ « limites critiques », et la phrase qui le dit est citée sous chaque paire. Graphe tissé le{" "}
+          {genereLe}.
         </p>
       </header>
 

@@ -1,6 +1,5 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import sourcesVeille from "@/data/seed/veille_sources.json";
 import questions from "@/data/seed/questions.json";
 import { derniereMiseAJourCorpus, fichesGap, fichesHumaines, fichesIA, formatDateFr } from "@/lib/corpus";
 
@@ -11,8 +10,6 @@ export const metadata: Metadata = {
 /* Tous les chiffres de cette page sont recomptés depuis le corpus au moment du
    build — jamais écrits en dur (cf. docs/design-system.md §9). Ils restent donc
    justes à la fiche près après chaque ajout. */
-
-const veilleActives = (sourcesVeille as { actif: boolean }[]).filter((s) => s.actif).length;
 
 const nombreSources = (() => {
   let total = 0;
@@ -32,7 +29,6 @@ const CHIFFRES: { valeur: string; libelle: string; href: string }[] = [
   { valeur: String(fichesIA.length), libelle: "capacités IA", href: "/referentiel-ia" },
   { valeur: String(fichesGap.length), libelle: "analyses de gap humain × IA", href: "/comparateur" },
   { valeur: String(nombreSources), libelle: "sources citées et datées", href: "/methodologie" },
-  { valeur: String(veilleActives), libelle: "sources de veille actives", href: "/veille" },
 ];
 
 const ENTREES: { href: string; titre: string; desc: string }[] = [
@@ -54,17 +50,12 @@ const ENTREES: { href: string; titre: string; desc: string }[] = [
   {
     href: "/cartographie",
     titre: "Cartographie",
-    desc: "Six visualisations du corpus : répartition par axe, treemap, matrice de gap, radar et grilles de maturité TRL, graphe de connaissances, frise du changelog.",
+    desc: "Cinq visualisations du corpus : répartition par axe, treemap, matrice de gap, radar et grilles de maturité TRL, graphe de connaissances.",
   },
   {
     href: "/questions",
     titre: "Questions",
     desc: `Question libre sur le référentiel, et ${questions.length} questions-tests permanentes. Chaque réponse est donnée sous plusieurs écoles de pensée, jamais un verdict unique.`,
-  },
-  {
-    href: "/veille",
-    titre: "Veille et changelog",
-    desc: "File de propositions collectées automatiquement, revue humaine en lot, et journal daté de toutes les évolutions du corpus.",
   },
 ];
 
@@ -82,8 +73,7 @@ export default function HomePage() {
         <p className="mt-3 text-base leading-relaxed text-neutral-700 dark:text-neutral-300">
           Chaque fiche est sourcée, datée et porte un statut de fraîcheur. Sur tout sujet contesté, plusieurs écoles de
           pensée sont exposées côte à côte plutôt qu&apos;un verdict unique, et le degré de certitude est écrit — fait
-          vérifié, consensus, opinion majoritaire ou hypothèse prospective. Ce qui n&apos;est pas documenté est affiché
-          comme tel, jamais comblé.
+          vérifié, consensus, opinion majoritaire ou hypothèse prospective.
         </p>
         <p className="mt-4 flex flex-wrap gap-x-4 gap-y-2 text-sm">
           <Link
@@ -96,7 +86,7 @@ export default function HomePage() {
             href="/methodologie"
             className="rounded-md border border-neutral-300 px-4 py-2 font-medium transition hover:border-neutral-500 dark:border-neutral-700 dark:hover:border-neutral-500"
           >
-            Méthodologie et limites
+            Méthodologie
           </Link>
         </p>
       </section>
@@ -105,7 +95,7 @@ export default function HomePage() {
         <h2 id="chiffres" className="text-xs font-semibold uppercase tracking-wide text-neutral-500">
           Le référentiel aujourd&apos;hui — {totalFiches} fiches
         </h2>
-        <dl className="mt-3 grid grid-cols-2 gap-3 sm:grid-cols-3 lg:grid-cols-5">
+        <dl className="mt-3 grid grid-cols-2 gap-3 lg:grid-cols-4">
           {CHIFFRES.map((c) => (
             <Link
               key={c.libelle}
@@ -121,8 +111,7 @@ export default function HomePage() {
           ))}
         </dl>
         <p className="mt-2 text-xs text-neutral-500">
-          Chiffres recomptés depuis les données à chaque publication. Dernière vérification enregistrée dans le
-          corpus : {formatDateFr(derniereMiseAJourCorpus)}.
+          Dernière vérification enregistrée dans le corpus : {formatDateFr(derniereMiseAJourCorpus)}.
         </p>
       </section>
 
@@ -142,15 +131,6 @@ export default function HomePage() {
             </Link>
           ))}
         </div>
-      </section>
-
-      <section className="max-w-3xl rounded-lg border border-neutral-200 p-5 text-sm dark:border-neutral-800">
-        <h2 className="text-xs font-semibold uppercase tracking-wide text-neutral-500">Ce que ce site n&apos;est pas</h2>
-        <p className="mt-2 leading-relaxed text-neutral-600 dark:text-neutral-400">
-          Ni un classement, ni une prédiction. Les scénarios à 5 et 15-20 ans sont des perspectives nommées, portant
-          chacune son niveau de confiance ; aucune n&apos;est présentée comme acquise. Les données brutes sont
-          publiques : chaque fiche expose son JSON, et le corpus complet est versionné dans git.
-        </p>
       </section>
     </div>
   );

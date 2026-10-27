@@ -118,7 +118,7 @@ export default async function PageFicheHumaine({ params }: { params: Promise<{ i
             <Link href="/comparateur" className="underline">
               comparateur
             </Link>{" "}
-            permet de tester la combinaison et affiche son statut réel.
+            permet de tester la combinaison.
           </p>
         ) : (
           <ul className="grid gap-3 sm:grid-cols-2">

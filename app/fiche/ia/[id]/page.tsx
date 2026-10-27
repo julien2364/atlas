@@ -166,7 +166,7 @@ export default async function PageFicheIA({ params }: { params: Promise<{ id: st
             <Link href="/comparateur" className="underline">
               comparateur
             </Link>{" "}
-            permet de tester la combinaison et affiche son statut réel.
+            permet de tester la combinaison.
           </p>
         ) : (
           <ul className="grid gap-3 sm:grid-cols-2">
