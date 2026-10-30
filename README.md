@@ -12,7 +12,17 @@ npm run dev
 \`\`\`
 
 Ouvrir http://localhost:3000 — le site fonctionne dès maintenant sur les données d'amorçage
-(\`data/seed/*.json\`, 247 fiches humaines + 28 fiches IA), sans avoir besoin de Supabase configuré.
+(\`data/seed/*.json\`, 580 fiches humaines + 71 fiches IA + 201 fiches de gap au 31/10/2026),
+sans avoir besoin de Supabase configuré.
+
+## État du projet (31/10/2026 — audit AUD-P27)
+
+- Corpus : **852 fiches** (580 humaines, 71 IA, 201 gaps), lu par `scripts/verifier-changelog.mjs` le 31/10/2026.
+- Les 8 validateurs du dépôt passent (exit 0) : `valider-donnees` (0 erreur, 532 avertissements de sourçage :
+  sources primaires imprimées sans URL), `verifier-index`, `tisser-relations --verifier`, `verifier-changelog`,
+  `verifier-workflows`, `cliquet-qualite`.
+- Déploiement Vercel « atlas-humain-ia » actif mais protégé par l'authentification SSO Vercel (HTTP 302),
+  cohérent avec la diffusion interne du mégaprompt v1.1 §13.2.
 
 ## État du projet (05/09/2026)
 
