@@ -1,16 +1,16 @@
 # Pré-tri de la file de veille
 
-Dernier écartement appliqué : 2026-10-28.
+Dernier écartement appliqué : 2026-10-29.
 
-File complète : **3076** entrées, dont **2426** en attente d'arbitrage.
+File complète : **3140** entrées, dont **2483** en attente d'arbitrage.
 
-Le pré-tri écarte **7** propositions sur des critères mécaniques et en laisse **2419** à la relecture humaine, classées par fiabilité décroissante.
+Le pré-tri écarte **5** propositions sur des critères mécaniques et en laisse **2478** à la relecture humaine, classées par fiabilité décroissante.
 
 ## Écartées, et pourquoi
 
 | Motif | Nombre | Ce que ça veut dire |
 |---|---:|---|
-| `domaine_opaque` | 7 | Agrégateur masquant l'éditeur réel — source non attribuable |
+| `domaine_opaque` | 5 | Agrégateur masquant l'éditeur réel — source non attribuable |
 
 Aucun de ces motifs ne porte de jugement sur le fond : ils constatent qu'une proposition n'est pas citable, pas attribuable, ou déjà connue.
 
@@ -18,10 +18,10 @@ Aucun de ces motifs ne porte de jugement sur le fond : ils constatent qu'une pro
 
 | Score | Nombre |
 |---:|---:|
-| 0.9 | 209 |
-| 0.8 | 435 |
-| 0.6 | 105 |
-| 0.4 | 1670 |
+| 0.9 | 214 |
+| 0.8 | 444 |
+| 0.6 | 108 |
+| 0.4 | 1712 |
 
 ### Les trente premières
 
