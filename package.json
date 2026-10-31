@@ -32,7 +32,9 @@
     "verifier-relations": "node scripts/tisser-relations.mjs --verifier",
     "moissonner": "node scripts/moissonner.mjs",
     "questionnement": "node scripts/questionnement.mjs",
-    "mesurer": "node scripts/mesurer-reponses.mjs"
+    "mesurer": "node scripts/mesurer-reponses.mjs",
+    "test": "node --test tests/",
+    "verifier-mentions": "node scripts/verifier-mentions.mjs"
   },
   "dependencies": {
     "@supabase/supabase-js": "^2.115.0",
