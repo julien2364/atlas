@@ -1,0 +1,56 @@
+{
+  "scan": {
+    "id": "fixture-scan-0001",
+    "cible": "exemple.invalid",
+    "note": "FIXTURE FABRIQUÉE de toutes pièces pour les tests hors ligne (--fixture / --auto-test) — cf. data/fixtures/README.md. Aucun événement réel, aucun domaine réel. Ne doit jamais servir de source à une fiche."
+  },
+  "events": [
+    {
+      "type": "LINKED_URL",
+      "module": "sfp_dnsresolve",
+      "data": "https://arxiv.org/list/cs.LG/recent",
+      "confidence": 100,
+      "visibility": "Public"
+    },
+    {
+      "type": "LINKED_URL",
+      "module": "sfp_dnsresolve",
+      "data": "https://arxiv.org/list/cs.LG/recent",
+      "confidence": 100,
+      "visibility": "Public",
+      "note": "doublon volontaire du premier événement — le test vérifie le dédoublonnage"
+    },
+    {
+      "type": "LINKED_URL",
+      "module": "sfp_redirect",
+      "data": "https://news.google.com/",
+      "confidence": 90,
+      "visibility": "Public",
+      "note": "redirecteur opaque — le test vérifie le drapeau domaine_opaque et le score plancher"
+    },
+    {
+      "type": "LINKED_URL",
+      "module": "sfp_http",
+      "data": "https://exemple.invalid/page-introuvable",
+      "confidence": 50,
+      "visibility": "Public",
+      "note": "domaine .invalid réservé (RFC 2606) — domaine hors table, score par défaut attendu"
+    },
+    {
+      "type": "NETBLOCK_OWNED",
+      "module": "sfp_netblock",
+      "data": "192.0.2.0/24",
+      "confidence": 100,
+      "visibility": "Public",
+      "note": "pas une URL citable — le test vérifie qu'elle est ignorée"
+    },
+    {
+      "type": "EMAILADDR",
+      "module": "sfp_email",
+      "data": "contact@exemple.invalid",
+      "confidence": 100,
+      "visibility": "Public",
+      "note": "donnée personnelle potentielle — le test vérifie qu'elle est ignorée (jamais de donnée personnelle dans la file)"
+    }
+  ]
+}
