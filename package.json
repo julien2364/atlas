@@ -17,6 +17,7 @@
     "qualite-rag": "node scripts/comparer-qualite-rag.mjs",
     "livrer": "bash scripts/livrer-bundle.sh",
     "pretri-veille": "node scripts/pretrier-veille.mjs",
+    "veille-spiderfoot": "node scripts/spiderfoot.mjs",
     "rendement-veille": "node scripts/rendement-veille.mjs",
     "verifier-index": "node scripts/verifier-index.mjs",
     "cliquet": "node scripts/cliquet-qualite.mjs",
