@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import { CLAUSE_PROPRIETE_INTELLECTUELLE } from "@/lib/mentions";
 import { SITE_NAME, SITE_URL } from "@/lib/site-config";
 
 export const metadata: Metadata = {
@@ -60,6 +61,9 @@ export default function MentionsLegalesPage() {
 
       <section className="space-y-3">
         <h2 className="text-lg font-medium">Propriété intellectuelle et citation</h2>
+        <p className="leading-relaxed text-neutral-700 dark:text-neutral-300">
+          {CLAUSE_PROPRIETE_INTELLECTUELLE}
+        </p>
         <p className="leading-relaxed text-neutral-700 dark:text-neutral-300">
           Les fiches sont rédigées par l&apos;éditeur. Les sources citées appartiennent à leurs auteurs et éditeurs
           respectifs : les liens renvoient vers les documents d&apos;origine, jamais vers une copie hébergée ici. Toute

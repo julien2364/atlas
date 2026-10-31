@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { derniereMiseAJourCorpus, formatDateFr } from "@/lib/corpus";
+import { bandeauMarque } from "@/lib/mentions";
 
 /* `brut` : route d'API, donc lien HTML classique — <Link> tenterait une
    navigation côté client vers une route qui ne rend pas de page. */
@@ -37,6 +38,12 @@ export default function SiteFooter() {
             </li>
           ))}
         </ul>
+        {/* Bandeau marque du lot MENTIONS-P27 : texte unique dans lib/mentions.ts,
+            11 px, retour à la ligne naturel (une ligne sur bureau, propre sur
+            mobile), contraste AA via les neutres documentés dans globals.css. */}
+        <p className="w-full text-[11px] leading-relaxed text-neutral-500 dark:text-neutral-400">
+          {bandeauMarque()}
+        </p>
       </div>
     </footer>
   );
