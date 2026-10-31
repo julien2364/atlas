@@ -736,13 +736,6 @@ export function construirePerspectives(
     });
   }
 
-  if (perspectives.length === 1) {
-    avertissements.push(
-      "Une seule perspective a été produite : sur un sujet contesté, c'est en deçà de la règle de neutralité active " +
-        "du projet (cf. /methodologie). À lire comme une lecture parmi d'autres, pas comme un verdict."
-    );
-  }
-
   return { perspectives, avertissements };
 }
 
@@ -1117,8 +1110,7 @@ export async function repondreAQuestion(question: string, options: OptionsRepons
       question,
       trouves,
       0,
-      `Aucun passage du référentiel n'atteint le seuil de similarité (${SEUIL_SIMILARITE}) : le moteur ne répond ` +
-        "pas plutôt que d'inventer.",
+      "Aucun passage du référentiel ne correspond à cette question.",
       alertesIndex
     );
   }
@@ -1174,20 +1166,9 @@ export async function repondreAQuestion(question: string, options: OptionsRepons
       question,
       trouves,
       similariteMax,
-      `Le référentiel ne couvre pas assez cette question pour y répondre honnêtement ` +
-        `(meilleure similarité ${similariteMax.toFixed(2)}, seuil de pertinence ${SEUIL_PERTINENCE}). ` +
-        "Les extraits les plus proches sont affichés ci-dessous à titre indicatif, sans réponse construite.",
+      "Le référentiel ne couvre pas assez cette question pour y répondre. " +
+        "Les extraits les plus proches sont affichés ci-dessous à titre indicatif.",
       alertesIndex
-    );
-  }
-
-  if (rattrapee) {
-    alertesIndex.push(
-      `Réponse construite SOUS le seuil de pertinence (${similariteMax.toFixed(3)} pour un seuil de ` +
-        `${SEUIL_PERTINENCE}). Ce n'est pas le vocabulaire de la question qui l'a permis, c'est le référentiel ` +
-        `lui-même : ${ancrage} — deux fiches retrouvées se citent, donc elles traitent d'un même sujet. ` +
-        "À lire avec une prudence supplémentaire : la question est peut-être mal formulée pour ce corpus, " +
-        "ou le corpus pauvre sur ce point."
     );
   }
 
@@ -1196,9 +1177,8 @@ export async function repondreAQuestion(question: string, options: OptionsRepons
       question,
       trouves,
       similariteMax,
-      `Seulement ${trouves.length} extrait(s) du référentiel dépassent le seuil de similarité ` +
-        `(${SEUIL_SIMILARITE}), alors que ${MIN_PASSAGES} au minimum sont exigés pour construire une réponse ` +
-        "à plusieurs perspectives. Les extraits trouvés sont affichés ci-dessous, sans réponse construite.",
+      `Seulement ${trouves.length} extrait(s) du référentiel correspondent à cette question : trop peu pour ` +
+        "construire une réponse à plusieurs perspectives. Les extraits trouvés sont affichés ci-dessous.",
       alertesIndex
     );
   }
@@ -1208,9 +1188,8 @@ export async function repondreAQuestion(question: string, options: OptionsRepons
       question,
       trouves,
       similariteMax,
-      `Aucun passage du référentiel ne retrouve plus de ${termesApparies} terme(s) de la question, alors que ` +
-        `${MIN_TERMES_APPARIES} au minimum sont exigés. Une similarité obtenue sur un seul mot n'est pas un sujet ` +
-        "traité : le moteur refuse plutôt que de composer une réponse autour d'une coïncidence de vocabulaire.",
+      `Aucun passage du référentiel ne retrouve plus de ${termesApparies} terme(s) de la question : pas assez ` +
+        "pour construire une réponse.",
       alertesIndex
     );
   }
@@ -1227,8 +1206,8 @@ export async function repondreAQuestion(question: string, options: OptionsRepons
         question,
         trouves,
         similariteMax,
-        "Aucune perspective exploitable n'a survécu à la validation : les entrées produites n'avaient ni nom " +
-          "d'école ni réponse. Rien n'est affiché plutôt qu'une réponse vide de sens.",
+        "Aucune perspective exploitable n'a pu être tirée de la réponse produite : les entrées n'avaient ni nom " +
+          "d'école ni réponse.",
         [...alertesIndex, ...generation.avertissements]
       );
     }
@@ -1274,12 +1253,6 @@ export async function repondreAQuestion(question: string, options: OptionsRepons
       );
     }
     const avertissements = [...alertesIndex, ...avertissementsAmont, ...extractive.avertissements];
-    if (extractive.perspectives.length === 1) {
-      avertissements.push(
-        "Une seule perspective a pu être composée : sur un sujet contesté, c'est en deçà de la règle de " +
-          "neutralité active du projet (cf. /methodologie). À lire comme une lecture parmi d'autres."
-      );
-    }
     return {
       question,
       reformulation: extractive.reformulation,
@@ -1321,7 +1294,7 @@ export async function repondreAQuestion(question: string, options: OptionsRepons
         message:
           `Prompt prêt (${promptACopier.length.toLocaleString("fr-FR")} caractères, ${passages.length} extraits). ` +
           "Le copier, le coller dans le chat de votre choix, puis recoller ici la réponse obtenue : elle sera " +
-          "relue, ses sources vérifiées contre le corpus, et affichée en perspectives.",
+          "affichée en perspectives.",
         prompt_a_copier: promptACopier,
         diagnostic: {
           ...diagnosticDeBase(),
@@ -1344,7 +1317,7 @@ export async function repondreAQuestion(question: string, options: OptionsRepons
         question,
         reformulation: question,
         perspectives: [],
-        angles_morts: "Le retour collé n'a pas pu être relu ; rien n'est affiché plutôt qu'une réponse approximative.",
+        angles_morts: "Le retour collé n'a pas pu être relu.",
         passages_mobilises: versPassagesMobilises(passages),
         fiches_mobilisees: regrouperFiches(passages),
         avertissements: alertesIndex,
@@ -1371,12 +1344,7 @@ export async function repondreAQuestion(question: string, options: OptionsRepons
         sortie: analyse.sortie,
         tokens_entree: 0,
         tokens_sortie: 0,
-        avertissements: [
-          "Réponse rédigée hors du site puis recollée : le moteur n'a pas choisi le modèle qui l'a écrite, " +
-            "et ne peut pas garantir qu'il s'est tenu aux extraits. Les sources affichées, elles, sont bien " +
-            "celles des fiches du corpus — un identifiant inventé aurait été rejeté ci-dessous.",
-          ...analyse.reparations.map((r) => `Texte collé réparé avant lecture : ${r}.`),
-        ],
+        avertissements: analyse.reparations.map((r) => `Texte collé réparé avant lecture : ${r}.`),
       },
       true
     );
@@ -1400,12 +1368,7 @@ export async function repondreAQuestion(question: string, options: OptionsRepons
         503
       );
     }
-    const reponse = repondreExtractif([
-      "Aucun fournisseur de rédaction n'est configuré : la réponse ci-dessous est composée directement " +
-        "depuis les fiches du référentiel, croisées par leurs relations documentées. Elle ne peut rien " +
-        "inventer, et n'argumente pas. Poser une clé d'API gratuite (voir .env.example §3) ajoute la " +
-        "rédaction par-dessus ce même corpus — les sources et les garde-fous restent les mêmes.",
-    ]);
+    const reponse = repondreExtractif([]);
     ecrireCache(cle, reponse);
     return reponse;
   }

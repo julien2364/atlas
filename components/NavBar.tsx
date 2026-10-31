@@ -13,7 +13,6 @@ const links = [
   { href: "/comparateur", label: "Comparateur" },
   { href: "/questions", label: "Questions" },
   { href: "/controverses", label: "Controverses" },
-  { href: "/veille", label: "Veille" },
   { href: "/methodologie", label: "Méthodologie" },
 ];
 

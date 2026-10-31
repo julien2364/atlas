@@ -27,11 +27,9 @@ const PAGES_STATIQUES: { chemin: string; priorite: number }[] = [
   { chemin: "/cartographie", priorite: 0.8 },
   { chemin: "/questions", priorite: 0.7 },
   { chemin: "/controverses", priorite: 0.7 },
-  { chemin: "/veille", priorite: 0.5 },
   { chemin: "/methodologie", priorite: 0.5 },
   { chemin: "/mentions-legales", priorite: 0.2 },
   { chemin: "/confidentialite", priorite: 0.2 },
-  { chemin: "/megaprompt", priorite: 0.3 },
 ];
 
 export default function sitemap(): MetadataRoute.Sitemap {

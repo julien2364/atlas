@@ -247,7 +247,7 @@ export default function ComparateurClient({
 
             {gap.axes_prospectifs?.length ? (
               <div>
-                <dt className="font-medium text-neutral-500">Axes possibles (perspectives, pas des prédictions tranchées)</dt>
+                <dt className="font-medium text-neutral-500">Axes possibles</dt>
                 <dd className="mt-2 space-y-2">
                   {gap.axes_prospectifs.map((axe, i) => (
                     <div key={i} className="rounded border border-neutral-200 p-3 dark:border-neutral-800">
@@ -269,9 +269,8 @@ export default function ComparateurClient({
             {humaine?.nom} × {iaFiche?.nom} — paire non analysée
           </p>
           <p className="mt-2 text-neutral-600 dark:text-neutral-400">
-            Cette combinaison n&apos;a pas encore de fiche de gap : son statut réel est affiché plutôt qu&apos;un
-            contenu inventé. {gaps.length} paires sont documentées à ce jour ; les raccourcis ci-dessus listent celles
-            qui existent pour la capacité humaine sélectionnée.
+            Cette combinaison n&apos;a pas encore de fiche de gap. {gaps.length} paires sont documentées à ce jour ;
+            les raccourcis ci-dessus listent celles qui existent pour la capacité humaine sélectionnée.
           </p>
         </div>
       )}

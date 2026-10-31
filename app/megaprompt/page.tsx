@@ -7,6 +7,7 @@ export const metadata = {
   description:
     "La spécification maîtresse d'ATLAS Humain × IA, telle qu'elle est versionnée dans le dépôt : mission, référentiels, méthodologie, plan de production.",
   alternates: { canonical: "/megaprompt" },
+  robots: { index: false, follow: false },
 };
 
 export default function MegapromptPage() {
