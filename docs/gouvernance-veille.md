@@ -223,3 +223,13 @@ c'est A qui s'applique — le code n'auto-valide rien aujourd'hui, et ce lot n'a
   partir du **domaine de l'URL** de l'item plutôt que du nom du flux. C'est une correction de
   quelques lignes dans `veille-rss.mjs` qui rendrait le barème beaucoup plus honnête, et elle est
   utile quelle que soit l'option choisie.
+
+## 7. Le second canal de collecte (mégaprompt v1.1 §13.4)
+
+Le mégaprompt prévoit un **second canal de collecte**, en complément du premier. Son collecteur est
+nécessaire au fonctionnement de ce canal, mais il ne figure **pas dans ce dépôt public** : la règle 9
+interdit de publier ici le nom des sources de données ni la façon de procéder (imports, cadences,
+appariements, scripts, registres lus). Il est donc maintenu dans un **dépôt privé**, hors de ce dépôt.
+
+**Activation (décision Julien)** : le second canal reste inactif tant qu'il n'est pas activé depuis le
+dépôt privé. La règle absolue ne change pas : aucune fiche n'est modifiée sans validation humaine tracée.

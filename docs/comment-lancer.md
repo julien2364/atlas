@@ -1,21 +1,24 @@
 # COMMENT LANCER — Atlas Humain × IA
 
-Dernière mise à jour : 11/09/2026 — **828 fiches** (573 humaines, 54 IA, 201 gaps), toutes au statut `documente`. Huit portes de vérification automatiques, six workflows, et une chaîne d'autonomie en trois maillons. Couverture des attentes du mégaprompt mesurée : **63,7 %**.
+Dernière mise à jour : 31/10/2026 — **852 fiches** (580 humaines, 71 IA, 201 gaps), toutes au statut `documente`. Huit portes de vérification automatiques, huit workflows, et une chaîne d'autonomie en trois maillons. Couverture des attentes du mégaprompt mesurée : **100 %** (79 couverts + 1 couvert dans l'autre référentiel sur 80 items, `npm run detecter-lacunes`, 31/10/2026).
 
 ## État actuel du projet
 
 Le projet est un vrai projet Next.js fonctionnel, déjà buildé et testé (npm run build passe sans erreur),
 versionné dans git, poussé sur GitHub (`https://github.com/julien2364/atlas`) et **déployé en ligne sur Vercel**
 (voir section 0 ci-dessous).
-Le site tourne sur des données locales (`data/seed/*.json` : 573 fiches humaines + 54 fiches IA + 201 fiches de gap),
+Le site tourne sur des données locales (`data/seed/*.json` : 580 fiches humaines + 71 fiches IA + 201 fiches de gap),
 sans avoir besoin de Supabase configuré pour l'instant — pratique pour visualiser tout de suite.
-**Le corpus est intégralement documenté depuis le 06/09/2026 : 397/397 fiches au statut `documente`, plus aucune
-fiche `a_documenter`.** Chaque fiche porte ses sources et sa date de dernière vérification.
+**Le corpus est intégralement documenté depuis le 06/09/2026 : 852/852 fiches au statut `documente`, plus aucune
+fiche `a_documenter`** (chiffre re-vérifié le 31/10/2026 par `scripts/valider-donnees.mjs` : 0 erreur sur 852 fiches).
+Chaque fiche porte ses sources et sa date de dernière vérification.
 
-**Le corpus compte 828 fiches, toutes au statut `"documente"` (détail dans
-`docs/brief-delegation-documentation.md`).** Les chantiers ouverts restants sont : validation de la file de
-veille (file intégralement triée le 10/09 : 0 en attente), audit qualité de second passage, clé API d'embeddings,
-et audit de `questions.json`.
+**Le corpus compte 852 fiches, toutes au statut `"documente"` (détail dans
+`docs/brief-delegation-documentation.md`).** Les chantiers ouverts restants au 31/10/2026 : **tri humain de la
+file de veille** (3 199 entrées dont 2 533 en attente — l'interface `/veille` filtre et exporte les décisions),
+relecture éditoriale finale fiche par fiche, **clé API d'embeddings + projet Supabase** pour le RAG sémantique
+(À DÉCISION JULIEN), et la dette de sourcing (532 avertissements : sources primaires imprimées sans URL,
+dont 26 fiches d'organisations internationales — voir `docs/decisions-ouvertes-2026-09-07.md` §7).
 
 Le comparateur (`/comparateur`) est désormais un vrai sélecteur libre (n'importe quelle paire fiche humaine ×
 fiche IA), et la veille (`/veille`) tourne sur un pipeline RSS réel et testé, avec sa file de propositions
@@ -101,9 +104,9 @@ Puis ouvrir http://localhost:3000 — pages disponibles : accueil, /referentiel-
   Détail par fichier et méthode de recherche dans `docs/brief-delegation-documentation.md`.
 - **Audit QA (05/09/2026)** : 🔍 fait. Julien a jugé la profondeur insuffisante — deux agents indépendants (visiteur/utilisateur + vérificateur professionnel) ont audité le site en conditions réelles. Corrections appliquées : rendu de `/referentiel-humain` réparé (n'affichait jamais le contenu des fiches documentées), garde-fou anti-régression ajouté à `scripts/generate-seed.mjs` (un incident réel pendant l'audit a démontré le risque : le script a écrasé silencieusement 6 fiches documentées avant d'être corrigé et les données restaurées), axes vides comblés. Le projet est maintenant versionné dans git en local.
 - **Lot 4 — Moteur de gap analysis** : ✅ terminé (06/09/2026). 86 paires analysées (6 d'amorçage + 80 produites en lot), couvrant 86 capacités humaines distinctes croisées avec 37 fiches IA. Chaque fiche suit la méthodologie §5 du mégaprompt (apport et non-apport de l'IA, mécanisme, amélioration possible, mode d'interaction, substituabilité à 4 niveaux, scénarios présent/5 ans/15-20 ans) et le format enrichi du Lot 9 (sujet, sous-thèmes, axes de recherche, documents clés, trois axes prospectifs nommés avec niveau de confiance). Répartition de la substituabilité : 37 remplaçable avec supervision, 33 non remplaçable, 14 remplaçable avec une autre technologie nommée, 2 remplaçable totalement. Le sélecteur libre de `/comparateur` conserve son repli honnête « à documenter » pour les paires non analysées.
-- **Lot 5 — Veille autonome** : 🔄 fonctionnel. Script réel `scripts/veille-rss.mjs` testé en conditions réelles : interroge les sources RSS actives, déduplique, dépose les nouveautés dans une file de validation manuelle affichée sur `/veille`. **40 sources actives sur 41** au 11/09/2026, la seule inactive étant le canal Spiderfoot, jamais implémenté — quinze d'entre elles ajoutées après le double contrôle « le flux répond » ET « le flux parle des sujets du corpus ». Un scheduled task quotidien (7h UTC) a été créé pour lancer ce script automatiquement, mais **il n'est pas encore lié à ton ordinateur** (approbation à donner côté device pour qu'il puisse s'exécuter — sinon il tourne dans le vide). Spiderfoot (2e canal) reste à intégrer. Depuis le 06/09/2026 la boucle est complète : `scripts/appliquer-veille.mjs` traduit les propositions triées en patchs de fiche relisibles (publiés comme artefact du cron quotidien) et `scripts/appliquer-patchs.mjs` les applique après relecture, avec entrée de changelog et restauration automatique en cas d'échec de validation — voir section 7. Aucune fiche n'est mise à jour automatiquement — validation humaine requise.
-- **Lot 6 — Moteur Q&A/RAG** : ⛔ bloqué. Nécessite un projet Supabase (extension `vector`) + une clé API Anthropic configurés. Un compte Supabase existe déjà (org "julien2364's Org", plusieurs projets actifs) — reste à décider si Atlas Humain × IA doit avoir son propre projet Supabase dédié (coût à confirmer) ou être mutualisé dans un projet existant, décision qui te revient. Les 4 questions-tests restent répondues manuellement dans `/questions` en attendant.
-- **Lot 7 — Cartographies interactives** : 🔄 fonctionnel. `/cartographie` propose une répartition par axe cliquable (humain et IA, avec liste des fiches et statut) et une matrice de gap cliquable sur les paires documentées, colorée par catégorie de substituabilité. La heatmap TRL par secteur et la frise chronologique (section 8 du mégaprompt) restent en attente : aucune fiche IA n'a encore de données réelles d'usages sectoriels renseignées.
+- **Lot 5 — Veille autonome** : 🔄 fonctionnel. La veille alimente une file de propositions affichée sur `/veille` (filtres et export des décisions, aucune écriture serveur) ; chaque proposition est revue par un humain avant toute modification de fiche — **aucune fiche n'est mise à jour automatiquement** (boucle de bout en bout décrite section 7). Le second canal de collecte prévu au mégaprompt v1.1 §13.4 n'est pas activé : son collecteur, nécessaire au fonctionnement de ce canal, est maintenu dans un **dépôt privé** (règle 9 — voir `docs/gouvernance-veille.md` §7).
+- **Lot 6 — Moteur Q&A/RAG** : 🔄 moteur de réponse **local et extractif** en place (sans aucune clé : `lib/reponse-extractive.ts` + `/api/question`, index couvrant 100 % du corpus — 4 155 passages au 31/10/2026, contrôle `verifier-index`). Les **9 questions-tests** de `/questions` sont servies par ce moteur. Le RAG sémantique pgvector reste ⛔ bloqué : nécessite un projet Supabase (extension `vector`) + une clé API d'embeddings — **À DÉCISION JULIEN** (projet dédié ou mutualisé, coût à confirmer ; aucune migration SQL appliquée, `supabase/schema.sql` reste un fichier proposé).
+- **Lot 7 — Cartographies interactives** : ✅ fonctionnel au 31/10/2026. `/cartographie` propose la répartition par axe cliquable (humain et IA), la matrice de gap cliquable colorée par substituabilité, la **heatmap TRL** (fiche IA × secteur), la **heatmap axe × secteur**, le **graphe de connaissances** (fiche humaine ↔ gap ↔ fiche IA, 813 relations) et la **frise du changelog** — composants câblés dans `components/CartographieClient.tsx`.
 - **Lot 8 — QA finale/publication** : 🔄 outillé (06/09/2026). Deux scripts et un cron hebdomadaire industrialisent le contrôle qualité et l'anti-obsolescence — voir la section 6 ci-dessous. La relecture éditoriale finale fiche par fiche reste à faire.
 
 ## 3. Pour activer Supabase (quand la profondeur du contenu le justifiera)
