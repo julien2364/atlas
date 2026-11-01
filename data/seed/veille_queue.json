@@ -58454,5 +58454,509 @@
     "domaine_opaque": false,
     "statut": "en_attente",
     "created_at": "2026-10-31T13:14:29.442Z"
+  },
+  {
+    "id": "3c864c2c-b051-42d5-a2d6-c703c7121ed1",
+    "source_id": "anthropic-news",
+    "cible_type": "nouvelle_categorie",
+    "cible_id": null,
+    "contenu_propose": {
+      "titre": "[Claude] Anthropic confirme le bridage pour REA - Gamekyo.com",
+      "link": "https://news.google.com/rss/articles/CBMiW0FVX3lxTFBlaTlRUDYtMmczN3JZdURIT2VzcC1lZmVTNHFBSlF1R0h5QXY5YmR0QkZkRDNNV3dNNnMyZFZLLVJjTTFpM1B0bTR5UUxqUzN3RTNTeHhYR2NTWTg?oc=5",
+      "date": "2026-10-31T17:52:00.000Z",
+      "resume": "[Claude] Anthropic confirme le bridage pour REA  Gamekyo.com"
+    },
+    "score_fiabilite": 0.15,
+    "score_fiabilite_motif": "news.google.com est un redirecteur : l'url ne porte pas le domaine de l'éditeur réel, la fiabilité ne peut pas être établie sans ouvrir le lien",
+    "domaine_source": "news.google.com",
+    "domaine_opaque": true,
+    "statut": "en_attente",
+    "created_at": "2026-11-01T13:57:34.937Z"
+  },
+  {
+    "id": "861d1e39-24f3-4463-b882-b3c1a5560b3f",
+    "source_id": "imf-news",
+    "cible_type": "nouvelle_categorie",
+    "cible_id": null,
+    "contenu_propose": {
+      "titre": "Une croissance revue à la hausse, un chômage qui baisse et un déficit qui se résorbe... Contrairement à la France, le Royaume-Uni étonne par la résistance de son économie et reçoit les félicitations du FMI - BFM",
+      "link": "https://news.google.com/rss/articles/CBMi7AJBVV95cUxNMVBYbFo2X1lSejU2ZHBJRF9sQkF5ZmYza3NCMmxBQVNBM2JRTFBTMmZpM3VmaVFrY3dobW51YTBfR3djdWhWaFlmUktHNUVWbWRjSFd5Rm5adlEwTVlVYWs1SXNsb0Y1RlNZdG4yU2VTMW1RSXJacVljYngtNWZWdEZhejRjbG04cWVrYmhrRG1pcTR2c2ZFaGFtMWY0M3RWc0taNENfMHMzQWgxRGtRWUpvUFBtVXRONVRHeTE3NVRKcVozdjZsZjBON29ZcHdvMmxnYWdwbVpQczd2cVIxUjF6clUzWUNZZjBPUl80YlVmTjQxR0I1cExLQ0tacnNfWjM0ZXh3TXRFRFM3Ukw5TUxlUkl6TTlqRi1Cc3FwXzNjTVJVOGN2Q0hkaDhUNG1XMXBkMHl5aTB6enpOazdBdGxHN0d4VURIelFyN0JFX0ZhYVFGZnNLODdVY2QtSlNSaElpakdQSVVvZmFD?oc=5",
+      "date": "2026-11-01T08:18:54.000Z",
+      "resume": "Une croissance revue à la hausse, un chômage qui baisse et un déficit qui se résorbe... Contrairement à la France, le Royaume-Uni étonne par la résistance de son économie et reçoit les félicitations du FMI  BFM"
+    },
+    "score_fiabilite": 0.15,
+    "score_fiabilite_motif": "news.google.com est un redirecteur : l'url ne porte pas le domaine de l'éditeur réel, la fiabilité ne peut pas être établie sans ouvrir le lien",
+    "domaine_source": "news.google.com",
+    "domaine_opaque": true,
+    "statut": "en_attente",
+    "created_at": "2026-11-01T13:57:35.841Z"
+  },
+  {
+    "id": "fb00dd55-3e8b-4237-93ac-159ef352b334",
+    "source_id": "imf-news",
+    "cible_type": "nouvelle_categorie",
+    "cible_id": null,
+    "contenu_propose": {
+      "titre": "Comptes ponctionnés, retraits limités, l’économiste Marc Touati décrit le pire scénario pour votre épargne - Capital.fr",
+      "link": "https://news.google.com/rss/articles/CBMi6AFBVV95cUxNRmtBODZVVnBtTG9uTE5JMVhYSnE3YUk3UVl0RjFzbl9mV3l4WlR0VEQxbFZoN3JyeHB2R01vaVZVQzRseThFOE9FLV94THdwUUlWdzMzWFpVd2xCYU45UzdYb1cxZzdZWFJxOEZDcGRPckRnYlZoWWpDNnI0ckpHc3dzVEYwQy05U2Z0a293WGVZRHc0U21XRXVSdEdadUplUVZGOWdjMmVIMEswMm1DRmU0MFZrSnhlTl8tZlNUZk9NYUtLRy0xWlZSZ2hpTE1UbFBhVUpoRmdQNDExdnVKSWpMU2dlWFYy?oc=5",
+      "date": "2026-10-30T11:49:18.000Z",
+      "resume": "Comptes ponctionnés, retraits limités, l’économiste Marc Touati décrit le pire scénario pour votre épargne  Capital.fr"
+    },
+    "score_fiabilite": 0.15,
+    "score_fiabilite_motif": "news.google.com est un redirecteur : l'url ne porte pas le domaine de l'éditeur réel, la fiabilité ne peut pas être établie sans ouvrir le lien",
+    "domaine_source": "news.google.com",
+    "domaine_opaque": true,
+    "statut": "en_attente",
+    "created_at": "2026-11-01T13:57:35.841Z"
+  },
+  {
+    "id": "cacb7110-50f7-432d-b47d-2ece89c9ce71",
+    "source_id": "oecd-news",
+    "cible_type": "nouvelle_categorie",
+    "cible_id": null,
+    "contenu_propose": {
+      "titre": "Fiscalité : la France classée dernière de l’OCDE en 2026, derrière la Colombie - Cryptoast",
+      "link": "https://news.google.com/rss/articles/CBMihwFBVV95cUxQYkprUEJmTW1SVkNwbjlKYmd6MTlJQk13QkpSZ2dGeGRrOUN6blZJSmNZdVdUSTl0Wm1RNk55WTdQZGZoUTFEcmdaaHU0MGhwQXpxay04N1E2Vmk5aUlSRXZVa1FQM2x5SjJpTnYzdTVISmdaQVAzbk1ZNERhRXBOT0tyTU9Hazg?oc=5",
+      "date": "2026-10-28T16:33:47.000Z",
+      "resume": "Fiscalité : la France classée dernière de l’OCDE en 2026, derrière la Colombie  Cryptoast"
+    },
+    "score_fiabilite": 0.15,
+    "score_fiabilite_motif": "news.google.com est un redirecteur : l'url ne porte pas le domaine de l'éditeur réel, la fiabilité ne peut pas être établie sans ouvrir le lien",
+    "domaine_source": "news.google.com",
+    "domaine_opaque": true,
+    "statut": "en_attente",
+    "created_at": "2026-11-01T13:57:36.302Z"
+  },
+  {
+    "id": "1788f0f7-e7f5-4762-b786-8b704f3b3185",
+    "source_id": "ft-marches",
+    "cible_type": "nouvelle_categorie",
+    "cible_id": null,
+    "contenu_propose": {
+      "titre": "Binance restarts customer withdrawals after $6.3bn heist",
+      "link": "https://www.ft.com/content/1d4dd7b2-9dee-433b-ac2a-e8022af1dd07?syn-25a6b1a6=1",
+      "date": "2026-11-01T12:16:57.000Z",
+      "resume": "Crypto exchange to reimburse users whose assets were stolen in hack blamed on North Korea-linked group"
+    },
+    "score_fiabilite": 0.4,
+    "score_fiabilite_motif": "ft.com — presse généraliste ou spécialisée",
+    "domaine_source": "ft.com",
+    "domaine_opaque": false,
+    "statut": "en_attente",
+    "created_at": "2026-11-01T13:57:44.103Z"
+  },
+  {
+    "id": "7b913c8f-c4b6-4de2-89cd-19c3b0e217a3",
+    "source_id": "ft-marches",
+    "cible_type": "nouvelle_categorie",
+    "cible_id": null,
+    "contenu_propose": {
+      "titre": "US critical minerals push delivers a gold rush — for Washington lobbyists",
+      "link": "https://www.ft.com/content/e89a420d-3a93-402f-ab0d-461476cf23ce?syn-25a6b1a6=1",
+      "date": "2026-11-01T12:00:01.000Z",
+      "resume": "Billions in government backing have produced a flurry of deals but little increase in domestic production"
+    },
+    "score_fiabilite": 0.4,
+    "score_fiabilite_motif": "ft.com — presse généraliste ou spécialisée",
+    "domaine_source": "ft.com",
+    "domaine_opaque": false,
+    "statut": "en_attente",
+    "created_at": "2026-11-01T13:57:44.103Z"
+  },
+  {
+    "id": "ea639187-e855-48e7-923c-bc1b7dfdfcff",
+    "source_id": "ft-marches",
+    "cible_type": "nouvelle_categorie",
+    "cible_id": null,
+    "contenu_propose": {
+      "titre": "Quant hedge fund to spin out of Tudor in record $9bn launch",
+      "link": "https://www.ft.com/content/8ee19897-1d15-4dd7-8ca8-162c4ea22b3a?syn-25a6b1a6=1",
+      "date": "2026-11-01T05:00:18.000Z",
+      "resume": "Xantium to separate from company controlled by billionaire Paul Tudor Jones II next year"
+    },
+    "score_fiabilite": 0.4,
+    "score_fiabilite_motif": "ft.com — presse généraliste ou spécialisée",
+    "domaine_source": "ft.com",
+    "domaine_opaque": false,
+    "statut": "en_attente",
+    "created_at": "2026-11-01T13:57:44.103Z"
+  },
+  {
+    "id": "2c3c1879-0303-42a2-a9a1-d92b05de11f5",
+    "source_id": "ft-marches",
+    "cible_type": "nouvelle_categorie",
+    "cible_id": null,
+    "contenu_propose": {
+      "titre": "Oil majors resist pressure to invest in new refineries as fuel prices keep rising",
+      "link": "https://www.ft.com/content/4d63f08d-3556-4d84-8e1d-40f866741d15?syn-25a6b1a6=1",
+      "date": "2026-11-01T05:00:18.000Z",
+      "resume": "Conflicts in the Middle East and Ukraine have slashed fuel production capacity and sent margins way up"
+    },
+    "score_fiabilite": 0.4,
+    "score_fiabilite_motif": "ft.com — presse généraliste ou spécialisée",
+    "domaine_source": "ft.com",
+    "domaine_opaque": false,
+    "statut": "en_attente",
+    "created_at": "2026-11-01T13:57:44.103Z"
+  },
+  {
+    "id": "1326b865-8846-4756-bb76-3f05ea566fe5",
+    "source_id": "ft-marches",
+    "cible_type": "nouvelle_categorie",
+    "cible_id": null,
+    "contenu_propose": {
+      "titre": "Bond investors sit out ‘most consequential’ US midterm elections in years",
+      "link": "https://www.ft.com/content/937308d7-aa2e-4dac-b19b-423d83bc1253?syn-25a6b1a6=1",
+      "date": "2026-11-01T05:00:17.000Z",
+      "resume": "Big fund managers are pressing ‘pause’ as vote and economic data releases loom"
+    },
+    "score_fiabilite": 0.4,
+    "score_fiabilite_motif": "ft.com — presse généraliste ou spécialisée",
+    "domaine_source": "ft.com",
+    "domaine_opaque": false,
+    "statut": "en_attente",
+    "created_at": "2026-11-01T13:57:44.103Z"
+  },
+  {
+    "id": "42f251ed-ad1e-438b-9397-3907587ffda7",
+    "source_id": "wsj-marches",
+    "cible_type": "nouvelle_categorie",
+    "cible_id": null,
+    "contenu_propose": {
+      "titre": "Binance Resumes Withdrawals After Suffering Biggest-Ever Crypto Hack",
+      "link": "https://www.wsj.com/finance/currencies/binance-resumes-withdrawals-after-suffering-biggest-ever-crypto-hack-11d1900f?mod=rss_markets_main",
+      "date": "2026-11-01T12:03:00.000Z",
+      "resume": "The exchange says it has replaced roughly 95% of the stolen assets thus far."
+    },
+    "score_fiabilite": 0.4,
+    "score_fiabilite_motif": "wsj.com — presse généraliste ou spécialisée",
+    "domaine_source": "wsj.com",
+    "domaine_opaque": false,
+    "statut": "en_attente",
+    "created_at": "2026-11-01T13:57:44.216Z"
+  },
+  {
+    "id": "1731525a-4ced-482a-9799-db080d4f065a",
+    "source_id": "wsj-marches",
+    "cible_type": "nouvelle_categorie",
+    "cible_id": null,
+    "contenu_propose": {
+      "titre": "Investors Are Betting a Blue Wave Will Help Hospitals. Don’t Count on It.",
+      "link": "https://www.wsj.com/health/healthcare/investors-are-betting-a-blue-wave-will-help-hospitals-dont-count-on-it-411ab127?mod=rss_markets_main",
+      "date": "2026-11-01T10:30:00.000Z",
+      "resume": "Markets are anticipating a reversal of Trump’s Medicaid cuts. That may be easier said than done."
+    },
+    "score_fiabilite": 0.4,
+    "score_fiabilite_motif": "wsj.com — presse généraliste ou spécialisée",
+    "domaine_source": "wsj.com",
+    "domaine_opaque": false,
+    "statut": "en_attente",
+    "created_at": "2026-11-01T13:57:44.216Z"
+  },
+  {
+    "id": "3e1d72d2-5a78-485d-8d00-83542850912d",
+    "source_id": "wsj-marches",
+    "cible_type": "nouvelle_categorie",
+    "cible_id": null,
+    "contenu_propose": {
+      "titre": "AI Investors Are Racing to Get Insurance on the Biggest Market Bet in History",
+      "link": "https://www.wsj.com/finance/stocks/ai-investors-are-racing-to-get-insurance-on-the-biggest-market-bet-in-history-a60e296f?mod=rss_markets_main",
+      "date": "2026-11-01T00:00:00.000Z",
+      "resume": "With trillions of dollars riding on the artificial-intelligence trade, investors, traders and even tech executives are hunting for high-stakes protection."
+    },
+    "score_fiabilite": 0.4,
+    "score_fiabilite_motif": "wsj.com — presse généraliste ou spécialisée",
+    "domaine_source": "wsj.com",
+    "domaine_opaque": false,
+    "statut": "en_attente",
+    "created_at": "2026-11-01T13:57:44.216Z"
+  },
+  {
+    "id": "3d3f6492-608f-475d-bfa3-d020ff87ef22",
+    "source_id": "le-monde-economie",
+    "cible_type": "nouvelle_categorie",
+    "cible_id": null,
+    "contenu_propose": {
+      "titre": "Au Japon, les chaussettes Uniqlo, symboles des inquiétudes face à l’augmentation des prix",
+      "link": "https://www.lemonde.fr/economie/article/2026/11/01/au-japon-les-chaussettes-uniqlo-symboles-des-inquietudes-face-a-l-augmentation-des-prix_6804306_3234.html",
+      "date": "2026-11-01T13:00:09.000Z",
+      "resume": "L’enseigne d’habillement bon marché a renoncé à augmenter ses tarifs dans ses magasins de l’Archipel. Une décision emblématique du débat créé dans le pays par le retour de l’inflation depuis le début des années 2020."
+    },
+    "score_fiabilite": 0.4,
+    "score_fiabilite_motif": "lemonde.fr — presse généraliste ou spécialisée",
+    "domaine_source": "lemonde.fr",
+    "domaine_opaque": false,
+    "statut": "en_attente",
+    "created_at": "2026-11-01T13:57:44.485Z"
+  },
+  {
+    "id": "66e7d866-cf18-4749-9f2b-2bf1371f392b",
+    "source_id": "le-monde-economie",
+    "cible_type": "nouvelle_categorie",
+    "cible_id": null,
+    "contenu_propose": {
+      "titre": "Après un sinistre, le long parcours des assurés pour obtenir une indemnisation",
+      "link": "https://www.lemonde.fr/argent/article/2026/11/01/apres-un-sinistre-le-long-parcours-des-assures-pour-obtenir-une-indemnisation_6804089_1657007.html",
+      "date": "2026-11-01T06:00:01.000Z",
+      "resume": "Incendie, fissures liées au retrait-gonflement des argiles… Deux témoignages, une victime et un expert assurés, illustrent les difficultés rencontrées par les assurés pour faire valoir leurs droits et l’importance de connaître ses garanties de contrat."
+    },
+    "score_fiabilite": 0.4,
+    "score_fiabilite_motif": "lemonde.fr — presse généraliste ou spécialisée",
+    "domaine_source": "lemonde.fr",
+    "domaine_opaque": false,
+    "statut": "en_attente",
+    "created_at": "2026-11-01T13:57:44.485Z"
+  },
+  {
+    "id": "5fcd39a2-ba67-48f4-9d5e-509e79c79e26",
+    "source_id": "le-monde-economie",
+    "cible_type": "nouvelle_categorie",
+    "cible_id": null,
+    "contenu_propose": {
+      "titre": "L’attrait des jeunes pour le fitness et la musculation porte le succès commercial des salles de sport",
+      "link": "https://www.lemonde.fr/economie/article/2026/11/01/l-attrait-des-jeunes-pour-le-fitness-et-la-musculation-porte-le-succes-commercial-des-salles-de-sport_6804018_3234.html",
+      "date": "2026-11-01T04:40:45.000Z",
+      "resume": "Portées par des tarifs accessibles et par l’engouement des 16-25 ans, les salles de sport connaissent une croissance impressionnante. De quoi aiguiser l’appétit des investisseurs."
+    },
+    "score_fiabilite": 0.4,
+    "score_fiabilite_motif": "lemonde.fr — presse généraliste ou spécialisée",
+    "domaine_source": "lemonde.fr",
+    "domaine_opaque": false,
+    "statut": "en_attente",
+    "created_at": "2026-11-01T13:57:44.485Z"
+  },
+  {
+    "id": "cbef1d25-089b-4c07-89e5-8f37fb21c6f6",
+    "source_id": "le-monde-economie",
+    "cible_type": "nouvelle_categorie",
+    "cible_id": null,
+    "contenu_propose": {
+      "titre": "« Les gens dépensent avec précaution » : en Chine, les ménages préoccupés par les incertitudes économiques",
+      "link": "https://www.lemonde.fr/economie/article/2026/11/01/les-gens-depensent-avec-precaution-en-chine-les-menages-preoccupes-par-les-incertitudes-economiques_6804017_3234.html",
+      "date": "2026-11-01T04:39:25.000Z",
+      "resume": "Echaudés par la crise de l’immobilier et par des tensions sur les salaires, de nombreux Chinois rognent sur les dépenses jugées superflues. Mais pas question pour autant de transiger sur l’éducation des enfants, pourtant de plus en plus onéreuse."
+    },
+    "score_fiabilite": 0.4,
+    "score_fiabilite_motif": "lemonde.fr — presse généraliste ou spécialisée",
+    "domaine_source": "lemonde.fr",
+    "domaine_opaque": false,
+    "statut": "en_attente",
+    "created_at": "2026-11-01T13:57:44.485Z"
+  },
+  {
+    "id": "0dd2205b-46d1-44c5-bc5f-8716e8e409e7",
+    "source_id": "le-monde-economie",
+    "cible_type": "nouvelle_categorie",
+    "cible_id": null,
+    "contenu_propose": {
+      "titre": "Assurance : comment faire face à un sinistre important ?",
+      "link": "https://www.lemonde.fr/argent/article/2026/11/01/assurance-comment-faire-face-a-un-sinistre-important_6804013_1657007.html",
+      "date": "2026-11-01T04:34:42.000Z",
+      "resume": "Les incendies, les inondations ou encore le retrait-gonflement des argiles sont des sinistres aux conséquences importantes, qui nécessitent des démarches spécifiques que les assurés ne maîtrisent pas toujours. Un expert indépendant peut les aider à défendre leurs intérêts."
+    },
+    "score_fiabilite": 0.4,
+    "score_fiabilite_motif": "lemonde.fr — presse généraliste ou spécialisée",
+    "domaine_source": "lemonde.fr",
+    "domaine_opaque": false,
+    "statut": "en_attente",
+    "created_at": "2026-11-01T13:57:44.485Z"
+  },
+  {
+    "id": "d001c738-54bd-45ba-8025-d62af1e768c2",
+    "source_id": "la-tribune-actualites",
+    "cible_type": "nouvelle_categorie",
+    "cible_id": null,
+    "contenu_propose": {
+      "titre": "Temu, Shein, AliExpress... une nouvelle taxe de deux euros appliquée aux produits importés dans l'Union européenne",
+      "link": "https://www.latribune.fr/article/economie/54696279961081/temu-shein-aliexpress-une-nouvelle-taxe-de-deux-euros-appliquee-aux-produits-importes-dans-lunion-europeenne",
+      "date": "2026-11-01T10:22:32.000Z",
+      "resume": "Pour faire face à l'afflux de produits achetés sur internet, notamment via des plateformes chinoises, l'Union européenne instaure, depuis ce dimanche, des frais de traitement de deux euros, qui viendront s'ajouter à la taxe de trois euros déjà prévue sur les petits colis."
+    },
+    "score_fiabilite": 0.4,
+    "score_fiabilite_motif": "latribune.fr — domaine absent de la table : score par défaut prudent, sous le seuil de source primaire",
+    "domaine_source": "latribune.fr",
+    "domaine_opaque": false,
+    "statut": "en_attente",
+    "created_at": "2026-11-01T13:57:44.649Z"
+  },
+  {
+    "id": "2a3ceb13-85fe-40a8-8a5e-e40eede4045f",
+    "source_id": "la-tribune-actualites",
+    "cible_type": "nouvelle_categorie",
+    "cible_id": null,
+    "contenu_propose": {
+      "titre": "Portrait : Aline Decadi, ingénieure système de lancement",
+      "link": "https://air-cosmos.latribune.fr/article/espace/72065960366024/portrait-aline-decadi-ingenieure-systeme-de-lancement",
+      "date": "2026-11-01T11:00:22.000Z",
+      "resume": "Une défenseuse de la science partagée et accessible à tous"
+    },
+    "score_fiabilite": 0.4,
+    "score_fiabilite_motif": "air-cosmos.latribune.fr — domaine absent de la table : score par défaut prudent, sous le seuil de source primaire",
+    "domaine_source": "air-cosmos.latribune.fr",
+    "domaine_opaque": false,
+    "statut": "en_attente",
+    "created_at": "2026-11-01T13:57:44.649Z"
+  },
+  {
+    "id": "c176af22-d394-46b6-9507-11f97484f8f2",
+    "source_id": "la-tribune-actualites",
+    "cible_type": "nouvelle_categorie",
+    "cible_id": null,
+    "contenu_propose": {
+      "titre": "Piratage de Binance : le FBI accuse la Corée du Nord du « casse du siècle »",
+      "link": "https://www.latribune.fr/article/economie/international/22800979304859/piratage-de-binance-le-fbi-accuse-la-coree-du-nord-du-casse-du-siecle",
+      "date": "2026-11-01T08:22:53.000Z",
+      "resume": "La police fédérale américaine a affirmé que le groupe de pirates informatiques nord-coréens TraiderTraitor est à l'origine du vol record de 6,3 millions de dollars. Binance, de son côté, a annoncé la reprise des retraits ce dimanche."
+    },
+    "score_fiabilite": 0.4,
+    "score_fiabilite_motif": "latribune.fr — domaine absent de la table : score par défaut prudent, sous le seuil de source primaire",
+    "domaine_source": "latribune.fr",
+    "domaine_opaque": false,
+    "statut": "en_attente",
+    "created_at": "2026-11-01T13:57:44.649Z"
+  },
+  {
+    "id": "c6fb87f9-df0a-4d9b-bd2a-593e7a5e8f3f",
+    "source_id": "la-tribune-actualites",
+    "cible_type": "nouvelle_categorie",
+    "cible_id": null,
+    "contenu_propose": {
+      "titre": "Mobilisation du 31 octobre : Comment les forces de l’ordre ont repris le dessus sur les casseurs",
+      "link": "https://www.latribune.fr/article/la-tribune-dimanche/politique/18881222527321/mobilisation-du-31-octobre-comment-les-forces-de-l-ordre-ont-repris-le-dessus-sur-les-casseurs",
+      "date": "2026-10-31T22:22:48.000Z",
+      "resume": "Une stratégie particulièrement ferme a permis hier d'éviter que les scènes du 17 octobre ne se reproduisent."
+    },
+    "score_fiabilite": 0.4,
+    "score_fiabilite_motif": "latribune.fr — domaine absent de la table : score par défaut prudent, sous le seuil de source primaire",
+    "domaine_source": "latribune.fr",
+    "domaine_opaque": false,
+    "statut": "en_attente",
+    "created_at": "2026-11-01T13:57:44.649Z"
+  },
+  {
+    "id": "4c83fe33-9c26-4892-8299-c7213313fccf",
+    "source_id": "la-tribune-actualites",
+    "cible_type": "nouvelle_categorie",
+    "cible_id": null,
+    "contenu_propose": {
+      "titre": "« Il ne faut pas renoncer, sinon, c’est la fin de la démocratie » : malgré des cortèges moins fournis, la jeunesse mobilisée",
+      "link": "https://www.latribune.fr/article/la-tribune-dimanche/politique/11159201424339/il-ne-faut-pas-renoncer-sinon-c-est-la-fin-de-la-democratie-malgre-des-corteges-moins-fournis-la-jeunesse-mobilisee",
+      "date": "2026-10-31T22:09:55.000Z",
+      "resume": "Malgré une mobilisation en baisse, au moins 300.000 manifestants dont 70.000 à Paris ont défilé contre la vie chère. Avec beaucoup d’arrière-pensées politiques."
+    },
+    "score_fiabilite": 0.4,
+    "score_fiabilite_motif": "latribune.fr — domaine absent de la table : score par défaut prudent, sous le seuil de source primaire",
+    "domaine_source": "latribune.fr",
+    "domaine_opaque": false,
+    "statut": "en_attente",
+    "created_at": "2026-11-01T13:57:44.649Z"
+  },
+  {
+    "id": "343cdacc-a2eb-4be8-a56b-313a3a0bee08",
+    "source_id": "euronews-business",
+    "cible_type": "nouvelle_categorie",
+    "cible_id": null,
+    "contenu_propose": {
+      "titre": "Selon le patron de Kärcher, l'Europe traverse une \"parfaite tempête économique\" ",
+      "link": "https://fr.euronews.com/2026/11/01/selon-le-patron-de-karcher-leurope-traverse-une-parfaite-tempete-economique",
+      "date": "2026-11-01T10:02:16.000Z",
+      "resume": "Le PDG de Kärcher avertit que l'Europe et l'Allemagne risquent la désindustrialisation et réclame moins de bureaucratie, plus de travail et une politique commerciale ferme de l'UE envers la Chine et les États-Unis."
+    },
+    "score_fiabilite": 0.4,
+    "score_fiabilite_motif": "fr.euronews.com — domaine absent de la table : score par défaut prudent, sous le seuil de source primaire",
+    "domaine_source": "fr.euronews.com",
+    "domaine_opaque": false,
+    "statut": "en_attente",
+    "created_at": "2026-11-01T13:57:45.135Z"
+  },
+  {
+    "id": "a0ada0ca-85e9-471e-992d-d75df0f6d87b",
+    "source_id": "guardian-economie",
+    "cible_type": "nouvelle_categorie",
+    "cible_id": null,
+    "contenu_propose": {
+      "titre": "The measure slipped into UK budget that could protect spending on children, youth and rough sleeping | Heather Stewart",
+      "link": "https://www.theguardian.com/business/2026/nov/01/pdel-preventative-departmental-expenditure-limit-",
+      "date": "2026-11-01T12:36:48.000Z",
+      "resume": "PDEL, which will ringfence money for preventive policies, marks a welcome and potentially consequential addition\nJohn Healey’s debut budget was far from a blockbuster, but it may come to be remembered for the birth of a plucky new character in the tax and spend universe – little PDEL.\nIt may not have the charm of Disney’s Wall-E, but PDEL (pronounced P-Del), or preventative departmental expenditur"
+    },
+    "score_fiabilite": 0.4,
+    "score_fiabilite_motif": "theguardian.com — presse généraliste ou spécialisée",
+    "domaine_source": "theguardian.com",
+    "domaine_opaque": false,
+    "statut": "en_attente",
+    "created_at": "2026-11-01T13:57:46.045Z"
+  },
+  {
+    "id": "a39f6c37-adf2-4aeb-8870-24d992ef671a",
+    "source_id": "guardian-economie",
+    "cible_type": "nouvelle_categorie",
+    "cible_id": null,
+    "contenu_propose": {
+      "titre": "The US-China trade war seems to have subsided – but the sense of calm is misleading",
+      "link": "https://www.theguardian.com/world/2026/nov/01/us-china-trade-war-trump-xi",
+      "date": "2026-11-01T12:00:12.000Z",
+      "resume": "A truce has cooled the trade conflict, but neither country has done anything to limit the outbreak of new hostilities\nDonald Trump’s trade wars have largely fallen off the headlines. Fears of new tariffs flare up from time to time when the US president goes off the rails – for instance, threatening to end US trade with countries with which it has a deficit unless the Federal Reserve cuts interest "
+    },
+    "score_fiabilite": 0.4,
+    "score_fiabilite_motif": "theguardian.com — presse généraliste ou spécialisée",
+    "domaine_source": "theguardian.com",
+    "domaine_opaque": false,
+    "statut": "en_attente",
+    "created_at": "2026-11-01T13:57:46.045Z"
+  },
+  {
+    "id": "ca1e7091-2c00-4a43-8bb6-6d18cbda8b34",
+    "source_id": "guardian-economie",
+    "cible_type": "nouvelle_categorie",
+    "cible_id": null,
+    "contenu_propose": {
+      "titre": "Affordability top of mind for voters in final sprint to midterms: ‘I have to pick between medicine or groceries’",
+      "link": "https://www.theguardian.com/us-news/2026/nov/01/affordability-voters-final-sprint-midterms",
+      "date": "2026-11-01T12:00:11.000Z",
+      "resume": "Cost of living has loomed over this election cycle as workers and unions champion candidates fighting for higher wages and tackling rising prices\nFor millions of Americans heading to the polls on Tuesday, affordability is a constant and worsening issue, and it’s been a prevailing concern this election cycle.\nIn Lorain county, Ohio, Gina Jones and her co-workers at the Lorain county job and family "
+    },
+    "score_fiabilite": 0.4,
+    "score_fiabilite_motif": "theguardian.com — presse généraliste ou spécialisée",
+    "domaine_source": "theguardian.com",
+    "domaine_opaque": false,
+    "statut": "en_attente",
+    "created_at": "2026-11-01T13:57:46.045Z"
+  },
+  {
+    "id": "30e3557e-c0f6-4f7e-8b5a-69226eaa835c",
+    "source_id": "guardian-economie",
+    "cible_type": "nouvelle_categorie",
+    "cible_id": null,
+    "contenu_propose": {
+      "titre": "Why politicians chasing economic growth is a lie | Radical Thinking with Aditya Chakrabortty – podcast",
+      "link": "https://www.theguardian.com/news/audio/2026/nov/01/why-politicians-chasing-economic-growth-is-a-lie-radical-thinking-with-aditya-chakrabortty-podcast",
+      "date": "2026-11-01T08:00:07.000Z",
+      "resume": "What if someone told you the truth about the economy? For years, governments have tried spending more, spending less, cutting red tape, Brexit, levelling up – and still failed to increase growth per person in the UK. So what’s the lesson from the great British fairytale? On the latest episode of Radical Thinking with Aditya Chakrabortty, rebel economists Karel Williams and Sukhdev Johal explain wh"
+    },
+    "score_fiabilite": 0.4,
+    "score_fiabilite_motif": "theguardian.com — presse généraliste ou spécialisée",
+    "domaine_source": "theguardian.com",
+    "domaine_opaque": false,
+    "statut": "en_attente",
+    "created_at": "2026-11-01T13:57:46.045Z"
+  },
+  {
+    "id": "68f66955-0332-44b4-98fd-a163e9bf0460",
+    "source_id": "guardian-economie",
+    "cible_type": "nouvelle_categorie",
+    "cible_id": null,
+    "contenu_propose": {
+      "titre": "Is the government really on an ‘out-of-control’ spending splurge? It’s complicated",
+      "link": "https://www.theguardian.com/business/2026/nov/01/is-the-government-really-on-an-out-of-control-spending-splurge-its-complicated",
+      "date": "2026-10-31T23:00:03.000Z",
+      "resume": "Defence, the NDIS and health responsible for much of increased government outlays and treasurer Jim Chalmers has few levers to pull\n\nGet our daily political email, free app or daily news podcast\n\n“Will the prime minister acknowledge reality … and admit Labor’s out-of-control spending is forcing families and small businesses to pay more for everything?”\nThat was the opposition leader, Angus Taylor,"
+    },
+    "score_fiabilite": 0.4,
+    "score_fiabilite_motif": "theguardian.com — presse généraliste ou spécialisée",
+    "domaine_source": "theguardian.com",
+    "domaine_opaque": false,
+    "statut": "en_attente",
+    "created_at": "2026-11-01T13:57:46.045Z"
   }
 ]
