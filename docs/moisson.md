@@ -1,8 +1,8 @@
 # Moisson de sources
 
-Dernier passage : **2026-11-03** · fonds interrogés : openalex, crossref, arxiv, hal, doaj, europepmc.
+Dernier passage : **2026-11-04** · fonds interrogés : openalex, crossref, arxiv, hal, doaj, europepmc.
 
-**0 propositions** pour **10 fiches**, écrites dans `../../_temp/moisson-2026-11-03.json`.
+**0 propositions** pour **10 fiches**, écrites dans `../../_temp/moisson-2026-11-04.json`.
 
 Ce fichier ne modifie aucune fiche. Pour en ajouter une partie au corpus : remplir le champ
 `retenues` de chaque bloc avec les clés choisies, puis lancer
@@ -23,7 +23,13 @@ Ce fichier ne modifie aucune fiche. Pour en ajouter une partie au corpus : rempl
 
 ## Fonds indisponibles sur ce passage
 
+- openalex / alliance-solaire-internationale-asi : HTTP 429
+- openalex / anarchisme : HTTP 429
+- openalex / black-scholes : HTTP 429
+- openalex / brics : HTTP 429
 - doaj / brics : This operation was aborted
+- openalex / capitalisme-de-marche-libre-laissez-faire : HTTP 429
+- openalex / cei : HTTP 429
 
 ## Ce que la moisson ne fait pas
 
