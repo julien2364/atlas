@@ -1,16 +1,16 @@
 # Pré-tri de la file de veille
 
-Dernier écartement appliqué : 2026-11-02.
+Dernier écartement appliqué : 2026-11-03.
 
-File complète : **3365** entrées, dont **2689** en attente d'arbitrage.
+File complète : **3437** entrées, dont **2757** en attente d'arbitrage.
 
-Le pré-tri écarte **4** propositions sur des critères mécaniques et en laisse **2685** à la relecture humaine, classées par fiabilité décroissante.
+Le pré-tri écarte **8** propositions sur des critères mécaniques et en laisse **2749** à la relecture humaine, classées par fiabilité décroissante.
 
 ## Écartées, et pourquoi
 
 | Motif | Nombre | Ce que ça veut dire |
 |---|---:|---|
-| `domaine_opaque` | 4 | Agrégateur masquant l'éditeur réel — source non attribuable |
+| `domaine_opaque` | 8 | Agrégateur masquant l'éditeur réel — source non attribuable |
 
 Aucun de ces motifs ne porte de jugement sur le fond : ils constatent qu'une proposition n'est pas citable, pas attribuable, ou déjà connue.
 
@@ -18,10 +18,10 @@ Aucun de ces motifs ne porte de jugement sur le fond : ils constatent qu'une pro
 
 | Score | Nombre |
 |---:|---:|
-| 0.9 | 228 |
-| 0.8 | 474 |
-| 0.6 | 117 |
-| 0.4 | 1866 |
+| 0.9 | 235 |
+| 0.8 | 485 |
+| 0.6 | 121 |
+| 0.4 | 1908 |
 
 ### Les trente premières
 
@@ -85,6 +85,10 @@ Aucun de ces motifs ne porte de jugement sur le fond : ils constatent qu'une pro
   Turing-like tests for language and vision demonstrate a narrowing gap between humans and AI  
   <https://www.nature.com/articles/s41562-026-02590-6>  
   `d2e72941-e838-4cd8-a129-9a6dbad979c7`
+- **0.9** · nature.com · 2 terme(s) du corpus  
+  Preprimary education laws and women’s empowerment later in life  
+  <https://www.nature.com/articles/s41562-026-02608-z>  
+  `5168d0f5-9fc4-4419-8bf8-18b0566ebf75`
 - **0.9** · nature.com · 1 terme(s) du corpus  
   NSF moves to overhaul funding approach in line with White House priorities  
   <https://www.nature.com/articles/d41586-026-02892-9>  
@@ -141,10 +145,6 @@ Aucun de ces motifs ne porte de jugement sur le fond : ils constatent qu'une pro
   Gaze into the cosmos and through the eyes of a bee — September’s best science images  
   <https://www.nature.com/articles/d41586-026-03101-3>  
   `1c34c079-c5f9-44ae-b043-c0838cd86bc0`
-- **0.9** · nature.com · 1 terme(s) du corpus  
-  Intrinsic rewards guide visual resource allocation via reinforcement learning  
-  <https://www.nature.com/articles/s41562-026-02573-7>  
-  `db9c0820-a123-4010-93a4-1a2fa5bc16e9`
 
 ---
 
