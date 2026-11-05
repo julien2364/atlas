@@ -1,8 +1,8 @@
 # Moisson de sources
 
-Dernier passage : **2026-11-04** · fonds interrogés : openalex, crossref, arxiv, hal, doaj, europepmc.
+Dernier passage : **2026-11-05** · fonds interrogés : openalex, crossref, arxiv, hal, doaj, europepmc.
 
-**0 propositions** pour **10 fiches**, écrites dans `../../_temp/moisson-2026-11-04.json`.
+**1 propositions** pour **10 fiches**, écrites dans `../../_temp/moisson-2026-11-05.json`.
 
 Ce fichier ne modifie aucune fiche. Pour en ajouter une partie au corpus : remplir le champ
 `retenues` de chaque bloc avec les clés choisies, puis lancer
@@ -16,16 +16,18 @@ Ce fichier ne modifie aucune fiche. Pour en ajouter une partie au corpus : rempl
 | Anarchisme | 7 | 0 | — |
 | Banque africaine de développement (BAfD) | 7 | 0 | — |
 | Bipolarité (Guerre froide) | 7 | 0 | — |
-| Black-Scholes | 7 | 0 | — |
+| Black-Scholes | 7 | 1 | [Incertitude en économie de l'environnement](https://doi.org/10.3406/rfeco.2007.1647) — openalex, 2007 |
 | BRICS(+) | 7 | 0 | — |
 | Capitalisme de marché libre (laissez-faire) | 7 | 0 | — |
 | CEI | 7 | 0 | — |
 
 ## Fonds indisponibles sur ce passage
 
-- openalex / alliance-solaire-internationale-asi : HTTP 429
+- openalex / abhijit-banerjee : HTTP 429
+- openalex / amartya-sen : HTTP 429
 - openalex / anarchisme : HTTP 429
-- openalex / black-scholes : HTTP 429
+- openalex / banque-africaine-de-developpement-bafd : HTTP 429
+- openalex / bipolarite-guerre-froide : HTTP 429
 - openalex / brics : HTTP 429
 - doaj / brics : This operation was aborted
 - openalex / capitalisme-de-marche-libre-laissez-faire : HTTP 429
