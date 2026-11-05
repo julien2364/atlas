@@ -223,3 +223,19 @@ c'est A qui s'applique — le code n'auto-valide rien aujourd'hui, et ce lot n'a
   partir du **domaine de l'URL** de l'item plutôt que du nom du flux. C'est une correction de
   quelques lignes dans `veille-rss.mjs` qui rendrait le barème beaucoup plus honnête, et elle est
   utile quelle que soit l'option choisie.
+
+## 7. Le second canal : Spiderfoot (mégaprompt v1.1 §13.4) — collecteur livré le 31/10/2026
+
+`scripts/spiderfoot.mjs` (`npm run veille-spiderfoot`) consomme un **export JSON de scan Spiderfoot**
+(résultats du scan → téléchargement JSON) et produit des propositions `en_attente` dans
+`data/seed/veille_queue.json`, au même format et avec le même score de fiabilité (domaine de l'URL)
+que le canal RSS. Seules les événements dont le champ `data` est une URL http(s) sont retenus :
+les adresses e-mail et autres données personnelles découvertes par OSINT sont ignorées par
+construction. Tests hors ligne : `node scripts/spiderfoot.mjs --auto-test` (fixture fabriquée dans
+`data/fixtures/spiderfoot/`, aucune écriture).
+
+**Activation (décision Julien)** : aucune instance n'étant déclarée, l'entrée `spiderfoot-osint` de
+`veille_sources.json` reste `actif: false` ; le script refuse d'écrire tant qu'elle n'est pas
+réactivée avec l'URL de l'instance. Brancher l'API live de l'instance (sans export manuel) reste un
+chantier ultérieur. La règle absolue ne change pas : aucune fiche n'est modifiée sans validation
+humaine tracée.
