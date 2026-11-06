@@ -13,22 +13,23 @@ L'API expose en JSON le même corpus que le site : **267 fiches humaines**, **44
 
 | Environnement | URL |
 | --- | --- |
-| Production Vercel | `https://atlas-humain-ia-dyonysos.vercel.app` |
+| Production | `https://atlas.dyonysos.fr` (déploiement Vercel : `https://atlas-humain-ia-dyonysos.vercel.app`) |
 | Local | `http://localhost:3000` |
 
 L'URL de base utilisée pour construire les champs `url` / `api_url`, les balises canoniques,
 le JSON-LD et `sitemap.xml` vient de la variable d'environnement :
 
 ```
-NEXT_PUBLIC_SITE_URL=https://atlas-humain-ia-dyonysos.vercel.app
+NEXT_PUBLIC_SITE_URL=https://atlas.dyonysos.fr
 ```
 
-- Définie dans `lib/site-config.ts` (`SITE_URL`), avec **repli automatique** sur
-  `https://atlas-humain-ia-dyonysos.vercel.app` si la variable est absente.
+- Définie dans `lib/site-config.ts` (`SITE_URL`). La variable reste **prioritaire** ; si elle est
+  absente, **repli automatique** sur le domaine de production `https://atlas.dyonysos.fr`
+  (correctif de l'audit SEO du 06/11/2026, vérifié par `tests/site-url.test.mjs`).
 - Préfixe `NEXT_PUBLIC_` obligatoire : la valeur est figée au moment du `next build`, y compris
   dans les pages statiques et le sitemap.
-- À renseigner dans les *Environment Variables* du projet Vercel dès qu'un domaine propre est
-  branché (sinon toutes les URLs canoniques continueront de pointer vers `*.vercel.app`).
+- Inutile de la renseigner dans Vercel tant que le domaine de production reste
+  `atlas.dyonysos.fr` ; à définir seulement pour pointer ailleurs (autre domaine, test local).
 - Les déploiements de *preview* Vercel héritent de la valeur de production : c'est volontaire
   (les canonicals d'une preview doivent désigner la production, pas l'URL éphémère).
 
