@@ -64088,5 +64088,1193 @@
     "domaine_opaque": false,
     "statut": "en_attente",
     "created_at": "2026-11-05T15:05:03.392Z"
+  },
+  {
+    "id": "59952ed3-1754-429c-986f-9167de4ee7b0",
+    "source_id": "arxiv-cs-ai",
+    "cible_type": "nouvelle_categorie",
+    "cible_id": null,
+    "contenu_propose": {
+      "titre": "Formalizing inverse problems in the age of AI: possibilities, pitfalls, and an invitation",
+      "link": "https://arxiv.org/abs/2611.06962",
+      "date": "2026-11-06T05:00:00.000Z",
+      "resume": "arXiv:2611.06962v1 Announce Type: new \nAbstract: Proof assistants such as Lean check mathematical proofs down to the axioms, and AI agents have recently made writing such proofs cheap. We describe AutoIP, a Lean library in which classical linear regularization theory, together with the functional analysis it rests on, has been autoformalized by AI agents. A machine-checked proof certifies only the"
+    },
+    "score_fiabilite": 0.8,
+    "score_fiabilite_motif": "arxiv.org — préprint, actes de conférence ou institution publique",
+    "domaine_source": "arxiv.org",
+    "domaine_opaque": false,
+    "statut": "en_attente",
+    "created_at": "2026-11-06T14:43:48.616Z"
+  },
+  {
+    "id": "9e015ade-0618-4359-b41e-bf6cfed35b01",
+    "source_id": "arxiv-cs-ai",
+    "cible_type": "nouvelle_categorie",
+    "cible_id": null,
+    "contenu_propose": {
+      "titre": "KDASO: Knowledge-Data Dual-Driven Automated Skill Optimization for Liability Adjudication Tasks",
+      "link": "https://arxiv.org/abs/2611.06972",
+      "date": "2026-11-06T05:00:00.000Z",
+      "resume": "arXiv:2611.06972v1 Announce Type: new \nAbstract: Liability adjudication tasks (e.g., legal charge determination) require analyzing event descriptions against domain-specific skills to determine whether a party should bear liability. While Large Language Models (LLMs) have shown promise in this area by leveraging executable skills for interpretable reasoning, existing approaches face three critical"
+    },
+    "score_fiabilite": 0.8,
+    "score_fiabilite_motif": "arxiv.org — préprint, actes de conférence ou institution publique",
+    "domaine_source": "arxiv.org",
+    "domaine_opaque": false,
+    "statut": "en_attente",
+    "created_at": "2026-11-06T14:43:48.617Z"
+  },
+  {
+    "id": "ffaed4d8-e1fe-4221-bc55-5dc842ac9d4d",
+    "source_id": "arxiv-cs-ai",
+    "cible_type": "nouvelle_categorie",
+    "cible_id": null,
+    "contenu_propose": {
+      "titre": "BlockLock: Reproducible LLM Inference with Fixed Batch Geometry",
+      "link": "https://arxiv.org/abs/2611.06977",
+      "date": "2026-11-06T05:00:00.000Z",
+      "resume": "arXiv:2611.06977v1 Announce Type: new \nAbstract: Reproducible LLM inference requires that a request produces the same output regardless of the other requests in the batch. Existing solutions pay for this in different ways: batch-invariant kernels constrain every operator, and isolating prefill with fixed-shape decode ({our CoRun-style baseline}) gives up shared prefill compute and pads decode. We "
+    },
+    "score_fiabilite": 0.8,
+    "score_fiabilite_motif": "arxiv.org — préprint, actes de conférence ou institution publique",
+    "domaine_source": "arxiv.org",
+    "domaine_opaque": false,
+    "statut": "en_attente",
+    "created_at": "2026-11-06T14:43:48.617Z"
+  },
+  {
+    "id": "c93dcab4-89b9-4c7c-b56d-35b16ac6c0a6",
+    "source_id": "arxiv-cs-ai",
+    "cible_type": "nouvelle_categorie",
+    "cible_id": null,
+    "contenu_propose": {
+      "titre": "Resource-Efficient Reinforcement Learning Post-Training through Elastic Expert Parallelism",
+      "link": "https://arxiv.org/abs/2611.06984",
+      "date": "2026-11-06T05:00:00.000Z",
+      "resume": "arXiv:2611.06984v1 Announce Type: new \nAbstract: Reinforcement learning post-training improves the capabilities of large language models, but generating training responses is a major computational bottleneck. In mixture-of-experts models, workers that finish their assigned responses may remain occupied because their experts are still needed by workers processing longer responses. Consequently, app"
+    },
+    "score_fiabilite": 0.8,
+    "score_fiabilite_motif": "arxiv.org — préprint, actes de conférence ou institution publique",
+    "domaine_source": "arxiv.org",
+    "domaine_opaque": false,
+    "statut": "en_attente",
+    "created_at": "2026-11-06T14:43:48.617Z"
+  },
+  {
+    "id": "c6003a35-55aa-44a3-8ccb-32fe1c806907",
+    "source_id": "arxiv-cs-ai",
+    "cible_type": "nouvelle_categorie",
+    "cible_id": null,
+    "contenu_propose": {
+      "titre": "The Two-Ledger Model: Transaction-Grain Cost Accounting for Multi-Agent AI Systems Across Clouds, Models, and Systems of Record",
+      "link": "https://arxiv.org/abs/2611.06989",
+      "date": "2026-11-06T05:00:00.000Z",
+      "resume": "arXiv:2611.06989v1 Announce Type: new \nAbstract: Enterprises run business transactions through multi-agent AI systems spanning clouds, large language models (LLMs), orchestration harnesses, and systems of record. Finance receives AI cost only at settlement grain, aggregated by SKU and charge period. The business question (what did this order, claim, or case cost in AI?) cannot be answered from bil"
+    },
+    "score_fiabilite": 0.8,
+    "score_fiabilite_motif": "arxiv.org — préprint, actes de conférence ou institution publique",
+    "domaine_source": "arxiv.org",
+    "domaine_opaque": false,
+    "statut": "en_attente",
+    "created_at": "2026-11-06T14:43:48.617Z"
+  },
+  {
+    "id": "83ee7837-6c3c-4060-a599-e22513af9b28",
+    "source_id": "arxiv-cs-cl",
+    "cible_type": "nouvelle_categorie",
+    "cible_id": null,
+    "contenu_propose": {
+      "titre": "Interactive Backdoor Attacks in LLM-Based Proactive Dialogue Systems",
+      "link": "https://arxiv.org/abs/2611.06969",
+      "date": "2026-11-06T05:00:00.000Z",
+      "resume": "arXiv:2611.06969v1 Announce Type: new \nAbstract: LLM-based proactive dialogue systems provide goal-directed support through sustained interaction. Fine-tuning their underlying models on externally supplied dialogue data introduces backdoor risks. Existing LLM backdoor studies primarily focus on eliciting an attacker-specified response upon trigger activation. We present an interactive backdoor att"
+    },
+    "score_fiabilite": 0.8,
+    "score_fiabilite_motif": "arxiv.org — préprint, actes de conférence ou institution publique",
+    "domaine_source": "arxiv.org",
+    "domaine_opaque": false,
+    "statut": "en_attente",
+    "created_at": "2026-11-06T14:43:48.650Z"
+  },
+  {
+    "id": "a82643d4-1636-4398-b436-712c8187526b",
+    "source_id": "arxiv-cs-cl",
+    "cible_type": "nouvelle_categorie",
+    "cible_id": null,
+    "contenu_propose": {
+      "titre": "On the Opportunities and Challenges of Prefill-to-Autoregressive Cross-Model Transfer",
+      "link": "https://arxiv.org/abs/2611.06976",
+      "date": "2026-11-06T05:00:00.000Z",
+      "resume": "arXiv:2611.06976v1 Announce Type: new \nAbstract: Prefill-to-Autoregressive Cross-model Transfer (PACT), a form of latent communication between language models, combines a larger model's prompt representations with a smaller model's efficient generation, offering a promising way to balance capability and inference cost. However, existing systems provide limited support for independently evaluating "
+    },
+    "score_fiabilite": 0.8,
+    "score_fiabilite_motif": "arxiv.org — préprint, actes de conférence ou institution publique",
+    "domaine_source": "arxiv.org",
+    "domaine_opaque": false,
+    "statut": "en_attente",
+    "created_at": "2026-11-06T14:43:48.650Z"
+  },
+  {
+    "id": "12b81868-87f7-4d0a-bb7d-df9781686582",
+    "source_id": "arxiv-cs-cl",
+    "cible_type": "nouvelle_categorie",
+    "cible_id": null,
+    "contenu_propose": {
+      "titre": "Follow the Policy, Fail the Benchmark: Auditing and Revising Policy-Based Decision Benchmarks",
+      "link": "https://arxiv.org/abs/2611.07042",
+      "date": "2026-11-06T05:00:00.000Z",
+      "resume": "arXiv:2611.07042v1 Announce Type: new \nAbstract: Policy-based decision benchmarks evaluate whether systems apply written rules to financial and operational cases. Yet a rule-following response can be marked wrong when the benchmark misstates the required decision. We audit nine public policy-based decision benchmarks through source tracing, program execution, and controlled checks. We find unsuppo"
+    },
+    "score_fiabilite": 0.8,
+    "score_fiabilite_motif": "arxiv.org — préprint, actes de conférence ou institution publique",
+    "domaine_source": "arxiv.org",
+    "domaine_opaque": false,
+    "statut": "en_attente",
+    "created_at": "2026-11-06T14:43:48.650Z"
+  },
+  {
+    "id": "1d826214-7113-4486-b5b3-b6523fd31472",
+    "source_id": "arxiv-cs-cl",
+    "cible_type": "nouvelle_categorie",
+    "cible_id": null,
+    "contenu_propose": {
+      "titre": "Reclassification Is All You Missed: Surfacing Variant Reinterpretation Need in Online Health Communities at Population Scale",
+      "link": "https://arxiv.org/abs/2611.07054",
+      "date": "2026-11-06T05:00:00.000Z",
+      "resume": "arXiv:2611.07054v1 Announce Type: new \nAbstract: Genetic variants are routinely reclassified in ClinVar after a patient is tested, sometimes from uncertain to pathogenic, yet patient recontact is inconsistent, with no clear duty and responsibility diffused among labs, providers, and patients. Many affected people discuss their results in public online health communities that clinical recontact oft"
+    },
+    "score_fiabilite": 0.8,
+    "score_fiabilite_motif": "arxiv.org — préprint, actes de conférence ou institution publique",
+    "domaine_source": "arxiv.org",
+    "domaine_opaque": false,
+    "statut": "en_attente",
+    "created_at": "2026-11-06T14:43:48.651Z"
+  },
+  {
+    "id": "e74c976f-c919-49f5-a3ec-d4edebaa67af",
+    "source_id": "arxiv-cs-cl",
+    "cible_type": "nouvelle_categorie",
+    "cible_id": null,
+    "contenu_propose": {
+      "titre": "Automated Feedback to Peer Tutors Increases Their Talk Moves and Learner Reasoning but Not the Balance of Talk",
+      "link": "https://arxiv.org/abs/2611.07072",
+      "date": "2026-11-06T05:00:00.000Z",
+      "resume": "arXiv:2611.07072v1 Announce Type: new \nAbstract: Automated feedback on classroom discourse improves instruction in professional and online teaching contexts, and recent work suggests that delivering similar feedback to learners may strengthen these effects by sharing responsibility for participation. Whether this holds in small-group volunteer tutoring has not been tested. We present results from "
+    },
+    "score_fiabilite": 0.8,
+    "score_fiabilite_motif": "arxiv.org — préprint, actes de conférence ou institution publique",
+    "domaine_source": "arxiv.org",
+    "domaine_opaque": false,
+    "statut": "en_attente",
+    "created_at": "2026-11-06T14:43:48.651Z"
+  },
+  {
+    "id": "d5cfd272-a106-43fb-8378-7ddf83e7046c",
+    "source_id": "anthropic-news",
+    "cible_type": "nouvelle_categorie",
+    "cible_id": null,
+    "contenu_propose": {
+      "titre": "Anthropic veut faire de Claude votre nouveau conseiller financier - Frandroid",
+      "link": "https://news.google.com/rss/articles/CBMi7wFBVV95cUxON2JJUjZoRVprMGJlX0dkampFRGZXX29XQmc1MXdacnhic0k5WjdRcG5XcE4yUnZOZURCQmRCT0pqNU9qb0x6bUhsQzhPYWZzakVmandwSDFNUTNwR2VvZER3TGltSG9OSVVFbThmOHh5TVJIWmtoSkhZVXl5Njc4dXgyc3JlbGtLMU9ud2Zta3B2LTBtR3pGVHlPZXpYOFFOWXVpZWhtVmY5c1YzNi11ZzdvdEVuWGdiSmViQ1pGOG11TC1zVEVyTS1ZRGtiNHVqOWo3WG1sNjNZTGlrSGFUMlpKQVJGR2x3aEM3U0VrYw?oc=5",
+      "date": "2026-11-06T08:51:18.000Z",
+      "resume": "Anthropic veut faire de Claude votre nouveau conseiller financier  Frandroid"
+    },
+    "score_fiabilite": 0.15,
+    "score_fiabilite_motif": "news.google.com est un redirecteur : l'url ne porte pas le domaine de l'éditeur réel, la fiabilité ne peut pas être établie sans ouvrir le lien",
+    "domaine_source": "news.google.com",
+    "domaine_opaque": true,
+    "statut": "en_attente",
+    "created_at": "2026-11-06T14:43:49.171Z"
+  },
+  {
+    "id": "3aebbc94-5571-4cb7-a490-a53503838f63",
+    "source_id": "anthropic-news",
+    "cible_type": "nouvelle_categorie",
+    "cible_id": null,
+    "contenu_propose": {
+      "titre": "Anthropic : Claude se lance dans la gestion des finances personnelles - ZDNET",
+      "link": "https://news.google.com/rss/articles/CBMirwFBVV95cUxPQVNVR2JzWDdQaVc0aFA0YU9sV25TeEpxVVZiLWdmWkJxY05TSHdDWlVUdU1GZHF6bGo4TFJBOGh4M2JweDNKaFIxZHdza3p1d0ZXYmJJQkZCTUNPQVFfb0JYZV9ad0dWVjBBS29maE5MMGJ4bmM4NVEyeGVsRGRBTVFuajlVd1VoM2hyNDZWekxuN3dFeEJuMjhJeWlKZ1hFQmRPSUNlbmpqZU9qMU1N?oc=5",
+      "date": "2026-11-06T08:00:00.000Z",
+      "resume": "Anthropic : Claude se lance dans la gestion des finances personnelles  ZDNET"
+    },
+    "score_fiabilite": 0.15,
+    "score_fiabilite_motif": "news.google.com est un redirecteur : l'url ne porte pas le domaine de l'éditeur réel, la fiabilité ne peut pas être établie sans ouvrir le lien",
+    "domaine_source": "news.google.com",
+    "domaine_opaque": true,
+    "statut": "en_attente",
+    "created_at": "2026-11-06T14:43:49.171Z"
+  },
+  {
+    "id": "8aacfd25-e86b-4f00-8c9f-8fe69b14c0a2",
+    "source_id": "anthropic-news",
+    "cible_type": "nouvelle_categorie",
+    "cible_id": null,
+    "contenu_propose": {
+      "titre": "Anthropic laisse non corrigée une faille de Claude permettant l’exécution de code entre appareils - Dataconomy",
+      "link": "https://news.google.com/rss/articles/CBMizwFBVV95cUxOOEJxeVQ2OFFteHFIWjZwMEpqTHZXeXN1akNSSi0tVW43ek84YVNCcm5NU3lBdHJ6dGZyMHV0dktiUW1LR3R0Q2g1UkRLSDVrMms1LV9EdnRzd3lYQzdCcVYyY0RfWXdxZ0kwTkhsX2paRmQ3VlRpUE9lVWpmWG1GUWI4ZjQwRWcwX05acDR3YVFCdEZtUEZyYlR5eklUcGxKUlpweXdua0tkX3p6anZsVjkyYnBEMDg2aGY1d0VqaWhzMG1ScFk2cHRyWHA2Yjg?oc=5",
+      "date": "2026-11-06T11:04:56.000Z",
+      "resume": "Anthropic laisse non corrigée une faille de Claude permettant l’exécution de code entre appareils  Dataconomy"
+    },
+    "score_fiabilite": 0.15,
+    "score_fiabilite_motif": "news.google.com est un redirecteur : l'url ne porte pas le domaine de l'éditeur réel, la fiabilité ne peut pas être établie sans ouvrir le lien",
+    "domaine_source": "news.google.com",
+    "domaine_opaque": true,
+    "statut": "en_attente",
+    "created_at": "2026-11-06T14:43:49.171Z"
+  },
+  {
+    "id": "561db5e5-40b8-4732-966b-a64333ce35b7",
+    "source_id": "anthropic-news",
+    "cible_type": "nouvelle_categorie",
+    "cible_id": null,
+    "contenu_propose": {
+      "titre": "Claude Personal Finance : l’IA d’Anthropic analyse vos comptes bancaires - BlogNT",
+      "link": "https://news.google.com/rss/articles/CBMilwFBVV95cUxNd1FoNWFsZ0pfUUd1YnR3SWd3dWRQY0RPVUF3M2hIbFBHc09BRlpqWGtxelAxcHRYSG5QRXRyZ0ZySm9nMlRvd29CMGswSVUyWnh6SDF2V3UwUzlhd0dTWjNoNmlxclpQb0hkUVg0X2F3X3RJOHB5djVTbWtuUXgtU2prZWVRQUFHV0JkdkQxX1VuQWotbEtn?oc=5",
+      "date": "2026-11-06T07:45:00.000Z",
+      "resume": "Claude Personal Finance : l’IA d’Anthropic analyse vos comptes bancaires  BlogNT"
+    },
+    "score_fiabilite": 0.15,
+    "score_fiabilite_motif": "news.google.com est un redirecteur : l'url ne porte pas le domaine de l'éditeur réel, la fiabilité ne peut pas être établie sans ouvrir le lien",
+    "domaine_source": "news.google.com",
+    "domaine_opaque": true,
+    "statut": "en_attente",
+    "created_at": "2026-11-06T14:43:49.171Z"
+  },
+  {
+    "id": "b9e0c31f-9f1b-46f8-86ce-682607ea29ab",
+    "source_id": "openai-news",
+    "cible_type": "nouvelle_categorie",
+    "cible_id": null,
+    "contenu_propose": {
+      "titre": "Australian universities are creating AI-native graduates",
+      "link": "https://openai.com/index/australian-universities-ai-native-graduates",
+      "date": "2026-11-05T17:00:00.000Z",
+      "resume": "Australian universities are expanding access to ChatGPT and bringing AI into teaching and learning to prepare students for an AI-enabled workforce."
+    },
+    "score_fiabilite": 0.6,
+    "score_fiabilite_motif": "openai.com — éditeur ou laboratoire s'exprimant sur son propre produit",
+    "domaine_source": "openai.com",
+    "domaine_opaque": false,
+    "statut": "en_attente",
+    "created_at": "2026-11-06T14:43:49.377Z"
+  },
+  {
+    "id": "02563c7b-5d8d-4f0a-8aa9-21ecd6412c0e",
+    "source_id": "openai-news",
+    "cible_type": "nouvelle_categorie",
+    "cible_id": null,
+    "contenu_propose": {
+      "titre": "Cult.fit builds operational muscle with Codex",
+      "link": "https://openai.com/index/cultfit-builds-with-codex",
+      "date": "2026-11-05T20:00:00.000Z",
+      "resume": "Cult.fit is using Codex to help teams across functions build tools, move faster, and change how work gets done."
+    },
+    "score_fiabilite": 0.6,
+    "score_fiabilite_motif": "openai.com — éditeur ou laboratoire s'exprimant sur son propre produit",
+    "domaine_source": "openai.com",
+    "domaine_opaque": false,
+    "statut": "en_attente",
+    "created_at": "2026-11-06T14:43:49.377Z"
+  },
+  {
+    "id": "75ada16b-ab17-47c0-9122-0085b723d0de",
+    "source_id": "openai-news",
+    "cible_type": "nouvelle_categorie",
+    "cible_id": null,
+    "contenu_propose": {
+      "titre": "GPT‑6 Cyber: Advancing the frontier of aligned cybersecurity agents",
+      "link": "https://openai.com/index/introducing-gpt-6-cyber",
+      "date": "2026-11-05T09:00:00.000Z",
+      "resume": "Introducing GPT‑6 Cyber, OpenAI’s cybersecurity model for finding exploitable vulnerabilities and developing fixes, trained to stay within authorized scope."
+    },
+    "score_fiabilite": 0.6,
+    "score_fiabilite_motif": "openai.com — éditeur ou laboratoire s'exprimant sur son propre produit",
+    "domaine_source": "openai.com",
+    "domaine_opaque": false,
+    "statut": "en_attente",
+    "created_at": "2026-11-06T14:43:49.378Z"
+  },
+  {
+    "id": "16b5b556-ccef-4995-bddb-4b8940d8d0d1",
+    "source_id": "openai-news",
+    "cible_type": "nouvelle_categorie",
+    "cible_id": null,
+    "contenu_propose": {
+      "titre": "Merge builds product and business tools with OpenAI technology",
+      "link": "https://openai.com/index/merge-builds-with-openai",
+      "date": "2026-11-05T08:00:00.000Z",
+      "resume": "Merge uses GPT-6 Astra, ChatGPT, and Codex to review product code and support marketing. Its teams also use AI to plan executive dinners and prepare sales updates."
+    },
+    "score_fiabilite": 0.6,
+    "score_fiabilite_motif": "openai.com — éditeur ou laboratoire s'exprimant sur son propre produit",
+    "domaine_source": "openai.com",
+    "domaine_opaque": false,
+    "statut": "en_attente",
+    "created_at": "2026-11-06T14:43:49.378Z"
+  },
+  {
+    "id": "66792f6d-39e4-446b-a1b5-88d4fcc2eb43",
+    "source_id": "imf-news",
+    "cible_type": "nouvelle_categorie",
+    "cible_id": null,
+    "contenu_propose": {
+      "titre": "Le FMI choisit Valencia pour son premier centre technologique hors des États-Unis - Le Courrier d'Espagne -",
+      "link": "https://news.google.com/rss/articles/CBMiRkFVX3lxTE5tWENkdTBEc01QaEotOVdoU21ZdGhtZW9raXZRcFRtS2xlLXdhSmc2YXdLdDJMS0xLYWpMYm04eTZGek1KQ0E?oc=5",
+      "date": "2026-11-05T14:05:34.000Z",
+      "resume": "Le FMI choisit Valencia pour son premier centre technologique hors des États-Unis  Le Courrier d'Espagne -"
+    },
+    "score_fiabilite": 0.15,
+    "score_fiabilite_motif": "news.google.com est un redirecteur : l'url ne porte pas le domaine de l'éditeur réel, la fiabilité ne peut pas être établie sans ouvrir le lien",
+    "domaine_source": "news.google.com",
+    "domaine_opaque": true,
+    "statut": "en_attente",
+    "created_at": "2026-11-06T14:43:50.905Z"
+  },
+  {
+    "id": "196f18bc-93c8-43e3-9b1e-4cb9393dedf9",
+    "source_id": "oecd-news",
+    "cible_type": "nouvelle_categorie",
+    "cible_id": null,
+    "contenu_propose": {
+      "titre": "L’inflation de l’OCDE remonte à 4,5 % en septembre, en raison de l’énergie - Demócrata",
+      "link": "https://news.google.com/rss/articles/CBMirgFBVV95cUxPQ1c1azlEeGlReG9JbzMtemM0X3JGSTZjTHNoUml6VWVHbWNmZXVYb1JDZ21mTy1valc2SkxaSFR1XzVEUVBBRGQ3MV9XR0Fuck5EekRoWmJuNHZuUGJMREJjOFhfMkJLUkxLNXgzak9tMHcxVFVDaUU1bFAteFZmSG9USmpYQTJBNElPX0hfc1NtZU1NdHU5WndIOHFxQl9XZ0k1TGFMM0g2UURsLWfSAbMBQVVfeXFMT3poaXIzTXhPRTV6NlhYTUxyd3FxakQ3VFk4YThjQ3lwT3NxTGo5Rld0dG1LemZUTjQtYlUtbXltalpEUThmamNfN3hFbjhGclhxNVdCczNKNWhxUnkzbWJieDlCUmwwUS15Y3BvbjA1YWZ0dkRVNWMwamJXR3pwLXpYUlZ4TGRtMjFTT3RyaldYengxQkZHamRUVVFWREdvUTZNUDI1TW11ZzNzLTFLOFNKaWM?oc=5",
+      "date": "2026-11-06T12:06:44.000Z",
+      "resume": "L’inflation de l’OCDE remonte à 4,5 % en septembre, en raison de l’énergie  Demócrata"
+    },
+    "score_fiabilite": 0.15,
+    "score_fiabilite_motif": "news.google.com est un redirecteur : l'url ne porte pas le domaine de l'éditeur réel, la fiabilité ne peut pas être établie sans ouvrir le lien",
+    "domaine_source": "news.google.com",
+    "domaine_opaque": true,
+    "statut": "en_attente",
+    "created_at": "2026-11-06T14:43:51.217Z"
+  },
+  {
+    "id": "6621be30-17a9-4982-b4d4-0787814b586c",
+    "source_id": "bce-communiques",
+    "cible_type": "nouvelle_categorie",
+    "cible_id": null,
+    "contenu_propose": {
+      "titre": " ECB publishes consolidated banking data for end-June 2026",
+      "link": "https://www.ecb.europa.eu//press/pr/date/2026/html/ecb.pr261106~356f2fc73a.en.html",
+      "date": "2026-11-06T09:00:00.000Z",
+      "resume": ""
+    },
+    "score_fiabilite": 0.8,
+    "score_fiabilite_motif": "ecb.europa.eu — préprint, actes de conférence ou institution publique",
+    "domaine_source": "ecb.europa.eu",
+    "domaine_opaque": false,
+    "statut": "en_attente",
+    "created_at": "2026-11-06T14:43:51.747Z"
+  },
+  {
+    "id": "67d6f46e-7de4-4999-9ef9-32ac274b45d1",
+    "source_id": "commission-europeenne-presse",
+    "cible_type": "nouvelle_categorie",
+    "cible_id": null,
+    "contenu_propose": {
+      "titre": "Speech by Commissioner Hoekstra at the 22nd Athens Tax Forum",
+      "link": "https://ec.europa.eu/commission/presscorner/detail/en/speech_26_2370",
+      "date": "2026-11-06T13:25:32.000Z",
+      "resume": "European Commission Speech Athens, 06 Nov 2026 Ladies and Gentlemen,\r\nA very good morning to all of you.\r\nIt's a great pleasure to be back in beautiful Greece and to be here today at the 22nd Athens Tax Forum ..."
+    },
+    "score_fiabilite": 0.8,
+    "score_fiabilite_motif": "ec.europa.eu — préprint, actes de conférence ou institution publique",
+    "domaine_source": "ec.europa.eu",
+    "domaine_opaque": false,
+    "statut": "en_attente",
+    "created_at": "2026-11-06T14:43:54.053Z"
+  },
+  {
+    "id": "3377c948-5ac7-45be-87cf-9bf0fdf9df90",
+    "source_id": "commission-europeenne-presse",
+    "cible_type": "nouvelle_categorie",
+    "cible_id": null,
+    "contenu_propose": {
+      "titre": "Speech by Commissioner Lahbib at the InvestFrontier Conference",
+      "link": "https://ec.europa.eu/commission/presscorner/detail/en/speech_26_2369",
+      "date": "2026-11-06T12:00:46.000Z",
+      "resume": "European Commission Speech Brussels, 06 Nov 2026 I love the word “frontier”. On a map, it is just a line. But for explorers, it was always the place where the known world ended, and new possibilities began. I ..."
+    },
+    "score_fiabilite": 0.8,
+    "score_fiabilite_motif": "ec.europa.eu — préprint, actes de conférence ou institution publique",
+    "domaine_source": "ec.europa.eu",
+    "domaine_opaque": false,
+    "statut": "en_attente",
+    "created_at": "2026-11-06T14:43:54.053Z"
+  },
+  {
+    "id": "337abe87-748f-474e-9749-70b6252555bd",
+    "source_id": "commission-europeenne-presse",
+    "cible_type": "nouvelle_categorie",
+    "cible_id": null,
+    "contenu_propose": {
+      "titre": "Remarks by Commissioner Brunner on the second Annual Migration Management Cycle",
+      "link": "https://ec.europa.eu/commission/presscorner/detail/en/speech_26_2368",
+      "date": "2026-11-06T11:52:07.000Z",
+      "resume": "European Commission Speech Brussels, 06 Nov 2026 Ladies and gentlemen,\r\nToday, we are delivering on a core component of the Pact on Migration and Asylum.\r\nWe are launching the second Annual Migration Management ..."
+    },
+    "score_fiabilite": 0.8,
+    "score_fiabilite_motif": "ec.europa.eu — préprint, actes de conférence ou institution publique",
+    "domaine_source": "ec.europa.eu",
+    "domaine_opaque": false,
+    "statut": "en_attente",
+    "created_at": "2026-11-06T14:43:54.053Z"
+  },
+  {
+    "id": "6fa27850-81a4-4e61-901d-f40b13332428",
+    "source_id": "commission-europeenne-presse",
+    "cible_type": "nouvelle_categorie",
+    "cible_id": null,
+    "contenu_propose": {
+      "titre": "Keynote speech by Commissioner Síkela at the International Partnership Conference",
+      "link": "https://ec.europa.eu/commission/presscorner/detail/en/speech_26_2367",
+      "date": "2026-11-06T11:06:25.000Z",
+      "resume": "European Commission Speech Vilnius, 06 Nov 2026 KEYNOTE SPEECH\r\nDistinguished Guests,\r\nLadies and gentlemen,\r\nLithuania brings a clear understanding of what is at stake when we discuss resilience.\r\nThe freedom to..."
+    },
+    "score_fiabilite": 0.8,
+    "score_fiabilite_motif": "ec.europa.eu — préprint, actes de conférence ou institution publique",
+    "domaine_source": "ec.europa.eu",
+    "domaine_opaque": false,
+    "statut": "en_attente",
+    "created_at": "2026-11-06T14:43:54.053Z"
+  },
+  {
+    "id": "42c7cf06-242e-4c1f-8297-6abd7493ab52",
+    "source_id": "commission-europeenne-presse",
+    "cible_type": "nouvelle_categorie",
+    "cible_id": null,
+    "contenu_propose": {
+      "titre": "Questions et réponses sur le deuxième cycle annuel de gestion des migrations",
+      "link": "https://ec.europa.eu/commission/presscorner/detail/fr/qanda_26_2366",
+      "date": "2026-11-06T09:40:34.000Z",
+      "resume": "European Commission Questions et réponses Brussels, 06 Nov 2026 Qu'est-ce que le rapport annuel sur la gestion des migrations?Dans le cadre du pacte sur la migration et l'asile, l'UE dispose d'un mécanisme de solidarité obli..."
+    },
+    "score_fiabilite": 0.8,
+    "score_fiabilite_motif": "ec.europa.eu — préprint, actes de conférence ou institution publique",
+    "domaine_source": "ec.europa.eu",
+    "domaine_opaque": false,
+    "statut": "en_attente",
+    "created_at": "2026-11-06T14:43:54.053Z"
+  },
+  {
+    "id": "b7852187-d5ec-44a6-bafa-9d58452d57c2",
+    "source_id": "fed-communiques",
+    "cible_type": "nouvelle_categorie",
+    "cible_id": null,
+    "contenu_propose": {
+      "titre": "Federal Reserve Board announces termination of enforcement action with Allegiant United Holdings, LLC, Nano Financial Holdings, Inc., and Nano Banc",
+      "link": "https://www.federalreserve.gov/newsevents/pressreleases/enforcement20261105a.htm",
+      "date": "2026-11-05T16:00:00.000Z",
+      "resume": "Federal Reserve Board announces termination of enforcement action with Allegiant United Holdings, LLC, Nano Financial Holdings, Inc., and Nano Banc"
+    },
+    "score_fiabilite": 0.4,
+    "score_fiabilite_motif": "federalreserve.gov — domaine absent de la table : score par défaut prudent, sous le seuil de source primaire",
+    "domaine_source": "federalreserve.gov",
+    "domaine_opaque": false,
+    "statut": "en_attente",
+    "created_at": "2026-11-06T14:43:56.650Z"
+  },
+  {
+    "id": "a1427b58-c0cf-4e33-9a12-66f2cf8cb306",
+    "source_id": "banque-canada-communiques",
+    "cible_type": "nouvelle_categorie",
+    "cible_id": null,
+    "contenu_propose": {
+      "titre": "Joint Statement of the Government of Canada and the Bank of Canada on the Renewal of the Monetary Policy Framework",
+      "link": "https://www.bankofcanada.ca/2026/11/joint-statement-of-the-government-of-canada-and-the-bank-of-canada-on-the-renewal-of-the-monetary-policy-framework-2026/",
+      "date": "2026-11-05T16:00:19.000Z",
+      "resume": "The Government and the Bank agree that monetary policy must work to promote the economic and financial well-being of Canadians. We also agree that the best way monetary policy can do this is by keeping inflation low, stable and predictable, thereby protecting Canadians from large increases in the cost of living."
+    },
+    "score_fiabilite": 0.4,
+    "score_fiabilite_motif": "bankofcanada.ca — domaine absent de la table : score par défaut prudent, sous le seuil de source primaire",
+    "domaine_source": "bankofcanada.ca",
+    "domaine_opaque": false,
+    "statut": "en_attente",
+    "created_at": "2026-11-06T14:43:57.479Z"
+  },
+  {
+    "id": "da85eced-b504-441f-b077-ac74ed9cc6a0",
+    "source_id": "ft-marches",
+    "cible_type": "nouvelle_categorie",
+    "cible_id": null,
+    "contenu_propose": {
+      "titre": "UK retail investors buy the dip after bruising tech sell-off",
+      "link": "https://www.ft.com/content/64c72979-1f97-4d25-8dc9-7c47c6089191?syn-25a6b1a6=1",
+      "date": "2026-11-06T14:28:49.000Z",
+      "resume": "Platforms report high demand for Nvidia, SpaceX, Micron, AMD and Alphabet stocks"
+    },
+    "score_fiabilite": 0.4,
+    "score_fiabilite_motif": "ft.com — presse généraliste ou spécialisée",
+    "domaine_source": "ft.com",
+    "domaine_opaque": false,
+    "statut": "en_attente",
+    "created_at": "2026-11-06T14:44:00.107Z"
+  },
+  {
+    "id": "7c9b8027-8760-4283-9c6e-9c9a2ef24e62",
+    "source_id": "ft-marches",
+    "cible_type": "nouvelle_categorie",
+    "cible_id": null,
+    "contenu_propose": {
+      "titre": "Arini’s credit troubles suggest roach-hunting season is back",
+      "link": "https://www.ft.com/content/59a3bb17-5b09-4223-9077-413140b8a05b?syn-25a6b1a6=1",
+      "date": "2026-11-06T14:23:53.000Z",
+      "resume": "The London-based fund ploughed billions into the riskiest parts of the junk bond market — which have now soured"
+    },
+    "score_fiabilite": 0.4,
+    "score_fiabilite_motif": "ft.com — presse généraliste ou spécialisée",
+    "domaine_source": "ft.com",
+    "domaine_opaque": false,
+    "statut": "en_attente",
+    "created_at": "2026-11-06T14:44:00.107Z"
+  },
+  {
+    "id": "d2f64f03-b652-4119-bcf9-461ec1a302a0",
+    "source_id": "ft-marches",
+    "cible_type": "nouvelle_categorie",
+    "cible_id": null,
+    "contenu_propose": {
+      "titre": "Interpath executive in talks over Grant Thornton switch after tensions",
+      "link": "https://www.ft.com/content/eecbeefc-930c-4492-962b-4b9ec6cebfe3?syn-25a6b1a6=1",
+      "date": "2026-11-06T14:16:04.000Z",
+      "resume": "Will Wright, UK head of the former KPMG restructuring arm, has won work on several high-profile company insolvencies"
+    },
+    "score_fiabilite": 0.4,
+    "score_fiabilite_motif": "ft.com — presse généraliste ou spécialisée",
+    "domaine_source": "ft.com",
+    "domaine_opaque": false,
+    "statut": "en_attente",
+    "created_at": "2026-11-06T14:44:00.107Z"
+  },
+  {
+    "id": "b3ab0023-0174-4462-a32f-01270189c060",
+    "source_id": "ft-marches",
+    "cible_type": "nouvelle_categorie",
+    "cible_id": null,
+    "contenu_propose": {
+      "titre": "My portfolio returns went from hero to zero (actually I’d take zero)",
+      "link": "https://www.ft.com/content/44211bf7-0f18-4e55-81b8-01e750ae785f?syn-25a6b1a6=1",
+      "date": "2026-11-06T13:34:06.000Z",
+      "resume": "One stock in my Asia fund made me look clever for months. Not so much now"
+    },
+    "score_fiabilite": 0.4,
+    "score_fiabilite_motif": "ft.com — presse généraliste ou spécialisée",
+    "domaine_source": "ft.com",
+    "domaine_opaque": false,
+    "statut": "en_attente",
+    "created_at": "2026-11-06T14:44:00.108Z"
+  },
+  {
+    "id": "d2f4d653-76b0-4e07-b8b3-d4a696c21a64",
+    "source_id": "ft-marches",
+    "cible_type": "nouvelle_categorie",
+    "cible_id": null,
+    "contenu_propose": {
+      "titre": "Taking stock of the flight-to-quality",
+      "link": "https://www.ft.com/content/11ea58b9-008e-4e09-b384-44b3b7bf5d46",
+      "date": "2026-11-06T13:01:02.000Z",
+      "resume": "Safe assets?"
+    },
+    "score_fiabilite": 0.4,
+    "score_fiabilite_motif": "ft.com — presse généraliste ou spécialisée",
+    "domaine_source": "ft.com",
+    "domaine_opaque": false,
+    "statut": "en_attente",
+    "created_at": "2026-11-06T14:44:00.108Z"
+  },
+  {
+    "id": "cdd58b24-7645-437a-8bb6-255aedbec60f",
+    "source_id": "wsj-marches",
+    "cible_type": "nouvelle_categorie",
+    "cible_id": null,
+    "contenu_propose": {
+      "titre": "Stock Market Today: AI Stocks Rebound After Brutal Week for Nasdaq",
+      "link": "https://www.wsj.com/livecoverage/october-jobs-report-stock-market-11-06-2026?mod=rss_markets_main",
+      "date": "2026-11-06T07:48:13.000Z",
+      "resume": "Dow extends losses; October hiring blows past expectations"
+    },
+    "score_fiabilite": 0.4,
+    "score_fiabilite_motif": "wsj.com — presse généraliste ou spécialisée",
+    "domaine_source": "wsj.com",
+    "domaine_opaque": false,
+    "statut": "en_attente",
+    "created_at": "2026-11-06T14:44:00.175Z"
+  },
+  {
+    "id": "1e1e3fdc-904a-4e2b-bbc9-841f1c12d185",
+    "source_id": "wsj-marches",
+    "cible_type": "nouvelle_categorie",
+    "cible_id": null,
+    "contenu_propose": {
+      "titre": "Profits Are About as Good as They’ll Get",
+      "link": "https://www.wsj.com/finance/stocks/profits-are-about-as-good-as-theyll-get-72154bc8?mod=rss_markets_main",
+      "date": "2026-11-06T11:44:00.000Z",
+      "resume": "Plus, tech investors are in shock."
+    },
+    "score_fiabilite": 0.4,
+    "score_fiabilite_motif": "wsj.com — presse généraliste ou spécialisée",
+    "domaine_source": "wsj.com",
+    "domaine_opaque": false,
+    "statut": "en_attente",
+    "created_at": "2026-11-06T14:44:00.175Z"
+  },
+  {
+    "id": "5951b1cb-b7a9-4e27-b6fe-4330e328ed09",
+    "source_id": "wsj-marches",
+    "cible_type": "nouvelle_categorie",
+    "cible_id": null,
+    "contenu_propose": {
+      "titre": "What the Midterm Shake-Up Means for Markets and Investors",
+      "link": "https://www.wsj.com/finance/investing/what-the-midterm-shake-up-means-for-markets-and-investors-b1135215?mod=rss_markets_main",
+      "date": "2026-11-06T10:42:00.000Z",
+      "resume": "Plus, Israel’s most important alliance confronts its biggest test in decades, and what’s next for Texas after the Democratic sweep."
+    },
+    "score_fiabilite": 0.4,
+    "score_fiabilite_motif": "wsj.com — presse généraliste ou spécialisée",
+    "domaine_source": "wsj.com",
+    "domaine_opaque": false,
+    "statut": "en_attente",
+    "created_at": "2026-11-06T14:44:00.175Z"
+  },
+  {
+    "id": "08cdd481-f5a7-43c1-bf81-c29200a99360",
+    "source_id": "wsj-marches",
+    "cible_type": "nouvelle_categorie",
+    "cible_id": null,
+    "contenu_propose": {
+      "titre": "The Argument for Buying Treasury Bonds Is Still Strong",
+      "link": "https://www.wsj.com/finance/investing/the-argument-for-buying-treasury-bonds-is-still-strong-be338920?mod=rss_markets_main",
+      "date": "2026-11-06T10:30:00.000Z",
+      "resume": "As AI fears take down stocks, bonds offer compelling yields."
+    },
+    "score_fiabilite": 0.4,
+    "score_fiabilite_motif": "wsj.com — presse généraliste ou spécialisée",
+    "domaine_source": "wsj.com",
+    "domaine_opaque": false,
+    "statut": "en_attente",
+    "created_at": "2026-11-06T14:44:00.175Z"
+  },
+  {
+    "id": "4abdd4c2-f186-49a5-aac3-e0bef6bf4651",
+    "source_id": "wsj-marches",
+    "cible_type": "nouvelle_categorie",
+    "cible_id": null,
+    "contenu_propose": {
+      "titre": "Major Investors Are Skeptical Anthropic IPO Can Achieve $1.5 Trillion Valuation",
+      "link": "https://www.wsj.com/finance/major-investors-are-skeptical-anthropic-ipo-can-achieve-1-5-trillion-valuation-ca965d8b?mod=rss_markets_main",
+      "date": "2026-11-06T04:36:00.000Z",
+      "resume": "Other investors say October financial results could lessen the blow of the market rout."
+    },
+    "score_fiabilite": 0.4,
+    "score_fiabilite_motif": "wsj.com — presse généraliste ou spécialisée",
+    "domaine_source": "wsj.com",
+    "domaine_opaque": false,
+    "statut": "en_attente",
+    "created_at": "2026-11-06T14:44:00.175Z"
+  },
+  {
+    "id": "70d6b445-739d-4602-bd4e-bcc5d633b113",
+    "source_id": "le-monde-economie",
+    "cible_type": "nouvelle_categorie",
+    "cible_id": null,
+    "contenu_propose": {
+      "titre": "A Taïwan, la frénésie pour les valeurs boursières liées à l’IA : « Ma mère en achète et en revend le même jour. Ses amis font pareil »",
+      "link": "https://www.lemonde.fr/economie/article/2026/11/06/a-taiwan-la-frenesie-pour-les-valeurs-boursieres-liees-a-l-ia-ma-mere-en-achete-et-en-revend-le-meme-jour-ses-amis-font-pareil_6807795_3234.html",
+      "date": "2026-11-06T14:00:07.000Z",
+      "resume": "L’envolée du cours de Bourse de TSMC, seule entreprise au monde capable de produire les processeurs indispensables au fonctionnement des meilleures intelligences artificielles, alimente l’engouement des habitants de l’île pour l’investissement, au risque de creuser les inégalités financières dans l’île."
+    },
+    "score_fiabilite": 0.4,
+    "score_fiabilite_motif": "lemonde.fr — presse généraliste ou spécialisée",
+    "domaine_source": "lemonde.fr",
+    "domaine_opaque": false,
+    "statut": "en_attente",
+    "created_at": "2026-11-06T14:44:00.405Z"
+  },
+  {
+    "id": "c9b0bf07-fbf4-477c-b902-30ad51a67f7e",
+    "source_id": "le-monde-economie",
+    "cible_type": "nouvelle_categorie",
+    "cible_id": null,
+    "contenu_propose": {
+      "titre": "Une nouvelle vague d’alerte à la bombe vise des vols commerciaux en Europe ainsi que des médias irlandais",
+      "link": "https://www.lemonde.fr/international/article/2026/11/06/alertes-a-la-bombe-quatre-vols-commerciaux-survolant-la-france-se-sont-poses-sans-encombre_6807787_3210.html",
+      "date": "2026-11-06T12:41:25.000Z",
+      "resume": "Au moins vingt vols, principalement opérés par des compagnies à bas coût, avaient déjà été visés jeudi, après plusieurs fausses alertes en début de semaine."
+    },
+    "score_fiabilite": 0.4,
+    "score_fiabilite_motif": "lemonde.fr — presse généraliste ou spécialisée",
+    "domaine_source": "lemonde.fr",
+    "domaine_opaque": false,
+    "statut": "en_attente",
+    "created_at": "2026-11-06T14:44:00.405Z"
+  },
+  {
+    "id": "0abbc53d-4e63-472d-951a-d91cf60f29fd",
+    "source_id": "le-monde-economie",
+    "cible_type": "nouvelle_categorie",
+    "cible_id": null,
+    "contenu_propose": {
+      "titre": "En Italie, une « taxe de sortie » pour les grandes fortunes",
+      "link": "https://www.lemonde.fr/economie/article/2026/11/06/en-italie-une-taxe-de-sortie-pour-les-grandes-fortunes_6807773_3234.html",
+      "date": "2026-11-06T10:45:05.000Z",
+      "resume": "Le projet de loi de finances pour 2027 du gouvernement Meloni prévoit la création d’une « exit tax » visant les grandes fortunes qui décideraient de quitter l’Italie. Une mesure qui infléchirait une politique fiscale visant depuis 2017 à attirer des ultrariches dans la péninsule"
+    },
+    "score_fiabilite": 0.4,
+    "score_fiabilite_motif": "lemonde.fr — presse généraliste ou spécialisée",
+    "domaine_source": "lemonde.fr",
+    "domaine_opaque": false,
+    "statut": "en_attente",
+    "created_at": "2026-11-06T14:44:00.405Z"
+  },
+  {
+    "id": "0a4b4ec0-62f7-4952-84c7-93154827cdda",
+    "source_id": "le-monde-economie",
+    "cible_type": "nouvelle_categorie",
+    "cible_id": null,
+    "contenu_propose": {
+      "titre": "Les salaires du privé ont baissé de 1,1 % sur un an, en prenant en compte l’inflation",
+      "link": "https://www.lemonde.fr/economie-francaise/article/2026/11/06/les-salaires-du-prive-ont-baisse-de-1-1-sur-un-an-en-prenant-en-compte-l-inflation_6807767_1656968.html",
+      "date": "2026-11-06T10:24:55.000Z",
+      "resume": "Sans correction de la hausse des prix, l’indice du salaire mensuel de base des salariés a progressé de 0,2 % au troisième trimestre par rapport au trimestre précédent et augmenté de 1,9 % sur un an."
+    },
+    "score_fiabilite": 0.4,
+    "score_fiabilite_motif": "lemonde.fr — presse généraliste ou spécialisée",
+    "domaine_source": "lemonde.fr",
+    "domaine_opaque": false,
+    "statut": "en_attente",
+    "created_at": "2026-11-06T14:44:00.405Z"
+  },
+  {
+    "id": "a9f6b67f-bb45-4f38-860b-2fcf12956655",
+    "source_id": "le-monde-economie",
+    "cible_type": "nouvelle_categorie",
+    "cible_id": null,
+    "contenu_propose": {
+      "titre": "Moscou accélère la saisie d’actifs russes de groupes occidentaux",
+      "link": "https://www.lemonde.fr/economie/article/2026/11/06/moscou-accelere-la-saisie-d-actifs-russes-de-groupes-occidentaux_6807766_3234.html",
+      "date": "2026-11-06T10:15:02.000Z",
+      "resume": "Européennes et américaines, les entreprises sont ciblées et mises « sous administration provisoire ». Cette menace de confiscation contredit dans les faits les récents appels du pied aux Occidentaux de Kirill Dmitriev, l’homme lige du Kremlin, pour les convaincre de refaire des affaires en Russie."
+    },
+    "score_fiabilite": 0.4,
+    "score_fiabilite_motif": "lemonde.fr — presse généraliste ou spécialisée",
+    "domaine_source": "lemonde.fr",
+    "domaine_opaque": false,
+    "statut": "en_attente",
+    "created_at": "2026-11-06T14:44:00.405Z"
+  },
+  {
+    "id": "3af8015c-787a-4100-9cb9-c5d03714ac02",
+    "source_id": "la-tribune-actualites",
+    "cible_type": "nouvelle_categorie",
+    "cible_id": null,
+    "contenu_propose": {
+      "titre": "Travail, IA et avenir de l'industrie : suivez en direct les Rencontres de l'Avenir à Saint-Raphaël",
+      "link": "https://www.latribune.fr/article/economie/3237473265470/travail-ia-et-avenir-de-lindustrie-suivez-en-direct-les-rencontres-de-lavenir-a-saint-raphael",
+      "date": "2026-11-06T14:35:29.000Z",
+      "resume": "Face à la révolution de l'intelligence artificielle générative, l'industrie française est à un carrefour stratégique. Les Rencontres de l'Avenir à Saint-Raphaël explorent comment ces technologies redéfinissent la productivité et les compétences, un enjeu crucial pour notre souveraineté économique."
+    },
+    "score_fiabilite": 0.4,
+    "score_fiabilite_motif": "latribune.fr — domaine absent de la table : score par défaut prudent, sous le seuil de source primaire",
+    "domaine_source": "latribune.fr",
+    "domaine_opaque": false,
+    "statut": "en_attente",
+    "created_at": "2026-11-06T14:44:00.587Z"
+  },
+  {
+    "id": "8ce186cc-79e5-4152-b3fa-5db6bee9a066",
+    "source_id": "la-tribune-actualites",
+    "cible_type": "nouvelle_categorie",
+    "cible_id": null,
+    "contenu_propose": {
+      "titre": "Le piratage de réfrigérateurs force les hôpitaux à auditer leurs objets connectés",
+      "link": "https://www.latribune.fr/article/tech/72309925020066/le-piratage-de-refrigateurs-force-les-hopitaux-a-auditer-leurs-objets-connectes",
+      "date": "2026-11-06T14:23:23.000Z",
+      "resume": "La cyberattaque contre les logiciels de surveillance thermique de l’Établissement français du sang suscite une vive inquiétude dans les hôpitaux, où réfrigératuers, pousse-seringues et bornes connectées se retrouvent soudainement sous surveillance. Dans un contexte international marqué par le spectre des attaques hybrides, la découverte de ces angles morts technologiques oblige à repenser d’urgenc"
+    },
+    "score_fiabilite": 0.4,
+    "score_fiabilite_motif": "latribune.fr — domaine absent de la table : score par défaut prudent, sous le seuil de source primaire",
+    "domaine_source": "latribune.fr",
+    "domaine_opaque": false,
+    "statut": "en_attente",
+    "created_at": "2026-11-06T14:44:00.587Z"
+  },
+  {
+    "id": "163cf593-0428-455e-8b76-4ede8e80e709",
+    "source_id": "la-tribune-actualites",
+    "cible_type": "nouvelle_categorie",
+    "cible_id": null,
+    "contenu_propose": {
+      "titre": "Éolien terrestre : un radar militaire inédit pour permettre la modernisation du parc dans la Somme",
+      "link": "https://www.latribune.fr/article/entreprises-finance/energie-environnement/1527503997643/eolien-terrestre-un-radar-militaire-inedit-pour-permettre-la-modernisation-du-parc-dans-la-somme",
+      "date": "2026-11-06T14:07:00.000Z",
+      "resume": "Afin d’augmenter la puissance du parc éolien sans affecter la détection aérienne de l’armée, un premier équipement va être testé dès 2028. Cinq sites ont été identifiés en France, mais le projet suscite déjà une levée de boucliers de certains élus locaux."
+    },
+    "score_fiabilite": 0.4,
+    "score_fiabilite_motif": "latribune.fr — domaine absent de la table : score par défaut prudent, sous le seuil de source primaire",
+    "domaine_source": "latribune.fr",
+    "domaine_opaque": false,
+    "statut": "en_attente",
+    "created_at": "2026-11-06T14:44:00.587Z"
+  },
+  {
+    "id": "c252d085-cb2c-403a-bbbe-bc587605e9ce",
+    "source_id": "la-tribune-actualites",
+    "cible_type": "nouvelle_categorie",
+    "cible_id": null,
+    "contenu_propose": {
+      "titre": "OPINION. « Automobile : faire du \"Made in Europe\" un levier de puissance industrielle »",
+      "link": "https://www.latribune.fr/article/idees/13849764498734/opinion-automobile-faire-du-made-in-europe-un-levier-de-puissance-industrielle",
+      "date": "2026-11-06T13:10:03.000Z",
+      "resume": "L’accord franco-allemand sur l’avenir de l’automobile européenne marque une avancée importante. En conciliant décarbonation, flexibilité technologique et contenu européen, il ouvre la voie à une politique industrielle plus ambitieuse. L’enjeu est désormais clair : faire de la transition écologique non pas une contrainte pour notre industrie, mais un moteur de compétitivité, d’investissement et d’e"
+    },
+    "score_fiabilite": 0.4,
+    "score_fiabilite_motif": "latribune.fr — domaine absent de la table : score par défaut prudent, sous le seuil de source primaire",
+    "domaine_source": "latribune.fr",
+    "domaine_opaque": false,
+    "statut": "en_attente",
+    "created_at": "2026-11-06T14:44:00.587Z"
+  },
+  {
+    "id": "825b697c-aacf-4cee-9e4e-d68e530f5b9c",
+    "source_id": "la-tribune-actualites",
+    "cible_type": "nouvelle_categorie",
+    "cible_id": null,
+    "contenu_propose": {
+      "titre": "La Grande Tribune Aéronautique Espace Défense à Bordeaux le 3 décembre 2026",
+      "link": "https://www.latribune.fr/article/regions/nouvelle-aquitaine/4784064108489/la-grande-tribune-aeronautique-espace-defense-a-bordeaux-le-3-decembre-2026",
+      "date": "2026-11-06T11:55:42.000Z",
+      "resume": "Le plan d’actions et les atouts de l’écosystème bordelais pour se démarquer dans les secteurs stratégiques de l’aéronautique, du spatial et de la défense seront au cœur des débats de La Grande Tribune organisée le jeudi 3 décembre 2026 par BFM La Tribune et Air&Cosmos avec Bordeaux Métropole à l’occasion de la journée « Choose Bordeaux »."
+    },
+    "score_fiabilite": 0.4,
+    "score_fiabilite_motif": "latribune.fr — domaine absent de la table : score par défaut prudent, sous le seuil de source primaire",
+    "domaine_source": "latribune.fr",
+    "domaine_opaque": false,
+    "statut": "en_attente",
+    "created_at": "2026-11-06T14:44:00.587Z"
+  },
+  {
+    "id": "57252036-f5ce-4ae0-80d1-e20bb449707b",
+    "source_id": "rfi-economie",
+    "cible_type": "nouvelle_categorie",
+    "cible_id": null,
+    "contenu_propose": {
+      "titre": "DIRECT - Fausses alertes à la bombe: l’Europe visée par une série de menaces, une enquête en cours",
+      "link": "https://www.rfi.fr/fr/%C3%A9conomie/20261106-fausses-alertes-%C3%A0-la-bombe-l-europe-vis%C3%A9e-par-une-s%C3%A9rie-de-menaces-une-enqu%C3%AAte-en-cours",
+      "date": "2026-11-06T11:43:17.000Z",
+      "resume": "En Europe, le trafic aérien est de nouveau très perturbé par de fausses alertes à la bombe ce vendredi 6 novembre. Un vol de la compagnie Ryanair qui devait partir de Lisbonne en direction de Rome a été visé par une « menace de bombe » qui s'est avérée une fausse alerte. Au moins huit vols depuis ou vers Prague et Sofia ont également été visés. Des avions survolant le territoire français ont égale"
+    },
+    "score_fiabilite": 0.4,
+    "score_fiabilite_motif": "rfi.fr — domaine absent de la table : score par défaut prudent, sous le seuil de source primaire",
+    "domaine_source": "rfi.fr",
+    "domaine_opaque": false,
+    "statut": "en_attente",
+    "created_at": "2026-11-06T14:44:00.868Z"
+  },
+  {
+    "id": "1620029b-308b-4990-b25f-4a0d4f244d27",
+    "source_id": "rfi-economie",
+    "cible_type": "nouvelle_categorie",
+    "cible_id": null,
+    "contenu_propose": {
+      "titre": "De géant de la production à négociant en GNL: le grand virage stratégique du Qatar",
+      "link": "https://www.rfi.fr/fr/podcasts/chronique-des-mati%C3%A8res-premi%C3%A8res/20261106-de-g%C3%A9ant-de-la-production-%C3%A0-n%C3%A9gociant-en-gnl-le-grand-virage-strat%C3%A9gique-du-qatar",
+      "date": "2026-11-06T09:54:54.000Z",
+      "resume": "La guerre au Moyen-Orient et les perturbations dans le détroit d’Ormuz affectent durablement les exportations de GNL en provenance du Qatar. Sans voie de contournement, l'Émirat se voit forcé d’opérer un virage stratégique pour livrer ses clients et pour maintenir sa place d’acteur primordial sur le marché du gaz."
+    },
+    "score_fiabilite": 0.4,
+    "score_fiabilite_motif": "rfi.fr — domaine absent de la table : score par défaut prudent, sous le seuil de source primaire",
+    "domaine_source": "rfi.fr",
+    "domaine_opaque": false,
+    "statut": "en_attente",
+    "created_at": "2026-11-06T14:44:00.868Z"
+  },
+  {
+    "id": "6fb6837a-95f6-4100-af61-8081c1579952",
+    "source_id": "rfi-economie",
+    "cible_type": "nouvelle_categorie",
+    "cible_id": null,
+    "contenu_propose": {
+      "titre": "TGV M: comment la SNCF veut défendre sa place face à la concurrence en Europe",
+      "link": "https://www.rfi.fr/fr/podcasts/aujourd-hui-l-%C3%A9conomie/20261106-tgv-m-nouveau-train-sncf-concurrence-internationale",
+      "date": "2026-11-06T07:41:21.000Z",
+      "resume": "La SNCF met en service ce vendredi 6 novembre le TGV M, cinquième génération de train à grande vitesse. Derrière ce nouveau modèle, fruit d'un investissement de 4,6 milliards d'euros auprès d'Alstom, le groupe ferroviaire français poursuit un objectif stratégique : défendre ses positions face à la concurrence, améliorer sa rentabilité et renforcer son développement à l'international."
+    },
+    "score_fiabilite": 0.4,
+    "score_fiabilite_motif": "rfi.fr — domaine absent de la table : score par défaut prudent, sous le seuil de source primaire",
+    "domaine_source": "rfi.fr",
+    "domaine_opaque": false,
+    "statut": "en_attente",
+    "created_at": "2026-11-06T14:44:00.868Z"
+  },
+  {
+    "id": "0521b7d0-2b39-4a53-9dc7-f2c782916383",
+    "source_id": "euronews-business",
+    "cible_type": "nouvelle_categorie",
+    "cible_id": null,
+    "contenu_propose": {
+      "titre": "Ouzbékistan : récolte de coton record, Mirziyoyev vise de meilleurs rendements en 2027",
+      "link": "https://fr.euronews.com/2026/11/06/ouzbekistan-recolte-de-coton-record-mirziyoyev-vise-de-meilleurs-rendements-en-2027",
+      "date": "2026-11-06T14:30:02.000Z",
+      "resume": "Les autorités indiquent que l'Ouzbékistan a récolté plus de 5 millions de tonnes de coton brut, soit 25 % de plus qu'en 2025, les machines ramassant environ 85 % de la récolte."
+    },
+    "score_fiabilite": 0.4,
+    "score_fiabilite_motif": "fr.euronews.com — domaine absent de la table : score par défaut prudent, sous le seuil de source primaire",
+    "domaine_source": "fr.euronews.com",
+    "domaine_opaque": false,
+    "statut": "en_attente",
+    "created_at": "2026-11-06T14:44:01.108Z"
+  },
+  {
+    "id": "a636c9a8-34b8-4fa2-80ac-e6912f3697c3",
+    "source_id": "euronews-business",
+    "cible_type": "nouvelle_categorie",
+    "cible_id": null,
+    "contenu_propose": {
+      "titre": "Pékin menace l’UE de représailles face à ses projets de protection du marché",
+      "link": "https://fr.euronews.com/2026/11/06/pekin-menace-lue-de-represailles-face-a-ses-projets-de-protection-du-marche",
+      "date": "2026-11-06T06:25:10.000Z",
+      "resume": "Malgré les discussions en cours pour rééquilibrer les échanges entre l'UE et la Chine, Bruxelles prépare un nouvel outil puissant pour protéger son marché d'un afflux d'importations chinoises bon marché."
+    },
+    "score_fiabilite": 0.4,
+    "score_fiabilite_motif": "fr.euronews.com — domaine absent de la table : score par défaut prudent, sous le seuil de source primaire",
+    "domaine_source": "fr.euronews.com",
+    "domaine_opaque": false,
+    "statut": "en_attente",
+    "created_at": "2026-11-06T14:44:01.109Z"
+  },
+  {
+    "id": "2bb6792a-c278-4cab-8dd4-6231efadb202",
+    "source_id": "euronews-business",
+    "cible_type": "nouvelle_categorie",
+    "cible_id": null,
+    "contenu_propose": {
+      "titre": "Vladimir Poutine saisit les actifs russes de Japan Tabacco International",
+      "link": "https://fr.euronews.com/2026/11/05/poutine-place-les-activites-russes-de-japan-tobacco-international-sous-tutelle-de-letat",
+      "date": "2026-11-05T16:49:14.000Z",
+      "resume": "Le président russe a ordonné la saisie temporaire des actifs du géant japonais du tabac, premier fabricant de cigarettes du pays. Cette décision s'inscrit dans une série de prises de contrôle visant des entreprises étrangères, parmi lesquelles Nestlé, Auchan et Metro."
+    },
+    "score_fiabilite": 0.4,
+    "score_fiabilite_motif": "fr.euronews.com — domaine absent de la table : score par défaut prudent, sous le seuil de source primaire",
+    "domaine_source": "fr.euronews.com",
+    "domaine_opaque": false,
+    "statut": "en_attente",
+    "created_at": "2026-11-06T14:44:01.109Z"
+  },
+  {
+    "id": "591d211b-08de-41fe-8d26-68c0acacb516",
+    "source_id": "euronews-business",
+    "cible_type": "nouvelle_categorie",
+    "cible_id": null,
+    "contenu_propose": {
+      "titre": "Paraguay : la faillite de Ueno Bank provoque la démission de Santiago Peña",
+      "link": "https://fr.euronews.com/2026/11/05/paraguay-la-faillite-de-ueno-bank-provoque-la-demission-de-santiago-pena",
+      "date": "2026-11-05T14:38:34.000Z",
+      "resume": "Le trou comptable de Ueno Bank évapore des fonds publics, prive des milliers de citoyens de l'accès à leurs dépôts et plonge le Paraguay dans sa plus grave crise institutionnelle depuis des années."
+    },
+    "score_fiabilite": 0.4,
+    "score_fiabilite_motif": "fr.euronews.com — domaine absent de la table : score par défaut prudent, sous le seuil de source primaire",
+    "domaine_source": "fr.euronews.com",
+    "domaine_opaque": false,
+    "statut": "en_attente",
+    "created_at": "2026-11-06T14:44:01.109Z"
+  },
+  {
+    "id": "403437a7-ef73-4716-b120-2c62acb5ff20",
+    "source_id": "dw-business",
+    "cible_type": "nouvelle_categorie",
+    "cible_id": null,
+    "contenu_propose": {
+      "titre": "Protests and reforms: France's rising debt costs threaten stability",
+      "link": "https://www.dw.com/en/protests-and-reforms-france-s-rising-debt-costs-threaten-stability/a-79865654?maca=en-rss-en-bus-2091-rdf",
+      "date": "2026-11-06T14:37:00.000Z",
+      "resume": "France plans to spend an extra €4 billion on education amid nationwide protests. But with public debt mounting and interest costs climbing, how much fiscal room does the government have?"
+    },
+    "score_fiabilite": 0.4,
+    "score_fiabilite_motif": "dw.com — domaine absent de la table : score par défaut prudent, sous le seuil de source primaire",
+    "domaine_source": "dw.com",
+    "domaine_opaque": false,
+    "statut": "en_attente",
+    "created_at": "2026-11-06T14:44:02.316Z"
+  },
+  {
+    "id": "cf1dcc0f-9e39-4ed8-8d4e-1bdc468cef12",
+    "source_id": "dw-business",
+    "cible_type": "nouvelle_categorie",
+    "cible_id": null,
+    "contenu_propose": {
+      "titre": "European shares join a global sell-off as AI spending fears rattle Wall Street and Asian markets",
+      "link": "https://www.dw.com/en/european-shares-join-a-global-sell-off-as-ai-spending-fears-rattle-wall-street-and-asian-markets/a-79871504?maca=en-rss-en-bus-2091-rdf",
+      "date": "2026-11-06T09:29:00.000Z",
+      "resume": "European shares have fallen after sharp losses in Asia and on Wall Street. Doubts over huge AI investments and fears of curbs following the Democrats' US midterm victory have rattled global markets."
+    },
+    "score_fiabilite": 0.4,
+    "score_fiabilite_motif": "dw.com — domaine absent de la table : score par défaut prudent, sous le seuil de source primaire",
+    "domaine_source": "dw.com",
+    "domaine_opaque": false,
+    "statut": "en_attente",
+    "created_at": "2026-11-06T14:44:02.316Z"
+  },
+  {
+    "id": "e7034c3c-956f-4656-bdd7-6a66eb13adf9",
+    "source_id": "guardian-economie",
+    "cible_type": "nouvelle_categorie",
+    "cible_id": null,
+    "contenu_propose": {
+      "titre": "US tech stocks open higher on Wall Street after worst day in 19 months – business live",
+      "link": "https://www.theguardian.com/business/live/2026/nov/06/global-stocks-tumble-ai-panic-markets-democrats-midterms-success-jobs-oil-dollar-latest-news-updates",
+      "date": "2026-11-06T14:37:19.000Z",
+      "resume": "European and Asia-Pacific markets slide after Wall Street rout, while latest US jobs report beats forecasts\nDespite the sharp losses suffered on global stock markets around the world, most indices are still up for the year.\nThe Nasdaq Composite index, for example, is still up 4.6% since the start of January – even though it’s more than 10% below its peak.\n“The tech sell-off has intensified, with t"
+    },
+    "score_fiabilite": 0.4,
+    "score_fiabilite_motif": "theguardian.com — presse généraliste ou spécialisée",
+    "domaine_source": "theguardian.com",
+    "domaine_opaque": false,
+    "statut": "en_attente",
+    "created_at": "2026-11-06T14:44:02.669Z"
+  },
+  {
+    "id": "99571aaf-c3c8-4501-8801-f750a830ad04",
+    "source_id": "guardian-economie",
+    "cible_type": "nouvelle_categorie",
+    "cible_id": null,
+    "contenu_propose": {
+      "titre": "US job growth exceeds expectations in October despite economic uncertainty",
+      "link": "https://www.theguardian.com/business/2026/nov/06/us-job-growth-october",
+      "date": "2026-11-06T13:42:26.000Z",
+      "resume": "‘Low-hire, low-fire’ labor market shows sluggish growth but few layoffs, with an interest rate hike expected in December\nThe US added 165,000 jobs to the economy in October, a sign of resilience in the labor market amid ongoing war in the Middle East and inflation, according to new data released on Friday.\nEconomists had said the labor market has been stuck in a “low-hire, low-fire” state, in whic"
+    },
+    "score_fiabilite": 0.4,
+    "score_fiabilite_motif": "theguardian.com — presse généraliste ou spécialisée",
+    "domaine_source": "theguardian.com",
+    "domaine_opaque": false,
+    "statut": "en_attente",
+    "created_at": "2026-11-06T14:44:02.669Z"
+  },
+  {
+    "id": "542157d1-e496-4419-bad4-1bc48c5ca54a",
+    "source_id": "la-vie-des-idees",
+    "cible_type": "nouvelle_categorie",
+    "cible_id": null,
+    "contenu_propose": {
+      "titre": "L'industrialisation du vivant",
+      "link": "https://laviedesidees.fr/Alex-Blanchette-Porkopolis",
+      "date": "2026-11-06T08:30:00.000Z",
+      "resume": "Les fermes-usines élèvent, abattent et découpent des centaines de milliers de porcs par an, transformant ainsi le vivant en produit et exploitant à cette fin une main d'œuvre la plupart du temps immigrée."
+    },
+    "score_fiabilite": 0.4,
+    "score_fiabilite_motif": "laviedesidees.fr — domaine absent de la table : score par défaut prudent, sous le seuil de source primaire",
+    "domaine_source": "laviedesidees.fr",
+    "domaine_opaque": false,
+    "statut": "en_attente",
+    "created_at": "2026-11-06T14:44:03.953Z"
+  },
+  {
+    "id": "3ab1b880-313d-4539-baed-e7b1a4537a57",
+    "source_id": "cnrs-le-journal",
+    "cible_type": "nouvelle_categorie",
+    "cible_id": null,
+    "contenu_propose": {
+      "titre": "Pourquoi aimons-nous avoir peur ?",
+      "link": "https://lejournal.cnrs.fr/articles/pourquoi-aimons-nous-avoir-peur",
+      "date": "2026-11-06T13:16:45.000Z",
+      "resume": "Plutôt associée à la menace, comment la peur peut-elle devenir récréative ? Les réponses des neurosciences cognitives."
+    },
+    "score_fiabilite": 0.8,
+    "score_fiabilite_motif": "lejournal.cnrs.fr — préprint, actes de conférence ou institution publique",
+    "domaine_source": "lejournal.cnrs.fr",
+    "domaine_opaque": false,
+    "statut": "en_attente",
+    "created_at": "2026-11-06T14:44:04.702Z"
+  },
+  {
+    "id": "f747eb6b-5a5a-43d2-ae17-5fd2ba0476eb",
+    "source_id": "sociological-science",
+    "cible_type": "nouvelle_categorie",
+    "cible_id": null,
+    "contenu_propose": {
+      "titre": "Governing the Agora—Informal Communication in Reputation-Based Online Markets",
+      "link": "https://sociologicalscience.com/articles-v13-49-1305/",
+      "date": "2026-11-05T17:00:13.000Z",
+      "resume": "Ana Macanovic, Wojtek Przepiorka, Vincent Buskens\nSociological Science November 5, 2026\n\nAbstract\n\nClose\n Citation"
+    },
+    "score_fiabilite": 0.4,
+    "score_fiabilite_motif": "sociologicalscience.com — domaine absent de la table : score par défaut prudent, sous le seuil de source primaire",
+    "domaine_source": "sociologicalscience.com",
+    "domaine_opaque": false,
+    "statut": "en_attente",
+    "created_at": "2026-11-06T14:44:08.452Z"
+  },
+  {
+    "id": "4b0e25ad-23b0-4d01-88d1-67ee3ae7b912",
+    "source_id": "aps-actualites-recherche",
+    "cible_type": "nouvelle_categorie",
+    "cible_id": null,
+    "contenu_propose": {
+      "titre": "2026 in Review: 12 Top Research Articles From APS Journals",
+      "link": "https://www.psychologicalscience.org/news/2026-nov-top-research-aps-journals.html",
+      "date": "2026-11-05T17:28:00.000Z",
+      "resume": "View the list of the two most downloaded articles in 2026 from six of APS’s peer-reviewed research journals."
+    },
+    "score_fiabilite": 0.4,
+    "score_fiabilite_motif": "psychologicalscience.org — domaine absent de la table : score par défaut prudent, sous le seuil de source primaire",
+    "domaine_source": "psychologicalscience.org",
+    "domaine_opaque": false,
+    "statut": "en_attente",
+    "created_at": "2026-11-06T14:44:10.018Z"
+  },
+  {
+    "id": "228c99fb-698e-4171-b3b1-2ba759a90ca8",
+    "source_id": "aps-actualites-recherche",
+    "cible_type": "nouvelle_categorie",
+    "cible_id": null,
+    "contenu_propose": {
+      "titre": "You Don’t Have to Decide Between Basic and Applied Science",
+      "link": "https://www.psychologicalscience.org/publications/observer/basic-applied-science.html",
+      "date": "2026-11-05T15:56:23.000Z",
+      "resume": "Allie Sinclair discusses the challenges and opportunities of launching a lab in the current political climate and emphasizes the importance of building a network of interdisciplinary collaborators."
+    },
+    "score_fiabilite": 0.4,
+    "score_fiabilite_motif": "psychologicalscience.org — domaine absent de la table : score par défaut prudent, sous le seuil de source primaire",
+    "domaine_source": "psychologicalscience.org",
+    "domaine_opaque": false,
+    "statut": "en_attente",
+    "created_at": "2026-11-06T14:44:10.018Z"
+  },
+  {
+    "id": "a31e3ea1-092c-4ba4-8f37-6f349a1f6852",
+    "source_id": "aeon-essais",
+    "cible_type": "nouvelle_categorie",
+    "cible_id": null,
+    "contenu_propose": {
+      "titre": "Celestial nuisance",
+      "link": "https://aeon.co/essays/why-astrophysics-needs-to-abandon-the-big-questions",
+      "date": "2026-11-06T11:00:00.000Z",
+      "resume": "The cosmos has become a lab for the Big Questions in physics. Along the way, we’ve lost sight of its glorious messiness\n- by Dylan Jow\nRead on Aeon"
+    },
+    "score_fiabilite": 0.4,
+    "score_fiabilite_motif": "aeon.co — domaine absent de la table : score par défaut prudent, sous le seuil de source primaire",
+    "domaine_source": "aeon.co",
+    "domaine_opaque": false,
+    "statut": "en_attente",
+    "created_at": "2026-11-06T14:44:10.166Z"
+  },
+  {
+    "id": "f19394fc-1bb5-4d39-89e4-bd17ff0849c5",
+    "source_id": "mit-technology-review-ia",
+    "cible_type": "nouvelle_categorie",
+    "cible_id": null,
+    "contenu_propose": {
+      "titre": "I watched a humanoid robot clean my apartment. It felt like a taste of the future.",
+      "link": "https://www.technologyreview.com/2026/11/06/1148090/i-watched-a-humanoid-robot-clean-my-apartment-it-felt-like-a-taste-of-the-future/",
+      "date": "2026-11-06T10:00:00.000Z",
+      "resume": "I’m not the sort of person who typically pays for a house cleaner. I’m too frugal, and I kind of enjoy putting on a podcast and going to town on my tub with a Magic Eraser. But when I saw an X post about a new humanoid-robot cleaning service in San Francisco, I immediately signed…"
+    },
+    "score_fiabilite": 0.4,
+    "score_fiabilite_motif": "technologyreview.com — presse généraliste ou spécialisée",
+    "domaine_source": "technologyreview.com",
+    "domaine_opaque": false,
+    "statut": "en_attente",
+    "created_at": "2026-11-06T14:44:12.521Z"
   }
 ]
