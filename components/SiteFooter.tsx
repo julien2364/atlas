@@ -27,11 +27,11 @@ export default function SiteFooter() {
           {LIENS.map((l) => (
             <li key={l.href}>
               {l.brut ? (
-                <a href={l.href} className="underline decoration-neutral-400 underline-offset-2 hover:decoration-current">
+                <a href={l.href} className="inline-block py-1 underline decoration-neutral-400 underline-offset-2 hover:decoration-current">
                   {l.label}
                 </a>
               ) : (
-                <Link href={l.href} className="underline decoration-neutral-400 underline-offset-2 hover:decoration-current">
+                <Link href={l.href} className="inline-block py-1 underline decoration-neutral-400 underline-offset-2 hover:decoration-current">
                   {l.label}
                 </Link>
               )}

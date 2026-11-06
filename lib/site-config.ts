@@ -10,10 +10,11 @@ export const SITE_DESCRIPTION =
   "Observatoire comparatif des capacités humaines et des capacités de l'intelligence artificielle : référentiel sourcé, daté et versionné.";
 
 // URL de base utilisée pour les canonicals, le sitemap, le JSON-LD et l'API publique.
-// Réglage : variable d'environnement NEXT_PUBLIC_SITE_URL (à définir dans le projet Vercel
-// et dans .env.local pour un domaine propre). Repli sur le déploiement Vercel courant.
+// Réglage : variable d'environnement NEXT_PUBLIC_SITE_URL. Repli sur le domaine public
+// atlas.dyonysos.fr : l'URL *.vercel.app est protégée (redirection vers la connexion Vercel),
+// elle ne doit jamais servir de canonical ni d'URL de sitemap.
 // Cf. docs/api.md § « Configuration de l'URL de base ».
-const SITE_URL_DEFAUT = "https://atlas-humain-ia-dyonysos.vercel.app";
+const SITE_URL_DEFAUT = "https://atlas.dyonysos.fr";
 
 export const SITE_URL: string = (process.env.NEXT_PUBLIC_SITE_URL || SITE_URL_DEFAUT).replace(/\/+$/, "");
 
