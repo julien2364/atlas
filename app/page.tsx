@@ -107,17 +107,18 @@ export default function HomePage() {
         </h2>
         <dl className="mt-3 grid grid-cols-2 gap-3 sm:grid-cols-3 lg:grid-cols-5">
           {CHIFFRES.map((c) => (
-            <Link
-              key={c.libelle}
-              href={c.href}
-              className="rounded-lg border border-neutral-200 p-4 transition hover:border-neutral-400 dark:border-neutral-800 dark:hover:border-neutral-600"
-            >
+            <div key={c.libelle}>
               <dt className="sr-only">{c.libelle}</dt>
-              <dd>
-                <span className="block text-2xl font-semibold tabular-nums tracking-tight">{c.valeur}</span>
-                <span className="mt-1 block text-xs text-neutral-500 dark:text-neutral-400">{c.libelle}</span>
+              <dd className="h-full">
+                <Link
+                  href={c.href}
+                  className="block h-full rounded-lg border border-neutral-200 p-4 transition hover:border-neutral-400 dark:border-neutral-800 dark:hover:border-neutral-600"
+                >
+                  <span className="block text-2xl font-semibold tabular-nums tracking-tight">{c.valeur}</span>
+                  <span className="mt-1 block text-xs text-neutral-500 dark:text-neutral-400">{c.libelle}</span>
+                </Link>
               </dd>
-            </Link>
+            </div>
           ))}
         </dl>
         <p className="mt-2 text-xs text-neutral-500">
