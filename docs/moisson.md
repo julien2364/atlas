@@ -1,8 +1,8 @@
 # Moisson de sources
 
-Dernier passage : **2026-11-05** · fonds interrogés : openalex, crossref, arxiv, hal, doaj, europepmc.
+Dernier passage : **2026-11-06** · fonds interrogés : openalex, crossref, arxiv, hal, doaj, europepmc.
 
-**1 propositions** pour **10 fiches**, écrites dans `../../_temp/moisson-2026-11-05.json`.
+**1 propositions** pour **10 fiches**, écrites dans `../../_temp/moisson-2026-11-06.json`.
 
 Ce fichier ne modifie aucune fiche. Pour en ajouter une partie au corpus : remplir le champ
 `retenues` de chaque bloc avec les clés choisies, puis lancer
@@ -10,28 +10,21 @@ Ce fichier ne modifie aucune fiche. Pour en ajouter une partie au corpus : rempl
 
 | Fiche | Besoin | Propositions | Meilleure proposition |
 |---|---:|---:|---|
-| Abhijit Banerjee | 7 | 0 | — |
+| Abhijit Banerjee | 7 | 1 | [REPENSER LA PAUVRETÉ, Abhijit V. Banerjee et Esther Duflo, Paris, Seui](https://doi.org/10.3917/pe.123.0680h) — openalex, 2012 |
 | Alliance solaire internationale (ASI) | 7 | 0 | — |
 | Amartya Sen | 7 | 0 | — |
 | Anarchisme | 7 | 0 | — |
 | Banque africaine de développement (BAfD) | 7 | 0 | — |
 | Bipolarité (Guerre froide) | 7 | 0 | — |
-| Black-Scholes | 7 | 1 | [Incertitude en économie de l'environnement](https://doi.org/10.3406/rfeco.2007.1647) — openalex, 2007 |
+| Black-Scholes | 7 | 0 | — |
 | BRICS(+) | 7 | 0 | — |
 | Capitalisme de marché libre (laissez-faire) | 7 | 0 | — |
 | CEI | 7 | 0 | — |
 
 ## Fonds indisponibles sur ce passage
 
-- openalex / abhijit-banerjee : HTTP 429
-- openalex / amartya-sen : HTTP 429
-- openalex / anarchisme : HTTP 429
-- openalex / banque-africaine-de-developpement-bafd : HTTP 429
-- openalex / bipolarite-guerre-froide : HTTP 429
-- openalex / brics : HTTP 429
 - doaj / brics : This operation was aborted
-- openalex / capitalisme-de-marche-libre-laissez-faire : HTTP 429
-- openalex / cei : HTTP 429
+- openalex / capitalisme-de-marche-libre-laissez-faire : This operation was aborted
 
 ## Ce que la moisson ne fait pas
 
