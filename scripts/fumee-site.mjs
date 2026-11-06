@@ -32,7 +32,7 @@ const RACINE = path.join(ICI, "..");
 
 const args = process.argv.slice(2);
 const argUrl = args.find((a) => a.startsWith("--url="));
-const BASE = (argUrl ? argUrl.slice("--url=".length) : process.env.ATLAS_URL || "https://atlas-humain-ia-dyonysos.vercel.app").replace(/\/+$/, "");
+const BASE = (argUrl ? argUrl.slice("--url=".length) : process.env.ATLAS_URL || "https://atlas.dyonysos.fr").replace(/\/+$/, "");
 const JSON_SORTIE = args.includes("--json");
 const SANS_QUESTION = args.includes("--sans-question");
 const DELAI = 25_000;
