@@ -2,7 +2,7 @@
 // découvrables individuellement, condition pour que le site fonctionne comme actif
 // de référencement (cf. docs/megaprompt.md, recommandation 11.2).
 //
-// L'URL de base vient de NEXT_PUBLIC_SITE_URL (repli : déploiement Vercel courant),
+// L'URL de base vient de NEXT_PUBLIC_SITE_URL (repli : https://atlas.dyonysos.fr),
 // cf. lib/site-config.ts et docs/api.md.
 
 import type { MetadataRoute } from "next";

@@ -34,7 +34,7 @@
     "moissonner": "node scripts/moissonner.mjs",
     "questionnement": "node scripts/questionnement.mjs",
     "mesurer": "node scripts/mesurer-reponses.mjs",
-    "test": "node --test tests/",
+    "test": "node --test tests/*.test.mjs",
     "verifier-mentions": "node scripts/verifier-mentions.mjs"
   },
   "dependencies": {
