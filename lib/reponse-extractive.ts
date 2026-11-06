@@ -36,7 +36,7 @@
 // DIT, au lieu de fabriquer une controverse qui n'existe pas dans le corpus.
 
 import type { NiveauConfiance, Perspective } from "@/lib/types";
-import { fichesGap, fichesHumaines, fichesIA, getFicheGap, getFicheHumaine, getFicheIA, libelleAxeHumain, libelleAxeIA, LABELS_SUBSTITUABILITE } from "@/lib/corpus";
+import { fichesHumaines, getFicheGap, getFicheHumaine, getFicheIA, libelleAxeHumain, libelleAxeIA, LABELS_SUBSTITUABILITE } from "@/lib/corpus";
 import { dedupliquerSources, niveauDepuisStatut, resoudreFiche, sourcesDeFiche, type TypeFicheRag } from "@/lib/sources-corpus";
 import { libelleChamp } from "@/lib/passages-corpus.mjs";
 import { termes as termesLexicaux } from "@/lib/embedding-lexical.mjs";
@@ -927,22 +927,9 @@ export function construireReponseExtractive(
   }
 
   const nomsChoisis = choisis.map((g) => g.nom);
-  const anglesMorts = [
-    `Ce mode met en regard des fiches selon des relations écrites dans le corpus ; il ne TRANCHE pas. ` +
-      `Il ne dit pas laquelle des ${perspectives.length} perspectives répond le mieux à la question, ni qui a ` +
-      "raison dans les oppositions qu'il expose — il montre le débat et où le lire.",
-    graphe.present
-      ? `Le graphe de relations est incomplet par construction : ${graphe.nb_relations} relations tissées le ` +
-        `${graphe.genere_le}, détectées sur les seules mentions explicites d'une fiche par une autre. Deux ` +
-        "fiches qui s'opposent sans se nommer restent invisibles l'une à l'autre."
-      : "Le graphe de relations est absent : les perspectives ci-dessous ne sont rapprochées que par le vocabulaire.",
+  const anglesMorts =
     `${groupes.length} fiche(s) ont été retrouvées, ${perspectives.length} ont été retenues ` +
-      `(${nomsChoisis.join(" · ")}) : les autres sont visibles dans les extraits, sans perspective composée.`,
-    "La recherche est lexicale : elle retrouve les fiches qui emploient les mots de la question, pas celles " +
-      "qui traitent le sujet avec d'autres mots. Une école absente d'ici peut très bien être dans le corpus.",
-    `Le référentiel couvre ${fichesHumaines.length} capacités humaines, ${fichesIA.length} capacités IA et ` +
-      `${fichesGap.length} paires ; tout ce qui n'y est pas ne peut pas apparaître dans une réponse extractive.`,
-  ].join(" ");
+    `(${nomsChoisis.join(" · ")}) : les autres sont visibles dans les extraits, sans perspective composée.`;
 
   return {
     // Pas de reformulation : reformuler suppose de comprendre, et ce mode ne

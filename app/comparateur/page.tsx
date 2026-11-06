@@ -18,8 +18,7 @@ export default function ComparateurPage() {
           Sélecteur libre : n&apos;importe laquelle des {fichesHumaines.length} capacités humaines face à
           n&apos;importe laquelle des {fichesIA.length} capacités IA. {fichesGap.length} paires sont analysées selon
           la même grille — apport de l&apos;IA, mécanisme, comment faire mieux, mode d&apos;interaction,
-          substituabilité, scénarios présent / +5 ans / +15-20 ans. Les autres combinaisons affichent leur statut
-          réel plutôt qu&apos;un contenu inventé.
+          substituabilité, scénarios présent / +5 ans / +15-20 ans.
         </p>
       </header>
       <ComparateurClient humaines={fichesHumaines} ia={fichesIA} gaps={fichesGap} />
