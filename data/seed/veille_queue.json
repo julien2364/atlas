@@ -65288,5 +65288,815 @@
     "domaine_opaque": false,
     "statut": "en_attente",
     "created_at": "2026-11-06T14:44:12.521Z"
+  },
+  {
+    "id": "457ba971-36bc-4c16-b94b-59a0e18560ce",
+    "source_id": "anthropic-news",
+    "cible_type": "nouvelle_categorie",
+    "cible_id": null,
+    "contenu_propose": {
+      "titre": "Claude Code cloud lance le setup automatique des dépendances et clés API - Pasquale Pillitteri",
+      "link": "https://news.google.com/rss/articles/CBMiogFBVV95cUxQNjFfVFBvbDNpVWxhZXM0Y2p3V1d1QmYtb19Wekg5MmVwNEg1ZW1LZ1BIUm9zM3NvREhQZGxza2dqRkdvaFpWOWhWSjVTQnVydUpqMzRId2tKV3BpOS16VVg3XzM3X2RfX0xYdFpwRHpyUUxYU2kxMWEzZkpmVHN3UDQydHBCWEpMd2RkajJ3X2NQcGpoeFJncG1tZkE0VF9Ma2c?oc=5",
+      "date": "2026-11-07T08:36:47.000Z",
+      "resume": "Claude Code cloud lance le setup automatique des dépendances et clés API  Pasquale Pillitteri"
+    },
+    "score_fiabilite": 0.15,
+    "score_fiabilite_motif": "news.google.com est un redirecteur : l'url ne porte pas le domaine de l'éditeur réel, la fiabilité ne peut pas être établie sans ouvrir le lien",
+    "domaine_source": "news.google.com",
+    "domaine_opaque": true,
+    "statut": "en_attente",
+    "created_at": "2026-11-07T13:41:28.093Z"
+  },
+  {
+    "id": "a7ced43f-6f7a-4e42-b56d-010a4e9b9305",
+    "source_id": "anthropic-news",
+    "cible_type": "nouvelle_categorie",
+    "cible_id": null,
+    "contenu_propose": {
+      "titre": "Claude s’abstient désormais de refaire les jeux des autres - Journal du Geek",
+      "link": "https://news.google.com/rss/articles/CBMioAFBVV95cUxOVnZJZzdjVWpDZzNGcUJkNjU2bXN0RVZqUjJiTUI4bklKWk90SEt3a1p5UXJGdWRfWUhvMWp0SDBsUVY5SEVhOF9MeTFpWHpvSG01clc2aEdUNjk5d3ZKdUY5MFB1bUpqc0FibE5EQV9JUXFrUEJRb05zYUF4VEFLRjJKTzBuOU9TUFFWaDBkWkwxNDV6eHY4cFY4ejNVWVZF?oc=5",
+      "date": "2026-11-07T13:01:12.000Z",
+      "resume": "Claude s’abstient désormais de refaire les jeux des autres  Journal du Geek"
+    },
+    "score_fiabilite": 0.15,
+    "score_fiabilite_motif": "news.google.com est un redirecteur : l'url ne porte pas le domaine de l'éditeur réel, la fiabilité ne peut pas être établie sans ouvrir le lien",
+    "domaine_source": "news.google.com",
+    "domaine_opaque": true,
+    "statut": "en_attente",
+    "created_at": "2026-11-07T13:41:28.093Z"
+  },
+  {
+    "id": "ec5e7a7b-d14f-4941-a931-867f6411a728",
+    "source_id": "openai-news",
+    "cible_type": "nouvelle_categorie",
+    "cible_id": null,
+    "contenu_propose": {
+      "titre": "Partnering with Hacktron to find vulnerabilities in OpenAI’s systems",
+      "link": "https://openai.com/index/partnering-with-hacktron",
+      "date": "2026-11-06T08:00:00.000Z",
+      "resume": "OpenAI is partnering with Hacktron to find vulnerabilities, test connections with third-party services, and strengthen defenses with frontier AI."
+    },
+    "score_fiabilite": 0.6,
+    "score_fiabilite_motif": "openai.com — éditeur ou laboratoire s'exprimant sur son propre produit",
+    "domaine_source": "openai.com",
+    "domaine_opaque": false,
+    "statut": "en_attente",
+    "created_at": "2026-11-07T13:41:28.276Z"
+  },
+  {
+    "id": "b4431633-9b08-4320-97ae-5927fff8bab6",
+    "source_id": "openai-news",
+    "cible_type": "nouvelle_categorie",
+    "cible_id": null,
+    "contenu_propose": {
+      "titre": "Measuring how AI agents handle everyday wet-lab science",
+      "link": "https://openai.com/index/measuring-how-ai-agents-handle-wet-lab-science",
+      "date": "2026-11-06T00:00:00.000Z",
+      "resume": "OpenAI introduces BioBasicsBench, a 100-task benchmark measuring how well AI agents interpret raw experimental data and handle everyday wet-lab science."
+    },
+    "score_fiabilite": 0.6,
+    "score_fiabilite_motif": "openai.com — éditeur ou laboratoire s'exprimant sur son propre produit",
+    "domaine_source": "openai.com",
+    "domaine_opaque": false,
+    "statut": "en_attente",
+    "created_at": "2026-11-07T13:41:28.276Z"
+  },
+  {
+    "id": "1f282afa-677a-44b3-81f3-6c26ddfafb51",
+    "source_id": "nature-news",
+    "cible_type": "nouvelle_categorie",
+    "cible_id": null,
+    "contenu_propose": {
+      "titre": "Medicinal plants, lessons from mushrooms and the power of smell: Books in brief",
+      "link": "https://www.nature.com/articles/d41586-026-03595-x",
+      "date": "2026-11-06T00:00:00.000Z",
+      "resume": ""
+    },
+    "score_fiabilite": 0.9,
+    "score_fiabilite_motif": "nature.com — édition scientifique à comité de lecture",
+    "domaine_source": "nature.com",
+    "domaine_opaque": false,
+    "statut": "en_attente",
+    "created_at": "2026-11-07T13:41:28.379Z"
+  },
+  {
+    "id": "b74e6935-efa3-4ec8-b29b-714884eb44ac",
+    "source_id": "nature-news",
+    "cible_type": "nouvelle_categorie",
+    "cible_id": null,
+    "contenu_propose": {
+      "titre": "Cholera bacterium’s good deed: inspiring a glue with rare properties",
+      "link": "https://www.nature.com/articles/d41586-026-03630-x",
+      "date": "2026-11-06T00:00:00.000Z",
+      "resume": ""
+    },
+    "score_fiabilite": 0.9,
+    "score_fiabilite_motif": "nature.com — édition scientifique à comité de lecture",
+    "domaine_source": "nature.com",
+    "domaine_opaque": false,
+    "statut": "en_attente",
+    "created_at": "2026-11-07T13:41:28.379Z"
+  },
+  {
+    "id": "f6febb5f-f399-433c-9bbd-382aaed730c9",
+    "source_id": "nature-news",
+    "cible_type": "nouvelle_categorie",
+    "cible_id": null,
+    "contenu_propose": {
+      "titre": "Briefing Chat: Meet the snakes that cartwheel away from trouble",
+      "link": "https://www.nature.com/articles/d41586-026-03632-9",
+      "date": "2026-11-06T00:00:00.000Z",
+      "resume": ""
+    },
+    "score_fiabilite": 0.9,
+    "score_fiabilite_motif": "nature.com — édition scientifique à comité de lecture",
+    "domaine_source": "nature.com",
+    "domaine_opaque": false,
+    "statut": "en_attente",
+    "created_at": "2026-11-07T13:41:28.379Z"
+  },
+  {
+    "id": "7729030d-9283-4662-ad17-6279f88baa96",
+    "source_id": "nature-news",
+    "cible_type": "nouvelle_categorie",
+    "cible_id": null,
+    "contenu_propose": {
+      "titre": "Preprint platform offers to pay researchers to review papers, but questions remain",
+      "link": "https://www.nature.com/articles/d41586-026-03442-z",
+      "date": "2026-11-06T00:00:00.000Z",
+      "resume": ""
+    },
+    "score_fiabilite": 0.9,
+    "score_fiabilite_motif": "nature.com — édition scientifique à comité de lecture",
+    "domaine_source": "nature.com",
+    "domaine_opaque": false,
+    "statut": "en_attente",
+    "created_at": "2026-11-07T13:41:28.379Z"
+  },
+  {
+    "id": "ad22468e-c5f6-416e-a7b2-8894b8a01751",
+    "source_id": "nature-news",
+    "cible_type": "nouvelle_categorie",
+    "cible_id": null,
+    "contenu_propose": {
+      "titre": "In Vivo CRISPR Base Editing of <i>ANGPTL3</i> for Durable Lipid Lowering",
+      "link": "https://www.nature.com/articles/s41586-026-11233-9",
+      "date": "2026-11-06T00:00:00.000Z",
+      "resume": ""
+    },
+    "score_fiabilite": 0.9,
+    "score_fiabilite_motif": "nature.com — édition scientifique à comité de lecture",
+    "domaine_source": "nature.com",
+    "domaine_opaque": false,
+    "statut": "en_attente",
+    "created_at": "2026-11-07T13:41:28.379Z"
+  },
+  {
+    "id": "fb7c4c25-8381-43c8-aba7-d283a75f4fe9",
+    "source_id": "imf-news",
+    "cible_type": "nouvelle_categorie",
+    "cible_id": null,
+    "contenu_propose": {
+      "titre": "Ghana : le FMI juge satisfaisante la mise en œuvre de la première revue du programme économique - AGENCE ECOFIN",
+      "link": "https://news.google.com/rss/articles/CBMi3AFBVV95cUxNSFhPbGlFLVVYcGR2bTZhaFNNYW1TblZNX1NGNGoxU0tTa3R3QWhWMFFkQi1iM3BxZnRhdlNUaW9sQkRQVW9xWVJvRi16VDdhc1k5V1B5NVBEQnU4QWNtTElvZnRaZEd2UmdJcDRLSDA1cHNka045NXZxSzBmOXFLdG9YbmtiY0FyTF8wNGZMMnN3T3VRQ29FaGtoZm9UYzdTYmEyRWRWZ3hyRTRYV0FBWmFxQXJHdy1EZVZOV2g0c3BHT2VTVkRIeEhBTUhHMEJDV1JJOGQ2bk5Oa0NN?oc=5",
+      "date": "2026-11-06T16:49:00.000Z",
+      "resume": "Ghana : le FMI juge satisfaisante la mise en œuvre de la première revue du programme économique  AGENCE ECOFIN"
+    },
+    "score_fiabilite": 0.15,
+    "score_fiabilite_motif": "news.google.com est un redirecteur : l'url ne porte pas le domaine de l'éditeur réel, la fiabilité ne peut pas être établie sans ouvrir le lien",
+    "domaine_source": "news.google.com",
+    "domaine_opaque": true,
+    "statut": "en_attente",
+    "created_at": "2026-11-07T13:41:28.617Z"
+  },
+  {
+    "id": "c06ef59d-4bec-4a73-93d5-e022c815f98e",
+    "source_id": "oecd-news",
+    "cible_type": "nouvelle_categorie",
+    "cible_id": null,
+    "contenu_propose": {
+      "titre": "L'Algérie obtient la notation \"conforme pour l'essentiel\" du Forum mondial de l'OCDE - وكالة الأنباء الجزائرية",
+      "link": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxOSDJKRW9xUGRvSUV1Wi11ajczbmZaTDZFcTkta1Izemk1eURIZlRmWWFkSDlFekN2bzJTcS1nQkRZUmtBYVZ4UGlnLVBkYjdKQ2xEMTBFOVQ2RGFSQ2JocGJlNTVSMDhlMV9ITUVIeFpYVUxGZjZ5NGlfQWEtTTVPbGo0X0ZIVEw0Nk9YQURwUEk5bTR3X0oxQUFaQ3ZLQ1ZWWXhNSVAwQ3hpaTZEWkhFYktmMVNRR01LSUwtTkswcHg2YVlXcUpHZndkY2VVWnZRZk8tRmFZaS0?oc=5",
+      "date": "2026-11-05T15:44:00.000Z",
+      "resume": "L'Algérie obtient la notation \"conforme pour l'essentiel\" du Forum mondial de l'OCDE  وكالة الأنباء الجزائرية"
+    },
+    "score_fiabilite": 0.15,
+    "score_fiabilite_motif": "news.google.com est un redirecteur : l'url ne porte pas le domaine de l'éditeur réel, la fiabilité ne peut pas être établie sans ouvrir le lien",
+    "domaine_source": "news.google.com",
+    "domaine_opaque": true,
+    "statut": "en_attente",
+    "created_at": "2026-11-07T13:41:28.873Z"
+  },
+  {
+    "id": "95a58e54-2c5c-4dca-afcd-a6b41c0041a6",
+    "source_id": "ft-marches",
+    "cible_type": "nouvelle_categorie",
+    "cible_id": null,
+    "contenu_propose": {
+      "titre": "Data centres rebuked",
+      "link": "https://www.ft.com/content/9d40f40a-cbf2-46f5-b3d0-cee554e35298?syn-25a6b1a6=1",
+      "date": "2026-11-07T10:30:03.000Z",
+      "resume": "Capex, meet the electorate"
+    },
+    "score_fiabilite": 0.4,
+    "score_fiabilite_motif": "ft.com — presse généraliste ou spécialisée",
+    "domaine_source": "ft.com",
+    "domaine_opaque": false,
+    "statut": "en_attente",
+    "created_at": "2026-11-07T13:41:34.779Z"
+  },
+  {
+    "id": "628839af-741b-4292-bee3-9c6fad2c3b95",
+    "source_id": "ft-marches",
+    "cible_type": "nouvelle_categorie",
+    "cible_id": null,
+    "contenu_propose": {
+      "titre": "How Wall Street’s all-in bet on AI blew up",
+      "link": "https://www.ft.com/content/5a6806f0-e82e-4b34-b761-f9877e2b511c?syn-25a6b1a6=1",
+      "date": "2026-11-07T05:00:31.000Z",
+      "resume": "US midterm elections sparked a hedge fund and retail investor exodus from a trade that had taken over equity markets"
+    },
+    "score_fiabilite": 0.4,
+    "score_fiabilite_motif": "ft.com — presse généraliste ou spécialisée",
+    "domaine_source": "ft.com",
+    "domaine_opaque": false,
+    "statut": "en_attente",
+    "created_at": "2026-11-07T13:41:34.779Z"
+  },
+  {
+    "id": "bb265663-b265-4b13-b0ce-432bbe664f9d",
+    "source_id": "ft-marches",
+    "cible_type": "nouvelle_categorie",
+    "cible_id": null,
+    "contenu_propose": {
+      "titre": "Russia ships metal via the Arctic to evade Ukrainian strikes",
+      "link": "https://www.ft.com/content/80d91653-c210-43cd-b91e-2b8c644561c1?syn-25a6b1a6=1",
+      "date": "2026-11-07T05:00:22.000Z",
+      "resume": "Pig iron will be exported through the northern port of Murmansk for the first time in 30 years as Black Sea battles rage"
+    },
+    "score_fiabilite": 0.4,
+    "score_fiabilite_motif": "ft.com — presse généraliste ou spécialisée",
+    "domaine_source": "ft.com",
+    "domaine_opaque": false,
+    "statut": "en_attente",
+    "created_at": "2026-11-07T13:41:34.779Z"
+  },
+  {
+    "id": "3a0adac6-5914-43e1-ad6d-675f1a17fc92",
+    "source_id": "ft-marches",
+    "cible_type": "nouvelle_categorie",
+    "cible_id": null,
+    "contenu_propose": {
+      "titre": "US warns China it must ‘immediately’ meet terms of Busan trade deal",
+      "link": "https://www.ft.com/content/391bb785-0247-4c39-b53b-35007187d603?syn-25a6b1a6=1",
+      "date": "2026-11-06T22:53:51.000Z",
+      "resume": "Washington says Beijing is not fulfilling commitments to increase supply of rare earths and other critical products"
+    },
+    "score_fiabilite": 0.4,
+    "score_fiabilite_motif": "ft.com — presse généraliste ou spécialisée",
+    "domaine_source": "ft.com",
+    "domaine_opaque": false,
+    "statut": "en_attente",
+    "created_at": "2026-11-07T13:41:34.779Z"
+  },
+  {
+    "id": "ebcaaf90-d4fc-4629-ae0e-eba384d6a0b9",
+    "source_id": "ft-marches",
+    "cible_type": "nouvelle_categorie",
+    "cible_id": null,
+    "contenu_propose": {
+      "titre": "US stocks recover after tech rout",
+      "link": "https://www.ft.com/content/642b32dc-e3a1-4df8-ae91-5c84bdeb89e0?syn-25a6b1a6=1",
+      "date": "2026-11-06T22:22:05.000Z",
+      "resume": "Tech-heavy Nasdaq 100 rises 1.4% following day of turmoil"
+    },
+    "score_fiabilite": 0.4,
+    "score_fiabilite_motif": "ft.com — presse généraliste ou spécialisée",
+    "domaine_source": "ft.com",
+    "domaine_opaque": false,
+    "statut": "en_attente",
+    "created_at": "2026-11-07T13:41:34.779Z"
+  },
+  {
+    "id": "f9bc73c4-5388-498b-b902-8cdcf9fe972e",
+    "source_id": "wsj-marches",
+    "cible_type": "nouvelle_categorie",
+    "cible_id": null,
+    "contenu_propose": {
+      "titre": "A Berkshire Hathaway Electric Utility Wants a Historic Rate Hike in California",
+      "link": "https://www.wsj.com/business/energy-oil/a-berkshire-hathaway-electric-utility-wants-a-historic-rate-hike-in-california-b7a0cc70?mod=rss_markets_main",
+      "date": "2026-11-06T23:33:00.000Z",
+      "resume": "Pacific Power is asking state regulators to approve a 57% rate increase that would boost the typical residential power bill by $120 a month."
+    },
+    "score_fiabilite": 0.4,
+    "score_fiabilite_motif": "wsj.com — presse généraliste ou spécialisée",
+    "domaine_source": "wsj.com",
+    "domaine_opaque": false,
+    "statut": "en_attente",
+    "created_at": "2026-11-07T13:41:34.831Z"
+  },
+  {
+    "id": "d286d86c-97f3-489d-a2e3-bbebab5d1aef",
+    "source_id": "wsj-marches",
+    "cible_type": "nouvelle_categorie",
+    "cible_id": null,
+    "contenu_propose": {
+      "titre": "The Wild Week That Brought AI Investors to the Brink",
+      "link": "https://www.wsj.com/finance/stocks/midterms-markets-week-ai-trade-97b3fc5d?mod=rss_markets_main",
+      "date": "2026-11-06T23:29:00.000Z",
+      "resume": "Democrats’ victories supercharged anxieties that had been building for weeks. Systematic trades amplified losses."
+    },
+    "score_fiabilite": 0.4,
+    "score_fiabilite_motif": "wsj.com — presse généraliste ou spécialisée",
+    "domaine_source": "wsj.com",
+    "domaine_opaque": false,
+    "statut": "en_attente",
+    "created_at": "2026-11-07T13:41:34.831Z"
+  },
+  {
+    "id": "24248c79-e91a-497f-bb96-dc3447973302",
+    "source_id": "wsj-marches",
+    "cible_type": "nouvelle_categorie",
+    "cible_id": null,
+    "contenu_propose": {
+      "titre": "Tech Stocks Recover Some Losses",
+      "link": "https://www.wsj.com/finance/stocks/tech-stocks-recover-some-losses-f494cd13?mod=rss_markets_main",
+      "date": "2026-11-06T21:24:00.000Z",
+      "resume": "Plus, Anthropic may scale back its IPO, and the Cybertruck meets its end"
+    },
+    "score_fiabilite": 0.4,
+    "score_fiabilite_motif": "wsj.com — presse généraliste ou spécialisée",
+    "domaine_source": "wsj.com",
+    "domaine_opaque": false,
+    "statut": "en_attente",
+    "created_at": "2026-11-07T13:41:34.831Z"
+  },
+  {
+    "id": "b9519f67-a5c7-493b-b651-cd283a5ea55f",
+    "source_id": "le-monde-economie",
+    "cible_type": "nouvelle_categorie",
+    "cible_id": null,
+    "contenu_propose": {
+      "titre": "Les équipementiers automobiles s’alarment des conséquences sociales de l’accord franco-allemand",
+      "link": "https://www.lemonde.fr/economie/article/2026/11/07/les-equipementiers-automobiles-s-alarment-des-consequences-sociales-de-l-accord-franco-allemand_6808276_3234.html",
+      "date": "2026-11-07T13:00:11.000Z",
+      "resume": "La filière dénonce un compromis favorable aux constructeurs automobiles et craint une accélération des suppressions d’emplois et des fermetures d’usines. Chacun espère peser lors du débat au Parlement européen mi-décembre."
+    },
+    "score_fiabilite": 0.4,
+    "score_fiabilite_motif": "lemonde.fr — presse généraliste ou spécialisée",
+    "domaine_source": "lemonde.fr",
+    "domaine_opaque": false,
+    "statut": "en_attente",
+    "created_at": "2026-11-07T13:41:35.056Z"
+  },
+  {
+    "id": "031a5d7c-a54c-4c22-b30c-8106c74cfa43",
+    "source_id": "le-monde-economie",
+    "cible_type": "nouvelle_categorie",
+    "cible_id": null,
+    "contenu_propose": {
+      "titre": "Jean Pisani-Ferry : « La Chine manque d’une stratégie macroéconomique de nature à corriger ses déséquilibres persistants »",
+      "link": "https://www.lemonde.fr/idees/article/2026/11/07/jean-pisani-ferry-la-chine-manque-d-une-strategie-macroeconomique-de-nature-a-corriger-ses-desequilibres-persistants_6808269_3232.html",
+      "date": "2026-11-07T11:00:12.000Z",
+      "resume": "Le pays souffre d’une industrie hypertrophiée et prédatrice à l’égard du reste du monde, de services anémiés et d’un secteur immobilier fragilisé, observe l’économiste dans sa chronique au « Monde »."
+    },
+    "score_fiabilite": 0.4,
+    "score_fiabilite_motif": "lemonde.fr — presse généraliste ou spécialisée",
+    "domaine_source": "lemonde.fr",
+    "domaine_opaque": false,
+    "statut": "en_attente",
+    "created_at": "2026-11-07T13:41:35.056Z"
+  },
+  {
+    "id": "e800d5ca-b356-486e-a7dd-f45c382d5cd7",
+    "source_id": "le-monde-economie",
+    "cible_type": "nouvelle_categorie",
+    "cible_id": null,
+    "contenu_propose": {
+      "titre": "La bulle de l’IA se heurte à la réalité",
+      "link": "https://www.lemonde.fr/idees/article/2026/11/07/la-bulle-de-l-ia-se-heurte-a-la-realite_6808268_3232.html",
+      "date": "2026-11-07T10:30:18.000Z",
+      "resume": "Aux Etats-Unis, la large victoire du Parti démocrate aux midterms a entraîné un brusque décrochage du Nasdaq, l’indice boursier spécialisé dans les valeurs technologiques. Après avoir été l’un des principaux facteurs de dynamisme de l’économie américaine, l’intelligence artificielle pourrait devenir son talon d’Achille."
+    },
+    "score_fiabilite": 0.4,
+    "score_fiabilite_motif": "lemonde.fr — presse généraliste ou spécialisée",
+    "domaine_source": "lemonde.fr",
+    "domaine_opaque": false,
+    "statut": "en_attente",
+    "created_at": "2026-11-07T13:41:35.056Z"
+  },
+  {
+    "id": "a721f219-c486-45ec-a374-f5484ccdb0cc",
+    "source_id": "le-monde-economie",
+    "cible_type": "nouvelle_categorie",
+    "cible_id": null,
+    "contenu_propose": {
+      "titre": "Après huit mois de guerre au Moyen-Orient, la mue forcée des pays du Golfe producteurs de pétrole et de gaz",
+      "link": "https://www.lemonde.fr/economie/article/2026/11/07/apres-huit-mois-de-guerre-au-moyen-orient-la-mue-forcee-des-pays-du-golfe-producteurs-de-petrole-et-de-gaz_6808252_3234.html",
+      "date": "2026-11-07T08:30:03.000Z",
+      "resume": "Pour conserver leur rôle pivot sur les marchés de l’énergie, le Qatar, l’Arabie saoudite et les Emirats arabes unis doivent repenser leurs stratégies commerciales et logistiques."
+    },
+    "score_fiabilite": 0.4,
+    "score_fiabilite_motif": "lemonde.fr — presse généraliste ou spécialisée",
+    "domaine_source": "lemonde.fr",
+    "domaine_opaque": false,
+    "statut": "en_attente",
+    "created_at": "2026-11-07T13:41:35.056Z"
+  },
+  {
+    "id": "091a0f55-3501-4fbf-81a0-f0fc7bde9a58",
+    "source_id": "le-monde-economie",
+    "cible_type": "nouvelle_categorie",
+    "cible_id": null,
+    "contenu_propose": {
+      "titre": "Pourquoi personne ne semble satisfait de l’augmentation du SMIC ? Comprendre en trois minutes",
+      "link": "https://www.lemonde.fr/comprendre-en-3-minutes/video/2026/11/07/pourquoi-personne-ne-semble-satisfait-de-l-augmentation-du-smic-comprendre-en-trois-minutes_6808237_6176282.html",
+      "date": "2026-11-07T05:00:17.000Z",
+      "resume": "Depuis 2017, le salaire minimum a augmenté de plus de 28 % en France. Mais cette hausse, qui correspond aux 14 revalorisations automatiques du SMIC, a en réalité suivi l’inflation sans véritable gain de pouvoir d’achat pour les salariés concernés."
+    },
+    "score_fiabilite": 0.4,
+    "score_fiabilite_motif": "lemonde.fr — presse généraliste ou spécialisée",
+    "domaine_source": "lemonde.fr",
+    "domaine_opaque": false,
+    "statut": "en_attente",
+    "created_at": "2026-11-07T13:41:35.056Z"
+  },
+  {
+    "id": "522bc170-757e-465f-a51a-ebaba1200c51",
+    "source_id": "la-tribune-actualites",
+    "cible_type": "nouvelle_categorie",
+    "cible_id": null,
+    "contenu_propose": {
+      "titre": "Colère sociale : des milliers de personnes de nouveau attendues dans les rues",
+      "link": "https://www.latribune.fr/article/economie/agroconso/74811423045544/colere-sociale-des-milliers-de-personnes-de-nouveau-attendues-dans-les-rues",
+      "date": "2026-11-07T13:10:33.000Z",
+      "resume": "Pour le quatrième samedi consécutif, la France est le théâtre de manifestations sociales, deux jours seulement après une mobilisation syndicale d'ampleur. Les organisateurs veulent mettre la pression sur le gouvernement avant une conférence sociale organisée à Matignon sur les salaires et le pouvoir d'achat ce lundi."
+    },
+    "score_fiabilite": 0.4,
+    "score_fiabilite_motif": "latribune.fr — domaine absent de la table : score par défaut prudent, sous le seuil de source primaire",
+    "domaine_source": "latribune.fr",
+    "domaine_opaque": false,
+    "statut": "en_attente",
+    "created_at": "2026-11-07T13:41:35.168Z"
+  },
+  {
+    "id": "c848e2e6-f3ef-4184-88c3-c44aef71350c",
+    "source_id": "la-tribune-actualites",
+    "cible_type": "nouvelle_categorie",
+    "cible_id": null,
+    "contenu_propose": {
+      "titre": "Les efforts de médiation entre les États-Unis et l'Iran se poursuivent selon le Qatar",
+      "link": "https://www.latribune.fr/article/economie/27923639527213/les-efforts-de-mediation-entre-les-etats-unis-et-liran-se-poursuivent-selon-le-qatar",
+      "date": "2026-11-07T11:23:10.000Z",
+      "resume": "Les discussions se poursuivent entre les États-Unis et l'Iran, pour éviter une reprise des frappes militaires entre les deux camps. Une annonce faite par le Qatar ce samedi 7 novembre, qui assure le rôle de médiateur dans ces négociations."
+    },
+    "score_fiabilite": 0.4,
+    "score_fiabilite_motif": "latribune.fr — domaine absent de la table : score par défaut prudent, sous le seuil de source primaire",
+    "domaine_source": "latribune.fr",
+    "domaine_opaque": false,
+    "statut": "en_attente",
+    "created_at": "2026-11-07T13:41:35.168Z"
+  },
+  {
+    "id": "2d966c3a-f58c-4c47-97b2-bd6e6e62d58a",
+    "source_id": "la-tribune-actualites",
+    "cible_type": "nouvelle_categorie",
+    "cible_id": null,
+    "contenu_propose": {
+      "titre": "Commerce international : responsables américains et chinois expriment leurs « préoccupations » avant un sommet Asie-Pacifique",
+      "link": "https://www.latribune.fr/article/economie/19078445356001/commerce-international-responsables-americains-et-chinois-expriment-leurs-preoccupations-avant-un-sommet-asie-pacifique",
+      "date": "2026-11-07T08:55:45.000Z",
+      "resume": "Le prochain sommet de la Coopération économique pour l'Asie-Pacifique (APEC) doit être le théâtre d'une rencontre entre Trump, Poutine et Xi. En parallèle, États-Unis et Chine ont engagé le dialogue pour tenter de rétablir des relations commerciales stables entre les deux puissances, malgré un accord existant."
+    },
+    "score_fiabilite": 0.4,
+    "score_fiabilite_motif": "latribune.fr — domaine absent de la table : score par défaut prudent, sous le seuil de source primaire",
+    "domaine_source": "latribune.fr",
+    "domaine_opaque": false,
+    "statut": "en_attente",
+    "created_at": "2026-11-07T13:41:35.168Z"
+  },
+  {
+    "id": "1f6caccd-4f04-4e84-9fcd-f5562abb20eb",
+    "source_id": "la-tribune-actualites",
+    "cible_type": "nouvelle_categorie",
+    "cible_id": null,
+    "contenu_propose": {
+      "titre": "OPINION. « Renaissance, vraiment ? … » , par Laurent Fary,  directeur du pôle affaires publiques de l’agence MANTU",
+      "link": "https://www.latribune.fr/article/la-tribune-dimanche/opinions/11816647464985/opinion-renaissance-vraiment-par-laurent-fary-directeur-du-pole-affaires-publiques-de-l-agence-mantu",
+      "date": "2026-11-06T18:22:09.000Z",
+      "resume": "Laurent Fary décortique les choix sémantiques de Marine Le Pen, candidate Rassemblement National à la présidentielle, lors du meeting d'Orléans du 25 octobre dernier."
+    },
+    "score_fiabilite": 0.4,
+    "score_fiabilite_motif": "latribune.fr — domaine absent de la table : score par défaut prudent, sous le seuil de source primaire",
+    "domaine_source": "latribune.fr",
+    "domaine_opaque": false,
+    "statut": "en_attente",
+    "created_at": "2026-11-07T13:41:35.168Z"
+  },
+  {
+    "id": "729358b9-c4cc-4fd2-bbcb-85ee01d5bfaf",
+    "source_id": "la-tribune-actualites",
+    "cible_type": "nouvelle_categorie",
+    "cible_id": null,
+    "contenu_propose": {
+      "titre": "OPINION. « Présidentielle 2027 : la bataille des ambitions a remplacé celle des idées », par Clara Sabban-Durosini, fondatrice de Clara Décode",
+      "link": "https://www.latribune.fr/article/la-tribune-dimanche/opinions/53678904694241/opinion-presidentielle-2027-la-bataille-des-ambitions-a-remplace-celle-des-idees-par-clara-sabban-durosini-fondatrice-de-clara-decode",
+      "date": "2026-11-06T17:13:31.000Z",
+      "resume": "Pour la communicante, l’intelligence artificielle sera un outil précieux pour aider les citoyens à mieux connaître les programmes des candidats à l’élection présidentielle. À condition qu'ils en aient un."
+    },
+    "score_fiabilite": 0.4,
+    "score_fiabilite_motif": "latribune.fr — domaine absent de la table : score par défaut prudent, sous le seuil de source primaire",
+    "domaine_source": "latribune.fr",
+    "domaine_opaque": false,
+    "statut": "en_attente",
+    "created_at": "2026-11-07T13:41:35.168Z"
+  },
+  {
+    "id": "0c37213f-4a05-4742-9c99-a15a329e6558",
+    "source_id": "rfi-economie",
+    "cible_type": "nouvelle_categorie",
+    "cible_id": null,
+    "contenu_propose": {
+      "titre": "En Europe, la contestation contre la construction de centres de données s'amplifie",
+      "link": "https://www.rfi.fr/fr/%C3%A9conomie/20261107-en-europe-la-contestation-contre-la-construction-de-centres-de-donn%C3%A9es-s-amplifie",
+      "date": "2026-11-07T03:52:29.000Z",
+      "resume": "Après les États-Unis, la contestation contre les centres de données gagne du terrain en Europe. À l'appel du collectif Stop aux centres de données polluants, plus de 60 événements sont organisés, vendredi 6 et samedi 7 novembre, dans une dizaine de pays pour réclamer un moratoire sur leur construction. Essentielle au développement de l'intelligence artificielle (IA), la construction de ces centres"
+    },
+    "score_fiabilite": 0.4,
+    "score_fiabilite_motif": "rfi.fr — domaine absent de la table : score par défaut prudent, sous le seuil de source primaire",
+    "domaine_source": "rfi.fr",
+    "domaine_opaque": false,
+    "statut": "en_attente",
+    "created_at": "2026-11-07T13:41:35.276Z"
+  },
+  {
+    "id": "6193e7ec-11c8-44d2-9a4b-d640161d181b",
+    "source_id": "rfi-economie",
+    "cible_type": "nouvelle_categorie",
+    "cible_id": null,
+    "contenu_propose": {
+      "titre": "Midterms : Donald Trump désavoué, quels changements pour l’économie américaine?",
+      "link": "https://www.rfi.fr/fr/podcasts/%C3%A9co-d-ici-%C3%A9co-d-ailleurs/20261106-midterms-donald-trump-d%C3%A9savou%C3%A9-quels-changements-pour-l-%C3%A9conomie-am%C3%A9ricaine",
+      "date": "2026-11-06T18:16:11.000Z",
+      "resume": "Donald Trump paie le prix de son impopularité économique. En reprenant la majorité au Congrès, les démocrates rebattent les cartes à Washington, sans pour autant disposer de tous les leviers du pouvoir. Budget, dette, Réserve fédérale, droits de douane, investissements dans l’intelligence artificielle : quelles conséquences pour l’économie américaine et ses partenaires internationaux ? Décryptage "
+    },
+    "score_fiabilite": 0.4,
+    "score_fiabilite_motif": "rfi.fr — domaine absent de la table : score par défaut prudent, sous le seuil de source primaire",
+    "domaine_source": "rfi.fr",
+    "domaine_opaque": false,
+    "statut": "en_attente",
+    "created_at": "2026-11-07T13:41:35.276Z"
+  },
+  {
+    "id": "17431bd1-5d90-4f49-878e-ee8bb8fe7bbb",
+    "source_id": "euronews-business",
+    "cible_type": "nouvelle_categorie",
+    "cible_id": null,
+    "contenu_propose": {
+      "titre": "Paradis fiscaux britanniques: 8 milliards d’euros de pertes fiscales pour l’UE",
+      "link": "https://fr.euronews.com/2026/11/06/paradis-fiscaux-britanniques-8-milliards-deuros-de-pertes-fiscales-pour-lue",
+      "date": "2026-11-06T20:30:30.000Z",
+      "resume": "Les pays de l'UE perdent près de 60 milliards d'euros par an à cause du transfert de bénéfices des entreprises, estime le Tax Justice Network. Il relie environ 8 milliards de ces pertes au Royaume-Uni et à son réseau de paradis fiscaux, alors que le pays figure parmi les plus touchés au monde."
+    },
+    "score_fiabilite": 0.4,
+    "score_fiabilite_motif": "fr.euronews.com — domaine absent de la table : score par défaut prudent, sous le seuil de source primaire",
+    "domaine_source": "fr.euronews.com",
+    "domaine_opaque": false,
+    "statut": "en_attente",
+    "created_at": "2026-11-07T13:41:35.512Z"
+  },
+  {
+    "id": "8b80d399-5461-4f1d-974c-48bbcdf9e51b",
+    "source_id": "euronews-business",
+    "cible_type": "nouvelle_categorie",
+    "cible_id": null,
+    "contenu_propose": {
+      "titre": "L'Espagne retire 188 000 tonnes d'huile d'olive du marché pour stabiliser les prix",
+      "link": "https://fr.euronews.com/2026/11/06/lespagne-retire-188-000-tonnes-dhuile-dolive-du-marche-pour-stabiliser-les-prix",
+      "date": "2026-11-06T18:46:37.000Z",
+      "resume": "Le plus grand producteur mondial d'huile d'olive retiendra 12 % de sa production à partir de novembre pour éviter une nouvelle baisse des prix. C'est la première fois que l'Espagne applique cette mesure, censée maintenir environ 188 000 tonnes hors marché jusqu'à fin septembre 2027."
+    },
+    "score_fiabilite": 0.4,
+    "score_fiabilite_motif": "fr.euronews.com — domaine absent de la table : score par défaut prudent, sous le seuil de source primaire",
+    "domaine_source": "fr.euronews.com",
+    "domaine_opaque": false,
+    "statut": "en_attente",
+    "created_at": "2026-11-07T13:41:35.512Z"
+  },
+  {
+    "id": "0821eb6b-35b0-4bb0-b8b6-4064916d4bac",
+    "source_id": "euronews-business",
+    "cible_type": "nouvelle_categorie",
+    "cible_id": null,
+    "contenu_propose": {
+      "titre": "Tesla va réduire la production du Cybertruck en 2027 pour miser sur les véhicules autonomes",
+      "link": "https://fr.euronews.com/2026/11/06/tesla-va-reduire-la-production-du-cybertruck-en-2027-pour-miser-sur-les-vehicules-autonome",
+      "date": "2026-11-06T16:45:42.000Z",
+      "resume": "Musk a déclaré que la décision a été prise afin de faire de la place pour une production accrue de son robotaxi Cybercab. Cette mesure intervient après des années de ventes plus faibles que prévu pour le pick-up électrique futuriste."
+    },
+    "score_fiabilite": 0.4,
+    "score_fiabilite_motif": "fr.euronews.com — domaine absent de la table : score par défaut prudent, sous le seuil de source primaire",
+    "domaine_source": "fr.euronews.com",
+    "domaine_opaque": false,
+    "statut": "en_attente",
+    "created_at": "2026-11-07T13:41:35.512Z"
+  },
+  {
+    "id": "59d18a18-651d-45cf-9f76-f4381058e5b3",
+    "source_id": "dw-business",
+    "cible_type": "nouvelle_categorie",
+    "cible_id": null,
+    "contenu_propose": {
+      "titre": "Amid protests, France's rising debt costs threaten stability",
+      "link": "https://www.dw.com/en/amid-protests-france-s-rising-debt-costs-threaten-stability/a-79865654?maca=en-rss-en-bus-2091-rdf",
+      "date": "2026-11-07T08:16:00.000Z",
+      "resume": "France plans to spend an extra €4 billion on education amid nationwide protests. But with public debt mounting and interest costs climbing, how much fiscal room does the government have?"
+    },
+    "score_fiabilite": 0.4,
+    "score_fiabilite_motif": "dw.com — domaine absent de la table : score par défaut prudent, sous le seuil de source primaire",
+    "domaine_source": "dw.com",
+    "domaine_opaque": false,
+    "statut": "en_attente",
+    "created_at": "2026-11-07T13:41:36.191Z"
+  },
+  {
+    "id": "457dd042-13f0-4816-8fef-7c8a32939bee",
+    "source_id": "dw-business",
+    "cible_type": "nouvelle_categorie",
+    "cible_id": null,
+    "contenu_propose": {
+      "titre": "Tesla to 'wind down' production of flop Cybertruck",
+      "link": "https://www.dw.com/en/tesla-to-wind-down-production-of-flop-cybertruck/a-79877759?maca=en-rss-en-bus-2091-rdf",
+      "date": "2026-11-06T17:10:00.000Z",
+      "resume": "Elon Musk's electric pickup for the future will start to be consigned to the past next year. The Cybertruck's bulk and crude shape meant it could only pass regulatory standards in more permissive markets."
+    },
+    "score_fiabilite": 0.4,
+    "score_fiabilite_motif": "dw.com — domaine absent de la table : score par défaut prudent, sous le seuil de source primaire",
+    "domaine_source": "dw.com",
+    "domaine_opaque": false,
+    "statut": "en_attente",
+    "created_at": "2026-11-07T13:41:36.191Z"
+  },
+  {
+    "id": "33c09ca6-3070-4022-81e2-314f33ddd5d0",
+    "source_id": "guardian-economie",
+    "cible_type": "nouvelle_categorie",
+    "cible_id": null,
+    "contenu_propose": {
+      "titre": "Trump may have lost but don’t bet Democrats can fix the economy",
+      "link": "https://www.theguardian.com/business/2026/nov/07/democrats-economy-affordability-crisis",
+      "date": "2026-11-07T11:00:08.000Z",
+      "resume": "There’s not much they can do over the next couple of years to alleviate angry voters’ stress over prices\nIt was the economy, again. Although Donald Trump largely ignored it, voters’ acute concerns over the rising cost of living fuelled a political upheaval for the ages that is likely to deliver the biggest swing toward Democrats since Watergate, granting them the largest House majority in nearly f"
+    },
+    "score_fiabilite": 0.4,
+    "score_fiabilite_motif": "theguardian.com — presse généraliste ou spécialisée",
+    "domaine_source": "theguardian.com",
+    "domaine_opaque": false,
+    "statut": "en_attente",
+    "created_at": "2026-11-07T13:41:36.469Z"
+  },
+  {
+    "id": "0b11311a-24a5-42d1-953d-75ef3d94fe38",
+    "source_id": "guardian-economie",
+    "cible_type": "nouvelle_categorie",
+    "cible_id": null,
+    "contenu_propose": {
+      "titre": "Could the AI bubble burst after Democrats' midterms sweep? - The Latest",
+      "link": "https://www.theguardian.com/news/video/2026/nov/06/could-the-ai-bubble-burst-after-democrats-midterms-sweep-the-latest",
+      "date": "2026-11-06T17:04:41.000Z",
+      "resume": "Global tech stocks have plunged after the Democrats’ victory in the US midterm elections, with fears of a slowdown in AI development. Major tech corporations including Apple, Tesla and Nvidia shed about $1tn in a single trading session. Is this stock market jitters, or a sign the AI bubble might be about to burst? Lucy Hough speaks to senior economics correspondent Richard Partington\n Continue rea"
+    },
+    "score_fiabilite": 0.4,
+    "score_fiabilite_motif": "theguardian.com — presse généraliste ou spécialisée",
+    "domaine_source": "theguardian.com",
+    "domaine_opaque": false,
+    "statut": "en_attente",
+    "created_at": "2026-11-07T13:41:36.469Z"
+  },
+  {
+    "id": "382f674c-6c18-447a-9d09-33fc937d737a",
+    "source_id": "guardian-economie",
+    "cible_type": "nouvelle_categorie",
+    "cible_id": null,
+    "contenu_propose": {
+      "titre": "Could the AI bubble burst after Democrats’ midterms sweep? – The Latest",
+      "link": "https://www.theguardian.com/news/audio/2026/nov/06/could-the-ai-bubble-burst-after-democrats-midterms-sweep-the-latest",
+      "date": "2026-11-06T16:49:19.000Z",
+      "resume": "Global tech stocks have plunged after the Democrats’ victory in the US midterm elections, with fears of a slowdown in AI development. Major tech corporations including Apple, Tesla and Nvidia shed about $1tn in a single trading session. Is this stock market jitters, or a sign the AI bubble might be about to burst? Lucy Hough speaks to senior economics correspondent Richard Partington – watch on Yo"
+    },
+    "score_fiabilite": 0.4,
+    "score_fiabilite_motif": "theguardian.com — presse généraliste ou spécialisée",
+    "domaine_source": "theguardian.com",
+    "domaine_opaque": false,
+    "statut": "en_attente",
+    "created_at": "2026-11-07T13:41:36.469Z"
+  },
+  {
+    "id": "a59d39ff-41bf-47fd-937c-d3a54f88a152",
+    "source_id": "nature-reviews-psychology",
+    "cible_type": "nouvelle_categorie",
+    "cible_id": null,
+    "contenu_propose": {
+      "titre": "Reasoning about counterfactual choices and responsibility judgements in children",
+      "link": "https://www.nature.com/articles/s44159-026-00632-4",
+      "date": "2026-11-05T00:00:00.000Z",
+      "resume": ""
+    },
+    "score_fiabilite": 0.9,
+    "score_fiabilite_motif": "nature.com — édition scientifique à comité de lecture",
+    "domaine_source": "nature.com",
+    "domaine_opaque": false,
+    "statut": "en_attente",
+    "created_at": "2026-11-07T13:41:38.451Z"
+  },
+  {
+    "id": "f36ac03f-e527-4819-a11c-8cec1e85d34b",
+    "source_id": "aps-actualites-recherche",
+    "cible_type": "nouvelle_categorie",
+    "cible_id": null,
+    "contenu_propose": {
+      "titre": "Are You a Hugger? Your Answer May Be Telling",
+      "link": "https://www.psychologicalscience.org/news/are-you-a-hugger-your-answer-may-be-telling.html",
+      "date": "2026-11-06T20:53:02.000Z",
+      "resume": "Can you remember the last time that you received an especially good hug? … Brooke C. Feeney, a professor of psychology at Carnegie Mellon University who was not involved in Dr. Dueren’s study, has found"
+    },
+    "score_fiabilite": 0.4,
+    "score_fiabilite_motif": "psychologicalscience.org — domaine absent de la table : score par défaut prudent, sous le seuil de source primaire",
+    "domaine_source": "psychologicalscience.org",
+    "domaine_opaque": false,
+    "statut": "en_attente",
+    "created_at": "2026-11-07T13:41:39.735Z"
+  },
+  {
+    "id": "80e59e07-4d79-4c98-99c5-bbf1c98342be",
+    "source_id": "nature-machine-intelligence",
+    "cible_type": "nouvelle_categorie",
+    "cible_id": null,
+    "contenu_propose": {
+      "titre": "Towards ecologically meaningful foundation models",
+      "link": "https://www.nature.com/articles/s42256-026-01317-6",
+      "date": "2026-11-06T00:00:00.000Z",
+      "resume": ""
+    },
+    "score_fiabilite": 0.9,
+    "score_fiabilite_motif": "nature.com — édition scientifique à comité de lecture",
+    "domaine_source": "nature.com",
+    "domaine_opaque": false,
+    "statut": "en_attente",
+    "created_at": "2026-11-07T13:41:41.103Z"
+  },
+  {
+    "id": "02ab2bae-e76f-426c-afac-99339e3d6801",
+    "source_id": "nature-machine-intelligence",
+    "cible_type": "nouvelle_categorie",
+    "cible_id": null,
+    "contenu_propose": {
+      "titre": "Fractal basin geometry and the limits to predictability and reproducibility in deep learning",
+      "link": "https://www.nature.com/articles/s42256-026-01336-3",
+      "date": "2026-11-05T00:00:00.000Z",
+      "resume": ""
+    },
+    "score_fiabilite": 0.9,
+    "score_fiabilite_motif": "nature.com — édition scientifique à comité de lecture",
+    "domaine_source": "nature.com",
+    "domaine_opaque": false,
+    "statut": "en_attente",
+    "created_at": "2026-11-07T13:41:41.103Z"
+  },
+  {
+    "id": "73ad14e9-db9c-478d-bfbe-662496fa55cb",
+    "source_id": "mit-news-intelligence-artificielle",
+    "cible_type": "nouvelle_categorie",
+    "cible_id": null,
+    "contenu_propose": {
+      "titre": "How to predict the behavior of molecules from scant data",
+      "link": "https://news.mit.edu/2026/how-to-predict-molecule-behavior-with-scant-data-1106",
+      "date": "2026-11-06T19:00:00.000Z",
+      "resume": "A machine-learning approach called CheMeleon provides a practical way to develop new drugs or other molecules with much less detailed, expensive experimentation."
+    },
+    "score_fiabilite": 0.4,
+    "score_fiabilite_motif": "news.mit.edu — domaine absent de la table : score par défaut prudent, sous le seuil de source primaire",
+    "domaine_source": "news.mit.edu",
+    "domaine_opaque": false,
+    "statut": "en_attente",
+    "created_at": "2026-11-07T13:41:41.331Z"
+  },
+  {
+    "id": "8f98c40c-a196-42cc-bfb1-c00bca1e2567",
+    "source_id": "deepmind-blog",
+    "cible_type": "nouvelle_categorie",
+    "cible_id": null,
+    "contenu_propose": {
+      "titre": "Gemini Omni 1.2 Flash: Fast and cost-effective with longer clips",
+      "link": "https://deepmind.google/blog/gemini-omni-12-flash-fast-and-cost-effective-with-longer-clips/",
+      "date": "2026-11-05T17:05:16.000Z",
+      "resume": ""
+    },
+    "score_fiabilite": 0.6,
+    "score_fiabilite_motif": "deepmind.google — éditeur ou laboratoire s'exprimant sur son propre produit",
+    "domaine_source": "deepmind.google",
+    "domaine_opaque": false,
+    "statut": "en_attente",
+    "created_at": "2026-11-07T13:41:41.434Z"
   }
 ]
