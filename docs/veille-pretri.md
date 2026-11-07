@@ -1,16 +1,16 @@
 # Pré-tri de la file de veille
 
-Dernier écartement appliqué : 2026-11-05.
+Dernier écartement appliqué : 2026-11-06.
 
-File complète : **3575** entrées, dont **2882** en attente d'arbitrage.
+File complète : **3620** entrées, dont **2921** en attente d'arbitrage.
 
-Le pré-tri écarte **6** propositions sur des critères mécaniques et en laisse **2876** à la relecture humaine, classées par fiabilité décroissante.
+Le pré-tri écarte **4** propositions sur des critères mécaniques et en laisse **2917** à la relecture humaine, classées par fiabilité décroissante.
 
 ## Écartées, et pourquoi
 
 | Motif | Nombre | Ce que ça veut dire |
 |---|---:|---|
-| `domaine_opaque` | 6 | Agrégateur masquant l'éditeur réel — source non attribuable |
+| `domaine_opaque` | 4 | Agrégateur masquant l'éditeur réel — source non attribuable |
 
 Aucun de ces motifs ne porte de jugement sur le fond : ils constatent qu'une proposition n'est pas citable, pas attribuable, ou déjà connue.
 
@@ -18,10 +18,10 @@ Aucun de ces motifs ne porte de jugement sur le fond : ils constatent qu'une pro
 
 | Score | Nombre |
 |---:|---:|
-| 0.9 | 240 |
+| 0.9 | 248 |
 | 0.8 | 519 |
-| 0.6 | 130 |
-| 0.4 | 1987 |
+| 0.6 | 133 |
+| 0.4 | 2017 |
 
 ### Les trente premières
 
@@ -89,6 +89,10 @@ Aucun de ces motifs ne porte de jugement sur le fond : ils constatent qu'une pro
   Preprimary education laws and women’s empowerment later in life  
   <https://www.nature.com/articles/s41562-026-02608-z>  
   `5168d0f5-9fc4-4419-8bf8-18b0566ebf75`
+- **0.9** · nature.com · 2 terme(s) du corpus  
+  Fractal basin geometry and the limits to predictability and reproducibility in deep learning  
+  <https://www.nature.com/articles/s42256-026-01336-3>  
+  `02ab2bae-e76f-426c-afac-99339e3d6801`
 - **0.9** · nature.com · 1 terme(s) du corpus  
   NSF moves to overhaul funding approach in line with White House priorities  
   <https://www.nature.com/articles/d41586-026-02892-9>  
@@ -141,10 +145,6 @@ Aucun de ces motifs ne porte de jugement sur le fond : ils constatent qu'une pro
   The ‘missed disease’ that affects 190 million: endometriosis drug shows early promise  
   <https://www.nature.com/articles/d41586-026-03042-x>  
   `e49fba26-78c7-416b-824e-f1a76146b5c4`
-- **0.9** · nature.com · 1 terme(s) du corpus  
-  Gaze into the cosmos and through the eyes of a bee — September’s best science images  
-  <https://www.nature.com/articles/d41586-026-03101-3>  
-  `1c34c079-c5f9-44ae-b043-c0838cd86bc0`
 
 ---
 

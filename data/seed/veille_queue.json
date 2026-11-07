@@ -65304,8 +65304,10 @@
     "score_fiabilite_motif": "news.google.com est un redirecteur : l'url ne porte pas le domaine de l'éditeur réel, la fiabilité ne peut pas être établie sans ouvrir le lien",
     "domaine_source": "news.google.com",
     "domaine_opaque": true,
-    "statut": "en_attente",
-    "created_at": "2026-11-07T13:41:28.093Z"
+    "statut": "ecarte_automatique",
+    "created_at": "2026-11-07T13:41:28.093Z",
+    "ecarte_motif": "domaine_opaque",
+    "ecarte_le": "2026-11-07"
   },
   {
     "id": "a7ced43f-6f7a-4e42-b56d-010a4e9b9305",
@@ -65322,8 +65324,10 @@
     "score_fiabilite_motif": "news.google.com est un redirecteur : l'url ne porte pas le domaine de l'éditeur réel, la fiabilité ne peut pas être établie sans ouvrir le lien",
     "domaine_source": "news.google.com",
     "domaine_opaque": true,
-    "statut": "en_attente",
-    "created_at": "2026-11-07T13:41:28.093Z"
+    "statut": "ecarte_automatique",
+    "created_at": "2026-11-07T13:41:28.093Z",
+    "ecarte_motif": "domaine_opaque",
+    "ecarte_le": "2026-11-07"
   },
   {
     "id": "ec5e7a7b-d14f-4941-a931-867f6411a728",
@@ -65466,8 +65470,10 @@
     "score_fiabilite_motif": "news.google.com est un redirecteur : l'url ne porte pas le domaine de l'éditeur réel, la fiabilité ne peut pas être établie sans ouvrir le lien",
     "domaine_source": "news.google.com",
     "domaine_opaque": true,
-    "statut": "en_attente",
-    "created_at": "2026-11-07T13:41:28.617Z"
+    "statut": "ecarte_automatique",
+    "created_at": "2026-11-07T13:41:28.617Z",
+    "ecarte_motif": "domaine_opaque",
+    "ecarte_le": "2026-11-07"
   },
   {
     "id": "c06ef59d-4bec-4a73-93d5-e022c815f98e",
@@ -65484,8 +65490,10 @@
     "score_fiabilite_motif": "news.google.com est un redirecteur : l'url ne porte pas le domaine de l'éditeur réel, la fiabilité ne peut pas être établie sans ouvrir le lien",
     "domaine_source": "news.google.com",
     "domaine_opaque": true,
-    "statut": "en_attente",
-    "created_at": "2026-11-07T13:41:28.873Z"
+    "statut": "ecarte_automatique",
+    "created_at": "2026-11-07T13:41:28.873Z",
+    "ecarte_motif": "domaine_opaque",
+    "ecarte_le": "2026-11-07"
   },
   {
     "id": "95a58e54-2c5c-4dca-afcd-a6b41c0041a6",
