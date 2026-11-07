@@ -13,18 +13,18 @@ L'API expose en JSON le même corpus que le site : **267 fiches humaines**, **44
 
 | Environnement | URL |
 | --- | --- |
-| Production Vercel | `https://atlas-humain-ia-dyonysos.vercel.app` |
+| Production (domaine public) | `https://atlas.dyonysos.fr` |
 | Local | `http://localhost:3000` |
 
 L'URL de base utilisée pour construire les champs `url` / `api_url`, les balises canoniques,
 le JSON-LD et `sitemap.xml` vient de la variable d'environnement :
 
 ```
-NEXT_PUBLIC_SITE_URL=https://atlas-humain-ia-dyonysos.vercel.app
+NEXT_PUBLIC_SITE_URL=https://atlas.dyonysos.fr
 ```
 
 - Définie dans `lib/site-config.ts` (`SITE_URL`), avec **repli automatique** sur
-  `https://atlas-humain-ia-dyonysos.vercel.app` si la variable est absente.
+  `https://atlas.dyonysos.fr` si la variable est absente.
 - Préfixe `NEXT_PUBLIC_` obligatoire : la valeur est figée au moment du `next build`, y compris
   dans les pages statiques et le sitemap.
 - À renseigner dans les *Environment Variables* du projet Vercel dès qu'un domaine propre est
@@ -216,7 +216,7 @@ jointure, ils ne doivent pas être réécrits.
 ## 6. Exemples
 
 ```bash
-BASE=https://atlas-humain-ia-dyonysos.vercel.app
+BASE=https://atlas.dyonysos.fr
 
 # Les 20 premières fiches, tous référentiels confondus
 curl -s "$BASE/api/fiches" | jq '.pagination, .donnees[0].nom'
@@ -243,7 +243,7 @@ curl -s "$BASE/api/meta" | jq '.donnees.totaux'
 Parcours complet du corpus (JavaScript) :
 
 ```js
-const BASE = "https://atlas-humain-ia-dyonysos.vercel.app";
+const BASE = "https://atlas.dyonysos.fr";
 
 async function toutesLesFiches(filtres = {}) {
   const resultats = [];
