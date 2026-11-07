@@ -1,8 +1,8 @@
 # Moisson de sources
 
-Dernier passage : **2026-11-06** · fonds interrogés : openalex, crossref, arxiv, hal, doaj, europepmc.
+Dernier passage : **2026-11-07** · fonds interrogés : openalex, crossref, arxiv, hal, doaj, europepmc.
 
-**1 propositions** pour **10 fiches**, écrites dans `../../_temp/moisson-2026-11-06.json`.
+**0 propositions** pour **10 fiches**, écrites dans `../../_temp/moisson-2026-11-07.json`.
 
 Ce fichier ne modifie aucune fiche. Pour en ajouter une partie au corpus : remplir le champ
 `retenues` de chaque bloc avec les clés choisies, puis lancer
@@ -10,7 +10,7 @@ Ce fichier ne modifie aucune fiche. Pour en ajouter une partie au corpus : rempl
 
 | Fiche | Besoin | Propositions | Meilleure proposition |
 |---|---:|---:|---|
-| Abhijit Banerjee | 7 | 1 | [REPENSER LA PAUVRETÉ, Abhijit V. Banerjee et Esther Duflo, Paris, Seui](https://doi.org/10.3917/pe.123.0680h) — openalex, 2012 |
+| Abhijit Banerjee | 7 | 0 | — |
 | Alliance solaire internationale (ASI) | 7 | 0 | — |
 | Amartya Sen | 7 | 0 | — |
 | Anarchisme | 7 | 0 | — |
@@ -24,7 +24,6 @@ Ce fichier ne modifie aucune fiche. Pour en ajouter une partie au corpus : rempl
 ## Fonds indisponibles sur ce passage
 
 - doaj / brics : This operation was aborted
-- openalex / capitalisme-de-marche-libre-laissez-faire : This operation was aborted
 
 ## Ce que la moisson ne fait pas
 
